@@ -33,8 +33,23 @@ android {
         buildConfigField("String", "WALLET_IDENTITY_URI", "\"https://deproof.app\"")
     }
 
+    val keystorePath = System.getenv("DEPROOF_KEYSTORE_PATH")
+    if (keystorePath != null) {
+        signingConfigs {
+            create("release") {
+                keyAlias = System.getenv("DEPROOF_KEY_ALIAS") ?: "deproof-key"
+                keyPassword = System.getenv("DEPROOF_KEY_PASSWORD") ?: ""
+                storeFile = file(keystorePath)
+                storePassword = System.getenv("DEPROOF_KEYSTORE_PASSWORD") ?: ""
+            }
+        }
+    }
+
     buildTypes {
         release {
+            if (keystorePath != null) {
+                signingConfig = signingConfigs.getByName("release")
+            }
             isMinifyEnabled = true
             isShrinkResources = true
 
@@ -44,7 +59,6 @@ android {
             )
 
             buildConfigField("Boolean", "DEBUG_MODE", "false")
-            // signingConfig intentionally omitted — produces an unsigned APK
         }
 
         debug {
@@ -53,8 +67,8 @@ android {
         }
     }
 
-    // Signing configuration (release)
-    // Note: Configure with environment variables DEPROOF_KEYSTORE_PATH, DEPROOF_KEYSTORE_PASSWORD, DEPROOF_KEY_ALIAS, DEPROOF_KEY_PASSWORD
+    // Release signing uses env vars: DEPROOF_KEYSTORE_PATH, DEPROOF_KEYSTORE_PASSWORD,
+    // DEPROOF_KEY_ALIAS, DEPROOF_KEY_PASSWORD — omitting them produces an unsigned APK.
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
