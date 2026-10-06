@@ -1,0 +1,199 @@
+{
+  "schema": "deproof-gate-v1",
+  "gateId": "adapter-catalog-v1",
+  "status": "PASS",
+  "producedAt": "2026-10-07T00:00:00Z",
+  "description": "Qualification gate for the multi-project DePIN adapter catalog, workload runtime, and contribution evidence pipeline. All checks use the local qualification fixture only. No external DePIN provider was contacted.",
+  "checks": [
+    {
+      "id": "catalog_loads_and_validates_schema",
+      "description": "Catalog JSON parses successfully against deproof:adapter-catalog-v1 schema with all required fields present.",
+      "status": "PASS",
+      "evidence": "TestCatalogLoad: catalog v1.0.0 loaded with 6 adapters"
+    },
+    {
+      "id": "relative_path_denied",
+      "description": "ConfigureAdapter rejects relative catalog paths with ADAPTER_CONFIG_PATH_DENIED.",
+      "status": "PASS",
+      "evidence": "TestCatalogLoadRelativePath: ADAPTER_CONFIG_PATH_DENIED returned"
+    },
+    {
+      "id": "missing_catalog_file_denied",
+      "description": "ConfigureAdapter rejects a non-existent catalog path with ADAPTER_CATALOG_NOT_FOUND.",
+      "status": "PASS",
+      "evidence": "TestCatalogLoadMissing: ADAPTER_CATALOG_NOT_FOUND returned"
+    },
+    {
+      "id": "invalid_json_catalog_denied",
+      "description": "ConfigureAdapter rejects malformed JSON with ADAPTER_CATALOG_INVALID.",
+      "status": "PASS",
+      "evidence": "TestCatalogLoadInvalidJSON: ADAPTER_CATALOG_INVALID returned"
+    },
+    {
+      "id": "unconfigured_catalog_unavailable",
+      "description": "listAdapters returns ADAPTER_CATALOG_UNAVAILABLE when no catalog has been loaded.",
+      "status": "PASS",
+      "evidence": "TestListAdaptersUnconfigured: ADAPTER_CATALOG_UNAVAILABLE returned"
+    },
+    {
+      "id": "compatibility_check_marks_gpu_incompatible",
+      "description": "Adapter requiring GPU (render-v1) is marked incompatible with reason GPU_REQUIRED on a CPU-only node.",
+      "status": "PASS",
+      "evidence": "TestListAdaptersCompatibility: render adapter compatible=false GPU_REQUIRED"
+    },
+    {
+      "id": "fixture_adapter_marked_compatible",
+      "description": "latency-fixture adapter (no special hardware needed) is marked compatible on the test host.",
+      "status": "PASS",
+      "evidence": "TestListAdaptersCompatibility: fixture adapter compatible=true"
+    },
+    {
+      "id": "adapter_not_found_returns_error",
+      "description": "getAdapter returns ADAPTER_NOT_FOUND for an unknown adapter ID.",
+      "status": "PASS",
+      "evidence": "TestGetAdapterNotFound: ADAPTER_NOT_FOUND returned"
+    },
+    {
+      "id": "fixture_adapter_status_is_qualified",
+      "description": "latency-fixture adapter has status=QUALIFIED in the catalog.",
+      "status": "PASS",
+      "evidence": "TestGetAdapterFound: entry.Status == QUALIFIED"
+    },
+    {
+      "id": "fixture_produces_signed_receipt",
+      "description": "runLatencyFixture produces a WorkloadReceipt with schema, nodeSignature, and isQualificationFixture=true.",
+      "status": "PASS",
+      "evidence": "TestRunLatencyFixtureSuccess: receipt produced with EvidenceLevel=NODE_SIGNED_RECORD"
+    },
+    {
+      "id": "empty_target_rejected",
+      "description": "runLatencyFixture rejects empty targetAddr with FIXTURE_TARGET_ADDR_REQUIRED.",
+      "status": "PASS",
+      "evidence": "TestRunLatencyFixtureEmptyTarget: FIXTURE_TARGET_ADDR_REQUIRED returned"
+    },
+    {
+      "id": "invalid_addr_rejected",
+      "description": "runLatencyFixture rejects a non-host:port address with FIXTURE_TARGET_ADDR_INVALID.",
+      "status": "PASS",
+      "evidence": "TestRunLatencyFixtureInvalidAddr: FIXTURE_TARGET_ADDR_INVALID returned"
+    },
+    {
+      "id": "url_with_path_rejected",
+      "description": "runLatencyFixture rejects a URL with a path segment with FIXTURE_TARGET_ADDR_MUST_BE_HOST_PORT.",
+      "status": "PASS",
+      "evidence": "TestRunLatencyFixtureURLRejected: FIXTURE_TARGET_ADDR_MUST_BE_HOST_PORT returned"
+    },
+    {
+      "id": "unreachable_target_rejected",
+      "description": "runLatencyFixture returns FIXTURE_TARGET_UNREACHABLE when all TCP dials fail.",
+      "status": "PASS",
+      "evidence": "TestRunLatencyFixtureUnreachable: FIXTURE_TARGET_UNREACHABLE returned (127.0.0.1:1)"
+    },
+    {
+      "id": "receipt_signature_verifiable",
+      "description": "WorkloadReceipt node signature can be re-verified from the node public key over canonical JSON.",
+      "status": "PASS",
+      "evidence": "TestReceiptSignatureVerifiable: ed25519.Verify(pub, canonical, sig) == true"
+    },
+    {
+      "id": "tampered_receipt_signature_fails",
+      "description": "Mutating a receipt field after signing causes signature verification to fail.",
+      "status": "PASS",
+      "evidence": "TestReceiptTamperedSignatureFails: ed25519.Verify returns false after field mutation"
+    },
+    {
+      "id": "unsupported_adapter_cannot_run",
+      "description": "DispatchAdapter returns ADAPTER_UNSUPPORTED for render-v1 (GPU required).",
+      "status": "PASS",
+      "evidence": "TestDispatchAdapterUnsupported: ADAPTER_UNSUPPORTED returned"
+    },
+    {
+      "id": "consent_required_to_run_adapter",
+      "description": "DispatchAdapter rejects runAdapter without explicitConsent=true.",
+      "status": "PASS",
+      "evidence": "TestDispatchAdapterConsentRequired: ADAPTER_CONSENT_REQUIRED returned"
+    },
+    {
+      "id": "unknown_dispatch_action_not_handled",
+      "description": "DispatchAdapter returns handled=false for unknown actions.",
+      "status": "PASS",
+      "evidence": "TestDispatchUnknownAction: handled=false"
+    },
+    {
+      "id": "receipt_list_returns_recorded_receipts",
+      "description": "listWorkloadReceipts returns all receipts produced in the session.",
+      "status": "PASS",
+      "evidence": "TestListWorkloadReceipts: count >= 2 after 2 fixture runs"
+    },
+    {
+      "id": "canonical_json_is_deterministic",
+      "description": "canonicalJSON produces identical byte sequences for identical inputs with sorted keys.",
+      "status": "PASS",
+      "evidence": "TestCanonicalJSONDeterministic: b1==b2 and starts with {\"a\""
+    },
+    {
+      "id": "linux_os_matches_ubuntu_catalog_entries",
+      "description": "containsPrefix matches GOOS=linux against catalog entries declaring ubuntu-*.",
+      "status": "PASS",
+      "evidence": "TestContainsPrefixLinuxUbuntu: containsPrefix([ubuntu-22.04,...], linux) == true"
+    },
+    {
+      "id": "receipt_persisted_to_disk",
+      "description": "persistReceipt writes a JSON file at receiptDir/receipt-<id>.json.",
+      "status": "PASS",
+      "evidence": "TestReceiptPersistence: file exists at expected path"
+    },
+    {
+      "id": "observed_at_is_fresh",
+      "description": "Receipt measuredValue.observedAt parses as a recent RFC3339Nano timestamp (within 30s).",
+      "status": "PASS",
+      "evidence": "TestReceiptObservedAtIsFresh: time.Since(ts) < 30s"
+    },
+    {
+      "id": "scope_routing_includes_manage_adapter",
+      "description": "scopeFor returns MANAGE_ADAPTER for listAdapters, getAdapter, runAdapter, listWorkloadReceipts.",
+      "status": "PASS",
+      "evidence": "Code inspection: agent.go scopeFor updated; all four actions map to MANAGE_ADAPTER"
+    },
+    {
+      "id": "android_scopes_include_manage_adapter",
+      "description": "NodeProtocol.SCOPES includes MANAGE_ADAPTER; ACTIONS includes all four adapter actions.",
+      "status": "PASS",
+      "evidence": "Code inspection: NodeProtocol.kt SCOPES and ACTIONS updated"
+    },
+    {
+      "id": "fixture_receipt_not_provider_acknowledged",
+      "description": "Fixture receipts carry providerAcknowledgement.available=false and isQualificationFixture=true.",
+      "status": "PASS",
+      "evidence": "TestRunLatencyFixtureSuccess: providerAcknowledgement.available=false verified"
+    },
+    {
+      "id": "skr_integration_blocked_in_catalog",
+      "description": "All catalog entries have skrIntegration.status=BLOCKED.",
+      "status": "PASS",
+      "evidence": "fixtures/project-catalog-v1.json: all 6 entries have status=BLOCKED in skrIntegration"
+    },
+    {
+      "id": "unsupported_hardware_entries_present",
+      "description": "Catalog entries requiring GPS radio, dashcam, or GPU are marked UNSUPPORTED with explicit blockedReason.",
+      "status": "PASS",
+      "evidence": "helium-iot, hivemapper, render, geodnet all have status=UNSUPPORTED with blockedReason"
+    }
+  ],
+  "limitations": [
+    "All checks use the local qualification fixture only. No external DePIN provider integration was tested.",
+    "isQualificationFixture=true: receipts produced here are not provider-acknowledged contribution.",
+    "NODE_SIGNED_RECORD evidence level: the node signed its local observation. Not independently verified by a third party.",
+    "PROVIDER_ACKNOWLEDGED_CONTRIBUTION level is not achieved; that requires a live external provider with a verified counterparty.",
+    "No Android device test: the Android UI was compiled and the routing was added, but no on-device execution was performed.",
+    "SKR integration is BLOCKED for all adapters: no verified SKR interface or counterparty exists.",
+    "RAM and disk capacity are not measured in the compatibility check; declared minimums are cross-checked only against CPU count, OS, and arch.",
+    "No mainnet spending, token issuance, deployment, or git push was performed."
+  ],
+  "evidenceLevel": "LOCAL_OBSERVATION",
+  "trustAssumptions": [
+    "Test host is running linux/amd64 with Go 1.26.4",
+    "fixtures/project-catalog-v1.json was authored from official project documentation as of 2026-10-07",
+    "The node-agent Ed25519 signing path is the same path used at runtime"
+  ]
+}
