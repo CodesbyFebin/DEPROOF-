@@ -180,6 +180,26 @@
  <string name="route_nodes">Nodes</string>
  <string name="route_bandwidth">Bandwidth</string>
  <string name="route_proofs">Proof jobs</string>
+ <string name="route_projects">Projects</string>
+ <string name="projects_heading">DePIN Project Catalog</string>
+ <string name="projects_note">Status reflects local observation only. No partnerships implied. Adapters requiring specialized hardware are UNSUPPORTED. SKR integration is BLOCKED for all entries pending a verified interface.</string>
+ <string name="projects_catalog_version">Catalog version</string>
+ <string name="projects_observe_adapters">Observe adapters</string>
+ <string name="projects_run_fixture">Run fixture (local only)</string>
+ <string name="projects_list_receipts">List workload receipts</string>
+ <string name="projects_adapter_id">Adapter ID</string>
+ <string name="projects_status">Status</string>
+ <string name="projects_compatible">Compatible</string>
+ <string name="projects_incompatible">Incompatible</string>
+ <string name="projects_blocked">Blocked</string>
+ <string name="projects_target_addr">Fixture target (host:port)</string>
+ <string name="projects_consent_label">I understand this is a local qualification fixture, not real DePIN contribution. I authorise the TCP connection.</string>
+ <string name="projects_receipt_evidence_level">Evidence level</string>
+ <string name="projects_receipt_fixture_label">Fixture label</string>
+ <string name="projects_receipt_observed_at">Observed at</string>
+ <string name="projects_receipt_node_signed">Node-signed (not provider-acknowledged)</string>
+ <string name="projects_no_receipts">No workload receipts recorded yet.</string>
+ <string name="projects_skr_status">SKR integration: BLOCKED for all entries — no verified interface or counterparty.</string>
  <string name="language_heading">App language</string>
  <string name="language_scope">English and Spanish interface. Protocol codes, exact signed records and your own content remain unchanged. Translation review and device accessibility are not yet qualified.</string>
 

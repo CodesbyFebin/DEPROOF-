@@ -19,6 +19,7 @@ fun languageContext(context: Context,tag: String): Context {
 @Composable fun routeLabel(route: String): String=stringResource(when(route) {
     "Now"->R.string.route_now;"Review"->R.string.route_review;"Receipts"->R.string.ui_60a627df404a
     "Nodes"->R.string.route_nodes;"Bandwidth"->R.string.route_bandwidth;"Proof jobs"->R.string.route_proofs
+    "Projects"->R.string.route_projects
     else->R.string.ui_b3a60e61a523
 })
 @Composable fun LanguageControls(context: Context) {
