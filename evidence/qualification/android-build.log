@@ -28,12 +28,17 @@ COMMAND: bash ./gradlew testDebugUnitTest --stacktrace
 > Task :app:compileDebugUnitTestKotlin UP-TO-DATE
 > Task :app:javaPreCompileDebugUnitTest UP-TO-DATE
 > Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:packageDebugUnitTestForUnitTest UP-TO-DATE
+> Task :app:processDebugUnitTestManifest UP-TO-DATE
+> Task :app:generateDebugUnitTestConfig UP-TO-DATE
 > Task :app:processDebugJavaRes UP-TO-DATE
 > Task :app:processDebugUnitTestJavaRes UP-TO-DATE
 > Task :app:testDebugUnitTest UP-TO-DATE
 
-BUILD SUCCESSFUL in 4s
-28 actionable tasks: 28 up-to-date
+BUILD SUCCESSFUL in 2s
+32 actionable tasks: 32 up-to-date
 Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.3.1/userguide/configuration_cache_enabling.html
 COMMAND: bash ./gradlew assembleDebug --stacktrace
 > Task :app:preBuild UP-TO-DATE
@@ -114,14 +119,14 @@ COMMAND: bash ./gradlew lintDebug --stacktrace
 > Task :app:extractProguardFiles UP-TO-DATE
 > Task :app:generateDebugLintReportModel UP-TO-DATE
 > Task :app:preDebugUnitTestBuild UP-TO-DATE
-> Task :app:generateDebugUnitTestLintModel UP-TO-DATE
+> Task :app:generateDebugUnitTestLintModel
 > Task :app:lintAnalyzeDebug UP-TO-DATE
 > Task :app:lintAnalyzeDebugAndroidTest UP-TO-DATE
-> Task :app:lintAnalyzeDebugUnitTest UP-TO-DATE
+> Task :app:lintAnalyzeDebugUnitTest
 > Task :app:lintReportDebug UP-TO-DATE
 > Task :app:lintDebug
 
-BUILD SUCCESSFUL in 1s
-30 actionable tasks: 1 executed, 29 up-to-date
+BUILD SUCCESSFUL in 5s
+30 actionable tasks: 3 executed, 27 up-to-date
 Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.3.1/userguide/configuration_cache_enabling.html
-64cd7d377a33385156013c61c61528ac7a5f07690fe7d340d19eeafd5ce72ab2  app/build/outputs/apk/debug/app-debug.apk
+cfcfb2fecb7175746c0f62b7b05f7c2edacd7fba6e8d3efdec13ca7358bd0a5c  app/build/outputs/apk/debug/app-debug.apk

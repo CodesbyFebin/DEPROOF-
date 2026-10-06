@@ -3868,9 +3868,7 @@
       "tests": [
         "scripts/browser/qualify.mjs"
       ],
-      "evidencePaths": [
-        "evidence/qualification/browser/report.json"
-      ],
+      "evidencePaths": [],
       "remainingReasons": [
         "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
       ]
@@ -3952,9 +3950,7 @@
       "tests": [
         "scripts/browser/qualify.mjs"
       ],
-      "evidencePaths": [
-        "evidence/qualification/browser/report.json"
-      ],
+      "evidencePaths": [],
       "remainingReasons": [
         "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
       ]

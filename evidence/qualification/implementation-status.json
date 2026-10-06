@@ -1,7 +1,7 @@
 {
   "sourceManifest": "evidence/qualification/source-before.json",
   "schema": "deproof-implementation-status-v1",
-  "generatedAt": "2026-10-06T10:06:35.093220+00:00",
+  "generatedAt": "2026-10-06T10:33:05.929524+00:00",
   "product": "Deproof",
   "mark": "DEPR",
   "credit": "Built by CodesbyFebin",
@@ -49,7 +49,7 @@
         "python3",
         "scripts/qualify-core.py"
       ],
-      "ranAt": "2026-10-06T09:59:59.645834+00:00"
+      "ranAt": "2026-10-06T10:31:36.772469+00:00"
     },
     {
       "gate": "android-build",
@@ -58,7 +58,7 @@
       "command": [
         "scripts/qualify-android.sh"
       ],
-      "ranAt": "2026-10-06T10:00:07.607131+00:00"
+      "ranAt": "2026-10-06T10:31:46.937120+00:00"
     },
     {
       "gate": "node-tests",
@@ -67,7 +67,7 @@
       "command": [
         "scripts/qualify-node.sh"
       ],
-      "ranAt": "2026-10-06T10:00:13.420059+00:00"
+      "ranAt": "2026-10-06T10:31:51.698276+00:00"
     },
     {
       "gate": "prover-tests",
@@ -76,7 +76,7 @@
       "command": [
         "scripts/qualify-prover.sh"
       ],
-      "ranAt": "2026-10-06T10:00:18.313221+00:00"
+      "ranAt": "2026-10-06T10:31:55.465056+00:00"
     },
     {
       "gate": "verifier-tests",
@@ -92,7 +92,7 @@
         "-p",
         "test_*.py"
       ],
-      "ranAt": "2026-10-06T10:00:18.714043+00:00"
+      "ranAt": "2026-10-06T10:31:55.861051+00:00"
     },
     {
       "gate": "localization-catalogs",
@@ -102,7 +102,7 @@
         "python3",
         "scripts/qualify-localization.py"
       ],
-      "ranAt": "2026-10-06T10:00:18.876546+00:00"
+      "ranAt": "2026-10-06T10:31:56.005305+00:00"
     },
     {
       "gate": "hosting-isolation",
@@ -112,7 +112,7 @@
         "python3",
         "scripts/qualify-hosting.py"
       ],
-      "ranAt": "2026-10-06T10:00:28.870609+00:00"
+      "ranAt": "2026-10-06T10:32:05.679435+00:00"
     },
     {
       "gate": "node-integration",
@@ -124,7 +124,7 @@
         "python3",
         "scripts/qualify-integration.py"
       ],
-      "ranAt": "2026-10-06T10:01:06.405295+00:00"
+      "ranAt": "2026-10-06T10:32:40.516418+00:00"
     },
     {
       "gate": "rpc-read-only",
@@ -134,7 +134,7 @@
         "python3",
         "scripts/qualify-rpc.py"
       ],
-      "ranAt": "2026-10-06T10:01:07.831027+00:00"
+      "ranAt": "2026-10-06T10:32:41.837809+00:00"
     },
     {
       "gate": "coverage-reconciliation",
@@ -144,7 +144,7 @@
         "python3",
         "scripts/reconcile-coverage.py"
       ],
-      "ranAt": "2026-10-06T10:01:08.055162+00:00"
+      "ranAt": "2026-10-06T10:32:42.068633+00:00"
     },
     {
       "gate": "backlog-priorities",
@@ -154,7 +154,7 @@
         "python3",
         "scripts/prioritize-uncovered.py"
       ],
-      "ranAt": "2026-10-06T10:01:08.172932+00:00"
+      "ranAt": "2026-10-06T10:32:42.188579+00:00"
     },
     {
       "gate": "registry-checks",
@@ -164,7 +164,7 @@
         "python3",
         "scripts/check-registries.py"
       ],
-      "ranAt": "2026-10-06T10:01:08.304139+00:00"
+      "ranAt": "2026-10-06T10:32:42.318691+00:00"
     },
     {
       "gate": "web-build",
@@ -174,7 +174,7 @@
         "python3",
         "scripts/build-web.py"
       ],
-      "ranAt": "2026-10-06T10:01:08.447236+00:00"
+      "ranAt": "2026-10-06T10:32:42.459486+00:00"
     },
     {
       "gate": "web-checks",
@@ -184,7 +184,7 @@
         "python3",
         "scripts/qualify-web.py"
       ],
-      "ranAt": "2026-10-06T10:01:10.276695+00:00"
+      "ranAt": "2026-10-06T10:32:44.061010+00:00"
     },
     {
       "gate": "browser-checks",
@@ -194,7 +194,7 @@
         "node",
         "scripts/browser/qualify.mjs"
       ],
-      "ranAt": "2026-10-06T10:01:32.412562+00:00"
+      "ranAt": "2026-10-06T10:33:05.435924+00:00"
     },
     {
       "gate": "coverage-reconciliation",
@@ -204,7 +204,7 @@
         "python3",
         "scripts/reconcile-coverage.py"
       ],
-      "ranAt": "2026-10-06T10:01:32.559054+00:00"
+      "ranAt": "2026-10-06T10:33:05.581407+00:00"
     },
     {
       "gate": "backlog-priorities",
@@ -214,7 +214,7 @@
         "python3",
         "scripts/prioritize-uncovered.py"
       ],
-      "ranAt": "2026-10-06T10:01:32.672266+00:00"
+      "ranAt": "2026-10-06T10:33:05.696978+00:00"
     }
   ],
   "blockers": [
@@ -274,25 +274,25 @@
     {
       "path": "app/build/outputs/apk/debug/app-debug.apk",
       "kind": "debug-apk",
-      "sha256": "64cd7d377a33385156013c61c61528ac7a5f07690fe7d340d19eeafd5ce72ab2",
-      "bytes": "18187351"
+      "sha256": "cfcfb2fecb7175746c0f62b7b05f7c2edacd7fba6e8d3efdec13ca7358bd0a5c",
+      "bytes": "18255638"
     },
     {
       "path": "node-agent/build/deproof-node",
       "kind": "darwin-amd64-node-binary",
-      "sha256": "780d0a2d360425d585bfe26216341f6b005c30cb8031f17adcc3281945b088b2",
+      "sha256": "075634471fa1ba41507aa201ff8e0f1f090464a3b445561fa7d31ea63646a17b",
       "bytes": "10730048"
     },
     {
       "path": "prover-worker/build/prove",
       "kind": "local-proof-producer",
-      "sha256": "6827a818c67677e243f92a9c3759d5429cd73a5a8afe36c95cab5eb7602b0985",
+      "sha256": "1fcf445acbc611979f9c9a8722798a522094893870af64da991d4471003d6f7f",
       "bytes": "16556848"
     },
     {
       "path": "prover-worker/build/verify",
       "kind": "independent-proof-verifier",
-      "sha256": "be80d05954fb7e0bc0107ea0a8fc5d6960c15a43c2c9c200fe9f057f39839621",
+      "sha256": "98c2a984c9288bb7263522236aef99bd631ed0d2072df9a72348082f1909c02b",
       "bytes": "9640336"
     },
     {
@@ -488,6 +488,42 @@
       "bytes": "164"
     },
     {
+      "path": "prover-worker/build/qualified-result-20261006T102755Z-80241/circuit.r1cs",
+      "kind": "local-proof-artifact",
+      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
+      "bytes": "867"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T102755Z-80241/verification-key.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "4f72e40ca93b1ac7d68a1e55accaa8120cbbefe0882ccf07b712fcb9c9261df2",
+      "bytes": "364"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T102755Z-80241/proving-key.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "bf69344e36048f495633d43ec779a08de0b4efc3782d1f1bd1bd1e50f1eb13bd",
+      "bytes": "1027"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T102755Z-80241/public-witness.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
+      "bytes": "44"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T102755Z-80241/manifest.json",
+      "kind": "local-proof-artifact",
+      "sha256": "0adea5a2db65a0e5110b401ef7840522539ee6fc13d78313dd67ecbcc5416c33",
+      "bytes": "695"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T102755Z-80241/proof.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "b9afef0b7198c2787063ab08f4c04938f2f47ba237d3e708cdf582f5ec817b36",
+      "bytes": "164"
+    },
+    {
       "path": "prover-worker/build/qualified-result-20261006T051908Z-60750/circuit.r1cs",
       "kind": "local-proof-artifact",
       "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
@@ -665,6 +701,42 @@
       "path": "prover-worker/build/qualified-result-20261006T084931Z-72962/proof.bin",
       "kind": "local-proof-artifact",
       "sha256": "dcc29a780b8cdc1fe439817d9fa4b0af7d3ace1d932b4f5dc53de85797cee0ea",
+      "bytes": "164"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T103155Z-80685/circuit.r1cs",
+      "kind": "local-proof-artifact",
+      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
+      "bytes": "867"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T103155Z-80685/verification-key.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "a3f625278f5e62074e702c2f30de096aea8186b8952f4ad58a7bfd7bb7d0acd1",
+      "bytes": "364"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T103155Z-80685/proving-key.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "d88e9874d03058f22f0ce9e19ae9b9f669ec33b0e17decca1587f9d93fa64080",
+      "bytes": "1027"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T103155Z-80685/public-witness.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
+      "bytes": "44"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T103155Z-80685/manifest.json",
+      "kind": "local-proof-artifact",
+      "sha256": "5254c87be33ee17eebd4371e73583845f0ea3898f857ccdcdd56ec4494234080",
+      "bytes": "695"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T103155Z-80685/proof.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "857b167e8b88808c5c1e32658c906d374c27294b8774293621a366c69ffbe579",
       "bytes": "164"
     },
     {
@@ -892,8 +964,8 @@
     {
       "path": "evidence/qualification/deproof-source-snapshot.zip",
       "kind": "local-source-snapshot",
-      "sha256": "90823f39b8b38f336adb125146fb2b8c1ec46841e021bfe64b09e4f79eee07b8",
-      "bytes": "16944652"
+      "sha256": "c4195a66b846dc0e501e089d6872252098cb9c256f26239cef1aa2a09f669be0",
+      "bytes": "16956670"
     }
   ],
   "coverage": {
@@ -1015,7 +1087,6 @@
           "C012"
         ],
         "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
           "tools/jvm/LiveRpcProbe.kt"
         ],
         "qualificationDimensions": [
@@ -1242,7 +1313,6 @@
           "C012"
         ],
         "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
           "tools/jvm/LiveRpcProbe.kt"
         ],
         "qualificationDimensions": [
@@ -3919,7 +3989,8 @@
         ],
         "tests": [
           "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
-          "tools/test_migrations.py"
+          "app/src/test/java/com/example/domain/NodeProtocolTest.kt::legacyDigestAndFirstSeenIndicatorsNeverGrantTrust",
+          "app/src/test/java/com/example/domain/NodeProtocolTest.kt::legacySignatureUsesRawDigestBytesNotHexOrBase64"
         ],
         "qualificationDimensions": [
           "VERIFIED_LOCAL",
@@ -4450,10 +4521,7 @@
           "C075",
           "C076"
         ],
-        "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
-          "tools/test_migrations.py"
-        ],
+        "tests": [],
         "qualificationDimensions": [
           "VERIFIED_LOCAL",
           "NOT_RUN"
@@ -5403,7 +5471,6 @@
         "dependencies": [],
         "checks": [],
         "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
           "scripts/qualify-integration.py"
         ],
         "qualificationDimensions": [
@@ -5537,7 +5604,6 @@
         "dependencies": [],
         "checks": [],
         "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
           "scripts/qualify-integration.py"
         ],
         "qualificationDimensions": [
@@ -5938,8 +6004,10 @@
           "C100"
         ],
         "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
-          "tools/test_migrations.py"
+          "app/src/test/java/com/example/domain/BackupTest.kt::roundTripRestoresExactBytes",
+          "app/src/test/java/com/example/domain/BackupTest.kt::tamperedCiphertextIsRefused",
+          "app/src/test/java/com/example/domain/BackupTest.kt::tamperedSaltIsRefusedBecauseTheHeaderIsAuthenticated",
+          "app/src/test/java/com/example/domain/BackupTest.kt::wrongPassphraseIsRefused"
         ],
         "qualificationDimensions": [
           "VERIFIED_LOCAL",
@@ -6150,7 +6218,6 @@
         "dependencies": [],
         "checks": [],
         "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
           "tools/jvm/LiveRpcProbe.kt"
         ],
         "qualificationDimensions": [
@@ -6361,7 +6428,6 @@
         "dependencies": [],
         "checks": [],
         "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
           "tools/jvm/LiveRpcProbe.kt"
         ],
         "qualificationDimensions": [
@@ -10717,7 +10783,6 @@
         "dependencies": [],
         "checks": [],
         "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
           "tools/jvm/LiveRpcProbe.kt"
         ],
         "qualificationDimensions": [
@@ -12070,7 +12135,8 @@
         "dependencies": [],
         "checks": [],
         "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+          "app/src/test/java/com/example/data/RoomStoreTest.kt::createTaskRefusesBlankTitleAndTooManyRequirements",
+          "app/src/test/java/com/example/data/RoomStoreTest.kt::createdTaskIsPersistedWithItsRequirements",
           "tools/test_migrations.py"
         ],
         "qualificationDimensions": [
@@ -12106,8 +12172,8 @@
         "dependencies": [],
         "checks": [],
         "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
-          "tools/test_migrations.py"
+          "app/src/test/java/com/example/data/RoomStoreTest.kt::attachmentKeepsDigestAndIsAssociatedWithItsTask",
+          "app/src/test/java/com/example/data/RoomStoreTest.kt::attachmentToMissingTaskIsRejectedByForeignKey"
         ],
         "qualificationDimensions": [
           "VERIFIED_LOCAL",
@@ -12206,10 +12272,7 @@
         ],
         "dependencies": [],
         "checks": [],
-        "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
-          "tools/test_migrations.py"
-        ],
+        "tests": [],
         "qualificationDimensions": [
           "VERIFIED_LOCAL",
           "NOT_RUN"
@@ -13220,7 +13283,11 @@
         "evidencePaths": [],
         "dependencies": [],
         "checks": [],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/ProofJobTest.kt::compatibleJobMatchesWithNoMismatch",
+          "app/src/test/java/com/example/domain/ProofJobTest.kt::eachMismatchIsReportedExplicitly",
+          "app/src/test/java/com/example/domain/ProofJobTest.kt::incompatibleJobIsNeverReportedAsCompatible"
+        ],
         "implementationPaths": [],
         "qualificationDimensions": [
           "BLOCKED"

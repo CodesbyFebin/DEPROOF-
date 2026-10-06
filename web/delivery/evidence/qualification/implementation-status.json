@@ -1,7 +1,7 @@
 {
   "sourceManifest": "evidence/qualification/source-before.json",
   "schema": "deproof-implementation-status-v1",
-  "generatedAt": "2026-10-06T09:56:35.405885+00:00",
+  "generatedAt": "2026-10-06T10:29:06.822677+00:00",
   "product": "Deproof",
   "mark": "DEPR",
   "credit": "Built by CodesbyFebin",
@@ -32,8 +32,8 @@
     },
     "functions": {
       "VERIFIED": 28,
-      "IMPLEMENTED_UNVERIFIED": 49,
-      "BLOCKED": 9
+      "IMPLEMENTED_UNVERIFIED": 50,
+      "BLOCKED": 8
     },
     "ecosystem-requirements": {
       "IMPLEMENTED_UNVERIFIED": 24,
@@ -43,13 +43,13 @@
   "commands": [
     {
       "gate": "core-tests",
-      "exitCode": 0,
+      "exitCode": 1,
       "log": "evidence/qualification/core-tests.log",
       "command": [
         "python3",
         "scripts/qualify-core.py"
       ],
-      "ranAt": "2026-10-06T09:55:10.531147+00:00"
+      "ranAt": "2026-10-06T10:27:13.182707+00:00"
     },
     {
       "gate": "android-build",
@@ -58,7 +58,7 @@
       "command": [
         "scripts/qualify-android.sh"
       ],
-      "ranAt": "2026-10-06T09:55:16.493200+00:00"
+      "ranAt": "2026-10-06T10:27:46.702268+00:00"
     },
     {
       "gate": "node-tests",
@@ -67,7 +67,7 @@
       "command": [
         "scripts/qualify-node.sh"
       ],
-      "ranAt": "2026-10-06T09:55:21.484526+00:00"
+      "ranAt": "2026-10-06T10:27:51.792350+00:00"
     },
     {
       "gate": "prover-tests",
@@ -76,7 +76,7 @@
       "command": [
         "scripts/qualify-prover.sh"
       ],
-      "ranAt": "2026-10-06T09:55:25.379336+00:00"
+      "ranAt": "2026-10-06T10:27:55.576647+00:00"
     },
     {
       "gate": "verifier-tests",
@@ -92,7 +92,7 @@
         "-p",
         "test_*.py"
       ],
-      "ranAt": "2026-10-06T09:55:25.764851+00:00"
+      "ranAt": "2026-10-06T10:27:56.224849+00:00"
     },
     {
       "gate": "localization-catalogs",
@@ -102,7 +102,7 @@
         "python3",
         "scripts/qualify-localization.py"
       ],
-      "ranAt": "2026-10-06T09:55:25.899201+00:00"
+      "ranAt": "2026-10-06T10:27:56.390086+00:00"
     },
     {
       "gate": "hosting-isolation",
@@ -112,7 +112,7 @@
         "python3",
         "scripts/qualify-hosting.py"
       ],
-      "ranAt": "2026-10-06T09:55:34.901069+00:00"
+      "ranAt": "2026-10-06T10:28:06.878592+00:00"
     },
     {
       "gate": "node-integration",
@@ -124,7 +124,7 @@
         "python3",
         "scripts/qualify-integration.py"
       ],
-      "ranAt": "2026-10-06T09:56:09.289477+00:00"
+      "ranAt": "2026-10-06T10:28:40.335339+00:00"
     },
     {
       "gate": "rpc-read-only",
@@ -134,7 +134,7 @@
         "python3",
         "scripts/qualify-rpc.py"
       ],
-      "ranAt": "2026-10-06T09:56:10.815843+00:00"
+      "ranAt": "2026-10-06T10:28:41.860772+00:00"
     },
     {
       "gate": "coverage-reconciliation",
@@ -144,7 +144,7 @@
         "python3",
         "scripts/reconcile-coverage.py"
       ],
-      "ranAt": "2026-10-06T09:56:11.052566+00:00"
+      "ranAt": "2026-10-06T10:28:42.093420+00:00"
     },
     {
       "gate": "backlog-priorities",
@@ -154,7 +154,7 @@
         "python3",
         "scripts/prioritize-uncovered.py"
       ],
-      "ranAt": "2026-10-06T09:56:11.180869+00:00"
+      "ranAt": "2026-10-06T10:28:42.212848+00:00"
     },
     {
       "gate": "registry-checks",
@@ -164,7 +164,7 @@
         "python3",
         "scripts/check-registries.py"
       ],
-      "ranAt": "2026-10-06T09:56:11.322534+00:00"
+      "ranAt": "2026-10-06T10:28:42.340579+00:00"
     },
     {
       "gate": "web-build",
@@ -174,7 +174,7 @@
         "python3",
         "scripts/build-web.py"
       ],
-      "ranAt": "2026-10-06T09:56:11.468576+00:00"
+      "ranAt": "2026-10-06T10:28:42.482963+00:00"
     },
     {
       "gate": "web-checks",
@@ -184,7 +184,7 @@
         "python3",
         "scripts/qualify-web.py"
       ],
-      "ranAt": "2026-10-06T09:56:13.126352+00:00"
+      "ranAt": "2026-10-06T10:28:44.218671+00:00"
     },
     {
       "gate": "browser-checks",
@@ -194,7 +194,7 @@
         "node",
         "scripts/browser/qualify.mjs"
       ],
-      "ranAt": "2026-10-06T09:56:34.854405+00:00"
+      "ranAt": "2026-10-06T10:29:06.324322+00:00"
     },
     {
       "gate": "coverage-reconciliation",
@@ -204,7 +204,7 @@
         "python3",
         "scripts/reconcile-coverage.py"
       ],
-      "ranAt": "2026-10-06T09:56:35.012097+00:00"
+      "ranAt": "2026-10-06T10:29:06.472891+00:00"
     },
     {
       "gate": "backlog-priorities",
@@ -214,7 +214,7 @@
         "python3",
         "scripts/prioritize-uncovered.py"
       ],
-      "ranAt": "2026-10-06T09:56:35.128221+00:00"
+      "ranAt": "2026-10-06T10:29:06.586292+00:00"
     }
   ],
   "blockers": [
@@ -274,25 +274,25 @@
     {
       "path": "app/build/outputs/apk/debug/app-debug.apk",
       "kind": "debug-apk",
-      "sha256": "64cd7d377a33385156013c61c61528ac7a5f07690fe7d340d19eeafd5ce72ab2",
-      "bytes": "18187351"
+      "sha256": "cfcfb2fecb7175746c0f62b7b05f7c2edacd7fba6e8d3efdec13ca7358bd0a5c",
+      "bytes": "18255638"
     },
     {
       "path": "node-agent/build/deproof-node",
       "kind": "darwin-amd64-node-binary",
-      "sha256": "5995fecddb72144f0072a2ac5c17f8989d395ce643e83e80ea65c8038e53f7ab",
+      "sha256": "3285f9b22a42302f85cfadbfddb9d2b75b085b74ed0afb73040b12279fe58915",
       "bytes": "10730048"
     },
     {
       "path": "prover-worker/build/prove",
       "kind": "local-proof-producer",
-      "sha256": "b0654133f2c5cc3a8f1393039be0ca1f182cf7f1544d339c7c9d1a911bbdca6c",
+      "sha256": "50dc4777218d7e6f8ef066bf7603def27ff8e16e7330678f4d949e7fddf43c2d",
       "bytes": "16556848"
     },
     {
       "path": "prover-worker/build/verify",
       "kind": "independent-proof-verifier",
-      "sha256": "deee72c256b298cd4baffdfde0f7050aa04972bd78285e29a7eb1b2af14566a4",
+      "sha256": "0254419454120e153f9aaf216189d0ce0e046b28c82f290b7f2ff5be53d4283d",
       "bytes": "9640336"
     },
     {
@@ -380,6 +380,42 @@
       "bytes": "164"
     },
     {
+      "path": "prover-worker/build/qualified-result-20261006T100018Z-78325/circuit.r1cs",
+      "kind": "local-proof-artifact",
+      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
+      "bytes": "867"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T100018Z-78325/verification-key.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "5341af0da53a647338bd259bdad3c15b0a3ef5524ba4456cc03839a8e1f9182c",
+      "bytes": "364"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T100018Z-78325/proving-key.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "b21738cd09c4a2f28d3af31a7fa77e5c1d3d7670fd5899c8468273fd56c924ae",
+      "bytes": "1027"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T100018Z-78325/public-witness.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
+      "bytes": "44"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T100018Z-78325/manifest.json",
+      "kind": "local-proof-artifact",
+      "sha256": "cb88899cc7af43ddef0e1f05a5d83c99ab6fecad03029a29aa111fb21599491d",
+      "bytes": "695"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T100018Z-78325/proof.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "59f291371a5abd6ce22aa79c077c3f0868fe6fc124b69147fa5e24ea3467b0e1",
+      "bytes": "164"
+    },
+    {
       "path": "prover-worker/build/qualified-result-20261006T071930Z-66799/circuit.r1cs",
       "kind": "local-proof-artifact",
       "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
@@ -449,6 +485,42 @@
       "path": "prover-worker/build/qualified-result-20261006T093752Z-75899/proof.bin",
       "kind": "local-proof-artifact",
       "sha256": "154216995f500ffebb1023153476eeefee4ec62940dedb323ce008cdee274d8b",
+      "bytes": "164"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T102755Z-80241/circuit.r1cs",
+      "kind": "local-proof-artifact",
+      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
+      "bytes": "867"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T102755Z-80241/verification-key.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "4f72e40ca93b1ac7d68a1e55accaa8120cbbefe0882ccf07b712fcb9c9261df2",
+      "bytes": "364"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T102755Z-80241/proving-key.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "bf69344e36048f495633d43ec779a08de0b4efc3782d1f1bd1bd1e50f1eb13bd",
+      "bytes": "1027"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T102755Z-80241/public-witness.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
+      "bytes": "44"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T102755Z-80241/manifest.json",
+      "kind": "local-proof-artifact",
+      "sha256": "0adea5a2db65a0e5110b401ef7840522539ee6fc13d78313dd67ecbcc5416c33",
+      "bytes": "695"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T102755Z-80241/proof.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "b9afef0b7198c2787063ab08f4c04938f2f47ba237d3e708cdf582f5ec817b36",
       "bytes": "164"
     },
     {
@@ -856,8 +928,8 @@
     {
       "path": "evidence/qualification/deproof-source-snapshot.zip",
       "kind": "local-source-snapshot",
-      "sha256": "426017b6cfa6f2132ab05166c8301e57da3d97f99ba77dba11d1f6d70a0b924f",
-      "bytes": "16942709"
+      "sha256": "9f3792c4c045f7bf892b7aacc3f814938423604a044bd260f7a4ceb1919c689b",
+      "bytes": "16954508"
     }
   ],
   "coverage": {
@@ -979,7 +1051,6 @@
           "C012"
         ],
         "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
           "tools/jvm/LiveRpcProbe.kt"
         ],
         "qualificationDimensions": [
@@ -1206,7 +1277,6 @@
           "C012"
         ],
         "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
           "tools/jvm/LiveRpcProbe.kt"
         ],
         "qualificationDimensions": [
@@ -3390,21 +3460,15 @@
           "app/src/main/java/com/example/domain/LocalEvidence.kt",
           "app/src/main/java/com/example/MainActivity.kt"
         ],
-        "evidencePaths": [
-          "evidence/qualification/core-tests.log",
-          "evidence/qualification/device-qualification.json"
-        ],
+        "evidencePaths": [],
         "dependencies": [],
         "checks": [],
-        "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt::privatePreviewChecksBytesPathsEncodingAndTypes"
-        ],
+        "tests": [],
         "qualificationDimensions": [
-          "VERIFIED_LOCAL",
           "NOT_RUN"
         ],
         "limitations": [
-          "Only bounded text/plain, Markdown, JSON, JPEG/PNG/WebP previews implemented; unsupported types explicitly refused. Actual Android rendering/accessibility/lifecycle remains NOT_RUN."
+          "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -3478,24 +3542,15 @@
           "tools/verify.py",
           "contracts/location-observation-v1.schema.json"
         ],
-        "evidencePaths": [
-          "evidence/qualification/core-tests.log",
-          "evidence/qualification/verifier-tests.log",
-          "evidence/qualification/device-qualification.json"
-        ],
+        "evidencePaths": [],
         "dependencies": [],
         "checks": [],
-        "tests": [
-          "app/src/test/java/com/example/domain/WorkflowTest.kt::locationConsentDenialAndProvenance",
-          "app/src/test/java/com/example/domain/WorkflowTest.kt::crossLanguageOptionalLocationVectorAndMutation",
-          "tools/test_location.py"
-        ],
+        "tests": [],
         "qualificationDimensions": [
-          "VERIFIED_LOCAL",
           "NOT_RUN"
         ],
         "limitations": [
-          "Consented one-shot foreground approximate location and optional manifest extension implemented; typed freshness/range/provenance and cross-language hash checks pass. Real permission/provider/cancellation/revocation and Android rendering/lifecycle remain NOT_RUN; no physical-truth assertion."
+          "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -3883,7 +3938,8 @@
         ],
         "tests": [
           "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
-          "tools/test_migrations.py"
+          "app/src/test/java/com/example/domain/NodeProtocolTest.kt::legacyDigestAndFirstSeenIndicatorsNeverGrantTrust",
+          "app/src/test/java/com/example/domain/NodeProtocolTest.kt::legacySignatureUsesRawDigestBytesNotHexOrBase64"
         ],
         "qualificationDimensions": [
           "VERIFIED_LOCAL",
@@ -4414,10 +4470,7 @@
           "C075",
           "C076"
         ],
-        "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
-          "tools/test_migrations.py"
-        ],
+        "tests": [],
         "qualificationDimensions": [
           "VERIFIED_LOCAL",
           "NOT_RUN"
@@ -4943,9 +4996,7 @@
           "app/src/main/java/com/example/domain/Explanations.kt",
           "app/src/main/java/com/example/MainActivity.kt"
         ],
-        "evidencePaths": [
-          "evidence/qualification/core-tests.log"
-        ],
+        "evidencePaths": [],
         "dependencies": [],
         "checks": [
           "C089",
@@ -4961,15 +5012,12 @@
           "C099",
           "C100"
         ],
-        "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt::accountEffectsDecodeOnlyExactReadOnlyCreateAccount"
-        ],
+        "tests": [],
         "qualificationDimensions": [
-          "VERIFIED_LOCAL",
           "NOT_RUN"
         ],
         "limitations": [
-          "Read-only exact System CreateAccount layout and policy-approved memo/TransferChecked effects only. Unknown layouts remain unknown/refused; no rent minimum, execution or broader account-creation claim. Android rendering remains NOT_RUN."
+          "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -5026,10 +5074,7 @@
           "app/src/main/java/com/example/MainActivity.kt",
           "app/src/main/java/com/example/domain/LocalEvidence.kt"
         ],
-        "evidencePaths": [
-          "evidence/qualification/core-tests.log",
-          "evidence/qualification/device-qualification.json"
-        ],
+        "evidencePaths": [],
         "dependencies": [],
         "checks": [
           "C089",
@@ -5045,15 +5090,12 @@
           "C099",
           "C100"
         ],
-        "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt::legacyDigestAndFirstSeenIndicatorsNeverGrantTrust"
-        ],
+        "tests": [],
         "qualificationDimensions": [
-          "VERIFIED_LOCAL",
           "NOT_RUN"
         ],
         "limitations": [
-          "Local first-seen classification tested; Android DataStore persistence, rendering and lifecycle remain NOT_RUN. Indicator never changes policy."
+          "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -5110,10 +5152,7 @@
           "app/src/main/java/com/example/MainActivity.kt",
           "app/src/main/java/com/example/domain/Solana.kt"
         ],
-        "evidencePaths": [
-          "evidence/qualification/core-tests.log",
-          "evidence/qualification/device-qualification.json"
-        ],
+        "evidencePaths": [],
         "dependencies": [],
         "checks": [
           "C089",
@@ -5129,15 +5168,12 @@
           "C099",
           "C100"
         ],
-        "tests": [
-          "app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval"
-        ],
+        "tests": [],
         "qualificationDimensions": [
-          "VERIFIED_LOCAL",
           "NOT_RUN"
         ],
         "limitations": [
-          "Existing memo rebuild clears fee approval and requires fresh review; byte/context mutation refusal tested. Expired-blockhash device/wallet flow and exactly-one retry observation remain NOT_RUN."
+          "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -5367,7 +5403,6 @@
         "dependencies": [],
         "checks": [],
         "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
           "scripts/qualify-integration.py"
         ],
         "qualificationDimensions": [
@@ -5398,26 +5433,18 @@
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/WorkflowWorkspace.kt",
-          "app/src/main/java/com/example/domain/Workflows.kt",
-          "app/src/main/java/com/example/data/Store.kt"
+          "app/src/main/java/com/example/data/Store.kt",
+          "app/src/main/java/com/example/domain/Workflows.kt"
         ],
-        "evidencePaths": [
-          "evidence/qualification/core-tests.log",
-          "evidence/qualification/verifier-tests.log",
-          "evidence/qualification/device-qualification.json"
-        ],
+        "evidencePaths": [],
         "dependencies": [],
         "checks": [],
-        "tests": [
-          "app/src/test/java/com/example/domain/WorkflowTest.kt::offlineMappingPlanRoundTripAndBounds",
-          "tools/test_migrations.py::test_new_private_workflow_drafts_survive_reopen_and_replace_atomically"
-        ],
+        "tests": [],
         "qualificationDimensions": [
-          "VERIFIED_LOCAL",
           "NOT_RUN"
         ],
         "limitations": [
-          "Offline ordered user-coordinate planner is persisted and explicitly exported; invalid edits do not replace the saved draft. No route provider, coverage/rewards or observed travel. Android editing/export/reopen/accessibility remain NOT_RUN."
+          "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -5501,7 +5528,6 @@
         "dependencies": [],
         "checks": [],
         "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
           "scripts/qualify-integration.py"
         ],
         "qualificationDimensions": [
@@ -5729,14 +5755,10 @@
         "implementationPaths": [
           "app/src/main/java/com/example/WorkflowWorkspace.kt",
           "app/src/main/java/com/example/data/ReminderRepository.kt",
-          "app/src/main/java/com/example/domain/Workflows.kt",
-          "app/src/main/AndroidManifest.xml"
+          "app/src/main/java/com/example/data/Store.kt",
+          "app/src/main/java/com/example/domain/Workflows.kt"
         ],
-        "evidencePaths": [
-          "evidence/qualification/core-tests.log",
-          "evidence/qualification/verifier-tests.log",
-          "evidence/qualification/device-qualification.json"
-        ],
+        "evidencePaths": [],
         "dependencies": [],
         "checks": [
           "C089",
@@ -5752,16 +5774,12 @@
           "C099",
           "C100"
         ],
-        "tests": [
-          "app/src/test/java/com/example/domain/WorkflowTest.kt::reminderConsentPermissionClockAndReplacement",
-          "tools/test_migrations.py::test_new_private_workflow_drafts_survive_reopen_and_replace_atomically"
-        ],
+        "tests": [],
         "qualificationDimensions": [
-          "VERIFIED_LOCAL",
           "NOT_RUN"
         ],
         "limitations": [
-          "Explicit opt-in, permission-aware inexact scheduling, replacement generations, cancellation/global disable and boot/clock/startup recovery implemented. Local state tests do not establish actual notification delivery, Android lifecycle or provider cooldown eligibility; these remain NOT_RUN. POST_REQUESTED is not delivered."
+          "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -5902,8 +5920,10 @@
           "C100"
         ],
         "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
-          "tools/test_migrations.py"
+          "app/src/test/java/com/example/domain/BackupTest.kt::roundTripRestoresExactBytes",
+          "app/src/test/java/com/example/domain/BackupTest.kt::tamperedCiphertextIsRefused",
+          "app/src/test/java/com/example/domain/BackupTest.kt::tamperedSaltIsRefusedBecauseTheHeaderIsAuthenticated",
+          "app/src/test/java/com/example/domain/BackupTest.kt::wrongPassphraseIsRefused"
         ],
         "qualificationDimensions": [
           "VERIFIED_LOCAL",
@@ -6114,7 +6134,6 @@
         "dependencies": [],
         "checks": [],
         "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
           "tools/jvm/LiveRpcProbe.kt"
         ],
         "qualificationDimensions": [
@@ -6325,7 +6344,6 @@
         "dependencies": [],
         "checks": [],
         "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
           "tools/jvm/LiveRpcProbe.kt"
         ],
         "qualificationDimensions": [
@@ -10681,7 +10699,6 @@
         "dependencies": [],
         "checks": [],
         "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
           "tools/jvm/LiveRpcProbe.kt"
         ],
         "qualificationDimensions": [
@@ -11523,22 +11540,13 @@
           "app/src/main/java/com/example/data/EvidenceSigner.kt",
           "app/src/main/java/com/example/domain/LocalEvidence.kt"
         ],
-        "evidencePaths": [
-          "evidence/qualification/core-tests.log",
-          "evidence/qualification/device-qualification.json"
-        ],
+        "evidencePaths": [],
         "dependencies": [],
         "checks": [],
-        "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt::legacyDigestAndFirstSeenIndicatorsNeverGrantTrust",
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt::legacySignatureUsesRawDigestBytesNotHexOrBase64"
-        ],
-        "qualificationDimensions": [
-          "VERIFIED_LOCAL",
-          "NOT_RUN"
-        ],
+        "tests": [],
+        "qualificationDimensions": [],
         "limitations": [
-          "32 raw bytes, separate legacy alias, DER/SPKI and hardware refusal implemented; local raw/size/signature tests pass. Actual Android hardware-key generation, KeyInfo and signature remain NOT_RUN; no legacy-import workflow claimed."
+          "Full typed contract/required integration remains incomplete."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -11928,26 +11936,18 @@
         "definition": "`rebuildExpiredTransaction(previous)` — new draft that invalidates previous approval.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
-          "app/src/main/java/com/example/MainActivity.kt",
-          "app/src/main/java/com/example/domain/Solana.kt"
+          "app/src/main/java/com/example/MainActivity.kt"
         ],
-        "evidencePaths": [
-          "evidence/qualification/core-tests.log",
-          "evidence/qualification/device-qualification.json"
-        ],
+        "evidencePaths": [],
         "dependencies": [],
         "checks": [],
         "tests": [
-          "app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval",
           "app/src/test/java/com/example/domain/PolicyTest.kt::rebuildProducesANewDevnetMessageForTheSameAccount",
           "app/src/test/java/com/example/domain/PolicyTest.kt::rebuildRefusesUnchangedBlockhashHistoricalAndNonDevnetReviews"
         ],
-        "qualificationDimensions": [
-          "VERIFIED_LOCAL",
-          "NOT_RUN"
-        ],
+        "qualificationDimensions": [],
         "limitations": [
-          "Existing one-rebuild memo implementation and local binding test; device handoff/reapproval remains NOT_RUN."
+          "Full typed contract/required integration remains incomplete."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -12034,7 +12034,8 @@
         "dependencies": [],
         "checks": [],
         "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+          "app/src/test/java/com/example/data/RoomStoreTest.kt::createTaskRefusesBlankTitleAndTooManyRequirements",
+          "app/src/test/java/com/example/data/RoomStoreTest.kt::createdTaskIsPersistedWithItsRequirements",
           "tools/test_migrations.py"
         ],
         "qualificationDimensions": [
@@ -12070,8 +12071,8 @@
         "dependencies": [],
         "checks": [],
         "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
-          "tools/test_migrations.py"
+          "app/src/test/java/com/example/data/RoomStoreTest.kt::attachmentKeepsDigestAndIsAssociatedWithItsTask",
+          "app/src/test/java/com/example/data/RoomStoreTest.kt::attachmentToMissingTaskIsRejectedByForeignKey"
         ],
         "qualificationDimensions": [
           "VERIFIED_LOCAL",
@@ -12170,10 +12171,7 @@
         ],
         "dependencies": [],
         "checks": [],
-        "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
-          "tools/test_migrations.py"
-        ],
+        "tests": [],
         "qualificationDimensions": [
           "VERIFIED_LOCAL",
           "NOT_RUN"
@@ -12322,25 +12320,18 @@
       {
         "id": "FN061",
         "definition": "`explainPacket(packet, consent, providerConfig)` — optional consented explanation or NOT_CONFIGURED/GROK_NOT_CALLED/PROVIDER_ERROR; never changes authorization. Provider integration is staged, not a core network dependency.",
-        "status": "BLOCKED",
+        "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Explanations.kt",
           "app/src/main/java/com/example/MainActivity.kt"
         ],
-        "evidencePaths": [
-          "evidence/qualification/core-tests.log"
-        ],
+        "evidencePaths": [],
         "dependencies": [],
         "checks": [],
-        "tests": [
-          "app/src/test/java/com/example/domain/NodeProtocolTest.kt::stagedExplanationNeverTransmitsOrChangesAuthorization"
-        ],
-        "qualificationDimensions": [
-          "VERIFIED_LOCAL",
-          "BLOCKED"
-        ],
+        "tests": [],
+        "qualificationDimensions": [],
         "limitations": [
-          "Only configuration/consent/blocked-adapter error paths are implemented and tested; no qualified provider adapter or outbound request exists. External provider integration remains blocked, not complete. Authorization unchanged."
+          "Full typed contract/required integration remains incomplete."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -13184,7 +13175,11 @@
         "evidencePaths": [],
         "dependencies": [],
         "checks": [],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/ProofJobTest.kt::compatibleJobMatchesWithNoMismatch",
+          "app/src/test/java/com/example/domain/ProofJobTest.kt::eachMismatchIsReportedExplicitly",
+          "app/src/test/java/com/example/domain/ProofJobTest.kt::incompatibleJobIsNeverReportedAsCompatible"
+        ],
         "implementationPaths": [],
         "qualificationDimensions": [
           "BLOCKED"
