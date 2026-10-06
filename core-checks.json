@@ -4261,7 +4261,10 @@
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
-      "tests": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/PolicyTest.kt::firstRebuildIsAllowedAndASecondIsNot",
+        "app/src/test/java/com/example/domain/PolicyTest.kt::rebuiltDraftDoesNotInheritThePriorApproval"
+      ],
       "qualificationDimensions": [
         "NOT_RUN"
       ],

@@ -72,7 +72,12 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 3
+   "order": 3,
+   "localTestEvidence": [
+    "app/src/test/java/com/example/domain/PolicyTest.kt::firstRebuildIsAllowedAndASecondIsNot",
+    "app/src/test/java/com/example/domain/PolicyTest.kt::rebuiltDraftDoesNotInheritThePriorApproval"
+   ],
+   "localTestEvidenceNote": "Local: rebuild allowance and no-reuse. Device: real blockhash expiry walkthrough still NOT_RUN."
   },
   {
    "id": "F040",
@@ -140,10 +145,9 @@
    "testsListed": 0,
    "order": 6,
    "localTestEvidence": [
-    "app/src/test/java/com/example/domain/ReviewBindingTest.kt::storedHashesAreUnaffectedByCallerBufferChanges",
-    "app/src/test/java/com/example/domain/ReviewBindingTest.kt::messageHashIsIndependentOfReviewContextButContextHashIsNot"
+    "app/src/test/java/com/example/domain/ReviewBindingTest.kt::storedHashesAreUnaffectedByCallerBufferChanges"
    ],
-   "localTestEvidenceNote": "Candidate coverage added or found locally in unit tests (31 tests passing, testDebugUnitTest). Registry status NOT changed; device acceptance still required where listed."
+   "localTestEvidenceNote": "Local unit test of the logic; registry status unchanged."
   },
   {
    "id": "F046",
@@ -165,10 +169,10 @@
    "order": 7,
    "localTestEvidence": [
     "app/src/test/java/com/example/domain/ReviewBindingTest.kt::reviewTimestampChangeIsRejected",
-    "app/src/test/java/com/example/domain/ReviewBindingTest.kt::feeAndBlockHeightChangesAreRejected",
-    "app/src/test/java/com/example/domain/ReviewBindingTest.kt::signingGateRefusesWalletAccountThatIsNotTheFeePayer"
+    "app/src/test/java/com/example/domain/ReviewBindingTest.kt::signingGateRefusesWalletAccountThatIsNotTheFeePayer",
+    "app/src/test/java/com/example/domain/CoreTest.kt::memoParserAndImmutableMessageContextMutations"
    ],
-   "localTestEvidenceNote": "Candidate coverage added or found locally in unit tests (31 tests passing, testDebugUnitTest). Registry status NOT changed; device acceptance still required where listed."
+   "localTestEvidenceNote": "Local unit test of the logic; registry status unchanged."
   },
   {
    "id": "F047",
@@ -191,7 +195,7 @@
    "localTestEvidence": [
     "app/src/test/java/com/example/domain/ReviewBindingTest.kt::signingGateRefusesMessageChangedAfterReview"
    ],
-   "localTestEvidenceNote": "Candidate coverage added or found locally in unit tests (31 tests passing, testDebugUnitTest). Registry status NOT changed; device acceptance still required where listed."
+   "localTestEvidenceNote": "Local unit test of the logic; registry status unchanged."
   },
   {
    "id": "F048",
@@ -212,10 +216,10 @@
    "testsListed": 0,
    "order": 9,
    "localTestEvidence": [
-    "app/src/test/java/com/example/domain/ReviewBindingTest.kt::reviewTimestampChangeIsRejected",
-    "app/src/test/java/com/example/domain/CoreTest.kt::memoParserAndImmutableMessageContextMutations"
+    "app/src/test/java/com/example/domain/ReviewBindingTest.kt::feeAndBlockHeightChangesAreRejected",
+    "app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval"
    ],
-   "localTestEvidenceNote": "Candidate coverage added or found locally in unit tests (31 tests passing, testDebugUnitTest). Registry status NOT changed; device acceptance still required where listed."
+   "localTestEvidenceNote": "Local unit test of the logic; registry status unchanged."
   },
   {
    "id": "F049",
@@ -251,7 +255,11 @@
     "app/src/main/java/com/example/data/EvidenceSigner.kt"
    ],
    "testsListed": 0,
-   "order": 11
+   "order": 11,
+   "localTestEvidence": [
+    "app/src/test/java/com/example/domain/PolicyTest.kt::onlyHardwareBackedKeyLevelsQualify"
+   ],
+   "localTestEvidenceNote": "Local: key-level policy only. Keystore signing on hardware still NOT_RUN."
   },
   {
    "id": "F067",
@@ -5374,9 +5382,9 @@
   }
  ],
  "localTestRun": {
-  "command": "./gradlew testDebugUnitTest --rerun-tasks",
+  "command": "./gradlew testDebugUnitTest assembleDebug --rerun-tasks",
   "result": "BUILD SUCCESSFUL",
-  "tests": 40,
+  "tests": 43,
   "failures": 0,
   "errors": 0,
   "skipped": 0

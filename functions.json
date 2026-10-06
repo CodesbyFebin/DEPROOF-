@@ -1786,7 +1786,9 @@
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
-      "tests": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/PolicyTest.kt::onlyHardwareBackedKeyLevelsQualify"
+      ],
       "qualificationDimensions": [],
       "limitations": [
         "Full typed contract/required integration remains incomplete."

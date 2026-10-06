@@ -2066,7 +2066,9 @@
         "C087",
         "C088"
       ],
-      "tests": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/ReviewBindingTest.kt::storedHashesAreUnaffectedByCallerBufferChanges"
+      ],
       "qualificationDimensions": [
         "NOT_RUN"
       ],
@@ -2132,7 +2134,11 @@
         "C087",
         "C088"
       ],
-      "tests": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/ReviewBindingTest.kt::reviewTimestampChangeIsRejected",
+        "app/src/test/java/com/example/domain/ReviewBindingTest.kt::signingGateRefusesWalletAccountThatIsNotTheFeePayer",
+        "app/src/test/java/com/example/domain/CoreTest.kt::memoParserAndImmutableMessageContextMutations"
+      ],
       "qualificationDimensions": [
         "NOT_RUN"
       ],
@@ -2195,7 +2201,9 @@
         "C087",
         "C088"
       ],
-      "tests": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/ReviewBindingTest.kt::signingGateRefusesMessageChangedAfterReview"
+      ],
       "qualificationDimensions": [
         "NOT_RUN"
       ],
@@ -2257,7 +2265,10 @@
         "C087",
         "C088"
       ],
-      "tests": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/ReviewBindingTest.kt::feeAndBlockHeightChangesAreRejected",
+        "app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval"
+      ],
       "qualificationDimensions": [
         "NOT_RUN"
       ],
