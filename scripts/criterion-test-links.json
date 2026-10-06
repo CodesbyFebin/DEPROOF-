@@ -69,6 +69,11 @@
       "app/src/test/java/com/example/domain/BackupTest.kt::wrongPassphraseIsRefused",
       "app/src/test/java/com/example/domain/BackupTest.kt::tamperedCiphertextIsRefused",
       "app/src/test/java/com/example/domain/BackupTest.kt::tamperedSaltIsRefusedBecauseTheHeaderIsAuthenticated"
+    ],
+    "EF019": [
+      "app/src/test/java/com/example/domain/ProofJobTest.kt::compatibleJobMatchesWithNoMismatch",
+      "app/src/test/java/com/example/domain/ProofJobTest.kt::eachMismatchIsReportedExplicitly",
+      "app/src/test/java/com/example/domain/ProofJobTest.kt::incompatibleJobIsNeverReportedAsCompatible"
     ]
   }
 }

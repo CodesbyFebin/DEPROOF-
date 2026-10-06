@@ -3488,7 +3488,11 @@
       "status": "BLOCKED",
       "acceptance": null,
       "implementedPaths": [],
-      "namedTests": [],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/ProofJobTest.kt::compatibleJobMatchesWithNoMismatch",
+        "app/src/test/java/com/example/domain/ProofJobTest.kt::eachMismatchIsReportedExplicitly",
+        "app/src/test/java/com/example/domain/ProofJobTest.kt::incompatibleJobIsNeverReportedAsCompatible"
+      ],
       "requiredUncoveredGate": [
         "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
       ]

@@ -3625,7 +3625,11 @@
       "dependencies": [],
       "acceptance": null,
       "implementationPaths": [],
-      "tests": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/ProofJobTest.kt::compatibleJobMatchesWithNoMismatch",
+        "app/src/test/java/com/example/domain/ProofJobTest.kt::eachMismatchIsReportedExplicitly",
+        "app/src/test/java/com/example/domain/ProofJobTest.kt::incompatibleJobIsNeverReportedAsCompatible"
+      ],
       "evidencePaths": [],
       "remainingReasons": [
         "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
