@@ -32,7 +32,7 @@ COMMAND: bash ./gradlew testDebugUnitTest --stacktrace
 > Task :app:processDebugUnitTestJavaRes UP-TO-DATE
 > Task :app:testDebugUnitTest UP-TO-DATE
 
-BUILD SUCCESSFUL in 2s
+BUILD SUCCESSFUL in 4s
 28 actionable tasks: 28 up-to-date
 Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.3.1/userguide/configuration_cache_enabling.html
 COMMAND: bash ./gradlew assembleDebug --stacktrace

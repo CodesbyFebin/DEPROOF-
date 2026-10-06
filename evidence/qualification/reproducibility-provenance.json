@@ -1,16 +1,13 @@
 {
   "schema": "deproof-qualification-provenance-v1",
   "recordedAt": "2026-10-06T09:45:06.985223+00:00",
-  "testedBaseCommit": "6c79aa963f900e42348a742d7c5670cab220e164",
+  "testedBaseCommit": "56092ff84ae89b68f497094c44d34a7a126c4f24",
   "sourceBefore": "evidence/qualification/source-before.json",
   "sourceAfter": "evidence/qualification/source-after.json",
-  "sourceSetBefore": "69fb256c87b0fd58d265dc990f47ae2caf74d731f2ea2b947b869dfd5a755175",
-  "sourceSetAfter": "32dc5cc891313662e29b8d5e5e306aea33d7e1fdc472ba2f3ac39086e0b23a8e",
+  "sourceSetBefore": "8369472f3a07b92166a6697fe7641cc689e384085f90b6fcf67dc55794255a49",
+  "sourceSetAfter": "322be1aa989ac33ba8dd6eddb76c91056bdfc80a9e629094f9206783418d5f12",
   "changedInputs": [
-    "core-checks.json",
     "docs/status.md",
-    "features.json",
-    "functions.json",
     "web/delivery/evidence/qualification/artifact-checksums.txt",
     "web/delivery/evidence/qualification/implementation-status.json",
     "web/delivery/evidence/qualification/qualification-report.md"
@@ -19,7 +16,7 @@
   "generatedChangesOnly": true,
   "artifacts": {
     "app/build/outputs/apk/debug/app-debug.apk": "64cd7d377a33385156013c61c61528ac7a5f07690fe7d340d19eeafd5ce72ab2",
-    "evidence/qualification/deproof-source-snapshot.zip": "c10587fb81144f68609967ea83ce85ec2da76a8c214cebb1a7da4e9c99459e9b",
+    "evidence/qualification/deproof-source-snapshot.zip": "90823f39b8b38f336adb125146fb2b8c1ec46841e021bfe64b09e4f79eee07b8",
     "gradle/wrapper/gradle-wrapper.jar": "b3a875ddc1f044746e1b1a55f645584505f4a10438c1afea9f15e92a7c42ec13"
   },
   "gatesPassed": 15,
