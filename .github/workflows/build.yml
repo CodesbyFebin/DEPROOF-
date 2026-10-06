@@ -7,12 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: android-actions/setup-android@v2
-        with:
-          packages: |
-            build-tools;34.0.0
-            platform-tools
-            platforms;android-34
+      - name: Setup Android SDK
+        run: |
+          echo "y" | ${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager "build-tools;34.0.0" "platform-tools" "platforms;android-34" 2>&1 || true
+        env:
+          ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
       - run: bash deproof-master-build.sh preflight
       - run: MAX_PARALLEL=2 bash deproof-master-build.sh build
       - uses: actions/upload-artifact@v4
