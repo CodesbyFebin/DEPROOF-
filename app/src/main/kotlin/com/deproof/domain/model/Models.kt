@@ -45,6 +45,12 @@ data class Instruction(
     }
 }
 
+data class TransactionInstruction(
+    val programId: String,
+    val accounts: List<String>,
+    val data: String
+)
+
 data class TransferCheckedInstruction(
     val tokenProgramId: String,
     val mint: String,

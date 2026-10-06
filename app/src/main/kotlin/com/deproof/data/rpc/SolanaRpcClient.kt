@@ -14,7 +14,7 @@ class SolanaRpcClient(private val endpoint: RpcEndpoint) {
 
     suspend fun getHealth(): Result<String> = suspendCancellableCoroutine { continuation ->
         try {
-            val result = performRequest("getHealth", emptyList())
+            val result = performRequest("getHealth", emptyList()) as String
             continuation.resume(Result.success(result))
         } catch (e: Exception) {
             continuation.resume(Result.failure(e))

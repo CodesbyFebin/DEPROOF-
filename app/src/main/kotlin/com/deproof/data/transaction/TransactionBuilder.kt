@@ -75,11 +75,24 @@ class TransactionBuilder {
                 return Result.failure(IllegalArgumentException("Fee payer must be set"))
             }
 
+            // Build the Instruction objects from TransactionInstructions
+            val builtInstructions = instructions.map { txInstr ->
+                com.deproof.domain.model.Instruction(
+                    programId = txInstr.programId,
+                    discriminator = 0,
+                    accounts = txInstr.accounts,
+                    data = txInstr.data.toByteArray()
+                )
+            }
+
             Result.success(
                 Transaction(
-                    instructions = instructions.toList(),
-                    feePayer = feePayer,
-                    recentBlockhash = recentBlockhash
+                    signature = "", // Will be populated when signed
+                    blockTime = 0L,
+                    slot = 0L,
+                    status = com.deproof.domain.model.TransactionStatus.PENDING,
+                    instructions = builtInstructions,
+                    accountKeys = (listOf(feePayer!!) + instructions.flatMap { it.accounts }).distinct()
                 )
             )
         } catch (e: Exception) {
