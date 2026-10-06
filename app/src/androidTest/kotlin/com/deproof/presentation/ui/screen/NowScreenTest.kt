@@ -252,8 +252,7 @@ fun MockNowScreenWithTransactionHistory() {
 @androidx.compose.runtime.Composable
 fun MockNowScreenWithRefresh() {
     androidx.compose.foundation.layout.Column {
-        androidx.compose.material3.IconButton(onClick = {}) {
-            androidx.compose.material.icons.Icons.Default.Refresh
+        androidx.compose.material3.Button(onClick = {}) {
             androidx.compose.material3.Text("Refresh")
         }
         androidx.compose.material3.Text("Balance: 100.00 SOL")

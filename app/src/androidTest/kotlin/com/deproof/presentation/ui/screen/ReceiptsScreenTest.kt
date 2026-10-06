@@ -168,10 +168,10 @@ fun MockReceiptDetailScreen() {
         androidx.compose.material3.Text("Transaction Hash")
         androidx.compose.material3.Text("5HpibQW3DsJJWadS2gKbMrMEZA11b2CNz9nwkV4nZYsSomeHashValue123")
         androidx.compose.material3.Text("2024-10-06")
-        androidx.compose.material3.IconButton(onClick = {}) {
+        androidx.compose.material3.Button(onClick = {}) {
             androidx.compose.material3.Text("Export as JSON")
         }
-        androidx.compose.material3.IconButton(onClick = {}) {
+        androidx.compose.material3.Button(onClick = {}) {
             androidx.compose.material3.Text("Copy to Clipboard")
         }
     }
