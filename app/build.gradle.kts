@@ -27,11 +27,34 @@ android {
             useSupportLibrary = true
         }
 
-        // BuildConfig fields
+        // BuildConfig fields (default - production)
         buildConfigField("String", "API_ENDPOINT", "\"https://api.mainnet-beta.solana.com\"")
         buildConfigField("String", "SKR_MINT", "\"SKRbvo6Gf7GoNcKKqqyckfjxN2PEVEqJf3rUKdPbdYu\"")
         buildConfigField("String", "TOKEN_PROGRAM", "\"TokenkegQfeZyiNwAJsyFbPVwwQkYk5LWV2BXVBq\"")
         buildConfigField("String", "BUILD_DATE", "\"${System.currentTimeMillis()}\"")
+        buildConfigField("String", "ENVIRONMENT", "\"production\"")
+    }
+
+    flavorDimensions += "environment"
+
+    productFlavors {
+        create("production") {
+            dimension = "environment"
+            applicationIdSuffix = ""
+            versionNameSuffix = ""
+
+            buildConfigField("String", "API_ENDPOINT", "\"https://api.mainnet-beta.solana.com\"")
+            buildConfigField("String", "ENVIRONMENT", "\"production\"")
+        }
+
+        create("staging") {
+            dimension = "environment"
+            applicationIdSuffix = ".staging"
+            versionNameSuffix = "-staging"
+
+            buildConfigField("String", "API_ENDPOINT", "\"https://api.devnet.solana.com\"")
+            buildConfigField("String", "ENVIRONMENT", "\"staging\"")
+        }
     }
 
     buildTypes {
