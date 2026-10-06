@@ -146,13 +146,14 @@ fun MockReceiptsScreenWithList() {
 
         androidx.compose.foundation.lazy.LazyColumn {
             items(mockReceipts.size) { index ->
-                androidx.compose.foundation.clickable { }
-                    .run {
-                        androidx.compose.foundation.layout.Box(this) {
-                            androidx.compose.material3.Text(mockReceipts[index].instruction)
-                            androidx.compose.material3.Text(mockReceipts[index].id)
-                        }
-                    }
+                androidx.compose.foundation.layout.Box(
+                    modifier = androidx.compose.ui.Modifier
+                        .fillMaxWidth()
+                        .clickable { }
+                ) {
+                    androidx.compose.material3.Text(mockReceipts[index].instruction)
+                    androidx.compose.material3.Text(mockReceipts[index].id)
+                }
             }
         }
     }

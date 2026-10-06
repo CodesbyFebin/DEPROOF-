@@ -106,9 +106,7 @@ class UiPolishTest {
 
 @androidx.compose.runtime.Composable
 fun MockPortraitLayout() {
-    androidx.compose.foundation.layout.Column(
-        modifier = androidx.compose.ui.Modifier.fillMaxSize()
-    ) {
+    androidx.compose.foundation.layout.Column {
         androidx.compose.material3.Text("Portrait Layout")
         androidx.compose.material3.Text("Content Area")
         androidx.compose.material3.Text("Bottom Navigation")
@@ -117,9 +115,7 @@ fun MockPortraitLayout() {
 
 @androidx.compose.runtime.Composable
 fun MockLandscapeLayout() {
-    androidx.compose.foundation.layout.Row(
-        modifier = androidx.compose.ui.Modifier.fillMaxSize()
-    ) {
+    androidx.compose.foundation.layout.Row {
         androidx.compose.foundation.layout.Column(modifier = androidx.compose.ui.Modifier.weight(0.3f)) {
             androidx.compose.material3.Text("Side Panel")
         }
@@ -132,9 +128,7 @@ fun MockLandscapeLayout() {
 
 @androidx.compose.runtime.Composable
 fun MockScrollableInputForm() {
-    androidx.compose.foundation.lazy.LazyColumn(
-        modifier = androidx.compose.ui.Modifier.fillMaxSize()
-    ) {
+    androidx.compose.foundation.lazy.LazyColumn {
         items(5) {
             androidx.compose.material3.OutlinedTextField(
                 value = "",
@@ -177,18 +171,24 @@ fun MockMultipleFontSizes() {
 @androidx.compose.runtime.Composable
 fun MockColoredElements() {
     androidx.compose.foundation.layout.Column {
-        androidx.compose.foundation.background(
-            androidx.compose.material3.MaterialTheme.colorScheme.primary
+        androidx.compose.foundation.layout.Box(
+            modifier = androidx.compose.ui.Modifier.background(
+                androidx.compose.material3.MaterialTheme.colorScheme.primary
+            )
         ) {
             androidx.compose.material3.Text("Primary Color", color = androidx.compose.material3.MaterialTheme.colorScheme.onPrimary)
         }
-        androidx.compose.foundation.background(
-            androidx.compose.material3.MaterialTheme.colorScheme.secondary
+        androidx.compose.foundation.layout.Box(
+            modifier = androidx.compose.ui.Modifier.background(
+                androidx.compose.material3.MaterialTheme.colorScheme.secondary
+            )
         ) {
             androidx.compose.material3.Text("Secondary Color", color = androidx.compose.material3.MaterialTheme.colorScheme.onSecondary)
         }
-        androidx.compose.foundation.background(
-            androidx.compose.material3.MaterialTheme.colorScheme.surface
+        androidx.compose.foundation.layout.Box(
+            modifier = androidx.compose.ui.Modifier.background(
+                androidx.compose.material3.MaterialTheme.colorScheme.surface
+            )
         ) {
             androidx.compose.material3.Text("Surface Color", color = androidx.compose.material3.MaterialTheme.colorScheme.onSurface)
         }
