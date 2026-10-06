@@ -11,8 +11,16 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven(url = "https://jitpack.io")
-        maven(url = "https://maven.solanafoundation.org")
+        maven {
+            url = uri("https://jitpack.io")
+        }
+        maven {
+            url = uri("https://maven.solanafoundation.org")
+            content {
+                includeGroup("org.solana")
+                includeGroup("com.solanomobile")
+            }
+        }
     }
 }
 
