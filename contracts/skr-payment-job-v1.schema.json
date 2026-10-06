@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://deproof.app/contracts/skr-payment-job-v1.schema.json",
+  "title": "SkrPaymentJob",
+  "description": "A bounded SKR-priced contribution-job payment request. Verification and payment are separate status fields. No automatic rewards, staking or escrow. Payment review requires wallet explicit authorization. Mainnet spending is NOT authorized until verification passes.",
+  "type": "object",
+  "required": [
+    "schema",
+    "jobId",
+    "priceRawLamports",
+    "verificationStatus",
+    "paymentStatus",
+    "walletApproved",
+    "source",
+    "destination",
+    "owner",
+    "createdAt"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "deproof:skr-payment-job-v1",
+      "description": "Schema identifier; must match exactly."
+    },
+    "jobId": {
+      "type": "string",
+      "minLength": 8,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z0-9_-]+$",
+      "description": "Unique, stable job identifier. Duplicate jobs with the same jobId MUST be rejected."
+    },
+    "contributionRef": {
+      "type": "string",
+      "maxLength": 256,
+      "description": "Optional link to the contribution receipt that this payment settles. Payment is BLOCKED until this field refers to a verified receipt."
+    },
+    "priceRawLamports": {
+      "type": "string",
+      "pattern": "^[0-9]+$",
+      "description": "Raw SKR token amount as a decimal string (no scientific notation). SKR has 6 on-chain decimals; 1 SKR = 1000000 raw units. Stored as string to avoid JSON integer overflow."
+    },
+    "verificationStatus": {
+      "type": "string",
+      "enum": ["PENDING", "VERIFIED", "FAILED"],
+      "description": "Independent verification status of the underlying contribution. Kept separate from paymentStatus. Payment cannot proceed until verificationStatus is VERIFIED."
+    },
+    "paymentStatus": {
+      "type": "string",
+      "enum": [
+        "BLOCKED",
+        "PENDING_REVIEW",
+        "APPROVED",
+        "REJECTED",
+        "SETTLED",
+        "DUPLICATE_REJECTED"
+      ],
+      "description": "Payment lifecycle status. Starts as BLOCKED when no verified result exists. Only advances to PENDING_REVIEW after verificationStatus=VERIFIED. Separate from verificationStatus."
+    },
+    "txBytesDigest": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$",
+      "description": "SHA-256 hex digest of the unsigned transaction bytes shown during review. The wallet MUST refuse to sign if the bytes have changed since display (digest mismatch). Set when paymentStatus advances to PENDING_REVIEW."
+    },
+    "walletApproved": {
+      "type": "boolean",
+      "description": "True only when the wallet holder explicitly tapped Approve. Never set to true automatically, never inherited from a prior approval, never inferred from a successful signature generation."
+    },
+    "source": {
+      "type": "string",
+      "minLength": 32,
+      "maxLength": 44,
+      "description": "Source SPL token account address (base58). Must be owned by 'owner' and hold SKR (mint = SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3)."
+    },
+    "destination": {
+      "type": "string",
+      "minLength": 32,
+      "maxLength": 44,
+      "description": "Destination SPL token account address (base58). Must hold SKR tokens."
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 32,
+      "maxLength": 44,
+      "description": "Authority / fee-payer wallet public key (base58). Signs the transaction after explicit review."
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO-8601 creation timestamp (UTC)."
+    },
+    "settledSignature": {
+      "type": "string",
+      "maxLength": 128,
+      "description": "On-chain transaction signature after observed settlement. Only present when paymentStatus=SETTLED. Never generated locally; only recorded from an independent on-chain observation."
+    },
+    "settledAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp of observed on-chain settlement."
+    },
+    "note": {
+      "type": "string",
+      "maxLength": 512,
+      "description": "Human-readable note. For audit trail and display only."
+    }
+  },
+  "if": {
+    "properties": { "paymentStatus": { "const": "BLOCKED" } }
+  },
+  "then": {
+    "properties": {
+      "walletApproved": { "const": false },
+      "txBytesDigest": { "type": "null" }
+    }
+  },
+  "$defs": {
+    "skrMint": {
+      "description": "Official SKR mint address. Verified as of commit 27bffa3.",
+      "const": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
+    },
+    "skrDecimals": {
+      "description": "On-chain decimal precision of the SKR token.",
+      "const": 6
+    },
+    "authorizationNote": {
+      "description": "Current authorization excludes mainnet spending. Construction and review are permitted. Actual signing and on-chain submission require explicit wallet authorization and are blocked until verificationStatus=VERIFIED.",
+      "const": "MAINNET_SPENDING_NOT_AUTHORIZED"
+    }
+  }
+}
