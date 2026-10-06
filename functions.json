@@ -1200,11 +1200,7 @@
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
-      "tests": [
-        "app/src/test/java/com/example/domain/LookupTableTest.kt::legacyMessageResolvesToItsStaticKeysOnly",
-        "app/src/test/java/com/example/domain/LookupTableTest.kt::versionedMessageWithLookupTableIsRefused",
-        "app/src/test/java/com/example/domain/LookupTableTest.kt::instructionReferencingAnAccountBeyondStaticKeysIsRefused"
-      ],
+      "tests": [],
       "qualificationDimensions": [],
       "limitations": [
         "Full typed contract/required integration remains incomplete."
@@ -1364,7 +1360,9 @@
       "dependencies": [],
       "checks": [],
       "tests": [
-        "app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval"
+        "app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval",
+        "app/src/test/java/com/example/domain/PolicyTest.kt::rebuildProducesANewDevnetMessageForTheSameAccount",
+        "app/src/test/java/com/example/domain/PolicyTest.kt::rebuildRefusesUnchangedBlockhashHistoricalAndNonDevnetReviews"
       ],
       "qualificationDimensions": [
         "VERIFIED_LOCAL",
@@ -1786,9 +1784,7 @@
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
-      "tests": [
-        "app/src/test/java/com/example/domain/PolicyTest.kt::onlyHardwareBackedKeyLevelsQualify"
-      ],
+      "tests": [],
       "qualificationDimensions": [],
       "limitations": [
         "Full typed contract/required integration remains incomplete."

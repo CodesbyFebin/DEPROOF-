@@ -1746,9 +1746,7 @@
         "C043",
         "C044"
       ],
-      "tests": [
-        "app/src/test/java/com/example/domain/InspectionTest.kt::verdictsArePerInstructionInOrderAndIndependent"
-      ],
+      "tests": [],
       "qualificationDimensions": [
         "NOT_RUN"
       ],
@@ -1814,10 +1812,7 @@
         "C087",
         "C088"
       ],
-      "tests": [
-        "app/src/test/java/com/example/domain/InspectionTest.kt::allowedTransferSummaryStatesAmountTokenAccountAndRecipient",
-        "app/src/test/java/com/example/domain/InspectionTest.kt::allowedMemoSummaryShowsTheExactMemoText"
-      ],
+      "tests": [],
       "qualificationDimensions": [
         "NOT_RUN"
       ],
@@ -2066,9 +2061,7 @@
         "C087",
         "C088"
       ],
-      "tests": [
-        "app/src/test/java/com/example/domain/ReviewBindingTest.kt::storedHashesAreUnaffectedByCallerBufferChanges"
-      ],
+      "tests": [],
       "qualificationDimensions": [
         "NOT_RUN"
       ],
@@ -2134,11 +2127,7 @@
         "C087",
         "C088"
       ],
-      "tests": [
-        "app/src/test/java/com/example/domain/ReviewBindingTest.kt::reviewTimestampChangeIsRejected",
-        "app/src/test/java/com/example/domain/ReviewBindingTest.kt::signingGateRefusesWalletAccountThatIsNotTheFeePayer",
-        "app/src/test/java/com/example/domain/CoreTest.kt::memoParserAndImmutableMessageContextMutations"
-      ],
+      "tests": [],
       "qualificationDimensions": [
         "NOT_RUN"
       ],
@@ -2201,9 +2190,7 @@
         "C087",
         "C088"
       ],
-      "tests": [
-        "app/src/test/java/com/example/domain/ReviewBindingTest.kt::signingGateRefusesMessageChangedAfterReview"
-      ],
+      "tests": [],
       "qualificationDimensions": [
         "NOT_RUN"
       ],
@@ -2265,10 +2252,7 @@
         "C087",
         "C088"
       ],
-      "tests": [
-        "app/src/test/java/com/example/domain/ReviewBindingTest.kt::feeAndBlockHeightChangesAreRejected",
-        "app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval"
-      ],
+      "tests": [],
       "qualificationDimensions": [
         "NOT_RUN"
       ],
@@ -2334,7 +2318,10 @@
         "C087",
         "C088"
       ],
-      "tests": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/PolicyTest.kt::rebuiltDraftDoesNotInheritThePriorApproval",
+        "app/src/test/java/com/example/domain/PolicyTest.kt::firstRebuildIsAllowedAndASecondIsNot"
+      ],
       "qualificationDimensions": [
         "NOT_RUN"
       ],
@@ -4914,13 +4901,9 @@
       "implementationPaths": [
         "app/src/main/java/com/example/MainActivity.kt",
         "app/src/main/java/com/example/Theme.kt",
-        "scripts/build-web.py",
-        "web/inspect.js",
         "web/style.css"
       ],
-      "evidencePaths": [
-        "evidence/qualification/browser/report.json"
-      ],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [
         "C089",
@@ -4936,15 +4919,12 @@
         "C099",
         "C100"
       ],
-      "tests": [
-        "scripts/browser/qualify.mjs"
-      ],
+      "tests": [],
       "qualificationDimensions": [
-        "VERIFIED_LOCAL",
         "NOT_RUN"
       ],
       "limitations": [
-        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
       ],
       "sourceMappings": {
         "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -5063,14 +5043,11 @@
       "definition": "Accurate multipage marketing/documentation website.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "scripts/build-web.py",
         "web/index.html",
         "web/inspect.js",
-        "web/style.css"
+        "scripts/build-web.py"
       ],
-      "evidencePaths": [
-        "evidence/qualification/browser/report.json"
-      ],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [
         "C089",
@@ -5086,15 +5063,12 @@
         "C099",
         "C100"
       ],
-      "tests": [
-        "scripts/browser/qualify.mjs"
-      ],
+      "tests": [],
       "qualificationDimensions": [
-        "VERIFIED_LOCAL",
         "NOT_RUN"
       ],
       "limitations": [
-        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
       ],
       "sourceMappings": {
         "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",

@@ -29,7 +29,11 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 1
+   "order": 1,
+   "localTestEvidence": [
+    "app/src/test/java/com/example/domain/ReviewBindingTest.kt::storedHashesAreUnaffectedByCallerBufferChanges"
+   ],
+   "localTestEvidenceNote": "Local unit test; device walkthrough (if listed) still required; registry status unchanged."
   },
   {
    "id": "C048",
@@ -238,7 +242,12 @@
     "app/src/main/java/com/example/MainActivity.kt"
    ],
    "testsListed": 0,
-   "order": 10
+   "order": 10,
+   "localTestEvidence": [
+    "app/src/test/java/com/example/domain/PolicyTest.kt::rebuiltDraftDoesNotInheritThePriorApproval",
+    "app/src/test/java/com/example/domain/PolicyTest.kt::firstRebuildIsAllowedAndASecondIsNot"
+   ],
+   "localTestEvidenceNote": "Local unit test; device walkthrough (if listed) still required; registry status unchanged."
   },
   {
    "id": "FN062",
@@ -319,7 +328,12 @@
     "app/src/main/java/com/example/domain/Solana.kt"
    ],
    "testsListed": 1,
-   "order": 14
+   "order": 14,
+   "localTestEvidence": [
+    "app/src/test/java/com/example/domain/PolicyTest.kt::rebuildProducesANewDevnetMessageForTheSameAccount",
+    "app/src/test/java/com/example/domain/PolicyTest.kt::rebuildRefusesUnchangedBlockhashHistoricalAndNonDevnetReviews"
+   ],
+   "localTestEvidenceNote": "Local unit test; device walkthrough (if listed) still required; registry status unchanged."
   },
   {
    "id": "FN055",
@@ -5384,7 +5398,7 @@
  "localTestRun": {
   "command": "./gradlew testDebugUnitTest assembleDebug --rerun-tasks",
   "result": "BUILD SUCCESSFUL",
-  "tests": 43,
+  "tests": 45,
   "failures": 0,
   "errors": 0,
   "skipped": 0
