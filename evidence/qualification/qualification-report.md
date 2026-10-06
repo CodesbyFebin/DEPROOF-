@@ -71,9 +71,9 @@ Dependency/security/environment priorities: `evidence/qualification/prioritized-
 ## Produced artifacts
 
 - `app/build/outputs/apk/debug/app-debug.apk` — debug-apk; SHA-256 `a12f5931f8c16d5863f59b6a07609a6b6c3ebaf3aac319df5cdce4fa8ab6a814`
-- `node-agent/build/deproof-node` — darwin-amd64-node-binary; SHA-256 `709e8591dfc5ff41ad0483c2c66ae9bdf67ae41f4b079b044475bf172c47918a`
-- `prover-worker/build/prove` — local-proof-producer; SHA-256 `1c77347ac90c1906405ae0552dfe68ff07fda8c7b659bbc34d2135306d60401d`
-- `prover-worker/build/verify` — independent-proof-verifier; SHA-256 `904ae4e54e1f39f26669f77aa95e1bfe33183aa2c327f97466da876943802e68`
+- `node-agent/build/deproof-node` — darwin-amd64-node-binary; SHA-256 `9f45a00f734959e5532e0751bcf44885f1ce72abb0f6ac5d17e05a87125c9893`
+- `prover-worker/build/prove` — local-proof-producer; SHA-256 `4e0d36f7b2da7434362bd349c019f143b14e97ec9de9d21b5526b27bc7475a03`
+- `prover-worker/build/verify` — independent-proof-verifier; SHA-256 `3794f0176a6c7756a4522b815d94af24bb55de774f2b72d2c0635f574d346636`
 - `gradle/wrapper/gradle-wrapper.jar` — gradle-wrapper; SHA-256 `b3a875ddc1f044746e1b1a55f645584505f4a10438c1afea9f15e92a7c42ec13`
 - `tools/verify.py` — independent-receipt-verifier; SHA-256 `dd17a4b493cd1d11e700879a6023308daacb6315fb665e4bb5665041e6f1195a`
 - `prover-worker/build/qualified-result-20261006T094220Z-76453/circuit.r1cs` — local-proof-artifact; SHA-256 `d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954`
@@ -178,6 +178,12 @@ Dependency/security/environment priorities: `evidence/qualification/prioritized-
 - `prover-worker/build/qualified-result-20261006T114548Z-85317/public-witness.bin` — local-proof-artifact; SHA-256 `da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd`
 - `prover-worker/build/qualified-result-20261006T114548Z-85317/manifest.json` — local-proof-artifact; SHA-256 `7bab844f75ed8bd1786e912a1a170dd72708c946cc5b5362c7a6449191ca3bc8`
 - `prover-worker/build/qualified-result-20261006T114548Z-85317/proof.bin` — local-proof-artifact; SHA-256 `3e8289083c7b75c901b9309f83c3176465e7c3bd5745e0fd18e8c60d190da5aa`
+- `prover-worker/build/qualified-result-20261006T123857Z-86783/circuit.r1cs` — local-proof-artifact; SHA-256 `d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954`
+- `prover-worker/build/qualified-result-20261006T123857Z-86783/verification-key.bin` — local-proof-artifact; SHA-256 `9049cf3026613532f0e31c8526b524c05b94fb691ddbb9bfdc635fbf363716f4`
+- `prover-worker/build/qualified-result-20261006T123857Z-86783/proving-key.bin` — local-proof-artifact; SHA-256 `15f0dcb29b70f70df448dd3d09ac4deb54b784c0ffd57128560509633d690fa3`
+- `prover-worker/build/qualified-result-20261006T123857Z-86783/public-witness.bin` — local-proof-artifact; SHA-256 `da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd`
+- `prover-worker/build/qualified-result-20261006T123857Z-86783/manifest.json` — local-proof-artifact; SHA-256 `99888b80062baf717da0c48316ca7effdd29dada6582a76a38aed4ff40a0b228`
+- `prover-worker/build/qualified-result-20261006T123857Z-86783/proof.bin` — local-proof-artifact; SHA-256 `00ea5e72e7fabd03103492c131a9a7fda4e22e3223dbdf0d07642de3ca80c0a4`
 - `prover-worker/build/qualified-result-20261006T060344Z-63284/circuit.r1cs` — local-proof-artifact; SHA-256 `d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954`
 - `prover-worker/build/qualified-result-20261006T060344Z-63284/verification-key.bin` — local-proof-artifact; SHA-256 `2bb4540a04c94235110c668004470206d917b197f46a97f6028a29f69afe567f`
 - `prover-worker/build/qualified-result-20261006T060344Z-63284/proving-key.bin` — local-proof-artifact; SHA-256 `adf5233594f8c56a52c5c09eb5c545c0bc86a4acd2b73d23ab593ed8483df198`
