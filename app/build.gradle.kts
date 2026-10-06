@@ -4,7 +4,7 @@
 plugins {
     id("com.android.application")
     kotlin("android")
-    kotlin("kapt")
+    // kotlin("kapt")  // TODO: Investigate KAPT unbound symbols issue with enums
     kotlin("plugin.serialization")
     // Optional: Hilt for DI
     // id("com.google.dagger.hilt.android")
@@ -74,9 +74,9 @@ android {
     kotlinOptions {
         jvmTarget = "11"
         freeCompilerArgs += listOf(
-            "-Xopt-in=androidx.compose.material3.ExperimentalMaterial3Api",
-            "-Xopt-in=androidx.compose.foundation.ExperimentalFoundationApi",
-            "-Xopt-in=kotlinx.coroutines.ExperimentalCoroutinesApi"
+            "-opt-in=androidx.compose.material3.ExperimentalMaterial3Api",
+            "-opt-in=androidx.compose.foundation.ExperimentalFoundationApi",
+            "-opt-in=kotlinx.coroutines.ExperimentalCoroutinesApi"
         )
     }
 
@@ -140,7 +140,7 @@ dependencies {
     // Room Database
     implementation("androidx.room:room-runtime:2.6.0")
     implementation("androidx.room:room-ktx:2.6.0")
-    kapt("androidx.room:room-compiler:2.6.0")
+    // kapt("androidx.room:room-compiler:2.6.0")  // TODO: KAPT disabled due to enum processing issue
 
     // DataStore (Preferences)
     implementation("androidx.datastore:datastore-preferences:1.0.0")
