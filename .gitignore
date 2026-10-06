@@ -17,3 +17,5 @@ __pycache__/
 
 node_modules/
 evidence/qualification/jvm-classpath.txt
+web/*.tar.gz
+web/*.zip
