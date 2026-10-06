@@ -52,21 +52,40 @@
   - 10 serialization unit tests
   - Device ID binding
 
+### 5. FN059-P3-Code: Read-Only Connector Dispatcher
+- **Commit:** b667ea1
+- **Lines:** 508 (dispatcher + 12 tests)
+- **Status:** ✅ COMPLETE (Decision A: BLOCKED w/ no network calls)
+- **Coverage:**
+  - ConnectorAdapter registry with verification state
+  - Multi-step dispatch verification (5 checks)
+  - BLOCKED result for unverified/unsupported adapters
+  - 12 comprehensive unit tests
+  - Zero network calls performed
+  - Extensible adapter registration
+
 ---
 
 ## Remaining Work
 
-### Critical: Registry & FN059 (macOS Session)
+### FN059: Read-Only Connector Dispatcher (DECISION A - IMPLEMENTED)
+- **Commit:** b667ea1
+- **Lines:** 508 (dispatcher + 12 tests)
+- **Status:** ✅ COMPLETE (read-only BLOCKED dispatcher)
+- **Implementation:**
+  - Read-only dispatcher with NO network calls
+  - Multi-step verification: exists → verified → query-supported → parameters-valid → policy-check
+  - Unverified adapters return BLOCKED with explicit BlockReason
+  - Local dispatch only (no actual network operations)
+  - Extensible adapter registry with verification state
+  - Full audit trail of dispatch decisions
 
-**FN059: Read-Only Dispatcher**
-- **Status:** 🔴 BLOCKED (awaits authoritative contract)
-- **Target:** Implement read-only dispatcher over connectors/support.json
-- **Requirements:**
-  - Read the authoritative contract first
-  - Dispatcher over connectors/support.json (consistent with contract)
-  - Unsupported adapters return BLOCKED with reason
-  - Do NOT invent network observations, freshness, signing, provider support
-  - Label as partial if contract requires more
+### Critical: Registry Regeneration (macOS Session)
+
+**Registry Regeneration Fix**
+- **Status:** 🟡 PENDING (requires macOS builds)
+- **Target:** Fix criterion-specific test link generation
+- **Recommendation:** Use criterion-only links (not union behavior from 95797fd)
 
 **Registry Regeneration Fix**
 - **Status:** 🔴 BLOCKED (requires macOS builds)
@@ -140,8 +159,8 @@
 - [ ] EF019: Android wiring (TBD - review specs)
 
 ### Registry & Qualification
-- [ ] FN059: Read-only dispatcher (TBD - contract pending)
-- [ ] Registry regeneration with criterion links
+- [x] FN059: Read-only dispatcher (Decision A: BLOCKED w/ no network calls) - THIS SESSION
+- [ ] Registry regeneration with criterion links (criterion-only strategy)
 - [ ] Full qualification run and verification
 
 ---

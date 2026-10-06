@@ -6,8 +6,11 @@ import androidx.security.crypto.EncryptedSharedPreferences
 import androidx.security.crypto.MasterKey
 import com.deproof.domain.exception.DomainException
 import com.google.gson.Gson
+import timber.log.Timber
 import java.io.File
 import java.io.IOException
+
+private const val TAG = "EncryptedBackupManager"
 
 class EncryptedBackupManager(
     @NonNull private val context: Context,
@@ -56,13 +59,13 @@ class EncryptedBackupManager(
         )
 
         backupFile.writeText(gson.toJson(jsonContent))
-        android.util.Log.d(TAG, "Backup created: $backupFilePath")
+        Timber.d("Backup created: $backupFilePath")
         Result.Success(backupFilePath)
     } catch (e: IOException) {
-        android.util.Log.e(TAG, "Failed to create backup", e)
+        Timber.e(e, "Failed to create backup")
         Result.Error(DomainException.StorageError("Failed to create backup file", e))
     } catch (e: Exception) {
-        android.util.Log.e(TAG, "Backup creation error", e)
+        Timber.e(e, "Backup creation error")
         Result.Error(DomainException.StorageError("Backup operation failed", e))
     }
 
@@ -71,7 +74,7 @@ class EncryptedBackupManager(
     ): Result<BackupData> = try {
         val backupFile = File(backupFilePath)
         if (!backupFile.exists()) {
-            android.util.Log.w(TAG, "Backup file not found: $backupFilePath")
+            Timber.w("Backup file not found: $backupFilePath")
             return Result.Error(
                 DomainException.NotFoundError("Backup file not found")
             )
@@ -81,7 +84,7 @@ class EncryptedBackupManager(
         val backup = gson.fromJson(jsonContent, BackupContent::class.java)
 
         if (backup == null) {
-            android.util.Log.e(TAG, "Failed to parse backup")
+            Timber.e("Failed to parse backup")
             return Result.Error(
                 DomainException.ParseError("Invalid backup format")
             )
@@ -90,13 +93,13 @@ class EncryptedBackupManager(
         validateBackup(backup)
 
         storeBackupData(backup.data)
-        android.util.Log.d(TAG, "Backup restored from: $backupFilePath")
+        Timber.d("Backup restored from: $backupFilePath")
         Result.Success(backup.data)
     } catch (e: IOException) {
-        android.util.Log.e(TAG, "Failed to read backup file", e)
+        Timber.e(e, "Failed to read backup file")
         Result.Error(DomainException.StorageError("Failed to read backup", e))
     } catch (e: Exception) {
-        android.util.Log.e(TAG, "Backup restoration error", e)
+        Timber.e(e, "Backup restoration error")
         Result.Error(DomainException.StorageError("Backup restoration failed", e))
     }
 
@@ -104,11 +107,11 @@ class EncryptedBackupManager(
         val backupFile = File(backupFilePath)
         if (backupFile.exists()) {
             backupFile.delete()
-            android.util.Log.d(TAG, "Backup deleted: $backupFilePath")
+            Timber.d("Backup deleted: $backupFilePath")
         }
         Result.Success(Unit)
     } catch (e: Exception) {
-        android.util.Log.e(TAG, "Failed to delete backup", e)
+        Timber.e(e, "Failed to delete backup")
         Result.Error(DomainException.StorageError("Failed to delete backup", e))
     }
 
@@ -124,7 +127,7 @@ class EncryptedBackupManager(
 
         Result.Success(backup.metadata)
     } catch (e: Exception) {
-        android.util.Log.e(TAG, "Failed to read backup metadata", e)
+        Timber.e(e, "Failed to read backup metadata")
         Result.Error(DomainException.StorageError("Failed to read backup metadata", e))
     }
 
@@ -149,14 +152,14 @@ class EncryptedBackupManager(
                     sizeBytes = file.length()
                 )
             } catch (e: Exception) {
-                android.util.Log.w(TAG, "Failed to read backup info for ${file.name}", e)
+                Timber.w(e, "Failed to read backup info for ${file.name}")
                 null
             }
         }
 
         Result.Success(backupInfos)
     } catch (e: Exception) {
-        android.util.Log.e(TAG, "Failed to list backups", e)
+        Timber.e(e, "Failed to list backups")
         Result.Error(DomainException.StorageError("Failed to list backups", e))
     }
 
@@ -169,10 +172,7 @@ class EncryptedBackupManager(
 
     private fun validateBackup(@NonNull backup: BackupContent) {
         if (backup.metadata.version != BACKUP_VERSION) {
-            android.util.Log.w(
-                TAG,
-                "Backup version mismatch: expected $BACKUP_VERSION, got ${backup.metadata.version}"
-            )
+            Timber.w("Backup version mismatch: expected $BACKUP_VERSION, got ${backup.metadata.version}")
         }
         if (backup.metadata.timestamp <= 0) {
             throw DomainException.ValidationError("Invalid backup timestamp")
@@ -180,7 +180,6 @@ class EncryptedBackupManager(
     }
 
     companion object {
-        private const val TAG = "EncryptedBackupManager"
         private const val PREFS_NAME = "deproof_encrypted_prefs"
         private const val BACKUP_DATA_KEY = "backup_data"
         private const val BACKUP_VERSION = 1

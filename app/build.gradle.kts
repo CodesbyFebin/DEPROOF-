@@ -155,8 +155,8 @@ dependencies {
     // Permissions
     implementation("pub.devrel:easypermissions:3.0.0")
 
-    // Logging (using Android's built-in Log instead of timberkt)
-    // implementation("com.github.ajalt.timberkt:timberkt:1.0.2")
+    // Logging
+    implementation("com.jakewharton.timber:timber:5.0.1")
 
     // Optional: Hilt for Dependency Injection
     // implementation("com.google.dagger:hilt-android:2.48")

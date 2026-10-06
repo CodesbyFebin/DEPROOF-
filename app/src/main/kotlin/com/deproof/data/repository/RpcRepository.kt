@@ -1,6 +1,5 @@
 package com.deproof.data.repository
 
-import android.util.Log
 import androidx.annotation.NonNull
 import com.deproof.data.local.*
 import com.deproof.domain.exception.DomainException
@@ -19,9 +18,8 @@ import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.RequestBody.Companion.toRequestBody
+import timber.log.Timber
 import java.util.concurrent.TimeUnit
-
-private const val TAG = "RpcRepository"
 private const val NETWORK_TIMEOUT_SECONDS = 30L
 private const val RETRY_ATTEMPTS = 3
 
@@ -61,14 +59,14 @@ class RpcRepository(
                         displayAmount = String.format("%.9f", sol)
                     )
                 } catch (e: Exception) {
-                    Log.e(TAG, "Failed to parse balance response", e)
+                    Timber.e(e, "Failed to parse balance response")
                     throw DomainException.ParseError("Invalid balance response format", e)
                 }
             }
             Result.Success(balance)
         } catch (e: Exception) {
             val domainEx = if (e is DomainException) e else e.toDomainException()
-            Log.e(TAG, "Error fetching balance for $pubkey: ${e.message}", e)
+            Timber.e(e, "Error fetching balance for $pubkey: ${e.message}")
             Result.Error(domainEx)
         }
     }
@@ -96,14 +94,14 @@ class RpcRepository(
                         displayAmount = String.format("%.4f", amount / 10000.0)
                     )
                 } catch (e: Exception) {
-                    Log.e(TAG, "Failed to parse token balance response", e)
+                    Timber.e(e, "Failed to parse token balance response")
                     throw DomainException.ParseError("Invalid token balance response format", e)
                 }
             }
             Result.Success(balance)
         } catch (e: Exception) {
             val domainEx = if (e is DomainException) e else e.toDomainException()
-            Log.e(TAG, "Error fetching token balance for $pubkey: ${e.message}", e)
+            Timber.e(e, "Error fetching token balance for $pubkey: ${e.message}")
             Result.Error(domainEx)
         }
     }
@@ -134,14 +132,14 @@ class RpcRepository(
                         )
                     }
                 } catch (e: Exception) {
-                    Log.e(TAG, "Failed to parse signatures response", e)
+                    Timber.e(e, "Failed to parse signatures response")
                     throw DomainException.ParseError("Invalid signatures response format", e)
                 }
             }
             Result.Success(signatures)
         } catch (e: Exception) {
             val domainEx = if (e is DomainException) e else e.toDomainException()
-            Log.e(TAG, "Error fetching signatures for $pubkey: ${e.message}", e)
+            Timber.e(e, "Error fetching signatures for $pubkey: ${e.message}")
             Result.Error(domainEx)
         }
     }
@@ -161,7 +159,7 @@ class RpcRepository(
             Result.Success(response)
         } catch (e: Exception) {
             val domainEx = if (e is DomainException) e else e.toDomainException()
-            Log.e(TAG, "Error fetching transaction $signature: ${e.message}", e)
+            Timber.e(e, "Error fetching transaction $signature: ${e.message}")
             Result.Error(domainEx)
         }
     }
@@ -188,7 +186,7 @@ class RpcRepository(
             client.newCall(request).execute().use { response ->
                 if (!response.isSuccessful) {
                     val errorMessage = response.body?.string() ?: "No error details"
-                    Log.w(TAG, "RPC request failed with status ${response.code}: $errorMessage")
+                    Timber.w("RPC request failed with status ${response.code}: $errorMessage")
                     throw DomainException.NetworkError(
                         statusCode = response.code,
                         message = "RPC request failed: ${response.code}"
@@ -199,21 +197,21 @@ class RpcRepository(
                 )
             }
         } catch (e: java.util.concurrent.TimeoutException) {
-            Log.e(TAG, "RPC request timeout", e)
+            Timber.e(e, "RPC request timeout")
             throw DomainException.TimeoutError(cause = e)
         } catch (e: java.net.SocketTimeoutException) {
-            Log.e(TAG, "RPC socket timeout", e)
+            Timber.e(e, "RPC socket timeout")
             throw DomainException.TimeoutError(cause = e)
         } catch (e: java.net.ConnectException) {
-            Log.e(TAG, "RPC connection failed", e)
+            Timber.e(e, "RPC connection failed")
             throw DomainException.NetworkError(message = "Connection failed", cause = e)
         } catch (e: java.net.UnknownHostException) {
-            Log.e(TAG, "RPC host unreachable", e)
+            Timber.e(e, "RPC host unreachable")
             throw DomainException.NetworkError(message = "Host unreachable", cause = e)
         } catch (e: DomainException) {
             throw e
         } catch (e: Exception) {
-            Log.e(TAG, "Unexpected error during RPC call", e)
+            Timber.e(e, "Unexpected error during RPC call")
             throw DomainException.UnknownError(message = e.message ?: "Unknown RPC error", cause = e)
         }
     }

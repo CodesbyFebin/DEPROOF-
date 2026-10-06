@@ -3,6 +3,7 @@ package com.deproof.domain.usecase
 import androidx.annotation.NonNull
 import com.deproof.domain.exception.DomainException
 import com.deproof.domain.model.Result
+import timber.log.Timber
 
 /**
  * FN059: Read-Only Connector Dispatcher
@@ -57,10 +58,8 @@ class FN059ReadOnlyDispatcher(
     @NonNull private val adapters: Map<String, ConnectorAdapter> = emptyMap(),
     private val allowNetworkQueries: Boolean = false
 ) {
-    private val tag = "FN059Dispatcher"
-
     suspend fun dispatch(@NonNull query: DispatcherQuery): Result<DispatcherResult> = try {
-        android.util.Log.d(tag, "Dispatching query: type=${query.queryType}, adapter=${query.targetAdapter}")
+        Timber.d("Dispatching query: type=${query.queryType}, adapter=${query.targetAdapter}")
 
         // Step 1: Verify adapter exists
         val adapter = adapters[query.targetAdapter]
@@ -73,7 +72,7 @@ class FN059ReadOnlyDispatcher(
 
         // Step 2: Verify adapter is verified
         if (!adapter.isVerified) {
-            android.util.Log.w(tag, "Adapter not verified: ${adapter.id}")
+            Timber.w("Adapter not verified: ${adapter.id}")
             return Result.Success(
                 DispatcherResult.Blocked(
                     adapterId = adapter.id,
@@ -84,7 +83,7 @@ class FN059ReadOnlyDispatcher(
 
         // Step 3: Verify query type is supported
         if (!adapter.supportedQueries.contains(query.queryType)) {
-            android.util.Log.w(tag, "Query type not supported: ${query.queryType} on ${adapter.id}")
+            Timber.w("Query type not supported: ${query.queryType} on ${adapter.id}")
             return Result.Success(
                 DispatcherResult.Blocked(
                     adapterId = adapter.id,
@@ -96,7 +95,7 @@ class FN059ReadOnlyDispatcher(
         // Step 4: Validate parameters
         val paramValidation = validateParameters(query.parameters)
         if (!paramValidation) {
-            android.util.Log.w(tag, "Invalid parameters for query: ${query.queryType}")
+            Timber.w("Invalid parameters for query: ${query.queryType}")
             return Result.Success(
                 DispatcherResult.Blocked(
                     adapterId = adapter.id,
@@ -108,7 +107,7 @@ class FN059ReadOnlyDispatcher(
         // Step 5: Check network policy for network-based adapters
         if (adapter.type == AdapterType.NETWORK_RPC || adapter.type == AdapterType.PROVIDER_API) {
             if (!allowNetworkQueries) {
-                android.util.Log.w(tag, "Network queries disabled for adapter: ${adapter.id}")
+                Timber.w("Network queries disabled for adapter: ${adapter.id}")
                 return Result.Success(
                     DispatcherResult.Blocked(
                         adapterId = adapter.id,
@@ -120,11 +119,11 @@ class FN059ReadOnlyDispatcher(
 
         // Step 6: Dispatch to verified local adapter (no actual network call)
         val result = dispatchToAdapter(adapter, query)
-        android.util.Log.d(tag, "Query dispatched successfully to ${adapter.id}")
+        Timber.d("Query dispatched successfully to ${adapter.id}")
 
         Result.Success(result)
     } catch (e: Exception) {
-        android.util.Log.e(tag, "Dispatcher error", e)
+        Timber.e(e, "Dispatcher error")
         Result.Error(DomainException.UnknownError("Dispatcher error: ${e.message}", e))
     }
 
@@ -181,7 +180,7 @@ class FN059ReadOnlyDispatcher(
         val updated = adapters.toMutableMap()
         updated[adapterId] = verified
 
-        android.util.Log.d(tag, "Adapter verified: $adapterId")
+        Timber.d("Adapter verified: $adapterId")
         return FN059ReadOnlyDispatcher(updated.toMap(), allowNetworkQueries)
     }
 

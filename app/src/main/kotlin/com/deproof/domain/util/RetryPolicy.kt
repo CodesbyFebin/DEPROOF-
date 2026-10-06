@@ -1,6 +1,6 @@
 package com.deproof.domain.util
 
-import android.util.Log
+import timber.log.Timber
 import kotlinx.coroutines.delay
 
 data class RetryConfig(
@@ -27,7 +27,7 @@ suspend inline fun <T> retryWithExponentialBackoff(
                 throw e
             }
             if (it < config.maxRetries - 1) {
-                Log.d("RetryPolicy", "Retry attempt ${it + 1} after ${delayMs}ms due to: ${e.message}")
+                Timber.d("Retry attempt ${it + 1} after ${delayMs}ms due to: ${e.message}")
                 delay(delayMs)
                 delayMs = (delayMs * config.backoffMultiplier).toLong().coerceAtMost(config.maxDelayMs)
             }
