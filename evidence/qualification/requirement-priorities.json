@@ -7,8 +7,8 @@
   "missing_local_tests": 199,
   "local_verification_remaining": 43,
   "device_validation": 7,
-  "missing_code": 27,
-  "external_integration": 5
+  "missing_code": 8,
+  "external_integration": 24
  },
  "orderingRule": "priority asc, then gap rank (missing_code, missing_local_tests, local_verification_remaining, device_validation, external_integration), then phase, then id. Dependencies in the backlog are categories, not requirement IDs, so this is a heuristic order.",
  "requirements": [
@@ -91,7 +91,11 @@
     "app/src/main/java/com/example/MainActivity.kt"
    ],
    "testsListed": 0,
-   "order": 4
+   "order": 4,
+   "localTestEvidence": [
+    "app/src/test/java/com/example/domain/InspectionTest.kt::verdictsArePerInstructionInOrderAndIndependent"
+   ],
+   "localTestEvidenceNote": "Domain-level unit test; UI rendering not covered. Registry status unchanged."
   },
   {
    "id": "F041",
@@ -110,7 +114,12 @@
     "app/src/main/java/com/example/MainActivity.kt"
    ],
    "testsListed": 0,
-   "order": 5
+   "order": 5,
+   "localTestEvidence": [
+    "app/src/test/java/com/example/domain/InspectionTest.kt::allowedTransferSummaryStatesAmountTokenAccountAndRecipient",
+    "app/src/test/java/com/example/domain/InspectionTest.kt::allowedMemoSummaryShowsTheExactMemoText"
+   ],
+   "localTestEvidenceNote": "Domain-level unit test; UI rendering not covered. Registry status unchanged."
   },
   {
    "id": "F045",
@@ -516,7 +525,13 @@
    "acceptance": "`resolveLookupTables(message)` \u2014 verified address resolution or refusal.",
    "implementationPaths": [],
    "testsListed": 0,
-   "order": 25
+   "order": 25,
+   "localTestEvidence": [
+    "app/src/test/java/com/example/domain/LookupTableTest.kt::legacyMessageResolvesToItsStaticKeysOnly",
+    "app/src/test/java/com/example/domain/LookupTableTest.kt::versionedMessageWithLookupTableIsRefused",
+    "app/src/test/java/com/example/domain/LookupTableTest.kt::instructionReferencingAnAccountBeyondStaticKeysIsRefused"
+   ],
+   "localTestEvidenceNote": "Domain-level unit test; UI rendering not covered. Registry status unchanged."
   },
   {
    "id": "EF009",
@@ -3458,291 +3473,6 @@
    "order": 177
   },
   {
-   "id": "F081",
-   "priority": 3,
-   "phase": "P3",
-   "bucket": "missing_code",
-   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
-   "deviceAlsoRequired": false,
-   "externalAlsoRequired": true,
-   "registryStatus": "BLOCKED",
-   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
-   "acceptance": "Verify official staking program specifications.",
-   "implementationPaths": [],
-   "testsListed": 0,
-   "order": 178
-  },
-  {
-   "id": "F082",
-   "priority": 3,
-   "phase": "P3",
-   "bucket": "missing_code",
-   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
-   "deviceAlsoRequired": false,
-   "externalAlsoRequired": true,
-   "registryStatus": "BLOCKED",
-   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
-   "acceptance": "Decode supported staking instructions from validated layouts.",
-   "implementationPaths": [],
-   "testsListed": 0,
-   "order": 179
-  },
-  {
-   "id": "F083",
-   "priority": 3,
-   "phase": "P3",
-   "bucket": "missing_code",
-   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
-   "deviceAlsoRequired": false,
-   "externalAlsoRequired": true,
-   "registryStatus": "BLOCKED",
-   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
-   "acceptance": "Identify verified guardian metadata.",
-   "implementationPaths": [],
-   "testsListed": 0,
-   "order": 180
-  },
-  {
-   "id": "F084",
-   "priority": 3,
-   "phase": "P3",
-   "bucket": "missing_code",
-   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
-   "deviceAlsoRequired": false,
-   "externalAlsoRequired": true,
-   "registryStatus": "BLOCKED",
-   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
-   "acceptance": "Distinguish liquid, staked, and cooling balances.",
-   "implementationPaths": [],
-   "testsListed": 0,
-   "order": 181
-  },
-  {
-   "id": "F085",
-   "priority": 3,
-   "phase": "P3",
-   "bucket": "missing_code",
-   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
-   "deviceAlsoRequired": false,
-   "externalAlsoRequired": true,
-   "registryStatus": "BLOCKED",
-   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
-   "acceptance": "Gate staking against observed eligibility and unlocked balances.",
-   "implementationPaths": [],
-   "testsListed": 0,
-   "order": 182
-  },
-  {
-   "id": "F086",
-   "priority": 3,
-   "phase": "P3",
-   "bucket": "missing_code",
-   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
-   "deviceAlsoRequired": false,
-   "externalAlsoRequired": true,
-   "registryStatus": "BLOCKED",
-   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
-   "acceptance": "Preview partial unstake consequences.",
-   "implementationPaths": [],
-   "testsListed": 0,
-   "order": 183
-  },
-  {
-   "id": "F087",
-   "priority": 3,
-   "phase": "P3",
-   "bucket": "missing_code",
-   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
-   "deviceAlsoRequired": false,
-   "externalAlsoRequired": true,
-   "registryStatus": "BLOCKED",
-   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
-   "acceptance": "Show protocol cooldown only from verified state; keep user-supplied illustrative timers visually distinct.",
-   "implementationPaths": [],
-   "testsListed": 0,
-   "order": 184
-  },
-  {
-   "id": "F088",
-   "priority": 3,
-   "phase": "P3",
-   "bucket": "missing_code",
-   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
-   "deviceAlsoRequired": false,
-   "externalAlsoRequired": true,
-   "registryStatus": "BLOCKED",
-   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
-   "acceptance": "Enable withdrawal only when protocol eligibility is established.",
-   "implementationPaths": [],
-   "testsListed": 0,
-   "order": 185
-  },
-  {
-   "id": "F089",
-   "priority": 3,
-   "phase": "P3",
-   "bucket": "missing_code",
-   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
-   "deviceAlsoRequired": false,
-   "externalAlsoRequired": true,
-   "registryStatus": "BLOCKED",
-   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
-   "acceptance": "Track claims from verified season rules.",
-   "implementationPaths": [],
-   "testsListed": 0,
-   "order": 186
-  },
-  {
-   "id": "F090",
-   "priority": 3,
-   "phase": "P3",
-   "bucket": "missing_code",
-   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
-   "deviceAlsoRequired": false,
-   "externalAlsoRequired": true,
-   "registryStatus": "BLOCKED",
-   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
-   "acceptance": "Keep stake-on-claim opt-in and disclose source/date of yield information.",
-   "implementationPaths": [],
-   "testsListed": 0,
-   "order": 187
-  },
-  {
-   "id": "F101",
-   "priority": 3,
-   "phase": "P3",
-   "bucket": "missing_code",
-   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
-   "deviceAlsoRequired": false,
-   "externalAlsoRequired": true,
-   "registryStatus": "BLOCKED",
-   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
-   "acceptance": "Hotspot coverage and earnings observation.",
-   "implementationPaths": [],
-   "testsListed": 0,
-   "order": 188
-  },
-  {
-   "id": "F102",
-   "priority": 3,
-   "phase": "P3",
-   "bucket": "missing_code",
-   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
-   "deviceAlsoRequired": false,
-   "externalAlsoRequired": true,
-   "registryStatus": "BLOCKED",
-   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
-   "acceptance": "Earnings-degradation alerts.",
-   "implementationPaths": [],
-   "testsListed": 0,
-   "order": 189
-  },
-  {
-   "id": "F103",
-   "priority": 3,
-   "phase": "P3",
-   "bucket": "missing_code",
-   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
-   "deviceAlsoRequired": false,
-   "externalAlsoRequired": true,
-   "registryStatus": "BLOCKED",
-   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
-   "acceptance": "Connectivity-plan comparison from attributable data.",
-   "implementationPaths": [],
-   "testsListed": 0,
-   "order": 190
-  },
-  {
-   "id": "F106",
-   "priority": 3,
-   "phase": "P3",
-   "bucket": "missing_code",
-   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
-   "deviceAlsoRequired": false,
-   "externalAlsoRequired": true,
-   "registryStatus": "BLOCKED",
-   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
-   "acceptance": "Energy-device observation.",
-   "implementationPaths": [],
-   "testsListed": 0,
-   "order": 191
-  },
-  {
-   "id": "F107",
-   "priority": 3,
-   "phase": "P3",
-   "bucket": "missing_code",
-   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
-   "deviceAlsoRequired": false,
-   "externalAlsoRequired": true,
-   "registryStatus": "BLOCKED",
-   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
-   "acceptance": "Sensor records with provenance.",
-   "implementationPaths": [],
-   "testsListed": 0,
-   "order": 192
-  },
-  {
-   "id": "F110",
-   "priority": 3,
-   "phase": "P3",
-   "bucket": "missing_code",
-   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
-   "deviceAlsoRequired": false,
-   "externalAlsoRequired": true,
-   "registryStatus": "BLOCKED",
-   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
-   "acceptance": "Hardware transaction coordination through a verified external provider.",
-   "implementationPaths": [],
-   "testsListed": 0,
-   "order": 193
-  },
-  {
-   "id": "F111",
-   "priority": 3,
-   "phase": "P5",
-   "bucket": "missing_code",
-   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
-   "deviceAlsoRequired": false,
-   "externalAlsoRequired": true,
-   "registryStatus": "BLOCKED",
-   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
-   "acceptance": "Task-based split-payment proposal and review.",
-   "implementationPaths": [],
-   "testsListed": 0,
-   "order": 194
-  },
-  {
-   "id": "F112",
-   "priority": 3,
-   "phase": "P5",
-   "bucket": "missing_code",
-   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
-   "deviceAlsoRequired": false,
-   "externalAlsoRequired": true,
-   "registryStatus": "BLOCKED",
-   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
-   "acceptance": "Rent/deposit record tracking without claiming unverified escrow.",
-   "implementationPaths": [],
-   "testsListed": 0,
-   "order": 195
-  },
-  {
-   "id": "F113",
-   "priority": 3,
-   "phase": "P5",
-   "bucket": "missing_code",
-   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
-   "deviceAlsoRequired": false,
-   "externalAlsoRequired": true,
-   "registryStatus": "BLOCKED",
-   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
-   "acceptance": "Remittance provider discovery with transparent quotes and explicit provider handoff.",
-   "implementationPaths": [],
-   "testsListed": 0,
-   "order": 196
-  },
-  {
    "id": "C001",
    "priority": 3,
    "phase": "P1",
@@ -3759,7 +3489,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 197
+   "order": 178
   },
   {
    "id": "C005",
@@ -3778,7 +3508,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 198
+   "order": 179
   },
   {
    "id": "C006",
@@ -3797,7 +3527,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 199
+   "order": 180
   },
   {
    "id": "C007",
@@ -3816,7 +3546,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 200
+   "order": 181
   },
   {
    "id": "C009",
@@ -3835,7 +3565,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 201
+   "order": 182
   },
   {
    "id": "C010",
@@ -3854,7 +3584,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 202
+   "order": 183
   },
   {
    "id": "C011",
@@ -3873,7 +3603,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 203
+   "order": 184
   },
   {
    "id": "C012",
@@ -3892,7 +3622,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 204
+   "order": 185
   },
   {
    "id": "C013",
@@ -3911,7 +3641,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 205
+   "order": 186
   },
   {
    "id": "C014",
@@ -3930,7 +3660,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 206
+   "order": 187
   },
   {
    "id": "C015",
@@ -3949,7 +3679,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 207
+   "order": 188
   },
   {
    "id": "C016",
@@ -3968,7 +3698,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 208
+   "order": 189
   },
   {
    "id": "C017",
@@ -3987,7 +3717,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 209
+   "order": 190
   },
   {
    "id": "C018",
@@ -4006,7 +3736,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 210
+   "order": 191
   },
   {
    "id": "C019",
@@ -4025,7 +3755,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 211
+   "order": 192
   },
   {
    "id": "C020",
@@ -4044,7 +3774,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 212
+   "order": 193
   },
   {
    "id": "C021",
@@ -4063,7 +3793,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 213
+   "order": 194
   },
   {
    "id": "C022",
@@ -4082,7 +3812,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 214
+   "order": 195
   },
   {
    "id": "C023",
@@ -4101,7 +3831,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 215
+   "order": 196
   },
   {
    "id": "C024",
@@ -4120,7 +3850,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 216
+   "order": 197
   },
   {
    "id": "C025",
@@ -4139,7 +3869,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 217
+   "order": 198
   },
   {
    "id": "C026",
@@ -4158,7 +3888,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 218
+   "order": 199
   },
   {
    "id": "C028",
@@ -4177,7 +3907,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 219
+   "order": 200
   },
   {
    "id": "C029",
@@ -4196,7 +3926,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 220
+   "order": 201
   },
   {
    "id": "C030",
@@ -4215,7 +3945,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 221
+   "order": 202
   },
   {
    "id": "C034",
@@ -4234,7 +3964,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 222
+   "order": 203
   },
   {
    "id": "C038",
@@ -4253,7 +3983,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 223
+   "order": 204
   },
   {
    "id": "C039",
@@ -4272,7 +4002,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 224
+   "order": 205
   },
   {
    "id": "C040",
@@ -4291,7 +4021,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 225
+   "order": 206
   },
   {
    "id": "C044",
@@ -4310,7 +4040,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 226
+   "order": 207
   },
   {
    "id": "C050",
@@ -4329,7 +4059,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 227
+   "order": 208
   },
   {
    "id": "C051",
@@ -4348,7 +4078,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 228
+   "order": 209
   },
   {
    "id": "C052",
@@ -4367,7 +4097,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 229
+   "order": 210
   },
   {
    "id": "C053",
@@ -4386,7 +4116,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 230
+   "order": 211
   },
   {
    "id": "C054",
@@ -4405,7 +4135,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 231
+   "order": 212
   },
   {
    "id": "C055",
@@ -4424,7 +4154,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 232
+   "order": 213
   },
   {
    "id": "C056",
@@ -4443,7 +4173,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 233
+   "order": 214
   },
   {
    "id": "C057",
@@ -4462,7 +4192,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 234
+   "order": 215
   },
   {
    "id": "C058",
@@ -4481,7 +4211,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 235
+   "order": 216
   },
   {
    "id": "C059",
@@ -4500,7 +4230,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 236
+   "order": 217
   },
   {
    "id": "C060",
@@ -4519,7 +4249,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 237
+   "order": 218
   },
   {
    "id": "C061",
@@ -4538,7 +4268,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 238
+   "order": 219
   },
   {
    "id": "C062",
@@ -4557,7 +4287,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 239
+   "order": 220
   },
   {
    "id": "C063",
@@ -4576,7 +4306,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 240
+   "order": 221
   },
   {
    "id": "C064",
@@ -4595,7 +4325,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 241
+   "order": 222
   },
   {
    "id": "C065",
@@ -4614,7 +4344,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 242
+   "order": 223
   },
   {
    "id": "C066",
@@ -4633,7 +4363,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 243
+   "order": 224
   },
   {
    "id": "C067",
@@ -4652,7 +4382,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 244
+   "order": 225
   },
   {
    "id": "C068",
@@ -4671,7 +4401,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 245
+   "order": 226
   },
   {
    "id": "C069",
@@ -4690,7 +4420,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 246
+   "order": 227
   },
   {
    "id": "C071",
@@ -4709,7 +4439,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 247
+   "order": 228
   },
   {
    "id": "C072",
@@ -4728,7 +4458,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 248
+   "order": 229
   },
   {
    "id": "C074",
@@ -4747,7 +4477,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 249
+   "order": 230
   },
   {
    "id": "C075",
@@ -4766,7 +4496,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 250
+   "order": 231
   },
   {
    "id": "C076",
@@ -4785,7 +4515,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 251
+   "order": 232
   },
   {
    "id": "C077",
@@ -4804,7 +4534,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 252
+   "order": 233
   },
   {
    "id": "C078",
@@ -4823,7 +4553,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 253
+   "order": 234
   },
   {
    "id": "C079",
@@ -4842,7 +4572,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 254
+   "order": 235
   },
   {
    "id": "C080",
@@ -4861,7 +4591,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 255
+   "order": 236
   },
   {
    "id": "C081",
@@ -4880,7 +4610,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 256
+   "order": 237
   },
   {
    "id": "C082",
@@ -4899,7 +4629,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 257
+   "order": 238
   },
   {
    "id": "C083",
@@ -4918,7 +4648,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 258
+   "order": 239
   },
   {
    "id": "C084",
@@ -4937,7 +4667,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 259
+   "order": 240
   },
   {
    "id": "C085",
@@ -4956,7 +4686,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 260
+   "order": 241
   },
   {
    "id": "C086",
@@ -4975,7 +4705,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 261
+   "order": 242
   },
   {
    "id": "C088",
@@ -4994,7 +4724,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 262
+   "order": 243
   },
   {
    "id": "C089",
@@ -5013,7 +4743,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 263
+   "order": 244
   },
   {
    "id": "C090",
@@ -5032,7 +4762,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 264
+   "order": 245
   },
   {
    "id": "C091",
@@ -5051,7 +4781,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 265
+   "order": 246
   },
   {
    "id": "C092",
@@ -5070,7 +4800,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 266
+   "order": 247
   },
   {
    "id": "C093",
@@ -5089,7 +4819,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 267
+   "order": 248
   },
   {
    "id": "C094",
@@ -5108,7 +4838,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 268
+   "order": 249
   },
   {
    "id": "C096",
@@ -5127,7 +4857,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 269
+   "order": 250
   },
   {
    "id": "C098",
@@ -5146,7 +4876,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 270
+   "order": 251
   },
   {
    "id": "C099",
@@ -5165,7 +4895,7 @@
     "app/src/main/java/com/example/domain/Records.kt"
    ],
    "testsListed": 0,
-   "order": 271
+   "order": 252
   },
   {
    "id": "C003",
@@ -5185,7 +4915,7 @@
     "app/src/main/java/com/example/domain/Solana.kt"
    ],
    "testsListed": 2,
-   "order": 272
+   "order": 253
   },
   {
    "id": "C008",
@@ -5205,7 +4935,7 @@
     "app/src/main/java/com/example/domain/Solana.kt"
    ],
    "testsListed": 2,
-   "order": 273
+   "order": 254
   },
   {
    "id": "F095",
@@ -5223,7 +4953,7 @@
     "app/src/main/java/com/example/domain/LocalEvidence.kt"
    ],
    "testsListed": 1,
-   "order": 274
+   "order": 255
   },
   {
    "id": "FN033",
@@ -5241,7 +4971,7 @@
     "app/src/main/java/com/example/domain/LocalEvidence.kt"
    ],
    "testsListed": 2,
-   "order": 275
+   "order": 256
   },
   {
    "id": "F055",
@@ -5260,7 +4990,7 @@
     "app/src/main/java/com/example/MainActivity.kt"
    ],
    "testsListed": 1,
-   "order": 276
+   "order": 257
   },
   {
    "id": "E008",
@@ -5280,7 +5010,7 @@
     "app/src/main/java/com/example/MainActivity.kt"
    ],
    "testsListed": 0,
-   "order": 277
+   "order": 258
   },
   {
    "id": "FN061",
@@ -5298,7 +5028,7 @@
     "app/src/main/java/com/example/MainActivity.kt"
    ],
    "testsListed": 1,
-   "order": 278
+   "order": 259
   },
   {
    "id": "E009",
@@ -5318,7 +5048,7 @@
     "app/src/main/java/com/example/MainActivity.kt"
    ],
    "testsListed": 0,
-   "order": 279
+   "order": 260
   },
   {
    "id": "E010",
@@ -5338,7 +5068,7 @@
     "app/src/main/java/com/example/MainActivity.kt"
    ],
    "testsListed": 0,
-   "order": 280
+   "order": 261
   },
   {
    "id": "E015",
@@ -5355,16 +5085,302 @@
     "node-agent/internal/agent/agent.go"
    ],
    "testsListed": 0,
+   "order": 262
+  },
+  {
+   "id": "F081",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "external_integration",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Verify official staking program specifications.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 263
+  },
+  {
+   "id": "F082",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "external_integration",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Decode supported staking instructions from validated layouts.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 264
+  },
+  {
+   "id": "F083",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "external_integration",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Identify verified guardian metadata.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 265
+  },
+  {
+   "id": "F084",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "external_integration",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Distinguish liquid, staked, and cooling balances.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 266
+  },
+  {
+   "id": "F085",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "external_integration",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Gate staking against observed eligibility and unlocked balances.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 267
+  },
+  {
+   "id": "F086",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "external_integration",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Preview partial unstake consequences.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 268
+  },
+  {
+   "id": "F087",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "external_integration",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Show protocol cooldown only from verified state; keep user-supplied illustrative timers visually distinct.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 269
+  },
+  {
+   "id": "F088",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "external_integration",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Enable withdrawal only when protocol eligibility is established.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 270
+  },
+  {
+   "id": "F089",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "external_integration",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Track claims from verified season rules.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 271
+  },
+  {
+   "id": "F090",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "external_integration",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Keep stake-on-claim opt-in and disclose source/date of yield information.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 272
+  },
+  {
+   "id": "F101",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "external_integration",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Hotspot coverage and earnings observation.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 273
+  },
+  {
+   "id": "F102",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "external_integration",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Earnings-degradation alerts.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 274
+  },
+  {
+   "id": "F103",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "external_integration",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Connectivity-plan comparison from attributable data.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 275
+  },
+  {
+   "id": "F106",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "external_integration",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Energy-device observation.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 276
+  },
+  {
+   "id": "F107",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "external_integration",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Sensor records with provenance.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 277
+  },
+  {
+   "id": "F110",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "external_integration",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Hardware transaction coordination through a verified external provider.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 278
+  },
+  {
+   "id": "F111",
+   "priority": 3,
+   "phase": "P5",
+   "bucket": "external_integration",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Task-based split-payment proposal and review.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 279
+  },
+  {
+   "id": "F112",
+   "priority": 3,
+   "phase": "P5",
+   "bucket": "external_integration",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Rent/deposit record tracking without claiming unverified escrow.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 280
+  },
+  {
+   "id": "F113",
+   "priority": 3,
+   "phase": "P5",
+   "bucket": "external_integration",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Remittance provider discovery with transparent quotes and explicit provider handoff.",
+   "implementationPaths": [],
+   "testsListed": 0,
    "order": 281
   }
  ],
  "localTestRun": {
   "command": "./gradlew testDebugUnitTest --rerun-tasks",
   "result": "BUILD SUCCESSFUL",
-  "tests": 31,
+  "tests": 40,
   "failures": 0,
   "errors": 0,
-  "skipped": 0,
-  "log": "scratchpad/gradle-review-tests.log (not committed)"
- }
+  "skipped": 0
+ },
+ "correction": "Earlier version put items with empty implementationPaths into missing_code before checking the external environment, which moved 19 external-protocol items into missing_code. Corrected here.",
+ "sourceInconsistency": "prioritized-backlog.json header gapCounts (MISSING_IMPLEMENTATION 4, IMPLEMENTED_MISSING_ANDROID 2, PARTIAL 272) disagrees with item-level gapKind (MISSING_IMPLEMENTATION 0, IMPLEMENTED_MISSING_ANDROID 5, PARTIAL 273). Item-level data is used here."
 }

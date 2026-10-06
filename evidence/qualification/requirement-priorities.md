@@ -1,16 +1,20 @@
 # Requirement priorities (281 unresolved)
 
-Generated from `evidence/qualification/prioritized-backlog.json` by the classification below. Not a status re-derivation.
+Generated from `evidence/qualification/prioritized-backlog.json`. Statuses are not re-derived from source.
 
 | Primary gap | Count | Note |
 |---|---:|---|
-| missing_code | 27 | No implementation path, or MISSING_IMPLEMENTATION |
+| missing_code | 8 | No implementation path, or MISSING_IMPLEMENTATION |
 | missing_local_tests | 199 | Implementation present, no tests listed; locally actionable |
 | local_verification_remaining | 43 | Tests listed but not closed; locally actionable |
 | device_validation | 7 | Needs physical device or Android Keystore evidence |
-| external_integration | 5 | Needs authorized external protocol/provider access |
+| external_integration | 24 | Needs authorized external protocol/provider access (includes empty-path EXTERNAL items) |
 
-Locally actionable without device or external access: 269. Of these, 96 also need a device later.
+## Corrections
+
+Earlier version put items with empty implementationPaths into missing_code before checking the external environment, which moved 19 external-protocol items into missing_code. Corrected here.
+
+prioritized-backlog.json header gapCounts (MISSING_IMPLEMENTATION 4, IMPLEMENTED_MISSING_ANDROID 2, PARTIAL 272) disagrees with item-level gapKind (MISSING_IMPLEMENTATION 0, IMPLEMENTED_MISSING_ANDROID 5, PARTIAL 273). Item-level data is used here.
 
 ## Ordered list
 
@@ -193,117 +197,118 @@ Locally actionable without device or external access: 269. Of these, 96 also nee
 | 175 | F119 | 2 | P4 | local_verification_remaining |  |  |
 | 176 | F116 | 2 | P5 | local_verification_remaining |  |  |
 | 177 | E030 | 2 | All phases | local_verification_remaining |  |  |
-| 178 | F081 | 3 | P3 | missing_code |  | yes |
-| 179 | F082 | 3 | P3 | missing_code |  | yes |
-| 180 | F083 | 3 | P3 | missing_code |  | yes |
-| 181 | F084 | 3 | P3 | missing_code |  | yes |
-| 182 | F085 | 3 | P3 | missing_code |  | yes |
-| 183 | F086 | 3 | P3 | missing_code |  | yes |
-| 184 | F087 | 3 | P3 | missing_code |  | yes |
-| 185 | F088 | 3 | P3 | missing_code |  | yes |
-| 186 | F089 | 3 | P3 | missing_code |  | yes |
-| 187 | F090 | 3 | P3 | missing_code |  | yes |
-| 188 | F101 | 3 | P3 | missing_code |  | yes |
-| 189 | F102 | 3 | P3 | missing_code |  | yes |
-| 190 | F103 | 3 | P3 | missing_code |  | yes |
-| 191 | F106 | 3 | P3 | missing_code |  | yes |
-| 192 | F107 | 3 | P3 | missing_code |  | yes |
-| 193 | F110 | 3 | P3 | missing_code |  | yes |
-| 194 | F111 | 3 | P5 | missing_code |  | yes |
-| 195 | F112 | 3 | P5 | missing_code |  | yes |
-| 196 | F113 | 3 | P5 | missing_code |  | yes |
-| 197 | C001 | 3 | P1 | missing_local_tests | yes |  |
-| 198 | C005 | 3 | P1 | missing_local_tests | yes |  |
-| 199 | C006 | 3 | P1 | missing_local_tests | yes |  |
-| 200 | C007 | 3 | P1 | missing_local_tests | yes |  |
-| 201 | C009 | 3 | P1 | missing_local_tests | yes |  |
-| 202 | C010 | 3 | P1 | missing_local_tests | yes |  |
-| 203 | C011 | 3 | P1 | missing_local_tests | yes |  |
-| 204 | C012 | 3 | P1 | missing_local_tests | yes |  |
-| 205 | C013 | 3 | P1 | missing_local_tests | yes |  |
-| 206 | C014 | 3 | P1 | missing_local_tests | yes |  |
-| 207 | C015 | 3 | P1 | missing_local_tests | yes |  |
-| 208 | C016 | 3 | P1 | missing_local_tests | yes |  |
-| 209 | C017 | 3 | P1 | missing_local_tests | yes |  |
-| 210 | C018 | 3 | P1 | missing_local_tests | yes |  |
-| 211 | C019 | 3 | P1 | missing_local_tests | yes |  |
-| 212 | C020 | 3 | P1 | missing_local_tests | yes |  |
-| 213 | C021 | 3 | P1 | missing_local_tests | yes |  |
-| 214 | C022 | 3 | P1 | missing_local_tests | yes |  |
-| 215 | C023 | 3 | P1 | missing_local_tests | yes |  |
-| 216 | C024 | 3 | P1 | missing_local_tests | yes |  |
-| 217 | C025 | 3 | P1 | missing_local_tests | yes |  |
-| 218 | C026 | 3 | P1 | missing_local_tests | yes |  |
-| 219 | C028 | 3 | P1 | missing_local_tests | yes |  |
-| 220 | C029 | 3 | P1 | missing_local_tests | yes |  |
-| 221 | C030 | 3 | P1 | missing_local_tests | yes |  |
-| 222 | C034 | 3 | P1 | missing_local_tests | yes |  |
-| 223 | C038 | 3 | P1 | missing_local_tests | yes |  |
-| 224 | C039 | 3 | P1 | missing_local_tests | yes |  |
-| 225 | C040 | 3 | P1 | missing_local_tests | yes |  |
-| 226 | C044 | 3 | P1 | missing_local_tests | yes |  |
-| 227 | C050 | 3 | P1 | missing_local_tests | yes |  |
-| 228 | C051 | 3 | P1 | missing_local_tests | yes |  |
-| 229 | C052 | 3 | P1 | missing_local_tests | yes |  |
-| 230 | C053 | 3 | P1 | missing_local_tests | yes |  |
-| 231 | C054 | 3 | P1 | missing_local_tests | yes |  |
-| 232 | C055 | 3 | P1 | missing_local_tests | yes |  |
-| 233 | C056 | 3 | P1 | missing_local_tests | yes |  |
-| 234 | C057 | 3 | P1 | missing_local_tests | yes |  |
-| 235 | C058 | 3 | P1 | missing_local_tests | yes |  |
-| 236 | C059 | 3 | P1 | missing_local_tests | yes |  |
-| 237 | C060 | 3 | P1 | missing_local_tests | yes |  |
-| 238 | C061 | 3 | P1 | missing_local_tests | yes |  |
-| 239 | C062 | 3 | P1 | missing_local_tests | yes |  |
-| 240 | C063 | 3 | P1 | missing_local_tests | yes |  |
-| 241 | C064 | 3 | P1 | missing_local_tests | yes |  |
-| 242 | C065 | 3 | P1 | missing_local_tests | yes |  |
-| 243 | C066 | 3 | P1 | missing_local_tests | yes |  |
-| 244 | C067 | 3 | P1 | missing_local_tests | yes |  |
-| 245 | C068 | 3 | P1 | missing_local_tests | yes |  |
-| 246 | C069 | 3 | P1 | missing_local_tests | yes |  |
-| 247 | C071 | 3 | P1 | missing_local_tests | yes |  |
-| 248 | C072 | 3 | P1 | missing_local_tests | yes |  |
-| 249 | C074 | 3 | P1 | missing_local_tests | yes |  |
-| 250 | C075 | 3 | P1 | missing_local_tests | yes |  |
-| 251 | C076 | 3 | P1 | missing_local_tests | yes |  |
-| 252 | C077 | 3 | P1 | missing_local_tests | yes |  |
-| 253 | C078 | 3 | P1 | missing_local_tests | yes |  |
-| 254 | C079 | 3 | P1 | missing_local_tests | yes |  |
-| 255 | C080 | 3 | P1 | missing_local_tests | yes |  |
-| 256 | C081 | 3 | P1 | missing_local_tests | yes |  |
-| 257 | C082 | 3 | P1 | missing_local_tests | yes |  |
-| 258 | C083 | 3 | P1 | missing_local_tests | yes |  |
-| 259 | C084 | 3 | P1 | missing_local_tests | yes |  |
-| 260 | C085 | 3 | P1 | missing_local_tests | yes |  |
-| 261 | C086 | 3 | P1 | missing_local_tests | yes |  |
-| 262 | C088 | 3 | P1 | missing_local_tests | yes |  |
-| 263 | C089 | 3 | P1 | missing_local_tests | yes |  |
-| 264 | C090 | 3 | P1 | missing_local_tests | yes |  |
-| 265 | C091 | 3 | P1 | missing_local_tests | yes |  |
-| 266 | C092 | 3 | P1 | missing_local_tests | yes |  |
-| 267 | C093 | 3 | P1 | missing_local_tests | yes |  |
-| 268 | C094 | 3 | P1 | missing_local_tests | yes |  |
-| 269 | C096 | 3 | P1 | missing_local_tests | yes |  |
-| 270 | C098 | 3 | P1 | missing_local_tests | yes |  |
-| 271 | C099 | 3 | P1 | missing_local_tests | yes |  |
-| 272 | C003 | 3 | P1 | local_verification_remaining | yes |  |
-| 273 | C008 | 3 | P1 | local_verification_remaining | yes |  |
-| 274 | F095 | 3 | P1 | device_validation | yes |  |
-| 275 | FN033 | 3 | P1 | device_validation | yes |  |
-| 276 | F055 | 3 | P2 | device_validation | yes |  |
-| 277 | E008 | 3 | P1/P3 | external_integration |  | yes |
-| 278 | FN061 | 3 | P1 | external_integration |  | yes |
-| 279 | E009 | 3 | P3 | external_integration |  | yes |
-| 280 | E010 | 3 | P3 | external_integration |  | yes |
-| 281 | E015 | 3 | P3 | external_integration |  | yes |
+| 178 | C001 | 3 | P1 | missing_local_tests | yes |  |
+| 179 | C005 | 3 | P1 | missing_local_tests | yes |  |
+| 180 | C006 | 3 | P1 | missing_local_tests | yes |  |
+| 181 | C007 | 3 | P1 | missing_local_tests | yes |  |
+| 182 | C009 | 3 | P1 | missing_local_tests | yes |  |
+| 183 | C010 | 3 | P1 | missing_local_tests | yes |  |
+| 184 | C011 | 3 | P1 | missing_local_tests | yes |  |
+| 185 | C012 | 3 | P1 | missing_local_tests | yes |  |
+| 186 | C013 | 3 | P1 | missing_local_tests | yes |  |
+| 187 | C014 | 3 | P1 | missing_local_tests | yes |  |
+| 188 | C015 | 3 | P1 | missing_local_tests | yes |  |
+| 189 | C016 | 3 | P1 | missing_local_tests | yes |  |
+| 190 | C017 | 3 | P1 | missing_local_tests | yes |  |
+| 191 | C018 | 3 | P1 | missing_local_tests | yes |  |
+| 192 | C019 | 3 | P1 | missing_local_tests | yes |  |
+| 193 | C020 | 3 | P1 | missing_local_tests | yes |  |
+| 194 | C021 | 3 | P1 | missing_local_tests | yes |  |
+| 195 | C022 | 3 | P1 | missing_local_tests | yes |  |
+| 196 | C023 | 3 | P1 | missing_local_tests | yes |  |
+| 197 | C024 | 3 | P1 | missing_local_tests | yes |  |
+| 198 | C025 | 3 | P1 | missing_local_tests | yes |  |
+| 199 | C026 | 3 | P1 | missing_local_tests | yes |  |
+| 200 | C028 | 3 | P1 | missing_local_tests | yes |  |
+| 201 | C029 | 3 | P1 | missing_local_tests | yes |  |
+| 202 | C030 | 3 | P1 | missing_local_tests | yes |  |
+| 203 | C034 | 3 | P1 | missing_local_tests | yes |  |
+| 204 | C038 | 3 | P1 | missing_local_tests | yes |  |
+| 205 | C039 | 3 | P1 | missing_local_tests | yes |  |
+| 206 | C040 | 3 | P1 | missing_local_tests | yes |  |
+| 207 | C044 | 3 | P1 | missing_local_tests | yes |  |
+| 208 | C050 | 3 | P1 | missing_local_tests | yes |  |
+| 209 | C051 | 3 | P1 | missing_local_tests | yes |  |
+| 210 | C052 | 3 | P1 | missing_local_tests | yes |  |
+| 211 | C053 | 3 | P1 | missing_local_tests | yes |  |
+| 212 | C054 | 3 | P1 | missing_local_tests | yes |  |
+| 213 | C055 | 3 | P1 | missing_local_tests | yes |  |
+| 214 | C056 | 3 | P1 | missing_local_tests | yes |  |
+| 215 | C057 | 3 | P1 | missing_local_tests | yes |  |
+| 216 | C058 | 3 | P1 | missing_local_tests | yes |  |
+| 217 | C059 | 3 | P1 | missing_local_tests | yes |  |
+| 218 | C060 | 3 | P1 | missing_local_tests | yes |  |
+| 219 | C061 | 3 | P1 | missing_local_tests | yes |  |
+| 220 | C062 | 3 | P1 | missing_local_tests | yes |  |
+| 221 | C063 | 3 | P1 | missing_local_tests | yes |  |
+| 222 | C064 | 3 | P1 | missing_local_tests | yes |  |
+| 223 | C065 | 3 | P1 | missing_local_tests | yes |  |
+| 224 | C066 | 3 | P1 | missing_local_tests | yes |  |
+| 225 | C067 | 3 | P1 | missing_local_tests | yes |  |
+| 226 | C068 | 3 | P1 | missing_local_tests | yes |  |
+| 227 | C069 | 3 | P1 | missing_local_tests | yes |  |
+| 228 | C071 | 3 | P1 | missing_local_tests | yes |  |
+| 229 | C072 | 3 | P1 | missing_local_tests | yes |  |
+| 230 | C074 | 3 | P1 | missing_local_tests | yes |  |
+| 231 | C075 | 3 | P1 | missing_local_tests | yes |  |
+| 232 | C076 | 3 | P1 | missing_local_tests | yes |  |
+| 233 | C077 | 3 | P1 | missing_local_tests | yes |  |
+| 234 | C078 | 3 | P1 | missing_local_tests | yes |  |
+| 235 | C079 | 3 | P1 | missing_local_tests | yes |  |
+| 236 | C080 | 3 | P1 | missing_local_tests | yes |  |
+| 237 | C081 | 3 | P1 | missing_local_tests | yes |  |
+| 238 | C082 | 3 | P1 | missing_local_tests | yes |  |
+| 239 | C083 | 3 | P1 | missing_local_tests | yes |  |
+| 240 | C084 | 3 | P1 | missing_local_tests | yes |  |
+| 241 | C085 | 3 | P1 | missing_local_tests | yes |  |
+| 242 | C086 | 3 | P1 | missing_local_tests | yes |  |
+| 243 | C088 | 3 | P1 | missing_local_tests | yes |  |
+| 244 | C089 | 3 | P1 | missing_local_tests | yes |  |
+| 245 | C090 | 3 | P1 | missing_local_tests | yes |  |
+| 246 | C091 | 3 | P1 | missing_local_tests | yes |  |
+| 247 | C092 | 3 | P1 | missing_local_tests | yes |  |
+| 248 | C093 | 3 | P1 | missing_local_tests | yes |  |
+| 249 | C094 | 3 | P1 | missing_local_tests | yes |  |
+| 250 | C096 | 3 | P1 | missing_local_tests | yes |  |
+| 251 | C098 | 3 | P1 | missing_local_tests | yes |  |
+| 252 | C099 | 3 | P1 | missing_local_tests | yes |  |
+| 253 | C003 | 3 | P1 | local_verification_remaining | yes |  |
+| 254 | C008 | 3 | P1 | local_verification_remaining | yes |  |
+| 255 | F095 | 3 | P1 | device_validation | yes |  |
+| 256 | FN033 | 3 | P1 | device_validation | yes |  |
+| 257 | F055 | 3 | P2 | device_validation | yes |  |
+| 258 | E008 | 3 | P1/P3 | external_integration |  | yes |
+| 259 | FN061 | 3 | P1 | external_integration |  | yes |
+| 260 | E009 | 3 | P3 | external_integration |  | yes |
+| 261 | E010 | 3 | P3 | external_integration |  | yes |
+| 262 | E015 | 3 | P3 | external_integration |  | yes |
+| 263 | F081 | 3 | P3 | external_integration |  | yes |
+| 264 | F082 | 3 | P3 | external_integration |  | yes |
+| 265 | F083 | 3 | P3 | external_integration |  | yes |
+| 266 | F084 | 3 | P3 | external_integration |  | yes |
+| 267 | F085 | 3 | P3 | external_integration |  | yes |
+| 268 | F086 | 3 | P3 | external_integration |  | yes |
+| 269 | F087 | 3 | P3 | external_integration |  | yes |
+| 270 | F088 | 3 | P3 | external_integration |  | yes |
+| 271 | F089 | 3 | P3 | external_integration |  | yes |
+| 272 | F090 | 3 | P3 | external_integration |  | yes |
+| 273 | F101 | 3 | P3 | external_integration |  | yes |
+| 274 | F102 | 3 | P3 | external_integration |  | yes |
+| 275 | F103 | 3 | P3 | external_integration |  | yes |
+| 276 | F106 | 3 | P3 | external_integration |  | yes |
+| 277 | F107 | 3 | P3 | external_integration |  | yes |
+| 278 | F110 | 3 | P3 | external_integration |  | yes |
+| 279 | F111 | 3 | P5 | external_integration |  | yes |
+| 280 | F112 | 3 | P5 | external_integration |  | yes |
+| 281 | F113 | 3 | P5 | external_integration |  | yes |
 
-## Local test evidence (review binding, first wave)
+## Local test evidence (candidate links; registry statuses unchanged)
 
 - C048: app/src/test/java/com/example/domain/ReviewBindingTest.kt::signingGateRefusesMessageChangedAfterReview; app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval
+- F040: app/src/test/java/com/example/domain/InspectionTest.kt::verdictsArePerInstructionInOrderAndIndependent
+- F041: app/src/test/java/com/example/domain/InspectionTest.kt::allowedTransferSummaryStatesAmountTokenAccountAndRecipient; app/src/test/java/com/example/domain/InspectionTest.kt::allowedMemoSummaryShowsTheExactMemoText
 - F045: app/src/test/java/com/example/domain/ReviewBindingTest.kt::storedHashesAreUnaffectedByCallerBufferChanges; app/src/test/java/com/example/domain/ReviewBindingTest.kt::messageHashIsIndependentOfReviewContextButContextHashIsNot
 - F046: app/src/test/java/com/example/domain/ReviewBindingTest.kt::reviewTimestampChangeIsRejected; app/src/test/java/com/example/domain/ReviewBindingTest.kt::feeAndBlockHeightChangesAreRejected; app/src/test/java/com/example/domain/ReviewBindingTest.kt::signingGateRefusesWalletAccountThatIsNotTheFeePayer
 - F047: app/src/test/java/com/example/domain/ReviewBindingTest.kt::signingGateRefusesMessageChangedAfterReview
 - F048: app/src/test/java/com/example/domain/ReviewBindingTest.kt::reviewTimestampChangeIsRejected; app/src/test/java/com/example/domain/CoreTest.kt::memoParserAndImmutableMessageContextMutations
-
-Registry statuses are unchanged. A local unit test is evidence of the logic only, not of device acceptance.
+- FN042: app/src/test/java/com/example/domain/LookupTableTest.kt::legacyMessageResolvesToItsStaticKeysOnly; app/src/test/java/com/example/domain/LookupTableTest.kt::versionedMessageWithLookupTableIsRefused; app/src/test/java/com/example/domain/LookupTableTest.kt::instructionReferencingAnAccountBeyondStaticKeysIsRefused

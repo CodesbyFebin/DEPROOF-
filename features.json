@@ -1746,7 +1746,9 @@
         "C043",
         "C044"
       ],
-      "tests": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/InspectionTest.kt::verdictsArePerInstructionInOrderAndIndependent"
+      ],
       "qualificationDimensions": [
         "NOT_RUN"
       ],
@@ -1812,7 +1814,10 @@
         "C087",
         "C088"
       ],
-      "tests": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/InspectionTest.kt::allowedTransferSummaryStatesAmountTokenAccountAndRecipient",
+        "app/src/test/java/com/example/domain/InspectionTest.kt::allowedMemoSummaryShowsTheExactMemoText"
+      ],
       "qualificationDimensions": [
         "NOT_RUN"
       ],
