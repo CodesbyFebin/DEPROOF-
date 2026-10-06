@@ -8,6 +8,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: android-actions/setup-android@v2
+        with:
+          packages: |
+            build-tools;34.0.0
+            platform-tools
+            platforms;android-34
       - run: bash deproof-master-build.sh preflight
       - run: MAX_PARALLEL=2 bash deproof-master-build.sh build
       - uses: actions/upload-artifact@v4
