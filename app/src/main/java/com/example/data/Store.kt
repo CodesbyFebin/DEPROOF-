@@ -64,6 +64,7 @@ data class Draft(@PrimaryKey val id: String, val payload: String, val updatedAt:
     @Query("SELECT * FROM observations WHERE eventId=:id ORDER BY observedAt DESC") suspend fun observations(id: String): List<Observation>
     @Query("SELECT * FROM events WHERE id=:id") suspend fun event(id: String): Event?
     @Query("SELECT * FROM tasks ORDER BY createdAt DESC") fun tasks(): Flow<List<Task>>
+    @Query("SELECT * FROM tasks ORDER BY createdAt DESC") suspend fun tasksSnapshot(): List<Task>
     @Insert(onConflict = OnConflictStrategy.ABORT) suspend fun create(t: Task)
     @Update suspend fun update(t: Task)
     @Query("SELECT * FROM attachments WHERE taskId=:id ORDER BY id") suspend fun attachments(id: String): List<Attachment>

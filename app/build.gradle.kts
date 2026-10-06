@@ -7,7 +7,7 @@ android {
     bundle { language { enableSplit = false } }
     compileOptions { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17; isCoreLibraryDesugaringEnabled = true }
     buildTypes { debug { buildConfigField("String", "WALLET_IDENTITY_URI", "\"http://localhost\"") } }
-    testOptions { unitTests.isReturnDefaultValues = false }
+    testOptions { unitTests.isReturnDefaultValues = false; unitTests.isIncludeAndroidResources = true }
 }
 dependencies {
     implementation("androidx.activity:activity-compose:1.13.0")
@@ -24,6 +24,8 @@ dependencies {
     implementation("org.bouncycastle:bcprov-jdk18on:1.79")
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.5")
     testImplementation("junit:junit:4.13.2")
+    testImplementation("org.robolectric:robolectric:4.17")
+    testImplementation("androidx.test:core:1.6.1")
 }
 
 ksp { arg("room.schemaLocation", "$projectDir/schemas") }
