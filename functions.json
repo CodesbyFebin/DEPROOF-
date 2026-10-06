@@ -1,0 +1,2838 @@
+{
+  "count": 86,
+  "base": [
+    {
+      "id": "FN001",
+      "definition": "`isPubkey(input)` — true only for a valid 32-byte base58 public key.",
+      "status": "VERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Only supported local contract profile qualified; no inferred device/protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN001"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F002"
+      ]
+    },
+    {
+      "id": "FN002",
+      "definition": "`formatSol(lamports)` — exact plain decimal SOL formatting.",
+      "status": "VERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Only supported local contract profile qualified; no inferred device/protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN002"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F004"
+      ]
+    },
+    {
+      "id": "FN003",
+      "definition": "`formatSkr(rawAmount)` — exact formatting using verified SKR decimals.",
+      "status": "VERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Only supported local contract profile qualified; no inferred device/protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN003"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F007"
+      ]
+    },
+    {
+      "id": "FN004",
+      "definition": "`loadAccount(address)` — independent balance results and paginated activity context.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/live-rpc.json"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "tools/jvm/LiveRpcProbe.kt"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN004"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F001",
+        "F002",
+        "F003",
+        "F004",
+        "F005",
+        "F006",
+        "F007",
+        "F008",
+        "F009",
+        "F010"
+      ]
+    },
+    {
+      "id": "FN005",
+      "definition": "`rankInstruction(ix)` — presentation order; never an authorization shortcut.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Helpers.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN005"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F040",
+        "F041"
+      ]
+    },
+    {
+      "id": "FN006",
+      "definition": "`toRequest(transaction)` — complete typed review request or named unsupported result.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Solana.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN006"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F028",
+        "F045"
+      ]
+    },
+    {
+      "id": "FN007",
+      "definition": "`materialize(parsed)` — validated program, account roles, and instruction bytes.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Solana.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN007"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F035",
+        "F040"
+      ]
+    },
+    {
+      "id": "FN008",
+      "definition": "`decodeInstruction(ix)` — typed operation or explicit unsupported verdict.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN008"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F031",
+        "F032",
+        "F033",
+        "F034",
+        "F035",
+        "F036",
+        "F037",
+        "F038",
+        "F039",
+        "F040"
+      ]
+    },
+    {
+      "id": "FN009",
+      "definition": "`readU64LE(bytes, offset)` — unsigned integer with bounds checks.",
+      "status": "VERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Only supported local contract profile qualified; no inferred device/protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN009"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F033"
+      ]
+    },
+    {
+      "id": "FN010",
+      "definition": "`readU32LE(bytes, offset)` — unsigned discriminator with bounds checks.",
+      "status": "VERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Only supported local contract profile qualified; no inferred device/protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN010"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F039"
+      ]
+    },
+    {
+      "id": "FN011",
+      "definition": "`transferCheckedData(amount, decimals)` — exact ten-byte encoding with range validation.",
+      "status": "VERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Only supported local contract profile qualified; no inferred device/protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN011"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F032"
+      ]
+    },
+    {
+      "id": "FN012",
+      "definition": "`canonicalMessage(request)` — constrained deproof-review-v1 card text for compatibility; use serializedMessageBytes(tx) for full Solana authorization bytes. Never conflate the two.",
+      "status": "VERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Only supported local contract profile qualified; no inferred device/protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN012"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F045"
+      ]
+    },
+    {
+      "id": "FN013",
+      "definition": "`sha256Text(text)` — SHA-256 of documented UTF-8 bytes.",
+      "status": "VERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Only supported local contract profile qualified; no inferred device/protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN013"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F045"
+      ]
+    },
+    {
+      "id": "FN014",
+      "definition": "`sha256Hex(bytes)` — lowercase digest of raw bytes.",
+      "status": "VERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Only supported local contract profile qualified; no inferred device/protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN014"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F048"
+      ]
+    },
+    {
+      "id": "FN015",
+      "definition": "`tamperAmount(request)` — test-only negative-control mutation.",
+      "status": "VERIFIED",
+      "implementationPaths": [
+        "app/src/test/java/com/example/domain/CoreTest.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Only supported local contract profile qualified; no inferred device/protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN015"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F048"
+      ]
+    },
+    {
+      "id": "FN016",
+      "definition": "`assertUnchanged(current, review)` — message and context equality checks.",
+      "status": "VERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Solana.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Only supported local contract profile qualified; no inferred device/protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN016"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F045",
+        "F046"
+      ]
+    },
+    {
+      "id": "FN017",
+      "definition": "`canSign(review, session, context)` — full UI approval predicate including policy, unchanged bytes/context, account/cluster, blockhash, fee and prior-devnet gate; no safety guarantee.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Solana.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN017"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F047",
+        "F048"
+      ]
+    },
+    {
+      "id": "FN018",
+      "definition": "`verdictOf(decoded)` — understandable title, reason, and severity.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN018"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F041"
+      ]
+    },
+    {
+      "id": "FN019",
+      "definition": "`summaryOf(request)` — amount, asset, recipient, operation, and limitations.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN019"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F041"
+      ]
+    },
+    {
+      "id": "FN020",
+      "definition": "`shortKey(key)` — display abbreviation with full-value access.",
+      "status": "VERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Only supported local contract profile qualified; no inferred device/protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN020"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F042"
+      ]
+    },
+    {
+      "id": "FN021",
+      "definition": "`formatAmount(raw, decimals)` — exact arbitrary-decimal formatting.",
+      "status": "VERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Only supported local contract profile qualified; no inferred device/protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN021"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F004",
+        "F007"
+      ]
+    },
+    {
+      "id": "FN022",
+      "definition": "`observeSettlement(signature, cluster)` — observed state or unavailable error.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN022"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F079"
+      ]
+    },
+    {
+      "id": "FN023",
+      "definition": "`getSkrRawBalance(address)` — verified token-account aggregation.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN023"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F005",
+        "F006",
+        "F007"
+      ]
+    },
+    {
+      "id": "FN024",
+      "definition": "`signDevnetMemo(wallet, memo)` — reviewed real signing, returned-byte validation, RPC submission and matched signature; return explicit wallet rejection/capability/RPC errors. Never silently sign-and-send.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/wallet/Wallet.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN024"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F019",
+        "F020"
+      ]
+    },
+    {
+      "id": "FN025",
+      "definition": "`latestDevnetBlockhash()` — blockhash plus last-valid block height.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN025"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F019"
+      ]
+    },
+    {
+      "id": "FN026",
+      "definition": "`connect()` — real authorized wallet session.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/wallet/Wallet.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN026"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F012",
+        "F013",
+        "F014"
+      ]
+    },
+    {
+      "id": "FN027",
+      "definition": "`disconnect()` — session invalidation and explicit failure handling.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/wallet/Wallet.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN027"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F015"
+      ]
+    },
+    {
+      "id": "FN028",
+      "definition": "`saveObservation(record)` — preserve chain provenance and review integrity.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN028"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F076",
+        "F080"
+      ]
+    },
+    {
+      "id": "FN029",
+      "definition": "`reject(request)` — local refusal record with null transaction signature.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN029"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F050",
+        "F075"
+      ]
+    },
+    {
+      "id": "FN030",
+      "definition": "`copyReceipt(receipt)` — clipboard export with accessible fallback.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN030"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F080"
+      ]
+    },
+    {
+      "id": "FN031",
+      "definition": "`canonicalEvidence(evidence)` — deproof-evidence-v2 JCS manifest bytes with exact note preservation and golden vectors.",
+      "status": "VERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Records.kt",
+        "tools/verify.py"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Only supported local contract profile qualified; no inferred device/protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN031"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F063"
+      ]
+    },
+    {
+      "id": "FN032",
+      "definition": "`sha256File(uriOrPath)` — streaming raw-byte hashing.",
+      "status": "VERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Only supported local contract profile qualified; no inferred device/protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN032"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F061",
+        "F062"
+      ]
+    },
+    {
+      "id": "FN033",
+      "definition": "`signHash(digest)` — legacy-digest-bytes-v1 only: SHA256withECDSA over 32 raw digest bytes, DER/SPKI and observed hardware metadata; reject wrong size/software keys. New records use FN062.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/EvidenceSigner.kt",
+        "app/src/main/java/com/example/domain/LocalEvidence.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log",
+        "evidence/qualification/device-qualification.json"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt::legacyDigestAndFirstSeenIndicatorsNeverGrantTrust",
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt::legacySignatureUsesRawDigestBytesNotHexOrBase64"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "32 raw bytes, separate legacy alias, DER/SPKI and hardware refusal implemented; local raw/size/signature tests pass. Actual Android hardware-key generation, KeyInfo and signature remain NOT_RUN; no legacy-import workflow claimed."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN033"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F067"
+      ]
+    },
+    {
+      "id": "FN034",
+      "definition": "`verifyLocalSignature(payload)` — independent signature validation.",
+      "status": "VERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Records.kt",
+        "tools/verify.py"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Only supported local contract profile qualified; no inferred device/protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN034"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F070"
+      ]
+    },
+    {
+      "id": "FN035",
+      "definition": "`statusLabel(state)` — text and severity without relying only on color.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Helpers.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN035"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F079"
+      ]
+    },
+    {
+      "id": "FN036",
+      "definition": "`cooldownRemaining(timerSource, clock)` — validated protocol timing or explicitly labeled illustrative timing; never withdrawal authorization; clamp elapsed to zero, reject invalid/future starts per documented policy.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Helpers.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN036"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F087"
+      ]
+    },
+    {
+      "id": "FN037",
+      "definition": "`selectCluster(action)` — explicit compatible cluster or rejection.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Helpers.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN037"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F018"
+      ]
+    },
+    {
+      "id": "FN038",
+      "definition": "`refuseUndecoded(ix)` — named refusal without invented amounts.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN038"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F039"
+      ]
+    },
+    {
+      "id": "FN039",
+      "definition": "`prepareReview(tx, account, cluster)` — immutable complete-message review binding.",
+      "status": "VERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Solana.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Only supported local contract profile qualified; no inferred device/protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN039"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F045",
+        "F046"
+      ]
+    },
+    {
+      "id": "FN040",
+      "definition": "`exportReceipt(receipt)` — schema-valid portable record.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN040"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F080"
+      ]
+    },
+    {
+      "id": "FN041",
+      "definition": "`parseTransaction(bytes)` — strict legacy/versioned transaction parsing.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Solana.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN041"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F028"
+      ]
+    },
+    {
+      "id": "FN042",
+      "definition": "`resolveLookupTables(message)` — verified address resolution or refusal.",
+      "status": "BLOCKED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN042"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F028",
+        "F040"
+      ]
+    },
+    {
+      "id": "FN043",
+      "definition": "`evaluateAllInstructions(tx, policy)` — whole-transaction policy result.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN043"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F040"
+      ]
+    },
+    {
+      "id": "FN044",
+      "definition": "`simulateTransaction(tx)` — simulation context, errors, and limitations.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN044"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F044"
+      ]
+    },
+    {
+      "id": "FN045",
+      "definition": "`estimateFee(message)` — live fee estimate with context.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN045"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F044",
+        "F098"
+      ]
+    },
+    {
+      "id": "FN046",
+      "definition": "`validateTokenAccount(account, expected)` — mint, owner, role, and state checks.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN046"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F035",
+        "F036"
+      ]
+    },
+    {
+      "id": "FN047",
+      "definition": "`buildSkrTransfer(parameters)` — exact verified transaction construction.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Helpers.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN047"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F032",
+        "F036",
+        "F048"
+      ]
+    },
+    {
+      "id": "FN048",
+      "definition": "`rebuildExpiredTransaction(previous)` — new draft that invalidates previous approval.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Solana.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log",
+        "evidence/qualification/device-qualification.json"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Existing one-rebuild memo implementation and local binding test; device handoff/reapproval remains NOT_RUN."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN048"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F049",
+        "F097"
+      ]
+    },
+    {
+      "id": "FN049",
+      "definition": "`submitSignedTransaction(bytes)` — broadcast signature and submission context.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN049"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F020",
+        "F078"
+      ]
+    },
+    {
+      "id": "FN050",
+      "definition": "`validateReturnedTransaction(review, signedBytes)` — identical reviewed message check.",
+      "status": "VERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Solana.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Only supported local contract profile qualified; no inferred device/protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN050"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F020",
+        "F048"
+      ]
+    },
+    {
+      "id": "FN051",
+      "definition": "`createTask(input)` — validated persisted task.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/resources/db/migration_1_2.sql"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/verifier-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "tools/test_migrations.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN051"
+      },
+      "phase": "P2",
+      "featureIds": [
+        "F071"
+      ]
+    },
+    {
+      "id": "FN052",
+      "definition": "`attachEvidence(taskId, file)` — file metadata, digest, and association.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/resources/db/migration_1_2.sql"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/verifier-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "tools/test_migrations.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN052"
+      },
+      "phase": "P2",
+      "featureIds": [
+        "F059",
+        "F074"
+      ]
+    },
+    {
+      "id": "FN053",
+      "definition": "`verifyManifest(manifest, files)` — independent manifest integrity report.",
+      "status": "VERIFIED",
+      "implementationPaths": [
+        "tools/verify.py"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/verifier-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "tools/test_verifier.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Only supported local contract profile qualified; no inferred device/protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN053"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F064",
+        "F070"
+      ]
+    },
+    {
+      "id": "FN054",
+      "definition": "`createReceipt(event)` — outcome-specific receipt without invented fields.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN054"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F075",
+        "F076",
+        "F077",
+        "F078",
+        "F079",
+        "F080"
+      ]
+    },
+    {
+      "id": "FN055",
+      "definition": "`refreshReceiptStatus(id)` — bounded status observation and persistence.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/resources/db/migration_1_2.sql"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/verifier-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "tools/test_migrations.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN055"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F079"
+      ]
+    },
+    {
+      "id": "FN056",
+      "definition": "`verifyStakingProtocol(source)` — validated interface metadata and fixtures.",
+      "status": "BLOCKED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN056"
+      },
+      "phase": "P3",
+      "featureIds": [
+        "F081"
+      ]
+    },
+    {
+      "id": "FN057",
+      "definition": "`decodeSkrStake(ix, verifiedInterface)` — supported operation or refusal.",
+      "status": "BLOCKED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN057"
+      },
+      "phase": "P3",
+      "featureIds": [
+        "F082"
+      ]
+    },
+    {
+      "id": "FN058",
+      "definition": "`computeWithdrawEligibility(state)` — protocol-derived decision.",
+      "status": "BLOCKED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN058"
+      },
+      "phase": "P3",
+      "featureIds": [
+        "F085",
+        "F088"
+      ]
+    },
+    {
+      "id": "FN059",
+      "definition": "`runConnector(connectorId, request)` — attributable adapter result with freshness.",
+      "status": "BLOCKED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN059"
+      },
+      "phase": "P3",
+      "featureIds": [
+        "F101",
+        "F102",
+        "F103",
+        "F104",
+        "F105",
+        "F106",
+        "F107",
+        "F108",
+        "F109",
+        "F110"
+      ]
+    },
+    {
+      "id": "FN060",
+      "definition": "`exportQualificationReport(results)` — machine-readable gates and artifact digests.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "scripts/qualify.sh",
+        "scripts/update-coverage.py"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN060"
+      },
+      "phase": "P4",
+      "featureIds": [
+        "F120"
+      ]
+    },
+    {
+      "id": "FN061",
+      "definition": "`explainPacket(packet, consent, providerConfig)` — optional consented explanation or NOT_CONFIGURED/GROK_NOT_CALLED/PROVIDER_ERROR; never changes authorization. Provider integration is staged, not a core network dependency.",
+      "status": "BLOCKED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Explanations.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt::stagedExplanationNeverTransmitsOrChangesAuthorization"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "BLOCKED"
+      ],
+      "limitations": [
+        "Only configuration/consent/blocked-adapter error paths are implemented and tested; no qualified provider adapter or outbound request exists. External provider integration remains blocked, not complete. Authorization unchanged."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN061"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F099"
+      ]
+    },
+    {
+      "id": "FN062",
+      "definition": "`signEvidenceEnvelope(envelopeBytes)` — default v2 SHA256withECDSA signature over exact domain-separated envelope bytes; DER/SPKI, security-level observation and independently verifiable payload. SOFTWARE_KEY/NO_KEYSTORE/UNQUALIFIED_KEY are explicit failures.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/EvidenceSigner.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [],
+      "limitations": [
+        "Full typed contract/required integration remains incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "FN062"
+      },
+      "phase": "P1",
+      "featureIds": [
+        "F067",
+        "F068",
+        "F069",
+        "F070"
+      ]
+    }
+  ],
+  "ecosystem": [
+    {
+      "id": "EF001",
+      "contract": "createNodeIdentity(config)",
+      "behavior": "Protected identity/public metadata; entropy/key storage failure",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "evidencePaths": [
+        "evidence/qualification/node-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "node-agent/internal/agent/agent_test.go"
+      ],
+      "implementationPaths": [
+        "node-agent/internal/agent/agent.go"
+      ],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "EF001"
+      },
+      "phase": "P3",
+      "requirementIds": [
+        "E011"
+      ],
+      "featureIds": []
+    },
+    {
+      "id": "EF002",
+      "contract": "pairNode(challenge, fingerprint, consent)",
+      "behavior": "Scoped authenticated session; expired/replayed/unapproved peer",
+      "status": "VERIFIED",
+      "evidencePaths": [
+        "evidence/qualification/node-integration.json",
+        "evidence/qualification/node-integration.log",
+        "evidence/qualification/node-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "node-agent/internal/agent/agent_test.go",
+        "scripts/qualify-integration.py"
+      ],
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Verified only for the documented owner-local loopback/cubic/isolated HTTP profile; not Android Keystore, physical device, arbitrary hosting or external protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "EF002"
+      },
+      "phase": "P3",
+      "requirementIds": [
+        "E011"
+      ],
+      "featureIds": []
+    },
+    {
+      "id": "EF003",
+      "contract": "revokeNodeSession(sessionId)",
+      "behavior": "Persisted revocation and denied subsequent operations",
+      "status": "VERIFIED",
+      "evidencePaths": [
+        "evidence/qualification/node-integration.json",
+        "evidence/qualification/node-integration.log",
+        "evidence/qualification/node-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "node-agent/internal/agent/agent_test.go",
+        "scripts/qualify-integration.py"
+      ],
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Verified only for the documented owner-local loopback/cubic/isolated HTTP profile; not Android Keystore, physical device, arbitrary hosting or external protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "EF003"
+      },
+      "phase": "P3",
+      "requirementIds": [
+        "E011",
+        "E030"
+      ],
+      "featureIds": [
+        "F058",
+        "F068",
+        "F116"
+      ]
+    },
+    {
+      "id": "EF004",
+      "contract": "probeNodeCapabilities()",
+      "behavior": "Observed host/runtime limits and timestamp; unsupported/unknown values explicit",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "evidencePaths": [
+        "evidence/qualification/node-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "node-agent/internal/agent/agent_test.go"
+      ],
+      "implementationPaths": [
+        "node-agent/internal/agent/agent.go"
+      ],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "EF004"
+      },
+      "phase": "P3",
+      "requirementIds": [
+        "E012",
+        "E013",
+        "E022"
+      ],
+      "featureIds": []
+    },
+    {
+      "id": "EF005",
+      "contract": "validateServiceProfile(profile, policy)",
+      "behavior": "Qualified immutable profile or denied reason",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "evidencePaths": [
+        "evidence/qualification/hosting-isolation.json",
+        "evidence/qualification/node-integration.json"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "scripts/qualify-hosting.py",
+        "scripts/qualify-integration.py"
+      ],
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/hosting.go",
+        "scripts/qualify-hosting.py",
+        "tools/local_hosting.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "EF005"
+      },
+      "phase": "P3",
+      "requirementIds": [
+        "E012",
+        "E013"
+      ],
+      "featureIds": []
+    },
+    {
+      "id": "EF006",
+      "contract": "startLocalService(profile, operationId)",
+      "behavior": "Accepted operation ID then actual observed process state; resource/runtime/port failures",
+      "status": "VERIFIED",
+      "evidencePaths": [
+        "evidence/qualification/hosting-isolation.json",
+        "evidence/qualification/node-integration.json"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "scripts/qualify-hosting.py",
+        "scripts/qualify-integration.py"
+      ],
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/hosting.go",
+        "scripts/qualify-hosting.py",
+        "tools/local_hosting.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Verified only for the documented owner-local loopback/cubic/isolated HTTP profile; not Android Keystore, physical device, arbitrary hosting or external protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "EF006"
+      },
+      "phase": "P3",
+      "requirementIds": [
+        "E012",
+        "E013"
+      ],
+      "featureIds": []
+    },
+    {
+      "id": "EF007",
+      "contract": "stopLocalService(serviceId, operationId)",
+      "behavior": "Observed termination or timed-out failure; no premature Stopped badge",
+      "status": "VERIFIED",
+      "evidencePaths": [
+        "evidence/qualification/hosting-isolation.json",
+        "evidence/qualification/node-integration.json"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "scripts/qualify-hosting.py",
+        "scripts/qualify-integration.py"
+      ],
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/hosting.go",
+        "scripts/qualify-hosting.py",
+        "tools/local_hosting.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Verified only for the documented owner-local loopback/cubic/isolated HTTP profile; not Android Keystore, physical device, arbitrary hosting or external protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "EF007"
+      },
+      "phase": "P3",
+      "requirementIds": [
+        "E012",
+        "E013"
+      ],
+      "featureIds": []
+    },
+    {
+      "id": "EF008",
+      "contract": "observeNodeHealth(nodeId)",
+      "behavior": "Probe results/uptime intervals with freshness and gaps",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "evidencePaths": [
+        "evidence/qualification/hosting-isolation.json",
+        "evidence/qualification/node-integration.json"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "scripts/qualify-hosting.py",
+        "scripts/qualify-integration.py"
+      ],
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/hosting.go",
+        "scripts/qualify-hosting.py",
+        "tools/local_hosting.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "EF008"
+      },
+      "phase": "P3",
+      "requirementIds": [
+        "E014"
+      ],
+      "featureIds": [
+        "F108"
+      ]
+    },
+    {
+      "id": "EF009",
+      "contract": "establishPeerTunnel(peer, routes, consent)",
+      "behavior": "Authenticated measured connectivity; revoked/NAT/unavailable errors",
+      "status": "BLOCKED",
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "implementationPaths": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "limitations": [
+        "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "EF009"
+      },
+      "phase": "P3",
+      "requirementIds": [
+        "E015"
+      ],
+      "featureIds": []
+    },
+    {
+      "id": "EF010",
+      "contract": "setBandwidthConsent(profile, limits)",
+      "behavior": "Persisted explicit scope and cap policy; denied endpoint/unsupported provider",
+      "status": "VERIFIED",
+      "evidencePaths": [
+        "evidence/qualification/node-integration.json",
+        "evidence/qualification/node-integration.log",
+        "evidence/qualification/node-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "node-agent/internal/agent/agent_test.go",
+        "scripts/qualify-integration.py"
+      ],
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Verified only for the documented owner-local loopback/cubic/isolated HTTP profile; not Android Keystore, physical device, arbitrary hosting or external protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "EF010"
+      },
+      "phase": "P3",
+      "requirementIds": [
+        "E016",
+        "E017",
+        "E030"
+      ],
+      "featureIds": [
+        "F058",
+        "F068",
+        "F104",
+        "F116"
+      ]
+    },
+    {
+      "id": "EF011",
+      "contract": "startContributionFlow(profile)",
+      "behavior": "Actual restricted contribution session or named capability failure",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "evidencePaths": [
+        "evidence/qualification/node-integration.json",
+        "evidence/qualification/node-integration.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "EF011"
+      },
+      "phase": "P3",
+      "requirementIds": [
+        "E016",
+        "E030"
+      ],
+      "featureIds": [
+        "F058",
+        "F068",
+        "F104",
+        "F116"
+      ]
+    },
+    {
+      "id": "EF012",
+      "contract": "stopContributionFlow(sessionId)",
+      "behavior": "Flow termination and final counters; stop timeout explicit",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "evidencePaths": [
+        "evidence/qualification/node-integration.json",
+        "evidence/qualification/node-integration.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "EF012"
+      },
+      "phase": "P3",
+      "requirementIds": [
+        "E016",
+        "E030"
+      ],
+      "featureIds": [
+        "F058",
+        "F068",
+        "F104",
+        "F116"
+      ]
+    },
+    {
+      "id": "EF013",
+      "contract": "measureContribution(sessionId, interval)",
+      "behavior": "Raw sourced counters/units/sequence; gaps/counter reset handled",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "evidencePaths": [
+        "evidence/qualification/node-integration.json",
+        "evidence/qualification/node-integration.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "EF013"
+      },
+      "phase": "P3",
+      "requirementIds": [
+        "E018"
+      ],
+      "featureIds": [
+        "F104"
+      ]
+    },
+    {
+      "id": "EF014",
+      "contract": "enforceTrafficQuota(sessionId, counters)",
+      "behavior": "Applied pause/rate/cap decision; cannot enforce means sharing refuses",
+      "status": "VERIFIED",
+      "evidencePaths": [
+        "evidence/qualification/node-integration.json",
+        "evidence/qualification/node-integration.log",
+        "evidence/qualification/node-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "node-agent/internal/agent/agent_test.go",
+        "scripts/qualify-integration.py"
+      ],
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Verified only for the documented owner-local loopback/cubic/isolated HTTP profile; not Android Keystore, physical device, arbitrary hosting or external protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "EF014"
+      },
+      "phase": "P3",
+      "requirementIds": [
+        "E017"
+      ],
+      "featureIds": []
+    },
+    {
+      "id": "EF015",
+      "contract": "signUsageReceipt(meteringEnvelope)",
+      "behavior": "Domain-separated node signature plus exact payload/public key",
+      "status": "VERIFIED",
+      "evidencePaths": [
+        "evidence/qualification/node-integration.json",
+        "evidence/qualification/node-integration.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Verified only for the documented owner-local loopback/cubic/isolated HTTP profile; not Android Keystore, physical device, arbitrary hosting or external protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "EF015"
+      },
+      "phase": "P3",
+      "requirementIds": [
+        "E019"
+      ],
+      "featureIds": [
+        "F061",
+        "F062",
+        "F063",
+        "F064",
+        "F065",
+        "F066",
+        "F067",
+        "F068",
+        "F069",
+        "F070",
+        "F077"
+      ]
+    },
+    {
+      "id": "EF016",
+      "contract": "verifyUsageReceipt(receipt, peerEvidence)",
+      "behavior": "Integrity, replay/freshness and corroboration report; no automatic measurement-truth claim",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "evidencePaths": [
+        "evidence/qualification/node-integration.json",
+        "evidence/qualification/node-integration.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py",
+        "tools/verify.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "EF016"
+      },
+      "phase": "P3",
+      "requirementIds": [
+        "E019"
+      ],
+      "featureIds": [
+        "F061",
+        "F062",
+        "F063",
+        "F064",
+        "F065",
+        "F066",
+        "F067",
+        "F068",
+        "F069",
+        "F070",
+        "F077"
+      ]
+    },
+    {
+      "id": "EF017",
+      "contract": "reconcilePayouts(providerLedger, chainObservations)",
+      "behavior": "Accrued/claimable/paid discrepancies, asset/cluster/time; unsupported reward protocol blocked",
+      "status": "BLOCKED",
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "implementationPaths": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "limitations": [
+        "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "EF017"
+      },
+      "phase": "P3",
+      "requirementIds": [
+        "E020"
+      ],
+      "featureIds": [
+        "F079",
+        "F104"
+      ]
+    },
+    {
+      "id": "EF018",
+      "contract": "discoverProofJobs(adapter, cursor)",
+      "behavior": "Signed validated bounded jobs with source/freshness",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "evidencePaths": [
+        "evidence/qualification/node-integration.json",
+        "evidence/qualification/node-integration.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "EF018"
+      },
+      "phase": "P3",
+      "requirementIds": [
+        "E021"
+      ],
+      "featureIds": []
+    },
+    {
+      "id": "EF019",
+      "contract": "matchProofJob(job, capabilities)",
+      "behavior": "Compatible backend/resource profile or explicit mismatch",
+      "status": "BLOCKED",
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "implementationPaths": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "limitations": [
+        "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "EF019"
+      },
+      "phase": "P3",
+      "requirementIds": [
+        "E022"
+      ],
+      "featureIds": []
+    },
+    {
+      "id": "EF020",
+      "contract": "executeProofJob(job, approvedInputs)",
+      "behavior": "Actual bounded proof/result and execution events; cancellation/deadline/backend failures",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "evidencePaths": [
+        "evidence/qualification/node-integration.json",
+        "evidence/qualification/node-integration.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "EF020"
+      },
+      "phase": "P3",
+      "requirementIds": [
+        "E023",
+        "E030"
+      ],
+      "featureIds": [
+        "F058",
+        "F068",
+        "F116"
+      ]
+    },
+    {
+      "id": "EF021",
+      "contract": "verifyProofResult(result, publicInputs, verificationKey)",
+      "behavior": "Independent valid/invalid/unsupported verification report",
+      "status": "VERIFIED",
+      "evidencePaths": [
+        "evidence/qualification/node-integration.json",
+        "evidence/qualification/node-integration.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Verified only for the documented owner-local loopback/cubic/isolated HTTP profile; not Android Keystore, physical device, arbitrary hosting or external protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "EF021"
+      },
+      "phase": "P3",
+      "requirementIds": [
+        "E024"
+      ],
+      "featureIds": []
+    },
+    {
+      "id": "EF022",
+      "contract": "createContributionReceipt(job, metering, verification)",
+      "behavior": "Immutable schema-valid provenance with explicit assurance levels",
+      "status": "VERIFIED",
+      "evidencePaths": [
+        "evidence/qualification/node-integration.json",
+        "evidence/qualification/node-integration.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Verified only for the documented owner-local loopback/cubic/isolated HTTP profile; not Android Keystore, physical device, arbitrary hosting or external protocol qualification."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "EF022"
+      },
+      "phase": "P3",
+      "requirementIds": [
+        "E025"
+      ],
+      "featureIds": [
+        "F075",
+        "F076",
+        "F077",
+        "F078",
+        "F079",
+        "F080"
+      ]
+    },
+    {
+      "id": "EF023",
+      "contract": "exportVerificationBundle(receipts, publicArtifacts)",
+      "behavior": "Portable offline-verifiable package, manifest/checksums, sensitive-data minimization",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "implementationPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "tools/verify.py",
+        "tools/bundle.py"
+      ],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "EF023"
+      },
+      "phase": "P4",
+      "requirementIds": [
+        "E029",
+        "E030"
+      ],
+      "featureIds": [
+        "F058",
+        "F068",
+        "F080",
+        "F116",
+        "F118"
+      ]
+    },
+    {
+      "id": "EF024",
+      "contract": "runEcosystemQualification(matrix)",
+      "behavior": "Per-host/provider/backend gates, local/external distinction, named blockers and evidence",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "implementationPaths": [
+        "scripts/qualify.sh"
+      ],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/functions.json",
+        "id": "EF024"
+      },
+      "phase": "P3",
+      "requirementIds": [
+        "E013"
+      ],
+      "featureIds": []
+    }
+  ],
+  "updatedAt": "2026-10-06",
+  "coveragePolicy": "No overlap counted as additional unique features; VERIFIED_LOCAL does not qualify device/external requirements."
+}

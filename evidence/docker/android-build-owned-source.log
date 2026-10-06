@@ -1,0 +1,184 @@
+ Image deproof/android-build:local Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 724B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from android-build.Dockerfile
+#2 transferring dockerfile: 1.72kB done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/eclipse-temurin:17.0.20_8-jdk-noble@sha256:9f2d47abfd5e58b6c31c110043c6f5717beccd912b724988e3e0166266b8e570
+#3 DONE 1.9s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 614B done
+#4 DONE 0.0s
+
+#5 [1/6] FROM docker.io/library/eclipse-temurin:17.0.20_8-jdk-noble@sha256:9f2d47abfd5e58b6c31c110043c6f5717beccd912b724988e3e0166266b8e570
+#5 resolve docker.io/library/eclipse-temurin:17.0.20_8-jdk-noble@sha256:9f2d47abfd5e58b6c31c110043c6f5717beccd912b724988e3e0166266b8e570 0.0s done
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 transferring context: 93.94MB 1.4s done
+#6 DONE 1.5s
+
+#5 [1/6] FROM docker.io/library/eclipse-temurin:17.0.20_8-jdk-noble@sha256:9f2d47abfd5e58b6c31c110043c6f5717beccd912b724988e3e0166266b8e570
+#5 DONE 0.1s
+
+#7 [2/6] RUN apt-get update && apt-get install -y --no-install-recommends curl unzip ca-certificates python3 && rm -rf /var/lib/apt/lists/*  && mkdir -p /opt/android-sdk/cmdline-tools  && curl --fail --location --retry 3 "https://dl.google.com/android/repository/commandlinetools-linux-15859902_latest.zip" -o /tmp/sdk.zip  && echo "4e4c464f145a7512b57d088ac6c278c03c9eea610886b35a5e0804e74eedf583  /tmp/sdk.zip" | sha256sum -c -  && unzip -q /tmp/sdk.zip -d /tmp/sdk  && mv /tmp/sdk/cmdline-tools /opt/android-sdk/cmdline-tools/pinned  && rm -rf /tmp/sdk /tmp/sdk.zip  && yes | /opt/android-sdk/cmdline-tools/pinned/bin/sdkmanager --sdk_root=/opt/android-sdk --licenses >/dev/null
+#7 0.762 Get:1 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+#7 1.064 Get:2 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+#7 1.872 Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+#7 2.121 Get:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+#7 2.241 Get:5 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1,320 kB]
+#7 2.369 Get:6 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1,808 kB]
+#7 3.027 Get:7 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]
+#7 3.611 Get:8 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB]
+#7 3.890 Get:9 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]
+#7 4.375 Get:10 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1,542 kB]
+#7 6.972 Get:11 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1,943 kB]
+#7 7.706 Get:12 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [50.0 kB]
+#7 10.35 Get:13 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [2,135 kB]
+#7 11.24 Get:14 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1,695 kB]
+#7 11.95 Get:15 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [2,164 kB]
+#7 12.78 Get:16 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [56.2 kB]
+#7 12.80 Get:17 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [36.0 kB]
+#7 12.81 Get:18 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Packages [671 B]
+#7 12.82 Get:19 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [49.0 kB]
+#7 12.92 Fetched 33.2 MB in 13s (2,604 kB/s)
+#7 12.92 Reading package lists...
+#7 13.93 Reading package lists...
+#7 14.91 Building dependency tree...
+#7 15.12 Reading state information...
+#7 15.41 ca-certificates is already the newest version (20260601~24.04.1).
+#7 15.41 The following additional packages will be installed:
+#7 15.42   libcurl4t64 libpython3-stdlib libpython3.12-minimal libpython3.12-stdlib
+#7 15.42   media-types netbase python3-minimal python3.12 python3.12-minimal
+#7 15.42 Suggested packages:
+#7 15.42   python3-doc python3-tk python3-venv python3.12-venv python3.12-doc
+#7 15.42   binfmt-support zip
+#7 15.50 The following NEW packages will be installed:
+#7 15.50   libpython3-stdlib libpython3.12-minimal libpython3.12-stdlib media-types
+#7 15.50   netbase python3 python3-minimal python3.12 python3.12-minimal unzip
+#7 15.50 The following packages will be upgraded:
+#7 15.51   curl libcurl4t64
+#7 16.06 2 upgraded, 10 newly installed, 0 to remove and 7 not upgraded.
+#7 16.06 Need to get 6,740 kB of archives.
+#7 16.06 After this operation, 24.2 MB of additional disk space will be used.
+#7 16.06 Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-minimal amd64 3.12.3-1ubuntu0.17 [839 kB]
+#7 17.90 Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3.12-minimal amd64 3.12.3-1ubuntu0.17 [2,335 kB]
+#7 18.43 Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-minimal amd64 3.12.3-0ubuntu2.1 [27.4 kB]
+#7 18.44 Get:4 http://archive.ubuntu.com/ubuntu noble/main amd64 media-types all 10.1.0 [27.5 kB]
+#7 18.44 Get:5 http://archive.ubuntu.com/ubuntu noble/main amd64 netbase all 6.4 [13.1 kB]
+#7 18.45 Get:6 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-stdlib amd64 3.12.3-1ubuntu0.17 [2,071 kB]
+#7 19.12 Get:7 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3.12 amd64 3.12.3-1ubuntu0.17 [651 kB]
+#7 19.48 Get:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3-stdlib amd64 3.12.3-0ubuntu2.1 [10.1 kB]
+#7 19.48 Get:9 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3 amd64 3.12.3-0ubuntu2.1 [23.0 kB]
+#7 19.48 Get:10 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 curl amd64 8.5.0-2ubuntu10.15 [227 kB]
+#7 19.51 Get:11 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl4t64 amd64 8.5.0-2ubuntu10.15 [343 kB]
+#7 19.54 Get:12 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 unzip amd64 6.0-28ubuntu4.1 [174 kB]
+#7 20.07 debconf: delaying package configuration, since apt-utils is not installed
+#7 20.11 Fetched 6,740 kB in 4s (1,604 kB/s)
+#7 20.15 Selecting previously unselected package libpython3.12-minimal:amd64.
+#7 20.15 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6839 files and directories currently installed.)
+#7 20.17 Preparing to unpack .../libpython3.12-minimal_3.12.3-1ubuntu0.17_amd64.deb ...
+#7 20.17 Unpacking libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.17) ...
+#7 20.29 Selecting previously unselected package python3.12-minimal.
+#7 20.29 Preparing to unpack .../python3.12-minimal_3.12.3-1ubuntu0.17_amd64.deb ...
+#7 20.30 Unpacking python3.12-minimal (3.12.3-1ubuntu0.17) ...
+#7 20.39 Setting up libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.17) ...
+#7 20.45 Setting up python3.12-minimal (3.12.3-1ubuntu0.17) ...
+#7 21.39 Selecting previously unselected package python3-minimal.
+#7 21.39 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7150 files and directories currently installed.)
+#7 21.40 Preparing to unpack .../0-python3-minimal_3.12.3-0ubuntu2.1_amd64.deb ...
+#7 21.41 Unpacking python3-minimal (3.12.3-0ubuntu2.1) ...
+#7 21.44 Selecting previously unselected package media-types.
+#7 21.44 Preparing to unpack .../1-media-types_10.1.0_all.deb ...
+#7 21.45 Unpacking media-types (10.1.0) ...
+#7 21.48 Selecting previously unselected package netbase.
+#7 21.48 Preparing to unpack .../2-netbase_6.4_all.deb ...
+#7 21.49 Unpacking netbase (6.4) ...
+#7 21.52 Selecting previously unselected package libpython3.12-stdlib:amd64.
+#7 21.52 Preparing to unpack .../3-libpython3.12-stdlib_3.12.3-1ubuntu0.17_amd64.deb ...
+#7 21.53 Unpacking libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.17) ...
+#7 21.67 Selecting previously unselected package python3.12.
+#7 21.67 Preparing to unpack .../4-python3.12_3.12.3-1ubuntu0.17_amd64.deb ...
+#7 21.67 Unpacking python3.12 (3.12.3-1ubuntu0.17) ...
+#7 21.71 Selecting previously unselected package libpython3-stdlib:amd64.
+#7 21.71 Preparing to unpack .../5-libpython3-stdlib_3.12.3-0ubuntu2.1_amd64.deb ...
+#7 21.71 Unpacking libpython3-stdlib:amd64 (3.12.3-0ubuntu2.1) ...
+#7 21.75 Setting up python3-minimal (3.12.3-0ubuntu2.1) ...
+#7 21.94 Selecting previously unselected package python3.
+#7 21.94 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7591 files and directories currently installed.)
+#7 21.95 Preparing to unpack .../python3_3.12.3-0ubuntu2.1_amd64.deb ...
+#7 21.96 Unpacking python3 (3.12.3-0ubuntu2.1) ...
+#7 22.00 Preparing to unpack .../curl_8.5.0-2ubuntu10.15_amd64.deb ...
+#7 22.01 Unpacking curl (8.5.0-2ubuntu10.15) over (8.5.0-2ubuntu10.13) ...
+#7 22.07 Preparing to unpack .../libcurl4t64_8.5.0-2ubuntu10.15_amd64.deb ...
+#7 22.09 Unpacking libcurl4t64:amd64 (8.5.0-2ubuntu10.15) over (8.5.0-2ubuntu10.13) ...
+#7 22.14 Selecting previously unselected package unzip.
+#7 22.14 Preparing to unpack .../unzip_6.0-28ubuntu4.1_amd64.deb ...
+#7 22.15 Unpacking unzip (6.0-28ubuntu4.1) ...
+#7 22.19 Setting up media-types (10.1.0) ...
+#7 22.20 Setting up libcurl4t64:amd64 (8.5.0-2ubuntu10.15) ...
+#7 22.21 Setting up unzip (6.0-28ubuntu4.1) ...
+#7 22.23 Setting up netbase (6.4) ...
+#7 22.25 Setting up curl (8.5.0-2ubuntu10.15) ...
+#7 22.26 Setting up libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.17) ...
+#7 22.27 Setting up python3.12 (3.12.3-1ubuntu0.17) ...
+#7 23.22 Setting up libpython3-stdlib:amd64 (3.12.3-0ubuntu2.1) ...
+#7 23.24 Setting up python3 (3.12.3-0ubuntu2.1) ...
+#7 23.25 running python rtupdate hooks for python3.12...
+#7 23.25 running python post-rtupdate hooks for python3.12...
+#7 23.36 Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
+#7 23.47   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+#7 23.47                                  Dload  Upload   Total   Spent    Left  Speed
+#7 23.47   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  173M    0 1173k    0     0  1818k      0  0:01:37 --:--:--  0:01:37 1818k  2  173M    2 4767k    0     0  2790k      0  0:01:03  0:00:01  0:01:02 2789k  4  173M    4 8767k    0     0  3311k      0  0:00:53  0:00:02  0:00:51 3311k  6  173M    6 11.8M    0     0  3196k      0  0:00:55  0:00:03  0:00:52 3196k  8  173M    8 14.0M    0     0  3088k      0  0:00:57  0:00:04  0:00:53 3088k  8  173M    8 15.2M    0     0  2765k      0  0:01:04  0:00:05  0:00:59 2887k 10  173M   10 17.7M    0     0  2705k      0  0:01:05  0:00:06  0:00:59 2677k 12  173M   12 21.7M    0     0  2919k      0  0:01:00  0:00:07  0:00:53 2710k 14  173M   14 25.5M    0     0  3021k      0  0:00:58  0:00:08  0:00:50 2885k 16  173M   16 27.9M    0     0  2939k      0  0:01:00  0:00:09  0:00:51 2802k 17  173M   17 30.5M    0     0  2911k      0  0:01:00  0:00:10  0:00:50 3072k 19  173M   19 33.6M    0     0  2955k      0  0:01:00  0:00:11  0:00:49 3296k 21  173M   21 36.5M    0     0  2958k      0  0:01:00  0:00:12  0:00:48 3017k 22  173M   22 39.4M    0     0  2946k      0  0:01:00  0:00:13  0:00:47 2817k 24  173M   24 42.5M    0     0  2978k      0  0:00:59  0:00:14  0:00:45 3055k 25  173M   25 44.9M    0     0  2945k      0  0:01:00  0:00:15  0:00:45 3019k 27  173M   27 47.9M    0     0  2941k      0  0:01:00  0:00:16  0:00:44 2911k 29  173M   29 50.8M    0     0  2953k      0  0:01:00  0:00:17  0:00:43 2940k 30  173M   30 53.6M    0     0  2944k      0  0:01:00  0:00:18  0:00:42 2937k 33  173M   33 57.5M    0     0  2997k      0  0:00:59  0:00:19  0:00:40 3055k 35  173M   35 60.7M    0     0  3012k      0  0:00:58  0:00:20  0:00:38 3222k 36  173M   36 63.9M    0     0  3024k      0  0:00:58  0:00:21  0:00:37 3303k 38  173M   38 67.2M    0     0  3035k      0  0:00:58  0:00:22  0:00:36 3327k 40  173M   40 70.4M    0     0  3049k      0  0:00:58  0:00:23  0:00:35 3443k 42  173M   42 73.8M    0     0  3067k      0  0:00:57  0:00:24  0:00:33 3340k 44  173M   44 77.3M    0     0  3087k      0  0:00:57  0:00:25  0:00:32 3398k 46  173M   46 80.9M    0     0  3089k      0  0:00:57  0:00:26  0:00:31 3362k 48  173M   48 84.5M    0     0  3130k      0  0:00:56  0:00:27  0:00:29 3560k 50  173M   50 87.6M    0     0  3132k      0  0:00:56  0:00:28  0:00:28 3526k 52  173M   52 90.9M    0     0  3141k      0  0:00:56  0:00:29  0:00:27 3504k 54  173M   54 93.7M    0     0  3130k      0  0:00:56  0:00:30  0:00:26 3351k 56  173M   56 97.1M    0     0  3143k      0  0:00:56  0:00:31  0:00:25 3444k 57  173M   57 99.9M    0     0  3134k      0  0:00:56  0:00:32  0:00:24 3155k 59  173M   59  103M    0     0  3149k      0  0:00:56  0:00:33  0:00:23 3244k 61  173M   61  106M    0     0  3146k      0  0:00:56  0:00:34  0:00:22 3179k 63  173M   63  110M    0     0  3162k      0  0:00:56  0:00:35  0:00:21 3355k 65  173M   65  113M    0     0  3176k      0  0:00:55  0:00:36  0:00:19 3382k 67  173M   67  116M    0     0  3174k      0  0:00:55  0:00:37  0:00:18 3437k 69  173M   69  120M    0     0  3188k      0  0:00:55  0:00:38  0:00:17 3449k 71  173M   71  123M    0     0  3184k      0  0:00:55  0:00:39  0:00:16 3442k 73  173M   73  127M    0     0  3201k      0  0:00:55  0:00:40  0:00:15 3478k 75  173M   75  130M    0     0  3202k      0  0:00:55  0:00:41  0:00:14 3395k 76  173M   76  133M    0     0  3204k      0  0:00:55  0:00:42  0:00:13 3427k 78  173M   78  136M    0     0  3203k      0  0:00:55  0:00:43  0:00:12 3320k 80  173M   80  140M    0     0  3213k      0  0:00:55  0:00:44  0:00:11 3448k 82  173M   82  143M    0     0  3226k      0  0:00:55  0:00:45  0:00:10 3430k 85  173M   85  147M    0     0  3238k      0  0:00:54  0:00:46  0:00:08 3538k 87  173M   87  151M    0     0  3249k      0  0:00:54  0:00:47  0:00:07 3636k 89  173M   89  154M    0     0  3260k      0  0:00:54  0:00:48  0:00:06 3758k 91  173M   91  158M    0     0  3265k      0  0:00:54  0:00:49  0:00:05 3734k 93  173M   93  161M    0     0  3270k      0  0:00:54  0:00:50  0:00:04 3670k 95  173M   95  164M    0     0  3269k      0  0:00:54  0:00:51  0:00:03 3558k 96  173M   96  168M    0     0  3269k      0  0:00:54  0:00:52  0:00:02 3458k 98  173M   98  171M    0     0  3273k      0  0:00:54  0:00:53  0:00:01 3402k100  173M  100  173M    0     0  3277k      0  0:00:54  0:00:54 --:--:-- 3410k
+#7 78.09 /tmp/sdk.zip: OK
+#7 79.25 WARNING: The SDK Manager CLI tool (sdkmanager) is deprecated. Use Android CLI instead.
+#7 79.25 The 'android' binary can also be found in the cmdline-tools directory, and 'android sdk' is the replacement for 'sdkmanager'.
+#7 79.25 To learn more about the Android CLI and how to use it, see the documentation (https://d.android.com/tools/agents/android-cli)
+#7 79.25 
+#7 DONE 84.2s
+
+#8 [3/6] RUN /opt/android-sdk/cmdline-tools/pinned/bin/sdkmanager --sdk_root=/opt/android-sdk 'platforms;android-37.0' 'build-tools;36.0.0'  && (getent group "20" || groupadd --gid "20" builder)  && useradd --create-home --uid "501" --gid "20" builder  && mkdir -p /workspace /cache/gradle /export  && chown -R "501:20" /workspace /cache /export /home/builder
+#8 0.526 WARNING: The SDK Manager CLI tool (sdkmanager) is deprecated. Use Android CLI instead.
+#8 0.526 The 'android' binary can also be found in the cmdline-tools directory, and 'android sdk' is the replacement for 'sdkmanager'.
+#8 0.526 To learn more about the Android CLI and how to use it, see the documentation (https://d.android.com/tools/agents/android-cli)
+#8 0.526 
+#8 0.978 Loading package information...                                                  Loading local repository...                                                     [                                       ] 3% Loading local repository...        [                                       ] 3% Fetch remote repository...         [=                                      ] 3% Fetch remote repository...         [=                                      ] 4% Fetch remote repository...         [=                                      ] 5% Fetch remote repository...         [==                                     ] 5% Fetch remote repository...         [==                                     ] 6% Fetch remote repository...         [==                                     ] 7% Fetch remote repository...         [==                                     ] 7% Computing updates...               [===                                    ] 8% Computing updates...               [===                                    ] 10% Computing updates...              [===                                    ] 10% Installing Android SDK Build-Tools[===                                    ] 10% Downloading build-tools_r36_linux.[====                                   ] 10% Downloading build-tools_r36_linux.[====                                   ] 11% Downloading build-tools_r36_linux.[====                                   ] 12% Downloading build-tools_r36_linux.[=====                                  ] 13% Downloading build-tools_r36_linux.[=====                                  ] 14% Downloading build-tools_r36_linux.[=====                                  ] 15% Downloading build-tools_r36_linux.[======                                 ] 15% Downloading build-tools_r36_linux.[======                                 ] 16% Downloading build-tools_r36_linux.[======                                 ] 17% Downloading build-tools_r36_linux.[=======                                ] 18% Downloading build-tools_r36_linux.[=======                                ] 19% Downloading build-tools_r36_linux.[=======                                ] 20% Downloading build-tools_r36_linux.[========                               ] 20% Downloading build-tools_r36_linux.[========                               ] 21% Downloading build-tools_r36_linux.[========                               ] 21% Unzipping...                      [========                               ] 21% Unzipping... android-16/NOTICE.txt[========                               ] 21% Unzipping... android-16/aapt      [========                               ] 21% Unzipping... android-16/aapt2     [========                               ] 22% Unzipping... android-16/aapt2     [========                               ] 22% Unzipping... android-16/aarch64-li[========                               ] 22% Unzipping... android-16/aidl      [========                               ] 22% Unzipping... android-16/apksigner [========                               ] 22% Unzipping... android-16/arm-linux-[========                               ] 22% Unzipping... android-16/bcc_compat[========                               ] 22% Unzipping... android-16/core-lambd[========                               ] 22% Unzipping... android-16/d8        [========                               ] 22% Unzipping... android-16/dexdump   [=========                              ] 23% Unzipping... android-16/dexdump   [=========                              ] 23% Unzipping... android-16/i686-linux[=========                              ] 23% Unzipping... android-16/lld       [=========                              ] 23% Unzipping... android-16/llvm-rs-cc[=========                              ] 23% Unzipping... android-16/mipsel-lin[=========                              ] 23% Unzipping... android-16/runtime.pr[=========                              ] 23% Unzipping... android-16/source.pro[=========                              ] 23% Unzipping... android-16/split-sele[=========                              ] 23% Unzipping... android-16/x86_64-lin[=========                              ] 23% Unzipping... android-16/zipalign  [=========                              ] 23% Unzipping... android-16/lib/apksig[=========                              ] 23% Unzipping... android-16/lib/d8.jar[=========                              ] 24% Unzipping... android-16/lib/d8.jar[=========                              ] 25% Unzipping... android-16/lib/d8.jar[==========                             ] 25% Unzipping... android-16/lib/d8.jar[==========                             ] 25% Unzipping... android-16/lib64/libL[==========                             ] 26% Unzipping... android-16/lib64/libL[==========                             ] 27% Unzipping... android-16/lib64/libL[==========                             ] 27% Unzipping... android-16/lib64/libb[==========                             ] 27% Unzipping... android-16/lib64/libc[===========                            ] 28% Unzipping... android-16/lib64/libc[===========                            ] 29% Unzipping... android-16/lib64/libc[===========                            ] 29% Unzipping... android-16/lld-bin/ll[===========                            ] 30% Unzipping... android-16/lld-bin/ll[============                           ] 30% Unzipping... android-16/lld-bin/ll[============                           ] 31% Unzipping... android-16/lld-bin/ll[============                           ] 31% Unzipping... android-16/renderscri[============                           ] 32% Unzipping... android-16/renderscri[=============                          ] 33% Unzipping... android-16/renderscri[=====================                  ] 55% Unzipping... android-16/renderscri[=====================                  ] 55% Installing Android SDK Platform 37[=====================                  ] 55% Downloading platform-37.0_r02.zip.[======================                 ] 55% Downloading platform-37.0_r02.zip.[======================                 ] 56% Downloading platform-37.0_r02.zip.[======================                 ] 57% Downloading platform-37.0_r02.zip.[=======================                ] 58% Downloading platform-37.0_r02.zip.[=======================                ] 59% Downloading platform-37.0_r02.zip.[=======================                ] 60% Downloading platform-37.0_r02.zip.[========================               ] 60% Downloading platform-37.0_r02.zip.[========================               ] 61% Downloading platform-37.0_r02.zip.[========================               ] 62% Downloading platform-37.0_r02.zip.[=========================              ] 63% Downloading platform-37.0_r02.zip.[=========================              ] 64% Downloading platform-37.0_r02.zip.[=========================              ] 65% Downloading platform-37.0_r02.zip.[==========================             ] 65% Downloading platform-37.0_r02.zip.[==========================             ] 66% Downloading platform-37.0_r02.zip.[==========================             ] 66% Unzipping... android-16/renderscri[==========================             ] 66% Unzipping... android-37.0/android-[==========================             ] 67% Unzipping... android-37.0/android-[===========================            ] 68% Unzipping... android-37.0/android-[===========================            ] 68% Unzipping... android-37.0/android.[===========================            ] 69% Unzipping... android-37.0/android.[===========================            ] 70% Unzipping... android-37.0/android.[============================           ] 70% Unzipping... android-37.0/android.[============================           ] 71% Unzipping... android-37.0/android.[============================           ] 72% Unzipping... android-37.0/android.[============================           ] 72% Unzipping... android-37.0/build.pr[============================           ] 72% Unzipping... android-37.0/core-for[============================           ] 72% Unzipping... android-37.0/data/NOT[============================           ] 72% Unzipping... android-37.0/data/act[============================           ] 72% Unzipping... android-37.0/data/ann[============================           ] 72% Unzipping... android-37.0/data/api[============================           ] 72% Unzipping... android-37.0/data/bro[============================           ] 72% Unzipping... android-37.0/data/cat[============================           ] 72% Unzipping... android-37.0/data/fea[============================           ] 72% Unzipping... android-37.0/data/res[=============================          ] 73% Unzipping... android-37.0/data/res[=============================          ] 74% Unzipping... android-37.0/data/res[=============================          ] 75% Unzipping... android-37.0/data/res[==============================         ] 75% Unzipping... android-37.0/data/res[==============================         ] 76% Unzipping... android-37.0/data/res[==============================         ] 77% Unzipping... android-37.0/data/res[==============================         ] 77% Unzipping... android-37.0/data/ser[==============================         ] 77% Unzipping... android-37.0/data/wid[==============================         ] 77% Unzipping... android-37.0/framewor[==============================         ] 77% Unzipping... android-37.0/optional[==============================         ] 77% Unzipping... android-37.0/sdk.prop[==============================         ] 77% Unzipping... android-37.0/skins/HV[==============================         ] 77% Unzipping... android-37.0/skins/NO[==============================         ] 77% Unzipping... android-37.0/skins/QV[==============================         ] 77% Unzipping... android-37.0/skins/WQ[==============================         ] 77% Unzipping... android-37.0/skins/WS[==============================         ] 77% Unzipping... android-37.0/skins/WV[==============================         ] 77% Unzipping... android-37.0/skins/WX[==============================         ] 77% Unzipping... android-37.0/source.p[==============================         ] 77% Unzipping... android-37.0/template[==============================         ] 77% Unzipping... android-37.0/uiautoma[==============================         ] 78% Unzipping... android-37.0/uiautoma[=======================================] 100% Unzipping... android-37.0/uiautom
+#8 48.69 
+#8 48.74 dialout:x:20:ubuntu
+#8 48.90 useradd warning: builder's uid 501 outside of the UID_MIN 1000 and UID_MAX 60000 range.
+#8 DONE 49.0s
+
+#9 [4/6] WORKDIR /source
+#9 DONE 0.2s
+
+#10 [5/6] COPY . .
+#10 DONE 0.3s
+
+#11 [6/6] RUN test ! -e local.properties && chown -R "501:20" /source
+#11 DONE 1.8s
+
+#12 exporting to image
+#12 exporting layers
+#12 exporting layers 24.1s done
+#12 exporting manifest sha256:50a2ede279d4f99a65e81b3cb34691f5f74190d5b4087c1106c0bf5ff741245c 0.0s done
+#12 exporting config sha256:d51eeb166303d0c9732bf90393f444334888cdc5278fb3a7a547b8a32c7a1734 0.0s done
+#12 exporting attestation manifest sha256:15f8c9d328c51689fa11a401f8f395a99a51f155eda26c890b55e4523f6db97d 0.0s done
+#12 exporting manifest list sha256:850b8e06a677445de9424cb3c981818dc15b02bfed950e440c4685580aa0f78f 0.0s done
+#12 naming to docker.io/deproof/android-build:local 0.0s done
+#12 unpacking to docker.io/deproof/android-build:local
+#12 unpacking to docker.io/deproof/android-build:local 27.1s done
+#12 DONE 51.6s
+
+#13 resolving provenance for metadata file
+#13 DONE 0.1s
+ Image deproof/android-build:local Built 
+ Container deproof-dev-android-build-run-1299a5129d16 Creating 
+ Container deproof-dev-android-build-run-1299a5129d16 Created 
+WARNING: The SDK Manager CLI tool (sdkmanager) is deprecated. Use Android CLI instead.
+The 'android' binary can also be found in the cmdline-tools directory, and 'android sdk' is the replacement for 'sdkmanager'.
+To learn more about the Android CLI and how to use it, see the documentation (https://d.android.com/tools/agents/android-cli)
+

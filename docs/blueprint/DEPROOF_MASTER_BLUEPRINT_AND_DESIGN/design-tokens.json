@@ -1,0 +1,106 @@
+{
+  "schema": "deproof-design-tokens-v3",
+  "version": "3.0",
+  "units": {
+    "androidLayout": "dp",
+    "androidText": "sp",
+    "web": "rem/css-px"
+  },
+  "dark": {
+    "obsidian": "#070B14",
+    "raised": "#101722",
+    "ink": "#E8EEF8",
+    "muted": "#93A0B8",
+    "mint": "#3DDC97",
+    "cyan": "#22D3EE",
+    "blue": "#3B82F6",
+    "purple": "#8B5CF6",
+    "danger": "#F07178",
+    "warning": "#E7C36A",
+    "line": "#1E2A3D",
+    "buttonLabel": "#062018"
+  },
+  "light": {
+    "background": "#F7F4EF",
+    "surface": "#FFFFFF",
+    "surfaceRaised": "#EFECF5",
+    "text": "#1A1714",
+    "textSecondary": "#555166",
+    "textQuiet": "#625D70",
+    "outline": "#797286",
+    "mint": "#167B56",
+    "cyan": "#006A88",
+    "violet": "#6E62C9",
+    "error": "#B42332",
+    "warning": "#855500",
+    "ctaFill": "#167B56",
+    "ctaText": "#FFFFFF"
+  },
+  "brandGradient": [
+    "#3DDC97",
+    "#22D3EE",
+    "#3B82F6",
+    "#8B5CF6"
+  ],
+  "spacing": [
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    32,
+    40,
+    48
+  ],
+  "radius": {
+    "card": 16,
+    "input": 12,
+    "button": 12
+  },
+  "minAndroidTouchTarget": 48,
+  "motionMs": {
+    "press": 120,
+    "navigation": 200,
+    "maximumDecorative": 300
+  },
+  "type": {
+    "display": [
+      32,
+      38
+    ],
+    "title": [
+      24,
+      30
+    ],
+    "section": [
+      18,
+      24
+    ],
+    "body": [
+      16,
+      24
+    ],
+    "support": [
+      14,
+      20
+    ],
+    "label": [
+      12,
+      16
+    ],
+    "mono": [
+      12,
+      20
+    ]
+  },
+  "minimumBodySp": 14,
+  "branding": {
+    "mark": "DEPR",
+    "product": "Deproof",
+    "concept": "$DEPR \u2014 Brand concept",
+    "credit": "Built by CodesbyFebin",
+    "logoReference": "assets/reference/depr-mark-obsidian.png"
+  },
+  "contrastPolicy": "Gradient perimeter permitted; CTA label on solid mint panel unless every gradient position passes 4.5:1. line is decorative, not a semantic boundary; use measured muted/cyan outline for interactive boundaries."
+}

@@ -1,0 +1,220 @@
+ Image deproof/node-agent:local Building 
+ Image deproof/prover-worker:local Building 
+ Image deproof/web:local Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.68kB done
+#1 DONE 0.0s
+
+#2 [web internal] load build definition from web.Dockerfile
+#2 transferring dockerfile:
+#2 transferring dockerfile: 449B 0.0s done
+#2 DONE 0.1s
+
+#3 [prover-worker internal] load build definition from prover-worker.Dockerfile
+#3 transferring dockerfile: 1.33kB 0.0s done
+#3 DONE 0.1s
+
+#4 [node-agent internal] load build definition from node-agent.Dockerfile
+#4 transferring dockerfile: 1.44kB 0.0s done
+#4 DONE 0.1s
+
+#5 [node-agent internal] load metadata for docker.io/library/golang:1.26.4-bookworm@sha256:a688600ca24f8a4d3ca77f95b0dd40704a9fc787c826660eb7ba0b641b8b175d
+#5 ...
+
+#6 [web internal] load metadata for docker.io/library/busybox:1.36@sha256:73aaf090f3d85aa34ee199857f03fa3a95c8ede2ffd4cc2cdb5b94e566b11662
+#6 DONE 0.1s
+
+#5 [prover-worker internal] load metadata for docker.io/library/golang:1.26.4-bookworm@sha256:a688600ca24f8a4d3ca77f95b0dd40704a9fc787c826660eb7ba0b641b8b175d
+#5 DONE 1.8s
+
+#7 [web internal] load metadata for docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7
+#7 DONE 2.4s
+
+#8 [node-agent internal] load .dockerignore
+#8 transferring context: 567B done
+#8 DONE 0.0s
+
+#9 [web internal] load build context
+#9 DONE 0.0s
+
+#10 [node-agent build 1/4] FROM docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7
+#10 resolve docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7
+#10 resolve docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7 0.1s done
+#10 ...
+
+#11 [node-agent internal] load build context
+#11 transferring context: 148.99kB 0.1s done
+#11 DONE 0.2s
+
+#12 [prover-worker internal] load build context
+#12 transferring context: 110.88kB 0.1s done
+#12 DONE 0.2s
+
+#13 [web stage-1 1/2] FROM docker.io/library/busybox:1.36@sha256:73aaf090f3d85aa34ee199857f03fa3a95c8ede2ffd4cc2cdb5b94e566b11662
+#13 resolve docker.io/library/busybox:1.36@sha256:73aaf090f3d85aa34ee199857f03fa3a95c8ede2ffd4cc2cdb5b94e566b11662 0.2s done
+#13 DONE 0.3s
+
+#14 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:a688600ca24f8a4d3ca77f95b0dd40704a9fc787c826660eb7ba0b641b8b175d
+#14 resolve docker.io/library/golang:1.26.4-bookworm@sha256:a688600ca24f8a4d3ca77f95b0dd40704a9fc787c826660eb7ba0b641b8b175d 0.1s done
+#14 DONE 1.0s
+
+#10 [web build 1/4] FROM docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7
+#10 sha256:4ce903582132c9254f5172f6336ca9b39b7554f483694627d03a62f181950257 249B / 249B 0.3s done
+#10 sha256:5c36186b8d8417454960b65c9c32b077ab4f3fb3c662ff5d4eeb5fd6abf649ff 0B / 12.42MB 0.5s
+#10 sha256:79dc17963468084e50bd8100760c1d19f0c4711c75a624e91f83ad282cc114f7 0B / 3.52MB 0.3s
+#10 sha256:5c32499ab806884c5725c705c2bf528662d034ed99de13d3205309e0d9ef0375 0B / 28.23MB 0.3s
+#10 ...
+
+#15 [node-agent build 2/6] WORKDIR /src/prover-worker
+#15 DONE 0.3s
+
+#10 [web build 1/4] FROM docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7
+#10 ...
+
+#16 [node-agent build 3/6] COPY prover-worker/go.mod prover-worker/go.sum ./
+#16 DONE 0.2s
+
+#10 [web build 1/4] FROM docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7
+#10 sha256:5c36186b8d8417454960b65c9c32b077ab4f3fb3c662ff5d4eeb5fd6abf649ff 1.05MB / 12.42MB 1.4s
+#10 sha256:5c36186b8d8417454960b65c9c32b077ab4f3fb3c662ff5d4eeb5fd6abf649ff 2.36MB / 12.42MB 1.7s
+#10 sha256:5c36186b8d8417454960b65c9c32b077ab4f3fb3c662ff5d4eeb5fd6abf649ff 5.24MB / 12.42MB 2.0s
+#10 sha256:5c36186b8d8417454960b65c9c32b077ab4f3fb3c662ff5d4eeb5fd6abf649ff 6.29MB / 12.42MB 2.4s
+#10 sha256:79dc17963468084e50bd8100760c1d19f0c4711c75a624e91f83ad282cc114f7 1.05MB / 3.52MB 2.6s
+#10 sha256:79dc17963468084e50bd8100760c1d19f0c4711c75a624e91f83ad282cc114f7 2.10MB / 3.52MB 3.2s
+#10 sha256:5c36186b8d8417454960b65c9c32b077ab4f3fb3c662ff5d4eeb5fd6abf649ff 7.34MB / 12.42MB 3.5s
+#10 sha256:79dc17963468084e50bd8100760c1d19f0c4711c75a624e91f83ad282cc114f7 3.15MB / 3.52MB 3.6s
+#10 sha256:79dc17963468084e50bd8100760c1d19f0c4711c75a624e91f83ad282cc114f7 3.52MB / 3.52MB 3.8s done
+#10 sha256:5c36186b8d8417454960b65c9c32b077ab4f3fb3c662ff5d4eeb5fd6abf649ff 8.39MB / 12.42MB 3.9s
+#10 sha256:79dc17963468084e50bd8100760c1d19f0c4711c75a624e91f83ad282cc114f7 3.52MB / 3.52MB 3.8s done
+#10 ...
+
+#9 [web internal] load build context
+#9 transferring context: 94.07MB 4.5s done
+#9 DONE 4.6s
+
+#10 [web build 1/4] FROM docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7
+#10 sha256:5c36186b8d8417454960b65c9c32b077ab4f3fb3c662ff5d4eeb5fd6abf649ff 9.44MB / 12.42MB 4.4s
+#10 sha256:5c36186b8d8417454960b65c9c32b077ab4f3fb3c662ff5d4eeb5fd6abf649ff 10.49MB / 12.42MB 4.8s
+#10 sha256:5c36186b8d8417454960b65c9c32b077ab4f3fb3c662ff5d4eeb5fd6abf649ff 11.53MB / 12.42MB 5.3s
+#10 sha256:5c36186b8d8417454960b65c9c32b077ab4f3fb3c662ff5d4eeb5fd6abf649ff 12.42MB / 12.42MB 5.6s
+#10 sha256:5c32499ab806884c5725c705c2bf528662d034ed99de13d3205309e0d9ef0375 1.05MB / 28.23MB 5.4s
+#10 sha256:5c36186b8d8417454960b65c9c32b077ab4f3fb3c662ff5d4eeb5fd6abf649ff 12.42MB / 12.42MB 5.6s done
+#10 sha256:5c32499ab806884c5725c705c2bf528662d034ed99de13d3205309e0d9ef0375 3.15MB / 28.23MB 5.9s
+#10 sha256:5c32499ab806884c5725c705c2bf528662d034ed99de13d3205309e0d9ef0375 5.24MB / 28.23MB 6.5s
+#10 sha256:5c32499ab806884c5725c705c2bf528662d034ed99de13d3205309e0d9ef0375 7.34MB / 28.23MB 7.2s
+#10 sha256:5c32499ab806884c5725c705c2bf528662d034ed99de13d3205309e0d9ef0375 9.44MB / 28.23MB 7.8s
+#10 sha256:5c32499ab806884c5725c705c2bf528662d034ed99de13d3205309e0d9ef0375 11.53MB / 28.23MB 8.3s
+#10 sha256:5c32499ab806884c5725c705c2bf528662d034ed99de13d3205309e0d9ef0375 13.63MB / 28.23MB 8.9s
+#10 sha256:5c32499ab806884c5725c705c2bf528662d034ed99de13d3205309e0d9ef0375 15.73MB / 28.23MB 9.6s
+#10 ...
+
+#17 [node-agent build 4/6] RUN GOTOOLCHAIN=local go mod download
+#17 ...
+
+#10 [web build 1/4] FROM docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7
+#10 sha256:5c32499ab806884c5725c705c2bf528662d034ed99de13d3205309e0d9ef0375 17.83MB / 28.23MB 11.3s
+#10 sha256:5c32499ab806884c5725c705c2bf528662d034ed99de13d3205309e0d9ef0375 19.92MB / 28.23MB 11.6s
+#10 sha256:5c32499ab806884c5725c705c2bf528662d034ed99de13d3205309e0d9ef0375 22.02MB / 28.23MB 12.2s
+#10 sha256:5c32499ab806884c5725c705c2bf528662d034ed99de13d3205309e0d9ef0375 24.12MB / 28.23MB 12.6s
+#10 sha256:5c32499ab806884c5725c705c2bf528662d034ed99de13d3205309e0d9ef0375 26.21MB / 28.23MB 13.7s
+#10 sha256:5c32499ab806884c5725c705c2bf528662d034ed99de13d3205309e0d9ef0375 28.23MB / 28.23MB 15.0s
+#10 sha256:5c32499ab806884c5725c705c2bf528662d034ed99de13d3205309e0d9ef0375 28.23MB / 28.23MB 15.1s done
+#10 extracting sha256:5c32499ab806884c5725c705c2bf528662d034ed99de13d3205309e0d9ef0375
+#10 extracting sha256:5c32499ab806884c5725c705c2bf528662d034ed99de13d3205309e0d9ef0375 2.6s done
+#10 extracting sha256:5c32499ab806884c5725c705c2bf528662d034ed99de13d3205309e0d9ef0375 2.6s done
+#10 extracting sha256:79dc17963468084e50bd8100760c1d19f0c4711c75a624e91f83ad282cc114f7
+#10 extracting sha256:79dc17963468084e50bd8100760c1d19f0c4711c75a624e91f83ad282cc114f7 0.4s done
+#10 extracting sha256:79dc17963468084e50bd8100760c1d19f0c4711c75a624e91f83ad282cc114f7 0.4s done
+#10 extracting sha256:5c36186b8d8417454960b65c9c32b077ab4f3fb3c662ff5d4eeb5fd6abf649ff
+#10 extracting sha256:5c36186b8d8417454960b65c9c32b077ab4f3fb3c662ff5d4eeb5fd6abf649ff 1.0s done
+#10 extracting sha256:5c36186b8d8417454960b65c9c32b077ab4f3fb3c662ff5d4eeb5fd6abf649ff 1.0s done
+#10 extracting sha256:4ce903582132c9254f5172f6336ca9b39b7554f483694627d03a62f181950257 0.0s done
+#10 DONE 19.8s
+
+#18 [prover-worker stage-1  2/13] RUN useradd --create-home --uid 10001 deproof && mkdir -p /state /export && chown 10001:10001 /state /export
+#18 ...
+
+#19 [web build 2/4] WORKDIR /src
+#19 DONE 0.7s
+
+#20 [web build 3/4] COPY . .
+#20 ...
+
+#18 [prover-worker stage-1  2/13] RUN useradd --create-home --uid 10001 deproof && mkdir -p /state /export && chown 10001:10001 /state /export
+#18 DONE 1.0s
+
+#21 [node-agent stage-1  3/13] WORKDIR /opt/deproof
+#21 DONE 0.2s
+
+#20 [web build 3/4] COPY . .
+#20 DONE 0.6s
+
+#22 [prover-worker stage-1  4/12] COPY tools/requirements.txt tools/requirements.txt
+#22 DONE 0.1s
+
+#23 [node-agent stage-1  5/12] RUN pip install --no-cache-dir -r tools/requirements.txt
+#23 ...
+
+#24 [web build 4/4] RUN python3 scripts/build-web.py && python3 scripts/qualify-web.py
+#24 0.816 Built 7 local pages; no deployment performed.
+#24 1.043 Traceback (most recent call last):
+#24 1.070   File "/src/scripts/qualify-web.py", line 23, in <module>
+#24 1.070     subprocess.run(['node','--check',str(r/'web/inspect.js')],check=True)
+#24 1.070     ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#24 1.071   File "/usr/local/lib/python3.13/subprocess.py", line 554, in run
+#24 1.071     with Popen(*popenargs, **kwargs) as process:
+#24 1.071          ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+#24 1.071   File "/usr/local/lib/python3.13/subprocess.py", line 1039, in __init__
+#24 1.071     self._execute_child(args, executable, preexec_fn, close_fds,
+#24 1.071     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#24 1.071                         pass_fds, cwd, env,
+#24 1.071                         ^^^^^^^^^^^^^^^^^^^
+#24 1.071     ...<5 lines>...
+#24 1.071                         gid, gids, uid, umask,
+#24 1.071                         ^^^^^^^^^^^^^^^^^^^^^^
+#24 1.071                         start_new_session, process_group)
+#24 1.071                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#24 1.071   File "/usr/local/lib/python3.13/subprocess.py", line 1972, in _execute_child
+#24 1.071     raise child_exception_type(errno_num, err_msg, err_filename)
+#24 1.071 FileNotFoundError: [Errno 2] No such file or directory: 'node'
+#24 ERROR: process "/bin/sh -c python3 scripts/build-web.py && python3 scripts/qualify-web.py" did not complete successfully: exit code: 1
+
+#17 [node-agent build 4/6] RUN GOTOOLCHAIN=local go mod download
+#17 ...
+
+#23 [node-agent stage-1  5/12] RUN pip install --no-cache-dir -r tools/requirements.txt
+#23 CANCELED
+
+#17 [node-agent build 4/6] RUN GOTOOLCHAIN=local go mod download
+#17 CANCELED
+------
+ > [web build 4/4] RUN python3 scripts/build-web.py && python3 scripts/qualify-web.py:
+1.071                         pass_fds, cwd, env,
+1.071                         ^^^^^^^^^^^^^^^^^^^
+1.071     ...<5 lines>...
+1.071                         gid, gids, uid, umask,
+1.071                         ^^^^^^^^^^^^^^^^^^^^^^
+1.071                         start_new_session, process_group)
+1.071                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1.071   File "/usr/local/lib/python3.13/subprocess.py", line 1972, in _execute_child
+1.071     raise child_exception_type(errno_num, err_msg, err_filename)
+1.071 FileNotFoundError: [Errno 2] No such file or directory: 'node'
+------
+web.Dockerfile:4
+
+--------------------
+
+   2 |     WORKDIR /src
+
+   3 |     COPY . .
+
+   4 | >>> RUN python3 scripts/build-web.py && python3 scripts/qualify-web.py
+
+   5 |     FROM busybox:1.36@sha256:73aaf090f3d85aa34ee199857f03fa3a95c8ede2ffd4cc2cdb5b94e566b11662
+
+   6 |     COPY --from=build /src/web/ /site/
+
+--------------------
+
+target web: failed to solve: process "/bin/sh -c python3 scripts/build-web.py && python3 scripts/qualify-web.py" did not complete successfully: exit code: 1
+

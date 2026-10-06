@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": "deproof-proof-result-v1"
+    },
+    "jobId": {
+      "type": "string"
+    },
+    "backend": {
+      "type": "string"
+    },
+    "circuitDigest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "verificationKeyDigest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "proofDigest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "publicInputsDigest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "producerFingerprint": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "completedAt": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T.*Z$"
+    }
+  },
+  "required": [
+    "schema",
+    "jobId",
+    "backend",
+    "circuitDigest",
+    "verificationKeyDigest",
+    "proofDigest",
+    "publicInputsDigest",
+    "producerFingerprint",
+    "completedAt"
+  ]
+}

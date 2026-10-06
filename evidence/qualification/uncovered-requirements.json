@@ -1,0 +1,4091 @@
+{
+  "schema": "deproof-uncovered-requirements-v1",
+  "exactCounts": {
+    "F": 120,
+    "C": 100,
+    "FN": 62,
+    "EF": 24,
+    "E": 30
+  },
+  "uncoveredCount": 281,
+  "requirements": [
+    {
+      "id": "F001",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Paste a mainnet account address.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F003",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Read SOL balance from RPC.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "tools/jvm/LiveRpcProbe.kt"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "F005",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Read only the verified official SKR mint.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F006",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Sum balances across all matching token accounts.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F007",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Validate token decimals and account metadata.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F008",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Display context slot and observation time.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "tools/jvm/LiveRpcProbe.kt"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "F009",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Label pasted accounts as observed, not connected.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F010",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Preserve independent SOL and SKR loading/error states.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F011",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Discover compatible MWA wallets.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/wallet/Wallet.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F012",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Request real wallet authorization.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/wallet/Wallet.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F013",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Select an authorized account.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/wallet/Wallet.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F014",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Display the actual returned account and wallet identity.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/wallet/Wallet.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F015",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Disconnect and invalidate the session.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/wallet/Wallet.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F016",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Reauthorize when required.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/wallet/Wallet.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F017",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Surface missing-wallet errors.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/wallet/Wallet.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F018",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Separate devnet and mainnet actions.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/wallet/Wallet.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F019",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Sign and submit a minimal devnet memo.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/wallet/Wallet.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F020",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Preserve and verify the real returned transaction signature.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/wallet/Wallet.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F021",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Load the latest ten signatures with pagination.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F022",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Fetch transaction details.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F023",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Handle unavailable transaction records explicitly.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F024",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Display processed, confirmed, and finalized states.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F025",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Display transaction failures and error details.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F026",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Show slot and chain block time.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F027",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Link to the appropriate explorer and cluster.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F028",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Decode history into a reviewable record.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F029",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Clearly distinguish historical observation from new authorization.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F030",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Refresh status without creating duplicate records.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F031",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Verify the token program.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F032",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Decode TransferChecked discriminator 12.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F034",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Validate the decimals byte.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F035",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Validate account order and required roles.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F036",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Verify the official SKR mint.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F037",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Flag SetAuthority.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F038",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Flag Approve and delegation.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F039",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Refuse unchecked or unsupported transfers in the strict SKR flow.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F040",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Inspect every instruction in the transaction.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F041",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Present a plain-language transaction summary.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F042",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Display full addresses on demand.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F043",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Show requester identity and origin.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F044",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Show fees and simulation outcomes where available.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F045",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Hash the complete serialized transaction message.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F046",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Bind review to account, cluster, and timestamp.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F047",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Recompute immediately before wallet handoff.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F048",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Block message or review-context changes.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F049",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Require fresh review after blockhash rebuild.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F050",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Reject locally without broadcasting.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F051",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Capture photos with explicit permission.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Store.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F052",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Import existing photos.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Store.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F053",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Capture or import supported video files.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Store.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F054",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Import documents through Android content APIs.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Store.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F055",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Preview supported evidence types.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/EvidencePreview.kt",
+        "app/src/main/java/com/example/domain/LocalEvidence.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt::privatePreviewChecksBytesPathsEncodingAndTypes"
+      ],
+      "requiredUncoveredGate": [
+        "Only bounded text/plain, Markdown, JSON, JPEG/PNG/WebP previews implemented; unsupported types explicitly refused. Actual Android rendering/accessibility/lifecycle remains NOT_RUN."
+      ]
+    },
+    {
+      "id": "F056",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Add notes.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Store.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F057",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Record capture and import metadata.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Store.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F058",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Collect location only with explicit consent.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/WorkflowWorkspace.kt",
+        "app/src/main/java/com/example/data/LocationCapture.kt",
+        "app/src/main/java/com/example/domain/Workflows.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "tools/verify.py",
+        "contracts/location-observation-v1.schema.json"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/WorkflowTest.kt::locationConsentDenialAndProvenance",
+        "app/src/test/java/com/example/domain/WorkflowTest.kt::crossLanguageOptionalLocationVectorAndMutation",
+        "tools/test_location.py"
+      ],
+      "requiredUncoveredGate": [
+        "Consented one-shot foreground approximate location and optional manifest extension implemented; typed freshness/range/provenance and cross-language hash checks pass. Real permission/provider/cancellation/revocation and Android rendering/lifecycle remain NOT_RUN; no physical-truth assertion."
+      ]
+    },
+    {
+      "id": "F059",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Attach several files to a task.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Store.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F060",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Save drafts and recover after process death.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/resources/db/migration_1_2.sql"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "tools/test_migrations.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "F064",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Detect digest mismatches.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "tools/verify.py"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F066",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Link evidence digests to the reviewed action.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "tools/verify.py"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F067",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Sign versioned evidence envelopes with Android Keystore; support legacy digest mode only with explicit metadata.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/EvidenceSigner.kt",
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/resources/db/migration_1_2.sql",
+        "tools/verify.py"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "tools/test_migrations.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "F068",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Refuse software or unqualified keys for hardware-required signing.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/EvidenceSigner.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "tools/verify.py"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F069",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Report observed key security level accurately.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/EvidenceSigner.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "tools/verify.py"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F070",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Verify signatures independently and reject tampering.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/EvidenceSigner.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "tools/verify.py"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F071",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Create local field-verification tasks.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F072",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Search and filter tasks.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F073",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Track task requirements and checklist progress.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F074",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Associate evidence with tasks.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F075",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Generate refusal receipts with no chain signature.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F076",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Generate historical observation receipts.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F077",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Generate local evidence-signature receipts.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F078",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Generate submission receipts only after actual submission.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F079",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Track pending, confirmed, finalized, failed, and unavailable observations.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/resources/db/migration_1_2.sql"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "tools/test_migrations.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "F080",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Persist, search, inspect, and export receipts.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F081",
+      "status": "BLOCKED",
+      "acceptance": "Verify official staking program specifications.",
+      "implementedPaths": [],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ]
+    },
+    {
+      "id": "F082",
+      "status": "BLOCKED",
+      "acceptance": "Decode supported staking instructions from validated layouts.",
+      "implementedPaths": [],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ]
+    },
+    {
+      "id": "F083",
+      "status": "BLOCKED",
+      "acceptance": "Identify verified guardian metadata.",
+      "implementedPaths": [],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ]
+    },
+    {
+      "id": "F084",
+      "status": "BLOCKED",
+      "acceptance": "Distinguish liquid, staked, and cooling balances.",
+      "implementedPaths": [],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ]
+    },
+    {
+      "id": "F085",
+      "status": "BLOCKED",
+      "acceptance": "Gate staking against observed eligibility and unlocked balances.",
+      "implementedPaths": [],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ]
+    },
+    {
+      "id": "F086",
+      "status": "BLOCKED",
+      "acceptance": "Preview partial unstake consequences.",
+      "implementedPaths": [],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ]
+    },
+    {
+      "id": "F087",
+      "status": "BLOCKED",
+      "acceptance": "Show protocol cooldown only from verified state; keep user-supplied illustrative timers visually distinct.",
+      "implementedPaths": [],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ]
+    },
+    {
+      "id": "F088",
+      "status": "BLOCKED",
+      "acceptance": "Enable withdrawal only when protocol eligibility is established.",
+      "implementedPaths": [],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ]
+    },
+    {
+      "id": "F089",
+      "status": "BLOCKED",
+      "acceptance": "Track claims from verified season rules.",
+      "implementedPaths": [],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ]
+    },
+    {
+      "id": "F090",
+      "status": "BLOCKED",
+      "acceptance": "Keep stake-on-claim opt-in and disclose source/date of yield information.",
+      "implementedPaths": [],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ]
+    },
+    {
+      "id": "F091",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Detect combined sensitive actions.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F092",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Flag token account close and burn instructions.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F093",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Explain account creation and rent effects.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Explanations.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt::accountEffectsDecodeOnlyExactReadOnlyCreateAccount"
+      ],
+      "requiredUncoveredGate": [
+        "Read-only exact System CreateAccount layout and policy-approved memo/TransferChecked effects only. Unknown layouts remain unknown/refused; no rent minimum, execution or broader account-creation claim. Android rendering remains NOT_RUN."
+      ]
+    },
+    {
+      "id": "F094",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Warn about broad delegation.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F095",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Display first-seen program indicators.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/LocalEvidence.kt"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt::legacyDigestAndFirstSeenIndicatorsNeverGrantTrust"
+      ],
+      "requiredUncoveredGate": [
+        "Local first-seen classification tested; Android DataStore persistence, rendering and lifecycle remain NOT_RUN. Indicator never changes policy."
+      ]
+    },
+    {
+      "id": "F096",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Use a versioned program policy registry.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F097",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Rebuild expired transactions with a fresh review.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Solana.kt"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval"
+      ],
+      "requiredUncoveredGate": [
+        "Existing memo rebuild clears fee approval and requires fresh review; byte/context mutation refusal tested. Expired-blockhash device/wallet flow and exactly-one retry observation remain NOT_RUN."
+      ]
+    },
+    {
+      "id": "F098",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Calculate fee/rent impact from live context.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F099",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Preserve unavailable states during network failure.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F100",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Provide bounded retry, cancellation, and stale-data indicators.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F101",
+      "status": "BLOCKED",
+      "acceptance": "Hotspot coverage and earnings observation.",
+      "implementedPaths": [],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ]
+    },
+    {
+      "id": "F102",
+      "status": "BLOCKED",
+      "acceptance": "Earnings-degradation alerts.",
+      "implementedPaths": [],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ]
+    },
+    {
+      "id": "F103",
+      "status": "BLOCKED",
+      "acceptance": "Connectivity-plan comparison from attributable data.",
+      "implementedPaths": [],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ]
+    },
+    {
+      "id": "F104",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Bandwidth usage and contribution ledger.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "F105",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Mapping task planner.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/WorkflowWorkspace.kt",
+        "app/src/main/java/com/example/domain/Workflows.kt",
+        "app/src/main/java/com/example/data/Store.kt"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/WorkflowTest.kt::offlineMappingPlanRoundTripAndBounds",
+        "tools/test_migrations.py::test_new_private_workflow_drafts_survive_reopen_and_replace_atomically"
+      ],
+      "requiredUncoveredGate": [
+        "Offline ordered user-coordinate planner is persisted and explicitly exported; invalid edits do not replace the saved draft. No route provider, coverage/rewards or observed travel. Android editing/export/reopen/accessibility remain NOT_RUN."
+      ]
+    },
+    {
+      "id": "F106",
+      "status": "BLOCKED",
+      "acceptance": "Energy-device observation.",
+      "implementedPaths": [],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ]
+    },
+    {
+      "id": "F107",
+      "status": "BLOCKED",
+      "acceptance": "Sensor records with provenance.",
+      "implementedPaths": [],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ]
+    },
+    {
+      "id": "F108",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Compute-node health monitoring.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "F109",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Presence-evidence records with explicit assurance limits.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Records.kt",
+        "docs/threat-model.md"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F110",
+      "status": "BLOCKED",
+      "acceptance": "Hardware transaction coordination through a verified external provider.",
+      "implementedPaths": [],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ]
+    },
+    {
+      "id": "F111",
+      "status": "BLOCKED",
+      "acceptance": "Task-based split-payment proposal and review.",
+      "implementedPaths": [],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ]
+    },
+    {
+      "id": "F112",
+      "status": "BLOCKED",
+      "acceptance": "Rent/deposit record tracking without claiming unverified escrow.",
+      "implementedPaths": [],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ]
+    },
+    {
+      "id": "F113",
+      "status": "BLOCKED",
+      "acceptance": "Remittance provider discovery with transparent quotes and explicit provider handoff.",
+      "implementedPaths": [],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ]
+    },
+    {
+      "id": "F114",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Evidence/account recovery guidance and verified backup/provider handoff without wallet secrets, recovery-service upsells or promises to recover stolen funds.",
+      "implementedPaths": [
+        "docs/setup.md",
+        "docs/privacy.md"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "F115",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Local reminders and notification preferences.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/WorkflowWorkspace.kt",
+        "app/src/main/java/com/example/data/ReminderRepository.kt",
+        "app/src/main/java/com/example/domain/Workflows.kt",
+        "app/src/main/AndroidManifest.xml"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/WorkflowTest.kt::reminderConsentPermissionClockAndReplacement",
+        "tools/test_migrations.py::test_new_private_workflow_drafts_survive_reopen_and_replace_atomically"
+      ],
+      "requiredUncoveredGate": [
+        "Explicit opt-in, permission-aware inexact scheduling, replacement generations, cancellation/global disable and boot/clock/startup recovery implemented. Local state tests do not establish actual notification delivery, Android lifecycle or provider cooldown eligibility; these remain NOT_RUN. POST_REQUESTED is not delivered."
+      ]
+    },
+    {
+      "id": "F116",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Dark/light themes, screen-reader support, and large-text layouts.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/Theme.kt",
+        "scripts/build-web.py",
+        "web/inspect.js",
+        "web/style.css"
+      ],
+      "namedTests": [
+        "scripts/browser/qualify.mjs"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "F117",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Localization with complete translation coverage.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/LanguageControls.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/res/values/strings.xml",
+        "app/src/main/res/values-es/strings.xml"
+      ],
+      "namedTests": [
+        "scripts/qualify-localization.py"
+      ],
+      "requiredUncoveredGate": [
+        "204 English/Spanish catalog strings have matching IDs/formats and waypoint plural rules; persisted UI language switching implemented. Full dynamic decoder/account-effect and remaining fallback localization, independent translation review and device layouts/accessibility/restart remain incomplete. Catalog parity is not complete F117 acceptance."
+      ]
+    },
+    {
+      "id": "F118",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Optional encrypted backup and restore.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/resources/db/migration_1_2.sql",
+        "tools/bundle.py",
+        "tools/test_bundle.py"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "tools/test_migrations.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "F119",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Accurate multipage marketing/documentation website.",
+      "implementedPaths": [
+        "scripts/build-web.py",
+        "web/index.html",
+        "web/inspect.js",
+        "web/style.css"
+      ],
+      "namedTests": [
+        "scripts/browser/qualify.mjs"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "F120",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Signed release packaging, checksums, qualification report, and submission bundle.",
+      "implementedPaths": [
+        "scripts/qualify.sh",
+        "scripts/update-coverage.py",
+        "docs/setup.md"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ]
+    },
+    {
+      "id": "C001",
+      "status": "NOT_RUN",
+      "acceptance": "Paste a mainnet address.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C003",
+      "status": "NOT_RUN",
+      "acceptance": "Read SOL lamports with `getBalance`.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/domain/Solana.kt"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "tools/jvm/LiveRpcProbe.kt"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "C005",
+      "status": "NOT_RUN",
+      "acceptance": "Read only the official SKR mint via `getTokenAccountsByOwner` with mint filter, encoding `jsonParsed`.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C006",
+      "status": "NOT_RUN",
+      "acceptance": "Sum every matching SKR token account with integer addition.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C007",
+      "status": "NOT_RUN",
+      "acceptance": "Show SKR with 6 decimals.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C008",
+      "status": "NOT_RUN",
+      "acceptance": "Show the slot from the same RPC response `context.slot`.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/domain/Solana.kt"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "tools/jvm/LiveRpcProbe.kt"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "C009",
+      "status": "NOT_RUN",
+      "acceptance": "Label the row with the address that was actually queried, not the draft in the text field.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C010",
+      "status": "NOT_RUN",
+      "acceptance": "SOL and SKR reads are independent. One failure does not zero the other. Show each error.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C011",
+      "status": "NOT_RUN",
+      "acceptance": "Pull-to-refresh repeats the read.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C012",
+      "status": "NOT_RUN",
+      "acceptance": "Never display a cached balance as if it were a new read after an error. Label it `stale` or hide it.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C013",
+      "status": "NOT_RUN",
+      "acceptance": "Last 10 signatures from `getSignaturesForAddress`.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C014",
+      "status": "NOT_RUN",
+      "acceptance": "Fetch supported legacy/v0 transaction details with getTransaction and declared version support; retrieve raw/base64 bytes for exact-message binding. JSON views are supplementary.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C015",
+      "status": "NOT_RUN",
+      "acceptance": "Prefer a TransferChecked instruction when several exist, for the card summary only. Authorization still evaluates every instruction.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C016",
+      "status": "NOT_RUN",
+      "acceptance": "Show confirmation status: processed, confirmed, finalized, or absent.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C017",
+      "status": "NOT_RUN",
+      "acceptance": "Show the RPC error on a failed transaction. `meta.err` is not success.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C018",
+      "status": "NOT_RUN",
+      "acceptance": "Show slot and block time. Block time null stays null.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C019",
+      "status": "NOT_RUN",
+      "acceptance": "Explorer link is a real URL: `https://explorer.solana.com/tx/<signature>?cluster=mainnet-beta` or `?cluster=devnet`.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C020",
+      "status": "NOT_RUN",
+      "acceptance": "Skip a signature RPC says is missing. Show a skipped count, not a fake row.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C021",
+      "status": "NOT_RUN",
+      "acceptance": "Never fabricate a signature.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C022",
+      "status": "NOT_RUN",
+      "acceptance": "Open the chosen transaction in Review.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C023",
+      "status": "NOT_RUN",
+      "acceptance": "Empty history is an empty state, not a fake row.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C024",
+      "status": "NOT_RUN",
+      "acceptance": "Loading and error are different UI states.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C025",
+      "status": "NOT_RUN",
+      "acceptance": "In SKR_TRANSFER_V1 refuse every unqualified program. SOL stake is named then refused; SKR stake remains unverified/refused. DEVNET_MEMO_V1 is a separate qualified exception, not a weakened token policy.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C026",
+      "status": "NOT_RUN",
+      "acceptance": "In the strict SKR policy, discriminator 12 only for policy eligibility; no Safe verdict.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C028",
+      "status": "NOT_RUN",
+      "acceptance": "Decimals byte must be 6 for SKR.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C029",
+      "status": "NOT_RUN",
+      "acceptance": "Account order source, mint, destination, authority.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C030",
+      "status": "NOT_RUN",
+      "acceptance": "Mint must equal the official mint.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C034",
+      "status": "NOT_RUN",
+      "acceptance": "Refuse TransferChecked with the wrong mint.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C038",
+      "status": "NOT_RUN",
+      "acceptance": "One-line summary.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C039",
+      "status": "NOT_RUN",
+      "acceptance": "Shorten keys to 4 + ellipsis + 4. Full value remains available.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C040",
+      "status": "NOT_RUN",
+      "acceptance": "Verdict title and one reason.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C044",
+      "status": "NOT_RUN",
+      "acceptance": "The card shows the program id that was decoded.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C047",
+      "status": "NOT_RUN",
+      "acceptance": "Hash is stored when Review opens.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C048",
+      "status": "NOT_RUN",
+      "acceptance": "Approve recomputes the hash.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C050",
+      "status": "NOT_RUN",
+      "acceptance": "Reject does not require a matching hash.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C051",
+      "status": "NOT_RUN",
+      "acceptance": "Network is in the card hash and the separate review-context binding; verify the RPC cluster identity.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C052",
+      "status": "NOT_RUN",
+      "acceptance": "The fee payer is part of the hash.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C053",
+      "status": "NOT_RUN",
+      "acceptance": "The raw data bytes are part of the hash.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C054",
+      "status": "NOT_RUN",
+      "acceptance": "A second review of a new transaction replaces the stored hash.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C055",
+      "status": "NOT_RUN",
+      "acceptance": "Real MWA authorization on a wallet-capable device. Test doubles are isolated to tests; no production mock session.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C056",
+      "status": "NOT_RUN",
+      "acceptance": "Show the authorized address from the protocol account bytes.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C057",
+      "status": "NOT_RUN",
+      "acceptance": "No session: Approve stays off and the text says the app will not invent a signature.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C058",
+      "status": "NOT_RUN",
+      "acceptance": "Disconnect clears the session.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C059",
+      "status": "NOT_RUN",
+      "acceptance": "First real sign is a freshly reviewed devnet memo. Memo text: `Deproof devnet memo <unix millis>`.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C060",
+      "status": "NOT_RUN",
+      "acceptance": "Show the real signature derived from returned signed bytes and matched to RPC acceptance. Encode real signature bytes as base58; never create a placeholder.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C061",
+      "status": "NOT_RUN",
+      "acceptance": "Only after qualified devnet memo signing plus confirmed chain observation is visible/stored may a verified mainnet SKR draft be built. Building is not submitting. Mainnet needs fresh explicit device approval and never runs from automated tests.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C062",
+      "status": "NOT_RUN",
+      "acceptance": "Cluster of the transaction matches the cluster of the session. Mismatch throws `CLUSTER_MISMATCH` and disables Approve.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C063",
+      "status": "NOT_RUN",
+      "acceptance": "Show Deproof and the actually configured developer-controlled identity URI; do not assert ownership of a candidate domain.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C064",
+      "status": "NOT_RUN",
+      "acceptance": "Fetch a live fee estimate for the exact message and show its context before signing. Unknown remains unknown; core submit stays blocked until fee review is possible. Never invent 5000.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C065",
+      "status": "NOT_RUN",
+      "acceptance": "Reject writes a receipt.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C066",
+      "status": "NOT_RUN",
+      "acceptance": "Copy receipt JSON.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C067",
+      "status": "NOT_RUN",
+      "acceptance": "Receipts survive process death.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C068",
+      "status": "NOT_RUN",
+      "acceptance": "Observation receipt for a fetched signature stores that signature and its status. Outcome is `OBSERVED`, not `SUBMITTED`.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C069",
+      "status": "NOT_RUN",
+      "acceptance": "Local ECDSA is labeled `local`, never as the Solana signature.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C071",
+      "status": "NOT_RUN",
+      "acceptance": "Sign the versioned v2 evidence envelope with a qualified hardware-backed Keystore key. Record actual security level; do not infer StrongBox/TEE from a generic hardware flag.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C072",
+      "status": "NOT_RUN",
+      "acceptance": "Refuse a software key with `SOFTWARE_KEY`.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C074",
+      "status": "NOT_RUN",
+      "acceptance": "Evidence UI is hidden when the verdict is Do not sign.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C075",
+      "status": "NOT_RUN",
+      "acceptance": "Export v2 submission provenance. Legacy submittedByClearance, if required, mirrors known submittedByDeproof; an imported signature never sets it true.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C076",
+      "status": "NOT_RUN",
+      "acceptance": "Clipboard failure shows the same text in a box.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C077",
+      "status": "NOT_RUN",
+      "acceptance": "An illustrative user-supplied countdown has a labeled start/duration (48 hours only when explicitly chosen); protocol timers require validated field semantics and current rules. Never start from screen open.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C078",
+      "status": "NOT_RUN",
+      "acceptance": "The clock is visible on Now when a countdown exists.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C079",
+      "status": "NOT_RUN",
+      "acceptance": "`00:00:00` when the interval has elapsed. Elapsed does not mean withdraw is allowed.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C080",
+      "status": "NOT_RUN",
+      "acceptance": "Do not invent an unstake.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C081",
+      "status": "NOT_RUN",
+      "acceptance": "Do not invent APY.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C082",
+      "status": "NOT_RUN",
+      "acceptance": "Do not invent a guardian name. You may quote the pool address from docs if you read them, labeled as a quote, not as the user’s delegate.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C083",
+      "status": "NOT_RUN",
+      "acceptance": "Inflation/reward text requires current official source and actual retrieval date. Omit unverified numerical claims and the source’s future-dated read claim.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C084",
+      "status": "NOT_RUN",
+      "acceptance": "“This cannot be reversed” appears on any payable transfer.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C085",
+      "status": "NOT_RUN",
+      "acceptance": "No recovery-service copy anywhere.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C086",
+      "status": "NOT_RUN",
+      "acceptance": "Partial amount is the amount in the instruction, not a second hidden amount.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C088",
+      "status": "NOT_RUN",
+      "acceptance": "Home shows the last receipt, not a chart.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C089",
+      "status": "NOT_RUN",
+      "acceptance": "Optional AI packet is consented, minimized decoded fields plus policy/mint context. No seed, private key, authorization token or evidence bytes.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C090",
+      "status": "NOT_RUN",
+      "acceptance": "Optional Grok is skipped when disabled/unconfigured/placeholder. No provider key is compiled into Android.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C091",
+      "status": "NOT_RUN",
+      "acceptance": "A failed HTTP call shows the status code, not a fake audit score.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C092",
+      "status": "NOT_RUN",
+      "acceptance": "The model note cannot enable Approve.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C093",
+      "status": "NOT_RUN",
+      "acceptance": "SKR reads use the validated mainnet RPC/mint deployment. Public keys are cluster-neutral; do not classify a key as a devnet address from its bytes.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C094",
+      "status": "NOT_RUN",
+      "acceptance": "Devnet-only lock for the memo.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C095",
+      "status": "NOT_RUN",
+      "acceptance": "At most one memo draft rebuild on blockhash expiry, with fresh review and authorization; never reuse prior approval.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C096",
+      "status": "NOT_RUN",
+      "acceptance": "Spam tokens are not listed. Only SOL and official SKR.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C098",
+      "status": "NOT_RUN",
+      "acceptance": "P1 remains one focused app. Wider payment/provider concepts are explicitly staged proposals until real supported integrations are qualified.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "C099",
+      "status": "NOT_RUN",
+      "acceptance": "Meaningful automated tests cover address validation, all decoder/policy paths, immutable full-message/context binding, receipt rules and optional-AI nonauthority. Device and persistence qualification remain separate.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full acceptance gate not executed; code presence/related tests do not imply PASS."
+      ]
+    },
+    {
+      "id": "FN004",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`loadAccount(address)` — independent balance results and paginated activity context.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "tools/jvm/LiveRpcProbe.kt"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "FN005",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`rankInstruction(ix)` — presentation order; never an authorization shortcut.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Helpers.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN006",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`toRequest(transaction)` — complete typed review request or named unsupported result.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Solana.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN007",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`materialize(parsed)` — validated program, account roles, and instruction bytes.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Solana.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN008",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`decodeInstruction(ix)` — typed operation or explicit unsupported verdict.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN017",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`canSign(review, session, context)` — full UI approval predicate including policy, unchanged bytes/context, account/cluster, blockhash, fee and prior-devnet gate; no safety guarantee.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Solana.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN018",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`verdictOf(decoded)` — understandable title, reason, and severity.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN019",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`summaryOf(request)` — amount, asset, recipient, operation, and limitations.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN022",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`observeSettlement(signature, cluster)` — observed state or unavailable error.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN023",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`getSkrRawBalance(address)` — verified token-account aggregation.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN024",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`signDevnetMemo(wallet, memo)` — reviewed real signing, returned-byte validation, RPC submission and matched signature; return explicit wallet rejection/capability/RPC errors. Never silently sign-and-send.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/wallet/Wallet.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN025",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`latestDevnetBlockhash()` — blockhash plus last-valid block height.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN026",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`connect()` — real authorized wallet session.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/wallet/Wallet.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN027",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`disconnect()` — session invalidation and explicit failure handling.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/wallet/Wallet.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN028",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`saveObservation(record)` — preserve chain provenance and review integrity.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN029",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`reject(request)` — local refusal record with null transaction signature.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN030",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`copyReceipt(receipt)` — clipboard export with accessible fallback.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN033",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`signHash(digest)` — legacy-digest-bytes-v1 only: SHA256withECDSA over 32 raw digest bytes, DER/SPKI and observed hardware metadata; reject wrong size/software keys. New records use FN062.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/EvidenceSigner.kt",
+        "app/src/main/java/com/example/domain/LocalEvidence.kt"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt::legacyDigestAndFirstSeenIndicatorsNeverGrantTrust",
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt::legacySignatureUsesRawDigestBytesNotHexOrBase64"
+      ],
+      "requiredUncoveredGate": [
+        "32 raw bytes, separate legacy alias, DER/SPKI and hardware refusal implemented; local raw/size/signature tests pass. Actual Android hardware-key generation, KeyInfo and signature remain NOT_RUN; no legacy-import workflow claimed."
+      ]
+    },
+    {
+      "id": "FN035",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`statusLabel(state)` — text and severity without relying only on color.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Helpers.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN036",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`cooldownRemaining(timerSource, clock)` — validated protocol timing or explicitly labeled illustrative timing; never withdrawal authorization; clamp elapsed to zero, reject invalid/future starts per documented policy.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Helpers.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN037",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`selectCluster(action)` — explicit compatible cluster or rejection.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Helpers.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN038",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`refuseUndecoded(ix)` — named refusal without invented amounts.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN040",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`exportReceipt(receipt)` — schema-valid portable record.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN041",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`parseTransaction(bytes)` — strict legacy/versioned transaction parsing.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Solana.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN042",
+      "status": "BLOCKED",
+      "acceptance": "`resolveLookupTables(message)` — verified address resolution or refusal.",
+      "implementedPaths": [],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN043",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`evaluateAllInstructions(tx, policy)` — whole-transaction policy result.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN044",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`simulateTransaction(tx)` — simulation context, errors, and limitations.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN045",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`estimateFee(message)` — live fee estimate with context.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN046",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`validateTokenAccount(account, expected)` — mint, owner, role, and state checks.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN047",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`buildSkrTransfer(parameters)` — exact verified transaction construction.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Helpers.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN048",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`rebuildExpiredTransaction(previous)` — new draft that invalidates previous approval.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Solana.kt"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval"
+      ],
+      "requiredUncoveredGate": [
+        "Existing one-rebuild memo implementation and local binding test; device handoff/reapproval remains NOT_RUN."
+      ]
+    },
+    {
+      "id": "FN049",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`submitSignedTransaction(bytes)` — broadcast signature and submission context.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN051",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`createTask(input)` — validated persisted task.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/resources/db/migration_1_2.sql"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "tools/test_migrations.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "FN052",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`attachEvidence(taskId, file)` — file metadata, digest, and association.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/resources/db/migration_1_2.sql"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "tools/test_migrations.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "FN054",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`createReceipt(event)` — outcome-specific receipt without invented fields.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN055",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`refreshReceiptStatus(id)` — bounded status observation and persistence.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/resources/db/migration_1_2.sql"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "tools/test_migrations.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "FN056",
+      "status": "BLOCKED",
+      "acceptance": "`verifyStakingProtocol(source)` — validated interface metadata and fixtures.",
+      "implementedPaths": [],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN057",
+      "status": "BLOCKED",
+      "acceptance": "`decodeSkrStake(ix, verifiedInterface)` — supported operation or refusal.",
+      "implementedPaths": [],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN058",
+      "status": "BLOCKED",
+      "acceptance": "`computeWithdrawEligibility(state)` — protocol-derived decision.",
+      "implementedPaths": [],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN059",
+      "status": "BLOCKED",
+      "acceptance": "`runConnector(connectorId, request)` — attributable adapter result with freshness.",
+      "implementedPaths": [],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN060",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`exportQualificationReport(results)` — machine-readable gates and artifact digests.",
+      "implementedPaths": [
+        "scripts/qualify.sh",
+        "scripts/update-coverage.py"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "FN061",
+      "status": "BLOCKED",
+      "acceptance": "`explainPacket(packet, consent, providerConfig)` — optional consented explanation or NOT_CONFIGURED/GROK_NOT_CALLED/PROVIDER_ERROR; never changes authorization. Provider integration is staged, not a core network dependency.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Explanations.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt::stagedExplanationNeverTransmitsOrChangesAuthorization"
+      ],
+      "requiredUncoveredGate": [
+        "Only configuration/consent/blocked-adapter error paths are implemented and tested; no qualified provider adapter or outbound request exists. External provider integration remains blocked, not complete. Authorization unchanged."
+      ]
+    },
+    {
+      "id": "FN062",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "`signEvidenceEnvelope(envelopeBytes)` — default v2 SHA256withECDSA signature over exact domain-separated envelope bytes; DER/SPKI, security-level observation and independently verifiable payload. SOFTWARE_KEY/NO_KEYSTORE/UNQUALIFIED_KEY are explicit failures.",
+      "implementedPaths": [
+        "app/src/main/java/com/example/data/EvidenceSigner.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Full typed contract/required integration remains incomplete."
+      ]
+    },
+    {
+      "id": "EF001",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": null,
+      "implementedPaths": [
+        "node-agent/internal/agent/agent.go"
+      ],
+      "namedTests": [
+        "node-agent/internal/agent/agent_test.go"
+      ],
+      "requiredUncoveredGate": [
+        "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+      ]
+    },
+    {
+      "id": "EF004",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": null,
+      "implementedPaths": [
+        "node-agent/internal/agent/agent.go"
+      ],
+      "namedTests": [
+        "node-agent/internal/agent/agent_test.go"
+      ],
+      "requiredUncoveredGate": [
+        "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+      ]
+    },
+    {
+      "id": "EF005",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": null,
+      "implementedPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/hosting.go",
+        "scripts/qualify-hosting.py",
+        "tools/local_hosting.py"
+      ],
+      "namedTests": [
+        "scripts/qualify-hosting.py",
+        "scripts/qualify-integration.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "EF008",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": null,
+      "implementedPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/hosting.go",
+        "scripts/qualify-hosting.py",
+        "tools/local_hosting.py"
+      ],
+      "namedTests": [
+        "scripts/qualify-hosting.py",
+        "scripts/qualify-integration.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "EF009",
+      "status": "BLOCKED",
+      "acceptance": null,
+      "implementedPaths": [],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+      ]
+    },
+    {
+      "id": "EF011",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": null,
+      "implementedPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "EF012",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": null,
+      "implementedPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "EF013",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": null,
+      "implementedPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "EF016",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": null,
+      "implementedPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py",
+        "tools/verify.py"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "EF017",
+      "status": "BLOCKED",
+      "acceptance": null,
+      "implementedPaths": [],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+      ]
+    },
+    {
+      "id": "EF018",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": null,
+      "implementedPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "EF019",
+      "status": "BLOCKED",
+      "acceptance": null,
+      "implementedPaths": [],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+      ]
+    },
+    {
+      "id": "EF020",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": null,
+      "implementedPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "EF023",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": null,
+      "implementedPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "tools/verify.py",
+        "tools/bundle.py"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+      ]
+    },
+    {
+      "id": "EF024",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": null,
+      "implementedPaths": [
+        "scripts/qualify.sh"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+      ]
+    },
+    {
+      "id": "E001",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Real MWA authorized account; absent wallet/rejection/disconnect handled; no fixture session in production; device proof recorded",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ]
+    },
+    {
+      "id": "E002",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Decode addresses, validate cluster/genesis context and account roles; query identity distinct from input draft; test wrong-cluster handoff",
+      "implementedPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/domain/Solana.kt"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "tools/jvm/LiveRpcProbe.kt"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "E003",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Expose every instruction, recipient/token account, amount, fee, requester and limits; historical observation cannot authorize",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ]
+    },
+    {
+      "id": "E004",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Full immutable message/context binding before and after wallet signing; mutation and lookup/account/cluster/evidence changes refuse submit",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ]
+    },
+    {
+      "id": "E005",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Real processed/confirmed/finalized/failed/unknown status and unavailable observation; retain prior verified state with timestamp",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ]
+    },
+    {
+      "id": "E006",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Official-source plus on-chain ownership/decimals/deployment validation; wrong/lookalike mint refuses; source version recorded",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ]
+    },
+    {
+      "id": "E007",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Full u64 boundaries, 6-decimal SKR after validation, exact decimal strings, no Number/float truncation",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ]
+    },
+    {
+      "id": "E008",
+      "status": "BLOCKED",
+      "acceptance": "Qualified TransferChecked draft/account policy after devnet gate; explicit device approval; no automatic mainnet spending or mandatory fee disguised as receipt proof",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ]
+    },
+    {
+      "id": "E009",
+      "status": "BLOCKED",
+      "acceptance": "Protocol-specific verified state/layout adapter; liquid/staked/cooling separation; native SOL stake never relabeled SKR",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ]
+    },
+    {
+      "id": "E010",
+      "status": "BLOCKED",
+      "acceptance": "Current verified start/duration/season/eligibility; source/date; exact alarm preference and permission handling; local clock cannot authorize withdrawal",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ]
+    },
+    {
+      "id": "E011",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Stable public-key identity, authenticated pairing, protected key, key rotation/revocation; forged/replayed event and unauthorized host rejected",
+      "implementedPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "E012",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Real start/stop/status for reviewed allowlisted user-owned service profiles; actual process/container evidence; loopback-first, declared ports/mounts and recovery",
+      "implementedPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/hosting.go",
+        "scripts/qualify-hosting.py",
+        "tools/local_hosting.py"
+      ],
+      "namedTests": [
+        "scripts/qualify-hosting.py",
+        "scripts/qualify-integration.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "E013",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Qualified runtime with resource caps, nonroot user, restricted capabilities/mounts and network policy; hostile resource/filesystem/process fixtures prove boundaries; failure disables hosting",
+      "implementedPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/hosting.go",
+        "scripts/qualify-hosting.py",
+        "tools/local_hosting.py"
+      ],
+      "namedTests": [
+        "scripts/qualify-hosting.py",
+        "scripts/qualify-integration.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "E014",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Actual process identity, health probe, observed state and timestamp; stale heartbeat is unavailable/offline, not measured uptime; kill/restart/outage tests",
+      "implementedPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/hosting.go",
+        "scripts/qualify-hosting.py",
+        "tools/local_hosting.py"
+      ],
+      "namedTests": [
+        "scripts/qualify-hosting.py",
+        "scripts/qualify-integration.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "E015",
+      "status": "BLOCKED",
+      "acceptance": "Supported maintained tunnel protocol with identity binding, authorized peers, scoped routes, key rotation/revocation and measured successful handshake; no invented mesh status",
+      "implementedPaths": [
+        "node-agent/internal/agent/agent.go"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ]
+    },
+    {
+      "id": "E016",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Explicit provider/destination/use consent, opt-in scope and instant stop; default disabled; permitted contribution flow rather than unrestricted anonymous exit traffic",
+      "implementedPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "E017",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Enforced byte/time/rate limits and endpoint policy; pause on cap and report actual reason; controlled tests demonstrate enforcement despite restart",
+      "implementedPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "E018",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Provider-defined raw byte/counter semantics, interval, sender/receiver identities and freshness; compare known transfers; local claim not independently verified automatically",
+      "implementedPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "E019",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Domain-separated signed metering envelope with counter provenance/sequence; exact signature verification and tamper/replay tests; label producer versus peer-confirmed evidence",
+      "implementedPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "E020",
+      "status": "BLOCKED",
+      "acceptance": "Compare attributable provider accrual/claimable/paid records with observed on-chain payments; identify asset and mint; no fixed/guaranteed rewards or presumption every payout is SKR",
+      "implementedPaths": [
+        "node-agent/internal/agent/agent.go"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ]
+    },
+    {
+      "id": "E021",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Real local discovery endpoint plus qualified external adapter if available; signed bounded schema, version, deadline, input digest and compensation terms; malformed/expired jobs refused",
+      "implementedPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "E022",
+      "status": "BLOCKED",
+      "acceptance": "Observed CPU/RAM/disk/runtime/backend capabilities versus job requirements; unsupported jobs blocked with reason; no fabricated GPU/device attestation",
+      "implementedPaths": [
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ]
+    },
+    {
+      "id": "E023",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Execute a real supported proof backend with pinned circuit/program/version; produce actual proof/result bytes and commitments; known valid vector reproduced within resource caps",
+      "implementedPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "E024",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Independent maintained verifier over proof/public inputs/verification key with pinned provenance; known valid succeeds, tampered/wrong-key/input/unsupported scheme fails",
+      "implementedPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "E025",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Immutable job identity, agreed input commitment, producer/result digest, verification observation and optional chain anchor; receipt distinguishes claimed execution from independently verified result",
+      "implementedPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    },
+    {
+      "id": "E026",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Stream raw file bytes, bounded content access, compare known digests; no base64-wrapper hash, false physical claim or lost URI permission",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ]
+    },
+    {
+      "id": "E027",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Qualified Android evidence envelope, true reported security level and independent verification; unsupported hardware/software key never masquerades as TEE/StrongBox",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ]
+    },
+    {
+      "id": "E028",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Deterministic versioned JCS and golden vectors, exact notes/Unicode/file order/nulls; bind to action or explicit evidence-only context",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ]
+    },
+    {
+      "id": "E029",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Schema-valid self-contained verification material, redacted secrets, v1/v2 migration semantics, offline verification/import and hashes; local paths never substitute for portable evidence",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "namedTests": [],
+      "requiredUncoveredGate": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ]
+    },
+    {
+      "id": "E030",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Explicit capture/network/share/job/upload scopes, retention/deletion/export/revoke; no implicit evidence upload or wallet secret access; tests confirm denial and stop behavior",
+      "implementedPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "requiredUncoveredGate": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ]
+    }
+  ],
+  "coverageCounts": {
+    "features": {
+      "IMPLEMENTED_UNVERIFIED": 94,
+      "VERIFIED": 7,
+      "BLOCKED": 19
+    },
+    "core-checks": {
+      "NOT_RUN": 80,
+      "PASS": 20
+    },
+    "functions": {
+      "VERIFIED": 28,
+      "IMPLEMENTED_UNVERIFIED": 49,
+      "BLOCKED": 9
+    },
+    "ecosystem-requirements": {
+      "IMPLEMENTED_UNVERIFIED": 24,
+      "BLOCKED": 6
+    }
+  }
+}

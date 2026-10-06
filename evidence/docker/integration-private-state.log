@@ -1,0 +1,28 @@
+PASS: compose_config_valid
+PASS: node-agent_restricted_config
+PASS: prover-worker_restricted_config
+PASS: web_restricted_config
+ Container deproof-qualification-prover-worker-1 Creating 
+ Network deproof-qualification_default Creating 
+ Network deproof-qualification_default Creating 
+ Network deproof-qualification_default Created 
+ Network deproof-qualification_default Created 
+ Container deproof-qualification-web-1 Creating 
+ Container deproof-qualification-node-agent-1 Creating 
+ Container deproof-qualification-prover-worker-1 Created 
+ Container deproof-qualification-web-1 Created 
+ Container deproof-qualification-node-agent-1 Created 
+ Container deproof-qualification-prover-worker-1 Starting 
+ Container deproof-qualification-web-1 Starting 
+ Container deproof-qualification-node-agent-1 Starting 
+ Container deproof-qualification-prover-worker-1 Started 
+ Container deproof-qualification-web-1 Started 
+ Container deproof-qualification-node-agent-1 Started 
+ Container deproof-qualification-web-1 Waiting 
+ Container deproof-qualification-node-agent-1 Waiting 
+ Container deproof-qualification-prover-worker-1 Waiting 
+ Container deproof-qualification-prover-worker-1 Healthy 
+container deproof-qualification-node-agent-1 exited (1)
+
+FAIL: actual_services_started
+FAIL: AssertionError: actual_services_started

@@ -1,0 +1,1 @@
+COMMAND: bash ./gradlew --no-daemon --max-workers=2 testDebugUnitTest --stacktrace

@@ -1,0 +1,16 @@
+{
+  "schema": "deproof-dependency-inventory-v1",
+  "resolvedTransitiveSBOM": false,
+  "android": "app/build.gradle.kts",
+  "prover": [
+    "prover-worker/go.mod",
+    "prover-worker/go.sum"
+  ],
+  "browser": [
+    "scripts/browser/package.json",
+    "scripts/browser/package-lock.json"
+  ],
+  "limits": [
+    "Full license/advisory/SBOM review incomplete."
+  ]
+}

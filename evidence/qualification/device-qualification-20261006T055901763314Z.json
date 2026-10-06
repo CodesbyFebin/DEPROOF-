@@ -1,0 +1,51 @@
+{
+  "schema": "deproof-device-qualification-v1",
+  "generatedAt": "2026-10-06T05:58:53.379349+00:00",
+  "credit": "Built by CodesbyFebin",
+  "status": "NOT_RUN",
+  "checks": {
+    "APK_INSTALL_LAUNCH": {
+      "status": "NOT_RUN",
+      "reason": "Requires observed physical-device execution and checklist evidence."
+    },
+    "WALLET_HANDOFF": {
+      "status": "NOT_RUN",
+      "reason": "Requires observed physical-device execution and checklist evidence."
+    },
+    "MESSAGE_MUTATION_REFUSAL": {
+      "status": "NOT_RUN",
+      "reason": "Requires observed physical-device execution and checklist evidence."
+    },
+    "RETURNED_SIGNED_BYTES": {
+      "status": "NOT_RUN",
+      "reason": "Requires observed physical-device execution and checklist evidence."
+    },
+    "KEYSTORE_SECURITY_LEVEL": {
+      "status": "NOT_RUN",
+      "reason": "Requires observed physical-device execution and checklist evidence."
+    },
+    "PERMISSION_DENIAL": {
+      "status": "NOT_RUN",
+      "reason": "Requires observed physical-device execution and checklist evidence."
+    },
+    "PROCESS_DEATH": {
+      "status": "NOT_RUN",
+      "reason": "Requires observed physical-device execution and checklist evidence."
+    },
+    "ROOM_MIGRATION": {
+      "status": "NOT_RUN",
+      "reason": "Requires observed physical-device execution and checklist evidence."
+    },
+    "CRASH_RECOVERY": {
+      "status": "NOT_RUN",
+      "reason": "Requires observed physical-device execution and checklist evidence."
+    }
+  },
+  "automatedActions": [],
+  "limitations": [
+    "ADB command success is not wallet, hardware, migration or crash qualification.",
+    "No mainnet transactions; use a dedicated devnet wallet and disposable fixture records."
+  ],
+  "preflight": "BLOCKED",
+  "reason": "ADB command failed: devices"
+}

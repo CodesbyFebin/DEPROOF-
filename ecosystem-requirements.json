@@ -1,0 +1,1741 @@
+{
+  "schema": "deproof-ecosystem-requirements-v1",
+  "version": "3.0",
+  "count": 30,
+  "requirements": [
+    {
+      "id": "E001",
+      "name": "Mobile wallet connect",
+      "baseMappingAndPhase": "F011–F020 / P1",
+      "acceptance": "Real MWA authorized account; absent wallet/rejection/disconnect handled; no fixture session in production; device proof recorded",
+      "mandatory": true,
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "limitations": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ],
+      "phase": "P1",
+      "coreCheckOverlap": "C055–C058,C062–C063",
+      "contracts": "FN026–FN027",
+      "acceptanceId": "EA001",
+      "dependencies": [],
+      "checks": [
+        "C055",
+        "C056",
+        "C057",
+        "C058",
+        "C062",
+        "C063"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E001"
+      },
+      "featureIds": [
+        "F011",
+        "F012",
+        "F013",
+        "F014",
+        "F015",
+        "F016",
+        "F017",
+        "F018",
+        "F019",
+        "F020"
+      ],
+      "contractIds": [
+        "FN026",
+        "FN027"
+      ]
+    },
+    {
+      "id": "E002",
+      "name": "Account and network checks",
+      "baseMappingAndPhase": "F001–F010, F018 / P1",
+      "acceptance": "Decode addresses, validate cluster/genesis context and account roles; query identity distinct from input draft; test wrong-cluster handoff",
+      "mandatory": true,
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/domain/Solana.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/live-rpc.json"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "phase": "P1",
+      "coreCheckOverlap": "C001–C012,C051,C062,C093",
+      "contracts": "FN001–FN004,FN023,FN037",
+      "acceptanceId": "EA002",
+      "dependencies": [],
+      "checks": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C005",
+        "C006",
+        "C007",
+        "C008",
+        "C009",
+        "C010",
+        "C011",
+        "C012",
+        "C051",
+        "C062",
+        "C093"
+      ],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "tools/jvm/LiveRpcProbe.kt"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E002"
+      },
+      "featureIds": [
+        "F001",
+        "F002",
+        "F003",
+        "F004",
+        "F005",
+        "F006",
+        "F007",
+        "F008",
+        "F009",
+        "F010",
+        "F018"
+      ],
+      "contractIds": [
+        "FN001",
+        "FN002",
+        "FN003",
+        "FN004",
+        "FN023",
+        "FN037"
+      ]
+    },
+    {
+      "id": "E003",
+      "name": "Transaction review",
+      "baseMappingAndPhase": "F031–F044 / P1",
+      "acceptance": "Expose every instruction, recipient/token account, amount, fee, requester and limits; historical observation cannot authorize",
+      "mandatory": true,
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "limitations": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ],
+      "phase": "P1",
+      "coreCheckOverlap": "C014–C015,C025–C044,C064,C087",
+      "contracts": "FN005–FN011,FN018–FN021,FN041–FN046",
+      "acceptanceId": "EA003",
+      "dependencies": [],
+      "checks": [
+        "C014",
+        "C015",
+        "C025",
+        "C026",
+        "C027",
+        "C028",
+        "C029",
+        "C030",
+        "C031",
+        "C032",
+        "C033",
+        "C034",
+        "C035",
+        "C036",
+        "C037",
+        "C038",
+        "C039",
+        "C040",
+        "C041",
+        "C042",
+        "C043",
+        "C044",
+        "C064",
+        "C087"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E003"
+      },
+      "featureIds": [
+        "F031",
+        "F032",
+        "F033",
+        "F034",
+        "F035",
+        "F036",
+        "F037",
+        "F038",
+        "F039",
+        "F040",
+        "F041",
+        "F042",
+        "F043",
+        "F044"
+      ],
+      "contractIds": [
+        "FN005",
+        "FN006",
+        "FN007",
+        "FN008",
+        "FN009",
+        "FN010",
+        "FN011",
+        "FN018",
+        "FN019",
+        "FN020",
+        "FN021",
+        "FN041",
+        "FN042",
+        "FN043",
+        "FN044",
+        "FN045",
+        "FN046"
+      ]
+    },
+    {
+      "id": "E004",
+      "name": "Message tamper guard",
+      "baseMappingAndPhase": "F045–F050 / P1",
+      "acceptance": "Full immutable message/context binding before and after wallet signing; mutation and lookup/account/cluster/evidence changes refuse submit",
+      "mandatory": true,
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "limitations": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ],
+      "phase": "P1",
+      "coreCheckOverlap": "C045–C054,C095",
+      "contracts": "FN012–FN017,FN039,FN048,FN050",
+      "acceptanceId": "EA004",
+      "dependencies": [],
+      "checks": [
+        "C045",
+        "C046",
+        "C047",
+        "C048",
+        "C049",
+        "C050",
+        "C051",
+        "C052",
+        "C053",
+        "C054",
+        "C095"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E004"
+      },
+      "featureIds": [
+        "F045",
+        "F046",
+        "F047",
+        "F048",
+        "F049",
+        "F050"
+      ],
+      "contractIds": [
+        "FN012",
+        "FN013",
+        "FN014",
+        "FN015",
+        "FN016",
+        "FN017",
+        "FN039",
+        "FN048",
+        "FN050"
+      ]
+    },
+    {
+      "id": "E005",
+      "name": "Chain status tracking",
+      "baseMappingAndPhase": "F021–F030, F079 / P1",
+      "acceptance": "Real processed/confirmed/finalized/failed/unknown status and unavailable observation; retain prior verified state with timestamp",
+      "mandatory": true,
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "limitations": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ],
+      "phase": "P1",
+      "coreCheckOverlap": "C013–C024,C068,C075",
+      "contracts": "FN022,FN028,FN055",
+      "acceptanceId": "EA005",
+      "dependencies": [],
+      "checks": [
+        "C013",
+        "C014",
+        "C015",
+        "C016",
+        "C017",
+        "C018",
+        "C019",
+        "C020",
+        "C021",
+        "C022",
+        "C023",
+        "C024",
+        "C068",
+        "C075"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E005"
+      },
+      "featureIds": [
+        "F021",
+        "F022",
+        "F023",
+        "F024",
+        "F025",
+        "F026",
+        "F027",
+        "F028",
+        "F029",
+        "F030",
+        "F079"
+      ],
+      "contractIds": [
+        "FN022",
+        "FN028",
+        "FN055"
+      ]
+    },
+    {
+      "id": "E006",
+      "name": "Verified mint checks",
+      "baseMappingAndPhase": "F005,F007,F036 / P1",
+      "acceptance": "Official-source plus on-chain ownership/decimals/deployment validation; wrong/lookalike mint refuses; source version recorded",
+      "mandatory": true,
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "limitations": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ],
+      "phase": "P1",
+      "coreCheckOverlap": "C005–C007,C028–C030,C034–C035,C043",
+      "contracts": "FN007–FN008,FN023,FN046",
+      "acceptanceId": "EA006",
+      "dependencies": [],
+      "checks": [
+        "C005",
+        "C006",
+        "C007",
+        "C028",
+        "C029",
+        "C030",
+        "C034",
+        "C035",
+        "C043"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E006"
+      },
+      "featureIds": [
+        "F005",
+        "F007",
+        "F036"
+      ],
+      "contractIds": [
+        "FN007",
+        "FN008",
+        "FN023",
+        "FN046"
+      ]
+    },
+    {
+      "id": "E007",
+      "name": "Exact token amounts",
+      "baseMappingAndPhase": "F004,F007,F033 / P1",
+      "acceptance": "Full u64 boundaries, 6-decimal SKR after validation, exact decimal strings, no Number/float truncation",
+      "mandatory": true,
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "limitations": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ],
+      "phase": "P1",
+      "coreCheckOverlap": "C004,C006–C007,C027–C028,C086",
+      "contracts": "FN002–FN003,FN009,FN011,FN021",
+      "acceptanceId": "EA007",
+      "dependencies": [],
+      "checks": [
+        "C004",
+        "C006",
+        "C007",
+        "C027",
+        "C028",
+        "C086"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E007"
+      },
+      "featureIds": [
+        "F004",
+        "F007",
+        "F033"
+      ],
+      "contractIds": [
+        "FN002",
+        "FN003",
+        "FN009",
+        "FN011",
+        "FN021"
+      ]
+    },
+    {
+      "id": "E008",
+      "name": "SKR transfer review",
+      "baseMappingAndPhase": "F032–F050 / P1/P3",
+      "acceptance": "Qualified TransferChecked draft/account policy after devnet gate; explicit device approval; no automatic mainnet spending or mandatory fee disguised as receipt proof",
+      "mandatory": true,
+      "status": "BLOCKED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "limitations": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ],
+      "phase": "P1/P3",
+      "coreCheckOverlap": "C025–C035,C041–C064,C084,C087,C094–C095",
+      "contracts": "FN017,FN024–FN025,FN039,FN043–FN050",
+      "acceptanceId": "EA008",
+      "dependencies": [],
+      "checks": [
+        "C025",
+        "C026",
+        "C027",
+        "C028",
+        "C029",
+        "C030",
+        "C031",
+        "C032",
+        "C033",
+        "C034",
+        "C035",
+        "C041",
+        "C042",
+        "C043",
+        "C044",
+        "C045",
+        "C046",
+        "C047",
+        "C048",
+        "C049",
+        "C050",
+        "C051",
+        "C052",
+        "C053",
+        "C054",
+        "C055",
+        "C056",
+        "C057",
+        "C058",
+        "C059",
+        "C060",
+        "C061",
+        "C062",
+        "C063",
+        "C064",
+        "C084",
+        "C087",
+        "C094",
+        "C095"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E008"
+      },
+      "featureIds": [
+        "F032",
+        "F033",
+        "F034",
+        "F035",
+        "F036",
+        "F037",
+        "F038",
+        "F039",
+        "F040",
+        "F041",
+        "F042",
+        "F043",
+        "F044",
+        "F045",
+        "F046",
+        "F047",
+        "F048",
+        "F049",
+        "F050"
+      ],
+      "contractIds": [
+        "FN017",
+        "FN024",
+        "FN025",
+        "FN039",
+        "FN043",
+        "FN044",
+        "FN045",
+        "FN046",
+        "FN047",
+        "FN048",
+        "FN049",
+        "FN050"
+      ]
+    },
+    {
+      "id": "E009",
+      "name": "Staking state observer",
+      "baseMappingAndPhase": "F081–F086 / P3",
+      "acceptance": "Protocol-specific verified state/layout adapter; liquid/staked/cooling separation; native SOL stake never relabeled SKR",
+      "mandatory": true,
+      "status": "BLOCKED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "limitations": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "C036–C037,C080–C083",
+      "contracts": "FN056–FN058",
+      "acceptanceId": "EA009",
+      "dependencies": [
+        "P1 core qualified"
+      ],
+      "checks": [
+        "C036",
+        "C037",
+        "C080",
+        "C081",
+        "C082",
+        "C083"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E009"
+      },
+      "featureIds": [
+        "F081",
+        "F082",
+        "F083",
+        "F084",
+        "F085",
+        "F086"
+      ],
+      "contractIds": [
+        "FN056",
+        "FN057",
+        "FN058"
+      ]
+    },
+    {
+      "id": "E010",
+      "name": "Cooldown and claim alerts",
+      "baseMappingAndPhase": "F087–F090,F115 / P3",
+      "acceptance": "Current verified start/duration/season/eligibility; source/date; exact alarm preference and permission handling; local clock cannot authorize withdrawal",
+      "mandatory": true,
+      "status": "BLOCKED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "limitations": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "C077–C083",
+      "contracts": "FN036,FN056,FN058",
+      "acceptanceId": "EA010",
+      "dependencies": [
+        "P1 core qualified"
+      ],
+      "checks": [
+        "C077",
+        "C078",
+        "C079",
+        "C080",
+        "C081",
+        "C082",
+        "C083"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E010"
+      },
+      "featureIds": [
+        "F087",
+        "F088",
+        "F089",
+        "F090",
+        "F115"
+      ],
+      "contractIds": [
+        "FN036",
+        "FN056",
+        "FN058"
+      ]
+    },
+    {
+      "id": "E011",
+      "name": "Node identity",
+      "baseMappingAndPhase": "New extension / P3",
+      "acceptance": "Stable public-key identity, authenticated pairing, protected key, key rotation/revocation; forged/replayed event and unauthorized host rejected",
+      "mandatory": true,
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/node-integration.json",
+        "evidence/qualification/node-integration.log"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "None: new EA011",
+      "contracts": "EF001–EF003",
+      "acceptanceId": "EA011",
+      "dependencies": [
+        "P1 core qualified"
+      ],
+      "checks": [
+        "EA011"
+      ],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E011"
+      },
+      "featureIds": [],
+      "contractIds": [
+        "EF001",
+        "EF002",
+        "EF003"
+      ]
+    },
+    {
+      "id": "E012",
+      "name": "Local service hosting",
+      "baseMappingAndPhase": "New extension / P3",
+      "acceptance": "Real start/stop/status for reviewed allowlisted user-owned service profiles; actual process/container evidence; loopback-first, declared ports/mounts and recovery",
+      "mandatory": true,
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/hosting.go",
+        "scripts/qualify-hosting.py",
+        "tools/local_hosting.py"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/hosting-isolation.json",
+        "evidence/qualification/node-integration.json"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "None: new EA012",
+      "contracts": "EF004–EF007",
+      "acceptanceId": "EA012",
+      "dependencies": [
+        "P1 core qualified"
+      ],
+      "checks": [
+        "EA012"
+      ],
+      "tests": [
+        "scripts/qualify-hosting.py",
+        "scripts/qualify-integration.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E012"
+      },
+      "featureIds": [],
+      "contractIds": [
+        "EF004",
+        "EF005",
+        "EF006",
+        "EF007"
+      ]
+    },
+    {
+      "id": "E013",
+      "name": "Container isolation",
+      "baseMappingAndPhase": "New extension / P3",
+      "acceptance": "Qualified runtime with resource caps, nonroot user, restricted capabilities/mounts and network policy; hostile resource/filesystem/process fixtures prove boundaries; failure disables hosting",
+      "mandatory": true,
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/hosting.go",
+        "scripts/qualify-hosting.py",
+        "tools/local_hosting.py"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/hosting-isolation.json",
+        "evidence/qualification/node-integration.json"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "None: new EA013",
+      "contracts": "EF004–EF007,EF024",
+      "acceptanceId": "EA013",
+      "dependencies": [
+        "P1 core qualified"
+      ],
+      "checks": [
+        "EA013"
+      ],
+      "tests": [
+        "scripts/qualify-hosting.py",
+        "scripts/qualify-integration.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E013"
+      },
+      "featureIds": [],
+      "contractIds": [
+        "EF004",
+        "EF005",
+        "EF006",
+        "EF007",
+        "EF024"
+      ]
+    },
+    {
+      "id": "E014",
+      "name": "Health and uptime checks",
+      "baseMappingAndPhase": "F108 + extension / P3",
+      "acceptance": "Actual process identity, health probe, observed state and timestamp; stale heartbeat is unavailable/offline, not measured uptime; kill/restart/outage tests",
+      "mandatory": true,
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/hosting.go",
+        "scripts/qualify-hosting.py",
+        "tools/local_hosting.py"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/hosting-isolation.json",
+        "evidence/qualification/node-integration.json"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "C012,C024 (freshness only)",
+      "contracts": "EF008",
+      "acceptanceId": "EA014",
+      "dependencies": [
+        "P1 core qualified"
+      ],
+      "checks": [
+        "C012",
+        "C024"
+      ],
+      "tests": [
+        "scripts/qualify-hosting.py",
+        "scripts/qualify-integration.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E014"
+      },
+      "featureIds": [
+        "F108"
+      ],
+      "contractIds": [
+        "EF008"
+      ]
+    },
+    {
+      "id": "E015",
+      "name": "Encrypted peer tunnels",
+      "baseMappingAndPhase": "New extension / P3",
+      "acceptance": "Supported maintained tunnel protocol with identity binding, authorized peers, scoped routes, key rotation/revocation and measured successful handshake; no invented mesh status",
+      "mandatory": true,
+      "status": "BLOCKED",
+      "implementationPaths": [
+        "node-agent/internal/agent/agent.go"
+      ],
+      "evidencePaths": [],
+      "limitations": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "None: new EA015",
+      "contracts": "EF009",
+      "acceptanceId": "EA015",
+      "dependencies": [
+        "P1 core qualified"
+      ],
+      "checks": [
+        "EA015"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E015"
+      },
+      "featureIds": [],
+      "contractIds": [
+        "EF009"
+      ]
+    },
+    {
+      "id": "E016",
+      "name": "Consent-based bandwidth sharing",
+      "baseMappingAndPhase": "F104 + extension / P3",
+      "acceptance": "Explicit provider/destination/use consent, opt-in scope and instant stop; default disabled; permitted contribution flow rather than unrestricted anonymous exit traffic",
+      "mandatory": true,
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/node-integration.json",
+        "evidence/qualification/node-integration.log"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "C089 (consent principle only)",
+      "contracts": "EF010–EF012",
+      "acceptanceId": "EA016",
+      "dependencies": [
+        "P1 core qualified"
+      ],
+      "checks": [
+        "C089"
+      ],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E016"
+      },
+      "featureIds": [
+        "F104"
+      ],
+      "contractIds": [
+        "EF010",
+        "EF011",
+        "EF012"
+      ]
+    },
+    {
+      "id": "E017",
+      "name": "Traffic and quota controls",
+      "baseMappingAndPhase": "New extension / P3",
+      "acceptance": "Enforced byte/time/rate limits and endpoint policy; pause on cap and report actual reason; controlled tests demonstrate enforcement despite restart",
+      "mandatory": true,
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/node-integration.json",
+        "evidence/qualification/node-integration.log"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "None: new EA017",
+      "contracts": "EF010,EF014",
+      "acceptanceId": "EA017",
+      "dependencies": [
+        "P1 core qualified"
+      ],
+      "checks": [
+        "EA017"
+      ],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E017"
+      },
+      "featureIds": [],
+      "contractIds": [
+        "EF010",
+        "EF014"
+      ]
+    },
+    {
+      "id": "E018",
+      "name": "Contribution metering",
+      "baseMappingAndPhase": "F104 + extension / P3",
+      "acceptance": "Provider-defined raw byte/counter semantics, interval, sender/receiver identities and freshness; compare known transfers; local claim not independently verified automatically",
+      "mandatory": true,
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/node-integration.json",
+        "evidence/qualification/node-integration.log"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "None: new EA018",
+      "contracts": "EF013",
+      "acceptanceId": "EA018",
+      "dependencies": [
+        "P1 core qualified"
+      ],
+      "checks": [
+        "EA018"
+      ],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E018"
+      },
+      "featureIds": [
+        "F104"
+      ],
+      "contractIds": [
+        "EF013"
+      ]
+    },
+    {
+      "id": "E019",
+      "name": "Signed usage receipts",
+      "baseMappingAndPhase": "F061–F070,F077 + extension / P3",
+      "acceptance": "Domain-separated signed metering envelope with counter provenance/sequence; exact signature verification and tamper/replay tests; label producer versus peer-confirmed evidence",
+      "mandatory": true,
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/node-integration.json",
+        "evidence/qualification/node-integration.log"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "C069–C073 (integrity principle only)",
+      "contracts": "EF015–EF016",
+      "acceptanceId": "EA019",
+      "dependencies": [
+        "P1 core qualified"
+      ],
+      "checks": [
+        "C069",
+        "C070",
+        "C071",
+        "C072",
+        "C073"
+      ],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E019"
+      },
+      "featureIds": [
+        "F061",
+        "F062",
+        "F063",
+        "F064",
+        "F065",
+        "F066",
+        "F067",
+        "F068",
+        "F069",
+        "F070",
+        "F077"
+      ],
+      "contractIds": [
+        "EF015",
+        "EF016"
+      ]
+    },
+    {
+      "id": "E020",
+      "name": "Payout reconciliation",
+      "baseMappingAndPhase": "F079,F104 + extension / P3",
+      "acceptance": "Compare attributable provider accrual/claimable/paid records with observed on-chain payments; identify asset and mint; no fixed/guaranteed rewards or presumption every payout is SKR",
+      "mandatory": true,
+      "status": "BLOCKED",
+      "implementationPaths": [
+        "node-agent/internal/agent/agent.go"
+      ],
+      "evidencePaths": [],
+      "limitations": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "C016–C019,C081 (observation limits only)",
+      "contracts": "EF017",
+      "acceptanceId": "EA020",
+      "dependencies": [
+        "P1 core qualified"
+      ],
+      "checks": [
+        "C016",
+        "C017",
+        "C018",
+        "C019",
+        "C081"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E020"
+      },
+      "featureIds": [
+        "F079",
+        "F104"
+      ],
+      "contractIds": [
+        "EF017"
+      ]
+    },
+    {
+      "id": "E021",
+      "name": "Proof job discovery",
+      "baseMappingAndPhase": "New extension / P3",
+      "acceptance": "Real local discovery endpoint plus qualified external adapter if available; signed bounded schema, version, deadline, input digest and compensation terms; malformed/expired jobs refused",
+      "mandatory": true,
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/node-integration.json",
+        "evidence/qualification/node-integration.log"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "None: new EA021",
+      "contracts": "EF018",
+      "acceptanceId": "EA021",
+      "dependencies": [
+        "P1 core qualified"
+      ],
+      "checks": [
+        "EA021"
+      ],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E021"
+      },
+      "featureIds": [],
+      "contractIds": [
+        "EF018"
+      ]
+    },
+    {
+      "id": "E022",
+      "name": "Capability matching",
+      "baseMappingAndPhase": "New extension / P3",
+      "acceptance": "Observed CPU/RAM/disk/runtime/backend capabilities versus job requirements; unsupported jobs blocked with reason; no fabricated GPU/device attestation",
+      "mandatory": true,
+      "status": "BLOCKED",
+      "implementationPaths": [
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go"
+      ],
+      "evidencePaths": [],
+      "limitations": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "None: new EA022",
+      "contracts": "EF004,EF019",
+      "acceptanceId": "EA022",
+      "dependencies": [
+        "P1 core qualified"
+      ],
+      "checks": [
+        "EA022"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E022"
+      },
+      "featureIds": [],
+      "contractIds": [
+        "EF004",
+        "EF019"
+      ]
+    },
+    {
+      "id": "E023",
+      "name": "Verifiable job results",
+      "baseMappingAndPhase": "New extension / P3",
+      "acceptance": "Execute a real supported proof backend with pinned circuit/program/version; produce actual proof/result bytes and commitments; known valid vector reproduced within resource caps",
+      "mandatory": true,
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/node-integration.json",
+        "evidence/qualification/node-integration.log"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "None: new EA023",
+      "contracts": "EF020",
+      "acceptanceId": "EA023",
+      "dependencies": [
+        "P1 core qualified"
+      ],
+      "checks": [
+        "EA023"
+      ],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E023"
+      },
+      "featureIds": [],
+      "contractIds": [
+        "EF020"
+      ]
+    },
+    {
+      "id": "E024",
+      "name": "Proof verification",
+      "baseMappingAndPhase": "New extension / P3",
+      "acceptance": "Independent maintained verifier over proof/public inputs/verification key with pinned provenance; known valid succeeds, tampered/wrong-key/input/unsupported scheme fails",
+      "mandatory": true,
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/node-integration.json",
+        "evidence/qualification/node-integration.log"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "None: new EA024",
+      "contracts": "EF021",
+      "acceptanceId": "EA024",
+      "dependencies": [
+        "P1 core qualified"
+      ],
+      "checks": [
+        "EA024"
+      ],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E024"
+      },
+      "featureIds": [],
+      "contractIds": [
+        "EF021"
+      ]
+    },
+    {
+      "id": "E025",
+      "name": "Contribution receipts",
+      "baseMappingAndPhase": "F075–F080 + extension / P3",
+      "acceptance": "Immutable job identity, agreed input commitment, producer/result digest, verification observation and optional chain anchor; receipt distinguishes claimed execution from independently verified result",
+      "mandatory": true,
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/node-integration.json",
+        "evidence/qualification/node-integration.log"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "C065–C069,C073,C075 (receipt overlap only)",
+      "contracts": "EF022",
+      "acceptanceId": "EA025",
+      "dependencies": [
+        "P1 core qualified"
+      ],
+      "checks": [
+        "C065",
+        "C066",
+        "C067",
+        "C068",
+        "C069",
+        "C073",
+        "C075"
+      ],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E025"
+      },
+      "featureIds": [
+        "F075",
+        "F076",
+        "F077",
+        "F078",
+        "F079",
+        "F080"
+      ],
+      "contractIds": [
+        "EF022"
+      ]
+    },
+    {
+      "id": "E026",
+      "name": "Raw-file hashing",
+      "baseMappingAndPhase": "F061–F064 / P1",
+      "acceptance": "Stream raw file bytes, bounded content access, compare known digests; no base64-wrapper hash, false physical claim or lost URI permission",
+      "mandatory": true,
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "limitations": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ],
+      "phase": "P1",
+      "coreCheckOverlap": "C070",
+      "contracts": "FN032",
+      "acceptanceId": "EA026",
+      "dependencies": [],
+      "checks": [
+        "C070"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E026"
+      },
+      "featureIds": [
+        "F061",
+        "F062",
+        "F063",
+        "F064"
+      ],
+      "contractIds": [
+        "FN032"
+      ]
+    },
+    {
+      "id": "E027",
+      "name": "Hardware-backed signing",
+      "baseMappingAndPhase": "F067–F070 / P1",
+      "acceptance": "Qualified Android evidence envelope, true reported security level and independent verification; unsupported hardware/software key never masquerades as TEE/StrongBox",
+      "mandatory": true,
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "limitations": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ],
+      "phase": "P1",
+      "coreCheckOverlap": "C071–C072",
+      "contracts": "FN034,FN062",
+      "acceptanceId": "EA027",
+      "dependencies": [],
+      "checks": [
+        "C071",
+        "C072"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E027"
+      },
+      "featureIds": [
+        "F067",
+        "F068",
+        "F069",
+        "F070"
+      ],
+      "contractIds": [
+        "FN034",
+        "FN062"
+      ]
+    },
+    {
+      "id": "E028",
+      "name": "Evidence manifests",
+      "baseMappingAndPhase": "F063,F066,F074 / P1/P2",
+      "acceptance": "Deterministic versioned JCS and golden vectors, exact notes/Unicode/file order/nulls; bind to action or explicit evidence-only context",
+      "mandatory": true,
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "limitations": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ],
+      "phase": "P1/P2",
+      "coreCheckOverlap": "C073",
+      "contracts": "FN031,FN052–FN053",
+      "acceptanceId": "EA028",
+      "dependencies": [],
+      "checks": [
+        "C073"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E028"
+      },
+      "featureIds": [
+        "F063",
+        "F066",
+        "F074"
+      ],
+      "contractIds": [
+        "FN031",
+        "FN052",
+        "FN053"
+      ]
+    },
+    {
+      "id": "E029",
+      "name": "Portable receipt export",
+      "baseMappingAndPhase": "F080,F118 / P1/P4",
+      "acceptance": "Schema-valid self-contained verification material, redacted secrets, v1/v2 migration semantics, offline verification/import and hashes; local paths never substitute for portable evidence",
+      "mandatory": true,
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "limitations": [
+        "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+      ],
+      "phase": "P1/P4",
+      "coreCheckOverlap": "C066–C067,C075–C076",
+      "contracts": "FN030,FN040,EF023",
+      "acceptanceId": "EA029",
+      "dependencies": [],
+      "checks": [
+        "C066",
+        "C067",
+        "C075",
+        "C076"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E029"
+      },
+      "featureIds": [
+        "F080",
+        "F118"
+      ],
+      "contractIds": [
+        "EF023",
+        "FN030",
+        "FN040"
+      ]
+    },
+    {
+      "id": "E030",
+      "name": "Privacy and permission controls",
+      "baseMappingAndPhase": "F058,F068,F116 + extension / All phases",
+      "acceptance": "Explicit capture/network/share/job/upload scopes, retention/deletion/export/revoke; no implicit evidence upload or wallet secret access; tests confirm denial and stop behavior",
+      "mandatory": true,
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/node-integration.json",
+        "evidence/qualification/node-integration.log"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "phase": "All phases",
+      "coreCheckOverlap": "C089–C090 (AI consent only)",
+      "contracts": "EF003,EF010–EF012,EF020,EF023",
+      "acceptanceId": "EA030",
+      "dependencies": [],
+      "checks": [
+        "C089",
+        "C090"
+      ],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/ecosystem-requirements.json",
+        "id": "E030"
+      },
+      "featureIds": [
+        "F058",
+        "F068",
+        "F116"
+      ],
+      "contractIds": [
+        "EF003",
+        "EF010",
+        "EF011",
+        "EF012",
+        "EF020",
+        "EF023"
+      ]
+    }
+  ],
+  "updatedAt": "2026-10-06",
+  "coveragePolicy": "No overlap counted as additional unique features; VERIFIED_LOCAL does not qualify device/external requirements."
+}

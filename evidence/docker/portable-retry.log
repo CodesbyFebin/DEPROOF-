@@ -1,0 +1,17 @@
+ Container deproof-dev-prover-worker-run-7d6cbc6dfdc3 Creating 
+ Container deproof-dev-prover-worker-run-7d6cbc6dfdc3 Created 
+..................
+----------------------------------------------------------------------
+Ran 18 tests in 0.141s
+
+OK
+[90m06:59:06[0m [32mINF[0m [1mcompiling circuit[0m
+[90m06:59:06[0m [32mINF[0m [1mparsed circuit inputs[0m [36mnbPublic=[0m1 [36mnbSecret=[0m1
+[90m06:59:06[0m [32mINF[0m [1mbuilding constraint builder[0m [36mnbConstraints=[0m3
+[90m06:59:06[0m DBG constraint system solver done [36mnbConstraints=[0m3 [36mtook=[0m0.64298
+[90m06:59:06[0m DBG prover done [36macceleration=[0mnone [36mbackend=[0mgroth16 [36mcurve=[0mbn254 [36mnbConstraints=[0m3 [36mtook=[0m14.615371
+[90m06:59:06[0m DBG verifier done [36mbackend=[0mgroth16 [36mcurve=[0mbn254 [36mtook=[0m1.73035
+PASS: local Groth16 relation verified. Verification key trust remains an explicit setup assumption.
+pairing doesn't match
+invalid compressed coordinate: square root doesn't exist
+PASS: exact 120 F / 100 C / 62 FN + 24 EF / 30 E and per-entry coverage; no overlap counted as unique features

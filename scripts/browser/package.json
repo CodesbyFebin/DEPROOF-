@@ -1,0 +1,1 @@
+{"private":true,"description":"Local browser and accessibility qualification only","dependencies":{"playwright":"1.63.0","@axe-core/playwright":"4.13.0"}}

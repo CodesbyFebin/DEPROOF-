@@ -1,0 +1,581 @@
+{
+  "schema": "deproof-ecosystem-requirements-v1",
+  "version": "3.0",
+  "count": 30,
+  "requirements": [
+    {
+      "id": "E001",
+      "name": "Mobile wallet connect",
+      "baseMappingAndPhase": "F011\u2013F020 / P1",
+      "acceptance": "Real MWA authorized account; absent wallet/rejection/disconnect handled; no fixture session in production; device proof recorded",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P1",
+      "coreCheckOverlap": "C055\u2013C058,C062\u2013C063",
+      "contracts": "FN026\u2013FN027",
+      "acceptanceId": "EA001",
+      "dependencies": []
+    },
+    {
+      "id": "E002",
+      "name": "Account and network checks",
+      "baseMappingAndPhase": "F001\u2013F010, F018 / P1",
+      "acceptance": "Decode addresses, validate cluster/genesis context and account roles; query identity distinct from input draft; test wrong-cluster handoff",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P1",
+      "coreCheckOverlap": "C001\u2013C012,C051,C062,C093",
+      "contracts": "FN001\u2013FN004,FN023,FN037",
+      "acceptanceId": "EA002",
+      "dependencies": []
+    },
+    {
+      "id": "E003",
+      "name": "Transaction review",
+      "baseMappingAndPhase": "F031\u2013F044 / P1",
+      "acceptance": "Expose every instruction, recipient/token account, amount, fee, requester and limits; historical observation cannot authorize",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P1",
+      "coreCheckOverlap": "C014\u2013C015,C025\u2013C044,C064,C087",
+      "contracts": "FN005\u2013FN011,FN018\u2013FN021,FN041\u2013FN046",
+      "acceptanceId": "EA003",
+      "dependencies": []
+    },
+    {
+      "id": "E004",
+      "name": "Message tamper guard",
+      "baseMappingAndPhase": "F045\u2013F050 / P1",
+      "acceptance": "Full immutable message/context binding before and after wallet signing; mutation and lookup/account/cluster/evidence changes refuse submit",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P1",
+      "coreCheckOverlap": "C045\u2013C054,C095",
+      "contracts": "FN012\u2013FN017,FN039,FN048,FN050",
+      "acceptanceId": "EA004",
+      "dependencies": []
+    },
+    {
+      "id": "E005",
+      "name": "Chain status tracking",
+      "baseMappingAndPhase": "F021\u2013F030, F079 / P1",
+      "acceptance": "Real processed/confirmed/finalized/failed/unknown status and unavailable observation; retain prior verified state with timestamp",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P1",
+      "coreCheckOverlap": "C013\u2013C024,C068,C075",
+      "contracts": "FN022,FN028,FN055",
+      "acceptanceId": "EA005",
+      "dependencies": []
+    },
+    {
+      "id": "E006",
+      "name": "Verified mint checks",
+      "baseMappingAndPhase": "F005,F007,F036 / P1",
+      "acceptance": "Official-source plus on-chain ownership/decimals/deployment validation; wrong/lookalike mint refuses; source version recorded",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P1",
+      "coreCheckOverlap": "C005\u2013C007,C028\u2013C030,C034\u2013C035,C043",
+      "contracts": "FN007\u2013FN008,FN023,FN046",
+      "acceptanceId": "EA006",
+      "dependencies": []
+    },
+    {
+      "id": "E007",
+      "name": "Exact token amounts",
+      "baseMappingAndPhase": "F004,F007,F033 / P1",
+      "acceptance": "Full u64 boundaries, 6-decimal SKR after validation, exact decimal strings, no Number/float truncation",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P1",
+      "coreCheckOverlap": "C004,C006\u2013C007,C027\u2013C028,C086",
+      "contracts": "FN002\u2013FN003,FN009,FN011,FN021",
+      "acceptanceId": "EA007",
+      "dependencies": []
+    },
+    {
+      "id": "E008",
+      "name": "SKR transfer review",
+      "baseMappingAndPhase": "F032\u2013F050 / P1/P3",
+      "acceptance": "Qualified TransferChecked draft/account policy after devnet gate; explicit device approval; no automatic mainnet spending or mandatory fee disguised as receipt proof",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P1/P3",
+      "coreCheckOverlap": "C025\u2013C035,C041\u2013C064,C084,C087,C094\u2013C095",
+      "contracts": "FN017,FN024\u2013FN025,FN039,FN043\u2013FN050",
+      "acceptanceId": "EA008",
+      "dependencies": []
+    },
+    {
+      "id": "E009",
+      "name": "Staking state observer",
+      "baseMappingAndPhase": "F081\u2013F086 / P3",
+      "acceptance": "Protocol-specific verified state/layout adapter; liquid/staked/cooling separation; native SOL stake never relabeled SKR",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "C036\u2013C037,C080\u2013C083",
+      "contracts": "FN056\u2013FN058",
+      "acceptanceId": "EA009",
+      "dependencies": [
+        "P1 core qualified"
+      ]
+    },
+    {
+      "id": "E010",
+      "name": "Cooldown and claim alerts",
+      "baseMappingAndPhase": "F087\u2013F090,F115 / P3",
+      "acceptance": "Current verified start/duration/season/eligibility; source/date; exact alarm preference and permission handling; local clock cannot authorize withdrawal",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "C077\u2013C083",
+      "contracts": "FN036,FN056,FN058",
+      "acceptanceId": "EA010",
+      "dependencies": [
+        "P1 core qualified"
+      ]
+    },
+    {
+      "id": "E011",
+      "name": "Node identity",
+      "baseMappingAndPhase": "New extension / P3",
+      "acceptance": "Stable public-key identity, authenticated pairing, protected key, key rotation/revocation; forged/replayed event and unauthorized host rejected",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "None: new EA011",
+      "contracts": "EF001\u2013EF003",
+      "acceptanceId": "EA011",
+      "dependencies": [
+        "P1 core qualified"
+      ]
+    },
+    {
+      "id": "E012",
+      "name": "Local service hosting",
+      "baseMappingAndPhase": "New extension / P3",
+      "acceptance": "Real start/stop/status for reviewed allowlisted user-owned service profiles; actual process/container evidence; loopback-first, declared ports/mounts and recovery",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "None: new EA012",
+      "contracts": "EF004\u2013EF007",
+      "acceptanceId": "EA012",
+      "dependencies": [
+        "P1 core qualified"
+      ]
+    },
+    {
+      "id": "E013",
+      "name": "Container isolation",
+      "baseMappingAndPhase": "New extension / P3",
+      "acceptance": "Qualified runtime with resource caps, nonroot user, restricted capabilities/mounts and network policy; hostile resource/filesystem/process fixtures prove boundaries; failure disables hosting",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "None: new EA013",
+      "contracts": "EF004\u2013EF007,EF024",
+      "acceptanceId": "EA013",
+      "dependencies": [
+        "P1 core qualified"
+      ]
+    },
+    {
+      "id": "E014",
+      "name": "Health and uptime checks",
+      "baseMappingAndPhase": "F108 + extension / P3",
+      "acceptance": "Actual process identity, health probe, observed state and timestamp; stale heartbeat is unavailable/offline, not measured uptime; kill/restart/outage tests",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "C012,C024 (freshness only)",
+      "contracts": "EF008",
+      "acceptanceId": "EA014",
+      "dependencies": [
+        "P1 core qualified"
+      ]
+    },
+    {
+      "id": "E015",
+      "name": "Encrypted peer tunnels",
+      "baseMappingAndPhase": "New extension / P3",
+      "acceptance": "Supported maintained tunnel protocol with identity binding, authorized peers, scoped routes, key rotation/revocation and measured successful handshake; no invented mesh status",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "None: new EA015",
+      "contracts": "EF009",
+      "acceptanceId": "EA015",
+      "dependencies": [
+        "P1 core qualified"
+      ]
+    },
+    {
+      "id": "E016",
+      "name": "Consent-based bandwidth sharing",
+      "baseMappingAndPhase": "F104 + extension / P3",
+      "acceptance": "Explicit provider/destination/use consent, opt-in scope and instant stop; default disabled; permitted contribution flow rather than unrestricted anonymous exit traffic",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "C089 (consent principle only)",
+      "contracts": "EF010\u2013EF012",
+      "acceptanceId": "EA016",
+      "dependencies": [
+        "P1 core qualified"
+      ]
+    },
+    {
+      "id": "E017",
+      "name": "Traffic and quota controls",
+      "baseMappingAndPhase": "New extension / P3",
+      "acceptance": "Enforced byte/time/rate limits and endpoint policy; pause on cap and report actual reason; controlled tests demonstrate enforcement despite restart",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "None: new EA017",
+      "contracts": "EF010,EF014",
+      "acceptanceId": "EA017",
+      "dependencies": [
+        "P1 core qualified"
+      ]
+    },
+    {
+      "id": "E018",
+      "name": "Contribution metering",
+      "baseMappingAndPhase": "F104 + extension / P3",
+      "acceptance": "Provider-defined raw byte/counter semantics, interval, sender/receiver identities and freshness; compare known transfers; local claim not independently verified automatically",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "None: new EA018",
+      "contracts": "EF013",
+      "acceptanceId": "EA018",
+      "dependencies": [
+        "P1 core qualified"
+      ]
+    },
+    {
+      "id": "E019",
+      "name": "Signed usage receipts",
+      "baseMappingAndPhase": "F061\u2013F070,F077 + extension / P3",
+      "acceptance": "Domain-separated signed metering envelope with counter provenance/sequence; exact signature verification and tamper/replay tests; label producer versus peer-confirmed evidence",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "C069\u2013C073 (integrity principle only)",
+      "contracts": "EF015\u2013EF016",
+      "acceptanceId": "EA019",
+      "dependencies": [
+        "P1 core qualified"
+      ]
+    },
+    {
+      "id": "E020",
+      "name": "Payout reconciliation",
+      "baseMappingAndPhase": "F079,F104 + extension / P3",
+      "acceptance": "Compare attributable provider accrual/claimable/paid records with observed on-chain payments; identify asset and mint; no fixed/guaranteed rewards or presumption every payout is SKR",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "C016\u2013C019,C081 (observation limits only)",
+      "contracts": "EF017",
+      "acceptanceId": "EA020",
+      "dependencies": [
+        "P1 core qualified"
+      ]
+    },
+    {
+      "id": "E021",
+      "name": "Proof job discovery",
+      "baseMappingAndPhase": "New extension / P3",
+      "acceptance": "Real local discovery endpoint plus qualified external adapter if available; signed bounded schema, version, deadline, input digest and compensation terms; malformed/expired jobs refused",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "None: new EA021",
+      "contracts": "EF018",
+      "acceptanceId": "EA021",
+      "dependencies": [
+        "P1 core qualified"
+      ]
+    },
+    {
+      "id": "E022",
+      "name": "Capability matching",
+      "baseMappingAndPhase": "New extension / P3",
+      "acceptance": "Observed CPU/RAM/disk/runtime/backend capabilities versus job requirements; unsupported jobs blocked with reason; no fabricated GPU/device attestation",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "None: new EA022",
+      "contracts": "EF004,EF019",
+      "acceptanceId": "EA022",
+      "dependencies": [
+        "P1 core qualified"
+      ]
+    },
+    {
+      "id": "E023",
+      "name": "Verifiable job results",
+      "baseMappingAndPhase": "New extension / P3",
+      "acceptance": "Execute a real supported proof backend with pinned circuit/program/version; produce actual proof/result bytes and commitments; known valid vector reproduced within resource caps",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "None: new EA023",
+      "contracts": "EF020",
+      "acceptanceId": "EA023",
+      "dependencies": [
+        "P1 core qualified"
+      ]
+    },
+    {
+      "id": "E024",
+      "name": "Proof verification",
+      "baseMappingAndPhase": "New extension / P3",
+      "acceptance": "Independent maintained verifier over proof/public inputs/verification key with pinned provenance; known valid succeeds, tampered/wrong-key/input/unsupported scheme fails",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "None: new EA024",
+      "contracts": "EF021",
+      "acceptanceId": "EA024",
+      "dependencies": [
+        "P1 core qualified"
+      ]
+    },
+    {
+      "id": "E025",
+      "name": "Contribution receipts",
+      "baseMappingAndPhase": "F075\u2013F080 + extension / P3",
+      "acceptance": "Immutable job identity, agreed input commitment, producer/result digest, verification observation and optional chain anchor; receipt distinguishes claimed execution from independently verified result",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P3",
+      "coreCheckOverlap": "C065\u2013C069,C073,C075 (receipt overlap only)",
+      "contracts": "EF022",
+      "acceptanceId": "EA025",
+      "dependencies": [
+        "P1 core qualified"
+      ]
+    },
+    {
+      "id": "E026",
+      "name": "Raw-file hashing",
+      "baseMappingAndPhase": "F061\u2013F064 / P1",
+      "acceptance": "Stream raw file bytes, bounded content access, compare known digests; no base64-wrapper hash, false physical claim or lost URI permission",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P1",
+      "coreCheckOverlap": "C070",
+      "contracts": "FN032",
+      "acceptanceId": "EA026",
+      "dependencies": []
+    },
+    {
+      "id": "E027",
+      "name": "Hardware-backed signing",
+      "baseMappingAndPhase": "F067\u2013F070 / P1",
+      "acceptance": "Qualified Android evidence envelope, true reported security level and independent verification; unsupported hardware/software key never masquerades as TEE/StrongBox",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P1",
+      "coreCheckOverlap": "C071\u2013C072",
+      "contracts": "FN034,FN062",
+      "acceptanceId": "EA027",
+      "dependencies": []
+    },
+    {
+      "id": "E028",
+      "name": "Evidence manifests",
+      "baseMappingAndPhase": "F063,F066,F074 / P1/P2",
+      "acceptance": "Deterministic versioned JCS and golden vectors, exact notes/Unicode/file order/nulls; bind to action or explicit evidence-only context",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P1/P2",
+      "coreCheckOverlap": "C073",
+      "contracts": "FN031,FN052\u2013FN053",
+      "acceptanceId": "EA028",
+      "dependencies": []
+    },
+    {
+      "id": "E029",
+      "name": "Portable receipt export",
+      "baseMappingAndPhase": "F080,F118 / P1/P4",
+      "acceptance": "Schema-valid self-contained verification material, redacted secrets, v1/v2 migration semantics, offline verification/import and hashes; local paths never substitute for portable evidence",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "P1/P4",
+      "coreCheckOverlap": "C066\u2013C067,C075\u2013C076",
+      "contracts": "FN030,FN040,EF023",
+      "acceptanceId": "EA029",
+      "dependencies": []
+    },
+    {
+      "id": "E030",
+      "name": "Privacy and permission controls",
+      "baseMappingAndPhase": "F058,F068,F116 + extension / All phases",
+      "acceptance": "Explicit capture/network/share/job/upload scopes, retention/deletion/export/revoke; no implicit evidence upload or wallet secret access; tests confirm denial and stop behavior",
+      "mandatory": true,
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "limitations": [
+        "Specification requirement; implementation not verified in this document delivery"
+      ],
+      "phase": "All phases",
+      "coreCheckOverlap": "C089\u2013C090 (AI consent only)",
+      "contracts": "EF003,EF010\u2013EF012,EF020,EF023",
+      "acceptanceId": "EA030",
+      "dependencies": []
+    }
+  ]
+}

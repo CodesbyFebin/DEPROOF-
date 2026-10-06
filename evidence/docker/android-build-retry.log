@@ -1,0 +1,172 @@
+ Image deproof/android-build:local Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 724B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from android-build.Dockerfile
+#2 transferring dockerfile: 1.67kB 0.0s done
+#2 WARN: NoEmptyContinuation: Empty continuation line (line 21)
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/eclipse-temurin:17.0.20_8-jdk-noble@sha256:9f2d47abfd5e58b6c31c110043c6f5717beccd912b724988e3e0166266b8e570
+#3 DONE 2.5s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 567B 0.0s done
+#4 DONE 0.1s
+
+#5 [internal] load build context
+#5 DONE 0.0s
+
+#6 [1/5] FROM docker.io/library/eclipse-temurin:17.0.20_8-jdk-noble@sha256:9f2d47abfd5e58b6c31c110043c6f5717beccd912b724988e3e0166266b8e570
+#6 resolve docker.io/library/eclipse-temurin:17.0.20_8-jdk-noble@sha256:9f2d47abfd5e58b6c31c110043c6f5717beccd912b724988e3e0166266b8e570 0.1s done
+#6 sha256:2bfd9f2eb9ddddac757b9ec41cc8316b420e9d92a8b466f05191b497604960fa 0B / 160B 0.2s
+#6 sha256:9de0ee94abf4586a7c506566ad4516f843eac69a672db8a5586cd943319d141b 0B / 2.46kB 0.2s
+#6 sha256:78731c0833cfd573619a64a3605a6a34d0b882ca5cbff33c57a5dc3c43f02ba7 0B / 145.83MB 0.2s
+#6 sha256:2bfd9f2eb9ddddac757b9ec41cc8316b420e9d92a8b466f05191b497604960fa 160B / 160B 0.3s done
+#6 sha256:9de0ee94abf4586a7c506566ad4516f843eac69a672db8a5586cd943319d141b 2.46kB / 2.46kB 0.6s done
+#6 sha256:78731c0833cfd573619a64a3605a6a34d0b882ca5cbff33c57a5dc3c43f02ba7 7.34MB / 145.83MB 2.6s
+#6 ...
+
+#5 [internal] load build context
+#5 transferring context: 94.08MB 3.4s done
+#5 DONE 3.5s
+
+#6 [1/5] FROM docker.io/library/eclipse-temurin:17.0.20_8-jdk-noble@sha256:9f2d47abfd5e58b6c31c110043c6f5717beccd912b724988e3e0166266b8e570
+#6 sha256:78731c0833cfd573619a64a3605a6a34d0b882ca5cbff33c57a5dc3c43f02ba7 14.68MB / 145.83MB 4.5s
+#6 sha256:78731c0833cfd573619a64a3605a6a34d0b882ca5cbff33c57a5dc3c43f02ba7 22.02MB / 145.83MB 6.3s
+#6 sha256:78731c0833cfd573619a64a3605a6a34d0b882ca5cbff33c57a5dc3c43f02ba7 29.36MB / 145.83MB 8.1s
+#6 sha256:78731c0833cfd573619a64a3605a6a34d0b882ca5cbff33c57a5dc3c43f02ba7 36.70MB / 145.83MB 10.1s
+#6 sha256:78731c0833cfd573619a64a3605a6a34d0b882ca5cbff33c57a5dc3c43f02ba7 44.04MB / 145.83MB 12.0s
+#6 sha256:78731c0833cfd573619a64a3605a6a34d0b882ca5cbff33c57a5dc3c43f02ba7 51.38MB / 145.83MB 14.0s
+#6 sha256:78731c0833cfd573619a64a3605a6a34d0b882ca5cbff33c57a5dc3c43f02ba7 58.72MB / 145.83MB 15.8s
+#6 sha256:78731c0833cfd573619a64a3605a6a34d0b882ca5cbff33c57a5dc3c43f02ba7 66.06MB / 145.83MB 17.7s
+#6 sha256:78731c0833cfd573619a64a3605a6a34d0b882ca5cbff33c57a5dc3c43f02ba7 73.40MB / 145.83MB 19.6s
+#6 sha256:78731c0833cfd573619a64a3605a6a34d0b882ca5cbff33c57a5dc3c43f02ba7 80.74MB / 145.83MB 21.8s
+#6 sha256:78731c0833cfd573619a64a3605a6a34d0b882ca5cbff33c57a5dc3c43f02ba7 88.08MB / 145.83MB 23.6s
+#6 sha256:78731c0833cfd573619a64a3605a6a34d0b882ca5cbff33c57a5dc3c43f02ba7 95.42MB / 145.83MB 25.4s
+#6 sha256:78731c0833cfd573619a64a3605a6a34d0b882ca5cbff33c57a5dc3c43f02ba7 102.76MB / 145.83MB 27.3s
+#6 sha256:78731c0833cfd573619a64a3605a6a34d0b882ca5cbff33c57a5dc3c43f02ba7 110.10MB / 145.83MB 29.4s
+#6 sha256:78731c0833cfd573619a64a3605a6a34d0b882ca5cbff33c57a5dc3c43f02ba7 117.44MB / 145.83MB 31.2s
+#6 sha256:78731c0833cfd573619a64a3605a6a34d0b882ca5cbff33c57a5dc3c43f02ba7 124.78MB / 145.83MB 33.3s
+#6 sha256:78731c0833cfd573619a64a3605a6a34d0b882ca5cbff33c57a5dc3c43f02ba7 132.12MB / 145.83MB 35.1s
+#6 sha256:78731c0833cfd573619a64a3605a6a34d0b882ca5cbff33c57a5dc3c43f02ba7 139.46MB / 145.83MB 37.1s
+#6 sha256:78731c0833cfd573619a64a3605a6a34d0b882ca5cbff33c57a5dc3c43f02ba7 145.83MB / 145.83MB 38.9s done
+#6 extracting sha256:78731c0833cfd573619a64a3605a6a34d0b882ca5cbff33c57a5dc3c43f02ba7
+#6 extracting sha256:78731c0833cfd573619a64a3605a6a34d0b882ca5cbff33c57a5dc3c43f02ba7 5.7s done
+#6 DONE 45.3s
+
+#6 [1/5] FROM docker.io/library/eclipse-temurin:17.0.20_8-jdk-noble@sha256:9f2d47abfd5e58b6c31c110043c6f5717beccd912b724988e3e0166266b8e570
+#6 extracting sha256:2bfd9f2eb9ddddac757b9ec41cc8316b420e9d92a8b466f05191b497604960fa 0.0s done
+#6 extracting sha256:9de0ee94abf4586a7c506566ad4516f843eac69a672db8a5586cd943319d141b 0.0s done
+#6 DONE 45.3s
+
+#7 [2/5] RUN apt-get update && apt-get install -y --no-install-recommends curl unzip ca-certificates python3 && rm -rf /var/lib/apt/lists/*  && mkdir -p /opt/android-sdk/cmdline-tools  && curl --fail --location --retry 3 "https://dl.google.com/android/repository/commandlinetools-linux-15859902_latest.zip" -o /tmp/sdk.zip  && echo "4e4c464f145a7512b57d088ac6c278c03c9eea610886b35a5e0804e74eedf583  /tmp/sdk.zip" | sha256sum -c -  && unzip -q /tmp/sdk.zip -d /tmp/sdk  && mv /tmp/sdk/cmdline-tools /opt/android-sdk/cmdline-tools/pinned  && rm -rf /tmp/sdk /tmp/sdk.zip  && yes | /opt/android-sdk/cmdline-tools/pinned/bin/sdkmanager --sdk_root=/opt/android-sdk --licenses >/dev/null RUN /opt/android-sdk/cmdline-tools/pinned/bin/sdkmanager --sdk_root=/opt/android-sdk 'platforms;android-37.0' 'build-tools;36.0.0'   && (getent group "20" || groupadd --gid "20" builder)  && useradd --create-home --uid "501" --gid "20" builder  && mkdir -p /workspace /cache/gradle /export  && chown -R "501:20" /workspace /cache /export /home/builder
+#7 1.671 Get:1 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+#7 1.808 Get:2 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+#7 2.929 Get:3 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1,943 kB]
+#7 3.151 Get:4 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+#7 3.484 Get:5 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+#7 3.824 Get:6 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]
+#7 3.926 Get:7 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [50.0 kB]
+#7 3.935 Get:8 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1,320 kB]
+#7 4.419 Get:9 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1,542 kB]
+#7 10.17 Get:10 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1,808 kB]
+#7 10.40 Get:11 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]
+#7 10.40 Get:12 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB]
+#7 10.41 Get:13 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1,695 kB]
+#7 10.78 Get:14 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [2,135 kB]
+#7 11.86 Get:15 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [56.2 kB]
+#7 11.86 Get:16 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [2,164 kB]
+#7 12.21 Get:17 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [36.0 kB]
+#7 12.21 Get:18 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Packages [671 B]
+#7 12.21 Get:19 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [49.0 kB]
+#7 12.34 Fetched 33.2 MB in 11s (2,978 kB/s)
+#7 12.34 Reading package lists...
+#7 13.37 Reading package lists...
+#7 14.44 Building dependency tree...
+#7 14.64 Reading state information...
+#7 14.98 ca-certificates is already the newest version (20260601~24.04.1).
+#7 14.98 The following additional packages will be installed:
+#7 14.98   libcurl4t64 libpython3-stdlib libpython3.12-minimal libpython3.12-stdlib
+#7 14.98   media-types netbase python3-minimal python3.12 python3.12-minimal
+#7 14.98 Suggested packages:
+#7 14.98   python3-doc python3-tk python3-venv python3.12-venv python3.12-doc
+#7 14.98   binfmt-support zip
+#7 15.04 The following NEW packages will be installed:
+#7 15.05   libpython3-stdlib libpython3.12-minimal libpython3.12-stdlib media-types
+#7 15.05   netbase python3 python3-minimal python3.12 python3.12-minimal unzip
+#7 15.05 The following packages will be upgraded:
+#7 15.05   curl libcurl4t64
+#7 15.61 2 upgraded, 10 newly installed, 0 to remove and 7 not upgraded.
+#7 15.61 Need to get 6,740 kB of archives.
+#7 15.61 After this operation, 24.2 MB of additional disk space will be used.
+#7 15.61 Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-minimal amd64 3.12.3-1ubuntu0.17 [839 kB]
+#7 17.69 Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3.12-minimal amd64 3.12.3-1ubuntu0.17 [2,335 kB]
+#7 18.85 Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-minimal amd64 3.12.3-0ubuntu2.1 [27.4 kB]
+#7 18.85 Get:4 http://archive.ubuntu.com/ubuntu noble/main amd64 media-types all 10.1.0 [27.5 kB]
+#7 18.85 Get:5 http://archive.ubuntu.com/ubuntu noble/main amd64 netbase all 6.4 [13.1 kB]
+#7 18.85 Get:6 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-stdlib amd64 3.12.3-1ubuntu0.17 [2,071 kB]
+#7 19.70 Get:7 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3.12 amd64 3.12.3-1ubuntu0.17 [651 kB]
+#7 19.71 Get:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3-stdlib amd64 3.12.3-0ubuntu2.1 [10.1 kB]
+#7 19.71 Get:9 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3 amd64 3.12.3-0ubuntu2.1 [23.0 kB]
+#7 19.71 Get:10 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 curl amd64 8.5.0-2ubuntu10.15 [227 kB]
+#7 19.89 Get:11 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl4t64 amd64 8.5.0-2ubuntu10.15 [343 kB]
+#7 19.93 Get:12 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 unzip amd64 6.0-28ubuntu4.1 [174 kB]
+#7 20.22 debconf: delaying package configuration, since apt-utils is not installed
+#7 20.27 Fetched 6,740 kB in 5s (1,386 kB/s)
+#7 20.35 Selecting previously unselected package libpython3.12-minimal:amd64.
+#7 20.35 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6839 files and directories currently installed.)
+#7 20.38 Preparing to unpack .../libpython3.12-minimal_3.12.3-1ubuntu0.17_amd64.deb ...
+#7 20.39 Unpacking libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.17) ...
+#7 20.61 Selecting previously unselected package python3.12-minimal.
+#7 20.61 Preparing to unpack .../python3.12-minimal_3.12.3-1ubuntu0.17_amd64.deb ...
+#7 20.63 Unpacking python3.12-minimal (3.12.3-1ubuntu0.17) ...
+#7 20.85 Setting up libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.17) ...
+#7 20.87 Setting up python3.12-minimal (3.12.3-1ubuntu0.17) ...
+#7 21.97 Selecting previously unselected package python3-minimal.
+#7 21.97 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7150 files and directories currently installed.)
+#7 21.99 Preparing to unpack .../0-python3-minimal_3.12.3-0ubuntu2.1_amd64.deb ...
+#7 21.99 Unpacking python3-minimal (3.12.3-0ubuntu2.1) ...
+#7 22.02 Selecting previously unselected package media-types.
+#7 22.02 Preparing to unpack .../1-media-types_10.1.0_all.deb ...
+#7 22.03 Unpacking media-types (10.1.0) ...
+#7 22.06 Selecting previously unselected package netbase.
+#7 22.07 Preparing to unpack .../2-netbase_6.4_all.deb ...
+#7 22.07 Unpacking netbase (6.4) ...
+#7 22.12 Selecting previously unselected package libpython3.12-stdlib:amd64.
+#7 22.12 Preparing to unpack .../3-libpython3.12-stdlib_3.12.3-1ubuntu0.17_amd64.deb ...
+#7 22.13 Unpacking libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.17) ...
+#7 22.27 Selecting previously unselected package python3.12.
+#7 22.27 Preparing to unpack .../4-python3.12_3.12.3-1ubuntu0.17_amd64.deb ...
+#7 22.27 Unpacking python3.12 (3.12.3-1ubuntu0.17) ...
+#7 22.31 Selecting previously unselected package libpython3-stdlib:amd64.
+#7 22.31 Preparing to unpack .../5-libpython3-stdlib_3.12.3-0ubuntu2.1_amd64.deb ...
+#7 22.32 Unpacking libpython3-stdlib:amd64 (3.12.3-0ubuntu2.1) ...
+#7 22.35 Setting up python3-minimal (3.12.3-0ubuntu2.1) ...
+#7 22.57 Selecting previously unselected package python3.
+#7 22.57 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7591 files and directories currently installed.)
+#7 22.58 Preparing to unpack .../python3_3.12.3-0ubuntu2.1_amd64.deb ...
+#7 22.59 Unpacking python3 (3.12.3-0ubuntu2.1) ...
+#7 22.63 Preparing to unpack .../curl_8.5.0-2ubuntu10.15_amd64.deb ...
+#7 22.64 Unpacking curl (8.5.0-2ubuntu10.15) over (8.5.0-2ubuntu10.13) ...
+#7 22.70 Preparing to unpack .../libcurl4t64_8.5.0-2ubuntu10.15_amd64.deb ...
+#7 22.71 Unpacking libcurl4t64:amd64 (8.5.0-2ubuntu10.15) over (8.5.0-2ubuntu10.13) ...
+#7 22.78 Selecting previously unselected package unzip.
+#7 22.78 Preparing to unpack .../unzip_6.0-28ubuntu4.1_amd64.deb ...
+#7 22.78 Unpacking unzip (6.0-28ubuntu4.1) ...
+#7 22.82 Setting up media-types (10.1.0) ...
+#7 22.84 Setting up libcurl4t64:amd64 (8.5.0-2ubuntu10.15) ...
+#7 22.85 Setting up unzip (6.0-28ubuntu4.1) ...
+#7 22.86 Setting up netbase (6.4) ...
+#7 22.89 Setting up curl (8.5.0-2ubuntu10.15) ...
+#7 22.90 Setting up libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.17) ...
+#7 22.91 Setting up python3.12 (3.12.3-1ubuntu0.17) ...
+#7 23.92 Setting up libpython3-stdlib:amd64 (3.12.3-0ubuntu2.1) ...
+#7 23.93 Setting up python3 (3.12.3-0ubuntu2.1) ...
+#7 23.94 running python rtupdate hooks for python3.12...
+#7 23.94 running python post-rtupdate hooks for python3.12...
+#7 24.06 Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
+#7 24.19   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+#7 24.19                                  Dload  Upload   Total   Spent    Left  Speed
+#7 24.19   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  173M    0 1218k    0     0  1890k      0  0:01:33 --:--:--  0:01:33 1889k

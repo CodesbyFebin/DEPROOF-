@@ -1,0 +1,6 @@
+PASS: compose_config_valid
+PASS: node-agent_restricted_config
+PASS: prover-worker_restricted_config
+PASS: web_restricted_config
+FAIL: actual_services_started
+FAIL: AssertionError: actual_services_started

@@ -1,0 +1,32 @@
+[
+  {
+    "label": "SYNTHETIC_SPL_LAYOUT_VECTOR",
+    "amountRaw": "0",
+    "decimals": "6",
+    "hex": "0c000000000000000006"
+  },
+  {
+    "label": "SYNTHETIC_SPL_LAYOUT_VECTOR",
+    "amountRaw": "1",
+    "decimals": "6",
+    "hex": "0c010000000000000006"
+  },
+  {
+    "label": "SYNTHETIC_SPL_LAYOUT_VECTOR",
+    "amountRaw": "1000000000",
+    "decimals": "6",
+    "hex": "0c00ca9a3b0000000006"
+  },
+  {
+    "label": "SYNTHETIC_SPL_LAYOUT_VECTOR",
+    "amountRaw": "9223372036854775808",
+    "decimals": "6",
+    "hex": "0c000000000000008006"
+  },
+  {
+    "label": "SYNTHETIC_SPL_LAYOUT_VECTOR",
+    "amountRaw": "18446744073709551615",
+    "decimals": "6",
+    "hex": "0cffffffffffffffff06"
+  }
+]

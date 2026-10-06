@@ -1,0 +1,5136 @@
+{
+  "count": 120,
+  "features": [
+    {
+      "id": "F001",
+      "definition": "Paste a mainnet account address.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C005",
+        "C006",
+        "C007",
+        "C008",
+        "C009",
+        "C010",
+        "C011",
+        "C012"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F001"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN004"
+      ]
+    },
+    {
+      "id": "F002",
+      "definition": "Validate base58 decoding and 32-byte length.",
+      "status": "VERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C005",
+        "C006",
+        "C007",
+        "C008",
+        "C009",
+        "C010",
+        "C011",
+        "C012"
+      ],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt::addressesRejectAlphabetLengthAndOversize"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Scope-specific evidence only; full-scope qualification is incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F002"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN001",
+        "FN004"
+      ]
+    },
+    {
+      "id": "F003",
+      "definition": "Read SOL balance from RPC.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/live-rpc.json"
+      ],
+      "dependencies": [],
+      "checks": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C005",
+        "C006",
+        "C007",
+        "C008",
+        "C009",
+        "C010",
+        "C011",
+        "C012"
+      ],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "tools/jvm/LiveRpcProbe.kt"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F003"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN004"
+      ]
+    },
+    {
+      "id": "F004",
+      "definition": "Format lamports without floating-point loss.",
+      "status": "VERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C005",
+        "C006",
+        "C007",
+        "C008",
+        "C009",
+        "C010",
+        "C011",
+        "C012"
+      ],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt::exactUnsignedVectorsAndDecimalFormatting"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Scope-specific evidence only; full-scope qualification is incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F004"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN002",
+        "FN004",
+        "FN021"
+      ]
+    },
+    {
+      "id": "F005",
+      "definition": "Read only the verified official SKR mint.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C005",
+        "C006",
+        "C007",
+        "C008",
+        "C009",
+        "C010",
+        "C011",
+        "C012"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F005"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN004",
+        "FN023"
+      ]
+    },
+    {
+      "id": "F006",
+      "definition": "Sum balances across all matching token accounts.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C005",
+        "C006",
+        "C007",
+        "C008",
+        "C009",
+        "C010",
+        "C011",
+        "C012"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F006"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN004",
+        "FN023"
+      ]
+    },
+    {
+      "id": "F007",
+      "definition": "Validate token decimals and account metadata.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C005",
+        "C006",
+        "C007",
+        "C008",
+        "C009",
+        "C010",
+        "C011",
+        "C012"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F007"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN003",
+        "FN004",
+        "FN021",
+        "FN023"
+      ]
+    },
+    {
+      "id": "F008",
+      "definition": "Display context slot and observation time.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Core.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/live-rpc.json"
+      ],
+      "dependencies": [],
+      "checks": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C005",
+        "C006",
+        "C007",
+        "C008",
+        "C009",
+        "C010",
+        "C011",
+        "C012"
+      ],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "tools/jvm/LiveRpcProbe.kt"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F008"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN004"
+      ]
+    },
+    {
+      "id": "F009",
+      "definition": "Label pasted accounts as observed, not connected.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C005",
+        "C006",
+        "C007",
+        "C008",
+        "C009",
+        "C010",
+        "C011",
+        "C012"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F009"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN004"
+      ]
+    },
+    {
+      "id": "F010",
+      "definition": "Preserve independent SOL and SKR loading/error states.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C005",
+        "C006",
+        "C007",
+        "C008",
+        "C009",
+        "C010",
+        "C011",
+        "C012"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F010"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN004"
+      ]
+    },
+    {
+      "id": "F011",
+      "definition": "Discover compatible MWA wallets.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/wallet/Wallet.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C055",
+        "C056",
+        "C057",
+        "C058",
+        "C059",
+        "C060",
+        "C061",
+        "C062",
+        "C063",
+        "C064"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F011"
+      },
+      "phase": "P1",
+      "contractIds": []
+    },
+    {
+      "id": "F012",
+      "definition": "Request real wallet authorization.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/wallet/Wallet.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C055",
+        "C056",
+        "C057",
+        "C058",
+        "C059",
+        "C060",
+        "C061",
+        "C062",
+        "C063",
+        "C064"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F012"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN026"
+      ]
+    },
+    {
+      "id": "F013",
+      "definition": "Select an authorized account.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/wallet/Wallet.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C055",
+        "C056",
+        "C057",
+        "C058",
+        "C059",
+        "C060",
+        "C061",
+        "C062",
+        "C063",
+        "C064"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F013"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN026"
+      ]
+    },
+    {
+      "id": "F014",
+      "definition": "Display the actual returned account and wallet identity.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/wallet/Wallet.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C055",
+        "C056",
+        "C057",
+        "C058",
+        "C059",
+        "C060",
+        "C061",
+        "C062",
+        "C063",
+        "C064"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F014"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN026"
+      ]
+    },
+    {
+      "id": "F015",
+      "definition": "Disconnect and invalidate the session.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/wallet/Wallet.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C055",
+        "C056",
+        "C057",
+        "C058",
+        "C059",
+        "C060",
+        "C061",
+        "C062",
+        "C063",
+        "C064"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F015"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN027"
+      ]
+    },
+    {
+      "id": "F016",
+      "definition": "Reauthorize when required.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/wallet/Wallet.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C055",
+        "C056",
+        "C057",
+        "C058",
+        "C059",
+        "C060",
+        "C061",
+        "C062",
+        "C063",
+        "C064"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F016"
+      },
+      "phase": "P1",
+      "contractIds": []
+    },
+    {
+      "id": "F017",
+      "definition": "Surface missing-wallet errors.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/wallet/Wallet.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C055",
+        "C056",
+        "C057",
+        "C058",
+        "C059",
+        "C060",
+        "C061",
+        "C062",
+        "C063",
+        "C064"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F017"
+      },
+      "phase": "P1",
+      "contractIds": []
+    },
+    {
+      "id": "F018",
+      "definition": "Separate devnet and mainnet actions.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/wallet/Wallet.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C055",
+        "C056",
+        "C057",
+        "C058",
+        "C059",
+        "C060",
+        "C061",
+        "C062",
+        "C063",
+        "C064"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F018"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN037"
+      ]
+    },
+    {
+      "id": "F019",
+      "definition": "Sign and submit a minimal devnet memo.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/wallet/Wallet.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C055",
+        "C056",
+        "C057",
+        "C058",
+        "C059",
+        "C060",
+        "C061",
+        "C062",
+        "C063",
+        "C064"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F019"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN024",
+        "FN025"
+      ]
+    },
+    {
+      "id": "F020",
+      "definition": "Preserve and verify the real returned transaction signature.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/wallet/Wallet.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C055",
+        "C056",
+        "C057",
+        "C058",
+        "C059",
+        "C060",
+        "C061",
+        "C062",
+        "C063",
+        "C064"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F020"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN024",
+        "FN049",
+        "FN050"
+      ]
+    },
+    {
+      "id": "F021",
+      "definition": "Load the latest ten signatures with pagination.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C013",
+        "C014",
+        "C015",
+        "C016",
+        "C017",
+        "C018",
+        "C019",
+        "C020",
+        "C021",
+        "C022",
+        "C023",
+        "C024"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F021"
+      },
+      "phase": "P1",
+      "contractIds": []
+    },
+    {
+      "id": "F022",
+      "definition": "Fetch transaction details.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C013",
+        "C014",
+        "C015",
+        "C016",
+        "C017",
+        "C018",
+        "C019",
+        "C020",
+        "C021",
+        "C022",
+        "C023",
+        "C024"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F022"
+      },
+      "phase": "P1",
+      "contractIds": []
+    },
+    {
+      "id": "F023",
+      "definition": "Handle unavailable transaction records explicitly.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C013",
+        "C014",
+        "C015",
+        "C016",
+        "C017",
+        "C018",
+        "C019",
+        "C020",
+        "C021",
+        "C022",
+        "C023",
+        "C024"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F023"
+      },
+      "phase": "P1",
+      "contractIds": []
+    },
+    {
+      "id": "F024",
+      "definition": "Display processed, confirmed, and finalized states.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C013",
+        "C014",
+        "C015",
+        "C016",
+        "C017",
+        "C018",
+        "C019",
+        "C020",
+        "C021",
+        "C022",
+        "C023",
+        "C024"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F024"
+      },
+      "phase": "P1",
+      "contractIds": []
+    },
+    {
+      "id": "F025",
+      "definition": "Display transaction failures and error details.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C013",
+        "C014",
+        "C015",
+        "C016",
+        "C017",
+        "C018",
+        "C019",
+        "C020",
+        "C021",
+        "C022",
+        "C023",
+        "C024"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F025"
+      },
+      "phase": "P1",
+      "contractIds": []
+    },
+    {
+      "id": "F026",
+      "definition": "Show slot and chain block time.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C013",
+        "C014",
+        "C015",
+        "C016",
+        "C017",
+        "C018",
+        "C019",
+        "C020",
+        "C021",
+        "C022",
+        "C023",
+        "C024"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F026"
+      },
+      "phase": "P1",
+      "contractIds": []
+    },
+    {
+      "id": "F027",
+      "definition": "Link to the appropriate explorer and cluster.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C013",
+        "C014",
+        "C015",
+        "C016",
+        "C017",
+        "C018",
+        "C019",
+        "C020",
+        "C021",
+        "C022",
+        "C023",
+        "C024"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F027"
+      },
+      "phase": "P1",
+      "contractIds": []
+    },
+    {
+      "id": "F028",
+      "definition": "Decode history into a reviewable record.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C013",
+        "C014",
+        "C015",
+        "C016",
+        "C017",
+        "C018",
+        "C019",
+        "C020",
+        "C021",
+        "C022",
+        "C023",
+        "C024"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F028"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN006",
+        "FN041",
+        "FN042"
+      ]
+    },
+    {
+      "id": "F029",
+      "definition": "Clearly distinguish historical observation from new authorization.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C013",
+        "C014",
+        "C015",
+        "C016",
+        "C017",
+        "C018",
+        "C019",
+        "C020",
+        "C021",
+        "C022",
+        "C023",
+        "C024"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F029"
+      },
+      "phase": "P1",
+      "contractIds": []
+    },
+    {
+      "id": "F030",
+      "definition": "Refresh status without creating duplicate records.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C013",
+        "C014",
+        "C015",
+        "C016",
+        "C017",
+        "C018",
+        "C019",
+        "C020",
+        "C021",
+        "C022",
+        "C023",
+        "C024"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F030"
+      },
+      "phase": "P1",
+      "contractIds": []
+    },
+    {
+      "id": "F031",
+      "definition": "Verify the token program.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C025",
+        "C026",
+        "C027",
+        "C028",
+        "C029",
+        "C030",
+        "C031",
+        "C032",
+        "C033",
+        "C034",
+        "C035",
+        "C036",
+        "C037",
+        "C038",
+        "C039",
+        "C040",
+        "C041",
+        "C042",
+        "C043",
+        "C044"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F031"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN008"
+      ]
+    },
+    {
+      "id": "F032",
+      "definition": "Decode TransferChecked discriminator 12.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C025",
+        "C026",
+        "C027",
+        "C028",
+        "C029",
+        "C030",
+        "C031",
+        "C032",
+        "C033",
+        "C034",
+        "C035",
+        "C036",
+        "C037",
+        "C038",
+        "C039",
+        "C040",
+        "C041",
+        "C042",
+        "C043",
+        "C044"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F032"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN008",
+        "FN011",
+        "FN047"
+      ]
+    },
+    {
+      "id": "F033",
+      "definition": "Read unsigned u64 amounts in little-endian order.",
+      "status": "VERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [
+        "C025",
+        "C026",
+        "C027",
+        "C028",
+        "C029",
+        "C030",
+        "C031",
+        "C032",
+        "C033",
+        "C034",
+        "C035",
+        "C036",
+        "C037",
+        "C038",
+        "C039",
+        "C040",
+        "C041",
+        "C042",
+        "C043",
+        "C044"
+      ],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt::exactUnsignedVectorsAndDecimalFormatting"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Scope-specific evidence only; full-scope qualification is incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F033"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN008",
+        "FN009"
+      ]
+    },
+    {
+      "id": "F034",
+      "definition": "Validate the decimals byte.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C025",
+        "C026",
+        "C027",
+        "C028",
+        "C029",
+        "C030",
+        "C031",
+        "C032",
+        "C033",
+        "C034",
+        "C035",
+        "C036",
+        "C037",
+        "C038",
+        "C039",
+        "C040",
+        "C041",
+        "C042",
+        "C043",
+        "C044"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F034"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN008"
+      ]
+    },
+    {
+      "id": "F035",
+      "definition": "Validate account order and required roles.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C025",
+        "C026",
+        "C027",
+        "C028",
+        "C029",
+        "C030",
+        "C031",
+        "C032",
+        "C033",
+        "C034",
+        "C035",
+        "C036",
+        "C037",
+        "C038",
+        "C039",
+        "C040",
+        "C041",
+        "C042",
+        "C043",
+        "C044"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F035"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN007",
+        "FN008",
+        "FN046"
+      ]
+    },
+    {
+      "id": "F036",
+      "definition": "Verify the official SKR mint.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C025",
+        "C026",
+        "C027",
+        "C028",
+        "C029",
+        "C030",
+        "C031",
+        "C032",
+        "C033",
+        "C034",
+        "C035",
+        "C036",
+        "C037",
+        "C038",
+        "C039",
+        "C040",
+        "C041",
+        "C042",
+        "C043",
+        "C044"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F036"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN008",
+        "FN046",
+        "FN047"
+      ]
+    },
+    {
+      "id": "F037",
+      "definition": "Flag SetAuthority.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C025",
+        "C026",
+        "C027",
+        "C028",
+        "C029",
+        "C030",
+        "C031",
+        "C032",
+        "C033",
+        "C034",
+        "C035",
+        "C036",
+        "C037",
+        "C038",
+        "C039",
+        "C040",
+        "C041",
+        "C042",
+        "C043",
+        "C044"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F037"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN008"
+      ]
+    },
+    {
+      "id": "F038",
+      "definition": "Flag Approve and delegation.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C025",
+        "C026",
+        "C027",
+        "C028",
+        "C029",
+        "C030",
+        "C031",
+        "C032",
+        "C033",
+        "C034",
+        "C035",
+        "C036",
+        "C037",
+        "C038",
+        "C039",
+        "C040",
+        "C041",
+        "C042",
+        "C043",
+        "C044"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F038"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN008"
+      ]
+    },
+    {
+      "id": "F039",
+      "definition": "Refuse unchecked or unsupported transfers in the strict SKR flow.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C025",
+        "C026",
+        "C027",
+        "C028",
+        "C029",
+        "C030",
+        "C031",
+        "C032",
+        "C033",
+        "C034",
+        "C035",
+        "C036",
+        "C037",
+        "C038",
+        "C039",
+        "C040",
+        "C041",
+        "C042",
+        "C043",
+        "C044"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F039"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN008",
+        "FN010",
+        "FN038"
+      ]
+    },
+    {
+      "id": "F040",
+      "definition": "Inspect every instruction in the transaction.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C025",
+        "C026",
+        "C027",
+        "C028",
+        "C029",
+        "C030",
+        "C031",
+        "C032",
+        "C033",
+        "C034",
+        "C035",
+        "C036",
+        "C037",
+        "C038",
+        "C039",
+        "C040",
+        "C041",
+        "C042",
+        "C043",
+        "C044"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F040"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN005",
+        "FN007",
+        "FN008",
+        "FN042",
+        "FN043"
+      ]
+    },
+    {
+      "id": "F041",
+      "definition": "Present a plain-language transaction summary.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C045",
+        "C046",
+        "C047",
+        "C048",
+        "C049",
+        "C050",
+        "C051",
+        "C052",
+        "C053",
+        "C054",
+        "C055",
+        "C056",
+        "C057",
+        "C058",
+        "C059",
+        "C060",
+        "C061",
+        "C062",
+        "C063",
+        "C064",
+        "C077",
+        "C078",
+        "C079",
+        "C080",
+        "C081",
+        "C082",
+        "C083",
+        "C084",
+        "C085",
+        "C086",
+        "C087",
+        "C088"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F041"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN005",
+        "FN018",
+        "FN019"
+      ]
+    },
+    {
+      "id": "F042",
+      "definition": "Display full addresses on demand.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C045",
+        "C046",
+        "C047",
+        "C048",
+        "C049",
+        "C050",
+        "C051",
+        "C052",
+        "C053",
+        "C054",
+        "C055",
+        "C056",
+        "C057",
+        "C058",
+        "C059",
+        "C060",
+        "C061",
+        "C062",
+        "C063",
+        "C064",
+        "C077",
+        "C078",
+        "C079",
+        "C080",
+        "C081",
+        "C082",
+        "C083",
+        "C084",
+        "C085",
+        "C086",
+        "C087",
+        "C088"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F042"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN020"
+      ]
+    },
+    {
+      "id": "F043",
+      "definition": "Show requester identity and origin.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C045",
+        "C046",
+        "C047",
+        "C048",
+        "C049",
+        "C050",
+        "C051",
+        "C052",
+        "C053",
+        "C054",
+        "C055",
+        "C056",
+        "C057",
+        "C058",
+        "C059",
+        "C060",
+        "C061",
+        "C062",
+        "C063",
+        "C064",
+        "C077",
+        "C078",
+        "C079",
+        "C080",
+        "C081",
+        "C082",
+        "C083",
+        "C084",
+        "C085",
+        "C086",
+        "C087",
+        "C088"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F043"
+      },
+      "phase": "P1",
+      "contractIds": []
+    },
+    {
+      "id": "F044",
+      "definition": "Show fees and simulation outcomes where available.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C045",
+        "C046",
+        "C047",
+        "C048",
+        "C049",
+        "C050",
+        "C051",
+        "C052",
+        "C053",
+        "C054",
+        "C055",
+        "C056",
+        "C057",
+        "C058",
+        "C059",
+        "C060",
+        "C061",
+        "C062",
+        "C063",
+        "C064",
+        "C077",
+        "C078",
+        "C079",
+        "C080",
+        "C081",
+        "C082",
+        "C083",
+        "C084",
+        "C085",
+        "C086",
+        "C087",
+        "C088"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F044"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN044",
+        "FN045"
+      ]
+    },
+    {
+      "id": "F045",
+      "definition": "Hash the complete serialized transaction message.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C045",
+        "C046",
+        "C047",
+        "C048",
+        "C049",
+        "C050",
+        "C051",
+        "C052",
+        "C053",
+        "C054",
+        "C055",
+        "C056",
+        "C057",
+        "C058",
+        "C059",
+        "C060",
+        "C061",
+        "C062",
+        "C063",
+        "C064",
+        "C077",
+        "C078",
+        "C079",
+        "C080",
+        "C081",
+        "C082",
+        "C083",
+        "C084",
+        "C085",
+        "C086",
+        "C087",
+        "C088"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F045"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN006",
+        "FN012",
+        "FN013",
+        "FN016",
+        "FN039"
+      ]
+    },
+    {
+      "id": "F046",
+      "definition": "Bind review to account, cluster, and timestamp.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C045",
+        "C046",
+        "C047",
+        "C048",
+        "C049",
+        "C050",
+        "C051",
+        "C052",
+        "C053",
+        "C054",
+        "C055",
+        "C056",
+        "C057",
+        "C058",
+        "C059",
+        "C060",
+        "C061",
+        "C062",
+        "C063",
+        "C064",
+        "C077",
+        "C078",
+        "C079",
+        "C080",
+        "C081",
+        "C082",
+        "C083",
+        "C084",
+        "C085",
+        "C086",
+        "C087",
+        "C088"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F046"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN016",
+        "FN039"
+      ]
+    },
+    {
+      "id": "F047",
+      "definition": "Recompute immediately before wallet handoff.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C045",
+        "C046",
+        "C047",
+        "C048",
+        "C049",
+        "C050",
+        "C051",
+        "C052",
+        "C053",
+        "C054",
+        "C055",
+        "C056",
+        "C057",
+        "C058",
+        "C059",
+        "C060",
+        "C061",
+        "C062",
+        "C063",
+        "C064",
+        "C077",
+        "C078",
+        "C079",
+        "C080",
+        "C081",
+        "C082",
+        "C083",
+        "C084",
+        "C085",
+        "C086",
+        "C087",
+        "C088"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F047"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN017"
+      ]
+    },
+    {
+      "id": "F048",
+      "definition": "Block message or review-context changes.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C045",
+        "C046",
+        "C047",
+        "C048",
+        "C049",
+        "C050",
+        "C051",
+        "C052",
+        "C053",
+        "C054",
+        "C055",
+        "C056",
+        "C057",
+        "C058",
+        "C059",
+        "C060",
+        "C061",
+        "C062",
+        "C063",
+        "C064",
+        "C077",
+        "C078",
+        "C079",
+        "C080",
+        "C081",
+        "C082",
+        "C083",
+        "C084",
+        "C085",
+        "C086",
+        "C087",
+        "C088"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F048"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN014",
+        "FN015",
+        "FN017",
+        "FN047",
+        "FN050"
+      ]
+    },
+    {
+      "id": "F049",
+      "definition": "Require fresh review after blockhash rebuild.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C045",
+        "C046",
+        "C047",
+        "C048",
+        "C049",
+        "C050",
+        "C051",
+        "C052",
+        "C053",
+        "C054",
+        "C055",
+        "C056",
+        "C057",
+        "C058",
+        "C059",
+        "C060",
+        "C061",
+        "C062",
+        "C063",
+        "C064",
+        "C077",
+        "C078",
+        "C079",
+        "C080",
+        "C081",
+        "C082",
+        "C083",
+        "C084",
+        "C085",
+        "C086",
+        "C087",
+        "C088"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F049"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN048"
+      ]
+    },
+    {
+      "id": "F050",
+      "definition": "Reject locally without broadcasting.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C045",
+        "C046",
+        "C047",
+        "C048",
+        "C049",
+        "C050",
+        "C051",
+        "C052",
+        "C053",
+        "C054",
+        "C055",
+        "C056",
+        "C057",
+        "C058",
+        "C059",
+        "C060",
+        "C061",
+        "C062",
+        "C063",
+        "C064",
+        "C077",
+        "C078",
+        "C079",
+        "C080",
+        "C081",
+        "C082",
+        "C083",
+        "C084",
+        "C085",
+        "C086",
+        "C087",
+        "C088"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F050"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN029"
+      ]
+    },
+    {
+      "id": "F051",
+      "definition": "Capture photos with explicit permission.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Store.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F051"
+      },
+      "phase": "P2",
+      "contractIds": []
+    },
+    {
+      "id": "F052",
+      "definition": "Import existing photos.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Store.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F052"
+      },
+      "phase": "P2",
+      "contractIds": []
+    },
+    {
+      "id": "F053",
+      "definition": "Capture or import supported video files.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Store.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F053"
+      },
+      "phase": "P2",
+      "contractIds": []
+    },
+    {
+      "id": "F054",
+      "definition": "Import documents through Android content APIs.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Store.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F054"
+      },
+      "phase": "P2",
+      "contractIds": []
+    },
+    {
+      "id": "F055",
+      "definition": "Preview supported evidence types.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/EvidencePreview.kt",
+        "app/src/main/java/com/example/domain/LocalEvidence.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log",
+        "evidence/qualification/device-qualification.json"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt::privatePreviewChecksBytesPathsEncodingAndTypes"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Only bounded text/plain, Markdown, JSON, JPEG/PNG/WebP previews implemented; unsupported types explicitly refused. Actual Android rendering/accessibility/lifecycle remains NOT_RUN."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F055"
+      },
+      "phase": "P2",
+      "contractIds": []
+    },
+    {
+      "id": "F056",
+      "definition": "Add notes.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Store.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F056"
+      },
+      "phase": "P2",
+      "contractIds": []
+    },
+    {
+      "id": "F057",
+      "definition": "Record capture and import metadata.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Store.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F057"
+      },
+      "phase": "P2",
+      "contractIds": []
+    },
+    {
+      "id": "F058",
+      "definition": "Collect location only with explicit consent.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/WorkflowWorkspace.kt",
+        "app/src/main/java/com/example/data/LocationCapture.kt",
+        "app/src/main/java/com/example/domain/Workflows.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "tools/verify.py",
+        "contracts/location-observation-v1.schema.json"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log",
+        "evidence/qualification/verifier-tests.log",
+        "evidence/qualification/device-qualification.json"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/WorkflowTest.kt::locationConsentDenialAndProvenance",
+        "app/src/test/java/com/example/domain/WorkflowTest.kt::crossLanguageOptionalLocationVectorAndMutation",
+        "tools/test_location.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Consented one-shot foreground approximate location and optional manifest extension implemented; typed freshness/range/provenance and cross-language hash checks pass. Real permission/provider/cancellation/revocation and Android rendering/lifecycle remain NOT_RUN; no physical-truth assertion."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F058"
+      },
+      "phase": "P2",
+      "contractIds": [
+        "EF003",
+        "EF010",
+        "EF011",
+        "EF012",
+        "EF020",
+        "EF023"
+      ]
+    },
+    {
+      "id": "F059",
+      "definition": "Attach several files to a task.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Store.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F059"
+      },
+      "phase": "P2",
+      "contractIds": [
+        "FN052"
+      ]
+    },
+    {
+      "id": "F060",
+      "definition": "Save drafts and recover after process death.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/resources/db/migration_1_2.sql"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/verifier-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "tools/test_migrations.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F060"
+      },
+      "phase": "P2",
+      "contractIds": []
+    },
+    {
+      "id": "F061",
+      "definition": "Hash raw file bytes using SHA-256.",
+      "status": "VERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "tools/verify.py"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [
+        "C065",
+        "C066",
+        "C067",
+        "C068",
+        "C069",
+        "C070",
+        "C071",
+        "C072",
+        "C073",
+        "C074",
+        "C075",
+        "C076"
+      ],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt::rawStreamingLimitCancellationAndCanonicalUnicode"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Scope-specific evidence only; full-scope qualification is incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F061"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN032",
+        "EF015",
+        "EF016"
+      ]
+    },
+    {
+      "id": "F062",
+      "definition": "Stream large files without loading them fully into memory.",
+      "status": "VERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "tools/verify.py"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [
+        "C065",
+        "C066",
+        "C067",
+        "C068",
+        "C069",
+        "C070",
+        "C071",
+        "C072",
+        "C073",
+        "C074",
+        "C075",
+        "C076"
+      ],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt::rawStreamingLimitCancellationAndCanonicalUnicode"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Scope-specific evidence only; full-scope qualification is incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F062"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN032",
+        "EF015",
+        "EF016"
+      ]
+    },
+    {
+      "id": "F063",
+      "definition": "Create versioned deterministic manifests.",
+      "status": "VERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "tools/verify.py"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [
+        "C065",
+        "C066",
+        "C067",
+        "C068",
+        "C069",
+        "C070",
+        "C071",
+        "C072",
+        "C073",
+        "C074",
+        "C075",
+        "C076"
+      ],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt::crossLanguageGoldenVectors"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Scope-specific evidence only; full-scope qualification is incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F063"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN031",
+        "EF015",
+        "EF016"
+      ]
+    },
+    {
+      "id": "F064",
+      "definition": "Detect digest mismatches.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "tools/verify.py"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C065",
+        "C066",
+        "C067",
+        "C068",
+        "C069",
+        "C070",
+        "C071",
+        "C072",
+        "C073",
+        "C074",
+        "C075",
+        "C076"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F064"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN053",
+        "EF015",
+        "EF016"
+      ]
+    },
+    {
+      "id": "F065",
+      "definition": "Detect duplicate evidence references.",
+      "status": "VERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "tools/verify.py"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [
+        "C065",
+        "C066",
+        "C067",
+        "C068",
+        "C069",
+        "C070",
+        "C071",
+        "C072",
+        "C073",
+        "C074",
+        "C075",
+        "C076"
+      ],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt::rawStreamingLimitCancellationAndCanonicalUnicode"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL"
+      ],
+      "limitations": [
+        "Scope-specific evidence only; full-scope qualification is incomplete."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F065"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "EF015",
+        "EF016"
+      ]
+    },
+    {
+      "id": "F066",
+      "definition": "Link evidence digests to the reviewed action.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "tools/verify.py"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C065",
+        "C066",
+        "C067",
+        "C068",
+        "C069",
+        "C070",
+        "C071",
+        "C072",
+        "C073",
+        "C074",
+        "C075",
+        "C076"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F066"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "EF015",
+        "EF016"
+      ]
+    },
+    {
+      "id": "F067",
+      "definition": "Sign versioned evidence envelopes with Android Keystore; support legacy digest mode only with explicit metadata.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/EvidenceSigner.kt",
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/resources/db/migration_1_2.sql",
+        "tools/verify.py"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/verifier-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [
+        "C065",
+        "C066",
+        "C067",
+        "C068",
+        "C069",
+        "C070",
+        "C071",
+        "C072",
+        "C073",
+        "C074",
+        "C075",
+        "C076"
+      ],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "tools/test_migrations.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F067"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN033",
+        "FN062",
+        "EF015",
+        "EF016"
+      ]
+    },
+    {
+      "id": "F068",
+      "definition": "Refuse software or unqualified keys for hardware-required signing.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/EvidenceSigner.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "tools/verify.py"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C065",
+        "C066",
+        "C067",
+        "C068",
+        "C069",
+        "C070",
+        "C071",
+        "C072",
+        "C073",
+        "C074",
+        "C075",
+        "C076"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F068"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN062",
+        "EF003",
+        "EF010",
+        "EF011",
+        "EF012",
+        "EF015",
+        "EF016",
+        "EF020",
+        "EF023"
+      ]
+    },
+    {
+      "id": "F069",
+      "definition": "Report observed key security level accurately.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/EvidenceSigner.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "tools/verify.py"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C065",
+        "C066",
+        "C067",
+        "C068",
+        "C069",
+        "C070",
+        "C071",
+        "C072",
+        "C073",
+        "C074",
+        "C075",
+        "C076"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F069"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN062",
+        "EF015",
+        "EF016"
+      ]
+    },
+    {
+      "id": "F070",
+      "definition": "Verify signatures independently and reject tampering.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/EvidenceSigner.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "tools/verify.py"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C065",
+        "C066",
+        "C067",
+        "C068",
+        "C069",
+        "C070",
+        "C071",
+        "C072",
+        "C073",
+        "C074",
+        "C075",
+        "C076"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F070"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN034",
+        "FN053",
+        "FN062",
+        "EF015",
+        "EF016"
+      ]
+    },
+    {
+      "id": "F071",
+      "definition": "Create local field-verification tasks.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C065",
+        "C066",
+        "C067",
+        "C068",
+        "C069",
+        "C070",
+        "C071",
+        "C072",
+        "C073",
+        "C074",
+        "C075",
+        "C076"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F071"
+      },
+      "phase": "P2",
+      "contractIds": [
+        "FN051"
+      ]
+    },
+    {
+      "id": "F072",
+      "definition": "Search and filter tasks.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C065",
+        "C066",
+        "C067",
+        "C068",
+        "C069",
+        "C070",
+        "C071",
+        "C072",
+        "C073",
+        "C074",
+        "C075",
+        "C076"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F072"
+      },
+      "phase": "P2",
+      "contractIds": []
+    },
+    {
+      "id": "F073",
+      "definition": "Track task requirements and checklist progress.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C065",
+        "C066",
+        "C067",
+        "C068",
+        "C069",
+        "C070",
+        "C071",
+        "C072",
+        "C073",
+        "C074",
+        "C075",
+        "C076"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F073"
+      },
+      "phase": "P2",
+      "contractIds": []
+    },
+    {
+      "id": "F074",
+      "definition": "Associate evidence with tasks.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C065",
+        "C066",
+        "C067",
+        "C068",
+        "C069",
+        "C070",
+        "C071",
+        "C072",
+        "C073",
+        "C074",
+        "C075",
+        "C076"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F074"
+      },
+      "phase": "P2",
+      "contractIds": [
+        "FN052"
+      ]
+    },
+    {
+      "id": "F075",
+      "definition": "Generate refusal receipts with no chain signature.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C065",
+        "C066",
+        "C067",
+        "C068",
+        "C069",
+        "C070",
+        "C071",
+        "C072",
+        "C073",
+        "C074",
+        "C075",
+        "C076"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F075"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN029",
+        "FN054",
+        "EF022"
+      ]
+    },
+    {
+      "id": "F076",
+      "definition": "Generate historical observation receipts.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C065",
+        "C066",
+        "C067",
+        "C068",
+        "C069",
+        "C070",
+        "C071",
+        "C072",
+        "C073",
+        "C074",
+        "C075",
+        "C076"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F076"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN028",
+        "FN054",
+        "EF022"
+      ]
+    },
+    {
+      "id": "F077",
+      "definition": "Generate local evidence-signature receipts.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C065",
+        "C066",
+        "C067",
+        "C068",
+        "C069",
+        "C070",
+        "C071",
+        "C072",
+        "C073",
+        "C074",
+        "C075",
+        "C076"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F077"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN054",
+        "EF015",
+        "EF016",
+        "EF022"
+      ]
+    },
+    {
+      "id": "F078",
+      "definition": "Generate submission receipts only after actual submission.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C065",
+        "C066",
+        "C067",
+        "C068",
+        "C069",
+        "C070",
+        "C071",
+        "C072",
+        "C073",
+        "C074",
+        "C075",
+        "C076"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F078"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN049",
+        "FN054",
+        "EF022"
+      ]
+    },
+    {
+      "id": "F079",
+      "definition": "Track pending, confirmed, finalized, failed, and unavailable observations.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/domain/Records.kt",
+        "app/src/main/resources/db/migration_1_2.sql"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/verifier-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [
+        "C065",
+        "C066",
+        "C067",
+        "C068",
+        "C069",
+        "C070",
+        "C071",
+        "C072",
+        "C073",
+        "C074",
+        "C075",
+        "C076"
+      ],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "tools/test_migrations.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F079"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN022",
+        "FN035",
+        "FN054",
+        "FN055",
+        "EF017",
+        "EF022"
+      ]
+    },
+    {
+      "id": "F080",
+      "definition": "Persist, search, inspect, and export receipts.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Records.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C065",
+        "C066",
+        "C067",
+        "C068",
+        "C069",
+        "C070",
+        "C071",
+        "C072",
+        "C073",
+        "C074",
+        "C075",
+        "C076"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F080"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN028",
+        "FN030",
+        "FN040",
+        "FN054",
+        "EF022",
+        "EF023"
+      ]
+    },
+    {
+      "id": "F081",
+      "definition": "Verify official staking program specifications.",
+      "status": "BLOCKED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C077",
+        "C078",
+        "C079",
+        "C080",
+        "C081",
+        "C082",
+        "C083",
+        "C084",
+        "C085",
+        "C086",
+        "C087",
+        "C088"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "limitations": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F081"
+      },
+      "phase": "P3",
+      "contractIds": [
+        "FN056"
+      ]
+    },
+    {
+      "id": "F082",
+      "definition": "Decode supported staking instructions from validated layouts.",
+      "status": "BLOCKED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C077",
+        "C078",
+        "C079",
+        "C080",
+        "C081",
+        "C082",
+        "C083",
+        "C084",
+        "C085",
+        "C086",
+        "C087",
+        "C088"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "limitations": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F082"
+      },
+      "phase": "P3",
+      "contractIds": [
+        "FN057"
+      ]
+    },
+    {
+      "id": "F083",
+      "definition": "Identify verified guardian metadata.",
+      "status": "BLOCKED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C077",
+        "C078",
+        "C079",
+        "C080",
+        "C081",
+        "C082",
+        "C083",
+        "C084",
+        "C085",
+        "C086",
+        "C087",
+        "C088"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "limitations": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F083"
+      },
+      "phase": "P3",
+      "contractIds": []
+    },
+    {
+      "id": "F084",
+      "definition": "Distinguish liquid, staked, and cooling balances.",
+      "status": "BLOCKED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C077",
+        "C078",
+        "C079",
+        "C080",
+        "C081",
+        "C082",
+        "C083",
+        "C084",
+        "C085",
+        "C086",
+        "C087",
+        "C088"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "limitations": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F084"
+      },
+      "phase": "P3",
+      "contractIds": []
+    },
+    {
+      "id": "F085",
+      "definition": "Gate staking against observed eligibility and unlocked balances.",
+      "status": "BLOCKED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C077",
+        "C078",
+        "C079",
+        "C080",
+        "C081",
+        "C082",
+        "C083",
+        "C084",
+        "C085",
+        "C086",
+        "C087",
+        "C088"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "limitations": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F085"
+      },
+      "phase": "P3",
+      "contractIds": [
+        "FN058"
+      ]
+    },
+    {
+      "id": "F086",
+      "definition": "Preview partial unstake consequences.",
+      "status": "BLOCKED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C077",
+        "C078",
+        "C079",
+        "C080",
+        "C081",
+        "C082",
+        "C083",
+        "C084",
+        "C085",
+        "C086",
+        "C087",
+        "C088"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "limitations": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F086"
+      },
+      "phase": "P3",
+      "contractIds": []
+    },
+    {
+      "id": "F087",
+      "definition": "Show protocol cooldown only from verified state; keep user-supplied illustrative timers visually distinct.",
+      "status": "BLOCKED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C077",
+        "C078",
+        "C079",
+        "C080",
+        "C081",
+        "C082",
+        "C083",
+        "C084",
+        "C085",
+        "C086",
+        "C087",
+        "C088"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "limitations": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F087"
+      },
+      "phase": "P3",
+      "contractIds": [
+        "FN036"
+      ]
+    },
+    {
+      "id": "F088",
+      "definition": "Enable withdrawal only when protocol eligibility is established.",
+      "status": "BLOCKED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C077",
+        "C078",
+        "C079",
+        "C080",
+        "C081",
+        "C082",
+        "C083",
+        "C084",
+        "C085",
+        "C086",
+        "C087",
+        "C088"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "limitations": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F088"
+      },
+      "phase": "P3",
+      "contractIds": [
+        "FN058"
+      ]
+    },
+    {
+      "id": "F089",
+      "definition": "Track claims from verified season rules.",
+      "status": "BLOCKED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C077",
+        "C078",
+        "C079",
+        "C080",
+        "C081",
+        "C082",
+        "C083",
+        "C084",
+        "C085",
+        "C086",
+        "C087",
+        "C088"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "limitations": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F089"
+      },
+      "phase": "P3",
+      "contractIds": []
+    },
+    {
+      "id": "F090",
+      "definition": "Keep stake-on-claim opt-in and disclose source/date of yield information.",
+      "status": "BLOCKED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C077",
+        "C078",
+        "C079",
+        "C080",
+        "C081",
+        "C082",
+        "C083",
+        "C084",
+        "C085",
+        "C086",
+        "C087",
+        "C088"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "limitations": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F090"
+      },
+      "phase": "P3",
+      "contractIds": []
+    },
+    {
+      "id": "F091",
+      "definition": "Detect combined sensitive actions.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C089",
+        "C090",
+        "C091",
+        "C092",
+        "C093",
+        "C094",
+        "C095",
+        "C096",
+        "C097",
+        "C098",
+        "C099",
+        "C100"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F091"
+      },
+      "phase": "P1",
+      "contractIds": []
+    },
+    {
+      "id": "F092",
+      "definition": "Flag token account close and burn instructions.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C089",
+        "C090",
+        "C091",
+        "C092",
+        "C093",
+        "C094",
+        "C095",
+        "C096",
+        "C097",
+        "C098",
+        "C099",
+        "C100"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F092"
+      },
+      "phase": "P1",
+      "contractIds": []
+    },
+    {
+      "id": "F093",
+      "definition": "Explain account creation and rent effects.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Explanations.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [
+        "C089",
+        "C090",
+        "C091",
+        "C092",
+        "C093",
+        "C094",
+        "C095",
+        "C096",
+        "C097",
+        "C098",
+        "C099",
+        "C100"
+      ],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt::accountEffectsDecodeOnlyExactReadOnlyCreateAccount"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Read-only exact System CreateAccount layout and policy-approved memo/TransferChecked effects only. Unknown layouts remain unknown/refused; no rent minimum, execution or broader account-creation claim. Android rendering remains NOT_RUN."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F093"
+      },
+      "phase": "P1",
+      "contractIds": []
+    },
+    {
+      "id": "F094",
+      "definition": "Warn about broad delegation.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C089",
+        "C090",
+        "C091",
+        "C092",
+        "C093",
+        "C094",
+        "C095",
+        "C096",
+        "C097",
+        "C098",
+        "C099",
+        "C100"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F094"
+      },
+      "phase": "P1",
+      "contractIds": []
+    },
+    {
+      "id": "F095",
+      "definition": "Display first-seen program indicators.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/LocalEvidence.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log",
+        "evidence/qualification/device-qualification.json"
+      ],
+      "dependencies": [],
+      "checks": [
+        "C089",
+        "C090",
+        "C091",
+        "C092",
+        "C093",
+        "C094",
+        "C095",
+        "C096",
+        "C097",
+        "C098",
+        "C099",
+        "C100"
+      ],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt::legacyDigestAndFirstSeenIndicatorsNeverGrantTrust"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Local first-seen classification tested; Android DataStore persistence, rendering and lifecycle remain NOT_RUN. Indicator never changes policy."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F095"
+      },
+      "phase": "P1",
+      "contractIds": []
+    },
+    {
+      "id": "F096",
+      "definition": "Use a versioned program policy registry.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Core.kt",
+        "app/src/main/java/com/example/domain/Solana.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C089",
+        "C090",
+        "C091",
+        "C092",
+        "C093",
+        "C094",
+        "C095",
+        "C096",
+        "C097",
+        "C098",
+        "C099",
+        "C100"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F096"
+      },
+      "phase": "P1",
+      "contractIds": []
+    },
+    {
+      "id": "F097",
+      "definition": "Rebuild expired transactions with a fresh review.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/domain/Solana.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log",
+        "evidence/qualification/device-qualification.json"
+      ],
+      "dependencies": [],
+      "checks": [
+        "C089",
+        "C090",
+        "C091",
+        "C092",
+        "C093",
+        "C094",
+        "C095",
+        "C096",
+        "C097",
+        "C098",
+        "C099",
+        "C100"
+      ],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Existing memo rebuild clears fee approval and requires fresh review; byte/context mutation refusal tested. Expired-blockhash device/wallet flow and exactly-one retry observation remain NOT_RUN."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F097"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN048"
+      ]
+    },
+    {
+      "id": "F098",
+      "definition": "Calculate fee/rent impact from live context.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C089",
+        "C090",
+        "C091",
+        "C092",
+        "C093",
+        "C094",
+        "C095",
+        "C096",
+        "C097",
+        "C098",
+        "C099",
+        "C100"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F098"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN045"
+      ]
+    },
+    {
+      "id": "F099",
+      "definition": "Preserve unavailable states during network failure.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C089",
+        "C090",
+        "C091",
+        "C092",
+        "C093",
+        "C094",
+        "C095",
+        "C096",
+        "C097",
+        "C098",
+        "C099",
+        "C100"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F099"
+      },
+      "phase": "P1",
+      "contractIds": [
+        "FN061"
+      ]
+    },
+    {
+      "id": "F100",
+      "definition": "Provide bounded retry, cancellation, and stale-data indicators.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/data/Rpc.kt",
+        "app/src/main/java/com/example/MainActivity.kt"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C089",
+        "C090",
+        "C091",
+        "C092",
+        "C093",
+        "C094",
+        "C095",
+        "C096",
+        "C097",
+        "C098",
+        "C099",
+        "C100"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F100"
+      },
+      "phase": "P1",
+      "contractIds": []
+    },
+    {
+      "id": "F101",
+      "definition": "Hotspot coverage and earnings observation.",
+      "status": "BLOCKED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "limitations": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F101"
+      },
+      "phase": "P3",
+      "contractIds": [
+        "FN059"
+      ]
+    },
+    {
+      "id": "F102",
+      "definition": "Earnings-degradation alerts.",
+      "status": "BLOCKED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "limitations": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F102"
+      },
+      "phase": "P3",
+      "contractIds": [
+        "FN059"
+      ]
+    },
+    {
+      "id": "F103",
+      "definition": "Connectivity-plan comparison from attributable data.",
+      "status": "BLOCKED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "limitations": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F103"
+      },
+      "phase": "P3",
+      "contractIds": [
+        "FN059"
+      ]
+    },
+    {
+      "id": "F104",
+      "definition": "Bandwidth usage and contribution ledger.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/node-integration.json",
+        "evidence/qualification/node-integration.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F104"
+      },
+      "phase": "P3",
+      "contractIds": [
+        "FN059",
+        "EF010",
+        "EF011",
+        "EF012",
+        "EF013",
+        "EF017"
+      ]
+    },
+    {
+      "id": "F105",
+      "definition": "Mapping task planner.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/WorkflowWorkspace.kt",
+        "app/src/main/java/com/example/domain/Workflows.kt",
+        "app/src/main/java/com/example/data/Store.kt"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log",
+        "evidence/qualification/verifier-tests.log",
+        "evidence/qualification/device-qualification.json"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/WorkflowTest.kt::offlineMappingPlanRoundTripAndBounds",
+        "tools/test_migrations.py::test_new_private_workflow_drafts_survive_reopen_and_replace_atomically"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Offline ordered user-coordinate planner is persisted and explicitly exported; invalid edits do not replace the saved draft. No route provider, coverage/rewards or observed travel. Android editing/export/reopen/accessibility remain NOT_RUN."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F105"
+      },
+      "phase": "P3",
+      "contractIds": [
+        "FN059"
+      ]
+    },
+    {
+      "id": "F106",
+      "definition": "Energy-device observation.",
+      "status": "BLOCKED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "limitations": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F106"
+      },
+      "phase": "P3",
+      "contractIds": [
+        "FN059"
+      ]
+    },
+    {
+      "id": "F107",
+      "definition": "Sensor records with provenance.",
+      "status": "BLOCKED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "limitations": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F107"
+      },
+      "phase": "P3",
+      "contractIds": [
+        "FN059"
+      ]
+    },
+    {
+      "id": "F108",
+      "definition": "Compute-node health monitoring.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeClient.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        "node-agent/internal/agent/agent.go",
+        "node-agent/internal/agent/proof.go",
+        "prover-worker/cmd/prove/main.go",
+        "prover-worker/cmd/verify/main.go",
+        "tools/proof_jobs.py"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/node-integration.json",
+        "evidence/qualification/node-integration.log"
+      ],
+      "dependencies": [],
+      "checks": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "scripts/qualify-integration.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F108"
+      },
+      "phase": "P3",
+      "contractIds": [
+        "FN059",
+        "EF008"
+      ]
+    },
+    {
+      "id": "F109",
+      "definition": "Presence-evidence records with explicit assurance limits.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/Records.kt",
+        "docs/threat-model.md"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F109"
+      },
+      "phase": "P3",
+      "contractIds": [
+        "FN059"
+      ]
+    },
+    {
+      "id": "F110",
+      "definition": "Hardware transaction coordination through a verified external provider.",
+      "status": "BLOCKED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [],
+      "tests": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "limitations": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F110"
+      },
+      "phase": "P3",
+      "contractIds": [
+        "FN059"
+      ]
+    },
+    {
+      "id": "F111",
+      "definition": "Task-based split-payment proposal and review.",
+      "status": "BLOCKED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C089",
+        "C090",
+        "C091",
+        "C092",
+        "C093",
+        "C094",
+        "C095",
+        "C096",
+        "C097",
+        "C098",
+        "C099",
+        "C100"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "limitations": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F111"
+      },
+      "phase": "P5",
+      "contractIds": []
+    },
+    {
+      "id": "F112",
+      "definition": "Rent/deposit record tracking without claiming unverified escrow.",
+      "status": "BLOCKED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C089",
+        "C090",
+        "C091",
+        "C092",
+        "C093",
+        "C094",
+        "C095",
+        "C096",
+        "C097",
+        "C098",
+        "C099",
+        "C100"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "limitations": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F112"
+      },
+      "phase": "P5",
+      "contractIds": []
+    },
+    {
+      "id": "F113",
+      "definition": "Remittance provider discovery with transparent quotes and explicit provider handoff.",
+      "status": "BLOCKED",
+      "implementationPaths": [],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C089",
+        "C090",
+        "C091",
+        "C092",
+        "C093",
+        "C094",
+        "C095",
+        "C096",
+        "C097",
+        "C098",
+        "C099",
+        "C100"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "BLOCKED"
+      ],
+      "limitations": [
+        "Official protocol/provider, dependency or deployment prerequisites unavailable; no execution/qualification claim."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F113"
+      },
+      "phase": "P5",
+      "contractIds": []
+    },
+    {
+      "id": "F114",
+      "definition": "Evidence/account recovery guidance and verified backup/provider handoff without wallet secrets, recovery-service upsells or promises to recover stolen funds.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "docs/setup.md",
+        "docs/privacy.md"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C089",
+        "C090",
+        "C091",
+        "C092",
+        "C093",
+        "C094",
+        "C095",
+        "C096",
+        "C097",
+        "C098",
+        "C099",
+        "C100"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F114"
+      },
+      "phase": "P5",
+      "contractIds": []
+    },
+    {
+      "id": "F115",
+      "definition": "Local reminders and notification preferences.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/WorkflowWorkspace.kt",
+        "app/src/main/java/com/example/data/ReminderRepository.kt",
+        "app/src/main/java/com/example/domain/Workflows.kt",
+        "app/src/main/AndroidManifest.xml"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/core-tests.log",
+        "evidence/qualification/verifier-tests.log",
+        "evidence/qualification/device-qualification.json"
+      ],
+      "dependencies": [],
+      "checks": [
+        "C089",
+        "C090",
+        "C091",
+        "C092",
+        "C093",
+        "C094",
+        "C095",
+        "C096",
+        "C097",
+        "C098",
+        "C099",
+        "C100"
+      ],
+      "tests": [
+        "app/src/test/java/com/example/domain/WorkflowTest.kt::reminderConsentPermissionClockAndReplacement",
+        "tools/test_migrations.py::test_new_private_workflow_drafts_survive_reopen_and_replace_atomically"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Explicit opt-in, permission-aware inexact scheduling, replacement generations, cancellation/global disable and boot/clock/startup recovery implemented. Local state tests do not establish actual notification delivery, Android lifecycle or provider cooldown eligibility; these remain NOT_RUN. POST_REQUESTED is not delivered."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F115"
+      },
+      "phase": "P5",
+      "contractIds": []
+    },
+    {
+      "id": "F116",
+      "definition": "Dark/light themes, screen-reader support, and large-text layouts.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/Theme.kt",
+        "scripts/build-web.py",
+        "web/inspect.js",
+        "web/style.css"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/browser/report.json"
+      ],
+      "dependencies": [],
+      "checks": [
+        "C089",
+        "C090",
+        "C091",
+        "C092",
+        "C093",
+        "C094",
+        "C095",
+        "C096",
+        "C097",
+        "C098",
+        "C099",
+        "C100"
+      ],
+      "tests": [
+        "scripts/browser/qualify.mjs"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F116"
+      },
+      "phase": "P5",
+      "contractIds": [
+        "EF003",
+        "EF010",
+        "EF011",
+        "EF012",
+        "EF020",
+        "EF023"
+      ]
+    },
+    {
+      "id": "F117",
+      "definition": "Localization with complete translation coverage.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/LanguageControls.kt",
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/res/values/strings.xml",
+        "app/src/main/res/values-es/strings.xml"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/localization-report.json",
+        "evidence/qualification/localization-catalogs.log"
+      ],
+      "dependencies": [],
+      "checks": [
+        "C089",
+        "C090",
+        "C091",
+        "C092",
+        "C093",
+        "C094",
+        "C095",
+        "C096",
+        "C097",
+        "C098",
+        "C099",
+        "C100"
+      ],
+      "tests": [
+        "scripts/qualify-localization.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "204 English/Spanish catalog strings have matching IDs/formats and waypoint plural rules; persisted UI language switching implemented. Full dynamic decoder/account-effect and remaining fallback localization, independent translation review and device layouts/accessibility/restart remain incomplete. Catalog parity is not complete F117 acceptance."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F117"
+      },
+      "phase": "P5",
+      "contractIds": []
+    },
+    {
+      "id": "F118",
+      "definition": "Optional encrypted backup and restore.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "app/src/main/java/com/example/MainActivity.kt",
+        "app/src/main/java/com/example/data/Store.kt",
+        "app/src/main/resources/db/migration_1_2.sql",
+        "tools/bundle.py",
+        "tools/test_bundle.py"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/verifier-tests.log"
+      ],
+      "dependencies": [],
+      "checks": [
+        "C089",
+        "C090",
+        "C091",
+        "C092",
+        "C093",
+        "C094",
+        "C095",
+        "C096",
+        "C097",
+        "C098",
+        "C099",
+        "C100"
+      ],
+      "tests": [
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+        "tools/test_migrations.py"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F118"
+      },
+      "phase": "P5",
+      "contractIds": [
+        "EF023"
+      ]
+    },
+    {
+      "id": "F119",
+      "definition": "Accurate multipage marketing/documentation website.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "scripts/build-web.py",
+        "web/index.html",
+        "web/inspect.js",
+        "web/style.css"
+      ],
+      "evidencePaths": [
+        "evidence/qualification/browser/report.json"
+      ],
+      "dependencies": [],
+      "checks": [
+        "C089",
+        "C090",
+        "C091",
+        "C092",
+        "C093",
+        "C094",
+        "C095",
+        "C096",
+        "C097",
+        "C098",
+        "C099",
+        "C100"
+      ],
+      "tests": [
+        "scripts/browser/qualify.mjs"
+      ],
+      "qualificationDimensions": [
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F119"
+      },
+      "phase": "P4",
+      "contractIds": []
+    },
+    {
+      "id": "F120",
+      "definition": "Signed release packaging, checksums, qualification report, and submission bundle.",
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [
+        "scripts/qualify.sh",
+        "scripts/update-coverage.py",
+        "docs/setup.md"
+      ],
+      "evidencePaths": [],
+      "dependencies": [],
+      "checks": [
+        "C089",
+        "C090",
+        "C091",
+        "C092",
+        "C093",
+        "C094",
+        "C095",
+        "C096",
+        "C097",
+        "C098",
+        "C099",
+        "C100"
+      ],
+      "tests": [],
+      "qualificationDimensions": [
+        "NOT_RUN"
+      ],
+      "limitations": [
+        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+      ],
+      "sourceMappings": {
+        "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
+        "registry": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/features.json",
+        "id": "F120"
+      },
+      "phase": "P4",
+      "contractIds": [
+        "FN060"
+      ]
+    }
+  ],
+  "updatedAt": "2026-10-06",
+  "coveragePolicy": "No overlap counted as additional unique features; VERIFIED_LOCAL does not qualify device/external requirements."
+}

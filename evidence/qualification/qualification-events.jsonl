@@ -1,0 +1,158 @@
+{"gate": "core-tests", "exitCode": 0, "log": "evidence/qualification/core-tests.log", "command": ["python3", "scripts/qualify-core.py"], "ranAt": "2026-10-06T00:43:12.577239+00:00"}
+{"gate": "node-tests", "exitCode": 0, "log": "evidence/qualification/node-tests.log", "command": ["scripts/qualify-node.sh"], "ranAt": "2026-10-06T00:43:15.451308+00:00"}
+{"gate": "verifier-tests", "exitCode": 0, "log": "evidence/qualification/verifier-tests.log", "command": ["python3", "-m", "unittest", "discover", "-s", "tools", "-p", "test_*.py"], "ranAt": "2026-10-06T00:43:15.745228+00:00"}
+{"gate": "android-build", "exitCode": 1, "log": "evidence/qualification/android-build.log", "command": ["scripts/qualify-android.sh"], "ranAt": "2026-10-06T00:43:15.927314+00:00"}
+{"gate": "prover-tests", "exitCode": 1, "log": "evidence/qualification/prover-tests.log", "command": ["scripts/qualify-prover.sh"], "ranAt": "2026-10-06T00:43:16.016800+00:00"}
+{"gate": "registry-checks", "exitCode": 0, "log": "evidence/qualification/registry-checks.log", "command": ["python3", "scripts/check-registries.py"], "ranAt": "2026-10-06T00:43:16.209036+00:00"}
+{"gate": "web-build", "exitCode": 0, "log": "evidence/qualification/web-build.log", "command": ["python3", "scripts/build-web.py"], "ranAt": "2026-10-06T00:43:16.340870+00:00"}
+{"gate": "web-checks", "exitCode": 0, "log": "evidence/qualification/web-checks.log", "command": ["python3", "scripts/qualify-web.py"], "ranAt": "2026-10-06T00:43:17.323416+00:00"}
+{"gate": "core-tests", "exitCode": 0, "log": "evidence/qualification/core-tests.log", "command": ["python3", "scripts/qualify-core.py"], "ranAt": "2026-10-06T00:44:00.170677+00:00"}
+{"gate": "node-tests", "exitCode": 0, "log": "evidence/qualification/node-tests.log", "command": ["scripts/qualify-node.sh"], "ranAt": "2026-10-06T00:44:03.785665+00:00"}
+{"gate": "verifier-tests", "exitCode": 0, "log": "evidence/qualification/verifier-tests.log", "command": ["python3", "-m", "unittest", "discover", "-s", "tools", "-p", "test_*.py"], "ranAt": "2026-10-06T00:44:04.156609+00:00"}
+{"gate": "android-build", "exitCode": 1, "log": "evidence/qualification/android-build.log", "command": ["scripts/qualify-android.sh"], "ranAt": "2026-10-06T00:44:04.373938+00:00"}
+{"gate": "prover-tests", "exitCode": 1, "log": "evidence/qualification/prover-tests.log", "command": ["scripts/qualify-prover.sh"], "ranAt": "2026-10-06T00:44:04.475089+00:00"}
+{"gate": "registry-checks", "exitCode": 0, "log": "evidence/qualification/registry-checks.log", "command": ["python3", "scripts/check-registries.py"], "ranAt": "2026-10-06T00:44:04.703969+00:00"}
+{"gate": "web-build", "exitCode": 0, "log": "evidence/qualification/web-build.log", "command": ["python3", "scripts/build-web.py"], "ranAt": "2026-10-06T00:44:04.860940+00:00"}
+{"gate": "web-checks", "exitCode": 0, "log": "evidence/qualification/web-checks.log", "command": ["python3", "scripts/qualify-web.py"], "ranAt": "2026-10-06T00:44:05.973291+00:00"}
+{"gate": "core-tests", "exitCode": 0, "log": "evidence/qualification/core-tests.log", "command": ["python3", "scripts/qualify-core.py"], "ranAt": "2026-10-06T00:48:22.549316+00:00"}
+{"gate": "node-tests", "exitCode": 0, "log": "evidence/qualification/node-tests.log", "command": ["scripts/qualify-node.sh"], "ranAt": "2026-10-06T00:48:26.945524+00:00"}
+{"gate": "verifier-tests", "exitCode": 0, "log": "evidence/qualification/verifier-tests.log", "command": ["python3", "-m", "unittest", "discover", "-s", "tools", "-p", "test_*.py"], "ranAt": "2026-10-06T00:48:27.481835+00:00"}
+{"gate": "android-build", "exitCode": 1, "log": "evidence/qualification/android-build.log", "command": ["scripts/qualify-android.sh"], "ranAt": "2026-10-06T00:48:27.801514+00:00"}
+{"gate": "prover-tests", "exitCode": 1, "log": "evidence/qualification/prover-tests.log", "command": ["scripts/qualify-prover.sh"], "ranAt": "2026-10-06T00:48:27.958035+00:00"}
+{"gate": "registry-checks", "exitCode": 0, "log": "evidence/qualification/registry-checks.log", "command": ["python3", "scripts/check-registries.py"], "ranAt": "2026-10-06T00:48:28.264748+00:00"}
+{"gate": "web-build", "exitCode": 0, "log": "evidence/qualification/web-build.log", "command": ["python3", "scripts/build-web.py"], "ranAt": "2026-10-06T00:48:28.458314+00:00"}
+{"gate": "web-checks", "exitCode": 0, "log": "evidence/qualification/web-checks.log", "command": ["python3", "scripts/qualify-web.py"], "ranAt": "2026-10-06T00:48:29.982718+00:00"}
+{"gate": "core-tests", "exitCode": 0, "log": "evidence/qualification/core-tests.log", "command": ["python3", "scripts/qualify-core.py"], "ranAt": "2026-10-06T05:03:58.925358+00:00"}
+{"gate": "node-tests", "exitCode": 0, "log": "evidence/qualification/node-tests.log", "command": ["scripts/qualify-node.sh"], "ranAt": "2026-10-06T05:04:02.600187+00:00"}
+{"gate": "verifier-tests", "exitCode": 0, "log": "evidence/qualification/verifier-tests.log", "command": ["python3", "-m", "unittest", "discover", "-s", "tools", "-p", "test_*.py"], "ranAt": "2026-10-06T05:04:03.058225+00:00"}
+{"gate": "android-build", "exitCode": 0, "log": "evidence/qualification/android-build.log", "command": ["scripts/qualify-android.sh"], "ranAt": "2026-10-06T05:04:19.655954+00:00"}
+{"gate": "prover-tests", "exitCode": 0, "log": "evidence/qualification/prover-tests.log", "command": ["scripts/qualify-prover.sh"], "ranAt": "2026-10-06T05:04:20.845391+00:00"}
+{"gate": "registry-checks", "exitCode": 0, "log": "evidence/qualification/registry-checks.log", "command": ["python3", "scripts/check-registries.py"], "ranAt": "2026-10-06T05:04:21.042272+00:00"}
+{"gate": "web-build", "exitCode": 0, "log": "evidence/qualification/web-build.log", "command": ["python3", "scripts/build-web.py"], "ranAt": "2026-10-06T05:04:21.184806+00:00"}
+{"gate": "web-checks", "exitCode": 0, "log": "evidence/qualification/web-checks.log", "command": ["python3", "scripts/qualify-web.py"], "ranAt": "2026-10-06T05:04:22.734925+00:00"}
+{"gate": "core-tests", "exitCode": 0, "log": "evidence/qualification/core-tests.log", "command": ["python3", "scripts/qualify-core.py"], "ranAt": "2026-10-06T05:40:21.447782+00:00"}
+{"gate": "android-build", "exitCode": 0, "log": "evidence/qualification/android-build.log", "command": ["scripts/qualify-android.sh"], "ranAt": "2026-10-06T05:40:58.901646+00:00"}
+{"gate": "node-tests", "exitCode": 0, "log": "evidence/qualification/node-tests.log", "command": ["scripts/qualify-node.sh"], "ranAt": "2026-10-06T05:41:02.165437+00:00"}
+{"gate": "prover-tests", "exitCode": 0, "log": "evidence/qualification/prover-tests.log", "command": ["scripts/qualify-prover.sh"], "ranAt": "2026-10-06T05:41:03.189957+00:00"}
+{"gate": "verifier-tests", "exitCode": 0, "log": "evidence/qualification/verifier-tests.log", "command": ["python3", "-m", "unittest", "discover", "-s", "tools", "-p", "test_*.py"], "ranAt": "2026-10-06T05:41:03.560432+00:00"}
+{"gate": "hosting-isolation", "exitCode": 0, "log": "evidence/qualification/hosting-isolation.log", "command": ["python3", "scripts/qualify-hosting.py"], "ranAt": "2026-10-06T05:41:11.740570+00:00"}
+{"gate": "node-integration", "exitCode": 0, "log": "evidence/qualification/node-integration.log", "command": ["env", "DEPROOF_TEST_HOSTING=1", "python3", "scripts/qualify-integration.py"], "ranAt": "2026-10-06T05:41:41.567304+00:00"}
+{"gate": "rpc-read-only", "exitCode": 0, "log": "evidence/qualification/rpc-read-only.log", "command": ["python3", "scripts/qualify-rpc.py"], "ranAt": "2026-10-06T05:41:43.281263+00:00"}
+{"gate": "coverage-reconciliation", "exitCode": 0, "log": "evidence/qualification/coverage-reconciliation.log", "command": ["python3", "scripts/reconcile-coverage.py"], "ranAt": "2026-10-06T05:41:43.496941+00:00"}
+{"gate": "registry-checks", "exitCode": 0, "log": "evidence/qualification/registry-checks.log", "command": ["python3", "scripts/check-registries.py"], "ranAt": "2026-10-06T05:41:43.629351+00:00"}
+{"gate": "web-build", "exitCode": 0, "log": "evidence/qualification/web-build.log", "command": ["python3", "scripts/build-web.py"], "ranAt": "2026-10-06T05:41:43.767503+00:00"}
+{"gate": "web-checks", "exitCode": 0, "log": "evidence/qualification/web-checks.log", "command": ["python3", "scripts/qualify-web.py"], "ranAt": "2026-10-06T05:41:45.197825+00:00"}
+{"gate": "browser-checks", "exitCode": 0, "log": "evidence/qualification/browser-checks.log", "command": ["node", "scripts/browser/qualify.mjs"], "ranAt": "2026-10-06T05:42:10.474424+00:00"}
+{"gate": "coverage-reconciliation", "exitCode": 0, "log": "evidence/qualification/coverage-reconciliation.log", "command": ["python3", "scripts/reconcile-coverage.py"], "ranAt": "2026-10-06T05:42:10.632419+00:00"}
+{"gate": "core-tests", "exitCode": 0, "log": "evidence/qualification/core-tests.log", "command": ["python3", "scripts/qualify-core.py"], "ranAt": "2026-10-06T05:46:10.436344+00:00"}
+{"gate": "android-build", "exitCode": 0, "log": "evidence/qualification/android-build.log", "command": ["scripts/qualify-android.sh"], "ranAt": "2026-10-06T05:46:33.301109+00:00"}
+{"gate": "node-tests", "exitCode": 0, "log": "evidence/qualification/node-tests.log", "command": ["scripts/qualify-node.sh"], "ranAt": "2026-10-06T05:46:36.730824+00:00"}
+{"gate": "prover-tests", "exitCode": 0, "log": "evidence/qualification/prover-tests.log", "command": ["scripts/qualify-prover.sh"], "ranAt": "2026-10-06T05:46:37.704079+00:00"}
+{"gate": "verifier-tests", "exitCode": 0, "log": "evidence/qualification/verifier-tests.log", "command": ["python3", "-m", "unittest", "discover", "-s", "tools", "-p", "test_*.py"], "ranAt": "2026-10-06T05:46:38.074347+00:00"}
+{"gate": "hosting-isolation", "exitCode": 0, "log": "evidence/qualification/hosting-isolation.log", "command": ["python3", "scripts/qualify-hosting.py"], "ranAt": "2026-10-06T05:46:45.971188+00:00"}
+{"gate": "node-integration", "exitCode": 0, "log": "evidence/qualification/node-integration.log", "command": ["env", "DEPROOF_TEST_HOSTING=1", "python3", "scripts/qualify-integration.py"], "ranAt": "2026-10-06T05:47:21.512406+00:00"}
+{"gate": "rpc-read-only", "exitCode": 0, "log": "evidence/qualification/rpc-read-only.log", "command": ["python3", "scripts/qualify-rpc.py"], "ranAt": "2026-10-06T05:47:22.850762+00:00"}
+{"gate": "coverage-reconciliation", "exitCode": 0, "log": "evidence/qualification/coverage-reconciliation.log", "command": ["python3", "scripts/reconcile-coverage.py"], "ranAt": "2026-10-06T05:47:23.071414+00:00"}
+{"gate": "registry-checks", "exitCode": 0, "log": "evidence/qualification/registry-checks.log", "command": ["python3", "scripts/check-registries.py"], "ranAt": "2026-10-06T05:47:23.202877+00:00"}
+{"gate": "web-build", "exitCode": 0, "log": "evidence/qualification/web-build.log", "command": ["python3", "scripts/build-web.py"], "ranAt": "2026-10-06T05:47:23.341119+00:00"}
+{"gate": "web-checks", "exitCode": 0, "log": "evidence/qualification/web-checks.log", "command": ["python3", "scripts/qualify-web.py"], "ranAt": "2026-10-06T05:47:24.763910+00:00"}
+{"gate": "browser-checks", "exitCode": 0, "log": "evidence/qualification/browser-checks.log", "command": ["node", "scripts/browser/qualify.mjs"], "ranAt": "2026-10-06T05:47:50.648250+00:00"}
+{"gate": "coverage-reconciliation", "exitCode": 0, "log": "evidence/qualification/coverage-reconciliation.log", "command": ["python3", "scripts/reconcile-coverage.py"], "ranAt": "2026-10-06T05:47:50.801122+00:00"}
+{"gate": "core-tests", "exitCode": 0, "log": "evidence/qualification/core-tests.log", "command": ["python3", "scripts/qualify-core.py"], "ranAt": "2026-10-06T06:03:07.422494+00:00"}
+{"gate": "android-build", "exitCode": 0, "log": "evidence/qualification/android-build.log", "command": ["scripts/qualify-android.sh"], "ranAt": "2026-10-06T06:03:39.552088+00:00"}
+{"gate": "node-tests", "exitCode": 0, "log": "evidence/qualification/node-tests.log", "command": ["scripts/qualify-node.sh"], "ranAt": "2026-10-06T06:03:43.288337+00:00"}
+{"gate": "prover-tests", "exitCode": 0, "log": "evidence/qualification/prover-tests.log", "command": ["scripts/qualify-prover.sh"], "ranAt": "2026-10-06T06:03:44.338838+00:00"}
+{"gate": "verifier-tests", "exitCode": 0, "log": "evidence/qualification/verifier-tests.log", "command": ["python3", "-m", "unittest", "discover", "-s", "tools", "-p", "test_*.py"], "ranAt": "2026-10-06T06:03:44.772609+00:00"}
+{"gate": "hosting-isolation", "exitCode": 0, "log": "evidence/qualification/hosting-isolation.log", "command": ["python3", "scripts/qualify-hosting.py"], "ranAt": "2026-10-06T06:03:52.921626+00:00"}
+{"gate": "node-integration", "exitCode": 0, "log": "evidence/qualification/node-integration.log", "command": ["env", "DEPROOF_TEST_HOSTING=1", "python3", "scripts/qualify-integration.py"], "ranAt": "2026-10-06T06:04:27.843022+00:00"}
+{"gate": "rpc-read-only", "exitCode": 0, "log": "evidence/qualification/rpc-read-only.log", "command": ["python3", "scripts/qualify-rpc.py"], "ranAt": "2026-10-06T06:04:29.246372+00:00"}
+{"gate": "coverage-reconciliation", "exitCode": 0, "log": "evidence/qualification/coverage-reconciliation.log", "command": ["python3", "scripts/reconcile-coverage.py"], "ranAt": "2026-10-06T06:04:29.468248+00:00"}
+{"gate": "backlog-priorities", "exitCode": 0, "log": "evidence/qualification/backlog-priorities.log", "command": ["python3", "scripts/prioritize-uncovered.py"], "ranAt": "2026-10-06T06:04:29.581961+00:00"}
+{"gate": "registry-checks", "exitCode": 0, "log": "evidence/qualification/registry-checks.log", "command": ["python3", "scripts/check-registries.py"], "ranAt": "2026-10-06T06:04:29.710457+00:00"}
+{"gate": "web-build", "exitCode": 0, "log": "evidence/qualification/web-build.log", "command": ["python3", "scripts/build-web.py"], "ranAt": "2026-10-06T06:04:29.856183+00:00"}
+{"gate": "web-checks", "exitCode": 0, "log": "evidence/qualification/web-checks.log", "command": ["python3", "scripts/qualify-web.py"], "ranAt": "2026-10-06T06:04:31.285045+00:00"}
+{"gate": "browser-checks", "exitCode": 0, "log": "evidence/qualification/browser-checks.log", "command": ["node", "scripts/browser/qualify.mjs"], "ranAt": "2026-10-06T06:04:56.698905+00:00"}
+{"gate": "coverage-reconciliation", "exitCode": 0, "log": "evidence/qualification/coverage-reconciliation.log", "command": ["python3", "scripts/reconcile-coverage.py"], "ranAt": "2026-10-06T06:04:56.853335+00:00"}
+{"gate": "backlog-priorities", "exitCode": 0, "log": "evidence/qualification/backlog-priorities.log", "command": ["python3", "scripts/prioritize-uncovered.py"], "ranAt": "2026-10-06T06:04:56.970881+00:00"}
+{"gate": "core-tests", "exitCode": 0, "log": "evidence/qualification/core-tests.log", "command": ["python3", "scripts/qualify-core.py"], "ranAt": "2026-10-06T06:06:02.114724+00:00"}
+{"gate": "android-build", "exitCode": 0, "log": "evidence/qualification/android-build.log", "command": ["scripts/qualify-android.sh"], "ranAt": "2026-10-06T06:06:32.810773+00:00"}
+{"gate": "node-tests", "exitCode": 0, "log": "evidence/qualification/node-tests.log", "command": ["scripts/qualify-node.sh"], "ranAt": "2026-10-06T06:06:36.620897+00:00"}
+{"gate": "prover-tests", "exitCode": 0, "log": "evidence/qualification/prover-tests.log", "command": ["scripts/qualify-prover.sh"], "ranAt": "2026-10-06T06:06:37.609440+00:00"}
+{"gate": "verifier-tests", "exitCode": 0, "log": "evidence/qualification/verifier-tests.log", "command": ["python3", "-m", "unittest", "discover", "-s", "tools", "-p", "test_*.py"], "ranAt": "2026-10-06T06:06:38.011596+00:00"}
+{"gate": "hosting-isolation", "exitCode": 0, "log": "evidence/qualification/hosting-isolation.log", "command": ["python3", "scripts/qualify-hosting.py"], "ranAt": "2026-10-06T06:06:45.939182+00:00"}
+{"gate": "node-integration", "exitCode": 0, "log": "evidence/qualification/node-integration.log", "command": ["env", "DEPROOF_TEST_HOSTING=1", "python3", "scripts/qualify-integration.py"], "ranAt": "2026-10-06T06:07:21.210567+00:00"}
+{"gate": "rpc-read-only", "exitCode": 0, "log": "evidence/qualification/rpc-read-only.log", "command": ["python3", "scripts/qualify-rpc.py"], "ranAt": "2026-10-06T06:07:22.591924+00:00"}
+{"gate": "coverage-reconciliation", "exitCode": 0, "log": "evidence/qualification/coverage-reconciliation.log", "command": ["python3", "scripts/reconcile-coverage.py"], "ranAt": "2026-10-06T06:07:22.817218+00:00"}
+{"gate": "backlog-priorities", "exitCode": 0, "log": "evidence/qualification/backlog-priorities.log", "command": ["python3", "scripts/prioritize-uncovered.py"], "ranAt": "2026-10-06T06:07:22.939409+00:00"}
+{"gate": "registry-checks", "exitCode": 0, "log": "evidence/qualification/registry-checks.log", "command": ["python3", "scripts/check-registries.py"], "ranAt": "2026-10-06T06:07:23.069802+00:00"}
+{"gate": "web-build", "exitCode": 0, "log": "evidence/qualification/web-build.log", "command": ["python3", "scripts/build-web.py"], "ranAt": "2026-10-06T06:07:23.205110+00:00"}
+{"gate": "web-checks", "exitCode": 0, "log": "evidence/qualification/web-checks.log", "command": ["python3", "scripts/qualify-web.py"], "ranAt": "2026-10-06T06:07:24.651063+00:00"}
+{"gate": "browser-checks", "exitCode": 0, "log": "evidence/qualification/browser-checks.log", "command": ["node", "scripts/browser/qualify.mjs"], "ranAt": "2026-10-06T06:07:50.286200+00:00"}
+{"gate": "coverage-reconciliation", "exitCode": 0, "log": "evidence/qualification/coverage-reconciliation.log", "command": ["python3", "scripts/reconcile-coverage.py"], "ranAt": "2026-10-06T06:07:50.444711+00:00"}
+{"gate": "backlog-priorities", "exitCode": 0, "log": "evidence/qualification/backlog-priorities.log", "command": ["python3", "scripts/prioritize-uncovered.py"], "ranAt": "2026-10-06T06:07:50.561946+00:00"}
+{"gate": "core-tests", "exitCode": 0, "log": "evidence/qualification/core-tests.log", "command": ["python3", "scripts/qualify-core.py"], "ranAt": "2026-10-06T06:14:18.561012+00:00"}
+{"gate": "android-build", "exitCode": 0, "log": "evidence/qualification/android-build.log", "command": ["scripts/qualify-android.sh"], "ranAt": "2026-10-06T06:14:49.072794+00:00"}
+{"gate": "node-tests", "exitCode": 0, "log": "evidence/qualification/node-tests.log", "command": ["scripts/qualify-node.sh"], "ranAt": "2026-10-06T06:14:52.723339+00:00"}
+{"gate": "prover-tests", "exitCode": 0, "log": "evidence/qualification/prover-tests.log", "command": ["scripts/qualify-prover.sh"], "ranAt": "2026-10-06T06:14:53.680975+00:00"}
+{"gate": "verifier-tests", "exitCode": 0, "log": "evidence/qualification/verifier-tests.log", "command": ["python3", "-m", "unittest", "discover", "-s", "tools", "-p", "test_*.py"], "ranAt": "2026-10-06T06:14:54.066701+00:00"}
+{"gate": "hosting-isolation", "exitCode": 0, "log": "evidence/qualification/hosting-isolation.log", "command": ["python3", "scripts/qualify-hosting.py"], "ranAt": "2026-10-06T06:15:01.994384+00:00"}
+{"gate": "node-integration", "exitCode": 0, "log": "evidence/qualification/node-integration.log", "command": ["env", "DEPROOF_TEST_HOSTING=1", "python3", "scripts/qualify-integration.py"], "ranAt": "2026-10-06T06:15:37.052487+00:00"}
+{"gate": "rpc-read-only", "exitCode": 0, "log": "evidence/qualification/rpc-read-only.log", "command": ["python3", "scripts/qualify-rpc.py"], "ranAt": "2026-10-06T06:15:38.651852+00:00"}
+{"gate": "coverage-reconciliation", "exitCode": 0, "log": "evidence/qualification/coverage-reconciliation.log", "command": ["python3", "scripts/reconcile-coverage.py"], "ranAt": "2026-10-06T06:15:38.873793+00:00"}
+{"gate": "backlog-priorities", "exitCode": 0, "log": "evidence/qualification/backlog-priorities.log", "command": ["python3", "scripts/prioritize-uncovered.py"], "ranAt": "2026-10-06T06:15:38.991847+00:00"}
+{"gate": "registry-checks", "exitCode": 0, "log": "evidence/qualification/registry-checks.log", "command": ["python3", "scripts/check-registries.py"], "ranAt": "2026-10-06T06:15:39.120266+00:00"}
+{"gate": "web-build", "exitCode": 0, "log": "evidence/qualification/web-build.log", "command": ["python3", "scripts/build-web.py"], "ranAt": "2026-10-06T06:15:39.261962+00:00"}
+{"gate": "web-checks", "exitCode": 0, "log": "evidence/qualification/web-checks.log", "command": ["python3", "scripts/qualify-web.py"], "ranAt": "2026-10-06T06:15:40.698819+00:00"}
+{"gate": "browser-checks", "exitCode": 0, "log": "evidence/qualification/browser-checks.log", "command": ["node", "scripts/browser/qualify.mjs"], "ranAt": "2026-10-06T06:16:06.571446+00:00"}
+{"gate": "coverage-reconciliation", "exitCode": 0, "log": "evidence/qualification/coverage-reconciliation.log", "command": ["python3", "scripts/reconcile-coverage.py"], "ranAt": "2026-10-06T06:16:06.722485+00:00"}
+{"gate": "backlog-priorities", "exitCode": 0, "log": "evidence/qualification/backlog-priorities.log", "command": ["python3", "scripts/prioritize-uncovered.py"], "ranAt": "2026-10-06T06:16:06.838854+00:00"}
+{"gate": "core-tests", "exitCode": 0, "log": "evidence/qualification/core-tests.log", "command": ["python3", "scripts/qualify-core.py"], "ranAt": "2026-10-06T07:19:16.393598+00:00"}
+{"gate": "android-build", "exitCode": 0, "log": "evidence/qualification/android-build.log", "command": ["scripts/qualify-android.sh"], "ranAt": "2026-10-06T07:19:25.245982+00:00"}
+{"gate": "node-tests", "exitCode": 0, "log": "evidence/qualification/node-tests.log", "command": ["scripts/qualify-node.sh"], "ranAt": "2026-10-06T07:19:29.533264+00:00"}
+{"gate": "prover-tests", "exitCode": 0, "log": "evidence/qualification/prover-tests.log", "command": ["scripts/qualify-prover.sh"], "ranAt": "2026-10-06T07:19:30.608579+00:00"}
+{"gate": "verifier-tests", "exitCode": 0, "log": "evidence/qualification/verifier-tests.log", "command": ["python3", "-m", "unittest", "discover", "-s", "tools", "-p", "test_*.py"], "ranAt": "2026-10-06T07:19:31.030185+00:00"}
+{"gate": "hosting-isolation", "exitCode": 0, "log": "evidence/qualification/hosting-isolation.log", "command": ["python3", "scripts/qualify-hosting.py"], "ranAt": "2026-10-06T07:19:40.467082+00:00"}
+{"gate": "node-integration", "exitCode": 0, "log": "evidence/qualification/node-integration.log", "command": ["env", "DEPROOF_TEST_HOSTING=1", "python3", "scripts/qualify-integration.py"], "ranAt": "2026-10-06T07:20:16.210662+00:00"}
+{"gate": "rpc-read-only", "exitCode": 0, "log": "evidence/qualification/rpc-read-only.log", "command": ["python3", "scripts/qualify-rpc.py"], "ranAt": "2026-10-06T07:20:17.689150+00:00"}
+{"gate": "coverage-reconciliation", "exitCode": 0, "log": "evidence/qualification/coverage-reconciliation.log", "command": ["python3", "scripts/reconcile-coverage.py"], "ranAt": "2026-10-06T07:20:17.905164+00:00"}
+{"gate": "backlog-priorities", "exitCode": 0, "log": "evidence/qualification/backlog-priorities.log", "command": ["python3", "scripts/prioritize-uncovered.py"], "ranAt": "2026-10-06T07:20:18.022133+00:00"}
+{"gate": "registry-checks", "exitCode": 0, "log": "evidence/qualification/registry-checks.log", "command": ["python3", "scripts/check-registries.py"], "ranAt": "2026-10-06T07:20:18.150343+00:00"}
+{"gate": "web-build", "exitCode": 0, "log": "evidence/qualification/web-build.log", "command": ["python3", "scripts/build-web.py"], "ranAt": "2026-10-06T07:20:18.281801+00:00"}
+{"gate": "web-checks", "exitCode": 0, "log": "evidence/qualification/web-checks.log", "command": ["python3", "scripts/qualify-web.py"], "ranAt": "2026-10-06T07:20:19.752166+00:00"}
+{"gate": "browser-checks", "exitCode": 0, "log": "evidence/qualification/browser-checks.log", "command": ["node", "scripts/browser/qualify.mjs"], "ranAt": "2026-10-06T07:20:53.223599+00:00"}
+{"gate": "coverage-reconciliation", "exitCode": 0, "log": "evidence/qualification/coverage-reconciliation.log", "command": ["python3", "scripts/reconcile-coverage.py"], "ranAt": "2026-10-06T07:20:53.375709+00:00"}
+{"gate": "backlog-priorities", "exitCode": 0, "log": "evidence/qualification/backlog-priorities.log", "command": ["python3", "scripts/prioritize-uncovered.py"], "ranAt": "2026-10-06T07:20:53.491111+00:00"}
+{"gate": "core-tests", "exitCode": 0, "log": "evidence/qualification/core-tests.log", "command": ["python3", "scripts/qualify-core.py"], "ranAt": "2026-10-06T08:43:41.933279+00:00"}
+{"gate": "android-build", "exitCode": 0, "log": "evidence/qualification/android-build.log", "command": ["scripts/qualify-android.sh"], "ranAt": "2026-10-06T08:44:56.596206+00:00"}
+{"gate": "node-tests", "exitCode": 0, "log": "evidence/qualification/node-tests.log", "command": ["scripts/qualify-node.sh"], "ranAt": "2026-10-06T08:45:00.573414+00:00"}
+{"gate": "prover-tests", "exitCode": 0, "log": "evidence/qualification/prover-tests.log", "command": ["scripts/qualify-prover.sh"], "ranAt": "2026-10-06T08:45:01.606047+00:00"}
+{"gate": "verifier-tests", "exitCode": 0, "log": "evidence/qualification/verifier-tests.log", "command": ["python3", "-m", "unittest", "discover", "-s", "tools", "-p", "test_*.py"], "ranAt": "2026-10-06T08:45:02.045968+00:00"}
+{"gate": "localization-catalogs", "exitCode": 0, "log": "evidence/qualification/localization-catalogs.log", "command": ["python3", "scripts/qualify-localization.py"], "ranAt": "2026-10-06T08:45:02.173367+00:00"}
+{"gate": "hosting-isolation", "exitCode": 0, "log": "evidence/qualification/hosting-isolation.log", "command": ["python3", "scripts/qualify-hosting.py"], "ranAt": "2026-10-06T08:45:12.943427+00:00"}
+{"gate": "node-integration", "exitCode": 0, "log": "evidence/qualification/node-integration.log", "command": ["env", "DEPROOF_TEST_HOSTING=1", "python3", "scripts/qualify-integration.py"], "ranAt": "2026-10-06T08:45:47.842377+00:00"}
+{"gate": "rpc-read-only", "exitCode": 0, "log": "evidence/qualification/rpc-read-only.log", "command": ["python3", "scripts/qualify-rpc.py"], "ranAt": "2026-10-06T08:45:49.260444+00:00"}
+{"gate": "coverage-reconciliation", "exitCode": 0, "log": "evidence/qualification/coverage-reconciliation.log", "command": ["python3", "scripts/reconcile-coverage.py"], "ranAt": "2026-10-06T08:45:49.480084+00:00"}
+{"gate": "backlog-priorities", "exitCode": 0, "log": "evidence/qualification/backlog-priorities.log", "command": ["python3", "scripts/prioritize-uncovered.py"], "ranAt": "2026-10-06T08:45:49.595014+00:00"}
+{"gate": "registry-checks", "exitCode": 0, "log": "evidence/qualification/registry-checks.log", "command": ["python3", "scripts/check-registries.py"], "ranAt": "2026-10-06T08:45:49.721916+00:00"}
+{"gate": "web-build", "exitCode": 0, "log": "evidence/qualification/web-build.log", "command": ["python3", "scripts/build-web.py"], "ranAt": "2026-10-06T08:45:49.850287+00:00"}
+{"gate": "web-checks", "exitCode": 0, "log": "evidence/qualification/web-checks.log", "command": ["python3", "scripts/qualify-web.py"], "ranAt": "2026-10-06T08:45:51.532954+00:00"}
+{"gate": "browser-checks", "exitCode": 1, "log": "evidence/qualification/browser-checks.log", "command": ["node", "scripts/browser/qualify.mjs"], "ranAt": "2026-10-06T08:45:52.152143+00:00"}
+{"gate": "coverage-reconciliation", "exitCode": 0, "log": "evidence/qualification/coverage-reconciliation.log", "command": ["python3", "scripts/reconcile-coverage.py"], "ranAt": "2026-10-06T08:45:52.297221+00:00"}
+{"gate": "backlog-priorities", "exitCode": 0, "log": "evidence/qualification/backlog-priorities.log", "command": ["python3", "scripts/prioritize-uncovered.py"], "ranAt": "2026-10-06T08:45:52.411158+00:00"}
+{"gate": "core-tests", "exitCode": 0, "log": "evidence/qualification/core-tests.log", "command": ["python3", "scripts/qualify-core.py"], "ranAt": "2026-10-06T08:49:21.904017+00:00"}
+{"gate": "android-build", "exitCode": 0, "log": "evidence/qualification/android-build.log", "command": ["scripts/qualify-android.sh"], "ranAt": "2026-10-06T08:49:27.017499+00:00"}
+{"gate": "node-tests", "exitCode": 0, "log": "evidence/qualification/node-tests.log", "command": ["scripts/qualify-node.sh"], "ranAt": "2026-10-06T08:49:30.708415+00:00"}
+{"gate": "prover-tests", "exitCode": 0, "log": "evidence/qualification/prover-tests.log", "command": ["scripts/qualify-prover.sh"], "ranAt": "2026-10-06T08:49:31.631676+00:00"}
+{"gate": "verifier-tests", "exitCode": 0, "log": "evidence/qualification/verifier-tests.log", "command": ["python3", "-m", "unittest", "discover", "-s", "tools", "-p", "test_*.py"], "ranAt": "2026-10-06T08:49:32.018539+00:00"}
+{"gate": "localization-catalogs", "exitCode": 0, "log": "evidence/qualification/localization-catalogs.log", "command": ["python3", "scripts/qualify-localization.py"], "ranAt": "2026-10-06T08:49:32.161825+00:00"}
+{"gate": "hosting-isolation", "exitCode": 0, "log": "evidence/qualification/hosting-isolation.log", "command": ["python3", "scripts/qualify-hosting.py"], "ranAt": "2026-10-06T08:49:40.963867+00:00"}
+{"gate": "node-integration", "exitCode": 0, "log": "evidence/qualification/node-integration.log", "command": ["env", "DEPROOF_TEST_HOSTING=1", "python3", "scripts/qualify-integration.py"], "ranAt": "2026-10-06T08:50:15.702434+00:00"}
+{"gate": "rpc-read-only", "exitCode": 0, "log": "evidence/qualification/rpc-read-only.log", "command": ["python3", "scripts/qualify-rpc.py"], "ranAt": "2026-10-06T08:50:17.225133+00:00"}
+{"gate": "coverage-reconciliation", "exitCode": 0, "log": "evidence/qualification/coverage-reconciliation.log", "command": ["python3", "scripts/reconcile-coverage.py"], "ranAt": "2026-10-06T08:50:17.436467+00:00"}
+{"gate": "backlog-priorities", "exitCode": 0, "log": "evidence/qualification/backlog-priorities.log", "command": ["python3", "scripts/prioritize-uncovered.py"], "ranAt": "2026-10-06T08:50:17.551226+00:00"}
+{"gate": "registry-checks", "exitCode": 0, "log": "evidence/qualification/registry-checks.log", "command": ["python3", "scripts/check-registries.py"], "ranAt": "2026-10-06T08:50:17.677417+00:00"}
+{"gate": "web-build", "exitCode": 0, "log": "evidence/qualification/web-build.log", "command": ["python3", "scripts/build-web.py"], "ranAt": "2026-10-06T08:50:17.803727+00:00"}
+{"gate": "web-checks", "exitCode": 0, "log": "evidence/qualification/web-checks.log", "command": ["python3", "scripts/qualify-web.py"], "ranAt": "2026-10-06T08:50:19.279422+00:00"}
+{"gate": "browser-checks", "exitCode": 0, "log": "evidence/qualification/browser-checks.log", "command": ["node", "scripts/browser/qualify.mjs"], "ranAt": "2026-10-06T08:50:40.895222+00:00"}
+{"gate": "coverage-reconciliation", "exitCode": 0, "log": "evidence/qualification/coverage-reconciliation.log", "command": ["python3", "scripts/reconcile-coverage.py"], "ranAt": "2026-10-06T08:50:41.047630+00:00"}
+{"gate": "backlog-priorities", "exitCode": 0, "log": "evidence/qualification/backlog-priorities.log", "command": ["python3", "scripts/prioritize-uncovered.py"], "ranAt": "2026-10-06T08:50:41.161714+00:00"}

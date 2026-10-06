@@ -1,0 +1,215 @@
+ Image deproof/hosting-control:local Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 679B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from node-agent.Dockerfile
+#2 transferring dockerfile: 1.70kB 0.0s done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7
+#3 DONE 0.0s
+
+#4 [internal] load metadata for docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#4 DONE 0.1s
+
+#5 [internal] load metadata for docker.io/library/docker:29.5.2-cli@sha256:9ba8e32bfc35a2c7ae2feb1e3241b2778ae21dee80f4dcd31d04e1cfdea86ea2
+#5 DONE 2.8s
+
+#6 [internal] load .dockerignore
+#6 transferring context: 614B 0.0s done
+#6 DONE 0.0s
+
+#7 [build 1/9] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#7 ...
+
+#8 [runtime  1/13] FROM docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7
+#8 resolve docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7 0.1s done
+#8 DONE 0.1s
+
+#9 [docker-cli 1/1] FROM docker.io/library/docker:29.5.2-cli@sha256:9ba8e32bfc35a2c7ae2feb1e3241b2778ae21dee80f4dcd31d04e1cfdea86ea2
+#9 resolve docker.io/library/docker:29.5.2-cli@sha256:9ba8e32bfc35a2c7ae2feb1e3241b2778ae21dee80f4dcd31d04e1cfdea86ea2 0.1s done
+#9 DONE 0.1s
+
+#7 [build 1/9] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#7 resolve docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#7 resolve docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b 0.1s done
+#7 DONE 0.1s
+
+#10 [internal] load build context
+#10 transferring context: 3.50kB 0.2s done
+#10 DONE 0.2s
+
+#11 [runtime  8/13] COPY fixtures/ fixtures/
+#11 CACHED
+
+#12 [runtime  9/13] COPY contracts/ contracts/
+#12 CACHED
+
+#13 [runtime 11/13] COPY app/src/main/resources/ app/src/main/resources/
+#13 CACHED
+
+#14 [runtime  4/13] COPY tools/requirements.txt tools/requirements.txt
+#14 CACHED
+
+#15 [build 4/9] RUN GOTOOLCHAIN=local go mod download
+#15 CACHED
+
+#16 [runtime  7/13] COPY tools/ tools/
+#16 CACHED
+
+#17 [build 8/9] COPY node-agent/ ./
+#17 CACHED
+
+#18 [runtime  5/13] RUN pip install --no-cache-dir -r tools/requirements.txt
+#18 CACHED
+
+#19 [runtime  6/13] COPY --from=build /out/ prover-worker/build/
+#19 CACHED
+
+#20 [build 7/9] WORKDIR /src/node-agent
+#20 CACHED
+
+#21 [build 9/9] RUN CGO_ENABLED=0 GOTOOLCHAIN=local go test ./... && CGO_ENABLED=0 GOTOOLCHAIN=local go build -trimpath -o /out/deproof-node ./cmd/deproof-node
+#21 CACHED
+
+#22 [runtime 12/13] COPY docker/node-entrypoint.sh docker/node-entrypoint.sh
+#22 CACHED
+
+#23 [build 5/9] COPY prover-worker/ ./
+#23 CACHED
+
+#24 [runtime 10/13] COPY app/schemas/ app/schemas/
+#24 CACHED
+
+#25 [build 3/9] COPY prover-worker/go.mod prover-worker/go.sum ./
+#25 CACHED
+
+#26 [runtime  3/13] WORKDIR /opt/deproof
+#26 CACHED
+
+#27 [runtime  2/13] RUN useradd --create-home --uid 10001 deproof && mkdir -p /state /export && chown 10001:10001 /state /export
+#27 CACHED
+
+#28 [build 2/9] WORKDIR /src/prover-worker
+#28 CACHED
+
+#29 [build 6/9] RUN CGO_ENABLED=0 GOTOOLCHAIN=local go test ./... && CGO_ENABLED=0 GOTOOLCHAIN=local go build -trimpath -o /out/prove ./cmd/prove && CGO_ENABLED=0 GOTOOLCHAIN=local go build -trimpath -o /out/verify ./cmd/verify
+#29 CACHED
+
+#30 [runtime 13/13] RUN chown -R 10001:10001 /opt/deproof
+#30 CACHED
+
+#9 [docker-cli 1/1] FROM docker.io/library/docker:29.5.2-cli@sha256:9ba8e32bfc35a2c7ae2feb1e3241b2778ae21dee80f4dcd31d04e1cfdea86ea2
+#9 sha256:9b02815b1d866ccad16190784679c75c04f712dc13f12bd8ec46cf7648796905 0B / 116B 0.2s
+#9 sha256:9b02815b1d866ccad16190784679c75c04f712dc13f12bd8ec46cf7648796905 116B / 116B 0.3s done
+#9 sha256:4b162b8dd068432fdb9682bbf9fc7ecbe61c2dbbb72441a22b74a6537f7fe639 0B / 1.01kB 0.2s
+#9 sha256:bff5ffb634dd2a67009edb32be895febc923676e8dc0b94f8c857528723140ee 0B / 538B 0.2s
+#9 sha256:046b51e466e9d4d0fb090dd060997a0892b36578ab13f0153d1d61f53166d5c6 0B / 11.40MB 0.2s
+#9 sha256:7b2deac6c9ceba582f6a7f4a7ea2910141ba0dfcf644ee930db818a78947527a 0B / 22.99MB 0.2s
+#9 sha256:4b162b8dd068432fdb9682bbf9fc7ecbe61c2dbbb72441a22b74a6537f7fe639 1.01kB / 1.01kB 0.6s done
+#9 sha256:bff5ffb634dd2a67009edb32be895febc923676e8dc0b94f8c857528723140ee 538B / 538B 0.8s done
+#9 sha256:8e4b052546a5d5d26f7d251d92bd155e2275ee74b4c83a5748550720fa39efe1 0B / 19.55MB 0.2s
+#9 sha256:54392fc3db24e998571260adc7ac1a1bc098852dfeb30150218d2174da4aa929 0B / 455B 0.2s
+#9 sha256:54392fc3db24e998571260adc7ac1a1bc098852dfeb30150218d2174da4aa929 455B / 455B 0.8s done
+#9 sha256:e6cf87df21c231c07f8b8d9c532474fc120946d085773fa15272382636f10b46 0B / 8.31MB 0.2s
+#9 sha256:7b2deac6c9ceba582f6a7f4a7ea2910141ba0dfcf644ee930db818a78947527a 3.15MB / 22.99MB 1.5s
+#9 sha256:046b51e466e9d4d0fb090dd060997a0892b36578ab13f0153d1d61f53166d5c6 1.05MB / 11.40MB 2.6s
+#9 sha256:7b2deac6c9ceba582f6a7f4a7ea2910141ba0dfcf644ee930db818a78947527a 5.24MB / 22.99MB 2.3s
+#9 sha256:7b2deac6c9ceba582f6a7f4a7ea2910141ba0dfcf644ee930db818a78947527a 7.34MB / 22.99MB 3.3s
+#9 sha256:e6cf87df21c231c07f8b8d9c532474fc120946d085773fa15272382636f10b46 1.05MB / 8.31MB 2.1s
+#9 sha256:046b51e466e9d4d0fb090dd060997a0892b36578ab13f0153d1d61f53166d5c6 2.10MB / 11.40MB 3.9s
+#9 sha256:7b2deac6c9ceba582f6a7f4a7ea2910141ba0dfcf644ee930db818a78947527a 9.44MB / 22.99MB 4.8s
+#9 sha256:8e4b052546a5d5d26f7d251d92bd155e2275ee74b4c83a5748550720fa39efe1 1.05MB / 19.55MB 5.0s
+#9 sha256:e6cf87df21c231c07f8b8d9c532474fc120946d085773fa15272382636f10b46 2.10MB / 8.31MB 4.4s
+#9 sha256:046b51e466e9d4d0fb090dd060997a0892b36578ab13f0153d1d61f53166d5c6 3.15MB / 11.40MB 6.5s
+#9 sha256:7b2deac6c9ceba582f6a7f4a7ea2910141ba0dfcf644ee930db818a78947527a 11.53MB / 22.99MB 6.8s
+#9 sha256:046b51e466e9d4d0fb090dd060997a0892b36578ab13f0153d1d61f53166d5c6 4.19MB / 11.40MB 8.3s
+#9 sha256:e6cf87df21c231c07f8b8d9c532474fc120946d085773fa15272382636f10b46 3.15MB / 8.31MB 6.8s
+#9 sha256:046b51e466e9d4d0fb090dd060997a0892b36578ab13f0153d1d61f53166d5c6 5.24MB / 11.40MB 8.9s
+#9 sha256:7b2deac6c9ceba582f6a7f4a7ea2910141ba0dfcf644ee930db818a78947527a 13.63MB / 22.99MB 8.9s
+#9 sha256:046b51e466e9d4d0fb090dd060997a0892b36578ab13f0153d1d61f53166d5c6 6.29MB / 11.40MB 9.5s
+#9 sha256:8e4b052546a5d5d26f7d251d92bd155e2275ee74b4c83a5748550720fa39efe1 2.10MB / 19.55MB 9.0s
+#9 sha256:046b51e466e9d4d0fb090dd060997a0892b36578ab13f0153d1d61f53166d5c6 7.34MB / 11.40MB 10.1s
+#9 sha256:e6cf87df21c231c07f8b8d9c532474fc120946d085773fa15272382636f10b46 4.19MB / 8.31MB 8.9s
+#9 sha256:7b2deac6c9ceba582f6a7f4a7ea2910141ba0dfcf644ee930db818a78947527a 15.73MB / 22.99MB 10.4s
+#9 sha256:046b51e466e9d4d0fb090dd060997a0892b36578ab13f0153d1d61f53166d5c6 8.39MB / 11.40MB 10.8s
+#9 sha256:046b51e466e9d4d0fb090dd060997a0892b36578ab13f0153d1d61f53166d5c6 9.44MB / 11.40MB 11.6s
+#9 sha256:e6cf87df21c231c07f8b8d9c532474fc120946d085773fa15272382636f10b46 5.24MB / 8.31MB 10.1s
+#9 sha256:7b2deac6c9ceba582f6a7f4a7ea2910141ba0dfcf644ee930db818a78947527a 17.83MB / 22.99MB 11.9s
+#9 sha256:046b51e466e9d4d0fb090dd060997a0892b36578ab13f0153d1d61f53166d5c6 10.49MB / 11.40MB 12.5s
+#9 sha256:8e4b052546a5d5d26f7d251d92bd155e2275ee74b4c83a5748550720fa39efe1 3.15MB / 19.55MB 12.0s
+#9 sha256:e6cf87df21c231c07f8b8d9c532474fc120946d085773fa15272382636f10b46 6.29MB / 8.31MB 11.1s
+#9 sha256:046b51e466e9d4d0fb090dd060997a0892b36578ab13f0153d1d61f53166d5c6 11.40MB / 11.40MB 13.2s done
+#9 sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff08763195a70a4a5adda577bb 0B / 3.86MB 0.2s
+#9 sha256:7b2deac6c9ceba582f6a7f4a7ea2910141ba0dfcf644ee930db818a78947527a 19.92MB / 22.99MB 13.5s
+#9 sha256:e6cf87df21c231c07f8b8d9c532474fc120946d085773fa15272382636f10b46 7.34MB / 8.31MB 12.3s
+#9 sha256:8e4b052546a5d5d26f7d251d92bd155e2275ee74b4c83a5748550720fa39efe1 4.19MB / 19.55MB 13.7s
+#9 sha256:e6cf87df21c231c07f8b8d9c532474fc120946d085773fa15272382636f10b46 8.31MB / 8.31MB 13.4s done
+#9 sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff08763195a70a4a5adda577bb 1.05MB / 3.86MB 1.8s
+#9 sha256:8e4b052546a5d5d26f7d251d92bd155e2275ee74b4c83a5748550720fa39efe1 5.24MB / 19.55MB 14.9s
+#9 sha256:7b2deac6c9ceba582f6a7f4a7ea2910141ba0dfcf644ee930db818a78947527a 22.02MB / 22.99MB 15.5s
+#9 sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff08763195a70a4a5adda577bb 2.10MB / 3.86MB 2.9s
+#9 sha256:7b2deac6c9ceba582f6a7f4a7ea2910141ba0dfcf644ee930db818a78947527a 22.99MB / 22.99MB 16.1s done
+#9 sha256:8e4b052546a5d5d26f7d251d92bd155e2275ee74b4c83a5748550720fa39efe1 6.29MB / 19.55MB 15.9s
+#9 sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff08763195a70a4a5adda577bb 3.15MB / 3.86MB 3.5s
+#9 sha256:8e4b052546a5d5d26f7d251d92bd155e2275ee74b4c83a5748550720fa39efe1 7.34MB / 19.55MB 16.4s
+#9 sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff08763195a70a4a5adda577bb 3.86MB / 3.86MB 3.8s done
+#9 extracting sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff08763195a70a4a5adda577bb
+#9 extracting sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff08763195a70a4a5adda577bb 0.2s done
+#9 extracting sha256:e6cf87df21c231c07f8b8d9c532474fc120946d085773fa15272382636f10b46
+#9 sha256:8e4b052546a5d5d26f7d251d92bd155e2275ee74b4c83a5748550720fa39efe1 8.39MB / 19.55MB 16.8s
+#9 sha256:8e4b052546a5d5d26f7d251d92bd155e2275ee74b4c83a5748550720fa39efe1 9.44MB / 19.55MB 17.1s
+#9 extracting sha256:e6cf87df21c231c07f8b8d9c532474fc120946d085773fa15272382636f10b46 0.6s done
+#9 sha256:8e4b052546a5d5d26f7d251d92bd155e2275ee74b4c83a5748550720fa39efe1 10.49MB / 19.55MB 17.4s
+#9 extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 0.0s done
+#9 extracting sha256:54392fc3db24e998571260adc7ac1a1bc098852dfeb30150218d2174da4aa929 0.0s done
+#9 sha256:8e4b052546a5d5d26f7d251d92bd155e2275ee74b4c83a5748550720fa39efe1 11.53MB / 19.55MB 17.7s
+#9 sha256:8e4b052546a5d5d26f7d251d92bd155e2275ee74b4c83a5748550720fa39efe1 12.58MB / 19.55MB 18.0s
+#9 sha256:8e4b052546a5d5d26f7d251d92bd155e2275ee74b4c83a5748550720fa39efe1 13.63MB / 19.55MB 18.5s
+#9 sha256:8e4b052546a5d5d26f7d251d92bd155e2275ee74b4c83a5748550720fa39efe1 14.68MB / 19.55MB 18.6s
+#9 sha256:8e4b052546a5d5d26f7d251d92bd155e2275ee74b4c83a5748550720fa39efe1 15.73MB / 19.55MB 18.9s
+#9 sha256:8e4b052546a5d5d26f7d251d92bd155e2275ee74b4c83a5748550720fa39efe1 16.78MB / 19.55MB 19.2s
+#9 sha256:8e4b052546a5d5d26f7d251d92bd155e2275ee74b4c83a5748550720fa39efe1 17.83MB / 19.55MB 19.5s
+#9 sha256:8e4b052546a5d5d26f7d251d92bd155e2275ee74b4c83a5748550720fa39efe1 18.87MB / 19.55MB 19.8s
+#9 sha256:8e4b052546a5d5d26f7d251d92bd155e2275ee74b4c83a5748550720fa39efe1 19.55MB / 19.55MB 20.0s done
+#9 extracting sha256:8e4b052546a5d5d26f7d251d92bd155e2275ee74b4c83a5748550720fa39efe1
+#9 extracting sha256:8e4b052546a5d5d26f7d251d92bd155e2275ee74b4c83a5748550720fa39efe1 0.6s done
+#9 DONE 21.6s
+
+#9 [docker-cli 1/1] FROM docker.io/library/docker:29.5.2-cli@sha256:9ba8e32bfc35a2c7ae2feb1e3241b2778ae21dee80f4dcd31d04e1cfdea86ea2
+#9 extracting sha256:7b2deac6c9ceba582f6a7f4a7ea2910141ba0dfcf644ee930db818a78947527a
+#9 extracting sha256:7b2deac6c9ceba582f6a7f4a7ea2910141ba0dfcf644ee930db818a78947527a 1.1s done
+#9 DONE 22.7s
+
+#9 [docker-cli 1/1] FROM docker.io/library/docker:29.5.2-cli@sha256:9ba8e32bfc35a2c7ae2feb1e3241b2778ae21dee80f4dcd31d04e1cfdea86ea2
+#9 extracting sha256:046b51e466e9d4d0fb090dd060997a0892b36578ab13f0153d1d61f53166d5c6
+#9 extracting sha256:046b51e466e9d4d0fb090dd060997a0892b36578ab13f0153d1d61f53166d5c6 0.5s done
+#9 DONE 23.2s
+
+#9 [docker-cli 1/1] FROM docker.io/library/docker:29.5.2-cli@sha256:9ba8e32bfc35a2c7ae2feb1e3241b2778ae21dee80f4dcd31d04e1cfdea86ea2
+#9 extracting sha256:bff5ffb634dd2a67009edb32be895febc923676e8dc0b94f8c857528723140ee 0.0s done
+#9 extracting sha256:4b162b8dd068432fdb9682bbf9fc7ecbe61c2dbbb72441a22b74a6537f7fe639 0.0s done
+#9 extracting sha256:9b02815b1d866ccad16190784679c75c04f712dc13f12bd8ec46cf7648796905 0.0s done
+#9 DONE 23.2s
+
+#31 [owner-hosting 1/1] COPY --from=docker-cli /usr/local/bin/docker /usr/local/bin/docker
+#31 DONE 0.8s
+
+#32 exporting to image
+#32 exporting layers
+#32 exporting layers 2.3s done
+#32 exporting manifest sha256:a263918884869fc6716f32515bd667208bf74849e7f47a61059defab41d84212
+#32 exporting manifest sha256:a263918884869fc6716f32515bd667208bf74849e7f47a61059defab41d84212 0.0s done
+#32 exporting config sha256:1036d3e9d315e59153e9179ac90c54469e793b7d844ddbacf527403b788185b9 0.0s done
+#32 exporting attestation manifest sha256:7ba1f3613264e2986d1396efafcf74ff2c954fa5b62b47b91e069f70c1dd3d19 0.0s done
+#32 exporting manifest list sha256:fe16112a36e1c5ec4ef4906fd984189a631d4249867ead51eb6f2115eb88efa5 0.0s done
+#32 naming to docker.io/deproof/hosting-control:local
+#32 naming to docker.io/deproof/hosting-control:local 0.0s done
+#32 unpacking to docker.io/deproof/hosting-control:local
+#32 unpacking to docker.io/deproof/hosting-control:local 0.7s done
+#32 DONE 3.3s
+
+#33 resolving provenance for metadata file
+#33 DONE 0.0s
+ Image deproof/hosting-control:local Built 
