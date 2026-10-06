@@ -21,7 +21,10 @@ jobs:
 
       - name: Setup Android SDK
         run: |
-          echo "y" | ${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager "build-tools;34.0.0" "platform-tools" "platforms;android-api-${{ matrix.api-level }}" 2>&1 || true
+          # Remove corrupted build-tools if present
+          rm -rf ${ANDROID_SDK_ROOT}/build-tools/33.0.1 || true
+          # Install required build-tools
+          echo "y" | ${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager "build-tools;34.0.0" "platform-tools" "platforms;android-34" 2>&1 || true
         env:
           ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
 
