@@ -17,7 +17,7 @@ class SolanaRpcClient(private val endpoint: RpcEndpoint) {
             val result = performRequest("getHealth", emptyList())
             continuation.resume(Result.success(result))
         } catch (e: Exception) {
-            continuation.resumeWithException(e)
+            continuation.resume(Result.failure(e))
         }
     }
 
@@ -31,7 +31,7 @@ class SolanaRpcClient(private val endpoint: RpcEndpoint) {
             }
             continuation.resume(Result.success(balance))
         } catch (e: Exception) {
-            continuation.resumeWithException(e)
+            continuation.resume(Result.failure(e))
         }
     }
 
@@ -41,7 +41,7 @@ class SolanaRpcClient(private val endpoint: RpcEndpoint) {
             val result = if (balance != null) BigDecimal(balance.toString()) else BigDecimal.ZERO
             continuation.resume(Result.success(result))
         } catch (e: Exception) {
-            continuation.resumeWithException(e)
+            continuation.resume(Result.failure(e))
         }
     }
 
@@ -50,7 +50,7 @@ class SolanaRpcClient(private val endpoint: RpcEndpoint) {
             val fee = performRequest("estimateTransactionFee", listOf(transaction)) as? Number
             continuation.resume(Result.success(fee?.toLong() ?: 5000))
         } catch (e: Exception) {
-            continuation.resumeWithException(e)
+            continuation.resume(Result.failure(e))
         }
     }
 
@@ -59,7 +59,7 @@ class SolanaRpcClient(private val endpoint: RpcEndpoint) {
             val result = performRequest("simulateTransaction", listOf(instruction)) as? Boolean
             continuation.resume(Result.success(result ?: false))
         } catch (e: Exception) {
-            continuation.resumeWithException(e)
+            continuation.resume(Result.failure(e))
         }
     }
 
