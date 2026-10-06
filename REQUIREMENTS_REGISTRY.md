@@ -9,9 +9,10 @@
 
 ### F040-P0-Tests: Transaction Instruction Inspection
 **Category:** Crypto & Security → Instruction Decoder  
-**Status:** ✅ IMPLEMENTED (parallel work, not merged to this checkout)  
+**Status:** ⚠️ EXTERNAL EVIDENCE ONLY (not verified in this checkout)  
 **Test File:** `app/src/test/kotlin/com/deproof/crypto/InstructionDecoderTest.kt`  
-**Evidence:** Commit 143adb7 (macOS session), 45/45 tests passing locally on source machine
+**Evidence:** Commit 143adb7 (macOS session - external source machine)  
+**Note:** Cloud checkout contains test stubs only; implementations not merged. SDK build errors prevent local verification.
 
 **Acceptance Criteria:**
 - [ ] Decode TransferChecked instruction (SPL token transfer)
@@ -56,9 +57,10 @@ class InstructionDecoderTest {
 
 ### F041-P0-Tests: Plain-Language Transaction Summary
 **Category:** Domain Logic → Transaction Verdict  
-**Status:** ✅ IMPLEMENTED (parallel work, not merged to this checkout)  
+**Status:** ⚠️ EXTERNAL EVIDENCE ONLY (not verified in this checkout)  
 **Test File:** `app/src/test/kotlin/com/deproof/domain/model/VerdictTest.kt`  
-**Evidence:** Commit 6c79aa9 (macOS session), linked to verdict logic tests
+**Evidence:** Commit 6c79aa9 (macOS session - external source machine)  
+**Note:** Cloud checkout contains test stubs only; implementations not merged.
 
 **Acceptance Criteria:**
 - [ ] Verdict.Payable → "Safe to approve" summary
@@ -96,9 +98,10 @@ class VerdictTest {
 
 ### F042-P0-Tests: Formatter Suite (Locally Actionable)
 **Category:** Utilities → Formatters  
-**Status:** ✅ READY TO RUN (implementations exist in parallel work)  
+**Status:** ⚠️ EXTERNAL EVIDENCE ONLY (not verified in this checkout)  
 **Test File:** `app/src/test/kotlin/com/deproof/util/FormattersTest.kt`  
-**Evidence:** 12/12 tests identified, linked to Formatters.kt implementations
+**Evidence:** 12/12 tests identified (macOS session - external source machine)  
+**Note:** Cloud checkout has test stubs; SDK build errors prevent local execution.
 
 **Acceptance Criteria:**
 - [ ] formatSol(1.0) → "1 SOL"
@@ -142,9 +145,10 @@ class FormattersTest {
 
 ### F043-P0-Tests: Validator Suite
 **Category:** Utilities → Validators  
-**Status:** ✅ READY TO RUN (implementations exist in parallel work)  
+**Status:** ⚠️ EXTERNAL EVIDENCE ONLY (not verified in this checkout)  
 **Test File:** `app/src/test/kotlin/com/deproof/util/ValidatorsTest.kt`  
-**Evidence:** 15/15 tests identified, linked to Validators.kt implementations
+**Evidence:** 15/15 tests identified (macOS session - external source machine)  
+**Note:** Cloud checkout has test stubs; SDK build errors prevent local execution.
 
 **Acceptance Criteria:**
 - [ ] validatePublicKey accepts valid base58 addresses (44 chars)
@@ -492,27 +496,32 @@ class BinaryParserTest {
 
 ## Test Coverage Tracking
 
-### Current Status (Parallel Work on macOS - Commits 143adb7, 6c79aa9)
-- **Unit Tests Written:** 45/45 ✅
-- **Tests Passing:** 45/45 (100%)
-- **Code Coverage:** ~70% (Phase 1 P0 items)
-- **Device Tests Run:** 0/45 (NOT_RUN - no device attached)
+### Current Status - CLOUD CHECKOUT (This Session)
+- **Unit Tests Written:** 0/48 (stubs only, not implementations)
+- **Tests Passing Locally:** 0/48 (SDK build errors prevent execution)
+- **Code Coverage:** 0% (local)
+- **Device Tests Run:** 0/45 (NOT_RUN - no device)
 - **Integration Tests Run:** 0/70 (BLOCKED - requires RPC)
 
-**Note:** Parallel test implementations exist on source machine (macOS session).  
-This cloud checkout has test stubs (framework) but implementations not yet merged.  
-Parallel work preserved locally without push per user directive.
+**EXTERNAL EVIDENCE (macOS Session - Not Verified Here):**
+- Parallel work claims 45/45 tests passing on external source machine (commits 143adb7, 6c79aa9)
+- This cloud checkout contains test framework and stubs only
+- Implementations from parallel work not merged to this checkout
+- SDK build errors in cloud environment prevent local test execution
 
-### Target Coverage
-| Category | Target | Current | Status |
-|----------|--------|---------|--------|
-| Formatters (F042) | 12/12 | 12/12 | ✅ READY |
-| Validators (F043) | 15/15 | 15/15 | ✅ READY |
-| Inspection (F040) | 9/9 | 9/9 | ✅ IMPLEMENTED |
-| Verdict (F041) | 10/10 | 10/10 | ✅ IMPLEMENTED |
-| MessageBinding (F045) | 10/10 | 10/10 | ✅ IMPLEMENTED |
-| BinaryParser (F046) | 13/13 | 13/13 | ✅ IMPLEMENTED |
+### Actual Coverage (This Checkout)
+| Category | Target | Cloud | Status |
+|----------|--------|-------|--------|
+| Formatters (F042) | 12/12 | 0/12 | ❌ STUB ONLY |
+| Validators (F043) | 15/15 | 0/15 | ❌ STUB ONLY |
+| Inspection (F040) | 9/9 | 0/9 | ❌ STUB ONLY |
+| Verdict (F041) | 10/10 | 0/10 | ❌ STUB ONLY |
+| MessageBinding (F045) | 10/10 | 0/10 | ❌ STUB ONLY |
+| BinaryParser (F046) | 13/13 | 0/13 | ❌ STUB ONLY |
 | Base58 (F044) | 9/9 | 0/9 | ❌ BLOCKING |
+| **TOTAL** | **78** | **0** | **❌ 0% LOCAL** |
+
+**External Evidence Only:** 45/45 tests claimed passing on macOS machine (unverified in cloud)
 | Validators | 85% | 0% |
 | Crypto Utils | 95% | 0% |
 | Models | 80% | 0% |
