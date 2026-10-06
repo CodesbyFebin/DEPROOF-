@@ -1,7 +1,7 @@
 {
   "sourceManifest": "evidence/qualification/source-before.json",
   "schema": "deproof-implementation-status-v1",
-  "generatedAt": "2026-10-06T09:41:10.739510+00:00",
+  "generatedAt": "2026-10-06T09:44:40.183932+00:00",
   "product": "Deproof",
   "mark": "DEPR",
   "credit": "Built by CodesbyFebin",
@@ -49,7 +49,7 @@
         "python3",
         "scripts/qualify-core.py"
       ],
-      "ranAt": "2026-10-06T09:37:12.395467+00:00"
+      "ranAt": "2026-10-06T09:42:04.758558+00:00"
     },
     {
       "gate": "android-build",
@@ -58,7 +58,7 @@
       "command": [
         "scripts/qualify-android.sh"
       ],
-      "ranAt": "2026-10-06T09:37:43.873427+00:00"
+      "ranAt": "2026-10-06T09:42:11.328272+00:00"
     },
     {
       "gate": "node-tests",
@@ -67,7 +67,7 @@
       "command": [
         "scripts/qualify-node.sh"
       ],
-      "ranAt": "2026-10-06T09:37:48.701654+00:00"
+      "ranAt": "2026-10-06T09:42:16.813004+00:00"
     },
     {
       "gate": "prover-tests",
@@ -76,7 +76,7 @@
       "command": [
         "scripts/qualify-prover.sh"
       ],
-      "ranAt": "2026-10-06T09:37:52.732461+00:00"
+      "ranAt": "2026-10-06T09:42:21.028054+00:00"
     },
     {
       "gate": "verifier-tests",
@@ -92,7 +92,7 @@
         "-p",
         "test_*.py"
       ],
-      "ranAt": "2026-10-06T09:37:53.139741+00:00"
+      "ranAt": "2026-10-06T09:42:21.439989+00:00"
     },
     {
       "gate": "localization-catalogs",
@@ -102,7 +102,7 @@
         "python3",
         "scripts/qualify-localization.py"
       ],
-      "ranAt": "2026-10-06T09:37:53.272353+00:00"
+      "ranAt": "2026-10-06T09:42:21.592348+00:00"
     },
     {
       "gate": "hosting-isolation",
@@ -112,7 +112,7 @@
         "python3",
         "scripts/qualify-hosting.py"
       ],
-      "ranAt": "2026-10-06T09:38:02.783986+00:00"
+      "ranAt": "2026-10-06T09:42:31.625729+00:00"
     },
     {
       "gate": "node-integration",
@@ -124,7 +124,7 @@
         "python3",
         "scripts/qualify-integration.py"
       ],
-      "ranAt": "2026-10-06T09:38:35.567942+00:00"
+      "ranAt": "2026-10-06T09:43:07.254537+00:00"
     },
     {
       "gate": "rpc-read-only",
@@ -134,7 +134,7 @@
         "python3",
         "scripts/qualify-rpc.py"
       ],
-      "ranAt": "2026-10-06T09:38:36.918750+00:00"
+      "ranAt": "2026-10-06T09:43:08.855312+00:00"
     },
     {
       "gate": "coverage-reconciliation",
@@ -144,7 +144,7 @@
         "python3",
         "scripts/reconcile-coverage.py"
       ],
-      "ranAt": "2026-10-06T09:38:37.132957+00:00"
+      "ranAt": "2026-10-06T09:43:09.074140+00:00"
     },
     {
       "gate": "backlog-priorities",
@@ -154,7 +154,7 @@
         "python3",
         "scripts/prioritize-uncovered.py"
       ],
-      "ranAt": "2026-10-06T09:38:37.247575+00:00"
+      "ranAt": "2026-10-06T09:43:09.194803+00:00"
     },
     {
       "gate": "registry-checks",
@@ -164,7 +164,7 @@
         "python3",
         "scripts/check-registries.py"
       ],
-      "ranAt": "2026-10-06T09:38:37.378515+00:00"
+      "ranAt": "2026-10-06T09:43:09.328845+00:00"
     },
     {
       "gate": "web-build",
@@ -174,7 +174,7 @@
         "python3",
         "scripts/build-web.py"
       ],
-      "ranAt": "2026-10-06T09:38:37.514333+00:00"
+      "ranAt": "2026-10-06T09:43:09.491046+00:00"
     },
     {
       "gate": "web-checks",
@@ -184,7 +184,7 @@
         "python3",
         "scripts/qualify-web.py"
       ],
-      "ranAt": "2026-10-06T09:38:39.136831+00:00"
+      "ranAt": "2026-10-06T09:43:11.095472+00:00"
     },
     {
       "gate": "browser-checks",
@@ -194,7 +194,7 @@
         "node",
         "scripts/browser/qualify.mjs"
       ],
-      "ranAt": "2026-10-06T09:39:01.320734+00:00"
+      "ranAt": "2026-10-06T09:43:34.301224+00:00"
     },
     {
       "gate": "coverage-reconciliation",
@@ -204,7 +204,7 @@
         "python3",
         "scripts/reconcile-coverage.py"
       ],
-      "ranAt": "2026-10-06T09:39:01.474130+00:00"
+      "ranAt": "2026-10-06T09:43:34.459816+00:00"
     },
     {
       "gate": "backlog-priorities",
@@ -214,7 +214,7 @@
         "python3",
         "scripts/prioritize-uncovered.py"
       ],
-      "ranAt": "2026-10-06T09:39:01.588600+00:00"
+      "ranAt": "2026-10-06T09:43:34.578569+00:00"
     }
   ],
   "blockers": [
@@ -280,19 +280,19 @@
     {
       "path": "node-agent/build/deproof-node",
       "kind": "darwin-amd64-node-binary",
-      "sha256": "4d9266c2913afadded8760aec30feaefc3a84b1f96bd45543cad0fa98c9323bc",
+      "sha256": "fff8d557fc439a941bcc2847d630a73d18f6b227e22259a8702ba74fadca1c22",
       "bytes": "10730048"
     },
     {
       "path": "prover-worker/build/prove",
       "kind": "local-proof-producer",
-      "sha256": "073f15761d14c3b822e2555b0dc4da78decc8d934123516a134fbebf4eafc91b",
+      "sha256": "2d12160ddadd607ac328ed034c52b96124fd9808e005d0970d99b7a3ee422cf2",
       "bytes": "16556848"
     },
     {
       "path": "prover-worker/build/verify",
       "kind": "independent-proof-verifier",
-      "sha256": "66c1502bdb0b11109f3917d5cba87e11c2d839e473ea61d5d03eb18f9d2e6747",
+      "sha256": "f3a174016880a9910f089242234173fa710a3a083bcc81125b0b860d15fdd571",
       "bytes": "9640336"
     },
     {
@@ -306,6 +306,42 @@
       "kind": "independent-receipt-verifier",
       "sha256": "dd17a4b493cd1d11e700879a6023308daacb6315fb665e4bb5665041e6f1195a",
       "bytes": "9339"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T094220Z-76453/circuit.r1cs",
+      "kind": "local-proof-artifact",
+      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
+      "bytes": "867"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T094220Z-76453/verification-key.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "62b7dae0dc23fb0355826f15df2ccb0b8c094b0f3828537de0c56545d1c7554b",
+      "bytes": "364"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T094220Z-76453/proving-key.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "ec1063a6a3ae08937ec0b0896f0f54547c94a9f8906d8e6df114d090752e2baf",
+      "bytes": "1027"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T094220Z-76453/public-witness.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
+      "bytes": "44"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T094220Z-76453/manifest.json",
+      "kind": "local-proof-artifact",
+      "sha256": "e9a6112a336a876c83625548c8806ef04f05b834acbef6dd7cddc5072d55b627",
+      "bytes": "695"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T094220Z-76453/proof.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "11da504348dc2b415c460ccd0c543a6ad19b04db2701bff781e216df22eabb88",
+      "bytes": "164"
     },
     {
       "path": "prover-worker/build/qualified-result-20261006T084501Z-72561/circuit.r1cs",
@@ -784,8 +820,8 @@
     {
       "path": "evidence/qualification/deproof-source-snapshot.zip",
       "kind": "local-source-snapshot",
-      "sha256": "bf63a3a910c373094471af139e37dde3688223bc236a1c856fcc6134c3e93f3c",
-      "bytes": "16936461"
+      "sha256": "c10587fb81144f68609967ea83ce85ec2da76a8c214cebb1a7da4e9c99459e9b",
+      "bytes": "16939359"
     }
   ],
   "coverage": {
@@ -3107,10 +3143,7 @@
           "C087",
           "C088"
         ],
-        "tests": [
-          "app/src/test/java/com/example/domain/PolicyTest.kt::rebuiltDraftDoesNotInheritThePriorApproval",
-          "app/src/test/java/com/example/domain/PolicyTest.kt::firstRebuildIsAllowedAndASecondIsNot"
-        ],
+        "tests": [],
         "qualificationDimensions": [
           "NOT_RUN"
         ],
@@ -7848,9 +7881,7 @@
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
-        "tests": [
-          "app/src/test/java/com/example/domain/ReviewBindingTest.kt::storedHashesAreUnaffectedByCallerBufferChanges"
-        ],
+        "tests": [],
         "qualificationDimensions": [
           "NOT_RUN"
         ],
@@ -11840,7 +11871,9 @@
         "dependencies": [],
         "checks": [],
         "tests": [
-          "app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval"
+          "app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval",
+          "app/src/test/java/com/example/domain/PolicyTest.kt::rebuildProducesANewDevnetMessageForTheSameAccount",
+          "app/src/test/java/com/example/domain/PolicyTest.kt::rebuildRefusesUnchangedBlockhashHistoricalAndNonDevnetReviews"
         ],
         "qualificationDimensions": [
           "VERIFIED_LOCAL",

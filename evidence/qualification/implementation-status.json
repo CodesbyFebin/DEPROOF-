@@ -1,7 +1,7 @@
 {
   "sourceManifest": "evidence/qualification/source-before.json",
   "schema": "deproof-implementation-status-v1",
-  "generatedAt": "2026-10-06T09:44:40.183932+00:00",
+  "generatedAt": "2026-10-06T09:56:35.405885+00:00",
   "product": "Deproof",
   "mark": "DEPR",
   "credit": "Built by CodesbyFebin",
@@ -49,7 +49,7 @@
         "python3",
         "scripts/qualify-core.py"
       ],
-      "ranAt": "2026-10-06T09:42:04.758558+00:00"
+      "ranAt": "2026-10-06T09:55:10.531147+00:00"
     },
     {
       "gate": "android-build",
@@ -58,7 +58,7 @@
       "command": [
         "scripts/qualify-android.sh"
       ],
-      "ranAt": "2026-10-06T09:42:11.328272+00:00"
+      "ranAt": "2026-10-06T09:55:16.493200+00:00"
     },
     {
       "gate": "node-tests",
@@ -67,7 +67,7 @@
       "command": [
         "scripts/qualify-node.sh"
       ],
-      "ranAt": "2026-10-06T09:42:16.813004+00:00"
+      "ranAt": "2026-10-06T09:55:21.484526+00:00"
     },
     {
       "gate": "prover-tests",
@@ -76,7 +76,7 @@
       "command": [
         "scripts/qualify-prover.sh"
       ],
-      "ranAt": "2026-10-06T09:42:21.028054+00:00"
+      "ranAt": "2026-10-06T09:55:25.379336+00:00"
     },
     {
       "gate": "verifier-tests",
@@ -92,7 +92,7 @@
         "-p",
         "test_*.py"
       ],
-      "ranAt": "2026-10-06T09:42:21.439989+00:00"
+      "ranAt": "2026-10-06T09:55:25.764851+00:00"
     },
     {
       "gate": "localization-catalogs",
@@ -102,7 +102,7 @@
         "python3",
         "scripts/qualify-localization.py"
       ],
-      "ranAt": "2026-10-06T09:42:21.592348+00:00"
+      "ranAt": "2026-10-06T09:55:25.899201+00:00"
     },
     {
       "gate": "hosting-isolation",
@@ -112,7 +112,7 @@
         "python3",
         "scripts/qualify-hosting.py"
       ],
-      "ranAt": "2026-10-06T09:42:31.625729+00:00"
+      "ranAt": "2026-10-06T09:55:34.901069+00:00"
     },
     {
       "gate": "node-integration",
@@ -124,7 +124,7 @@
         "python3",
         "scripts/qualify-integration.py"
       ],
-      "ranAt": "2026-10-06T09:43:07.254537+00:00"
+      "ranAt": "2026-10-06T09:56:09.289477+00:00"
     },
     {
       "gate": "rpc-read-only",
@@ -134,7 +134,7 @@
         "python3",
         "scripts/qualify-rpc.py"
       ],
-      "ranAt": "2026-10-06T09:43:08.855312+00:00"
+      "ranAt": "2026-10-06T09:56:10.815843+00:00"
     },
     {
       "gate": "coverage-reconciliation",
@@ -144,7 +144,7 @@
         "python3",
         "scripts/reconcile-coverage.py"
       ],
-      "ranAt": "2026-10-06T09:43:09.074140+00:00"
+      "ranAt": "2026-10-06T09:56:11.052566+00:00"
     },
     {
       "gate": "backlog-priorities",
@@ -154,7 +154,7 @@
         "python3",
         "scripts/prioritize-uncovered.py"
       ],
-      "ranAt": "2026-10-06T09:43:09.194803+00:00"
+      "ranAt": "2026-10-06T09:56:11.180869+00:00"
     },
     {
       "gate": "registry-checks",
@@ -164,7 +164,7 @@
         "python3",
         "scripts/check-registries.py"
       ],
-      "ranAt": "2026-10-06T09:43:09.328845+00:00"
+      "ranAt": "2026-10-06T09:56:11.322534+00:00"
     },
     {
       "gate": "web-build",
@@ -174,7 +174,7 @@
         "python3",
         "scripts/build-web.py"
       ],
-      "ranAt": "2026-10-06T09:43:09.491046+00:00"
+      "ranAt": "2026-10-06T09:56:11.468576+00:00"
     },
     {
       "gate": "web-checks",
@@ -184,7 +184,7 @@
         "python3",
         "scripts/qualify-web.py"
       ],
-      "ranAt": "2026-10-06T09:43:11.095472+00:00"
+      "ranAt": "2026-10-06T09:56:13.126352+00:00"
     },
     {
       "gate": "browser-checks",
@@ -194,7 +194,7 @@
         "node",
         "scripts/browser/qualify.mjs"
       ],
-      "ranAt": "2026-10-06T09:43:34.301224+00:00"
+      "ranAt": "2026-10-06T09:56:34.854405+00:00"
     },
     {
       "gate": "coverage-reconciliation",
@@ -204,7 +204,7 @@
         "python3",
         "scripts/reconcile-coverage.py"
       ],
-      "ranAt": "2026-10-06T09:43:34.459816+00:00"
+      "ranAt": "2026-10-06T09:56:35.012097+00:00"
     },
     {
       "gate": "backlog-priorities",
@@ -214,7 +214,7 @@
         "python3",
         "scripts/prioritize-uncovered.py"
       ],
-      "ranAt": "2026-10-06T09:43:34.578569+00:00"
+      "ranAt": "2026-10-06T09:56:35.128221+00:00"
     }
   ],
   "blockers": [
@@ -280,19 +280,19 @@
     {
       "path": "node-agent/build/deproof-node",
       "kind": "darwin-amd64-node-binary",
-      "sha256": "fff8d557fc439a941bcc2847d630a73d18f6b227e22259a8702ba74fadca1c22",
+      "sha256": "5995fecddb72144f0072a2ac5c17f8989d395ce643e83e80ea65c8038e53f7ab",
       "bytes": "10730048"
     },
     {
       "path": "prover-worker/build/prove",
       "kind": "local-proof-producer",
-      "sha256": "2d12160ddadd607ac328ed034c52b96124fd9808e005d0970d99b7a3ee422cf2",
+      "sha256": "b0654133f2c5cc3a8f1393039be0ca1f182cf7f1544d339c7c9d1a911bbdca6c",
       "bytes": "16556848"
     },
     {
       "path": "prover-worker/build/verify",
       "kind": "independent-proof-verifier",
-      "sha256": "f3a174016880a9910f089242234173fa710a3a083bcc81125b0b860d15fdd571",
+      "sha256": "deee72c256b298cd4baffdfde0f7050aa04972bd78285e29a7eb1b2af14566a4",
       "bytes": "9640336"
     },
     {
@@ -521,6 +521,42 @@
       "path": "prover-worker/build/qualified-result-20261006T060637Z-63781/proof.bin",
       "kind": "local-proof-artifact",
       "sha256": "7c4c749ddb5b8bf05a9b0da951f30feff5692659dca3e6c533b1a125e5743528",
+      "bytes": "164"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T095525Z-77774/circuit.r1cs",
+      "kind": "local-proof-artifact",
+      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
+      "bytes": "867"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T095525Z-77774/verification-key.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "211a029b94e0de158973f06b2de625a89d5aa0e071493a5b1eeea27a9566424e",
+      "bytes": "364"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T095525Z-77774/proving-key.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "6135521d16464d8671f5bb9b9c010caa270bfdeb57de02b25e5797d53baf7286",
+      "bytes": "1027"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T095525Z-77774/public-witness.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
+      "bytes": "44"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T095525Z-77774/manifest.json",
+      "kind": "local-proof-artifact",
+      "sha256": "0aa53e443dd4ab5f5f47ad80730554444615bd6508acf6fcd8d0d01c143a4e92",
+      "bytes": "695"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T095525Z-77774/proof.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "18040ea62c499715b6115646ccde9ff0b8203ddd03f2030f3ff93899876ba773",
       "bytes": "164"
     },
     {
@@ -820,8 +856,8 @@
     {
       "path": "evidence/qualification/deproof-source-snapshot.zip",
       "kind": "local-source-snapshot",
-      "sha256": "c10587fb81144f68609967ea83ce85ec2da76a8c214cebb1a7da4e9c99459e9b",
-      "bytes": "16939359"
+      "sha256": "426017b6cfa6f2132ab05166c8301e57da3d97f99ba77dba11d1f6d70a0b924f",
+      "bytes": "16942709"
     }
   ],
   "coverage": {
@@ -2571,7 +2607,9 @@
           "C043",
           "C044"
         ],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/InspectionTest.kt::verdictsArePerInstructionInOrderAndIndependent"
+        ],
         "qualificationDimensions": [
           "NOT_RUN"
         ],
@@ -2637,7 +2675,10 @@
           "C087",
           "C088"
         ],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/InspectionTest.kt::allowedMemoSummaryShowsTheExactMemoText",
+          "app/src/test/java/com/example/domain/InspectionTest.kt::allowedTransferSummaryStatesAmountTokenAccountAndRecipient"
+        ],
         "qualificationDimensions": [
           "NOT_RUN"
         ],
@@ -2886,7 +2927,9 @@
           "C087",
           "C088"
         ],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/ReviewBindingTest.kt::storedHashesAreUnaffectedByCallerBufferChanges"
+        ],
         "qualificationDimensions": [
           "NOT_RUN"
         ],
@@ -2952,7 +2995,11 @@
           "C087",
           "C088"
         ],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/CoreTest.kt::memoParserAndImmutableMessageContextMutations",
+          "app/src/test/java/com/example/domain/ReviewBindingTest.kt::reviewTimestampChangeIsRejected",
+          "app/src/test/java/com/example/domain/ReviewBindingTest.kt::signingGateRefusesWalletAccountThatIsNotTheFeePayer"
+        ],
         "qualificationDimensions": [
           "NOT_RUN"
         ],
@@ -3015,7 +3062,9 @@
           "C087",
           "C088"
         ],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/ReviewBindingTest.kt::signingGateRefusesMessageChangedAfterReview"
+        ],
         "qualificationDimensions": [
           "NOT_RUN"
         ],
@@ -3077,7 +3126,10 @@
           "C087",
           "C088"
         ],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval",
+          "app/src/test/java/com/example/domain/ReviewBindingTest.kt::feeAndBlockHeightChangesAreRejected"
+        ],
         "qualificationDimensions": [
           "NOT_RUN"
         ],
@@ -3143,7 +3195,10 @@
           "C087",
           "C088"
         ],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/PolicyTest.kt::firstRebuildIsAllowedAndASecondIsNot",
+          "app/src/test/java/com/example/domain/PolicyTest.kt::rebuiltDraftDoesNotInheritThePriorApproval"
+        ],
         "qualificationDimensions": [
           "NOT_RUN"
         ],
@@ -7881,7 +7936,9 @@
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/ReviewBindingTest.kt::storedHashesAreUnaffectedByCallerBufferChanges"
+        ],
         "qualificationDimensions": [
           "NOT_RUN"
         ],
@@ -7921,7 +7978,10 @@
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval",
+          "app/src/test/java/com/example/domain/ReviewBindingTest.kt::signingGateRefusesMessageChangedAfterReview"
+        ],
         "qualificationDimensions": [
           "NOT_RUN"
         ],
@@ -10217,7 +10277,10 @@
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/PolicyTest.kt::firstRebuildIsAllowedAndASecondIsNot",
+          "app/src/test/java/com/example/domain/PolicyTest.kt::rebuiltDraftDoesNotInheritThePriorApproval"
+        ],
         "qualificationDimensions": [
           "NOT_RUN"
         ],
@@ -11711,7 +11774,11 @@
         "evidencePaths": [],
         "dependencies": [],
         "checks": [],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/LookupTableTest.kt::instructionReferencingAnAccountBeyondStaticKeysIsRefused",
+          "app/src/test/java/com/example/domain/LookupTableTest.kt::legacyMessageResolvesToItsStaticKeysOnly",
+          "app/src/test/java/com/example/domain/LookupTableTest.kt::versionedMessageWithLookupTableIsRefused"
+        ],
         "qualificationDimensions": [],
         "limitations": [
           "Full typed contract/required integration remains incomplete."
@@ -12295,7 +12362,9 @@
         "evidencePaths": [],
         "dependencies": [],
         "checks": [],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/PolicyTest.kt::onlyHardwareBackedKeyLevelsQualify"
+        ],
         "qualificationDimensions": [],
         "limitations": [
           "Full typed contract/required integration remains incomplete."
