@@ -1,0 +1,5370 @@
+{
+ "schema": "deproof-requirement-priorities-v1",
+ "source": "evidence/qualification/prioritized-backlog.json",
+ "sourceMissingNote": "Generated from the backlog; statuses are not re-derived from source.",
+ "total": 281,
+ "bucketCounts": {
+  "missing_local_tests": 199,
+  "local_verification_remaining": 43,
+  "device_validation": 7,
+  "missing_code": 27,
+  "external_integration": 5
+ },
+ "orderingRule": "priority asc, then gap rank (missing_code, missing_local_tests, local_verification_remaining, device_validation, external_integration), then phase, then id. Dependencies in the backlog are categories, not requirement IDs, so this is a heuristic order.",
+ "requirements": [
+  {
+   "id": "C047",
+   "priority": 0,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Hash is stored when Review opens.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 1
+  },
+  {
+   "id": "C048",
+   "priority": 0,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Approve recomputes the hash.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 2,
+   "localTestEvidence": [
+    "app/src/test/java/com/example/domain/ReviewBindingTest.kt::signingGateRefusesMessageChangedAfterReview",
+    "app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval"
+   ],
+   "localTestEvidenceNote": "Candidate coverage added or found locally in unit tests (31 tests passing, testDebugUnitTest). Registry status NOT changed; device acceptance still required where listed."
+  },
+  {
+   "id": "C095",
+   "priority": 0,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "At most one memo draft rebuild on blockhash expiry, with fresh review and authorization; never reuse prior approval.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 3
+  },
+  {
+   "id": "F040",
+   "priority": 0,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Inspect every instruction in the transaction.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 4
+  },
+  {
+   "id": "F041",
+   "priority": 0,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Present a plain-language transaction summary.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 5
+  },
+  {
+   "id": "F045",
+   "priority": 0,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Hash the complete serialized transaction message.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 6,
+   "localTestEvidence": [
+    "app/src/test/java/com/example/domain/ReviewBindingTest.kt::storedHashesAreUnaffectedByCallerBufferChanges",
+    "app/src/test/java/com/example/domain/ReviewBindingTest.kt::messageHashIsIndependentOfReviewContextButContextHashIsNot"
+   ],
+   "localTestEvidenceNote": "Candidate coverage added or found locally in unit tests (31 tests passing, testDebugUnitTest). Registry status NOT changed; device acceptance still required where listed."
+  },
+  {
+   "id": "F046",
+   "priority": 0,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Bind review to account, cluster, and timestamp.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 7,
+   "localTestEvidence": [
+    "app/src/test/java/com/example/domain/ReviewBindingTest.kt::reviewTimestampChangeIsRejected",
+    "app/src/test/java/com/example/domain/ReviewBindingTest.kt::feeAndBlockHeightChangesAreRejected",
+    "app/src/test/java/com/example/domain/ReviewBindingTest.kt::signingGateRefusesWalletAccountThatIsNotTheFeePayer"
+   ],
+   "localTestEvidenceNote": "Candidate coverage added or found locally in unit tests (31 tests passing, testDebugUnitTest). Registry status NOT changed; device acceptance still required where listed."
+  },
+  {
+   "id": "F047",
+   "priority": 0,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Recompute immediately before wallet handoff.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 8,
+   "localTestEvidence": [
+    "app/src/test/java/com/example/domain/ReviewBindingTest.kt::signingGateRefusesMessageChangedAfterReview"
+   ],
+   "localTestEvidenceNote": "Candidate coverage added or found locally in unit tests (31 tests passing, testDebugUnitTest). Registry status NOT changed; device acceptance still required where listed."
+  },
+  {
+   "id": "F048",
+   "priority": 0,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Block message or review-context changes.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 9,
+   "localTestEvidence": [
+    "app/src/test/java/com/example/domain/ReviewBindingTest.kt::reviewTimestampChangeIsRejected",
+    "app/src/test/java/com/example/domain/CoreTest.kt::memoParserAndImmutableMessageContextMutations"
+   ],
+   "localTestEvidenceNote": "Candidate coverage added or found locally in unit tests (31 tests passing, testDebugUnitTest). Registry status NOT changed; device acceptance still required where listed."
+  },
+  {
+   "id": "F049",
+   "priority": 0,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Require fresh review after blockhash rebuild.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 10
+  },
+  {
+   "id": "FN062",
+   "priority": 0,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`signEvidenceEnvelope(envelopeBytes)` \u2014 default v2 SHA256withECDSA signature over exact domain-separated envelope bytes; DER/SPKI, security-level observation and independently verifiable payload. SOFTWARE_KEY/NO_KEYSTORE/UNQUALIFIED_KEY are explicit failures.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/EvidenceSigner.kt"
+   ],
+   "testsListed": 0,
+   "order": 11
+  },
+  {
+   "id": "F067",
+   "priority": 0,
+   "phase": "P1",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Sign versioned evidence envelopes with Android Keystore; support legacy digest mode only with explicit metadata.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/data/EvidenceSigner.kt",
+    "app/src/main/java/com/example/data/Store.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "app/src/main/resources/db/migration_1_2.sql",
+    "tools/verify.py"
+   ],
+   "testsListed": 2,
+   "order": 12
+  },
+  {
+   "id": "F079",
+   "priority": 0,
+   "phase": "P1",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Track pending, confirmed, finalized, failed, and unavailable observations.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/data/Store.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "app/src/main/resources/db/migration_1_2.sql"
+   ],
+   "testsListed": 2,
+   "order": 13
+  },
+  {
+   "id": "FN048",
+   "priority": 0,
+   "phase": "P1",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`rebuildExpiredTransaction(previous)` \u2014 new draft that invalidates previous approval.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/domain/Solana.kt"
+   ],
+   "testsListed": 1,
+   "order": 14
+  },
+  {
+   "id": "FN055",
+   "priority": 0,
+   "phase": "P1",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`refreshReceiptStatus(id)` \u2014 bounded status observation and persistence.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/data/Store.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "app/src/main/resources/db/migration_1_2.sql"
+   ],
+   "testsListed": 2,
+   "order": 15
+  },
+  {
+   "id": "F060",
+   "priority": 0,
+   "phase": "P2",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Save drafts and recover after process death.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/data/Store.kt",
+    "app/src/main/resources/db/migration_1_2.sql"
+   ],
+   "testsListed": 2,
+   "order": 16
+  },
+  {
+   "id": "FN051",
+   "priority": 0,
+   "phase": "P2",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`createTask(input)` \u2014 validated persisted task.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/data/Store.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "app/src/main/resources/db/migration_1_2.sql"
+   ],
+   "testsListed": 2,
+   "order": 17
+  },
+  {
+   "id": "FN052",
+   "priority": 0,
+   "phase": "P2",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`attachEvidence(taskId, file)` \u2014 file metadata, digest, and association.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/data/Store.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "app/src/main/resources/db/migration_1_2.sql"
+   ],
+   "testsListed": 2,
+   "order": 18
+  },
+  {
+   "id": "F118",
+   "priority": 0,
+   "phase": "P5",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Optional encrypted backup and restore.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/data/Store.kt",
+    "app/src/main/resources/db/migration_1_2.sql",
+    "tools/bundle.py",
+    "tools/test_bundle.py"
+   ],
+   "testsListed": 2,
+   "order": 19
+  },
+  {
+   "id": "F097",
+   "priority": 0,
+   "phase": "P1",
+   "bucket": "device_validation",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "IMPLEMENTED_MISSING_DEVICE_VERIFICATION",
+   "acceptance": "Rebuild expired transactions with a fresh review.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/domain/Solana.kt"
+   ],
+   "testsListed": 1,
+   "order": 20
+  },
+  {
+   "id": "F117",
+   "priority": 1,
+   "phase": "P4",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Localization with complete translation coverage.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/LanguageControls.kt",
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/res/values/strings.xml",
+    "app/src/main/res/values-es/strings.xml"
+   ],
+   "testsListed": 1,
+   "order": 21
+  },
+  {
+   "id": "F058",
+   "priority": 1,
+   "phase": "P2",
+   "bucket": "device_validation",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "IMPLEMENTED_MISSING_ANDROID_VERIFICATION",
+   "acceptance": "Collect location only with explicit consent.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/WorkflowWorkspace.kt",
+    "app/src/main/java/com/example/data/LocationCapture.kt",
+    "app/src/main/java/com/example/domain/Workflows.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "tools/verify.py",
+    "contracts/location-observation-v1.schema.json"
+   ],
+   "testsListed": 3,
+   "order": 22
+  },
+  {
+   "id": "F105",
+   "priority": 1,
+   "phase": "P2",
+   "bucket": "device_validation",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "IMPLEMENTED_MISSING_ANDROID_VERIFICATION",
+   "acceptance": "Mapping task planner.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/WorkflowWorkspace.kt",
+    "app/src/main/java/com/example/domain/Workflows.kt",
+    "app/src/main/java/com/example/data/Store.kt"
+   ],
+   "testsListed": 2,
+   "order": 23
+  },
+  {
+   "id": "F115",
+   "priority": 1,
+   "phase": "P2",
+   "bucket": "device_validation",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "IMPLEMENTED_MISSING_ANDROID_VERIFICATION",
+   "acceptance": "Local reminders and notification preferences.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/WorkflowWorkspace.kt",
+    "app/src/main/java/com/example/data/ReminderRepository.kt",
+    "app/src/main/java/com/example/domain/Workflows.kt",
+    "app/src/main/AndroidManifest.xml"
+   ],
+   "testsListed": 2,
+   "order": 24
+  },
+  {
+   "id": "FN042",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_code",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`resolveLookupTables(message)` \u2014 verified address resolution or refusal.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 25
+  },
+  {
+   "id": "EF009",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "missing_code",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": null,
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 26
+  },
+  {
+   "id": "EF017",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "missing_code",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": null,
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 27
+  },
+  {
+   "id": "EF019",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "missing_code",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": null,
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 28
+  },
+  {
+   "id": "FN056",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "missing_code",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`verifyStakingProtocol(source)` \u2014 validated interface metadata and fixtures.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 29
+  },
+  {
+   "id": "FN057",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "missing_code",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`decodeSkrStake(ix, verifiedInterface)` \u2014 supported operation or refusal.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 30
+  },
+  {
+   "id": "FN058",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "missing_code",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`computeWithdrawEligibility(state)` \u2014 protocol-derived decision.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 31
+  },
+  {
+   "id": "FN059",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "missing_code",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`runConnector(connectorId, request)` \u2014 attributable adapter result with freshness.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 32
+  },
+  {
+   "id": "E001",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Real MWA authorized account; absent wallet/rejection/disconnect handled; no fixture session in production; device proof recorded",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 33
+  },
+  {
+   "id": "E003",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Expose every instruction, recipient/token account, amount, fee, requester and limits; historical observation cannot authorize",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 34
+  },
+  {
+   "id": "E004",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Full immutable message/context binding before and after wallet signing; mutation and lookup/account/cluster/evidence changes refuse submit",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 35
+  },
+  {
+   "id": "E005",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Real processed/confirmed/finalized/failed/unknown status and unavailable observation; retain prior verified state with timestamp",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 36
+  },
+  {
+   "id": "E006",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Official-source plus on-chain ownership/decimals/deployment validation; wrong/lookalike mint refuses; source version recorded",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 37
+  },
+  {
+   "id": "E007",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Full u64 boundaries, 6-decimal SKR after validation, exact decimal strings, no Number/float truncation",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 38
+  },
+  {
+   "id": "E026",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Stream raw file bytes, bounded content access, compare known digests; no base64-wrapper hash, false physical claim or lost URI permission",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 39
+  },
+  {
+   "id": "E027",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Qualified Android evidence envelope, true reported security level and independent verification; unsupported hardware/software key never masquerades as TEE/StrongBox",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 40
+  },
+  {
+   "id": "E028",
+   "priority": 2,
+   "phase": "P1/P2",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Deterministic versioned JCS and golden vectors, exact notes/Unicode/file order/nulls; bind to action or explicit evidence-only context",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 41
+  },
+  {
+   "id": "E029",
+   "priority": 2,
+   "phase": "P1/P4",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Schema-valid self-contained verification material, redacted secrets, v1/v2 migration semantics, offline verification/import and hashes; local paths never substitute for portable evidence",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 42
+  },
+  {
+   "id": "F001",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Paste a mainnet account address.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/data/Rpc.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 43
+  },
+  {
+   "id": "F005",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Read only the verified official SKR mint.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/data/Rpc.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 44
+  },
+  {
+   "id": "F006",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Sum balances across all matching token accounts.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/data/Rpc.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 45
+  },
+  {
+   "id": "F007",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Validate token decimals and account metadata.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/data/Rpc.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 46
+  },
+  {
+   "id": "F009",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Label pasted accounts as observed, not connected.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/data/Rpc.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 47
+  },
+  {
+   "id": "F010",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Preserve independent SOL and SKR loading/error states.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/data/Rpc.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 48
+  },
+  {
+   "id": "F011",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Discover compatible MWA wallets.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/wallet/Wallet.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 49
+  },
+  {
+   "id": "F012",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Request real wallet authorization.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/wallet/Wallet.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 50
+  },
+  {
+   "id": "F013",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Select an authorized account.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/wallet/Wallet.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 51
+  },
+  {
+   "id": "F014",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Display the actual returned account and wallet identity.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/wallet/Wallet.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 52
+  },
+  {
+   "id": "F015",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Disconnect and invalidate the session.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/wallet/Wallet.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 53
+  },
+  {
+   "id": "F016",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Reauthorize when required.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/wallet/Wallet.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 54
+  },
+  {
+   "id": "F017",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Surface missing-wallet errors.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/wallet/Wallet.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 55
+  },
+  {
+   "id": "F018",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Separate devnet and mainnet actions.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/wallet/Wallet.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 56
+  },
+  {
+   "id": "F019",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Sign and submit a minimal devnet memo.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/wallet/Wallet.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 57
+  },
+  {
+   "id": "F020",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Preserve and verify the real returned transaction signature.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/wallet/Wallet.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 58
+  },
+  {
+   "id": "F021",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Load the latest ten signatures with pagination.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Rpc.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 59
+  },
+  {
+   "id": "F022",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Fetch transaction details.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Rpc.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 60
+  },
+  {
+   "id": "F023",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Handle unavailable transaction records explicitly.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Rpc.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 61
+  },
+  {
+   "id": "F024",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Display processed, confirmed, and finalized states.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Rpc.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 62
+  },
+  {
+   "id": "F025",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Display transaction failures and error details.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Rpc.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 63
+  },
+  {
+   "id": "F026",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Show slot and chain block time.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Rpc.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 64
+  },
+  {
+   "id": "F027",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Link to the appropriate explorer and cluster.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Rpc.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 65
+  },
+  {
+   "id": "F028",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Decode history into a reviewable record.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Rpc.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 66
+  },
+  {
+   "id": "F029",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Clearly distinguish historical observation from new authorization.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Rpc.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 67
+  },
+  {
+   "id": "F030",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Refresh status without creating duplicate records.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Rpc.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 68
+  },
+  {
+   "id": "F031",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Verify the token program.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 69
+  },
+  {
+   "id": "F032",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Decode TransferChecked discriminator 12.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 70
+  },
+  {
+   "id": "F034",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Validate the decimals byte.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 71
+  },
+  {
+   "id": "F035",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Validate account order and required roles.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 72
+  },
+  {
+   "id": "F036",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Verify the official SKR mint.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 73
+  },
+  {
+   "id": "F037",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Flag SetAuthority.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 74
+  },
+  {
+   "id": "F038",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Flag Approve and delegation.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 75
+  },
+  {
+   "id": "F039",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Refuse unchecked or unsupported transfers in the strict SKR flow.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 76
+  },
+  {
+   "id": "F042",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Display full addresses on demand.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 77
+  },
+  {
+   "id": "F043",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Show requester identity and origin.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 78
+  },
+  {
+   "id": "F044",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Show fees and simulation outcomes where available.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 79
+  },
+  {
+   "id": "F050",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Reject locally without broadcasting.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 80
+  },
+  {
+   "id": "F064",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Detect digest mismatches.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "tools/verify.py"
+   ],
+   "testsListed": 0,
+   "order": 81
+  },
+  {
+   "id": "F066",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Link evidence digests to the reviewed action.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "tools/verify.py"
+   ],
+   "testsListed": 0,
+   "order": 82
+  },
+  {
+   "id": "F068",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Refuse software or unqualified keys for hardware-required signing.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/EvidenceSigner.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "tools/verify.py"
+   ],
+   "testsListed": 0,
+   "order": 83
+  },
+  {
+   "id": "F069",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Report observed key security level accurately.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/EvidenceSigner.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "tools/verify.py"
+   ],
+   "testsListed": 0,
+   "order": 84
+  },
+  {
+   "id": "F070",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Verify signatures independently and reject tampering.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/EvidenceSigner.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "tools/verify.py"
+   ],
+   "testsListed": 0,
+   "order": 85
+  },
+  {
+   "id": "F075",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Generate refusal receipts with no chain signature.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Store.kt",
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 86
+  },
+  {
+   "id": "F076",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Generate historical observation receipts.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Store.kt",
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 87
+  },
+  {
+   "id": "F077",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Generate local evidence-signature receipts.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Store.kt",
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 88
+  },
+  {
+   "id": "F078",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Generate submission receipts only after actual submission.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Store.kt",
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 89
+  },
+  {
+   "id": "F080",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Persist, search, inspect, and export receipts.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Store.kt",
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 90
+  },
+  {
+   "id": "F091",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Detect combined sensitive actions.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt"
+   ],
+   "testsListed": 0,
+   "order": 91
+  },
+  {
+   "id": "F092",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Flag token account close and burn instructions.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt"
+   ],
+   "testsListed": 0,
+   "order": 92
+  },
+  {
+   "id": "F094",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Warn about broad delegation.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt"
+   ],
+   "testsListed": 0,
+   "order": 93
+  },
+  {
+   "id": "F096",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Use a versioned program policy registry.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt"
+   ],
+   "testsListed": 0,
+   "order": 94
+  },
+  {
+   "id": "F098",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Calculate fee/rent impact from live context.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Rpc.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 95
+  },
+  {
+   "id": "F099",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Preserve unavailable states during network failure.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Rpc.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 96
+  },
+  {
+   "id": "F100",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Provide bounded retry, cancellation, and stale-data indicators.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Rpc.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 97
+  },
+  {
+   "id": "FN005",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`rankInstruction(ix)` \u2014 presentation order; never an authorization shortcut.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Helpers.kt"
+   ],
+   "testsListed": 0,
+   "order": 98
+  },
+  {
+   "id": "FN006",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`toRequest(transaction)` \u2014 complete typed review request or named unsupported result.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Solana.kt"
+   ],
+   "testsListed": 0,
+   "order": 99
+  },
+  {
+   "id": "FN007",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`materialize(parsed)` \u2014 validated program, account roles, and instruction bytes.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Solana.kt"
+   ],
+   "testsListed": 0,
+   "order": 100
+  },
+  {
+   "id": "FN008",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`decodeInstruction(ix)` \u2014 typed operation or explicit unsupported verdict.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt"
+   ],
+   "testsListed": 0,
+   "order": 101
+  },
+  {
+   "id": "FN017",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`canSign(review, session, context)` \u2014 full UI approval predicate including policy, unchanged bytes/context, account/cluster, blockhash, fee and prior-devnet gate; no safety guarantee.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Solana.kt"
+   ],
+   "testsListed": 0,
+   "order": 102
+  },
+  {
+   "id": "FN018",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`verdictOf(decoded)` \u2014 understandable title, reason, and severity.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt"
+   ],
+   "testsListed": 0,
+   "order": 103
+  },
+  {
+   "id": "FN019",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`summaryOf(request)` \u2014 amount, asset, recipient, operation, and limitations.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt"
+   ],
+   "testsListed": 0,
+   "order": 104
+  },
+  {
+   "id": "FN022",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`observeSettlement(signature, cluster)` \u2014 observed state or unavailable error.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Rpc.kt"
+   ],
+   "testsListed": 0,
+   "order": 105
+  },
+  {
+   "id": "FN023",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`getSkrRawBalance(address)` \u2014 verified token-account aggregation.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Rpc.kt"
+   ],
+   "testsListed": 0,
+   "order": 106
+  },
+  {
+   "id": "FN024",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`signDevnetMemo(wallet, memo)` \u2014 reviewed real signing, returned-byte validation, RPC submission and matched signature; return explicit wallet rejection/capability/RPC errors. Never silently sign-and-send.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/wallet/Wallet.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 107
+  },
+  {
+   "id": "FN025",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`latestDevnetBlockhash()` \u2014 blockhash plus last-valid block height.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Rpc.kt"
+   ],
+   "testsListed": 0,
+   "order": 108
+  },
+  {
+   "id": "FN026",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`connect()` \u2014 real authorized wallet session.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/wallet/Wallet.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 109
+  },
+  {
+   "id": "FN027",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`disconnect()` \u2014 session invalidation and explicit failure handling.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/wallet/Wallet.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 110
+  },
+  {
+   "id": "FN028",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`saveObservation(record)` \u2014 preserve chain provenance and review integrity.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Store.kt",
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 111
+  },
+  {
+   "id": "FN029",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`reject(request)` \u2014 local refusal record with null transaction signature.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Store.kt",
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 112
+  },
+  {
+   "id": "FN030",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`copyReceipt(receipt)` \u2014 clipboard export with accessible fallback.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Store.kt",
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 113
+  },
+  {
+   "id": "FN035",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`statusLabel(state)` \u2014 text and severity without relying only on color.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Helpers.kt"
+   ],
+   "testsListed": 0,
+   "order": 114
+  },
+  {
+   "id": "FN036",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`cooldownRemaining(timerSource, clock)` \u2014 validated protocol timing or explicitly labeled illustrative timing; never withdrawal authorization; clamp elapsed to zero, reject invalid/future starts per documented policy.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Helpers.kt"
+   ],
+   "testsListed": 0,
+   "order": 115
+  },
+  {
+   "id": "FN037",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`selectCluster(action)` \u2014 explicit compatible cluster or rejection.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Helpers.kt"
+   ],
+   "testsListed": 0,
+   "order": 116
+  },
+  {
+   "id": "FN038",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`refuseUndecoded(ix)` \u2014 named refusal without invented amounts.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt"
+   ],
+   "testsListed": 0,
+   "order": 117
+  },
+  {
+   "id": "FN040",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`exportReceipt(receipt)` \u2014 schema-valid portable record.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Store.kt",
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 118
+  },
+  {
+   "id": "FN041",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`parseTransaction(bytes)` \u2014 strict legacy/versioned transaction parsing.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Solana.kt"
+   ],
+   "testsListed": 0,
+   "order": 119
+  },
+  {
+   "id": "FN043",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`evaluateAllInstructions(tx, policy)` \u2014 whole-transaction policy result.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt"
+   ],
+   "testsListed": 0,
+   "order": 120
+  },
+  {
+   "id": "FN044",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`simulateTransaction(tx)` \u2014 simulation context, errors, and limitations.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Rpc.kt"
+   ],
+   "testsListed": 0,
+   "order": 121
+  },
+  {
+   "id": "FN045",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`estimateFee(message)` \u2014 live fee estimate with context.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Rpc.kt"
+   ],
+   "testsListed": 0,
+   "order": 122
+  },
+  {
+   "id": "FN046",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`validateTokenAccount(account, expected)` \u2014 mint, owner, role, and state checks.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt"
+   ],
+   "testsListed": 0,
+   "order": 123
+  },
+  {
+   "id": "FN047",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`buildSkrTransfer(parameters)` \u2014 exact verified transaction construction.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Helpers.kt"
+   ],
+   "testsListed": 0,
+   "order": 124
+  },
+  {
+   "id": "FN049",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`submitSignedTransaction(bytes)` \u2014 broadcast signature and submission context.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Rpc.kt"
+   ],
+   "testsListed": 0,
+   "order": 125
+  },
+  {
+   "id": "FN054",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`createReceipt(event)` \u2014 outcome-specific receipt without invented fields.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Store.kt",
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 126
+  },
+  {
+   "id": "F051",
+   "priority": 2,
+   "phase": "P2",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Capture photos with explicit permission.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/data/Store.kt"
+   ],
+   "testsListed": 0,
+   "order": 127
+  },
+  {
+   "id": "F052",
+   "priority": 2,
+   "phase": "P2",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Import existing photos.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/data/Store.kt"
+   ],
+   "testsListed": 0,
+   "order": 128
+  },
+  {
+   "id": "F053",
+   "priority": 2,
+   "phase": "P2",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Capture or import supported video files.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/data/Store.kt"
+   ],
+   "testsListed": 0,
+   "order": 129
+  },
+  {
+   "id": "F054",
+   "priority": 2,
+   "phase": "P2",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Import documents through Android content APIs.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/data/Store.kt"
+   ],
+   "testsListed": 0,
+   "order": 130
+  },
+  {
+   "id": "F056",
+   "priority": 2,
+   "phase": "P2",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Add notes.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/data/Store.kt"
+   ],
+   "testsListed": 0,
+   "order": 131
+  },
+  {
+   "id": "F057",
+   "priority": 2,
+   "phase": "P2",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Record capture and import metadata.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/data/Store.kt"
+   ],
+   "testsListed": 0,
+   "order": 132
+  },
+  {
+   "id": "F059",
+   "priority": 2,
+   "phase": "P2",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Attach several files to a task.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/data/Store.kt"
+   ],
+   "testsListed": 0,
+   "order": 133
+  },
+  {
+   "id": "F071",
+   "priority": 2,
+   "phase": "P2",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Create local field-verification tasks.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Store.kt",
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 134
+  },
+  {
+   "id": "F072",
+   "priority": 2,
+   "phase": "P2",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Search and filter tasks.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Store.kt",
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 135
+  },
+  {
+   "id": "F073",
+   "priority": 2,
+   "phase": "P2",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Track task requirements and checklist progress.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Store.kt",
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 136
+  },
+  {
+   "id": "F074",
+   "priority": 2,
+   "phase": "P2",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Associate evidence with tasks.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Store.kt",
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 137
+  },
+  {
+   "id": "E020",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Compare attributable provider accrual/claimable/paid records with observed on-chain payments; identify asset and mint; no fixed/guaranteed rewards or presumption every payout is SKR",
+   "implementationPaths": [
+    "node-agent/internal/agent/agent.go"
+   ],
+   "testsListed": 0,
+   "order": 138
+  },
+  {
+   "id": "E022",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Observed CPU/RAM/disk/runtime/backend capabilities versus job requirements; unsupported jobs blocked with reason; no fabricated GPU/device attestation",
+   "implementationPaths": [
+    "prover-worker/cmd/prove/main.go",
+    "prover-worker/cmd/verify/main.go"
+   ],
+   "testsListed": 0,
+   "order": 139
+  },
+  {
+   "id": "EF024",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": null,
+   "implementationPaths": [
+    "scripts/qualify.sh"
+   ],
+   "testsListed": 0,
+   "order": 140
+  },
+  {
+   "id": "F109",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Presence-evidence records with explicit assurance limits.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Records.kt",
+    "docs/threat-model.md"
+   ],
+   "testsListed": 0,
+   "order": 141
+  },
+  {
+   "id": "EF023",
+   "priority": 2,
+   "phase": "P4",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": null,
+   "implementationPaths": [
+    "app/src/main/java/com/example/MainActivity.kt",
+    "tools/verify.py",
+    "tools/bundle.py"
+   ],
+   "testsListed": 0,
+   "order": 142
+  },
+  {
+   "id": "F120",
+   "priority": 2,
+   "phase": "P4",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Signed release packaging, checksums, qualification report, and submission bundle.",
+   "implementationPaths": [
+    "scripts/qualify.sh",
+    "scripts/update-coverage.py",
+    "docs/setup.md"
+   ],
+   "testsListed": 0,
+   "order": 143
+  },
+  {
+   "id": "FN060",
+   "priority": 2,
+   "phase": "P4",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`exportQualificationReport(results)` \u2014 machine-readable gates and artifact digests.",
+   "implementationPaths": [
+    "scripts/qualify.sh",
+    "scripts/update-coverage.py"
+   ],
+   "testsListed": 0,
+   "order": 144
+  },
+  {
+   "id": "F114",
+   "priority": 2,
+   "phase": "P5",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Evidence/account recovery guidance and verified backup/provider handoff without wallet secrets, recovery-service upsells or promises to recover stolen funds.",
+   "implementationPaths": [
+    "docs/setup.md",
+    "docs/privacy.md"
+   ],
+   "testsListed": 0,
+   "order": 145
+  },
+  {
+   "id": "E002",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Decode addresses, validate cluster/genesis context and account roles; query identity distinct from input draft; test wrong-cluster handoff",
+   "implementationPaths": [
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/data/Rpc.kt",
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "app/src/main/java/com/example/domain/Solana.kt"
+   ],
+   "testsListed": 2,
+   "order": 146
+  },
+  {
+   "id": "F003",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Read SOL balance from RPC.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/data/Rpc.kt",
+    "app/src/main/java/com/example/domain/Core.kt"
+   ],
+   "testsListed": 2,
+   "order": 147
+  },
+  {
+   "id": "F008",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Display context slot and observation time.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/data/Rpc.kt",
+    "app/src/main/java/com/example/domain/Core.kt"
+   ],
+   "testsListed": 2,
+   "order": 148
+  },
+  {
+   "id": "F093",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Explain account creation and rent effects.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Explanations.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 1,
+   "order": 149
+  },
+  {
+   "id": "FN004",
+   "priority": 2,
+   "phase": "P1",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`loadAccount(address)` \u2014 independent balance results and paginated activity context.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Rpc.kt"
+   ],
+   "testsListed": 2,
+   "order": 150
+  },
+  {
+   "id": "E011",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Stable public-key identity, authenticated pairing, protected key, key rotation/revocation; forged/replayed event and unauthorized host rejected",
+   "implementationPaths": [
+    "app/src/main/java/com/example/NodeWorkspace.kt",
+    "app/src/main/java/com/example/data/NodeClient.kt",
+    "app/src/main/java/com/example/data/NodeRepository.kt",
+    "app/src/main/java/com/example/domain/NodeProtocol.kt",
+    "node-agent/internal/agent/agent.go",
+    "node-agent/internal/agent/proof.go",
+    "prover-worker/cmd/prove/main.go",
+    "prover-worker/cmd/verify/main.go",
+    "tools/proof_jobs.py"
+   ],
+   "testsListed": 2,
+   "order": 151
+  },
+  {
+   "id": "E012",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Real start/stop/status for reviewed allowlisted user-owned service profiles; actual process/container evidence; loopback-first, declared ports/mounts and recovery",
+   "implementationPaths": [
+    "app/src/main/java/com/example/NodeWorkspace.kt",
+    "app/src/main/java/com/example/data/NodeClient.kt",
+    "app/src/main/java/com/example/data/NodeRepository.kt",
+    "app/src/main/java/com/example/domain/NodeProtocol.kt",
+    "node-agent/internal/agent/agent.go",
+    "node-agent/internal/agent/hosting.go",
+    "scripts/qualify-hosting.py",
+    "tools/local_hosting.py"
+   ],
+   "testsListed": 2,
+   "order": 152
+  },
+  {
+   "id": "E013",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Qualified runtime with resource caps, nonroot user, restricted capabilities/mounts and network policy; hostile resource/filesystem/process fixtures prove boundaries; failure disables hosting",
+   "implementationPaths": [
+    "app/src/main/java/com/example/NodeWorkspace.kt",
+    "app/src/main/java/com/example/data/NodeClient.kt",
+    "app/src/main/java/com/example/data/NodeRepository.kt",
+    "app/src/main/java/com/example/domain/NodeProtocol.kt",
+    "node-agent/internal/agent/agent.go",
+    "node-agent/internal/agent/hosting.go",
+    "scripts/qualify-hosting.py",
+    "tools/local_hosting.py"
+   ],
+   "testsListed": 2,
+   "order": 153
+  },
+  {
+   "id": "E014",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Actual process identity, health probe, observed state and timestamp; stale heartbeat is unavailable/offline, not measured uptime; kill/restart/outage tests",
+   "implementationPaths": [
+    "app/src/main/java/com/example/NodeWorkspace.kt",
+    "app/src/main/java/com/example/data/NodeClient.kt",
+    "app/src/main/java/com/example/data/NodeRepository.kt",
+    "app/src/main/java/com/example/domain/NodeProtocol.kt",
+    "node-agent/internal/agent/agent.go",
+    "node-agent/internal/agent/hosting.go",
+    "scripts/qualify-hosting.py",
+    "tools/local_hosting.py"
+   ],
+   "testsListed": 2,
+   "order": 154
+  },
+  {
+   "id": "E016",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Explicit provider/destination/use consent, opt-in scope and instant stop; default disabled; permitted contribution flow rather than unrestricted anonymous exit traffic",
+   "implementationPaths": [
+    "app/src/main/java/com/example/NodeWorkspace.kt",
+    "app/src/main/java/com/example/data/NodeClient.kt",
+    "app/src/main/java/com/example/data/NodeRepository.kt",
+    "app/src/main/java/com/example/domain/NodeProtocol.kt",
+    "node-agent/internal/agent/agent.go",
+    "node-agent/internal/agent/proof.go",
+    "prover-worker/cmd/prove/main.go",
+    "prover-worker/cmd/verify/main.go",
+    "tools/proof_jobs.py"
+   ],
+   "testsListed": 2,
+   "order": 155
+  },
+  {
+   "id": "E017",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Enforced byte/time/rate limits and endpoint policy; pause on cap and report actual reason; controlled tests demonstrate enforcement despite restart",
+   "implementationPaths": [
+    "app/src/main/java/com/example/NodeWorkspace.kt",
+    "app/src/main/java/com/example/data/NodeClient.kt",
+    "app/src/main/java/com/example/data/NodeRepository.kt",
+    "app/src/main/java/com/example/domain/NodeProtocol.kt",
+    "node-agent/internal/agent/agent.go",
+    "node-agent/internal/agent/proof.go",
+    "prover-worker/cmd/prove/main.go",
+    "prover-worker/cmd/verify/main.go",
+    "tools/proof_jobs.py"
+   ],
+   "testsListed": 2,
+   "order": 156
+  },
+  {
+   "id": "E018",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Provider-defined raw byte/counter semantics, interval, sender/receiver identities and freshness; compare known transfers; local claim not independently verified automatically",
+   "implementationPaths": [
+    "app/src/main/java/com/example/NodeWorkspace.kt",
+    "app/src/main/java/com/example/data/NodeClient.kt",
+    "app/src/main/java/com/example/data/NodeRepository.kt",
+    "app/src/main/java/com/example/domain/NodeProtocol.kt",
+    "node-agent/internal/agent/agent.go",
+    "node-agent/internal/agent/proof.go",
+    "prover-worker/cmd/prove/main.go",
+    "prover-worker/cmd/verify/main.go",
+    "tools/proof_jobs.py"
+   ],
+   "testsListed": 2,
+   "order": 157
+  },
+  {
+   "id": "E019",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Domain-separated signed metering envelope with counter provenance/sequence; exact signature verification and tamper/replay tests; label producer versus peer-confirmed evidence",
+   "implementationPaths": [
+    "app/src/main/java/com/example/NodeWorkspace.kt",
+    "app/src/main/java/com/example/data/NodeClient.kt",
+    "app/src/main/java/com/example/data/NodeRepository.kt",
+    "app/src/main/java/com/example/domain/NodeProtocol.kt",
+    "node-agent/internal/agent/agent.go",
+    "node-agent/internal/agent/proof.go",
+    "prover-worker/cmd/prove/main.go",
+    "prover-worker/cmd/verify/main.go",
+    "tools/proof_jobs.py"
+   ],
+   "testsListed": 2,
+   "order": 158
+  },
+  {
+   "id": "E021",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Real local discovery endpoint plus qualified external adapter if available; signed bounded schema, version, deadline, input digest and compensation terms; malformed/expired jobs refused",
+   "implementationPaths": [
+    "app/src/main/java/com/example/NodeWorkspace.kt",
+    "app/src/main/java/com/example/data/NodeClient.kt",
+    "app/src/main/java/com/example/data/NodeRepository.kt",
+    "app/src/main/java/com/example/domain/NodeProtocol.kt",
+    "node-agent/internal/agent/agent.go",
+    "node-agent/internal/agent/proof.go",
+    "prover-worker/cmd/prove/main.go",
+    "prover-worker/cmd/verify/main.go",
+    "tools/proof_jobs.py"
+   ],
+   "testsListed": 2,
+   "order": 159
+  },
+  {
+   "id": "E023",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Execute a real supported proof backend with pinned circuit/program/version; produce actual proof/result bytes and commitments; known valid vector reproduced within resource caps",
+   "implementationPaths": [
+    "app/src/main/java/com/example/NodeWorkspace.kt",
+    "app/src/main/java/com/example/data/NodeClient.kt",
+    "app/src/main/java/com/example/data/NodeRepository.kt",
+    "app/src/main/java/com/example/domain/NodeProtocol.kt",
+    "node-agent/internal/agent/agent.go",
+    "node-agent/internal/agent/proof.go",
+    "prover-worker/cmd/prove/main.go",
+    "prover-worker/cmd/verify/main.go",
+    "tools/proof_jobs.py"
+   ],
+   "testsListed": 2,
+   "order": 160
+  },
+  {
+   "id": "E024",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Independent maintained verifier over proof/public inputs/verification key with pinned provenance; known valid succeeds, tampered/wrong-key/input/unsupported scheme fails",
+   "implementationPaths": [
+    "app/src/main/java/com/example/NodeWorkspace.kt",
+    "app/src/main/java/com/example/data/NodeClient.kt",
+    "app/src/main/java/com/example/data/NodeRepository.kt",
+    "app/src/main/java/com/example/domain/NodeProtocol.kt",
+    "node-agent/internal/agent/agent.go",
+    "node-agent/internal/agent/proof.go",
+    "prover-worker/cmd/prove/main.go",
+    "prover-worker/cmd/verify/main.go",
+    "tools/proof_jobs.py"
+   ],
+   "testsListed": 2,
+   "order": 161
+  },
+  {
+   "id": "E025",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Immutable job identity, agreed input commitment, producer/result digest, verification observation and optional chain anchor; receipt distinguishes claimed execution from independently verified result",
+   "implementationPaths": [
+    "app/src/main/java/com/example/NodeWorkspace.kt",
+    "app/src/main/java/com/example/data/NodeClient.kt",
+    "app/src/main/java/com/example/data/NodeRepository.kt",
+    "app/src/main/java/com/example/domain/NodeProtocol.kt",
+    "node-agent/internal/agent/agent.go",
+    "node-agent/internal/agent/proof.go",
+    "prover-worker/cmd/prove/main.go",
+    "prover-worker/cmd/verify/main.go",
+    "tools/proof_jobs.py"
+   ],
+   "testsListed": 2,
+   "order": 162
+  },
+  {
+   "id": "EF001",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": null,
+   "implementationPaths": [
+    "node-agent/internal/agent/agent.go"
+   ],
+   "testsListed": 1,
+   "order": 163
+  },
+  {
+   "id": "EF004",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": null,
+   "implementationPaths": [
+    "node-agent/internal/agent/agent.go"
+   ],
+   "testsListed": 1,
+   "order": 164
+  },
+  {
+   "id": "EF005",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": null,
+   "implementationPaths": [
+    "app/src/main/java/com/example/NodeWorkspace.kt",
+    "app/src/main/java/com/example/data/NodeClient.kt",
+    "app/src/main/java/com/example/data/NodeRepository.kt",
+    "app/src/main/java/com/example/domain/NodeProtocol.kt",
+    "node-agent/internal/agent/agent.go",
+    "node-agent/internal/agent/hosting.go",
+    "scripts/qualify-hosting.py",
+    "tools/local_hosting.py"
+   ],
+   "testsListed": 2,
+   "order": 165
+  },
+  {
+   "id": "EF008",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": null,
+   "implementationPaths": [
+    "app/src/main/java/com/example/NodeWorkspace.kt",
+    "app/src/main/java/com/example/data/NodeClient.kt",
+    "app/src/main/java/com/example/data/NodeRepository.kt",
+    "app/src/main/java/com/example/domain/NodeProtocol.kt",
+    "node-agent/internal/agent/agent.go",
+    "node-agent/internal/agent/hosting.go",
+    "scripts/qualify-hosting.py",
+    "tools/local_hosting.py"
+   ],
+   "testsListed": 2,
+   "order": 166
+  },
+  {
+   "id": "EF011",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": null,
+   "implementationPaths": [
+    "app/src/main/java/com/example/NodeWorkspace.kt",
+    "app/src/main/java/com/example/data/NodeClient.kt",
+    "app/src/main/java/com/example/data/NodeRepository.kt",
+    "app/src/main/java/com/example/domain/NodeProtocol.kt",
+    "node-agent/internal/agent/agent.go",
+    "node-agent/internal/agent/proof.go",
+    "prover-worker/cmd/prove/main.go",
+    "prover-worker/cmd/verify/main.go",
+    "tools/proof_jobs.py"
+   ],
+   "testsListed": 2,
+   "order": 167
+  },
+  {
+   "id": "EF012",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": null,
+   "implementationPaths": [
+    "app/src/main/java/com/example/NodeWorkspace.kt",
+    "app/src/main/java/com/example/data/NodeClient.kt",
+    "app/src/main/java/com/example/data/NodeRepository.kt",
+    "app/src/main/java/com/example/domain/NodeProtocol.kt",
+    "node-agent/internal/agent/agent.go",
+    "node-agent/internal/agent/proof.go",
+    "prover-worker/cmd/prove/main.go",
+    "prover-worker/cmd/verify/main.go",
+    "tools/proof_jobs.py"
+   ],
+   "testsListed": 2,
+   "order": 168
+  },
+  {
+   "id": "EF013",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": null,
+   "implementationPaths": [
+    "app/src/main/java/com/example/NodeWorkspace.kt",
+    "app/src/main/java/com/example/data/NodeClient.kt",
+    "app/src/main/java/com/example/data/NodeRepository.kt",
+    "app/src/main/java/com/example/domain/NodeProtocol.kt",
+    "node-agent/internal/agent/agent.go",
+    "node-agent/internal/agent/proof.go",
+    "prover-worker/cmd/prove/main.go",
+    "prover-worker/cmd/verify/main.go",
+    "tools/proof_jobs.py"
+   ],
+   "testsListed": 2,
+   "order": 169
+  },
+  {
+   "id": "EF016",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": null,
+   "implementationPaths": [
+    "app/src/main/java/com/example/NodeWorkspace.kt",
+    "app/src/main/java/com/example/data/NodeClient.kt",
+    "app/src/main/java/com/example/data/NodeRepository.kt",
+    "app/src/main/java/com/example/domain/NodeProtocol.kt",
+    "node-agent/internal/agent/agent.go",
+    "node-agent/internal/agent/proof.go",
+    "prover-worker/cmd/prove/main.go",
+    "prover-worker/cmd/verify/main.go",
+    "tools/proof_jobs.py",
+    "tools/verify.py"
+   ],
+   "testsListed": 2,
+   "order": 170
+  },
+  {
+   "id": "EF018",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": null,
+   "implementationPaths": [
+    "app/src/main/java/com/example/NodeWorkspace.kt",
+    "app/src/main/java/com/example/data/NodeClient.kt",
+    "app/src/main/java/com/example/data/NodeRepository.kt",
+    "app/src/main/java/com/example/domain/NodeProtocol.kt",
+    "node-agent/internal/agent/agent.go",
+    "node-agent/internal/agent/proof.go",
+    "prover-worker/cmd/prove/main.go",
+    "prover-worker/cmd/verify/main.go",
+    "tools/proof_jobs.py"
+   ],
+   "testsListed": 2,
+   "order": 171
+  },
+  {
+   "id": "EF020",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": null,
+   "implementationPaths": [
+    "app/src/main/java/com/example/NodeWorkspace.kt",
+    "app/src/main/java/com/example/data/NodeClient.kt",
+    "app/src/main/java/com/example/data/NodeRepository.kt",
+    "app/src/main/java/com/example/domain/NodeProtocol.kt",
+    "node-agent/internal/agent/agent.go",
+    "node-agent/internal/agent/proof.go",
+    "prover-worker/cmd/prove/main.go",
+    "prover-worker/cmd/verify/main.go",
+    "tools/proof_jobs.py"
+   ],
+   "testsListed": 2,
+   "order": 172
+  },
+  {
+   "id": "F104",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Bandwidth usage and contribution ledger.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/NodeWorkspace.kt",
+    "app/src/main/java/com/example/data/NodeClient.kt",
+    "app/src/main/java/com/example/data/NodeRepository.kt",
+    "app/src/main/java/com/example/domain/NodeProtocol.kt",
+    "node-agent/internal/agent/agent.go",
+    "node-agent/internal/agent/proof.go",
+    "prover-worker/cmd/prove/main.go",
+    "prover-worker/cmd/verify/main.go",
+    "tools/proof_jobs.py"
+   ],
+   "testsListed": 2,
+   "order": 173
+  },
+  {
+   "id": "F108",
+   "priority": 2,
+   "phase": "P3",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Compute-node health monitoring.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/NodeWorkspace.kt",
+    "app/src/main/java/com/example/data/NodeClient.kt",
+    "app/src/main/java/com/example/data/NodeRepository.kt",
+    "app/src/main/java/com/example/domain/NodeProtocol.kt",
+    "node-agent/internal/agent/agent.go",
+    "node-agent/internal/agent/proof.go",
+    "prover-worker/cmd/prove/main.go",
+    "prover-worker/cmd/verify/main.go",
+    "tools/proof_jobs.py"
+   ],
+   "testsListed": 2,
+   "order": 174
+  },
+  {
+   "id": "F119",
+   "priority": 2,
+   "phase": "P4",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Accurate multipage marketing/documentation website.",
+   "implementationPaths": [
+    "scripts/build-web.py",
+    "web/index.html",
+    "web/inspect.js",
+    "web/style.css"
+   ],
+   "testsListed": 1,
+   "order": 175
+  },
+  {
+   "id": "F116",
+   "priority": 2,
+   "phase": "P5",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Dark/light themes, screen-reader support, and large-text layouts.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/Theme.kt",
+    "scripts/build-web.py",
+    "web/inspect.js",
+    "web/style.css"
+   ],
+   "testsListed": 1,
+   "order": 176
+  },
+  {
+   "id": "E030",
+   "priority": 2,
+   "phase": "All phases",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_CODE_AND_TESTS",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Explicit capture/network/share/job/upload scopes, retention/deletion/export/revoke; no implicit evidence upload or wallet secret access; tests confirm denial and stop behavior",
+   "implementationPaths": [
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/NodeWorkspace.kt",
+    "app/src/main/java/com/example/data/NodeClient.kt",
+    "app/src/main/java/com/example/data/NodeRepository.kt",
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/NodeProtocol.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "node-agent/internal/agent/agent.go",
+    "node-agent/internal/agent/proof.go",
+    "prover-worker/cmd/prove/main.go",
+    "prover-worker/cmd/verify/main.go",
+    "tools/proof_jobs.py"
+   ],
+   "testsListed": 2,
+   "order": 177
+  },
+  {
+   "id": "F081",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "missing_code",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Verify official staking program specifications.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 178
+  },
+  {
+   "id": "F082",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "missing_code",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Decode supported staking instructions from validated layouts.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 179
+  },
+  {
+   "id": "F083",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "missing_code",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Identify verified guardian metadata.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 180
+  },
+  {
+   "id": "F084",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "missing_code",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Distinguish liquid, staked, and cooling balances.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 181
+  },
+  {
+   "id": "F085",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "missing_code",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Gate staking against observed eligibility and unlocked balances.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 182
+  },
+  {
+   "id": "F086",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "missing_code",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Preview partial unstake consequences.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 183
+  },
+  {
+   "id": "F087",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "missing_code",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Show protocol cooldown only from verified state; keep user-supplied illustrative timers visually distinct.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 184
+  },
+  {
+   "id": "F088",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "missing_code",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Enable withdrawal only when protocol eligibility is established.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 185
+  },
+  {
+   "id": "F089",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "missing_code",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Track claims from verified season rules.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 186
+  },
+  {
+   "id": "F090",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "missing_code",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Keep stake-on-claim opt-in and disclose source/date of yield information.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 187
+  },
+  {
+   "id": "F101",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "missing_code",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Hotspot coverage and earnings observation.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 188
+  },
+  {
+   "id": "F102",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "missing_code",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Earnings-degradation alerts.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 189
+  },
+  {
+   "id": "F103",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "missing_code",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Connectivity-plan comparison from attributable data.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 190
+  },
+  {
+   "id": "F106",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "missing_code",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Energy-device observation.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 191
+  },
+  {
+   "id": "F107",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "missing_code",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Sensor records with provenance.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 192
+  },
+  {
+   "id": "F110",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "missing_code",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Hardware transaction coordination through a verified external provider.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 193
+  },
+  {
+   "id": "F111",
+   "priority": 3,
+   "phase": "P5",
+   "bucket": "missing_code",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Task-based split-payment proposal and review.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 194
+  },
+  {
+   "id": "F112",
+   "priority": 3,
+   "phase": "P5",
+   "bucket": "missing_code",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Rent/deposit record tracking without claiming unverified escrow.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 195
+  },
+  {
+   "id": "F113",
+   "priority": 3,
+   "phase": "P5",
+   "bucket": "missing_code",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Remittance provider discovery with transparent quotes and explicit provider handoff.",
+   "implementationPaths": [],
+   "testsListed": 0,
+   "order": 196
+  },
+  {
+   "id": "C001",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Paste a mainnet address.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 197
+  },
+  {
+   "id": "C005",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Read only the official SKR mint via `getTokenAccountsByOwner` with mint filter, encoding `jsonParsed`.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 198
+  },
+  {
+   "id": "C006",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Sum every matching SKR token account with integer addition.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 199
+  },
+  {
+   "id": "C007",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Show SKR with 6 decimals.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 200
+  },
+  {
+   "id": "C009",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Label the row with the address that was actually queried, not the draft in the text field.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 201
+  },
+  {
+   "id": "C010",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "SOL and SKR reads are independent. One failure does not zero the other. Show each error.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 202
+  },
+  {
+   "id": "C011",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Pull-to-refresh repeats the read.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 203
+  },
+  {
+   "id": "C012",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Never display a cached balance as if it were a new read after an error. Label it `stale` or hide it.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 204
+  },
+  {
+   "id": "C013",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Last 10 signatures from `getSignaturesForAddress`.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 205
+  },
+  {
+   "id": "C014",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Fetch supported legacy/v0 transaction details with getTransaction and declared version support; retrieve raw/base64 bytes for exact-message binding. JSON views are supplementary.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 206
+  },
+  {
+   "id": "C015",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Prefer a TransferChecked instruction when several exist, for the card summary only. Authorization still evaluates every instruction.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 207
+  },
+  {
+   "id": "C016",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Show confirmation status: processed, confirmed, finalized, or absent.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 208
+  },
+  {
+   "id": "C017",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Show the RPC error on a failed transaction. `meta.err` is not success.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 209
+  },
+  {
+   "id": "C018",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Show slot and block time. Block time null stays null.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 210
+  },
+  {
+   "id": "C019",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Explorer link is a real URL: `https://explorer.solana.com/tx/<signature>?cluster=mainnet-beta` or `?cluster=devnet`.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 211
+  },
+  {
+   "id": "C020",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Skip a signature RPC says is missing. Show a skipped count, not a fake row.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 212
+  },
+  {
+   "id": "C021",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Never fabricate a signature.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 213
+  },
+  {
+   "id": "C022",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Open the chosen transaction in Review.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 214
+  },
+  {
+   "id": "C023",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Empty history is an empty state, not a fake row.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 215
+  },
+  {
+   "id": "C024",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Loading and error are different UI states.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 216
+  },
+  {
+   "id": "C025",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "In SKR_TRANSFER_V1 refuse every unqualified program. SOL stake is named then refused; SKR stake remains unverified/refused. DEVNET_MEMO_V1 is a separate qualified exception, not a weakened token policy.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 217
+  },
+  {
+   "id": "C026",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "In the strict SKR policy, discriminator 12 only for policy eligibility; no Safe verdict.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 218
+  },
+  {
+   "id": "C028",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Decimals byte must be 6 for SKR.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 219
+  },
+  {
+   "id": "C029",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Account order source, mint, destination, authority.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 220
+  },
+  {
+   "id": "C030",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Mint must equal the official mint.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 221
+  },
+  {
+   "id": "C034",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Refuse TransferChecked with the wrong mint.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 222
+  },
+  {
+   "id": "C038",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "One-line summary.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 223
+  },
+  {
+   "id": "C039",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Shorten keys to 4 + ellipsis + 4. Full value remains available.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 224
+  },
+  {
+   "id": "C040",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Verdict title and one reason.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 225
+  },
+  {
+   "id": "C044",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "The card shows the program id that was decoded.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 226
+  },
+  {
+   "id": "C050",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Reject does not require a matching hash.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 227
+  },
+  {
+   "id": "C051",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Network is in the card hash and the separate review-context binding; verify the RPC cluster identity.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 228
+  },
+  {
+   "id": "C052",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "The fee payer is part of the hash.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 229
+  },
+  {
+   "id": "C053",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "The raw data bytes are part of the hash.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 230
+  },
+  {
+   "id": "C054",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "A second review of a new transaction replaces the stored hash.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 231
+  },
+  {
+   "id": "C055",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Real MWA authorization on a wallet-capable device. Test doubles are isolated to tests; no production mock session.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 232
+  },
+  {
+   "id": "C056",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Show the authorized address from the protocol account bytes.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 233
+  },
+  {
+   "id": "C057",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "No session: Approve stays off and the text says the app will not invent a signature.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 234
+  },
+  {
+   "id": "C058",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Disconnect clears the session.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 235
+  },
+  {
+   "id": "C059",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "First real sign is a freshly reviewed devnet memo. Memo text: `Deproof devnet memo <unix millis>`.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 236
+  },
+  {
+   "id": "C060",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Show the real signature derived from returned signed bytes and matched to RPC acceptance. Encode real signature bytes as base58; never create a placeholder.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 237
+  },
+  {
+   "id": "C061",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Only after qualified devnet memo signing plus confirmed chain observation is visible/stored may a verified mainnet SKR draft be built. Building is not submitting. Mainnet needs fresh explicit device approval and never runs from automated tests.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 238
+  },
+  {
+   "id": "C062",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Cluster of the transaction matches the cluster of the session. Mismatch throws `CLUSTER_MISMATCH` and disables Approve.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 239
+  },
+  {
+   "id": "C063",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Show Deproof and the actually configured developer-controlled identity URI; do not assert ownership of a candidate domain.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 240
+  },
+  {
+   "id": "C064",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Fetch a live fee estimate for the exact message and show its context before signing. Unknown remains unknown; core submit stays blocked until fee review is possible. Never invent 5000.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 241
+  },
+  {
+   "id": "C065",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Reject writes a receipt.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 242
+  },
+  {
+   "id": "C066",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Copy receipt JSON.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 243
+  },
+  {
+   "id": "C067",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Receipts survive process death.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 244
+  },
+  {
+   "id": "C068",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Observation receipt for a fetched signature stores that signature and its status. Outcome is `OBSERVED`, not `SUBMITTED`.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 245
+  },
+  {
+   "id": "C069",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Local ECDSA is labeled `local`, never as the Solana signature.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 246
+  },
+  {
+   "id": "C071",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Sign the versioned v2 evidence envelope with a qualified hardware-backed Keystore key. Record actual security level; do not infer StrongBox/TEE from a generic hardware flag.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 247
+  },
+  {
+   "id": "C072",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Refuse a software key with `SOFTWARE_KEY`.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 248
+  },
+  {
+   "id": "C074",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Evidence UI is hidden when the verdict is Do not sign.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 249
+  },
+  {
+   "id": "C075",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Export v2 submission provenance. Legacy submittedByClearance, if required, mirrors known submittedByDeproof; an imported signature never sets it true.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 250
+  },
+  {
+   "id": "C076",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Clipboard failure shows the same text in a box.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 251
+  },
+  {
+   "id": "C077",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "An illustrative user-supplied countdown has a labeled start/duration (48 hours only when explicitly chosen); protocol timers require validated field semantics and current rules. Never start from screen open.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 252
+  },
+  {
+   "id": "C078",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "The clock is visible on Now when a countdown exists.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 253
+  },
+  {
+   "id": "C079",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "`00:00:00` when the interval has elapsed. Elapsed does not mean withdraw is allowed.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 254
+  },
+  {
+   "id": "C080",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Do not invent an unstake.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 255
+  },
+  {
+   "id": "C081",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Do not invent APY.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 256
+  },
+  {
+   "id": "C082",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Do not invent a guardian name. You may quote the pool address from docs if you read them, labeled as a quote, not as the user\u2019s delegate.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 257
+  },
+  {
+   "id": "C083",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Inflation/reward text requires current official source and actual retrieval date. Omit unverified numerical claims and the source\u2019s future-dated read claim.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 258
+  },
+  {
+   "id": "C084",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "\u201cThis cannot be reversed\u201d appears on any payable transfer.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 259
+  },
+  {
+   "id": "C085",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "No recovery-service copy anywhere.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 260
+  },
+  {
+   "id": "C086",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Partial amount is the amount in the instruction, not a second hidden amount.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 261
+  },
+  {
+   "id": "C088",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Home shows the last receipt, not a chart.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 262
+  },
+  {
+   "id": "C089",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Optional AI packet is consented, minimized decoded fields plus policy/mint context. No seed, private key, authorization token or evidence bytes.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 263
+  },
+  {
+   "id": "C090",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Optional Grok is skipped when disabled/unconfigured/placeholder. No provider key is compiled into Android.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 264
+  },
+  {
+   "id": "C091",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "A failed HTTP call shows the status code, not a fake audit score.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 265
+  },
+  {
+   "id": "C092",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "The model note cannot enable Approve.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 266
+  },
+  {
+   "id": "C093",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "SKR reads use the validated mainnet RPC/mint deployment. Public keys are cluster-neutral; do not classify a key as a devnet address from its bytes.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 267
+  },
+  {
+   "id": "C094",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Devnet-only lock for the memo.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 268
+  },
+  {
+   "id": "C096",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Spam tokens are not listed. Only SOL and official SKR.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 269
+  },
+  {
+   "id": "C098",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "P1 remains one focused app. Wider payment/provider concepts are explicitly staged proposals until real supported integrations are qualified.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 270
+  },
+  {
+   "id": "C099",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "missing_local_tests",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Meaningful automated tests cover address validation, all decoder/policy paths, immutable full-message/context binding, receipt rules and optional-AI nonauthority. Device and persistence qualification remain separate.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt"
+   ],
+   "testsListed": 0,
+   "order": 271
+  },
+  {
+   "id": "C003",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Read SOL lamports with `getBalance`.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Rpc.kt",
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "app/src/main/java/com/example/domain/Solana.kt"
+   ],
+   "testsListed": 2,
+   "order": 272
+  },
+  {
+   "id": "C008",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "local_verification_remaining",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "NOT_RUN",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Show the slot from the same RPC response `context.slot`.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/Rpc.kt",
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "app/src/main/java/com/example/domain/Solana.kt"
+   ],
+   "testsListed": 2,
+   "order": 273
+  },
+  {
+   "id": "F095",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "device_validation",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "IMPLEMENTED_MISSING_ANDROID_VERIFICATION",
+   "acceptance": "Display first-seen program indicators.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/MainActivity.kt",
+    "app/src/main/java/com/example/domain/LocalEvidence.kt"
+   ],
+   "testsListed": 1,
+   "order": 274
+  },
+  {
+   "id": "FN033",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "device_validation",
+   "environment": "PHYSICAL_KEYSTORE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "IMPLEMENTED_MISSING_DEVICE_VERIFICATION",
+   "acceptance": "`signHash(digest)` \u2014 legacy-digest-bytes-v1 only: SHA256withECDSA over 32 raw digest bytes, DER/SPKI and observed hardware metadata; reject wrong size/software keys. New records use FN062.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/data/EvidenceSigner.kt",
+    "app/src/main/java/com/example/domain/LocalEvidence.kt"
+   ],
+   "testsListed": 2,
+   "order": 275
+  },
+  {
+   "id": "F055",
+   "priority": 3,
+   "phase": "P2",
+   "bucket": "device_validation",
+   "environment": "LOCAL_TESTS_PLUS_DEVICE_ACCEPTANCE",
+   "deviceAlsoRequired": true,
+   "externalAlsoRequired": false,
+   "registryStatus": "IMPLEMENTED_UNVERIFIED",
+   "gapKind": "IMPLEMENTED_MISSING_ANDROID_VERIFICATION",
+   "acceptance": "Preview supported evidence types.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/EvidencePreview.kt",
+    "app/src/main/java/com/example/domain/LocalEvidence.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 1,
+   "order": 276
+  },
+  {
+   "id": "E008",
+   "priority": 3,
+   "phase": "P1/P3",
+   "bucket": "external_integration",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Qualified TransferChecked draft/account policy after devnet gate; explicit device approval; no automatic mainnet spending or mandatory fee disguised as receipt proof",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 277
+  },
+  {
+   "id": "FN061",
+   "priority": 3,
+   "phase": "P1",
+   "bucket": "external_integration",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "MISSING_EXTERNAL_ADAPTER",
+   "acceptance": "`explainPacket(packet, consent, providerConfig)` \u2014 optional consented explanation or NOT_CONFIGURED/GROK_NOT_CALLED/PROVIDER_ERROR; never changes authorization. Provider integration is staged, not a core network dependency.",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Explanations.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 1,
+   "order": 278
+  },
+  {
+   "id": "E009",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "external_integration",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Protocol-specific verified state/layout adapter; liquid/staked/cooling separation; native SOL stake never relabeled SKR",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 279
+  },
+  {
+   "id": "E010",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "external_integration",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Current verified start/duration/season/eligibility; source/date; exact alarm preference and permission handling; local clock cannot authorize withdrawal",
+   "implementationPaths": [
+    "app/src/main/java/com/example/domain/Core.kt",
+    "app/src/main/java/com/example/domain/Solana.kt",
+    "app/src/main/java/com/example/domain/Records.kt",
+    "app/src/main/java/com/example/MainActivity.kt"
+   ],
+   "testsListed": 0,
+   "order": 280
+  },
+  {
+   "id": "E015",
+   "priority": 3,
+   "phase": "P3",
+   "bucket": "external_integration",
+   "environment": "EXTERNAL_PROTOCOL_OR_PROVIDER",
+   "deviceAlsoRequired": false,
+   "externalAlsoRequired": true,
+   "registryStatus": "BLOCKED",
+   "gapKind": "PARTIAL_IMPLEMENTATION_OR_VERIFICATION",
+   "acceptance": "Supported maintained tunnel protocol with identity binding, authorized peers, scoped routes, key rotation/revocation and measured successful handshake; no invented mesh status",
+   "implementationPaths": [
+    "node-agent/internal/agent/agent.go"
+   ],
+   "testsListed": 0,
+   "order": 281
+  }
+ ],
+ "localTestRun": {
+  "command": "./gradlew testDebugUnitTest --rerun-tasks",
+  "result": "BUILD SUCCESSFUL",
+  "tests": 31,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "log": "scratchpad/gradle-review-tests.log (not committed)"
+ }
+}
