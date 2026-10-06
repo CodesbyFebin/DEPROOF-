@@ -402,9 +402,9 @@
       "namedTests": [
         "app/src/test/java/com/example/data/HistoricalObservationTest.kt::repeatedHistoryRefreshPreservesOriginalEventAndTracksChangedStatus",
         "app/src/test/java/com/example/data/HistoricalObservationTest.kt::concurrentOpensCreateOneReceiptWithIndependentObservations",
-        "app/src/test/java/com/example/data/HistoricalObservationTest.kt::identicalSignatureOnDifferentClustersIsNotConflated",
         "app/src/test/java/com/example/data/HistoricalObservationTest.kt::conflictingMessageIsRefusedWithoutChangingReceiptOrObservations",
-        "app/src/test/java/com/example/data/HistoricalObservationTest.kt::unavailableRefreshRetainsOriginalKnownStatusWithoutInventingSuccess"
+        "app/src/test/java/com/example/data/HistoricalObservationTest.kt::unavailableRefreshRetainsOriginalKnownStatusWithoutInventingSuccess",
+        "app/src/test/java/com/example/data/HistoricalObservationTest.kt::olderObservationArrivingLateIsKeptAsHistoryAndNeverChangesTheReceipt"
       ],
       "requiredUncoveredGate": [
         "Historical refresh reuses the original event by cluster/signature in a Room transaction, preserves original review/message bytes, and appends independent observations. Concurrent opens, changed status, unavailable results and conflicting message refusal tested against Room under Robolectric. Existing historical duplicates are preserved, not deleted. Physical-device refresh and live wallet-account history remain NOT_RUN."
@@ -1053,7 +1053,11 @@
         "app/src/main/java/com/example/domain/Records.kt",
         "app/src/main/resources/db/migration_1_2.sql"
       ],
-      "namedTests": [],
+      "namedTests": [
+        "app/src/test/java/com/example/data/ObservationStatusTest.kt::everySchemaStatusIsTrackedAsItsOwnObservation",
+        "app/src/test/java/com/example/data/ObservationStatusTest.kt::statusesOutsideTheSchemaEnumAreRefused",
+        "app/src/test/java/com/example/data/ObservationStatusTest.kt::unavailabilityIsRecordedSeparatelyFromTheLastKnownStatus"
+      ],
       "requiredUncoveredGate": [
         "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
       ]

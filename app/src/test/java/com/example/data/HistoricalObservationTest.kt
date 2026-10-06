@@ -19,10 +19,10 @@ class HistoricalObservationTest {
     private lateinit var db: DeproofDatabase
     @Before fun open() { db=Room.inMemoryDatabaseBuilder(ApplicationProvider.getApplicationContext(),DeproofDatabase::class.java).allowMainThreadQueries().build() }
     @After fun close() {db.close()}
-    private fun record(status:String="CONFIRMED",network:String="mainnet-beta",digest:String="a".repeat(64)):ObjectNode {
+    private fun record(status:String="CONFIRMED",network:String="mainnet-beta",digest:String="a".repeat(64),observedAt:String="2026-10-06T12:00:00Z"):ObjectNode {
         val r=receipt("OBSERVED",null,network,"Historical transaction",signature=Base58.encode(ByteArray(64){1})) as ObjectNode
         r.put("messageSha256",digest)
-        (r["chainObservation"] as ObjectNode).apply {put("availability","AVAILABLE");put("lastKnownStatus",status);put("observedAt","2026-10-06T12:00:00Z")}
+        (r["chainObservation"] as ObjectNode).apply {put("availability","AVAILABLE");put("lastKnownStatus",status);put("observedAt",observedAt)}
         return r
     }
     @Test fun repeatedHistoryRefreshPreservesOriginalEventAndTracksChangedStatus()=runBlocking {
@@ -43,6 +43,15 @@ class HistoricalObservationTest {
         val dao=db.records();val id=dao.saveHistoricalObservation(record());val before=dao.event(id);val observations=dao.observations(id)
         try {dao.saveHistoricalObservation(record(digest="b".repeat(64)));fail("changed message accepted")}catch(e:Failure){assertEquals("HISTORICAL_MESSAGE_CONFLICT",e.code)}
         assertEquals(before,dao.event(id));assertEquals(observations,dao.observations(id));assertEquals(1,dao.eventsSnapshot().size)
+    }
+    @Test fun olderObservationArrivingLateIsKeptAsHistoryAndNeverChangesTheReceipt()=runBlocking {
+        val dao=db.records();val id=dao.saveHistoricalObservation(record("FINALIZED","mainnet-beta","a".repeat(64),"2026-10-06T13:00:00Z"))
+        val original=dao.event(id)!!
+        dao.saveHistoricalObservation(record("PROCESSED","mainnet-beta","a".repeat(64),"2026-10-06T11:00:00Z"))
+        assertEquals(original.payload,dao.event(id)!!.payload)
+        val observed=dao.observations(id).map {Json.parse(it.payload)["observedAt"].asText() to Json.parse(it.payload)["lastKnownStatus"].asText()}
+        assertEquals(listOf("2026-10-06T13:00:00Z" to "FINALIZED","2026-10-06T11:00:00Z" to "PROCESSED"),observed)
+        assertEquals(1,dao.eventsSnapshot().size)
     }
     @Test fun unavailableRefreshRetainsOriginalKnownStatusWithoutInventingSuccess()=runBlocking {
         val dao=db.records();val r=record();val id=dao.saveHistoricalObservation(r);val unavailable=record("UNKNOWN")

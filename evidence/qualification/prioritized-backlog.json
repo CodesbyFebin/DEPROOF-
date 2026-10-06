@@ -316,7 +316,11 @@
         "app/src/main/java/com/example/domain/Records.kt",
         "app/src/main/resources/db/migration_1_2.sql"
       ],
-      "tests": [],
+      "tests": [
+        "app/src/test/java/com/example/data/ObservationStatusTest.kt::everySchemaStatusIsTrackedAsItsOwnObservation",
+        "app/src/test/java/com/example/data/ObservationStatusTest.kt::statusesOutsideTheSchemaEnumAreRefused",
+        "app/src/test/java/com/example/data/ObservationStatusTest.kt::unavailabilityIsRecordedSeparatelyFromTheLastKnownStatus"
+      ],
       "evidencePaths": [
         "evidence/qualification/verifier-tests.log"
       ],
@@ -1473,9 +1477,9 @@
       "tests": [
         "app/src/test/java/com/example/data/HistoricalObservationTest.kt::repeatedHistoryRefreshPreservesOriginalEventAndTracksChangedStatus",
         "app/src/test/java/com/example/data/HistoricalObservationTest.kt::concurrentOpensCreateOneReceiptWithIndependentObservations",
-        "app/src/test/java/com/example/data/HistoricalObservationTest.kt::identicalSignatureOnDifferentClustersIsNotConflated",
         "app/src/test/java/com/example/data/HistoricalObservationTest.kt::conflictingMessageIsRefusedWithoutChangingReceiptOrObservations",
-        "app/src/test/java/com/example/data/HistoricalObservationTest.kt::unavailableRefreshRetainsOriginalKnownStatusWithoutInventingSuccess"
+        "app/src/test/java/com/example/data/HistoricalObservationTest.kt::unavailableRefreshRetainsOriginalKnownStatusWithoutInventingSuccess",
+        "app/src/test/java/com/example/data/HistoricalObservationTest.kt::olderObservationArrivingLateIsKeptAsHistoryAndNeverChangesTheReceipt"
       ],
       "evidencePaths": [
         "evidence/qualification/android-build.log",
@@ -3899,7 +3903,9 @@
       "tests": [
         "scripts/browser/qualify.mjs"
       ],
-      "evidencePaths": [],
+      "evidencePaths": [
+        "evidence/qualification/browser/report.json"
+      ],
       "remainingReasons": [
         "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
       ]
@@ -3981,7 +3987,9 @@
       "tests": [
         "scripts/browser/qualify.mjs"
       ],
-      "evidencePaths": [],
+      "evidencePaths": [
+        "evidence/qualification/browser/report.json"
+      ],
       "remainingReasons": [
         "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
       ]

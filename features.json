@@ -1238,9 +1238,9 @@
       "tests": [
         "app/src/test/java/com/example/data/HistoricalObservationTest.kt::repeatedHistoryRefreshPreservesOriginalEventAndTracksChangedStatus",
         "app/src/test/java/com/example/data/HistoricalObservationTest.kt::concurrentOpensCreateOneReceiptWithIndependentObservations",
-        "app/src/test/java/com/example/data/HistoricalObservationTest.kt::identicalSignatureOnDifferentClustersIsNotConflated",
         "app/src/test/java/com/example/data/HistoricalObservationTest.kt::conflictingMessageIsRefusedWithoutChangingReceiptOrObservations",
-        "app/src/test/java/com/example/data/HistoricalObservationTest.kt::unavailableRefreshRetainsOriginalKnownStatusWithoutInventingSuccess"
+        "app/src/test/java/com/example/data/HistoricalObservationTest.kt::unavailableRefreshRetainsOriginalKnownStatusWithoutInventingSuccess",
+        "app/src/test/java/com/example/data/HistoricalObservationTest.kt::olderObservationArrivingLateIsKeptAsHistoryAndNeverChangesTheReceipt"
       ],
       "qualificationDimensions": [
         "VERIFIED_LOCAL",
@@ -3561,7 +3561,11 @@
         "C075",
         "C076"
       ],
-      "tests": [],
+      "tests": [
+        "app/src/test/java/com/example/data/ObservationStatusTest.kt::everySchemaStatusIsTrackedAsItsOwnObservation",
+        "app/src/test/java/com/example/data/ObservationStatusTest.kt::statusesOutsideTheSchemaEnumAreRefused",
+        "app/src/test/java/com/example/data/ObservationStatusTest.kt::unavailabilityIsRecordedSeparatelyFromTheLastKnownStatus"
+      ],
       "qualificationDimensions": [
         "VERIFIED_LOCAL",
         "NOT_RUN"
