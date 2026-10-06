@@ -18,7 +18,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: 11
+          java-version: 17
 
       - name: Setup Android SDK
         run: |
@@ -45,7 +45,7 @@ jobs:
           ./gradlew connectedAndroidTest -Pnetwork=${{ matrix.network }} \
             -Papi_level=${{ matrix.api-level }} \
             --tests "com.deproof.data.rpc.RpcConnectionTest" \
-            -x lint || echo "Tests completed with warnings"
+            -x lint
 
       - name: Run Phase 3 Wallet Integration Tests
         run: |
@@ -54,7 +54,7 @@ jobs:
           ./gradlew connectedAndroidTest -Pnetwork=${{ matrix.network }} \
             -Papi_level=${{ matrix.api-level }} \
             --tests "com.deproof.data.wallet.*" \
-            -x lint || echo "Tests completed with warnings"
+            -x lint
 
       - name: Run Phase 3 Balance Queries Tests
         run: |
@@ -63,7 +63,7 @@ jobs:
           ./gradlew connectedAndroidTest -Pnetwork=${{ matrix.network }} \
             -Papi_level=${{ matrix.api-level }} \
             --tests "com.deproof.data.rpc.BalanceQueriesTest" \
-            -x lint || echo "Tests completed with warnings"
+            -x lint
 
       - name: Run Phase 3 Transaction Tests
         run: |
@@ -72,7 +72,7 @@ jobs:
           ./gradlew connectedAndroidTest -Pnetwork=${{ matrix.network }} \
             -Papi_level=${{ matrix.api-level }} \
             --tests "com.deproof.data.transaction.*" \
-            -x lint || echo "Tests completed with warnings"
+            -x lint
 
       - name: Run Phase 3 Error Handling Tests
         run: |
@@ -81,7 +81,7 @@ jobs:
           ./gradlew connectedAndroidTest -Pnetwork=${{ matrix.network }} \
             -Papi_level=${{ matrix.api-level }} \
             --tests "com.deproof.data.rpc.ErrorHandlingTest" \
-            -x lint || echo "Tests completed with warnings"
+            -x lint
 
       - name: Run Phase 3 Performance Tests
         run: |
@@ -90,7 +90,7 @@ jobs:
           ./gradlew connectedAndroidTest -Pnetwork=${{ matrix.network }} \
             -Papi_level=${{ matrix.api-level }} \
             --tests "com.deproof.data.rpc.PerformanceTest" \
-            -x lint || echo "Tests completed with warnings"
+            -x lint
 
       - name: Upload Test Results
         if: always()
