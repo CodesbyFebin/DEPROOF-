@@ -28,7 +28,7 @@ class App : Application() {
         database = Room.databaseBuilder(
             this,
             DepRoofDatabase::class.java,
-            "deproof_db"
+            DepRoofDatabase.DATABASE_NAME
         )
             .fallbackToDestructiveMigration()
             .build()
