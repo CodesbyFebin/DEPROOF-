@@ -11,3 +11,13 @@ fun requireQualifiedKeyLevel(level: String) {
     ensure(level != "SOFTWARE", "SOFTWARE_KEY")
     ensure(level == "STRONGBOX" || level == "TRUSTED_ENVIRONMENT", "UNQUALIFIED_KEY")
 }
+
+// FN048: a new draft for an expired blockhash. The result is a different message,
+// so an approval of the previous message cannot be applied to it (see canSign).
+// Only the devnet memo policy can be rebuilt; mainnet and historical reviews cannot.
+fun rebuildExpiredTransaction(previous: Review, latestBlockhash: String, unixMillis: Long): ByteArray {
+    ensure(!previous.context.historical, "HISTORICAL_READ_ONLY")
+    ensure(previous.context.policy == Policy.DEVNET_MEMO_V1 && previous.context.cluster == "devnet", "REBUILD_UNSUPPORTED_POLICY")
+    ensure(latestBlockhash != previous.tx.blockhash, "BLOCKHASH_UNCHANGED")
+    return buildMemo(previous.context.account, latestBlockhash, unixMillis)
+}

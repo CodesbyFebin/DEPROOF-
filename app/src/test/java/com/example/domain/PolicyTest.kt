@@ -43,4 +43,22 @@ class PolicyTest {
         fails("UNQUALIFIED_KEY") { requireQualifiedKeyLevel("HARDWARE_UNSPECIFIED") }
         fails("UNQUALIFIED_KEY") { requireQualifiedKeyLevel("UNAVAILABLE") }
     }
+
+    @Test fun rebuildProducesANewDevnetMessageForTheSameAccount() {
+        val previous = Review(buildMemo(account, oldBlockhash, 1000), context("2026-10-06T00:00:00Z"))
+        val rebuilt = rebuildExpiredTransaction(previous, newBlockhash, 2000)
+        val parsed = parseTransaction(rebuilt)
+        assertEquals(newBlockhash, parsed.blockhash)
+        assertEquals(account, parsed.keys.first().address)
+        assertNotEquals(previous.messageSha256, sha256Hex(parsed.messageBytes()))
+    }
+
+    @Test fun rebuildRefusesUnchangedBlockhashHistoricalAndNonDevnetReviews() {
+        val previous = Review(buildMemo(account, oldBlockhash, 1000), context("2026-10-06T00:00:00Z"))
+        fails("BLOCKHASH_UNCHANGED") { rebuildExpiredTransaction(previous, oldBlockhash, 2000) }
+        val historical = Review(buildMemo(account, oldBlockhash, 1000), context("2026-10-06T00:00:00Z").copy(historical = true))
+        fails("HISTORICAL_READ_ONLY") { rebuildExpiredTransaction(historical, newBlockhash, 2000) }
+        val skr = Review(buildMemo(account, oldBlockhash, 1000), context("2026-10-06T00:00:00Z").copy(policy = Policy.SKR_TRANSFER_V1))
+        fails("REBUILD_UNSUPPORTED_POLICY") { rebuildExpiredTransaction(skr, newBlockhash, 2000) }
+    }
 }

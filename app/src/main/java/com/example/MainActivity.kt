@@ -325,7 +325,7 @@ class MainActivity : ComponentActivity() {
                                         if(!fresh) {
                                             ensure(memoRebuildAllowed(memoRebuilds),"BLOCKHASH_EXPIRED_RETRY_EXHAUSTED")
                                             val rebuilt=withContext(Dispatchers.IO) {
-                                                val latest=devnet.latestDevnetBlockhash();val bytes=buildMemo(r.context.account,latest["value"]["blockhash"].asText(),System.currentTimeMillis());val fee=devnet.estimateFee(parseTransaction(bytes).messageBytes());devnet.simulateTransaction(bytes)
+                                                val latest=devnet.latestDevnetBlockhash();val bytes=rebuildExpiredTransaction(r,latest["value"]["blockhash"].asText(),System.currentTimeMillis());val fee=devnet.estimateFee(parseTransaction(bytes).messageBytes());devnet.simulateTransaction(bytes)
                                                 Review(bytes,r.context.copy(reviewedAt=Instant.now().toString(),lastValidBlockHeight=latest["value"]["lastValidBlockHeight"].asText(),feeLamports=fee["value"].asText(),feeSlot=fee["context"]["slot"].asText()))
                                             }
                                             review=rebuilt;reviewedFee=false;memoRebuilds++;throw Failure("BLOCKHASH_REBUILT_REVIEW_AGAIN")
