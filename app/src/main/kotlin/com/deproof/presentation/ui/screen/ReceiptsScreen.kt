@@ -175,7 +175,7 @@ private fun ReceiptItemCard(
             ) {
                 Column(modifier = Modifier.weight(1f)) {
                     Text(
-                        Formatters.formatHash(receipt.txHash),
+                        Formatters.formatHash(receipt.transactionHash),
                         style = MaterialTheme.typography.bodySmall
                     )
                     Text(
@@ -232,7 +232,7 @@ private fun ReceiptDetailDialog(
                 verticalArrangement = Arrangement.spacedBy(8.dp)
             ) {
                 DetailRow("ID", receipt.id)
-                DetailRow("Tx Hash", Formatters.formatHash(receipt.txHash))
+                DetailRow("Tx Hash", Formatters.formatHash(receipt.transactionHash))
                 DetailRow("Verdict", receipt.verdict)
                 DetailRow("Message Hash", Formatters.formatHash(receipt.messageHash))
                 DetailRow("Status", receipt.signatureStatus.name)

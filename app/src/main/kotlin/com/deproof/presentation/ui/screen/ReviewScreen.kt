@@ -189,7 +189,7 @@ private fun VerdictCard(verdict: Verdict) {
     val (icon, color, text) = when (verdict) {
         is Verdict.Payable -> Triple(Icons.Default.CheckCircle, MaterialTheme.colorScheme.primary, "PAYABLE")
         is Verdict.DoNotSign -> Triple(Icons.Default.Warning, MaterialTheme.colorScheme.error, "DO NOT SIGN")
-        is Verdict.Unknown -> Triple(Icons.Default.Warning, MaterialTheme.colorScheme.warning, verdict.reason)
+        is Verdict.Unknown -> Triple(Icons.Default.Warning, MaterialTheme.colorScheme.tertiary, verdict.reason)
     }
 
     Card(
