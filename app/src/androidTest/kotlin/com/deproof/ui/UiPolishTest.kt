@@ -1,5 +1,6 @@
 package com.deproof.ui
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.weight
 import androidx.compose.foundation.lazy.items
 import androidx.compose.ui.Alignment
@@ -178,21 +179,21 @@ fun MockMultipleFontSizes() {
 fun MockColoredElements() {
     androidx.compose.foundation.layout.Column {
         androidx.compose.foundation.layout.Box(
-            modifier = androidx.compose.ui.Modifier.background(
+            modifier = Modifier.background(
                 androidx.compose.material3.MaterialTheme.colorScheme.primary
             )
         ) {
             androidx.compose.material3.Text("Primary Color", color = androidx.compose.material3.MaterialTheme.colorScheme.onPrimary)
         }
         androidx.compose.foundation.layout.Box(
-            modifier = androidx.compose.ui.Modifier.background(
+            modifier = Modifier.background(
                 androidx.compose.material3.MaterialTheme.colorScheme.secondary
             )
         ) {
             androidx.compose.material3.Text("Secondary Color", color = androidx.compose.material3.MaterialTheme.colorScheme.onSecondary)
         }
         androidx.compose.foundation.layout.Box(
-            modifier = androidx.compose.ui.Modifier.background(
+            modifier = Modifier.background(
                 androidx.compose.material3.MaterialTheme.colorScheme.surface
             )
         ) {
