@@ -1,0 +1,8 @@
+14:15:01 INF compiling circuit
+14:15:01 INF parsed circuit inputs nbPublic=1 nbSecret=1
+14:15:01 INF building constraint builder nbConstraints=3
+14:15:01 DBG constraint system solver done nbConstraints=3 took=0.040435
+14:15:01 DBG prover done acceleration=none backend=groth16 curve=bn254 nbConstraints=3 took=1.025397
+14:15:01 DBG verifier done backend=groth16 curve=bn254 took=0.754481
+PASS: local Groth16 relation verified. Verification key trust remains an explicit setup assumption.
+pairing doesn't match

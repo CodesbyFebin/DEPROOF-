@@ -1,0 +1,1 @@
+go: github.com/consensys/gnark@v0.14.0: Get "https://proxy.golang.org/github.com/consensys/gnark/@v/v0.14.0.mod": dial tcp: lookup proxy.golang.org: no such host
