@@ -1213,11 +1213,13 @@
       "definition": "Refresh status without creating duplicate records.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/data/Store.kt",
         "app/src/main/java/com/example/MainActivity.kt"
       ],
-      "evidencePaths": [],
+      "evidencePaths": [
+        "evidence/qualification/android-build.log",
+        "evidence/qualification/history-refresh-targeted.log"
+      ],
       "dependencies": [],
       "checks": [
         "C013",
@@ -1233,12 +1235,19 @@
         "C023",
         "C024"
       ],
-      "tests": [],
+      "tests": [
+        "app/src/test/java/com/example/data/HistoricalObservationTest.kt::repeatedHistoryRefreshPreservesOriginalEventAndTracksChangedStatus",
+        "app/src/test/java/com/example/data/HistoricalObservationTest.kt::concurrentOpensCreateOneReceiptWithIndependentObservations",
+        "app/src/test/java/com/example/data/HistoricalObservationTest.kt::identicalSignatureOnDifferentClustersIsNotConflated",
+        "app/src/test/java/com/example/data/HistoricalObservationTest.kt::conflictingMessageIsRefusedWithoutChangingReceiptOrObservations",
+        "app/src/test/java/com/example/data/HistoricalObservationTest.kt::unavailableRefreshRetainsOriginalKnownStatusWithoutInventingSuccess"
+      ],
       "qualificationDimensions": [
+        "VERIFIED_LOCAL",
         "NOT_RUN"
       ],
       "limitations": [
-        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+        "Historical refresh reuses the original event by cluster/signature in a Room transaction, preserves original review/message bytes, and appends independent observations. Concurrent opens, changed status, unavailable results and conflicting message refusal tested against Room under Robolectric. Existing historical duplicates are preserved, not deleted. Physical-device refresh and live wallet-account history remain NOT_RUN."
       ],
       "sourceMappings": {
         "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",

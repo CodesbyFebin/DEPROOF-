@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.domain.NodeProtocolTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-06T11:40:14.107Z" hostname="Cybertecks-Mac-mini.local" time="0.04">
+  <properties/>
+  <testcase name="legacySignatureUsesRawDigestBytesNotHexOrBase64" classname="com.example.domain.NodeProtocolTest" time="0.002"/>
+  <testcase name="exactCommandSignatureAndContextAreBound" classname="com.example.domain.NodeProtocolTest" time="0.029"/>
+  <testcase name="crashDoesNotRetryPossibleSideEffects" classname="com.example.domain.NodeProtocolTest" time="0.0"/>
+  <testcase name="pairingRejectsWrongHostExpiredChallengeAndUnknownScope" classname="com.example.domain.NodeProtocolTest" time="0.002"/>
+  <testcase name="stagedExplanationNeverTransmitsOrChangesAuthorization" classname="com.example.domain.NodeProtocolTest" time="0.001"/>
+  <testcase name="legacyDigestAndFirstSeenIndicatorsNeverGrantTrust" classname="com.example.domain.NodeProtocolTest" time="0.001"/>
+  <testcase name="privatePreviewChecksBytesPathsEncodingAndTypes" classname="com.example.domain.NodeProtocolTest" time="0.003"/>
+  <testcase name="rpcChecksFullGenesisAndRejectsTruncatedOrWrongCluster" classname="com.example.domain.NodeProtocolTest" time="0.0"/>
+  <testcase name="accountEffectsDecodeOnlyExactReadOnlyCreateAccount" classname="com.example.domain.NodeProtocolTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

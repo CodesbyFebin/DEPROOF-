@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.domain.ConnectorTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-06T11:40:13.763Z" hostname="Cybertecks-Mac-mini.local" time="0.159">
+  <properties/>
+  <testcase name="wrongSchemaIsRejected" classname="com.example.domain.ConnectorTest" time="0.156"/>
+  <testcase name="qualifiedStatusStillDoesNotProduceASuccessfulResult" classname="com.example.domain.ConnectorTest" time="0.001"/>
+  <testcase name="everyAdapterInTheRealSupportFileIsBlockedWithoutObservation" classname="com.example.domain.ConnectorTest" time="0.001"/>
+  <testcase name="unknownAdapterAndBadRequestsAreRefused" classname="com.example.domain.ConnectorTest" time="0.001"/>
+  <testcase name="reasonCarriesTheRecordedBlockerForBlockedAndUnverifiedAdapters" classname="com.example.domain.ConnectorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

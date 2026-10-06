@@ -78,6 +78,27 @@ data class Draft(@PrimaryKey val id: String, val payload: String, val updatedAt:
     @Query("DELETE FROM attachments WHERE id=:id") suspend fun deleteAttachment(id: String)
     @Query("SELECT * FROM attachments WHERE id=:id") suspend fun attachment(id: String): Attachment?
     @Transaction suspend fun saveReceipt(r: JsonNode) { validateReceipt(r); insert(Event(r["id"].asText(),r["createdAt"].asText(),r["outcome"].asText(),exportReceipt(r))) }
+    // A status refresh is an observation of the original event, never new approval.
+    // Room serializes this transaction so concurrent opens cannot create duplicates.
+    @Transaction suspend fun saveHistoricalObservation(r: JsonNode): String {
+        validateReceipt(r)
+        ensure(r["outcome"].asText()=="OBSERVED" && r["signature"].isTextual &&
+            r["network"].asText() in listOf("devnet","mainnet-beta") &&
+            r["messageSha256"].isTextual,"BAD_HISTORICAL_OBSERVATION")
+        val prior=eventsSnapshot().filter {it.kind=="OBSERVED"}.sortedBy {it.createdAt}.firstOrNull {
+            val saved=Json.parse(it.payload)
+            saved["signature"]==r["signature"] && saved["network"]==r["network"]
+        }
+        val id=if(prior==null) {saveReceipt(r);r["id"].asText()} else {
+            ensure(Json.parse(prior.payload)["messageSha256"]==r["messageSha256"],"HISTORICAL_MESSAGE_CONFLICT")
+            prior.id
+        }
+        val chain=r["chainObservation"]
+        val at=chain["observedAt"].takeUnless {it.isNull}?.asText() ?: r["createdAt"].asText()
+        Instant.parse(at)
+        observe(Observation(UUID.randomUUID().toString(),id,at,Json.mapper.writeValueAsString(chain)))
+        return id
+    }
     suspend fun createTask(title: String, requirements: List<String>): Task {
         ensure(title.isNotBlank() && title.length <= 200 && requirements.size <= 100,"BAD_TASK")
         val t = Task(UUID.randomUUID().toString(),title,"",Json.mapper.writeValueAsString(requirements.map { mapOf("text" to it,"done" to false) }),Instant.now().toString()); create(t); return t

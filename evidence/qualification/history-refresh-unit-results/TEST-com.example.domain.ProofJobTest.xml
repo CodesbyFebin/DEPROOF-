@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.domain.ProofJobTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-06T11:40:14.172Z" hostname="Cybertecks-Mac-mini.local" time="0.0">
+  <properties/>
+  <testcase name="eachMismatchIsReportedExplicitly" classname="com.example.domain.ProofJobTest" time="0.0"/>
+  <testcase name="incompatibleJobIsNeverReportedAsCompatible" classname="com.example.domain.ProofJobTest" time="0.0"/>
+  <testcase name="compatibleJobMatchesWithNoMismatch" classname="com.example.domain.ProofJobTest" time="0.0"/>
+  <testcase name="negativeRequirementsAreRefused" classname="com.example.domain.ProofJobTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

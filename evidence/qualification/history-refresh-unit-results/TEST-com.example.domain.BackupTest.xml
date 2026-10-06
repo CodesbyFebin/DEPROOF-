@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.domain.BackupTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-06T11:40:09.760Z" hostname="Cybertecks-Mac-mini.local" time="4.0">
+  <properties/>
+  <testcase name="roundTripRestoresExactBytes" classname="com.example.domain.BackupTest" time="0.614"/>
+  <testcase name="tamperedSaltIsRefusedBecauseTheHeaderIsAuthenticated" classname="com.example.domain.BackupTest" time="0.619"/>
+  <testcase name="eachBackupUsesFreshSaltAndNonce" classname="com.example.domain.BackupTest" time="0.606"/>
+  <testcase name="unsupportedMagicOrVersionIsRefused" classname="com.example.domain.BackupTest" time="0.308"/>
+  <testcase name="shortPassphrasesAreRefusedOnBothSides" classname="com.example.domain.BackupTest" time="0.295"/>
+  <testcase name="tamperedCiphertextIsRefused" classname="com.example.domain.BackupTest" time="0.648"/>
+  <testcase name="plaintextIsNotVisibleInTheBlob" classname="com.example.domain.BackupTest" time="0.334"/>
+  <testcase name="wrongPassphraseIsRefused" classname="com.example.domain.BackupTest" time="0.575"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

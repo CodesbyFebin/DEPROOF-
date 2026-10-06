@@ -1,0 +1,76 @@
+{
+  "schema": "deproof-history-refresh-outcomes-v1",
+  "sourceHead": "ee988bf870fc8085c11f5b52796348cbab0dd33e",
+  "checkout": "/Users/cyberteck/DEPROOF-/DEPROOF-build",
+  "branch": "feat/deproof-full-build",
+  "sourceManifest": "evidence/qualification/source-before.json",
+  "sourceSetSha256": "cd12979b3cae8886387c4a538cace7c0e919887ac2e8eb199c7b087acd83cd8e",
+  "buildInputsUnchangedDuringQualification": true,
+  "requirement": "F030",
+  "authoritativeAcceptance": "Refresh status without creating duplicate records.",
+  "localAcceptance": {
+    "repeatedRefresh": "PASS: one original receipt, independently recorded status changes",
+    "concurrentOpens": "PASS: eight opens, one receipt",
+    "clusterSeparation": "PASS",
+    "messageConflict": "PASS: refused with original rows unchanged",
+    "unavailableRead": "PASS: recorded as unavailable, original known status preserved"
+  },
+  "execution": [
+    {
+      "command": "bash ./gradlew :app:testDebugUnitTest --tests com.example.data.HistoricalObservationTest --rerun-tasks --stacktrace",
+      "exitCode": 0,
+      "tests": 5,
+      "tasksExecuted": 32,
+      "log": "evidence/qualification/history-refresh-targeted.log"
+    },
+    {
+      "command": "bash ./gradlew :app:testDebugUnitTest --rerun-tasks --stacktrace",
+      "exitCode": 0,
+      "tests": 84,
+      "domainTests": 66,
+      "roomTests": 18,
+      "tasksExecuted": 32,
+      "log": "evidence/qualification/history-refresh-fresh-unit.log"
+    },
+    {
+      "command": "bash scripts/qualify.sh",
+      "exitCode": 0,
+      "distinctGates": 15,
+      "commandResults": 17,
+      "pythonTests": 24,
+      "browserChecks": 116,
+      "log": "evidence/qualification/history-refresh-full-qualification.log",
+      "androidTasks": {
+        "unit": "32 UP-TO-DATE; separate fresh execution above",
+        "assembly": "3 executed, 37 UP-TO-DATE; APK produced in this run",
+        "lint": "8 executed, 22 UP-TO-DATE"
+      }
+    }
+  ],
+  "registry": {
+    "count": 336,
+    "exactAuthoritativeMeaningsPreserved": true,
+    "twoRegenerationsIdempotent": true,
+    "registrySha256": {
+      "features": "1ede4707b6a06153824148a2f23a336f2f275409d2cf189162441a724d96fd63",
+      "core-checks": "c0421a1bf417e93a37589de28f7770cb0e7125577bea4f0f2ca053f55d36780c",
+      "functions": "3492cab59e025ca748ca67bf063ba5bb29233ed0e68ce08e8709d53557cdb539",
+      "ecosystem-requirements": "ecd4b19bd3b91249920638aa8b8dcc98b58ecfffc3f1c79a61d9556faef93677"
+    },
+    "unresolved": 281
+  },
+  "qualification": "IMPLEMENTED_UNVERIFIED",
+  "limits": [
+    "Physical-device historical refresh and live wallet-account history NOT_RUN.",
+    "Existing historical duplicates preserved; no destructive deduplication.",
+    "Independent repeated observation rows are intentional, not duplicate receipts.",
+    "Backup/device, Android-to-node, production proof/provider and container Android gates unchanged; no promotion from local tests."
+  ],
+  "publishedOrDeployed": false,
+  "mainnetSpending": false,
+  "finalSourceManifest": "evidence/qualification/history-refresh-final-source.json",
+  "artifactSha256": {
+    "app/build/outputs/apk/debug/app-debug.apk": "a12f5931f8c16d5863f59b6a07609a6b6c3ebaf3aac319df5cdce4fa8ab6a814",
+    "evidence/qualification/deproof-source-snapshot.zip": "3273a1df860b8f370deaea975f5aef0fac85deeaddd1678acf52330c6aead146"
+  }
+}

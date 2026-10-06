@@ -396,13 +396,18 @@
       "status": "IMPLEMENTED_UNVERIFIED",
       "acceptance": "Refresh status without creating duplicate records.",
       "implementedPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
+        "app/src/main/java/com/example/data/Store.kt",
         "app/src/main/java/com/example/MainActivity.kt"
       ],
-      "namedTests": [],
+      "namedTests": [
+        "app/src/test/java/com/example/data/HistoricalObservationTest.kt::repeatedHistoryRefreshPreservesOriginalEventAndTracksChangedStatus",
+        "app/src/test/java/com/example/data/HistoricalObservationTest.kt::concurrentOpensCreateOneReceiptWithIndependentObservations",
+        "app/src/test/java/com/example/data/HistoricalObservationTest.kt::identicalSignatureOnDifferentClustersIsNotConflated",
+        "app/src/test/java/com/example/data/HistoricalObservationTest.kt::conflictingMessageIsRefusedWithoutChangingReceiptOrObservations",
+        "app/src/test/java/com/example/data/HistoricalObservationTest.kt::unavailableRefreshRetainsOriginalKnownStatusWithoutInventingSuccess"
+      ],
       "requiredUncoveredGate": [
-        "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+        "Historical refresh reuses the original event by cluster/signature in a Room transaction, preserves original review/message bytes, and appends independent observations. Concurrent opens, changed status, unavailable results and conflicting message refusal tested against Room under Robolectric. Existing historical duplicates are preserved, not deleted. Physical-device refresh and live wallet-account history remain NOT_RUN."
       ]
     },
     {

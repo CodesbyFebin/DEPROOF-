@@ -218,7 +218,7 @@ class MainActivity : ComponentActivity() {
                                         val r=Review(result.first,ReviewContext(tx.keys.first().address,"mainnet-beta",withContext(Dispatchers.IO){mainnet.genesis()},Policy.SKR_TRANSFER_V1,reviewedAt=Instant.now().toString(),lastValidBlockHeight=null,feeLamports=null,feeSlot=null,historical=true))
                                         val record=receipt("OBSERVED",historyAddress,"mainnet-beta","Historical transaction",r,sig) as ObjectNode
                                         val obs=record["chainObservation"] as ObjectNode; obs.put("availability","AVAILABLE"); obs.put("lastKnownStatus",if(!h["err"].isNull) "FAILED" else h["confirmationStatus"].asText("unknown").uppercase()); obs.put("slot",h["slot"].asText()); obs.set<JsonNode>("blockTime",h["blockTime"]?.let { if(it.isNull) Json.mapper.nodeFactory.nullNode() else Json.mapper.valueToTree<JsonNode>(it.asText()) }); obs.put("observedAt",Instant.now().toString()); obs.set<JsonNode>("error",h["err"])
-                                        dao.saveReceipt(record); review=r; reviewedFee=false; memoRebuilds=0; route="Review"
+                                        dao.saveHistoricalObservation(record); review=r; reviewedFee=false; memoRebuilds=0; route="Review"
                                     }}) {Text(stringResource(R.string.ui_a292578987d4))}
                                     TextButton(onClick={startActivity(android.content.Intent(android.content.Intent.ACTION_VIEW,Uri.parse("https://explorer.solana.com/tx/$sig?cluster=mainnet-beta")))}) {Text(stringResource(R.string.ui_8fe371b8e097))}
                                 }

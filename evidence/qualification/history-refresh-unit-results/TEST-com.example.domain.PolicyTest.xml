@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.domain.PolicyTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-06T11:40:14.149Z" hostname="Cybertecks-Mac-mini.local" time="0.013">
+  <properties/>
+  <testcase name="onlyHardwareBackedKeyLevelsQualify" classname="com.example.domain.PolicyTest" time="0.002"/>
+  <testcase name="rebuiltDraftDoesNotInheritThePriorApproval" classname="com.example.domain.PolicyTest" time="0.004"/>
+  <testcase name="firstRebuildIsAllowedAndASecondIsNot" classname="com.example.domain.PolicyTest" time="0.0"/>
+  <testcase name="rebuildRefusesUnchangedBlockhashHistoricalAndNonDevnetReviews" classname="com.example.domain.PolicyTest" time="0.006"/>
+  <testcase name="rebuildProducesANewDevnetMessageForTheSameAccount" classname="com.example.domain.PolicyTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

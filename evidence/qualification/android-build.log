@@ -69,26 +69,26 @@ COMMAND: bash ./gradlew assembleDebug --stacktrace
 > Task :app:processDebugManifest UP-TO-DATE
 > Task :app:processDebugManifestForPackage UP-TO-DATE
 > Task :app:processDebugResources UP-TO-DATE
-> Task :app:dexBuilderDebug UP-TO-DATE
+> Task :app:dexBuilderDebug
 > Task :app:mergeDebugGlobalSynthetics UP-TO-DATE
 > Task :app:processDebugJavaRes UP-TO-DATE
 > Task :app:mergeDebugJavaResource UP-TO-DATE
 > Task :app:checkDebugDuplicateClasses UP-TO-DATE
 > Task :app:mergeExtDexDebug UP-TO-DATE
 > Task :app:mergeLibDexDebug UP-TO-DATE
-> Task :app:mergeProjectDexDebug UP-TO-DATE
 > Task :app:mergeDebugJniLibFolders UP-TO-DATE
 > Task :app:mergeDebugNativeLibs UP-TO-DATE
 > Task :app:stripDebugDebugSymbols UP-TO-DATE
 > Task :app:validateSigningDebug UP-TO-DATE
 > Task :app:writeDebugAppMetadata UP-TO-DATE
 > Task :app:writeDebugSigningConfigVersions UP-TO-DATE
-> Task :app:packageDebug UP-TO-DATE
+> Task :app:mergeProjectDexDebug
+> Task :app:packageDebug
 > Task :app:createDebugApkListingFileRedirect UP-TO-DATE
-> Task :app:assembleDebug UP-TO-DATE
+> Task :app:assembleDebug
 
-BUILD SUCCESSFUL in 1s
-40 actionable tasks: 40 up-to-date
+BUILD SUCCESSFUL in 6s
+40 actionable tasks: 3 executed, 37 up-to-date
 Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.3.1/userguide/configuration_cache_enabling.html
 COMMAND: bash ./gradlew lintDebug --stacktrace
 > Task :app:preBuild UP-TO-DATE
@@ -115,18 +115,21 @@ COMMAND: bash ./gradlew lintDebug --stacktrace
 > Task :app:processDebugResources UP-TO-DATE
 > Task :app:bundleDebugClassesToCompileJar UP-TO-DATE
 > Task :app:preDebugAndroidTestBuild SKIPPED
-> Task :app:generateDebugAndroidTestLintModel UP-TO-DATE
+> Task :app:generateDebugAndroidTestLintModel
 > Task :app:extractProguardFiles UP-TO-DATE
-> Task :app:generateDebugLintReportModel UP-TO-DATE
+> Task :app:generateDebugLintReportModel
 > Task :app:preDebugUnitTestBuild UP-TO-DATE
-> Task :app:generateDebugUnitTestLintModel UP-TO-DATE
-> Task :app:lintAnalyzeDebug UP-TO-DATE
-> Task :app:lintAnalyzeDebugAndroidTest UP-TO-DATE
-> Task :app:lintAnalyzeDebugUnitTest UP-TO-DATE
-> Task :app:lintReportDebug UP-TO-DATE
+> Task :app:generateDebugUnitTestLintModel
+> Task :app:lintAnalyzeDebugAndroidTest
+> Task :app:lintAnalyzeDebugUnitTest
+> Task :app:lintAnalyzeDebug
+
+> Task :app:lintReportDebug
+Wrote HTML report to file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/build/reports/lint-results-debug.html
+
 > Task :app:lintDebug
 
-BUILD SUCCESSFUL in 1s
-30 actionable tasks: 1 executed, 29 up-to-date
+BUILD SUCCESSFUL in 25s
+30 actionable tasks: 8 executed, 22 up-to-date
 Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.3.1/userguide/configuration_cache_enabling.html
-47333a035a66764b6c0032b21202fcd25978e9d68b5e15210309228f650dd7be  app/build/outputs/apk/debug/app-debug.apk
+a12f5931f8c16d5863f59b6a07609a6b6c3ebaf3aac319df5cdce4fa8ab6a814  app/build/outputs/apk/debug/app-debug.apk

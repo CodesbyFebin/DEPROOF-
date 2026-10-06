@@ -88,6 +88,13 @@
       "app/src/test/java/com/example/domain/ProofJobTest.kt::compatibleJobMatchesWithNoMismatch",
       "app/src/test/java/com/example/domain/ProofJobTest.kt::eachMismatchIsReportedExplicitly",
       "app/src/test/java/com/example/domain/ProofJobTest.kt::incompatibleJobIsNeverReportedAsCompatible"
+    ],
+    "F030": [
+      "app/src/test/java/com/example/data/HistoricalObservationTest.kt::repeatedHistoryRefreshPreservesOriginalEventAndTracksChangedStatus",
+      "app/src/test/java/com/example/data/HistoricalObservationTest.kt::concurrentOpensCreateOneReceiptWithIndependentObservations",
+      "app/src/test/java/com/example/data/HistoricalObservationTest.kt::identicalSignatureOnDifferentClustersIsNotConflated",
+      "app/src/test/java/com/example/data/HistoricalObservationTest.kt::conflictingMessageIsRefusedWithoutChangingReceiptOrObservations",
+      "app/src/test/java/com/example/data/HistoricalObservationTest.kt::unavailableRefreshRetainsOriginalKnownStatusWithoutInventingSuccess"
     ]
   }
 }
