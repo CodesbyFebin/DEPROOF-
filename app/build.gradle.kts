@@ -5,7 +5,7 @@ plugins {
     id("com.android.application")
     kotlin("android")
     kotlin("kapt")
-    kotlin("plugin.serialization") version "1.9.10"
+    kotlin("plugin.serialization")
     // Optional: Hilt for DI
     // id("com.google.dagger.hilt.android")
 }
