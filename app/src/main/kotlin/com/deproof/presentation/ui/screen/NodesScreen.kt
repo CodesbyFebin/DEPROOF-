@@ -67,7 +67,7 @@ fun NodesScreen() {
         0
     }
     val avgBandwidth = if (activeNodes > 0) {
-        mockNodes.filter { it.isActive }.map { it.bandwidth }.average()
+        mockNodes.filter { it.isActive }.map { it.bandwidth }.average().toFloat()
     } else {
         0f
     }
@@ -140,7 +140,7 @@ private fun NetworkStatusCard(
             }
 
             LinearProgressIndicator(
-                progress = { activeNodes.toFloat() / totalNodes.toFloat() },
+                progress = activeNodes.toFloat() / totalNodes.toFloat(),
                 modifier = Modifier.fillMaxWidth()
             )
 

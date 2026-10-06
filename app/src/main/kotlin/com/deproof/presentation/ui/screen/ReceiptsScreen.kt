@@ -20,8 +20,7 @@ fun ReceiptsScreen(viewModel: ReceiptsViewModel) {
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Contribution Receipts") },
-                subtitle = { Text("${uiState.receiptCount} total receipts") }
+                title = { Text("Contribution Receipts (${uiState.receiptCount})") }
             )
         }
     ) { paddingValues ->
@@ -143,7 +142,7 @@ private fun ReceiptSummaryCard(
             }
 
             LinearProgressIndicator(
-                progress = { percentage / 100f },
+                progress = percentage / 100f,
                 modifier = Modifier.fillMaxWidth()
             )
         }

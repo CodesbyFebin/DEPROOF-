@@ -92,7 +92,7 @@ private fun ProgressCard(
             }
 
             LinearProgressIndicator(
-                progress = { percentage / 100f },
+                progress = percentage / 100f,
                 modifier = Modifier.fillMaxWidth()
             )
         }

@@ -140,10 +140,10 @@ object InstructionDecoder {
 
     fun extractAccountsFromTransaction(accountKeys: List<String>, instruction: Instruction): Map<String, String> {
         return mapOf(
-            "source" to if (instruction.accounts.size > 0) accountKeys[instruction.accounts[0]] else "Unknown",
-            "mint" to if (instruction.accounts.size > 1) accountKeys[instruction.accounts[1]] else "Unknown",
-            "destination" to if (instruction.accounts.size > 2) accountKeys[instruction.accounts[2]] else "Unknown",
-            "owner" to if (instruction.accounts.size > 3) accountKeys[instruction.accounts[3]] else "Unknown"
+            "source" to if (instruction.accounts.size > 0) instruction.accounts[0] else "Unknown",
+            "mint" to if (instruction.accounts.size > 1) instruction.accounts[1] else "Unknown",
+            "destination" to if (instruction.accounts.size > 2) instruction.accounts[2] else "Unknown",
+            "owner" to if (instruction.accounts.size > 3) instruction.accounts[3] else "Unknown"
         )
     }
 }

@@ -149,7 +149,7 @@ class ReviewViewModel(
             if (messageBinding != null && verdict != null) {
                 val receipt = Receipt(
                     id = java.util.UUID.randomUUID().toString(),
-                    txHash = messageBinding.txHash,
+                    transactionHash = messageBinding.txHash,
                     verdict = messageBinding.verdict,
                     messageHash = messageBinding.messageHash,
                     timestamp = System.currentTimeMillis(),

@@ -23,7 +23,7 @@ class CreateReceiptUseCase(private val receiptRepository: ReceiptRepository) {
 
             val receipt = Receipt(
                 id = UUID.randomUUID().toString(),
-                txHash = txHash,
+                transactionHash = txHash,
                 verdict = verdict,
                 messageHash = messageHash,
                 timestamp = System.currentTimeMillis(),
