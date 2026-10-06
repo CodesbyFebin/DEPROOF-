@@ -167,12 +167,12 @@
 # ===== Keep App Entry Points =====
 
 # Keep MainActivity
--keep class com.deproof.MainActivity {
+-keep class com.deproof.presentation.MainActivity {
     public <init>(...);
 }
 
 # Keep Application class
--keep class com.deproof.DeproofApp {
+-keep class com.deproof.DepRoofApplication {
     public <init>(...);
 }
 
@@ -212,3 +212,76 @@
 -dontwarn javax.naming.**
 -dontwarn sun.misc.**
 -dontwarn sun.reflect.**
+
+# ===== Exception Handling =====
+
+# Keep exception classes for proper crash reporting
+-keep class com.deproof.domain.exception.DomainException
+-keep class com.deproof.domain.exception.DomainException$* {
+    public <init>(...);
+}
+
+# ===== Repositories and Data Layer =====
+
+# Keep repository interfaces and implementations
+-keep interface com.deproof.data.repository.** {
+    <methods>;
+}
+-keep class com.deproof.data.repository.** {
+    public <init>(...);
+}
+
+# Keep data classes
+-keep class com.deproof.data.local.** {
+    public <fields>;
+    public <init>(...);
+}
+
+# ===== Navigation and UI =====
+
+# Keep ViewModels
+-keep class com.deproof.presentation.viewmodel.** extends androidx.lifecycle.ViewModel {
+    public <init>(...);
+}
+
+# Keep navigation related classes
+-keep class com.deproof.presentation.navigation.** {
+    public <methods>;
+}
+
+# Keep shortcuts manager
+-keep class com.deproof.presentation.shortcuts.AppShortcutsManager {
+    public <init>(...);
+    public <methods>;
+}
+
+# Keep composable screens
+-keep class com.deproof.presentation.ui.screen.** {
+    public <methods>;
+}
+
+# ===== Domain Layer =====
+
+# Keep domain models and results
+-keep class com.deproof.domain.model.** {
+    public <fields>;
+    <init>(...);
+}
+
+# Keep utility classes
+-keep class com.deproof.domain.util.** {
+    public <methods>;
+    public <fields>;
+}
+
+# Keep retry policy
+-keep class com.deproof.domain.util.RetryConfig {
+    <init>(...);
+}
+
+# ===== Crypto/Security =====
+
+# Keep crypto utilities
+-keep class com.deproof.crypto.** {
+    public <methods>;
+}
