@@ -56,14 +56,7 @@ jobs:
           script: |
             export SOLANA_NETWORK=${{ matrix.network }}
             export TARGET_SDK_API=${{ matrix.api-level }}
-            ./gradlew connectedAndroidTest -Pnetwork=${{ matrix.network }} \
-              -Papi_level=${{ matrix.api-level }} -x lint \
-              --tests "com.deproof.data.rpc.RpcConnectionTest" \
-              --tests "com.deproof.data.wallet.*" \
-              --tests "com.deproof.data.rpc.BalanceQueriesTest" \
-              --tests "com.deproof.data.transaction.*" \
-              --tests "com.deproof.data.rpc.ErrorHandlingTest" \
-              --tests "com.deproof.data.rpc.PerformanceTest"
+            ./gradlew connectedAndroidTest -Pnetwork=${{ matrix.network }} -Papi_level=${{ matrix.api-level }} -x lint --tests "com.deproof.data.rpc.RpcConnectionTest" --tests "com.deproof.data.wallet.*" --tests "com.deproof.data.rpc.BalanceQueriesTest" --tests "com.deproof.data.transaction.*" --tests "com.deproof.data.rpc.ErrorHandlingTest" --tests "com.deproof.data.rpc.PerformanceTest"
 
       - name: Upload Test Results
         if: always()
