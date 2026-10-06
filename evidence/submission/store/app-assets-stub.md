@@ -17,7 +17,7 @@ inkscape assets/depr.svg --export-png=assets/icon-512.png --export-width=512 --e
 
 ### Screenshots
 
-The Solana dApp Store requires at least 2 screenshots (up to 8).
+The Solana dApp Store requires 4–8 screenshots.
 
 Recommended screenshots (record on API 28+ device or emulator):
 
@@ -48,8 +48,9 @@ adb pull /sdcard/screenshot.png evidence/submission/store/screenshot-01.png
 | App icon 512×512 PNG | Yes | STUB |
 | Screenshot 1 (workspace) | Yes | STUB |
 | Screenshot 2 (payment review) | Yes | STUB |
-| Screenshot 3 (receipts) | Recommended | STUB |
-| Screenshot 4 (wallet) | Recommended | STUB |
+| Screenshot 3 (receipts) | Yes | STUB |
+| Screenshot 4 (wallet) | Yes | STUB |
+| Screenshot 5–8 (additional flows) | Recommended | STUB |
 | Feature graphic 1024×500 | Optional | Not created |
 
 ## Note

@@ -185,41 +185,62 @@ Files at `evidence/submission/store/`:
 
 ---
 
-## 11. Go / No-Go Recommendation
+## 11. Submission Gates
 
-### CONDITIONAL GO for CLOCK IN Hackathon Submission (deadline 2026-10-08)
+Gates must pass before the final submit action. Track each independently per platform.
 
-**Rationale**:
+### CLOCK IN Hackathon (deadline 2026-10-08)
 
-The codebase is in a buildable, testable state with all compilation errors resolved. The SKR integration qualification gate passes 16/16 automated checks. 125 Kotlin JVM tests and 46 Go tests all pass. The fabricated wallet success behavior has been removed from all production paths. The submission package is complete.
+| Gate | Required evidence | Status |
+|------|-------------------|--------|
+| Signed APK | Run `source .signing.env && bash scripts/sign-apk.sh`; paste SHA-256 and certificate fingerprint here | **NO-GO** — unsigned |
+| App icon | 512×512 PNG, opaque background, rendered from `assets/depr.svg` | **NO-GO** — not created |
+| Screenshots | At least 4 captures from the actual installed APK | **NO-GO** — not captured |
+| Demo video | 90-second recording following `evidence/submission/hackathon/demo-video-script.md` | **NO-GO** — not recorded |
+| Source URL | Public GitHub repo accessible to judges | **GO** — `https://github.com/CodesbyFebin/DEPROOF-.git` |
+| Build reproducible | `./gradlew :app:assembleRelease` passes from clean checkout | **GO** — confirmed |
+| Tests pass | 125 Kotlin JVM + 46 Go + 16/16 SKR gate | **GO** — all pass |
+| No fabricated success | All wallet/payment paths honest | **GO** — audit complete |
 
-**Conditions that must be met before submitting**:
-1. User reviews and approves this readiness report
-2. User signs the release APK (set env vars, rebuild)
-3. User records a demo video following the script in `evidence/submission/hackathon/demo-video-script.md`
-4. User provides the public source URL for the hackathon submission form
+**Overall CLOCK IN status: NO-GO** (4 gates outstanding)
 
-**Blockers that do NOT prevent hackathon submission** (acceptable limitations):
-- Wallet signing requires physical device — documented and acknowledged
-- Live oracle data not connected — documented and labeled in app
-- On-chain verification blocked — documented in qualification gate
+### Solana dApp Store
 
-### CONDITIONAL GO for Solana dApp Store (pending user actions)
+| Gate | Required evidence | Status |
+|------|-------------------|--------|
+| Signed APK | Same artifact as hackathon gate | **NO-GO** — unsigned |
+| Certificate fingerprint | `keytool -printcert -jarfile app-release.apk` output | **NO-GO** — APK unsigned |
+| App icon | 512×512 PNG, opaque background | **NO-GO** — not created |
+| Screenshots | 4–8 captures from the actual installed APK | **NO-GO** — not captured |
+| Privacy policy | Public HTTPS page describing actual data handling | **NO-GO** — draft only (`evidence/submission/store/privacy-policy-stub.md`) |
+| Terms of Use | Public HTTPS URL | **NO-GO** — not hosted |
+| Package metadata | `evidence/submission/store/package-metadata.json` complete | **CONDITIONAL** — needs signed APK checksum |
+| Permission explanations | `evidence/submission/store/permission-explanations.md` | **GO** — complete |
 
-**Additional actions required for dApp Store**:
-1. Privacy policy hosted at public HTTPS URL
-2. App icon 512×512 PNG created and uploaded
-3. At least 2 screenshots captured and uploaded
-4. Signed release APK
-5. Certificate fingerprint documented
+**Overall dApp Store status: NO-GO** (6 gates outstanding)
 
-### What Would Change This to NO-GO
+---
+
+## 12. Go / No-Go Recommendation
+
+### What constitutes GO
+
+Both platforms advance to GO only when all gates in section 11 are checked.
+
+### What would force NO-GO regardless of gates
 
 - Any fabricated success path found in payment or wallet flows (none found after this audit)
 - Build failure that cannot be resolved before deadline
 - Any AUTHORIZATION≠CONSTRUCTION_ONLY path on mainnet
 
+### Acceptable limitations that do NOT block submission
+
+- Wallet signing requires physical device — documented and acknowledged
+- Live oracle data not connected — documented and labeled in app
+- On-chain verification blocked — documented in qualification gate results
+
 ---
 
 *Report generated 2026-10-07 by Claude Code (Sonnet 4.6)*
+*Updated 2026-10-07: separated CLOCK IN / dApp Store readiness; corrected screenshot requirement to 4–8 (dApp Store) and 4+ (CLOCK IN); added per-gate status table.*
 *Built by CodesbyFebin*
