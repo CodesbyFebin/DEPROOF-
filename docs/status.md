@@ -71,22 +71,31 @@ Dependency/security/environment priorities: `evidence/qualification/prioritized-
 ## Produced artifacts
 
 - `app/build/outputs/apk/debug/app-debug.apk` — debug-apk; SHA-256 `6ca1f419036b40228f2d99fc753469e1322d2c10c5a6c27bed48db97ae023def`
+- `node-agent/build/deproof-node` — darwin-amd64-node-binary; SHA-256 `9e8836fe5d858450f1ac4244d30b39cb94ea7cf26a3ae7a6f0f644e52b7406a5`
+- `prover-worker/build/prove` — local-proof-producer; SHA-256 `42d33d74471a2e84ea44b2197fb87d1fa985816dc911435ef30e7341dda68d5a`
+- `prover-worker/build/verify` — independent-proof-verifier; SHA-256 `0011598abd70624a26ef8cade51b605641b3f8c043872ff1643550fd4e170bd5`
 - `gradle/wrapper/gradle-wrapper.jar` — gradle-wrapper; SHA-256 `b3a875ddc1f044746e1b1a55f645584505f4a10438c1afea9f15e92a7c42ec13`
 - `tools/verify.py` — independent-receipt-verifier; SHA-256 `dd17a4b493cd1d11e700879a6023308daacb6315fb665e4bb5665041e6f1195a`
-- `evidence/qualification/browser/index-320.png` — browser-evidence-screenshot; SHA-256 `0ee1b1a5dceabefff0451f02f4af9bb148980027dd2c8405c816f75ed7d693e1`
-- `evidence/qualification/browser/index-1280.png` — browser-evidence-screenshot; SHA-256 `5904b1ee93c81617000b0387fc5ff73bac934b0b7bafb9d83b59add55929d648`
-- `evidence/qualification/browser/project-1280.png` — browser-evidence-screenshot; SHA-256 `b6713e07475e5906048508c7df8ab95ceb24dac50f6c27b6b1def73b9406eceb`
-- `evidence/qualification/browser/ecosystem-1280.png` — browser-evidence-screenshot; SHA-256 `13de3f001221a2244e6c2a00b6c28cdd115bdb3a3cc61ec5c9e40b3160bf0d7a`
-- `evidence/qualification/browser/how-it-works-320.png` — browser-evidence-screenshot; SHA-256 `ee686090002176ddf823f98109d425c71c19093b79c25911a80ef68e78771596`
-- `evidence/qualification/browser/ecosystem-320.png` — browser-evidence-screenshot; SHA-256 `bb7265be8b5118aa6f455a6c4448d781f66ec7476bad95eab7cd52945bf40325`
-- `evidence/qualification/browser/project-320.png` — browser-evidence-screenshot; SHA-256 `4c44231fea5f351a299662ef6e8a3a63a4e2cfbe3181714d78e5dedce30730f1`
-- `evidence/qualification/browser/features-1280.png` — browser-evidence-screenshot; SHA-256 `0c4b2d2d0b70188870ce6003e1c25ed78b0d20d00fab904adf23d49d10a2aafc`
-- `evidence/qualification/browser/documentation-1280.png` — browser-evidence-screenshot; SHA-256 `1b021f9011cf60d58f7a881623bcd9e197c2d37bfa9fee13171e60e79c133d77`
-- `evidence/qualification/browser/privacy-1280.png` — browser-evidence-screenshot; SHA-256 `4c78eb299e4ae9ff4094766329f1052beca8c34810ce13021a14699a6b12defe`
-- `evidence/qualification/browser/privacy-320.png` — browser-evidence-screenshot; SHA-256 `9ed442b992d42fce87321c44e7e52076180c531592e5172c6ac580ef9fd28113`
-- `evidence/qualification/browser/features-320.png` — browser-evidence-screenshot; SHA-256 `68abd32a0b1a8a829977621a9574364f23c89d67c21558d12b02e12e8b15a876`
-- `evidence/qualification/browser/how-it-works-1280.png` — browser-evidence-screenshot; SHA-256 `c72d1c702972d12febffe22c5dc5bb13d882825ebcd93d41960e5c63bd371704`
-- `evidence/qualification/browser/documentation-320.png` — browser-evidence-screenshot; SHA-256 `701f97ea96e0921d12e2e977bb7f3ed9a2cfe89eabb952667fd15617ecf5749f`
+- `prover-worker/build/qualified-result-20261006T172803Z-30786/circuit.r1cs` — local-proof-artifact; SHA-256 `d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954`
+- `prover-worker/build/qualified-result-20261006T172803Z-30786/public-witness.bin` — local-proof-artifact; SHA-256 `da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd`
+- `prover-worker/build/qualified-result-20261006T172803Z-30786/proof.bin` — local-proof-artifact; SHA-256 `c501257f8809b703d7787b4b266a11903f70e357908444cb8a9c87679bc70483`
+- `prover-worker/build/qualified-result-20261006T172803Z-30786/manifest.json` — local-proof-artifact; SHA-256 `477e8bb1960662ebce11a63d188bec4ad5350522815531857659df50d364fb92`
+- `prover-worker/build/qualified-result-20261006T172803Z-30786/verification-key.bin` — local-proof-artifact; SHA-256 `3b9f62c70c00dfa7291d805ba888f5b0f864a53a76223aec64dd34c5743c37f7`
+- `prover-worker/build/qualified-result-20261006T172803Z-30786/proving-key.bin` — local-proof-artifact; SHA-256 `976cb3264944cdea9c86d34fd6cd1bc21f6013b24f5d894b0f720e43c50e7f1e`
+- `evidence/qualification/browser/index-320.png` — browser-evidence-screenshot; SHA-256 `391521697de518b00974d4589583d08f8c6be37af2b529ebc28b0dd953e81f64`
+- `evidence/qualification/browser/index-1280.png` — browser-evidence-screenshot; SHA-256 `85cfcc939ff6e24fc539bb3813cba35076eba6aa83c6c1d4931bc58fcf5ac93f`
+- `evidence/qualification/browser/project-1280.png` — browser-evidence-screenshot; SHA-256 `05accf7191081f07fd73ee62c33b2fc13876941816776c273fffe0749af2d3d3`
+- `evidence/qualification/browser/ecosystem-1280.png` — browser-evidence-screenshot; SHA-256 `25844a0337b238c7f355650524cb90af25825f274de5b15aced078ef7004139d`
+- `evidence/qualification/browser/how-it-works-320.png` — browser-evidence-screenshot; SHA-256 `f0f7e5d7c024ab2b561317cd0df6e5215e1676ea38e2d40b163966c85d2837d1`
+- `evidence/qualification/browser/ecosystem-320.png` — browser-evidence-screenshot; SHA-256 `527711d0d7efb96ccf1a9b9777ecfe41d1bbd8ba272523070f4817880ed5788f`
+- `evidence/qualification/browser/project-320.png` — browser-evidence-screenshot; SHA-256 `d8a4e22a8d566728ed2a3b252e7bbabe45e2ac8d5770a198a94cd4b22106f0dc`
+- `evidence/qualification/browser/features-1280.png` — browser-evidence-screenshot; SHA-256 `a3624734c692bf45a325ed7fdb741763c3e5dd36a3d5176a84ed15e47bb07860`
+- `evidence/qualification/browser/documentation-1280.png` — browser-evidence-screenshot; SHA-256 `de4f552a2fc2c865899e9c557b265300d1c6126f5d30319c66881c2b1d0de637`
+- `evidence/qualification/browser/privacy-1280.png` — browser-evidence-screenshot; SHA-256 `99d5faebb0a825590e23b71ee1e26c2b0119c4be3bc7ed9bbcdad81cd19e6008`
+- `evidence/qualification/browser/privacy-320.png` — browser-evidence-screenshot; SHA-256 `8bd64c61271a0f5444431dd1c03292e4de9488ed2e9a8c884189b58929ae0e49`
+- `evidence/qualification/browser/features-320.png` — browser-evidence-screenshot; SHA-256 `0d2f9194cddd1a4e82bc5712cb88f1f5246d64b5aef3b486f68247c7671185d1`
+- `evidence/qualification/browser/how-it-works-1280.png` — browser-evidence-screenshot; SHA-256 `ef226151c647d387bf497e0126a43fd1a5b7b0acc7f8d6a2e8e85825126be847`
+- `evidence/qualification/browser/documentation-320.png` — browser-evidence-screenshot; SHA-256 `adad8dbd3b85da01c12140a69a4f3986584076b51791f1314693aa573cec7818`
 
 Source snapshot: `evidence/qualification/deproof-source-snapshot.zip`. Local artifact only; imported asset rights remain unresolved. No publishing, deployment, token issuance or mainnet spending occurred.
 
