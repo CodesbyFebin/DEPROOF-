@@ -1,0 +1,28 @@
+Gradle Wrapper JAR Checksum
+============================
+Date: 2026-10-06
+Purpose: Build reproducibility verification
+
+File: gradle/wrapper/gradle-wrapper.jar
+SHA256: 7d3a4ac4de1c32b59bc6a4eb8ecb8e612ccd0cf1ae1e99f66902da64df296172
+
+Gradle Properties:
+- Version: 8.5 (from gradle/wrapper/gradle-wrapper.properties)
+- Distribution Type: bin (binary, excludes documentation)
+- Wrapper Source: Gradle official repository
+
+Reproducibility Notes:
+- This JAR is included in the repository for deterministic builds
+- The checksum above enables verification of the exact build tool version
+- All builds with this JAR will produce identical compilation behavior
+- To verify: sha256sum gradle/wrapper/gradle-wrapper.jar
+
+Build Configuration:
+- Target: Android app (app/build.gradle.kts)
+- SDK Version: Configured in gradle.properties
+- Build Chain: Kotlin compilation → APK generation
+
+CI/CD Integration:
+- Used in GitHub Actions workflow (.github/workflows/build.yml)
+- Ensures consistent results across different CI environments
+- Required for reproducible build certification
