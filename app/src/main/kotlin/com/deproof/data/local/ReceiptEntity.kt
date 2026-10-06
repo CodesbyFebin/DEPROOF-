@@ -58,12 +58,13 @@ interface ReceiptDao {
     suspend fun getReceiptCount(): Int
 }
 
-@Database(entities = [ReceiptEntity::class], version = 1)
+@Database(entities = [ReceiptEntity::class], version = 1, exportSchema = false)
+@TypeConverters(ReceiptTypeConverters::class)
 abstract class DepRoofDatabase : RoomDatabase() {
     abstract fun receiptDao(): ReceiptDao
 
     companion object {
-        const val DATABASE_NAME = "deproof.db"
+        const val DATABASE_NAME = "deproof_db"
     }
 }
 
@@ -93,6 +94,10 @@ fun com.deproof.domain.model.Receipt.toEntity(): ReceiptEntity {
         chainSubmitted = chainSubmitted,
         jsonData = jsonData
     )
+}
+
+object ReceiptTypeConverters {
+    // Room type converters can be added here if needed
 }
 
 // ========== Response Models for API ==========
@@ -157,31 +162,7 @@ data class Status(
     val Ok: String?
 )
 
-// ========== DTO Converters ==========
-
-fun ReceiptEntity.toDomain(): com.deproof.domain.model.Receipt =
-    com.deproof.domain.model.Receipt(
-        id = id,
-        transactionHash = transactionHash,
-        verdict = verdict,
-        messageHash = messageHash,
-        timestamp = timestamp,
-        signatureStatus = com.deproof.domain.model.SignatureStatus.valueOf(signatureStatus),
-        chainSubmitted = chainSubmitted,
-        jsonData = jsonData
-    )
-
-fun com.deproof.domain.model.Receipt.toEntity(): ReceiptEntity =
-    ReceiptEntity(
-        id = id,
-        transactionHash = transactionHash,
-        verdict = verdict,
-        messageHash = messageHash,
-        timestamp = timestamp,
-        signatureStatus = signatureStatus.name,
-        chainSubmitted = chainSubmitted,
-        jsonData = jsonData
-    )
+// ========== JSON Serialization ==========
 
 fun ReceiptEntity.toJson(): String = Gson().toJson(this)
 
