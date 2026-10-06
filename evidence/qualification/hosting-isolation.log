@@ -1,12 +1,25 @@
-PASS: nonroot_identity
-PASS: readonly_root
-PASS: capabilities_dropped
-PASS: no_new_privileges
-PASS: network_has_no_route
-PASS: memory_cap_enforced
-PASS: cpu_cap_enforced
-PASS: cpu_throttling_observed
-PASS: pid_cap_configured
-PASS: tmpfs_noexec
-PASS: tmpfs_disk_exhaustion
-PASS: pid_exhaustion
+Traceback (most recent call last):
+  File "/home/codesbyfebin/DeProof/scripts/qualify-hosting.py", line 49, in <module>
+    if __name__=='__main__':sys.exit(main())
+                                     ~~~~^^
+  File "/home/codesbyfebin/DeProof/scripts/qualify-hosting.py", line 12, in main
+    info=docker('info','--format','{{json .}}')
+  File "/home/codesbyfebin/DeProof/scripts/qualify-hosting.py", line 9, in docker
+    def docker(*args,timeout=30):return subprocess.run(['docker',*args],capture_output=True,text=True,timeout=timeout)
+                                        ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/subprocess.py", line 554, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/subprocess.py", line 1969, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'docker'

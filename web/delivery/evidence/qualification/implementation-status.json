@@ -1,7 +1,7 @@
 {
   "sourceManifest": "evidence/qualification/source-before.json",
   "schema": "deproof-implementation-status-v1",
-  "generatedAt": "2026-10-06T12:40:16.853175+00:00",
+  "generatedAt": "2026-10-06T12:53:37.795423+00:00",
   "product": "Deproof",
   "mark": "DEPR",
   "credit": "Built by CodesbyFebin",
@@ -49,7 +49,7 @@
         "python3",
         "scripts/qualify-core.py"
       ],
-      "ranAt": "2026-10-06T12:38:28.352996+00:00"
+      "ranAt": "2026-10-06T12:52:02.306245+00:00"
     },
     {
       "gate": "android-build",
@@ -58,7 +58,7 @@
       "command": [
         "scripts/qualify-android.sh"
       ],
-      "ranAt": "2026-10-06T12:38:49.198493+00:00"
+      "ranAt": "2026-10-06T12:52:15.358802+00:00"
     },
     {
       "gate": "node-tests",
@@ -67,7 +67,7 @@
       "command": [
         "scripts/qualify-node.sh"
       ],
-      "ranAt": "2026-10-06T12:38:54.021218+00:00"
+      "ranAt": "2026-10-06T12:52:20.594864+00:00"
     },
     {
       "gate": "prover-tests",
@@ -76,7 +76,7 @@
       "command": [
         "scripts/qualify-prover.sh"
       ],
-      "ranAt": "2026-10-06T12:38:57.549180+00:00"
+      "ranAt": "2026-10-06T12:52:24.348306+00:00"
     },
     {
       "gate": "verifier-tests",
@@ -92,7 +92,7 @@
         "-p",
         "test_*.py"
       ],
-      "ranAt": "2026-10-06T12:38:57.954107+00:00"
+      "ranAt": "2026-10-06T12:52:24.776034+00:00"
     },
     {
       "gate": "localization-catalogs",
@@ -102,7 +102,7 @@
         "python3",
         "scripts/qualify-localization.py"
       ],
-      "ranAt": "2026-10-06T12:38:58.093938+00:00"
+      "ranAt": "2026-10-06T12:52:24.917112+00:00"
     },
     {
       "gate": "hosting-isolation",
@@ -112,7 +112,7 @@
         "python3",
         "scripts/qualify-hosting.py"
       ],
-      "ranAt": "2026-10-06T12:39:08.700055+00:00"
+      "ranAt": "2026-10-06T12:52:35.261141+00:00"
     },
     {
       "gate": "node-integration",
@@ -124,7 +124,7 @@
         "python3",
         "scripts/qualify-integration.py"
       ],
-      "ranAt": "2026-10-06T12:39:46.326678+00:00"
+      "ranAt": "2026-10-06T12:53:11.323731+00:00"
     },
     {
       "gate": "rpc-read-only",
@@ -134,7 +134,7 @@
         "python3",
         "scripts/qualify-rpc.py"
       ],
-      "ranAt": "2026-10-06T12:39:51.118061+00:00"
+      "ranAt": "2026-10-06T12:53:12.996739+00:00"
     },
     {
       "gate": "coverage-reconciliation",
@@ -144,7 +144,7 @@
         "python3",
         "scripts/reconcile-coverage.py"
       ],
-      "ranAt": "2026-10-06T12:39:51.367083+00:00"
+      "ranAt": "2026-10-06T12:53:13.234931+00:00"
     },
     {
       "gate": "backlog-priorities",
@@ -154,7 +154,7 @@
         "python3",
         "scripts/prioritize-uncovered.py"
       ],
-      "ranAt": "2026-10-06T12:39:51.488678+00:00"
+      "ranAt": "2026-10-06T12:53:13.356324+00:00"
     },
     {
       "gate": "registry-checks",
@@ -164,7 +164,7 @@
         "python3",
         "scripts/check-registries.py"
       ],
-      "ranAt": "2026-10-06T12:39:51.621054+00:00"
+      "ranAt": "2026-10-06T12:53:13.487750+00:00"
     },
     {
       "gate": "web-build",
@@ -174,7 +174,7 @@
         "python3",
         "scripts/build-web.py"
       ],
-      "ranAt": "2026-10-06T12:39:51.766573+00:00"
+      "ranAt": "2026-10-06T12:53:13.636578+00:00"
     },
     {
       "gate": "web-checks",
@@ -184,7 +184,7 @@
         "python3",
         "scripts/qualify-web.py"
       ],
-      "ranAt": "2026-10-06T12:39:53.576570+00:00"
+      "ranAt": "2026-10-06T12:53:15.416135+00:00"
     },
     {
       "gate": "browser-checks",
@@ -194,7 +194,7 @@
         "node",
         "scripts/browser/qualify.mjs"
       ],
-      "ranAt": "2026-10-06T12:40:16.283756+00:00"
+      "ranAt": "2026-10-06T12:53:37.284169+00:00"
     },
     {
       "gate": "coverage-reconciliation",
@@ -204,7 +204,7 @@
         "python3",
         "scripts/reconcile-coverage.py"
       ],
-      "ranAt": "2026-10-06T12:40:16.442672+00:00"
+      "ranAt": "2026-10-06T12:53:37.435097+00:00"
     },
     {
       "gate": "backlog-priorities",
@@ -214,7 +214,7 @@
         "python3",
         "scripts/prioritize-uncovered.py"
       ],
-      "ranAt": "2026-10-06T12:40:16.560252+00:00"
+      "ranAt": "2026-10-06T12:53:37.553058+00:00"
     }
   ],
   "blockers": [
@@ -280,19 +280,19 @@
     {
       "path": "node-agent/build/deproof-node",
       "kind": "darwin-amd64-node-binary",
-      "sha256": "9f45a00f734959e5532e0751bcf44885f1ce72abb0f6ac5d17e05a87125c9893",
+      "sha256": "e8ed153e3b3431f6ff6b19f5f03ca9bc222f1de912ef32e398c37195dacd79cf",
       "bytes": "10730144"
     },
     {
       "path": "prover-worker/build/prove",
       "kind": "local-proof-producer",
-      "sha256": "4e0d36f7b2da7434362bd349c019f143b14e97ec9de9d21b5526b27bc7475a03",
+      "sha256": "98791f6f3862f2ab827e5c5a39918a02939bb799ae6ea844400464b3a6c89c84",
       "bytes": "16556848"
     },
     {
       "path": "prover-worker/build/verify",
       "kind": "independent-proof-verifier",
-      "sha256": "3794f0176a6c7756a4522b815d94af24bb55de774f2b72d2c0635f574d346636",
+      "sha256": "099fc2ca0cee8f49706f6594c2db8a33a012d237f4beb54e1dfa9446e12764cd",
       "bytes": "9640336"
     },
     {
@@ -1058,6 +1058,42 @@
       "bytes": "164"
     },
     {
+      "path": "prover-worker/build/qualified-result-20261006T125224Z-88118/circuit.r1cs",
+      "kind": "local-proof-artifact",
+      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
+      "bytes": "867"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T125224Z-88118/verification-key.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "639702f90c57e0ad913a9f9d04017094a113115d1aa827ca93fb874da861bd68",
+      "bytes": "364"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T125224Z-88118/proving-key.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "f5aa3068008729b5727b3e36eb483a76d5139401c657646af572dcb40109ba18",
+      "bytes": "1027"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T125224Z-88118/public-witness.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
+      "bytes": "44"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T125224Z-88118/manifest.json",
+      "kind": "local-proof-artifact",
+      "sha256": "fec644ddfa3c9f70e90579a4665bd4a9b44c0d836811a63f592649b09fb98c2e",
+      "bytes": "695"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T125224Z-88118/proof.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "b492267db69eb6f1e988d2c820100c3a88743aa793feed42aba9643a4870be0d",
+      "bytes": "164"
+    },
+    {
       "path": "evidence/qualification/browser/features-1280.png",
       "kind": "browser-evidence-screenshot",
       "sha256": "0c4b2d2d0b70188870ce6003e1c25ed78b0d20d00fab904adf23d49d10a2aafc",
@@ -1144,8 +1180,8 @@
     {
       "path": "evidence/qualification/deproof-source-snapshot.zip",
       "kind": "local-source-snapshot",
-      "sha256": "867eddff504e23a0e4c3f1e428a4fd1eaf9ac7168c55c04e2edda2e86ec2828a",
-      "bytes": "16995086"
+      "sha256": "3ca6404c4ed7c6a65e88c5da7c911634eee593941f6e631f717e6c2ee86032dc",
+      "bytes": "16998064"
     }
   ],
   "coverage": {
