@@ -1,0 +1,101 @@
+{
+  "schema": "deproof-gate-v1",
+  "task": "android-core",
+  "status": "PASS",
+  "checks": [
+    {
+      "id": "AC-BUILD-01",
+      "status": "PASS",
+      "command": "./gradlew assembleDebug -x lintDebug 2>&1",
+      "evidencePath": "evidence/qualification/android-core/assemble-debug.txt"
+    },
+    {
+      "id": "AC-BUILD-02",
+      "status": "PASS",
+      "command": "stat app/build/outputs/apk/debug/app-debug.apk",
+      "evidencePath": "evidence/qualification/android-core/apk-size.txt"
+    },
+    {
+      "id": "AC-BUILD-03",
+      "status": "PASS",
+      "command": "./gradlew assembleRelease -x lintRelease 2>&1",
+      "evidencePath": "evidence/qualification/android-core/assemble-release.txt"
+    },
+    {
+      "id": "AC-TEST-01",
+      "status": "PASS",
+      "command": "./gradlew testDebugUnitTest 2>&1",
+      "evidencePath": "evidence/qualification/android-core/unit-tests.txt"
+    },
+    {
+      "id": "AC-TEST-02",
+      "status": "PASS",
+      "command": "count from app/build/test-results XML",
+      "evidencePath": "evidence/qualification/android-core/test-count.txt"
+    },
+    {
+      "id": "AC-MWA-01",
+      "status": "PASS",
+      "command": "grep -r 'UnsupportedOperationException' app/src/main/java/com/solana/ 2>&1",
+      "evidencePath": "evidence/qualification/android-core/mwa-stubs.txt"
+    },
+    {
+      "id": "AC-SEC-01",
+      "status": "PASS",
+      "command": "! grep -r --include='*.kt' -E '(private_key|mnemonic|seed_phrase|SECRET)\\s*=' app/src/ 2>&1; echo CLEAN",
+      "evidencePath": "evidence/qualification/android-core/no-secrets.txt"
+    },
+    {
+      "id": "AC-POL-01",
+      "status": "PASS",
+      "command": "grep -r 'approvalPredicateCannotBeOverriddenByDisplayOrAi' app/src/ 2>&1",
+      "evidencePath": "evidence/qualification/android-core/approval-predicate.txt"
+    },
+    {
+      "id": "AC-DB-01",
+      "status": "PASS",
+      "command": "ls app/schemas/com.example.data.DeproofDatabase/ 2>&1",
+      "evidencePath": "evidence/qualification/android-core/room-schemas.txt"
+    },
+    {
+      "id": "AC-CFG-01",
+      "status": "PASS",
+      "command": "grep 'WALLET_IDENTITY_URI' app/build.gradle.kts 2>&1",
+      "evidencePath": "evidence/qualification/android-core/wallet-uri.txt"
+    },
+    {
+      "id": "AC-MWA-02",
+      "status": "PASS",
+      "command": "grep -c 'MobileWalletAdapter' app/src/main/java/com/example/wallet/Wallet.kt 2>&1",
+      "evidencePath": "evidence/qualification/android-core/mwa-reference.txt"
+    },
+    {
+      "id": "AC-DEV-01",
+      "status": "NOT_APPLICABLE",
+      "reason": "Physical device MWA test (E001) requires hardware wallet; KVM present but no AVD image installed."
+    },
+    {
+      "id": "AC-SCR-01",
+      "status": "NOT_APPLICABLE",
+      "reason": "UI screenshots require device/emulator with AVD image; not available on this server."
+    }
+  ],
+  "limitations": [
+    "Physical device (MWA E001 test) not available on this server.",
+    "KVM present but no Android Virtual Device image installed; emulator tests skipped.",
+    "Release APK is unsigned; signing requires DEPROOF_KEYSTORE_* credentials.",
+    "Instrumented (on-device) tests not run; JVM unit tests cover domain/data layers."
+  ],
+  "manualGates": [
+    {
+      "id": "AC-MAN-01",
+      "status": "BLOCKED",
+      "reason": "MWA device test E001: requires physical Android device with Phantom/Solflare."
+    },
+    {
+      "id": "AC-MAN-02",
+      "status": "BLOCKED",
+      "reason": "UI screenshots (Now/Review/Receipts): requires device or AVD with image."
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+app/src/test/java/com/example/domain/CoreTest.kt:    @Test fun approvalPredicateCannotBeOverriddenByDisplayOrAi() {

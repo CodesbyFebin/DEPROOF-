@@ -1,0 +1,1 @@
+        buildConfigField("String", "WALLET_IDENTITY_URI", "\"https://deproof.app\"")
