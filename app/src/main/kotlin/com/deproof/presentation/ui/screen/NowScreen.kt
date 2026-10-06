@@ -57,7 +57,8 @@ fun NowScreen(viewModel: NowViewModel) {
                     },
                     onDisconnect = { viewModel.disconnectWallet() },
                     addressInput = addressInput,
-                    onAddressChange = { addressInput = it }
+                    onAddressChange = { addressInput = it },
+                    clipboardManager = clipboardManager
                 )
             }
 
@@ -120,7 +121,8 @@ private fun WalletConnectionCard(
     onConnect: (String) -> Unit,
     onDisconnect: () -> Unit,
     addressInput: String,
-    onAddressChange: (String) -> Unit
+    onAddressChange: (String) -> Unit,
+    clipboardManager: androidx.compose.ui.platform.ClipboardManager
 ) {
     Card(
         modifier = Modifier.fillMaxWidth()
