@@ -50,6 +50,33 @@
           "type": "null"
         }
       ]
+    },
+    "resourceProfile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "circuit",
+        "circuitVersion",
+        "minMemoryMiB",
+        "minCpuCores"
+      ],
+      "properties": {
+        "circuit": {
+          "const": "owner-local-cubic"
+        },
+        "circuitVersion": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "minMemoryMiB": {
+          "type": "string",
+          "pattern": "^(0|[1-9][0-9]{0,8})$"
+        },
+        "minCpuCores": {
+          "type": "string",
+          "pattern": "^(0|[1-9][0-9]{0,8})$"
+        }
+      }
     }
   },
   "required": [

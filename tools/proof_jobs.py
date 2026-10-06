@@ -25,6 +25,7 @@ def create(directory):
  key=Ed25519PrivateKey.generate();public=key.public_key().public_bytes(Encoding.Raw,PublicFormat.Raw)
  setup=directory/'setup';invoke([ROOT/'prover-worker/build/prove',setup])
  job={'schema':'deproof-proof-job-v1','id':str(uuid.uuid4()),'backend':'gnark-v0.14.0','scheme':'Groth16/BN254','circuitDigest':digest((setup/'circuit.r1cs').read_bytes()),'verificationKeyDigest':digest((setup/'verification-key.bin').read_bytes()),'inputCommitment':digest(canonical({'x':'3','y':'35'})),'publicInputs':{'y':'35'},'maxWitnessBytes':'32','deadline':(now()+datetime.timedelta(minutes=30)).isoformat().replace('+00:00','Z'),'source':'OWNER_LOCAL_CUBIC_SAMPLE','compensation':None}
+ job['resourceProfile']={'circuit':'owner-local-cubic','circuitVersion':job['circuitDigest'],'minMemoryMiB':'256','minCpuCores':'1'}
  raw=canonical(job);signed={'schema':'deproof-signed-job-v1','payloadBase64':base64.b64encode(raw).decode(),'signatureBase64':base64.b64encode(key.sign(raw)).decode(),'publicKeyBase64':base64.b64encode(public).decode()}
  (directory/'owner-public.key').write_text(base64.b64encode(public).decode());(directory/'job.json').write_text(json.dumps(signed,indent=2))
  # No owner private key persisted: the example issuer cannot silently replace a signed job.
@@ -34,7 +35,9 @@ def validate(job_path,owner_path):
  signed=load(read_bounded(job_path));require(set(signed)=={'schema','payloadBase64','signatureBase64','publicKeyBase64'} and signed['schema']=='deproof-signed-job-v1','JOB_ENVELOPE')
  public=b64(read_bounded(owner_path,256).decode().strip());require(b64(signed['publicKeyBase64'])==public,'JOB_OWNER_MISMATCH')
  raw=b64(signed['payloadBase64']);require(len(raw)<=32768,'JOB_TOO_LARGE');Ed25519PublicKey.from_public_bytes(public).verify(b64(signed['signatureBase64']),raw)
- job=load(raw);require(set(job)==FIELDS and canonical(job)==raw,'JOB_FIELDS_OR_CANONICALIZATION')
+ job=load(raw);require(set(job) in (FIELDS,FIELDS|{'resourceProfile'}) and canonical(job)==raw,'JOB_FIELDS_OR_CANONICALIZATION')
+ if 'resourceProfile' in job:
+  require(job['resourceProfile']=={'circuit':'owner-local-cubic','circuitVersion':job['circuitDigest'],'minMemoryMiB':'256','minCpuCores':'1'},'RESOURCE_PROFILE_DENIED')
  require(job['schema']=='deproof-proof-job-v1' and job['backend']=='gnark-v0.14.0' and job['scheme']=='Groth16/BN254','BACKEND_MISMATCH')
  require(job['publicInputs']=={'y':'35'} and job['inputCommitment']==digest(canonical({'x':'3','y':'35'})) and job['maxWitnessBytes']=='32' and job['compensation'] is None,'INPUT_PROFILE_DENIED')
  require(datetime.datetime.fromisoformat(job['deadline'].replace('Z','+00:00'))>now(),'JOB_EXPIRED')

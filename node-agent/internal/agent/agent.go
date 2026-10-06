@@ -521,7 +521,9 @@ func (a *Agent) Command(s Signed) (any, error) {
 			proofState = "RUNNING"
 		}
 		result := map[string]any{"fingerprint": a.Fingerprint(), "hostOS": runtime.GOOS, "architecture": runtime.GOARCH, "logicalCPUs": runtime.NumCPU(), "observedAt": time.Now().UTC().Format(time.RFC3339Nano), "keyProtection": "PERMISSION_RESTRICTED_FILE; SOFTWARE", "hosting": "BLOCKED_RUNTIME_ISOLATION_UNQUALIFIED", "serviceCount": 0, "bandwidth": a.state.Consent, "proofBackend": a.proofCapability(), "proofState": proofState, "proofOperation": a.proofOperation, "activeOperations": active}
+		proofConfig := a.proofConfig
 		a.mu.Unlock()
+		result["proofCapabilities"] = proofCapabilities(proofConfig)
 		if a.hostingConfig != nil {
 			service, se := a.service("status", nil)
 			if se != nil {
