@@ -196,6 +196,8 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     androidTestImplementation("androidx.test.espresso:espresso-intents:3.5.1")
     androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.5.4")
+    androidTestImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.2")
+    androidTestImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.2")
 
     // Debug
     debugImplementation("androidx.compose.ui:ui-tooling:1.5.4")
