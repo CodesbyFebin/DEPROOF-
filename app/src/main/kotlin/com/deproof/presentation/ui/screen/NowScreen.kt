@@ -10,7 +10,6 @@ import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ContentCopy
 import androidx.compose.material.icons.filled.Refresh
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -180,7 +179,7 @@ private fun WalletConnectionCard(
                         val annotatedString = AnnotatedString(walletInfo.publicKey)
                         clipboardManager.setText(annotatedString)
                     }) {
-                        Icon(Icons.Default.ContentCopy, contentDescription = "Copy")
+                        Text("Copy")
                     }
                 }
 

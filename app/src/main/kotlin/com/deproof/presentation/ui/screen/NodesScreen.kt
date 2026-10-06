@@ -5,8 +5,8 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Cloud
-import androidx.compose.material.icons.filled.CloudOff
+import androidx.compose.material.icons.filled.CheckCircle
+import androidx.compose.material.icons.filled.Warning
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -171,7 +171,7 @@ private fun NodeCard(node: NetworkNode) {
             verticalAlignment = Alignment.CenterVertically
         ) {
             Icon(
-                imageVector = if (node.isActive) Icons.Default.Cloud else Icons.Default.CloudOff,
+                imageVector = if (node.isActive) Icons.Default.CheckCircle else Icons.Default.Warning,
                 contentDescription = "Node Status",
                 tint = if (node.isActive) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.error,
                 modifier = Modifier.size(32.dp)

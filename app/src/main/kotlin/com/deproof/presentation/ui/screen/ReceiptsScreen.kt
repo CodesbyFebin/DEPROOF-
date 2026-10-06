@@ -5,7 +5,6 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Delete
-import androidx.compose.material.icons.filled.FileDownload
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -208,7 +207,7 @@ private fun ReceiptItemCard(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 IconButton(onClick = onExport) {
-                    Icon(Icons.Default.FileDownload, contentDescription = "Export")
+                    Text("Export")
                 }
                 IconButton(onClick = onDelete) {
                     Icon(Icons.Default.Delete, contentDescription = "Delete")
