@@ -16,9 +16,11 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.deproof.data.repository.RpcRepository
 import com.deproof.data.repository.ReceiptRepository
+import com.deproof.presentation.navigation.DeepLinkNavigator
 import com.deproof.presentation.ui.screen.*
 import com.deproof.presentation.ui.theme.DepRoofTheme
 import com.deproof.presentation.viewmodel.*
+import timber.log.Timber
 
 class MainActivity : ComponentActivity() {
 
@@ -32,9 +34,14 @@ class MainActivity : ComponentActivity() {
         val database = com.deproof.App.getDatabase()
         receiptRepository = ReceiptRepository(database.receiptDao())
 
+        val deepLinkUri = intent?.data
+        if (deepLinkUri != null) {
+            Timber.d("Activity launched with deep link: $deepLinkUri")
+        }
+
         setContent {
             DepRoofTheme {
-                DepRoofApp(rpcRepository, receiptRepository)
+                DepRoofApp(rpcRepository, receiptRepository, deepLinkUri)
             }
         }
     }
@@ -43,10 +50,17 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun DepRoofApp(
     rpcRepository: RpcRepository,
-    receiptRepository: ReceiptRepository
+    receiptRepository: ReceiptRepository,
+    deepLinkUri: android.net.Uri? = null
 ) {
     val navController = rememberNavController()
     var selectedTab by remember { mutableStateOf(0) }
+
+    LaunchedEffect(deepLinkUri) {
+        if (deepLinkUri != null) {
+            DeepLinkNavigator.handleDeepLink(deepLinkUri, navController)
+        }
+    }
 
     val nowViewModel = remember { NowViewModel(rpcRepository) }
     val reviewViewModel = remember { ReviewViewModel(rpcRepository, receiptRepository) }
