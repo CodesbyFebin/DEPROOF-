@@ -4,9 +4,26 @@ build/
 app/build/
 .deproof-runs/
 .env
+.env.local
+.env.*.local
 *.log
 *.swp
 *.swo
 *~
 .DS_Store
 *.apk
+
+# Keystore and signing configuration (NEVER commit credentials)
+*.jks
+*.keystore
+*.p12
+*.pfx
+.deproof-build-env.sh
+~/.deproof-build-env.sh
+deproof-release.jks
+deproof-debug.jks
+
+# CI/CD secrets
+.github/secrets/
+.gitlab/secrets/
+.circleci/secrets/

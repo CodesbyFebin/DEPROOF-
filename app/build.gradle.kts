@@ -45,6 +45,9 @@ android {
             )
 
             buildConfigField("Boolean", "DEBUG_MODE", "false")
+
+            // Apply signing configuration if available
+            signingConfig = signingConfigs.findByName("release")
         }
 
         debug {
@@ -53,8 +56,27 @@ android {
         }
     }
 
-    // Signing configuration (release)
-    // Note: Configure with environment variables DEPROOF_KEYSTORE_PATH, DEPROOF_KEYSTORE_PASSWORD, DEPROOF_KEY_ALIAS, DEPROOF_KEY_PASSWORD
+    signingConfigs {
+        create("release") {
+            val keystorePath = System.getenv("DEPROOF_KEYSTORE_PATH") ?: ""
+            val keystorePassword = System.getenv("DEPROOF_KEYSTORE_PASSWORD") ?: ""
+            val keyAlias = System.getenv("DEPROOF_KEY_ALIAS") ?: ""
+            val keyPassword = System.getenv("DEPROOF_KEY_PASSWORD") ?: ""
+
+            if (keystorePath.isNotEmpty() && keystorePassword.isNotEmpty() &&
+                keyAlias.isNotEmpty() && keyPassword.isNotEmpty()) {
+                storeFile = file(keystorePath)
+                storePassword = keystorePassword
+                keyAlias = keyAlias
+                keyPassword = keyPassword
+            } else if (keystorePath.isNotEmpty()) {
+                // Partial configuration provided - log warning
+                println("⚠️  WARNING: Incomplete signing configuration detected.")
+                println("Set all of: DEPROOF_KEYSTORE_PATH, DEPROOF_KEYSTORE_PASSWORD, DEPROOF_KEY_ALIAS, DEPROOF_KEY_PASSWORD")
+                println("Release builds will not be signed without complete configuration.")
+            }
+        }
+    }
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
