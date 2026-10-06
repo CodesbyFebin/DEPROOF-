@@ -7,7 +7,7 @@ import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.CheckCircle
-import androidx.compose.material.icons.filled.Error
+import androidx.compose.material.icons.filled.Warning
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -188,8 +188,8 @@ private fun TransactionDetailsCard(txHash: String, transactionData: String) {
 private fun VerdictCard(verdict: Verdict) {
     val (icon, color, text) = when (verdict) {
         is Verdict.Payable -> Triple(Icons.Default.CheckCircle, MaterialTheme.colorScheme.primary, "PAYABLE")
-        is Verdict.DoNotSign -> Triple(Icons.Default.Error, MaterialTheme.colorScheme.error, "DO NOT SIGN")
-        is Verdict.Unknown -> Triple(Icons.Default.Error, MaterialTheme.colorScheme.warning, verdict.reason)
+        is Verdict.DoNotSign -> Triple(Icons.Default.Warning, MaterialTheme.colorScheme.error, "DO NOT SIGN")
+        is Verdict.Unknown -> Triple(Icons.Default.Warning, MaterialTheme.colorScheme.warning, verdict.reason)
     }
 
     Card(
@@ -351,6 +351,31 @@ private fun SuccessCard(message: String, onDismiss: () -> Unit) {
             Button(
                 onClick = onDismiss,
                 modifier = Modifier.align(Alignment.End)
+            ) {
+                Text("Dismiss")
+            }
+        }
+    }
+}
+
+@Composable
+private fun ErrorCard(message: String, onDismiss: () -> Unit) {
+    Card(
+        modifier = Modifier.fillMaxWidth(),
+        colors = CardDefaults.cardColors(
+            containerColor = MaterialTheme.colorScheme.errorContainer
+        )
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp)
+        ) {
+            Text(message, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.error)
+            Button(
+                onClick = onDismiss,
+                modifier = Modifier.align(Alignment.End),
+                colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.error)
             ) {
                 Text("Dismiss")
             }
