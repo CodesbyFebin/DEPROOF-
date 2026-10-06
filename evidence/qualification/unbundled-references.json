@@ -1,0 +1,1034 @@
+{
+  "schema": "deproof-unbundled-references-v1",
+  "purpose": "Every path cited by committed qualification reports that is not in the git tree. Each entry states why it is not bundled and how to regenerate it. Screenshots are bundled separately.",
+  "count": 79,
+  "entries": [
+    {
+      "path": "app/build/outputs/apk/debug/app-debug.apk",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "64cd7d377a33385156013c61c61528ac7a5f07690fe7d340d19eeafd5ce72ab2",
+      "sizeBytes": 18187351,
+      "reason": "not committed",
+      "regenerate": "./gradlew assembleDebug (not committed: binary build output)"
+    },
+    {
+      "path": "evidence/qualification/deproof-source-snapshot.zip",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "426017b6cfa6f2132ab05166c8301e57da3d97f99ba77dba11d1f6d70a0b924f",
+      "sizeBytes": 16942709,
+      "reason": "not committed",
+      "regenerate": "scripts/report-qualification.py (local source snapshot; not committed: contains local checkout paths)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T050420Z-60151/circuit.r1cs",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
+      "sizeBytes": 867,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T050420Z-60151/manifest.json",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "39648eff367b6c022088a7050f2ab3b4ec689438618b6f5342b9bc299bc48ebb",
+      "sizeBytes": 600,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T050420Z-60151/proof.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "547ab90e2af8648705ca95ecbaba433d28ce13165bdaca1cdfd4dced8a1ea78c",
+      "sizeBytes": 164,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T050420Z-60151/public-witness.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
+      "sizeBytes": 44,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T050420Z-60151/verification-key.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "1e70273cda7799bf7650ca33ab5f719081d076dc8dd62ea7a657d947df2e5dd7",
+      "sizeBytes": 364,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T051908Z-60750/circuit.r1cs",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
+      "sizeBytes": 867,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T051908Z-60750/manifest.json",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "0bbf5da7c8c617718ea23b35e624b3841268c29e52eb696c825a2ca4fe38e3a1",
+      "sizeBytes": 695,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T051908Z-60750/proof.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "67990a6f1fb8ced7fed8be89588f54543046e325d91c13719069f53c8e22076d",
+      "sizeBytes": 164,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T051908Z-60750/proving-key.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "43a55c4baf0926845e1a5c9b390b0c8b54ae913d512c533afe35be61285687c8",
+      "sizeBytes": 1027,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T051908Z-60750/public-witness.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
+      "sizeBytes": 44,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T051908Z-60750/verification-key.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "ecdbe8118321ea2d649bd6cf5b0e0b295e256e26914e4019531df8619b224fb0",
+      "sizeBytes": 364,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T054103Z-62006/circuit.r1cs",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
+      "sizeBytes": 867,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T054103Z-62006/manifest.json",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "deca73127e14167e6150c1b6599536143f51fe7ef0acf00a9d6f8684ad1b66ca",
+      "sizeBytes": 695,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T054103Z-62006/proof.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "e93beacb3586145defea7d8a677c67a14d70ce6b0631813a2ece21026e987517",
+      "sizeBytes": 164,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T054103Z-62006/proving-key.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "0c7276ee86eb5fed28f0a512ff326ef0655a48459e47fb510a9b47b1dca869c8",
+      "sizeBytes": 1027,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T054103Z-62006/public-witness.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
+      "sizeBytes": 44,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T054103Z-62006/verification-key.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "bea6b8d2ed6bced44cd124240a3ebaffd611e740021f528912a6980a81b0dbd0",
+      "sizeBytes": 364,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T054637Z-62530/circuit.r1cs",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
+      "sizeBytes": 867,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T054637Z-62530/manifest.json",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "82c101b179c083a1076b071cf6816ac3fab02d2d499789773f395b55ba4dca7d",
+      "sizeBytes": 695,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T054637Z-62530/proof.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "c35e892937dd6caa065f226ba0ff414893ecd1e241e1b65b18bb78efc53232d1",
+      "sizeBytes": 164,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T054637Z-62530/proving-key.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "bfed8ebc058132c7e65bd39e1b8a483ef8da56b6a0191af57f97c94a30bf20fa",
+      "sizeBytes": 1027,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T054637Z-62530/public-witness.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
+      "sizeBytes": 44,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T054637Z-62530/verification-key.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "6e04904836a36146a22f927befc1bbf1f5292771e2fbeb809ca0ba7833dd7a00",
+      "sizeBytes": 364,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T060344Z-63284/circuit.r1cs",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
+      "sizeBytes": 867,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T060344Z-63284/manifest.json",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "636e81254249480e245b6903b3e7f61159a876523f548b75fb1032c4fc71abc0",
+      "sizeBytes": 695,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T060344Z-63284/proof.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "c2ede77f4bea36107ec7adc1a1f292cc29216d929e254055369c14c8cb774ffc",
+      "sizeBytes": 164,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T060344Z-63284/proving-key.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "adf5233594f8c56a52c5c09eb5c545c0bc86a4acd2b73d23ab593ed8483df198",
+      "sizeBytes": 1027,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T060344Z-63284/public-witness.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
+      "sizeBytes": 44,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T060344Z-63284/verification-key.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "2bb4540a04c94235110c668004470206d917b197f46a97f6028a29f69afe567f",
+      "sizeBytes": 364,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T060637Z-63781/circuit.r1cs",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
+      "sizeBytes": 867,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T060637Z-63781/manifest.json",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "6a58f53a7c16a9f89596a7ef2b21579279665769f936c16369ab0cf9327e5f26",
+      "sizeBytes": 695,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T060637Z-63781/proof.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "7c4c749ddb5b8bf05a9b0da951f30feff5692659dca3e6c533b1a125e5743528",
+      "sizeBytes": 164,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T060637Z-63781/proving-key.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "205b44f23857c1e2f93dd00ef9c74ffb6c7eaa10bbaada255c88803652f2edf0",
+      "sizeBytes": 1027,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T060637Z-63781/public-witness.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
+      "sizeBytes": 44,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T060637Z-63781/verification-key.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "83ff17084fe1db1e678f1fb0e3f45d1b52ca06c6389cb0963a945a1cbadaa982",
+      "sizeBytes": 364,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T061453Z-64386/circuit.r1cs",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
+      "sizeBytes": 867,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T061453Z-64386/manifest.json",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "5e1492e284c5b38860174a4dbab63921bdfba1ff86c04c1fff6fbdbeebf860fa",
+      "sizeBytes": 695,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T061453Z-64386/proof.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "5f57012566d84fdafdb546890525f78530199298b1d4296b4e5ea1942475de32",
+      "sizeBytes": 164,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T061453Z-64386/proving-key.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "4f9428c2b4a8c1f0052eee76f67a20d53aadf12a041980397efb66b29636dc8c",
+      "sizeBytes": 1027,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T061453Z-64386/public-witness.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
+      "sizeBytes": 44,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T061453Z-64386/verification-key.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "873462258f3bedeba5fdd75c697158569bed5fadc12c154f31e80afa4e12d400",
+      "sizeBytes": 364,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T071930Z-66799/circuit.r1cs",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
+      "sizeBytes": 867,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T071930Z-66799/manifest.json",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "b57726525b8b8eb297051bf9cbd0d8ef9cf38ff4049baee18214ac1c4813ada8",
+      "sizeBytes": 695,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T071930Z-66799/proof.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "fe388e0efe9104cd6cec07caecfcab1251f3412517acaf448e8bae076c1787b3",
+      "sizeBytes": 164,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T071930Z-66799/proving-key.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "6852f327a30a044935650da49fc7066d6bd86030477e3de32d3881d350d15a2a",
+      "sizeBytes": 1027,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T071930Z-66799/public-witness.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
+      "sizeBytes": 44,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T071930Z-66799/verification-key.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "6a5ce2c8fa9a04a408847f60b7717c4aad2e46098ebb6e66cc6468c1f55612c1",
+      "sizeBytes": 364,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T084501Z-72561/circuit.r1cs",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
+      "sizeBytes": 867,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T084501Z-72561/manifest.json",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "6a3274473c44a8393881833dde20ad861e547753ae970a0eafdd494b4c9652c8",
+      "sizeBytes": 695,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T084501Z-72561/proof.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "bda045c863aafddb852a455373b8349ac33ef9cd663bf1c3158aee86586cf871",
+      "sizeBytes": 164,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T084501Z-72561/proving-key.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "7fc3217aca39b8b2882e10d2223fc3bdd27470d9ad5cccab54981462c08c8a13",
+      "sizeBytes": 1027,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T084501Z-72561/public-witness.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
+      "sizeBytes": 44,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T084501Z-72561/verification-key.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "e77e6d1bf6ef7692a861a937e2230c872e3ac3c8c0cec711ab41f68a55a2cf8a",
+      "sizeBytes": 364,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T084931Z-72962/circuit.r1cs",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
+      "sizeBytes": 867,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T084931Z-72962/manifest.json",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "889489927926e6e54943b58da9bf191174a54f3b7741ef35702fcb2fe7e84a1d",
+      "sizeBytes": 695,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T084931Z-72962/proof.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "dcc29a780b8cdc1fe439817d9fa4b0af7d3ace1d932b4f5dc53de85797cee0ea",
+      "sizeBytes": 164,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T084931Z-72962/proving-key.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "c072a2f91b7ad9f2b4bff9521223d6d4f9685e94f60452e779f9a78ceef22dd6",
+      "sizeBytes": 1027,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T084931Z-72962/public-witness.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
+      "sizeBytes": 44,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T084931Z-72962/verification-key.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "14fa3818b2d72a10b8b8bbc720b60b68c1a4a68923090593b642382f7755fbf9",
+      "sizeBytes": 364,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T093752Z-75899/circuit.r1cs",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
+      "sizeBytes": 867,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T093752Z-75899/manifest.json",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "d279da0870c10465245f373fbcc656770b48217223945b47fb9ce6efbbb11bf7",
+      "sizeBytes": 695,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T093752Z-75899/proof.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "154216995f500ffebb1023153476eeefee4ec62940dedb323ce008cdee274d8b",
+      "sizeBytes": 164,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T093752Z-75899/proving-key.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "05463a3188afdd8bc58ffca1770d5e64d3f660dea75b73899841f7d99e186e4f",
+      "sizeBytes": 1027,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T093752Z-75899/public-witness.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
+      "sizeBytes": 44,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T093752Z-75899/verification-key.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "f2aa47e1aa41c1bfccdd3cd33879b119fb72d47e0cfe85f4e69ebfe65fb1819c",
+      "sizeBytes": 364,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T094220Z-76453/circuit.r1cs",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
+      "sizeBytes": 867,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T094220Z-76453/manifest.json",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "e9a6112a336a876c83625548c8806ef04f05b834acbef6dd7cddc5072d55b627",
+      "sizeBytes": 695,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T094220Z-76453/proof.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "11da504348dc2b415c460ccd0c543a6ad19b04db2701bff781e216df22eabb88",
+      "sizeBytes": 164,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T094220Z-76453/proving-key.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "ec1063a6a3ae08937ec0b0896f0f54547c94a9f8906d8e6df114d090752e2baf",
+      "sizeBytes": 1027,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T094220Z-76453/public-witness.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
+      "sizeBytes": 44,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T094220Z-76453/verification-key.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "62b7dae0dc23fb0355826f15df2ccb0b8c094b0f3828537de0c56545d1c7554b",
+      "sizeBytes": 364,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T095525Z-77774/circuit.r1cs",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
+      "sizeBytes": 867,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T095525Z-77774/manifest.json",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "0aa53e443dd4ab5f5f47ad80730554444615bd6508acf6fcd8d0d01c143a4e92",
+      "sizeBytes": 695,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T095525Z-77774/proof.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "18040ea62c499715b6115646ccde9ff0b8203ddd03f2030f3ff93899876ba773",
+      "sizeBytes": 164,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T095525Z-77774/proving-key.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "6135521d16464d8671f5bb9b9c010caa270bfdeb57de02b25e5797d53baf7286",
+      "sizeBytes": 1027,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T095525Z-77774/public-witness.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
+      "sizeBytes": 44,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T095525Z-77774/verification-key.bin",
+      "citedBy": [
+        "docs/status.md",
+        "evidence/qualification/implementation-status.json",
+        "evidence/qualification/qualification-report.md"
+      ],
+      "presentLocally": true,
+      "sha256": "211a029b94e0de158973f06b2de625a89d5aa0e071493a5b1eeea27a9566424e",
+      "sizeBytes": 364,
+      "reason": "not committed",
+      "regenerate": "scripts/qualify-prover.sh (ignored build output; not committed)"
+    }
+  ]
+}
