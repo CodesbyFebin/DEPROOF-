@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.data.RoomStoreTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-06T10:58:54.552Z" hostname="Cybertecks-Mac-mini.local" time="0.166">
+  <properties/>
+  <testcase name="attachmentToMissingTaskIsRejectedByForeignKey" classname="com.example.data.RoomStoreTest" time="0.059"/>
+  <testcase name="createTaskRefusesBlankTitleAndTooManyRequirements" classname="com.example.data.RoomStoreTest" time="0.062"/>
+  <testcase name="attachmentKeepsDigestAndIsAssociatedWithItsTask" classname="com.example.data.RoomStoreTest" time="0.021"/>
+  <testcase name="createdTaskIsPersistedWithItsRequirements" classname="com.example.data.RoomStoreTest" time="0.021"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

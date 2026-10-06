@@ -1,7 +1,7 @@
 {
   "sourceManifest": "evidence/qualification/source-before.json",
   "schema": "deproof-implementation-status-v1",
-  "generatedAt": "2026-10-06T10:57:00.625793+00:00",
+  "generatedAt": "2026-10-06T11:05:45.139479+00:00",
   "product": "Deproof",
   "mark": "DEPR",
   "credit": "Built by CodesbyFebin",
@@ -31,13 +31,13 @@
       "PASS": 20
     },
     "functions": {
-      "VERIFIED": 19,
-      "IMPLEMENTED_UNVERIFIED": 57,
-      "BLOCKED": 10
+      "VERIFIED": 28,
+      "IMPLEMENTED_UNVERIFIED": 50,
+      "BLOCKED": 8
     },
     "ecosystem-requirements": {
-      "IMPLEMENTED_UNVERIFIED": 20,
-      "BLOCKED": 10
+      "IMPLEMENTED_UNVERIFIED": 24,
+      "BLOCKED": 6
     }
   },
   "commands": [
@@ -49,7 +49,7 @@
         "python3",
         "scripts/qualify-core.py"
       ],
-      "ranAt": "2026-10-06T10:55:30.312555+00:00"
+      "ranAt": "2026-10-06T11:04:20.363806+00:00"
     },
     {
       "gate": "android-build",
@@ -58,7 +58,7 @@
       "command": [
         "scripts/qualify-android.sh"
       ],
-      "ranAt": "2026-10-06T10:55:56.186784+00:00"
+      "ranAt": "2026-10-06T11:04:26.383792+00:00"
     },
     {
       "gate": "node-tests",
@@ -67,7 +67,7 @@
       "command": [
         "scripts/qualify-node.sh"
       ],
-      "ranAt": "2026-10-06T10:56:01.715324+00:00"
+      "ranAt": "2026-10-06T11:04:31.417117+00:00"
     },
     {
       "gate": "prover-tests",
@@ -76,7 +76,7 @@
       "command": [
         "scripts/qualify-prover.sh"
       ],
-      "ranAt": "2026-10-06T10:56:06.017514+00:00"
+      "ranAt": "2026-10-06T11:04:34.901705+00:00"
     },
     {
       "gate": "verifier-tests",
@@ -92,7 +92,7 @@
         "-p",
         "test_*.py"
       ],
-      "ranAt": "2026-10-06T10:56:06.415211+00:00"
+      "ranAt": "2026-10-06T11:04:35.262977+00:00"
     },
     {
       "gate": "localization-catalogs",
@@ -102,7 +102,7 @@
         "python3",
         "scripts/qualify-localization.py"
       ],
-      "ranAt": "2026-10-06T10:56:06.553846+00:00"
+      "ranAt": "2026-10-06T11:04:35.397811+00:00"
     },
     {
       "gate": "hosting-isolation",
@@ -112,11 +112,11 @@
         "python3",
         "scripts/qualify-hosting.py"
       ],
-      "ranAt": "2026-10-06T10:56:17.462687+00:00"
+      "ranAt": "2026-10-06T11:04:44.112340+00:00"
     },
     {
       "gate": "node-integration",
-      "exitCode": 1,
+      "exitCode": 0,
       "log": "evidence/qualification/node-integration.log",
       "command": [
         "env",
@@ -124,7 +124,7 @@
         "python3",
         "scripts/qualify-integration.py"
       ],
-      "ranAt": "2026-10-06T10:56:34.372329+00:00"
+      "ranAt": "2026-10-06T11:05:19.046468+00:00"
     },
     {
       "gate": "rpc-read-only",
@@ -134,7 +134,7 @@
         "python3",
         "scripts/qualify-rpc.py"
       ],
-      "ranAt": "2026-10-06T10:56:35.979443+00:00"
+      "ranAt": "2026-10-06T11:05:20.522932+00:00"
     },
     {
       "gate": "coverage-reconciliation",
@@ -144,7 +144,7 @@
         "python3",
         "scripts/reconcile-coverage.py"
       ],
-      "ranAt": "2026-10-06T10:56:36.210913+00:00"
+      "ranAt": "2026-10-06T11:05:20.752844+00:00"
     },
     {
       "gate": "backlog-priorities",
@@ -154,7 +154,7 @@
         "python3",
         "scripts/prioritize-uncovered.py"
       ],
-      "ranAt": "2026-10-06T10:56:36.326764+00:00"
+      "ranAt": "2026-10-06T11:05:20.870350+00:00"
     },
     {
       "gate": "registry-checks",
@@ -164,7 +164,7 @@
         "python3",
         "scripts/check-registries.py"
       ],
-      "ranAt": "2026-10-06T10:56:36.452573+00:00"
+      "ranAt": "2026-10-06T11:05:20.997755+00:00"
     },
     {
       "gate": "web-build",
@@ -174,7 +174,7 @@
         "python3",
         "scripts/build-web.py"
       ],
-      "ranAt": "2026-10-06T10:56:36.592768+00:00"
+      "ranAt": "2026-10-06T11:05:21.137388+00:00"
     },
     {
       "gate": "web-checks",
@@ -184,7 +184,7 @@
         "python3",
         "scripts/qualify-web.py"
       ],
-      "ranAt": "2026-10-06T10:56:38.341361+00:00"
+      "ranAt": "2026-10-06T11:05:22.774380+00:00"
     },
     {
       "gate": "browser-checks",
@@ -194,7 +194,7 @@
         "node",
         "scripts/browser/qualify.mjs"
       ],
-      "ranAt": "2026-10-06T10:57:00.128471+00:00"
+      "ranAt": "2026-10-06T11:05:44.573819+00:00"
     },
     {
       "gate": "coverage-reconciliation",
@@ -204,7 +204,7 @@
         "python3",
         "scripts/reconcile-coverage.py"
       ],
-      "ranAt": "2026-10-06T10:57:00.271790+00:00"
+      "ranAt": "2026-10-06T11:05:44.729457+00:00"
     },
     {
       "gate": "backlog-priorities",
@@ -214,7 +214,7 @@
         "python3",
         "scripts/prioritize-uncovered.py"
       ],
-      "ranAt": "2026-10-06T10:57:00.388973+00:00"
+      "ranAt": "2026-10-06T11:05:44.845930+00:00"
     }
   ],
   "blockers": [
@@ -255,11 +255,6 @@
       "reason": "No release signing or physical-device release checks; comprehensive SBOM/advisory and imported-asset rights review incomplete."
     },
     {
-      "id": "NODE_INTEGRATION",
-      "qualification": "FAIL",
-      "reason": "Named gate has no passing result. Inspect evidence/qualification/node-integration.log. No successful behavior inferred."
-    },
-    {
       "id": "EXPLANATION_PROVIDER",
       "qualification": "BLOCKED",
       "reason": "Typed consent/configuration/error guard exists; no qualified external explanation adapter or outbound request is registered. Guard tests do not establish provider integration."
@@ -285,19 +280,19 @@
     {
       "path": "node-agent/build/deproof-node",
       "kind": "darwin-amd64-node-binary",
-      "sha256": "f9db92bb70bc452a3df3ac6525105d46cd3051a922b42ce84c4697811ac2095c",
+      "sha256": "d360c1ff4e7a696cb38a4afcc58fb477a85e34f2f4c38e5fad3506b4d581acdc",
       "bytes": "10730144"
     },
     {
       "path": "prover-worker/build/prove",
       "kind": "local-proof-producer",
-      "sha256": "ad226ac1e3f2da216701487c979d8c95db5d723c08119f4cb693d8a4cea9fc6c",
+      "sha256": "5d78e4eb8c164a584b5ad2a168db4958c3fc12f435275fefa0438801cb8fce19",
       "bytes": "16556848"
     },
     {
       "path": "prover-worker/build/verify",
       "kind": "independent-proof-verifier",
-      "sha256": "abcac251b363050365110aaf87129b9efbfa8bf270b67151c883a0c72fe3a278",
+      "sha256": "c3115d217ffaf8eb72c95c56cc91e99f9fadf5e01b15e0d7f6ab4908b9f1cbb2",
       "bytes": "9640336"
     },
     {
@@ -598,6 +593,42 @@
       "path": "prover-worker/build/qualified-result-20261006T060637Z-63781/proof.bin",
       "kind": "local-proof-artifact",
       "sha256": "7c4c749ddb5b8bf05a9b0da951f30feff5692659dca3e6c533b1a125e5743528",
+      "bytes": "164"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T110434Z-83653/circuit.r1cs",
+      "kind": "local-proof-artifact",
+      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
+      "bytes": "867"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T110434Z-83653/verification-key.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "467e842139d5f4422d2aae594d0422e239541d5cbceaffe187dc4eae63463ed6",
+      "bytes": "364"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T110434Z-83653/proving-key.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "9d4d059dc0f380c3f168d2903431aad8b78732a121bb67aeee2954c5c9541526",
+      "bytes": "1027"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T110434Z-83653/public-witness.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
+      "bytes": "44"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T110434Z-83653/manifest.json",
+      "kind": "local-proof-artifact",
+      "sha256": "d0dce7c18c2125aa610a0ac6092adff35a5a1e556a242dcae1d114b26931cd6a",
+      "bytes": "695"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T110434Z-83653/proof.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "e942ce5e5506b1ed394f68eee57aa584814c1d88548d5b7f98324f1d55663047",
       "bytes": "164"
     },
     {
@@ -1005,8 +1036,8 @@
     {
       "path": "evidence/qualification/deproof-source-snapshot.zip",
       "kind": "local-source-snapshot",
-      "sha256": "537477b3bf44ad9f965d415d67fd7a4094186210ebbeefefe202d5ec904d19e4",
-      "bytes": "16979356"
+      "sha256": "c74152427b3e72bec8dc5cf262ce9d48f6e52419b47e738de7e74786d51d1274",
+      "bytes": "16983558"
     }
   ],
   "coverage": {
@@ -5495,17 +5526,31 @@
         "definition": "Bandwidth usage and contribution ledger.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
-          "node-agent/internal/agent/agent.go"
+          "app/src/main/java/com/example/NodeWorkspace.kt",
+          "app/src/main/java/com/example/data/NodeClient.kt",
+          "app/src/main/java/com/example/data/NodeRepository.kt",
+          "app/src/main/java/com/example/domain/NodeProtocol.kt",
+          "node-agent/internal/agent/agent.go",
+          "node-agent/internal/agent/proof.go",
+          "prover-worker/cmd/prove/main.go",
+          "prover-worker/cmd/verify/main.go",
+          "tools/proof_jobs.py"
         ],
-        "evidencePaths": [],
+        "evidencePaths": [
+          "evidence/qualification/node-integration.json",
+          "evidence/qualification/node-integration.log"
+        ],
         "dependencies": [],
         "checks": [],
-        "tests": [],
+        "tests": [
+          "scripts/qualify-integration.py"
+        ],
         "qualificationDimensions": [
+          "VERIFIED_LOCAL",
           "NOT_RUN"
         ],
         "limitations": [
-          "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+          "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -5614,17 +5659,31 @@
         "definition": "Compute-node health monitoring.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
-          "node-agent/internal/agent/agent.go"
+          "app/src/main/java/com/example/NodeWorkspace.kt",
+          "app/src/main/java/com/example/data/NodeClient.kt",
+          "app/src/main/java/com/example/data/NodeRepository.kt",
+          "app/src/main/java/com/example/domain/NodeProtocol.kt",
+          "node-agent/internal/agent/agent.go",
+          "node-agent/internal/agent/proof.go",
+          "prover-worker/cmd/prove/main.go",
+          "prover-worker/cmd/verify/main.go",
+          "tools/proof_jobs.py"
         ],
-        "evidencePaths": [],
+        "evidencePaths": [
+          "evidence/qualification/node-integration.json",
+          "evidence/qualification/node-integration.log"
+        ],
         "dependencies": [],
         "checks": [],
-        "tests": [],
+        "tests": [
+          "scripts/qualify-integration.py"
+        ],
         "qualificationDimensions": [
+          "VERIFIED_LOCAL",
           "NOT_RUN"
         ],
         "limitations": [
-          "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
+          "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -12541,23 +12600,35 @@
         "id": "EF002",
         "contract": "pairNode(challenge, fingerprint, consent)",
         "behavior": "Scoped authenticated session; expired/replayed/unapproved peer",
-        "status": "IMPLEMENTED_UNVERIFIED",
+        "status": "VERIFIED",
         "evidencePaths": [
+          "evidence/qualification/node-integration.json",
+          "evidence/qualification/node-integration.log",
           "evidence/qualification/node-tests.log"
         ],
         "dependencies": [],
         "checks": [],
         "tests": [
-          "node-agent/internal/agent/agent_test.go"
+          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+          "node-agent/internal/agent/agent_test.go",
+          "scripts/qualify-integration.py"
         ],
         "implementationPaths": [
-          "node-agent/internal/agent/agent.go"
+          "app/src/main/java/com/example/NodeWorkspace.kt",
+          "app/src/main/java/com/example/data/NodeClient.kt",
+          "app/src/main/java/com/example/data/NodeRepository.kt",
+          "app/src/main/java/com/example/domain/NodeProtocol.kt",
+          "node-agent/internal/agent/agent.go",
+          "node-agent/internal/agent/proof.go",
+          "prover-worker/cmd/prove/main.go",
+          "prover-worker/cmd/verify/main.go",
+          "tools/proof_jobs.py"
         ],
         "qualificationDimensions": [
-          "NOT_RUN"
+          "VERIFIED_LOCAL"
         ],
         "limitations": [
-          "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+          "Verified only for the documented owner-local loopback/cubic/isolated HTTP profile; not Android Keystore, physical device, arbitrary hosting or external protocol qualification."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -12574,23 +12645,35 @@
         "id": "EF003",
         "contract": "revokeNodeSession(sessionId)",
         "behavior": "Persisted revocation and denied subsequent operations",
-        "status": "IMPLEMENTED_UNVERIFIED",
+        "status": "VERIFIED",
         "evidencePaths": [
+          "evidence/qualification/node-integration.json",
+          "evidence/qualification/node-integration.log",
           "evidence/qualification/node-tests.log"
         ],
         "dependencies": [],
         "checks": [],
         "tests": [
-          "node-agent/internal/agent/agent_test.go"
+          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+          "node-agent/internal/agent/agent_test.go",
+          "scripts/qualify-integration.py"
         ],
         "implementationPaths": [
-          "node-agent/internal/agent/agent.go"
+          "app/src/main/java/com/example/NodeWorkspace.kt",
+          "app/src/main/java/com/example/data/NodeClient.kt",
+          "app/src/main/java/com/example/data/NodeRepository.kt",
+          "app/src/main/java/com/example/domain/NodeProtocol.kt",
+          "node-agent/internal/agent/agent.go",
+          "node-agent/internal/agent/proof.go",
+          "prover-worker/cmd/prove/main.go",
+          "prover-worker/cmd/verify/main.go",
+          "tools/proof_jobs.py"
         ],
         "qualificationDimensions": [
-          "NOT_RUN"
+          "VERIFIED_LOCAL"
         ],
         "limitations": [
-          "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+          "Verified only for the documented owner-local loopback/cubic/isolated HTTP profile; not Android Keystore, physical device, arbitrary hosting or external protocol qualification."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -12691,7 +12774,7 @@
         "id": "EF006",
         "contract": "startLocalService(profile, operationId)",
         "behavior": "Accepted operation ID then actual observed process state; resource/runtime/port failures",
-        "status": "IMPLEMENTED_UNVERIFIED",
+        "status": "VERIFIED",
         "evidencePaths": [
           "evidence/qualification/hosting-isolation.json",
           "evidence/qualification/node-integration.json"
@@ -12713,11 +12796,10 @@
           "tools/local_hosting.py"
         ],
         "qualificationDimensions": [
-          "VERIFIED_LOCAL",
-          "NOT_RUN"
+          "VERIFIED_LOCAL"
         ],
         "limitations": [
-          "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+          "Verified only for the documented owner-local loopback/cubic/isolated HTTP profile; not Android Keystore, physical device, arbitrary hosting or external protocol qualification."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -12735,7 +12817,7 @@
         "id": "EF007",
         "contract": "stopLocalService(serviceId, operationId)",
         "behavior": "Observed termination or timed-out failure; no premature Stopped badge",
-        "status": "IMPLEMENTED_UNVERIFIED",
+        "status": "VERIFIED",
         "evidencePaths": [
           "evidence/qualification/hosting-isolation.json",
           "evidence/qualification/node-integration.json"
@@ -12757,11 +12839,10 @@
           "tools/local_hosting.py"
         ],
         "qualificationDimensions": [
-          "VERIFIED_LOCAL",
-          "NOT_RUN"
+          "VERIFIED_LOCAL"
         ],
         "limitations": [
-          "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+          "Verified only for the documented owner-local loopback/cubic/isolated HTTP profile; not Android Keystore, physical device, arbitrary hosting or external protocol qualification."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -12851,23 +12932,35 @@
         "id": "EF010",
         "contract": "setBandwidthConsent(profile, limits)",
         "behavior": "Persisted explicit scope and cap policy; denied endpoint/unsupported provider",
-        "status": "IMPLEMENTED_UNVERIFIED",
+        "status": "VERIFIED",
         "evidencePaths": [
+          "evidence/qualification/node-integration.json",
+          "evidence/qualification/node-integration.log",
           "evidence/qualification/node-tests.log"
         ],
         "dependencies": [],
         "checks": [],
         "tests": [
-          "node-agent/internal/agent/agent_test.go"
+          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+          "node-agent/internal/agent/agent_test.go",
+          "scripts/qualify-integration.py"
         ],
         "implementationPaths": [
-          "node-agent/internal/agent/agent.go"
+          "app/src/main/java/com/example/NodeWorkspace.kt",
+          "app/src/main/java/com/example/data/NodeClient.kt",
+          "app/src/main/java/com/example/data/NodeRepository.kt",
+          "app/src/main/java/com/example/domain/NodeProtocol.kt",
+          "node-agent/internal/agent/agent.go",
+          "node-agent/internal/agent/proof.go",
+          "prover-worker/cmd/prove/main.go",
+          "prover-worker/cmd/verify/main.go",
+          "tools/proof_jobs.py"
         ],
         "qualificationDimensions": [
-          "NOT_RUN"
+          "VERIFIED_LOCAL"
         ],
         "limitations": [
-          "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+          "Verified only for the documented owner-local loopback/cubic/isolated HTTP profile; not Android Keystore, physical device, arbitrary hosting or external protocol qualification."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -12892,18 +12985,33 @@
         "contract": "startContributionFlow(profile)",
         "behavior": "Actual restricted contribution session or named capability failure",
         "status": "IMPLEMENTED_UNVERIFIED",
-        "evidencePaths": [],
+        "evidencePaths": [
+          "evidence/qualification/node-integration.json",
+          "evidence/qualification/node-integration.log"
+        ],
         "dependencies": [],
         "checks": [],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+          "scripts/qualify-integration.py"
+        ],
         "implementationPaths": [
-          "node-agent/internal/agent/agent.go"
+          "app/src/main/java/com/example/NodeWorkspace.kt",
+          "app/src/main/java/com/example/data/NodeClient.kt",
+          "app/src/main/java/com/example/data/NodeRepository.kt",
+          "app/src/main/java/com/example/domain/NodeProtocol.kt",
+          "node-agent/internal/agent/agent.go",
+          "node-agent/internal/agent/proof.go",
+          "prover-worker/cmd/prove/main.go",
+          "prover-worker/cmd/verify/main.go",
+          "tools/proof_jobs.py"
         ],
         "qualificationDimensions": [
+          "VERIFIED_LOCAL",
           "NOT_RUN"
         ],
         "limitations": [
-          "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+          "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -12927,18 +13035,33 @@
         "contract": "stopContributionFlow(sessionId)",
         "behavior": "Flow termination and final counters; stop timeout explicit",
         "status": "IMPLEMENTED_UNVERIFIED",
-        "evidencePaths": [],
+        "evidencePaths": [
+          "evidence/qualification/node-integration.json",
+          "evidence/qualification/node-integration.log"
+        ],
         "dependencies": [],
         "checks": [],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+          "scripts/qualify-integration.py"
+        ],
         "implementationPaths": [
-          "node-agent/internal/agent/agent.go"
+          "app/src/main/java/com/example/NodeWorkspace.kt",
+          "app/src/main/java/com/example/data/NodeClient.kt",
+          "app/src/main/java/com/example/data/NodeRepository.kt",
+          "app/src/main/java/com/example/domain/NodeProtocol.kt",
+          "node-agent/internal/agent/agent.go",
+          "node-agent/internal/agent/proof.go",
+          "prover-worker/cmd/prove/main.go",
+          "prover-worker/cmd/verify/main.go",
+          "tools/proof_jobs.py"
         ],
         "qualificationDimensions": [
+          "VERIFIED_LOCAL",
           "NOT_RUN"
         ],
         "limitations": [
-          "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+          "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -12962,18 +13085,33 @@
         "contract": "measureContribution(sessionId, interval)",
         "behavior": "Raw sourced counters/units/sequence; gaps/counter reset handled",
         "status": "IMPLEMENTED_UNVERIFIED",
-        "evidencePaths": [],
+        "evidencePaths": [
+          "evidence/qualification/node-integration.json",
+          "evidence/qualification/node-integration.log"
+        ],
         "dependencies": [],
         "checks": [],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+          "scripts/qualify-integration.py"
+        ],
         "implementationPaths": [
-          "node-agent/internal/agent/agent.go"
+          "app/src/main/java/com/example/NodeWorkspace.kt",
+          "app/src/main/java/com/example/data/NodeClient.kt",
+          "app/src/main/java/com/example/data/NodeRepository.kt",
+          "app/src/main/java/com/example/domain/NodeProtocol.kt",
+          "node-agent/internal/agent/agent.go",
+          "node-agent/internal/agent/proof.go",
+          "prover-worker/cmd/prove/main.go",
+          "prover-worker/cmd/verify/main.go",
+          "tools/proof_jobs.py"
         ],
         "qualificationDimensions": [
+          "VERIFIED_LOCAL",
           "NOT_RUN"
         ],
         "limitations": [
-          "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+          "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -12992,23 +13130,35 @@
         "id": "EF014",
         "contract": "enforceTrafficQuota(sessionId, counters)",
         "behavior": "Applied pause/rate/cap decision; cannot enforce means sharing refuses",
-        "status": "IMPLEMENTED_UNVERIFIED",
+        "status": "VERIFIED",
         "evidencePaths": [
+          "evidence/qualification/node-integration.json",
+          "evidence/qualification/node-integration.log",
           "evidence/qualification/node-tests.log"
         ],
         "dependencies": [],
         "checks": [],
         "tests": [
-          "node-agent/internal/agent/agent_test.go"
+          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+          "node-agent/internal/agent/agent_test.go",
+          "scripts/qualify-integration.py"
         ],
         "implementationPaths": [
-          "node-agent/internal/agent/agent.go"
+          "app/src/main/java/com/example/NodeWorkspace.kt",
+          "app/src/main/java/com/example/data/NodeClient.kt",
+          "app/src/main/java/com/example/data/NodeRepository.kt",
+          "app/src/main/java/com/example/domain/NodeProtocol.kt",
+          "node-agent/internal/agent/agent.go",
+          "node-agent/internal/agent/proof.go",
+          "prover-worker/cmd/prove/main.go",
+          "prover-worker/cmd/verify/main.go",
+          "tools/proof_jobs.py"
         ],
         "qualificationDimensions": [
-          "NOT_RUN"
+          "VERIFIED_LOCAL"
         ],
         "limitations": [
-          "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+          "Verified only for the documented owner-local loopback/cubic/isolated HTTP profile; not Android Keystore, physical device, arbitrary hosting or external protocol qualification."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -13025,19 +13175,33 @@
         "id": "EF015",
         "contract": "signUsageReceipt(meteringEnvelope)",
         "behavior": "Domain-separated node signature plus exact payload/public key",
-        "status": "IMPLEMENTED_UNVERIFIED",
-        "evidencePaths": [],
+        "status": "VERIFIED",
+        "evidencePaths": [
+          "evidence/qualification/node-integration.json",
+          "evidence/qualification/node-integration.log"
+        ],
         "dependencies": [],
         "checks": [],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+          "scripts/qualify-integration.py"
+        ],
         "implementationPaths": [
-          "node-agent/internal/agent/agent.go"
+          "app/src/main/java/com/example/NodeWorkspace.kt",
+          "app/src/main/java/com/example/data/NodeClient.kt",
+          "app/src/main/java/com/example/data/NodeRepository.kt",
+          "app/src/main/java/com/example/domain/NodeProtocol.kt",
+          "node-agent/internal/agent/agent.go",
+          "node-agent/internal/agent/proof.go",
+          "prover-worker/cmd/prove/main.go",
+          "prover-worker/cmd/verify/main.go",
+          "tools/proof_jobs.py"
         ],
         "qualificationDimensions": [
-          "NOT_RUN"
+          "VERIFIED_LOCAL"
         ],
         "limitations": [
-          "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+          "Verified only for the documented owner-local loopback/cubic/isolated HTTP profile; not Android Keystore, physical device, arbitrary hosting or external protocol qualification."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -13067,18 +13231,34 @@
         "contract": "verifyUsageReceipt(receipt, peerEvidence)",
         "behavior": "Integrity, replay/freshness and corroboration report; no automatic measurement-truth claim",
         "status": "IMPLEMENTED_UNVERIFIED",
-        "evidencePaths": [],
+        "evidencePaths": [
+          "evidence/qualification/node-integration.json",
+          "evidence/qualification/node-integration.log"
+        ],
         "dependencies": [],
         "checks": [],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+          "scripts/qualify-integration.py"
+        ],
         "implementationPaths": [
+          "app/src/main/java/com/example/NodeWorkspace.kt",
+          "app/src/main/java/com/example/data/NodeClient.kt",
+          "app/src/main/java/com/example/data/NodeRepository.kt",
+          "app/src/main/java/com/example/domain/NodeProtocol.kt",
+          "node-agent/internal/agent/agent.go",
+          "node-agent/internal/agent/proof.go",
+          "prover-worker/cmd/prove/main.go",
+          "prover-worker/cmd/verify/main.go",
+          "tools/proof_jobs.py",
           "tools/verify.py"
         ],
         "qualificationDimensions": [
+          "VERIFIED_LOCAL",
           "NOT_RUN"
         ],
         "limitations": [
-          "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+          "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -13137,17 +13317,34 @@
         "id": "EF018",
         "contract": "discoverProofJobs(adapter, cursor)",
         "behavior": "Signed validated bounded jobs with source/freshness",
-        "status": "BLOCKED",
-        "evidencePaths": [],
+        "status": "IMPLEMENTED_UNVERIFIED",
+        "evidencePaths": [
+          "evidence/qualification/node-integration.json",
+          "evidence/qualification/node-integration.log"
+        ],
         "dependencies": [],
         "checks": [],
-        "tests": [],
-        "implementationPaths": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+          "scripts/qualify-integration.py"
+        ],
+        "implementationPaths": [
+          "app/src/main/java/com/example/NodeWorkspace.kt",
+          "app/src/main/java/com/example/data/NodeClient.kt",
+          "app/src/main/java/com/example/data/NodeRepository.kt",
+          "app/src/main/java/com/example/domain/NodeProtocol.kt",
+          "node-agent/internal/agent/agent.go",
+          "node-agent/internal/agent/proof.go",
+          "prover-worker/cmd/prove/main.go",
+          "prover-worker/cmd/verify/main.go",
+          "tools/proof_jobs.py"
+        ],
         "qualificationDimensions": [
-          "BLOCKED"
+          "VERIFIED_LOCAL",
+          "NOT_RUN"
         ],
         "limitations": [
-          "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+          "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -13210,18 +13407,33 @@
         "contract": "executeProofJob(job, approvedInputs)",
         "behavior": "Actual bounded proof/result and execution events; cancellation/deadline/backend failures",
         "status": "IMPLEMENTED_UNVERIFIED",
-        "evidencePaths": [],
+        "evidencePaths": [
+          "evidence/qualification/node-integration.json",
+          "evidence/qualification/node-integration.log"
+        ],
         "dependencies": [],
         "checks": [],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+          "scripts/qualify-integration.py"
+        ],
         "implementationPaths": [
-          "prover-worker/cmd/prove/main.go"
+          "app/src/main/java/com/example/NodeWorkspace.kt",
+          "app/src/main/java/com/example/data/NodeClient.kt",
+          "app/src/main/java/com/example/data/NodeRepository.kt",
+          "app/src/main/java/com/example/domain/NodeProtocol.kt",
+          "node-agent/internal/agent/agent.go",
+          "node-agent/internal/agent/proof.go",
+          "prover-worker/cmd/prove/main.go",
+          "prover-worker/cmd/verify/main.go",
+          "tools/proof_jobs.py"
         ],
         "qualificationDimensions": [
+          "VERIFIED_LOCAL",
           "NOT_RUN"
         ],
         "limitations": [
-          "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+          "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -13243,19 +13455,33 @@
         "id": "EF021",
         "contract": "verifyProofResult(result, publicInputs, verificationKey)",
         "behavior": "Independent valid/invalid/unsupported verification report",
-        "status": "IMPLEMENTED_UNVERIFIED",
-        "evidencePaths": [],
+        "status": "VERIFIED",
+        "evidencePaths": [
+          "evidence/qualification/node-integration.json",
+          "evidence/qualification/node-integration.log"
+        ],
         "dependencies": [],
         "checks": [],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+          "scripts/qualify-integration.py"
+        ],
         "implementationPaths": [
-          "prover-worker/cmd/verify/main.go"
+          "app/src/main/java/com/example/NodeWorkspace.kt",
+          "app/src/main/java/com/example/data/NodeClient.kt",
+          "app/src/main/java/com/example/data/NodeRepository.kt",
+          "app/src/main/java/com/example/domain/NodeProtocol.kt",
+          "node-agent/internal/agent/agent.go",
+          "node-agent/internal/agent/proof.go",
+          "prover-worker/cmd/prove/main.go",
+          "prover-worker/cmd/verify/main.go",
+          "tools/proof_jobs.py"
         ],
         "qualificationDimensions": [
-          "NOT_RUN"
+          "VERIFIED_LOCAL"
         ],
         "limitations": [
-          "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+          "Verified only for the documented owner-local loopback/cubic/isolated HTTP profile; not Android Keystore, physical device, arbitrary hosting or external protocol qualification."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -13272,17 +13498,33 @@
         "id": "EF022",
         "contract": "createContributionReceipt(job, metering, verification)",
         "behavior": "Immutable schema-valid provenance with explicit assurance levels",
-        "status": "BLOCKED",
-        "evidencePaths": [],
+        "status": "VERIFIED",
+        "evidencePaths": [
+          "evidence/qualification/node-integration.json",
+          "evidence/qualification/node-integration.log"
+        ],
         "dependencies": [],
         "checks": [],
-        "tests": [],
-        "implementationPaths": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+          "scripts/qualify-integration.py"
+        ],
+        "implementationPaths": [
+          "app/src/main/java/com/example/NodeWorkspace.kt",
+          "app/src/main/java/com/example/data/NodeClient.kt",
+          "app/src/main/java/com/example/data/NodeRepository.kt",
+          "app/src/main/java/com/example/domain/NodeProtocol.kt",
+          "node-agent/internal/agent/agent.go",
+          "node-agent/internal/agent/proof.go",
+          "prover-worker/cmd/prove/main.go",
+          "prover-worker/cmd/verify/main.go",
+          "tools/proof_jobs.py"
+        ],
         "qualificationDimensions": [
-          "BLOCKED"
+          "VERIFIED_LOCAL"
         ],
         "limitations": [
-          "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+          "Verified only for the documented owner-local loopback/cubic/isolated HTTP profile; not Android Keystore, physical device, arbitrary hosting or external protocol qualification."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -14059,11 +14301,22 @@
         "mandatory": true,
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
-          "node-agent/internal/agent/agent.go"
+          "app/src/main/java/com/example/NodeWorkspace.kt",
+          "app/src/main/java/com/example/data/NodeClient.kt",
+          "app/src/main/java/com/example/data/NodeRepository.kt",
+          "app/src/main/java/com/example/domain/NodeProtocol.kt",
+          "node-agent/internal/agent/agent.go",
+          "node-agent/internal/agent/proof.go",
+          "prover-worker/cmd/prove/main.go",
+          "prover-worker/cmd/verify/main.go",
+          "tools/proof_jobs.py"
         ],
-        "evidencePaths": [],
+        "evidencePaths": [
+          "evidence/qualification/node-integration.json",
+          "evidence/qualification/node-integration.log"
+        ],
         "limitations": [
-          "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+          "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
         ],
         "phase": "P3",
         "coreCheckOverlap": "None: new EA011",
@@ -14075,8 +14328,12 @@
         "checks": [
           "EA011"
         ],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+          "scripts/qualify-integration.py"
+        ],
         "qualificationDimensions": [
+          "VERIFIED_LOCAL",
           "NOT_RUN"
         ],
         "sourceMappings": {
@@ -14303,11 +14560,22 @@
         "mandatory": true,
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
-          "node-agent/internal/agent/agent.go"
+          "app/src/main/java/com/example/NodeWorkspace.kt",
+          "app/src/main/java/com/example/data/NodeClient.kt",
+          "app/src/main/java/com/example/data/NodeRepository.kt",
+          "app/src/main/java/com/example/domain/NodeProtocol.kt",
+          "node-agent/internal/agent/agent.go",
+          "node-agent/internal/agent/proof.go",
+          "prover-worker/cmd/prove/main.go",
+          "prover-worker/cmd/verify/main.go",
+          "tools/proof_jobs.py"
         ],
-        "evidencePaths": [],
+        "evidencePaths": [
+          "evidence/qualification/node-integration.json",
+          "evidence/qualification/node-integration.log"
+        ],
         "limitations": [
-          "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+          "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
         ],
         "phase": "P3",
         "coreCheckOverlap": "C089 (consent principle only)",
@@ -14319,8 +14587,12 @@
         "checks": [
           "C089"
         ],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+          "scripts/qualify-integration.py"
+        ],
         "qualificationDimensions": [
+          "VERIFIED_LOCAL",
           "NOT_RUN"
         ],
         "sourceMappings": {
@@ -14345,11 +14617,22 @@
         "mandatory": true,
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
-          "node-agent/internal/agent/agent.go"
+          "app/src/main/java/com/example/NodeWorkspace.kt",
+          "app/src/main/java/com/example/data/NodeClient.kt",
+          "app/src/main/java/com/example/data/NodeRepository.kt",
+          "app/src/main/java/com/example/domain/NodeProtocol.kt",
+          "node-agent/internal/agent/agent.go",
+          "node-agent/internal/agent/proof.go",
+          "prover-worker/cmd/prove/main.go",
+          "prover-worker/cmd/verify/main.go",
+          "tools/proof_jobs.py"
         ],
-        "evidencePaths": [],
+        "evidencePaths": [
+          "evidence/qualification/node-integration.json",
+          "evidence/qualification/node-integration.log"
+        ],
         "limitations": [
-          "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+          "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
         ],
         "phase": "P3",
         "coreCheckOverlap": "None: new EA017",
@@ -14361,8 +14644,12 @@
         "checks": [
           "EA017"
         ],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+          "scripts/qualify-integration.py"
+        ],
         "qualificationDimensions": [
+          "VERIFIED_LOCAL",
           "NOT_RUN"
         ],
         "sourceMappings": {
@@ -14384,11 +14671,22 @@
         "mandatory": true,
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
-          "node-agent/internal/agent/agent.go"
+          "app/src/main/java/com/example/NodeWorkspace.kt",
+          "app/src/main/java/com/example/data/NodeClient.kt",
+          "app/src/main/java/com/example/data/NodeRepository.kt",
+          "app/src/main/java/com/example/domain/NodeProtocol.kt",
+          "node-agent/internal/agent/agent.go",
+          "node-agent/internal/agent/proof.go",
+          "prover-worker/cmd/prove/main.go",
+          "prover-worker/cmd/verify/main.go",
+          "tools/proof_jobs.py"
         ],
-        "evidencePaths": [],
+        "evidencePaths": [
+          "evidence/qualification/node-integration.json",
+          "evidence/qualification/node-integration.log"
+        ],
         "limitations": [
-          "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+          "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
         ],
         "phase": "P3",
         "coreCheckOverlap": "None: new EA018",
@@ -14400,8 +14698,12 @@
         "checks": [
           "EA018"
         ],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+          "scripts/qualify-integration.py"
+        ],
         "qualificationDimensions": [
+          "VERIFIED_LOCAL",
           "NOT_RUN"
         ],
         "sourceMappings": {
@@ -14424,11 +14726,22 @@
         "mandatory": true,
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
-          "node-agent/internal/agent/agent.go"
+          "app/src/main/java/com/example/NodeWorkspace.kt",
+          "app/src/main/java/com/example/data/NodeClient.kt",
+          "app/src/main/java/com/example/data/NodeRepository.kt",
+          "app/src/main/java/com/example/domain/NodeProtocol.kt",
+          "node-agent/internal/agent/agent.go",
+          "node-agent/internal/agent/proof.go",
+          "prover-worker/cmd/prove/main.go",
+          "prover-worker/cmd/verify/main.go",
+          "tools/proof_jobs.py"
         ],
-        "evidencePaths": [],
+        "evidencePaths": [
+          "evidence/qualification/node-integration.json",
+          "evidence/qualification/node-integration.log"
+        ],
         "limitations": [
-          "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+          "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
         ],
         "phase": "P3",
         "coreCheckOverlap": "C069–C073 (integrity principle only)",
@@ -14444,8 +14757,12 @@
           "C072",
           "C073"
         ],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+          "scripts/qualify-integration.py"
+        ],
         "qualificationDimensions": [
+          "VERIFIED_LOCAL",
           "NOT_RUN"
         ],
         "sourceMappings": {
@@ -14522,14 +14839,24 @@
         "baseMappingAndPhase": "New extension / P3",
         "acceptance": "Real local discovery endpoint plus qualified external adapter if available; signed bounded schema, version, deadline, input digest and compensation terms; malformed/expired jobs refused",
         "mandatory": true,
-        "status": "BLOCKED",
+        "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
+          "app/src/main/java/com/example/NodeWorkspace.kt",
+          "app/src/main/java/com/example/data/NodeClient.kt",
+          "app/src/main/java/com/example/data/NodeRepository.kt",
+          "app/src/main/java/com/example/domain/NodeProtocol.kt",
+          "node-agent/internal/agent/agent.go",
+          "node-agent/internal/agent/proof.go",
           "prover-worker/cmd/prove/main.go",
-          "prover-worker/cmd/verify/main.go"
+          "prover-worker/cmd/verify/main.go",
+          "tools/proof_jobs.py"
         ],
-        "evidencePaths": [],
+        "evidencePaths": [
+          "evidence/qualification/node-integration.json",
+          "evidence/qualification/node-integration.log"
+        ],
         "limitations": [
-          "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+          "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
         ],
         "phase": "P3",
         "coreCheckOverlap": "None: new EA021",
@@ -14541,9 +14868,13 @@
         "checks": [
           "EA021"
         ],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+          "scripts/qualify-integration.py"
+        ],
         "qualificationDimensions": [
-          "BLOCKED"
+          "VERIFIED_LOCAL",
+          "NOT_RUN"
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -14601,14 +14932,24 @@
         "baseMappingAndPhase": "New extension / P3",
         "acceptance": "Execute a real supported proof backend with pinned circuit/program/version; produce actual proof/result bytes and commitments; known valid vector reproduced within resource caps",
         "mandatory": true,
-        "status": "BLOCKED",
+        "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
+          "app/src/main/java/com/example/NodeWorkspace.kt",
+          "app/src/main/java/com/example/data/NodeClient.kt",
+          "app/src/main/java/com/example/data/NodeRepository.kt",
+          "app/src/main/java/com/example/domain/NodeProtocol.kt",
+          "node-agent/internal/agent/agent.go",
+          "node-agent/internal/agent/proof.go",
           "prover-worker/cmd/prove/main.go",
-          "prover-worker/cmd/verify/main.go"
+          "prover-worker/cmd/verify/main.go",
+          "tools/proof_jobs.py"
         ],
-        "evidencePaths": [],
+        "evidencePaths": [
+          "evidence/qualification/node-integration.json",
+          "evidence/qualification/node-integration.log"
+        ],
         "limitations": [
-          "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+          "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
         ],
         "phase": "P3",
         "coreCheckOverlap": "None: new EA023",
@@ -14620,9 +14961,13 @@
         "checks": [
           "EA023"
         ],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+          "scripts/qualify-integration.py"
+        ],
         "qualificationDimensions": [
-          "BLOCKED"
+          "VERIFIED_LOCAL",
+          "NOT_RUN"
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -14640,14 +14985,24 @@
         "baseMappingAndPhase": "New extension / P3",
         "acceptance": "Independent maintained verifier over proof/public inputs/verification key with pinned provenance; known valid succeeds, tampered/wrong-key/input/unsupported scheme fails",
         "mandatory": true,
-        "status": "BLOCKED",
+        "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
+          "app/src/main/java/com/example/NodeWorkspace.kt",
+          "app/src/main/java/com/example/data/NodeClient.kt",
+          "app/src/main/java/com/example/data/NodeRepository.kt",
+          "app/src/main/java/com/example/domain/NodeProtocol.kt",
+          "node-agent/internal/agent/agent.go",
+          "node-agent/internal/agent/proof.go",
           "prover-worker/cmd/prove/main.go",
-          "prover-worker/cmd/verify/main.go"
+          "prover-worker/cmd/verify/main.go",
+          "tools/proof_jobs.py"
         ],
-        "evidencePaths": [],
+        "evidencePaths": [
+          "evidence/qualification/node-integration.json",
+          "evidence/qualification/node-integration.log"
+        ],
         "limitations": [
-          "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+          "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
         ],
         "phase": "P3",
         "coreCheckOverlap": "None: new EA024",
@@ -14659,9 +15014,13 @@
         "checks": [
           "EA024"
         ],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+          "scripts/qualify-integration.py"
+        ],
         "qualificationDimensions": [
-          "BLOCKED"
+          "VERIFIED_LOCAL",
+          "NOT_RUN"
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -14679,14 +15038,24 @@
         "baseMappingAndPhase": "F075–F080 + extension / P3",
         "acceptance": "Immutable job identity, agreed input commitment, producer/result digest, verification observation and optional chain anchor; receipt distinguishes claimed execution from independently verified result",
         "mandatory": true,
-        "status": "BLOCKED",
+        "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
+          "app/src/main/java/com/example/NodeWorkspace.kt",
+          "app/src/main/java/com/example/data/NodeClient.kt",
+          "app/src/main/java/com/example/data/NodeRepository.kt",
+          "app/src/main/java/com/example/domain/NodeProtocol.kt",
+          "node-agent/internal/agent/agent.go",
+          "node-agent/internal/agent/proof.go",
           "prover-worker/cmd/prove/main.go",
-          "prover-worker/cmd/verify/main.go"
+          "prover-worker/cmd/verify/main.go",
+          "tools/proof_jobs.py"
         ],
-        "evidencePaths": [],
+        "evidencePaths": [
+          "evidence/qualification/node-integration.json",
+          "evidence/qualification/node-integration.log"
+        ],
         "limitations": [
-          "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+          "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
         ],
         "phase": "P3",
         "coreCheckOverlap": "C065–C069,C073,C075 (receipt overlap only)",
@@ -14704,9 +15073,13 @@
           "C073",
           "C075"
         ],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+          "scripts/qualify-integration.py"
+        ],
         "qualificationDimensions": [
-          "BLOCKED"
+          "VERIFIED_LOCAL",
+          "NOT_RUN"
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -14915,14 +15288,26 @@
         "mandatory": true,
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
+          "app/src/main/java/com/example/MainActivity.kt",
+          "app/src/main/java/com/example/NodeWorkspace.kt",
+          "app/src/main/java/com/example/data/NodeClient.kt",
+          "app/src/main/java/com/example/data/NodeRepository.kt",
           "app/src/main/java/com/example/domain/Core.kt",
-          "app/src/main/java/com/example/domain/Solana.kt",
+          "app/src/main/java/com/example/domain/NodeProtocol.kt",
           "app/src/main/java/com/example/domain/Records.kt",
-          "app/src/main/java/com/example/MainActivity.kt"
+          "app/src/main/java/com/example/domain/Solana.kt",
+          "node-agent/internal/agent/agent.go",
+          "node-agent/internal/agent/proof.go",
+          "prover-worker/cmd/prove/main.go",
+          "prover-worker/cmd/verify/main.go",
+          "tools/proof_jobs.py"
         ],
-        "evidencePaths": [],
+        "evidencePaths": [
+          "evidence/qualification/node-integration.json",
+          "evidence/qualification/node-integration.log"
+        ],
         "limitations": [
-          "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
+          "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
         ],
         "phase": "All phases",
         "coreCheckOverlap": "C089–C090 (AI consent only)",
@@ -14933,8 +15318,12 @@
           "C089",
           "C090"
         ],
-        "tests": [],
+        "tests": [
+          "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+          "scripts/qualify-integration.py"
+        ],
         "qualificationDimensions": [
+          "VERIFIED_LOCAL",
           "NOT_RUN"
         ],
         "sourceMappings": {

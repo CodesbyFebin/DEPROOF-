@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.domain.CoreTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-10-06T10:58:58.524Z" hostname="Cybertecks-Mac-mini.local" time="0.148">
+  <properties/>
+  <testcase name="timerExpiryNeverAuthorizesWithdrawalAndRankingNeverAuthorizesSibling" classname="com.example.domain.CoreTest" time="0.005"/>
+  <testcase name="strictPolicyChecksAllRolesMintsOwnersAndSiblings" classname="com.example.domain.CoreTest" time="0.014"/>
+  <testcase name="memoParserAndImmutableMessageContextMutations" classname="com.example.domain.CoreTest" time="0.065"/>
+  <testcase name="rpcFixturesAreIndependentAndPreserveExactIntegers" classname="com.example.domain.CoreTest" time="0.005"/>
+  <testcase name="addressesRejectAlphabetLengthAndOversize" classname="com.example.domain.CoreTest" time="0.01"/>
+  <testcase name="completeMessageMutationsNeverRetainApproval" classname="com.example.domain.CoreTest" time="0.003"/>
+  <testcase name="evidenceEnvelopeSignatureAndReceiptProvenance" classname="com.example.domain.CoreTest" time="0.024"/>
+  <testcase name="returnedSignatureAndMessageTamperAreRejected" classname="com.example.domain.CoreTest" time="0.002"/>
+  <testcase name="approvalPredicateCannotBeOverriddenByDisplayOrAi" classname="com.example.domain.CoreTest" time="0.009"/>
+  <testcase name="exactUnsignedVectorsAndDecimalFormatting" classname="com.example.domain.CoreTest" time="0.001"/>
+  <testcase name="rawStreamingLimitCancellationAndCanonicalUnicode" classname="com.example.domain.CoreTest" time="0.006"/>
+  <testcase name="crossLanguageGoldenVectors" classname="com.example.domain.CoreTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

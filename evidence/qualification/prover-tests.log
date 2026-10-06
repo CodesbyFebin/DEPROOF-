@@ -1,8 +1,8 @@
-[90m16:34:34[0m [32mINF[0m [1mcompiling circuit[0m
-[90m16:34:34[0m [32mINF[0m [1mparsed circuit inputs[0m [36mnbPublic=[0m1 [36mnbSecret=[0m1
-[90m16:34:34[0m [32mINF[0m [1mbuilding constraint builder[0m [36mnbConstraints=[0m3
-[90m16:34:34[0m DBG constraint system solver done [36mnbConstraints=[0m3 [36mtook=[0m0.04688
-[90m16:34:34[0m DBG prover done [36macceleration=[0mnone [36mbackend=[0mgroth16 [36mcurve=[0mbn254 [36mnbConstraints=[0m3 [36mtook=[0m1.059916
-[90m16:34:34[0m DBG verifier done [36mbackend=[0mgroth16 [36mcurve=[0mbn254 [36mtook=[0m0.722777
+16:43:05 INF compiling circuit
+16:43:05 INF parsed circuit inputs nbPublic=1 nbSecret=1
+16:43:05 INF building constraint builder nbConstraints=3
+16:43:05 DBG constraint system solver done nbConstraints=3 took=0.05917
+16:43:05 DBG prover done acceleration=none backend=groth16 curve=bn254 nbConstraints=3 took=1.00817
+16:43:05 DBG verifier done backend=groth16 curve=bn254 took=0.734334
 PASS: local Groth16 relation verified. Verification key trust remains an explicit setup assumption.
 pairing doesn't match

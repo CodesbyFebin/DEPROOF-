@@ -1,0 +1,22 @@
+Recorded 232 source hashes at evidence/qualification/runs/20261006T111235Z-84171/source-before.json
+core-tests: exit 0 (evidence/qualification/core-tests.log)
+android-build: exit 0 (evidence/qualification/android-build.log)
+node-tests: exit 0 (evidence/qualification/node-tests.log)
+prover-tests: exit 0 (evidence/qualification/prover-tests.log)
+verifier-tests: exit 0 (evidence/qualification/verifier-tests.log)
+localization-catalogs: exit 0 (evidence/qualification/localization-catalogs.log)
+hosting-isolation: exit 0 (evidence/qualification/hosting-isolation.log)
+node-integration: exit 0 (evidence/qualification/node-integration.log)
+rpc-read-only: exit 0 (evidence/qualification/rpc-read-only.log)
+Updated conservative per-entry implementation coverage.
+coverage-reconciliation: exit 0 (evidence/qualification/coverage-reconciliation.log)
+backlog-priorities: exit 0 (evidence/qualification/backlog-priorities.log)
+registry-checks: exit 0 (evidence/qualification/registry-checks.log)
+web-build: exit 0 (evidence/qualification/web-build.log)
+Recorded actual automated results, separate device/external gates, coverage and artifact checksums.
+web-checks: exit 0 (evidence/qualification/web-checks.log)
+browser-checks: exit 0 (evidence/qualification/browser-checks.log)
+coverage-reconciliation: exit 0 (evidence/qualification/coverage-reconciliation.log)
+backlog-priorities: exit 0 (evidence/qualification/backlog-priorities.log)
+Recorded actual automated results, separate device/external gates, coverage and artifact checksums.
+Recorded 232 source hashes at evidence/qualification/runs/20261006T111235Z-84171/source-after.json
