@@ -34,6 +34,15 @@ android {
         buildConfigField("String", "BUILD_DATE", "\"${System.currentTimeMillis()}\"")
     }
 
+    signingConfigs {
+        create("release") {
+            keyAlias = System.getenv("DEPROOF_KEY_ALIAS") ?: "deproof-key"
+            keyPassword = System.getenv("DEPROOF_KEY_PASSWORD") ?: ""
+            storeFile = file(System.getenv("DEPROOF_KEYSTORE_PATH") ?: "keystore.jks")
+            storePassword = System.getenv("DEPROOF_KEYSTORE_PASSWORD") ?: ""
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = true
@@ -45,6 +54,7 @@ android {
             )
 
             buildConfigField("Boolean", "DEBUG_MODE", "false")
+            signingConfig = signingConfigs.getByName("release")
         }
 
         debug {
