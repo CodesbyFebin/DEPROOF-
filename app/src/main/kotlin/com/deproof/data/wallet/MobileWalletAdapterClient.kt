@@ -201,25 +201,25 @@ class MobileWalletAdapterClient(private val context: Context? = null) {
                 }
 
                 if (context != null) {
-                    try {
-                        context.startActivity(intent)
-                        // In real implementation, would receive callback from wallet
-                        // For now, return mock response
-                        continuation.resume(mapOf(
-                            "signature" to "3${UUID.randomUUID()}",
-                            "publicKey" to (selectedAccount?.publicKey ?: "9B5X6wq4xCSUQyRjqW37hSrwq3CEQmD2KwMaKNoon5w4"),
-                            "walletName" to "Phantom"
-                        ))
-                    } catch (e: Exception) {
-                        continuation.resumeWithException(Exception("Wallet not installed: $walletPackage"))
-                    }
+                    // Production path: MWA wallet callback integration requires a physical device
+                    // with an installed MWA-compatible wallet app (Phantom, Solflare, etc.).
+                    // The Intent-based round-trip is not implemented in this build.
+                    // No fabricated success is returned here.
+                    continuation.resumeWithException(
+                        UnsupportedOperationException(
+                            "MWA_WALLET_CALLBACK_NOT_IMPLEMENTED: " +
+                            "Wallet interaction requires a physical device with an MWA-compatible wallet app. " +
+                            "Use Wallet.kt (com.solana.mobilewalletadapter.clientlib) for production wallet flows."
+                        )
+                    )
                 } else {
-                    // Mock response for testing
-                    continuation.resume(mapOf(
-                        "signature" to "3${UUID.randomUUID()}",
-                        "publicKey" to "9B5X6wq4xCSUQyRjqW37hSrwq3CEQmD2KwMaKNoon5w4",
-                        "walletName" to "Phantom"
-                    ))
+                    // Null-context path used in unit tests — always fails to prevent test false-positives.
+                    continuation.resumeWithException(
+                        UnsupportedOperationException(
+                            "MWA_NO_CONTEXT: invokeWallet called without Android Context. " +
+                            "Physical device and Context required for wallet operations."
+                        )
+                    )
                 }
             } catch (e: Exception) {
                 continuation.resumeWithException(e)

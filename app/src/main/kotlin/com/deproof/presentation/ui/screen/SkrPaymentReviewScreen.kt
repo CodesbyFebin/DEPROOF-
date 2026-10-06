@@ -164,7 +164,7 @@ fun SkrPaymentReviewScreen(
             color = MaterialTheme.colorScheme.onSurfaceVariant
         )
 
-        HorizontalDivider()
+        Divider()
 
         // ── Contribution / job details ────────────────────────────────────
         SectionCard {
@@ -202,7 +202,7 @@ fun SkrPaymentReviewScreen(
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
             Spacer(Modifier.height(4.dp))
-            Row(verticalAlignment = Alignment.Baseline) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
                 Text(
                     text = formatSkrRaw(state.job.priceRawLamports),
                     fontSize = 28.sp,

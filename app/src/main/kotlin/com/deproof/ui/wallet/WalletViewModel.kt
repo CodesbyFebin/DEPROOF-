@@ -60,12 +60,13 @@ class WalletViewModel(
     fun signTransaction(transactionData: String) {
         viewModelScope.launch {
             _isLoading.value = true
-            val result = walletRepository.signTransaction(transactionData)
+            val result: Result<com.deproof.domain.repository.SignTransactionResult> =
+                walletRepository.signTransaction(transactionData)
             result
-                .onSuccess { signResult ->
-                    // Handle signature
+                .onSuccess { _: com.deproof.domain.repository.SignTransactionResult ->
+                    // Signature received — surface in UI when required
                 }
-                .onFailure { error ->
+                .onFailure { error: Throwable ->
                     _walletState.value = WalletState.Error(error.message ?: "Sign failed")
                 }
             _isLoading.value = false
@@ -75,12 +76,12 @@ class WalletViewModel(
     fun signMessage(message: String) {
         viewModelScope.launch {
             _isLoading.value = true
-            val result = walletRepository.signMessage(message)
+            val result: Result<String> = walletRepository.signMessage(message)
             result
-                .onSuccess { signature ->
-                    // Handle signed message
+                .onSuccess { _: String ->
+                    // Signed message — surface in UI when required
                 }
-                .onFailure { error ->
+                .onFailure { error: Throwable ->
                     _walletState.value = WalletState.Error(error.message ?: "Sign failed")
                 }
             _isLoading.value = false
@@ -89,12 +90,12 @@ class WalletViewModel(
 
     private fun loadAvailableWallets() {
         viewModelScope.launch {
-            val result = walletRepository.getAvailableWallets()
+            val result: Result<List<String>> = walletRepository.getAvailableWallets()
             result
-                .onSuccess { wallets ->
+                .onSuccess { wallets: List<String> ->
                     _availableWallets.value = wallets
                 }
-                .onFailure { error ->
+                .onFailure { _: Throwable ->
                     _availableWallets.value = listOf("com.phantom")
                 }
         }
