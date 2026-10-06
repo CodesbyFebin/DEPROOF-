@@ -5010,14 +5010,14 @@
       "definition": "Optional encrypted backup and restore.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/resources/db/migration_1_2.sql",
-        "tools/bundle.py",
-        "tools/test_bundle.py"
+        "app/src/main/java/com/example/BackupWorkspace.kt",
+        "app/src/main/java/com/example/data/BackupRepository.kt",
+        "app/src/main/java/com/example/domain/Backup.kt",
+        "app/src/main/java/com/example/data/Store.kt"
       ],
       "evidencePaths": [
-        "evidence/qualification/verifier-tests.log"
+        "evidence/qualification/android-build.log",
+        "evidence/qualification/core-tests.log"
       ],
       "dependencies": [],
       "checks": [
@@ -5035,6 +5035,14 @@
         "C100"
       ],
       "tests": [
+        "app/src/test/java/com/example/data/BackupRepositoryTest.kt::authenticatedMalformedRecordOrDigestIsRefusedBeforeAnyWrite",
+        "app/src/test/java/com/example/data/BackupRepositoryTest.kt::existingIdsAndFilesAreNeverOverwritten",
+        "app/src/test/java/com/example/data/BackupRepositoryTest.kt::exportRestorePersistsMetadataAssociationsAndExactFileBytes",
+        "app/src/test/java/com/example/data/BackupRepositoryTest.kt::exportedScopeExcludesPairingSeedsOperationsAndPermissions",
+        "app/src/test/java/com/example/data/BackupRepositoryTest.kt::laterDatabaseConstraintFailureRollsBackRowsAndRemovesOnlyNewFiles",
+        "app/src/test/java/com/example/data/BackupRepositoryTest.kt::restoredPlansRetainTaskLinkButRemindersStayCancelled",
+        "app/src/test/java/com/example/data/BackupRepositoryTest.kt::unknownVersionsAndExtraFieldsAreRejected",
+        "app/src/test/java/com/example/data/BackupRepositoryTest.kt::wrongKeyAndTamperingLeaveExistingRoomRowsAndFilesIntact",
         "app/src/test/java/com/example/domain/BackupTest.kt::roundTripRestoresExactBytes",
         "app/src/test/java/com/example/domain/BackupTest.kt::tamperedCiphertextIsRefused",
         "app/src/test/java/com/example/domain/BackupTest.kt::tamperedSaltIsRefusedBecauseTheHeaderIsAuthenticated",
@@ -5045,7 +5053,7 @@
         "NOT_RUN"
       ],
       "limitations": [
-        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+        "Authenticated bounded portable-record export/additive Room restore and UI wired. Wrong keys/tampering/malformed records/conflicts/transaction rollback and file integrity tested against actual Room under Robolectric. Wallet/node private keys and active permissions excluded; reminders restored cancelled and signing approval cleared. Document-provider, process-crash, large-file and physical-device accessibility remain NOT_RUN; no complete acceptance claim."
       ],
       "sourceMappings": {
         "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",

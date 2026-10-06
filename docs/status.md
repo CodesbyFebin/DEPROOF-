@@ -25,7 +25,7 @@ BUILD_QUALIFIED: **True**. CORE_DEVICE_QUALIFIED: **False**. FULL_SCOPE_QUALIFIE
 | verifier-tests | `python3 -m unittest discover -s tools -p test_*.py` | 0 | PASS | [evidence/qualification/verifier-tests.log](../evidence/qualification/verifier-tests.log) |
 | localization-catalogs | `python3 scripts/qualify-localization.py` | 0 | PASS | [evidence/qualification/localization-catalogs.log](../evidence/qualification/localization-catalogs.log) |
 | hosting-isolation | `python3 scripts/qualify-hosting.py` | 0 | PASS | [evidence/qualification/hosting-isolation.log](../evidence/qualification/hosting-isolation.log) |
-| node-integration | `env DEPROOF_TEST_HOSTING=1 python3 scripts/qualify-integration.py` | 1 | FAIL | [evidence/qualification/node-integration.log](../evidence/qualification/node-integration.log) |
+| node-integration | `env DEPROOF_TEST_HOSTING=1 python3 scripts/qualify-integration.py` | 0 | PASS | [evidence/qualification/node-integration.log](../evidence/qualification/node-integration.log) |
 | rpc-read-only | `python3 scripts/qualify-rpc.py` | 0 | PASS | [evidence/qualification/rpc-read-only.log](../evidence/qualification/rpc-read-only.log) |
 | coverage-reconciliation | `python3 scripts/reconcile-coverage.py` | 0 | PASS | [evidence/qualification/coverage-reconciliation.log](../evidence/qualification/coverage-reconciliation.log) |
 | backlog-priorities | `python3 scripts/prioritize-uncovered.py` | 0 | PASS | [evidence/qualification/backlog-priorities.log](../evidence/qualification/backlog-priorities.log) |
@@ -44,8 +44,8 @@ Historical failures: sandbox cache/native-library/socket and DNS restrictions we
 
 - features: {"BLOCKED": 19, "IMPLEMENTED_UNVERIFIED": 94, "VERIFIED": 7}
 - core-checks: {"NOT_RUN": 80, "PASS": 20}
-- functions: {"BLOCKED": 10, "IMPLEMENTED_UNVERIFIED": 57, "VERIFIED": 19}
-- ecosystem-requirements: {"BLOCKED": 10, "IMPLEMENTED_UNVERIFIED": 20}
+- functions: {"BLOCKED": 8, "IMPLEMENTED_UNVERIFIED": 50, "VERIFIED": 28}
+- ecosystem-requirements: {"BLOCKED": 6, "IMPLEMENTED_UNVERIFIED": 24}
 
 Exact counts remain 120 F, 100 C, 62 FN + 24 EF = 86 contracts and 30 E. `uncovered-requirements.json` enumerates each unresolved acceptance with paths/tests/evidence; local-profile verification never implies external/device qualification.
 
@@ -58,7 +58,6 @@ Exact counts remain 120 F, 100 C, 62 FN + 24 EF = 86 contracts and 30 E. `uncove
 - **P5_EXTERNAL_ADAPTERS: BLOCKED** — Verified SKR staking layouts and additional provider authorization/protocol interfaces unavailable. No mainnet spending.
 - **SOURCE_COMPLETENESS: NOT_RUN** — Full lookup resolution, legacy receipt import, unsupported media previews/capture lifecycle, device validation of newly implemented consented location/offline mapping/reminders, complete dynamic translations, background network policy and physical document-provider/crash acceptance for bounded Android backups remain incomplete. Bounded text/image previews are implemented but not device-qualified. Each unresolved registry entry is listed in uncovered-requirements.json.
 - **RELEASE_AND_RIGHTS: BLOCKED** — No release signing or physical-device release checks; comprehensive SBOM/advisory and imported-asset rights review incomplete.
-- **NODE_INTEGRATION: FAIL** — Named gate has no passing result. Inspect evidence/qualification/node-integration.log. No successful behavior inferred.
 - **EXPLANATION_PROVIDER: BLOCKED** — Typed consent/configuration/error guard exists; no qualified external explanation adapter or outbound request is registered. Guard tests do not establish provider integration.
 - **MANUAL_ACCESSIBILITY: NOT_RUN** — Automated Chromium/axe/keyboard/200% text checks do not establish full manual screen-reader, cross-browser or Android accessibility qualification.
 - **CONTAINER_QUALIFICATION: BLOCKED** — See evidence/docker/qualification-summary.json. Service images and portable checks passed; Docker storage is exhausted, Android cache ownership correction is untested, container APK absent and final owner-control revisions remain unqualified. Host Android build passes do not establish container build success.
@@ -72,9 +71,9 @@ Dependency/security/environment priorities: `evidence/qualification/prioritized-
 ## Produced artifacts
 
 - `app/build/outputs/apk/debug/app-debug.apk` — debug-apk; SHA-256 `47333a035a66764b6c0032b21202fcd25978e9d68b5e15210309228f650dd7be`
-- `node-agent/build/deproof-node` — darwin-amd64-node-binary; SHA-256 `f9db92bb70bc452a3df3ac6525105d46cd3051a922b42ce84c4697811ac2095c`
-- `prover-worker/build/prove` — local-proof-producer; SHA-256 `ad226ac1e3f2da216701487c979d8c95db5d723c08119f4cb693d8a4cea9fc6c`
-- `prover-worker/build/verify` — independent-proof-verifier; SHA-256 `abcac251b363050365110aaf87129b9efbfa8bf270b67151c883a0c72fe3a278`
+- `node-agent/build/deproof-node` — darwin-amd64-node-binary; SHA-256 `d360c1ff4e7a696cb38a4afcc58fb477a85e34f2f4c38e5fad3506b4d581acdc`
+- `prover-worker/build/prove` — local-proof-producer; SHA-256 `5d78e4eb8c164a584b5ad2a168db4958c3fc12f435275fefa0438801cb8fce19`
+- `prover-worker/build/verify` — independent-proof-verifier; SHA-256 `c3115d217ffaf8eb72c95c56cc91e99f9fadf5e01b15e0d7f6ab4908b9f1cbb2`
 - `gradle/wrapper/gradle-wrapper.jar` — gradle-wrapper; SHA-256 `b3a875ddc1f044746e1b1a55f645584505f4a10438c1afea9f15e92a7c42ec13`
 - `tools/verify.py` — independent-receipt-verifier; SHA-256 `dd17a4b493cd1d11e700879a6023308daacb6315fb665e4bb5665041e6f1195a`
 - `prover-worker/build/qualified-result-20261006T094220Z-76453/circuit.r1cs` — local-proof-artifact; SHA-256 `d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954`
@@ -125,6 +124,12 @@ Dependency/security/environment priorities: `evidence/qualification/prioritized-
 - `prover-worker/build/qualified-result-20261006T060637Z-63781/public-witness.bin` — local-proof-artifact; SHA-256 `da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd`
 - `prover-worker/build/qualified-result-20261006T060637Z-63781/manifest.json` — local-proof-artifact; SHA-256 `6a58f53a7c16a9f89596a7ef2b21579279665769f936c16369ab0cf9327e5f26`
 - `prover-worker/build/qualified-result-20261006T060637Z-63781/proof.bin` — local-proof-artifact; SHA-256 `7c4c749ddb5b8bf05a9b0da951f30feff5692659dca3e6c533b1a125e5743528`
+- `prover-worker/build/qualified-result-20261006T110434Z-83653/circuit.r1cs` — local-proof-artifact; SHA-256 `d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954`
+- `prover-worker/build/qualified-result-20261006T110434Z-83653/verification-key.bin` — local-proof-artifact; SHA-256 `467e842139d5f4422d2aae594d0422e239541d5cbceaffe187dc4eae63463ed6`
+- `prover-worker/build/qualified-result-20261006T110434Z-83653/proving-key.bin` — local-proof-artifact; SHA-256 `9d4d059dc0f380c3f168d2903431aad8b78732a121bb67aeee2954c5c9541526`
+- `prover-worker/build/qualified-result-20261006T110434Z-83653/public-witness.bin` — local-proof-artifact; SHA-256 `da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd`
+- `prover-worker/build/qualified-result-20261006T110434Z-83653/manifest.json` — local-proof-artifact; SHA-256 `d0dce7c18c2125aa610a0ac6092adff35a5a1e556a242dcae1d114b26931cd6a`
+- `prover-worker/build/qualified-result-20261006T110434Z-83653/proof.bin` — local-proof-artifact; SHA-256 `e942ce5e5506b1ed394f68eee57aa584814c1d88548d5b7f98324f1d55663047`
 - `prover-worker/build/qualified-result-20261006T095525Z-77774/circuit.r1cs` — local-proof-artifact; SHA-256 `d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954`
 - `prover-worker/build/qualified-result-20261006T095525Z-77774/verification-key.bin` — local-proof-artifact; SHA-256 `211a029b94e0de158973f06b2de625a89d5aa0e071493a5b1eeea27a9566424e`
 - `prover-worker/build/qualified-result-20261006T095525Z-77774/proving-key.bin` — local-proof-artifact; SHA-256 `6135521d16464d8671f5bb9b9c010caa270bfdeb57de02b25e5797d53baf7286`

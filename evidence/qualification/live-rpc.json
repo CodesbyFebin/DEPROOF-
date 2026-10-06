@@ -8,8 +8,8 @@
     "account" : "11111111111111111111111111111111",
     "accountRole" : "PUBLIC_SYSTEM_PROGRAM_ACCOUNT_NOT_USER_WALLET",
     "sol" : "0.000000001",
-    "slot" : "508063907",
-    "observedAt" : "2026-10-06T10:32:41.436576Z",
+    "slot" : "508072100",
+    "observedAt" : "2026-10-06T11:05:20.072994Z",
     "methods" : [ "getGenesisHash", "getBalance" ],
     "assurance" : "RPC_PROVIDER_OBSERVATION_NOT_CRYPTOGRAPHIC_PROOF"
   }, {
@@ -20,8 +20,8 @@
     "account" : "11111111111111111111111111111111",
     "accountRole" : "PUBLIC_SYSTEM_PROGRAM_ACCOUNT_NOT_USER_WALLET",
     "sol" : "0.000000001",
-    "slot" : "453875648",
-    "observedAt" : "2026-10-06T10:32:41.770987Z",
+    "slot" : "453883009",
+    "observedAt" : "2026-10-06T11:05:20.454241Z",
     "methods" : [ "getGenesisHash", "getBalance" ],
     "assurance" : "RPC_PROVIDER_OBSERVATION_NOT_CRYPTOGRAPHIC_PROOF"
   } ],

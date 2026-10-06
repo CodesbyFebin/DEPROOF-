@@ -1,12 +1,12 @@
 {
   "schema": "deproof-localization-v1",
-  "checkedAt": "2026-10-06T10:31:55.953225+00:00",
+  "checkedAt": "2026-10-06T11:04:35.349026+00:00",
   "status": "PASS",
   "supportedInterfaceCatalogs": [
     "en",
     "es"
   ],
-  "stringCount": 204,
+  "stringCount": 212,
   "checks": [
     {
       "id": "app/src/main/res/values/strings.xml_unique_ids",
@@ -846,6 +846,38 @@
     },
     {
       "id": "saved_waypoints_other_format",
+      "status": "PASS"
+    },
+    {
+      "id": "backup_title_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "backup_scope_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "backup_passphrase_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "backup_consent_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "backup_export_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "backup_select_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "backup_selected_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "backup_restore_nonempty_and_format",
       "status": "PASS"
     },
     {

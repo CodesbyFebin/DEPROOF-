@@ -44,7 +44,7 @@ Historical failures: sandbox cache/native-library/socket and DNS restrictions we
 
 - features: {"BLOCKED": 19, "IMPLEMENTED_UNVERIFIED": 94, "VERIFIED": 7}
 - core-checks: {"NOT_RUN": 80, "PASS": 20}
-- functions: {"BLOCKED": 9, "IMPLEMENTED_UNVERIFIED": 49, "VERIFIED": 28}
+- functions: {"BLOCKED": 8, "IMPLEMENTED_UNVERIFIED": 50, "VERIFIED": 28}
 - ecosystem-requirements: {"BLOCKED": 6, "IMPLEMENTED_UNVERIFIED": 24}
 
 Exact counts remain 120 F, 100 C, 62 FN + 24 EF = 86 contracts and 30 E. `uncovered-requirements.json` enumerates each unresolved acceptance with paths/tests/evidence; local-profile verification never implies external/device qualification.
@@ -56,7 +56,7 @@ Exact counts remain 120 F, 100 C, 62 FN + 24 EF = 86 contracts and 30 E. `uncove
 - **EXTERNAL_PEER_PROVIDER: NOT_RUN** — Real loopback TLS pairing and controlled known-byte receiver passed locally; remote peer tunnels, NAT/mobile network transitions, provider corroboration and payouts remain untested.
 - **PROOF_PRODUCTION_SETUP: NOT_RUN** — Owner-signed local cubic jobs and separate gnark verifier pass. Educational trusted setup and same-owner verifier domain; isolated production proof execution, external jobs/provider membership/rewards remain unqualified.
 - **P5_EXTERNAL_ADAPTERS: BLOCKED** — Verified SKR staking layouts and additional provider authorization/protocol interfaces unavailable. No mainnet spending.
-- **SOURCE_COMPLETENESS: NOT_RUN** — Full lookup resolution, legacy receipt import, unsupported media previews/capture lifecycle, device validation of newly implemented consented location/offline mapping/reminders, complete dynamic translations, background network policy and complete Android backup integration remain incomplete. Bounded text/image previews are implemented but not device-qualified. Each unresolved registry entry is listed in uncovered-requirements.json.
+- **SOURCE_COMPLETENESS: NOT_RUN** — Full lookup resolution, legacy receipt import, unsupported media previews/capture lifecycle, device validation of newly implemented consented location/offline mapping/reminders, complete dynamic translations, background network policy and physical document-provider/crash acceptance for bounded Android backups remain incomplete. Bounded text/image previews are implemented but not device-qualified. Each unresolved registry entry is listed in uncovered-requirements.json.
 - **RELEASE_AND_RIGHTS: BLOCKED** — No release signing or physical-device release checks; comprehensive SBOM/advisory and imported-asset rights review incomplete.
 - **EXPLANATION_PROVIDER: BLOCKED** — Typed consent/configuration/error guard exists; no qualified external explanation adapter or outbound request is registered. Guard tests do not establish provider integration.
 - **MANUAL_ACCESSIBILITY: NOT_RUN** — Automated Chromium/axe/keyboard/200% text checks do not establish full manual screen-reader, cross-browser or Android accessibility qualification.
@@ -64,16 +64,16 @@ Exact counts remain 120 F, 100 C, 62 FN + 24 EF = 86 contracts and 30 E. `uncove
 
 ## Current continuation
 
-Consented foreground location with optional hash-bound metadata, private offline mapping plans and opt-in inexact task reminders are implemented. English/Spanish resource catalogs and persisted UI language selection are implemented, but full dynamic explanation localization and independent/device review remain incomplete. See docs/local-workflows.md and evidence/qualification/localization-report.json. Bounded private text/image previews, persisted first-seen program indicators, the legacy raw digest signing contract and bounded read-only account/rent explanations are implemented; supporting local tests pass, Android hardware/lifecycle acceptance remains NOT_RUN. Optional explanation consent/configuration/error guards are tested, but the external provider adapter remains BLOCKED. F097 now correctly links existing one-rebuild memo logic and fresh-review enforcement. No device pass is inferred.
+Authenticated bounded Room backup/export/additive restore UI, raw-file metadata association and fresh observed local proof-profile matching are wired; supporting domain/Room tests are recorded, physical document-provider/crash and Android-to-Linux dispatch remain NOT_RUN. Backup excludes private signing keys, credentials and active permissions; see docs/backup-and-proof-wiring.md. Consented foreground location with optional hash-bound metadata, private offline mapping plans and opt-in inexact task reminders are implemented. English/Spanish resource catalogs and persisted UI language selection are implemented, but full dynamic explanation localization and independent/device review remain incomplete. See docs/local-workflows.md and evidence/qualification/localization-report.json. Bounded private text/image previews, persisted first-seen program indicators, the legacy raw digest signing contract and bounded read-only account/rent explanations are implemented; supporting local tests pass, Android hardware/lifecycle acceptance remains NOT_RUN. Optional explanation consent/configuration/error guards are tested, but the external provider adapter remains BLOCKED. F097 now correctly links existing one-rebuild memo logic and fresh-review enforcement. No device pass is inferred.
 
 Dependency/security/environment priorities: `evidence/qualification/prioritized-backlog.json`; code/evidence gaps and next steps: `docs/remaining-work.md`. Physical preflight: `python3 scripts/qualify-device.py`; install only with `--install` and follow `docs/device-qualification.md`.
 
 ## Produced artifacts
 
-- `app/build/outputs/apk/debug/app-debug.apk` — debug-apk; SHA-256 `cfcfb2fecb7175746c0f62b7b05f7c2edacd7fba6e8d3efdec13ca7358bd0a5c`
-- `node-agent/build/deproof-node` — darwin-amd64-node-binary; SHA-256 `075634471fa1ba41507aa201ff8e0f1f090464a3b445561fa7d31ea63646a17b`
-- `prover-worker/build/prove` — local-proof-producer; SHA-256 `1fcf445acbc611979f9c9a8722798a522094893870af64da991d4471003d6f7f`
-- `prover-worker/build/verify` — independent-proof-verifier; SHA-256 `98c2a984c9288bb7263522236aef99bd631ed0d2072df9a72348082f1909c02b`
+- `app/build/outputs/apk/debug/app-debug.apk` — debug-apk; SHA-256 `47333a035a66764b6c0032b21202fcd25978e9d68b5e15210309228f650dd7be`
+- `node-agent/build/deproof-node` — darwin-amd64-node-binary; SHA-256 `d360c1ff4e7a696cb38a4afcc58fb477a85e34f2f4c38e5fad3506b4d581acdc`
+- `prover-worker/build/prove` — local-proof-producer; SHA-256 `5d78e4eb8c164a584b5ad2a168db4958c3fc12f435275fefa0438801cb8fce19`
+- `prover-worker/build/verify` — independent-proof-verifier; SHA-256 `c3115d217ffaf8eb72c95c56cc91e99f9fadf5e01b15e0d7f6ab4908b9f1cbb2`
 - `gradle/wrapper/gradle-wrapper.jar` — gradle-wrapper; SHA-256 `b3a875ddc1f044746e1b1a55f645584505f4a10438c1afea9f15e92a7c42ec13`
 - `tools/verify.py` — independent-receipt-verifier; SHA-256 `dd17a4b493cd1d11e700879a6023308daacb6315fb665e4bb5665041e6f1195a`
 - `prover-worker/build/qualified-result-20261006T094220Z-76453/circuit.r1cs` — local-proof-artifact; SHA-256 `d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954`
@@ -124,6 +124,12 @@ Dependency/security/environment priorities: `evidence/qualification/prioritized-
 - `prover-worker/build/qualified-result-20261006T060637Z-63781/public-witness.bin` — local-proof-artifact; SHA-256 `da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd`
 - `prover-worker/build/qualified-result-20261006T060637Z-63781/manifest.json` — local-proof-artifact; SHA-256 `6a58f53a7c16a9f89596a7ef2b21579279665769f936c16369ab0cf9327e5f26`
 - `prover-worker/build/qualified-result-20261006T060637Z-63781/proof.bin` — local-proof-artifact; SHA-256 `7c4c749ddb5b8bf05a9b0da951f30feff5692659dca3e6c533b1a125e5743528`
+- `prover-worker/build/qualified-result-20261006T110434Z-83653/circuit.r1cs` — local-proof-artifact; SHA-256 `d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954`
+- `prover-worker/build/qualified-result-20261006T110434Z-83653/verification-key.bin` — local-proof-artifact; SHA-256 `467e842139d5f4422d2aae594d0422e239541d5cbceaffe187dc4eae63463ed6`
+- `prover-worker/build/qualified-result-20261006T110434Z-83653/proving-key.bin` — local-proof-artifact; SHA-256 `9d4d059dc0f380c3f168d2903431aad8b78732a121bb67aeee2954c5c9541526`
+- `prover-worker/build/qualified-result-20261006T110434Z-83653/public-witness.bin` — local-proof-artifact; SHA-256 `da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd`
+- `prover-worker/build/qualified-result-20261006T110434Z-83653/manifest.json` — local-proof-artifact; SHA-256 `d0dce7c18c2125aa610a0ac6092adff35a5a1e556a242dcae1d114b26931cd6a`
+- `prover-worker/build/qualified-result-20261006T110434Z-83653/proof.bin` — local-proof-artifact; SHA-256 `e942ce5e5506b1ed394f68eee57aa584814c1d88548d5b7f98324f1d55663047`
 - `prover-worker/build/qualified-result-20261006T095525Z-77774/circuit.r1cs` — local-proof-artifact; SHA-256 `d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954`
 - `prover-worker/build/qualified-result-20261006T095525Z-77774/verification-key.bin` — local-proof-artifact; SHA-256 `211a029b94e0de158973f06b2de625a89d5aa0e071493a5b1eeea27a9566424e`
 - `prover-worker/build/qualified-result-20261006T095525Z-77774/proving-key.bin` — local-proof-artifact; SHA-256 `6135521d16464d8671f5bb9b9c010caa270bfdeb57de02b25e5797d53baf7286`
@@ -148,6 +154,12 @@ Dependency/security/environment priorities: `evidence/qualification/prioritized-
 - `prover-worker/build/qualified-result-20261006T103155Z-80685/public-witness.bin` — local-proof-artifact; SHA-256 `da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd`
 - `prover-worker/build/qualified-result-20261006T103155Z-80685/manifest.json` — local-proof-artifact; SHA-256 `5254c87be33ee17eebd4371e73583845f0ea3898f857ccdcdd56ec4494234080`
 - `prover-worker/build/qualified-result-20261006T103155Z-80685/proof.bin` — local-proof-artifact; SHA-256 `857b167e8b88808c5c1e32658c906d374c27294b8774293621a366c69ffbe579`
+- `prover-worker/build/qualified-result-20261006T105605Z-82274/circuit.r1cs` — local-proof-artifact; SHA-256 `d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954`
+- `prover-worker/build/qualified-result-20261006T105605Z-82274/verification-key.bin` — local-proof-artifact; SHA-256 `360460a78f9750ec93e10659a8592c07c0612aae9ad952a10aec420f02f9745b`
+- `prover-worker/build/qualified-result-20261006T105605Z-82274/proving-key.bin` — local-proof-artifact; SHA-256 `ba26a635bf1a989ef4d7ed9635e667dc615eb73835df9938ff7c6a29720c1612`
+- `prover-worker/build/qualified-result-20261006T105605Z-82274/public-witness.bin` — local-proof-artifact; SHA-256 `da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd`
+- `prover-worker/build/qualified-result-20261006T105605Z-82274/manifest.json` — local-proof-artifact; SHA-256 `32751c586f6a5d64416602d7a4df4c16fc09c45c4b63efd5c621c1e80b3f82c1`
+- `prover-worker/build/qualified-result-20261006T105605Z-82274/proof.bin` — local-proof-artifact; SHA-256 `75431bee7b578f4ace92eb1a5912316e704cad8f3d3ee6d2be647cfbd25fd88c`
 - `prover-worker/build/qualified-result-20261006T061453Z-64386/circuit.r1cs` — local-proof-artifact; SHA-256 `d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954`
 - `prover-worker/build/qualified-result-20261006T061453Z-64386/verification-key.bin` — local-proof-artifact; SHA-256 `873462258f3bedeba5fdd75c697158569bed5fadc12c154f31e80afa4e12d400`
 - `prover-worker/build/qualified-result-20261006T061453Z-64386/proving-key.bin` — local-proof-artifact; SHA-256 `4f9428c2b4a8c1f0052eee76f67a20d53aadf12a041980397efb66b29636dc8c`

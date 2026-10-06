@@ -18,14 +18,14 @@ BUILD_QUALIFIED: **True**. CORE_DEVICE_QUALIFIED: **False**. FULL_SCOPE_QUALIFIE
 
 | Gate | Command | Exit | Result | Log |
 |---|---|---:|---|---|
-| core-tests | `python3 scripts/qualify-core.py` | 1 | FAIL | [evidence/qualification/core-tests.log](../../evidence/qualification/core-tests.log) |
+| core-tests | `python3 scripts/qualify-core.py` | 0 | PASS | [evidence/qualification/core-tests.log](../../evidence/qualification/core-tests.log) |
 | android-build | `scripts/qualify-android.sh` | 0 | PASS | [evidence/qualification/android-build.log](../../evidence/qualification/android-build.log) |
 | node-tests | `scripts/qualify-node.sh` | 0 | PASS | [evidence/qualification/node-tests.log](../../evidence/qualification/node-tests.log) |
 | prover-tests | `scripts/qualify-prover.sh` | 0 | PASS | [evidence/qualification/prover-tests.log](../../evidence/qualification/prover-tests.log) |
 | verifier-tests | `python3 -m unittest discover -s tools -p test_*.py` | 0 | PASS | [evidence/qualification/verifier-tests.log](../../evidence/qualification/verifier-tests.log) |
 | localization-catalogs | `python3 scripts/qualify-localization.py` | 0 | PASS | [evidence/qualification/localization-catalogs.log](../../evidence/qualification/localization-catalogs.log) |
 | hosting-isolation | `python3 scripts/qualify-hosting.py` | 0 | PASS | [evidence/qualification/hosting-isolation.log](../../evidence/qualification/hosting-isolation.log) |
-| node-integration | `env DEPROOF_TEST_HOSTING=1 python3 scripts/qualify-integration.py` | 0 | PASS | [evidence/qualification/node-integration.log](../../evidence/qualification/node-integration.log) |
+| node-integration | `env DEPROOF_TEST_HOSTING=1 python3 scripts/qualify-integration.py` | 1 | FAIL | [evidence/qualification/node-integration.log](../../evidence/qualification/node-integration.log) |
 | rpc-read-only | `python3 scripts/qualify-rpc.py` | 0 | PASS | [evidence/qualification/rpc-read-only.log](../../evidence/qualification/rpc-read-only.log) |
 | coverage-reconciliation | `python3 scripts/reconcile-coverage.py` | 0 | PASS | [evidence/qualification/coverage-reconciliation.log](../../evidence/qualification/coverage-reconciliation.log) |
 | backlog-priorities | `python3 scripts/prioritize-uncovered.py` | 0 | PASS | [evidence/qualification/backlog-priorities.log](../../evidence/qualification/backlog-priorities.log) |
@@ -44,8 +44,8 @@ Historical failures: sandbox cache/native-library/socket and DNS restrictions we
 
 - features: {"BLOCKED": 19, "IMPLEMENTED_UNVERIFIED": 94, "VERIFIED": 7}
 - core-checks: {"NOT_RUN": 80, "PASS": 20}
-- functions: {"BLOCKED": 8, "IMPLEMENTED_UNVERIFIED": 50, "VERIFIED": 28}
-- ecosystem-requirements: {"BLOCKED": 6, "IMPLEMENTED_UNVERIFIED": 24}
+- functions: {"BLOCKED": 10, "IMPLEMENTED_UNVERIFIED": 57, "VERIFIED": 19}
+- ecosystem-requirements: {"BLOCKED": 10, "IMPLEMENTED_UNVERIFIED": 20}
 
 Exact counts remain 120 F, 100 C, 62 FN + 24 EF = 86 contracts and 30 E. `uncovered-requirements.json` enumerates each unresolved acceptance with paths/tests/evidence; local-profile verification never implies external/device qualification.
 
@@ -56,24 +56,25 @@ Exact counts remain 120 F, 100 C, 62 FN + 24 EF = 86 contracts and 30 E. `uncove
 - **EXTERNAL_PEER_PROVIDER: NOT_RUN** — Real loopback TLS pairing and controlled known-byte receiver passed locally; remote peer tunnels, NAT/mobile network transitions, provider corroboration and payouts remain untested.
 - **PROOF_PRODUCTION_SETUP: NOT_RUN** — Owner-signed local cubic jobs and separate gnark verifier pass. Educational trusted setup and same-owner verifier domain; isolated production proof execution, external jobs/provider membership/rewards remain unqualified.
 - **P5_EXTERNAL_ADAPTERS: BLOCKED** — Verified SKR staking layouts and additional provider authorization/protocol interfaces unavailable. No mainnet spending.
-- **SOURCE_COMPLETENESS: NOT_RUN** — Full lookup resolution, legacy receipt import, unsupported media previews/capture lifecycle, device validation of newly implemented consented location/offline mapping/reminders, complete dynamic translations, background network policy and complete Android backup integration remain incomplete. Bounded text/image previews are implemented but not device-qualified. Each unresolved registry entry is listed in uncovered-requirements.json.
+- **SOURCE_COMPLETENESS: NOT_RUN** — Full lookup resolution, legacy receipt import, unsupported media previews/capture lifecycle, device validation of newly implemented consented location/offline mapping/reminders, complete dynamic translations, background network policy and physical document-provider/crash acceptance for bounded Android backups remain incomplete. Bounded text/image previews are implemented but not device-qualified. Each unresolved registry entry is listed in uncovered-requirements.json.
 - **RELEASE_AND_RIGHTS: BLOCKED** — No release signing or physical-device release checks; comprehensive SBOM/advisory and imported-asset rights review incomplete.
+- **NODE_INTEGRATION: FAIL** — Named gate has no passing result. Inspect evidence/qualification/node-integration.log. No successful behavior inferred.
 - **EXPLANATION_PROVIDER: BLOCKED** — Typed consent/configuration/error guard exists; no qualified external explanation adapter or outbound request is registered. Guard tests do not establish provider integration.
 - **MANUAL_ACCESSIBILITY: NOT_RUN** — Automated Chromium/axe/keyboard/200% text checks do not establish full manual screen-reader, cross-browser or Android accessibility qualification.
 - **CONTAINER_QUALIFICATION: BLOCKED** — See evidence/docker/qualification-summary.json. Service images and portable checks passed; Docker storage is exhausted, Android cache ownership correction is untested, container APK absent and final owner-control revisions remain unqualified. Host Android build passes do not establish container build success.
 
 ## Current continuation
 
-Consented foreground location with optional hash-bound metadata, private offline mapping plans and opt-in inexact task reminders are implemented. English/Spanish resource catalogs and persisted UI language selection are implemented, but full dynamic explanation localization and independent/device review remain incomplete. See docs/local-workflows.md and evidence/qualification/localization-report.json. Bounded private text/image previews, persisted first-seen program indicators, the legacy raw digest signing contract and bounded read-only account/rent explanations are implemented; supporting local tests pass, Android hardware/lifecycle acceptance remains NOT_RUN. Optional explanation consent/configuration/error guards are tested, but the external provider adapter remains BLOCKED. F097 now correctly links existing one-rebuild memo logic and fresh-review enforcement. No device pass is inferred.
+Authenticated bounded Room backup/export/additive restore UI, raw-file metadata association and fresh observed local proof-profile matching are wired; supporting domain/Room tests are recorded, physical document-provider/crash and Android-to-Linux dispatch remain NOT_RUN. Backup excludes private signing keys, credentials and active permissions; see docs/backup-and-proof-wiring.md. Consented foreground location with optional hash-bound metadata, private offline mapping plans and opt-in inexact task reminders are implemented. English/Spanish resource catalogs and persisted UI language selection are implemented, but full dynamic explanation localization and independent/device review remain incomplete. See docs/local-workflows.md and evidence/qualification/localization-report.json. Bounded private text/image previews, persisted first-seen program indicators, the legacy raw digest signing contract and bounded read-only account/rent explanations are implemented; supporting local tests pass, Android hardware/lifecycle acceptance remains NOT_RUN. Optional explanation consent/configuration/error guards are tested, but the external provider adapter remains BLOCKED. F097 now correctly links existing one-rebuild memo logic and fresh-review enforcement. No device pass is inferred.
 
 Dependency/security/environment priorities: `evidence/qualification/prioritized-backlog.json`; code/evidence gaps and next steps: `docs/remaining-work.md`. Physical preflight: `python3 scripts/qualify-device.py`; install only with `--install` and follow `docs/device-qualification.md`.
 
 ## Produced artifacts
 
-- `app/build/outputs/apk/debug/app-debug.apk` — debug-apk; SHA-256 `cfcfb2fecb7175746c0f62b7b05f7c2edacd7fba6e8d3efdec13ca7358bd0a5c`
-- `node-agent/build/deproof-node` — darwin-amd64-node-binary; SHA-256 `3285f9b22a42302f85cfadbfddb9d2b75b085b74ed0afb73040b12279fe58915`
-- `prover-worker/build/prove` — local-proof-producer; SHA-256 `50dc4777218d7e6f8ef066bf7603def27ff8e16e7330678f4d949e7fddf43c2d`
-- `prover-worker/build/verify` — independent-proof-verifier; SHA-256 `0254419454120e153f9aaf216189d0ce0e046b28c82f290b7f2ff5be53d4283d`
+- `app/build/outputs/apk/debug/app-debug.apk` — debug-apk; SHA-256 `47333a035a66764b6c0032b21202fcd25978e9d68b5e15210309228f650dd7be`
+- `node-agent/build/deproof-node` — darwin-amd64-node-binary; SHA-256 `f9db92bb70bc452a3df3ac6525105d46cd3051a922b42ce84c4697811ac2095c`
+- `prover-worker/build/prove` — local-proof-producer; SHA-256 `ad226ac1e3f2da216701487c979d8c95db5d723c08119f4cb693d8a4cea9fc6c`
+- `prover-worker/build/verify` — independent-proof-verifier; SHA-256 `abcac251b363050365110aaf87129b9efbfa8bf270b67151c883a0c72fe3a278`
 - `gradle/wrapper/gradle-wrapper.jar` — gradle-wrapper; SHA-256 `b3a875ddc1f044746e1b1a55f645584505f4a10438c1afea9f15e92a7c42ec13`
 - `tools/verify.py` — independent-receipt-verifier; SHA-256 `dd17a4b493cd1d11e700879a6023308daacb6315fb665e4bb5665041e6f1195a`
 - `prover-worker/build/qualified-result-20261006T094220Z-76453/circuit.r1cs` — local-proof-artifact; SHA-256 `d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954`
@@ -142,6 +143,18 @@ Dependency/security/environment priorities: `evidence/qualification/prioritized-
 - `prover-worker/build/qualified-result-20261006T084931Z-72962/public-witness.bin` — local-proof-artifact; SHA-256 `da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd`
 - `prover-worker/build/qualified-result-20261006T084931Z-72962/manifest.json` — local-proof-artifact; SHA-256 `889489927926e6e54943b58da9bf191174a54f3b7741ef35702fcb2fe7e84a1d`
 - `prover-worker/build/qualified-result-20261006T084931Z-72962/proof.bin` — local-proof-artifact; SHA-256 `dcc29a780b8cdc1fe439817d9fa4b0af7d3ace1d932b4f5dc53de85797cee0ea`
+- `prover-worker/build/qualified-result-20261006T103155Z-80685/circuit.r1cs` — local-proof-artifact; SHA-256 `d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954`
+- `prover-worker/build/qualified-result-20261006T103155Z-80685/verification-key.bin` — local-proof-artifact; SHA-256 `a3f625278f5e62074e702c2f30de096aea8186b8952f4ad58a7bfd7bb7d0acd1`
+- `prover-worker/build/qualified-result-20261006T103155Z-80685/proving-key.bin` — local-proof-artifact; SHA-256 `d88e9874d03058f22f0ce9e19ae9b9f669ec33b0e17decca1587f9d93fa64080`
+- `prover-worker/build/qualified-result-20261006T103155Z-80685/public-witness.bin` — local-proof-artifact; SHA-256 `da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd`
+- `prover-worker/build/qualified-result-20261006T103155Z-80685/manifest.json` — local-proof-artifact; SHA-256 `5254c87be33ee17eebd4371e73583845f0ea3898f857ccdcdd56ec4494234080`
+- `prover-worker/build/qualified-result-20261006T103155Z-80685/proof.bin` — local-proof-artifact; SHA-256 `857b167e8b88808c5c1e32658c906d374c27294b8774293621a366c69ffbe579`
+- `prover-worker/build/qualified-result-20261006T105605Z-82274/circuit.r1cs` — local-proof-artifact; SHA-256 `d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954`
+- `prover-worker/build/qualified-result-20261006T105605Z-82274/verification-key.bin` — local-proof-artifact; SHA-256 `360460a78f9750ec93e10659a8592c07c0612aae9ad952a10aec420f02f9745b`
+- `prover-worker/build/qualified-result-20261006T105605Z-82274/proving-key.bin` — local-proof-artifact; SHA-256 `ba26a635bf1a989ef4d7ed9635e667dc615eb73835df9938ff7c6a29720c1612`
+- `prover-worker/build/qualified-result-20261006T105605Z-82274/public-witness.bin` — local-proof-artifact; SHA-256 `da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd`
+- `prover-worker/build/qualified-result-20261006T105605Z-82274/manifest.json` — local-proof-artifact; SHA-256 `32751c586f6a5d64416602d7a4df4c16fc09c45c4b63efd5c621c1e80b3f82c1`
+- `prover-worker/build/qualified-result-20261006T105605Z-82274/proof.bin` — local-proof-artifact; SHA-256 `75431bee7b578f4ace92eb1a5912316e704cad8f3d3ee6d2be647cfbd25fd88c`
 - `prover-worker/build/qualified-result-20261006T061453Z-64386/circuit.r1cs` — local-proof-artifact; SHA-256 `d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954`
 - `prover-worker/build/qualified-result-20261006T061453Z-64386/verification-key.bin` — local-proof-artifact; SHA-256 `873462258f3bedeba5fdd75c697158569bed5fadc12c154f31e80afa4e12d400`
 - `prover-worker/build/qualified-result-20261006T061453Z-64386/proving-key.bin` — local-proof-artifact; SHA-256 `4f9428c2b4a8c1f0052eee76f67a20d53aadf12a041980397efb66b29636dc8c`

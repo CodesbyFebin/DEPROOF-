@@ -1538,20 +1538,27 @@
       "status": "IMPLEMENTED_UNVERIFIED",
       "acceptance": "Optional encrypted backup and restore.",
       "implementedPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/resources/db/migration_1_2.sql",
-        "tools/bundle.py",
-        "tools/test_bundle.py"
+        "app/src/main/java/com/example/BackupWorkspace.kt",
+        "app/src/main/java/com/example/data/BackupRepository.kt",
+        "app/src/main/java/com/example/domain/Backup.kt",
+        "app/src/main/java/com/example/data/Store.kt"
       ],
       "namedTests": [
+        "app/src/test/java/com/example/data/BackupRepositoryTest.kt::authenticatedMalformedRecordOrDigestIsRefusedBeforeAnyWrite",
+        "app/src/test/java/com/example/data/BackupRepositoryTest.kt::existingIdsAndFilesAreNeverOverwritten",
+        "app/src/test/java/com/example/data/BackupRepositoryTest.kt::exportRestorePersistsMetadataAssociationsAndExactFileBytes",
+        "app/src/test/java/com/example/data/BackupRepositoryTest.kt::exportedScopeExcludesPairingSeedsOperationsAndPermissions",
+        "app/src/test/java/com/example/data/BackupRepositoryTest.kt::laterDatabaseConstraintFailureRollsBackRowsAndRemovesOnlyNewFiles",
+        "app/src/test/java/com/example/data/BackupRepositoryTest.kt::restoredPlansRetainTaskLinkButRemindersStayCancelled",
+        "app/src/test/java/com/example/data/BackupRepositoryTest.kt::unknownVersionsAndExtraFieldsAreRejected",
+        "app/src/test/java/com/example/data/BackupRepositoryTest.kt::wrongKeyAndTamperingLeaveExistingRoomRowsAndFilesIntact",
         "app/src/test/java/com/example/domain/BackupTest.kt::roundTripRestoresExactBytes",
         "app/src/test/java/com/example/domain/BackupTest.kt::tamperedCiphertextIsRefused",
         "app/src/test/java/com/example/domain/BackupTest.kt::tamperedSaltIsRefusedBecauseTheHeaderIsAuthenticated",
         "app/src/test/java/com/example/domain/BackupTest.kt::wrongPassphraseIsRefused"
       ],
       "requiredUncoveredGate": [
-        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+        "Authenticated bounded portable-record export/additive Room restore and UI wired. Wrong keys/tampering/malformed records/conflicts/transaction rollback and file integrity tested against actual Room under Robolectric. Wallet/node private keys and active permissions excluded; reminders restored cancelled and signing approval cleared. Document-provider, process-crash, large-file and physical-device accessibility remain NOT_RUN; no complete acceptance claim."
       ]
     },
     {
@@ -3151,17 +3158,18 @@
       "status": "IMPLEMENTED_UNVERIFIED",
       "acceptance": "`attachEvidence(taskId, file)` — file metadata, digest, and association.",
       "implementedPaths": [
+        "app/src/main/java/com/example/data/EvidenceRepository.kt",
         "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "app/src/main/resources/db/migration_1_2.sql"
+        "app/src/main/java/com/example/data/Store.kt"
       ],
       "namedTests": [
+        "app/src/test/java/com/example/data/BackupRepositoryTest.kt::actualFileMetadataFactoryRefusesChangedBytesAndMissingTaskWithoutRows",
+        "app/src/test/java/com/example/data/BackupRepositoryTest.kt::exportRestorePersistsMetadataAssociationsAndExactFileBytes",
         "app/src/test/java/com/example/data/RoomStoreTest.kt::attachmentKeepsDigestAndIsAssociatedWithItsTask",
         "app/src/test/java/com/example/data/RoomStoreTest.kt::attachmentToMissingTaskIsRejectedByForeignKey"
       ],
       "requiredUncoveredGate": [
-        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+        "Actual private-file metadata, raw-byte digest recheck and task association wired through import/recovery. Room tests reject changed bytes and orphan links. Physical capture/content-provider/lifecycle gates remain NOT_RUN."
       ]
     },
     {
@@ -3278,7 +3286,7 @@
     {
       "id": "EF001",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "acceptance": null,
+      "acceptance": "Protected identity/public metadata; entropy/key storage failure",
       "implementedPaths": [
         "node-agent/internal/agent/agent.go"
       ],
@@ -3292,7 +3300,7 @@
     {
       "id": "EF004",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "acceptance": null,
+      "acceptance": "Observed host/runtime limits and timestamp; unsupported/unknown values explicit",
       "implementedPaths": [
         "node-agent/internal/agent/agent.go"
       ],
@@ -3306,7 +3314,7 @@
     {
       "id": "EF005",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "acceptance": null,
+      "acceptance": "Qualified immutable profile or denied reason",
       "implementedPaths": [
         "app/src/main/java/com/example/NodeWorkspace.kt",
         "app/src/main/java/com/example/data/NodeClient.kt",
@@ -3328,7 +3336,7 @@
     {
       "id": "EF008",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "acceptance": null,
+      "acceptance": "Probe results/uptime intervals with freshness and gaps",
       "implementedPaths": [
         "app/src/main/java/com/example/NodeWorkspace.kt",
         "app/src/main/java/com/example/data/NodeClient.kt",
@@ -3350,7 +3358,7 @@
     {
       "id": "EF009",
       "status": "BLOCKED",
-      "acceptance": null,
+      "acceptance": "Authenticated measured connectivity; revoked/NAT/unavailable errors",
       "implementedPaths": [],
       "namedTests": [],
       "requiredUncoveredGate": [
@@ -3360,7 +3368,7 @@
     {
       "id": "EF011",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "acceptance": null,
+      "acceptance": "Actual restricted contribution session or named capability failure",
       "implementedPaths": [
         "app/src/main/java/com/example/NodeWorkspace.kt",
         "app/src/main/java/com/example/data/NodeClient.kt",
@@ -3383,7 +3391,7 @@
     {
       "id": "EF012",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "acceptance": null,
+      "acceptance": "Flow termination and final counters; stop timeout explicit",
       "implementedPaths": [
         "app/src/main/java/com/example/NodeWorkspace.kt",
         "app/src/main/java/com/example/data/NodeClient.kt",
@@ -3406,7 +3414,7 @@
     {
       "id": "EF013",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "acceptance": null,
+      "acceptance": "Raw sourced counters/units/sequence; gaps/counter reset handled",
       "implementedPaths": [
         "app/src/main/java/com/example/NodeWorkspace.kt",
         "app/src/main/java/com/example/data/NodeClient.kt",
@@ -3429,7 +3437,7 @@
     {
       "id": "EF016",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "acceptance": null,
+      "acceptance": "Integrity, replay/freshness and corroboration report; no automatic measurement-truth claim",
       "implementedPaths": [
         "app/src/main/java/com/example/NodeWorkspace.kt",
         "app/src/main/java/com/example/data/NodeClient.kt",
@@ -3453,7 +3461,7 @@
     {
       "id": "EF017",
       "status": "BLOCKED",
-      "acceptance": null,
+      "acceptance": "Accrued/claimable/paid discrepancies, asset/cluster/time; unsupported reward protocol blocked",
       "implementedPaths": [],
       "namedTests": [],
       "requiredUncoveredGate": [
@@ -3463,7 +3471,7 @@
     {
       "id": "EF018",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "acceptance": null,
+      "acceptance": "Signed validated bounded jobs with source/freshness",
       "implementedPaths": [
         "app/src/main/java/com/example/NodeWorkspace.kt",
         "app/src/main/java/com/example/data/NodeClient.kt",
@@ -3485,22 +3493,32 @@
     },
     {
       "id": "EF019",
-      "status": "BLOCKED",
-      "acceptance": null,
-      "implementedPaths": [],
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "acceptance": "Compatible backend/resource profile or explicit mismatch",
+      "implementedPaths": [
+        "app/src/main/java/com/example/domain/ProofJobs.kt",
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "node-agent/internal/agent/capabilities.go",
+        "tools/proof_jobs.py"
+      ],
       "namedTests": [
+        "app/src/test/java/com/example/domain/ProofDispatchTest.kt::changedPinnedCircuitOrAbsentJobProfileRefuses",
+        "app/src/test/java/com/example/domain/ProofDispatchTest.kt::freshObservedLocalProfileMatchesAndResourceMismatchRefuses",
+        "app/src/test/java/com/example/domain/ProofDispatchTest.kt::missingStaleOrMalformedCapabilitiesNeverAuthorize",
+        "app/src/test/java/com/example/domain/ProofDispatchTest.kt::unqualifiedProviderAndExpiredJobHaveExplicitStates",
         "app/src/test/java/com/example/domain/ProofJobTest.kt::compatibleJobMatchesWithNoMismatch",
         "app/src/test/java/com/example/domain/ProofJobTest.kt::eachMismatchIsReportedExplicitly",
         "app/src/test/java/com/example/domain/ProofJobTest.kt::incompatibleJobIsNeverReportedAsCompatible"
       ],
       "requiredUncoveredGate": [
-        "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+        "Matcher wired to Android dispatch with fresh attributed Linux capability observations and owner-pinned local job resource profile. Explicit mismatch/unavailable/unqualified-provider states tested. CPU/RAM observations are not reservations or attestation; unsupported hosts lack RAM observations. Physical Android-to-Linux dispatch and production/external providers remain NOT_RUN/BLOCKED."
       ]
     },
     {
       "id": "EF020",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "acceptance": null,
+      "acceptance": "Actual bounded proof/result and execution events; cancellation/deadline/backend failures",
       "implementedPaths": [
         "app/src/main/java/com/example/NodeWorkspace.kt",
         "app/src/main/java/com/example/data/NodeClient.kt",
@@ -3523,7 +3541,7 @@
     {
       "id": "EF023",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "acceptance": null,
+      "acceptance": "Portable offline-verifiable package, manifest/checksums, sensitive-data minimization",
       "implementedPaths": [
         "app/src/main/java/com/example/MainActivity.kt",
         "tools/verify.py",
@@ -3537,7 +3555,7 @@
     {
       "id": "EF024",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "acceptance": null,
+      "acceptance": "Per-host/provider/backend gates, local/external distinction, named blockers and evidence",
       "implementedPaths": [
         "scripts/qualify.sh"
       ],
@@ -4110,8 +4128,8 @@
     },
     "functions": {
       "VERIFIED": 28,
-      "IMPLEMENTED_UNVERIFIED": 49,
-      "BLOCKED": 9
+      "IMPLEMENTED_UNVERIFIED": 50,
+      "BLOCKED": 8
     },
     "ecosystem-requirements": {
       "IMPLEMENTED_UNVERIFIED": 24,

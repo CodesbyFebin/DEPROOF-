@@ -1485,17 +1485,19 @@
       "definition": "`attachEvidence(taskId, file)` — file metadata, digest, and association.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
+        "app/src/main/java/com/example/data/EvidenceRepository.kt",
         "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "app/src/main/resources/db/migration_1_2.sql"
+        "app/src/main/java/com/example/data/Store.kt"
       ],
       "evidencePaths": [
-        "evidence/qualification/verifier-tests.log"
+        "evidence/qualification/android-build.log",
+        "evidence/qualification/core-tests.log"
       ],
       "dependencies": [],
       "checks": [],
       "tests": [
+        "app/src/test/java/com/example/data/BackupRepositoryTest.kt::actualFileMetadataFactoryRefusesChangedBytesAndMissingTaskWithoutRows",
+        "app/src/test/java/com/example/data/BackupRepositoryTest.kt::exportRestorePersistsMetadataAssociationsAndExactFileBytes",
         "app/src/test/java/com/example/data/RoomStoreTest.kt::attachmentKeepsDigestAndIsAssociatedWithItsTask",
         "app/src/test/java/com/example/data/RoomStoreTest.kt::attachmentToMissingTaskIsRejectedByForeignKey"
       ],
@@ -1504,7 +1506,7 @@
         "NOT_RUN"
       ],
       "limitations": [
-        "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+        "Actual private-file metadata, raw-byte digest recheck and task association wired through import/recovery. Room tests reject changed bytes and orphan links. Physical capture/content-provider/lifecycle gates remain NOT_RUN."
       ],
       "sourceMappings": {
         "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -2605,21 +2607,35 @@
       "id": "EF019",
       "contract": "matchProofJob(job, capabilities)",
       "behavior": "Compatible backend/resource profile or explicit mismatch",
-      "status": "BLOCKED",
-      "evidencePaths": [],
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "evidencePaths": [
+        "evidence/qualification/android-build.log",
+        "evidence/qualification/core-tests.log"
+      ],
       "dependencies": [],
       "checks": [],
       "tests": [
+        "app/src/test/java/com/example/domain/ProofDispatchTest.kt::changedPinnedCircuitOrAbsentJobProfileRefuses",
+        "app/src/test/java/com/example/domain/ProofDispatchTest.kt::freshObservedLocalProfileMatchesAndResourceMismatchRefuses",
+        "app/src/test/java/com/example/domain/ProofDispatchTest.kt::missingStaleOrMalformedCapabilitiesNeverAuthorize",
+        "app/src/test/java/com/example/domain/ProofDispatchTest.kt::unqualifiedProviderAndExpiredJobHaveExplicitStates",
         "app/src/test/java/com/example/domain/ProofJobTest.kt::compatibleJobMatchesWithNoMismatch",
         "app/src/test/java/com/example/domain/ProofJobTest.kt::eachMismatchIsReportedExplicitly",
         "app/src/test/java/com/example/domain/ProofJobTest.kt::incompatibleJobIsNeverReportedAsCompatible"
       ],
-      "implementationPaths": [],
+      "implementationPaths": [
+        "app/src/main/java/com/example/domain/ProofJobs.kt",
+        "app/src/main/java/com/example/NodeWorkspace.kt",
+        "app/src/main/java/com/example/data/NodeRepository.kt",
+        "node-agent/internal/agent/capabilities.go",
+        "tools/proof_jobs.py"
+      ],
       "qualificationDimensions": [
-        "BLOCKED"
+        "VERIFIED_LOCAL",
+        "NOT_RUN"
       ],
       "limitations": [
-        "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+        "Matcher wired to Android dispatch with fresh attributed Linux capability observations and owner-pinned local job resource profile. Explicit mismatch/unavailable/unqualified-provider states tested. CPU/RAM observations are not reservations or attestation; unsupported hosts lack RAM observations. Physical Android-to-Linux dispatch and production/external providers remain NOT_RUN/BLOCKED."
       ],
       "sourceMappings": {
         "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",

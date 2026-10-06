@@ -1,7 +1,7 @@
 {
   "sourceManifest": "evidence/qualification/source-before.json",
   "schema": "deproof-implementation-status-v1",
-  "generatedAt": "2026-10-06T10:33:05.929524+00:00",
+  "generatedAt": "2026-10-06T11:05:45.139479+00:00",
   "product": "Deproof",
   "mark": "DEPR",
   "credit": "Built by CodesbyFebin",
@@ -32,8 +32,8 @@
     },
     "functions": {
       "VERIFIED": 28,
-      "IMPLEMENTED_UNVERIFIED": 49,
-      "BLOCKED": 9
+      "IMPLEMENTED_UNVERIFIED": 50,
+      "BLOCKED": 8
     },
     "ecosystem-requirements": {
       "IMPLEMENTED_UNVERIFIED": 24,
@@ -49,7 +49,7 @@
         "python3",
         "scripts/qualify-core.py"
       ],
-      "ranAt": "2026-10-06T10:31:36.772469+00:00"
+      "ranAt": "2026-10-06T11:04:20.363806+00:00"
     },
     {
       "gate": "android-build",
@@ -58,7 +58,7 @@
       "command": [
         "scripts/qualify-android.sh"
       ],
-      "ranAt": "2026-10-06T10:31:46.937120+00:00"
+      "ranAt": "2026-10-06T11:04:26.383792+00:00"
     },
     {
       "gate": "node-tests",
@@ -67,7 +67,7 @@
       "command": [
         "scripts/qualify-node.sh"
       ],
-      "ranAt": "2026-10-06T10:31:51.698276+00:00"
+      "ranAt": "2026-10-06T11:04:31.417117+00:00"
     },
     {
       "gate": "prover-tests",
@@ -76,7 +76,7 @@
       "command": [
         "scripts/qualify-prover.sh"
       ],
-      "ranAt": "2026-10-06T10:31:55.465056+00:00"
+      "ranAt": "2026-10-06T11:04:34.901705+00:00"
     },
     {
       "gate": "verifier-tests",
@@ -92,7 +92,7 @@
         "-p",
         "test_*.py"
       ],
-      "ranAt": "2026-10-06T10:31:55.861051+00:00"
+      "ranAt": "2026-10-06T11:04:35.262977+00:00"
     },
     {
       "gate": "localization-catalogs",
@@ -102,7 +102,7 @@
         "python3",
         "scripts/qualify-localization.py"
       ],
-      "ranAt": "2026-10-06T10:31:56.005305+00:00"
+      "ranAt": "2026-10-06T11:04:35.397811+00:00"
     },
     {
       "gate": "hosting-isolation",
@@ -112,7 +112,7 @@
         "python3",
         "scripts/qualify-hosting.py"
       ],
-      "ranAt": "2026-10-06T10:32:05.679435+00:00"
+      "ranAt": "2026-10-06T11:04:44.112340+00:00"
     },
     {
       "gate": "node-integration",
@@ -124,7 +124,7 @@
         "python3",
         "scripts/qualify-integration.py"
       ],
-      "ranAt": "2026-10-06T10:32:40.516418+00:00"
+      "ranAt": "2026-10-06T11:05:19.046468+00:00"
     },
     {
       "gate": "rpc-read-only",
@@ -134,7 +134,7 @@
         "python3",
         "scripts/qualify-rpc.py"
       ],
-      "ranAt": "2026-10-06T10:32:41.837809+00:00"
+      "ranAt": "2026-10-06T11:05:20.522932+00:00"
     },
     {
       "gate": "coverage-reconciliation",
@@ -144,7 +144,7 @@
         "python3",
         "scripts/reconcile-coverage.py"
       ],
-      "ranAt": "2026-10-06T10:32:42.068633+00:00"
+      "ranAt": "2026-10-06T11:05:20.752844+00:00"
     },
     {
       "gate": "backlog-priorities",
@@ -154,7 +154,7 @@
         "python3",
         "scripts/prioritize-uncovered.py"
       ],
-      "ranAt": "2026-10-06T10:32:42.188579+00:00"
+      "ranAt": "2026-10-06T11:05:20.870350+00:00"
     },
     {
       "gate": "registry-checks",
@@ -164,7 +164,7 @@
         "python3",
         "scripts/check-registries.py"
       ],
-      "ranAt": "2026-10-06T10:32:42.318691+00:00"
+      "ranAt": "2026-10-06T11:05:20.997755+00:00"
     },
     {
       "gate": "web-build",
@@ -174,7 +174,7 @@
         "python3",
         "scripts/build-web.py"
       ],
-      "ranAt": "2026-10-06T10:32:42.459486+00:00"
+      "ranAt": "2026-10-06T11:05:21.137388+00:00"
     },
     {
       "gate": "web-checks",
@@ -184,7 +184,7 @@
         "python3",
         "scripts/qualify-web.py"
       ],
-      "ranAt": "2026-10-06T10:32:44.061010+00:00"
+      "ranAt": "2026-10-06T11:05:22.774380+00:00"
     },
     {
       "gate": "browser-checks",
@@ -194,7 +194,7 @@
         "node",
         "scripts/browser/qualify.mjs"
       ],
-      "ranAt": "2026-10-06T10:33:05.435924+00:00"
+      "ranAt": "2026-10-06T11:05:44.573819+00:00"
     },
     {
       "gate": "coverage-reconciliation",
@@ -204,7 +204,7 @@
         "python3",
         "scripts/reconcile-coverage.py"
       ],
-      "ranAt": "2026-10-06T10:33:05.581407+00:00"
+      "ranAt": "2026-10-06T11:05:44.729457+00:00"
     },
     {
       "gate": "backlog-priorities",
@@ -214,7 +214,7 @@
         "python3",
         "scripts/prioritize-uncovered.py"
       ],
-      "ranAt": "2026-10-06T10:33:05.696978+00:00"
+      "ranAt": "2026-10-06T11:05:44.845930+00:00"
     }
   ],
   "blockers": [
@@ -247,7 +247,7 @@
     {
       "id": "SOURCE_COMPLETENESS",
       "qualification": "NOT_RUN",
-      "reason": "Full lookup resolution, legacy receipt import, unsupported media previews/capture lifecycle, device validation of newly implemented consented location/offline mapping/reminders, complete dynamic translations, background network policy and complete Android backup integration remain incomplete. Bounded text/image previews are implemented but not device-qualified. Each unresolved registry entry is listed in uncovered-requirements.json."
+      "reason": "Full lookup resolution, legacy receipt import, unsupported media previews/capture lifecycle, device validation of newly implemented consented location/offline mapping/reminders, complete dynamic translations, background network policy and physical document-provider/crash acceptance for bounded Android backups remain incomplete. Bounded text/image previews are implemented but not device-qualified. Each unresolved registry entry is listed in uncovered-requirements.json."
     },
     {
       "id": "RELEASE_AND_RIGHTS",
@@ -274,25 +274,25 @@
     {
       "path": "app/build/outputs/apk/debug/app-debug.apk",
       "kind": "debug-apk",
-      "sha256": "cfcfb2fecb7175746c0f62b7b05f7c2edacd7fba6e8d3efdec13ca7358bd0a5c",
-      "bytes": "18255638"
+      "sha256": "47333a035a66764b6c0032b21202fcd25978e9d68b5e15210309228f650dd7be",
+      "bytes": "18722846"
     },
     {
       "path": "node-agent/build/deproof-node",
       "kind": "darwin-amd64-node-binary",
-      "sha256": "075634471fa1ba41507aa201ff8e0f1f090464a3b445561fa7d31ea63646a17b",
-      "bytes": "10730048"
+      "sha256": "d360c1ff4e7a696cb38a4afcc58fb477a85e34f2f4c38e5fad3506b4d581acdc",
+      "bytes": "10730144"
     },
     {
       "path": "prover-worker/build/prove",
       "kind": "local-proof-producer",
-      "sha256": "1fcf445acbc611979f9c9a8722798a522094893870af64da991d4471003d6f7f",
+      "sha256": "5d78e4eb8c164a584b5ad2a168db4958c3fc12f435275fefa0438801cb8fce19",
       "bytes": "16556848"
     },
     {
       "path": "prover-worker/build/verify",
       "kind": "independent-proof-verifier",
-      "sha256": "98c2a984c9288bb7263522236aef99bd631ed0d2072df9a72348082f1909c02b",
+      "sha256": "c3115d217ffaf8eb72c95c56cc91e99f9fadf5e01b15e0d7f6ab4908b9f1cbb2",
       "bytes": "9640336"
     },
     {
@@ -596,6 +596,42 @@
       "bytes": "164"
     },
     {
+      "path": "prover-worker/build/qualified-result-20261006T110434Z-83653/circuit.r1cs",
+      "kind": "local-proof-artifact",
+      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
+      "bytes": "867"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T110434Z-83653/verification-key.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "467e842139d5f4422d2aae594d0422e239541d5cbceaffe187dc4eae63463ed6",
+      "bytes": "364"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T110434Z-83653/proving-key.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "9d4d059dc0f380c3f168d2903431aad8b78732a121bb67aeee2954c5c9541526",
+      "bytes": "1027"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T110434Z-83653/public-witness.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
+      "bytes": "44"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T110434Z-83653/manifest.json",
+      "kind": "local-proof-artifact",
+      "sha256": "d0dce7c18c2125aa610a0ac6092adff35a5a1e556a242dcae1d114b26931cd6a",
+      "bytes": "695"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T110434Z-83653/proof.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "e942ce5e5506b1ed394f68eee57aa584814c1d88548d5b7f98324f1d55663047",
+      "bytes": "164"
+    },
+    {
       "path": "prover-worker/build/qualified-result-20261006T095525Z-77774/circuit.r1cs",
       "kind": "local-proof-artifact",
       "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
@@ -737,6 +773,42 @@
       "path": "prover-worker/build/qualified-result-20261006T103155Z-80685/proof.bin",
       "kind": "local-proof-artifact",
       "sha256": "857b167e8b88808c5c1e32658c906d374c27294b8774293621a366c69ffbe579",
+      "bytes": "164"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T105605Z-82274/circuit.r1cs",
+      "kind": "local-proof-artifact",
+      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
+      "bytes": "867"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T105605Z-82274/verification-key.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "360460a78f9750ec93e10659a8592c07c0612aae9ad952a10aec420f02f9745b",
+      "bytes": "364"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T105605Z-82274/proving-key.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "ba26a635bf1a989ef4d7ed9635e667dc615eb73835df9938ff7c6a29720c1612",
+      "bytes": "1027"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T105605Z-82274/public-witness.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
+      "bytes": "44"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T105605Z-82274/manifest.json",
+      "kind": "local-proof-artifact",
+      "sha256": "32751c586f6a5d64416602d7a4df4c16fc09c45c4b63efd5c621c1e80b3f82c1",
+      "bytes": "695"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T105605Z-82274/proof.bin",
+      "kind": "local-proof-artifact",
+      "sha256": "75431bee7b578f4ace92eb1a5912316e704cad8f3d3ee6d2be647cfbd25fd88c",
       "bytes": "164"
     },
     {
@@ -964,8 +1036,8 @@
     {
       "path": "evidence/qualification/deproof-source-snapshot.zip",
       "kind": "local-source-snapshot",
-      "sha256": "c4195a66b846dc0e501e089d6872252098cb9c256f26239cef1aa2a09f669be0",
-      "bytes": "16956670"
+      "sha256": "c74152427b3e72bec8dc5cf262ce9d48f6e52419b47e738de7e74786d51d1274",
+      "bytes": "16983558"
     }
   ],
   "coverage": {
@@ -5979,14 +6051,14 @@
         "definition": "Optional encrypted backup and restore.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
-          "app/src/main/java/com/example/MainActivity.kt",
-          "app/src/main/java/com/example/data/Store.kt",
-          "app/src/main/resources/db/migration_1_2.sql",
-          "tools/bundle.py",
-          "tools/test_bundle.py"
+          "app/src/main/java/com/example/BackupWorkspace.kt",
+          "app/src/main/java/com/example/data/BackupRepository.kt",
+          "app/src/main/java/com/example/domain/Backup.kt",
+          "app/src/main/java/com/example/data/Store.kt"
         ],
         "evidencePaths": [
-          "evidence/qualification/verifier-tests.log"
+          "evidence/qualification/android-build.log",
+          "evidence/qualification/core-tests.log"
         ],
         "dependencies": [],
         "checks": [
@@ -6004,6 +6076,14 @@
           "C100"
         ],
         "tests": [
+          "app/src/test/java/com/example/data/BackupRepositoryTest.kt::authenticatedMalformedRecordOrDigestIsRefusedBeforeAnyWrite",
+          "app/src/test/java/com/example/data/BackupRepositoryTest.kt::existingIdsAndFilesAreNeverOverwritten",
+          "app/src/test/java/com/example/data/BackupRepositoryTest.kt::exportRestorePersistsMetadataAssociationsAndExactFileBytes",
+          "app/src/test/java/com/example/data/BackupRepositoryTest.kt::exportedScopeExcludesPairingSeedsOperationsAndPermissions",
+          "app/src/test/java/com/example/data/BackupRepositoryTest.kt::laterDatabaseConstraintFailureRollsBackRowsAndRemovesOnlyNewFiles",
+          "app/src/test/java/com/example/data/BackupRepositoryTest.kt::restoredPlansRetainTaskLinkButRemindersStayCancelled",
+          "app/src/test/java/com/example/data/BackupRepositoryTest.kt::unknownVersionsAndExtraFieldsAreRejected",
+          "app/src/test/java/com/example/data/BackupRepositoryTest.kt::wrongKeyAndTamperingLeaveExistingRoomRowsAndFilesIntact",
           "app/src/test/java/com/example/domain/BackupTest.kt::roundTripRestoresExactBytes",
           "app/src/test/java/com/example/domain/BackupTest.kt::tamperedCiphertextIsRefused",
           "app/src/test/java/com/example/domain/BackupTest.kt::tamperedSaltIsRefusedBecauseTheHeaderIsAuthenticated",
@@ -6014,7 +6094,7 @@
           "NOT_RUN"
         ],
         "limitations": [
-          "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+          "Authenticated bounded portable-record export/additive Room restore and UI wired. Wrong keys/tampering/malformed records/conflicts/transaction rollback and file integrity tested against actual Room under Robolectric. Wallet/node private keys and active permissions excluded; reminders restored cancelled and signing approval cleared. Document-provider, process-crash, large-file and physical-device accessibility remain NOT_RUN; no complete acceptance claim."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -12161,17 +12241,19 @@
         "definition": "`attachEvidence(taskId, file)` — file metadata, digest, and association.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
+          "app/src/main/java/com/example/data/EvidenceRepository.kt",
           "app/src/main/java/com/example/MainActivity.kt",
-          "app/src/main/java/com/example/data/Store.kt",
-          "app/src/main/java/com/example/domain/Records.kt",
-          "app/src/main/resources/db/migration_1_2.sql"
+          "app/src/main/java/com/example/data/Store.kt"
         ],
         "evidencePaths": [
-          "evidence/qualification/verifier-tests.log"
+          "evidence/qualification/android-build.log",
+          "evidence/qualification/core-tests.log"
         ],
         "dependencies": [],
         "checks": [],
         "tests": [
+          "app/src/test/java/com/example/data/BackupRepositoryTest.kt::actualFileMetadataFactoryRefusesChangedBytesAndMissingTaskWithoutRows",
+          "app/src/test/java/com/example/data/BackupRepositoryTest.kt::exportRestorePersistsMetadataAssociationsAndExactFileBytes",
           "app/src/test/java/com/example/data/RoomStoreTest.kt::attachmentKeepsDigestAndIsAssociatedWithItsTask",
           "app/src/test/java/com/example/data/RoomStoreTest.kt::attachmentToMissingTaskIsRejectedByForeignKey"
         ],
@@ -12180,7 +12262,7 @@
           "NOT_RUN"
         ],
         "limitations": [
-          "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
+          "Actual private-file metadata, raw-byte digest recheck and task association wired through import/recovery. Room tests reject changed bytes and orphan links. Physical capture/content-provider/lifecycle gates remain NOT_RUN."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
@@ -13279,21 +13361,35 @@
         "id": "EF019",
         "contract": "matchProofJob(job, capabilities)",
         "behavior": "Compatible backend/resource profile or explicit mismatch",
-        "status": "BLOCKED",
-        "evidencePaths": [],
+        "status": "IMPLEMENTED_UNVERIFIED",
+        "evidencePaths": [
+          "evidence/qualification/android-build.log",
+          "evidence/qualification/core-tests.log"
+        ],
         "dependencies": [],
         "checks": [],
         "tests": [
+          "app/src/test/java/com/example/domain/ProofDispatchTest.kt::changedPinnedCircuitOrAbsentJobProfileRefuses",
+          "app/src/test/java/com/example/domain/ProofDispatchTest.kt::freshObservedLocalProfileMatchesAndResourceMismatchRefuses",
+          "app/src/test/java/com/example/domain/ProofDispatchTest.kt::missingStaleOrMalformedCapabilitiesNeverAuthorize",
+          "app/src/test/java/com/example/domain/ProofDispatchTest.kt::unqualifiedProviderAndExpiredJobHaveExplicitStates",
           "app/src/test/java/com/example/domain/ProofJobTest.kt::compatibleJobMatchesWithNoMismatch",
           "app/src/test/java/com/example/domain/ProofJobTest.kt::eachMismatchIsReportedExplicitly",
           "app/src/test/java/com/example/domain/ProofJobTest.kt::incompatibleJobIsNeverReportedAsCompatible"
         ],
-        "implementationPaths": [],
+        "implementationPaths": [
+          "app/src/main/java/com/example/domain/ProofJobs.kt",
+          "app/src/main/java/com/example/NodeWorkspace.kt",
+          "app/src/main/java/com/example/data/NodeRepository.kt",
+          "node-agent/internal/agent/capabilities.go",
+          "tools/proof_jobs.py"
+        ],
         "qualificationDimensions": [
-          "BLOCKED"
+          "VERIFIED_LOCAL",
+          "NOT_RUN"
         ],
         "limitations": [
-          "Partial local implementation; Android wiring, host/runtime/network/external qualification incomplete."
+          "Matcher wired to Android dispatch with fresh attributed Linux capability observations and owner-pinned local job resource profile. Explicit mismatch/unavailable/unqualified-provider states tested. CPU/RAM observations are not reservations or attestation; unsupported hosts lack RAM observations. Physical Android-to-Linux dispatch and production/external providers remain NOT_RUN/BLOCKED."
         ],
         "sourceMappings": {
           "master": "docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md",
