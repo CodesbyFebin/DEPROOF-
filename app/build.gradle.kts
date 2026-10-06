@@ -153,8 +153,8 @@ dependencies {
     implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
     implementation("com.google.code.gson:gson:2.10.1")
 
-    // Serialization (alternative to Gson)
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
+    // Serialization (alternative to Gson) - compatible with Kotlin 2.4.20
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.0")
 
     // Security
     implementation("androidx.security:security-crypto:1.1.0-alpha06")
