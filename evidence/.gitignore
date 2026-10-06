@@ -1,0 +1,16 @@
+# Qualification artifacts - too large for git history
+# Store these as GitHub Release artifacts instead
+
+# Source snapshots (typically 10-20 MB)
+*-source-snapshot.zip
+*-source-snapshot.tar.gz
+
+# Build outputs and proof artifacts
+qualified-result-*/
+build/
+*.apk
+*.aab
+
+# System-specific cache and logs
+*.log
+.DS_Store
