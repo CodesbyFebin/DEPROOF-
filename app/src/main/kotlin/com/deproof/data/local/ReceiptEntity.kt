@@ -59,7 +59,6 @@ interface ReceiptDao {
 }
 
 @Database(entities = [ReceiptEntity::class], version = 1, exportSchema = false)
-@TypeConverters(ReceiptTypeConverters::class)
 abstract class DepRoofDatabase : RoomDatabase() {
     abstract fun receiptDao(): ReceiptDao
 
@@ -94,10 +93,6 @@ fun com.deproof.domain.model.Receipt.toEntity(): ReceiptEntity {
         chainSubmitted = chainSubmitted,
         jsonData = jsonData
     )
-}
-
-object ReceiptTypeConverters {
-    // Room type converters can be added here if needed
 }
 
 // ========== Response Models for API ==========
