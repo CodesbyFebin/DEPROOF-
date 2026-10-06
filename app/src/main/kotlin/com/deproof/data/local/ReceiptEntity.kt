@@ -72,7 +72,7 @@ abstract class DepRoofDatabase : RoomDatabase() {
 fun ReceiptEntity.toDomain(): com.deproof.domain.model.Receipt {
     return com.deproof.domain.model.Receipt(
         id = id,
-        txHash = transactionHash,
+        transactionHash = transactionHash,
         verdict = verdict,
         messageHash = messageHash,
         timestamp = timestamp,
@@ -85,7 +85,7 @@ fun ReceiptEntity.toDomain(): com.deproof.domain.model.Receipt {
 fun com.deproof.domain.model.Receipt.toEntity(): ReceiptEntity {
     return ReceiptEntity(
         id = id,
-        transactionHash = txHash,
+        transactionHash = transactionHash,
         verdict = verdict,
         messageHash = messageHash,
         timestamp = timestamp,

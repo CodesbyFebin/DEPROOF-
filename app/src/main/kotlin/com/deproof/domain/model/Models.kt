@@ -55,14 +55,6 @@ data class TransferCheckedInstruction(
     val decimals: Byte
 )
 
-data class ReviewBinding(
-    val transactionHash: String,
-    val messageText: String,
-    val messageHash: String,
-    val verdict: Verdict,
-    val timestamp: Long = System.currentTimeMillis()
-)
-
 data class Receipt(
     val id: String = UUID.randomUUID().toString(),
     val transactionHash: String,
