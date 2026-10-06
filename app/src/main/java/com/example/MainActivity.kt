@@ -323,7 +323,7 @@ class MainActivity : ComponentActivity() {
                                     Button(enabled=!busy && reviewedFee && account==r.context.account && wallet.strict && verdicts.all {it.allowed},onClick={run {
                                         val fresh=withContext(Dispatchers.IO) { devnet.blockhashValid(r.tx.blockhash) }
                                         if(!fresh) {
-                                            ensure(memoRebuilds<1,"BLOCKHASH_EXPIRED_RETRY_EXHAUSTED")
+                                            ensure(memoRebuildAllowed(memoRebuilds),"BLOCKHASH_EXPIRED_RETRY_EXHAUSTED")
                                             val rebuilt=withContext(Dispatchers.IO) {
                                                 val latest=devnet.latestDevnetBlockhash();val bytes=buildMemo(r.context.account,latest["value"]["blockhash"].asText(),System.currentTimeMillis());val fee=devnet.estimateFee(parseTransaction(bytes).messageBytes());devnet.simulateTransaction(bytes)
                                                 Review(bytes,r.context.copy(reviewedAt=Instant.now().toString(),lastValidBlockHeight=latest["value"]["lastValidBlockHeight"].asText(),feeLamports=fee["value"].asText(),feeSlot=fee["context"]["slot"].asText()))

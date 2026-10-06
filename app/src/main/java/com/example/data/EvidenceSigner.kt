@@ -35,7 +35,7 @@ class EvidenceSigner {
             KeyProperties.SECURITY_LEVEL_SOFTWARE -> "SOFTWARE"
             else -> "UNAVAILABLE"
         } else if(info.isInsideSecureHardware) "HARDWARE_UNSPECIFIED" else "SOFTWARE"
-        ensure(level != "SOFTWARE","SOFTWARE_KEY"); ensure(level in listOf("STRONGBOX","TRUSTED_ENVIRONMENT"),"UNQUALIFIED_KEY")
+        requireQualifiedKeyLevel(level)
         val der = Signature.getInstance("SHA256withECDSA").run { initSign(key); update(envelope); sign() }
         val spki = ks.getCertificate(alias).publicKey.encoded
         ensure(verifyLocalSignature(envelope,der,spki),"SIGNATURE_SELF_CHECK_FAILED")
