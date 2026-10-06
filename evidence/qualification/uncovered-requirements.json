@@ -528,7 +528,9 @@
         "app/src/main/java/com/example/domain/Solana.kt",
         "app/src/main/java/com/example/MainActivity.kt"
       ],
-      "namedTests": [],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/InspectionTest.kt::verdictsArePerInstructionInOrderAndIndependent"
+      ],
       "requiredUncoveredGate": [
         "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
       ]
@@ -542,7 +544,10 @@
         "app/src/main/java/com/example/domain/Solana.kt",
         "app/src/main/java/com/example/MainActivity.kt"
       ],
-      "namedTests": [],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/InspectionTest.kt::allowedMemoSummaryShowsTheExactMemoText",
+        "app/src/test/java/com/example/domain/InspectionTest.kt::allowedTransferSummaryStatesAmountTokenAccountAndRecipient"
+      ],
       "requiredUncoveredGate": [
         "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
       ]
@@ -598,7 +603,9 @@
         "app/src/main/java/com/example/domain/Solana.kt",
         "app/src/main/java/com/example/MainActivity.kt"
       ],
-      "namedTests": [],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/ReviewBindingTest.kt::storedHashesAreUnaffectedByCallerBufferChanges"
+      ],
       "requiredUncoveredGate": [
         "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
       ]
@@ -612,7 +619,11 @@
         "app/src/main/java/com/example/domain/Solana.kt",
         "app/src/main/java/com/example/MainActivity.kt"
       ],
-      "namedTests": [],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt::memoParserAndImmutableMessageContextMutations",
+        "app/src/test/java/com/example/domain/ReviewBindingTest.kt::reviewTimestampChangeIsRejected",
+        "app/src/test/java/com/example/domain/ReviewBindingTest.kt::signingGateRefusesWalletAccountThatIsNotTheFeePayer"
+      ],
       "requiredUncoveredGate": [
         "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
       ]
@@ -626,7 +637,9 @@
         "app/src/main/java/com/example/domain/Solana.kt",
         "app/src/main/java/com/example/MainActivity.kt"
       ],
-      "namedTests": [],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/ReviewBindingTest.kt::signingGateRefusesMessageChangedAfterReview"
+      ],
       "requiredUncoveredGate": [
         "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
       ]
@@ -640,7 +653,10 @@
         "app/src/main/java/com/example/domain/Solana.kt",
         "app/src/main/java/com/example/MainActivity.kt"
       ],
-      "namedTests": [],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval",
+        "app/src/test/java/com/example/domain/ReviewBindingTest.kt::feeAndBlockHeightChangesAreRejected"
+      ],
       "requiredUncoveredGate": [
         "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
       ]
@@ -654,7 +670,10 @@
         "app/src/main/java/com/example/domain/Solana.kt",
         "app/src/main/java/com/example/MainActivity.kt"
       ],
-      "namedTests": [],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/PolicyTest.kt::firstRebuildIsAllowedAndASecondIsNot",
+        "app/src/test/java/com/example/domain/PolicyTest.kt::rebuiltDraftDoesNotInheritThePriorApproval"
+      ],
       "requiredUncoveredGate": [
         "Partial implementation; required Android/device/runtime/provider gates remain unqualified."
       ]
@@ -2035,7 +2054,9 @@
         "app/src/main/java/com/example/domain/Solana.kt",
         "app/src/main/java/com/example/domain/Records.kt"
       ],
-      "namedTests": [],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/ReviewBindingTest.kt::storedHashesAreUnaffectedByCallerBufferChanges"
+      ],
       "requiredUncoveredGate": [
         "Full acceptance gate not executed; code presence/related tests do not imply PASS."
       ]
@@ -2049,7 +2070,10 @@
         "app/src/main/java/com/example/domain/Solana.kt",
         "app/src/main/java/com/example/domain/Records.kt"
       ],
-      "namedTests": [],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval",
+        "app/src/test/java/com/example/domain/ReviewBindingTest.kt::signingGateRefusesMessageChangedAfterReview"
+      ],
       "requiredUncoveredGate": [
         "Full acceptance gate not executed; code presence/related tests do not imply PASS."
       ]
@@ -2651,7 +2675,10 @@
         "app/src/main/java/com/example/domain/Solana.kt",
         "app/src/main/java/com/example/domain/Records.kt"
       ],
-      "namedTests": [],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/PolicyTest.kt::firstRebuildIsAllowedAndASecondIsNot",
+        "app/src/test/java/com/example/domain/PolicyTest.kt::rebuiltDraftDoesNotInheritThePriorApproval"
+      ],
       "requiredUncoveredGate": [
         "Full acceptance gate not executed; code presence/related tests do not imply PASS."
       ]
@@ -3009,7 +3036,11 @@
       "status": "BLOCKED",
       "acceptance": "`resolveLookupTables(message)` — verified address resolution or refusal.",
       "implementedPaths": [],
-      "namedTests": [],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/LookupTableTest.kt::instructionReferencingAnAccountBeyondStaticKeysIsRefused",
+        "app/src/test/java/com/example/domain/LookupTableTest.kt::legacyMessageResolvesToItsStaticKeysOnly",
+        "app/src/test/java/com/example/domain/LookupTableTest.kt::versionedMessageWithLookupTableIsRefused"
+      ],
       "requiredUncoveredGate": [
         "Full typed contract/required integration remains incomplete."
       ]
@@ -3246,7 +3277,9 @@
       "implementedPaths": [
         "app/src/main/java/com/example/data/EvidenceSigner.kt"
       ],
-      "namedTests": [],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/PolicyTest.kt::onlyHardwareBackedKeyLevelsQualify"
+      ],
       "requiredUncoveredGate": [
         "Full typed contract/required integration remains incomplete."
       ]
