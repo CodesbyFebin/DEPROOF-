@@ -1,9 +1,11 @@
 package com.deproof.domain.model
 
+import androidx.annotation.NonNull
+
 data class ReviewBinding(
-    val txHash: String,
-    val messageText: String,
-    val messageHash: String,
-    val verdict: String,
+    @NonNull val txHash: String,
+    @NonNull val messageText: String,
+    @NonNull val messageHash: String,
+    @NonNull val verdict: String,
     val timestamp: Long
 )

@@ -1,5 +1,7 @@
 package com.deproof.domain.model
 
+import androidx.annotation.NonNull
+import androidx.annotation.Nullable
 import java.util.*
 
 // ========== Core Domain Models ==========
@@ -7,16 +9,16 @@ import java.util.*
 sealed class Verdict {
     object Payable : Verdict()
     object DoNotSign : Verdict()
-    data class Unknown(val reason: String) : Verdict()
+    data class Unknown(val reason: @NonNull String) : Verdict()
 }
 
 data class Transaction(
-    val signature: String,
+    @NonNull val signature: String,
     val blockTime: Long,
     val slot: Long,
-    val status: TransactionStatus,
-    val instructions: List<Instruction>,
-    val accountKeys: List<String>
+    @NonNull val status: TransactionStatus,
+    @NonNull val instructions: List<Instruction>,
+    @NonNull val accountKeys: List<String>
 )
 
 enum class TransactionStatus {
@@ -24,10 +26,10 @@ enum class TransactionStatus {
 }
 
 data class Instruction(
-    val programId: String,
+    @NonNull val programId: String,
     val discriminator: Byte,
-    val accounts: List<String>,
-    val data: ByteArray
+    @NonNull val accounts: List<String>,
+    @NonNull val data: ByteArray
 ) {
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
@@ -46,24 +48,24 @@ data class Instruction(
 }
 
 data class TransferCheckedInstruction(
-    val tokenProgramId: String,
-    val mint: String,
-    val source: String,
-    val destination: String,
-    val owner: String,
+    @NonNull val tokenProgramId: String,
+    @NonNull val mint: String,
+    @NonNull val source: String,
+    @NonNull val destination: String,
+    @NonNull val owner: String,
     val amount: Long,
     val decimals: Byte
 )
 
 data class Receipt(
-    val id: String = UUID.randomUUID().toString(),
-    val transactionHash: String,
-    val verdict: String,
-    val messageHash: String,
+    @NonNull val id: String = UUID.randomUUID().toString(),
+    @NonNull val transactionHash: String,
+    @NonNull val verdict: String,
+    @NonNull val messageHash: String,
     val timestamp: Long = System.currentTimeMillis(),
-    val signatureStatus: SignatureStatus = SignatureStatus.PENDING,
+    @NonNull val signatureStatus: SignatureStatus = SignatureStatus.PENDING,
     val chainSubmitted: Boolean = false,
-    val jsonData: String = ""
+    @NonNull val jsonData: String = ""
 )
 
 enum class SignatureStatus {
@@ -71,34 +73,34 @@ enum class SignatureStatus {
 }
 
 data class Balance(
-    val symbol: String,
+    @NonNull val symbol: String,
     val amount: Long,
     val decimals: Int,
-    val displayAmount: String
+    @NonNull val displayAmount: String
 )
 
 data class SignatureInfo(
-    val signature: String,
+    @NonNull val signature: String,
     val blockTime: Long,
     val slot: Long,
-    val status: TransactionStatus
+    @NonNull val status: TransactionStatus
 )
 
 data class WalletInfo(
-    val publicKey: String,
+    @NonNull val publicKey: String,
     val isConnected: Boolean,
-    val walletType: String = "Unknown"
+    @NonNull val walletType: String = "Unknown"
 )
 
 // ========== UseCase Result Types ==========
 
 sealed class Result<out T> {
-    data class Success<T>(val data: T) : Result<T>()
-    data class Error(val exception: Exception) : Result<Nothing>()
+    data class Success<T>(@NonNull val data: T) : Result<T>()
+    data class Error(@NonNull val exception: Exception) : Result<Nothing>()
     object Loading : Result<Nothing>()
 }
 
-fun <T> Result<T>.getOrNull(): T? = when (this) {
+fun <T> Result<T>.getOrNull(): @Nullable T? = when (this) {
     is Result.Success -> data
     else -> null
 }

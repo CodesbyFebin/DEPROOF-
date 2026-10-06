@@ -1,6 +1,7 @@
 package com.deproof.data.repository
 
 import android.util.Log
+import androidx.annotation.NonNull
 import com.deproof.data.local.*
 import com.deproof.domain.exception.DomainException
 import com.deproof.domain.exception.toDomainException
@@ -25,8 +26,8 @@ private const val NETWORK_TIMEOUT_SECONDS = 30L
 private const val RETRY_ATTEMPTS = 3
 
 class RpcRepository(
-    private val rpcUrl: String = "https://api.mainnet-beta.solana.com",
-    private val tokenMint: String = "SKRbvo6Gf7GoNcKKqqyckfjxN2PEVEqJf3rUKdPbdYu"
+    @NonNull private val rpcUrl: String = "https://api.mainnet-beta.solana.com",
+    @NonNull private val tokenMint: String = "SKRbvo6Gf7GoNcKKqqyckfjxN2PEVEqJf3rUKdPbdYu"
 ) {
     private val client = OkHttpClient.Builder()
         .connectTimeout(NETWORK_TIMEOUT_SECONDS, TimeUnit.SECONDS)
@@ -36,7 +37,7 @@ class RpcRepository(
     private val gson = Gson()
     private val retryConfig = RetryConfig(maxRetries = RETRY_ATTEMPTS)
 
-    suspend fun getBalance(pubkey: String): Result<Balance> = withContext(Dispatchers.IO) {
+    suspend fun getBalance(@NonNull pubkey: String): @NonNull Result<Balance> = withContext(Dispatchers.IO) {
         try {
             val balance = retryWithExponentialBackoff(
                 config = retryConfig,
@@ -72,7 +73,7 @@ class RpcRepository(
         }
     }
 
-    suspend fun getTokenBalance(pubkey: String): Result<Balance> = withContext(Dispatchers.IO) {
+    suspend fun getTokenBalance(@NonNull pubkey: String): @NonNull Result<Balance> = withContext(Dispatchers.IO) {
         try {
             val balance = retryWithExponentialBackoff(
                 config = retryConfig,
@@ -108,9 +109,9 @@ class RpcRepository(
     }
 
     suspend fun getSignaturesForAddress(
-        pubkey: String,
+        @NonNull pubkey: String,
         limit: Int = 10
-    ): Result<List<SignatureInfo>> = withContext(Dispatchers.IO) {
+    ): @NonNull Result<List<SignatureInfo>> = withContext(Dispatchers.IO) {
         try {
             val signatures = retryWithExponentialBackoff(
                 config = retryConfig,
@@ -145,7 +146,7 @@ class RpcRepository(
         }
     }
 
-    suspend fun getTransaction(signature: String): Result<String> = withContext(Dispatchers.IO) {
+    suspend fun getTransaction(@NonNull signature: String): @NonNull Result<String> = withContext(Dispatchers.IO) {
         try {
             val response = retryWithExponentialBackoff(
                 config = retryConfig,

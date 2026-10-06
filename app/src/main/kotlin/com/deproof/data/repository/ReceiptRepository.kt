@@ -1,6 +1,7 @@
 package com.deproof.data.repository
 
 import android.util.Log
+import androidx.annotation.NonNull
 import com.deproof.data.local.ReceiptDao
 import com.deproof.data.local.ReceiptEntity
 import com.deproof.data.local.toDomain
@@ -14,9 +15,9 @@ import kotlinx.coroutines.withContext
 
 private const val TAG = "ReceiptRepository"
 
-class ReceiptRepository(private val dao: ReceiptDao) {
+class ReceiptRepository(@NonNull private val dao: ReceiptDao) {
 
-    suspend fun insertReceipt(receipt: Receipt): Result<String> = withContext(Dispatchers.IO) {
+    suspend fun insertReceipt(@NonNull receipt: Receipt): @NonNull Result<String> = withContext(Dispatchers.IO) {
         try {
             dao.insert(receipt.toEntity())
             Log.d(TAG, "Receipt inserted: ${receipt.id}")
@@ -27,7 +28,7 @@ class ReceiptRepository(private val dao: ReceiptDao) {
         }
     }
 
-    suspend fun getReceiptById(id: String): Result<Receipt> = withContext(Dispatchers.IO) {
+    suspend fun getReceiptById(@NonNull id: String): @NonNull Result<Receipt> = withContext(Dispatchers.IO) {
         try {
             val entity = dao.getById(id)
             if (entity != null) {
@@ -43,7 +44,7 @@ class ReceiptRepository(private val dao: ReceiptDao) {
         }
     }
 
-    suspend fun getAllReceipts(): Result<List<Receipt>> = withContext(Dispatchers.IO) {
+    suspend fun getAllReceipts(): @NonNull Result<List<Receipt>> = withContext(Dispatchers.IO) {
         try {
             val receipts = dao.getAllReceipts().map { it.toDomain() }
             Log.d(TAG, "Retrieved ${receipts.size} receipts")
@@ -54,7 +55,7 @@ class ReceiptRepository(private val dao: ReceiptDao) {
         }
     }
 
-    suspend fun getRecentReceipts(limit: Int = 10): Result<List<Receipt>> = withContext(Dispatchers.IO) {
+    suspend fun getRecentReceipts(limit: Int = 10): @NonNull Result<List<Receipt>> = withContext(Dispatchers.IO) {
         try {
             val receipts = dao.getRecentReceipts(limit).map { it.toDomain() }
             Log.d(TAG, "Retrieved $limit recent receipts")
@@ -65,7 +66,7 @@ class ReceiptRepository(private val dao: ReceiptDao) {
         }
     }
 
-    suspend fun updateReceipt(receipt: Receipt): Result<Unit> = withContext(Dispatchers.IO) {
+    suspend fun updateReceipt(@NonNull receipt: Receipt): @NonNull Result<Unit> = withContext(Dispatchers.IO) {
         try {
             dao.update(receipt.toEntity())
             Log.d(TAG, "Receipt updated: ${receipt.id}")
@@ -76,7 +77,7 @@ class ReceiptRepository(private val dao: ReceiptDao) {
         }
     }
 
-    suspend fun deleteReceipt(receipt: Receipt): Result<Unit> = withContext(Dispatchers.IO) {
+    suspend fun deleteReceipt(@NonNull receipt: Receipt): @NonNull Result<Unit> = withContext(Dispatchers.IO) {
         try {
             dao.delete(receipt.toEntity())
             Log.d(TAG, "Receipt deleted: ${receipt.id}")
@@ -87,7 +88,7 @@ class ReceiptRepository(private val dao: ReceiptDao) {
         }
     }
 
-    suspend fun exportReceiptAsJson(receipt: Receipt): Result<String> = withContext(Dispatchers.IO) {
+    suspend fun exportReceiptAsJson(@NonNull receipt: Receipt): @NonNull Result<String> = withContext(Dispatchers.IO) {
         try {
             val json = Gson().toJson(receipt)
             Log.d(TAG, "Receipt exported as JSON: ${receipt.id}")
@@ -98,7 +99,7 @@ class ReceiptRepository(private val dao: ReceiptDao) {
         }
     }
 
-    suspend fun getReceiptCount(): Result<Int> = withContext(Dispatchers.IO) {
+    suspend fun getReceiptCount(): @NonNull Result<Int> = withContext(Dispatchers.IO) {
         try {
             val count = dao.getReceiptCount()
             Log.d(TAG, "Receipt count: $count")

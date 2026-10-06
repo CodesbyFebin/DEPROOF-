@@ -149,6 +149,9 @@ dependencies {
     // Security
     implementation("androidx.security:security-crypto:1.1.0-alpha06")
 
+    // Annotations for Null Safety
+    implementation("androidx.annotation:annotation:1.7.1")
+
     // Permissions
     implementation("pub.devrel:easypermissions:3.0.0")
 
