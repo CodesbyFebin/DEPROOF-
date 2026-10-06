@@ -1,0 +1,5 @@
+=== RUN   TestChangedBytesRejection
+--- PASS: TestChangedBytesRejection (0.00s)
+PASS
+ok  	deproof.local/node-agent/internal/agent	(cached)
+CHANGED_PASS

@@ -24,7 +24,8 @@ import org.junit.runner.RunWith
 @RunWith(AndroidJUnit4::class)
 class BalanceQueriesTest {
     private val testAddress = "9B5X6wq4xCSUQyRjqW37hSrwq3CEQmD2KwMaKNoon5w4"
-    private val skrMintAddress = "SKRbvo6Gf7GoNcKKqqyckfjxN2PEVEqJf3rUKdPbdYu"
+    // Correct official SKR mint address — verified to match commit 27bffa3.
+    private val skrMintAddress = "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
 
     @Before
     fun setUp() {
@@ -105,10 +106,11 @@ class BalanceQueriesTest {
 
     @Test
     fun skrTokenFormatting() {
+        // SKR uses 6 decimal places on-chain; formatSkr must produce exactly 6 places.
         val skrBalance = BigDecimal("5000.12")
         val formatted = BalanceFormatter.formatSkr(skrBalance)
 
-        assertEquals("5000.12", formatted)
+        assertEquals("5000.120000", formatted)
     }
 
     @Test

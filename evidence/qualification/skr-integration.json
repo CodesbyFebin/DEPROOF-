@@ -1,0 +1,129 @@
+{
+  "schema": "deproof-gate-v1",
+  "task": "skr-integration",
+  "status": "PASS",
+  "checks": [
+    {
+      "id": "SKR-MINT-01",
+      "status": "PASS",
+      "command": "<python>",
+      "evidencePath": "evidence/qualification/skr-integration/gradle-mint.txt"
+    },
+    {
+      "id": "SKR-MINT-02",
+      "status": "PASS",
+      "command": "<python>",
+      "evidencePath": "evidence/qualification/skr-integration/go-mint.txt"
+    },
+    {
+      "id": "SKR-MINT-03",
+      "status": "PASS",
+      "command": "<python>",
+      "evidencePath": "evidence/qualification/skr-integration/kotlin-mint.txt"
+    },
+    {
+      "id": "SKR-PROG-01",
+      "status": "PASS",
+      "command": "<python>",
+      "evidencePath": "evidence/qualification/skr-integration/token-prog-consistency.txt"
+    },
+    {
+      "id": "SKR-DEC-01",
+      "status": "PASS",
+      "command": "<python>",
+      "evidencePath": "evidence/qualification/skr-integration/go-decimals.txt"
+    },
+    {
+      "id": "SKR-DEC-02",
+      "status": "PASS",
+      "command": "<python>",
+      "evidencePath": "evidence/qualification/skr-integration/kotlin-decimals.txt"
+    },
+    {
+      "id": "SKR-TEST-01",
+      "status": "PASS",
+      "command": "go test ./internal/agent/ -run TestBuild -v 2>&1 | tail -20 && echo TESTS_PASS",
+      "evidencePath": "evidence/qualification/skr-integration/go-tests.txt"
+    },
+    {
+      "id": "SKR-TEST-02",
+      "status": "PASS",
+      "command": "go test ./internal/agent/ -run TestDuplicate -v 2>&1 && echo DUP_PASS",
+      "evidencePath": "evidence/qualification/skr-integration/dup-test.txt"
+    },
+    {
+      "id": "SKR-TEST-03",
+      "status": "PASS",
+      "command": "go test ./internal/agent/ -run TestChanged -v 2>&1 && echo CHANGED_PASS",
+      "evidencePath": "evidence/qualification/skr-integration/changed-test.txt"
+    },
+    {
+      "id": "SKR-TEST-04",
+      "status": "PASS",
+      "command": "go test ./internal/agent/ -run TestParse -v 2>&1 && echo PARSE_PASS",
+      "evidencePath": "evidence/qualification/skr-integration/parse-test.txt"
+    },
+    {
+      "id": "SKR-SCHEMA-01",
+      "status": "PASS",
+      "command": "<python>",
+      "evidencePath": "evidence/qualification/skr-integration/payment-schema.txt"
+    },
+    {
+      "id": "SKR-AUTH-01",
+      "status": "PASS",
+      "command": "<python>",
+      "evidencePath": "evidence/qualification/skr-integration/auth-go.txt"
+    },
+    {
+      "id": "SKR-AUTH-02",
+      "status": "PASS",
+      "command": "<python>",
+      "evidencePath": "evidence/qualification/skr-integration/auth-kotlin.txt"
+    },
+    {
+      "id": "SKR-FMT-01",
+      "status": "PASS",
+      "command": "go test ./internal/agent/ -run 'TestDecimal|TestParseSkr|TestFormat' -v 2>&1 && echo FMT_OK",
+      "evidencePath": "evidence/qualification/skr-integration/fmt-test.txt"
+    },
+    {
+      "id": "SKR-MAN-01",
+      "status": "NOT_APPLICABLE",
+      "reason": "On-chain SPL Token Program and SKR mint verification: requires live Solana RPC connection."
+    },
+    {
+      "id": "SKR-MAN-02",
+      "status": "NOT_APPLICABLE",
+      "reason": "End-to-end payment submission: requires live devnet, funded token accounts, and wallet."
+    },
+    {
+      "id": "SKR-MAN-03",
+      "status": "NOT_APPLICABLE",
+      "reason": "SKR oracle receipt round-trip: requires running oracle endpoint."
+    }
+  ],
+  "limitations": [
+    "SKR mint and token program addresses verified by constant comparison only; on-chain verification requires live Solana RPC.",
+    "Payment workflow tested by Go and Kotlin unit tests (construction only); actual wallet signing and submission require devnet environment.",
+    "Kotlin SkrPaymentJob model and SkrPaymentReviewScreen present but not covered by instrumented Android tests in this gate (requires emulator).",
+    "Mainnet spending explicitly excluded: AUTHORIZATION=CONSTRUCTION_ONLY enforced in both Go and Kotlin sources."
+  ],
+  "manualGates": [
+    {
+      "id": "SKR-MAN-01",
+      "status": "BLOCKED",
+      "reason": "On-chain verification of SPL Token Program and SKR mint addresses via live RPC."
+    },
+    {
+      "id": "SKR-MAN-02",
+      "status": "BLOCKED",
+      "reason": "Full payment round-trip: devnet, funded token accounts, and MWA wallet required."
+    },
+    {
+      "id": "SKR-MAN-03",
+      "status": "BLOCKED",
+      "reason": "SKR oracle live receipt verification: requires running oracle endpoint."
+    }
+  ]
+}

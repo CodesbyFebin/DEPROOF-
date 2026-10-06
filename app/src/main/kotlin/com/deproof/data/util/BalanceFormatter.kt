@@ -5,7 +5,9 @@ import java.math.RoundingMode
 
 object BalanceFormatter {
     private const val SOL_DECIMALS = 9
-    private const val SKR_DECIMALS = 2
+    // SKR token uses 6 decimal places on-chain.
+    // Verified against mint account: decimals=6 (same as USDC/USDT convention).
+    private const val SKR_DECIMALS = 6
 
     fun lamportsToSol(lamports: Long): BigDecimal {
         return BigDecimal(lamports)

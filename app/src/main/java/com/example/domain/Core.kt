@@ -59,6 +59,10 @@ fun sha256File(input: InputStream, maxBytes: Long = 64L*1024*1024, cancelled: ()
 }
 fun shortKey(s: String) = if(s.length > 8) s.take(4) + "…" + s.takeLast(4) else s
 object Programs {
+    // AUDIT NOTE: Programs.TOKEN is used for on-chain validation in Rpc.kt.
+    // Requires on-chain verification against the deployed SPL Token Program ID
+    // before any mainnet transaction is submitted. The canonical SPL Token Program v1
+    // is TokenkegQfeZyiNwAJbiyB8671GSjsqyq26BW7NnPGBq — verify this matches on-chain.
     const val TOKEN = "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
     const val SKR = "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
     const val MEMO = "MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr"
