@@ -42,6 +42,10 @@ fun parseTransaction(bytes: ByteArray): ParsedTransaction {
     c.end()
     return ParsedTransaction(bytes.copyOfRange(start,bytes.size), signatures, keys, instructions, version, blockhash)
 }
+// Offline there is no verified lookup-table data. A v0 message that references
+// tables is refused by parseTransaction (UNRESOLVED_LOOKUP_TABLE), so every
+// parsed message resolves to its static keys. This is the registry entry point.
+fun resolveLookupTables(message: ParsedTransaction): List<Role> = message.keys
 fun shortVec(n: Int): ByteArray { ensure(n in 0..65535,"BAD_LENGTH"); var v = n; val o = ByteArrayOutputStream(); do { val b = v and 127; v = v ushr 7; o.write(b or if(v > 0) 128 else 0) } while(v > 0); return o.toByteArray() }
 fun buildMemo(account: String, blockhash: String, unixMillis: Long): ByteArray {
     val text = "Deproof devnet memo $unixMillis".toByteArray(Charsets.UTF_8)
