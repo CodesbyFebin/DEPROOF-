@@ -28,7 +28,9 @@ android {
         // BuildConfig fields
         buildConfigField("String", "API_ENDPOINT", "\"https://api.mainnet-beta.solana.com\"")
         buildConfigField("String", "SKR_MINT", "\"SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3\"")  // official mint
-        buildConfigField("String", "TOKEN_PROGRAM", "\"TokenkegQfeZyiNwAJsyFbPVwwQkYk5LWV2BXVBq\"")
+        // SPL Token Program v1 (official, on-chain). The previous value was 40 chars
+        // (invalid Solana address length). Requires on-chain verification before mainnet use.
+        buildConfigField("String", "TOKEN_PROGRAM", "\"TokenkegQfeZyiNwAJbiyB8671GSjsqyq26BW7NnPGBq\"")
         buildConfigField("String", "BUILD_DATE", "\"${System.currentTimeMillis()}\"")
         buildConfigField("String", "WALLET_IDENTITY_URI", "\"https://deproof.app\"")
     }
