@@ -89,7 +89,7 @@ android {
         }
     }
 
-    // Lint options
+    // Lint options - CI rebuild trigger
     lint {
         abortOnError = false
         checkReleaseBuilds = false
