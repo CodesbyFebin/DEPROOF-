@@ -40,6 +40,8 @@ data class Draft(@PrimaryKey val id: String, val payload: String, val updatedAt:
     @Insert(onConflict=OnConflictStrategy.ABORT) suspend fun contribution(c: Contribution)
     @Query("SELECT * FROM contributions ORDER BY createdAt DESC") fun contributions(): Flow<List<Contribution>>
     @Insert(onConflict=OnConflictStrategy.REPLACE) suspend fun draft(d: Draft)
+    @Query("SELECT * FROM drafts ORDER BY id") suspend fun draftsSnapshot(): List<Draft>
+    @Query("SELECT * FROM contributions ORDER BY id") suspend fun contributionsSnapshot(): List<Contribution>
     @Query("SELECT * FROM drafts WHERE id=:id") suspend fun draft(id: String): Draft?
     @Query("SELECT * FROM drafts WHERE id LIKE 'reminder:%'") suspend fun reminderDrafts(): List<Draft>
     @Query("SELECT * FROM events WHERE kind='WALLET_SIGNED'") suspend fun signedIntents(): List<Event>
@@ -58,6 +60,9 @@ data class Draft(@PrimaryKey val id: String, val payload: String, val updatedAt:
         operationState(o.id,"COMPLETED",Json.mapper.writeValueAsString(result),Instant.now().toString())
     }
 
+    @Query("SELECT * FROM attachments ORDER BY id") suspend fun allAttachments(): List<Attachment>
+    @Query("SELECT * FROM events ORDER BY createdAt DESC") suspend fun eventsSnapshot(): List<Event>
+    @Query("SELECT * FROM observations ORDER BY id") suspend fun allObservations(): List<Observation>
     @Query("SELECT * FROM events ORDER BY createdAt DESC") fun events(): Flow<List<Event>>
     @Insert(onConflict = OnConflictStrategy.ABORT) suspend fun insert(e: Event)
     @Insert(onConflict = OnConflictStrategy.ABORT) suspend fun observe(o: Observation)

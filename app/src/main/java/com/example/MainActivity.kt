@@ -91,7 +91,7 @@ class MainActivity : ComponentActivity() {
                 try {
                     val meta=Json.parse(op.result ?: throw Failure("IMPORT_METADATA_MISSING"));val file=File(filesDir,"evidence/${op.target}")
                     val h=file.inputStream().use {sha256File(it)};ensure(h.sha256==meta["digest"].asText() && h.byteLength==meta["size"].asText(),"FILE_CHANGED")
-                    dao.commitImport(op.id,Attachment(op.target,meta["taskId"].takeUnless {it.isNull}?.asText(),h.sha256,meta["mime"].asText(),h.byteLength,meta["provenance"].asText(),meta["createdAt"].asText()))
+                    EvidenceRepository(dao,File(filesDir,"evidence")).attachEvidence(Attachment(op.target,meta["taskId"].takeUnless {it.isNull}?.asText(),h.sha256,meta["mime"].asText(),h.byteLength,meta["provenance"].asText(),meta["createdAt"].asText()),op.id)
                 } catch(ex: Exception) {dao.operationState(op.id,"OUTCOME_UNKNOWN",Json.mapper.writeValueAsString(Json.obj("error" to "IMPORT_RECOVERY_NEEDS_INSPECTION")),Instant.now().toString())}
             }
         }}
@@ -130,9 +130,9 @@ class MainActivity : ComponentActivity() {
                     val at=Instant.now().toString()
                     val meta=Json.obj("taskId" to selectedTask?.id,"digest" to h.sha256,"mime" to mime,"size" to h.byteLength,"provenance" to provenance,"createdAt" to at)
                     dao.operationState(id,"FILE_READY",Json.mapper.writeValueAsString(meta),at)
-                    val a=Attachment(id,selectedTask?.id,h.sha256,mime,h.byteLength,provenance,at); dao.commitImport(id,a)
+                    val repository=EvidenceRepository(dao,dir);val a=repository.metadata(id,selectedTask?.id,mime,provenance,at);ensure(a.digest==h.sha256 && a.size==h.byteLength,"FILE_CHANGED");repository.attachEvidence(a,id)
                     withContext(Dispatchers.Main) { fileMeta=fileMeta+EvidenceFile(id,h.sha256,mime,h.byteLength,provenance) }
-                } catch(e: Exception) { target.delete(); throw e }
+                } catch(e: Exception) { withContext(NonCancellable) {if(dao.attachment(id)==null)target.delete()}; throw e }
             }
         }
         val importFile=rememberLauncherForActivityResult(ActivityResultContracts.OpenMultipleDocuments()) { uris -> if(uris.isNotEmpty()) run { for(uri in uris) importEvidence(uri,"import") } }
@@ -227,6 +227,7 @@ class MainActivity : ComponentActivity() {
                             TextButton(onClick={nested="Workspace"}) {Text(stringResource(R.string.ui_0f0c0c6e215e))}
                             NodeWorkspace(dao,nested)
                         } else if(nested=="Settings") {
+                            BackupWorkspace(db,busy,{busy=it},{review=null;reviewedFee=false;memoRebuilds=0;location=null})
                             TextButton(onClick={nested="Workspace"}) {Text(stringResource(R.string.ui_0f0c0c6e215e))}
                             Text(stringResource(R.string.ui_66962f72a088),style=MaterialTheme.typography.headlineMedium)
                             LanguageControls(applicationContext)

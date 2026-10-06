@@ -208,4 +208,12 @@
  <string name="stale">Stale — last successful read shown</string>
  <string name="unavailable">Unavailable</string>
 <plurals name="saved_waypoints"><item quantity="one">Saved plan • %1$d ordered waypoint</item><item quantity="other">Saved plan • %1$d ordered waypoints</item></plurals>
+    <string name="backup_title">Encrypted backup and restore</string>
+    <string name="backup_scope">Portable receipts, observations, tasks, plans, cancelled reminders, signed contributions and evidence files. Wallet keys, node credentials, active operations and sharing permissions are excluded. Restore adds records without replacing existing data; conflicts are refused. Keep your passphrase separately.</string>
+    <string name="backup_passphrase">Passphrase (at least 12 characters)</string>
+    <string name="backup_consent">I explicitly authorize this private export or additive restore.</string>
+    <string name="backup_export">Encrypt and export backup</string>
+    <string name="backup_select">Select encrypted backup</string>
+    <string name="backup_selected">Backup selected; not yet authenticated or restored.</string>
+    <string name="backup_restore">Authenticate, validate and restore</string>
 </resources>

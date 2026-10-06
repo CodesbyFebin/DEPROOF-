@@ -8,9 +8,7 @@ import javax.crypto.spec.GCMParameterSpec
 import javax.crypto.spec.PBEKeySpec
 import javax.crypto.spec.SecretKeySpec
 
-// F118 encrypted backup: PARTIAL. This is the cryptographic container only.
-// Export and restore of the Room database, file selection and UI wiring are not
-// implemented here.
+// F118 authenticated container; Room and Android wiring live in BackupRepository/BackupWorkspace.
 //
 // Layout: "DPBK" (4) | version 1 (1) | salt (16) | nonce (12) | AES-256-GCM ciphertext+tag.
 // The header is bound as additional authenticated data, so changing the version
@@ -41,6 +39,7 @@ fun encryptBackup(plaintext: ByteArray, passphrase: CharArray): ByteArray {
 }
 
 fun decryptBackup(blob: ByteArray, passphrase: CharArray): ByteArray {
+    ensure(blob.size <= MAX_BACKUP_PLAINTEXT_BYTES + MIN_BLOB_BYTES, "BACKUP_TOO_LARGE")
     ensure(blob.size >= MIN_BLOB_BYTES, "BACKUP_FORMAT_UNSUPPORTED")
     ensure(blob.copyOfRange(0, 4).contentEquals(BACKUP_MAGIC) && blob[4] == BACKUP_VERSION, "BACKUP_FORMAT_UNSUPPORTED")
     ensure(passphrase.size >= MIN_PASSPHRASE_CHARS, "WEAK_PASSPHRASE")

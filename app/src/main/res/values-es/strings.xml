@@ -205,4 +205,12 @@
  <string name="stale">Desactualizado; se muestra la última lectura correcta</string>
  <string name="unavailable">No disponible</string>
 <plurals name="saved_waypoints"><item quantity="one">Plan guardado • %1$d punto ordenado</item><item quantity="other">Plan guardado • %1$d puntos ordenados</item></plurals>
+    <string name="backup_title">Copia cifrada y restauración</string>
+    <string name="backup_scope">Recibos, observaciones, tareas, planes, recordatorios cancelados, contribuciones firmadas y archivos de evidencia portátiles. Se excluyen claves de cartera, credenciales del nodo, operaciones activas y permisos para compartir. La restauración añade registros sin reemplazar datos; rechaza conflictos. Guarda la contraseña por separado.</string>
+    <string name="backup_passphrase">Contraseña (mínimo 12 caracteres)</string>
+    <string name="backup_consent">Autorizo esta exportación privada o restauración aditiva.</string>
+    <string name="backup_export">Cifrar y exportar copia</string>
+    <string name="backup_select">Seleccionar copia cifrada</string>
+    <string name="backup_selected">Copia seleccionada; aún no autenticada ni restaurada.</string>
+    <string name="backup_restore">Autenticar, validar y restaurar</string>
 </resources>
