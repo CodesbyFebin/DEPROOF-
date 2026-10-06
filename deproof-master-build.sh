@@ -28,10 +28,17 @@ error() { echo -e "${RED}✗${NC} $1"; exit 1; }
 preflight() {
     log "Running preflight checks..."
 
-    # Check required commands
-    for cmd in git gradle java kotlinc go npm; do
+    # Check required commands for P1 (Android)
+    for cmd in git gradle java; do
         if ! command -v $cmd &> /dev/null; then
-            error "Missing required command: $cmd"
+            error "Missing required command for P1: $cmd"
+        fi
+    done
+
+    # Check optional commands for P3
+    for cmd in kotlinc go npm; do
+        if ! command -v $cmd &> /dev/null; then
+            warn "Optional command not found: $cmd (P3 components may fail)"
         fi
     done
 
@@ -45,7 +52,7 @@ preflight() {
     log "Java version: $JAVA_VERSION"
 
     # Check Gradle
-    gradle --version | head -1
+    ./gradlew --version | head -1
 
     log "Preflight checks passed!"
 }
@@ -98,47 +105,58 @@ build_p3_parallel() {
 
     mkdir -p "$STATE_DIR/logs"
 
-    # Node agent
-    {
-        log "Starting node-agent build..."
-        cd "$PROJECT_ROOT/node-agent" || mkdir -p "$PROJECT_ROOT/node-agent"
-        git init 2>/dev/null || true
-        mkdir -p src main.go
-        cat > main.go << 'NOEOF'
+    # Node agent (optional - skip if go not available)
+    if command -v go &> /dev/null; then
+        {
+            log "Starting node-agent build..."
+            cd "$PROJECT_ROOT/node-agent" || mkdir -p "$PROJECT_ROOT/node-agent"
+            git init 2>/dev/null || true
+            mkdir -p src main.go
+            cat > main.go << 'NOEOF'
 package main
 import "fmt"
 func main() {
     fmt.Println("node-agent: Ready for P3 ecosystem")
 }
 NOEOF
-        go build -o node-agent 2>&1 | tee "$STATE_DIR/logs/node-agent.log" && echo "P3_NODEAGENT_STATUS=PASS" || echo "P3_NODEAGENT_STATUS=FAIL"
-    } &
-    AGENT_PID=$!
+            go build -o node-agent 2>&1 | tee "$STATE_DIR/logs/node-agent.log" && echo "P3_NODEAGENT_STATUS=PASS" || echo "P3_NODEAGENT_STATUS=FAIL"
+        } &
+        AGENT_PID=$!
+    else
+        warn "Go not available - skipping node-agent build"
+        AGENT_PID=""
+    fi
 
-    # Prover worker
-    {
-        log "Starting prover-worker build..."
-        cd "$PROJECT_ROOT/prover-worker" || mkdir -p "$PROJECT_ROOT/prover-worker"
-        git init 2>/dev/null || true
-        mkdir -p src main.go
-        cat > main.go << 'PROVEOF'
+    # Prover worker (optional - skip if go not available)
+    if command -v go &> /dev/null; then
+        {
+            log "Starting prover-worker build..."
+            cd "$PROJECT_ROOT/prover-worker" || mkdir -p "$PROJECT_ROOT/prover-worker"
+            git init 2>/dev/null || true
+            mkdir -p src main.go
+            cat > main.go << 'PROVEOF'
 package main
 import "fmt"
 func main() {
     fmt.Println("prover-worker: Ready for P3 ecosystem")
 }
 PROVEOF
-        go build -o prover-worker 2>&1 | tee "$STATE_DIR/logs/prover-worker.log" && echo "P3_PROVER_STATUS=PASS" || echo "P3_PROVER_STATUS=FAIL"
-    } &
-    PROVER_PID=$!
+            go build -o prover-worker 2>&1 | tee "$STATE_DIR/logs/prover-worker.log" && echo "P3_PROVER_STATUS=PASS" || echo "P3_PROVER_STATUS=FAIL"
+        } &
+        PROVER_PID=$!
+    else
+        warn "Go not available - skipping prover-worker build"
+        PROVER_PID=""
+    fi
 
-    # Web
-    {
-        log "Starting web build..."
-        cd "$PROJECT_ROOT/web" || mkdir -p "$PROJECT_ROOT/web"
-        git init 2>/dev/null || true
-        mkdir -p src
-        cat > package.json << 'WEBEOF'
+    # Web (optional - skip if npm not available)
+    if command -v npm &> /dev/null; then
+        {
+            log "Starting web build..."
+            cd "$PROJECT_ROOT/web" || mkdir -p "$PROJECT_ROOT/web"
+            git init 2>/dev/null || true
+            mkdir -p src
+            cat > package.json << 'WEBEOF'
 {
   "name": "deproof-web",
   "version": "1.0.0",
@@ -150,14 +168,18 @@ PROVEOF
   }
 }
 WEBEOF
-        npm install 2>&1 | tee "$STATE_DIR/logs/web.log" && npm run build 2>&1 | tee -a "$STATE_DIR/logs/web.log" && echo "P3_WEB_STATUS=PASS" || echo "P3_WEB_STATUS=FAIL"
-    } &
-    WEB_PID=$!
+            npm install 2>&1 | tee "$STATE_DIR/logs/web.log" && npm run build 2>&1 | tee -a "$STATE_DIR/logs/web.log" && echo "P3_WEB_STATUS=PASS" || echo "P3_WEB_STATUS=FAIL"
+        } &
+        WEB_PID=$!
+    else
+        warn "npm not available - skipping web build"
+        WEB_PID=""
+    fi
 
     # Wait for parallel tasks
-    wait $AGENT_PID || true
-    wait $PROVER_PID || true
-    wait $WEB_PID || true
+    [ -n "$AGENT_PID" ] && wait $AGENT_PID || true
+    [ -n "$PROVER_PID" ] && wait $PROVER_PID || true
+    [ -n "$WEB_PID" ] && wait $WEB_PID || true
 
     log "P3 parallel tasks completed"
 }
