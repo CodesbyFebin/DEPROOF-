@@ -55,6 +55,20 @@
     "F067": [
       "app/src/test/java/com/example/domain/NodeProtocolTest.kt::legacySignatureUsesRawDigestBytesNotHexOrBase64",
       "app/src/test/java/com/example/domain/NodeProtocolTest.kt::legacyDigestAndFirstSeenIndicatorsNeverGrantTrust"
+    ],
+    "FN051": [
+      "app/src/test/java/com/example/data/RoomStoreTest.kt::createTaskRefusesBlankTitleAndTooManyRequirements",
+      "app/src/test/java/com/example/data/RoomStoreTest.kt::createdTaskIsPersistedWithItsRequirements"
+    ],
+    "FN052": [
+      "app/src/test/java/com/example/data/RoomStoreTest.kt::attachmentKeepsDigestAndIsAssociatedWithItsTask",
+      "app/src/test/java/com/example/data/RoomStoreTest.kt::attachmentToMissingTaskIsRejectedByForeignKey"
+    ],
+    "F118": [
+      "app/src/test/java/com/example/domain/BackupTest.kt::roundTripRestoresExactBytes",
+      "app/src/test/java/com/example/domain/BackupTest.kt::wrongPassphraseIsRefused",
+      "app/src/test/java/com/example/domain/BackupTest.kt::tamperedCiphertextIsRefused",
+      "app/src/test/java/com/example/domain/BackupTest.kt::tamperedSaltIsRefusedBecauseTheHeaderIsAuthenticated"
     ]
   }
 }

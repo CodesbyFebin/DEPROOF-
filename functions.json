@@ -1459,6 +1459,8 @@
       "dependencies": [],
       "checks": [],
       "tests": [
+        "app/src/test/java/com/example/data/RoomStoreTest.kt::createTaskRefusesBlankTitleAndTooManyRequirements",
+        "app/src/test/java/com/example/data/RoomStoreTest.kt::createdTaskIsPersistedWithItsRequirements",
         "tools/test_migrations.py"
       ],
       "qualificationDimensions": [
@@ -1493,7 +1495,10 @@
       ],
       "dependencies": [],
       "checks": [],
-      "tests": [],
+      "tests": [
+        "app/src/test/java/com/example/data/RoomStoreTest.kt::attachmentKeepsDigestAndIsAssociatedWithItsTask",
+        "app/src/test/java/com/example/data/RoomStoreTest.kt::attachmentToMissingTaskIsRejectedByForeignKey"
+      ],
       "qualificationDimensions": [
         "VERIFIED_LOCAL",
         "NOT_RUN"

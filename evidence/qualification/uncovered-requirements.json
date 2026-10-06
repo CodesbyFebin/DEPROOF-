@@ -1544,7 +1544,12 @@
         "tools/bundle.py",
         "tools/test_bundle.py"
       ],
-      "namedTests": [],
+      "namedTests": [
+        "app/src/test/java/com/example/domain/BackupTest.kt::roundTripRestoresExactBytes",
+        "app/src/test/java/com/example/domain/BackupTest.kt::tamperedCiphertextIsRefused",
+        "app/src/test/java/com/example/domain/BackupTest.kt::tamperedSaltIsRefusedBecauseTheHeaderIsAuthenticated",
+        "app/src/test/java/com/example/domain/BackupTest.kt::wrongPassphraseIsRefused"
+      ],
       "requiredUncoveredGate": [
         "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
       ]
@@ -3133,6 +3138,8 @@
         "app/src/main/resources/db/migration_1_2.sql"
       ],
       "namedTests": [
+        "app/src/test/java/com/example/data/RoomStoreTest.kt::createTaskRefusesBlankTitleAndTooManyRequirements",
+        "app/src/test/java/com/example/data/RoomStoreTest.kt::createdTaskIsPersistedWithItsRequirements",
         "tools/test_migrations.py"
       ],
       "requiredUncoveredGate": [
@@ -3149,7 +3156,10 @@
         "app/src/main/java/com/example/domain/Records.kt",
         "app/src/main/resources/db/migration_1_2.sql"
       ],
-      "namedTests": [],
+      "namedTests": [
+        "app/src/test/java/com/example/data/RoomStoreTest.kt::attachmentKeepsDigestAndIsAssociatedWithItsTask",
+        "app/src/test/java/com/example/data/RoomStoreTest.kt::attachmentToMissingTaskIsRejectedByForeignKey"
+      ],
       "requiredUncoveredGate": [
         "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
       ]

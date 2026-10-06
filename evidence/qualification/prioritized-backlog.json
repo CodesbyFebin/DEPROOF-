@@ -475,6 +475,8 @@
         "app/src/main/resources/db/migration_1_2.sql"
       ],
       "tests": [
+        "app/src/test/java/com/example/data/RoomStoreTest.kt::createTaskRefusesBlankTitleAndTooManyRequirements",
+        "app/src/test/java/com/example/data/RoomStoreTest.kt::createdTaskIsPersistedWithItsRequirements",
         "tools/test_migrations.py"
       ],
       "evidencePaths": [
@@ -502,7 +504,10 @@
         "app/src/main/java/com/example/domain/Records.kt",
         "app/src/main/resources/db/migration_1_2.sql"
       ],
-      "tests": [],
+      "tests": [
+        "app/src/test/java/com/example/data/RoomStoreTest.kt::attachmentKeepsDigestAndIsAssociatedWithItsTask",
+        "app/src/test/java/com/example/data/RoomStoreTest.kt::attachmentToMissingTaskIsRejectedByForeignKey"
+      ],
       "evidencePaths": [
         "evidence/qualification/verifier-tests.log"
       ],
@@ -529,7 +534,12 @@
         "tools/bundle.py",
         "tools/test_bundle.py"
       ],
-      "tests": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/BackupTest.kt::roundTripRestoresExactBytes",
+        "app/src/test/java/com/example/domain/BackupTest.kt::tamperedCiphertextIsRefused",
+        "app/src/test/java/com/example/domain/BackupTest.kt::tamperedSaltIsRefusedBecauseTheHeaderIsAuthenticated",
+        "app/src/test/java/com/example/domain/BackupTest.kt::wrongPassphraseIsRefused"
+      ],
       "evidencePaths": [
         "evidence/qualification/verifier-tests.log"
       ],

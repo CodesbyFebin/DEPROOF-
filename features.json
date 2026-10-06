@@ -5034,7 +5034,12 @@
         "C099",
         "C100"
       ],
-      "tests": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/BackupTest.kt::roundTripRestoresExactBytes",
+        "app/src/test/java/com/example/domain/BackupTest.kt::tamperedCiphertextIsRefused",
+        "app/src/test/java/com/example/domain/BackupTest.kt::tamperedSaltIsRefusedBecauseTheHeaderIsAuthenticated",
+        "app/src/test/java/com/example/domain/BackupTest.kt::wrongPassphraseIsRefused"
+      ],
       "qualificationDimensions": [
         "VERIFIED_LOCAL",
         "NOT_RUN"
