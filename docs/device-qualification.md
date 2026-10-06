@@ -22,3 +22,10 @@ Use a dedicated devnet wallet and disposable evidence fixtures. Record device mo
 Store manual observations in a separate timestamped JSON with each gate's PASS, FAIL, BLOCKED or NOT_RUN, concrete evidence references and limitations. Preserve this automatic preflight report. No manual result is consumed as complete qualification until its evidence has been reviewed. An emulator can support UI tests but cannot qualify physical hardware or real wallet acceptance.
 
 Hosting qualification remains limited to the tested fixed Docker profile. Same-owner local educational proof generation/verification does not qualify a production proof system or external-provider integration.
+
+### New backup, association and proof-flow acceptance (NOT_RUN until observed)
+
+- On API 26+, export through an actual document provider; restore into a separate clean installation with the separately retained passphrase. Inspect raw file hashes, receipt/public-signature validation, task association and mapping plans. Original hardware private keys are not recovered.
+- Attempt wrong-key, tampered, unsupported-version, malformed-record and conflicting-ID restore against populated storage. Compare pre/post records and raw bytes. Deny/revoke document permission and cancel navigation during restore; signing approval must be cleared and old data intact. Exercise process death before and after Room commit; inspect any unreferenced staged files without treating them as accepted evidence.
+- Restored reminders stay cancelled; no bandwidth consent, node session, operation journal or wallet action is restored/replayed. Android below API 26 must show backup unavailable.
+- Pair the proof UI to an owner-controlled Linux/cgroup-v2 node with a fresh signed local job profile. Observe fresh CPU/RAM/backend/circuit values, refusal for stale/unavailable/mismatched profile and expired job, then explicit-consent local execution and independent proof verification. Unsupported hosts and unqualified external providers must display unavailable/BLOCKED, never fabricated capabilities.
