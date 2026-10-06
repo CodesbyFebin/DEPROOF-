@@ -135,8 +135,8 @@ dependencies {
     // DataStore (Preferences)
     implementation("androidx.datastore:datastore-preferences:1.0.0")
 
-    // Mobile Wallet Adapter
-    implementation("com.solanomobile:walletadapterkit:2.0.7")
+    // Mobile Wallet Adapter (TODO: use correct version when available)
+    // implementation("com.solanomobile:walletadapterkit:2.0.7")
 
     // Networking
     implementation("com.squareup.okhttp3:okhttp:4.11.0")
@@ -152,8 +152,8 @@ dependencies {
     // Permissions
     implementation("pub.devrel:easypermissions:3.0.0")
 
-    // Logging
-    implementation("com.github.ajalt.timberkt:timberkt:1.0.2")
+    // Logging (using Android's built-in Log instead of timberkt)
+    // implementation("com.github.ajalt.timberkt:timberkt:1.0.2")
 
     // Optional: Hilt for Dependency Injection
     // implementation("com.google.dagger:hilt-android:2.48")
