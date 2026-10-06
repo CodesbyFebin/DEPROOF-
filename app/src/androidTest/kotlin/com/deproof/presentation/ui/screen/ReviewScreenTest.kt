@@ -1,5 +1,7 @@
 package com.deproof.presentation.ui.screen
 
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.assertTextContains
 import androidx.compose.ui.test.junit4.createComposeRule
@@ -178,7 +180,7 @@ fun MockReviewScreenWithInput() {
             value = "",
             onValueChange = {},
             label = { androidx.compose.material3.Text("Instruction Input") },
-            modifier = androidx.compose.ui.Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth()
         )
         androidx.compose.material3.Button(onClick = {}) {
             androidx.compose.material3.Text("Decode")

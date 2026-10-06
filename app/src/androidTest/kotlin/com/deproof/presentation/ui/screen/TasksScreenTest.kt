@@ -1,5 +1,6 @@
 package com.deproof.presentation.ui.screen
 
+import androidx.compose.foundation.lazy.items
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithContentDescription

@@ -1,5 +1,9 @@
 package com.deproof.ui
 
+import androidx.compose.foundation.layout.weight
+import androidx.compose.foundation.lazy.items
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithText
@@ -116,10 +120,10 @@ fun MockPortraitLayout() {
 @androidx.compose.runtime.Composable
 fun MockLandscapeLayout() {
     androidx.compose.foundation.layout.Row {
-        androidx.compose.foundation.layout.Column(modifier = androidx.compose.ui.Modifier.weight(0.3f)) {
+        androidx.compose.foundation.layout.Column(modifier = Modifier.weight(0.3f)) {
             androidx.compose.material3.Text("Side Panel")
         }
-        androidx.compose.foundation.layout.Column(modifier = androidx.compose.ui.Modifier.weight(0.7f)) {
+        androidx.compose.foundation.layout.Column(modifier = Modifier.weight(0.7f)) {
             androidx.compose.material3.Text("Landscape Layout")
             androidx.compose.material3.Text("Main Content")
         }
@@ -148,7 +152,9 @@ fun MockScrollableInputForm() {
 
 @androidx.compose.runtime.Composable
 fun MockMultipleFontSizes() {
-    androidx.compose.foundation.layout.Column {
+    androidx.compose.foundation.layout.Column(
+        modifier = Modifier
+    ) {
         androidx.compose.material3.Text(
             "Headline",
             style = androidx.compose.material3.MaterialTheme.typography.headlineLarge
