@@ -1,0 +1,12 @@
+{
+  "records": 336,
+  "exactAuthoritativeIdsAndMeanings": true,
+  "twoRegenerationsIdempotent": true,
+  "registrySha256": {
+    "features": "fb89daa2d5e9eaa4dd683f6c6916853d6fa50235287e695d1b9b19c1e3d581b6",
+    "core-checks": "c0421a1bf417e93a37589de28f7770cb0e7125577bea4f0f2ca053f55d36780c",
+    "functions": "3492cab59e025ca748ca67bf063ba5bb29233ed0e68ce08e8709d53557cdb539",
+    "ecosystem-requirements": "ecd4b19bd3b91249920638aa8b8dcc98b58ecfffc3f1c79a61d9556faef93677"
+  },
+  "scope": "Mappings link reviewed assertions; no device or provider promotion."
+}

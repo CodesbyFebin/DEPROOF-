@@ -1,0 +1,102 @@
+{
+  "schema": "deproof-gate-v1",
+  "status": "PASS",
+  "checks": [
+    {
+      "id": "read_only_scope_cannot_transfer",
+      "status": "PASS"
+    },
+    {
+      "id": "wrong_tls_certificate_pin_denied",
+      "status": "PASS"
+    },
+    {
+      "id": "api_revocation_denies_subsequent_commands",
+      "status": "PASS"
+    },
+    {
+      "id": "unqualified_hosting_refuses_start",
+      "status": "PASS"
+    },
+    {
+      "id": "operation_replay_denied",
+      "status": "PASS"
+    },
+    {
+      "id": "bandwidth_requires_explicit_consent",
+      "status": "PASS"
+    },
+    {
+      "id": "real_tls_transfer_sender_receiver_counters_match",
+      "status": "PASS"
+    },
+    {
+      "id": "quota_enforced_before_network_io",
+      "status": "PASS"
+    },
+    {
+      "id": "stop_cancels_real_flow_and_disables_consent",
+      "status": "PASS"
+    },
+    {
+      "id": "signed_owner_job_discovered",
+      "status": "PASS"
+    },
+    {
+      "id": "forged_job_signature_denied",
+      "status": "PASS"
+    },
+    {
+      "id": "android_client_to_agent_to_prover_to_verifier_signed_receipt",
+      "status": "PASS"
+    },
+    {
+      "id": "wrong_public_input_rejected_by_independent_verifier",
+      "status": "PASS"
+    },
+    {
+      "id": "tampered_result_digest_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "pinned_verification_key_mismatch_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "signed_contribution_tamper_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "owner_local_revocation_works_without_phone",
+      "status": "PASS"
+    },
+    {
+      "id": "restart_retains_charged_reservations_and_disables_sharing",
+      "status": "PASS"
+    },
+    {
+      "id": "changed_service_profile_denied",
+      "status": "PASS"
+    },
+    {
+      "id": "authenticated_allowlisted_service_actually_starts_and_is_healthy",
+      "status": "PASS"
+    },
+    {
+      "id": "restart_revocation_stops_and_observes_existing_container",
+      "status": "PASS"
+    },
+    {
+      "id": "service_stop_observes_termination",
+      "status": "PASS"
+    },
+    {
+      "id": "session_revocation_stops_actual_owned_service",
+      "status": "PASS"
+    }
+  ],
+  "limitations": [
+    "Real loopback topology only; no Android device/Keystore test.",
+    "Local educational trusted setup; external protocol membership/rewards and runtime isolation unqualified."
+  ]
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.data.HistoricalObservationTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-06T11:40:09.513Z" hostname="Cybertecks-Mac-mini.local" time="0.154">
+  <properties/>
+  <testcase name="identicalSignatureOnDifferentClustersIsNotConflated" classname="com.example.data.HistoricalObservationTest" time="0.028"/>
+  <testcase name="unavailableRefreshRetainsOriginalKnownStatusWithoutInventingSuccess" classname="com.example.data.HistoricalObservationTest" time="0.027"/>
+  <testcase name="conflictingMessageIsRefusedWithoutChangingReceiptOrObservations" classname="com.example.data.HistoricalObservationTest" time="0.029"/>
+  <testcase name="concurrentOpensCreateOneReceiptWithIndependentObservations" classname="com.example.data.HistoricalObservationTest" time="0.041"/>
+  <testcase name="repeatedHistoryRefreshPreservesOriginalEventAndTracksChangedStatus" classname="com.example.data.HistoricalObservationTest" time="0.026"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

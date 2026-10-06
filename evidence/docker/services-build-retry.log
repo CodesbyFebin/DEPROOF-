@@ -1,0 +1,490 @@
+ Image deproof/web:local Building 
+ Image deproof/node-agent:local Building 
+ Image deproof/prover-worker:local Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.71kB done
+#1 DONE 0.0s
+
+#2 [web internal] load build definition from web.Dockerfile
+#2 transferring dockerfile: 613B done
+#2 DONE 0.0s
+
+#3 [prover-worker internal] load build definition from prover-worker.Dockerfile
+#3 transferring dockerfile: 1.33kB 0.0s done
+#3 DONE 0.0s
+
+#4 [node-agent internal] load build definition from node-agent.Dockerfile
+#4 transferring dockerfile: 1.66kB 0.0s done
+#4 DONE 0.0s
+
+#5 [prover-worker internal] load metadata for docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7
+#5 DONE 0.1s
+
+#6 [web internal] load metadata for docker.io/library/busybox:1.36@sha256:73aaf090f3d85aa34ee199857f03fa3a95c8ede2ffd4cc2cdb5b94e566b11662
+#6 DONE 0.1s
+
+#7 [node-agent internal] load metadata for docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#7 DONE 1.9s
+
+#8 [prover-worker internal] load .dockerignore
+#8 transferring context: 567B done
+#8 DONE 0.0s
+
+#9 [prover-worker internal] load build context
+#9 transferring context: 2.95kB 0.0s done
+#9 DONE 0.1s
+
+#10 [node-agent internal] load build context
+#10 transferring context: 9.12kB 0.0s done
+#10 DONE 0.0s
+
+#11 [node-agent stage-1  1/13] FROM docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7
+#11 resolve docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7
+#11 resolve docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7 0.1s done
+#11 DONE 0.1s
+
+#12 [prover-worker stage-1  2/13] RUN useradd --create-home --uid 10001 deproof && mkdir -p /state /export && chown 10001:10001 /state /export
+#12 CACHED
+
+#13 [prover-worker stage-1  3/13] WORKDIR /opt/deproof
+#13 CACHED
+
+#14 [prover-worker runtime  4/12] COPY tools/requirements.txt tools/requirements.txt
+#14 CACHED
+
+#15 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#15 resolve docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b 0.1s done
+#15 sha256:1aef77c7da0459f43875aef59f23948c444c5293469f23115c973cbdb2d8b840 0B / 127B 0.2s
+#15 ...
+
+#8 [web internal] load .dockerignore
+#8 transferring context: 567B done
+#8 DONE 0.0s
+
+#16 [web internal] load metadata for docker.io/library/node:24-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#16 DONE 2.5s
+
+#11 [node-agent stage-1  1/13] FROM docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7
+#11 resolve docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7 0.1s done
+#11 CACHED
+
+#15 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#15 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 0B / 67.28MB 0.2s
+#15 sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a 0B / 64.40MB 0.2s
+#15 sha256:71699a82d1a033b80400dc8de473d660b58675595de7d9edeb1bb18f82b63685 0B / 92.48MB 0.2s
+#15 ...
+
+#17 [web internal] load build context
+#17 transferring context: 63.93kB 0.1s done
+#17 DONE 0.2s
+
+#15 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#15 sha256:1aef77c7da0459f43875aef59f23948c444c5293469f23115c973cbdb2d8b840 127B / 127B 0.3s done
+#15 ...
+
+#18 [web stage-2 1/2] FROM docker.io/library/busybox:1.36@sha256:73aaf090f3d85aa34ee199857f03fa3a95c8ede2ffd4cc2cdb5b94e566b11662
+#18 resolve docker.io/library/busybox:1.36@sha256:73aaf090f3d85aa34ee199857f03fa3a95c8ede2ffd4cc2cdb5b94e566b11662 0.2s done
+#18 CACHED
+
+#15 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#15 sha256:f4fd7bf6f6036613e20f62549df75ed694b99118002358bea5a81baf3929d1ff 0B / 24.04MB 0.2s
+#15 sha256:f4fd7bf6f6036613e20f62549df75ed694b99118002358bea5a81baf3929d1ff 2.10MB / 24.04MB 3.3s
+#15 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 1.05MB / 67.28MB 5.3s
+#15 sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a 4.19MB / 64.40MB 5.1s
+#15 sha256:71699a82d1a033b80400dc8de473d660b58675595de7d9edeb1bb18f82b63685 4.19MB / 92.48MB 5.3s
+#15 sha256:f4fd7bf6f6036613e20f62549df75ed694b99118002358bea5a81baf3929d1ff 4.19MB / 24.04MB 5.6s
+#15 ...
+
+#19 [prover-worker runtime  5/12] RUN pip install --no-cache-dir -r tools/requirements.txt
+#19 3.181 Collecting cryptography==50.0.0 (from -r tools/requirements.txt (line 1))
+#19 4.629   Downloading cryptography-50.0.0-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (4.3 kB)
+#19 4.999 Collecting cffi>=2.0.0 (from cryptography==50.0.0->-r tools/requirements.txt (line 1))
+#19 5.083   Downloading cffi-2.1.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.5 kB)
+#19 5.181 Collecting pycparser (from cffi>=2.0.0->cryptography==50.0.0->-r tools/requirements.txt (line 1))
+#19 5.269   Downloading pycparser-3.0-py3-none-any.whl.metadata (8.2 kB)
+#19 5.387 Downloading cryptography-50.0.0-cp311-abi3-manylinux_2_34_x86_64.whl (4.7 MB)
+#19 7.142    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 3.1 MB/s  0:00:01
+#19 7.167 Downloading cffi-2.1.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (221 kB)
+#19 7.256 Downloading pycparser-3.0-py3-none-any.whl (48 kB)
+#19 7.304 Installing collected packages: pycparser, cffi, cryptography
+#19 7.658 
+#19 7.663 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#19 7.664 Successfully installed cffi-2.1.1 cryptography-50.0.0 pycparser-3.0
+#19 8.126 
+#19 8.126 [notice] A new release of pip is available: 25.2 -> 26.2.1
+#19 8.126 [notice] To update, run: pip install --upgrade pip
+#19 DONE 8.3s
+
+#15 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#15 ...
+
+#20 [web node 1/1] FROM docker.io/library/node:24-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#20 resolve docker.io/library/node:24-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20 0.2s done
+#20 ...
+
+#15 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#15 sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a 8.39MB / 64.40MB 10.1s
+#15 sha256:f4fd7bf6f6036613e20f62549df75ed694b99118002358bea5a81baf3929d1ff 6.29MB / 24.04MB 9.8s
+#15 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 3.15MB / 67.28MB 10.4s
+#15 sha256:71699a82d1a033b80400dc8de473d660b58675595de7d9edeb1bb18f82b63685 7.34MB / 92.48MB 10.4s
+#15 sha256:f4fd7bf6f6036613e20f62549df75ed694b99118002358bea5a81baf3929d1ff 8.39MB / 24.04MB 12.8s
+#15 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 7.34MB / 67.28MB 14.5s
+#15 sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a 12.58MB / 64.40MB 14.6s
+#15 sha256:71699a82d1a033b80400dc8de473d660b58675595de7d9edeb1bb18f82b63685 12.58MB / 92.48MB 15.2s
+#15 sha256:f4fd7bf6f6036613e20f62549df75ed694b99118002358bea5a81baf3929d1ff 10.49MB / 24.04MB 15.1s
+#15 sha256:f4fd7bf6f6036613e20f62549df75ed694b99118002358bea5a81baf3929d1ff 12.58MB / 24.04MB 17.3s
+#15 sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a 16.78MB / 64.40MB 19.0s
+#15 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 11.53MB / 67.28MB 19.3s
+#15 sha256:f4fd7bf6f6036613e20f62549df75ed694b99118002358bea5a81baf3929d1ff 14.68MB / 24.04MB 19.4s
+#15 sha256:71699a82d1a033b80400dc8de473d660b58675595de7d9edeb1bb18f82b63685 17.83MB / 92.48MB 20.3s
+#15 sha256:f4fd7bf6f6036613e20f62549df75ed694b99118002358bea5a81baf3929d1ff 16.78MB / 24.04MB 22.3s
+#15 sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a 19.92MB / 64.40MB 24.1s
+#15 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 14.68MB / 67.28MB 24.4s
+#15 sha256:71699a82d1a033b80400dc8de473d660b58675595de7d9edeb1bb18f82b63685 20.97MB / 92.48MB 25.4s
+#15 sha256:f4fd7bf6f6036613e20f62549df75ed694b99118002358bea5a81baf3929d1ff 18.87MB / 24.04MB 25.4s
+#15 sha256:f4fd7bf6f6036613e20f62549df75ed694b99118002358bea5a81baf3929d1ff 20.97MB / 24.04MB 27.5s
+#15 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 18.87MB / 67.28MB 28.4s
+#15 sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a 24.12MB / 64.40MB 28.4s
+#15 sha256:71699a82d1a033b80400dc8de473d660b58675595de7d9edeb1bb18f82b63685 26.21MB / 92.48MB 30.4s
+#15 sha256:f4fd7bf6f6036613e20f62549df75ed694b99118002358bea5a81baf3929d1ff 23.07MB / 24.04MB 31.1s
+#15 sha256:f4fd7bf6f6036613e20f62549df75ed694b99118002358bea5a81baf3929d1ff 24.04MB / 24.04MB 32.2s done
+#15 sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b 0B / 48.50MB 0.2s
+#15 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 23.07MB / 67.28MB 33.1s
+#15 sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a 27.26MB / 64.40MB 33.5s
+#15 sha256:71699a82d1a033b80400dc8de473d660b58675595de7d9edeb1bb18f82b63685 30.41MB / 92.48MB 35.5s
+#15 sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b 3.15MB / 48.50MB 3.5s
+#15 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 26.21MB / 67.28MB 38.2s
+#15 sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b 6.29MB / 48.50MB 5.7s
+#15 sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a 29.36MB / 64.40MB 38.6s
+#15 sha256:71699a82d1a033b80400dc8de473d660b58675595de7d9edeb1bb18f82b63685 35.65MB / 92.48MB 38.8s
+#15 sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b 9.44MB / 48.50MB 8.3s
+#15 sha256:71699a82d1a033b80400dc8de473d660b58675595de7d9edeb1bb18f82b63685 40.89MB / 92.48MB 41.8s
+#15 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 27.26MB / 67.28MB 43.3s
+#15 sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b 12.58MB / 48.50MB 10.8s
+#15 sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a 30.41MB / 64.40MB 43.7s
+#15 sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b 15.73MB / 48.50MB 12.9s
+#15 sha256:71699a82d1a033b80400dc8de473d660b58675595de7d9edeb1bb18f82b63685 46.14MB / 92.48MB 46.0s
+#15 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 29.36MB / 67.28MB 48.4s
+#15 sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b 18.87MB / 48.50MB 15.9s
+#15 sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a 33.55MB / 64.40MB 48.8s
+#15 sha256:71699a82d1a033b80400dc8de473d660b58675595de7d9edeb1bb18f82b63685 50.33MB / 92.48MB 51.1s
+#15 sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b 22.02MB / 48.50MB 19.1s
+#15 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 33.55MB / 67.28MB 51.8s
+#15 sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a 37.75MB / 64.40MB 52.3s
+#15 sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b 25.17MB / 48.50MB 23.0s
+#15 sha256:71699a82d1a033b80400dc8de473d660b58675595de7d9edeb1bb18f82b63685 54.53MB / 92.48MB 56.2s
+#15 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 36.70MB / 67.28MB 56.9s
+#15 sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b 28.31MB / 48.50MB 24.5s
+#15 sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a 40.89MB / 64.40MB 57.4s
+#15 sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b 31.46MB / 48.50MB 26.1s
+#15 sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b 34.60MB / 48.50MB 27.9s
+#15 sha256:71699a82d1a033b80400dc8de473d660b58675595de7d9edeb1bb18f82b63685 56.62MB / 92.48MB 61.3s
+#15 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 38.80MB / 67.28MB 62.0s
+#15 sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b 37.75MB / 48.50MB 29.7s
+#15 sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a 42.99MB / 64.40MB 62.5s
+#15 sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b 40.89MB / 48.50MB 32.0s
+#15 sha256:71699a82d1a033b80400dc8de473d660b58675595de7d9edeb1bb18f82b63685 58.72MB / 92.48MB 66.4s
+#15 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 41.94MB / 67.28MB 67.1s
+#15 sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b 44.04MB / 48.50MB 34.8s
+#15 sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a 46.14MB / 64.40MB 67.6s
+#15 sha256:71699a82d1a033b80400dc8de473d660b58675595de7d9edeb1bb18f82b63685 63.96MB / 92.48MB 70.0s
+#15 sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b 47.19MB / 48.50MB 39.3s
+#15 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 45.09MB / 67.28MB 72.2s
+#15 sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a 49.28MB / 64.40MB 72.7s
+#15 sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b 48.50MB / 48.50MB 41.1s done
+#15 sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b 48.50MB / 48.50MB 41.1s done
+#15 extracting sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b
+#15 ...
+
+#20 [web node 1/1] FROM docker.io/library/node:24-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#20 sha256:1a0cf4b1ffc8dd659bb8c6e90471bc8fec24620e4fdb68bb2b6faa56154ae146 0B / 1.71MB 0.2s
+#20 sha256:1a0cf4b1ffc8dd659bb8c6e90471bc8fec24620e4fdb68bb2b6faa56154ae146 1.05MB / 1.71MB 1.8s
+#20 sha256:1a0cf4b1ffc8dd659bb8c6e90471bc8fec24620e4fdb68bb2b6faa56154ae146 1.71MB / 1.71MB 2.1s done
+#20 sha256:08489011619dfda982191cb9cc0418dc48ea3b1341588aeef534e4db0ab4d3d0 0B / 447B 0.2s
+#20 sha256:08489011619dfda982191cb9cc0418dc48ea3b1341588aeef534e4db0ab4d3d0 447B / 447B 0.4s done
+#20 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 0B / 50.86MB 0.2s
+#20 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 3.15MB / 50.86MB 1.8s
+#20 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 6.29MB / 50.86MB 3.2s
+#20 ...
+
+#15 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#15 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 50.33MB / 67.28MB 79.7s
+#15 sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a 53.48MB / 64.40MB 79.7s
+#15 sha256:71699a82d1a033b80400dc8de473d660b58675595de7d9edeb1bb18f82b63685 71.30MB / 92.48MB 79.6s
+#15 extracting sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b 3.4s done
+#15 extracting sha256:f4fd7bf6f6036613e20f62549df75ed694b99118002358bea5a81baf3929d1ff 1.0s done
+#15 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 52.43MB / 67.28MB 84.8s
+#15 sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a 55.57MB / 64.40MB 84.8s
+#15 sha256:71699a82d1a033b80400dc8de473d660b58675595de7d9edeb1bb18f82b63685 74.45MB / 92.48MB 84.7s
+#15 sha256:71699a82d1a033b80400dc8de473d660b58675595de7d9edeb1bb18f82b63685 79.69MB / 92.48MB 88.9s
+#15 ...
+
+#20 [web node 1/1] FROM docker.io/library/node:24-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#20 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 26.21MB / 50.86MB 13.5s
+#20 ...
+
+#15 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#15 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 54.53MB / 67.28MB 89.9s
+#15 sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a 57.67MB / 64.40MB 89.9s
+#15 sha256:71699a82d1a033b80400dc8de473d660b58675595de7d9edeb1bb18f82b63685 84.93MB / 92.48MB 93.7s
+#15 sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a 61.87MB / 64.40MB 94.0s
+#15 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 58.72MB / 67.28MB 94.1s
+#15 sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a 64.40MB / 64.40MB 96.4s done
+#15 extracting sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a
+#15 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 62.91MB / 67.28MB 98.9s
+#15 sha256:71699a82d1a033b80400dc8de473d660b58675595de7d9edeb1bb18f82b63685 89.13MB / 92.48MB 98.8s
+#15 ...
+
+#20 [web node 1/1] FROM docker.io/library/node:24-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#20 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 34.60MB / 50.86MB 23.7s
+#20 sha256:517d640e32835287653c4b15eb5d9f6bcf48e103baea4f7e29bac937002f649b 3.31kB / 3.31kB 0.5s done
+#20 sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39 5.24MB / 28.25MB 3.0s
+#20 ...
+
+#15 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#15 extracting sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a 4.3s done
+#15 extracting sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a 4.3s done
+#15 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 63.96MB / 67.28MB 104.0s
+#15 sha256:71699a82d1a033b80400dc8de473d660b58675595de7d9edeb1bb18f82b63685 90.18MB / 92.48MB 103.9s
+#15 sha256:71699a82d1a033b80400dc8de473d660b58675595de7d9edeb1bb18f82b63685 92.48MB / 92.48MB 107.7s done
+#15 extracting sha256:71699a82d1a033b80400dc8de473d660b58675595de7d9edeb1bb18f82b63685
+#15 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 67.28MB / 67.28MB 108.7s done
+#15 ...
+
+#20 [web node 1/1] FROM docker.io/library/node:24-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#20 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 41.94MB / 50.86MB 33.9s
+#20 sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39 28.25MB / 28.25MB 11.4s done
+#20 extracting sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39
+#20 extracting sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39 4.1s done
+#20 extracting sha256:517d640e32835287653c4b15eb5d9f6bcf48e103baea4f7e29bac937002f649b
+#20 extracting sha256:517d640e32835287653c4b15eb5d9f6bcf48e103baea4f7e29bac937002f649b 0.0s done
+#20 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 45.09MB / 50.86MB 37.8s
+#20 ...
+
+#15 [prover-worker build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#15 extracting sha256:71699a82d1a033b80400dc8de473d660b58675595de7d9edeb1bb18f82b63685 7.4s done
+#15 extracting sha256:71699a82d1a033b80400dc8de473d660b58675595de7d9edeb1bb18f82b63685 7.4s done
+#15 extracting sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b
+#15 ...
+
+#20 [web node 1/1] FROM docker.io/library/node:24-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#20 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 47.19MB / 50.86MB 44.9s
+#20 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 50.33MB / 50.86MB 48.8s
+#20 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 50.86MB / 50.86MB 49.4s done
+#20 extracting sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a
+#20 extracting sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 8.8s done
+#20 DONE 134.1s
+
+#15 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#15 ...
+
+#20 [web node 1/1] FROM docker.io/library/node:24-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#20 extracting sha256:1a0cf4b1ffc8dd659bb8c6e90471bc8fec24620e4fdb68bb2b6faa56154ae146
+#20 extracting sha256:1a0cf4b1ffc8dd659bb8c6e90471bc8fec24620e4fdb68bb2b6faa56154ae146 0.7s done
+#20 DONE 134.8s
+
+#15 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#15 ...
+
+#20 [web node 1/1] FROM docker.io/library/node:24-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#20 extracting sha256:08489011619dfda982191cb9cc0418dc48ea3b1341588aeef534e4db0ab4d3d0 0.1s done
+#20 DONE 134.9s
+
+#15 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#15 ...
+
+#21 [web build 2/5] COPY --from=node /usr/local/bin/node /usr/local/bin/node
+#21 ...
+
+#15 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#15 extracting sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 23.5s done
+#15 extracting sha256:1aef77c7da0459f43875aef59f23948c444c5293469f23115c973cbdb2d8b840 0.3s done
+#15 extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 0.4s done
+#15 DONE 139.6s
+
+#22 [prover-worker build 2/6] WORKDIR /src/prover-worker
+#22 ...
+
+#21 [web build 2/5] COPY --from=node /usr/local/bin/node /usr/local/bin/node
+#21 DONE 3.4s
+
+#22 [prover-worker build 2/6] WORKDIR /src/prover-worker
+#22 DONE 0.3s
+
+#23 [web build 3/5] WORKDIR /src
+#23 DONE 0.2s
+
+#24 [node-agent build 3/6] COPY prover-worker/go.mod prover-worker/go.sum ./
+#24 DONE 0.2s
+
+#25 [node-agent build 4/6] RUN GOTOOLCHAIN=local go mod download
+#25 ...
+
+#26 [web build 4/5] COPY . .
+#26 DONE 2.5s
+
+#27 [web build 5/5] RUN python3 scripts/build-web.py && python3 scripts/qualify-web.py
+#27 0.659 Built 7 local pages; no deployment performed.
+#27 0.888 PASS: seven page semantics, repository-relative links/assets and JS syntax. Browser responsiveness/accessibility/interaction gates NOT_RUN.
+#27 DONE 1.0s
+
+#25 [node-agent build 4/6] RUN GOTOOLCHAIN=local go mod download
+#25 ...
+
+#28 [web stage-2 2/2] COPY --from=build /src/web/ /site/
+#28 DONE 0.0s
+
+#29 [web] exporting to image
+#29 exporting layers
+#29 exporting layers 0.3s done
+#29 exporting manifest sha256:56ec1f6d350f33542e7fccc9e15977bcebb68c3fca1a51d1b7ef7e993450b0ef
+#29 exporting manifest sha256:56ec1f6d350f33542e7fccc9e15977bcebb68c3fca1a51d1b7ef7e993450b0ef 0.0s done
+#29 exporting config sha256:d2974c8a54321f68fbb6948515fb9672c2f7a350ffe21f02e85b76cf8dd7f710 0.0s done
+#29 exporting attestation manifest sha256:14a407bb1584a08a0f0eb0fb4d7285687649d4ed1441d8b764b2fd46ad7b6fa2 0.0s done
+#29 exporting manifest list sha256:56b6a674c216f6da898108344a1eab165a5dd6a72d3dc631e1235e45b3caf3ad
+#29 exporting manifest list sha256:56b6a674c216f6da898108344a1eab165a5dd6a72d3dc631e1235e45b3caf3ad 0.0s done
+#29 naming to docker.io/deproof/web:local done
+#29 unpacking to docker.io/deproof/web:local 0.1s done
+#29 DONE 0.6s
+
+#25 [node-agent build 4/6] RUN GOTOOLCHAIN=local go mod download
+#25 ...
+
+#30 [web] resolving provenance for metadata file
+#30 DONE 0.1s
+
+#25 [node-agent build 4/6] RUN GOTOOLCHAIN=local go mod download
+#25 DONE 19.9s
+
+#31 [node-agent build 5/6] COPY prover-worker/ ./
+#31 DONE 0.1s
+
+#32 [prover-worker build 6/6] RUN CGO_ENABLED=0 GOTOOLCHAIN=local go test ./... && CGO_ENABLED=0 GOTOOLCHAIN=local go build -trimpath -o /out/prove ./cmd/prove && CGO_ENABLED=0 GOTOOLCHAIN=local go build -trimpath -o /out/verify ./cmd/verify
+#32 140.6 ?   	deproof.local/prover-worker/cmd/prove	[no test files]
+#32 140.6 ?   	deproof.local/prover-worker/cmd/verify	[no test files]
+#32 140.6 ?   	deproof.local/prover-worker/internal/circuit	[no test files]
+#32 DONE 216.2s
+
+#33 [node-agent build 6/9] RUN CGO_ENABLED=0 GOTOOLCHAIN=local go test ./... && CGO_ENABLED=0 GOTOOLCHAIN=local go build -trimpath -o /out/prove ./cmd/prove && CGO_ENABLED=0 GOTOOLCHAIN=local go build -trimpath -o /out/verify ./cmd/verify
+#33 CACHED
+
+#34 [node-agent build 3/9] COPY prover-worker/go.mod prover-worker/go.sum ./
+#34 CACHED
+
+#35 [node-agent build 4/9] RUN GOTOOLCHAIN=local go mod download
+#35 CACHED
+
+#36 [node-agent build 5/9] COPY prover-worker/ ./
+#36 CACHED
+
+#37 [node-agent build 7/9] WORKDIR /src/node-agent
+#37 DONE 0.2s
+
+#38 [node-agent build 8/9] COPY node-agent/ ./
+#38 DONE 0.1s
+
+#39 [node-agent build 9/9] RUN CGO_ENABLED=0 GOTOOLCHAIN=local go test ./... && CGO_ENABLED=0 GOTOOLCHAIN=local go build -trimpath -o /out/deproof-node ./cmd/deproof-node
+#39 ...
+
+#40 [prover-worker stage-1  4/13] COPY tools/requirements.txt tools/requirements.txt
+#40 CACHED
+
+#41 [prover-worker stage-1  5/13] RUN pip install --no-cache-dir -r tools/requirements.txt
+#41 CACHED
+
+#42 [prover-worker stage-1  6/13] COPY --from=build /out/ prover-worker/build/
+#42 DONE 0.3s
+
+#39 [node-agent build 9/9] RUN CGO_ENABLED=0 GOTOOLCHAIN=local go test ./... && CGO_ENABLED=0 GOTOOLCHAIN=local go build -trimpath -o /out/deproof-node ./cmd/deproof-node
+#39 ...
+
+#43 [prover-worker stage-1  7/13] COPY tools/ tools/
+#43 DONE 0.1s
+
+#44 [prover-worker stage-1  8/13] COPY scripts/qualify-device.py scripts/qualify-device.py
+#44 DONE 0.1s
+
+#45 [prover-worker stage-1  9/13] COPY fixtures/ fixtures/
+#45 DONE 0.1s
+
+#39 [node-agent build 9/9] RUN CGO_ENABLED=0 GOTOOLCHAIN=local go test ./... && CGO_ENABLED=0 GOTOOLCHAIN=local go build -trimpath -o /out/deproof-node ./cmd/deproof-node
+#39 ...
+
+#46 [prover-worker stage-1 10/13] COPY contracts/ contracts/
+#46 DONE 0.1s
+
+#47 [prover-worker stage-1 11/13] COPY app/schemas/ app/schemas/
+#47 DONE 0.1s
+
+#48 [prover-worker stage-1 12/13] COPY app/src/main/resources/ app/src/main/resources/
+#48 DONE 0.1s
+
+#49 [prover-worker stage-1 13/13] COPY docker/prover-entrypoint.sh docker/prover-entrypoint.sh
+#49 DONE 0.1s
+
+#39 [node-agent build 9/9] RUN CGO_ENABLED=0 GOTOOLCHAIN=local go test ./... && CGO_ENABLED=0 GOTOOLCHAIN=local go build -trimpath -o /out/deproof-node ./cmd/deproof-node
+#39 ...
+
+#50 [prover-worker] exporting to image
+#50 exporting layers
+#50 exporting layers 3.4s done
+#50 exporting manifest sha256:c8eb271aea36c53265ca0c3d2d90c3753e8f80d4432d494257621b2d6d88f898 0.0s done
+#50 exporting config sha256:2fd365b438b730aa211e086018bbfc261792a17ff5d9505413a2c7a3bec48685 0.0s done
+#50 exporting attestation manifest sha256:f7f333fc8ecdff5273c51832d32dffdb28c3bcb93803777840b2b6316a547d83 0.0s done
+#50 exporting manifest list sha256:f36efca40dfa2a3eb54229edf64e731e7863f570cb3713d0a0261106df73d344 0.0s done
+#50 naming to docker.io/deproof/prover-worker:local done
+#50 unpacking to docker.io/deproof/prover-worker:local
+#50 unpacking to docker.io/deproof/prover-worker:local 1.3s done
+#50 DONE 5.0s
+
+#39 [node-agent build 9/9] RUN CGO_ENABLED=0 GOTOOLCHAIN=local go test ./... && CGO_ENABLED=0 GOTOOLCHAIN=local go build -trimpath -o /out/deproof-node ./cmd/deproof-node
+#39 ...
+
+#51 [prover-worker] resolving provenance for metadata file
+#51 DONE 0.1s
+
+#39 [node-agent build 9/9] RUN CGO_ENABLED=0 GOTOOLCHAIN=local go test ./... && CGO_ENABLED=0 GOTOOLCHAIN=local go build -trimpath -o /out/deproof-node ./cmd/deproof-node
+#39 38.48 ok  	deproof.local/node-agent/cmd/deproof-node	0.005s
+#39 38.78 ok  	deproof.local/node-agent/internal/agent	0.145s
+#39 DONE 63.8s
+
+#52 [node-agent runtime  6/12] COPY --from=build /out/ prover-worker/build/
+#52 DONE 0.2s
+
+#53 [node-agent runtime  7/12] COPY tools/ tools/
+#53 DONE 0.1s
+
+#54 [node-agent runtime  8/12] COPY fixtures/ fixtures/
+#54 DONE 0.0s
+
+#55 [node-agent runtime  9/12] COPY contracts/ contracts/
+#55 DONE 0.1s
+
+#56 [node-agent runtime 10/12] COPY app/schemas/ app/schemas/
+#56 DONE 0.0s
+
+#57 [node-agent runtime 11/12] COPY app/src/main/resources/ app/src/main/resources/
+#57 DONE 0.1s
+
+#58 [node-agent runtime 12/12] COPY docker/node-entrypoint.sh docker/node-entrypoint.sh
+#58 DONE 0.0s
+
+#59 [node-agent] exporting to image
+#59 exporting layers
+#59 exporting layers 2.1s done
+#59 exporting manifest sha256:66343e8c11043f8c96c29e6a6f3644bd164398e44cb5d0738fccd1d1059e3164
+#59 exporting manifest sha256:66343e8c11043f8c96c29e6a6f3644bd164398e44cb5d0738fccd1d1059e3164 0.0s done
+#59 exporting config sha256:dfe9646de934b311de71cdea4f406b922d7cab0453ed1424cd688f18a8fff896 0.0s done
+#59 exporting attestation manifest sha256:cac0e832f04730b92705ef8e7e0476ea7bbf998e6329eff6e5c523a01efd2198 0.0s done
+#59 exporting manifest list sha256:b0efffdc9efcfaea50f33485d13c955bf6ba429b3d8c579e62c563a59bb35e57 0.0s done
+#59 naming to docker.io/deproof/node-agent:local done
+#59 unpacking to docker.io/deproof/node-agent:local
+#59 unpacking to docker.io/deproof/node-agent:local 0.7s done
+#59 DONE 3.0s
+
+#60 [node-agent] resolving provenance for metadata file
+#60 DONE 0.0s
+ Image deproof/node-agent:local Built 
+ Image deproof/prover-worker:local Built 
+ Image deproof/web:local Built 
+scripts/docker-build.sh: line 10: syntax error near unexpected token `;'

@@ -1,0 +1,486 @@
+ Image deproof/web:local Building 
+ Image deproof/node-agent:local Building 
+ Image deproof/prover-worker:local Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.71kB done
+#1 DONE 0.0s
+
+#2 [node-agent internal] load build definition from node-agent.Dockerfile
+#2 transferring dockerfile: 1.70kB 0.0s done
+#2 DONE 0.0s
+
+#3 [web internal] load build definition from web.Dockerfile
+#3 transferring dockerfile: 817B 0.0s done
+#3 DONE 0.1s
+
+#4 [prover-worker internal] load build definition from prover-worker.Dockerfile
+#4 transferring dockerfile: 1.37kB 0.0s done
+#4 DONE 0.1s
+
+#5 [web internal] load metadata for docker.io/library/node:24-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#5 ...
+
+#6 [web internal] load metadata for docker.io/library/busybox:1.36@sha256:73aaf090f3d85aa34ee199857f03fa3a95c8ede2ffd4cc2cdb5b94e566b11662
+#6 DONE 0.1s
+
+#7 [prover-worker internal] load metadata for docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7
+#7 DONE 1.7s
+
+#8 [prover-worker internal] load metadata for docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#8 DONE 2.7s
+
+#9 [prover-worker internal] load .dockerignore
+#9 transferring context:
+#9 transferring context: 614B 0.0s done
+#9 DONE 0.2s
+
+#5 [web internal] load metadata for docker.io/library/node:24-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#5 DONE 3.1s
+
+#9 [web internal] load .dockerignore
+#9 transferring context: 614B 0.0s done
+#9 DONE 0.2s
+
+#10 [prover-worker internal] load build context
+#10 DONE 0.0s
+
+#11 [node-agent internal] load build context
+#11 DONE 0.0s
+
+#12 [web stage-1  1/14] FROM docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7
+#12 resolve docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7
+#12 ...
+
+#13 [web internal] load build context
+#13 DONE 0.0s
+
+#12 [node-agent stage-1  1/14] FROM docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7
+#12 resolve docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7 0.2s done
+#12 resolve docker.io/library/python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7 0.2s done
+#12 CACHED
+
+#14 [prover-worker build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#14 resolve docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b 0.2s done
+#14 DONE 0.3s
+
+#10 [prover-worker internal] load build context
+#10 ...
+
+#15 [web stage-2 1/6] FROM docker.io/library/busybox:1.36@sha256:73aaf090f3d85aa34ee199857f03fa3a95c8ede2ffd4cc2cdb5b94e566b11662
+#15 resolve docker.io/library/busybox:1.36@sha256:73aaf090f3d85aa34ee199857f03fa3a95c8ede2ffd4cc2cdb5b94e566b11662 0.4s done
+#15 DONE 0.4s
+
+#10 [prover-worker internal] load build context
+#10 transferring context: 110.88kB 0.4s done
+#10 DONE 0.8s
+
+#11 [node-agent internal] load build context
+#11 transferring context: 149.10kB 0.3s done
+#11 DONE 0.8s
+
+#13 [web internal] load build context
+#13 ...
+
+#15 [web stage-2 1/6] FROM docker.io/library/busybox:1.36@sha256:73aaf090f3d85aa34ee199857f03fa3a95c8ede2ffd4cc2cdb5b94e566b11662
+#15 DONE 0.8s
+
+#13 [web internal] load build context
+#13 ...
+
+#16 [web node 1/1] FROM docker.io/library/node:24-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#16 resolve docker.io/library/node:24-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20 0.3s done
+#16 DONE 1.9s
+
+#13 [web internal] load build context
+#13 transferring context: 94.08MB 4.7s done
+#13 DONE 4.8s
+
+#16 [web node 1/1] FROM docker.io/library/node:24-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#16 sha256:1a0cf4b1ffc8dd659bb8c6e90471bc8fec24620e4fdb68bb2b6faa56154ae146 0B / 1.71MB 2.9s
+#16 sha256:08489011619dfda982191cb9cc0418dc48ea3b1341588aeef534e4db0ab4d3d0 447B / 447B 1.4s done
+#16 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 2.10MB / 50.86MB 2.9s
+#16 sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39 0B / 28.25MB 1.5s
+#16 sha256:517d640e32835287653c4b15eb5d9f6bcf48e103baea4f7e29bac937002f649b 3.31kB / 3.31kB 0.7s done
+#16 sha256:1a0cf4b1ffc8dd659bb8c6e90471bc8fec24620e4fdb68bb2b6faa56154ae146 1.05MB / 1.71MB 3.3s
+#16 sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39 2.10MB / 28.25MB 3.3s
+#16 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 5.24MB / 50.86MB 5.4s
+#16 sha256:1a0cf4b1ffc8dd659bb8c6e90471bc8fec24620e4fdb68bb2b6faa56154ae146 1.71MB / 1.71MB 5.6s done
+#16 sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39 4.19MB / 28.25MB 5.3s
+#16 sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39 6.29MB / 28.25MB 6.8s
+#16 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 8.39MB / 50.86MB 8.3s
+#16 ...
+
+#14 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#14 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 1.05MB / 67.28MB 7.5s
+#14 sha256:1aef77c7da0459f43875aef59f23948c444c5293469f23115c973cbdb2d8b840 127B / 127B 0.7s done
+#14 ...
+
+#16 [web node 1/1] FROM docker.io/library/node:24-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#16 sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39 8.39MB / 28.25MB 10.8s
+#16 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 9.44MB / 50.86MB 13.4s
+#16 sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39 10.49MB / 28.25MB 12.6s
+#16 sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39 12.58MB / 28.25MB 14.0s
+#16 sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39 14.68MB / 28.25MB 15.2s
+#16 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 12.58MB / 50.86MB 17.0s
+#16 sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39 16.78MB / 28.25MB 16.4s
+#16 sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39 18.87MB / 28.25MB 17.7s
+#16 ...
+
+#14 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#14 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 7.34MB / 67.28MB 17.7s
+#14 ...
+
+#16 [web node 1/1] FROM docker.io/library/node:24-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#16 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 15.73MB / 50.86MB 20.1s
+#16 sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39 20.97MB / 28.25MB 19.2s
+#16 sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39 23.07MB / 28.25MB 21.6s
+#16 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 18.87MB / 50.86MB 23.7s
+#16 sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39 25.17MB / 28.25MB 24.5s
+#16 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 22.02MB / 50.86MB 28.2s
+#16 sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39 27.26MB / 28.25MB 28.1s
+#16 ...
+
+#14 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#14 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 14.68MB / 67.28MB 27.9s
+#14 ...
+
+#16 [web node 1/1] FROM docker.io/library/node:24-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#16 sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39 28.25MB / 28.25MB 29.7s done
+#16 extracting sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39
+#16 extracting sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39 2.1s done
+#16 extracting sha256:517d640e32835287653c4b15eb5d9f6bcf48e103baea4f7e29bac937002f649b
+#16 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 24.12MB / 50.86MB 33.5s
+#16 extracting sha256:517d640e32835287653c4b15eb5d9f6bcf48e103baea4f7e29bac937002f649b 0.1s done
+#16 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 27.26MB / 50.86MB 36.9s
+#16 ...
+
+#14 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#14 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 19.92MB / 67.28MB 36.0s
+#14 ...
+
+#16 [web node 1/1] FROM docker.io/library/node:24-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#16 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 29.36MB / 50.86MB 42.0s
+#16 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 32.51MB / 50.86MB 45.5s
+#16 ...
+
+#14 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#14 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 26.21MB / 67.28MB 43.8s
+#14 ...
+
+#16 [web node 1/1] FROM docker.io/library/node:24-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#16 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 35.65MB / 50.86MB 47.3s
+#16 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 38.80MB / 50.86MB 49.5s
+#16 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 41.94MB / 50.86MB 51.5s
+#16 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 45.09MB / 50.86MB 53.6s
+#16 ...
+
+#14 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#14 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 35.65MB / 67.28MB 51.5s
+#14 ...
+
+#16 [web node 1/1] FROM docker.io/library/node:24-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#16 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 48.23MB / 50.86MB 55.4s
+#16 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 50.86MB / 50.86MB 56.7s done
+#16 extracting sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a
+#16 ...
+
+#14 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#14 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 52.43MB / 67.28MB 57.9s
+#14 ...
+
+#16 [web node 1/1] FROM docker.io/library/node:24-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#16 extracting sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 5.5s done
+#16 extracting sha256:1a0cf4b1ffc8dd659bb8c6e90471bc8fec24620e4fdb68bb2b6faa56154ae146
+#16 extracting sha256:1a0cf4b1ffc8dd659bb8c6e90471bc8fec24620e4fdb68bb2b6faa56154ae146 0.2s done
+#16 extracting sha256:08489011619dfda982191cb9cc0418dc48ea3b1341588aeef534e4db0ab4d3d0
+#16 extracting sha256:08489011619dfda982191cb9cc0418dc48ea3b1341588aeef534e4db0ab4d3d0 0.1s done
+#16 DONE 64.6s
+
+#14 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#14 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 56.62MB / 67.28MB 60.6s
+#14 ...
+
+#17 [web build 2/5] COPY --from=node /usr/local/bin/node /usr/local/bin/node
+#17 DONE 1.5s
+
+#14 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#14 ...
+
+#18 [web build 3/5] WORKDIR /src
+#18 DONE 0.2s
+
+#14 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#14 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 60.82MB / 67.28MB 63.6s
+#14 ...
+
+#19 [web build 4/5] COPY . .
+#19 DONE 3.3s
+
+#14 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#14 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 65.01MB / 67.28MB 66.2s
+#14 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 67.28MB / 67.28MB 67.3s done
+#14 sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 67.28MB / 67.28MB 67.3s done
+#14 DONE 70.1s
+
+#20 [web build 5/5] RUN python3 scripts/build-web.py && python3 scripts/qualify-web.py
+#20 0.940 Built 7 local pages; no deployment performed.
+#20 1.313 PASS: seven page semantics, repository-relative links/assets and JS syntax. Browser responsiveness/accessibility/interaction gates NOT_RUN.
+#20 DONE 1.6s
+
+#14 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#14 extracting sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b
+#14 ...
+
+#21 [web stage-2 2/6] COPY --from=build /src/web/ /site/
+#21 DONE 0.5s
+
+#22 [web stage-2 3/6] COPY --from=build /src/docs/ /site/docs/
+#22 DONE 0.4s
+
+#14 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#14 ...
+
+#23 [web stage-2 4/6] COPY --from=build /src/evidence/qualification/ /site/evidence/qualification/
+#23 DONE 1.8s
+
+#24 [web stage-2 5/6] COPY --from=build /src/LICENSE /src/SECURITY.md /site/
+#24 DONE 0.3s
+
+#25 [web stage-2 6/6] RUN chown -R 65534:65534 /site
+#25 DONE 3.9s
+
+#14 [node-agent build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#14 ...
+
+#26 [web] exporting to image
+#26 exporting layers
+#26 ...
+
+#14 [prover-worker build 1/6] FROM docker.io/library/golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b
+#14 extracting sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 13.2s done
+#14 extracting sha256:67aaa626ba3010d60ab55d9cdc69c0b12ebff5d1b5ece83ff220fb46a7709b3b 13.2s done
+#14 extracting sha256:1aef77c7da0459f43875aef59f23948c444c5293469f23115c973cbdb2d8b840 0.1s done
+#14 extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 0.1s done
+#14 extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 0.1s done
+#14 DONE 83.4s
+
+#27 [prover-worker build 2/6] WORKDIR /src/prover-worker
+#27 DONE 1.4s
+
+#28 [node-agent build 3/6] COPY prover-worker/go.mod prover-worker/go.sum ./
+#28 DONE 0.6s
+
+#29 [prover-worker build 4/6] RUN GOTOOLCHAIN=local go mod download
+#29 ...
+
+#26 [web] exporting to image
+#26 exporting layers 15.1s done
+#26 exporting manifest sha256:d262875e713b1d4488dd851a13497e71f4c9b8c067cc019774e0688e7ef8b6db
+#26 exporting manifest sha256:d262875e713b1d4488dd851a13497e71f4c9b8c067cc019774e0688e7ef8b6db 0.0s done
+#26 exporting config sha256:dbef48320123b32137513a4739d68ab6a9b0937c83fad687ee959dedcd5ef62c 0.0s done
+#26 exporting attestation manifest sha256:2e3e01c57b9a8aedf145da3676eb9ca71892049e9dbc4849589f08d0a42d1721 0.0s done
+#26 exporting manifest list sha256:851bfb31e98274155488190bc5dbd8a3cc13a200e42ac688a41552fc48d4613b 0.0s done
+#26 naming to docker.io/deproof/web:local
+#26 naming to docker.io/deproof/web:local 0.0s done
+#26 unpacking to docker.io/deproof/web:local
+#26 unpacking to docker.io/deproof/web:local 4.9s done
+#26 ...
+
+#29 [prover-worker build 4/6] RUN GOTOOLCHAIN=local go mod download
+#29 DONE 12.6s
+
+#26 [web] exporting to image
+#26 DONE 20.6s
+
+#30 [node-agent build 5/6] COPY prover-worker/ ./
+#30 DONE 0.2s
+
+#31 [node-agent build 6/6] RUN CGO_ENABLED=0 GOTOOLCHAIN=local go test ./... && CGO_ENABLED=0 GOTOOLCHAIN=local go build -trimpath -o /out/prove ./cmd/prove && CGO_ENABLED=0 GOTOOLCHAIN=local go build -trimpath -o /out/verify ./cmd/verify
+#31 ...
+
+#32 [web] resolving provenance for metadata file
+#32 DONE 0.1s
+
+#31 [node-agent build 6/6] RUN CGO_ENABLED=0 GOTOOLCHAIN=local go test ./... && CGO_ENABLED=0 GOTOOLCHAIN=local go build -trimpath -o /out/prove ./cmd/prove && CGO_ENABLED=0 GOTOOLCHAIN=local go build -trimpath -o /out/verify ./cmd/verify
+#31 95.93 ?   	deproof.local/prover-worker/cmd/prove	[no test files]
+#31 96.02 ?   	deproof.local/prover-worker/cmd/verify	[no test files]
+#31 96.02 ?   	deproof.local/prover-worker/internal/circuit	[no test files]
+#31 DONE 168.5s
+
+#33 [node-agent build 6/9] RUN CGO_ENABLED=0 GOTOOLCHAIN=local go test ./... && CGO_ENABLED=0 GOTOOLCHAIN=local go build -trimpath -o /out/prove ./cmd/prove && CGO_ENABLED=0 GOTOOLCHAIN=local go build -trimpath -o /out/verify ./cmd/verify
+#33 CACHED
+
+#34 [node-agent build 3/9] COPY prover-worker/go.mod prover-worker/go.sum ./
+#34 CACHED
+
+#35 [node-agent build 4/9] RUN GOTOOLCHAIN=local go mod download
+#35 CACHED
+
+#36 [node-agent build 5/9] COPY prover-worker/ ./
+#36 CACHED
+
+#37 [node-agent build 7/9] WORKDIR /src/node-agent
+#37 DONE 0.1s
+
+#38 [node-agent build 8/9] COPY node-agent/ ./
+#38 DONE 0.1s
+
+#39 [node-agent build 9/9] RUN CGO_ENABLED=0 GOTOOLCHAIN=local go test ./... && CGO_ENABLED=0 GOTOOLCHAIN=local go build -trimpath -o /out/deproof-node ./cmd/deproof-node
+#39 ...
+
+#40 [prover-worker stage-1  4/14] COPY tools/requirements.txt tools/requirements.txt
+#40 CACHED
+
+#41 [prover-worker stage-1  2/14] RUN useradd --create-home --uid 10001 deproof && mkdir -p /state /export && chown 10001:10001 /state /export
+#41 CACHED
+
+#42 [prover-worker stage-1  3/14] WORKDIR /opt/deproof
+#42 CACHED
+
+#43 [node-agent stage-1  5/14] RUN pip install --no-cache-dir -r tools/requirements.txt
+#43 ERROR: not found
+
+#40 [node-agent stage-1  4/14] COPY tools/requirements.txt tools/requirements.txt
+#40 ERROR: not found
+
+#42 [node-agent stage-1  3/14] WORKDIR /opt/deproof
+#42 ERROR: not found
+
+#41 [node-agent stage-1  2/14] RUN useradd --create-home --uid 10001 deproof && mkdir -p /state /export && chown 10001:10001 /state /export
+#41 DONE 0.6s
+
+#42 [node-agent stage-1  3/14] WORKDIR /opt/deproof
+#42 DONE 0.1s
+
+#40 [prover-worker stage-1  4/14] COPY tools/requirements.txt tools/requirements.txt
+#40 DONE 0.1s
+
+#43 [prover-worker stage-1  5/14] RUN pip install --no-cache-dir -r tools/requirements.txt
+#43 2.885 Collecting cryptography==50.0.0 (from -r tools/requirements.txt (line 1))
+#43 3.158   Downloading cryptography-50.0.0-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (4.3 kB)
+#43 3.379 Collecting cffi>=2.0.0 (from cryptography==50.0.0->-r tools/requirements.txt (line 1))
+#43 3.386   Downloading cffi-2.1.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.5 kB)
+#43 3.403 Collecting pycparser (from cffi>=2.0.0->cryptography==50.0.0->-r tools/requirements.txt (line 1))
+#43 3.410   Downloading pycparser-3.0-py3-none-any.whl.metadata (8.2 kB)
+#43 3.428 Downloading cryptography-50.0.0-cp311-abi3-manylinux_2_34_x86_64.whl (4.7 MB)
+#43 4.548    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 4.2 MB/s  0:00:01
+#43 4.559 Downloading cffi-2.1.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (221 kB)
+#43 4.610 Downloading pycparser-3.0-py3-none-any.whl (48 kB)
+#43 4.731 Installing collected packages: pycparser, cffi, cryptography
+#43 5.131 
+#43 5.135 Successfully installed cffi-2.1.1 cryptography-50.0.0 pycparser-3.0
+#43 5.136 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#43 5.277 
+#43 5.277 [notice] A new release of pip is available: 25.2 -> 26.2.1
+#43 5.277 [notice] To update, run: pip install --upgrade pip
+#43 DONE 5.5s
+
+#44 [prover-worker stage-1  6/14] COPY --from=build /out/ prover-worker/build/
+#44 DONE 0.3s
+
+#39 [node-agent build 9/9] RUN CGO_ENABLED=0 GOTOOLCHAIN=local go test ./... && CGO_ENABLED=0 GOTOOLCHAIN=local go build -trimpath -o /out/deproof-node ./cmd/deproof-node
+#39 ...
+
+#45 [prover-worker stage-1  7/14] COPY tools/ tools/
+#45 DONE 0.1s
+
+#46 [prover-worker stage-1  8/14] COPY scripts/qualify-device.py scripts/qualify-device.py
+#46 DONE 0.1s
+
+#47 [prover-worker stage-1  9/14] COPY fixtures/ fixtures/
+#47 DONE 0.1s
+
+#48 [prover-worker stage-1 10/14] COPY contracts/ contracts/
+#48 DONE 0.1s
+
+#39 [node-agent build 9/9] RUN CGO_ENABLED=0 GOTOOLCHAIN=local go test ./... && CGO_ENABLED=0 GOTOOLCHAIN=local go build -trimpath -o /out/deproof-node ./cmd/deproof-node
+#39 ...
+
+#49 [prover-worker stage-1 11/14] COPY app/schemas/ app/schemas/
+#49 DONE 0.1s
+
+#50 [prover-worker stage-1 12/14] COPY app/src/main/resources/ app/src/main/resources/
+#50 DONE 0.1s
+
+#51 [prover-worker stage-1 13/14] COPY docker/prover-entrypoint.sh docker/prover-entrypoint.sh
+#51 DONE 0.1s
+
+#52 [prover-worker stage-1 14/14] RUN chown -R 10001:10001 /opt/deproof
+#52 DONE 0.6s
+
+#39 [node-agent build 9/9] RUN CGO_ENABLED=0 GOTOOLCHAIN=local go test ./... && CGO_ENABLED=0 GOTOOLCHAIN=local go build -trimpath -o /out/deproof-node ./cmd/deproof-node
+#39 ...
+
+#53 [prover-worker] exporting to image
+#53 exporting layers
+#53 exporting layers 4.6s done
+#53 exporting manifest sha256:28b9dbb07b8f8ac94d06a9e3067b8cf3a6e2fb762f67ff7b39f3e5642ec59bcd
+#53 exporting manifest sha256:28b9dbb07b8f8ac94d06a9e3067b8cf3a6e2fb762f67ff7b39f3e5642ec59bcd 0.0s done
+#53 exporting config sha256:0b8cd8c82b81d4df822be872c44b813be65698285149404c6780146c5dab6549 0.0s done
+#53 exporting attestation manifest sha256:eb458442b7031932813c5930b1fe9723cb3bfac5285ac25237eaf55b6cf75f54 0.1s done
+#53 exporting manifest list sha256:65ba0dcefa0c3e105e47ff3ace5a5c0b88e3a86c83d6f8b054fe7118a743047d
+#53 exporting manifest list sha256:65ba0dcefa0c3e105e47ff3ace5a5c0b88e3a86c83d6f8b054fe7118a743047d 0.0s done
+#53 naming to docker.io/deproof/prover-worker:local done
+#53 unpacking to docker.io/deproof/prover-worker:local
+#53 unpacking to docker.io/deproof/prover-worker:local 1.9s done
+#53 DONE 6.8s
+
+#39 [node-agent build 9/9] RUN CGO_ENABLED=0 GOTOOLCHAIN=local go test ./... && CGO_ENABLED=0 GOTOOLCHAIN=local go build -trimpath -o /out/deproof-node ./cmd/deproof-node
+#39 ...
+
+#54 [prover-worker] resolving provenance for metadata file
+#54 DONE 0.1s
+
+#39 [node-agent build 9/9] RUN CGO_ENABLED=0 GOTOOLCHAIN=local go test ./... && CGO_ENABLED=0 GOTOOLCHAIN=local go build -trimpath -o /out/deproof-node ./cmd/deproof-node
+#39 30.85 ok  	deproof.local/node-agent/cmd/deproof-node	0.007s
+#39 31.55 ok  	deproof.local/node-agent/internal/agent	0.172s
+#39 DONE 47.1s
+
+#55 [node-agent runtime  5/13] RUN pip install --no-cache-dir -r tools/requirements.txt
+#55 CACHED
+
+#56 [node-agent runtime  4/13] COPY tools/requirements.txt tools/requirements.txt
+#56 CACHED
+
+#57 [node-agent runtime  6/13] COPY --from=build /out/ prover-worker/build/
+#57 DONE 0.1s
+
+#58 [node-agent runtime  7/13] COPY tools/ tools/
+#58 DONE 0.1s
+
+#59 [node-agent runtime  8/13] COPY fixtures/ fixtures/
+#59 DONE 0.0s
+
+#60 [node-agent runtime  9/13] COPY contracts/ contracts/
+#60 DONE 0.1s
+
+#61 [node-agent runtime 10/13] COPY app/schemas/ app/schemas/
+#61 DONE 0.1s
+
+#62 [node-agent runtime 11/13] COPY app/src/main/resources/ app/src/main/resources/
+#62 DONE 0.0s
+
+#63 [node-agent runtime 12/13] COPY docker/node-entrypoint.sh docker/node-entrypoint.sh
+#63 DONE 0.0s
+
+#64 [node-agent runtime 13/13] RUN chown -R 10001:10001 /opt/deproof
+#64 DONE 0.4s
+
+#65 [node-agent] exporting to image
+#65 exporting layers
+#65 exporting layers 2.3s done
+#65 exporting manifest sha256:d47a37b574c3f78bf3eb3981a4edea951dc5b2ee89603f079393cfc4ef5e41e5
+#65 exporting manifest sha256:d47a37b574c3f78bf3eb3981a4edea951dc5b2ee89603f079393cfc4ef5e41e5 0.0s done
+#65 exporting config sha256:67b58ac29cfeb834dd183ef15a6cd34cb5859ac1d0b1f8dbc923a54064dd6b28 0.0s done
+#65 exporting attestation manifest sha256:bb238acbcc1e8be568e60d65c629eb3312cff65c2e504420adca2086ec1137db 0.0s done
+#65 exporting manifest list sha256:79a213c522b49ea58b968cabb1509861796bdfb12d9366e1023a961ee8d08739 0.0s done
+#65 naming to docker.io/deproof/node-agent:local done
+#65 unpacking to docker.io/deproof/node-agent:local
+#65 unpacking to docker.io/deproof/node-agent:local 0.9s done
+#65 DONE 3.4s
+
+#66 [node-agent] resolving provenance for metadata file
+#66 DONE 0.0s
+ Image deproof/web:local Built 
+ Image deproof/node-agent:local Built 
+ Image deproof/prover-worker:local Built 

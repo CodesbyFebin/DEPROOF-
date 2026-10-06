@@ -1,0 +1,9 @@
+app/src/main/java/com/example/domain/ProofJobs.kt:45:46: warning: 'fun fields(): (Mutable)Iterator<(Mutable)Map.(Mutable)Entry<String!, JsonNode!>!>!' is deprecated. Deprecated in Java.
+        val versions=caps["circuitVersions"].fields().asSequence().associate {ensure(it.value.isArray && it.value.all {v->v.isTextual},"BAD_CAPABILITIES");it.key to it.value.map {v->v.asText()}.toSet()}
+                                             ^^^^^^
+JUnit version 4.13.2
+..................................................................
+Time: 3.046
+
+OK (66 tests)
+

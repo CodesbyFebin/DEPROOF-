@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": "deproof-service-profile-v1"
+    },
+    "id": {
+      "type": "string"
+    },
+    "artifactDigest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "runtime": {
+      "type": "string"
+    },
+    "cpuMilli": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)$"
+    },
+    "memoryBytes": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)$"
+    },
+    "pids": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)$"
+    },
+    "diskBytes": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)$"
+    },
+    "network": {
+      "const": "none"
+    },
+    "readOnly": {
+      "const": true
+    },
+    "nonRootUid": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)$"
+    },
+    "hostPorts": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "mounts": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "healthCommand": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "schema",
+    "id",
+    "artifactDigest",
+    "runtime",
+    "cpuMilli",
+    "memoryBytes",
+    "pids",
+    "diskBytes",
+    "network",
+    "readOnly",
+    "nonRootUid",
+    "hostPorts",
+    "mounts",
+    "healthCommand"
+  ]
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.data.BackupRepositoryTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-06T11:39:54.330Z" hostname="Cybertecks-Mac-mini.local" time="15.174">
+  <properties/>
+  <testcase name="laterDatabaseConstraintFailureRollsBackRowsAndRemovesOnlyNewFiles" classname="com.example.data.BackupRepositoryTest" time="7.038"/>
+  <testcase name="authenticatedMalformedRecordOrDigestIsRefusedBeforeAnyWrite" classname="com.example.data.BackupRepositoryTest" time="2.042"/>
+  <testcase name="unknownVersionsAndExtraFieldsAreRejected" classname="com.example.data.BackupRepositoryTest" time="2.021"/>
+  <testcase name="restoredPlansRetainTaskLinkButRemindersStayCancelled" classname="com.example.data.BackupRepositoryTest" time="0.627"/>
+  <testcase name="wrongKeyAndTamperingLeaveExistingRoomRowsAndFilesIntact" classname="com.example.data.BackupRepositoryTest" time="0.894"/>
+  <testcase name="exportRestorePersistsMetadataAssociationsAndExactFileBytes" classname="com.example.data.BackupRepositoryTest" time="0.607"/>
+  <testcase name="actualFileMetadataFactoryRefusesChangedBytesAndMissingTaskWithoutRows" classname="com.example.data.BackupRepositoryTest" time="0.026"/>
+  <testcase name="existingIdsAndFilesAreNeverOverwritten" classname="com.example.data.BackupRepositoryTest" time="0.606"/>
+  <testcase name="exportedScopeExcludesPairingSeedsOperationsAndPermissions" classname="com.example.data.BackupRepositoryTest" time="0.6"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

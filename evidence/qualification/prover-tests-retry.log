@@ -1,0 +1,8 @@
+internal/circuit/cubic.go:5:8: missing go.sum entry for module providing package github.com/consensys/gnark/frontend (imported by deproof.local/prover-worker/cmd/prove); to add:
+	go get deproof.local/prover-worker/cmd/prove
+cmd/prove/main.go:10:2: missing go.sum entry for module providing package github.com/consensys/gnark-crypto/ecc (imported by deproof.local/prover-worker/cmd/prove); to add:
+	go get deproof.local/prover-worker/cmd/prove
+cmd/prove/main.go:11:2: missing go.sum entry for module providing package github.com/consensys/gnark/backend/groth16 (imported by deproof.local/prover-worker/cmd/prove); to add:
+	go get deproof.local/prover-worker/cmd/prove
+cmd/prove/main.go:13:2: missing go.sum entry for module providing package github.com/consensys/gnark/frontend/cs/r1cs (imported by deproof.local/prover-worker/cmd/prove); to add:
+	go get deproof.local/prover-worker/cmd/prove

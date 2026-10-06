@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": "deproof-signed-job-v1"
+    },
+    "payloadBase64": {
+      "type": "string"
+    },
+    "signatureBase64": {
+      "type": "string"
+    },
+    "publicKeyBase64": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema",
+    "payloadBase64",
+    "signatureBase64",
+    "publicKeyBase64"
+  ]
+}

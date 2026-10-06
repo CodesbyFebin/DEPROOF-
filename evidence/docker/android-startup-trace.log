@@ -1,0 +1,33 @@
+ Container deproof-dev-android-build-run-0a2a480434c4 Creating 
+ Container deproof-dev-android-build-run-0a2a480434c4 Created 
++ set -euo pipefail
++ umask 077
+++ date -u +%Y%m%dT%H%M%SZ
++ RUN=20261006T072226Z-7
++ OUT=/export/20261006T072226Z-7
++ mkdir -p /export/20261006T072226Z-7
++ cp -R /source/. /workspace/
++ cd /workspace
++ printf 'sdk.dir=/opt/android-sdk\n'
++ java -version
++ uname -a
++ /opt/android-sdk/cmdline-tools/pinned/bin/sdkmanager --version
+WARNING: The SDK Manager CLI tool (sdkmanager) is deprecated. Use Android CLI instead.
+The 'android' binary can also be found in the cmdline-tools directory, and 'android sdk' is the replacement for 'sdkmanager'.
+To learn more about the Android CLI and how to use it, see the documentation (https://d.android.com/tools/agents/android-cli)
+
++ result=0
++ for task in testDebugUnitTest lintDebug assembleDebug
++ printf 'COMMAND: bash ./gradlew --no-daemon --max-workers=2 %s --stacktrace\n' testDebugUnitTest
++ bash ./gradlew --no-daemon --max-workers=2 testDebugUnitTest --stacktrace
++ printf '%s FAIL\n' testDebugUnitTest
++ result=1
++ break
++ test -d app/build/reports
++ test -d app/build/test-results
++ test 1 = 0
++ result=1
++ printf 'Android container build exit: %s; artifacts: %s\n' 1 /export/20261006T072226Z-7
++ exit 1
+Android container build exit: 1; artifacts: /export/20261006T072226Z-7
+

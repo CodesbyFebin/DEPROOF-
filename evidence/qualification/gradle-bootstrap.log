@@ -1,0 +1,49 @@
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Gradle could not start your build.
+> Could not initialize native services.
+   > Failed to load native library 'libnative-platform.dylib' for Mac OS X x86_64.
+
+* Try:
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+* Exception is:
+org.gradle.initialization.exception.InitializationException: Gradle could not start your build.
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:49)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:26)
+	at org.gradle.launcher.cli.DefaultCommandLineActionFactory$WithLogging.execute(DefaultCommandLineActionFactory.java:489)
+	at org.gradle.launcher.Main.doAction(Main.java:35)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:72)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:39)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:26)
+Caused by: org.gradle.internal.service.ServiceCreationException: Could not initialize native services.
+	at org.gradle.internal.nativeintegration.services.NativeServices.initialize(NativeServices.java:284)
+	at org.gradle.internal.nativeintegration.services.NativeServices.initializeOnClient(NativeServices.java:253)
+	at org.gradle.launcher.cli.NativeServicesInitializingAction.execute(NativeServicesInitializingAction.java:48)
+	at org.gradle.launcher.cli.NativeServicesInitializingAction.execute(NativeServicesInitializingAction.java:27)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:41)
+	... 11 more
+Caused by: net.rubygrapefruit.platform.NativeException: Failed to load native library 'libnative-platform.dylib' for Mac OS X x86_64.
+	at net.rubygrapefruit.platform.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:67)
+	at net.rubygrapefruit.platform.Native.init(Native.java:60)
+	at org.gradle.internal.nativeintegration.services.NativeServices.<init>(NativeServices.java:303)
+	at org.gradle.internal.nativeintegration.services.NativeServices.initialize(NativeServices.java:282)
+	... 15 more
+Caused by: java.io.FileNotFoundException: /Users/cyberteck/.gradle/native/660c5614fbf4a5f2a75b1949f50a0caf5cd603558e7d8a26e50b933a0cfb79d1/osx-amd64/libnative-platform.dylib.lock (Operation not permitted)
+	at java.base/java.io.RandomAccessFile.open0(Native Method)
+	at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:344)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:259)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:213)
+	at net.rubygrapefruit.platform.internal.NativeLibraryLocator.find(NativeLibraryLocator.java:47)
+	at net.rubygrapefruit.platform.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:45)
+	... 18 more
+

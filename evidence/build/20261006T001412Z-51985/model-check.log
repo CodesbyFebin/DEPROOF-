@@ -1,0 +1,20 @@
+Reading additional input from stdin...
+OpenAI Codex v0.160.1
+--------
+workdir: /Users/cyberteck/DEPROOF-/DEPROOF-build
+model: gpt-6.1-sol
+provider: openai
+approval: never
+sandbox: read-only
+reasoning effort: low
+reasoning summaries: none
+session id: 01a10e8f-921c-7830-b34c-bd766373c6a2
+--------
+user
+Reply with exactly DEPROOF_MODEL_OK. Do not use tools.
+warning: Exceeded skills context budget. All skill descriptions were removed and 56 additional skills were not included in the model-visible skills list.
+codex
+DEPROOF_MODEL_OK
+tokens used
+13,712
+DEPROOF_MODEL_OK

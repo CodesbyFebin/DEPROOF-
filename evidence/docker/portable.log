@@ -1,0 +1,73 @@
+ Volume deproof-dev_prover_state Creating 
+ Volume deproof-dev_prover_state Creating 
+ Volume deproof-dev_prover_state Created 
+ Volume deproof-dev_prover_state Created 
+ Container deproof-dev-prover-worker-run-3713dab06edd Creating 
+ Container deproof-dev-prover-worker-run-3713dab06edd Created 
+E......EE
+======================================================================
+ERROR: test_bundle (unittest.loader._FailedTest.test_bundle)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_bundle
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/local/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1022, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1159, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1217, in get_data
+PermissionError: [Errno 13] Permission denied: '/opt/deproof/tools/test_bundle.py'
+
+
+======================================================================
+ERROR: test_proof_jobs (unittest.loader._FailedTest.test_proof_jobs)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_proof_jobs
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/local/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/opt/deproof/tools/test_proof_jobs.py", line 4, in <module>
+    from proof_jobs import validate
+  File "/opt/deproof/tools/proof_jobs.py", line 8, in <module>
+    from verify import canonical,load,digest,b64,require
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1022, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1159, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1217, in get_data
+PermissionError: [Errno 13] Permission denied: '/opt/deproof/tools/verify.py'
+
+
+======================================================================
+ERROR: test_verifier (unittest.loader._FailedTest.test_verifier)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_verifier
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/local/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1022, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1159, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1217, in get_data
+PermissionError: [Errno 13] Permission denied: '/opt/deproof/tools/test_verifier.py'
+
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.012s
+
+FAILED (errors=3)
+

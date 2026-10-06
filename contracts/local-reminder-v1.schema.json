@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "taskId",
+    "generation",
+    "title",
+    "state",
+    "dueAt",
+    "updatedAt",
+    "schema"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "taskId": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "generation": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "state": {
+      "enum": [
+        "PENDING",
+        "SCHEDULED",
+        "POST_REQUESTED",
+        "PERMISSION_DENIED",
+        "CANCELLED",
+        "EXPIRED",
+        "SCHEDULE_FAILED"
+      ]
+    },
+    "dueAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "schema": {
+      "const": "deproof-local-reminder-v1"
+    }
+  }
+}

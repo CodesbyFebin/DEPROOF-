@@ -1,0 +1,215 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "deproof-portable-records-v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "tasks",
+    "attachments",
+    "events",
+    "observations",
+    "drafts",
+    "contributions",
+    "files"
+  ],
+  "properties": {
+    "schema": {
+      "const": "deproof-portable-records-v1"
+    },
+    "tasks": {
+      "type": "array",
+      "maxItems": 10000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "title",
+          "note",
+          "checklist",
+          "createdAt"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          },
+          "checklist": {
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "attachments": {
+      "type": "array",
+      "maxItems": 10000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "taskId",
+          "digest",
+          "mime",
+          "size",
+          "provenance",
+          "createdAt"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "taskId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "digest": {
+            "type": "string"
+          },
+          "mime": {
+            "type": "string"
+          },
+          "size": {
+            "type": "string"
+          },
+          "provenance": {
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "events": {
+      "type": "array",
+      "maxItems": 10000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "createdAt",
+          "kind",
+          "payload"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string"
+          },
+          "payload": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "observations": {
+      "type": "array",
+      "maxItems": 10000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "eventId",
+          "observedAt",
+          "payload"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "eventId": {
+            "type": "string"
+          },
+          "observedAt": {
+            "type": "string"
+          },
+          "payload": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "drafts": {
+      "type": "array",
+      "maxItems": 10000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "payload",
+          "updatedAt"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "payload": {
+            "type": "string"
+          },
+          "updatedAt": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "contributions": {
+      "type": "array",
+      "maxItems": 10000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "nodeFingerprint",
+          "createdAt",
+          "payload"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "nodeFingerprint": {
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "string"
+          },
+          "payload": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "files": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+      },
+      "additionalProperties": {
+        "type": "string",
+        "contentEncoding": "base64"
+      }
+    }
+  },
+  "description": "Authenticated DPBK v1 plaintext. Runtime additionally validates inner receipt/draft/signature schemas, foreign-key linkage, unique IDs, exact raw file sizes/digests and additive restore conflicts."
+}

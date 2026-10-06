@@ -1,0 +1,609 @@
+{
+  "count": 86,
+  "base": [
+    {
+      "id": "FN001",
+      "definition": "`isPubkey(input)` \u2014 true only for a valid 32-byte base58 public key.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN002",
+      "definition": "`formatSol(lamports)` \u2014 exact plain decimal SOL formatting.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN003",
+      "definition": "`formatSkr(rawAmount)` \u2014 exact formatting using verified SKR decimals.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN004",
+      "definition": "`loadAccount(address)` \u2014 independent balance results and paginated activity context.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN005",
+      "definition": "`rankInstruction(ix)` \u2014 presentation order; never an authorization shortcut.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN006",
+      "definition": "`toRequest(transaction)` \u2014 complete typed review request or named unsupported result.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN007",
+      "definition": "`materialize(parsed)` \u2014 validated program, account roles, and instruction bytes.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN008",
+      "definition": "`decodeInstruction(ix)` \u2014 typed operation or explicit unsupported verdict.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN009",
+      "definition": "`readU64LE(bytes, offset)` \u2014 unsigned integer with bounds checks.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN010",
+      "definition": "`readU32LE(bytes, offset)` \u2014 unsigned discriminator with bounds checks.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN011",
+      "definition": "`transferCheckedData(amount, decimals)` \u2014 exact ten-byte encoding with range validation.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN012",
+      "definition": "`canonicalMessage(request)` \u2014 constrained deproof-review-v1 card text for compatibility; use serializedMessageBytes(tx) for full Solana authorization bytes. Never conflate the two.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN013",
+      "definition": "`sha256Text(text)` \u2014 SHA-256 of documented UTF-8 bytes.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN014",
+      "definition": "`sha256Hex(bytes)` \u2014 lowercase digest of raw bytes.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN015",
+      "definition": "`tamperAmount(request)` \u2014 test-only negative-control mutation.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN016",
+      "definition": "`assertUnchanged(current, review)` \u2014 message and context equality checks.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN017",
+      "definition": "`canSign(review, session, context)` \u2014 full UI approval predicate including policy, unchanged bytes/context, account/cluster, blockhash, fee and prior-devnet gate; no safety guarantee.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN018",
+      "definition": "`verdictOf(decoded)` \u2014 understandable title, reason, and severity.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN019",
+      "definition": "`summaryOf(request)` \u2014 amount, asset, recipient, operation, and limitations.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN020",
+      "definition": "`shortKey(key)` \u2014 display abbreviation with full-value access.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN021",
+      "definition": "`formatAmount(raw, decimals)` \u2014 exact arbitrary-decimal formatting.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN022",
+      "definition": "`observeSettlement(signature, cluster)` \u2014 observed state or unavailable error.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN023",
+      "definition": "`getSkrRawBalance(address)` \u2014 verified token-account aggregation.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN024",
+      "definition": "`signDevnetMemo(wallet, memo)` \u2014 reviewed real signing, returned-byte validation, RPC submission and matched signature; return explicit wallet rejection/capability/RPC errors. Never silently sign-and-send.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN025",
+      "definition": "`latestDevnetBlockhash()` \u2014 blockhash plus last-valid block height.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN026",
+      "definition": "`connect()` \u2014 real authorized wallet session.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN027",
+      "definition": "`disconnect()` \u2014 session invalidation and explicit failure handling.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN028",
+      "definition": "`saveObservation(record)` \u2014 preserve chain provenance and review integrity.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN029",
+      "definition": "`reject(request)` \u2014 local refusal record with null transaction signature.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN030",
+      "definition": "`copyReceipt(receipt)` \u2014 clipboard export with accessible fallback.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN031",
+      "definition": "`canonicalEvidence(evidence)` \u2014 deproof-evidence-v2 JCS manifest bytes with exact note preservation and golden vectors.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN032",
+      "definition": "`sha256File(uriOrPath)` \u2014 streaming raw-byte hashing.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN033",
+      "definition": "`signHash(digest)` \u2014 legacy-digest-bytes-v1 only: SHA256withECDSA over 32 raw digest bytes, DER/SPKI and observed hardware metadata; reject wrong size/software keys. New records use FN062.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN034",
+      "definition": "`verifyLocalSignature(payload)` \u2014 independent signature validation.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN035",
+      "definition": "`statusLabel(state)` \u2014 text and severity without relying only on color.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN036",
+      "definition": "`cooldownRemaining(timerSource, clock)` \u2014 validated protocol timing or explicitly labeled illustrative timing; never withdrawal authorization; clamp elapsed to zero, reject invalid/future starts per documented policy.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN037",
+      "definition": "`selectCluster(action)` \u2014 explicit compatible cluster or rejection.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN038",
+      "definition": "`refuseUndecoded(ix)` \u2014 named refusal without invented amounts.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN039",
+      "definition": "`prepareReview(tx, account, cluster)` \u2014 immutable complete-message review binding.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN040",
+      "definition": "`exportReceipt(receipt)` \u2014 schema-valid portable record.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN041",
+      "definition": "`parseTransaction(bytes)` \u2014 strict legacy/versioned transaction parsing.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN042",
+      "definition": "`resolveLookupTables(message)` \u2014 verified address resolution or refusal.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN043",
+      "definition": "`evaluateAllInstructions(tx, policy)` \u2014 whole-transaction policy result.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN044",
+      "definition": "`simulateTransaction(tx)` \u2014 simulation context, errors, and limitations.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN045",
+      "definition": "`estimateFee(message)` \u2014 live fee estimate with context.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN046",
+      "definition": "`validateTokenAccount(account, expected)` \u2014 mint, owner, role, and state checks.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN047",
+      "definition": "`buildSkrTransfer(parameters)` \u2014 exact verified transaction construction.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN048",
+      "definition": "`rebuildExpiredTransaction(previous)` \u2014 new draft that invalidates previous approval.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN049",
+      "definition": "`submitSignedTransaction(bytes)` \u2014 broadcast signature and submission context.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN050",
+      "definition": "`validateReturnedTransaction(review, signedBytes)` \u2014 identical reviewed message check.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN051",
+      "definition": "`createTask(input)` \u2014 validated persisted task.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN052",
+      "definition": "`attachEvidence(taskId, file)` \u2014 file metadata, digest, and association.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN053",
+      "definition": "`verifyManifest(manifest, files)` \u2014 independent manifest integrity report.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN054",
+      "definition": "`createReceipt(event)` \u2014 outcome-specific receipt without invented fields.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN055",
+      "definition": "`refreshReceiptStatus(id)` \u2014 bounded status observation and persistence.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN056",
+      "definition": "`verifyStakingProtocol(source)` \u2014 validated interface metadata and fixtures.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN057",
+      "definition": "`decodeSkrStake(ix, verifiedInterface)` \u2014 supported operation or refusal.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN058",
+      "definition": "`computeWithdrawEligibility(state)` \u2014 protocol-derived decision.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN059",
+      "definition": "`runConnector(connectorId, request)` \u2014 attributable adapter result with freshness.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN060",
+      "definition": "`exportQualificationReport(results)` \u2014 machine-readable gates and artifact digests.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN061",
+      "definition": "`explainPacket(packet, consent, providerConfig)` \u2014 optional consented explanation or NOT_CONFIGURED/GROK_NOT_CALLED/PROVIDER_ERROR; never changes authorization. Provider integration is staged, not a core network dependency.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "FN062",
+      "definition": "`signEvidenceEnvelope(envelopeBytes)` \u2014 default v2 SHA256withECDSA signature over exact domain-separated envelope bytes; DER/SPKI, security-level observation and independently verifiable payload. SOFTWARE_KEY/NO_KEYSTORE/UNQUALIFIED_KEY are explicit failures.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    }
+  ],
+  "ecosystem": [
+    {
+      "id": "EF001",
+      "contract": "createNodeIdentity(config)",
+      "behavior": "Protected identity/public metadata; entropy/key storage failure",
+      "status": "NOT_STARTED",
+      "evidencePaths": []
+    },
+    {
+      "id": "EF002",
+      "contract": "pairNode(challenge, fingerprint, consent)",
+      "behavior": "Scoped authenticated session; expired/replayed/unapproved peer",
+      "status": "NOT_STARTED",
+      "evidencePaths": []
+    },
+    {
+      "id": "EF003",
+      "contract": "revokeNodeSession(sessionId)",
+      "behavior": "Persisted revocation and denied subsequent operations",
+      "status": "NOT_STARTED",
+      "evidencePaths": []
+    },
+    {
+      "id": "EF004",
+      "contract": "probeNodeCapabilities()",
+      "behavior": "Observed host/runtime limits and timestamp; unsupported/unknown values explicit",
+      "status": "NOT_STARTED",
+      "evidencePaths": []
+    },
+    {
+      "id": "EF005",
+      "contract": "validateServiceProfile(profile, policy)",
+      "behavior": "Qualified immutable profile or denied reason",
+      "status": "NOT_STARTED",
+      "evidencePaths": []
+    },
+    {
+      "id": "EF006",
+      "contract": "startLocalService(profile, operationId)",
+      "behavior": "Accepted operation ID then actual observed process state; resource/runtime/port failures",
+      "status": "NOT_STARTED",
+      "evidencePaths": []
+    },
+    {
+      "id": "EF007",
+      "contract": "stopLocalService(serviceId, operationId)",
+      "behavior": "Observed termination or timed-out failure; no premature Stopped badge",
+      "status": "NOT_STARTED",
+      "evidencePaths": []
+    },
+    {
+      "id": "EF008",
+      "contract": "observeNodeHealth(nodeId)",
+      "behavior": "Probe results/uptime intervals with freshness and gaps",
+      "status": "NOT_STARTED",
+      "evidencePaths": []
+    },
+    {
+      "id": "EF009",
+      "contract": "establishPeerTunnel(peer, routes, consent)",
+      "behavior": "Authenticated measured connectivity; revoked/NAT/unavailable errors",
+      "status": "NOT_STARTED",
+      "evidencePaths": []
+    },
+    {
+      "id": "EF010",
+      "contract": "setBandwidthConsent(profile, limits)",
+      "behavior": "Persisted explicit scope and cap policy; denied endpoint/unsupported provider",
+      "status": "NOT_STARTED",
+      "evidencePaths": []
+    },
+    {
+      "id": "EF011",
+      "contract": "startContributionFlow(profile)",
+      "behavior": "Actual restricted contribution session or named capability failure",
+      "status": "NOT_STARTED",
+      "evidencePaths": []
+    },
+    {
+      "id": "EF012",
+      "contract": "stopContributionFlow(sessionId)",
+      "behavior": "Flow termination and final counters; stop timeout explicit",
+      "status": "NOT_STARTED",
+      "evidencePaths": []
+    },
+    {
+      "id": "EF013",
+      "contract": "measureContribution(sessionId, interval)",
+      "behavior": "Raw sourced counters/units/sequence; gaps/counter reset handled",
+      "status": "NOT_STARTED",
+      "evidencePaths": []
+    },
+    {
+      "id": "EF014",
+      "contract": "enforceTrafficQuota(sessionId, counters)",
+      "behavior": "Applied pause/rate/cap decision; cannot enforce means sharing refuses",
+      "status": "NOT_STARTED",
+      "evidencePaths": []
+    },
+    {
+      "id": "EF015",
+      "contract": "signUsageReceipt(meteringEnvelope)",
+      "behavior": "Domain-separated node signature plus exact payload/public key",
+      "status": "NOT_STARTED",
+      "evidencePaths": []
+    },
+    {
+      "id": "EF016",
+      "contract": "verifyUsageReceipt(receipt, peerEvidence)",
+      "behavior": "Integrity, replay/freshness and corroboration report; no automatic measurement-truth claim",
+      "status": "NOT_STARTED",
+      "evidencePaths": []
+    },
+    {
+      "id": "EF017",
+      "contract": "reconcilePayouts(providerLedger, chainObservations)",
+      "behavior": "Accrued/claimable/paid discrepancies, asset/cluster/time; unsupported reward protocol blocked",
+      "status": "NOT_STARTED",
+      "evidencePaths": []
+    },
+    {
+      "id": "EF018",
+      "contract": "discoverProofJobs(adapter, cursor)",
+      "behavior": "Signed validated bounded jobs with source/freshness",
+      "status": "NOT_STARTED",
+      "evidencePaths": []
+    },
+    {
+      "id": "EF019",
+      "contract": "matchProofJob(job, capabilities)",
+      "behavior": "Compatible backend/resource profile or explicit mismatch",
+      "status": "NOT_STARTED",
+      "evidencePaths": []
+    },
+    {
+      "id": "EF020",
+      "contract": "executeProofJob(job, approvedInputs)",
+      "behavior": "Actual bounded proof/result and execution events; cancellation/deadline/backend failures",
+      "status": "NOT_STARTED",
+      "evidencePaths": []
+    },
+    {
+      "id": "EF021",
+      "contract": "verifyProofResult(result, publicInputs, verificationKey)",
+      "behavior": "Independent valid/invalid/unsupported verification report",
+      "status": "NOT_STARTED",
+      "evidencePaths": []
+    },
+    {
+      "id": "EF022",
+      "contract": "createContributionReceipt(job, metering, verification)",
+      "behavior": "Immutable schema-valid provenance with explicit assurance levels",
+      "status": "NOT_STARTED",
+      "evidencePaths": []
+    },
+    {
+      "id": "EF023",
+      "contract": "exportVerificationBundle(receipts, publicArtifacts)",
+      "behavior": "Portable offline-verifiable package, manifest/checksums, sensitive-data minimization",
+      "status": "NOT_STARTED",
+      "evidencePaths": []
+    },
+    {
+      "id": "EF024",
+      "contract": "runEcosystemQualification(matrix)",
+      "behavior": "Per-host/provider/backend gates, local/external distinction, named blockers and evidence",
+      "status": "NOT_STARTED",
+      "evidencePaths": []
+    }
+  ]
+}

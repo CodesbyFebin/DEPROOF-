@@ -1,0 +1,28 @@
+{
+  "schema": "deproof-qualification-provenance-v1",
+  "recordedAt": "2026-10-06T09:45:06.985223+00:00",
+  "testedBaseCommit": "56092ff84ae89b68f497094c44d34a7a126c4f24",
+  "sourceBefore": "evidence/qualification/source-before.json",
+  "sourceAfter": "evidence/qualification/source-after.json",
+  "sourceSetBefore": "8369472f3a07b92166a6697fe7641cc689e384085f90b6fcf67dc55794255a49",
+  "sourceSetAfter": "322be1aa989ac33ba8dd6eddb76c91056bdfc80a9e629094f9206783418d5f12",
+  "changedInputs": [
+    "docs/status.md",
+    "web/delivery/evidence/qualification/artifact-checksums.txt",
+    "web/delivery/evidence/qualification/implementation-status.json",
+    "web/delivery/evidence/qualification/qualification-report.md"
+  ],
+  "applicationAndTestSourceStable": true,
+  "generatedChangesOnly": true,
+  "artifacts": {
+    "app/build/outputs/apk/debug/app-debug.apk": "64cd7d377a33385156013c61c61528ac7a5f07690fe7d340d19eeafd5ce72ab2",
+    "evidence/qualification/deproof-source-snapshot.zip": "90823f39b8b38f336adb125146fb2b8c1ec46841e021bfe64b09e4f79eee07b8",
+    "gradle/wrapper/gradle-wrapper.jar": "b3a875ddc1f044746e1b1a55f645584505f4a10438c1afea9f15e92a7c42ec13"
+  },
+  "gatesPassed": 15,
+  "registryEntries": 336,
+  "unresolvedCount": 281,
+  "deviceExternalGatesPromoted": false,
+  "competingBuildsStoppedBeforeHashing": true,
+  "sourceIdentity": "Working tree plus manifests, not base commit alone."
+}

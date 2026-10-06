@@ -1,0 +1,175 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Warning: SDK processing. This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times.
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:processDebugNavigationResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:generateDebugRFile UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:compressDebugAssets UP-TO-DATE
+> Task :app:l8DexDesugarLibDebug UP-TO-DATE
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:compileDebugNavigationResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+
+> Task :app:processDebugMainManifest
+[com.solanamobile:mobile-wallet-adapter-clientlib-ktx:2.0.7] /Users/cyberteck/.gradle/caches/9.3.1/transforms/c693ab403302e3ea2f92fe7501f4df4e/transformed/mobile-wallet-adapter-clientlib-ktx-2.0.7/AndroidManifest.xml Warning:
+	Namespace 'com.solana.mobilewalletadapter.clientlib' is used in multiple modules and/or libraries: com.solanamobile:mobile-wallet-adapter-clientlib-ktx:2.0.7, com.solanamobile:mobile-wallet-adapter-clientlib:2.0.7. Please ensure that all modules and libraries have a unique namespace. For more information, See https://developer.android.com/studio/build/configure-app-module#set-namespace
+
+> Task :app:processDebugManifest
+> Task :app:processDebugManifestForPackage
+> Task :app:kspDebugKotlin
+> Task :app:compileDebugKotlin UP-TO-DATE
+> Task :app:processDebugResources
+> Task :app:compileDebugJavaWithJavac
+> Task :app:dexBuilderDebug
+> Task :app:mergeDebugGlobalSynthetics
+> Task :app:processDebugJavaRes
+> Task :app:checkDebugDuplicateClasses
+> Task :app:mergeDebugJavaResource
+> Task :app:mergeLibDexDebug
+> Task :app:mergeExtDexDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :app:mergeProjectDexDebug
+> Task :app:mergeDebugNativeLibs
+> Task :app:validateSigningDebug
+> Task :app:writeDebugAppMetadata
+
+> Task :app:stripDebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so, libdatastore_shared_counter.so. Run with --info option to learn more.
+
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:bundleDebugClassesToRuntimeJar
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:assembleDebug
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:kspDebugUnitTestKotlin
+> Task :app:generateDebugAndroidTestLintModel
+> Task :app:extractProguardFiles
+> Task :app:generateDebugLintReportModel
+> Task :app:generateDebugUnitTestLintModel
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:lintAnalyzeDebug
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processDebugUnitTestJavaRes
+> Task :app:testDebugUnitTest
+> Task :app:lintAnalyzeDebugAndroidTest
+> Task :app:lintAnalyzeDebugUnitTest
+
+> Task :app:lintReportDebug
+Wrote HTML report to file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/build/reports/lint-results-debug.html
+Lint found 1 error, 13 warnings and 1 hint. First failure:
+/Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/data/EvidenceSigner.kt:21: Error: Exception requires API level 28 (current min is 24): android.security.keystore.StrongBoxUnavailableException [NewApi]
+            try { generate(Build.VERSION.SDK_INT >= 28) } catch(e: StrongBoxUnavailableException) { generate(false) }
+                                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+> Task :app:lintDebug FAILED
+Lint found 1 error, 13 warnings, 1 hint. First failure:
+
+/Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/data/EvidenceSigner.kt:21: Error: Exception requires API level 28 (current min is 24): android.security.keystore.StrongBoxUnavailableException [NewApi]
+            try { generate(Build.VERSION.SDK_INT >= 28) } catch(e: StrongBoxUnavailableException) { generate(false) }
+                                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "NewApi":
+   This check scans through all the Android API calls in the application and
+   warns about any calls that are not available on all versions targeted by
+   this application (according to its minimum SDK attribute in the manifest).
+
+   If you really want to use this API and don't need to support older devices
+   just set the minSdkVersion in your build.gradle or AndroidManifest.xml
+   files.
+
+   If your code is deliberately accessing newer APIs, and you have ensured
+   (e.g. with conditional execution) that this code will only ever be called
+   on a supported platform, then you can annotate your class or method with
+   the @TargetApi annotation specifying the local minimum SDK to apply, such
+   as @TargetApi(11), such that this check considers 11 rather than your
+   manifest file's minimum SDK as the required API level.
+
+   If you are deliberately setting android: attributes in style definitions,
+   make sure you place this in a values-vNN folder in order to avoid running
+   into runtime conflicts on certain devices where manufacturers have added
+   custom attributes whose ids conflict with the new ones on later platforms.
+
+   Similarly, you can use tools:targetApi="11" in an XML file to indicate that
+   the element will only be inflated in an adequate context.
+
+
+The full lint text report is located at:
+  /Users/cyberteck/DEPROOF-/DEPROOF-build/app/build/intermediates/lint_intermediate_text_report/debug/lintReportDebug/lint-results-debug.txt
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:lintDebug'.
+> Lint found errors in the project; aborting build.
+  
+  Fix the issues identified by lint, or create a baseline to see only new errors.
+  To create a baseline, run `gradlew updateLintBaseline` after adding the following to the module's build.gradle file:
+  ```
+  android {
+      lint {
+          baseline = file("lint-baseline.xml")
+      }
+  }
+  ```
+  For more details, see https://developer.android.com/studio/write/lint#snapshot
+  
+  Lint found 1 error, 13 warnings, 1 hint. First failure:
+  
+  /Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/data/EvidenceSigner.kt:21: Error: Exception requires API level 28 (current min is 24): android.security.keystore.StrongBoxUnavailableException [NewApi]
+              try { generate(Build.VERSION.SDK_INT >= 28) } catch(e: StrongBoxUnavailableException) { generate(false) }
+                                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  
+     Explanation for issues of type "NewApi":
+     This check scans through all the Android API calls in the application and
+     warns about any calls that are not available on all versions targeted by
+     this application (according to its minimum SDK attribute in the manifest).
+  
+     If you really want to use this API and don't need to support older devices
+     just set the minSdkVersion in your build.gradle or AndroidManifest.xml
+     files.
+  
+     If your code is deliberately accessing newer APIs, and you have ensured
+     (e.g. with conditional execution) that this code will only ever be called
+     on a supported platform, then you can annotate your class or method with
+     the @TargetApi annotation specifying the local minimum SDK to apply, such
+     as @TargetApi(11), such that this check considers 11 rather than your
+     manifest file's minimum SDK as the required API level.
+  
+     If you are deliberately setting android: attributes in style definitions,
+     make sure you place this in a values-vNN folder in order to avoid running
+     into runtime conflicts on certain devices where manufacturers have added
+     custom attributes whose ids conflict with the new ones on later platforms.
+  
+     Similarly, you can use tools:targetApi="11" in an XML file to indicate that
+     the element will only be inflated in an adequate context.
+  
+  
+  The full lint text report is located at:
+    /Users/cyberteck/DEPROOF-/DEPROOF-build/app/build/intermediates/lint_intermediate_text_report/debug/lintReportDebug/lint-results-debug.txt
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 3m 27s
+56 actionable tasks: 38 executed, 18 up-to-date

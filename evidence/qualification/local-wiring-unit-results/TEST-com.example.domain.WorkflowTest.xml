@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.domain.WorkflowTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-06T10:58:58.772Z" hostname="Cybertecks-Mac-mini.local" time="0.025">
+  <properties/>
+  <testcase name="crossLanguageOptionalLocationVectorAndMutation" classname="com.example.domain.WorkflowTest" time="0.011"/>
+  <testcase name="reminderConsentPermissionClockAndReplacement" classname="com.example.domain.WorkflowTest" time="0.004"/>
+  <testcase name="offlineMappingPlanRoundTripAndBounds" classname="com.example.domain.WorkflowTest" time="0.006"/>
+  <testcase name="locationConsentDenialAndProvenance" classname="com.example.domain.WorkflowTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

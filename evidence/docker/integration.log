@@ -1,0 +1,2 @@
+PASS: compose_config_valid
+FAIL: TypeError: '>' not supported between instances of 'str' and 'int'

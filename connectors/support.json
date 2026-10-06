@@ -1,0 +1,11 @@
+{
+ "schema":"deproof-connector-support-v1",
+ "adapters":[
+  {"id":"solana-rpc","status":"IMPLEMENTED_UNVERIFIED","source":"app/src/main/java/com/example/data/Rpc.kt","blocker":"Live genesis/mint/account/status observations absent"},
+  {"id":"solana-mwa","version":"2.0.7","status":"IMPLEMENTED_UNVERIFIED","source":"app/src/main/java/com/example/wallet/Wallet.kt","blocker":"Pinned artifact compilation and real signed-byte device flow absent"},
+  {"id":"skr-staking","status":"BLOCKED","blocker":"Versioned verified IDL/layout/state semantics not available"},
+  {"id":"external-bandwidth","status":"BLOCKED","blocker":"Provider consent/counter/acknowledgment/payout interface unqualified"},
+  {"id":"external-prover-network","status":"BLOCKED","blocker":"Signed external job protocol/membership/settlement unqualified"},
+  {"id":"local-gnark-cubic","version":"0.14.0","status":"BLOCKED","source":"prover-worker/","blocker":"Pinned dependency download fails DNS; no generated proof/key/digests"}
+ ]
+}

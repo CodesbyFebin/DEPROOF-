@@ -1,0 +1,8 @@
+{"gate": "core-tests", "exitCode": 0, "log": "evidence/qualification/core-tests.log", "command": ["python3", "scripts/qualify-core.py"], "ranAt": "2026-10-06T00:44:00.170677+00:00"}
+{"gate": "node-tests", "exitCode": 0, "log": "evidence/qualification/node-tests.log", "command": ["scripts/qualify-node.sh"], "ranAt": "2026-10-06T00:44:03.785665+00:00"}
+{"gate": "verifier-tests", "exitCode": 0, "log": "evidence/qualification/verifier-tests.log", "command": ["python3", "-m", "unittest", "discover", "-s", "tools", "-p", "test_*.py"], "ranAt": "2026-10-06T00:44:04.156609+00:00"}
+{"gate": "android-build", "exitCode": 1, "log": "evidence/qualification/android-build.log", "command": ["scripts/qualify-android.sh"], "ranAt": "2026-10-06T00:44:04.373938+00:00"}
+{"gate": "prover-tests", "exitCode": 1, "log": "evidence/qualification/prover-tests.log", "command": ["scripts/qualify-prover.sh"], "ranAt": "2026-10-06T00:44:04.475089+00:00"}
+{"gate": "registry-checks", "exitCode": 0, "log": "evidence/qualification/registry-checks.log", "command": ["python3", "scripts/check-registries.py"], "ranAt": "2026-10-06T00:44:04.703969+00:00"}
+{"gate": "web-build", "exitCode": 0, "log": "evidence/qualification/web-build.log", "command": ["python3", "scripts/build-web.py"], "ranAt": "2026-10-06T00:44:04.860940+00:00"}
+{"gate": "web-checks", "exitCode": 0, "log": "evidence/qualification/web-checks.log", "command": ["python3", "scripts/qualify-web.py"], "ranAt": "2026-10-06T00:44:05.973291+00:00"}

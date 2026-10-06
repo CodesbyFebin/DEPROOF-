@@ -1,0 +1,903 @@
+{
+  "schema": "deproof-localization-v1",
+  "checkedAt": "2026-10-06T12:52:24.866378+00:00",
+  "status": "PASS",
+  "supportedInterfaceCatalogs": [
+    "en",
+    "es"
+  ],
+  "stringCount": 212,
+  "checks": [
+    {
+      "id": "app/src/main/res/values/strings.xml_unique_ids",
+      "status": "PASS"
+    },
+    {
+      "id": "app/src/main/res/values-es/strings.xml_unique_ids",
+      "status": "PASS"
+    },
+    {
+      "id": "complete_declared_catalog_ids",
+      "status": "PASS"
+    },
+    {
+      "id": "reminder_channel_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "reminder_notification_title_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "reminder_notification_body_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_03867aea70ac_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_04a27e1e5c8c_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_07645834b06d_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_0d45a9b6852c_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_0f0c0c6e215e_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_0f765c1d1f18_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_10dac3fc86e1_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_11622e0f259d_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_11cdcb68c591_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_1295cc77a781_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_12f5cea86252_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_13326cace603_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_13d896ddd934_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_19766ed6ccb2_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_199875b36a89_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_1a0ffbf84254_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_1c2ff3922876_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_1c3c3c6cc7e7_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_1def9b637d1a_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_211a60331d01_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_23e271c3be3f_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_26700a6bfc51_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_28740dbb46f8_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_29296c07a5ba_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_2d9223c2a64c_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_2d985bcd1633_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_2fa6b828e5fd_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_326bdd385465_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_395e596e55db_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_3988f525a687_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_42e9b1466285_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_447fd6dfcc39_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_4557a8e579d5_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_455fc3345560_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_45ffa1cdb735_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_46c6f1dea7e9_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_4768777917c2_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_482c300c5ab9_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_48a010281107_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_48f37e0a293b_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_4d0260e6c3e7_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_4e103a16cfc9_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_4e5e269808be_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_506b681fa9b8_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_5395a99dcfc6_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_53abd2e69946_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_54a7473a6c5b_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_55aac025cbb7_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_5df379fab397_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_5ee9bd60fe92_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_60a627df404a_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_60cd63aa91fc_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_6226def29190_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_65afa8deec49_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_667a0f71f42c_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_66962f72a088_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_682d5b670f85_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_690d2f63efbe_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_6c5c7f43f92f_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_6efa387632b5_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_6f541e1b2531_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_6f7e112ecce0_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_7126a7aee903_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_72ef303be147_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_744512146c1b_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_75efd228febb_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_76d656badda6_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_7a8d5ef5fd94_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_7b1f118169bc_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_7b436823cbeb_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_7cfb47e027b0_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_7d8ab368210c_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_7dcf0e4e47e7_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_7e1b0d5641f2_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_7e6fbce38c27_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_7fb47c90e2b1_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_81ddc8d248b2_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_824ca255db35_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_83189e704c76_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_832c8de7d27e_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_86ac8a3d5af7_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_8831ba432de4_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_8bd3fb29b56a_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_8fe371b8e097_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_90920d93e2c7_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_9146c7bd4d51_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_92b4d72b24b0_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_92d57bed6f28_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_93c9988a4175_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_96955eb51a57_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_9842d107db35_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_987b6b55442d_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_99002b892711_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_9a9c0cd94b3e_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_9bda5fc4d160_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_a02b7dcc0922_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_a0991c3086d4_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_a0ce7a4e3d66_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_a0e39ec62364_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_a26c0050f43a_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_a292578987d4_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_a3d0dd4aedcb_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_a5d65e8061cd_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_a6198526bf12_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_a7adb237f93c_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_acfc5be785a9_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_ada08643a234_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_af7c2b9863fd_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_b2a4d83d5921_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_b2df30d33fe3_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_b340bffbff30_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_b3a60e61a523_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_b5363651b5f3_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_b5687cf04af3_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_b5bbefef866a_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_b7a562975bae_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_b81ce254eba0_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_b8cf000395d8_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_bbd07c4fc02c_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_bc059d436b21_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_bceb15d665b4_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_be6a0b16f878_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_c137a7f43e23_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_c6e7b6cfa940_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_c878737f9f23_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_cca8d533c8d5_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_cd00b7556cc9_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_cd805249ed35_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_cdc4e367f92e_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_ce5991839594_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_d02f6ffb4e2a_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_d11de81bbbf8_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_d7a7630c5ba3_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_d827812588bb_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_d8622146000f_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_d974ac099d5c_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_da7a8919a179_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_dab4cb8ac57a_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_dae57ce78e42_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_db8d1ca13b8b_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_dba22c4a4931_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_dcd26770187a_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_dd0f63b0996c_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_de8bd0d0e09c_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_de9dbdd316e4_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_e2ff06eb2f5d_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_e3c86e9e9715_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_e40f2f3e4a65_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_e4a446e2c795_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_e4af2c5e7d6e_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_e698a4565469_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_e843398ff8a4_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_eeef9d50c514_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_efd2fd8c45ce_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_f0073936f785_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_f0348a847987_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_f050898885e0_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_f149da278e03_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_f1a73e2204a1_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_f1f2bb7c30e8_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_f3544034a726_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_f36b63464ec3_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_f807cc045a83_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_f9457847a5c9_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_fa4e91263d40_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_fa69f4cac934_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_fe47dedf8786_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_ff3a3b5c77d9_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_ff6bfa85cd68_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "ui_ff8182131c67_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "route_now_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "route_review_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "route_nodes_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "route_bandwidth_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "route_proofs_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "language_heading_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "language_scope_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "not_connected_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "none_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "unknown_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "fee_unknown_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "preview_description_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "copied_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "integrity_matches_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "rpc_accepted_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "submit_unknown_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "capture_cancelled_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "clip_unavailable_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "revoked_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "node_result_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "paired_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "node_unavailable_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "rejected_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "observed_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "local_signed_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "wallet_signed_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "submitted_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "submission_unknown_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "observation_unavailable_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "stale_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "unavailable_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "saved_waypoints_plural_forms",
+      "status": "PASS"
+    },
+    {
+      "id": "saved_waypoints_one_format",
+      "status": "PASS"
+    },
+    {
+      "id": "saved_waypoints_other_format",
+      "status": "PASS"
+    },
+    {
+      "id": "backup_title_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "backup_scope_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "backup_passphrase_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "backup_consent_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "backup_export_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "backup_select_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "backup_selected_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "backup_restore_nonempty_and_format",
+      "status": "PASS"
+    },
+    {
+      "id": "all_resource_references_exist",
+      "status": "PASS"
+    },
+    {
+      "id": "brand_credit_preserved",
+      "status": "PASS"
+    }
+  ],
+  "remainingAcceptance": [
+    {
+      "status": "NOT_RUN",
+      "gate": "Independent Spanish linguistic/security-meaning review and physical-device screen reader, narrow/200% text layout and locale switching/restart."
+    },
+    {
+      "status": "NOT_RUN",
+      "gate": "Complete localization of domain-generated decoder/account-effect explanations and remaining provider-change/fallback copy; original signed payloads/protocol codes/user content must stay exact."
+    }
+  ],
+  "completeFeatureAcceptance": false
+}

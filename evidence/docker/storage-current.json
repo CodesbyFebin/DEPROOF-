@@ -1,0 +1,14 @@
+{
+  "observedAt": "2026-10-06T08:44:23.588027+00:00",
+  "commands": [
+    "df -h .",
+    "docker run --rm --entrypoint df deproof/node-agent:local -h"
+  ],
+  "hostAvailable": "4.1GiB",
+  "dockerFilesystem": "/dev/vdb1",
+  "dockerSize": "20G",
+  "dockerAvailable": "0",
+  "dockerUsePercent": 100,
+  "status": "BLOCKED",
+  "action": "No container builds or startup attempted; no pruning, volume deletion or shared runtime restart."
+}

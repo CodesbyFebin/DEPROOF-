@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": "deproof-proof-job-v1"
+    },
+    "id": {
+      "type": "string"
+    },
+    "backend": {
+      "type": "string"
+    },
+    "scheme": {
+      "type": "string"
+    },
+    "circuitDigest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "verificationKeyDigest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "inputCommitment": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "publicInputs": {
+      "type": "object"
+    },
+    "maxWitnessBytes": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)$"
+    },
+    "deadline": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T.*Z$"
+    },
+    "source": {
+      "type": "string"
+    },
+    "compensation": {
+      "anyOf": [
+        {
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "resourceProfile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "circuit",
+        "circuitVersion",
+        "minMemoryMiB",
+        "minCpuCores"
+      ],
+      "properties": {
+        "circuit": {
+          "const": "owner-local-cubic"
+        },
+        "circuitVersion": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "minMemoryMiB": {
+          "type": "string",
+          "pattern": "^(0|[1-9][0-9]{0,8})$"
+        },
+        "minCpuCores": {
+          "type": "string",
+          "pattern": "^(0|[1-9][0-9]{0,8})$"
+        }
+      }
+    }
+  },
+  "required": [
+    "schema",
+    "id",
+    "backend",
+    "scheme",
+    "circuitDigest",
+    "verificationKeyDigest",
+    "inputCommitment",
+    "publicInputs",
+    "maxWitnessBytes",
+    "deadline",
+    "source",
+    "compensation"
+  ]
+}

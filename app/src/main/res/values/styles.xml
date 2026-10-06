@@ -1,4 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="Theme.Deproof" parent="android:Theme.Material.Light.DarkActionBar" />
-</resources>
+<resources><style name="AppTheme" parent="android:style/Theme.Material.NoActionBar"><item name="android:fontFamily">sans</item><item name="android:windowLightStatusBar">false</item><item name="android:colorAccent">#3DDC97</item></style></resources>

@@ -1,0 +1,59 @@
+{
+  "schema": "deproof-local-wiring-outcomes-v1",
+  "checkout": "/Users/cyberteck/DEPROOF-/DEPROOF-build",
+  "branch": "feat/deproof-full-build",
+  "sourceHead": "767cad6c2b85a88f6f4a4eae68155283a7de857e",
+  "testedSourceManifest": "evidence/qualification/source-before.json",
+  "testedSourceSetSha256": "d9143230f510f2653b2597b9ca5b3229c6e2047646f75d393e8d0951fbd550b7",
+  "buildInputChangesDuringSuite": [],
+  "currentBuildInputMismatch": [],
+  "freshGradle": {
+    "command": "bash ./gradlew :app:testDebugUnitTest --rerun-tasks --stacktrace",
+    "exitCode": 0,
+    "log": "evidence/qualification/local-wiring-fresh-tests.log",
+    "tasksExecuted": 32,
+    "tests": 79,
+    "domainTests": 66,
+    "roomTests": 13,
+    "failures": 0,
+    "errors": 0
+  },
+  "fullQualification": {
+    "command": "bash scripts/qualify.sh",
+    "exitCode": 0,
+    "log": "evidence/qualification/local-wiring-final-qualification.log",
+    "commandResults": 17,
+    "distinctGates": 15,
+    "androidTasks": "Final suite unit tests, assembly and lint UP-TO-DATE; fresh unit execution recorded separately. APK was assembled earlier in this continuation; not a fresh final-suite assembly.",
+    "pythonTests": 24,
+    "browserChecks": 116
+  },
+  "priorFailure": {
+    "command": "bash scripts/qualify.sh",
+    "exitCode": 1,
+    "log": "evidence/qualification/local-wiring-full-qualification.log",
+    "cause": "Signed resourceProfile rejected by closed proof-job verifier field set; corrected and verified by 24 Python tests and 23 integration checks.",
+    "retryLog": "evidence/qualification/local-wiring-integration-retry.log",
+    "retryExitCode": 0
+  },
+  "registry": {
+    "records": 336,
+    "unresolved": 281,
+    "meaningAndIdempotenceEvidence": "evidence/qualification/local-wiring-registry-review.json"
+  },
+  "acceptance": {
+    "F118": "IMPLEMENTED_UNVERIFIED: Room export, authenticated additive restore and Android UI; physical document-provider/crash gates NOT_RUN.",
+    "FN052": "IMPLEMENTED_UNVERIFIED: raw-file metadata and evidence association tested against actual Room; device lifecycle NOT_RUN.",
+    "EF019": "IMPLEMENTED_UNVERIFIED: fresh observed owner-local profile dispatch; external providers BLOCKED, Android-to-Linux dispatch NOT_RUN."
+  },
+  "limits": [
+    "Fixed Docker hosting profile only; broader hosting and container Android storage blockers unchanged.",
+    "Local educational proof verification is not production proof-system qualification.",
+    "No device, hardware key, wallet or provider gate promoted."
+  ],
+  "artifacts": {
+    "app/build/outputs/apk/debug/app-debug.apk": "47333a035a66764b6c0032b21202fcd25978e9d68b5e15210309228f650dd7be",
+    "evidence/qualification/deproof-source-snapshot.zip": "7c6d776740d1d267edfc98edff1fbc1a10a60bde5d10c84aafbdf7ca0d842ca1"
+  },
+  "finalSourceManifest": "evidence/qualification/local-wiring-final-source.json"
+}

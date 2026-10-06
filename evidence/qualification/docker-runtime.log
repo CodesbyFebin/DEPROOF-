@@ -1,0 +1,9 @@
+Client: Docker Engine - Community
+ Version:           29.7.2
+ API version:       1.55
+ Go version:        go1.27.0
+ Git commit:        a7dcaa6fdb
+ Built:             Wed Aug  5 17:34:15 2026
+ OS/Arch:           darwin/amd64
+ Context:           colima
+permission denied while trying to connect to the docker API at unix:///Users/cyberteck/.colima/default/docker.sock

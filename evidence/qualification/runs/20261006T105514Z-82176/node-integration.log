@@ -1,0 +1,23 @@
+PASS: read_only_scope_cannot_transfer
+PASS: wrong_tls_certificate_pin_denied
+PASS: api_revocation_denies_subsequent_commands
+PASS: unqualified_hosting_refuses_start
+PASS: operation_replay_denied
+PASS: bandwidth_requires_explicit_consent
+PASS: real_tls_transfer_sender_receiver_counters_match
+PASS: quota_enforced_before_network_io
+PASS: stop_cancels_real_flow_and_disables_consent
+Traceback (most recent call last):
+  File "/Users/cyberteck/DEPROOF-/DEPROOF-build/scripts/qualify-integration.py", line 130, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/cyberteck/DEPROOF-/DEPROOF-build/scripts/qualify-integration.py", line 90, in main
+    discovered=request('discoverProofJobs');assert discovered['jobId']==job['id'];record('signed_owner_job_discovered')
+  File "/Users/cyberteck/DEPROOF-/DEPROOF-build/scripts/qualify-integration.py", line 60, in request
+    assert r.returncode==0,r.stderr
+           ^^^^^^^^^^^^^^^
+AssertionError: Exception in thread "main" com.example.domain.Failure: PROOF_JOB_VALIDATION_OR_EXECUTION_FAILED
+	at com.example.data.NodeClient.post(NodeClient.kt:38)
+	at com.example.probe.NodeApiProbeKt.main(NodeApiProbe.kt:13)
+	at com.example.probe.NodeApiProbeKt.main(NodeApiProbe.kt)
+

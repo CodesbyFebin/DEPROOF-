@@ -1,0 +1,93 @@
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugBuildConfig
+> Task :app:generateDebugResources
+> Task :app:packageDebugResources
+> Task :app:processDebugNavigationResources
+> Task :app:parseDebugLocalResources
+> Task :app:generateDebugRFile
+> Task :app:javaPreCompileDebug
+> Task :app:checkDebugAarMetadata
+> Task :app:mapDebugSourceSetPaths
+> Task :app:compileDebugNavigationResources
+> Task :app:mergeDebugResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+
+> Task :app:processDebugMainManifest
+[com.solanamobile:mobile-wallet-adapter-clientlib-ktx:2.0.7] /Users/cyberteck/.gradle/caches/9.3.1/transforms/c693ab403302e3ea2f92fe7501f4df4e/transformed/mobile-wallet-adapter-clientlib-ktx-2.0.7/AndroidManifest.xml Warning:
+	Namespace 'com.solana.mobilewalletadapter.clientlib' is used in multiple modules and/or libraries: com.solanamobile:mobile-wallet-adapter-clientlib-ktx:2.0.7, com.solanamobile:mobile-wallet-adapter-clientlib:2.0.7. Please ensure that all modules and libraries have a unique namespace. For more information, See https://developer.android.com/studio/build/configure-app-module#set-namespace
+
+> Task :app:processDebugManifest
+> Task :app:processDebugManifestForPackage
+> Task :app:processDebugResources
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileDebugUnitTest
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets
+> Task :app:packageDebugUnitTestForUnitTest
+
+> Task :app:processDebugUnitTestManifest
+[com.solanamobile:mobile-wallet-adapter-clientlib-ktx:2.0.7] /Users/cyberteck/.gradle/caches/9.3.1/transforms/c693ab403302e3ea2f92fe7501f4df4e/transformed/mobile-wallet-adapter-clientlib-ktx-2.0.7/AndroidManifest.xml Warning:
+	Namespace 'com.solana.mobilewalletadapter.clientlib' is used in multiple modules and/or libraries: com.solanamobile:mobile-wallet-adapter-clientlib-ktx:2.0.7, com.solanamobile:mobile-wallet-adapter-clientlib:2.0.7. Please ensure that all modules and libraries have a unique namespace. For more information, See https://developer.android.com/studio/build/configure-app-module#set-namespace
+
+> Task :app:generateDebugUnitTestConfig
+> Task :app:kspDebugKotlin
+
+> Task :app:compileDebugKotlin
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/EvidencePreview.kt:42:68 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/MainActivity.kt:173:113 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/MainActivity.kt:215:132 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/MainActivity.kt:276:115 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/MainActivity.kt:276:135 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/MainActivity.kt:277:94 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/MainActivity.kt:310:100 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/MainActivity.kt:310:129 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/MainActivity.kt:320:100 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/MainActivity.kt:320:132 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/MainActivity.kt:358:146 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/MainActivity.kt:360:117 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/MainActivity.kt:373:109 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/MainActivity.kt:373:133 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/MainActivity.kt:396:291 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/MainActivity.kt:396:317 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/MainActivity.kt:396:349 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/MainActivity.kt:396:502 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/MainActivity.kt:396:521 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/NodeWorkspace.kt:63:177 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/NodeWorkspace.kt:63:198 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/NodeWorkspace.kt:65:74 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/NodeWorkspace.kt:66:68 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/NodeWorkspace.kt:66:93 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/WorkflowWorkspace.kt:45:80 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/WorkflowWorkspace.kt:45:105 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/WorkflowWorkspace.kt:45:136 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/WorkflowWorkspace.kt:45:250 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/WorkflowWorkspace.kt:45:276 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/WorkflowWorkspace.kt:45:303 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/WorkflowWorkspace.kt:86:79 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/WorkflowWorkspace.kt:86:100 Redundant call of conversion method.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/data/EvidenceSigner.kt:37:24 'val isInsideSecureHardware: Boolean' is deprecated. Deprecated in Java.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/data/LocationCapture.kt:26:24 'constructor(): CancellationSignal' is deprecated. Deprecated in Java.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/data/LocationCapture.kt:28:39 'static fun getCurrentLocation(p0: LocationManager, p1: String, p2: CancellationSignal?, p3: Executor, p4: Consumer<Location!>): Unit' is deprecated. Deprecated in Java.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/data/LocationCapture.kt:37:356 'val isFromMockProvider: Boolean' is deprecated. Deprecated in Java.
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/main/java/com/example/domain/ProofJobs.kt:45:46 'fun fields(): (Mutable)Iterator<(Mutable)Map.(Mutable)Entry<String!, JsonNode!>!>!' is deprecated. Deprecated in Java.
+
+> Task :app:compileDebugJavaWithJavac
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:bundleDebugClassesToRuntimeJar
+> Task :app:processDebugJavaRes
+> Task :app:kspDebugUnitTestKotlin
+
+> Task :app:compileDebugUnitTestKotlin
+w: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/app/src/test/java/com/example/domain/ConnectorTest.kt:12:31 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processDebugUnitTestJavaRes
+> Task :app:testDebugUnitTest
+
+[Incubating] Problems report is available at: file:///Users/cyberteck/DEPROOF-/DEPROOF-build/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 41s
+32 actionable tasks: 32 executed
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.3.1/userguide/configuration_cache_enabling.html

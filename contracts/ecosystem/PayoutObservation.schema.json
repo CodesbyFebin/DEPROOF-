@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": "deproof-payout-observation-v1"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "asset": {
+      "type": "string"
+    },
+    "mint": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "cluster": {
+      "type": "string"
+    },
+    "accrued": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^(0|[1-9][0-9]*)$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "claimable": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^(0|[1-9][0-9]*)$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "paid": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^(0|[1-9][0-9]*)$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "signature": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "observedAt": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T.*Z$"
+    },
+    "source": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema",
+    "provider",
+    "asset",
+    "mint",
+    "cluster",
+    "accrued",
+    "claimable",
+    "paid",
+    "signature",
+    "observedAt",
+    "source"
+  ]
+}

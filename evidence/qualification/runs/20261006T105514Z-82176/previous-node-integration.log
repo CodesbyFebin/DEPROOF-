@@ -1,0 +1,54 @@
+PASS: read_only_scope_cannot_transfer
+PASS: wrong_tls_certificate_pin_denied
+PASS: api_revocation_denies_subsequent_commands
+PASS: unqualified_hosting_refuses_start
+PASS: operation_replay_denied
+PASS: bandwidth_requires_explicit_consent
+PASS: real_tls_transfer_sender_receiver_counters_match
+PASS: quota_enforced_before_network_io
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 59417)
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.14/3.14.8/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.14/3.14.8/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.14/3.14.8/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/usr/local/Cellar/python@3.14/3.14.8/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 500, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/local/Cellar/python@3.14/3.14.8/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 488, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/Users/cyberteck/DEPROOF-/DEPROOF-build/scripts/qualify-integration.py", line 21, in do_POST
+    n=int(self.headers['Content-Length']);b=self.rfile.read(n);received.append(len(b));self.send_response(200);self.end_headers();self.wfile.write(b'accepted-local-payload')
+                                                                                                                                  ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.14/3.14.8/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/local/Cellar/python@3.14/3.14.8/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ssl.py", line 1274, in sendall
+    v = self.send(byte_view[count:])
+  File "/usr/local/Cellar/python@3.14/3.14.8/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ssl.py", line 1243, in send
+    return self._sslobj.write(data)
+           ~~~~~~~~~~~~~~~~~~^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+PASS: stop_cancels_real_flow_and_disables_consent
+PASS: signed_owner_job_discovered
+PASS: forged_job_signature_denied
+PASS: android_client_to_agent_to_prover_to_verifier_signed_receipt
+PASS: wrong_public_input_rejected_by_independent_verifier
+PASS: tampered_result_digest_rejected
+PASS: pinned_verification_key_mismatch_rejected
+PASS: signed_contribution_tamper_rejected
+PASS: owner_local_revocation_works_without_phone
+PASS: restart_retains_charged_reservations_and_disables_sharing
+PASS: changed_service_profile_denied
+PASS: authenticated_allowlisted_service_actually_starts_and_is_healthy
+PASS: restart_revocation_stops_and_observes_existing_container
+PASS: service_stop_observes_termination
+PASS: session_revocation_stops_actual_owned_service

@@ -1,0 +1,584 @@
+DEPROOF — FINAL DELIVERY SPECIFICATION
+Version 3.0 • 6 October 2026, Asia/Kolkata
+Creator: Febin Francis (CodesbyFebin)
+Project: Open-source Web3/DePIN verification workspace
+License: MIT | Build Authority: This specification replaces all prior sheets
+
+EXECUTIVE SUMMARY
+DEPROOF is an open-source Android + Web3 application for decentralized transaction verification, evidence integrity, and phased ecosystem participation. Built by CodesbyFebin for Solana Mobile and DePIN networks.
+
+Tagline: Own your node. Prove your contribution.
+
+Core promise: Verifiable trust through hardware-backed proof, transparent local records, and independently verifiable results.
+
+150 requirements organized across 6 workflows and 5 phases (P1–P5), with 86 function contracts and 100 acceptance checks governing all behavior.
+
+PHASE ROADMAP & DELIVERY TIMELINE
+Phase	Timeline	Focus	Deliverable	Status
+P1	Oct 8, 2026 (target)	Native MVP: Transaction verification + evidence hashing	APK <50MB, receipts persist, MWA device test	ACTIVE BUILD
+P2	Oct–Nov 2026	Workflow expansion: Tasks, Evidence capture, nested UI	Node config UI (no execution), bandwidth UI (read-only)	Post-ship
+P3	Dec 2026–Jan 2027	Ecosystem operations: Node agent, bandwidth sharing, prover jobs	Go node agent, consent flows, proof job adapter	Post-P2
+P4	Q1 2027	Public web: Marketing site, How It Works, developer docs	Website, privacy policy, source repository public	Post-P3
+P5	Q1–Q2 2027	Provider ecosystem: Verified integrations, broader DePIN support	Qualified adapters, extended provider catalogue	Post-P4
+I. BRANDING & VISUAL AUTHORITY
+Logo & Brand Identity
+DEPR monogram (authoritative source):
+
+Gradient: Mint (#14F1B8) → Cyan (#00D8E8) → Violet (#9945FF)
+Geometry: Rounded, modern, consistent across all surfaces
+Never use: Angular interlocked variant (ecosystem poster inspiration only)
+Wordmark: "DEPROOF" (spaced, sans-serif, no compression)
+Credit: "Built by CodesbyFebin" (always visible on app/site/repo)
+$DEPR as brand concept only (not a project token):
+
+Visual reference to DEPR monogram and ecosystem identity
+SKR remains Solana Mobile ecosystem integration (separate from Deproof)
+No token launch, no utility token issuance from Deproof
+Future DePIN reward mechanisms (P3+) use existing ecosystem tokens (SOL, SKR, or provider-specific)
+Color Palette & Semantic Roles
+Dark mode (default):
+
+Background: Obsidian #0B1020
+Surface: Navy #121A2B
+Primary text: #E7EEF8
+Mint accent: #3DDC97 (actionable, qualified operations)
+Cyan accent: #7FE7F0 (information, network status)
+Violet accent: #8B7CFF (categories, processing)
+Error: #FF8585
+Success: #51CF66
+Light mode:
+
+Background: Pearl #F7F4EF
+Surface: White #FFFFFF
+Primary text: #1A1714
+Accents: Mint #167B56, Cyan #006A88, Violet #6E62C9
+Key rule: Verdicts use neutral card language ("Allowed by current policy" or "Do not sign"), never imply safety guarantee.
+
+II. REQUIREMENT REGISTRY: 150 FEATURES MAPPED TO PHASES
+A. SOLANA MOBILE WORKFLOW (F001–F020, E001–E005)
+P1 deliverables: Wallet connection, account observation, transaction review, tamper detection
+
+ID	Feature	Phase	Acceptance
+F001–F012	Account observation (address input, SOL/SKR balance, slot, signatures)	P1	Independent RPC reads; no cache after error; pull-to-refresh
+F013–F024	Transaction history (last 10, confirmation status, explorer links, skip missing)	P1	Real on-chain data only; never fabricate signatures
+E001	Mobile wallet connect (MWA authorize on device)	P1	Real wallet selection, no mock, device session proof recorded
+E002	Account & network checks (mainnet/devnet separation, reauthorization)	P1	Network mismatch detection; explicit cluster selector
+E003	Transaction review (full decode, verdict card, details panel)	P1	Payable or Do Not Sign only; no conditional approval claims
+E004	Message tamper guard (SHA-256 hash binding, MESSAGE_CHANGED detection)	P1	Re-review required on any change; Reject always available
+E005	Chain status tracking (slot, blocktime, confirmation status, fee)	P1	RPC-verified data only; Unknown state represented
+B. SKR WORKSPACE WORKFLOW (F081–F090, E006–E010)
+P1 deliverables: Official mint verification, exact transfer amounts, decimals validation
+
+ID	Feature	Phase	Acceptance
+F081–F090	SKR staking state, cooldown, claims (read-only observation in P1)	P1	No APY invention; chain state only; cooldown elapsed ≠ withdrawable
+E006	Verified mint checks (hardcoded SKR mint, wrong mint detection, warning)	P1	Refuse non-official mint; show "Unverified token" if alternate
+E007	Exact token amounts (u64 LE parsing, 6-decimal formatting always)	P1	"1,000.000000 SKR"; handle full u64 range including 2^64-1
+E008	SKR transfer review (TransferChecked discriminator 12 only, not 3/4/6)	P1	Refuse Transfer, Approve, SetAuthority; verdict = Do Not Sign
+E009	Staking state observer (read-only Solana stake program observation)	P1	Distinguish SOL stake from SKR; refuse native stake transfers
+E010	Cooldown & claim alerts (start time from user input or chain, countdown display)	P1	Show "HH:MM:SS until ready"; no invented unstake amounts
+C. EDGE & LOCAL HOSTING WORKFLOW (F101–F106, E011–E015)
+P1 scope: UI placeholder only (show "Configure node" button, no execution)
+P3 scope: Go node agent, container setup, health monitoring
+
+ID	Feature	Phase	Acceptance
+E011	Node identity (P1: UI placeholder; P3: unique node ID, keypair, service registry)	P1/P3	P1: Non-interactive roadmap section; P3: Actual node init
+E012	Local service hosting (P1: roadmap; P3: container isolation, systemd/supervisor)	P3	Local-first, noncustodial; isolated from mainnet flow
+E013	Container isolation (P3: Docker or nix, resource limits, network policy)	P3	Bounded CPU, memory, disk; inbound filtering
+E014	Health & uptime checks (P3: liveness probes, metrics, alerting)	P3	Heartbeat to local RPC, peer discovery, connectivity status
+E015	Encrypted peer tunnels (P3: noise protocol, identity verification, rate limit)	P3	Peer-to-peer encryption; no plaintext network data
+D. BANDWIDTH SHARING WORKFLOW (E016–E020)
+P1 scope: UI placeholder only
+P3 scope: Consent-based sharing, quota controls, signed usage receipts
+
+ID	Feature	Phase	Acceptance
+E016	Consent-based sharing (explicit provider/destination/use consent, opt-in default disabled)	P3	User must actively enable; instant stop available; no implicit exit traffic
+E017	Traffic & quota controls (per-provider limit, rate shaping, overflow handling)	P3	Hard quota enforcement; overage denied or user-warned
+E018	Contribution metering (signed usage logs, timestamp, bytes transferred)	P3	Hardware-backed signatures; tamper-evident logging
+E019	Signed usage receipts (local receipt with contribution details, hash proof)	P3	User owns all receipts; export JSON/portable format
+E020	Payout reconciliation (metrics aggregation, per-provider settlement mapping, manual trigger)	P3	User controls withdrawal; no automatic fund movement
+E. PROVER NETWORK WORKFLOW (E021–E025)
+P1 scope: UI placeholder only
+P3 scope: Job discovery, capability matching, result verification
+
+ID	Feature	Phase	Acceptance
+E021	Proof job discovery (backend/circuit allowlist, authenticated job feed)	P3	Signed job manifests; allowlisted backends only; no arbitrary executables
+E022	Capability matching (device/hardware constraints vs. job requirements)	P3	Honest capability reporting; no false-positive claims (e.g., GPU absent)
+E023	Verifiable job results (witness execution trace, proof verification, on-chain posting)	P3	Local verifier; proof published with metadata; user owns proof
+E024	Proof verification (zero-knowledge proof validation, circuit verification key check)	P3	Deterministic verification; no approximation or shortcuts
+E025	Contribution receipts (proof + contribution + timestamp + user signature)	P3	Portable format; exportable; user-controlled retention
+F. EVIDENCE & CONTROL WORKFLOW (F051–F070, E026–E030)
+P1 deliverables: File hashing, hardware-backed signing, evidence manifests, JSON export, privacy controls
+
+ID	Feature	Phase	Acceptance
+F051–F070	Evidence capture (file import, hashing, ECDSA signing, manifest creation)	P1/P2	P1: Import + hash + sign; P2: Capture (photos, screenshots)
+E026	Raw-file hashing (SHA-256 streaming, no OOM on large files, hex digest)	P1	Non-cryptographic metadata never used as substitute for hash
+E027	Hardware-backed signing (Android Keystore ECDSA, reject software keys, DER + SPKI)	P1	isInsideSecureHardware must be true; throw SOFTWARE_KEY otherwise
+E028	Evidence manifests (canonical newline text, user note, timestamp, provenance)	P1	Never JSON for canonical; audit trail is human-readable
+E029	Portable receipt export (JSON all fields, redact sensitive tokens, lossless)	P1	Exports include hash, signature, manifest; no invented fields
+E030	Privacy & permission controls (scoped capture/network/share, explicit consent, denial tests)	All	User controls evidence flow; no implicit upload; retention/deletion explicit
+G. RECEIPTS & SETTLEMENT (F071–F080)
+P1 deliverables: Local persistence, rejection receipt, JSON export, chain observation
+
+ID	Feature	Phase	Acceptance
+F071–F080	Receipt storage (Room DB, persistence across app restart, indexed by outcome/time)	P1	SQLite backend; no in-memory cache; encrypted storage optional
+Receipt outcomes	Rejected locally, Observed transaction, Local signature, Wallet signed, Submitted by Deproof	P1	Labels match user wording; raw field names hidden from UI
+Settlement states	Not submitted, Pending, Confirmed, Finalized, Failed, Unavailable	P1	Per-receipt state; never assumed from confirmation status alone
+H. ADVANCED SAFETY & RELIABILITY (F091–F100)
+P1 deliverables: Blockhash expiry check, simulator feedback, unknown submission state, stale data handling
+
+ID	Feature	Phase	Acceptance
+F091–F100	Blockhash validation (expiry check before approve, one retry, error if expired)	P1	Use isBlockhashValid() RPC; grayed-out Approve on expiry
+Transaction simulation	Pre-approve simulation result shown (success or error)	P1	Simulation failure is warning, not block; user decides
+Submission unknown	Timeout scenario clearly labeled as "Submission status unknown"	P1	No assumption of confirmation; manual observation required
+Stale data display	"Stale — last successful read X min ago" on refresh failure	P1	Retain previous data; label explicitly; refresh button available
+No invented states	Never show "Pending" or "In progress" without RPC data	P1	Possible states: Finalized, Confirmed, Processed, Failed, Unknown only
+I. OPTIONAL AI EXPLAINER (F089–F100)
+P1 deliverables: Grok skip logic (placeholder key), error handling, no verdict change
+
+ID	Feature	Phase	Acceptance
+F089–F100	Grok API explainer (mainnet SKR only, skip on placeholder key, show HTTP errors)	P1	If key="MY_GROK_API_KEY", skip silently; model note cannot enable Approve
+Explanation scope	Decoded instruction summary only (never raw bytes)	P1	Informational only; no security implication
+J. ADVANCED ECOSYSTEM & DEPIN (F101–F120)
+P1 scope: Provider references only (no live integration)
+P3+ scope: Actual adapter implementations
+
+ID	Feature	Phase	Acceptance
+F101–F120	Six-category ecosystem (Wallets, DeFi routing, Liquid staking, DePIN networks, Storage, Explorers)	P3/P4	Proposed entries until qualified; no fake connect/swap/stake
+Wallet adapter agnostic	MWA-compatible wallets only; no lock-in	P1	Any MWA wallet supported; user selection on connect
+DeFi routing reference	Protocol list with external links (Jupiter, Raydium, Orca)	P3	Read-only; no swap execution in app
+DePIN networks	Reference (Helium, Grass, Render, etc.) with external links	P3	No join/contribute flows until P3 adapter
+Liquid staking options	Pool APY from live APIs, not invented	P3	Marinade, Socean, Lido external links
+Storage references	Arweave, Storj, Filecoin links (P3+: Arweave upload option)	P3	Evidence export to Arweave optional in P3
+Explorer links	Solana Explorer, Solscan, Raydium, Magic Eden	P1	Multi-explorer support in transaction detail
+III. 86 FUNCTION CONTRACTS (62 BASE + 24 ECOSYSTEM)
+Base Contracts (FN001–FN062)
+Validation & Formatting (FN001–FN014)
+fun isPubkey(input: String): Boolean
+  // false on invalid; no exception
+
+fun formatSol(lamports: u64): String
+  // "X.YYYYYYYYY SOL" (9 decimals, comma thousands)
+
+fun formatSkr(raw: u64): String
+  // "X,XXX.YYYYYY SKR" (6 decimals)
+
+fun shortKey(key: String): String
+  // "abcd…wxyz" if len > 12
+
+fun readU64LE(bytes: ByteArray, offset: Int): u64
+  // Little-endian u64; throws SHORT_BUFFER
+
+fun readU32LE(bytes: ByteArray, offset: Int): u32
+  // Little-endian u32
+
+fun readU8(bytes: ByteArray, offset: Int): u8
+  // Single byte
+
+fun sha256Text(text: String): String
+  // 64-char hex; UTF-8 encoded input
+
+fun sha256File(path: String): String
+  // Streaming SHA-256; never OOM
+
+fun canonicalMessage(request: ReviewRequest): String
+  // Newline-separated UTF-8; throws EMPTY_MESSAGE
+
+fun loadAccount(address: String): Account
+  // Parallel SOL/SKR/signature read; no throw on partial failure
+
+fun decodeInstruction(programId, keys, data): Verdict
+  // Routes to decoders; returns Verdict (not exception on decode failure)
+
+fun verdictOf(v: Verdict): Pair<String, String>
+  // (title, reason)
+
+fun summaryOf(request, verdict): String
+  // One-line transaction summary
+Cryptographic & Review (FN015–FN034)
+fun prepareReview(request: ReviewRequest): ReviewBinding
+  // Compute cardHash (canonical) + messageSha256 (Solana bytes)
+  // Throws REVIEW_CORRUPTED if data invalid
+
+fun assertUnchanged(current: ReviewBinding, stored: ReviewBinding): Unit
+  // Throws MESSAGE_CHANGED if mismatch
+
+fun signHash(hexHash: String): SignatureEnvelope
+  // ECDSA sign via Android Keystore
+  // Throws SOFTWARE_KEY if not hardware-backed
+  // Returns DER + SPKI
+
+fun sha256File(path: String): String
+  // File streaming SHA-256
+
+fun reject(request: ReviewRequest): Receipt
+  // Write receipt with outcome=REJECTED_LOCALLY, signature=null
+
+fun exportReceipt(receipt: Receipt): String
+  // JSON export; throws REVIEW_CORRUPTED if hash blank
+
+fun copyReceipt(receipt: Receipt): String
+  // Serialize to JSON; return text even if clipboard fails
+
+fun connect(activity: Activity): String
+  // MWA authorize; throws NO_COMPATIBLE_WALLET, NO_WALLET_ACCOUNT
+
+fun disconnect(session: Session): Unit
+  // Clear session
+
+fun signDevnetMemo(session: Session, memoText: String): String
+  // Wallet sign; throws NO_WALLET_ACCOUNT
+
+fun observeSettlement(signature: String, cluster: String): SettlementStatus
+  // RPC query; throws RPC_ERROR
+
+fun authorizeTransaction(session: Session, message: Message): String
+  // MWA sign request; return base58 signature
+Verdict & Display (FN035–FN062)
+fun canSign(verdict, session, memoSigned, network): Boolean
+  // Full predicate: payable && session && memo gate && network match
+
+fun selectCluster(action: String): String
+  // "devnet" or "mainnet-beta"; throws CLUSTER_MISMATCH
+
+fun cooldownRemaining(startMs: Long, nowMs: Long): String
+  // "HH:MM:SS" or "Withdraw ready"; throws NO_COOLDOWN
+
+fun refuseUndecoded(program: String): Verdict
+  // Return Do Not Sign verdict for unknown program
+
+fun explainPacket(verdict, request): String
+  // Grok API (skip on placeholder key); throws GROK_NOT_CALLED
+
+fun decodeTxferChecked(keys, data): Verdict
+  // Discriminator 12 validation, amount, decimals, account order
+
+fun verdictOf(v: Verdict): Pair<String, String>
+  // ("Payable" or "Do not sign", reason)
+
+// Additional 20+ supporting contracts (error handling, formatting, validation)
+// Full list in source DEPROOF_FINAL_MASTER_PROMPT_1.md, section 11
+Ecosystem Extension Contracts (EF001–EF024)
+Node & Network (EF001–EF008)
+fun createNodeIdentity(config: NodeConfig): NodeIdentity
+  // Generate unique node ID, keypair, service metadata
+  // P3 only; throws KEY_STORAGE_FAILED
+
+fun registerNodeService(identity: NodeIdentity, services: List<String>): ServiceRegistry
+  // Publish node to local discovery network
+  // P3 only
+
+fun verifyNodeHealth(nodeId: String): HealthStatus
+  // Check RPC connectivity, peer count, uptime
+  // P3 only; throws RPC_ERROR
+
+fun getNodeMetrics(nodeId: String, period: Duration): NodeMetrics
+  // CPU, memory, network bandwidth, proof job count
+  // P3 only
+Bandwidth & Consent (EF009–EF014)
+fun initBandwidthSharing(provider: String, limits: QuotaConfig): ConsentToken
+  // User explicit consent; encrypted storage
+  // Throws CONSENT_REQUIRED if user declines
+  // P3 only
+
+fun recordBandwidthUsage(token: ConsentToken, bytes: u64, destination: String): UsageLog
+  // Signed log entry; timestamp, destination, volume
+  // P3 only
+
+fun querySharingQuota(token: ConsentToken): QuotaStatus
+  // Current usage vs. limit; remaining bytes
+  // P3 only
+
+fun stopBandwidthSharing(token: ConsentToken): Unit
+  // Instant halt; user-initiated
+  // P3 only
+
+fun exportUsageReceipt(logs: List<UsageLog>): String
+  // JSON export with user ECDSA signature
+  // P3 only
+Prover & Proof (EF015–EF020)
+fun discoverProofJobs(backend: String, maxJobs: Int): List<ProofJob>
+  // Fetch from allowlisted job feed
+  // Throws BACKEND_NOT_ALLOWLISTED if provider not verified
+  // P3 only
+
+fun validateJobManifest(manifest: ProofJobManifest): Boolean
+  // Verify signature, circuit digest, backend version
+  // P3 only
+
+fun executeProofJob(job: ProofJob, inputs: Inputs): ProofResult
+  // Run local prover; bounded time/resource
+  // Throws PROVER_TIMEOUT, RESOURCE_EXCEEDED
+  // P3 only
+
+fun verifyProof(proof: ProofResult, verifyingKey: VerifyingKey): Boolean
+  // Local verification; deterministic
+  // P3 only
+
+fun publishProofOnChain(proof: ProofResult, payer: String): String
+  // Sign + submit to Solana; return signature
+  // P3 only
+Evidence & Contribution (EF021–EF024)
+fun createContributionReceipt(contribution: Contribution, userSignature: String): ContributionReceipt
+  // Combine proof/bandwidth usage/evidence + user ECDSA
+  // Portable format (JSON)
+  // P3 only
+
+fun verifyContributionChain(receipt: ContributionReceipt): VerificationResult
+  // Check all hashes, signatures, on-chain references
+  // P3 only
+
+fun exportContributionManifest(receipts: List<ContributionReceipt]): String
+  // Aggregate manifest with user ownership proof
+  // P3 only
+
+fun runEcosystemQualification(matrix: QualificationMatrix): QualificationResult
+  // Per-host/provider/backend gate; local vs. external distinction
+  // Evidence-based blockers; P3+ only
+IV. 100 CORE ACCEPTANCE CHECKS (C001–C100)
+By Category
+Category	Range	Examples
+Account	C001–C012	Address validation, independent reads, stale handling
+History	C013–C024	Last 10 signatures, skip missing, confirm status mapping
+Decoder	C025–C044	TransferChecked discriminator, amount u64 LE, decimals validation, mint checks, account order
+Review Binding	C045–C054	Canonical message, SHA-256 hash, MESSAGE_CHANGED, approval gates, no auto-grant
+Wallet	C055–C064	MWA authorize, show address, no session = no approve, devnet memo gate, network match, fee display
+Receipts & Evidence	C065–C076	Reject writes receipt, JSON export, persistence, outcome labels, evidence manifests, hardware keys only
+Cooldown & Settlement	C077–C088	Cooldown countdown, elapsed ≠ withdrawable, no invented APY, partial amounts, blockhash expiry, no invented states
+Optional AI	C089–C100	Grok on decoded only, skip placeholder key, show errors, model note cannot enable approve
+All 100 checks are implementation-verified in unit tests (minimum 11 for P1 ship set).
+
+V. BUILD & DELIVERY CHECKLIST
+P1 MVP (Oct 8, 2026 Target)
+Deliverables:
+
+not done
+APK (app-debug.apk, <50MB)
+not done
+Receipts persist across app restart (Room DB verified)
+not done
+MWA device test (real wallet on physical device or emulator with wallet)
+not done
+Unit tests passing (≥11 features: 2, 25–40, 45–50, 57, 65–67, 89–92)
+not done
+Build gate: ./gradlew assembleDebug && ./gradlew testDebugUnitTest exits 0
+not done
+No mock wallets, no invented signatures, no hardcoded secrets
+not done
+Screenshots: Now (account observation), Review (verdict card, instructions, hashes), Receipts (list + detail)
+not done
+Readme + contributing guidelines + changelog + privacy policy
+not done
+Source repository public (GitHub/CodesbyFebin, MIT license)
+Build command:
+
+printf 'GEMINI_API_KEY=MY_GEMINI_API_KEY\nGROK_API_KEY=MY_GROK_API_KEY\n' > .env
+echo "sdk.dir=$ANDROID_SDK_ROOT" > local.properties
+./gradlew assembleDebug --rerun-tasks
+./gradlew testDebugUnitTest
+# Expected: BUILD SUCCESSFUL + 11+ tests PASSED
+Evidence files:
+
+evidence/checksums.txt (SHA-256 of APK + test results)
+evidence/test-results.txt (unit test output)
+docs/status.md (P1 completion status, known gaps, blockers)
+P2 (Oct–Nov 2026)
+New scope:
+
+not done
+Tasks & Evidence UI (nested workflows under Now)
+not done
+Evidence capture (photos, screenshots, file import)
+not done
+Multiple attachments per task
+not done
+Checklist completion tracking
+not done
+Node config UI (read-only, "Configure node" button routes to P3 docs)
+not done
+Bandwidth UI (read-only, "Enable sharing" routes to P3 docs)
+not done
+Prover jobs UI (read-only, "Discover jobs" routes to P3 docs)
+No execution: P2 is UI/UX scaffolding only. Actual node agent, bandwidth sharing, prover execution are P3.
+
+P3 (Dec 2026–Jan 2027)
+New scope:
+
+not done
+Go node agent (service, container, systemd)
+not done
+Bandwidth consent & metering (signed usage logs)
+not done
+Prover job discovery & verification (allowlisted backends)
+not done
+Proof publishing to Solana
+not done
+Contribution receipts (portable format)
+P4 (Q1 2027)
+New scope:
+
+not done
+Public website (Home, Features, How It Works, Ecosystem, Docs, Privacy)
+not done
+Developer documentation (architecture, setup, contracts)
+not done
+Qualified provider catalogue (Wallets, DeFi routing, DePIN networks, Storage, Staking, Explorers)
+P5 (Q1–Q2 2027)
+New scope:
+
+not done
+Extended provider integrations (verified adapters)
+not done
+Broader DePIN ecosystem alignment
+not done
+Community contribution guidelines
+VI. DESIGN SPECIFICATION SUMMARY
+Visual Authority
+Logo: DEPR monogram (rounded, mint→cyan→violet gradient)
+Typography: Sans-serif body, monospace for hashes/addresses
+Spacing: 8dp grid, 48dp touch targets, 16dp gutters
+Accessibility: WCAG 2.1 AA (4.5:1 contrast, keyboard nav, screen reader, reduced motion)
+Three-Screen Layout (P1)
+Now: Workspace title, wallet connection, address observation, SOL/SKR balances, last receipt, transaction history (last 10)
+Review: Verdict card (Payable or Do Not Sign), instruction details, message hash, tamper detection, Approve/Reject buttons
+Receipts: Outcome list, detail view, JSON export, chain settlement tracking
+Component System
+Buttons: Primary (mint gradient), Secondary (navy border), Tertiary (text link), Icon (48dp)
+Cards: 16dp radius, Navy surface, subtle shadow
+Input: 12dp radius, mint border (active), error (red)
+Status: Dot + text (never color alone)
+State Management
+Data: Loading, Empty, Error, Unavailable, Success, Stale
+Wallet: Not connected, Connecting, Connected, Disconnected
+Approval: Can approve, Cannot approve (disabled + reason), Submitted
+VII. OPEN SOURCE & ATTRIBUTION
+Repository Structure
+DEPROOF/
+├── app/
+│   ├── src/main/kotlin/com/example/
+│   │   ├── MainActivity.kt
+│   │   ├── ui/ (Jetpack Compose)
+│   │   ├── domain/ (business logic)
+│   │   ├── chain/ (RPC integration)
+│   │   ├── wallet/ (MWA integration)
+│   │   ├── evidence/ (hashing, signing)
+│   │   └── ai/ (Grok integration)
+│   ├── src/test/kotlin/ (unit tests)
+│   └── build.gradle
+├── node-agent/ (P3+: Go node service)
+├── prover-worker/ (P3+: proof job executor)
+├── connectors/ (P3+: ecosystem adapters)
+├── contracts/ (P3+: Solana programs if any)
+├── docs/
+│   ├── README.md
+│   ├── CONTRIBUTING.md
+│   ├── CHANGELOG.md
+│   ├── ARCHITECTURE.md
+│   ├── PRIVACY.md
+│   └── research-backlog.md
+├── assets/
+│   ├── design-tokens.json
+│   └── reference/ (logo PNGs, ecosystem concepts)
+├── evidence/
+│   ├── checksums.txt (P1 delivery)
+│   ├── test-results.txt
+│   └── ecosystem/ (P3+ qualification proofs)
+├── LICENSE (MIT)
+└── .github/
+    └── workflows/
+        └── build.yml (gradle assembleDebug + test)
+License & Attribution
+License: MIT (permissive, commercial-friendly)
+Copyright: © 2026 Febin Francis (CodesbyFebin)
+All source files: // SPDX-License-Identifier: MIT
+App header: "Built by CodesbyFebin"
+About screen: "Deproof — Open-source verification workspace. Built by Febin Francis. Powered by Solana Mobile and DePIN networks."
+Repo: github.com/codesbyfebin/deproof (or similar)
+No False Claims
+✅ No token launch ("$DEPR is brand concept only; SKR is Solana Mobile ecosystem integration")
+✅ No partnership claims until independently verified
+✅ No audit claims until completed by third party
+✅ No hardcoded secrets or API keys (all are placeholders like MY_GROK_API_KEY)
+✅ No mock wallets, fabricated signatures, or invented balances
+✅ All RPC data verified before display
+✅ Ecosystem providers labeled as Proposed/Qualified/Unavailable (no fake integrations)
+VIII. PHASE-SPECIFIC IMPLEMENTATION NOTES
+P1 (Oct 8 MVP)
+Do this first:
+
+Kotlin + Jetpack Compose scaffolding (Now/Review/Receipts tabs)
+MWA wallet integration (real device testing required)
+Solana RPC integration (mainnet-beta account reads)
+Transaction decoder (TransferChecked only; refuse other ops)
+Review binding & tamper detection (SHA-256 hashing, MESSAGE_CHANGED)
+Receipt storage (Room DB, JSON export)
+Evidence hashing & hardware ECDSA signing
+Do NOT do in P1:
+
+Node agent (Go service)
+Bandwidth consent UI (comes with no implementation)
+Prover job execution
+Website
+Provider adapters
+P2 (Oct–Nov)
+Add UI scaffolding only:
+
+Tasks + Evidence workflow
+Nested routes under Now
+Node config UI → docs link
+Bandwidth UI → docs link
+Prover jobs UI → docs link
+No backend execution yet.
+
+P3 (Dec–Jan)
+Add ecosystem operations:
+
+Go node agent
+Bandwidth metering
+Prover job adapter
+Proof publishing
+P4–P5
+Add web, docs, verified integrations.
+
+IX. SUCCESS CRITERIA
+P1 Success:
+
+not done
+APK <50MB, builds in under 5 minutes
+not done
+All receipts survive app restart (Room DB verified with automation test)
+not done
+MWA wallet connection works on real device (Phantom, Solflare, or emulator with wallet)
+not done
+No mock wallets in production build
+not done
+No invented signatures or balances
+not done
+Build gate exits 0 (gradle + tests)
+not done
+11+ unit tests passing (ship set)
+not done
+Screenshots show all three screens
+not done
+No hardcoded secrets (all .env placeholders)
+not done
+Source code public + MIT license + CodesbyFebin credit visible
+Continued success (P2–P5):
+
+All 150 requirements implemented per phase
+All 100 checks verified
+All 86 contracts called correctly
+No data fabrication
+No false claims
+Open source throughout
+Device testing at each phase gate
+X. HANDOFF TO CLOUD SESSION
+This specification is the authoritative build authority.
+
+Cloud session will:
+
+Read this spec in full
+Read DEPROOF_FINAL_MASTER_PROMPT_1.md (technical details)
+Review design-tokens.json (visual spec)
+Inspect reference PNGs (logo, ecosystem concepts)
+Begin P1 MVP build for Oct 8 hackathon target
+All 150 requirements are mapped. All 100 checks are explicit. All 86 contracts are defined. All phases are staged. No ambiguity.

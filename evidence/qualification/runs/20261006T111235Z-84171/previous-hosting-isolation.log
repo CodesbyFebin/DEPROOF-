@@ -1,0 +1,12 @@
+PASS: nonroot_identity
+PASS: readonly_root
+PASS: capabilities_dropped
+PASS: no_new_privileges
+PASS: network_has_no_route
+PASS: memory_cap_enforced
+PASS: cpu_cap_enforced
+PASS: cpu_throttling_observed
+PASS: pid_cap_configured
+PASS: tmpfs_noexec
+PASS: tmpfs_disk_exhaustion
+PASS: pid_exhaustion

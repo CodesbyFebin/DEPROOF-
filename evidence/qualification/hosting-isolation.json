@@ -1,0 +1,99 @@
+{
+  "schema": "deproof-host-isolation-v1",
+  "status": "PASS",
+  "runtimeId": "056cb9fc-c7dc-4440-bfa7-77c7a29820b0",
+  "runtimeOS": "Ubuntu 24.04.4 LTS",
+  "serverVersion": "29.5.2",
+  "securityOptions": [
+    "name=apparmor",
+    "name=seccomp,profile=builtin",
+    "name=cgroupns"
+  ],
+  "engineProtection": "OWNER_TRUSTED_ROOTFUL_ENGINE_IN_LOCAL_LINUX_VM; NOT_ROOTLESS",
+  "image": "busybox@sha256:73aaf090f3d85aa34ee199857f03fa3a95c8ede2ffd4cc2cdb5b94e566b11662",
+  "checkedAt": 1791291155.2056231,
+  "checks": [
+    {
+      "id": "nonroot_identity",
+      "status": "PASS",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "id": "readonly_root",
+      "status": "PASS",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "id": "capabilities_dropped",
+      "status": "PASS",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "id": "no_new_privileges",
+      "status": "PASS",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "id": "network_has_no_route",
+      "status": "PASS",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "id": "memory_cap_enforced",
+      "status": "PASS",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "id": "cpu_cap_enforced",
+      "status": "PASS",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "id": "cpu_throttling_observed",
+      "status": "PASS",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pid_cap_configured",
+      "status": "PASS",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "id": "tmpfs_noexec",
+      "status": "PASS",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "id": "tmpfs_disk_exhaustion",
+      "status": "PASS",
+      "exitCode": 0,
+      "stderr": ""
+    },
+    {
+      "id": "pid_exhaustion",
+      "status": "PASS",
+      "exitCode": 2,
+      "stderr": "sh: can't fork: Resource temporarily unavailable\n"
+    },
+    {
+      "id": "memory_exhaustion_oom_observed",
+      "status": "PASS",
+      "exitCode": 137,
+      "oomKilled": true
+    }
+  ],
+  "limitations": [
+    "Qualifies this constrained nonroot container profile on this local Linux VM only.",
+    "Does not qualify arbitrary services, network exposure, peer tunnels or trusted production proof execution."
+  ]
+}
