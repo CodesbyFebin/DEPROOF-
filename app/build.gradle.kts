@@ -27,7 +27,7 @@ android {
 
         // BuildConfig fields
         buildConfigField("String", "API_ENDPOINT", "\"https://api.mainnet-beta.solana.com\"")
-        buildConfigField("String", "SKR_MINT", "\"SKRbvo6Gf7GoNcKKqqyckfjxN2PEVEqJf3rUKdPbdYu\"")
+        buildConfigField("String", "SKR_MINT", "\"SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3\"")  // official mint
         buildConfigField("String", "TOKEN_PROGRAM", "\"TokenkegQfeZyiNwAJsyFbPVwwQkYk5LWV2BXVBq\"")
         buildConfigField("String", "BUILD_DATE", "\"${System.currentTimeMillis()}\"")
         buildConfigField("String", "WALLET_IDENTITY_URI", "\"https://deproof.app\"")
