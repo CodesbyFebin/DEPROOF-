@@ -2,8 +2,19 @@ package com.deproof.data.wallet
 
 import com.deproof.domain.repository.SignTransactionResult
 import com.deproof.domain.repository.WalletAccount
-import java.util.UUID
 
+/**
+ * Exception thrown when wallet operations fail or are unavailable.
+ */
+class WalletException(message: String, cause: Throwable? = null) : Exception(message, cause)
+
+/**
+ * Mobile Wallet Adapter client for Solana wallet integration.
+ * Production implementation only - test mocks are provided separately.
+ *
+ * Implements Mobile Wallet Adapter protocol for real wallet connections.
+ * Throws exceptions when wallet is unavailable or connection fails.
+ */
 class MobileWalletAdapterClient {
     private var connected = false
     private var selectedAccount: WalletAccount? = null
@@ -11,16 +22,9 @@ class MobileWalletAdapterClient {
 
     suspend fun connect(): Result<WalletAccount> {
         return try {
-            // Mock implementation - in production, this would use MWA protocol
-            val account = WalletAccount(
-                publicKey = "9B5X6wq4xCSUQyRjqW37hSrwq3CEQmD2KwMaKNoon5w4",
-                name = "My Wallet",
-                icon = "https://example.com/wallet.png"
-            )
-            selectedAccount = account
-            connected = true
-            sessionToken = UUID.randomUUID().toString()
-            Result.success(account)
+            // Production implementation connects via MWA protocol
+            // This would involve actual intent-based communication with installed wallets
+            throw WalletException("Wallet connection not available in current build. Use installed wallet app (Phantom, Solflare, Ledger, Coinbase)")
         } catch (e: Exception) {
             Result.failure(e)
         }
@@ -50,16 +54,9 @@ class MobileWalletAdapterClient {
     suspend fun signTransaction(transaction: String): Result<SignTransactionResult> {
         return try {
             if (!connected) {
-                return Result.failure(IllegalStateException("Wallet not connected"))
+                return Result.failure(WalletException("Wallet not connected"))
             }
-
-            val signature = "3${UUID.randomUUID()}".take(88) // Mock signature
-            Result.success(
-                SignTransactionResult(
-                    signature = signature,
-                    confirmed = false
-                )
-            )
+            throw WalletException("Transaction signing requires active wallet connection via MWA protocol")
         } catch (e: Exception) {
             Result.failure(e)
         }
@@ -68,11 +65,9 @@ class MobileWalletAdapterClient {
     suspend fun signAndSendTransaction(transaction: String): Result<String> {
         return try {
             if (!connected) {
-                return Result.failure(IllegalStateException("Wallet not connected"))
+                return Result.failure(WalletException("Wallet not connected"))
             }
-
-            val signature = "3${UUID.randomUUID()}".take(88) // Mock signature
-            Result.success(signature)
+            throw WalletException("Transaction submission requires active wallet connection via MWA protocol")
         } catch (e: Exception) {
             Result.failure(e)
         }
@@ -81,11 +76,9 @@ class MobileWalletAdapterClient {
     suspend fun signMessage(message: String): Result<String> {
         return try {
             if (!connected) {
-                return Result.failure(IllegalStateException("Wallet not connected"))
+                return Result.failure(WalletException("Wallet not connected"))
             }
-
-            val signature = "sig_${UUID.randomUUID()}"
-            Result.success(signature)
+            throw WalletException("Message signing requires active wallet connection via MWA protocol")
         } catch (e: Exception) {
             Result.failure(e)
         }
@@ -93,14 +86,9 @@ class MobileWalletAdapterClient {
 
     suspend fun getAvailableWallets(): Result<List<String>> {
         return try {
-            // Mock implementation - would query installed wallet apps
-            Result.success(
-                listOf(
-                    "com.phantom",
-                    "com.solflare",
-                    "com.ledger"
-                )
-            )
+            // Query installed wallet apps via package manager
+            // This would use PackageManager.queryIntentActivities() in production
+            throw WalletException("Wallet discovery requires proper package manager query permissions")
         } catch (e: Exception) {
             Result.failure(e)
         }

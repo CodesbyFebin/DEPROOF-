@@ -3,9 +3,10 @@
 
 plugins {
     id("com.android.application")
-    kotlin("android")
+    // kotlin("android")  // No longer required for AGP 9.0+
     // kotlin("kapt")  // TODO: Investigate KAPT unbound symbols issue with enums
     kotlin("plugin.serialization")
+    id("org.jetbrains.kotlin.plugin.compose")
     // Optional: Hilt for DI
     // id("com.google.dagger.hilt.android")
 }
@@ -71,13 +72,15 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
 
-    kotlinOptions {
-        jvmTarget = "11"
-        freeCompilerArgs += listOf(
-            "-opt-in=androidx.compose.material3.ExperimentalMaterial3Api",
-            "-opt-in=androidx.compose.foundation.ExperimentalFoundationApi",
-            "-opt-in=kotlinx.coroutines.ExperimentalCoroutinesApi"
-        )
+    tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
+        compilerOptions {
+            jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_11
+            freeCompilerArgs.addAll(
+                "-opt-in=androidx.compose.material3.ExperimentalMaterial3Api",
+                "-opt-in=androidx.compose.foundation.ExperimentalFoundationApi",
+                "-opt-in=kotlinx.coroutines.ExperimentalCoroutinesApi"
+            )
+        }
     }
 
     buildFeatures {

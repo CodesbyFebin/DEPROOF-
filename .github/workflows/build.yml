@@ -15,8 +15,10 @@ jobs:
           echo "y" | ${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager "build-tools;34.0.0" "platform-tools" "platforms;android-34" 2>&1 || true
         env:
           ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
-      - run: bash deproof-master-build.sh preflight
-      - run: MAX_PARALLEL=2 bash deproof-master-build.sh build
+      - name: Build Release APK
+        run: ./gradlew assembleRelease --stacktrace
+      - name: Build Android Test APK
+        run: ./gradlew assembleAndroidTest --stacktrace
       - uses: actions/upload-artifact@v4
         with:
           name: build-artifacts
