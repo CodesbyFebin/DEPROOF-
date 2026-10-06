@@ -1200,7 +1200,11 @@
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
-      "tests": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/LookupTableTest.kt::instructionReferencingAnAccountBeyondStaticKeysIsRefused",
+        "app/src/test/java/com/example/domain/LookupTableTest.kt::legacyMessageResolvesToItsStaticKeysOnly",
+        "app/src/test/java/com/example/domain/LookupTableTest.kt::versionedMessageWithLookupTableIsRefused"
+      ],
       "qualificationDimensions": [],
       "limitations": [
         "Full typed contract/required integration remains incomplete."
@@ -1784,7 +1788,9 @@
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
-      "tests": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/PolicyTest.kt::onlyHardwareBackedKeyLevelsQualify"
+      ],
       "qualificationDimensions": [],
       "limitations": [
         "Full typed contract/required integration remains incomplete."

@@ -2,6 +2,13 @@
 """Evidence mappings are deliberately conservative: partial UI/protocol work is unverified."""
 import pathlib,json,re
 root=pathlib.Path(__file__).resolve().parents[1]
+# Criterion-specific test links are authoritative and survive regeneration.
+CRITERION_LINKS=json.loads((root/'scripts/criterion-test-links.json').read_text(encoding='utf-8'))['links']
+for _id,_refs in CRITERION_LINKS.items():
+ for _ref in _refs:
+  _path,_name=_ref.split('::')
+  _src=(root/_path).read_text(encoding='utf-8')
+  assert re.search(r'(fun\s+|def\s+)'+re.escape(_name)+r'\s*\(',_src),f'criterion link {_id} names missing test {_ref}'
 D='app/src/main/java/com/example/domain/';A='app/src/main/java/com/example/';N='node-agent/internal/agent/agent.go'
 core_test='app/src/test/java/com/example/domain/CoreTest.kt';core_log='evidence/qualification/core-tests.log';node_log='evidence/qualification/node-tests.log';portable_log='evidence/qualification/verifier-tests.log'
 feature_paths={}
@@ -79,5 +86,6 @@ for name,key in [('features','features'),('core-checks','checks'),('functions','
   else:
    e['status']='BLOCKED' if num in [8,9,10,12,13,15,20,21,22,23,24,25] else 'IMPLEMENTED_UNVERIFIED';e['implementationPaths']=([N] if 11<=num<=20 else ['prover-worker/cmd/prove/main.go','prover-worker/cmd/verify/main.go'] if 21<=num<=25 else [D+'Core.kt',D+'Solana.kt',D+'Records.kt',A+'MainActivity.kt']);e['qualificationDimensions']=['BLOCKED'] if e['status']=='BLOCKED' else ['NOT_RUN'];e['limitations']=['Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required.']
   if not e['limitations']:e['limitations']=['Scope-specific evidence only; full-scope qualification is incomplete.']
+  e['tests']=sorted(set(e['tests']+CRITERION_LINKS.get(id,[])))
  d['updatedAt']='2026-10-06';d['coveragePolicy']='No overlap counted as additional unique features; VERIFIED_LOCAL does not qualify device/external requirements.';p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
 print('Updated conservative per-entry implementation coverage.')

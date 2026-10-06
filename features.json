@@ -1746,7 +1746,9 @@
         "C043",
         "C044"
       ],
-      "tests": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/InspectionTest.kt::verdictsArePerInstructionInOrderAndIndependent"
+      ],
       "qualificationDimensions": [
         "NOT_RUN"
       ],
@@ -1812,7 +1814,10 @@
         "C087",
         "C088"
       ],
-      "tests": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/InspectionTest.kt::allowedMemoSummaryShowsTheExactMemoText",
+        "app/src/test/java/com/example/domain/InspectionTest.kt::allowedTransferSummaryStatesAmountTokenAccountAndRecipient"
+      ],
       "qualificationDimensions": [
         "NOT_RUN"
       ],
@@ -2061,7 +2066,9 @@
         "C087",
         "C088"
       ],
-      "tests": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/ReviewBindingTest.kt::storedHashesAreUnaffectedByCallerBufferChanges"
+      ],
       "qualificationDimensions": [
         "NOT_RUN"
       ],
@@ -2127,7 +2134,11 @@
         "C087",
         "C088"
       ],
-      "tests": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt::memoParserAndImmutableMessageContextMutations",
+        "app/src/test/java/com/example/domain/ReviewBindingTest.kt::reviewTimestampChangeIsRejected",
+        "app/src/test/java/com/example/domain/ReviewBindingTest.kt::signingGateRefusesWalletAccountThatIsNotTheFeePayer"
+      ],
       "qualificationDimensions": [
         "NOT_RUN"
       ],
@@ -2190,7 +2201,9 @@
         "C087",
         "C088"
       ],
-      "tests": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/ReviewBindingTest.kt::signingGateRefusesMessageChangedAfterReview"
+      ],
       "qualificationDimensions": [
         "NOT_RUN"
       ],
@@ -2252,7 +2265,10 @@
         "C087",
         "C088"
       ],
-      "tests": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval",
+        "app/src/test/java/com/example/domain/ReviewBindingTest.kt::feeAndBlockHeightChangesAreRejected"
+      ],
       "qualificationDimensions": [
         "NOT_RUN"
       ],
@@ -2318,7 +2334,10 @@
         "C087",
         "C088"
       ],
-      "tests": [],
+      "tests": [
+        "app/src/test/java/com/example/domain/PolicyTest.kt::firstRebuildIsAllowedAndASecondIsNot",
+        "app/src/test/java/com/example/domain/PolicyTest.kt::rebuiltDraftDoesNotInheritThePriorApproval"
+      ],
       "qualificationDimensions": [
         "NOT_RUN"
       ],
