@@ -38,59 +38,32 @@ jobs:
           key: gradle-${{ runner.os }}-${{ hashFiles('**/*.gradle.kts') }}
           restore-keys: gradle-${{ runner.os }}-
 
-      - name: Run Phase 3 RPC Connection Tests
+      - name: Enable KVM
         run: |
-          export SOLANA_NETWORK=${{ matrix.network }}
-          export TARGET_SDK_API=${{ matrix.api-level }}
-          ./gradlew connectedAndroidTest -Pnetwork=${{ matrix.network }} \
-            -Papi_level=${{ matrix.api-level }} \
-            --tests "com.deproof.data.rpc.RpcConnectionTest" \
-            -x lint
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
 
-      - name: Run Phase 3 Wallet Integration Tests
-        run: |
-          export SOLANA_NETWORK=${{ matrix.network }}
-          export TARGET_SDK_API=${{ matrix.api-level }}
-          ./gradlew connectedAndroidTest -Pnetwork=${{ matrix.network }} \
-            -Papi_level=${{ matrix.api-level }} \
-            --tests "com.deproof.data.wallet.*" \
-            -x lint
-
-      - name: Run Phase 3 Balance Queries Tests
-        run: |
-          export SOLANA_NETWORK=${{ matrix.network }}
-          export TARGET_SDK_API=${{ matrix.api-level }}
-          ./gradlew connectedAndroidTest -Pnetwork=${{ matrix.network }} \
-            -Papi_level=${{ matrix.api-level }} \
-            --tests "com.deproof.data.rpc.BalanceQueriesTest" \
-            -x lint
-
-      - name: Run Phase 3 Transaction Tests
-        run: |
-          export SOLANA_NETWORK=${{ matrix.network }}
-          export TARGET_SDK_API=${{ matrix.api-level }}
-          ./gradlew connectedAndroidTest -Pnetwork=${{ matrix.network }} \
-            -Papi_level=${{ matrix.api-level }} \
-            --tests "com.deproof.data.transaction.*" \
-            -x lint
-
-      - name: Run Phase 3 Error Handling Tests
-        run: |
-          export SOLANA_NETWORK=${{ matrix.network }}
-          export TARGET_SDK_API=${{ matrix.api-level }}
-          ./gradlew connectedAndroidTest -Pnetwork=${{ matrix.network }} \
-            -Papi_level=${{ matrix.api-level }} \
-            --tests "com.deproof.data.rpc.ErrorHandlingTest" \
-            -x lint
-
-      - name: Run Phase 3 Performance Tests
-        run: |
-          export SOLANA_NETWORK=${{ matrix.network }}
-          export TARGET_SDK_API=${{ matrix.api-level }}
-          ./gradlew connectedAndroidTest -Pnetwork=${{ matrix.network }} \
-            -Papi_level=${{ matrix.api-level }} \
-            --tests "com.deproof.data.rpc.PerformanceTest" \
-            -x lint
+      - name: Run Phase 3 instrumented tests on emulator
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: ${{ matrix.api-level }}
+          target: google_apis
+          arch: x86_64
+          profile: pixel_6
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -no-snapshot
+          disable-animations: true
+          script: |
+            export SOLANA_NETWORK=${{ matrix.network }}
+            export TARGET_SDK_API=${{ matrix.api-level }}
+            ./gradlew connectedAndroidTest -Pnetwork=${{ matrix.network }} \
+              -Papi_level=${{ matrix.api-level }} -x lint \
+              --tests "com.deproof.data.rpc.RpcConnectionTest" \
+              --tests "com.deproof.data.wallet.*" \
+              --tests "com.deproof.data.rpc.BalanceQueriesTest" \
+              --tests "com.deproof.data.transaction.*" \
+              --tests "com.deproof.data.rpc.ErrorHandlingTest" \
+              --tests "com.deproof.data.rpc.PerformanceTest"
 
       - name: Upload Test Results
         if: always()
