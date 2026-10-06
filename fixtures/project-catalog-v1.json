@@ -1,0 +1,303 @@
+{
+  "schema": "deproof:adapter-catalog-v1",
+  "version": "1.0.0",
+  "generatedAt": "2026-10-07T00:00:00Z",
+  "_note": "Research sources are official project documentation and GitHub repositories as of catalog generatedAt. No entries imply partnerships. Reward, earnings and yield fields are intentionally absent. SKR integration is BLOCKED for all entries pending an officially verified interface and qualified counterparty.",
+  "adapters": [
+    {
+      "id": "deproof-adapter-helium-iot-v1",
+      "name": "Helium IoT (HNT)",
+      "description": "Helium Network LoRaWAN coverage. Requires a Helium-certified LoRa radio hotspot connected to the host machine or acting as the host machine. Rewards IoT token (IOT) via Proof of Coverage. Migrated to Solana in 2023.",
+      "status": "UNSUPPORTED",
+      "blockedReason": "Requires a Helium-certified LoRa radio hotspot (specialized hardware). Cannot be enforced on a generic Ubuntu node without physical radio hardware. Adapter is UNSUPPORTED until hardware can be verified.",
+      "chain": "solana-mainnet",
+      "officialDocsUrl": "https://docs.helium.com/iot/",
+      "licenseType": "Apache-2.0",
+      "installMethod": "docker-image",
+      "pinnedArtifactDigest": "",
+      "supportedOS": ["ubuntu-22.04", "ubuntu-24.04"],
+      "supportedArch": ["amd64", "arm64"],
+      "requiredHardware": {
+        "minRamMiB": 512,
+        "minDiskMiB": 4096,
+        "minCpuCores": 1,
+        "requiresGpu": false,
+        "requiresSpecialHardware": "Helium-certified LoRa radio hotspot",
+        "openPorts": [1680, 44158]
+      },
+      "requiredAccounts": ["helium-wallet", "solana-rpc"],
+      "requiredCredentials": ["helium-hotspot-key"],
+      "requiredScopes": ["MANAGE_ADAPTER"],
+      "operations": [
+        {
+          "id": "helium-iot-observe",
+          "description": "Observe hotspot connectivity status and PoC witness count from local hotspot API.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "coverage"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "Proof of Coverage (PoC) challenge/witness system via Helium network oracles.",
+        "verificationMethod": "Helium oracle chain variable on Solana; PoC receipts signed by oracle keypairs.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "PoC participation requires physical radio hardware and oracle interaction. Contribution cannot be self-certified."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "UNSUPPORTED due to radio hardware requirement. Qualification not attempted."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "No officially verified SKR interface for Helium IOT rewards. BLOCKED pending verified protocol and qualified counterparty."
+      }
+    },
+    {
+      "id": "deproof-adapter-hivemapper-v1",
+      "name": "Hivemapper (HONEY)",
+      "description": "Hivemapper decentralized map. Requires a Hivemapper dashcam connected via USB to collect GPS-tagged video frames. Rewards HONEY token on Solana.",
+      "status": "UNSUPPORTED",
+      "blockedReason": "Requires Hivemapper dashcam hardware (specialized USB device). Cannot be enforced on a generic Ubuntu server node without the physical dashcam.",
+      "chain": "solana-mainnet",
+      "officialDocsUrl": "https://docs.hivemapper.com/",
+      "licenseType": "Proprietary (Hivemapper Inc.)",
+      "installMethod": "binary",
+      "pinnedArtifactDigest": "",
+      "supportedOS": ["ubuntu-22.04"],
+      "supportedArch": ["amd64"],
+      "requiredHardware": {
+        "minRamMiB": 2048,
+        "minDiskMiB": 51200,
+        "minCpuCores": 2,
+        "requiresGpu": false,
+        "requiresSpecialHardware": "Hivemapper dashcam (USB-A connected)",
+        "openPorts": []
+      },
+      "requiredAccounts": ["hivemapper-account", "solana-rpc"],
+      "requiredCredentials": ["hivemapper-api-key"],
+      "requiredScopes": ["MANAGE_ADAPTER"],
+      "operations": [
+        {
+          "id": "hivemapper-observe",
+          "description": "Observe dashcam connectivity and local frame-collection state.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "location"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "GPS-tagged video frame submission to Hivemapper network.",
+        "verificationMethod": "Hivemapper network validates frame quality and uniqueness before issuing HONEY.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "Physical dashcam required. Frames validated by Hivemapper before rewards issued."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "UNSUPPORTED due to dashcam hardware requirement."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "No officially verified SKR interface for Hivemapper HONEY rewards. BLOCKED."
+      }
+    },
+    {
+      "id": "deproof-adapter-nosana-v1",
+      "name": "Nosana CI (NOS)",
+      "description": "Nosana decentralized CI/CD compute market on Solana. Nodes provide CPU compute for CI pipeline jobs. Rewards NOS token.",
+      "status": "PLANNED",
+      "chain": "solana-mainnet",
+      "officialDocsUrl": "https://docs.nosana.io/nodes/",
+      "licenseType": "Apache-2.0",
+      "installMethod": "docker-image",
+      "pinnedArtifactDigest": "",
+      "supportedOS": ["ubuntu-22.04", "ubuntu-24.04"],
+      "supportedArch": ["amd64"],
+      "requiredHardware": {
+        "minRamMiB": 4096,
+        "minDiskMiB": 20480,
+        "minCpuCores": 2,
+        "requiresGpu": false,
+        "openPorts": []
+      },
+      "requiredAccounts": ["solana-wallet", "nosana-staking-account"],
+      "requiredCredentials": ["nosana-node-keypair"],
+      "requiredScopes": ["MANAGE_ADAPTER", "RUN_PROOF_JOB"],
+      "operations": [
+        {
+          "id": "nosana-observe",
+          "description": "Observe Nosana node registration and job queue state from local node process.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "compute"
+        },
+        {
+          "id": "nosana-run-job",
+          "description": "Execute a CI pipeline job spec dispatched from the Nosana market.",
+          "requiredScope": "RUN_PROOF_JOB",
+          "contributionKind": "compute"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "Job completion proof submitted to Nosana market program on Solana.",
+        "verificationMethod": "Nosana program validates job result on-chain. Verifiable at any Solana RPC.",
+        "trustLevel": "INDEPENDENTLY_VERIFIED_RESULT",
+        "notes": "On-chain job result is independently verifiable. Local byte counter alone does not constitute independent verification."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "PLANNED. No qualification run attempted. Requires Nosana node setup on the paired Ubuntu node."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "No officially verified SKR interface for Nosana NOS rewards. BLOCKED."
+      }
+    },
+    {
+      "id": "deproof-adapter-render-v1",
+      "name": "Render Network (RNDR)",
+      "description": "Render Network GPU rendering. Nodes provide GPU compute for 3D rendering jobs. Rewards RNDR token.",
+      "status": "UNSUPPORTED",
+      "blockedReason": "Requires NVIDIA GPU hardware with CUDA support. Cannot be enforced on a generic CPU-only Ubuntu node. Adapter will remain UNSUPPORTED until GPU presence is verified.",
+      "chain": "solana-mainnet",
+      "officialDocsUrl": "https://know.rendertoken.com/getting-started/nodes",
+      "licenseType": "Proprietary (Render Network Foundation)",
+      "installMethod": "binary",
+      "pinnedArtifactDigest": "",
+      "supportedOS": ["ubuntu-22.04"],
+      "supportedArch": ["amd64"],
+      "requiredHardware": {
+        "minRamMiB": 8192,
+        "minDiskMiB": 51200,
+        "minCpuCores": 4,
+        "requiresGpu": true,
+        "requiresSpecialHardware": "NVIDIA GPU with CUDA 11.x or later",
+        "openPorts": []
+      },
+      "requiredAccounts": ["render-wallet", "solana-rpc"],
+      "requiredCredentials": ["render-node-key"],
+      "requiredScopes": ["MANAGE_ADAPTER", "RUN_PROOF_JOB"],
+      "operations": [],
+      "contributionMeasurement": {
+        "method": "GPU rendering task completion verified by Render Network.",
+        "verificationMethod": "Render Network validates output image fidelity.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "GPU presence and capability cannot be fabricated. GPU attestation required."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "UNSUPPORTED due to GPU hardware requirement."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "No officially verified SKR interface for Render RNDR rewards. BLOCKED."
+      }
+    },
+    {
+      "id": "deproof-adapter-geodnet-v1",
+      "name": "GEODNET (GEOD)",
+      "description": "GEODNET decentralized GPS correction network. Requires a GNSS reference station (u-blox or compatible receiver) connected to the host. Rewards GEOD token on Solana.",
+      "status": "UNSUPPORTED",
+      "blockedReason": "Requires physical GNSS reference station hardware (u-blox ZED-F9P or equivalent). Cannot be enforced on a generic Ubuntu node.",
+      "chain": "solana-mainnet",
+      "officialDocsUrl": "https://geodnet.com/get-started",
+      "licenseType": "Proprietary (GEODNET Foundation)",
+      "installMethod": "binary",
+      "pinnedArtifactDigest": "",
+      "supportedOS": ["ubuntu-22.04"],
+      "supportedArch": ["amd64"],
+      "requiredHardware": {
+        "minRamMiB": 1024,
+        "minDiskMiB": 2048,
+        "minCpuCores": 1,
+        "requiresGpu": false,
+        "requiresSpecialHardware": "u-blox ZED-F9P or compatible GNSS multi-band receiver",
+        "openPorts": [2101]
+      },
+      "requiredAccounts": ["geodnet-account", "solana-rpc"],
+      "requiredCredentials": ["geodnet-station-key"],
+      "requiredScopes": ["MANAGE_ADAPTER"],
+      "operations": [
+        {
+          "id": "geodnet-observe",
+          "description": "Observe GNSS station connectivity and correction stream status.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "location"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "GNSS correction stream availability verified by GEODNET network.",
+        "verificationMethod": "NTRIP protocol data validated by GEODNET infrastructure.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "Physical GNSS receiver required. Contribution cannot be simulated."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "UNSUPPORTED due to GNSS hardware requirement."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "No officially verified SKR interface for GEODNET rewards. BLOCKED."
+      }
+    },
+    {
+      "id": "deproof-adapter-latency-fixture-v1",
+      "name": "Latency Measurement (Local Qualification Fixture)",
+      "description": "LOCAL QUALIFICATION FIXTURE ONLY. Measures TCP connection latency to a declared target endpoint and produces a signed contribution receipt. This is not integration with any external DePIN provider. It exists solely to exercise and qualify the full adapter pipeline: catalog → compatibility → consent → execution → observation → verification → receipt → mobile inspection → export. Do not present receipts from this adapter as provider-acknowledged contribution.",
+      "status": "QUALIFIED",
+      "chain": "none",
+      "officialDocsUrl": "",
+      "licenseType": "Apache-2.0",
+      "installMethod": "none",
+      "pinnedArtifactDigest": "sha256:builtin",
+      "supportedOS": ["ubuntu-22.04", "ubuntu-24.04", "ubuntu-20.04"],
+      "supportedArch": ["amd64", "arm64"],
+      "requiredHardware": {
+        "minRamMiB": 64,
+        "minDiskMiB": 16,
+        "minCpuCores": 1,
+        "requiresGpu": false,
+        "openPorts": []
+      },
+      "requiredAccounts": [],
+      "requiredCredentials": [],
+      "requiredScopes": ["MANAGE_ADAPTER"],
+      "operations": [
+        {
+          "id": "latency-measure",
+          "description": "Measure TCP connection latency to a declared reachable endpoint. Records measured round-trip time, observation timestamp, and source. Does not infer any reward or real DePIN contribution.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "latency-measurement"
+        },
+        {
+          "id": "latency-export",
+          "description": "Export the signed contribution receipt for the most recent latency-measure operation.",
+          "requiredScope": "EXPORT_PUBLIC_RECORDS",
+          "contributionKind": "none"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "TCP dial to declared endpoint; measured wall-clock duration in microseconds.",
+        "verificationMethod": "Node re-executes dial to same endpoint and compares result to declared receipt; deviation within 5x accepted.",
+        "trustLevel": "NODE_SIGNED_RECORD",
+        "notes": "LOCAL_OBSERVATION elevated to NODE_SIGNED_RECORD by node-agent Ed25519 signature over the receipt. Not independently verified by a third party. Not a real DePIN contribution."
+      },
+      "qualificationStatus": {
+        "state": "VERIFIED_LOCAL",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": ["adapter-catalog-v1"],
+        "notes": "Qualified through the full adapter pipeline using local fixture only. No external provider interaction."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "This is a local qualification fixture with no provider integration. SKR integration does not apply."
+      }
+    }
+  ]
+}

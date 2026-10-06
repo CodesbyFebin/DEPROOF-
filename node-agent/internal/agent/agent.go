@@ -415,6 +415,8 @@ func scopeFor(action string) string {
 		return "RUN_PROOF_JOB"
 	case "export":
 		return "EXPORT_PUBLIC_RECORDS"
+	case "listAdapters", "getAdapter", "runAdapter", "listWorkloadReceipts":
+		return "MANAGE_ADAPTER"
 	}
 	return ""
 }
@@ -658,6 +660,13 @@ func (a *Agent) Command(s Signed) (any, error) {
 	case "export":
 		a.mu.Unlock()
 		return map[string]string{"fingerprint": a.Fingerprint(), "publicKey": base64.StdEncoding.EncodeToString(a.PublicKey()), "privateKey": "NOT_EXPORTED"}, nil
+	case "listAdapters", "getAdapter", "runAdapter", "listWorkloadReceipts":
+		a.mu.Unlock()
+		result, handled, e := a.DispatchAdapter(c)
+		if !handled {
+			return nil, errors.New("UNKNOWN_OPERATION")
+		}
+		return result, e
 	}
 	a.mu.Unlock()
 	return nil, errors.New("UNKNOWN_OPERATION")
