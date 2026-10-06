@@ -38,9 +38,9 @@ import java.time.Instant
             if(exclusive) working=true
             error=null
             try {
-                val result=repository.command(peer,action,params)
-                if(action=="observe") status=result
-                else if(action=="discoverProofJobs") jobs=result
+                val result=if(action=="proof")repository.proof(peer,jobs ?: throw Failure("JOB_UNAVAILABLE"),status ?: throw Failure("CAPABILITIES_UNAVAILABLE"),params["explicitConsent"]?.asBoolean()==true) else repository.command(peer,action,params)
+                if(action=="observe") {status=result;inputConsent=false}
+                else if(action=="discoverProofJobs") {jobs=result;inputConsent=false}
                 else if(action=="revoke") {status=null;error="Session revoked by node; further commands denied"}
                 else {error="Node returned an authenticated result. Refresh status for current runtime state."}
             } catch(e: Exception) {error=(e as? Failure)?.code ?: "NODE_UNAVAILABLE — status unknown; refresh, do not replay"}
@@ -60,7 +60,7 @@ import java.time.Instant
         Row {Checkbox(confirmed,{confirmed=it});Text(stringResource(R.string.ui_b8cf000395d8),Modifier.padding(top=12.dp))}
         Button(enabled=confirmed && !working,onClick={scope.launch {working=true;error=null;try {repository.pair(endpoint,pin,Json.parse(challenge),code,fingerprint,scopes.sorted());code="";confirmed=false;error="Paired; refresh to observe the node"} catch(e:Exception){error=(e as? Failure)?.code ?: "PAIRING_UNAVAILABLE"}finally{working=false}}}) {Text(stringResource(R.string.ui_b81ce254eba0))}
     }
-    sessions.forEach {s -> TextButton(onClick={selected=s.id;status=null;jobs=null}) {Text(stringResource(R.string.ui_455fc3345560 ,(s.fingerprint.take(12)).toString(),(s.state).toString()))} }
+    sessions.forEach {s -> TextButton(onClick={selected=s.id;status=null;jobs=null;inputConsent=false}) {Text(stringResource(R.string.ui_455fc3345560 ,(s.fingerprint.take(12)).toString(),(s.state).toString()))} }
     session?.let {peer ->
         Text(stringResource(R.string.ui_45ffa1cdb735 ,(peer.fingerprint).toString()))
         Text(stringResource(R.string.ui_cdc4e367f92e ,(peer.state).toString(),(peer.scopes).toString()))
@@ -85,11 +85,13 @@ import java.time.Instant
             Text(stringResource(R.string.ui_23e271c3be3f))
         }
         if(page=="Proof jobs") {
+            val match=proofDispatchDecision(jobs,status)
+            Text("${match.state}: ${match.reasons.joinToString()}")
             Button(enabled=!working,onClick={command("discoverProofJobs")}) {Text(stringResource(R.string.ui_72ef303be147))}
             jobs?.let {j -> SelectionContainer {Text(Json.mapper.writerWithDefaultPrettyPrinter().writeValueAsString(j))}}
             Text(stringResource(R.string.ui_9a9c0cd94b3e))
             Row {Checkbox(inputConsent,{inputConsent=it});Text(stringResource(R.string.ui_5df379fab397),Modifier.padding(top=12.dp))}
-            Button(enabled=jobs?.get("jobId")!=null && inputConsent && !working,onClick={command("proof",Json.obj("jobId" to jobs!!["jobId"].asText(),"explicitConsent" to true));inputConsent=false}) {Text(stringResource(R.string.ui_dab4cb8ac57a))}
+            Button(enabled=match.state=="COMPATIBLE_LOCAL_PROFILE" && inputConsent && !working,onClick={command("proof",Json.obj("jobId" to jobs!!["jobId"].asText(),"explicitConsent" to true));inputConsent=false}) {Text(stringResource(R.string.ui_dab4cb8ac57a))}
             Button(onClick={command("cancelProof")}) {Text(stringResource(R.string.ui_dba22c4a4931))}
         }
     } ?: Text(stringResource(R.string.ui_d02f6ffb4e2a))

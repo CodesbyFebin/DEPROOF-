@@ -17,6 +17,12 @@ class NodeRepository(private val dao: RecordsDao) {
         ensure(id.matches(Regex("[0-9a-f]{48}")),"BAD_PAIR_RESPONSE")
         dao.pair(NodeSession(id,endpoint,pin,fingerprint,encrypted,Json.mapper.writeValueAsString(scopes),"PAIRED"))
     }
+    suspend fun proof(session: NodeSession,job: JsonNode,observation: JsonNode,consent: Boolean): JsonNode {
+        ensure(consent,"PROOF_CONSENT_REQUIRED")
+        ensure(observation["fingerprint"]?.asText()==session.fingerprint,"NODE_FINGERPRINT_MISMATCH")
+        val match=proofDispatchDecision(job,observation);ensure(match.state=="COMPATIBLE_LOCAL_PROFILE","PROOF_"+match.state+":"+match.reasons.joinToString(","))
+        return command(session,"proof",Json.obj("jobId" to job["jobId"].asText(),"explicitConsent" to true))
+    }
     suspend fun command(session: NodeSession,action: String,params: JsonNode): JsonNode=withContext(Dispatchers.IO) {
         ensure(session.state=="PAIRED","NODE_REPAIR_REQUIRED")
         val id=UUID.randomUUID().toString()
