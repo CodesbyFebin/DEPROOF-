@@ -57,6 +57,28 @@ preflight() {
     log "Preflight checks passed!"
 }
 
+# Retry function for network resilience
+retry_gradle() {
+    local max_attempts=3
+    local attempt=1
+    local cmd="$@"
+
+    while [ $attempt -le $max_attempts ]; do
+        log "Gradle attempt $attempt/$max_attempts: $cmd"
+        if eval "$cmd"; then
+            return 0
+        fi
+
+        if [ $attempt -lt $max_attempts ]; then
+            warn "Attempt $attempt failed, retrying in 10 seconds..."
+            sleep 10
+        fi
+        ((attempt++))
+    done
+
+    return 1
+}
+
 # Build P1: Android MVP
 build_p1() {
     log "Building P1: Android MVP..."
@@ -64,8 +86,8 @@ build_p1() {
 
     cd "$PROJECT_ROOT"
 
-    # Clean and build
-    ./gradlew clean 2>&1 | tee "$STATE_DIR/logs/android-clean.log" || error "Gradle clean failed"
+    # Clean and build (with retry for network issues)
+    retry_gradle "./gradlew clean 2>&1 | tee '$STATE_DIR/logs/android-clean.log'" || error "Gradle clean failed"
 
     # Run tests
     ./gradlew testDebugUnitTest --rerun-tasks 2>&1 | tee "$STATE_DIR/logs/android-tests.log" || {
@@ -76,8 +98,8 @@ build_p1() {
         done
     }
 
-    # Build APK
-    ./gradlew assembleDebug --rerun-tasks 2>&1 | tee "$STATE_DIR/logs/android-build.log" || error "APK build failed"
+    # Build APK (with retry for network issues)
+    retry_gradle "./gradlew assembleDebug --rerun-tasks 2>&1 | tee '$STATE_DIR/logs/android-build.log'" || error "APK build failed"
 
     # Verify APK
     APK_PATH="$PROJECT_ROOT/app/build/outputs/apk/debug/app-debug.apk"
