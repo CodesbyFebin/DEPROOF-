@@ -7,7 +7,17 @@ import java.io.File
 // FN059 partial: the dispatcher reads the real connectors/support.json and must
 // never report success, freshness or an observation.
 class ConnectorTest {
-    private val raw = File("../connectors/support.json").readText(Charsets.UTF_8)
+    // Gradle runs tests from app/, qualify-core.py from the repository root. Walk up to find the file.
+    private fun supportFile(): File {
+        var dir: File? = File(System.getProperty("user.dir")).absoluteFile
+        while (dir != null) {
+            val candidate = File(dir, "connectors/support.json")
+            if (candidate.isFile) return candidate
+            dir = dir.parentFile
+        }
+        error("connectors/support.json not found from ${System.getProperty("user.dir")}")
+    }
+    private val raw = supportFile().readText(Charsets.UTF_8)
     private val registry = parseConnectorSupport(raw)
     private val op = ConnectorRequest("status")
     private fun fails(code: String, block: () -> Unit) { try { block(); fail("Expected $code") } catch (e: Failure) { assertEquals(code, e.code) } }
