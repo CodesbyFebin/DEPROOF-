@@ -3,6 +3,7 @@ package com.deproof.data.wallet
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.deproof.data.util.BalanceFormatter
 import java.math.BigDecimal
+import kotlinx.coroutines.runBlocking
 import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Test
@@ -34,7 +35,9 @@ class WalletIntegrationTest {
 
     @Test
     fun mwaConnectionSucceeds() {
-        val result = mwaClient.connect()
+        val result = runBlocking {
+            mwaClient.connect()
+        }
 
         assertTrue(result.isSuccess)
         val account = result.getOrNull()
@@ -45,7 +48,9 @@ class WalletIntegrationTest {
 
     @Test
     fun walletAuthorizationRequestHandling() {
-        mwaClient.connect()
+        runBlocking {
+            mwaClient.connect()
+        }
 
         assertTrue(mwaClient.isConnected())
         assertTrue(mwaClient.hasPermissions(listOf("sign_transaction", "sign_message")))
@@ -53,10 +58,14 @@ class WalletIntegrationTest {
 
     @Test
     fun signTransactionWithWallet() {
-        mwaClient.connect()
+        runBlocking {
+            mwaClient.connect()
+        }
         val transaction = "mock_transaction_instruction"
 
-        val result = mwaClient.signTransaction(transaction)
+        val result = runBlocking {
+            mwaClient.signTransaction(transaction)
+        }
 
         assertTrue(result.isSuccess)
         val signResult = result.getOrNull()
@@ -66,10 +75,14 @@ class WalletIntegrationTest {
 
     @Test
     fun signMessageWithWallet() {
-        mwaClient.connect()
+        runBlocking {
+            mwaClient.connect()
+        }
         val message = "Sign this message to prove ownership"
 
-        val result = mwaClient.signMessage(message)
+        val result = runBlocking {
+            mwaClient.signMessage(message)
+        }
 
         assertTrue(result.isSuccess)
         val signature = result.getOrNull()
@@ -79,7 +92,9 @@ class WalletIntegrationTest {
 
     @Test
     fun multipleWalletSupport() {
-        val wallets = mwaClient.getAvailableWallets()
+        val wallets = runBlocking {
+            mwaClient.getAvailableWallets()
+        }
 
         assertTrue(wallets.isSuccess)
         val walletList = wallets.getOrNull()
@@ -91,21 +106,29 @@ class WalletIntegrationTest {
     fun sessionTokenManagement() {
         assertNull(mwaClient.getSessionToken())
 
-        mwaClient.connect()
+        runBlocking {
+            mwaClient.connect()
+        }
         val sessionToken = mwaClient.getSessionToken()
         assertNotNull(sessionToken)
         assertTrue(sessionToken?.isNotEmpty() == true)
 
-        mwaClient.disconnect()
+        runBlocking {
+            mwaClient.disconnect()
+        }
         assertNull(mwaClient.getSessionToken())
     }
 
     @Test
     fun walletDisconnectAndCleanup() {
-        mwaClient.connect()
+        runBlocking {
+            mwaClient.connect()
+        }
         assertTrue(mwaClient.isConnected())
 
-        val result = mwaClient.disconnect()
+        val result = runBlocking {
+            mwaClient.disconnect()
+        }
         assertTrue(result.isSuccess)
         assertFalse(mwaClient.isConnected())
     }
@@ -113,13 +136,17 @@ class WalletIntegrationTest {
     @Test
     fun handleMissingWalletApp() {
         // Simulate missing wallet - should still return available wallets for installation
-        val wallets = mwaClient.getAvailableWallets()
+        val wallets = runBlocking {
+            mwaClient.getAvailableWallets()
+        }
         assertTrue(wallets.isSuccess)
     }
 
     @Test
     fun walletPermissionValidation() {
-        mwaClient.connect()
+        runBlocking {
+            mwaClient.connect()
+        }
 
         val hasPermissions = mwaClient.hasPermissions(listOf("sign_transaction", "sign_message"))
         assertTrue(hasPermissions)
