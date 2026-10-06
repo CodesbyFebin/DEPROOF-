@@ -467,23 +467,12 @@ func base58DecodePubkey(s string) ([32]byte, error) {
 
 	decoded := n.Bytes()
 
-	// Count leading-zero bytes (base58 '1' characters).
-	leadingZeros := 0
-	for _, ch := range s {
-		if ch != '1' {
-			break
-		}
-		leadingZeros++
+	// right-justify decoded into the 32-byte result; leading bytes stay zero.
+	// big.Int.Bytes() strips leading zero bytes, so we can't use len(decoded) alone.
+	if len(decoded) > 32 {
+		return result, fmt.Errorf("decoded pubkey length is %d, expected <=32", len(decoded))
 	}
-
-	full := make([]byte, leadingZeros+len(decoded))
-	copy(full[leadingZeros:], decoded)
-
-	if len(full) != 32 {
-		return result, fmt.Errorf("decoded pubkey length is %d, expected 32", len(full))
-	}
-
-	copy(result[:], full)
+	copy(result[32-len(decoded):], decoded)
 	return result, nil
 }
 
