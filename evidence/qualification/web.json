@@ -1,0 +1,136 @@
+{
+  "schema": "deproof-gate-v1",
+  "task": "web",
+  "status": "PASS",
+  "checks": [
+    {
+      "id": "WEB-PAGE-INDEX",
+      "status": "PASS",
+      "command": "test -s web/index.html && echo PRESENT",
+      "evidencePath": "evidence/qualification/web/index.html.txt"
+    },
+    {
+      "id": "WEB-PAGE-FEATURES",
+      "status": "PASS",
+      "command": "test -s web/features.html && echo PRESENT",
+      "evidencePath": "evidence/qualification/web/features.html.txt"
+    },
+    {
+      "id": "WEB-PAGE-PRIVACY",
+      "status": "PASS",
+      "command": "test -s web/privacy.html && echo PRESENT",
+      "evidencePath": "evidence/qualification/web/privacy.html.txt"
+    },
+    {
+      "id": "WEB-PAGE-ECOSYSTEM",
+      "status": "PASS",
+      "command": "test -s web/ecosystem.html && echo PRESENT",
+      "evidencePath": "evidence/qualification/web/ecosystem.html.txt"
+    },
+    {
+      "id": "WEB-PAGE-HOW_IT_WORKS",
+      "status": "PASS",
+      "command": "test -s web/how-it-works.html && echo PRESENT",
+      "evidencePath": "evidence/qualification/web/how-it-works.html.txt"
+    },
+    {
+      "id": "WEB-PAGE-PROJECT",
+      "status": "PASS",
+      "command": "test -s web/project.html && echo PRESENT",
+      "evidencePath": "evidence/qualification/web/project.html.txt"
+    },
+    {
+      "id": "WEB-PAGE-DOCUMENTATION",
+      "status": "PASS",
+      "command": "test -s web/documentation.html && echo PRESENT",
+      "evidencePath": "evidence/qualification/web/documentation.html.txt"
+    },
+    {
+      "id": "WEB-CSS-01",
+      "status": "PASS",
+      "command": "test -s web/style.css && echo PRESENT",
+      "evidencePath": "evidence/qualification/web/style-css.txt"
+    },
+    {
+      "id": "WEB-A11Y-01",
+      "status": "PASS",
+      "command": "grep -c 'lang=' web/index.html 2>&1",
+      "evidencePath": "evidence/qualification/web/lang-index.txt"
+    },
+    {
+      "id": "WEB-A11Y-02",
+      "status": "PASS",
+      "command": "grep -c '<title>' web/index.html 2>&1",
+      "evidencePath": "evidence/qualification/web/title-index.txt"
+    },
+    {
+      "id": "WEB-A11Y-03",
+      "status": "PASS",
+      "command": "grep -c 'viewport' web/index.html 2>&1",
+      "evidencePath": "evidence/qualification/web/viewport-index.txt"
+    },
+    {
+      "id": "WEB-A11Y-04",
+      "status": "PASS",
+      "command": "grep -c 'lang=' web/features.html 2>&1",
+      "evidencePath": "evidence/qualification/web/lang-features.txt"
+    },
+    {
+      "id": "WEB-A11Y-05",
+      "status": "PASS",
+      "command": "grep -c '<title>' web/features.html 2>&1",
+      "evidencePath": "evidence/qualification/web/title-features.txt"
+    },
+    {
+      "id": "WEB-PRIV-01",
+      "status": "PASS",
+      "command": "wc -c web/privacy.html 2>&1",
+      "evidencePath": "evidence/qualification/web/privacy-size.txt"
+    },
+    {
+      "id": "WEB-SEC-01",
+      "status": "PASS",
+      "command": "grep -rE '[1-9A-HJ-NP-Za-km-z]{40,50}' web/*.html | grep -v '<!-' | grep -v 'example' | wc -l",
+      "evidencePath": "evidence/qualification/web/no-mainnet-addrs.txt"
+    },
+    {
+      "id": "WEB-SIZE-01",
+      "status": "PASS",
+      "command": "du -sb web/*.html | awk '{s+=$1} END {if (s<204800) print \"SIZE_OK\"; else print \"TOO_BIG: \" s}'",
+      "evidencePath": "evidence/qualification/web/html-size.txt"
+    },
+    {
+      "id": "WEB-ASSET-01",
+      "status": "PASS",
+      "command": "test -d web/assets && echo PRESENT",
+      "evidencePath": "evidence/qualification/web/assets-dir.txt"
+    },
+    {
+      "id": "WEB-MAN-01",
+      "status": "NOT_APPLICABLE",
+      "reason": "Live domain DNS/TLS: requires deployment, not testable locally."
+    },
+    {
+      "id": "WEB-MAN-02",
+      "status": "NOT_APPLICABLE",
+      "reason": "Lighthouse score >= 90: requires Chromium + devserver; gated on deployment."
+    }
+  ],
+  "limitations": [
+    "Static file checks only; live DNS, TLS, and CDN delivery require deployment.",
+    "Lighthouse/accessibility score not measured; requires headless Chromium.",
+    "No broken-link check; requires HTTP server or crawler."
+  ],
+  "manualGates": [
+    {
+      "id": "WEB-MAN-01",
+      "status": "BLOCKED",
+      "reason": "Live domain DNS/TLS and CDN edge caching: requires deployment environment."
+    },
+    {
+      "id": "WEB-MAN-02",
+      "status": "BLOCKED",
+      "reason": "Lighthouse accessibility and performance score >= 90."
+    }
+  ]
+}

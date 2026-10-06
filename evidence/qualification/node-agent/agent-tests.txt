@@ -1,0 +1,24 @@
+=== RUN   TestIdentityPersistsAndPermissions
+--- PASS: TestIdentityPersistsAndPermissions (0.00s)
+=== RUN   TestPairScopeReplayRevocationAndRestart
+--- PASS: TestPairScopeReplayRevocationAndRestart (0.00s)
+=== RUN   TestForgedAndMalformedDenied
+--- PASS: TestForgedAndMalformedDenied (0.00s)
+=== RUN   TestDefaultBandwidthOffAndQuotaPersists
+--- PASS: TestDefaultBandwidthOffAndQuotaPersists (0.00s)
+=== RUN   TestHttpHandlerBoundsAndMethod
+--- PASS: TestHttpHandlerBoundsAndMethod (0.00s)
+=== RUN   TestReaderKnownBytesCancellationAndLimit
+--- PASS: TestReaderKnownBytesCancellationAndLimit (0.00s)
+=== RUN   TestExclusiveOwnerLock
+--- PASS: TestExclusiveOwnerLock (0.00s)
+=== RUN   TestOperationIdentityCannotTraversePaths
+--- PASS: TestOperationIdentityCannotTraversePaths (0.00s)
+=== RUN   TestSelfRevocationDoesNotDisableAnotherPeersConsent
+--- PASS: TestSelfRevocationDoesNotDisableAnotherPeersConsent (0.00s)
+=== RUN   TestUnconfiguredProofCapabilitiesAreUnavailable
+--- PASS: TestUnconfiguredProofCapabilitiesAreUnavailable (0.00s)
+=== RUN   TestResourceObservationDoesNotInventMemoryOnUnsupportedHosts
+--- PASS: TestResourceObservationDoesNotInventMemoryOnUnsupportedHosts (0.00s)
+PASS
+ok  	deproof.local/node-agent/internal/agent	(cached)

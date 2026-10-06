@@ -1,0 +1,2 @@
+-rwxrwxr-x 1 codesbyfebin codesbyfebin 11M Oct  7 00:58 /tmp/deproof-node-qa
+OK

@@ -1,0 +1,3 @@
+fixtures/jcs-vectors.json
+fixtures/location-golden.json
+fixtures/transfer-checked-vectors.json

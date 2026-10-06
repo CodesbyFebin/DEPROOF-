@@ -1,0 +1,4 @@
+contracts/evidence-envelope-v2.schema.json
+contracts/evidence-v2.schema.json
+contracts/portable-backup-v1.schema.json
+contracts/receipt-v2.schema.json

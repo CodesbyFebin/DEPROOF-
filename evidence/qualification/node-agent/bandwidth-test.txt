@@ -1,0 +1,4 @@
+=== RUN   TestDefaultBandwidthOffAndQuotaPersists
+--- PASS: TestDefaultBandwidthOffAndQuotaPersists (0.00s)
+PASS
+ok  	deproof.local/node-agent/internal/agent	0.007s

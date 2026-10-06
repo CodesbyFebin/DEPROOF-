@@ -4,10 +4,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.plugin.compose")
-    // kotlin("kapt")  // TODO: Investigate KAPT unbound symbols issue with enums
+    id("com.google.devtools.ksp")
     kotlin("plugin.serialization")
-    // Optional: Hilt for DI
-    // id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -35,8 +33,23 @@ android {
         buildConfigField("String", "WALLET_IDENTITY_URI", "\"https://deproof.app\"")
     }
 
+    val keystorePath = System.getenv("DEPROOF_KEYSTORE_PATH")
+    if (keystorePath != null) {
+        signingConfigs {
+            create("release") {
+                keyAlias = System.getenv("DEPROOF_KEY_ALIAS") ?: "deproof-key"
+                keyPassword = System.getenv("DEPROOF_KEY_PASSWORD") ?: ""
+                storeFile = file(keystorePath)
+                storePassword = System.getenv("DEPROOF_KEYSTORE_PASSWORD") ?: ""
+            }
+        }
+    }
+
     buildTypes {
         release {
+            if (keystorePath != null) {
+                signingConfig = signingConfigs.getByName("release")
+            }
             isMinifyEnabled = true
             isShrinkResources = true
 
@@ -46,7 +59,6 @@ android {
             )
 
             buildConfigField("Boolean", "DEBUG_MODE", "false")
-            // signingConfig intentionally omitted — produces an unsigned APK
         }
 
         debug {
@@ -55,8 +67,8 @@ android {
         }
     }
 
-    // Signing configuration (release)
-    // Note: Configure with environment variables DEPROOF_KEYSTORE_PATH, DEPROOF_KEYSTORE_PASSWORD, DEPROOF_KEY_ALIAS, DEPROOF_KEY_PASSWORD
+    // Release signing uses env vars: DEPROOF_KEYSTORE_PATH, DEPROOF_KEYSTORE_PASSWORD,
+    // DEPROOF_KEY_ALIAS, DEPROOF_KEY_PASSWORD — omitting them produces an unsigned APK.
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -128,9 +140,9 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.2")
 
     // Room Database
-    implementation("androidx.room:room-runtime:2.6.0")
-    implementation("androidx.room:room-ktx:2.6.0")
-    // kapt("androidx.room:room-compiler:2.6.0")  // TODO: KAPT disabled due to enum processing issue
+    implementation("androidx.room:room-runtime:2.8.4")
+    implementation("androidx.room:room-ktx:2.8.4")
+    ksp("androidx.room:room-compiler:2.8.4")
 
     // DataStore (Preferences)
     implementation("androidx.datastore:datastore-preferences:1.0.0")
@@ -185,7 +197,11 @@ dependencies {
     testImplementation("androidx.compose.ui:ui-test-manifest:1.5.4")
 
     // Room Testing
-    testImplementation("androidx.room:room-testing:2.6.0")
+    testImplementation("androidx.room:room-testing:2.8.4")
+
+    // Robolectric (required by data-layer unit tests that use Android APIs on JVM)
+    testImplementation("org.robolectric:robolectric:4.13")
+    testImplementation("androidx.test:core:1.6.1")
 
     // Instrumented Tests (Android Device Tests)
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
@@ -209,6 +225,10 @@ tasks.register("printBuildInfo") {
         println("Target SDK: ${android.defaultConfig.targetSdk}")
         println("Compile SDK: ${android.compileSdk}")
     }
+}
+
+ksp {
+    arg("room.schemaLocation", "$projectDir/schemas")
 }
 
 // Run before build
