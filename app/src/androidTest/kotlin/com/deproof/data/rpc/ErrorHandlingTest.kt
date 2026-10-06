@@ -3,6 +3,7 @@ package com.deproof.data.rpc
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import java.io.IOException
 import java.util.concurrent.TimeoutException
+import kotlinx.coroutines.runBlocking
 import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Test
@@ -148,10 +149,4 @@ class ErrorHandlingTest {
         assertTrue(recoveredResult.isSuccess)
     }
 
-    // Helper for testing suspend functions in tests
-    private fun <T> runBlocking(block: suspend () -> T): T {
-        return kotlinx.coroutines.runBlocking {
-            block()
-        }
-    }
 }
