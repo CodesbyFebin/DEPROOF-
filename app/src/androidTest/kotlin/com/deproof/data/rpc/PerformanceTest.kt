@@ -30,11 +30,11 @@ class PerformanceTest {
 
         val start = System.currentTimeMillis()
         val balanceResult = runBlocking {
-            client.getBalance(testAddress).getOrNull() ?: client.getBalance(testAddress)
+            client.getBalance(testAddress)
         }
         val elapsed = System.currentTimeMillis() - start
 
-        assertNotNull(balanceResult)
+        assertTrue(balanceResult.isSuccess)
         assertTrue("Balance query took ${elapsed}ms, expected < 500ms", elapsed < 500)
     }
 
