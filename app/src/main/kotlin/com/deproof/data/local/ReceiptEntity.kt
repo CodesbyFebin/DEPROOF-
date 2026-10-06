@@ -67,6 +67,34 @@ abstract class DepRoofDatabase : RoomDatabase() {
     }
 }
 
+// ========== Converter Functions ==========
+
+fun ReceiptEntity.toDomain(): com.deproof.domain.model.Receipt {
+    return com.deproof.domain.model.Receipt(
+        id = id,
+        txHash = transactionHash,
+        verdict = verdict,
+        messageHash = messageHash,
+        timestamp = timestamp,
+        signatureStatus = com.deproof.domain.model.SignatureStatus.valueOf(signatureStatus),
+        chainSubmitted = chainSubmitted,
+        jsonData = jsonData
+    )
+}
+
+fun com.deproof.domain.model.Receipt.toEntity(): ReceiptEntity {
+    return ReceiptEntity(
+        id = id,
+        transactionHash = txHash,
+        verdict = verdict,
+        messageHash = messageHash,
+        timestamp = timestamp,
+        signatureStatus = signatureStatus.name,
+        chainSubmitted = chainSubmitted,
+        jsonData = jsonData
+    )
+}
+
 // ========== Response Models for API ==========
 
 data class BalanceResponse(

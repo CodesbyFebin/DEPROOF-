@@ -29,7 +29,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         rpcRepository = RpcRepository()
-        receiptRepository = ReceiptRepository(null)
+        val database = com.deproof.App.getDatabase()
+        receiptRepository = ReceiptRepository(database.receiptDao())
 
         setContent {
             DepRoofTheme {
