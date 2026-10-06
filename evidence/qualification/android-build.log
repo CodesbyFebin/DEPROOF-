@@ -87,7 +87,7 @@ COMMAND: bash ./gradlew assembleDebug --stacktrace
 > Task :app:createDebugApkListingFileRedirect UP-TO-DATE
 > Task :app:assembleDebug UP-TO-DATE
 
-BUILD SUCCESSFUL in 2s
+BUILD SUCCESSFUL in 1s
 40 actionable tasks: 40 up-to-date
 Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.3.1/userguide/configuration_cache_enabling.html
 COMMAND: bash ./gradlew lintDebug --stacktrace
@@ -126,7 +126,7 @@ COMMAND: bash ./gradlew lintDebug --stacktrace
 > Task :app:lintReportDebug UP-TO-DATE
 > Task :app:lintDebug
 
-BUILD SUCCESSFUL in 14s
+BUILD SUCCESSFUL in 7s
 30 actionable tasks: 3 executed, 27 up-to-date
 Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.3.1/userguide/configuration_cache_enabling.html
 a12f5931f8c16d5863f59b6a07609a6b6c3ebaf3aac319df5cdce4fa8ab6a814  app/build/outputs/apk/debug/app-debug.apk
