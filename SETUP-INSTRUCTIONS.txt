@@ -1,0 +1,119 @@
+DEPROOF SETUP INSTRUCTIONS
+===========================
+
+STEP 1: Create Project Directory
+---------------------------------
+mkdir -p ~/deproof
+cd ~/deproof
+
+STEP 2: Download Master Build Script
+-------------------------------------
+# Copy deproof-init.sh to ~/deproof/
+# Then run:
+bash deproof-init.sh
+
+This will:
+- Create all directories (app, docs, node-agent, prover-worker, web)
+- Generate build.gradle.kts configuration
+- Generate settings.gradle.kts
+- Generate gradle wrapper configuration
+- Create deproof-master-build.sh orchestrator
+- Create DEPROOF-BUILD-GUIDE.md documentation
+
+STEP 3: Verify Environment
+---------------------------
+bash deproof-master-build.sh preflight
+
+Expected output:
+✓ All required commands found (git, gradle, java, kotlin, go, npm)
+✓ Android SDK found at $ANDROID_SDK_ROOT
+✓ Java version 11+
+✓ Preflight checks passed!
+
+If any checks fail, install missing dependencies:
+- macOS: brew install <package>
+- Linux: apt-get install <package>
+
+STEP 4: Configure Android SDK (if needed)
+------------------------------------------
+export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"  # macOS
+# or
+export ANDROID_SDK_ROOT="$HOME/android-sdk"          # Linux
+
+Verify SDK components exist:
+ls "$ANDROID_SDK_ROOT/platforms"
+ls "$ANDROID_SDK_ROOT/build-tools"
+
+STEP 5: Configure API Keys (optional)
+---------------------------------------
+Create .env file in project root:
+cat > .env << EOF
+GROK_API_KEY=MY_GROK_API_KEY
+GEMINI_API_KEY=MY_GEMINI_API_KEY
+EOF
+
+STEP 6: Run Full Build
+----------------------
+MAX_PARALLEL=2 bash deproof-master-build.sh build
+
+This will:
+1. Run preflight checks
+2. Build P1 Android MVP (Gradle, tests, APK)
+3. Build P3 ecosystem in parallel (node-agent, prover-worker, web)
+4. Generate build summary and evidence
+
+Build will take 5-15 minutes depending on your system.
+
+STEP 7: Check Results
+---------------------
+cat .deproof-runs/*/reports/BUILD_SUMMARY.md
+
+Expected output shows:
+- APK: ✓ BUILT
+- Tests: ✓ PASS
+- Size: ~20-30 MB
+- Artifacts at .deproof-runs/*/evidence/
+
+STEP 8: Install on Device (optional)
+-------------------------------------
+adb devices                                    # List devices
+adb install -r .deproof-runs/*/evidence/app-debug.apk
+
+Test on physical Android device with:
+- MWA-compatible wallet (Phantom, Backpack)
+- Solana mainnet connection
+- Optional: Grok/Gemini API keys configured
+
+TROUBLESHOOTING
+================
+
+Q: "Missing required command: gradle"
+A: brew install gradle  (macOS) or apt-get install gradle (Linux)
+
+Q: "Android SDK not found"
+A: Set ANDROID_SDK_ROOT=/path/to/android-sdk and verify directories exist
+
+Q: "Gradle build failed"
+A: Check .deproof-runs/*/logs/android-build.log for errors
+   Run: ./gradlew clean && ./gradlew assembleDebug --rerun-tasks
+
+Q: "Unit tests failed"
+A: Check .deproof-runs/*/logs/android-tests.log
+   Run: ./gradlew testDebugUnitTest -i 2>&1 | grep FAILED
+
+Q: "APK too large (>50MB)"
+A: This is development build. Release build will be smaller:
+   ./gradlew assembleRelease
+
+NEXT STEPS
+===========
+1. Review build summary: cat .deproof-runs/*/reports/BUILD_SUMMARY.md
+2. Install on device: adb install -r .deproof-runs/*/evidence/app-debug.apk
+3. Test P1 features:
+   - Now screen: Enter mainnet address (44-char base58)
+   - Review screen: Tap transaction, verify TransferChecked
+   - Receipts screen: Approve/reject, copy JSON
+4. Proceed to P2 workflows & evidence (follow phase guide)
+
+---
+Built with Deproof Master Build System

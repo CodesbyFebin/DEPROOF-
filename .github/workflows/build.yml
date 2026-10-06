@@ -1,0 +1,16 @@
+name: Deproof Build
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: android-actions/setup-android@v2
+      - run: bash deproof-master-build.sh preflight
+      - run: MAX_PARALLEL=2 bash deproof-master-build.sh build
+      - uses: actions/upload-artifact@v3
+        with:
+          name: build-artifacts
+          path: .deproof-runs/*/

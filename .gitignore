@@ -1,0 +1,12 @@
+.gradle/
+.idea/
+build/
+app/build/
+.deproof-runs/
+.env
+*.log
+*.swp
+*.swo
+*~
+.DS_Store
+*.apk
