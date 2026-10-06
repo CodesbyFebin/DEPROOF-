@@ -18,6 +18,7 @@ try {
   for(const name of ['index','features','how-it-works','ecosystem','project','documentation','privacy']) {
    const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));const response=await page.goto(`${base}/${name}.html`,{waitUntil:'networkidle'});
    check(`${name}-${width}-loads`,response.status()===200 && errors.length===0,{errors});
+   for(const href of await page.locator('a[href^="delivery/"]').evaluateAll(nodes=>nodes.map(n=>n.getAttribute('href')))){const linked=await page.request.get(new URL(href,page.url()).href);check(`${name}-${width}-link-${href}`,linked.status()===200,{status:linked.status()});}
    for(const img of await page.locator('img').all())await img.scrollIntoViewIfNeeded();
    await page.waitForFunction(()=>[...document.images].every(img=>img.complete));
    check(`${name}-${width}-images`,await page.evaluate(()=>[...document.images].every(img=>img.naturalWidth>0)));

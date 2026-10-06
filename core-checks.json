@@ -1925,9 +1925,7 @@
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
-      "tests": [
-        "app/src/test/java/com/example/domain/ReviewBindingTest.kt::storedHashesAreUnaffectedByCallerBufferChanges"
-      ],
+      "tests": [],
       "qualificationDimensions": [
         "NOT_RUN"
       ],

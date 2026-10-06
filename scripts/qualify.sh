@@ -8,6 +8,8 @@ RUN_DIR="evidence/qualification/runs/$(date -u +%Y%m%dT%H%M%SZ)-$$"
 mkdir -p "$RUN_DIR"
 if test -f "$RESULTS"; then cp "$RESULTS" "$RUN_DIR/previous-command-results.jsonl"; fi
 : > "$RESULTS"
+python3 scripts/source-manifest.py "$RUN_DIR/source-before.json"
+cp "$RUN_DIR/source-before.json" evidence/qualification/source-before.json
 qualify() {
   local gate="$1"; shift
   local log="evidence/qualification/${gate}.log"
@@ -41,6 +43,8 @@ qualify browser-checks node scripts/browser/qualify.mjs
 qualify coverage-reconciliation python3 scripts/reconcile-coverage.py
 qualify backlog-priorities python3 scripts/prioritize-uncovered.py
 python3 scripts/report-qualification.py
+python3 scripts/source-manifest.py "$RUN_DIR/source-after.json"
+cp "$RUN_DIR/source-after.json" evidence/qualification/source-after.json
 cp "$RESULTS" "$RUN_DIR/command-results.jsonl"
 cat "$RESULTS" >> evidence/qualification/qualification-events.jsonl
 python3 - <<'PY'

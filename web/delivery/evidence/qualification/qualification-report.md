@@ -18,23 +18,23 @@ BUILD_QUALIFIED: **True**. CORE_DEVICE_QUALIFIED: **False**. FULL_SCOPE_QUALIFIE
 
 | Gate | Command | Exit | Result | Log |
 |---|---|---:|---|---|
-| core-tests | `python3 scripts/qualify-core.py` | 0 | PASS | [evidence/qualification/core-tests.log](../evidence/qualification/core-tests.log) |
-| android-build | `scripts/qualify-android.sh` | 0 | PASS | [evidence/qualification/android-build.log](../evidence/qualification/android-build.log) |
-| node-tests | `scripts/qualify-node.sh` | 0 | PASS | [evidence/qualification/node-tests.log](../evidence/qualification/node-tests.log) |
-| prover-tests | `scripts/qualify-prover.sh` | 0 | PASS | [evidence/qualification/prover-tests.log](../evidence/qualification/prover-tests.log) |
-| verifier-tests | `python3 -m unittest discover -s tools -p test_*.py` | 0 | PASS | [evidence/qualification/verifier-tests.log](../evidence/qualification/verifier-tests.log) |
-| localization-catalogs | `python3 scripts/qualify-localization.py` | 0 | PASS | [evidence/qualification/localization-catalogs.log](../evidence/qualification/localization-catalogs.log) |
-| hosting-isolation | `python3 scripts/qualify-hosting.py` | 0 | PASS | [evidence/qualification/hosting-isolation.log](../evidence/qualification/hosting-isolation.log) |
-| node-integration | `env DEPROOF_TEST_HOSTING=1 python3 scripts/qualify-integration.py` | 0 | PASS | [evidence/qualification/node-integration.log](../evidence/qualification/node-integration.log) |
-| rpc-read-only | `python3 scripts/qualify-rpc.py` | 0 | PASS | [evidence/qualification/rpc-read-only.log](../evidence/qualification/rpc-read-only.log) |
-| coverage-reconciliation | `python3 scripts/reconcile-coverage.py` | 0 | PASS | [evidence/qualification/coverage-reconciliation.log](../evidence/qualification/coverage-reconciliation.log) |
-| backlog-priorities | `python3 scripts/prioritize-uncovered.py` | 0 | PASS | [evidence/qualification/backlog-priorities.log](../evidence/qualification/backlog-priorities.log) |
-| registry-checks | `python3 scripts/check-registries.py` | 0 | PASS | [evidence/qualification/registry-checks.log](../evidence/qualification/registry-checks.log) |
-| web-build | `python3 scripts/build-web.py` | 0 | PASS | [evidence/qualification/web-build.log](../evidence/qualification/web-build.log) |
-| web-checks | `python3 scripts/qualify-web.py` | 0 | PASS | [evidence/qualification/web-checks.log](../evidence/qualification/web-checks.log) |
-| browser-checks | `node scripts/browser/qualify.mjs` | 0 | PASS | [evidence/qualification/browser-checks.log](../evidence/qualification/browser-checks.log) |
-| coverage-reconciliation | `python3 scripts/reconcile-coverage.py` | 0 | PASS | [evidence/qualification/coverage-reconciliation.log](../evidence/qualification/coverage-reconciliation.log) |
-| backlog-priorities | `python3 scripts/prioritize-uncovered.py` | 0 | PASS | [evidence/qualification/backlog-priorities.log](../evidence/qualification/backlog-priorities.log) |
+| core-tests | `python3 scripts/qualify-core.py` | 0 | PASS | [evidence/qualification/core-tests.log](../../evidence/qualification/core-tests.log) |
+| android-build | `scripts/qualify-android.sh` | 0 | PASS | [evidence/qualification/android-build.log](../../evidence/qualification/android-build.log) |
+| node-tests | `scripts/qualify-node.sh` | 0 | PASS | [evidence/qualification/node-tests.log](../../evidence/qualification/node-tests.log) |
+| prover-tests | `scripts/qualify-prover.sh` | 0 | PASS | [evidence/qualification/prover-tests.log](../../evidence/qualification/prover-tests.log) |
+| verifier-tests | `python3 -m unittest discover -s tools -p test_*.py` | 0 | PASS | [evidence/qualification/verifier-tests.log](../../evidence/qualification/verifier-tests.log) |
+| localization-catalogs | `python3 scripts/qualify-localization.py` | 0 | PASS | [evidence/qualification/localization-catalogs.log](../../evidence/qualification/localization-catalogs.log) |
+| hosting-isolation | `python3 scripts/qualify-hosting.py` | 0 | PASS | [evidence/qualification/hosting-isolation.log](../../evidence/qualification/hosting-isolation.log) |
+| node-integration | `env DEPROOF_TEST_HOSTING=1 python3 scripts/qualify-integration.py` | 0 | PASS | [evidence/qualification/node-integration.log](../../evidence/qualification/node-integration.log) |
+| rpc-read-only | `python3 scripts/qualify-rpc.py` | 0 | PASS | [evidence/qualification/rpc-read-only.log](../../evidence/qualification/rpc-read-only.log) |
+| coverage-reconciliation | `python3 scripts/reconcile-coverage.py` | 0 | PASS | [evidence/qualification/coverage-reconciliation.log](../../evidence/qualification/coverage-reconciliation.log) |
+| backlog-priorities | `python3 scripts/prioritize-uncovered.py` | 0 | PASS | [evidence/qualification/backlog-priorities.log](../../evidence/qualification/backlog-priorities.log) |
+| registry-checks | `python3 scripts/check-registries.py` | 0 | PASS | [evidence/qualification/registry-checks.log](../../evidence/qualification/registry-checks.log) |
+| web-build | `python3 scripts/build-web.py` | 0 | PASS | [evidence/qualification/web-build.log](../../evidence/qualification/web-build.log) |
+| web-checks | `python3 scripts/qualify-web.py` | 0 | PASS | [evidence/qualification/web-checks.log](../../evidence/qualification/web-checks.log) |
+| browser-checks | `node scripts/browser/qualify.mjs` | 0 | PASS | [evidence/qualification/browser-checks.log](../../evidence/qualification/browser-checks.log) |
+| coverage-reconciliation | `python3 scripts/reconcile-coverage.py` | 0 | PASS | [evidence/qualification/coverage-reconciliation.log](../../evidence/qualification/coverage-reconciliation.log) |
+| backlog-priorities | `python3 scripts/prioritize-uncovered.py` | 0 | PASS | [evidence/qualification/backlog-priorities.log](../../evidence/qualification/backlog-priorities.log) |
 
 Android script executes `bash ./gradlew testDebugUnitTest --stacktrace`, `bash ./gradlew assembleDebug --stacktrace`, and `bash ./gradlew lintDebug --stacktrace`. It hashes the APK only after these tasks succeed.
 
@@ -71,17 +71,11 @@ Dependency/security/environment priorities: `evidence/qualification/prioritized-
 ## Produced artifacts
 
 - `app/build/outputs/apk/debug/app-debug.apk` — debug-apk; SHA-256 `64cd7d377a33385156013c61c61528ac7a5f07690fe7d340d19eeafd5ce72ab2`
-- `node-agent/build/deproof-node` — darwin-amd64-node-binary; SHA-256 `fff8d557fc439a941bcc2847d630a73d18f6b227e22259a8702ba74fadca1c22`
-- `prover-worker/build/prove` — local-proof-producer; SHA-256 `2d12160ddadd607ac328ed034c52b96124fd9808e005d0970d99b7a3ee422cf2`
-- `prover-worker/build/verify` — independent-proof-verifier; SHA-256 `f3a174016880a9910f089242234173fa710a3a083bcc81125b0b860d15fdd571`
+- `node-agent/build/deproof-node` — darwin-amd64-node-binary; SHA-256 `4d9266c2913afadded8760aec30feaefc3a84b1f96bd45543cad0fa98c9323bc`
+- `prover-worker/build/prove` — local-proof-producer; SHA-256 `073f15761d14c3b822e2555b0dc4da78decc8d934123516a134fbebf4eafc91b`
+- `prover-worker/build/verify` — independent-proof-verifier; SHA-256 `66c1502bdb0b11109f3917d5cba87e11c2d839e473ea61d5d03eb18f9d2e6747`
 - `gradle/wrapper/gradle-wrapper.jar` — gradle-wrapper; SHA-256 `b3a875ddc1f044746e1b1a55f645584505f4a10438c1afea9f15e92a7c42ec13`
 - `tools/verify.py` — independent-receipt-verifier; SHA-256 `dd17a4b493cd1d11e700879a6023308daacb6315fb665e4bb5665041e6f1195a`
-- `prover-worker/build/qualified-result-20261006T094220Z-76453/circuit.r1cs` — local-proof-artifact; SHA-256 `d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954`
-- `prover-worker/build/qualified-result-20261006T094220Z-76453/verification-key.bin` — local-proof-artifact; SHA-256 `62b7dae0dc23fb0355826f15df2ccb0b8c094b0f3828537de0c56545d1c7554b`
-- `prover-worker/build/qualified-result-20261006T094220Z-76453/proving-key.bin` — local-proof-artifact; SHA-256 `ec1063a6a3ae08937ec0b0896f0f54547c94a9f8906d8e6df114d090752e2baf`
-- `prover-worker/build/qualified-result-20261006T094220Z-76453/public-witness.bin` — local-proof-artifact; SHA-256 `da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd`
-- `prover-worker/build/qualified-result-20261006T094220Z-76453/manifest.json` — local-proof-artifact; SHA-256 `e9a6112a336a876c83625548c8806ef04f05b834acbef6dd7cddc5072d55b627`
-- `prover-worker/build/qualified-result-20261006T094220Z-76453/proof.bin` — local-proof-artifact; SHA-256 `11da504348dc2b415c460ccd0c543a6ad19b04db2701bff781e216df22eabb88`
 - `prover-worker/build/qualified-result-20261006T084501Z-72561/circuit.r1cs` — local-proof-artifact; SHA-256 `d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954`
 - `prover-worker/build/qualified-result-20261006T084501Z-72561/verification-key.bin` — local-proof-artifact; SHA-256 `e77e6d1bf6ef7692a861a937e2230c872e3ac3c8c0cec711ab41f68a55a2cf8a`
 - `prover-worker/build/qualified-result-20261006T084501Z-72561/proving-key.bin` — local-proof-artifact; SHA-256 `7fc3217aca39b8b2882e10d2223fc3bdd27470d9ad5cccab54981462c08c8a13`

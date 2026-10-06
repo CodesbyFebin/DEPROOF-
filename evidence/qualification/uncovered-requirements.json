@@ -3083,7 +3083,9 @@
         "app/src/main/java/com/example/domain/Solana.kt"
       ],
       "namedTests": [
-        "app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval"
+        "app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval",
+        "app/src/test/java/com/example/domain/PolicyTest.kt::rebuildProducesANewDevnetMessageForTheSameAccount",
+        "app/src/test/java/com/example/domain/PolicyTest.kt::rebuildRefusesUnchangedBlockhashHistoricalAndNonDevnetReviews"
       ],
       "requiredUncoveredGate": [
         "Existing one-rebuild memo implementation and local binding test; device handoff/reapproval remains NOT_RUN."

@@ -1,0 +1,225 @@
+{
+  "schema": "deproof-container-qualification-v1",
+  "generatedAt": "2026-10-06T09:36:27.162518+00:00",
+  "status": "BLOCKED",
+  "architecture": "Linux/amd64 on owner-trusted rootful Colima; Mac Intel host",
+  "product": "Deproof",
+  "mark": "DEPR",
+  "credit": "Built by CodesbyFebin",
+  "pins": {
+    "docker/web.Dockerfile": [
+      "node:24-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20",
+      "python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7",
+      "busybox:1.36@sha256:73aaf090f3d85aa34ee199857f03fa3a95c8ede2ffd4cc2cdb5b94e566b11662"
+    ],
+    "docker/prover-worker.Dockerfile": [
+      "golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b",
+      "python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7"
+    ],
+    "docker/node-agent.Dockerfile": [
+      "golang:1.26.4-bookworm@sha256:b305420a68d0f229d91eb3b3ed9e519fcf2cf5461da4bef997bf927e8c0bfd2b",
+      "python:3.13.7-slim-bookworm@sha256:781449467ffb6f04218f09b1ecdcdc7d22b289ee5da9ec498b024e24ad7a6db7",
+      "docker:29.5.2-cli@sha256:9ba8e32bfc35a2c7ae2feb1e3241b2778ae21dee80f4dcd31d04e1cfdea86ea2",
+      "runtime"
+    ],
+    "docker/android-build.Dockerfile": [
+      "eclipse-temurin:17.0.20_8-jdk-noble@sha256:9f2d47abfd5e58b6c31c110043c6f5717beccd912b724988e3e0166266b8e570"
+    ]
+  },
+  "images": [
+    {
+      "id": "sha256:850b8e06a677445de9424cb3c981818dc15b02bfed950e440c4685580aa0f78f",
+      "tags": [
+        "deproof/android-build:local"
+      ],
+      "architecture": "amd64",
+      "os": "linux",
+      "user": "501:20"
+    },
+    {
+      "id": "sha256:50680def50051ce5c93a1e098e48feda15f44520335d538f1bbaf4a0688e965d",
+      "tags": [
+        "deproof/node-agent:local"
+      ],
+      "architecture": "amd64",
+      "os": "linux",
+      "user": "10001:10001"
+    },
+    {
+      "id": "sha256:a034660c1544e7b33d42ed8604cb3302e6a039bdfcffae37bdadd3957ed6aaec",
+      "tags": [
+        "deproof/prover-worker:local"
+      ],
+      "architecture": "amd64",
+      "os": "linux",
+      "user": "10001:10001"
+    },
+    {
+      "id": "sha256:1324ca8752061a5791254d96891a4e02315ec1d23a5323fd16b31bec0d2d4af1",
+      "tags": [
+        "deproof/web:local"
+      ],
+      "architecture": "amd64",
+      "os": "linux",
+      "user": "65534:65534"
+    },
+    {
+      "id": "sha256:fe16112a36e1c5ec4ef4906fd984189a631d4249867ead51eb6f2115eb88efa5",
+      "tags": [
+        "deproof/hosting-control:local"
+      ],
+      "architecture": "amd64",
+      "os": "linux",
+      "user": "10001:10001"
+    }
+  ],
+  "androidRuns": [
+    {
+      "run": "20261006T072226Z-7",
+      "results": [
+        "testDebugUnitTest FAIL"
+      ],
+      "commands": [
+        "COMMAND: bash ./gradlew --no-daemon --max-workers=2 testDebugUnitTest --stacktrace"
+      ],
+      "apkProduced": false,
+      "logs": [
+        "evidence/docker/android/20261006T072226Z-7/testDebugUnitTest.log"
+      ]
+    }
+  ],
+  "integration": {
+    "schema": "deproof-container-integration-v1",
+    "status": "BLOCKED",
+    "checkedAt": "2026-10-06T07:43:33.918328+00:00",
+    "checks": [
+      {
+        "id": "compose_config_valid",
+        "status": "PASS"
+      },
+      {
+        "id": "node-agent_restricted_config",
+        "status": "PASS"
+      },
+      {
+        "id": "prover-worker_restricted_config",
+        "status": "PASS"
+      },
+      {
+        "id": "web_restricted_config",
+        "status": "PASS"
+      },
+      {
+        "id": "actual_services_started",
+        "status": "BLOCKED",
+        "reason": "Docker state storage exhausted; no space left on device."
+      }
+    ],
+    "containers": {},
+    "failure": "Docker state storage exhausted",
+    "limitations": [
+      "Owner-local Docker Linux/amd64 only. No physical-device, wallet, hardware-key, production proof or external provider qualification.",
+      "Separate deproof-qualification project on localhost ports 19843/18088; fixtures are stopped and persistent volumes retained. Pairing secrets are not exported to evidence."
+    ]
+  },
+  "gates": [
+    {
+      "id": "compose-and-shell-validation",
+      "status": "PASS",
+      "commands": [
+        "docker compose config --quiet",
+        "bash -n docker/android-entrypoint.sh scripts/docker-build.sh scripts/docker-qualify.sh scripts/docker-up.sh scripts/docker-down.sh"
+      ]
+    },
+    {
+      "id": "service-images-build",
+      "status": "PASS",
+      "evidence": [
+        "evidence/docker/services-build-private-state.log"
+      ],
+      "scope": "Node/prover/web images built. Final source changes require rebuild; not a runtime integration pass."
+    },
+    {
+      "id": "portable-container-qualification",
+      "status": "PASS",
+      "command": "bash scripts/docker-qualify.sh portable",
+      "evidence": [
+        "evidence/docker/portable-retry.log"
+      ],
+      "scope": "Prior image: 18 Python tests; actual local Groth16 verification and tampered public input/proof rejection; 336 registry IDs. Newly added workflow tests are not container-qualified."
+    },
+    {
+      "id": "android-container-build",
+      "status": "BLOCKED",
+      "evidence": [
+        "evidence/docker/android-startup-trace.log"
+      ],
+      "reason": "Observed Gradle cache lock directory failure from prior UID cache. UID-specific volumes now configured but untested; Docker VM disk is full. No container APK produced."
+    },
+    {
+      "id": "container-service-integration",
+      "status": "BLOCKED",
+      "evidence": [
+        "evidence/docker/integration-report.json"
+      ],
+      "reason": "Docker state storage exhausted"
+    },
+    {
+      "id": "fixed-hosting-profile",
+      "status": "PASS",
+      "command": "python3 scripts/qualify-hosting.py",
+      "evidence": [
+        "evidence/qualification/hosting-isolation.json"
+      ],
+      "scope": "Existing fixed profile on this runtime only. Revised separate owner-control image/profile not qualified."
+    },
+    {
+      "id": "revised-owner-control-profile",
+      "status": "BLOCKED",
+      "reason": "Earlier owner target built, but final root-owned separate state/report copy revisions require rebuild and exercise; storage unavailable."
+    },
+    {
+      "id": "shutdown-state-retention",
+      "status": "PASS",
+      "command": "bash scripts/docker-down.sh",
+      "scope": "Only Deproof development containers stopped, named volumes retained; fixture integration also stops its own project without volume deletion."
+    },
+    {
+      "id": "completion-kit",
+      "status": "FAIL",
+      "command": "MAX_ROUNDS=3 env -u DEPROOF_MODEL bash <external-completion-kit>/deproof-complete.sh build",
+      "evidence": [
+        "evidence/completion/20261006T071823Z-66439/round-1-report.md",
+        "evidence/completion/20261006T071823Z-66439/logs/qualification-1.log"
+      ],
+      "reason": "Inner sandbox denied process inspection of launcher-held lock; no source changes or completion plan. Launcher ran all 14 host gates successfully then exited 1. Rounds 2/3 not run."
+    }
+  ],
+  "blockers": [
+    {
+      "id": "STORAGE",
+      "status": "BLOCKED",
+      "reason": "Current read-only probe: Docker VM /dev/vdb1 20G, zero available (100%); host 4.1GiB available. See evidence/docker/storage-current.json. No user images, caches, volumes or artifacts deleted; no shared VM restart performed."
+    },
+    {
+      "id": "PHYSICAL_DEVICE",
+      "status": "NOT_RUN",
+      "reason": "No available physical device; container/emulator cannot qualify wallet handoff or hardware keys."
+    },
+    {
+      "id": "PRODUCTION_PROOF_EXTERNAL_RELEASE",
+      "status": "BLOCKED",
+      "reason": "Local educational proof, owner-trusted hosting and development container results do not qualify production proofs, external providers, asset rights, release signing or deployment."
+    }
+  ],
+  "registriesPreserved": {
+    "F": 120,
+    "C": 100,
+    "FN": 62,
+    "EF": 24,
+    "E": 30,
+    "totalEntries": 336
+  },
+  "performedMainnetSpending": false,
+  "publishedOrDeployed": false
+}

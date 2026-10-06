@@ -1,0 +1,12 @@
+{
+  "ranAt": "2026-10-06T09:35:27.367145+00:00",
+  "command": [
+    "java",
+    "-cp",
+    "<recorded jvm-classpath.txt>",
+    "org.junit.runner.JUnitCore",
+    "com.example.domain.InspectionTest"
+  ],
+  "exitCode": 0,
+  "scope": "F040/F041 local decoder verdict and summary tests only; device presentation NOT_RUN"
+}
