@@ -1,0 +1,2 @@
+module deproof.local/prover-worker
+MOD_OK

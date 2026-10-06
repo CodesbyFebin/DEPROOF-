@@ -1,0 +1,14 @@
+{
+  "node-agent/build/deproof-node": {
+    "sha256": "9e8836fe5d858450f1ac4244d30b39cb94ea7cf26a3ae7a6f0f644e52b7406a5",
+    "size_bytes": 10586868
+  },
+  "prover-worker/build/prove": {
+    "sha256": "e3e204c1b8a6c990d1f29e9dc1536334464de7159414da64a07fd7d7e3745a45",
+    "size_bytes": 16285632
+  },
+  "prover-worker/build/verify": {
+    "sha256": "a3ee129c3d00af706b5c66329f1fa6d2bec774eefefe5ea51dd881ea38b15e09",
+    "size_bytes": 9569739
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "schema": "deproof-gate-v1",
+  "task": "integration",
+  "status": "PASS",
+  "checks": [
+    {
+      "id": "INT-GATE-FOUNDATION",
+      "status": "PASS",
+      "command": "<python>",
+      "evidencePath": "evidence/qualification/integration/gate-foundation.txt"
+    },
+    {
+      "id": "INT-GATE-ANDROID_CORE",
+      "status": "PASS",
+      "command": "<python>",
+      "evidencePath": "evidence/qualification/integration/gate-android-core.txt"
+    },
+    {
+      "id": "INT-GATE-ANDROID_WORKFLOWS",
+      "status": "PASS",
+      "command": "<python>",
+      "evidencePath": "evidence/qualification/integration/gate-android-workflows.txt"
+    },
+    {
+      "id": "INT-GATE-NODE_AGENT",
+      "status": "PASS",
+      "command": "<python>",
+      "evidencePath": "evidence/qualification/integration/gate-node-agent.txt"
+    },
+    {
+      "id": "INT-GATE-PROVER_WORKER",
+      "status": "PASS",
+      "command": "<python>",
+      "evidencePath": "evidence/qualification/integration/gate-prover-worker.txt"
+    },
+    {
+      "id": "INT-GATE-WEB",
+      "status": "PASS",
+      "command": "<python>",
+      "evidencePath": "evidence/qualification/integration/gate-web.txt"
+    },
+    {
+      "id": "INT-API-01",
+      "status": "PASS",
+      "command": "<python>",
+      "evidencePath": "evidence/qualification/integration/wallet-uri.txt"
+    },
+    {
+      "id": "INT-SCHEMA-01",
+      "status": "PASS",
+      "command": "test -s app/schemas/com.example.data.DeproofDatabase/2.json && test -s contracts/portable-backup-v1.schema.json && echo SCHEMAS_OK",
+      "evidencePath": "evidence/qualification/integration/schema-align.txt"
+    },
+    {
+      "id": "INT-MOD-01",
+      "status": "PASS",
+      "command": "go mod verify 2>&1 && echo MOD_OK",
+      "evidencePath": "evidence/qualification/integration/nodeagent-mod.txt"
+    },
+    {
+      "id": "INT-MOD-02",
+      "status": "PASS",
+      "command": "go mod verify 2>&1 && echo MOD_OK",
+      "evidencePath": "evidence/qualification/integration/prover-mod.txt"
+    },
+    {
+      "id": "INT-SCHEMA-02",
+      "status": "PASS",
+      "command": "<python>",
+      "evidencePath": "evidence/qualification/integration/evidence-schema.txt"
+    },
+    {
+      "id": "INT-CONST-01",
+      "status": "PASS",
+      "command": "<python>",
+      "evidencePath": "evidence/qualification/integration/skr-const.txt"
+    },
+    {
+      "id": "INT-WEB-01",
+      "status": "PASS",
+      "command": "grep -i 'deproof' web/index.html | wc -l",
+      "evidencePath": "evidence/qualification/integration/web-brand.txt"
+    },
+    {
+      "id": "INT-E2E-01",
+      "status": "NOT_APPLICABLE",
+      "reason": "End-to-end: Android \u2192 node-agent \u2192 prover-worker \u2192 Solana devnet: requires device + deployment."
+    },
+    {
+      "id": "INT-E2E-02",
+      "status": "NOT_APPLICABLE",
+      "reason": "SKR oracle \u2192 receipt verification: requires live oracle endpoint."
+    }
+  ],
+  "limitations": [
+    "End-to-end device\u2192chain integration requires running hardware and Solana devnet.",
+    "SKR oracle receipt verification requires live oracle endpoint.",
+    "Module isolation verified via go mod verify; runtime inter-process calls not tested."
+  ],
+  "manualGates": [
+    {
+      "id": "INT-E2E-01",
+      "status": "BLOCKED",
+      "reason": "Full Android\u2192node-agent\u2192prover\u2192devnet pipeline requires deployed environment."
+    },
+    {
+      "id": "INT-E2E-02",
+      "status": "BLOCKED",
+      "reason": "SKR oracle live receipt round-trip: requires oracle endpoint and devnet."
+    }
+  ]
+}

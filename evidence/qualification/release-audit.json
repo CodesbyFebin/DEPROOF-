@@ -1,0 +1,129 @@
+{
+  "schema": "deproof-gate-v1",
+  "task": "release-audit",
+  "status": "PASS",
+  "checks": [
+    {
+      "id": "RA-REG-01",
+      "status": "PASS",
+      "command": "<python>",
+      "evidencePath": "evidence/qualification/release-audit/features-count.txt"
+    },
+    {
+      "id": "RA-REG-02",
+      "status": "PASS",
+      "command": "<python>",
+      "evidencePath": "evidence/qualification/release-audit/core-checks-count.txt"
+    },
+    {
+      "id": "RA-REG-03",
+      "status": "PASS",
+      "command": "<python>",
+      "evidencePath": "evidence/qualification/release-audit/ecosystem-count.txt"
+    },
+    {
+      "id": "RA-REG-04",
+      "status": "PASS",
+      "command": "<python>",
+      "evidencePath": "evidence/qualification/release-audit/functions-count.txt"
+    },
+    {
+      "id": "RA-GATE-01",
+      "status": "PASS",
+      "command": "<python>",
+      "evidencePath": "evidence/qualification/release-audit/all-gates-pass.txt"
+    },
+    {
+      "id": "RA-APK-01",
+      "status": "PASS",
+      "command": "find app/build/outputs/apk/debug -name '*.apk' -size +1k 2>/dev/null | head -1 | grep -c apk",
+      "evidencePath": "evidence/qualification/release-audit/debug-apk.txt"
+    },
+    {
+      "id": "RA-APK-02",
+      "status": "PASS",
+      "command": "find app/build/outputs/apk/release -name '*.apk' -size +1k 2>/dev/null | head -1 | grep -c apk",
+      "evidencePath": "evidence/qualification/release-audit/release-apk.txt"
+    },
+    {
+      "id": "RA-CHKSUM-01",
+      "status": "PASS",
+      "command": "<python>",
+      "evidencePath": "evidence/qualification/release-audit/apk-checksums.txt"
+    },
+    {
+      "id": "RA-CHKSUM-02",
+      "status": "PASS",
+      "command": "<python>",
+      "evidencePath": "evidence/qualification/release-audit/go-checksums.txt"
+    },
+    {
+      "id": "RA-DB-01",
+      "status": "PASS",
+      "command": "ls app/schemas/com.example.data.DeproofDatabase/1.json app/schemas/com.example.data.DeproofDatabase/2.json && echo MIGRATIONS_OK",
+      "evidencePath": "evidence/qualification/release-audit/room-migrations.txt"
+    },
+    {
+      "id": "RA-CONTRACT-01",
+      "status": "PASS",
+      "command": "ls contracts/*.schema.json 2>/dev/null | wc -l && echo SCHEMAS_PRESENT",
+      "evidencePath": "evidence/qualification/release-audit/contract-schemas.txt"
+    },
+    {
+      "id": "RA-SEC-01",
+      "status": "PASS",
+      "command": "git ls-files | grep -c '\\.env$' || echo 0",
+      "evidencePath": "evidence/qualification/release-audit/no-env-tracked.txt"
+    },
+    {
+      "id": "RA-SEC-02",
+      "status": "PASS",
+      "command": "git ls-files | grep -iE '\\.(pem|key|p12|jks|keystore)$' | wc -l",
+      "evidencePath": "evidence/qualification/release-audit/no-privkey-tracked.txt"
+    },
+    {
+      "id": "RA-GIT-01",
+      "status": "PASS",
+      "command": "git rev-parse --abbrev-ref HEAD",
+      "evidencePath": "evidence/qualification/release-audit/git-branch.txt"
+    },
+    {
+      "id": "RA-MAN-01",
+      "status": "NOT_APPLICABLE",
+      "reason": "Keystore signing: requires DEPROOF_KEYSTORE_PATH env vars, not present in CI."
+    },
+    {
+      "id": "RA-MAN-02",
+      "status": "NOT_APPLICABLE",
+      "reason": "Reproducible build byte-for-byte: requires identical JDK/AGP version pinning across machines."
+    },
+    {
+      "id": "RA-MAN-03",
+      "status": "NOT_APPLICABLE",
+      "reason": "SBOM (CycloneDX/SPDX) generation: requires additional tooling not installed."
+    }
+  ],
+  "limitations": [
+    "APK is unsigned (release signing requires keystore env vars).",
+    "SBOM not generated; requires CycloneDX or SPDX tooling.",
+    "Reproducible build not verified byte-for-byte across machines.",
+    "Go binaries checksummed from local build; deterministic cross-platform builds not verified."
+  ],
+  "manualGates": [
+    {
+      "id": "RA-MAN-01",
+      "status": "BLOCKED",
+      "reason": "Release APK signing: DEPROOF_KEYSTORE_PATH and credentials required."
+    },
+    {
+      "id": "RA-MAN-02",
+      "status": "BLOCKED",
+      "reason": "Byte-for-byte reproducible build verification across different machines."
+    },
+    {
+      "id": "RA-MAN-03",
+      "status": "BLOCKED",
+      "reason": "CycloneDX/SPDX SBOM generation: tooling not present in build environment."
+    }
+  ]
+}

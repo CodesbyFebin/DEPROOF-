@@ -1,0 +1,91 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :app
+WARNING: The option setting 'android.enableJetifier=true' is deprecated.
+The current default is 'false'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugBuildConfig
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:processDebugNavigationResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:generateDebugRFile UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:compileDebugNavigationResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileDebugUnitTest UP-TO-DATE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:packageDebugUnitTestForUnitTest UP-TO-DATE
+> Task :app:processDebugUnitTestManifest UP-TO-DATE
+> Task :app:generateDebugUnitTestConfig UP-TO-DATE
+> Task :app:kspDebugKotlin
+
+> Task :app:compileDebugKotlin
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/EvidencePreview.kt:43:68 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/MainActivity.kt:175:113 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/MainActivity.kt:217:132 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/MainActivity.kt:278:115 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/MainActivity.kt:278:135 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/MainActivity.kt:279:94 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/MainActivity.kt:312:100 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/MainActivity.kt:312:129 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/MainActivity.kt:322:100 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/MainActivity.kt:322:132 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/MainActivity.kt:360:146 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/MainActivity.kt:362:117 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/MainActivity.kt:375:109 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/MainActivity.kt:375:133 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/MainActivity.kt:398:291 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/MainActivity.kt:398:317 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/MainActivity.kt:398:349 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/MainActivity.kt:398:502 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/MainActivity.kt:398:521 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/NodeWorkspace.kt:64:177 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/NodeWorkspace.kt:64:198 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/NodeWorkspace.kt:66:74 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/NodeWorkspace.kt:67:68 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/NodeWorkspace.kt:67:93 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/WorkflowWorkspace.kt:46:80 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/WorkflowWorkspace.kt:46:105 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/WorkflowWorkspace.kt:46:136 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/WorkflowWorkspace.kt:46:250 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/WorkflowWorkspace.kt:46:276 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/WorkflowWorkspace.kt:46:303 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/WorkflowWorkspace.kt:87:79 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/WorkflowWorkspace.kt:87:100 Redundant call of conversion method.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/data/EvidenceSigner.kt:37:24 'val isInsideSecureHardware: Boolean' is deprecated. Deprecated in Java.
+w: file:///home/codesbyfebin/DeProof/app/src/main/java/com/example/data/LocationCapture.kt:37:356 'val isFromMockProvider: Boolean' is deprecated. Deprecated in Java.
+
+> Task :app:compileDebugJavaWithJavac
+> Task :app:processDebugJavaRes UP-TO-DATE
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:bundleDebugClassesToRuntimeJar
+> Task :app:kspDebugUnitTestKotlin
+
+> Task :app:compileDebugUnitTestKotlin
+w: file:///home/codesbyfebin/DeProof/app/src/test/java/com/example/data/ObservationStatusTest.kt:54:47 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+w: file:///home/codesbyfebin/DeProof/app/src/test/java/com/example/domain/ConnectorTest.kt:12:31 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processDebugUnitTestJavaRes UP-TO-DATE
+> Task :app:testDebugUnitTest
+
+[Incubating] Problems report is available at: file:///home/codesbyfebin/DeProof/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 1m 2s
+32 actionable tasks: 9 executed, 23 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.3.1/userguide/configuration_cache_enabling.html

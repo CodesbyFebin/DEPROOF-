@@ -1,0 +1,4 @@
+=== RUN   TestContainerListenerRequiresExplicitOptIn
+--- PASS: TestContainerListenerRequiresExplicitOptIn (0.00s)
+PASS
+ok  	deproof.local/node-agent/cmd/deproof-node	(cached)

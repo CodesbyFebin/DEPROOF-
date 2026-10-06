@@ -1,0 +1,10 @@
+{
+  "app/build/outputs/apk/debug/app-debug.apk": {
+    "sha256": "ce2c06e7138a83bfde67a6b7b90a472e2315b40ba4ecbc6c155867b11ff6815e",
+    "size_bytes": 41386842
+  },
+  "app/build/outputs/apk/release/app-release-unsigned.apk": {
+    "sha256": "0b53d33855ab02fe1c6a85ee841f64c84f9f05aaf9de69a55a5712e88be2be7f",
+    "size_bytes": 3730335
+  }
+}
