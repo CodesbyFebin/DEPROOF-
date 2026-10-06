@@ -8,6 +8,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
+import com.deproof.app.R
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import android.net.Uri
 import com.example.data.*

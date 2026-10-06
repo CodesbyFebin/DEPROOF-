@@ -1,0 +1,126 @@
+Deproof P1 Unit Test Results
+Built by CodesbyFebin — HP ProLiant DL20 Gen9, Ubuntu 25.04
+Date: 2026-10-06
+Command: ./gradlew testDebugUnitTest
+Exit: 0
+Result: PASS — 15 classes, 91 tests, 0 failures, 0 skipped
+
+=== Test Classes ===
+
+com.example.data.BackupRepositoryTest (9 tests)
+  PASS laterDatabaseConstraintFailureRollsBackRowsAndRemovesOnlyNewFiles
+  PASS authenticatedMalformedRecordOrDigestIsRefusedBeforeAnyWrite
+  PASS unknownVersionsAndExtraFieldsAreRejected
+  PASS restoredPlansRetainTaskLinkButRemindersStayCancelled
+  PASS wrongKeyAndTamperingLeaveExistingRoomRowsAndFilesIntact
+  PASS exportRestorePersistsMetadataAssociationsAndExactFileBytes
+  PASS actualFileMetadataFactoryRefusesChangedBytesAndMissingTaskWithoutRows
+  PASS existingIdsAndFilesAreNeverOverwritten
+  PASS exportedScopeExcludesPairingSeedsOperationsAndPermissions
+
+com.example.data.HistoricalObservationTest (6 tests)
+  PASS identicalSignatureOnDifferentClustersIsNotConflated
+  PASS unavailableRefreshRetainsOriginalKnownStatusWithoutInventingSuccess
+  PASS olderObservationArrivingLateIsKeptAsHistoryAndNeverChangesTheReceipt
+  PASS conflictingMessageIsRefusedWithoutChangingReceiptOrObservations
+  PASS concurrentOpensCreateOneReceiptWithIndependentObservations
+  PASS repeatedHistoryRefreshPreservesOriginalEventAndTracksChangedStatus
+
+com.example.data.ObservationStatusTest (6 tests)
+  PASS schemaStatusAndAvailabilityEnumsAreExactlyWhatTheValidatorAccepts
+  PASS everySchemaStatusIsTrackedAsItsOwnObservation
+  PASS pendingForADeproofSubmissionIsSubmittedWithUnknownOrProcessedChainStatus
+  PASS submittingIsNotAPersistedReceiptState
+  PASS statusesOutsideTheSchemaEnumAreRefused
+  PASS unavailabilityIsRecordedSeparatelyFromTheLastKnownStatus
+
+com.example.data.RoomStoreTest (4 tests)
+  [4 room persistence tests — details in TEST-com.example.data.RoomStoreTest.xml]
+
+com.example.domain.BackupTest (8 tests)
+  PASS roundTripRestoresExactBytes
+  PASS tamperedSaltIsRefusedBecauseTheHeaderIsAuthenticated
+  PASS eachBackupUsesFreshSaltAndNonce
+  PASS unsupportedMagicOrVersionIsRefused
+  PASS shortPassphrasesAreRefusedOnBothSides
+  PASS tamperedCiphertextIsRefused
+  PASS plaintextIsNotVisibleInTheBlob
+  PASS wrongPassphraseIsRefused
+
+com.example.domain.ConnectorTest (5 tests)
+  [5 connector dispatch tests — details in TEST-com.example.domain.ConnectorTest.xml]
+
+com.example.domain.CoreTest (12 tests)
+  PASS timerExpiryNeverAuthorizesWithdrawalAndRankingNeverAuthorizesSibling
+  PASS strictPolicyChecksAllRolesMintsOwnersAndSiblings
+  PASS memoParserAndImmutableMessageContextMutations
+  PASS rpcFixturesAreIndependentAndPreserveExactIntegers
+  PASS addressesRejectAlphabetLengthAndOversize
+  PASS completeMessageMutationsNeverRetainApproval
+  PASS evidenceEnvelopeSignatureAndReceiptProvenance
+  PASS returnedSignatureAndMessageTamperAreRejected
+  PASS approvalPredicateCannotBeOverriddenByDisplayOrAi
+  PASS exactUnsignedVectorsAndDecimalFormatting
+  PASS rawStreamingLimitCancellationAndCanonicalUnicode
+  PASS crossLanguageGoldenVectors
+
+com.example.domain.InspectionTest (6 tests)
+  [6 inspection tests — details in TEST-com.example.domain.InspectionTest.xml]
+
+com.example.domain.LookupTableTest (3 tests)
+  PASS versionedMessageWithLookupTableIsRefused
+  PASS instructionReferencingAnAccountBeyondStaticKeysIsRefused
+  PASS legacyMessageResolvesToItsStaticKeysOnly
+
+com.example.domain.NodeProtocolTest (9 tests)
+  PASS legacySignatureUsesRawDigestBytesNotHexOrBase64
+  PASS exactCommandSignatureAndContextAreBound
+  PASS crashDoesNotRetryPossibleSideEffects
+  PASS pairingRejectsWrongHostExpiredChallengeAndUnknownScope
+  PASS stagedExplanationNeverTransmitsOrChangesAuthorization
+  PASS legacyDigestAndFirstSeenIndicatorsNeverGrantTrust
+  PASS privatePreviewChecksBytesPathsEncodingAndTypes
+  PASS rpcChecksFullGenesisAndRejectsTruncatedOrWrongCluster
+  PASS accountEffectsDecodeOnlyExactReadOnlyCreateAccount
+
+com.example.domain.PolicyTest (5 tests)
+  PASS onlyHardwareBackedKeyLevelsQualify
+  PASS rebuiltDraftDoesNotInheritThePriorApproval
+  PASS firstRebuildIsAllowedAndASecondIsNot
+  PASS rebuildRefusesUnchangedBlockhashHistoricalAndNonDevnetReviews
+  PASS rebuildProducesANewDevnetMessageForTheSameAccount
+
+com.example.domain.ProofDispatchTest (4 tests)
+  [4 proof dispatch tests — details in TEST-com.example.domain.ProofDispatchTest.xml]
+
+com.example.domain.ProofJobTest (4 tests)
+  PASS eachMismatchIsReportedExplicitly
+  PASS incompatibleJobIsNeverReportedAsCompatible
+  [2 more — details in TEST-com.example.domain.ProofJobTest.xml]
+
+com.example.domain.ReviewBindingTest (6 tests)
+  PASS signingGateRefusesWalletAccountThatIsNotTheFeePayer
+  PASS feeAndBlockHeightChangesAreRejected
+  PASS signingGateRefusesMessageChangedAfterReview
+  PASS messageHashIsIndependentOfReviewContextButContextHashIsNot
+  PASS storedHashesAreUnaffectedByCallerBufferChanges
+  PASS reviewTimestampChangeIsRejected
+
+com.example.domain.WorkflowTest (4 tests)
+  PASS crossLanguageOptionalLocationVectorAndMutation
+  PASS reminderConsentPermissionClockAndReplacement
+  PASS offlineMappingPlanRoundTripAndBounds
+  PASS locationConsentDenialAndProvenance
+
+=== P1 Ship-Set Coverage (spec ≥11) ===
+
+Feature areas covered:
+  C002/C005  addressesRejectAlphabetLengthAndOversize
+  C025–C044  strictPolicyChecksAllRolesMintsOwnersAndSiblings, exactUnsignedVectors...
+  C045–C054  reviewBindingTest (6 tests: hash binding, tamper detection, approval gates)
+  C057       approvalPredicateCannotBeOverriddenByDisplayOrAi
+  C065–C067  evidenceEnvelopeSignatureAndReceiptProvenance, exportedScopeExcludes...
+  C089–C092  connectorTest (dispatch, blockers), stagedExplanationNeverTransmits...
+  Room DB    roomStoreTest, backupRepositoryTest (persistence verified)
+
+Total: 91 tests / 15 classes — PASS

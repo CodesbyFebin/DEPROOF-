@@ -1,0 +1,42 @@
+# Deproof P1 Delivery Checksums
+# Built by CodesbyFebin — HP ProLiant DL20 Gen9, Ubuntu 25.04
+# Date: 2026-10-07
+
+## APK Artifacts
+
+6ca1f419036b40228f2d99fc753469e1322d2c10c5a6c27bed48db97ae023def  app/build/outputs/apk/debug/app-debug.apk
+c53718145205396681bf69a64dd11f5bb5b49651a231403ebc726c65b942d9ef  app/build/outputs/apk/release/app-release-unsigned.apk
+
+## Web Production Bundle
+
+c0f920e282ec868ddafa9c1d94dd72dd73a3a8de5bf92b41255b020ee8b0984c  web/deproof-web-prod.tar.gz
+
+## Go Binaries (built during P1 qualification)
+
+# node-agent/build/deproof-node
+# prover-worker/build/prove
+# prover-worker/build/verify
+# (hashes in evidence/qualification/)
+
+## Unit Test Summary
+
+15 test classes, 91 tests, 0 failures
+Platform: JVM (testDebugUnitTest), HP ProLiant DL20 Gen9, Ubuntu 25.04
+Build: ./gradlew testDebugUnitTest (exit 0, 2026-10-06)
+
+Test classes:
+  com.example.data.BackupRepositoryTest     (9 tests)
+  com.example.data.HistoricalObservationTest (6 tests)
+  com.example.data.ObservationStatusTest    (6 tests)
+  com.example.data.RoomStoreTest            (4 tests)
+  com.example.domain.BackupTest             (8 tests)
+  com.example.domain.ConnectorTest          (5 tests)
+  com.example.domain.CoreTest               (12 tests)
+  com.example.domain.InspectionTest         (6 tests)
+  com.example.domain.LookupTableTest        (3 tests)
+  com.example.domain.NodeProtocolTest       (9 tests)
+  com.example.domain.PolicyTest             (5 tests)
+  com.example.domain.ProofDispatchTest      (4 tests)
+  com.example.domain.ProofJobTest           (4 tests)
+  com.example.domain.ReviewBindingTest      (6 tests)
+  com.example.domain.WorkflowTest           (4 tests)

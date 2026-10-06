@@ -2,7 +2,7 @@ package com.example.wallet
 
 import android.net.Uri
 import com.solana.mobilewalletadapter.clientlib.*
-import com.example.BuildConfig
+import com.deproof.app.BuildConfig
 import com.example.domain.*
 import org.bouncycastle.crypto.params.Ed25519PublicKeyParameters
 import org.bouncycastle.crypto.signers.Ed25519Signer

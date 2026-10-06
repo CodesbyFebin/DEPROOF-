@@ -3,7 +3,7 @@
 
 plugins {
     id("com.android.application")
-    kotlin("android")
+    id("org.jetbrains.kotlin.plugin.compose")
     // kotlin("kapt")  // TODO: Investigate KAPT unbound symbols issue with enums
     kotlin("plugin.serialization")
     // Optional: Hilt for DI
@@ -32,15 +32,7 @@ android {
         buildConfigField("String", "SKR_MINT", "\"SKRbvo6Gf7GoNcKKqqyckfjxN2PEVEqJf3rUKdPbdYu\"")
         buildConfigField("String", "TOKEN_PROGRAM", "\"TokenkegQfeZyiNwAJsyFbPVwwQkYk5LWV2BXVBq\"")
         buildConfigField("String", "BUILD_DATE", "\"${System.currentTimeMillis()}\"")
-    }
-
-    signingConfigs {
-        create("release") {
-            keyAlias = System.getenv("DEPROOF_KEY_ALIAS") ?: "deproof-key"
-            keyPassword = System.getenv("DEPROOF_KEY_PASSWORD") ?: ""
-            storeFile = file(System.getenv("DEPROOF_KEYSTORE_PATH") ?: "keystore.jks")
-            storePassword = System.getenv("DEPROOF_KEYSTORE_PASSWORD") ?: ""
-        }
+        buildConfigField("String", "WALLET_IDENTITY_URI", "\"https://deproof.app\"")
     }
 
     buildTypes {
@@ -54,7 +46,7 @@ android {
             )
 
             buildConfigField("Boolean", "DEBUG_MODE", "false")
-            signingConfig = signingConfigs.getByName("release")
+            // signingConfig intentionally omitted — produces an unsigned APK
         }
 
         debug {
@@ -71,22 +63,20 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
 
-    kotlinOptions {
-        jvmTarget = "11"
-        freeCompilerArgs += listOf(
-            "-opt-in=androidx.compose.material3.ExperimentalMaterial3Api",
-            "-opt-in=androidx.compose.foundation.ExperimentalFoundationApi",
-            "-opt-in=kotlinx.coroutines.ExperimentalCoroutinesApi"
-        )
+    kotlin {
+        compilerOptions {
+            jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_11)
+            freeCompilerArgs.addAll(
+                "-opt-in=androidx.compose.material3.ExperimentalMaterial3Api",
+                "-opt-in=androidx.compose.foundation.ExperimentalFoundationApi",
+                "-opt-in=kotlinx.coroutines.ExperimentalCoroutinesApi"
+            )
+        }
     }
 
     buildFeatures {
         compose = true
         buildConfig = true
-    }
-
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.3"
     }
 
     packaging {
@@ -147,6 +137,12 @@ dependencies {
 
     // Mobile Wallet Adapter (TODO: use correct version when available)
     // implementation("com.solanomobile:walletadapterkit:2.0.7")
+
+    // JSON processing (Jackson)
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.16.1")
+
+    // BouncyCastle (Ed25519 signing)
+    implementation("org.bouncycastle:bcprov-jdk15on:1.70")
 
     // Networking
     implementation("com.squareup.okhttp3:okhttp:4.11.0")

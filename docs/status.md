@@ -1,8 +1,46 @@
-# Local qualification report
+# Deproof P1 Delivery Status
 
 Deproof / DEPR — Built by CodesbyFebin. $DEPR remains a brand concept only.
 
-BUILD_QUALIFIED: **True**. CORE_DEVICE_QUALIFIED: **False**. FULL_SCOPE_QUALIFIED: **False**. Automated passes do not establish production readiness.
+**P1 Target: 2026-10-08** | **Last updated: 2026-10-07**
+
+BUILD_QUALIFIED: **True**. CORE_DEVICE_QUALIFIED: **False** (requires physical device). FULL_SCOPE_QUALIFIED: **False** (P3+ gated).
+
+## P1 Checklist
+
+| Item | Status | Detail |
+|------|--------|--------|
+| APK `app-debug.apk` <50 MB | ✅ DONE | 18 MB — `evidence/checksums.txt` |
+| APK `app-release-unsigned.apk` | ✅ DONE | 3.5 MB — `evidence/checksums.txt` |
+| Receipts persist across restart | ✅ DONE | Room DB; `RoomStoreTest` + `HistoricalObservationTest` pass |
+| Unit tests ≥11 passing | ✅ DONE | 91 tests / 15 classes / 0 failures — `evidence/test-results.txt` |
+| Build gate exits 0 | ✅ DONE | `assembleDebug` + `testDebugUnitTest` — Ubuntu 25.04, HP ProLiant DL20 Gen9 |
+| No mock wallets in build | ✅ DONE | MWA stubs throw `UnsupportedOperationException`; no invented auth |
+| No invented signatures/balances | ✅ DONE | RPC-verified only; `approvalPredicateCannotBeOverriddenByDisplayOrAi` test |
+| No hardcoded secrets | ✅ DONE | Placeholders: `MY_GROK_API_KEY`, `MY_GEMINI_API_KEY` |
+| README + CONTRIBUTING + CHANGELOG | ✅ DONE | Repo root |
+| Privacy policy | ✅ DONE | `docs/privacy.md` and `web/privacy.html` |
+| MIT license + attribution | ✅ DONE | `LICENSE`; "Built by CodesbyFebin" |
+| Web production bundle | ✅ DONE | `web/deproof-web-prod.tar.gz` (2.3 MB) |
+| MWA device test (E001) | ❌ BLOCKED | Requires physical device with wallet app (Phantom/Solflare) |
+| Screenshots (3 screens) | ❌ BLOCKED | Requires device or emulator with KVM |
+| Source repository public | ❌ PENDING | User action — `github.com/CodesbyFebin/DEPROOF-` visibility |
+
+## Known Gaps (P1)
+
+- **MWA integration**: Compilation stubs only (`com.solana.mobilewalletadapter.clientlib`). Real wallet interaction needs the official MWA SDK (`com.solanafoundation.solana.mobile:wallet-adapter-clientlib-ktx`) added from a custom Maven repo, plus physical device testing.
+- **Device/emulator gates**: `assembleDebugAndroidTest` and screenshot gates require Android emulator (API 37 image) or physical device. KVM is present (`/dev/kvm`) but emulator image not installed.
+- **Release signing**: `app-release-unsigned.apk` is unsigned. Production release requires `DEPROOF_KEYSTORE_*` credentials.
+
+## Not Started (Post-P1)
+
+P2–P5 scope per `DEPROOF — FINAL DELIVERY SPECIFICATION v3.0 (2026-10-06)`.
+
+---
+
+*Previous content below (Ubuntu qualification run, 2026-10-06):*
+
+---
 
 ## Implemented components
 

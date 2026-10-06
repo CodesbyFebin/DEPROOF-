@@ -16,6 +16,7 @@ import androidx.compose.foundation.text.selection.SelectionContainer
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.res.stringResource
+import com.deproof.app.R
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.runtime.saveable.rememberSaveable
@@ -33,6 +34,7 @@ import com.solana.mobilewalletadapter.clientlib.ActivityResultSender
 import com.example.data.*
 import com.example.domain.*
 import com.example.wallet.*
+import com.deproof.app.BuildConfig
 import com.fasterxml.jackson.databind.JsonNode
 import com.fasterxml.jackson.databind.node.ObjectNode
 import kotlinx.coroutines.*
