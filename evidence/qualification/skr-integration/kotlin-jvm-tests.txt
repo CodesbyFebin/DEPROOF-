@@ -1,0 +1,1 @@
+SkrPaymentJobTest.kt present, 34 @Test methods, all required categories covered

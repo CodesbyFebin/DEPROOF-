@@ -206,6 +206,37 @@ check("SKR-FMT-01", "Go FormatSkrRaw + ParseSkrRaw decimal tests pass",
       "go test ./internal/agent/ -run 'TestDecimal|TestParseSkr|TestFormat' -v 2>&1 && echo FMT_OK",
       "fmt-test.txt", cwd=ROOT/"node-agent", expect_in="FMT_OK")
 
+# ─── Kotlin JVM unit tests for SkrPaymentJob ─────────────────────────────────
+
+def check_kotlin_jvm_tests():
+    """Verify SkrPaymentJobTest.kt is present and covers required categories."""
+    test_file = ROOT / "app/src/test/kotlin/com/deproof/payment/SkrPaymentJobTest.kt"
+    assert test_file.exists(), f"JVM test file missing: {test_file.relative_to(ROOT)}"
+    text = test_file.read_text()
+    required = [
+        ("BLOCKED", "BLOCKED state when no verified result"),
+        ("DUPLICATE_PAYMENT_REJECTED", "duplicate payment prevention"),
+        ("CHANGED_BYTES_REJECTED", "changed-bytes rejection"),
+        ("formatSkrRaw(0L)", "decimal boundary formatting"),
+        ("formatSkrRaw(1L)", "smallest-unit formatting"),
+        ("parseSkrRaw", "parseSkrRaw round-trip"),
+        ("sha256DigestOf", "SHA-256 digest test"),
+    ]
+    for token, label in required:
+        assert token in text, f"Missing coverage for: {label} (token={token!r})"
+    # Count @Test annotations as a proxy for test count
+    test_count = text.count("@Test")
+    assert test_count >= 10, f"Expected >= 10 @Test methods, found {test_count}"
+    return f"SkrPaymentJobTest.kt present, {test_count} @Test methods, all required categories covered"
+
+check_py("SKR-KT-01", "Kotlin SkrPaymentJobTest.kt present with required test categories",
+         check_kotlin_jvm_tests, "kotlin-jvm-tests.txt")
+
+check_na("SKR-KT-RUN-01",
+         "Run Kotlin JVM tests: requires Android SDK/Gradle (./gradlew :app:test). "
+         "Skipped in gate; run manually: ./gradlew :app:testDebugUnitTest --tests "
+         "com.deproof.payment.SkrPaymentJobTest")
+
 check_na("SKR-MAN-01",
          "On-chain SPL Token Program and SKR mint verification: requires live Solana RPC connection.")
 check_na("SKR-MAN-02",

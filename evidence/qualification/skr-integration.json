@@ -88,6 +88,17 @@
       "evidencePath": "evidence/qualification/skr-integration/fmt-test.txt"
     },
     {
+      "id": "SKR-KT-01",
+      "status": "PASS",
+      "command": "<python>",
+      "evidencePath": "evidence/qualification/skr-integration/kotlin-jvm-tests.txt"
+    },
+    {
+      "id": "SKR-KT-RUN-01",
+      "status": "NOT_APPLICABLE",
+      "reason": "Run Kotlin JVM tests: requires Android SDK/Gradle (./gradlew :app:test). Skipped in gate; run manually: ./gradlew :app:testDebugUnitTest --tests com.deproof.payment.SkrPaymentJobTest"
+    },
+    {
       "id": "SKR-MAN-01",
       "status": "NOT_APPLICABLE",
       "reason": "On-chain SPL Token Program and SKR mint verification: requires live Solana RPC connection."
