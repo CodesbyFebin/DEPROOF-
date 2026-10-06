@@ -103,7 +103,6 @@
       "dependencies": [],
       "checks": [],
       "tests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "tools/jvm/LiveRpcProbe.kt"
       ],
       "qualificationDimensions": [
@@ -314,7 +313,6 @@
       "dependencies": [],
       "checks": [],
       "tests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "tools/jvm/LiveRpcProbe.kt"
       ],
       "qualificationDimensions": [

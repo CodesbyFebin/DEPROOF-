@@ -33,7 +33,6 @@
         "app/src/main/java/com/example/domain/Core.kt"
       ],
       "namedTests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "tools/jvm/LiveRpcProbe.kt"
       ],
       "requiredUncoveredGate": [
@@ -92,7 +91,6 @@
         "app/src/main/java/com/example/domain/Core.kt"
       ],
       "namedTests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "tools/jvm/LiveRpcProbe.kt"
       ],
       "requiredUncoveredGate": [
@@ -879,7 +877,8 @@
       ],
       "namedTests": [
         "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
-        "tools/test_migrations.py"
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt::legacyDigestAndFirstSeenIndicatorsNeverGrantTrust",
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt::legacySignatureUsesRawDigestBytesNotHexOrBase64"
       ],
       "requiredUncoveredGate": [
         "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
@@ -1049,10 +1048,7 @@
         "app/src/main/java/com/example/domain/Records.kt",
         "app/src/main/resources/db/migration_1_2.sql"
       ],
-      "namedTests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
-        "tools/test_migrations.py"
-      ],
+      "namedTests": [],
       "requiredUncoveredGate": [
         "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
       ]
@@ -1353,7 +1349,6 @@
         "tools/proof_jobs.py"
       ],
       "namedTests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "scripts/qualify-integration.py"
       ],
       "requiredUncoveredGate": [
@@ -1413,7 +1408,6 @@
         "tools/proof_jobs.py"
       ],
       "namedTests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "scripts/qualify-integration.py"
       ],
       "requiredUncoveredGate": [
@@ -1550,10 +1544,7 @@
         "tools/bundle.py",
         "tools/test_bundle.py"
       ],
-      "namedTests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
-        "tools/test_migrations.py"
-      ],
+      "namedTests": [],
       "requiredUncoveredGate": [
         "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
       ]
@@ -1614,7 +1605,6 @@
         "app/src/main/java/com/example/domain/Solana.kt"
       ],
       "namedTests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "tools/jvm/LiveRpcProbe.kt"
       ],
       "requiredUncoveredGate": [
@@ -1674,7 +1664,6 @@
         "app/src/main/java/com/example/domain/Solana.kt"
       ],
       "namedTests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "tools/jvm/LiveRpcProbe.kt"
       ],
       "requiredUncoveredGate": [
@@ -2733,7 +2722,6 @@
         "app/src/main/java/com/example/data/Rpc.kt"
       ],
       "namedTests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "tools/jvm/LiveRpcProbe.kt"
       ],
       "requiredUncoveredGate": [
@@ -3145,7 +3133,6 @@
         "app/src/main/resources/db/migration_1_2.sql"
       ],
       "namedTests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "tools/test_migrations.py"
       ],
       "requiredUncoveredGate": [
@@ -3162,10 +3149,7 @@
         "app/src/main/java/com/example/domain/Records.kt",
         "app/src/main/resources/db/migration_1_2.sql"
       ],
-      "namedTests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
-        "tools/test_migrations.py"
-      ],
+      "namedTests": [],
       "requiredUncoveredGate": [
         "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
       ]
@@ -3194,10 +3178,7 @@
         "app/src/main/java/com/example/domain/Records.kt",
         "app/src/main/resources/db/migration_1_2.sql"
       ],
-      "namedTests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
-        "tools/test_migrations.py"
-      ],
+      "namedTests": [],
       "requiredUncoveredGate": [
         "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
       ]

@@ -107,7 +107,6 @@
       "dependencies": [],
       "checks": [],
       "tests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "tools/jvm/LiveRpcProbe.kt"
       ],
       "qualificationDimensions": [
@@ -1460,7 +1459,6 @@
       "dependencies": [],
       "checks": [],
       "tests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "tools/test_migrations.py"
       ],
       "qualificationDimensions": [
@@ -1495,10 +1493,7 @@
       ],
       "dependencies": [],
       "checks": [],
-      "tests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
-        "tools/test_migrations.py"
-      ],
+      "tests": [],
       "qualificationDimensions": [
         "VERIFIED_LOCAL",
         "NOT_RUN"
@@ -1596,10 +1591,7 @@
       ],
       "dependencies": [],
       "checks": [],
-      "tests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
-        "tools/test_migrations.py"
-      ],
+      "tests": [],
       "qualificationDimensions": [
         "VERIFIED_LOCAL",
         "NOT_RUN"

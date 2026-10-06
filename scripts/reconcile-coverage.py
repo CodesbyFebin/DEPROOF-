@@ -2,6 +2,10 @@
 """Map tested local slices without treating overlapping/device requirements as complete."""
 import json,pathlib,re,collections
 r=pathlib.Path(__file__).resolve().parents[1];out=r/'evidence/qualification'
+# Reviewed removals: test links whose file does not assert the entry's criterion.
+EXCLUDED={(x['id'],x['test']) for x in json.loads((r/'scripts/test-link-exclusions.json').read_text(encoding='utf-8'))['exclusions']}
+for _id,_t in EXCLUDED:
+ assert (r/_t.split('::')[0]).is_file(), f'exclusion names missing file {_t}'
 def ids(text):
  found=[]
  for match in re.finditer(r'\b(FN|EF|F|C|E)(\d{3})(?:[–-](?:(FN|EF|F|C|E))?(\d{3}))?',text or ''):
@@ -65,6 +69,7 @@ if passed('localization-catalogs'):
 for f in features:
  f['checks']=[c['id'] for c in checks if f['id'] in c['featureIds']]
  f['contractIds']=[x['id'] for x in functions if f['id'] in x['featureIds']]
+for _e in byid.values():_e['tests']=[t for t in _e.get('tests',[]) if (_e['id'],t) not in EXCLUDED]
 for n,d in docs.items():(r/(n+'.json')).write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
 uncovered=[]
 for e in byid.values():

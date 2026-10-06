@@ -288,7 +288,8 @@
       ],
       "tests": [
         "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
-        "tools/test_migrations.py"
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt::legacyDigestAndFirstSeenIndicatorsNeverGrantTrust",
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt::legacySignatureUsesRawDigestBytesNotHexOrBase64"
       ],
       "evidencePaths": [
         "evidence/qualification/verifier-tests.log"
@@ -315,10 +316,7 @@
         "app/src/main/java/com/example/domain/Records.kt",
         "app/src/main/resources/db/migration_1_2.sql"
       ],
-      "tests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
-        "tools/test_migrations.py"
-      ],
+      "tests": [],
       "evidencePaths": [
         "evidence/qualification/verifier-tests.log"
       ],
@@ -399,10 +397,7 @@
         "app/src/main/java/com/example/domain/Records.kt",
         "app/src/main/resources/db/migration_1_2.sql"
       ],
-      "tests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
-        "tools/test_migrations.py"
-      ],
+      "tests": [],
       "evidencePaths": [
         "evidence/qualification/verifier-tests.log"
       ],
@@ -480,7 +475,6 @@
         "app/src/main/resources/db/migration_1_2.sql"
       ],
       "tests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "tools/test_migrations.py"
       ],
       "evidencePaths": [
@@ -508,10 +502,7 @@
         "app/src/main/java/com/example/domain/Records.kt",
         "app/src/main/resources/db/migration_1_2.sql"
       ],
-      "tests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
-        "tools/test_migrations.py"
-      ],
+      "tests": [],
       "evidencePaths": [
         "evidence/qualification/verifier-tests.log"
       ],
@@ -538,10 +529,7 @@
         "tools/bundle.py",
         "tools/test_bundle.py"
       ],
-      "tests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
-        "tools/test_migrations.py"
-      ],
+      "tests": [],
       "evidencePaths": [
         "evidence/qualification/verifier-tests.log"
       ],
@@ -936,7 +924,6 @@
         "app/src/main/java/com/example/domain/Core.kt"
       ],
       "tests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "tools/jvm/LiveRpcProbe.kt"
       ],
       "evidencePaths": [
@@ -1021,7 +1008,6 @@
         "app/src/main/java/com/example/domain/Core.kt"
       ],
       "tests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "tools/jvm/LiveRpcProbe.kt"
       ],
       "evidencePaths": [
@@ -2083,7 +2069,6 @@
         "app/src/main/java/com/example/data/Rpc.kt"
       ],
       "tests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "tools/jvm/LiveRpcProbe.kt"
       ],
       "evidencePaths": [
@@ -3707,7 +3692,6 @@
         "tools/proof_jobs.py"
       ],
       "tests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "scripts/qualify-integration.py"
       ],
       "evidencePaths": [
@@ -3739,7 +3723,6 @@
         "tools/proof_jobs.py"
       ],
       "tests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "scripts/qualify-integration.py"
       ],
       "evidencePaths": [
@@ -3871,7 +3854,9 @@
       "tests": [
         "scripts/browser/qualify.mjs"
       ],
-      "evidencePaths": [],
+      "evidencePaths": [
+        "evidence/qualification/browser/report.json"
+      ],
       "remainingReasons": [
         "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
       ]
@@ -3953,7 +3938,9 @@
       "tests": [
         "scripts/browser/qualify.mjs"
       ],
-      "evidencePaths": [],
+      "evidencePaths": [
+        "evidence/qualification/browser/report.json"
+      ],
       "remainingReasons": [
         "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
       ]
@@ -4000,7 +3987,6 @@
         "app/src/main/java/com/example/domain/Solana.kt"
       ],
       "tests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "tools/jvm/LiveRpcProbe.kt"
       ],
       "evidencePaths": [
@@ -4098,7 +4084,6 @@
         "app/src/main/java/com/example/domain/Solana.kt"
       ],
       "tests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "tools/jvm/LiveRpcProbe.kt"
       ],
       "evidencePaths": [

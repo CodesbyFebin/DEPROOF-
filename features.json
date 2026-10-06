@@ -118,7 +118,6 @@
         "C012"
       ],
       "tests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "tools/jvm/LiveRpcProbe.kt"
       ],
       "qualificationDimensions": [
@@ -345,7 +344,6 @@
         "C012"
       ],
       "tests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "tools/jvm/LiveRpcProbe.kt"
       ],
       "qualificationDimensions": [
@@ -3022,7 +3020,8 @@
       ],
       "tests": [
         "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
-        "tools/test_migrations.py"
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt::legacyDigestAndFirstSeenIndicatorsNeverGrantTrust",
+        "app/src/test/java/com/example/domain/NodeProtocolTest.kt::legacySignatureUsesRawDigestBytesNotHexOrBase64"
       ],
       "qualificationDimensions": [
         "VERIFIED_LOCAL",
@@ -3553,10 +3552,7 @@
         "C075",
         "C076"
       ],
-      "tests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
-        "tools/test_migrations.py"
-      ],
+      "tests": [],
       "qualificationDimensions": [
         "VERIFIED_LOCAL",
         "NOT_RUN"
@@ -4506,7 +4502,6 @@
       "dependencies": [],
       "checks": [],
       "tests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "scripts/qualify-integration.py"
       ],
       "qualificationDimensions": [
@@ -4640,7 +4635,6 @@
       "dependencies": [],
       "checks": [],
       "tests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "scripts/qualify-integration.py"
       ],
       "qualificationDimensions": [
@@ -5040,10 +5034,7 @@
         "C099",
         "C100"
       ],
-      "tests": [
-        "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
-        "tools/test_migrations.py"
-      ],
+      "tests": [],
       "qualificationDimensions": [
         "VERIFIED_LOCAL",
         "NOT_RUN"

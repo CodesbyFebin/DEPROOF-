@@ -9,6 +9,11 @@ for _id,_refs in CRITERION_LINKS.items():
   _path,_name=_ref.split('::')
   _src=(root/_path).read_text(encoding='utf-8')
   assert re.search(r'(fun\s+|def\s+)'+re.escape(_name)+r'\s*\(',_src),f'criterion link {_id} names missing test {_ref}'
+# Reviewed removals: test links whose file does not assert the entry's criterion.
+EXCLUDED={(x['id'],x['test']) for x in json.loads((root/'scripts/test-link-exclusions.json').read_text(encoding='utf-8'))['exclusions']}
+for _id,_t in EXCLUDED:
+ assert (root/_t.split('::')[0]).is_file(), f'exclusion names missing file {_t}'
+ assert (_id,_t) not in {(_id,x) for x in CRITERION_LINKS.get(_id,[])}, f'exclusion removes a criterion link {_id} {_t}'
 D='app/src/main/java/com/example/domain/';A='app/src/main/java/com/example/';N='node-agent/internal/agent/agent.go'
 core_test='app/src/test/java/com/example/domain/CoreTest.kt';core_log='evidence/qualification/core-tests.log';node_log='evidence/qualification/node-tests.log';portable_log='evidence/qualification/verifier-tests.log'
 feature_paths={}
@@ -59,7 +64,7 @@ check_tests={2:'addressesRejectAlphabetLengthAndOversize',4:'exactUnsignedVector
 for name,key in [('features','features'),('core-checks','checks'),('functions','functions'),('ecosystem-requirements','requirements')]:
  p=root/(name+'.json');d=json.loads(p.read_text())
  for e in (d["base"] + d["ecosystem"] if name == "functions" else d[key]):
-  previous_tests=list(e.get('tests',[]));id=e['id'];num=int(re.search(r'\d+',id).group());e.setdefault('dependencies',[]);e['checks']=[];e['tests']=[];e['implementationPaths']=[];e['evidencePaths']=[];e['qualificationDimensions']=[];e['limitations']=[]
+  id=e['id'];num=int(re.search(r'\d+',id).group());e.setdefault('dependencies',[]);e['checks']=[];e['tests']=[];e['implementationPaths']=[];e['evidencePaths']=[];e['qualificationDimensions']=[];e['limitations']=[]
   e['sourceMappings']={'master':'docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md','registry':'docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/'+name+'.json','id':id}
   if id.startswith('F') and not id.startswith('FN'):
    phase='P1' if num<=50 or 61<=num<=70 or 75<=num<=80 or 91<=num<=100 else 'P2' if num<=80 else 'P3' if num<=110 else 'P4' if num in [119,120] else 'P5';e['phase']=phase
@@ -85,8 +90,8 @@ for name,key in [('features','features'),('core-checks','checks'),('functions','
    if num in [1,2,3,4,10,14]:e['tests']=['node-agent/internal/agent/agent_test.go'];e['evidencePaths']=[node_log]
   else:
    e['status']='BLOCKED' if num in [8,9,10,12,13,15,20,21,22,23,24,25] else 'IMPLEMENTED_UNVERIFIED';e['implementationPaths']=([N] if 11<=num<=20 else ['prover-worker/cmd/prove/main.go','prover-worker/cmd/verify/main.go'] if 21<=num<=25 else [D+'Core.kt',D+'Solana.kt',D+'Records.kt',A+'MainActivity.kt']);e['qualificationDimensions']=['BLOCKED'] if e['status']=='BLOCKED' else ['NOT_RUN'];e['limitations']=['Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required.']
-  e['tests']=sorted(set(e['tests']+previous_tests))
   if not e['limitations']:e['limitations']=['Scope-specific evidence only; full-scope qualification is incomplete.']
   e['tests']=sorted(set(e['tests']+CRITERION_LINKS.get(id,[])))
+  e['tests']=[t for t in e['tests'] if (id,t) not in EXCLUDED]
  d['updatedAt']='2026-10-06';d['coveragePolicy']='No overlap counted as additional unique features; VERIFIED_LOCAL does not qualify device/external requirements.';p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
 print('Updated conservative per-entry implementation coverage.')
