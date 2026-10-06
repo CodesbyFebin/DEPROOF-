@@ -1,0 +1,5 @@
+=== RUN   TestParseSkrRaw
+--- PASS: TestParseSkrRaw (0.00s)
+PASS
+ok  	deproof.local/node-agent/internal/agent	(cached)
+PARSE_PASS

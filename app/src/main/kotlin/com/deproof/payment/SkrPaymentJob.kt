@@ -30,7 +30,7 @@ const val SKR_DECIMALS = 6
  * Requires on-chain verification before mainnet use — see Core.kt audit comment.
  */
 // Consistent with Go skr_payment.go and app/build.gradle.kts. Requires on-chain verification before mainnet use.
-const val SPL_TOKEN_PROGRAM = "TokenkegQfeZyiNwAJbiyB8671GSjsqyq26BW7NnPGBq"
+const val SPL_TOKEN_PROGRAM = "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
 
 // ─── Status enumerations ────────────────────────────────────────────────────
 

@@ -1,0 +1,7 @@
+=== RUN   TestDecimalFormattingBoundaryValues
+--- PASS: TestDecimalFormattingBoundaryValues (0.00s)
+=== RUN   TestParseSkrRaw
+--- PASS: TestParseSkrRaw (0.00s)
+PASS
+ok  	deproof.local/node-agent/internal/agent	0.005s
+FMT_OK
