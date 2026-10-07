@@ -7,6 +7,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.example.domain.MWAAdapter
 import com.example.domain.WalletSession
@@ -25,6 +26,11 @@ fun WalletSection(
     var isSigningMemo by remember { mutableStateOf(false) }
     var error by remember { mutableStateOf<String?>(null) }
     val scope = rememberCoroutineScope()
+    val context = LocalContext.current
+
+    LaunchedEffect(Unit) {
+        MWAAdapter.initialize(context)
+    }
 
     Card(
         modifier = Modifier
@@ -96,9 +102,20 @@ fun WalletSection(
                             isSigningMemo = true
                             error = null
                             scope.launch {
-                                // Sign devnet memo
+                                val result = MWAAdapter.signDevnetMemo(currentSession, "deproof-devnet-attestation")
+                                when {
+                                    result.isSuccess -> {
+                                        val updatedSession = currentSession.copy(
+                                            devnetMemoSigned = true,
+                                            devnetMemoTimestamp = System.currentTimeMillis()
+                                        )
+                                        onWalletConnected(updatedSession)
+                                    }
+                                    else -> {
+                                        error = result.exceptionOrNull()?.message ?: "Devnet memo signing failed"
+                                    }
+                                }
                                 isSigningMemo = false
-                                error = "Devnet memo signing pending"
                             }
                         },
                         modifier = Modifier.fillMaxWidth(),
