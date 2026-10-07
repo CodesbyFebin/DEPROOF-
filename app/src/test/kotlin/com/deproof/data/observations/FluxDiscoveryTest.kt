@@ -1,14 +1,12 @@
 package com.deproof.data.observations
 
+import kotlinx.coroutines.runBlocking
 import org.junit.Assert.*
 import org.junit.Test
-import org.junit.runner.RunWith
-import org.robolectric.RobolectricTestRunner
 
 /**
  * Unit tests for Flux node discovery and hardware validation
  */
-@RunWith(RobolectricTestRunner::class)
 class FluxDiscoveryTest {
 
     private val discovery = FluxDiscovery
@@ -16,7 +14,7 @@ class FluxDiscoveryTest {
     // ===== Node Discovery =====
 
     @Test
-    fun testDiscoverNodeReturnsValidInfo() {
+    fun testDiscoverNodeReturnsValidInfo() = runBlocking {
         // Test discovery of a valid Flux node
         // Note: Uses mock endpoint in this test environment
         val nodeInfo = discovery.discoverNode("192.168.1.100:16110")
@@ -32,7 +30,7 @@ class FluxDiscoveryTest {
     // ===== Hardware Validation: Valid Cases =====
 
     @Test
-    fun testValidCumulusHardware() {
+    fun testValidCumulusHardware() = runBlocking {
         val nodeInfo = FluxNodeInfo(
             nodeId = "flux-test-001",
             tier = "Cumulus",
@@ -58,7 +56,7 @@ class FluxDiscoveryTest {
     }
 
     @Test
-    fun testExcessiveHardwareAlsoValid() {
+    fun testExcessiveHardwareAlsoValid() = runBlocking {
         val nodeInfo = FluxNodeInfo(
             nodeId = "flux-test-002",
             tier = "Stratus",
@@ -86,7 +84,7 @@ class FluxDiscoveryTest {
     // ===== Hardware Validation: Failure Cases =====
 
     @Test
-    fun testInsufficientCpuCores() {
+    fun testInsufficientCpuCores() = runBlocking {
         val nodeInfo = FluxNodeInfo(
             nodeId = "flux-test-003",
             tier = "Cumulus",
@@ -111,7 +109,7 @@ class FluxDiscoveryTest {
     }
 
     @Test
-    fun testInsufficientRAM() {
+    fun testInsufficientRAM() = runBlocking {
         val nodeInfo = FluxNodeInfo(
             nodeId = "flux-test-004",
             tier = "Cumulus",
@@ -136,7 +134,7 @@ class FluxDiscoveryTest {
     }
 
     @Test
-    fun testInsufficientStorage() {
+    fun testInsufficientStorage() = runBlocking {
         val nodeInfo = FluxNodeInfo(
             nodeId = "flux-test-005",
             tier = "Cumulus",
@@ -161,7 +159,7 @@ class FluxDiscoveryTest {
     }
 
     @Test
-    fun testInsufficientBandwidth() {
+    fun testInsufficientBandwidth() = runBlocking {
         val nodeInfo = FluxNodeInfo(
             nodeId = "flux-test-006",
             tier = "Cumulus",
@@ -186,7 +184,7 @@ class FluxDiscoveryTest {
     }
 
     @Test
-    fun testMissingPublicIP() {
+    fun testMissingPublicIP() = runBlocking {
         val nodeInfo = FluxNodeInfo(
             nodeId = "flux-test-007",
             tier = "Cumulus",
@@ -211,7 +209,7 @@ class FluxDiscoveryTest {
     }
 
     @Test
-    fun testInsufficientCollateral() {
+    fun testInsufficientCollateral() = runBlocking {
         val nodeInfo = FluxNodeInfo(
             nodeId = "flux-test-008",
             tier = "Cumulus",
@@ -236,7 +234,7 @@ class FluxDiscoveryTest {
     }
 
     @Test
-    fun testMissingBenchmarkScore() {
+    fun testMissingBenchmarkScore() = runBlocking {
         val nodeInfo = FluxNodeInfo(
             nodeId = "flux-test-009",
             tier = "Cumulus",
@@ -261,7 +259,7 @@ class FluxDiscoveryTest {
     }
 
     @Test
-    fun testMultipleViolations() {
+    fun testMultipleViolations() = runBlocking {
         val nodeInfo = FluxNodeInfo(
             nodeId = "flux-test-010",
             tier = "Cumulus",
@@ -288,7 +286,7 @@ class FluxDiscoveryTest {
     // ===== Tier-Specific Validation =====
 
     @Test
-    fun testValidationPreservesTierInfo() {
+    fun testValidationPreservesTierInfo() = runBlocking {
         val nodeInfo = FluxNodeInfo(
             nodeId = "flux-test-011",
             tier = "Nimbus",
@@ -312,7 +310,7 @@ class FluxDiscoveryTest {
     }
 
     @Test
-    fun testValidationIncludesTimestamp() {
+    fun testValidationIncludesTimestamp() = runBlocking {
         val before = System.currentTimeMillis()
 
         val nodeInfo = FluxNodeInfo(

@@ -1,15 +1,14 @@
+import kotlinx.coroutines.runBlocking
 package com.deproof.data.observations
 
 import org.json.JSONObject
 import org.junit.Assert.*
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.robolectric.RobolectricTestRunner
 
 /**
  * Unit tests for Flux evidence export
  */
-@RunWith(RobolectricTestRunner::class)
 class FluxEvidenceExporterTest {
 
     private val exporter = FluxEvidenceExporter
@@ -41,7 +40,7 @@ class FluxEvidenceExporterTest {
     // ===== JSON Export =====
 
     @Test
-    fun testExportAsJsonIsValid() {
+    fun testExportAsJsonIsValid() = runBlocking {
         val json = exporter.exportAsJson(sampleObservation)
 
         assertNotNull(json)
@@ -53,7 +52,7 @@ class FluxEvidenceExporterTest {
     }
 
     @Test
-    fun testJsonExportIncludesType() {
+    fun testJsonExportIncludesType() = runBlocking {
         val json = exporter.exportAsJson(sampleObservation)
         val obj = JSONObject(json)
 
@@ -61,7 +60,7 @@ class FluxEvidenceExporterTest {
     }
 
     @Test
-    fun testJsonExportIncludesProvider() {
+    fun testJsonExportIncludesProvider() = runBlocking {
         val json = exporter.exportAsJson(sampleObservation)
         val obj = JSONObject(json)
 
@@ -69,7 +68,7 @@ class FluxEvidenceExporterTest {
     }
 
     @Test
-    fun testJsonExportIncludesNodeId() {
+    fun testJsonExportIncludesNodeId() = runBlocking {
         val json = exporter.exportAsJson(sampleObservation)
         val obj = JSONObject(json)
 
@@ -77,7 +76,7 @@ class FluxEvidenceExporterTest {
     }
 
     @Test
-    fun testJsonExportIncludesEndpoint() {
+    fun testJsonExportIncludesEndpoint() = runBlocking {
         val json = exporter.exportAsJson(sampleObservation)
         val obj = JSONObject(json)
 
@@ -85,7 +84,7 @@ class FluxEvidenceExporterTest {
     }
 
     @Test
-    fun testJsonExportIncludesTimestamp() {
+    fun testJsonExportIncludesTimestamp() = runBlocking {
         val json = exporter.exportAsJson(sampleObservation)
         val obj = JSONObject(json)
 
@@ -94,7 +93,7 @@ class FluxEvidenceExporterTest {
     }
 
     @Test
-    fun testJsonExportIncludesISOTimestamp() {
+    fun testJsonExportIncludesISOTimestamp() = runBlocking {
         val json = exporter.exportAsJson(sampleObservation)
         val obj = JSONObject(json)
 
@@ -105,7 +104,7 @@ class FluxEvidenceExporterTest {
     }
 
     @Test
-    fun testJsonExportIncludesAuditTrail() {
+    fun testJsonExportIncludesAuditTrail() = runBlocking {
         val json = exporter.exportAsJson(sampleObservation)
         val obj = JSONObject(json)
 
@@ -117,7 +116,7 @@ class FluxEvidenceExporterTest {
     }
 
     @Test
-    fun testJsonExportIncludesMetrics() {
+    fun testJsonExportIncludesMetrics() = runBlocking {
         val json = exporter.exportAsJson(sampleObservation)
         val obj = JSONObject(json)
 
@@ -129,7 +128,7 @@ class FluxEvidenceExporterTest {
     }
 
     @Test
-    fun testJsonExportIncludesRewardTracking() {
+    fun testJsonExportIncludesRewardTracking() = runBlocking {
         val json = exporter.exportAsJson(sampleObservation)
         val obj = JSONObject(json)
 
@@ -147,7 +146,7 @@ class FluxEvidenceExporterTest {
     }
 
     @Test
-    fun testJsonExportIncludesDisclaimer() {
+    fun testJsonExportIncludesDisclaimer() = runBlocking {
         val json = exporter.exportAsJson(sampleObservation)
         val obj = JSONObject(json)
 
@@ -160,7 +159,7 @@ class FluxEvidenceExporterTest {
     // ===== CSV Export =====
 
     @Test
-    fun testExportAsCSVIsValid() {
+    fun testExportAsCSVIsValid() = runBlocking {
         val csv = exporter.exportAsCSV(listOf(sampleObservation))
 
         assertNotNull(csv)
@@ -169,7 +168,7 @@ class FluxEvidenceExporterTest {
     }
 
     @Test
-    fun testCSVExportHasHeader() {
+    fun testCSVExportHasHeader() = runBlocking {
         val csv = exporter.exportAsCSV(listOf(sampleObservation))
         val lines = csv.split("\n")
 
@@ -179,7 +178,7 @@ class FluxEvidenceExporterTest {
     }
 
     @Test
-    fun testCSVExportIncludesData() {
+    fun testCSVExportIncludesData() = runBlocking {
         val csv = exporter.exportAsCSV(listOf(sampleObservation))
         val lines = csv.split("\n")
 
@@ -189,7 +188,7 @@ class FluxEvidenceExporterTest {
     }
 
     @Test
-    fun testCSVExportMultipleObservations() {
+    fun testCSVExportMultipleObservations() = runBlocking {
         val obs1 = sampleObservation
         val obs2 = sampleObservation.copy(
             nodeMetrics = sampleObservation.nodeMetrics.copy(
@@ -206,7 +205,7 @@ class FluxEvidenceExporterTest {
     // ===== Disclaimer Export =====
 
     @Test
-    fun testExportWithDisclaimerIncludesJson() {
+    fun testExportWithDisclaimerIncludesJson() = runBlocking {
         val export = exporter.exportWithDisclaimer(sampleObservation)
 
         assertTrue(export.contains("DISCLAIMER"))
@@ -215,7 +214,7 @@ class FluxEvidenceExporterTest {
     }
 
     @Test
-    fun testExportWithDisclaimerIncludesAuditTrail() {
+    fun testExportWithDisclaimerIncludesAuditTrail() = runBlocking {
         val export = exporter.exportWithDisclaimer(sampleObservation)
 
         assertTrue(export.contains("AUDIT TRAIL"))
@@ -225,7 +224,7 @@ class FluxEvidenceExporterTest {
     }
 
     @Test
-    fun testExportWithDisclaimerIncludesAssetSeparation() {
+    fun testExportWithDisclaimerIncludesAssetSeparation() = runBlocking {
         val export = exporter.exportWithDisclaimer(sampleObservation)
 
         assertTrue(export.contains("ASSET SEPARATION"))
@@ -237,7 +236,7 @@ class FluxEvidenceExporterTest {
     // ===== Error Handling =====
 
     @Test
-    fun testCSVExportWithEmptyList() {
+    fun testCSVExportWithEmptyList() = runBlocking {
         val csv = exporter.exportAsCSV(emptyList())
 
         assertNotNull(csv)
