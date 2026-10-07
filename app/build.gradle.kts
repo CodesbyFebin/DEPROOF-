@@ -77,19 +77,8 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
 
-    kotlin {
-        compilerOptions {
-            jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_11)
-            freeCompilerArgs.addAll(
-                "-opt-in=androidx.compose.material3.ExperimentalMaterial3Api",
-                "-opt-in=androidx.compose.foundation.ExperimentalFoundationApi",
-                "-opt-in=kotlinx.coroutines.ExperimentalCoroutinesApi"
-            )
-        }
-    }
-
     buildFeatures {
-        compose = false
+        compose = true
         buildConfig = true
     }
 
