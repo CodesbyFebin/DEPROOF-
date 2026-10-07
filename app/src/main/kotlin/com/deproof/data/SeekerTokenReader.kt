@@ -7,7 +7,10 @@
 // - Supports proper decimal conversion for display
 package com.deproof.data
 
-import com.deproof.data.rpc.SolanaRpcClient
+import com.deproof.data.rpc.SolanaRpcClientImpl
+import com.deproof.data.rpc.NetworkError
+import com.deproof.data.rpc.ParseError
+import com.deproof.data.rpc.RpcError
 import com.deproof.domain.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -22,7 +25,7 @@ import kotlinx.coroutines.withContext
  * - Distinguishes between missing config (unavailable) vs missing account (zero)
  */
 class SeekerTokenReader(
-    private val rpcClient: SolanaRpcClient,
+    private val rpcClient: SolanaRpcClientImpl,
     private val skrMint: String = SKR_MINT,
     private val skrDecimals: Int = SKR_DECIMALS
 ) {
@@ -35,19 +38,26 @@ class SeekerTokenReader(
      * - SkrError.RpcFailure if the RPC call fails
      */
     suspend fun getMintInfo(): Result<MintInfo> = withContext(Dispatchers.IO) {
-        try {
-            // In a real implementation, this would call getAccountInfo and parse the mint layout
-            // For now, we return cached info since this is deterministic
-            Result.success(
+        rpcClient.getAccountInfo(skrMint)
+            .mapCatching { accountInfo ->
+                if (accountInfo.owner != TOKEN_PROGRAM_ID) {
+                    throw SkrError.MintNotFound(skrMint)
+                }
                 MintInfo(
                     mint = skrMint,
                     decimals = skrDecimals,
-                    supply = "1000000000000" // 1 billion with 6 decimals
+                    supply = "1000000000000" // Fetch from chain in future
                 )
-            )
-        } catch (e: Exception) {
-            Result.failure(SkrError.RpcFailure(originalError = e as? Exception))
-        }
+            }
+            .mapError { error ->
+                when (error) {
+                    is SkrError -> error
+                    is RpcError -> SkrError.MintNotFound(skrMint)
+                    is NetworkError -> SkrError.RpcFailure(originalError = error)
+                    is ParseError -> SkrError.RpcFailure(originalError = error)
+                    else -> SkrError.RpcFailure(originalError = error as? Exception)
+                }
+            }
     }
 
     /**
@@ -62,16 +72,26 @@ class SeekerTokenReader(
      */
     suspend fun getAllTokenAccounts(owner: String): Result<List<TokenAccount>> =
         withContext(Dispatchers.IO) {
-            try {
-                // In a real implementation, this would:
-                // 1. Call getTokenAccountsByOwner with programId=TokenProgram
-                // 2. Filter for accounts with mint == skrMint
-                // 3. Parse each account's balance
-                // For now, return empty (owner has no SKR)
-                Result.success(emptyList())
-            } catch (e: Exception) {
-                Result.failure(SkrError.RpcFailure(originalError = e as? Exception))
-            }
+            rpcClient.getTokenAccountsByOwner(owner, skrMint)
+                .mapCatching { tokenAccounts ->
+                    tokenAccounts.map { ta ->
+                        TokenAccount(
+                            address = ta.address,
+                            mint = ta.mint,
+                            owner = ta.owner,
+                            amount = ta.amount
+                        )
+                    }
+                }
+                .mapError { error ->
+                    when (error) {
+                        is SkrError -> error
+                        is RpcError -> SkrError.RpcFailure(originalError = error)
+                        is NetworkError -> SkrError.RpcFailure(originalError = error)
+                        is ParseError -> SkrError.RpcFailure(originalError = error)
+                        else -> SkrError.RpcFailure(originalError = error as? Exception)
+                    }
+                }
         }
 
     /**
@@ -138,6 +158,9 @@ class SeekerTokenReader(
 
         /** On-chain decimal places for SKR token. */
         const val SKR_DECIMALS = 6
+
+        /** SPL Token Program ID on Solana. */
+        const val TOKEN_PROGRAM_ID = "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
 
         /**
          * Adds two raw amount strings.
