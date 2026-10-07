@@ -4,6 +4,10 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.util.Log
+import com.deproof.domain.InstructionPolicy
+import com.deproof.domain.PolicyValidator
+import com.deproof.domain.SignatureVerifier
+import com.deproof.domain.model.Instruction
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
@@ -32,6 +36,9 @@ class MobileWalletAdapter(private val context: Context) {
         const val MAINNET = "https://api.mainnet-beta.solana.com"
         const val DEVNET = "https://api.devnet.solana.com"
     }
+
+    private val policyValidator = PolicyValidator()
+    private val signatureVerifier = SignatureVerifier()
 
     suspend fun discoverWallets(): List<WalletInfo> = withContext(Dispatchers.Default) {
         return@withContext try {
@@ -140,6 +147,88 @@ class MobileWalletAdapter(private val context: Context) {
             is String -> Uri.encode(value)
             is List<*> -> Uri.encode(value.joinToString(","))
             else -> Uri.encode(value.toString())
+        }
+    }
+
+    // ========== Phase 3: Policy Validation & Signature Verification ==========
+
+    suspend fun authorizeWithPolicy(
+        policy: InstructionPolicy,
+        instructions: List<Instruction>
+    ): Result<Unit> = withContext(Dispatchers.Default) {
+        try {
+            // Validate each instruction against policy
+            for (instruction in instructions) {
+                val result = policyValidator.validateInstructionPolicy(instruction, policy)
+                if (result.isFailure) {
+                    Log.e(TAG, "Policy validation failed for instruction ${instruction.programId}")
+                    return@withContext result
+                }
+            }
+
+            // Validate no mixed instructions
+            val mixedResult = policyValidator.validateMixedInstructions(instructions)
+            if (mixedResult.isFailure) {
+                Log.e(TAG, "Mixed instruction validation failed")
+                return@withContext mixedResult
+            }
+
+            Log.d(TAG, "Policy authorization successful for ${instructions.size} instructions")
+            Result.success(Unit)
+        } catch (e: Exception) {
+            Log.e(TAG, "Policy authorization error: ${e.message}", e)
+            Result.failure(e)
+        }
+    }
+
+    suspend fun verifySignature(
+        reviewedMessageBytes: ByteArray,
+        signedTransaction: SignedTransaction
+    ): Result<Boolean> = withContext(Dispatchers.Default) {
+        try {
+            val result = signatureVerifier.verify(reviewedMessageBytes, signedTransaction)
+
+            if (result.isFailure) {
+                Log.e(TAG, "Signature verification failed: ${result.exceptionOrNull()?.message}")
+                return@withContext result.map { false }
+            }
+
+            val verificationResult = result.getOrNull()
+            val isValid = verificationResult?.isValid ?: false
+
+            if (!isValid && verificationResult != null) {
+                Log.w(TAG, "Signature verification failed with issues: ${verificationResult.detectedIssues}")
+            } else {
+                Log.d(TAG, "Signature verified successfully")
+            }
+
+            Result.success(isValid)
+        } catch (e: Exception) {
+            Log.e(TAG, "Signature verification error: ${e.message}", e)
+            Result.failure(e)
+        }
+    }
+
+    suspend fun verifyTransactionNotModified(
+        reviewedMessageBytes: ByteArray,
+        currentTransactionBytes: ByteArray
+    ): Result<Unit> = withContext(Dispatchers.Default) {
+        try {
+            val result = signatureVerifier.verifyTransactionNotModified(
+                reviewedMessageBytes,
+                currentTransactionBytes
+            )
+
+            if (result.isFailure) {
+                Log.e(TAG, "Transaction modification detected: ${result.exceptionOrNull()?.message}")
+            } else {
+                Log.d(TAG, "Transaction integrity verified")
+            }
+
+            result
+        } catch (e: Exception) {
+            Log.e(TAG, "Transaction verification error: ${e.message}", e)
+            Result.failure(e)
         }
     }
 }
