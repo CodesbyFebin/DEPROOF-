@@ -23,7 +23,8 @@ import java.time.format.DateTimeFormatter
 @Composable
 fun DeviceStatsScreen(
     observation: Observation,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    onProceedToSubmission: () -> Unit = {}
 ) {
     Surface(
         modifier = modifier.fillMaxSize(),
@@ -55,6 +56,26 @@ fun DeviceStatsScreen(
 
             // Evidence & audit trail
             AuditTrailSection(observation)
+
+            // Proceed to submission button
+            Button(
+                onClick = onProceedToSubmission,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(48.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color(0xFF00FF9F),
+                    contentColor = Color(0xFF0A0E27)
+                ),
+                shape = RoundedCornerShape(8.dp)
+            ) {
+                Text(
+                    "Proceed to Proof Submission",
+                    fontSize = 14.sp,
+                    fontWeight = FontWeight.Bold,
+                    fontFamily = FontFamily.Monospace
+                )
+            }
         }
     }
 }
