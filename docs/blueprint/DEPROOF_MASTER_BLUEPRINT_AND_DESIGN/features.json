@@ -5,7 +5,11 @@
       "id": "F001",
       "definition": "Paste a mainnet account address.",
       "status": "NOT_STARTED",
-      "implementationPaths": [],
+      "implementationPaths": [
+        "app/src/main/kotlin/com/deproof/ui/MainActivity.kt",
+        "app/src/main/kotlin/com/deproof/ui/wallet/WalletViewModel.kt",
+        "app/src/main/kotlin/com/deproof/ui/wallet/WalletScreen.kt"
+      ],
       "evidencePaths": []
     },
     {
