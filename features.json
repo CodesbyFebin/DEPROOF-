@@ -6,11 +6,13 @@
       "definition": "Paste a mainnet account address.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        "app/src/main/kotlin/com/deproof/domain/model/Models.kt",
+        "app/src/main/kotlin/com/deproof/data/rpc/RpcClientFactory.kt",
+        "app/src/main/kotlin/com/deproof/data/solana/SolanaRpcClient.kt"
       ],
-      "evidencePaths": [],
+      "evidencePaths": [
+        "app/src/test/kotlin/com/deproof/data/solana/SolanaIntegrationTest.kt"
+      ],
       "dependencies": [],
       "checks": [
         "C001",
