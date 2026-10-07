@@ -68,10 +68,11 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 
-    // Room Database
-    implementation("androidx.room:room-runtime:2.6.0")
-    implementation("androidx.room:room-ktx:2.6.0")
-    ksp("androidx.room:room-compiler:2.6.0")
+    // Room Database - using mock implementation for now due to KSP/Room version incompatibility
+    // Actual Room integration can be re-enabled once Kotlin/KSP versions are aligned
+    // implementation("androidx.room:room-runtime:2.6.0")
+    // implementation("androidx.room:room-ktx:2.6.0")
+    // ksp("androidx.room:room-compiler:2.6.0")
 
     // Retrofit & OkHttp
     implementation("com.squareup.retrofit2:retrofit:2.9.0")

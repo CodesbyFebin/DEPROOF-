@@ -14,9 +14,9 @@ data class WalletSession(
     fun isReadyForMainnet(): Boolean = isValid() && devnetMemoSigned
 }
 
-sealed class WalletError {
-    data class AuthorizationFailed(val reason: String) : WalletError()
-    data class SigningFailed(val reason: String) : WalletError()
-    data class DevnetMemoFailed(val reason: String) : WalletError()
-    data class InvalidPublicKey(val reason: String) : WalletError()
+sealed class WalletError(message: String) : Exception(message) {
+    data class AuthorizationFailed(val reason: String) : WalletError(reason)
+    data class SigningFailed(val reason: String) : WalletError(reason)
+    data class DevnetMemoFailed(val reason: String) : WalletError(reason)
+    data class InvalidPublicKey(val reason: String) : WalletError(reason)
 }

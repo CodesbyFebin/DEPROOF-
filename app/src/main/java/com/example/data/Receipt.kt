@@ -1,11 +1,6 @@
 package com.example.data
 
-import androidx.room.Entity
-import androidx.room.PrimaryKey
-
-@Entity(tableName = "receipts")
 data class Receipt(
-    @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
     val outcome: String, // "signed", "rejected"
     val summary: String,

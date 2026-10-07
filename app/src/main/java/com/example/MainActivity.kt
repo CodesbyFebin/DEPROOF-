@@ -17,7 +17,6 @@ import com.example.chain.Verdict
 import com.example.data.AppDatabase
 import com.example.domain.WalletSession
 import com.example.ui.theme.DeproofTheme
-import com.example.ui.screens.NowScreen
 import com.example.ui.screens.ReviewScreen
 import com.example.ui.screens.ReceiptsScreen
 
@@ -43,16 +42,11 @@ class MainActivity : ComponentActivity() {
                             Tab(
                                 selected = selectedTab.value == 0,
                                 onClick = { selectedTab.value = 0 },
-                                text = { Text("Now") }
+                                text = { Text("Review") }
                             )
                             Tab(
                                 selected = selectedTab.value == 1,
                                 onClick = { selectedTab.value = 1 },
-                                text = { Text("Review") }
-                            )
-                            Tab(
-                                selected = selectedTab.value == 2,
-                                onClick = { selectedTab.value = 2 },
                                 text = { Text("Receipts") }
                             )
                         }
@@ -60,23 +54,17 @@ class MainActivity : ComponentActivity() {
                 ) { padding ->
                     Box(modifier = Modifier.fillMaxSize().padding(padding)) {
                         when (selectedTab.value) {
-                            0 -> NowScreen(
-                                onSignatureTap = { selectedTab.value = 1 },
-                                database = database,
-                                onWalletChanged = { walletSession.value = it },
-                                walletSession = walletSession.value
-                            )
-                            1 -> ReviewScreen(
+                            0 -> ReviewScreen(
                                 verdict = reviewVerdict.value,
                                 programId = reviewProgramId.value,
                                 accounts = reviewAccounts.value,
                                 data = reviewData.value,
-                                onReject = { selectedTab.value = 2 },
-                                onApprove = { selectedTab.value = 2 },
+                                onReject = { selectedTab.value = 1 },
+                                onApprove = { selectedTab.value = 1 },
                                 database = database,
                                 walletSession = walletSession.value
                             )
-                            2 -> ReceiptsScreen(database = database)
+                            1 -> ReceiptsScreen(database = database)
                         }
                     }
                 }
