@@ -15,9 +15,18 @@ Phase 1 captures evidence of the DEPROOF application running on Android, demonst
 
 ## Quick Start
 
-### 1. Build Release APK
+### 1. Build Debug APK (Recommended for Testing)
 ```bash
 cd /home/user/deproof-
+./gradlew assembleDebug -q
+```
+
+Output: `app/build/outputs/apk/debug/app-debug.apk` (≈25MB)
+
+**OR: Build Release APK (requires signing credentials)**
+```bash
+export DEPROOF_KEYSTORE_PASSWORD="<password>"
+export DEPROOF_KEY_PASSWORD="<password>"
 ./gradlew assembleRelease -q
 ```
 

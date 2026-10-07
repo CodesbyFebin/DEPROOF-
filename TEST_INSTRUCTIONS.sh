@@ -24,8 +24,19 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Configuration
-APK_PATH="${1:-app-release.apk}"
+APK_PATH="${1:-}"
 PACKAGE_NAME="com.deproof"
+
+# Auto-detect APK if not provided
+if [ -z "$APK_PATH" ]; then
+    if [ -f "app/build/outputs/apk/debug/app-debug.apk" ]; then
+        APK_PATH="app/build/outputs/apk/debug/app-debug.apk"
+    elif [ -f "app/build/outputs/apk/release/app-release.apk" ]; then
+        APK_PATH="app/build/outputs/apk/release/app-release.apk"
+    else
+        APK_PATH="app-release.apk"
+    fi
+fi
 SCREENSHOTS_DIR="./phase1-evidence/screenshots"
 VIDEO_OUTPUT="./phase1-evidence/demo-video.mp4"
 
