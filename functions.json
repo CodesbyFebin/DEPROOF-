@@ -3,14 +3,10 @@
   "base": [
     {
       "id": "FN001",
-      "definition": "`isPubkey(input)` — true only for a valid 32-byte base58 public key.",
-      "status": "VERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log"
-      ],
+      "definition": "`isPubkey(input)` \u2014 true only for a valid 32-byte base58 public key.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -34,14 +30,10 @@
     },
     {
       "id": "FN002",
-      "definition": "`formatSol(lamports)` — exact plain decimal SOL formatting.",
-      "status": "VERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log"
-      ],
+      "definition": "`formatSol(lamports)` \u2014 exact plain decimal SOL formatting.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -65,14 +57,10 @@
     },
     {
       "id": "FN003",
-      "definition": "`formatSkr(rawAmount)` — exact formatting using verified SKR decimals.",
-      "status": "VERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log"
-      ],
+      "definition": "`formatSkr(rawAmount)` \u2014 exact formatting using verified SKR decimals.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -96,14 +84,10 @@
     },
     {
       "id": "FN004",
-      "definition": "`loadAccount(address)` — independent balance results and paginated activity context.",
+      "definition": "`loadAccount(address)` \u2014 independent balance results and paginated activity context.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/live-rpc.json"
-      ],
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -137,11 +121,9 @@
     },
     {
       "id": "FN005",
-      "definition": "`rankInstruction(ix)` — presentation order; never an authorization shortcut.",
+      "definition": "`rankInstruction(ix)` \u2014 presentation order; never an authorization shortcut.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Helpers.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -163,11 +145,9 @@
     },
     {
       "id": "FN006",
-      "definition": "`toRequest(transaction)` — complete typed review request or named unsupported result.",
+      "definition": "`toRequest(transaction)` \u2014 complete typed review request or named unsupported result.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Solana.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -189,11 +169,9 @@
     },
     {
       "id": "FN007",
-      "definition": "`materialize(parsed)` — validated program, account roles, and instruction bytes.",
+      "definition": "`materialize(parsed)` \u2014 validated program, account roles, and instruction bytes.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Solana.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -215,11 +193,9 @@
     },
     {
       "id": "FN008",
-      "definition": "`decodeInstruction(ix)` — typed operation or explicit unsupported verdict.",
+      "definition": "`decodeInstruction(ix)` \u2014 typed operation or explicit unsupported verdict.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -249,14 +225,10 @@
     },
     {
       "id": "FN009",
-      "definition": "`readU64LE(bytes, offset)` — unsigned integer with bounds checks.",
-      "status": "VERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log"
-      ],
+      "definition": "`readU64LE(bytes, offset)` \u2014 unsigned integer with bounds checks.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -280,14 +252,10 @@
     },
     {
       "id": "FN010",
-      "definition": "`readU32LE(bytes, offset)` — unsigned discriminator with bounds checks.",
-      "status": "VERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log"
-      ],
+      "definition": "`readU32LE(bytes, offset)` \u2014 unsigned discriminator with bounds checks.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -311,14 +279,10 @@
     },
     {
       "id": "FN011",
-      "definition": "`transferCheckedData(amount, decimals)` — exact ten-byte encoding with range validation.",
-      "status": "VERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log"
-      ],
+      "definition": "`transferCheckedData(amount, decimals)` \u2014 exact ten-byte encoding with range validation.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -342,14 +306,10 @@
     },
     {
       "id": "FN012",
-      "definition": "`canonicalMessage(request)` — constrained deproof-review-v1 card text for compatibility; use serializedMessageBytes(tx) for full Solana authorization bytes. Never conflate the two.",
-      "status": "VERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log"
-      ],
+      "definition": "`canonicalMessage(request)` \u2014 constrained deproof-review-v1 card text for compatibility; use serializedMessageBytes(tx) for full Solana authorization bytes. Never conflate the two.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -373,14 +333,10 @@
     },
     {
       "id": "FN013",
-      "definition": "`sha256Text(text)` — SHA-256 of documented UTF-8 bytes.",
-      "status": "VERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log"
-      ],
+      "definition": "`sha256Text(text)` \u2014 SHA-256 of documented UTF-8 bytes.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -404,14 +360,10 @@
     },
     {
       "id": "FN014",
-      "definition": "`sha256Hex(bytes)` — lowercase digest of raw bytes.",
-      "status": "VERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log"
-      ],
+      "definition": "`sha256Hex(bytes)` \u2014 lowercase digest of raw bytes.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -435,14 +387,10 @@
     },
     {
       "id": "FN015",
-      "definition": "`tamperAmount(request)` — test-only negative-control mutation.",
-      "status": "VERIFIED",
-      "implementationPaths": [
-        "app/src/test/java/com/example/domain/CoreTest.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log"
-      ],
+      "definition": "`tamperAmount(request)` \u2014 test-only negative-control mutation.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -466,14 +414,10 @@
     },
     {
       "id": "FN016",
-      "definition": "`assertUnchanged(current, review)` — message and context equality checks.",
-      "status": "VERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Solana.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log"
-      ],
+      "definition": "`assertUnchanged(current, review)` \u2014 message and context equality checks.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -498,11 +442,9 @@
     },
     {
       "id": "FN017",
-      "definition": "`canSign(review, session, context)` — full UI approval predicate including policy, unchanged bytes/context, account/cluster, blockhash, fee and prior-devnet gate; no safety guarantee.",
+      "definition": "`canSign(review, session, context)` \u2014 full UI approval predicate including policy, unchanged bytes/context, account/cluster, blockhash, fee and prior-devnet gate; no safety guarantee.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Solana.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -524,11 +466,9 @@
     },
     {
       "id": "FN018",
-      "definition": "`verdictOf(decoded)` — understandable title, reason, and severity.",
+      "definition": "`verdictOf(decoded)` \u2014 understandable title, reason, and severity.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -549,11 +489,9 @@
     },
     {
       "id": "FN019",
-      "definition": "`summaryOf(request)` — amount, asset, recipient, operation, and limitations.",
+      "definition": "`summaryOf(request)` \u2014 amount, asset, recipient, operation, and limitations.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -574,14 +512,10 @@
     },
     {
       "id": "FN020",
-      "definition": "`shortKey(key)` — display abbreviation with full-value access.",
-      "status": "VERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log"
-      ],
+      "definition": "`shortKey(key)` \u2014 display abbreviation with full-value access.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -605,14 +539,10 @@
     },
     {
       "id": "FN021",
-      "definition": "`formatAmount(raw, decimals)` — exact arbitrary-decimal formatting.",
-      "status": "VERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log"
-      ],
+      "definition": "`formatAmount(raw, decimals)` \u2014 exact arbitrary-decimal formatting.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -637,11 +567,9 @@
     },
     {
       "id": "FN022",
-      "definition": "`observeSettlement(signature, cluster)` — observed state or unavailable error.",
+      "definition": "`observeSettlement(signature, cluster)` \u2014 observed state or unavailable error.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -662,11 +590,9 @@
     },
     {
       "id": "FN023",
-      "definition": "`getSkrRawBalance(address)` — verified token-account aggregation.",
+      "definition": "`getSkrRawBalance(address)` \u2014 verified token-account aggregation.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -689,12 +615,9 @@
     },
     {
       "id": "FN024",
-      "definition": "`signDevnetMemo(wallet, memo)` — reviewed real signing, returned-byte validation, RPC submission and matched signature; return explicit wallet rejection/capability/RPC errors. Never silently sign-and-send.",
+      "definition": "`signDevnetMemo(wallet, memo)` \u2014 reviewed real signing, returned-byte validation, RPC submission and matched signature; return explicit wallet rejection/capability/RPC errors. Never silently sign-and-send.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/wallet/Wallet.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -716,11 +639,9 @@
     },
     {
       "id": "FN025",
-      "definition": "`latestDevnetBlockhash()` — blockhash plus last-valid block height.",
+      "definition": "`latestDevnetBlockhash()` \u2014 blockhash plus last-valid block height.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -741,12 +662,9 @@
     },
     {
       "id": "FN026",
-      "definition": "`connect()` — real authorized wallet session.",
+      "definition": "`connect()` \u2014 real authorized wallet session.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/wallet/Wallet.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -769,12 +687,9 @@
     },
     {
       "id": "FN027",
-      "definition": "`disconnect()` — session invalidation and explicit failure handling.",
+      "definition": "`disconnect()` \u2014 session invalidation and explicit failure handling.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/wallet/Wallet.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -795,13 +710,9 @@
     },
     {
       "id": "FN028",
-      "definition": "`saveObservation(record)` — preserve chain provenance and review integrity.",
+      "definition": "`saveObservation(record)` \u2014 preserve chain provenance and review integrity.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -823,13 +734,9 @@
     },
     {
       "id": "FN029",
-      "definition": "`reject(request)` — local refusal record with null transaction signature.",
+      "definition": "`reject(request)` \u2014 local refusal record with null transaction signature.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -851,13 +758,9 @@
     },
     {
       "id": "FN030",
-      "definition": "`copyReceipt(receipt)` — clipboard export with accessible fallback.",
+      "definition": "`copyReceipt(receipt)` \u2014 clipboard export with accessible fallback.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -878,15 +781,10 @@
     },
     {
       "id": "FN031",
-      "definition": "`canonicalEvidence(evidence)` — deproof-evidence-v2 JCS manifest bytes with exact note preservation and golden vectors.",
-      "status": "VERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Records.kt",
-        "tools/verify.py"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log"
-      ],
+      "definition": "`canonicalEvidence(evidence)` \u2014 deproof-evidence-v2 JCS manifest bytes with exact note preservation and golden vectors.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -910,14 +808,10 @@
     },
     {
       "id": "FN032",
-      "definition": "`sha256File(uriOrPath)` — streaming raw-byte hashing.",
-      "status": "VERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log"
-      ],
+      "definition": "`sha256File(uriOrPath)` \u2014 streaming raw-byte hashing.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -942,16 +836,10 @@
     },
     {
       "id": "FN033",
-      "definition": "`signHash(digest)` — legacy-digest-bytes-v1 only: SHA256withECDSA over 32 raw digest bytes, DER/SPKI and observed hardware metadata; reject wrong size/software keys. New records use FN062.",
+      "definition": "`signHash(digest)` \u2014 legacy-digest-bytes-v1 only: SHA256withECDSA over 32 raw digest bytes, DER/SPKI and observed hardware metadata; reject wrong size/software keys. New records use FN062.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/EvidenceSigner.kt",
-        "app/src/main/java/com/example/domain/LocalEvidence.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log",
-        "evidence/qualification/device-qualification.json"
-      ],
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -977,15 +865,10 @@
     },
     {
       "id": "FN034",
-      "definition": "`verifyLocalSignature(payload)` — independent signature validation.",
-      "status": "VERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Records.kt",
-        "tools/verify.py"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log"
-      ],
+      "definition": "`verifyLocalSignature(payload)` \u2014 independent signature validation.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -1009,11 +892,9 @@
     },
     {
       "id": "FN035",
-      "definition": "`statusLabel(state)` — text and severity without relying only on color.",
+      "definition": "`statusLabel(state)` \u2014 text and severity without relying only on color.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Helpers.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -1034,11 +915,9 @@
     },
     {
       "id": "FN036",
-      "definition": "`cooldownRemaining(timerSource, clock)` — validated protocol timing or explicitly labeled illustrative timing; never withdrawal authorization; clamp elapsed to zero, reject invalid/future starts per documented policy.",
+      "definition": "`cooldownRemaining(timerSource, clock)` \u2014 validated protocol timing or explicitly labeled illustrative timing; never withdrawal authorization; clamp elapsed to zero, reject invalid/future starts per documented policy.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Helpers.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -1059,11 +938,9 @@
     },
     {
       "id": "FN037",
-      "definition": "`selectCluster(action)` — explicit compatible cluster or rejection.",
+      "definition": "`selectCluster(action)` \u2014 explicit compatible cluster or rejection.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Helpers.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -1084,11 +961,9 @@
     },
     {
       "id": "FN038",
-      "definition": "`refuseUndecoded(ix)` — named refusal without invented amounts.",
+      "definition": "`refuseUndecoded(ix)` \u2014 named refusal without invented amounts.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -1109,14 +984,10 @@
     },
     {
       "id": "FN039",
-      "definition": "`prepareReview(tx, account, cluster)` — immutable complete-message review binding.",
-      "status": "VERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Solana.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log"
-      ],
+      "definition": "`prepareReview(tx, account, cluster)` \u2014 immutable complete-message review binding.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -1141,13 +1012,9 @@
     },
     {
       "id": "FN040",
-      "definition": "`exportReceipt(receipt)` — schema-valid portable record.",
+      "definition": "`exportReceipt(receipt)` \u2014 schema-valid portable record.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -1168,11 +1035,9 @@
     },
     {
       "id": "FN041",
-      "definition": "`parseTransaction(bytes)` — strict legacy/versioned transaction parsing.",
+      "definition": "`parseTransaction(bytes)` \u2014 strict legacy/versioned transaction parsing.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Solana.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -1193,7 +1058,7 @@
     },
     {
       "id": "FN042",
-      "definition": "`resolveLookupTables(message)` — verified address resolution or refusal.",
+      "definition": "`resolveLookupTables(message)` \u2014 verified address resolution or refusal.",
       "status": "BLOCKED",
       "implementationPaths": [],
       "evidencePaths": [],
@@ -1221,11 +1086,9 @@
     },
     {
       "id": "FN043",
-      "definition": "`evaluateAllInstructions(tx, policy)` — whole-transaction policy result.",
+      "definition": "`evaluateAllInstructions(tx, policy)` \u2014 whole-transaction policy result.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -1246,11 +1109,9 @@
     },
     {
       "id": "FN044",
-      "definition": "`simulateTransaction(tx)` — simulation context, errors, and limitations.",
+      "definition": "`simulateTransaction(tx)` \u2014 simulation context, errors, and limitations.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -1271,11 +1132,9 @@
     },
     {
       "id": "FN045",
-      "definition": "`estimateFee(message)` — live fee estimate with context.",
+      "definition": "`estimateFee(message)` \u2014 live fee estimate with context.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -1297,11 +1156,9 @@
     },
     {
       "id": "FN046",
-      "definition": "`validateTokenAccount(account, expected)` — mint, owner, role, and state checks.",
+      "definition": "`validateTokenAccount(account, expected)` \u2014 mint, owner, role, and state checks.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -1323,11 +1180,9 @@
     },
     {
       "id": "FN047",
-      "definition": "`buildSkrTransfer(parameters)` — exact verified transaction construction.",
+      "definition": "`buildSkrTransfer(parameters)` \u2014 exact verified transaction construction.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Helpers.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -1350,16 +1205,10 @@
     },
     {
       "id": "FN048",
-      "definition": "`rebuildExpiredTransaction(previous)` — new draft that invalidates previous approval.",
+      "definition": "`rebuildExpiredTransaction(previous)` \u2014 new draft that invalidates previous approval.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/Solana.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log",
-        "evidence/qualification/device-qualification.json"
-      ],
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -1387,11 +1236,9 @@
     },
     {
       "id": "FN049",
-      "definition": "`submitSignedTransaction(bytes)` — broadcast signature and submission context.",
+      "definition": "`submitSignedTransaction(bytes)` \u2014 broadcast signature and submission context.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -1413,14 +1260,10 @@
     },
     {
       "id": "FN050",
-      "definition": "`validateReturnedTransaction(review, signedBytes)` — identical reviewed message check.",
-      "status": "VERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Solana.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log"
-      ],
+      "definition": "`validateReturnedTransaction(review, signedBytes)` \u2014 identical reviewed message check.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -1445,17 +1288,10 @@
     },
     {
       "id": "FN051",
-      "definition": "`createTask(input)` — validated persisted task.",
+      "definition": "`createTask(input)` \u2014 validated persisted task.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "app/src/main/resources/db/migration_1_2.sql"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/verifier-tests.log"
-      ],
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -1482,17 +1318,10 @@
     },
     {
       "id": "FN052",
-      "definition": "`attachEvidence(taskId, file)` — file metadata, digest, and association.",
+      "definition": "`attachEvidence(taskId, file)` \u2014 file metadata, digest, and association.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/EvidenceRepository.kt",
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Store.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/android-build.log",
-        "evidence/qualification/core-tests.log"
-      ],
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -1521,14 +1350,10 @@
     },
     {
       "id": "FN053",
-      "definition": "`verifyManifest(manifest, files)` — independent manifest integrity report.",
-      "status": "VERIFIED",
-      "implementationPaths": [
-        "tools/verify.py"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/verifier-tests.log"
-      ],
+      "definition": "`verifyManifest(manifest, files)` \u2014 independent manifest integrity report.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -1553,13 +1378,9 @@
     },
     {
       "id": "FN054",
-      "definition": "`createReceipt(event)` — outcome-specific receipt without invented fields.",
+      "definition": "`createReceipt(event)` \u2014 outcome-specific receipt without invented fields.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -1585,17 +1406,10 @@
     },
     {
       "id": "FN055",
-      "definition": "`refreshReceiptStatus(id)` — bounded status observation and persistence.",
+      "definition": "`refreshReceiptStatus(id)` \u2014 bounded status observation and persistence.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "app/src/main/resources/db/migration_1_2.sql"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/verifier-tests.log"
-      ],
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [],
@@ -1618,7 +1432,7 @@
     },
     {
       "id": "FN056",
-      "definition": "`verifyStakingProtocol(source)` — validated interface metadata and fixtures.",
+      "definition": "`verifyStakingProtocol(source)` \u2014 validated interface metadata and fixtures.",
       "status": "BLOCKED",
       "implementationPaths": [],
       "evidencePaths": [],
@@ -1641,7 +1455,7 @@
     },
     {
       "id": "FN057",
-      "definition": "`decodeSkrStake(ix, verifiedInterface)` — supported operation or refusal.",
+      "definition": "`decodeSkrStake(ix, verifiedInterface)` \u2014 supported operation or refusal.",
       "status": "BLOCKED",
       "implementationPaths": [],
       "evidencePaths": [],
@@ -1664,7 +1478,7 @@
     },
     {
       "id": "FN058",
-      "definition": "`computeWithdrawEligibility(state)` — protocol-derived decision.",
+      "definition": "`computeWithdrawEligibility(state)` \u2014 protocol-derived decision.",
       "status": "BLOCKED",
       "implementationPaths": [],
       "evidencePaths": [],
@@ -1688,7 +1502,7 @@
     },
     {
       "id": "FN059",
-      "definition": "`runConnector(connectorId, request)` — attributable adapter result with freshness.",
+      "definition": "`runConnector(connectorId, request)` \u2014 attributable adapter result with freshness.",
       "status": "BLOCKED",
       "implementationPaths": [],
       "evidencePaths": [],
@@ -1720,12 +1534,9 @@
     },
     {
       "id": "FN060",
-      "definition": "`exportQualificationReport(results)` — machine-readable gates and artifact digests.",
+      "definition": "`exportQualificationReport(results)` \u2014 machine-readable gates and artifact digests.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "scripts/qualify.sh",
-        "scripts/update-coverage.py"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -1746,15 +1557,10 @@
     },
     {
       "id": "FN061",
-      "definition": "`explainPacket(packet, consent, providerConfig)` — optional consented explanation or NOT_CONFIGURED/GROK_NOT_CALLED/PROVIDER_ERROR; never changes authorization. Provider integration is staged, not a core network dependency.",
+      "definition": "`explainPacket(packet, consent, providerConfig)` \u2014 optional consented explanation or NOT_CONFIGURED/GROK_NOT_CALLED/PROVIDER_ERROR; never changes authorization. Provider integration is staged, not a core network dependency.",
       "status": "BLOCKED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Explanations.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log"
-      ],
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -1779,11 +1585,9 @@
     },
     {
       "id": "FN062",
-      "definition": "`signEvidenceEnvelope(envelopeBytes)` — default v2 SHA256withECDSA signature over exact domain-separated envelope bytes; DER/SPKI, security-level observation and independently verifiable payload. SOFTWARE_KEY/NO_KEYSTORE/UNQUALIFIED_KEY are explicit failures.",
+      "definition": "`signEvidenceEnvelope(envelopeBytes)` \u2014 default v2 SHA256withECDSA signature over exact domain-separated envelope bytes; DER/SPKI, security-level observation and independently verifiable payload. SOFTWARE_KEY/NO_KEYSTORE/UNQUALIFIED_KEY are explicit failures.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/EvidenceSigner.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -1814,17 +1618,13 @@
       "contract": "createNodeIdentity(config)",
       "behavior": "Protected identity/public metadata; entropy/key storage failure",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "evidencePaths": [
-        "evidence/qualification/node-tests.log"
-      ],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
         "node-agent/internal/agent/agent_test.go"
       ],
-      "implementationPaths": [
-        "node-agent/internal/agent/agent.go"
-      ],
+      "implementationPaths": [],
       "qualificationDimensions": [
         "NOT_RUN"
       ],
@@ -1846,12 +1646,8 @@
       "id": "EF002",
       "contract": "pairNode(challenge, fingerprint, consent)",
       "behavior": "Scoped authenticated session; expired/replayed/unapproved peer",
-      "status": "VERIFIED",
-      "evidencePaths": [
-        "evidence/qualification/node-integration.json",
-        "evidence/qualification/node-integration.log",
-        "evidence/qualification/node-tests.log"
-      ],
+      "status": "NOT_STARTED",
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -1859,17 +1655,7 @@
         "node-agent/internal/agent/agent_test.go",
         "scripts/qualify-integration.py"
       ],
-      "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
-        "node-agent/internal/agent/agent.go",
-        "node-agent/internal/agent/proof.go",
-        "prover-worker/cmd/prove/main.go",
-        "prover-worker/cmd/verify/main.go",
-        "tools/proof_jobs.py"
-      ],
+      "implementationPaths": [],
       "qualificationDimensions": [
         "VERIFIED_LOCAL"
       ],
@@ -1891,12 +1677,8 @@
       "id": "EF003",
       "contract": "revokeNodeSession(sessionId)",
       "behavior": "Persisted revocation and denied subsequent operations",
-      "status": "VERIFIED",
-      "evidencePaths": [
-        "evidence/qualification/node-integration.json",
-        "evidence/qualification/node-integration.log",
-        "evidence/qualification/node-tests.log"
-      ],
+      "status": "NOT_STARTED",
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -1904,17 +1686,7 @@
         "node-agent/internal/agent/agent_test.go",
         "scripts/qualify-integration.py"
       ],
-      "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
-        "node-agent/internal/agent/agent.go",
-        "node-agent/internal/agent/proof.go",
-        "prover-worker/cmd/prove/main.go",
-        "prover-worker/cmd/verify/main.go",
-        "tools/proof_jobs.py"
-      ],
+      "implementationPaths": [],
       "qualificationDimensions": [
         "VERIFIED_LOCAL"
       ],
@@ -1942,17 +1714,13 @@
       "contract": "probeNodeCapabilities()",
       "behavior": "Observed host/runtime limits and timestamp; unsupported/unknown values explicit",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "evidencePaths": [
-        "evidence/qualification/node-tests.log"
-      ],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
         "node-agent/internal/agent/agent_test.go"
       ],
-      "implementationPaths": [
-        "node-agent/internal/agent/agent.go"
-      ],
+      "implementationPaths": [],
       "qualificationDimensions": [
         "NOT_RUN"
       ],
@@ -1977,26 +1745,14 @@
       "contract": "validateServiceProfile(profile, policy)",
       "behavior": "Qualified immutable profile or denied reason",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "evidencePaths": [
-        "evidence/qualification/hosting-isolation.json",
-        "evidence/qualification/node-integration.json"
-      ],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
         "scripts/qualify-hosting.py",
         "scripts/qualify-integration.py"
       ],
-      "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
-        "node-agent/internal/agent/agent.go",
-        "node-agent/internal/agent/hosting.go",
-        "scripts/qualify-hosting.py",
-        "tools/local_hosting.py"
-      ],
+      "implementationPaths": [],
       "qualificationDimensions": [
         "VERIFIED_LOCAL",
         "NOT_RUN"
@@ -2020,27 +1776,15 @@
       "id": "EF006",
       "contract": "startLocalService(profile, operationId)",
       "behavior": "Accepted operation ID then actual observed process state; resource/runtime/port failures",
-      "status": "VERIFIED",
-      "evidencePaths": [
-        "evidence/qualification/hosting-isolation.json",
-        "evidence/qualification/node-integration.json"
-      ],
+      "status": "NOT_STARTED",
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
         "scripts/qualify-hosting.py",
         "scripts/qualify-integration.py"
       ],
-      "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
-        "node-agent/internal/agent/agent.go",
-        "node-agent/internal/agent/hosting.go",
-        "scripts/qualify-hosting.py",
-        "tools/local_hosting.py"
-      ],
+      "implementationPaths": [],
       "qualificationDimensions": [
         "VERIFIED_LOCAL"
       ],
@@ -2063,27 +1807,15 @@
       "id": "EF007",
       "contract": "stopLocalService(serviceId, operationId)",
       "behavior": "Observed termination or timed-out failure; no premature Stopped badge",
-      "status": "VERIFIED",
-      "evidencePaths": [
-        "evidence/qualification/hosting-isolation.json",
-        "evidence/qualification/node-integration.json"
-      ],
+      "status": "NOT_STARTED",
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
         "scripts/qualify-hosting.py",
         "scripts/qualify-integration.py"
       ],
-      "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
-        "node-agent/internal/agent/agent.go",
-        "node-agent/internal/agent/hosting.go",
-        "scripts/qualify-hosting.py",
-        "tools/local_hosting.py"
-      ],
+      "implementationPaths": [],
       "qualificationDimensions": [
         "VERIFIED_LOCAL"
       ],
@@ -2107,26 +1839,14 @@
       "contract": "observeNodeHealth(nodeId)",
       "behavior": "Probe results/uptime intervals with freshness and gaps",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "evidencePaths": [
-        "evidence/qualification/hosting-isolation.json",
-        "evidence/qualification/node-integration.json"
-      ],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
         "scripts/qualify-hosting.py",
         "scripts/qualify-integration.py"
       ],
-      "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
-        "node-agent/internal/agent/agent.go",
-        "node-agent/internal/agent/hosting.go",
-        "scripts/qualify-hosting.py",
-        "tools/local_hosting.py"
-      ],
+      "implementationPaths": [],
       "qualificationDimensions": [
         "VERIFIED_LOCAL",
         "NOT_RUN"
@@ -2178,12 +1898,8 @@
       "id": "EF010",
       "contract": "setBandwidthConsent(profile, limits)",
       "behavior": "Persisted explicit scope and cap policy; denied endpoint/unsupported provider",
-      "status": "VERIFIED",
-      "evidencePaths": [
-        "evidence/qualification/node-integration.json",
-        "evidence/qualification/node-integration.log",
-        "evidence/qualification/node-tests.log"
-      ],
+      "status": "NOT_STARTED",
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -2191,17 +1907,7 @@
         "node-agent/internal/agent/agent_test.go",
         "scripts/qualify-integration.py"
       ],
-      "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
-        "node-agent/internal/agent/agent.go",
-        "node-agent/internal/agent/proof.go",
-        "prover-worker/cmd/prove/main.go",
-        "prover-worker/cmd/verify/main.go",
-        "tools/proof_jobs.py"
-      ],
+      "implementationPaths": [],
       "qualificationDimensions": [
         "VERIFIED_LOCAL"
       ],
@@ -2231,27 +1937,14 @@
       "contract": "startContributionFlow(profile)",
       "behavior": "Actual restricted contribution session or named capability failure",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "evidencePaths": [
-        "evidence/qualification/node-integration.json",
-        "evidence/qualification/node-integration.log"
-      ],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
         "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "scripts/qualify-integration.py"
       ],
-      "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
-        "node-agent/internal/agent/agent.go",
-        "node-agent/internal/agent/proof.go",
-        "prover-worker/cmd/prove/main.go",
-        "prover-worker/cmd/verify/main.go",
-        "tools/proof_jobs.py"
-      ],
+      "implementationPaths": [],
       "qualificationDimensions": [
         "VERIFIED_LOCAL",
         "NOT_RUN"
@@ -2281,27 +1974,14 @@
       "contract": "stopContributionFlow(sessionId)",
       "behavior": "Flow termination and final counters; stop timeout explicit",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "evidencePaths": [
-        "evidence/qualification/node-integration.json",
-        "evidence/qualification/node-integration.log"
-      ],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
         "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "scripts/qualify-integration.py"
       ],
-      "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
-        "node-agent/internal/agent/agent.go",
-        "node-agent/internal/agent/proof.go",
-        "prover-worker/cmd/prove/main.go",
-        "prover-worker/cmd/verify/main.go",
-        "tools/proof_jobs.py"
-      ],
+      "implementationPaths": [],
       "qualificationDimensions": [
         "VERIFIED_LOCAL",
         "NOT_RUN"
@@ -2331,27 +2011,14 @@
       "contract": "measureContribution(sessionId, interval)",
       "behavior": "Raw sourced counters/units/sequence; gaps/counter reset handled",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "evidencePaths": [
-        "evidence/qualification/node-integration.json",
-        "evidence/qualification/node-integration.log"
-      ],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
         "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "scripts/qualify-integration.py"
       ],
-      "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
-        "node-agent/internal/agent/agent.go",
-        "node-agent/internal/agent/proof.go",
-        "prover-worker/cmd/prove/main.go",
-        "prover-worker/cmd/verify/main.go",
-        "tools/proof_jobs.py"
-      ],
+      "implementationPaths": [],
       "qualificationDimensions": [
         "VERIFIED_LOCAL",
         "NOT_RUN"
@@ -2376,12 +2043,8 @@
       "id": "EF014",
       "contract": "enforceTrafficQuota(sessionId, counters)",
       "behavior": "Applied pause/rate/cap decision; cannot enforce means sharing refuses",
-      "status": "VERIFIED",
-      "evidencePaths": [
-        "evidence/qualification/node-integration.json",
-        "evidence/qualification/node-integration.log",
-        "evidence/qualification/node-tests.log"
-      ],
+      "status": "NOT_STARTED",
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -2389,17 +2052,7 @@
         "node-agent/internal/agent/agent_test.go",
         "scripts/qualify-integration.py"
       ],
-      "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
-        "node-agent/internal/agent/agent.go",
-        "node-agent/internal/agent/proof.go",
-        "prover-worker/cmd/prove/main.go",
-        "prover-worker/cmd/verify/main.go",
-        "tools/proof_jobs.py"
-      ],
+      "implementationPaths": [],
       "qualificationDimensions": [
         "VERIFIED_LOCAL"
       ],
@@ -2421,28 +2074,15 @@
       "id": "EF015",
       "contract": "signUsageReceipt(meteringEnvelope)",
       "behavior": "Domain-separated node signature plus exact payload/public key",
-      "status": "VERIFIED",
-      "evidencePaths": [
-        "evidence/qualification/node-integration.json",
-        "evidence/qualification/node-integration.log"
-      ],
+      "status": "NOT_STARTED",
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
         "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "scripts/qualify-integration.py"
       ],
-      "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
-        "node-agent/internal/agent/agent.go",
-        "node-agent/internal/agent/proof.go",
-        "prover-worker/cmd/prove/main.go",
-        "prover-worker/cmd/verify/main.go",
-        "tools/proof_jobs.py"
-      ],
+      "implementationPaths": [],
       "qualificationDimensions": [
         "VERIFIED_LOCAL"
       ],
@@ -2477,28 +2117,14 @@
       "contract": "verifyUsageReceipt(receipt, peerEvidence)",
       "behavior": "Integrity, replay/freshness and corroboration report; no automatic measurement-truth claim",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "evidencePaths": [
-        "evidence/qualification/node-integration.json",
-        "evidence/qualification/node-integration.log"
-      ],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
         "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "scripts/qualify-integration.py"
       ],
-      "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
-        "node-agent/internal/agent/agent.go",
-        "node-agent/internal/agent/proof.go",
-        "prover-worker/cmd/prove/main.go",
-        "prover-worker/cmd/verify/main.go",
-        "tools/proof_jobs.py",
-        "tools/verify.py"
-      ],
+      "implementationPaths": [],
       "qualificationDimensions": [
         "VERIFIED_LOCAL",
         "NOT_RUN"
@@ -2564,27 +2190,14 @@
       "contract": "discoverProofJobs(adapter, cursor)",
       "behavior": "Signed validated bounded jobs with source/freshness",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "evidencePaths": [
-        "evidence/qualification/node-integration.json",
-        "evidence/qualification/node-integration.log"
-      ],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
         "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "scripts/qualify-integration.py"
       ],
-      "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
-        "node-agent/internal/agent/agent.go",
-        "node-agent/internal/agent/proof.go",
-        "prover-worker/cmd/prove/main.go",
-        "prover-worker/cmd/verify/main.go",
-        "tools/proof_jobs.py"
-      ],
+      "implementationPaths": [],
       "qualificationDimensions": [
         "VERIFIED_LOCAL",
         "NOT_RUN"
@@ -2608,10 +2221,7 @@
       "contract": "matchProofJob(job, capabilities)",
       "behavior": "Compatible backend/resource profile or explicit mismatch",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "evidencePaths": [
-        "evidence/qualification/android-build.log",
-        "evidence/qualification/core-tests.log"
-      ],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -2623,13 +2233,7 @@
         "app/src/test/java/com/example/domain/ProofJobTest.kt::eachMismatchIsReportedExplicitly",
         "app/src/test/java/com/example/domain/ProofJobTest.kt::incompatibleJobIsNeverReportedAsCompatible"
       ],
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/ProofJobs.kt",
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "node-agent/internal/agent/capabilities.go",
-        "tools/proof_jobs.py"
-      ],
+      "implementationPaths": [],
       "qualificationDimensions": [
         "VERIFIED_LOCAL",
         "NOT_RUN"
@@ -2653,27 +2257,14 @@
       "contract": "executeProofJob(job, approvedInputs)",
       "behavior": "Actual bounded proof/result and execution events; cancellation/deadline/backend failures",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "evidencePaths": [
-        "evidence/qualification/node-integration.json",
-        "evidence/qualification/node-integration.log"
-      ],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
         "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "scripts/qualify-integration.py"
       ],
-      "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
-        "node-agent/internal/agent/agent.go",
-        "node-agent/internal/agent/proof.go",
-        "prover-worker/cmd/prove/main.go",
-        "prover-worker/cmd/verify/main.go",
-        "tools/proof_jobs.py"
-      ],
+      "implementationPaths": [],
       "qualificationDimensions": [
         "VERIFIED_LOCAL",
         "NOT_RUN"
@@ -2701,28 +2292,15 @@
       "id": "EF021",
       "contract": "verifyProofResult(result, publicInputs, verificationKey)",
       "behavior": "Independent valid/invalid/unsupported verification report",
-      "status": "VERIFIED",
-      "evidencePaths": [
-        "evidence/qualification/node-integration.json",
-        "evidence/qualification/node-integration.log"
-      ],
+      "status": "NOT_STARTED",
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
         "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "scripts/qualify-integration.py"
       ],
-      "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
-        "node-agent/internal/agent/agent.go",
-        "node-agent/internal/agent/proof.go",
-        "prover-worker/cmd/prove/main.go",
-        "prover-worker/cmd/verify/main.go",
-        "tools/proof_jobs.py"
-      ],
+      "implementationPaths": [],
       "qualificationDimensions": [
         "VERIFIED_LOCAL"
       ],
@@ -2744,28 +2322,15 @@
       "id": "EF022",
       "contract": "createContributionReceipt(job, metering, verification)",
       "behavior": "Immutable schema-valid provenance with explicit assurance levels",
-      "status": "VERIFIED",
-      "evidencePaths": [
-        "evidence/qualification/node-integration.json",
-        "evidence/qualification/node-integration.log"
-      ],
+      "status": "NOT_STARTED",
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
         "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
         "scripts/qualify-integration.py"
       ],
-      "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
-        "node-agent/internal/agent/agent.go",
-        "node-agent/internal/agent/proof.go",
-        "prover-worker/cmd/prove/main.go",
-        "prover-worker/cmd/verify/main.go",
-        "tools/proof_jobs.py"
-      ],
+      "implementationPaths": [],
       "qualificationDimensions": [
         "VERIFIED_LOCAL"
       ],
@@ -2799,11 +2364,7 @@
       "dependencies": [],
       "checks": [],
       "tests": [],
-      "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "tools/verify.py",
-        "tools/bundle.py"
-      ],
+      "implementationPaths": [],
       "qualificationDimensions": [
         "NOT_RUN"
       ],
@@ -2837,9 +2398,7 @@
       "dependencies": [],
       "checks": [],
       "tests": [],
-      "implementationPaths": [
-        "scripts/qualify.sh"
-      ],
+      "implementationPaths": [],
       "qualificationDimensions": [
         "NOT_RUN"
       ],
