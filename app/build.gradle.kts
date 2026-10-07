@@ -98,7 +98,10 @@ android {
         resources {
             // Exclude duplicates
             excludes += "META-INF/LICENSE"
+            excludes += "META-INF/LICENSE.md"
+            excludes += "META-INF/LICENSE-notice.md"
             excludes += "META-INF/NOTICE"
+            excludes += "META-INF/NOTICE.md"
             excludes += "META-INF/AL2.0"
             excludes += "META-INF/LGPL2.1"
         }
