@@ -91,12 +91,11 @@ object AIZStatsParser : IStatsParser {
                 storageSizeBytes = storageSizeBytes,
                 upstreamSpeedRaw = upstreamSpeedRaw
             ),
-            speedUnit = "UNVERIFIED",
             signature = null,
-            providerAcknowledgement = null,
             independentVerification = "NOT_RUN",
             rewardAsset = "AIOZ",
-            skrPayment = "NOT_SUBMITTED"
+            rewardStatus = "NOT_SUBMITTED",
+            skrPaymentStatus = "NOT_SUBMITTED"
         )
     }
 
@@ -164,34 +163,6 @@ object AIZStatsParser : IStatsParser {
         return digest.joinToString("") { "%02x".format(it) }
     }
 }
-
-/**
- * Structured observation from AIOZ CLI stats
- * Preserves source digest and assurance level for audit trail
- */
-data class AIZObservation(
-    val schema: String,                          // "deproof-aioz-observation-v1"
-    val provider: String,                        // "AIOZ"
-    val assurance: String,                       // "LOCAL_OBSERVATION"
-    val source: String,                          // "operator-supplied-cli-stats"
-    val sourceSha256: String,                    // Digest of raw input bytes
-    val metrics: Metrics,                        // Storage and delivery metrics
-    val speedUnit: String,                       // "UNVERIFIED" (unit not documented by AIOZ)
-    val signature: String?,                      // null until provider signs
-    val providerAcknowledgement: String?,        // null until provider acknowledges
-    val independentVerification: String,         // "NOT_RUN" initially
-    val rewardAsset: String,                     // "AIOZ" (separate from SKR)
-    val skrPayment: String                       // "NOT_SUBMITTED" until Solana proof accepted
-)
-
-/**
- * Device observation metrics
- */
-data class Metrics(
-    val storageObjectCount: Long,                // Total objects stored
-    val storageSizeBytes: Long,                  // Total bytes stored
-    val upstreamSpeedRaw: Long                   // Raw upstream speed (unit unverified)
-)
 
 /**
  * Parse error - wraps validation failures
