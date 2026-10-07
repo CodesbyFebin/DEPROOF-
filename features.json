@@ -6,9 +6,9 @@
       "definition": "Paste a mainnet account address.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        "app/src/main/kotlin/com/deproof/ui/MainActivity.kt",
+        "app/src/main/kotlin/com/deproof/ui/wallet/WalletViewModel.kt",
+        "app/src/main/kotlin/com/deproof/ui/wallet/WalletScreen.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -46,15 +46,9 @@
     {
       "id": "F002",
       "definition": "Validate base58 decoding and 32-byte length.",
-      "status": "VERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log"
-      ],
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [
         "C001",
@@ -94,14 +88,8 @@
       "id": "F003",
       "definition": "Read SOL balance from RPC.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/domain/Core.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/live-rpc.json"
-      ],
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [
         "C001",
@@ -140,15 +128,9 @@
     {
       "id": "F004",
       "definition": "Format lamports without floating-point loss.",
-      "status": "VERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log"
-      ],
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [
         "C001",
@@ -189,11 +171,7 @@
       "id": "F005",
       "definition": "Read only the verified official SKR mint.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -232,11 +210,7 @@
       "id": "F006",
       "definition": "Sum balances across all matching token accounts.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -275,11 +249,7 @@
       "id": "F007",
       "definition": "Validate token decimals and account metadata.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -320,14 +290,8 @@
       "id": "F008",
       "definition": "Display context slot and observation time.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/domain/Core.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/live-rpc.json"
-      ],
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [
         "C001",
@@ -367,11 +331,7 @@
       "id": "F009",
       "definition": "Label pasted accounts as observed, not connected.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -409,11 +369,7 @@
       "id": "F010",
       "definition": "Preserve independent SOL and SKR loading/error states.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -451,11 +407,7 @@
       "id": "F011",
       "definition": "Discover compatible MWA wallets.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/wallet/Wallet.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -489,11 +441,7 @@
       "id": "F012",
       "definition": "Request real wallet authorization.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/wallet/Wallet.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -529,11 +477,7 @@
       "id": "F013",
       "definition": "Select an authorized account.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/wallet/Wallet.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -569,11 +513,7 @@
       "id": "F014",
       "definition": "Display the actual returned account and wallet identity.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/wallet/Wallet.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -609,11 +549,7 @@
       "id": "F015",
       "definition": "Disconnect and invalidate the session.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/wallet/Wallet.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -649,11 +585,7 @@
       "id": "F016",
       "definition": "Reauthorize when required.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/wallet/Wallet.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -687,11 +619,7 @@
       "id": "F017",
       "definition": "Surface missing-wallet errors.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/wallet/Wallet.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -725,11 +653,7 @@
       "id": "F018",
       "definition": "Separate devnet and mainnet actions.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/wallet/Wallet.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -765,11 +689,7 @@
       "id": "F019",
       "definition": "Sign and submit a minimal devnet memo.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/wallet/Wallet.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -806,11 +726,7 @@
       "id": "F020",
       "definition": "Preserve and verify the real returned transaction signature.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/wallet/Wallet.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -848,11 +764,7 @@
       "id": "F021",
       "definition": "Load the latest ten signatures with pagination.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -888,11 +800,7 @@
       "id": "F022",
       "definition": "Fetch transaction details.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -928,11 +836,7 @@
       "id": "F023",
       "definition": "Handle unavailable transaction records explicitly.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -968,11 +872,7 @@
       "id": "F024",
       "definition": "Display processed, confirmed, and finalized states.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -1008,11 +908,7 @@
       "id": "F025",
       "definition": "Display transaction failures and error details.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -1048,11 +944,7 @@
       "id": "F026",
       "definition": "Show slot and chain block time.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -1088,11 +980,7 @@
       "id": "F027",
       "definition": "Link to the appropriate explorer and cluster.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -1128,11 +1016,7 @@
       "id": "F028",
       "definition": "Decode history into a reviewable record.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -1172,11 +1056,7 @@
       "id": "F029",
       "definition": "Clearly distinguish historical observation from new authorization.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -1212,14 +1092,8 @@
       "id": "F030",
       "definition": "Refresh status without creating duplicate records.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/android-build.log",
-        "evidence/qualification/history-refresh-targeted.log"
-      ],
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [
         "C013",
@@ -1261,11 +1135,7 @@
       "id": "F031",
       "definition": "Verify the token program.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -1311,11 +1181,7 @@
       "id": "F032",
       "definition": "Decode TransferChecked discriminator 12.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -1362,15 +1228,9 @@
     {
       "id": "F033",
       "definition": "Read unsigned u64 amounts in little-endian order.",
-      "status": "VERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log"
-      ],
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [
         "C025",
@@ -1418,11 +1278,7 @@
       "id": "F034",
       "definition": "Validate the decimals byte.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -1468,11 +1324,7 @@
       "id": "F035",
       "definition": "Validate account order and required roles.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -1520,11 +1372,7 @@
       "id": "F036",
       "definition": "Verify the official SKR mint.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -1572,11 +1420,7 @@
       "id": "F037",
       "definition": "Flag SetAuthority.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -1622,11 +1466,7 @@
       "id": "F038",
       "definition": "Flag Approve and delegation.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -1672,11 +1512,7 @@
       "id": "F039",
       "definition": "Refuse unchecked or unsupported transfers in the strict SKR flow.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -1724,11 +1560,7 @@
       "id": "F040",
       "definition": "Inspect every instruction in the transaction.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -1780,11 +1612,7 @@
       "id": "F041",
       "definition": "Present a plain-language transaction summary.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -1847,11 +1675,7 @@
       "id": "F042",
       "definition": "Display full addresses on demand.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -1909,11 +1733,7 @@
       "id": "F043",
       "definition": "Show requester identity and origin.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -1969,11 +1789,7 @@
       "id": "F044",
       "definition": "Show fees and simulation outcomes where available.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -2032,11 +1848,7 @@
       "id": "F045",
       "definition": "Hash the complete serialized transaction message.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -2100,11 +1912,7 @@
       "id": "F046",
       "definition": "Bind review to account, cluster, and timestamp.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -2167,11 +1975,7 @@
       "id": "F047",
       "definition": "Recompute immediately before wallet handoff.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -2231,11 +2035,7 @@
       "id": "F048",
       "definition": "Block message or review-context changes.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -2300,11 +2100,7 @@
       "id": "F049",
       "definition": "Require fresh review after blockhash rebuild.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -2365,11 +2161,7 @@
       "id": "F050",
       "definition": "Reject locally without broadcasting.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -2427,10 +2219,7 @@
       "id": "F051",
       "definition": "Capture photos with explicit permission.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Store.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -2453,10 +2242,7 @@
       "id": "F052",
       "definition": "Import existing photos.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Store.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -2479,10 +2265,7 @@
       "id": "F053",
       "definition": "Capture or import supported video files.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Store.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -2505,10 +2288,7 @@
       "id": "F054",
       "definition": "Import documents through Android content APIs.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Store.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -2531,15 +2311,8 @@
       "id": "F055",
       "definition": "Preview supported evidence types.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/EvidencePreview.kt",
-        "app/src/main/java/com/example/domain/LocalEvidence.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log",
-        "evidence/qualification/device-qualification.json"
-      ],
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -2564,10 +2337,7 @@
       "id": "F056",
       "definition": "Add notes.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Store.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -2590,10 +2360,7 @@
       "id": "F057",
       "definition": "Record capture and import metadata.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Store.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -2616,19 +2383,8 @@
       "id": "F058",
       "definition": "Collect location only with explicit consent.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/WorkflowWorkspace.kt",
-        "app/src/main/java/com/example/data/LocationCapture.kt",
-        "app/src/main/java/com/example/domain/Workflows.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "tools/verify.py",
-        "contracts/location-observation-v1.schema.json"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log",
-        "evidence/qualification/verifier-tests.log",
-        "evidence/qualification/device-qualification.json"
-      ],
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -2662,10 +2418,7 @@
       "id": "F059",
       "definition": "Attach several files to a task.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Store.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -2690,14 +2443,8 @@
       "id": "F060",
       "definition": "Save drafts and recover after process death.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/resources/db/migration_1_2.sql"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/verifier-tests.log"
-      ],
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -2722,15 +2469,9 @@
     {
       "id": "F061",
       "definition": "Hash raw file bytes using SHA-256.",
-      "status": "VERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "tools/verify.py"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log"
-      ],
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [
         "C065",
@@ -2770,15 +2511,9 @@
     {
       "id": "F062",
       "definition": "Stream large files without loading them fully into memory.",
-      "status": "VERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "tools/verify.py"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log"
-      ],
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [
         "C065",
@@ -2818,15 +2553,9 @@
     {
       "id": "F063",
       "definition": "Create versioned deterministic manifests.",
-      "status": "VERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "tools/verify.py"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log"
-      ],
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [
         "C065",
@@ -2867,11 +2596,7 @@
       "id": "F064",
       "definition": "Detect digest mismatches.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "tools/verify.py"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -2910,15 +2635,9 @@
     {
       "id": "F065",
       "definition": "Detect duplicate evidence references.",
-      "status": "VERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "tools/verify.py"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log"
-      ],
+      "status": "IMPLEMENTED_UNVERIFIED",
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [
         "C065",
@@ -2958,11 +2677,7 @@
       "id": "F066",
       "definition": "Link evidence digests to the reviewed action.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "tools/verify.py"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -3001,17 +2716,8 @@
       "id": "F067",
       "definition": "Sign versioned evidence envelopes with Android Keystore; support legacy digest mode only with explicit metadata.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/EvidenceSigner.kt",
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "app/src/main/resources/db/migration_1_2.sql",
-        "tools/verify.py"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/verifier-tests.log"
-      ],
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [
         "C065",
@@ -3056,11 +2762,7 @@
       "id": "F068",
       "definition": "Refuse software or unqualified keys for hardware-required signing.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/EvidenceSigner.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "tools/verify.py"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -3106,11 +2808,7 @@
       "id": "F069",
       "definition": "Report observed key security level accurately.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/EvidenceSigner.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "tools/verify.py"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -3150,11 +2848,7 @@
       "id": "F070",
       "definition": "Verify signatures independently and reject tampering.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/EvidenceSigner.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "tools/verify.py"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -3196,11 +2890,7 @@
       "id": "F071",
       "definition": "Create local field-verification tasks.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -3238,11 +2928,7 @@
       "id": "F072",
       "definition": "Search and filter tasks.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -3278,11 +2964,7 @@
       "id": "F073",
       "definition": "Track task requirements and checklist progress.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -3318,11 +3000,7 @@
       "id": "F074",
       "definition": "Associate evidence with tasks.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -3360,11 +3038,7 @@
       "id": "F075",
       "definition": "Generate refusal receipts with no chain signature.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -3404,11 +3078,7 @@
       "id": "F076",
       "definition": "Generate historical observation receipts.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -3448,11 +3118,7 @@
       "id": "F077",
       "definition": "Generate local evidence-signature receipts.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -3493,11 +3159,7 @@
       "id": "F078",
       "definition": "Generate submission receipts only after actual submission.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -3537,15 +3199,8 @@
       "id": "F079",
       "definition": "Track pending, confirmed, finalized, failed, and unavailable observations.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "app/src/main/resources/db/migration_1_2.sql"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/verifier-tests.log"
-      ],
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [
         "C065",
@@ -3592,11 +3247,7 @@
       "id": "F080",
       "definition": "Persist, search, inspect, and export receipts.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -4009,10 +3660,7 @@
       "id": "F091",
       "definition": "Detect combined sensitive actions.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -4048,10 +3696,7 @@
       "id": "F092",
       "definition": "Flag token account close and burn instructions.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -4087,13 +3732,8 @@
       "id": "F093",
       "definition": "Explain account creation and rent effects.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Explanations.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log"
-      ],
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [
         "C089",
@@ -4131,10 +3771,7 @@
       "id": "F094",
       "definition": "Warn about broad delegation.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -4170,14 +3807,8 @@
       "id": "F095",
       "definition": "Display first-seen program indicators.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/LocalEvidence.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log",
-        "evidence/qualification/device-qualification.json"
-      ],
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [
         "C089",
@@ -4215,10 +3846,7 @@
       "id": "F096",
       "definition": "Use a versioned program policy registry.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -4254,14 +3882,8 @@
       "id": "F097",
       "definition": "Rebuild expired transactions with a fresh review.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/Solana.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log",
-        "evidence/qualification/device-qualification.json"
-      ],
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [
         "C089",
@@ -4301,10 +3923,7 @@
       "id": "F098",
       "definition": "Calculate fee/rent impact from live context.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -4342,10 +3961,7 @@
       "id": "F099",
       "definition": "Preserve unavailable states during network failure.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -4383,10 +3999,7 @@
       "id": "F100",
       "definition": "Provide bounded retry, cancellation, and stale-data indicators.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -4497,21 +4110,8 @@
       "id": "F104",
       "definition": "Bandwidth usage and contribution ledger.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
-        "node-agent/internal/agent/agent.go",
-        "node-agent/internal/agent/proof.go",
-        "prover-worker/cmd/prove/main.go",
-        "prover-worker/cmd/verify/main.go",
-        "tools/proof_jobs.py"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/node-integration.json",
-        "evidence/qualification/node-integration.log"
-      ],
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -4543,16 +4143,8 @@
       "id": "F105",
       "definition": "Mapping task planner.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/WorkflowWorkspace.kt",
-        "app/src/main/java/com/example/domain/Workflows.kt",
-        "app/src/main/java/com/example/data/Store.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log",
-        "evidence/qualification/verifier-tests.log",
-        "evidence/qualification/device-qualification.json"
-      ],
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -4630,21 +4222,8 @@
       "id": "F108",
       "definition": "Compute-node health monitoring.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
-        "node-agent/internal/agent/agent.go",
-        "node-agent/internal/agent/proof.go",
-        "prover-worker/cmd/prove/main.go",
-        "prover-worker/cmd/verify/main.go",
-        "tools/proof_jobs.py"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/node-integration.json",
-        "evidence/qualification/node-integration.log"
-      ],
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [],
       "tests": [
@@ -4672,10 +4251,7 @@
       "id": "F109",
       "definition": "Presence-evidence records with explicit assurance limits.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/domain/Records.kt",
-        "docs/threat-model.md"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [],
@@ -4833,10 +4409,7 @@
       "id": "F114",
       "definition": "Evidence/account recovery guidance and verified backup/provider handoff without wallet secrets, recovery-service upsells or promises to recover stolen funds.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "docs/setup.md",
-        "docs/privacy.md"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
@@ -4872,17 +4445,8 @@
       "id": "F115",
       "definition": "Local reminders and notification preferences.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/WorkflowWorkspace.kt",
-        "app/src/main/java/com/example/data/ReminderRepository.kt",
-        "app/src/main/java/com/example/domain/Workflows.kt",
-        "app/src/main/AndroidManifest.xml"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/core-tests.log",
-        "evidence/qualification/verifier-tests.log",
-        "evidence/qualification/device-qualification.json"
-      ],
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [
         "C089",
@@ -4921,16 +4485,8 @@
       "id": "F116",
       "definition": "Dark/light themes, screen-reader support, and large-text layouts.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/Theme.kt",
-        "scripts/build-web.py",
-        "web/inspect.js",
-        "web/style.css"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/browser/report.json"
-      ],
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [
         "C089",
@@ -4975,16 +4531,8 @@
       "id": "F117",
       "definition": "Localization with complete translation coverage.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/LanguageControls.kt",
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/res/values/strings.xml",
-        "app/src/main/res/values-es/strings.xml"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/localization-report.json",
-        "evidence/qualification/localization-catalogs.log"
-      ],
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [
         "C089",
@@ -5022,16 +4570,8 @@
       "id": "F118",
       "definition": "Optional encrypted backup and restore.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "app/src/main/java/com/example/BackupWorkspace.kt",
-        "app/src/main/java/com/example/data/BackupRepository.kt",
-        "app/src/main/java/com/example/domain/Backup.kt",
-        "app/src/main/java/com/example/data/Store.kt"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/android-build.log",
-        "evidence/qualification/core-tests.log"
-      ],
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [
         "C089",
@@ -5082,15 +4622,8 @@
       "id": "F119",
       "definition": "Accurate multipage marketing/documentation website.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "scripts/build-web.py",
-        "web/index.html",
-        "web/inspect.js",
-        "web/style.css"
-      ],
-      "evidencePaths": [
-        "evidence/qualification/browser/report.json"
-      ],
+      "implementationPaths": [],
+      "evidencePaths": [],
       "dependencies": [],
       "checks": [
         "C089",
@@ -5128,11 +4661,7 @@
       "id": "F120",
       "definition": "Signed release packaging, checksums, qualification report, and submission bundle.",
       "status": "IMPLEMENTED_UNVERIFIED",
-      "implementationPaths": [
-        "scripts/qualify.sh",
-        "scripts/update-coverage.py",
-        "docs/setup.md"
-      ],
+      "implementationPaths": [],
       "evidencePaths": [],
       "dependencies": [],
       "checks": [
