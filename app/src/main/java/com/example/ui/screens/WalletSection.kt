@@ -42,10 +42,19 @@ fun WalletSection(
                         isConnecting = true
                         error = null
                         scope.launch {
-                            // MWA authorize call would happen here
-                            // For now, show a placeholder message
+                            val result = MWAAdapter.authorize()
+                            when {
+                                result.isSuccess -> {
+                                    val session = result.getOrNull()
+                                    if (session != null) {
+                                        onWalletConnected(session)
+                                    }
+                                }
+                                else -> {
+                                    error = result.exceptionOrNull()?.message ?: "Connection failed"
+                                }
+                            }
                             isConnecting = false
-                            error = "MWA integration pending"
                         }
                     },
                     modifier = Modifier.fillMaxWidth(),
