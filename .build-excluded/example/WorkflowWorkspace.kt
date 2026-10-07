@@ -15,6 +15,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.example.data.*
 import com.example.domain.*
+import com.deproof.app.R
 import kotlinx.coroutines.*
 import java.time.Instant
 import java.util.UUID

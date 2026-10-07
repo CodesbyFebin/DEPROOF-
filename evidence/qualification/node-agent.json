@@ -1,0 +1,110 @@
+{
+  "schema": "deproof-gate-v1",
+  "task": "node-agent",
+  "status": "PASS",
+  "checks": [
+    {
+      "id": "NA-BUILD-01",
+      "status": "PASS",
+      "command": "go build ./... && echo BUILD_OK",
+      "evidencePath": "evidence/qualification/node-agent/build.txt"
+    },
+    {
+      "id": "NA-BIN-01",
+      "status": "PASS",
+      "command": "go build -o /tmp/deproof-node-qa ./cmd/deproof-node/ && ls -lh /tmp/deproof-node-qa && echo OK",
+      "evidencePath": "evidence/qualification/node-agent/binary.txt"
+    },
+    {
+      "id": "NA-TEST-01",
+      "status": "PASS",
+      "command": "go test ./cmd/... -v 2>&1",
+      "evidencePath": "evidence/qualification/node-agent/cmd-tests.txt"
+    },
+    {
+      "id": "NA-TEST-02",
+      "status": "PASS",
+      "command": "go test ./internal/... -v 2>&1",
+      "evidencePath": "evidence/qualification/node-agent/agent-tests.txt"
+    },
+    {
+      "id": "NA-TEST-03",
+      "status": "PASS",
+      "command": "go test ./internal/... -run TestIdentityPersistsAndPermissions -v 2>&1",
+      "evidencePath": "evidence/qualification/node-agent/identity-test.txt"
+    },
+    {
+      "id": "NA-TEST-04",
+      "status": "PASS",
+      "command": "go test ./internal/... -run TestDefaultBandwidthOffAndQuotaPersists -v 2>&1",
+      "evidencePath": "evidence/qualification/node-agent/bandwidth-test.txt"
+    },
+    {
+      "id": "NA-TEST-05",
+      "status": "PASS",
+      "command": "go test ./internal/... -run TestPairScopeReplayRevocationAndRestart -v 2>&1",
+      "evidencePath": "evidence/qualification/node-agent/pairing-test.txt"
+    },
+    {
+      "id": "NA-TEST-06",
+      "status": "PASS",
+      "command": "go test ./internal/... -run TestForgedAndMalformedDenied -v 2>&1",
+      "evidencePath": "evidence/qualification/node-agent/forged-test.txt"
+    },
+    {
+      "id": "NA-TEST-07",
+      "status": "PASS",
+      "command": "go test ./cmd/... -run TestContainerListenerRequiresExplicitOptIn -v 2>&1",
+      "evidencePath": "evidence/qualification/node-agent/container-test.txt"
+    },
+    {
+      "id": "NA-SRC-01",
+      "status": "PASS",
+      "command": "test -s node-agent/internal/agent/agent.go && echo PRESENT",
+      "evidencePath": "evidence/qualification/node-agent/agent-src.txt"
+    },
+    {
+      "id": "NA-SRC-02",
+      "status": "PASS",
+      "command": "test -s node-agent/internal/agent/capabilities.go && echo PRESENT",
+      "evidencePath": "evidence/qualification/node-agent/capabilities-src.txt"
+    },
+    {
+      "id": "NA-MAN-01",
+      "status": "NOT_APPLICABLE",
+      "reason": "Physical node hosting on real hardware: requires deployment, not automatable here."
+    },
+    {
+      "id": "NA-MAN-02",
+      "status": "NOT_APPLICABLE",
+      "reason": "Tunnel/public endpoint connectivity: requires network environment, not tested locally."
+    },
+    {
+      "id": "NA-MAN-03",
+      "status": "NOT_APPLICABLE",
+      "reason": "Docker container isolation: docker-compose up required; qualify-docker.py covers this."
+    }
+  ],
+  "limitations": [
+    "Physical hosting, tunnels, and container isolation not tested; require deployment environment.",
+    "Binary runs locally but network connectivity to devnet/peers not exercised here.",
+    "Go tests are unit-level; no integration with Android client tested here."
+  ],
+  "manualGates": [
+    {
+      "id": "NA-MAN-01",
+      "status": "BLOCKED",
+      "reason": "Physical node hosting on server hardware with uptime measurement."
+    },
+    {
+      "id": "NA-MAN-02",
+      "status": "BLOCKED",
+      "reason": "Public endpoint tunnel connectivity requires live network environment."
+    },
+    {
+      "id": "NA-MAN-03",
+      "status": "NOT_APPLICABLE",
+      "reason": "Docker isolation tested via qualify-docker.py separately."
+    }
+  ]
+}

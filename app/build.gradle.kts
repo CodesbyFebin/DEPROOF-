@@ -3,12 +3,9 @@
 
 plugins {
     id("com.android.application")
-    // kotlin("android")  // No longer required for AGP 9.0+
-    // kotlin("kapt")  // TODO: Investigate KAPT unbound symbols issue with enums
-    kotlin("plugin.serialization")
     id("org.jetbrains.kotlin.plugin.compose")
-    // Optional: Hilt for DI
-    // id("com.google.dagger.hilt.android")
+    id("com.google.devtools.ksp")
+    kotlin("plugin.serialization")
 }
 
 android {
@@ -30,24 +27,34 @@ android {
 
         // BuildConfig fields
         buildConfigField("String", "API_ENDPOINT", "\"https://api.mainnet-beta.solana.com\"")
-        buildConfigField("String", "SKR_MINT", "\"SKRbvo6Gf7GoNcKKqqyckfjxN2PEVEqJf3rUKdPbdYu\"")
-        buildConfigField("String", "TOKEN_PROGRAM", "\"TokenkegQfeZyiNwAJsyFbPVwwQkYk5LWV2BXVBq\"")
+        buildConfigField("String", "SKR_MINT", "\"SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3\"")  // official mint
+        // SPL Token Program v1. Consistent with Programs.TOKEN in Core.kt (43 chars, 32 bytes).
+        // The previous value was 40 chars — invalid Solana address length.
+        // Requires on-chain verification before mainnet use — see Core.kt audit comment.
+        buildConfigField("String", "TOKEN_PROGRAM", "\"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA\"")
         buildConfigField("String", "BUILD_DATE", "\"${System.currentTimeMillis()}\"")
+        buildConfigField("String", "WALLET_IDENTITY_URI", "\"https://deproof.app\"")
     }
 
-    signingConfigs {
-        create("release") {
-            keyAlias = System.getenv("DEPROOF_KEY_ALIAS") ?: "deproof-key"
-            keyPassword = System.getenv("DEPROOF_KEY_PASSWORD") ?: ""
-            storeFile = file(System.getenv("DEPROOF_KEYSTORE_PATH") ?: "keystore.jks")
-            storePassword = System.getenv("DEPROOF_KEYSTORE_PASSWORD") ?: ""
+    val keystorePath = System.getenv("DEPROOF_KEYSTORE_PATH")
+    if (keystorePath != null) {
+        signingConfigs {
+            create("release") {
+                keyAlias = System.getenv("DEPROOF_KEY_ALIAS") ?: "deproof-key"
+                keyPassword = System.getenv("DEPROOF_KEY_PASSWORD") ?: ""
+                storeFile = file(keystorePath)
+                storePassword = System.getenv("DEPROOF_KEYSTORE_PASSWORD") ?: ""
+            }
         }
     }
 
     buildTypes {
         release {
-            isMinifyEnabled = false
-            isShrinkResources = false
+            if (keystorePath != null) {
+                signingConfig = signingConfigs.getByName("release")
+            }
+            isMinifyEnabled = true
+            isShrinkResources = true
 
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
@@ -55,7 +62,6 @@ android {
             )
 
             buildConfigField("Boolean", "DEBUG_MODE", "false")
-            signingConfig = signingConfigs.getByName("release")
         }
 
         debug {
@@ -64,17 +70,17 @@ android {
         }
     }
 
-    // Signing configuration (release)
-    // Note: Configure with environment variables DEPROOF_KEYSTORE_PATH, DEPROOF_KEYSTORE_PASSWORD, DEPROOF_KEY_ALIAS, DEPROOF_KEY_PASSWORD
+    // Release signing uses env vars: DEPROOF_KEYSTORE_PATH, DEPROOF_KEYSTORE_PASSWORD,
+    // DEPROOF_KEY_ALIAS, DEPROOF_KEY_PASSWORD — omitting them produces an unsigned APK.
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
 
-    tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
+    kotlin {
         compilerOptions {
-            jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_11
+            jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_11)
             freeCompilerArgs.addAll(
                 "-opt-in=androidx.compose.material3.ExperimentalMaterial3Api",
                 "-opt-in=androidx.compose.foundation.ExperimentalFoundationApi",
@@ -86,10 +92,6 @@ android {
     buildFeatures {
         compose = true
         buildConfig = true
-    }
-
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.3"
     }
 
     packaging {
@@ -141,15 +143,21 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.2")
 
     // Room Database
-    implementation("androidx.room:room-runtime:2.6.0")
-    implementation("androidx.room:room-ktx:2.6.0")
-    // kapt("androidx.room:room-compiler:2.6.0")  // TODO: KAPT disabled due to enum processing issue
+    implementation("androidx.room:room-runtime:2.8.4")
+    implementation("androidx.room:room-ktx:2.8.4")
+    ksp("androidx.room:room-compiler:2.8.4")
 
     // DataStore (Preferences)
     implementation("androidx.datastore:datastore-preferences:1.0.0")
 
     // Mobile Wallet Adapter (TODO: use correct version when available)
     // implementation("com.solanomobile:walletadapterkit:2.0.7")
+
+    // JSON processing (Jackson)
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.16.1")
+
+    // BouncyCastle (Ed25519 signing)
+    implementation("org.bouncycastle:bcprov-jdk15on:1.70")
 
     // Networking
     implementation("com.squareup.okhttp3:okhttp:4.11.0")
@@ -192,7 +200,11 @@ dependencies {
     testImplementation("androidx.compose.ui:ui-test-manifest:1.5.4")
 
     // Room Testing
-    testImplementation("androidx.room:room-testing:2.6.0")
+    testImplementation("androidx.room:room-testing:2.8.4")
+
+    // Robolectric (required by data-layer unit tests that use Android APIs on JVM)
+    testImplementation("org.robolectric:robolectric:4.13")
+    testImplementation("androidx.test:core:1.6.1")
 
     // Instrumented Tests (Android Device Tests)
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
@@ -219,6 +231,10 @@ tasks.register("printBuildInfo") {
         println("Target SDK: ${android.defaultConfig.targetSdk}")
         println("Compile SDK: ${android.compileSdk}")
     }
+}
+
+ksp {
+    arg("room.schemaLocation", "$projectDir/schemas")
 }
 
 // Run before build

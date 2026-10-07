@@ -1,7 +1,7 @@
 {
   "sourceManifest": "evidence/qualification/source-before.json",
   "schema": "deproof-implementation-status-v1",
-  "generatedAt": "2026-10-06T12:53:37.795423+00:00",
+  "generatedAt": "2026-10-07T00:52:17Z",
   "product": "Deproof",
   "mark": "DEPR",
   "credit": "Built by CodesbyFebin",
@@ -274,26 +274,26 @@
     {
       "path": "app/build/outputs/apk/debug/app-debug.apk",
       "kind": "debug-apk",
-      "sha256": "a12f5931f8c16d5863f59b6a07609a6b6c3ebaf3aac319df5cdce4fa8ab6a814",
-      "bytes": "18722846"
+      "sha256": "6ca1f419036b40228f2d99fc753469e1322d2c10c5a6c27bed48db97ae023def",
+      "bytes": "18240983"
     },
     {
       "path": "node-agent/build/deproof-node",
       "kind": "darwin-amd64-node-binary",
-      "sha256": "e8ed153e3b3431f6ff6b19f5f03ca9bc222f1de912ef32e398c37195dacd79cf",
-      "bytes": "10730144"
+      "sha256": "9e8836fe5d858450f1ac4244d30b39cb94ea7cf26a3ae7a6f0f644e52b7406a5",
+      "bytes": "10586868"
     },
     {
       "path": "prover-worker/build/prove",
       "kind": "local-proof-producer",
-      "sha256": "98791f6f3862f2ab827e5c5a39918a02939bb799ae6ea844400464b3a6c89c84",
-      "bytes": "16556848"
+      "sha256": "42d33d74471a2e84ea44b2197fb87d1fa985816dc911435ef30e7341dda68d5a",
+      "bytes": "16205238"
     },
     {
       "path": "prover-worker/build/verify",
       "kind": "independent-proof-verifier",
-      "sha256": "099fc2ca0cee8f49706f6594c2db8a33a012d237f4beb54e1dfa9446e12764cd",
-      "bytes": "9640336"
+      "sha256": "0011598abd70624a26ef8cade51b605641b3f8c043872ff1643550fd4e170bd5",
+      "bytes": "9514777"
     },
     {
       "path": "gradle/wrapper/gradle-wrapper.jar",
@@ -308,880 +308,130 @@
       "bytes": "9339"
     },
     {
-      "path": "prover-worker/build/qualified-result-20261006T094220Z-76453/circuit.r1cs",
+      "path": "prover-worker/build/qualified-result-20261006T172803Z-30786/circuit.r1cs",
       "kind": "local-proof-artifact",
       "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
       "bytes": "867"
     },
     {
-      "path": "prover-worker/build/qualified-result-20261006T094220Z-76453/verification-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "62b7dae0dc23fb0355826f15df2ccb0b8c094b0f3828537de0c56545d1c7554b",
-      "bytes": "364"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T094220Z-76453/proving-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "ec1063a6a3ae08937ec0b0896f0f54547c94a9f8906d8e6df114d090752e2baf",
-      "bytes": "1027"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T094220Z-76453/public-witness.bin",
+      "path": "prover-worker/build/qualified-result-20261006T172803Z-30786/public-witness.bin",
       "kind": "local-proof-artifact",
       "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
       "bytes": "44"
     },
     {
-      "path": "prover-worker/build/qualified-result-20261006T094220Z-76453/manifest.json",
+      "path": "prover-worker/build/qualified-result-20261006T172803Z-30786/proof.bin",
       "kind": "local-proof-artifact",
-      "sha256": "e9a6112a336a876c83625548c8806ef04f05b834acbef6dd7cddc5072d55b627",
+      "sha256": "c501257f8809b703d7787b4b266a11903f70e357908444cb8a9c87679bc70483",
+      "bytes": "164"
+    },
+    {
+      "path": "prover-worker/build/qualified-result-20261006T172803Z-30786/manifest.json",
+      "kind": "local-proof-artifact",
+      "sha256": "477e8bb1960662ebce11a63d188bec4ad5350522815531857659df50d364fb92",
       "bytes": "695"
     },
     {
-      "path": "prover-worker/build/qualified-result-20261006T094220Z-76453/proof.bin",
+      "path": "prover-worker/build/qualified-result-20261006T172803Z-30786/verification-key.bin",
       "kind": "local-proof-artifact",
-      "sha256": "11da504348dc2b415c460ccd0c543a6ad19b04db2701bff781e216df22eabb88",
-      "bytes": "164"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T084501Z-72561/circuit.r1cs",
-      "kind": "local-proof-artifact",
-      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
-      "bytes": "867"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T084501Z-72561/verification-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "e77e6d1bf6ef7692a861a937e2230c872e3ac3c8c0cec711ab41f68a55a2cf8a",
+      "sha256": "3b9f62c70c00dfa7291d805ba888f5b0f864a53a76223aec64dd34c5743c37f7",
       "bytes": "364"
     },
     {
-      "path": "prover-worker/build/qualified-result-20261006T084501Z-72561/proving-key.bin",
+      "path": "prover-worker/build/qualified-result-20261006T172803Z-30786/proving-key.bin",
       "kind": "local-proof-artifact",
-      "sha256": "7fc3217aca39b8b2882e10d2223fc3bdd27470d9ad5cccab54981462c08c8a13",
+      "sha256": "976cb3264944cdea9c86d34fd6cd1bc21f6013b24f5d894b0f720e43c50e7f1e",
       "bytes": "1027"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T084501Z-72561/public-witness.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
-      "bytes": "44"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T084501Z-72561/manifest.json",
-      "kind": "local-proof-artifact",
-      "sha256": "6a3274473c44a8393881833dde20ad861e547753ae970a0eafdd494b4c9652c8",
-      "bytes": "695"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T084501Z-72561/proof.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "bda045c863aafddb852a455373b8349ac33ef9cd663bf1c3158aee86586cf871",
-      "bytes": "164"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T111305Z-84316/circuit.r1cs",
-      "kind": "local-proof-artifact",
-      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
-      "bytes": "867"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T111305Z-84316/verification-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "884cd76de2b40b465c4c1d9186658a6a5071011f756b90ee430f2a61423f9857",
-      "bytes": "364"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T111305Z-84316/proving-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "596468d8bfa38eb00726888b7338963771b6598b33a407703ef703fe75cb8b86",
-      "bytes": "1027"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T111305Z-84316/public-witness.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
-      "bytes": "44"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T111305Z-84316/manifest.json",
-      "kind": "local-proof-artifact",
-      "sha256": "1740bac9d0f4c5de1bec68a664e51001b7d7dcb9c8897fd5f2aadf8ab18bd203",
-      "bytes": "695"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T111305Z-84316/proof.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "08c12d8797837946dd505685905071acc190489d22c8a6e0bac0db9a8dd80caf",
-      "bytes": "164"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T100018Z-78325/circuit.r1cs",
-      "kind": "local-proof-artifact",
-      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
-      "bytes": "867"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T100018Z-78325/verification-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "5341af0da53a647338bd259bdad3c15b0a3ef5524ba4456cc03839a8e1f9182c",
-      "bytes": "364"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T100018Z-78325/proving-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "b21738cd09c4a2f28d3af31a7fa77e5c1d3d7670fd5899c8468273fd56c924ae",
-      "bytes": "1027"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T100018Z-78325/public-witness.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
-      "bytes": "44"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T100018Z-78325/manifest.json",
-      "kind": "local-proof-artifact",
-      "sha256": "cb88899cc7af43ddef0e1f05a5d83c99ab6fecad03029a29aa111fb21599491d",
-      "bytes": "695"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T100018Z-78325/proof.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "59f291371a5abd6ce22aa79c077c3f0868fe6fc124b69147fa5e24ea3467b0e1",
-      "bytes": "164"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T071930Z-66799/circuit.r1cs",
-      "kind": "local-proof-artifact",
-      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
-      "bytes": "867"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T071930Z-66799/verification-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "6a5ce2c8fa9a04a408847f60b7717c4aad2e46098ebb6e66cc6468c1f55612c1",
-      "bytes": "364"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T071930Z-66799/proving-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "6852f327a30a044935650da49fc7066d6bd86030477e3de32d3881d350d15a2a",
-      "bytes": "1027"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T071930Z-66799/public-witness.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
-      "bytes": "44"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T071930Z-66799/manifest.json",
-      "kind": "local-proof-artifact",
-      "sha256": "b57726525b8b8eb297051bf9cbd0d8ef9cf38ff4049baee18214ac1c4813ada8",
-      "bytes": "695"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T071930Z-66799/proof.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "fe388e0efe9104cd6cec07caecfcab1251f3412517acaf448e8bae076c1787b3",
-      "bytes": "164"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T093752Z-75899/circuit.r1cs",
-      "kind": "local-proof-artifact",
-      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
-      "bytes": "867"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T093752Z-75899/verification-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "f2aa47e1aa41c1bfccdd3cd33879b119fb72d47e0cfe85f4e69ebfe65fb1819c",
-      "bytes": "364"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T093752Z-75899/proving-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "05463a3188afdd8bc58ffca1770d5e64d3f660dea75b73899841f7d99e186e4f",
-      "bytes": "1027"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T093752Z-75899/public-witness.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
-      "bytes": "44"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T093752Z-75899/manifest.json",
-      "kind": "local-proof-artifact",
-      "sha256": "d279da0870c10465245f373fbcc656770b48217223945b47fb9ce6efbbb11bf7",
-      "bytes": "695"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T093752Z-75899/proof.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "154216995f500ffebb1023153476eeefee4ec62940dedb323ce008cdee274d8b",
-      "bytes": "164"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T102755Z-80241/circuit.r1cs",
-      "kind": "local-proof-artifact",
-      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
-      "bytes": "867"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T102755Z-80241/verification-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "4f72e40ca93b1ac7d68a1e55accaa8120cbbefe0882ccf07b712fcb9c9261df2",
-      "bytes": "364"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T102755Z-80241/proving-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "bf69344e36048f495633d43ec779a08de0b4efc3782d1f1bd1bd1e50f1eb13bd",
-      "bytes": "1027"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T102755Z-80241/public-witness.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
-      "bytes": "44"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T102755Z-80241/manifest.json",
-      "kind": "local-proof-artifact",
-      "sha256": "0adea5a2db65a0e5110b401ef7840522539ee6fc13d78313dd67ecbcc5416c33",
-      "bytes": "695"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T102755Z-80241/proof.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "b9afef0b7198c2787063ab08f4c04938f2f47ba237d3e708cdf582f5ec817b36",
-      "bytes": "164"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T051908Z-60750/circuit.r1cs",
-      "kind": "local-proof-artifact",
-      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
-      "bytes": "867"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T051908Z-60750/verification-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "ecdbe8118321ea2d649bd6cf5b0e0b295e256e26914e4019531df8619b224fb0",
-      "bytes": "364"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T051908Z-60750/proving-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "43a55c4baf0926845e1a5c9b390b0c8b54ae913d512c533afe35be61285687c8",
-      "bytes": "1027"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T051908Z-60750/public-witness.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
-      "bytes": "44"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T051908Z-60750/manifest.json",
-      "kind": "local-proof-artifact",
-      "sha256": "0bbf5da7c8c617718ea23b35e624b3841268c29e52eb696c825a2ca4fe38e3a1",
-      "bytes": "695"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T051908Z-60750/proof.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "67990a6f1fb8ced7fed8be89588f54543046e325d91c13719069f53c8e22076d",
-      "bytes": "164"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T060637Z-63781/circuit.r1cs",
-      "kind": "local-proof-artifact",
-      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
-      "bytes": "867"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T060637Z-63781/verification-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "83ff17084fe1db1e678f1fb0e3f45d1b52ca06c6389cb0963a945a1cbadaa982",
-      "bytes": "364"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T060637Z-63781/proving-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "205b44f23857c1e2f93dd00ef9c74ffb6c7eaa10bbaada255c88803652f2edf0",
-      "bytes": "1027"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T060637Z-63781/public-witness.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
-      "bytes": "44"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T060637Z-63781/manifest.json",
-      "kind": "local-proof-artifact",
-      "sha256": "6a58f53a7c16a9f89596a7ef2b21579279665769f936c16369ab0cf9327e5f26",
-      "bytes": "695"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T060637Z-63781/proof.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "7c4c749ddb5b8bf05a9b0da951f30feff5692659dca3e6c533b1a125e5743528",
-      "bytes": "164"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T110434Z-83653/circuit.r1cs",
-      "kind": "local-proof-artifact",
-      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
-      "bytes": "867"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T110434Z-83653/verification-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "467e842139d5f4422d2aae594d0422e239541d5cbceaffe187dc4eae63463ed6",
-      "bytes": "364"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T110434Z-83653/proving-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "9d4d059dc0f380c3f168d2903431aad8b78732a121bb67aeee2954c5c9541526",
-      "bytes": "1027"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T110434Z-83653/public-witness.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
-      "bytes": "44"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T110434Z-83653/manifest.json",
-      "kind": "local-proof-artifact",
-      "sha256": "d0dce7c18c2125aa610a0ac6092adff35a5a1e556a242dcae1d114b26931cd6a",
-      "bytes": "695"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T110434Z-83653/proof.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "e942ce5e5506b1ed394f68eee57aa584814c1d88548d5b7f98324f1d55663047",
-      "bytes": "164"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T095525Z-77774/circuit.r1cs",
-      "kind": "local-proof-artifact",
-      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
-      "bytes": "867"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T095525Z-77774/verification-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "211a029b94e0de158973f06b2de625a89d5aa0e071493a5b1eeea27a9566424e",
-      "bytes": "364"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T095525Z-77774/proving-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "6135521d16464d8671f5bb9b9c010caa270bfdeb57de02b25e5797d53baf7286",
-      "bytes": "1027"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T095525Z-77774/public-witness.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
-      "bytes": "44"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T095525Z-77774/manifest.json",
-      "kind": "local-proof-artifact",
-      "sha256": "0aa53e443dd4ab5f5f47ad80730554444615bd6508acf6fcd8d0d01c143a4e92",
-      "bytes": "695"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T095525Z-77774/proof.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "18040ea62c499715b6115646ccde9ff0b8203ddd03f2030f3ff93899876ba773",
-      "bytes": "164"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T054637Z-62530/circuit.r1cs",
-      "kind": "local-proof-artifact",
-      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
-      "bytes": "867"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T054637Z-62530/verification-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "6e04904836a36146a22f927befc1bbf1f5292771e2fbeb809ca0ba7833dd7a00",
-      "bytes": "364"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T054637Z-62530/proving-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "bfed8ebc058132c7e65bd39e1b8a483ef8da56b6a0191af57f97c94a30bf20fa",
-      "bytes": "1027"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T054637Z-62530/public-witness.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
-      "bytes": "44"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T054637Z-62530/manifest.json",
-      "kind": "local-proof-artifact",
-      "sha256": "82c101b179c083a1076b071cf6816ac3fab02d2d499789773f395b55ba4dca7d",
-      "bytes": "695"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T054637Z-62530/proof.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "c35e892937dd6caa065f226ba0ff414893ecd1e241e1b65b18bb78efc53232d1",
-      "bytes": "164"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T084931Z-72962/circuit.r1cs",
-      "kind": "local-proof-artifact",
-      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
-      "bytes": "867"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T084931Z-72962/verification-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "14fa3818b2d72a10b8b8bbc720b60b68c1a4a68923090593b642382f7755fbf9",
-      "bytes": "364"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T084931Z-72962/proving-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "c072a2f91b7ad9f2b4bff9521223d6d4f9685e94f60452e779f9a78ceef22dd6",
-      "bytes": "1027"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T084931Z-72962/public-witness.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
-      "bytes": "44"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T084931Z-72962/manifest.json",
-      "kind": "local-proof-artifact",
-      "sha256": "889489927926e6e54943b58da9bf191174a54f3b7741ef35702fcb2fe7e84a1d",
-      "bytes": "695"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T084931Z-72962/proof.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "dcc29a780b8cdc1fe439817d9fa4b0af7d3ace1d932b4f5dc53de85797cee0ea",
-      "bytes": "164"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T103155Z-80685/circuit.r1cs",
-      "kind": "local-proof-artifact",
-      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
-      "bytes": "867"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T103155Z-80685/verification-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "a3f625278f5e62074e702c2f30de096aea8186b8952f4ad58a7bfd7bb7d0acd1",
-      "bytes": "364"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T103155Z-80685/proving-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "d88e9874d03058f22f0ce9e19ae9b9f669ec33b0e17decca1587f9d93fa64080",
-      "bytes": "1027"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T103155Z-80685/public-witness.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
-      "bytes": "44"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T103155Z-80685/manifest.json",
-      "kind": "local-proof-artifact",
-      "sha256": "5254c87be33ee17eebd4371e73583845f0ea3898f857ccdcdd56ec4494234080",
-      "bytes": "695"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T103155Z-80685/proof.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "857b167e8b88808c5c1e32658c906d374c27294b8774293621a366c69ffbe579",
-      "bytes": "164"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T105605Z-82274/circuit.r1cs",
-      "kind": "local-proof-artifact",
-      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
-      "bytes": "867"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T105605Z-82274/verification-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "360460a78f9750ec93e10659a8592c07c0612aae9ad952a10aec420f02f9745b",
-      "bytes": "364"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T105605Z-82274/proving-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "ba26a635bf1a989ef4d7ed9635e667dc615eb73835df9938ff7c6a29720c1612",
-      "bytes": "1027"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T105605Z-82274/public-witness.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
-      "bytes": "44"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T105605Z-82274/manifest.json",
-      "kind": "local-proof-artifact",
-      "sha256": "32751c586f6a5d64416602d7a4df4c16fc09c45c4b63efd5c621c1e80b3f82c1",
-      "bytes": "695"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T105605Z-82274/proof.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "75431bee7b578f4ace92eb1a5912316e704cad8f3d3ee6d2be647cfbd25fd88c",
-      "bytes": "164"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T061453Z-64386/circuit.r1cs",
-      "kind": "local-proof-artifact",
-      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
-      "bytes": "867"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T061453Z-64386/verification-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "873462258f3bedeba5fdd75c697158569bed5fadc12c154f31e80afa4e12d400",
-      "bytes": "364"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T061453Z-64386/proving-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "4f9428c2b4a8c1f0052eee76f67a20d53aadf12a041980397efb66b29636dc8c",
-      "bytes": "1027"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T061453Z-64386/public-witness.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
-      "bytes": "44"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T061453Z-64386/manifest.json",
-      "kind": "local-proof-artifact",
-      "sha256": "5e1492e284c5b38860174a4dbab63921bdfba1ff86c04c1fff6fbdbeebf860fa",
-      "bytes": "695"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T061453Z-64386/proof.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "5f57012566d84fdafdb546890525f78530199298b1d4296b4e5ea1942475de32",
-      "bytes": "164"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T114548Z-85317/circuit.r1cs",
-      "kind": "local-proof-artifact",
-      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
-      "bytes": "867"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T114548Z-85317/verification-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "0a2c7b302cdf7920afe7212aa20fc5604470075fc6c1d998b5ca935e472c6517",
-      "bytes": "364"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T114548Z-85317/proving-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "5305ba9da1edf5658a0388864fa0113d611199d9f206d3eab344d9de1bbe0e00",
-      "bytes": "1027"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T114548Z-85317/public-witness.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
-      "bytes": "44"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T114548Z-85317/manifest.json",
-      "kind": "local-proof-artifact",
-      "sha256": "7bab844f75ed8bd1786e912a1a170dd72708c946cc5b5362c7a6449191ca3bc8",
-      "bytes": "695"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T114548Z-85317/proof.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "3e8289083c7b75c901b9309f83c3176465e7c3bd5745e0fd18e8c60d190da5aa",
-      "bytes": "164"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T123857Z-86783/circuit.r1cs",
-      "kind": "local-proof-artifact",
-      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
-      "bytes": "867"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T123857Z-86783/verification-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "9049cf3026613532f0e31c8526b524c05b94fb691ddbb9bfdc635fbf363716f4",
-      "bytes": "364"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T123857Z-86783/proving-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "15f0dcb29b70f70df448dd3d09ac4deb54b784c0ffd57128560509633d690fa3",
-      "bytes": "1027"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T123857Z-86783/public-witness.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
-      "bytes": "44"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T123857Z-86783/manifest.json",
-      "kind": "local-proof-artifact",
-      "sha256": "99888b80062baf717da0c48316ca7effdd29dada6582a76a38aed4ff40a0b228",
-      "bytes": "695"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T123857Z-86783/proof.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "00ea5e72e7fabd03103492c131a9a7fda4e22e3223dbdf0d07642de3ca80c0a4",
-      "bytes": "164"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T060344Z-63284/circuit.r1cs",
-      "kind": "local-proof-artifact",
-      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
-      "bytes": "867"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T060344Z-63284/verification-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "2bb4540a04c94235110c668004470206d917b197f46a97f6028a29f69afe567f",
-      "bytes": "364"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T060344Z-63284/proving-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "adf5233594f8c56a52c5c09eb5c545c0bc86a4acd2b73d23ab593ed8483df198",
-      "bytes": "1027"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T060344Z-63284/public-witness.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
-      "bytes": "44"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T060344Z-63284/manifest.json",
-      "kind": "local-proof-artifact",
-      "sha256": "636e81254249480e245b6903b3e7f61159a876523f548b75fb1032c4fc71abc0",
-      "bytes": "695"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T060344Z-63284/proof.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "c2ede77f4bea36107ec7adc1a1f292cc29216d929e254055369c14c8cb774ffc",
-      "bytes": "164"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T050420Z-60151/circuit.r1cs",
-      "kind": "local-proof-artifact",
-      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
-      "bytes": "867"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T050420Z-60151/verification-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "1e70273cda7799bf7650ca33ab5f719081d076dc8dd62ea7a657d947df2e5dd7",
-      "bytes": "364"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T050420Z-60151/public-witness.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
-      "bytes": "44"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T050420Z-60151/manifest.json",
-      "kind": "local-proof-artifact",
-      "sha256": "39648eff367b6c022088a7050f2ab3b4ec689438618b6f5342b9bc299bc48ebb",
-      "bytes": "600"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T050420Z-60151/proof.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "547ab90e2af8648705ca95ecbaba433d28ce13165bdaca1cdfd4dced8a1ea78c",
-      "bytes": "164"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T054103Z-62006/circuit.r1cs",
-      "kind": "local-proof-artifact",
-      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
-      "bytes": "867"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T054103Z-62006/verification-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "bea6b8d2ed6bced44cd124240a3ebaffd611e740021f528912a6980a81b0dbd0",
-      "bytes": "364"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T054103Z-62006/proving-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "0c7276ee86eb5fed28f0a512ff326ef0655a48459e47fb510a9b47b1dca869c8",
-      "bytes": "1027"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T054103Z-62006/public-witness.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
-      "bytes": "44"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T054103Z-62006/manifest.json",
-      "kind": "local-proof-artifact",
-      "sha256": "deca73127e14167e6150c1b6599536143f51fe7ef0acf00a9d6f8684ad1b66ca",
-      "bytes": "695"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T054103Z-62006/proof.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "e93beacb3586145defea7d8a677c67a14d70ce6b0631813a2ece21026e987517",
-      "bytes": "164"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T125224Z-88118/circuit.r1cs",
-      "kind": "local-proof-artifact",
-      "sha256": "d66951a99a8361b0677e6e08a8075773c1622f33645b2b1182ee60db39ef8954",
-      "bytes": "867"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T125224Z-88118/verification-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "639702f90c57e0ad913a9f9d04017094a113115d1aa827ca93fb874da861bd68",
-      "bytes": "364"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T125224Z-88118/proving-key.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "f5aa3068008729b5727b3e36eb483a76d5139401c657646af572dcb40109ba18",
-      "bytes": "1027"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T125224Z-88118/public-witness.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "da07f711885f5cdbf5a86f5e0c2d503f1cf6cf1ffe71d86cff6a4566b8c833cd",
-      "bytes": "44"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T125224Z-88118/manifest.json",
-      "kind": "local-proof-artifact",
-      "sha256": "fec644ddfa3c9f70e90579a4665bd4a9b44c0d836811a63f592649b09fb98c2e",
-      "bytes": "695"
-    },
-    {
-      "path": "prover-worker/build/qualified-result-20261006T125224Z-88118/proof.bin",
-      "kind": "local-proof-artifact",
-      "sha256": "b492267db69eb6f1e988d2c820100c3a88743aa793feed42aba9643a4870be0d",
-      "bytes": "164"
-    },
-    {
-      "path": "evidence/qualification/browser/features-1280.png",
-      "kind": "browser-evidence-screenshot",
-      "sha256": "0c4b2d2d0b70188870ce6003e1c25ed78b0d20d00fab904adf23d49d10a2aafc",
-      "bytes": "1024978"
-    },
-    {
-      "path": "evidence/qualification/browser/privacy-320.png",
-      "kind": "browser-evidence-screenshot",
-      "sha256": "9ed442b992d42fce87321c44e7e52076180c531592e5172c6ac580ef9fd28113",
-      "bytes": "162148"
-    },
-    {
-      "path": "evidence/qualification/browser/features-320.png",
-      "kind": "browser-evidence-screenshot",
-      "sha256": "68abd32a0b1a8a829977621a9574364f23c89d67c21558d12b02e12e8b15a876",
-      "bytes": "1074221"
-    },
-    {
-      "path": "evidence/qualification/browser/index-1280.png",
-      "kind": "browser-evidence-screenshot",
-      "sha256": "5904b1ee93c81617000b0387fc5ff73bac934b0b7bafb9d83b59add55929d648",
-      "bytes": "1284536"
-    },
-    {
-      "path": "evidence/qualification/browser/project-1280.png",
-      "kind": "browser-evidence-screenshot",
-      "sha256": "b6713e07475e5906048508c7df8ab95ceb24dac50f6c27b6b1def73b9406eceb",
-      "bytes": "167720"
-    },
-    {
-      "path": "evidence/qualification/browser/project-320.png",
-      "kind": "browser-evidence-screenshot",
-      "sha256": "4c44231fea5f351a299662ef6e8a3a63a4e2cfbe3181714d78e5dedce30730f1",
-      "bytes": "167519"
-    },
-    {
-      "path": "evidence/qualification/browser/how-it-works-1280.png",
-      "kind": "browser-evidence-screenshot",
-      "sha256": "c72d1c702972d12febffe22c5dc5bb13d882825ebcd93d41960e5c63bd371704",
-      "bytes": "172751"
-    },
-    {
-      "path": "evidence/qualification/browser/privacy-1280.png",
-      "kind": "browser-evidence-screenshot",
-      "sha256": "4c78eb299e4ae9ff4094766329f1052beca8c34810ce13021a14699a6b12defe",
-      "bytes": "171680"
-    },
-    {
-      "path": "evidence/qualification/browser/documentation-320.png",
-      "kind": "browser-evidence-screenshot",
-      "sha256": "701f97ea96e0921d12e2e977bb7f3ed9a2cfe89eabb952667fd15617ecf5749f",
-      "bytes": "146939"
     },
     {
       "path": "evidence/qualification/browser/index-320.png",
       "kind": "browser-evidence-screenshot",
-      "sha256": "0ee1b1a5dceabefff0451f02f4af9bb148980027dd2c8405c816f75ed7d693e1",
-      "bytes": "251781"
+      "sha256": "391521697de518b00974d4589583d08f8c6be37af2b529ebc28b0dd953e81f64",
+      "bytes": "250322"
     },
     {
-      "path": "evidence/qualification/browser/how-it-works-320.png",
+      "path": "evidence/qualification/browser/index-1280.png",
       "kind": "browser-evidence-screenshot",
-      "sha256": "ee686090002176ddf823f98109d425c71c19093b79c25911a80ef68e78771596",
-      "bytes": "171311"
+      "sha256": "85cfcc939ff6e24fc539bb3813cba35076eba6aa83c6c1d4931bc58fcf5ac93f",
+      "bytes": "1278572"
     },
     {
-      "path": "evidence/qualification/browser/documentation-1280.png",
+      "path": "evidence/qualification/browser/project-1280.png",
       "kind": "browser-evidence-screenshot",
-      "sha256": "1b021f9011cf60d58f7a881623bcd9e197c2d37bfa9fee13171e60e79c133d77",
-      "bytes": "169275"
-    },
-    {
-      "path": "evidence/qualification/browser/ecosystem-320.png",
-      "kind": "browser-evidence-screenshot",
-      "sha256": "bb7265be8b5118aa6f455a6c4448d781f66ec7476bad95eab7cd52945bf40325",
-      "bytes": "268255"
+      "sha256": "05accf7191081f07fd73ee62c33b2fc13876941816776c273fffe0749af2d3d3",
+      "bytes": "164275"
     },
     {
       "path": "evidence/qualification/browser/ecosystem-1280.png",
       "kind": "browser-evidence-screenshot",
-      "sha256": "13de3f001221a2244e6c2a00b6c28cdd115bdb3a3cc61ec5c9e40b3160bf0d7a",
-      "bytes": "255422"
+      "sha256": "25844a0337b238c7f355650524cb90af25825f274de5b15aced078ef7004139d",
+      "bytes": "243953"
+    },
+    {
+      "path": "evidence/qualification/browser/how-it-works-320.png",
+      "kind": "browser-evidence-screenshot",
+      "sha256": "f0f7e5d7c024ab2b561317cd0df6e5215e1676ea38e2d40b163966c85d2837d1",
+      "bytes": "162987"
+    },
+    {
+      "path": "evidence/qualification/browser/ecosystem-320.png",
+      "kind": "browser-evidence-screenshot",
+      "sha256": "527711d0d7efb96ccf1a9b9777ecfe41d1bbd8ba272523070f4817880ed5788f",
+      "bytes": "261693"
+    },
+    {
+      "path": "evidence/qualification/browser/project-320.png",
+      "kind": "browser-evidence-screenshot",
+      "sha256": "d8a4e22a8d566728ed2a3b252e7bbabe45e2ac8d5770a198a94cd4b22106f0dc",
+      "bytes": "165254"
+    },
+    {
+      "path": "evidence/qualification/browser/features-1280.png",
+      "kind": "browser-evidence-screenshot",
+      "sha256": "a3624734c692bf45a325ed7fdb741763c3e5dd36a3d5176a84ed15e47bb07860",
+      "bytes": "896112"
+    },
+    {
+      "path": "evidence/qualification/browser/documentation-1280.png",
+      "kind": "browser-evidence-screenshot",
+      "sha256": "de4f552a2fc2c865899e9c557b265300d1c6126f5d30319c66881c2b1d0de637",
+      "bytes": "160937"
+    },
+    {
+      "path": "evidence/qualification/browser/privacy-1280.png",
+      "kind": "browser-evidence-screenshot",
+      "sha256": "99d5faebb0a825590e23b71ee1e26c2b0119c4be3bc7ed9bbcdad81cd19e6008",
+      "bytes": "162088"
+    },
+    {
+      "path": "evidence/qualification/browser/privacy-320.png",
+      "kind": "browser-evidence-screenshot",
+      "sha256": "8bd64c61271a0f5444431dd1c03292e4de9488ed2e9a8c884189b58929ae0e49",
+      "bytes": "152429"
+    },
+    {
+      "path": "evidence/qualification/browser/features-320.png",
+      "kind": "browser-evidence-screenshot",
+      "sha256": "0d2f9194cddd1a4e82bc5712cb88f1f5246d64b5aef3b486f68247c7671185d1",
+      "bytes": "942618"
+    },
+    {
+      "path": "evidence/qualification/browser/how-it-works-1280.png",
+      "kind": "browser-evidence-screenshot",
+      "sha256": "ef226151c647d387bf497e0126a43fd1a5b7b0acc7f8d6a2e8e85825126be847",
+      "bytes": "160400"
+    },
+    {
+      "path": "evidence/qualification/browser/documentation-320.png",
+      "kind": "browser-evidence-screenshot",
+      "sha256": "adad8dbd3b85da01c12140a69a4f3986584076b51791f1314693aa573cec7818",
+      "bytes": "131182"
     },
     {
       "path": "evidence/qualification/deproof-source-snapshot.zip",
       "kind": "local-source-snapshot",
-      "sha256": "3ca6404c4ed7c6a65e88c5da7c911634eee593941f6e631f717e6c2ee86032dc",
-      "bytes": "16998064"
+      "sha256": "1c36c81c7e1d669a9f509a8758365320a989c179e5e192cbb802627d64f81fb6",
+      "bytes": "16994827"
     }
   ],
   "coverage": {
@@ -6363,7 +5613,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F001–F010",
+        "featureOverlap": "F001\u2013F010",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -6405,7 +5655,7 @@
         "evidencePaths": [
           "evidence/qualification/core-tests.log"
         ],
-        "featureOverlap": "F001–F010",
+        "featureOverlap": "F001\u2013F010",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -6450,7 +5700,7 @@
         "evidencePaths": [
           "evidence/qualification/live-rpc.json"
         ],
-        "featureOverlap": "F001–F010",
+        "featureOverlap": "F001\u2013F010",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -6495,7 +5745,7 @@
         "evidencePaths": [
           "evidence/qualification/core-tests.log"
         ],
-        "featureOverlap": "F001–F010",
+        "featureOverlap": "F001\u2013F010",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -6537,7 +5787,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F001–F010",
+        "featureOverlap": "F001\u2013F010",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -6577,7 +5827,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F001–F010",
+        "featureOverlap": "F001\u2013F010",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -6617,7 +5867,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F001–F010",
+        "featureOverlap": "F001\u2013F010",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -6660,7 +5910,7 @@
         "evidencePaths": [
           "evidence/qualification/live-rpc.json"
         ],
-        "featureOverlap": "F001–F010",
+        "featureOverlap": "F001\u2013F010",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -6703,7 +5953,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F001–F010",
+        "featureOverlap": "F001\u2013F010",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -6743,7 +5993,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F001–F010",
+        "featureOverlap": "F001\u2013F010",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -6783,7 +6033,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F001–F010",
+        "featureOverlap": "F001\u2013F010",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -6823,7 +6073,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F001–F010",
+        "featureOverlap": "F001\u2013F010",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -6863,7 +6113,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F021–F030",
+        "featureOverlap": "F021\u2013F030",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -6903,7 +6153,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F021–F030",
+        "featureOverlap": "F021\u2013F030",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -6943,7 +6193,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F021–F030",
+        "featureOverlap": "F021\u2013F030",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -6983,7 +6233,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F021–F030",
+        "featureOverlap": "F021\u2013F030",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -7023,7 +6273,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F021–F030",
+        "featureOverlap": "F021\u2013F030",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -7063,7 +6313,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F021–F030",
+        "featureOverlap": "F021\u2013F030",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -7103,7 +6353,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F021–F030",
+        "featureOverlap": "F021\u2013F030",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -7143,7 +6393,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F021–F030",
+        "featureOverlap": "F021\u2013F030",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -7183,7 +6433,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F021–F030",
+        "featureOverlap": "F021\u2013F030",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -7223,7 +6473,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F021–F030",
+        "featureOverlap": "F021\u2013F030",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -7263,7 +6513,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F021–F030",
+        "featureOverlap": "F021\u2013F030",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -7303,7 +6553,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F021–F030",
+        "featureOverlap": "F021\u2013F030",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -7343,7 +6593,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F031–F040",
+        "featureOverlap": "F031\u2013F040",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -7383,7 +6633,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F031–F040",
+        "featureOverlap": "F031\u2013F040",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -7425,7 +6675,7 @@
         "evidencePaths": [
           "evidence/qualification/core-tests.log"
         ],
-        "featureOverlap": "F031–F040",
+        "featureOverlap": "F031\u2013F040",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -7467,7 +6717,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F031–F040",
+        "featureOverlap": "F031\u2013F040",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -7507,7 +6757,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F031–F040",
+        "featureOverlap": "F031\u2013F040",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -7547,7 +6797,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F031–F040",
+        "featureOverlap": "F031\u2013F040",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -7589,7 +6839,7 @@
         "evidencePaths": [
           "evidence/qualification/core-tests.log"
         ],
-        "featureOverlap": "F031–F040",
+        "featureOverlap": "F031\u2013F040",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -7633,7 +6883,7 @@
         "evidencePaths": [
           "evidence/qualification/core-tests.log"
         ],
-        "featureOverlap": "F031–F040",
+        "featureOverlap": "F031\u2013F040",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -7677,7 +6927,7 @@
         "evidencePaths": [
           "evidence/qualification/core-tests.log"
         ],
-        "featureOverlap": "F031–F040",
+        "featureOverlap": "F031\u2013F040",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -7719,7 +6969,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F031–F040",
+        "featureOverlap": "F031\u2013F040",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -7761,7 +7011,7 @@
         "evidencePaths": [
           "evidence/qualification/core-tests.log"
         ],
-        "featureOverlap": "F031–F040",
+        "featureOverlap": "F031\u2013F040",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -7805,7 +7055,7 @@
         "evidencePaths": [
           "evidence/qualification/core-tests.log"
         ],
-        "featureOverlap": "F031–F040",
+        "featureOverlap": "F031\u2013F040",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -7849,7 +7099,7 @@
         "evidencePaths": [
           "evidence/qualification/core-tests.log"
         ],
-        "featureOverlap": "F031–F040",
+        "featureOverlap": "F031\u2013F040",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -7891,7 +7141,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F031–F040",
+        "featureOverlap": "F031\u2013F040",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -7931,7 +7181,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F031–F040",
+        "featureOverlap": "F031\u2013F040",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -7971,7 +7221,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F031–F040",
+        "featureOverlap": "F031\u2013F040",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -8013,7 +7263,7 @@
         "evidencePaths": [
           "evidence/qualification/core-tests.log"
         ],
-        "featureOverlap": "F031–F040",
+        "featureOverlap": "F031\u2013F040",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -8057,7 +7307,7 @@
         "evidencePaths": [
           "evidence/qualification/core-tests.log"
         ],
-        "featureOverlap": "F031–F040",
+        "featureOverlap": "F031\u2013F040",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -8101,7 +7351,7 @@
         "evidencePaths": [
           "evidence/qualification/core-tests.log"
         ],
-        "featureOverlap": "F031–F040",
+        "featureOverlap": "F031\u2013F040",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -8143,7 +7393,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F031–F040",
+        "featureOverlap": "F031\u2013F040",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -8185,7 +7435,7 @@
         "evidencePaths": [
           "evidence/qualification/core-tests.log"
         ],
-        "featureOverlap": "F041–F050",
+        "featureOverlap": "F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -8229,7 +7479,7 @@
         "evidencePaths": [
           "evidence/qualification/core-tests.log"
         ],
-        "featureOverlap": "F041–F050",
+        "featureOverlap": "F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -8271,7 +7521,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F041–F050",
+        "featureOverlap": "F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -8313,7 +7563,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F041–F050",
+        "featureOverlap": "F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -8358,7 +7608,7 @@
         "evidencePaths": [
           "evidence/qualification/core-tests.log"
         ],
-        "featureOverlap": "F041–F050",
+        "featureOverlap": "F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -8400,7 +7650,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F041–F050",
+        "featureOverlap": "F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -8440,7 +7690,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F041–F050",
+        "featureOverlap": "F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -8480,7 +7730,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F041–F050",
+        "featureOverlap": "F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -8520,7 +7770,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F041–F050",
+        "featureOverlap": "F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -8560,7 +7810,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F041–F050",
+        "featureOverlap": "F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -8600,7 +7850,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F011–F020,F041–F050",
+        "featureOverlap": "F011\u2013F020,F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -8650,7 +7900,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F011–F020,F041–F050",
+        "featureOverlap": "F011\u2013F020,F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -8700,7 +7950,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F011–F020,F041–F050",
+        "featureOverlap": "F011\u2013F020,F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -8750,7 +8000,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F011–F020,F041–F050",
+        "featureOverlap": "F011\u2013F020,F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -8800,7 +8050,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F011–F020,F041–F050",
+        "featureOverlap": "F011\u2013F020,F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -8850,7 +8100,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F011–F020,F041–F050",
+        "featureOverlap": "F011\u2013F020,F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -8900,7 +8150,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F011–F020,F041–F050",
+        "featureOverlap": "F011\u2013F020,F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -8950,7 +8200,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F011–F020,F041–F050",
+        "featureOverlap": "F011\u2013F020,F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -9000,7 +8250,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F011–F020,F041–F050",
+        "featureOverlap": "F011\u2013F020,F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -9050,7 +8300,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F011–F020,F041–F050",
+        "featureOverlap": "F011\u2013F020,F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -9100,7 +8350,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F061–F080",
+        "featureOverlap": "F061\u2013F080",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -9150,7 +8400,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F061–F080",
+        "featureOverlap": "F061\u2013F080",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -9200,7 +8450,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F061–F080",
+        "featureOverlap": "F061\u2013F080",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -9250,7 +8500,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F061–F080",
+        "featureOverlap": "F061\u2013F080",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -9300,7 +8550,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F061–F080",
+        "featureOverlap": "F061\u2013F080",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -9352,7 +8602,7 @@
         "evidencePaths": [
           "evidence/qualification/core-tests.log"
         ],
-        "featureOverlap": "F061–F080",
+        "featureOverlap": "F061\u2013F080",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -9404,7 +8654,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F061–F080",
+        "featureOverlap": "F061\u2013F080",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -9454,7 +8704,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F061–F080",
+        "featureOverlap": "F061\u2013F080",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -9506,7 +8756,7 @@
         "evidencePaths": [
           "evidence/qualification/core-tests.log"
         ],
-        "featureOverlap": "F061–F080",
+        "featureOverlap": "F061\u2013F080",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -9558,7 +8808,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F061–F080",
+        "featureOverlap": "F061\u2013F080",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -9608,7 +8858,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F061–F080",
+        "featureOverlap": "F061\u2013F080",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -9658,7 +8908,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F061–F080",
+        "featureOverlap": "F061\u2013F080",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -9708,7 +8958,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F081–F090,F041–F050",
+        "featureOverlap": "F081\u2013F090,F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -9758,7 +9008,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F081–F090,F041–F050",
+        "featureOverlap": "F081\u2013F090,F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -9808,7 +9058,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F081–F090,F041–F050",
+        "featureOverlap": "F081\u2013F090,F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -9858,7 +9108,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F081–F090,F041–F050",
+        "featureOverlap": "F081\u2013F090,F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -9908,7 +9158,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F081–F090,F041–F050",
+        "featureOverlap": "F081\u2013F090,F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -9950,7 +9200,7 @@
       },
       {
         "id": "C082",
-        "definition": "Do not invent a guardian name. You may quote the pool address from docs if you read them, labeled as a quote, not as the user’s delegate.",
+        "definition": "Do not invent a guardian name. You may quote the pool address from docs if you read them, labeled as a quote, not as the user\u2019s delegate.",
         "status": "NOT_RUN",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Core.kt",
@@ -9958,7 +9208,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F081–F090,F041–F050",
+        "featureOverlap": "F081\u2013F090,F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -10000,7 +9250,7 @@
       },
       {
         "id": "C083",
-        "definition": "Inflation/reward text requires current official source and actual retrieval date. Omit unverified numerical claims and the source’s future-dated read claim.",
+        "definition": "Inflation/reward text requires current official source and actual retrieval date. Omit unverified numerical claims and the source\u2019s future-dated read claim.",
         "status": "NOT_RUN",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Core.kt",
@@ -10008,7 +9258,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F081–F090,F041–F050",
+        "featureOverlap": "F081\u2013F090,F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -10050,7 +9300,7 @@
       },
       {
         "id": "C084",
-        "definition": "“This cannot be reversed” appears on any payable transfer.",
+        "definition": "\u201cThis cannot be reversed\u201d appears on any payable transfer.",
         "status": "NOT_RUN",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Core.kt",
@@ -10058,7 +9308,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F081–F090,F041–F050",
+        "featureOverlap": "F081\u2013F090,F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -10108,7 +9358,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F081–F090,F041–F050",
+        "featureOverlap": "F081\u2013F090,F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -10158,7 +9408,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F081–F090,F041–F050",
+        "featureOverlap": "F081\u2013F090,F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -10210,7 +9460,7 @@
         "evidencePaths": [
           "evidence/qualification/core-tests.log"
         ],
-        "featureOverlap": "F081–F090,F041–F050",
+        "featureOverlap": "F081\u2013F090,F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -10262,7 +9512,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F081–F090,F041–F050",
+        "featureOverlap": "F081\u2013F090,F041\u2013F050",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -10312,7 +9562,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F091–F100,F111–F120",
+        "featureOverlap": "F091\u2013F100,F111\u2013F120",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -10362,7 +9612,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F091–F100,F111–F120",
+        "featureOverlap": "F091\u2013F100,F111\u2013F120",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -10412,7 +9662,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F091–F100,F111–F120",
+        "featureOverlap": "F091\u2013F100,F111\u2013F120",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -10462,7 +9712,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F091–F100,F111–F120",
+        "featureOverlap": "F091\u2013F100,F111\u2013F120",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -10512,7 +9762,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F091–F100,F111–F120",
+        "featureOverlap": "F091\u2013F100,F111\u2013F120",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -10562,7 +9812,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F091–F100,F111–F120",
+        "featureOverlap": "F091\u2013F100,F111\u2013F120",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -10612,7 +9862,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F091–F100,F111–F120",
+        "featureOverlap": "F091\u2013F100,F111\u2013F120",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -10665,7 +9915,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F091–F100,F111–F120",
+        "featureOverlap": "F091\u2013F100,F111\u2013F120",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -10717,7 +9967,7 @@
         "evidencePaths": [
           "evidence/qualification/core-tests.log"
         ],
-        "featureOverlap": "F091–F100,F111–F120",
+        "featureOverlap": "F091\u2013F100,F111\u2013F120",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -10769,7 +10019,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F091–F100,F111–F120",
+        "featureOverlap": "F091\u2013F100,F111\u2013F120",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -10819,7 +10069,7 @@
           "app/src/main/java/com/example/domain/Records.kt"
         ],
         "evidencePaths": [],
-        "featureOverlap": "F091–F100,F111–F120",
+        "featureOverlap": "F091\u2013F100,F111\u2013F120",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -10870,7 +10120,7 @@
         "evidencePaths": [
           "evidence/qualification/android-build.log"
         ],
-        "featureOverlap": "F091–F100,F111–F120",
+        "featureOverlap": "F091\u2013F100,F111\u2013F120",
         "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
         "dependencies": [],
         "checks": [],
@@ -10916,7 +10166,7 @@
     "functions": [
       {
         "id": "FN001",
-        "definition": "`isPubkey(input)` — true only for a valid 32-byte base58 public key.",
+        "definition": "`isPubkey(input)` \u2014 true only for a valid 32-byte base58 public key.",
         "status": "VERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Core.kt"
@@ -10947,7 +10197,7 @@
       },
       {
         "id": "FN002",
-        "definition": "`formatSol(lamports)` — exact plain decimal SOL formatting.",
+        "definition": "`formatSol(lamports)` \u2014 exact plain decimal SOL formatting.",
         "status": "VERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Core.kt"
@@ -10978,7 +10228,7 @@
       },
       {
         "id": "FN003",
-        "definition": "`formatSkr(rawAmount)` — exact formatting using verified SKR decimals.",
+        "definition": "`formatSkr(rawAmount)` \u2014 exact formatting using verified SKR decimals.",
         "status": "VERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Core.kt"
@@ -11009,7 +10259,7 @@
       },
       {
         "id": "FN004",
-        "definition": "`loadAccount(address)` — independent balance results and paginated activity context.",
+        "definition": "`loadAccount(address)` \u2014 independent balance results and paginated activity context.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/data/Rpc.kt"
@@ -11050,7 +10300,7 @@
       },
       {
         "id": "FN005",
-        "definition": "`rankInstruction(ix)` — presentation order; never an authorization shortcut.",
+        "definition": "`rankInstruction(ix)` \u2014 presentation order; never an authorization shortcut.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Helpers.kt"
@@ -11076,7 +10326,7 @@
       },
       {
         "id": "FN006",
-        "definition": "`toRequest(transaction)` — complete typed review request or named unsupported result.",
+        "definition": "`toRequest(transaction)` \u2014 complete typed review request or named unsupported result.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Solana.kt"
@@ -11102,7 +10352,7 @@
       },
       {
         "id": "FN007",
-        "definition": "`materialize(parsed)` — validated program, account roles, and instruction bytes.",
+        "definition": "`materialize(parsed)` \u2014 validated program, account roles, and instruction bytes.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Solana.kt"
@@ -11128,7 +10378,7 @@
       },
       {
         "id": "FN008",
-        "definition": "`decodeInstruction(ix)` — typed operation or explicit unsupported verdict.",
+        "definition": "`decodeInstruction(ix)` \u2014 typed operation or explicit unsupported verdict.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Core.kt"
@@ -11162,7 +10412,7 @@
       },
       {
         "id": "FN009",
-        "definition": "`readU64LE(bytes, offset)` — unsigned integer with bounds checks.",
+        "definition": "`readU64LE(bytes, offset)` \u2014 unsigned integer with bounds checks.",
         "status": "VERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Core.kt"
@@ -11193,7 +10443,7 @@
       },
       {
         "id": "FN010",
-        "definition": "`readU32LE(bytes, offset)` — unsigned discriminator with bounds checks.",
+        "definition": "`readU32LE(bytes, offset)` \u2014 unsigned discriminator with bounds checks.",
         "status": "VERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Core.kt"
@@ -11224,7 +10474,7 @@
       },
       {
         "id": "FN011",
-        "definition": "`transferCheckedData(amount, decimals)` — exact ten-byte encoding with range validation.",
+        "definition": "`transferCheckedData(amount, decimals)` \u2014 exact ten-byte encoding with range validation.",
         "status": "VERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Core.kt"
@@ -11255,7 +10505,7 @@
       },
       {
         "id": "FN012",
-        "definition": "`canonicalMessage(request)` — constrained deproof-review-v1 card text for compatibility; use serializedMessageBytes(tx) for full Solana authorization bytes. Never conflate the two.",
+        "definition": "`canonicalMessage(request)` \u2014 constrained deproof-review-v1 card text for compatibility; use serializedMessageBytes(tx) for full Solana authorization bytes. Never conflate the two.",
         "status": "VERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Core.kt"
@@ -11286,7 +10536,7 @@
       },
       {
         "id": "FN013",
-        "definition": "`sha256Text(text)` — SHA-256 of documented UTF-8 bytes.",
+        "definition": "`sha256Text(text)` \u2014 SHA-256 of documented UTF-8 bytes.",
         "status": "VERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Core.kt"
@@ -11317,7 +10567,7 @@
       },
       {
         "id": "FN014",
-        "definition": "`sha256Hex(bytes)` — lowercase digest of raw bytes.",
+        "definition": "`sha256Hex(bytes)` \u2014 lowercase digest of raw bytes.",
         "status": "VERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Core.kt"
@@ -11348,7 +10598,7 @@
       },
       {
         "id": "FN015",
-        "definition": "`tamperAmount(request)` — test-only negative-control mutation.",
+        "definition": "`tamperAmount(request)` \u2014 test-only negative-control mutation.",
         "status": "VERIFIED",
         "implementationPaths": [
           "app/src/test/java/com/example/domain/CoreTest.kt"
@@ -11379,7 +10629,7 @@
       },
       {
         "id": "FN016",
-        "definition": "`assertUnchanged(current, review)` — message and context equality checks.",
+        "definition": "`assertUnchanged(current, review)` \u2014 message and context equality checks.",
         "status": "VERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Solana.kt"
@@ -11411,7 +10661,7 @@
       },
       {
         "id": "FN017",
-        "definition": "`canSign(review, session, context)` — full UI approval predicate including policy, unchanged bytes/context, account/cluster, blockhash, fee and prior-devnet gate; no safety guarantee.",
+        "definition": "`canSign(review, session, context)` \u2014 full UI approval predicate including policy, unchanged bytes/context, account/cluster, blockhash, fee and prior-devnet gate; no safety guarantee.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Solana.kt"
@@ -11437,7 +10687,7 @@
       },
       {
         "id": "FN018",
-        "definition": "`verdictOf(decoded)` — understandable title, reason, and severity.",
+        "definition": "`verdictOf(decoded)` \u2014 understandable title, reason, and severity.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Core.kt"
@@ -11462,7 +10712,7 @@
       },
       {
         "id": "FN019",
-        "definition": "`summaryOf(request)` — amount, asset, recipient, operation, and limitations.",
+        "definition": "`summaryOf(request)` \u2014 amount, asset, recipient, operation, and limitations.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Core.kt"
@@ -11487,7 +10737,7 @@
       },
       {
         "id": "FN020",
-        "definition": "`shortKey(key)` — display abbreviation with full-value access.",
+        "definition": "`shortKey(key)` \u2014 display abbreviation with full-value access.",
         "status": "VERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Core.kt"
@@ -11518,7 +10768,7 @@
       },
       {
         "id": "FN021",
-        "definition": "`formatAmount(raw, decimals)` — exact arbitrary-decimal formatting.",
+        "definition": "`formatAmount(raw, decimals)` \u2014 exact arbitrary-decimal formatting.",
         "status": "VERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Core.kt"
@@ -11550,7 +10800,7 @@
       },
       {
         "id": "FN022",
-        "definition": "`observeSettlement(signature, cluster)` — observed state or unavailable error.",
+        "definition": "`observeSettlement(signature, cluster)` \u2014 observed state or unavailable error.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/data/Rpc.kt"
@@ -11575,7 +10825,7 @@
       },
       {
         "id": "FN023",
-        "definition": "`getSkrRawBalance(address)` — verified token-account aggregation.",
+        "definition": "`getSkrRawBalance(address)` \u2014 verified token-account aggregation.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/data/Rpc.kt"
@@ -11602,7 +10852,7 @@
       },
       {
         "id": "FN024",
-        "definition": "`signDevnetMemo(wallet, memo)` — reviewed real signing, returned-byte validation, RPC submission and matched signature; return explicit wallet rejection/capability/RPC errors. Never silently sign-and-send.",
+        "definition": "`signDevnetMemo(wallet, memo)` \u2014 reviewed real signing, returned-byte validation, RPC submission and matched signature; return explicit wallet rejection/capability/RPC errors. Never silently sign-and-send.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/wallet/Wallet.kt",
@@ -11629,7 +10879,7 @@
       },
       {
         "id": "FN025",
-        "definition": "`latestDevnetBlockhash()` — blockhash plus last-valid block height.",
+        "definition": "`latestDevnetBlockhash()` \u2014 blockhash plus last-valid block height.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/data/Rpc.kt"
@@ -11654,7 +10904,7 @@
       },
       {
         "id": "FN026",
-        "definition": "`connect()` — real authorized wallet session.",
+        "definition": "`connect()` \u2014 real authorized wallet session.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/wallet/Wallet.kt",
@@ -11682,7 +10932,7 @@
       },
       {
         "id": "FN027",
-        "definition": "`disconnect()` — session invalidation and explicit failure handling.",
+        "definition": "`disconnect()` \u2014 session invalidation and explicit failure handling.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/wallet/Wallet.kt",
@@ -11708,7 +10958,7 @@
       },
       {
         "id": "FN028",
-        "definition": "`saveObservation(record)` — preserve chain provenance and review integrity.",
+        "definition": "`saveObservation(record)` \u2014 preserve chain provenance and review integrity.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/data/Store.kt",
@@ -11736,7 +10986,7 @@
       },
       {
         "id": "FN029",
-        "definition": "`reject(request)` — local refusal record with null transaction signature.",
+        "definition": "`reject(request)` \u2014 local refusal record with null transaction signature.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/data/Store.kt",
@@ -11764,7 +11014,7 @@
       },
       {
         "id": "FN030",
-        "definition": "`copyReceipt(receipt)` — clipboard export with accessible fallback.",
+        "definition": "`copyReceipt(receipt)` \u2014 clipboard export with accessible fallback.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/data/Store.kt",
@@ -11791,7 +11041,7 @@
       },
       {
         "id": "FN031",
-        "definition": "`canonicalEvidence(evidence)` — deproof-evidence-v2 JCS manifest bytes with exact note preservation and golden vectors.",
+        "definition": "`canonicalEvidence(evidence)` \u2014 deproof-evidence-v2 JCS manifest bytes with exact note preservation and golden vectors.",
         "status": "VERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Records.kt",
@@ -11823,7 +11073,7 @@
       },
       {
         "id": "FN032",
-        "definition": "`sha256File(uriOrPath)` — streaming raw-byte hashing.",
+        "definition": "`sha256File(uriOrPath)` \u2014 streaming raw-byte hashing.",
         "status": "VERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Core.kt"
@@ -11855,7 +11105,7 @@
       },
       {
         "id": "FN033",
-        "definition": "`signHash(digest)` — legacy-digest-bytes-v1 only: SHA256withECDSA over 32 raw digest bytes, DER/SPKI and observed hardware metadata; reject wrong size/software keys. New records use FN062.",
+        "definition": "`signHash(digest)` \u2014 legacy-digest-bytes-v1 only: SHA256withECDSA over 32 raw digest bytes, DER/SPKI and observed hardware metadata; reject wrong size/software keys. New records use FN062.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/data/EvidenceSigner.kt",
@@ -11890,7 +11140,7 @@
       },
       {
         "id": "FN034",
-        "definition": "`verifyLocalSignature(payload)` — independent signature validation.",
+        "definition": "`verifyLocalSignature(payload)` \u2014 independent signature validation.",
         "status": "VERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Records.kt",
@@ -11922,7 +11172,7 @@
       },
       {
         "id": "FN035",
-        "definition": "`statusLabel(state)` — text and severity without relying only on color.",
+        "definition": "`statusLabel(state)` \u2014 text and severity without relying only on color.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Helpers.kt"
@@ -11947,7 +11197,7 @@
       },
       {
         "id": "FN036",
-        "definition": "`cooldownRemaining(timerSource, clock)` — validated protocol timing or explicitly labeled illustrative timing; never withdrawal authorization; clamp elapsed to zero, reject invalid/future starts per documented policy.",
+        "definition": "`cooldownRemaining(timerSource, clock)` \u2014 validated protocol timing or explicitly labeled illustrative timing; never withdrawal authorization; clamp elapsed to zero, reject invalid/future starts per documented policy.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Helpers.kt"
@@ -11972,7 +11222,7 @@
       },
       {
         "id": "FN037",
-        "definition": "`selectCluster(action)` — explicit compatible cluster or rejection.",
+        "definition": "`selectCluster(action)` \u2014 explicit compatible cluster or rejection.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Helpers.kt"
@@ -11997,7 +11247,7 @@
       },
       {
         "id": "FN038",
-        "definition": "`refuseUndecoded(ix)` — named refusal without invented amounts.",
+        "definition": "`refuseUndecoded(ix)` \u2014 named refusal without invented amounts.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Core.kt"
@@ -12022,7 +11272,7 @@
       },
       {
         "id": "FN039",
-        "definition": "`prepareReview(tx, account, cluster)` — immutable complete-message review binding.",
+        "definition": "`prepareReview(tx, account, cluster)` \u2014 immutable complete-message review binding.",
         "status": "VERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Solana.kt"
@@ -12054,7 +11304,7 @@
       },
       {
         "id": "FN040",
-        "definition": "`exportReceipt(receipt)` — schema-valid portable record.",
+        "definition": "`exportReceipt(receipt)` \u2014 schema-valid portable record.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/data/Store.kt",
@@ -12081,7 +11331,7 @@
       },
       {
         "id": "FN041",
-        "definition": "`parseTransaction(bytes)` — strict legacy/versioned transaction parsing.",
+        "definition": "`parseTransaction(bytes)` \u2014 strict legacy/versioned transaction parsing.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Solana.kt"
@@ -12106,7 +11356,7 @@
       },
       {
         "id": "FN042",
-        "definition": "`resolveLookupTables(message)` — verified address resolution or refusal.",
+        "definition": "`resolveLookupTables(message)` \u2014 verified address resolution or refusal.",
         "status": "BLOCKED",
         "implementationPaths": [],
         "evidencePaths": [],
@@ -12134,7 +11384,7 @@
       },
       {
         "id": "FN043",
-        "definition": "`evaluateAllInstructions(tx, policy)` — whole-transaction policy result.",
+        "definition": "`evaluateAllInstructions(tx, policy)` \u2014 whole-transaction policy result.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Core.kt"
@@ -12159,7 +11409,7 @@
       },
       {
         "id": "FN044",
-        "definition": "`simulateTransaction(tx)` — simulation context, errors, and limitations.",
+        "definition": "`simulateTransaction(tx)` \u2014 simulation context, errors, and limitations.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/data/Rpc.kt"
@@ -12184,7 +11434,7 @@
       },
       {
         "id": "FN045",
-        "definition": "`estimateFee(message)` — live fee estimate with context.",
+        "definition": "`estimateFee(message)` \u2014 live fee estimate with context.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/data/Rpc.kt"
@@ -12210,7 +11460,7 @@
       },
       {
         "id": "FN046",
-        "definition": "`validateTokenAccount(account, expected)` — mint, owner, role, and state checks.",
+        "definition": "`validateTokenAccount(account, expected)` \u2014 mint, owner, role, and state checks.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Core.kt"
@@ -12236,7 +11486,7 @@
       },
       {
         "id": "FN047",
-        "definition": "`buildSkrTransfer(parameters)` — exact verified transaction construction.",
+        "definition": "`buildSkrTransfer(parameters)` \u2014 exact verified transaction construction.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Helpers.kt"
@@ -12263,7 +11513,7 @@
       },
       {
         "id": "FN048",
-        "definition": "`rebuildExpiredTransaction(previous)` — new draft that invalidates previous approval.",
+        "definition": "`rebuildExpiredTransaction(previous)` \u2014 new draft that invalidates previous approval.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/MainActivity.kt",
@@ -12300,7 +11550,7 @@
       },
       {
         "id": "FN049",
-        "definition": "`submitSignedTransaction(bytes)` — broadcast signature and submission context.",
+        "definition": "`submitSignedTransaction(bytes)` \u2014 broadcast signature and submission context.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/data/Rpc.kt"
@@ -12326,7 +11576,7 @@
       },
       {
         "id": "FN050",
-        "definition": "`validateReturnedTransaction(review, signedBytes)` — identical reviewed message check.",
+        "definition": "`validateReturnedTransaction(review, signedBytes)` \u2014 identical reviewed message check.",
         "status": "VERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Solana.kt"
@@ -12358,7 +11608,7 @@
       },
       {
         "id": "FN051",
-        "definition": "`createTask(input)` — validated persisted task.",
+        "definition": "`createTask(input)` \u2014 validated persisted task.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/MainActivity.kt",
@@ -12395,7 +11645,7 @@
       },
       {
         "id": "FN052",
-        "definition": "`attachEvidence(taskId, file)` — file metadata, digest, and association.",
+        "definition": "`attachEvidence(taskId, file)` \u2014 file metadata, digest, and association.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/data/EvidenceRepository.kt",
@@ -12434,7 +11684,7 @@
       },
       {
         "id": "FN053",
-        "definition": "`verifyManifest(manifest, files)` — independent manifest integrity report.",
+        "definition": "`verifyManifest(manifest, files)` \u2014 independent manifest integrity report.",
         "status": "VERIFIED",
         "implementationPaths": [
           "tools/verify.py"
@@ -12466,7 +11716,7 @@
       },
       {
         "id": "FN054",
-        "definition": "`createReceipt(event)` — outcome-specific receipt without invented fields.",
+        "definition": "`createReceipt(event)` \u2014 outcome-specific receipt without invented fields.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/data/Store.kt",
@@ -12498,7 +11748,7 @@
       },
       {
         "id": "FN055",
-        "definition": "`refreshReceiptStatus(id)` — bounded status observation and persistence.",
+        "definition": "`refreshReceiptStatus(id)` \u2014 bounded status observation and persistence.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/MainActivity.kt",
@@ -12531,7 +11781,7 @@
       },
       {
         "id": "FN056",
-        "definition": "`verifyStakingProtocol(source)` — validated interface metadata and fixtures.",
+        "definition": "`verifyStakingProtocol(source)` \u2014 validated interface metadata and fixtures.",
         "status": "BLOCKED",
         "implementationPaths": [],
         "evidencePaths": [],
@@ -12554,7 +11804,7 @@
       },
       {
         "id": "FN057",
-        "definition": "`decodeSkrStake(ix, verifiedInterface)` — supported operation or refusal.",
+        "definition": "`decodeSkrStake(ix, verifiedInterface)` \u2014 supported operation or refusal.",
         "status": "BLOCKED",
         "implementationPaths": [],
         "evidencePaths": [],
@@ -12577,7 +11827,7 @@
       },
       {
         "id": "FN058",
-        "definition": "`computeWithdrawEligibility(state)` — protocol-derived decision.",
+        "definition": "`computeWithdrawEligibility(state)` \u2014 protocol-derived decision.",
         "status": "BLOCKED",
         "implementationPaths": [],
         "evidencePaths": [],
@@ -12601,7 +11851,7 @@
       },
       {
         "id": "FN059",
-        "definition": "`runConnector(connectorId, request)` — attributable adapter result with freshness.",
+        "definition": "`runConnector(connectorId, request)` \u2014 attributable adapter result with freshness.",
         "status": "BLOCKED",
         "implementationPaths": [],
         "evidencePaths": [],
@@ -12633,7 +11883,7 @@
       },
       {
         "id": "FN060",
-        "definition": "`exportQualificationReport(results)` — machine-readable gates and artifact digests.",
+        "definition": "`exportQualificationReport(results)` \u2014 machine-readable gates and artifact digests.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "scripts/qualify.sh",
@@ -12659,7 +11909,7 @@
       },
       {
         "id": "FN061",
-        "definition": "`explainPacket(packet, consent, providerConfig)` — optional consented explanation or NOT_CONFIGURED/GROK_NOT_CALLED/PROVIDER_ERROR; never changes authorization. Provider integration is staged, not a core network dependency.",
+        "definition": "`explainPacket(packet, consent, providerConfig)` \u2014 optional consented explanation or NOT_CONFIGURED/GROK_NOT_CALLED/PROVIDER_ERROR; never changes authorization. Provider integration is staged, not a core network dependency.",
         "status": "BLOCKED",
         "implementationPaths": [
           "app/src/main/java/com/example/domain/Explanations.kt",
@@ -12692,7 +11942,7 @@
       },
       {
         "id": "FN062",
-        "definition": "`signEvidenceEnvelope(envelopeBytes)` — default v2 SHA256withECDSA signature over exact domain-separated envelope bytes; DER/SPKI, security-level observation and independently verifiable payload. SOFTWARE_KEY/NO_KEYSTORE/UNQUALIFIED_KEY are explicit failures.",
+        "definition": "`signEvidenceEnvelope(envelopeBytes)` \u2014 default v2 SHA256withECDSA signature over exact domain-separated envelope bytes; DER/SPKI, security-level observation and independently verifiable payload. SOFTWARE_KEY/NO_KEYSTORE/UNQUALIFIED_KEY are explicit failures.",
         "status": "IMPLEMENTED_UNVERIFIED",
         "implementationPaths": [
           "app/src/main/java/com/example/data/EvidenceSigner.kt"
@@ -13773,7 +13023,7 @@
       {
         "id": "E001",
         "name": "Mobile wallet connect",
-        "baseMappingAndPhase": "F011–F020 / P1",
+        "baseMappingAndPhase": "F011\u2013F020 / P1",
         "acceptance": "Real MWA authorized account; absent wallet/rejection/disconnect handled; no fixture session in production; device proof recorded",
         "mandatory": true,
         "status": "IMPLEMENTED_UNVERIFIED",
@@ -13788,8 +13038,8 @@
           "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
         ],
         "phase": "P1",
-        "coreCheckOverlap": "C055–C058,C062–C063",
-        "contracts": "FN026–FN027",
+        "coreCheckOverlap": "C055\u2013C058,C062\u2013C063",
+        "contracts": "FN026\u2013FN027",
         "acceptanceId": "EA001",
         "dependencies": [],
         "checks": [
@@ -13829,7 +13079,7 @@
       {
         "id": "E002",
         "name": "Account and network checks",
-        "baseMappingAndPhase": "F001–F010, F018 / P1",
+        "baseMappingAndPhase": "F001\u2013F010, F018 / P1",
         "acceptance": "Decode addresses, validate cluster/genesis context and account roles; query identity distinct from input draft; test wrong-cluster handoff",
         "mandatory": true,
         "status": "IMPLEMENTED_UNVERIFIED",
@@ -13847,8 +13097,8 @@
           "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
         ],
         "phase": "P1",
-        "coreCheckOverlap": "C001–C012,C051,C062,C093",
-        "contracts": "FN001–FN004,FN023,FN037",
+        "coreCheckOverlap": "C001\u2013C012,C051,C062,C093",
+        "contracts": "FN001\u2013FN004,FN023,FN037",
         "acceptanceId": "EA002",
         "dependencies": [],
         "checks": [
@@ -13906,7 +13156,7 @@
       {
         "id": "E003",
         "name": "Transaction review",
-        "baseMappingAndPhase": "F031–F044 / P1",
+        "baseMappingAndPhase": "F031\u2013F044 / P1",
         "acceptance": "Expose every instruction, recipient/token account, amount, fee, requester and limits; historical observation cannot authorize",
         "mandatory": true,
         "status": "IMPLEMENTED_UNVERIFIED",
@@ -13921,8 +13171,8 @@
           "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
         ],
         "phase": "P1",
-        "coreCheckOverlap": "C014–C015,C025–C044,C064,C087",
-        "contracts": "FN005–FN011,FN018–FN021,FN041–FN046",
+        "coreCheckOverlap": "C014\u2013C015,C025\u2013C044,C064,C087",
+        "contracts": "FN005\u2013FN011,FN018\u2013FN021,FN041\u2013FN046",
         "acceptanceId": "EA003",
         "dependencies": [],
         "checks": [
@@ -13999,7 +13249,7 @@
       {
         "id": "E004",
         "name": "Message tamper guard",
-        "baseMappingAndPhase": "F045–F050 / P1",
+        "baseMappingAndPhase": "F045\u2013F050 / P1",
         "acceptance": "Full immutable message/context binding before and after wallet signing; mutation and lookup/account/cluster/evidence changes refuse submit",
         "mandatory": true,
         "status": "IMPLEMENTED_UNVERIFIED",
@@ -14014,8 +13264,8 @@
           "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
         ],
         "phase": "P1",
-        "coreCheckOverlap": "C045–C054,C095",
-        "contracts": "FN012–FN017,FN039,FN048,FN050",
+        "coreCheckOverlap": "C045\u2013C054,C095",
+        "contracts": "FN012\u2013FN017,FN039,FN048,FN050",
         "acceptanceId": "EA004",
         "dependencies": [],
         "checks": [
@@ -14063,7 +13313,7 @@
       {
         "id": "E005",
         "name": "Chain status tracking",
-        "baseMappingAndPhase": "F021–F030, F079 / P1",
+        "baseMappingAndPhase": "F021\u2013F030, F079 / P1",
         "acceptance": "Real processed/confirmed/finalized/failed/unknown status and unavailable observation; retain prior verified state with timestamp",
         "mandatory": true,
         "status": "IMPLEMENTED_UNVERIFIED",
@@ -14078,7 +13328,7 @@
           "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
         ],
         "phase": "P1",
-        "coreCheckOverlap": "C013–C024,C068,C075",
+        "coreCheckOverlap": "C013\u2013C024,C068,C075",
         "contracts": "FN022,FN028,FN055",
         "acceptanceId": "EA005",
         "dependencies": [],
@@ -14144,8 +13394,8 @@
           "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
         ],
         "phase": "P1",
-        "coreCheckOverlap": "C005–C007,C028–C030,C034–C035,C043",
-        "contracts": "FN007–FN008,FN023,FN046",
+        "coreCheckOverlap": "C005\u2013C007,C028\u2013C030,C034\u2013C035,C043",
+        "contracts": "FN007\u2013FN008,FN023,FN046",
         "acceptanceId": "EA006",
         "dependencies": [],
         "checks": [
@@ -14198,8 +13448,8 @@
           "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
         ],
         "phase": "P1",
-        "coreCheckOverlap": "C004,C006–C007,C027–C028,C086",
-        "contracts": "FN002–FN003,FN009,FN011,FN021",
+        "coreCheckOverlap": "C004,C006\u2013C007,C027\u2013C028,C086",
+        "contracts": "FN002\u2013FN003,FN009,FN011,FN021",
         "acceptanceId": "EA007",
         "dependencies": [],
         "checks": [
@@ -14235,7 +13485,7 @@
       {
         "id": "E008",
         "name": "SKR transfer review",
-        "baseMappingAndPhase": "F032–F050 / P1/P3",
+        "baseMappingAndPhase": "F032\u2013F050 / P1/P3",
         "acceptance": "Qualified TransferChecked draft/account policy after devnet gate; explicit device approval; no automatic mainnet spending or mandatory fee disguised as receipt proof",
         "mandatory": true,
         "status": "BLOCKED",
@@ -14250,8 +13500,8 @@
           "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
         ],
         "phase": "P1/P3",
-        "coreCheckOverlap": "C025–C035,C041–C064,C084,C087,C094–C095",
-        "contracts": "FN017,FN024–FN025,FN039,FN043–FN050",
+        "coreCheckOverlap": "C025\u2013C035,C041\u2013C064,C084,C087,C094\u2013C095",
+        "contracts": "FN017,FN024\u2013FN025,FN039,FN043\u2013FN050",
         "acceptanceId": "EA008",
         "dependencies": [],
         "checks": [
@@ -14343,7 +13593,7 @@
       {
         "id": "E009",
         "name": "Staking state observer",
-        "baseMappingAndPhase": "F081–F086 / P3",
+        "baseMappingAndPhase": "F081\u2013F086 / P3",
         "acceptance": "Protocol-specific verified state/layout adapter; liquid/staked/cooling separation; native SOL stake never relabeled SKR",
         "mandatory": true,
         "status": "BLOCKED",
@@ -14358,8 +13608,8 @@
           "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
         ],
         "phase": "P3",
-        "coreCheckOverlap": "C036–C037,C080–C083",
-        "contracts": "FN056–FN058",
+        "coreCheckOverlap": "C036\u2013C037,C080\u2013C083",
+        "contracts": "FN056\u2013FN058",
         "acceptanceId": "EA009",
         "dependencies": [
           "P1 core qualified"
@@ -14398,7 +13648,7 @@
       {
         "id": "E010",
         "name": "Cooldown and claim alerts",
-        "baseMappingAndPhase": "F087–F090,F115 / P3",
+        "baseMappingAndPhase": "F087\u2013F090,F115 / P3",
         "acceptance": "Current verified start/duration/season/eligibility; source/date; exact alarm preference and permission handling; local clock cannot authorize withdrawal",
         "mandatory": true,
         "status": "BLOCKED",
@@ -14413,7 +13663,7 @@
           "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
         ],
         "phase": "P3",
-        "coreCheckOverlap": "C077–C083",
+        "coreCheckOverlap": "C077\u2013C083",
         "contracts": "FN036,FN056,FN058",
         "acceptanceId": "EA010",
         "dependencies": [
@@ -14477,7 +13727,7 @@
         ],
         "phase": "P3",
         "coreCheckOverlap": "None: new EA011",
-        "contracts": "EF001–EF003",
+        "contracts": "EF001\u2013EF003",
         "acceptanceId": "EA011",
         "dependencies": [
           "P1 core qualified"
@@ -14531,7 +13781,7 @@
         ],
         "phase": "P3",
         "coreCheckOverlap": "None: new EA012",
-        "contracts": "EF004–EF007",
+        "contracts": "EF004\u2013EF007",
         "acceptanceId": "EA012",
         "dependencies": [
           "P1 core qualified"
@@ -14586,7 +13836,7 @@
         ],
         "phase": "P3",
         "coreCheckOverlap": "None: new EA013",
-        "contracts": "EF004–EF007,EF024",
+        "contracts": "EF004\u2013EF007,EF024",
         "acceptanceId": "EA013",
         "dependencies": [
           "P1 core qualified"
@@ -14736,7 +13986,7 @@
         ],
         "phase": "P3",
         "coreCheckOverlap": "C089 (consent principle only)",
-        "contracts": "EF010–EF012",
+        "contracts": "EF010\u2013EF012",
         "acceptanceId": "EA016",
         "dependencies": [
           "P1 core qualified"
@@ -14878,7 +14128,7 @@
       {
         "id": "E019",
         "name": "Signed usage receipts",
-        "baseMappingAndPhase": "F061–F070,F077 + extension / P3",
+        "baseMappingAndPhase": "F061\u2013F070,F077 + extension / P3",
         "acceptance": "Domain-separated signed metering envelope with counter provenance/sequence; exact signature verification and tamper/replay tests; label producer versus peer-confirmed evidence",
         "mandatory": true,
         "status": "IMPLEMENTED_UNVERIFIED",
@@ -14901,8 +14151,8 @@
           "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
         ],
         "phase": "P3",
-        "coreCheckOverlap": "C069–C073 (integrity principle only)",
-        "contracts": "EF015–EF016",
+        "coreCheckOverlap": "C069\u2013C073 (integrity principle only)",
+        "contracts": "EF015\u2013EF016",
         "acceptanceId": "EA019",
         "dependencies": [
           "P1 core qualified"
@@ -14960,7 +14210,7 @@
           "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
         ],
         "phase": "P3",
-        "coreCheckOverlap": "C016–C019,C081 (observation limits only)",
+        "coreCheckOverlap": "C016\u2013C019,C081 (observation limits only)",
         "contracts": "EF017",
         "acceptanceId": "EA020",
         "dependencies": [
@@ -15192,7 +14442,7 @@
       {
         "id": "E025",
         "name": "Contribution receipts",
-        "baseMappingAndPhase": "F075–F080 + extension / P3",
+        "baseMappingAndPhase": "F075\u2013F080 + extension / P3",
         "acceptance": "Immutable job identity, agreed input commitment, producer/result digest, verification observation and optional chain anchor; receipt distinguishes claimed execution from independently verified result",
         "mandatory": true,
         "status": "IMPLEMENTED_UNVERIFIED",
@@ -15215,7 +14465,7 @@
           "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
         ],
         "phase": "P3",
-        "coreCheckOverlap": "C065–C069,C073,C075 (receipt overlap only)",
+        "coreCheckOverlap": "C065\u2013C069,C073,C075 (receipt overlap only)",
         "contracts": "EF022",
         "acceptanceId": "EA025",
         "dependencies": [
@@ -15258,7 +14508,7 @@
       {
         "id": "E026",
         "name": "Raw-file hashing",
-        "baseMappingAndPhase": "F061–F064 / P1",
+        "baseMappingAndPhase": "F061\u2013F064 / P1",
         "acceptance": "Stream raw file bytes, bounded content access, compare known digests; no base64-wrapper hash, false physical claim or lost URI permission",
         "mandatory": true,
         "status": "IMPLEMENTED_UNVERIFIED",
@@ -15302,7 +14552,7 @@
       {
         "id": "E027",
         "name": "Hardware-backed signing",
-        "baseMappingAndPhase": "F067–F070 / P1",
+        "baseMappingAndPhase": "F067\u2013F070 / P1",
         "acceptance": "Qualified Android evidence envelope, true reported security level and independent verification; unsupported hardware/software key never masquerades as TEE/StrongBox",
         "mandatory": true,
         "status": "IMPLEMENTED_UNVERIFIED",
@@ -15317,7 +14567,7 @@
           "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
         ],
         "phase": "P1",
-        "coreCheckOverlap": "C071–C072",
+        "coreCheckOverlap": "C071\u2013C072",
         "contracts": "FN034,FN062",
         "acceptanceId": "EA027",
         "dependencies": [],
@@ -15364,7 +14614,7 @@
         ],
         "phase": "P1/P2",
         "coreCheckOverlap": "C073",
-        "contracts": "FN031,FN052–FN053",
+        "contracts": "FN031,FN052\u2013FN053",
         "acceptanceId": "EA028",
         "dependencies": [],
         "checks": [
@@ -15408,7 +14658,7 @@
           "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
         ],
         "phase": "P1/P4",
-        "coreCheckOverlap": "C066–C067,C075–C076",
+        "coreCheckOverlap": "C066\u2013C067,C075\u2013C076",
         "contracts": "FN030,FN040,EF023",
         "acceptanceId": "EA029",
         "dependencies": [],
@@ -15467,8 +14717,8 @@
           "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
         ],
         "phase": "All phases",
-        "coreCheckOverlap": "C089–C090 (AI consent only)",
-        "contracts": "EF003,EF010–EF012,EF020,EF023",
+        "coreCheckOverlap": "C089\u2013C090 (AI consent only)",
+        "contracts": "EF003,EF010\u2013EF012,EF020,EF023",
         "acceptanceId": "EA030",
         "dependencies": [],
         "checks": [

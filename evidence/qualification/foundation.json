@@ -1,0 +1,91 @@
+{
+  "schema": "deproof-gate-v1",
+  "task": "foundation",
+  "status": "PASS",
+  "checks": [
+    {
+      "id": "FND-TC-01",
+      "status": "PASS",
+      "command": "java -version 2>&1 | grep -E 'version .1[7-9]|version .2[0-9]'",
+      "evidencePath": "evidence/qualification/foundation/java-version.txt"
+    },
+    {
+      "id": "FND-TC-02",
+      "status": "PASS",
+      "command": "./gradlew --version 2>&1 | grep -E 'Gradle [89]'",
+      "evidencePath": "evidence/qualification/foundation/gradle-version.txt"
+    },
+    {
+      "id": "FND-TC-03",
+      "status": "PASS",
+      "command": "go version | grep -E 'go1\\.(2[1-9]|[3-9][0-9])'",
+      "evidencePath": "evidence/qualification/foundation/go-version.txt"
+    },
+    {
+      "id": "FND-TC-04",
+      "status": "PASS",
+      "command": "python3 --version | grep -E 'Python 3\\.(1[0-9]|[2-9][0-9])'",
+      "evidencePath": "evidence/qualification/foundation/python-version.txt"
+    },
+    {
+      "id": "FND-TC-05",
+      "status": "PASS",
+      "command": "SDK=$(grep 'sdk.dir' local.properties | cut -d= -f2) && ls \"$SDK/platforms\"",
+      "evidencePath": "evidence/qualification/foundation/android-sdk.txt"
+    },
+    {
+      "id": "FND-REG-01",
+      "status": "PASS",
+      "command": "python3 scripts/check-registries.py",
+      "evidencePath": "evidence/qualification/foundation/registries.txt"
+    },
+    {
+      "id": "FND-SCH-01",
+      "status": "PASS",
+      "command": "ls contracts/evidence-v2.schema.json contracts/receipt-v2.schema.json contracts/portable-backup-v1.schema.json contracts/evidence-envelope-v2.schema.json",
+      "evidencePath": "evidence/qualification/foundation/schemas.txt"
+    },
+    {
+      "id": "FND-VEC-01",
+      "status": "PASS",
+      "command": "ls fixtures/jcs-vectors.json fixtures/location-golden.json fixtures/transfer-checked-vectors.json",
+      "evidencePath": "evidence/qualification/foundation/vectors.txt"
+    },
+    {
+      "id": "FND-BP-01",
+      "status": "PASS",
+      "command": "test -s docs/blueprint/DEPROOF_MASTER_BLUEPRINT_AND_DESIGN/DEPROOF_FINAL_MASTER_PROMPT.md && echo PRESENT",
+      "evidencePath": "evidence/qualification/foundation/blueprint.txt"
+    },
+    {
+      "id": "FND-GO-01",
+      "status": "PASS",
+      "command": "go build ./... && echo BUILD_OK",
+      "evidencePath": "evidence/qualification/foundation/node-agent-build.txt"
+    },
+    {
+      "id": "FND-GO-02",
+      "status": "PASS",
+      "command": "go build ./... && echo BUILD_OK",
+      "evidencePath": "evidence/qualification/foundation/prover-worker-build.txt"
+    },
+    {
+      "id": "FND-GO-03",
+      "status": "PASS",
+      "command": "go test ./... 2>&1",
+      "evidencePath": "evidence/qualification/foundation/node-agent-test.txt"
+    }
+  ],
+  "limitations": [
+    "Device/emulator not tested; KVM present but no AVD image installed.",
+    "Docker services not started; qualify-docker.py covers that path separately.",
+    "Mainnet/devnet RPC not called; all checks are local."
+  ],
+  "manualGates": [
+    {
+      "id": "FND-MAN-01",
+      "status": "NOT_APPLICABLE",
+      "reason": "Physical measurement not applicable to foundation toolchain task."
+    }
+  ]
+}

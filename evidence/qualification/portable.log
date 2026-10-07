@@ -1,0 +1,6 @@
+........................
+----------------------------------------------------------------------
+Ran 24 tests in 0.035s
+
+OK
+PASS: exact 120 F / 100 C / 62 FN + 24 EF / 30 E and per-entry coverage; no overlap counted as unique features

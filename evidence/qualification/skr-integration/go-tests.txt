@@ -1,0 +1,7 @@
+=== RUN   TestBuildSkrPaymentJobBlockedWhenNotVerified
+--- PASS: TestBuildSkrPaymentJobBlockedWhenNotVerified (0.00s)
+=== RUN   TestBuildSkrPaymentJobPendingReviewWhenVerified
+--- PASS: TestBuildSkrPaymentJobPendingReviewWhenVerified (0.00s)
+PASS
+ok  	deproof.local/node-agent/internal/agent	(cached)
+TESTS_PASS

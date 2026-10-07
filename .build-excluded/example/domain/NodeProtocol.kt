@@ -30,8 +30,8 @@ class NodeProtocol(seed: ByteArray) {
         return Json.obj("payloadBase64" to Base64.getEncoder().encodeToString(payload),"signatureBase64" to sign(payload))
     }
     companion object {
-        val SCOPES=setOf("READ_NODE","MANAGE_SERVICE","SHARE_BANDWIDTH","RUN_PROOF_JOB","EXPORT_PUBLIC_RECORDS")
-        val ACTIONS=setOf("observe","revoke","consent","transfer","stop","startService","stopService","discoverProofJobs","proof","cancelProof","export")
+        val SCOPES=setOf("READ_NODE","MANAGE_SERVICE","SHARE_BANDWIDTH","RUN_PROOF_JOB","EXPORT_PUBLIC_RECORDS","MANAGE_ADAPTER")
+        val ACTIONS=setOf("observe","revoke","consent","transfer","stop","startService","stopService","discoverProofJobs","proof","cancelProof","export","listAdapters","getAdapter","runAdapter","listWorkloadReceipts")
         fun newSeed()=ByteArray(32).also { SecureRandom().nextBytes(it) }
         fun verifyRecord(record: JsonNode, fingerprint: String, operationId: String? = null): JsonNode {
             ensure(record["schema"]?.asText()=="deproof-node-signed-v1","NODE_SCHEMA")

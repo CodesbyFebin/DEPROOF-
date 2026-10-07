@@ -41,7 +41,9 @@ class TransactionBuilder {
         amount: Long
     ) = apply {
         val instruction = TransactionInstruction(
-            programId = "TokenkegQfeZyiNwAJsyFbPVwwQkYk5LWV2BXVBq", // Token Program
+            // SPL Token Program v1. Consistent with Programs.TOKEN in Core.kt.
+            // Requires on-chain verification before mainnet use — see Core.kt audit comment.
+            programId = "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
             accounts = listOf(from, to, mint),
             data = "transfer:$amount"
         )
@@ -123,7 +125,9 @@ object TokenProgram {
         amount: Long
     ): TransactionInstruction {
         return TransactionInstruction(
-            programId = "TokenkegQfeZyiNwAJsyFbPVwwQkYk5LWV2BXVBq",
+            // SPL Token Program v1. Consistent with Programs.TOKEN in Core.kt.
+            // Requires on-chain verification before mainnet use — see Core.kt audit comment.
+            programId = "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
             accounts = listOf(sourceToken, destinationToken, owner),
             data = "transfer:$amount"
         )

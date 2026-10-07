@@ -6,6 +6,37 @@ PASS: operation_replay_denied
 PASS: bandwidth_requires_explicit_consent
 PASS: real_tls_transfer_sender_receiver_counters_match
 PASS: quota_enforced_before_network_io
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 38928)
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/codesbyfebin/DeProof/scripts/qualify-integration.py", line 21, in do_POST
+    n=int(self.headers['Content-Length']);b=self.rfile.read(n);received.append(len(b));self.send_response(200);self.end_headers();self.wfile.write(b'accepted-local-payload')
+                                                                                                                                  ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/ssl.py", line 1263, in sendall
+    v = self.send(byte_view[count:])
+  File "/usr/lib/python3.13/ssl.py", line 1232, in send
+    return self._sslobj.write(data)
+           ~~~~~~~~~~~~~~~~~~^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
 PASS: stop_cancels_real_flow_and_disables_consent
 PASS: signed_owner_job_discovered
 PASS: forged_job_signature_denied

@@ -1,64 +1,36 @@
 package com.deproof.data.wallet
 
+import android.content.Context
 import com.deproof.domain.repository.SignTransactionResult
 import com.deproof.domain.repository.WalletAccount
 import com.deproof.domain.repository.WalletRepository
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
 
-class SolanaWalletRepository(
-    private val mwaClient: MobileWalletAdapterClient
-) : WalletRepository {
+/**
+ * SolanaWalletRepository — concrete implementation of WalletRepository.
+ *
+ * Delegates to MobileWalletAdapterClient. Wallet operations require a
+ * physical device with an installed MWA-compatible wallet app; operations
+ * will fail with UnsupportedOperationException on devices without one.
+ *
+ * AUTHORIZATION=CONSTRUCTION_ONLY: No mainnet spending occurs through this class.
+ * Built by CodesbyFebin.
+ */
+class SolanaWalletRepository(context: Context? = null) : WalletRepository {
 
-    override suspend fun connect(): Result<WalletAccount> = withContext(Dispatchers.IO) {
-        try {
-            mwaClient.connect()
-        } catch (e: Exception) {
-            Result.failure(e)
-        }
-    }
+    private val client = MobileWalletAdapterClient(context)
 
-    override suspend fun disconnect(): Result<Unit> = withContext(Dispatchers.IO) {
-        try {
-            mwaClient.disconnect()
-        } catch (e: Exception) {
-            Result.failure(e)
-        }
-    }
+    override suspend fun connect(): Result<WalletAccount> = client.connect()
 
-    override suspend fun isConnected(): Boolean = withContext(Dispatchers.IO) {
-        mwaClient.isConnected()
-    }
+    override suspend fun disconnect(): Result<Unit> = client.disconnect()
 
-    override suspend fun getAccount(): Result<WalletAccount> = withContext(Dispatchers.IO) {
-        try {
-            mwaClient.getAccount()
-        } catch (e: Exception) {
-            Result.failure(e)
-        }
-    }
+    override suspend fun isConnected(): Boolean = client.isConnected()
 
-    override suspend fun signTransaction(instruction: String): Result<SignTransactionResult> = withContext(Dispatchers.IO) {
-        try {
-            mwaClient.signTransaction(instruction)
-        } catch (e: Exception) {
-            Result.failure(e)
-        }
-    }
+    override suspend fun getAccount(): Result<WalletAccount> = client.getAccount()
 
-    override suspend fun signMessage(message: String): Result<String> = withContext(Dispatchers.IO) {
-        try {
-            mwaClient.signMessage(message)
-        } catch (e: Exception) {
-            Result.failure(e)
-        }
-    }
+    override suspend fun signTransaction(instruction: String): Result<SignTransactionResult> =
+        client.signTransaction(instruction)
 
-    override suspend fun getAvailableWallets(): Result<List<String>> = withContext(Dispatchers.IO) {
-        try {
-            mwaClient.getAvailableWallets()
-        } catch (e: Exception) {
-            Result.failure(e)
-        }
-    }
+    override suspend fun signMessage(message: String): Result<String> = client.signMessage(message)
+
+    override suspend fun getAvailableWallets(): Result<List<String>> = client.getAvailableWallets()
 }

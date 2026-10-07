@@ -1,0 +1,1 @@
+Deproof is a local-first DePIN contribution workspace for Solana Mobile. Review exact payment details, track node work, and generate portable receipts — all on your device. Built by CodesbyFebin.

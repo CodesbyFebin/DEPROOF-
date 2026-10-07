@@ -1,0 +1,36 @@
+Deproof is a local-first contribution workspace for Solana Mobile. It connects user-owned node operations, exact-message transaction review, supported proof verification and portable contribution receipts. Its proposed SKR workflow links verified work to explicitly approved payments. Built by CodesbyFebin.
+
+CORE FEATURES
+
+Multi-project DePIN workspace
+Track contribution activity across Helium, Hivemapper, Nosana, Render, GEODNET, and latency-fixture adapters from a single on-device workspace.
+
+Exact-message transaction review
+Every proposed SKR payment shows you the full transaction: amount with 6 decimal places, destination address, SKR mint address, SPL Token Program address, and authorization scope. Nothing is hidden. AUTHORIZATION=CONSTRUCTION_ONLY — no mainnet spending without explicit user action.
+
+Portable contribution receipts
+Evidence envelopes (schema evidence-envelope-v2) are generated locally and can be exported and verified without a network connection. Your receipts travel with you, not with the platform.
+
+MWA wallet integration
+Connect Phantom, Solflare, or any MWA-compatible Solana wallet for transaction signing and identity. Wallet interaction requires a physical Android device with a compatible wallet app installed.
+
+Go node-agent companion
+The node-agent binary runs alongside your contributing hardware, observing work and constructing payment jobs with the same SKR payment logic as the Android app.
+
+WHAT THIS APP DOES NOT DO
+
+• Does not submit mainnet transactions without explicit user approval
+• Does not guarantee DePIN oracle data accuracy — oracle integration is marked BLOCKED until verified
+• Does not claim production proof assurance — proof verification infrastructure is present but not guaranteed
+• Does not claim partnerships with Helium, Hivemapper, Nosana, Render, or GEODNET
+
+REQUIREMENTS
+
+• Android 9.0 (API 28) or higher
+• For wallet features: Phantom, Solflare, or another MWA-compatible Solana wallet app
+
+OPEN SOURCE
+
+Source code: https://github.com/CodesbyFebin/DEPROOF-.git
+
+Built by CodesbyFebin · codesbyfebin@gmail.com

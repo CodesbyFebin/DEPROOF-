@@ -1,0 +1,2 @@
+app/src/main/java/com/solana/mobilewalletadapter/clientlib/MwaStubs.kt:    ): TransactionResult<T> = throw UnsupportedOperationException("MWA_UNAVAILABLE: wallet requires physical hardware")
+app/src/main/java/com/solana/mobilewalletadapter/clientlib/MwaStubs.kt:        throw UnsupportedOperationException("MWA_UNAVAILABLE: wallet requires physical hardware")

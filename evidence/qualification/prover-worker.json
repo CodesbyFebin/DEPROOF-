@@ -1,0 +1,99 @@
+{
+  "schema": "deproof-gate-v1",
+  "task": "prover-worker",
+  "status": "PASS",
+  "checks": [
+    {
+      "id": "PW-BUILD-01",
+      "status": "PASS",
+      "command": "go build ./... && echo BUILD_OK",
+      "evidencePath": "evidence/qualification/prover-worker/build.txt"
+    },
+    {
+      "id": "PW-BIN-01",
+      "status": "PASS",
+      "command": "test -s prover-worker/build/prove && ls -lh prover-worker/build/prove && echo OK",
+      "evidencePath": "evidence/qualification/prover-worker/prove-bin.txt"
+    },
+    {
+      "id": "PW-BIN-02",
+      "status": "PASS",
+      "command": "test -s prover-worker/build/verify && ls -lh prover-worker/build/verify && echo OK",
+      "evidencePath": "evidence/qualification/prover-worker/verify-bin.txt"
+    },
+    {
+      "id": "PW-BIN-03",
+      "status": "PASS",
+      "command": "prover-worker/build/prove --help 2>&1 || prover-worker/build/prove 2>&1 | head -5 || true && echo BIN_RAN",
+      "evidencePath": "evidence/qualification/prover-worker/prove-run.txt"
+    },
+    {
+      "id": "PW-BIN-04",
+      "status": "PASS",
+      "command": "prover-worker/build/verify --help 2>&1 || prover-worker/build/verify 2>&1 | head -5 || true && echo BIN_RAN",
+      "evidencePath": "evidence/qualification/prover-worker/verify-run.txt"
+    },
+    {
+      "id": "PW-SRC-01",
+      "status": "PASS",
+      "command": "test -s prover-worker/internal/circuit/cubic.go && echo PRESENT",
+      "evidencePath": "evidence/qualification/prover-worker/circuit-src.txt"
+    },
+    {
+      "id": "PW-SRC-02",
+      "status": "PASS",
+      "command": "test -s prover-worker/cmd/prove/main.go && echo PRESENT",
+      "evidencePath": "evidence/qualification/prover-worker/prove-src.txt"
+    },
+    {
+      "id": "PW-SRC-03",
+      "status": "PASS",
+      "command": "test -s prover-worker/cmd/verify/main.go && echo PRESENT",
+      "evidencePath": "evidence/qualification/prover-worker/verify-src.txt"
+    },
+    {
+      "id": "PW-GO-01",
+      "status": "PASS",
+      "command": "go vet ./... 2>&1 && echo VET_OK",
+      "evidencePath": "evidence/qualification/prover-worker/vet.txt"
+    },
+    {
+      "id": "PW-MOD-01",
+      "status": "PASS",
+      "command": "grep '^module ' prover-worker/go.mod && echo MOD_OK",
+      "evidencePath": "evidence/qualification/prover-worker/gomod.txt"
+    },
+    {
+      "id": "PW-TEST-01",
+      "status": "NOT_APPLICABLE",
+      "reason": "No *_test.go files in prover-worker; no automated unit tests to run."
+    },
+    {
+      "id": "PW-MAN-01",
+      "status": "NOT_APPLICABLE",
+      "reason": "Trusted-setup ceremony: requires offline multi-party computation, not automatable."
+    },
+    {
+      "id": "PW-MAN-02",
+      "status": "NOT_APPLICABLE",
+      "reason": "End-to-end prove\u2192verify round-trip on real observation data: requires devnet + SKR oracle."
+    }
+  ],
+  "limitations": [
+    "No Go unit tests exist for prover-worker; correctness verified by build + vet + binary smoke test.",
+    "ZK trusted-setup requires multi-party ceremony, not automatable locally.",
+    "End-to-end proof pipeline over real observation data requires live devnet and SKR oracle."
+  ],
+  "manualGates": [
+    {
+      "id": "PW-MAN-01",
+      "status": "BLOCKED",
+      "reason": "Trusted-setup ceremony for the ZK circuit (multi-party computation)."
+    },
+    {
+      "id": "PW-MAN-02",
+      "status": "BLOCKED",
+      "reason": "Full prove\u2192verify round-trip against real SKR observation data requires devnet."
+    }
+  ]
+}

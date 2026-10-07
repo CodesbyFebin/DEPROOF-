@@ -1,0 +1,7 @@
+=== RUN   TestDuplicatePaymentRejected
+--- PASS: TestDuplicatePaymentRejected (0.00s)
+=== RUN   TestDuplicateBlockedJobAllowedSecondTime
+--- PASS: TestDuplicateBlockedJobAllowedSecondTime (0.00s)
+PASS
+ok  	deproof.local/node-agent/internal/agent	(cached)
+DUP_PASS

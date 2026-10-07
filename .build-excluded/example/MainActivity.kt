@@ -16,6 +16,7 @@ import androidx.compose.foundation.text.selection.SelectionContainer
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.res.stringResource
+import com.deproof.app.R
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.runtime.saveable.rememberSaveable
@@ -33,6 +34,7 @@ import com.solana.mobilewalletadapter.clientlib.ActivityResultSender
 import com.example.data.*
 import com.example.domain.*
 import com.example.wallet.*
+import com.deproof.app.BuildConfig
 import com.fasterxml.jackson.databind.JsonNode
 import com.fasterxml.jackson.databind.node.ObjectNode
 import kotlinx.coroutines.*
@@ -203,7 +205,7 @@ class MainActivity : ComponentActivity() {
                                 Button(onClick={nested="Tasks"}) {Text(stringResource(R.string.ui_b3a60e61a523))}
                                 Button(onClick={run { loadEvidence(null) }}) {Text(stringResource(R.string.ui_03867aea70ac))}
                             }
-                            for(page in listOf("Nodes","Bandwidth","Proof jobs")) Button(onClick={nested=page}) {Text(routeLabel(page))}
+                            for(page in listOf("Nodes","Bandwidth","Proof jobs","Projects")) Button(onClick={nested=page}) {Text(routeLabel(page))}
                             TextButton(onClick={mainnetDraft=mainnetEndpoint;devnetDraft=devnetEndpoint;nested="Settings"}) {Text(stringResource(R.string.ui_48f37e0a293b))}
                             events.firstOrNull()?.let { Panel(stringResource(R.string.ui_682d5b670f85)) { Text(it.kind); Text(it.createdAt); Button(onClick={route="Receipts"}) {Text(stringResource(R.string.ui_bc059d436b21))} } }
                             Panel(stringResource(R.string.ui_a6198526bf12)) {
@@ -223,6 +225,9 @@ class MainActivity : ComponentActivity() {
                                     TextButton(onClick={startActivity(android.content.Intent(android.content.Intent.ACTION_VIEW,Uri.parse("https://explorer.solana.com/tx/$sig?cluster=mainnet-beta")))}) {Text(stringResource(R.string.ui_8fe371b8e097))}
                                 }
                             }
+                        } else if(nested=="Projects") {
+                            TextButton(onClick={nested="Workspace"}) {Text(stringResource(R.string.ui_0f0c0c6e215e))}
+                            ProjectCatalog(dao)
                         } else if(nested in listOf("Nodes","Bandwidth","Proof jobs")) {
                             TextButton(onClick={nested="Workspace"}) {Text(stringResource(R.string.ui_0f0c0c6e215e))}
                             NodeWorkspace(dao,nested)
