@@ -191,7 +191,9 @@ dependencies {
     testImplementation("androidx.room:room-testing:2.8.4")
 
     // Robolectric (required by data-layer unit tests that use Android APIs on JVM)
-    testImplementation("org.robolectric:robolectric:4.13")
+    testImplementation("org.robolectric:robolectric:4.13") {
+        exclude(group = "org.bouncycastle", module = "bcprov-jdk18on")
+    }
     testImplementation("androidx.test:core:1.6.1")
 
     // Instrumented Tests (Android Device Tests)
