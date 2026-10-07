@@ -6,23 +6,23 @@
     {
       "id": "E001",
       "name": "Mobile wallet connect",
-      "baseMappingAndPhase": "F011–F020 / P1",
+      "baseMappingAndPhase": "F011\u2013F020 / P1",
       "acceptance": "Real MWA authorized account; absent wallet/rejection/disconnect handled; no fixture session in production; device proof recorded",
       "mandatory": true,
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "limitations": [
         "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
       ],
       "phase": "P1",
-      "coreCheckOverlap": "C055–C058,C062–C063",
-      "contracts": "FN026–FN027",
+      "coreCheckOverlap": "C055\u2013C058,C062\u2013C063",
+      "contracts": "FN026\u2013FN027",
       "acceptanceId": "EA001",
       "dependencies": [],
       "checks": [
@@ -62,16 +62,16 @@
     {
       "id": "E002",
       "name": "Account and network checks",
-      "baseMappingAndPhase": "F001–F010, F018 / P1",
+      "baseMappingAndPhase": "F001\u2013F010, F018 / P1",
       "acceptance": "Decode addresses, validate cluster/genesis context and account roles; query identity distinct from input draft; test wrong-cluster handoff",
       "mandatory": true,
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "app/src/main/java/com/example/domain/Solana.kt"
+        ".build-excluded/example/MainActivity.kt",
+        ".build-excluded/example/data/Rpc.kt",
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Records.kt",
+        ".build-excluded/example/domain/Solana.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/live-rpc.json"
@@ -80,8 +80,8 @@
         "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
       ],
       "phase": "P1",
-      "coreCheckOverlap": "C001–C012,C051,C062,C093",
-      "contracts": "FN001–FN004,FN023,FN037",
+      "coreCheckOverlap": "C001\u2013C012,C051,C062,C093",
+      "contracts": "FN001\u2013FN004,FN023,FN037",
       "acceptanceId": "EA002",
       "dependencies": [],
       "checks": [
@@ -139,23 +139,23 @@
     {
       "id": "E003",
       "name": "Transaction review",
-      "baseMappingAndPhase": "F031–F044 / P1",
+      "baseMappingAndPhase": "F031\u2013F044 / P1",
       "acceptance": "Expose every instruction, recipient/token account, amount, fee, requester and limits; historical observation cannot authorize",
       "mandatory": true,
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "limitations": [
         "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
       ],
       "phase": "P1",
-      "coreCheckOverlap": "C014–C015,C025–C044,C064,C087",
-      "contracts": "FN005–FN011,FN018–FN021,FN041–FN046",
+      "coreCheckOverlap": "C014\u2013C015,C025\u2013C044,C064,C087",
+      "contracts": "FN005\u2013FN011,FN018\u2013FN021,FN041\u2013FN046",
       "acceptanceId": "EA003",
       "dependencies": [],
       "checks": [
@@ -232,23 +232,23 @@
     {
       "id": "E004",
       "name": "Message tamper guard",
-      "baseMappingAndPhase": "F045–F050 / P1",
+      "baseMappingAndPhase": "F045\u2013F050 / P1",
       "acceptance": "Full immutable message/context binding before and after wallet signing; mutation and lookup/account/cluster/evidence changes refuse submit",
       "mandatory": true,
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "limitations": [
         "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
       ],
       "phase": "P1",
-      "coreCheckOverlap": "C045–C054,C095",
-      "contracts": "FN012–FN017,FN039,FN048,FN050",
+      "coreCheckOverlap": "C045\u2013C054,C095",
+      "contracts": "FN012\u2013FN017,FN039,FN048,FN050",
       "acceptanceId": "EA004",
       "dependencies": [],
       "checks": [
@@ -296,22 +296,22 @@
     {
       "id": "E005",
       "name": "Chain status tracking",
-      "baseMappingAndPhase": "F021–F030, F079 / P1",
+      "baseMappingAndPhase": "F021\u2013F030, F079 / P1",
       "acceptance": "Real processed/confirmed/finalized/failed/unknown status and unavailable observation; retain prior verified state with timestamp",
       "mandatory": true,
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "limitations": [
         "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
       ],
       "phase": "P1",
-      "coreCheckOverlap": "C013–C024,C068,C075",
+      "coreCheckOverlap": "C013\u2013C024,C068,C075",
       "contracts": "FN022,FN028,FN055",
       "acceptanceId": "EA005",
       "dependencies": [],
@@ -367,18 +367,18 @@
       "mandatory": true,
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "limitations": [
         "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
       ],
       "phase": "P1",
-      "coreCheckOverlap": "C005–C007,C028–C030,C034–C035,C043",
-      "contracts": "FN007–FN008,FN023,FN046",
+      "coreCheckOverlap": "C005\u2013C007,C028\u2013C030,C034\u2013C035,C043",
+      "contracts": "FN007\u2013FN008,FN023,FN046",
       "acceptanceId": "EA006",
       "dependencies": [],
       "checks": [
@@ -421,18 +421,18 @@
       "mandatory": true,
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "limitations": [
         "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
       ],
       "phase": "P1",
-      "coreCheckOverlap": "C004,C006–C007,C027–C028,C086",
-      "contracts": "FN002–FN003,FN009,FN011,FN021",
+      "coreCheckOverlap": "C004,C006\u2013C007,C027\u2013C028,C086",
+      "contracts": "FN002\u2013FN003,FN009,FN011,FN021",
       "acceptanceId": "EA007",
       "dependencies": [],
       "checks": [
@@ -468,23 +468,23 @@
     {
       "id": "E008",
       "name": "SKR transfer review",
-      "baseMappingAndPhase": "F032–F050 / P1/P3",
+      "baseMappingAndPhase": "F032\u2013F050 / P1/P3",
       "acceptance": "Qualified TransferChecked draft/account policy after devnet gate; explicit device approval; no automatic mainnet spending or mandatory fee disguised as receipt proof",
       "mandatory": true,
       "status": "BLOCKED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "limitations": [
         "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
       ],
       "phase": "P1/P3",
-      "coreCheckOverlap": "C025–C035,C041–C064,C084,C087,C094–C095",
-      "contracts": "FN017,FN024–FN025,FN039,FN043–FN050",
+      "coreCheckOverlap": "C025\u2013C035,C041\u2013C064,C084,C087,C094\u2013C095",
+      "contracts": "FN017,FN024\u2013FN025,FN039,FN043\u2013FN050",
       "acceptanceId": "EA008",
       "dependencies": [],
       "checks": [
@@ -576,23 +576,23 @@
     {
       "id": "E009",
       "name": "Staking state observer",
-      "baseMappingAndPhase": "F081–F086 / P3",
+      "baseMappingAndPhase": "F081\u2013F086 / P3",
       "acceptance": "Protocol-specific verified state/layout adapter; liquid/staked/cooling separation; native SOL stake never relabeled SKR",
       "mandatory": true,
       "status": "BLOCKED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "limitations": [
         "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
       ],
       "phase": "P3",
-      "coreCheckOverlap": "C036–C037,C080–C083",
-      "contracts": "FN056–FN058",
+      "coreCheckOverlap": "C036\u2013C037,C080\u2013C083",
+      "contracts": "FN056\u2013FN058",
       "acceptanceId": "EA009",
       "dependencies": [
         "P1 core qualified"
@@ -631,22 +631,22 @@
     {
       "id": "E010",
       "name": "Cooldown and claim alerts",
-      "baseMappingAndPhase": "F087–F090,F115 / P3",
+      "baseMappingAndPhase": "F087\u2013F090,F115 / P3",
       "acceptance": "Current verified start/duration/season/eligibility; source/date; exact alarm preference and permission handling; local clock cannot authorize withdrawal",
       "mandatory": true,
       "status": "BLOCKED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "limitations": [
         "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
       ],
       "phase": "P3",
-      "coreCheckOverlap": "C077–C083",
+      "coreCheckOverlap": "C077\u2013C083",
       "contracts": "FN036,FN056,FN058",
       "acceptanceId": "EA010",
       "dependencies": [
@@ -691,10 +691,10 @@
       "mandatory": true,
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        ".build-excluded/example/NodeWorkspace.kt",
+        ".build-excluded/example/data/NodeClient.kt",
+        ".build-excluded/example/data/NodeRepository.kt",
+        ".build-excluded/example/domain/NodeProtocol.kt",
         "node-agent/internal/agent/agent.go",
         "node-agent/internal/agent/proof.go",
         "prover-worker/cmd/prove/main.go",
@@ -710,7 +710,7 @@
       ],
       "phase": "P3",
       "coreCheckOverlap": "None: new EA011",
-      "contracts": "EF001–EF003",
+      "contracts": "EF001\u2013EF003",
       "acceptanceId": "EA011",
       "dependencies": [
         "P1 core qualified"
@@ -746,10 +746,10 @@
       "mandatory": true,
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        ".build-excluded/example/NodeWorkspace.kt",
+        ".build-excluded/example/data/NodeClient.kt",
+        ".build-excluded/example/data/NodeRepository.kt",
+        ".build-excluded/example/domain/NodeProtocol.kt",
         "node-agent/internal/agent/agent.go",
         "node-agent/internal/agent/hosting.go",
         "scripts/qualify-hosting.py",
@@ -764,7 +764,7 @@
       ],
       "phase": "P3",
       "coreCheckOverlap": "None: new EA012",
-      "contracts": "EF004–EF007",
+      "contracts": "EF004\u2013EF007",
       "acceptanceId": "EA012",
       "dependencies": [
         "P1 core qualified"
@@ -801,10 +801,10 @@
       "mandatory": true,
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        ".build-excluded/example/NodeWorkspace.kt",
+        ".build-excluded/example/data/NodeClient.kt",
+        ".build-excluded/example/data/NodeRepository.kt",
+        ".build-excluded/example/domain/NodeProtocol.kt",
         "node-agent/internal/agent/agent.go",
         "node-agent/internal/agent/hosting.go",
         "scripts/qualify-hosting.py",
@@ -819,7 +819,7 @@
       ],
       "phase": "P3",
       "coreCheckOverlap": "None: new EA013",
-      "contracts": "EF004–EF007,EF024",
+      "contracts": "EF004\u2013EF007,EF024",
       "acceptanceId": "EA013",
       "dependencies": [
         "P1 core qualified"
@@ -857,10 +857,10 @@
       "mandatory": true,
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        ".build-excluded/example/NodeWorkspace.kt",
+        ".build-excluded/example/data/NodeClient.kt",
+        ".build-excluded/example/data/NodeRepository.kt",
+        ".build-excluded/example/domain/NodeProtocol.kt",
         "node-agent/internal/agent/agent.go",
         "node-agent/internal/agent/hosting.go",
         "scripts/qualify-hosting.py",
@@ -950,10 +950,10 @@
       "mandatory": true,
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        ".build-excluded/example/NodeWorkspace.kt",
+        ".build-excluded/example/data/NodeClient.kt",
+        ".build-excluded/example/data/NodeRepository.kt",
+        ".build-excluded/example/domain/NodeProtocol.kt",
         "node-agent/internal/agent/agent.go",
         "node-agent/internal/agent/proof.go",
         "prover-worker/cmd/prove/main.go",
@@ -969,7 +969,7 @@
       ],
       "phase": "P3",
       "coreCheckOverlap": "C089 (consent principle only)",
-      "contracts": "EF010–EF012",
+      "contracts": "EF010\u2013EF012",
       "acceptanceId": "EA016",
       "dependencies": [
         "P1 core qualified"
@@ -1007,10 +1007,10 @@
       "mandatory": true,
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        ".build-excluded/example/NodeWorkspace.kt",
+        ".build-excluded/example/data/NodeClient.kt",
+        ".build-excluded/example/data/NodeRepository.kt",
+        ".build-excluded/example/domain/NodeProtocol.kt",
         "node-agent/internal/agent/agent.go",
         "node-agent/internal/agent/proof.go",
         "prover-worker/cmd/prove/main.go",
@@ -1061,10 +1061,10 @@
       "mandatory": true,
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        ".build-excluded/example/NodeWorkspace.kt",
+        ".build-excluded/example/data/NodeClient.kt",
+        ".build-excluded/example/data/NodeRepository.kt",
+        ".build-excluded/example/domain/NodeProtocol.kt",
         "node-agent/internal/agent/agent.go",
         "node-agent/internal/agent/proof.go",
         "prover-worker/cmd/prove/main.go",
@@ -1111,15 +1111,15 @@
     {
       "id": "E019",
       "name": "Signed usage receipts",
-      "baseMappingAndPhase": "F061–F070,F077 + extension / P3",
+      "baseMappingAndPhase": "F061\u2013F070,F077 + extension / P3",
       "acceptance": "Domain-separated signed metering envelope with counter provenance/sequence; exact signature verification and tamper/replay tests; label producer versus peer-confirmed evidence",
       "mandatory": true,
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        ".build-excluded/example/NodeWorkspace.kt",
+        ".build-excluded/example/data/NodeClient.kt",
+        ".build-excluded/example/data/NodeRepository.kt",
+        ".build-excluded/example/domain/NodeProtocol.kt",
         "node-agent/internal/agent/agent.go",
         "node-agent/internal/agent/proof.go",
         "prover-worker/cmd/prove/main.go",
@@ -1134,8 +1134,8 @@
         "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
       ],
       "phase": "P3",
-      "coreCheckOverlap": "C069–C073 (integrity principle only)",
-      "contracts": "EF015–EF016",
+      "coreCheckOverlap": "C069\u2013C073 (integrity principle only)",
+      "contracts": "EF015\u2013EF016",
       "acceptanceId": "EA019",
       "dependencies": [
         "P1 core qualified"
@@ -1193,7 +1193,7 @@
         "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
       ],
       "phase": "P3",
-      "coreCheckOverlap": "C016–C019,C081 (observation limits only)",
+      "coreCheckOverlap": "C016\u2013C019,C081 (observation limits only)",
       "contracts": "EF017",
       "acceptanceId": "EA020",
       "dependencies": [
@@ -1231,10 +1231,10 @@
       "mandatory": true,
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        ".build-excluded/example/NodeWorkspace.kt",
+        ".build-excluded/example/data/NodeClient.kt",
+        ".build-excluded/example/data/NodeRepository.kt",
+        ".build-excluded/example/domain/NodeProtocol.kt",
         "node-agent/internal/agent/agent.go",
         "node-agent/internal/agent/proof.go",
         "prover-worker/cmd/prove/main.go",
@@ -1324,10 +1324,10 @@
       "mandatory": true,
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        ".build-excluded/example/NodeWorkspace.kt",
+        ".build-excluded/example/data/NodeClient.kt",
+        ".build-excluded/example/data/NodeRepository.kt",
+        ".build-excluded/example/domain/NodeProtocol.kt",
         "node-agent/internal/agent/agent.go",
         "node-agent/internal/agent/proof.go",
         "prover-worker/cmd/prove/main.go",
@@ -1377,10 +1377,10 @@
       "mandatory": true,
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        ".build-excluded/example/NodeWorkspace.kt",
+        ".build-excluded/example/data/NodeClient.kt",
+        ".build-excluded/example/data/NodeRepository.kt",
+        ".build-excluded/example/domain/NodeProtocol.kt",
         "node-agent/internal/agent/agent.go",
         "node-agent/internal/agent/proof.go",
         "prover-worker/cmd/prove/main.go",
@@ -1425,15 +1425,15 @@
     {
       "id": "E025",
       "name": "Contribution receipts",
-      "baseMappingAndPhase": "F075–F080 + extension / P3",
+      "baseMappingAndPhase": "F075\u2013F080 + extension / P3",
       "acceptance": "Immutable job identity, agreed input commitment, producer/result digest, verification observation and optional chain anchor; receipt distinguishes claimed execution from independently verified result",
       "mandatory": true,
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        ".build-excluded/example/NodeWorkspace.kt",
+        ".build-excluded/example/data/NodeClient.kt",
+        ".build-excluded/example/data/NodeRepository.kt",
+        ".build-excluded/example/domain/NodeProtocol.kt",
         "node-agent/internal/agent/agent.go",
         "node-agent/internal/agent/proof.go",
         "prover-worker/cmd/prove/main.go",
@@ -1448,7 +1448,7 @@
         "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
       ],
       "phase": "P3",
-      "coreCheckOverlap": "C065–C069,C073,C075 (receipt overlap only)",
+      "coreCheckOverlap": "C065\u2013C069,C073,C075 (receipt overlap only)",
       "contracts": "EF022",
       "acceptanceId": "EA025",
       "dependencies": [
@@ -1491,15 +1491,15 @@
     {
       "id": "E026",
       "name": "Raw-file hashing",
-      "baseMappingAndPhase": "F061–F064 / P1",
+      "baseMappingAndPhase": "F061\u2013F064 / P1",
       "acceptance": "Stream raw file bytes, bounded content access, compare known digests; no base64-wrapper hash, false physical claim or lost URI permission",
       "mandatory": true,
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "limitations": [
@@ -1535,22 +1535,22 @@
     {
       "id": "E027",
       "name": "Hardware-backed signing",
-      "baseMappingAndPhase": "F067–F070 / P1",
+      "baseMappingAndPhase": "F067\u2013F070 / P1",
       "acceptance": "Qualified Android evidence envelope, true reported security level and independent verification; unsupported hardware/software key never masquerades as TEE/StrongBox",
       "mandatory": true,
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "limitations": [
         "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
       ],
       "phase": "P1",
-      "coreCheckOverlap": "C071–C072",
+      "coreCheckOverlap": "C071\u2013C072",
       "contracts": "FN034,FN062",
       "acceptanceId": "EA027",
       "dependencies": [],
@@ -1586,10 +1586,10 @@
       "mandatory": true,
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "limitations": [
@@ -1597,7 +1597,7 @@
       ],
       "phase": "P1/P2",
       "coreCheckOverlap": "C073",
-      "contracts": "FN031,FN052–FN053",
+      "contracts": "FN031,FN052\u2013FN053",
       "acceptanceId": "EA028",
       "dependencies": [],
       "checks": [
@@ -1631,17 +1631,17 @@
       "mandatory": true,
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "limitations": [
         "Acceptance incomplete: device, Android API wiring, runtime isolation, live network, current external protocol or dependency gate required."
       ],
       "phase": "P1/P4",
-      "coreCheckOverlap": "C066–C067,C075–C076",
+      "coreCheckOverlap": "C066\u2013C067,C075\u2013C076",
       "contracts": "FN030,FN040,EF023",
       "acceptanceId": "EA029",
       "dependencies": [],
@@ -1678,14 +1678,14 @@
       "mandatory": true,
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt",
+        ".build-excluded/example/NodeWorkspace.kt",
+        ".build-excluded/example/data/NodeClient.kt",
+        ".build-excluded/example/data/NodeRepository.kt",
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/NodeProtocol.kt",
+        ".build-excluded/example/domain/Records.kt",
+        ".build-excluded/example/domain/Solana.kt",
         "node-agent/internal/agent/agent.go",
         "node-agent/internal/agent/proof.go",
         "prover-worker/cmd/prove/main.go",
@@ -1700,8 +1700,8 @@
         "Named local slice passed; complete authoritative acceptance (including applicable device/external/platform gates) remains incomplete. See uncovered-requirements.json."
       ],
       "phase": "All phases",
-      "coreCheckOverlap": "C089–C090 (AI consent only)",
-      "contracts": "EF003,EF010–EF012,EF020,EF023",
+      "coreCheckOverlap": "C089\u2013C090 (AI consent only)",
+      "contracts": "EF003,EF010\u2013EF012,EF020,EF023",
       "acceptanceId": "EA030",
       "dependencies": [],
       "checks": [

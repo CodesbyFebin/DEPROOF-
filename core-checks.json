@@ -6,12 +6,12 @@
       "definition": "Paste a mainnet address.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F001–F010",
+      "featureOverlap": "F001\u2013F010",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -46,14 +46,14 @@
       "definition": "Reject a string that is not 32-byte base58. Alphabet is Bitcoin base58, no `0OIl`. Length after decode must be 32.",
       "status": "PASS",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/core-tests.log"
       ],
-      "featureOverlap": "F001–F010",
+      "featureOverlap": "F001\u2013F010",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -90,15 +90,15 @@
       "definition": "Read SOL lamports with `getBalance`.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "app/src/main/java/com/example/domain/Solana.kt"
+        ".build-excluded/example/data/Rpc.kt",
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Records.kt",
+        ".build-excluded/example/domain/Solana.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/live-rpc.json"
       ],
-      "featureOverlap": "F001–F010",
+      "featureOverlap": "F001\u2013F010",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -136,14 +136,14 @@
       "definition": "Show SOL with 9 decimals, exact decimal string, no float.",
       "status": "PASS",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/core-tests.log"
       ],
-      "featureOverlap": "F001–F010",
+      "featureOverlap": "F001\u2013F010",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -180,12 +180,12 @@
       "definition": "Read only the official SKR mint via `getTokenAccountsByOwner` with mint filter, encoding `jsonParsed`.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F001–F010",
+      "featureOverlap": "F001\u2013F010",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -220,12 +220,12 @@
       "definition": "Sum every matching SKR token account with integer addition.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F001–F010",
+      "featureOverlap": "F001\u2013F010",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -260,12 +260,12 @@
       "definition": "Show SKR with 6 decimals.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F001–F010",
+      "featureOverlap": "F001\u2013F010",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -300,15 +300,15 @@
       "definition": "Show the slot from the same RPC response `context.slot`.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
-        "app/src/main/java/com/example/domain/Solana.kt"
+        ".build-excluded/example/data/Rpc.kt",
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Records.kt",
+        ".build-excluded/example/domain/Solana.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/live-rpc.json"
       ],
-      "featureOverlap": "F001–F010",
+      "featureOverlap": "F001\u2013F010",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -346,12 +346,12 @@
       "definition": "Label the row with the address that was actually queried, not the draft in the text field.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F001–F010",
+      "featureOverlap": "F001\u2013F010",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -386,12 +386,12 @@
       "definition": "SOL and SKR reads are independent. One failure does not zero the other. Show each error.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F001–F010",
+      "featureOverlap": "F001\u2013F010",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -426,12 +426,12 @@
       "definition": "Pull-to-refresh repeats the read.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F001–F010",
+      "featureOverlap": "F001\u2013F010",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -466,12 +466,12 @@
       "definition": "Never display a cached balance as if it were a new read after an error. Label it `stale` or hide it.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F001–F010",
+      "featureOverlap": "F001\u2013F010",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -506,12 +506,12 @@
       "definition": "Last 10 signatures from `getSignaturesForAddress`.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F021–F030",
+      "featureOverlap": "F021\u2013F030",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -546,12 +546,12 @@
       "definition": "Fetch supported legacy/v0 transaction details with getTransaction and declared version support; retrieve raw/base64 bytes for exact-message binding. JSON views are supplementary.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F021–F030",
+      "featureOverlap": "F021\u2013F030",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -586,12 +586,12 @@
       "definition": "Prefer a TransferChecked instruction when several exist, for the card summary only. Authorization still evaluates every instruction.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F021–F030",
+      "featureOverlap": "F021\u2013F030",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -626,12 +626,12 @@
       "definition": "Show confirmation status: processed, confirmed, finalized, or absent.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F021–F030",
+      "featureOverlap": "F021\u2013F030",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -666,12 +666,12 @@
       "definition": "Show the RPC error on a failed transaction. `meta.err` is not success.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F021–F030",
+      "featureOverlap": "F021\u2013F030",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -706,12 +706,12 @@
       "definition": "Show slot and block time. Block time null stays null.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F021–F030",
+      "featureOverlap": "F021\u2013F030",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -746,12 +746,12 @@
       "definition": "Explorer link is a real URL: `https://explorer.solana.com/tx/<signature>?cluster=mainnet-beta` or `?cluster=devnet`.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F021–F030",
+      "featureOverlap": "F021\u2013F030",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -786,12 +786,12 @@
       "definition": "Skip a signature RPC says is missing. Show a skipped count, not a fake row.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F021–F030",
+      "featureOverlap": "F021\u2013F030",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -826,12 +826,12 @@
       "definition": "Never fabricate a signature.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F021–F030",
+      "featureOverlap": "F021\u2013F030",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -866,12 +866,12 @@
       "definition": "Open the chosen transaction in Review.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F021–F030",
+      "featureOverlap": "F021\u2013F030",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -906,12 +906,12 @@
       "definition": "Empty history is an empty state, not a fake row.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F021–F030",
+      "featureOverlap": "F021\u2013F030",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -946,12 +946,12 @@
       "definition": "Loading and error are different UI states.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F021–F030",
+      "featureOverlap": "F021\u2013F030",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -986,12 +986,12 @@
       "definition": "In SKR_TRANSFER_V1 refuse every unqualified program. SOL stake is named then refused; SKR stake remains unverified/refused. DEVNET_MEMO_V1 is a separate qualified exception, not a weakened token policy.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F031–F040",
+      "featureOverlap": "F031\u2013F040",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -1026,12 +1026,12 @@
       "definition": "In the strict SKR policy, discriminator 12 only for policy eligibility; no Safe verdict.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F031–F040",
+      "featureOverlap": "F031\u2013F040",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -1066,14 +1066,14 @@
       "definition": "Little-endian u64 amount.",
       "status": "PASS",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/core-tests.log"
       ],
-      "featureOverlap": "F031–F040",
+      "featureOverlap": "F031\u2013F040",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -1110,12 +1110,12 @@
       "definition": "Decimals byte must be 6 for SKR.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F031–F040",
+      "featureOverlap": "F031\u2013F040",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -1150,12 +1150,12 @@
       "definition": "Account order source, mint, destination, authority.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F031–F040",
+      "featureOverlap": "F031\u2013F040",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -1190,12 +1190,12 @@
       "definition": "Mint must equal the official mint.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F031–F040",
+      "featureOverlap": "F031\u2013F040",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -1230,14 +1230,14 @@
       "definition": "Refuse SetAuthority (6).",
       "status": "PASS",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/core-tests.log"
       ],
-      "featureOverlap": "F031–F040",
+      "featureOverlap": "F031\u2013F040",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -1274,14 +1274,14 @@
       "definition": "Refuse Approve (4).",
       "status": "PASS",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/core-tests.log"
       ],
-      "featureOverlap": "F031–F040",
+      "featureOverlap": "F031\u2013F040",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -1318,14 +1318,14 @@
       "definition": "Refuse unchecked Transfer (3).",
       "status": "PASS",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/core-tests.log"
       ],
-      "featureOverlap": "F031–F040",
+      "featureOverlap": "F031\u2013F040",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -1362,12 +1362,12 @@
       "definition": "Refuse TransferChecked with the wrong mint.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F031–F040",
+      "featureOverlap": "F031\u2013F040",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -1402,14 +1402,14 @@
       "definition": "Refuse TransferChecked with decimals other than 6.",
       "status": "PASS",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/core-tests.log"
       ],
-      "featureOverlap": "F031–F040",
+      "featureOverlap": "F031\u2013F040",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -1446,14 +1446,14 @@
       "definition": "Name SOL stake from the u32 discriminator.",
       "status": "PASS",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/core-tests.log"
       ],
-      "featureOverlap": "F031–F040",
+      "featureOverlap": "F031\u2013F040",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -1490,14 +1490,14 @@
       "definition": "Do not call SOL stake deactivate an SKR unstake.",
       "status": "PASS",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/core-tests.log"
       ],
-      "featureOverlap": "F031–F040",
+      "featureOverlap": "F031\u2013F040",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -1534,12 +1534,12 @@
       "definition": "One-line summary.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F031–F040",
+      "featureOverlap": "F031\u2013F040",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -1574,12 +1574,12 @@
       "definition": "Shorten keys to 4 + ellipsis + 4. Full value remains available.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F031–F040",
+      "featureOverlap": "F031\u2013F040",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -1614,12 +1614,12 @@
       "definition": "Verdict title and one reason.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F031–F040",
+      "featureOverlap": "F031\u2013F040",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -1654,14 +1654,14 @@
       "definition": "Malformed instruction, non-exact 10-byte layout, missing/extra unsupported accounts or invalid roles is refused with a precise reason.",
       "status": "PASS",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/core-tests.log"
       ],
-      "featureOverlap": "F031–F040",
+      "featureOverlap": "F031\u2013F040",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -1698,14 +1698,14 @@
       "definition": "Unknown token discriminator is refused by name and number.",
       "status": "PASS",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/core-tests.log"
       ],
-      "featureOverlap": "F031–F040",
+      "featureOverlap": "F031\u2013F040",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -1742,14 +1742,14 @@
       "definition": "A wrong token-program lookalike is refused. Compare the full base58 id.",
       "status": "PASS",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/core-tests.log"
       ],
-      "featureOverlap": "F031–F040",
+      "featureOverlap": "F031\u2013F040",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -1786,12 +1786,12 @@
       "definition": "The card shows the program id that was decoded.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F031–F040",
+      "featureOverlap": "F031\u2013F040",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -1826,14 +1826,14 @@
       "definition": "Canonical constrained card message is the following newline fields; full-message binding is separate:",
       "status": "PASS",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/core-tests.log"
       ],
-      "featureOverlap": "F041–F050",
+      "featureOverlap": "F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -1870,14 +1870,14 @@
       "definition": "SHA-256 of that UTF-8 string, lowercase hex, 64 chars.",
       "status": "PASS",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/core-tests.log"
       ],
-      "featureOverlap": "F041–F050",
+      "featureOverlap": "F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -1914,12 +1914,12 @@
       "definition": "Hash is stored when Review opens.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F041–F050",
+      "featureOverlap": "F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -1956,12 +1956,12 @@
       "definition": "Approve recomputes the hash.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F041–F050",
+      "featureOverlap": "F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -1999,14 +1999,14 @@
       "definition": "One changed amount byte sets `MESSAGE_CHANGED` and disables Approve.",
       "status": "PASS",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/core-tests.log"
       ],
-      "featureOverlap": "F041–F050",
+      "featureOverlap": "F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -2043,12 +2043,12 @@
       "definition": "Reject does not require a matching hash.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F041–F050",
+      "featureOverlap": "F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -2083,12 +2083,12 @@
       "definition": "Network is in the card hash and the separate review-context binding; verify the RPC cluster identity.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F041–F050",
+      "featureOverlap": "F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -2123,12 +2123,12 @@
       "definition": "The fee payer is part of the hash.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F041–F050",
+      "featureOverlap": "F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -2163,12 +2163,12 @@
       "definition": "The raw data bytes are part of the hash.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F041–F050",
+      "featureOverlap": "F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -2203,12 +2203,12 @@
       "definition": "A second review of a new transaction replaces the stored hash.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F041–F050",
+      "featureOverlap": "F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -2243,12 +2243,12 @@
       "definition": "Real MWA authorization on a wallet-capable device. Test doubles are isolated to tests; no production mock session.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F011–F020,F041–F050",
+      "featureOverlap": "F011\u2013F020,F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -2293,12 +2293,12 @@
       "definition": "Show the authorized address from the protocol account bytes.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F011–F020,F041–F050",
+      "featureOverlap": "F011\u2013F020,F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -2343,12 +2343,12 @@
       "definition": "No session: Approve stays off and the text says the app will not invent a signature.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F011–F020,F041–F050",
+      "featureOverlap": "F011\u2013F020,F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -2393,12 +2393,12 @@
       "definition": "Disconnect clears the session.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F011–F020,F041–F050",
+      "featureOverlap": "F011\u2013F020,F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -2443,12 +2443,12 @@
       "definition": "First real sign is a freshly reviewed devnet memo. Memo text: `Deproof devnet memo <unix millis>`.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F011–F020,F041–F050",
+      "featureOverlap": "F011\u2013F020,F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -2493,12 +2493,12 @@
       "definition": "Show the real signature derived from returned signed bytes and matched to RPC acceptance. Encode real signature bytes as base58; never create a placeholder.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F011–F020,F041–F050",
+      "featureOverlap": "F011\u2013F020,F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -2543,12 +2543,12 @@
       "definition": "Only after qualified devnet memo signing plus confirmed chain observation is visible/stored may a verified mainnet SKR draft be built. Building is not submitting. Mainnet needs fresh explicit device approval and never runs from automated tests.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F011–F020,F041–F050",
+      "featureOverlap": "F011\u2013F020,F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -2593,12 +2593,12 @@
       "definition": "Cluster of the transaction matches the cluster of the session. Mismatch throws `CLUSTER_MISMATCH` and disables Approve.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F011–F020,F041–F050",
+      "featureOverlap": "F011\u2013F020,F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -2643,12 +2643,12 @@
       "definition": "Show Deproof and the actually configured developer-controlled identity URI; do not assert ownership of a candidate domain.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F011–F020,F041–F050",
+      "featureOverlap": "F011\u2013F020,F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -2693,12 +2693,12 @@
       "definition": "Fetch a live fee estimate for the exact message and show its context before signing. Unknown remains unknown; core submit stays blocked until fee review is possible. Never invent 5000.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F011–F020,F041–F050",
+      "featureOverlap": "F011\u2013F020,F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -2743,12 +2743,12 @@
       "definition": "Reject writes a receipt.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F061–F080",
+      "featureOverlap": "F061\u2013F080",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -2793,12 +2793,12 @@
       "definition": "Copy receipt JSON.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F061–F080",
+      "featureOverlap": "F061\u2013F080",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -2843,12 +2843,12 @@
       "definition": "Receipts survive process death.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F061–F080",
+      "featureOverlap": "F061\u2013F080",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -2893,12 +2893,12 @@
       "definition": "Observation receipt for a fetched signature stores that signature and its status. Outcome is `OBSERVED`, not `SUBMITTED`.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F061–F080",
+      "featureOverlap": "F061\u2013F080",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -2943,12 +2943,12 @@
       "definition": "Local ECDSA is labeled `local`, never as the Solana signature.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F061–F080",
+      "featureOverlap": "F061\u2013F080",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -2993,14 +2993,14 @@
       "definition": "SHA-256 of a file by streaming bytes. Do not load the file fully into memory.",
       "status": "PASS",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/core-tests.log"
       ],
-      "featureOverlap": "F061–F080",
+      "featureOverlap": "F061\u2013F080",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -3047,12 +3047,12 @@
       "definition": "Sign the versioned v2 evidence envelope with a qualified hardware-backed Keystore key. Record actual security level; do not infer StrongBox/TEE from a generic hardware flag.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F061–F080",
+      "featureOverlap": "F061\u2013F080",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -3097,12 +3097,12 @@
       "definition": "Refuse a software key with `SOFTWARE_KEY`.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F061–F080",
+      "featureOverlap": "F061\u2013F080",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -3147,14 +3147,14 @@
       "definition": "Canonical evidence is deproof-evidence-v2 JCS JSON as specified above, preserving exact notes, typed nulls, ordered files and raw-byte hashes. Legacy newline records are import-only; never rewrite signed payloads.",
       "status": "PASS",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/core-tests.log"
       ],
-      "featureOverlap": "F061–F080",
+      "featureOverlap": "F061\u2013F080",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -3201,12 +3201,12 @@
       "definition": "Evidence UI is hidden when the verdict is Do not sign.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F061–F080",
+      "featureOverlap": "F061\u2013F080",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -3251,12 +3251,12 @@
       "definition": "Export v2 submission provenance. Legacy submittedByClearance, if required, mirrors known submittedByDeproof; an imported signature never sets it true.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F061–F080",
+      "featureOverlap": "F061\u2013F080",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -3301,12 +3301,12 @@
       "definition": "Clipboard failure shows the same text in a box.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F061–F080",
+      "featureOverlap": "F061\u2013F080",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -3351,12 +3351,12 @@
       "definition": "An illustrative user-supplied countdown has a labeled start/duration (48 hours only when explicitly chosen); protocol timers require validated field semantics and current rules. Never start from screen open.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F081–F090,F041–F050",
+      "featureOverlap": "F081\u2013F090,F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -3401,12 +3401,12 @@
       "definition": "The clock is visible on Now when a countdown exists.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F081–F090,F041–F050",
+      "featureOverlap": "F081\u2013F090,F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -3451,12 +3451,12 @@
       "definition": "`00:00:00` when the interval has elapsed. Elapsed does not mean withdraw is allowed.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F081–F090,F041–F050",
+      "featureOverlap": "F081\u2013F090,F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -3501,12 +3501,12 @@
       "definition": "Do not invent an unstake.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F081–F090,F041–F050",
+      "featureOverlap": "F081\u2013F090,F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -3551,12 +3551,12 @@
       "definition": "Do not invent APY.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F081–F090,F041–F050",
+      "featureOverlap": "F081\u2013F090,F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -3598,15 +3598,15 @@
     },
     {
       "id": "C082",
-      "definition": "Do not invent a guardian name. You may quote the pool address from docs if you read them, labeled as a quote, not as the user’s delegate.",
+      "definition": "Do not invent a guardian name. You may quote the pool address from docs if you read them, labeled as a quote, not as the user\u2019s delegate.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F081–F090,F041–F050",
+      "featureOverlap": "F081\u2013F090,F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -3648,15 +3648,15 @@
     },
     {
       "id": "C083",
-      "definition": "Inflation/reward text requires current official source and actual retrieval date. Omit unverified numerical claims and the source’s future-dated read claim.",
+      "definition": "Inflation/reward text requires current official source and actual retrieval date. Omit unverified numerical claims and the source\u2019s future-dated read claim.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F081–F090,F041–F050",
+      "featureOverlap": "F081\u2013F090,F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -3698,15 +3698,15 @@
     },
     {
       "id": "C084",
-      "definition": "“This cannot be reversed” appears on any payable transfer.",
+      "definition": "\u201cThis cannot be reversed\u201d appears on any payable transfer.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F081–F090,F041–F050",
+      "featureOverlap": "F081\u2013F090,F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -3751,12 +3751,12 @@
       "definition": "No recovery-service copy anywhere.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F081–F090,F041–F050",
+      "featureOverlap": "F081\u2013F090,F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -3801,12 +3801,12 @@
       "definition": "Partial amount is the amount in the instruction, not a second hidden amount.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F081–F090,F041–F050",
+      "featureOverlap": "F081\u2013F090,F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -3851,14 +3851,14 @@
       "definition": "Combined instructions: if any instruction is refused, the whole transaction is refused.",
       "status": "PASS",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/core-tests.log"
       ],
-      "featureOverlap": "F081–F090,F041–F050",
+      "featureOverlap": "F081\u2013F090,F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -3905,12 +3905,12 @@
       "definition": "Home shows the last receipt, not a chart.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F081–F090,F041–F050",
+      "featureOverlap": "F081\u2013F090,F041\u2013F050",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -3955,12 +3955,12 @@
       "definition": "Optional AI packet is consented, minimized decoded fields plus policy/mint context. No seed, private key, authorization token or evidence bytes.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F091–F100,F111–F120",
+      "featureOverlap": "F091\u2013F100,F111\u2013F120",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -4005,12 +4005,12 @@
       "definition": "Optional Grok is skipped when disabled/unconfigured/placeholder. No provider key is compiled into Android.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F091–F100,F111–F120",
+      "featureOverlap": "F091\u2013F100,F111\u2013F120",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -4055,12 +4055,12 @@
       "definition": "A failed HTTP call shows the status code, not a fake audit score.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F091–F100,F111–F120",
+      "featureOverlap": "F091\u2013F100,F111\u2013F120",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -4105,12 +4105,12 @@
       "definition": "The model note cannot enable Approve.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F091–F100,F111–F120",
+      "featureOverlap": "F091\u2013F100,F111\u2013F120",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -4155,12 +4155,12 @@
       "definition": "SKR reads use the validated mainnet RPC/mint deployment. Public keys are cluster-neutral; do not classify a key as a devnet address from its bytes.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F091–F100,F111–F120",
+      "featureOverlap": "F091\u2013F100,F111\u2013F120",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -4205,12 +4205,12 @@
       "definition": "Devnet-only lock for the memo.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F091–F100,F111–F120",
+      "featureOverlap": "F091\u2013F100,F111\u2013F120",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -4255,12 +4255,12 @@
       "definition": "At most one memo draft rebuild on blockhash expiry, with fresh review and authorization; never reuse prior approval.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F091–F100,F111–F120",
+      "featureOverlap": "F091\u2013F100,F111\u2013F120",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -4308,12 +4308,12 @@
       "definition": "Spam tokens are not listed. Only SOL and official SKR.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F091–F100,F111–F120",
+      "featureOverlap": "F091\u2013F100,F111\u2013F120",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -4358,14 +4358,14 @@
       "definition": "Unknown programs say Do not sign.",
       "status": "PASS",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/core-tests.log"
       ],
-      "featureOverlap": "F091–F100,F111–F120",
+      "featureOverlap": "F091\u2013F100,F111\u2013F120",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -4412,12 +4412,12 @@
       "definition": "P1 remains one focused app. Wider payment/provider concepts are explicitly staged proposals until real supported integrations are qualified.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F091–F100,F111–F120",
+      "featureOverlap": "F091\u2013F100,F111\u2013F120",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -4462,12 +4462,12 @@
       "definition": "Meaningful automated tests cover address validation, all decoder/policy paths, immutable full-message/context binding, receipt rules and optional-AI nonauthority. Device and persistence qualification remain separate.",
       "status": "NOT_RUN",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
-      "featureOverlap": "F091–F100,F111–F120",
+      "featureOverlap": "F091\u2013F100,F111\u2013F120",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],
@@ -4518,7 +4518,7 @@
       "evidencePaths": [
         "evidence/qualification/android-build.log"
       ],
-      "featureOverlap": "F091–F100,F111–F120",
+      "featureOverlap": "F091\u2013F100,F111\u2013F120",
       "mappingScope": "Category overlap; exact criterion is authoritative and overlap does not establish completion.",
       "dependencies": [],
       "checks": [],

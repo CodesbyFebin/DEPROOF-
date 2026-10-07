@@ -6,9 +6,9 @@
       "definition": "Paste a mainnet account address.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/data/Rpc.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -48,9 +48,9 @@
       "definition": "Validate base58 decoding and 32-byte length.",
       "status": "VERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/data/Rpc.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/core-tests.log"
@@ -95,9 +95,9 @@
       "definition": "Read SOL balance from RPC.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/domain/Core.kt"
+        ".build-excluded/example/MainActivity.kt",
+        ".build-excluded/example/data/Rpc.kt",
+        ".build-excluded/example/domain/Core.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/live-rpc.json"
@@ -142,9 +142,9 @@
       "definition": "Format lamports without floating-point loss.",
       "status": "VERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/data/Rpc.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/core-tests.log"
@@ -190,9 +190,9 @@
       "definition": "Read only the verified official SKR mint.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/data/Rpc.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -233,9 +233,9 @@
       "definition": "Sum balances across all matching token accounts.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/data/Rpc.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -276,9 +276,9 @@
       "definition": "Validate token decimals and account metadata.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/data/Rpc.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -321,9 +321,9 @@
       "definition": "Display context slot and observation time.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/domain/Core.kt"
+        ".build-excluded/example/MainActivity.kt",
+        ".build-excluded/example/data/Rpc.kt",
+        ".build-excluded/example/domain/Core.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/live-rpc.json"
@@ -368,9 +368,9 @@
       "definition": "Label pasted accounts as observed, not connected.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/data/Rpc.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -410,9 +410,9 @@
       "definition": "Preserve independent SOL and SKR loading/error states.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/data/Rpc.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -452,9 +452,9 @@
       "definition": "Discover compatible MWA wallets.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/wallet/Wallet.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/wallet/Wallet.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -490,9 +490,9 @@
       "definition": "Request real wallet authorization.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/wallet/Wallet.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/wallet/Wallet.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -530,9 +530,9 @@
       "definition": "Select an authorized account.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/wallet/Wallet.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/wallet/Wallet.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -570,9 +570,9 @@
       "definition": "Display the actual returned account and wallet identity.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/wallet/Wallet.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/wallet/Wallet.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -610,9 +610,9 @@
       "definition": "Disconnect and invalidate the session.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/wallet/Wallet.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/wallet/Wallet.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -650,9 +650,9 @@
       "definition": "Reauthorize when required.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/wallet/Wallet.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/wallet/Wallet.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -688,9 +688,9 @@
       "definition": "Surface missing-wallet errors.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/wallet/Wallet.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/wallet/Wallet.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -726,9 +726,9 @@
       "definition": "Separate devnet and mainnet actions.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/wallet/Wallet.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/wallet/Wallet.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -766,9 +766,9 @@
       "definition": "Sign and submit a minimal devnet memo.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/wallet/Wallet.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/wallet/Wallet.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -807,9 +807,9 @@
       "definition": "Preserve and verify the real returned transaction signature.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/wallet/Wallet.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/wallet/Wallet.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -849,9 +849,9 @@
       "definition": "Load the latest ten signatures with pagination.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/data/Rpc.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -889,9 +889,9 @@
       "definition": "Fetch transaction details.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/data/Rpc.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -929,9 +929,9 @@
       "definition": "Handle unavailable transaction records explicitly.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/data/Rpc.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -969,9 +969,9 @@
       "definition": "Display processed, confirmed, and finalized states.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/data/Rpc.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -1009,9 +1009,9 @@
       "definition": "Display transaction failures and error details.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/data/Rpc.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -1049,9 +1049,9 @@
       "definition": "Show slot and chain block time.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/data/Rpc.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -1089,9 +1089,9 @@
       "definition": "Link to the appropriate explorer and cluster.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/data/Rpc.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -1129,9 +1129,9 @@
       "definition": "Decode history into a reviewable record.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/data/Rpc.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -1173,9 +1173,9 @@
       "definition": "Clearly distinguish historical observation from new authorization.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/data/Rpc.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -1213,8 +1213,8 @@
       "definition": "Refresh status without creating duplicate records.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/data/Store.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/android-build.log",
@@ -1262,9 +1262,9 @@
       "definition": "Verify the token program.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -1312,9 +1312,9 @@
       "definition": "Decode TransferChecked discriminator 12.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -1364,9 +1364,9 @@
       "definition": "Read unsigned u64 amounts in little-endian order.",
       "status": "VERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/core-tests.log"
@@ -1419,9 +1419,9 @@
       "definition": "Validate the decimals byte.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -1469,9 +1469,9 @@
       "definition": "Validate account order and required roles.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -1521,9 +1521,9 @@
       "definition": "Verify the official SKR mint.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -1573,9 +1573,9 @@
       "definition": "Flag SetAuthority.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -1623,9 +1623,9 @@
       "definition": "Flag Approve and delegation.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -1673,9 +1673,9 @@
       "definition": "Refuse unchecked or unsupported transfers in the strict SKR flow.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -1725,9 +1725,9 @@
       "definition": "Inspect every instruction in the transaction.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -1781,9 +1781,9 @@
       "definition": "Present a plain-language transaction summary.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -1848,9 +1848,9 @@
       "definition": "Display full addresses on demand.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -1910,9 +1910,9 @@
       "definition": "Show requester identity and origin.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -1970,9 +1970,9 @@
       "definition": "Show fees and simulation outcomes where available.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -2033,9 +2033,9 @@
       "definition": "Hash the complete serialized transaction message.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -2101,9 +2101,9 @@
       "definition": "Bind review to account, cluster, and timestamp.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -2168,9 +2168,9 @@
       "definition": "Recompute immediately before wallet handoff.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -2232,9 +2232,9 @@
       "definition": "Block message or review-context changes.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -2301,9 +2301,9 @@
       "definition": "Require fresh review after blockhash rebuild.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -2366,9 +2366,9 @@
       "definition": "Reject locally without broadcasting.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -2428,8 +2428,8 @@
       "definition": "Capture photos with explicit permission.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Store.kt"
+        ".build-excluded/example/MainActivity.kt",
+        ".build-excluded/example/data/Store.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -2454,8 +2454,8 @@
       "definition": "Import existing photos.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Store.kt"
+        ".build-excluded/example/MainActivity.kt",
+        ".build-excluded/example/data/Store.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -2480,8 +2480,8 @@
       "definition": "Capture or import supported video files.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Store.kt"
+        ".build-excluded/example/MainActivity.kt",
+        ".build-excluded/example/data/Store.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -2506,8 +2506,8 @@
       "definition": "Import documents through Android content APIs.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Store.kt"
+        ".build-excluded/example/MainActivity.kt",
+        ".build-excluded/example/data/Store.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -2532,9 +2532,9 @@
       "definition": "Preview supported evidence types.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/EvidencePreview.kt",
-        "app/src/main/java/com/example/domain/LocalEvidence.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/EvidencePreview.kt",
+        ".build-excluded/example/domain/LocalEvidence.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/core-tests.log",
@@ -2565,8 +2565,8 @@
       "definition": "Add notes.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Store.kt"
+        ".build-excluded/example/MainActivity.kt",
+        ".build-excluded/example/data/Store.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -2591,8 +2591,8 @@
       "definition": "Record capture and import metadata.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Store.kt"
+        ".build-excluded/example/MainActivity.kt",
+        ".build-excluded/example/data/Store.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -2617,10 +2617,10 @@
       "definition": "Collect location only with explicit consent.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/WorkflowWorkspace.kt",
-        "app/src/main/java/com/example/data/LocationCapture.kt",
-        "app/src/main/java/com/example/domain/Workflows.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
+        ".build-excluded/example/WorkflowWorkspace.kt",
+        ".build-excluded/example/data/LocationCapture.kt",
+        ".build-excluded/example/domain/Workflows.kt",
+        ".build-excluded/example/domain/Records.kt",
         "tools/verify.py",
         "contracts/location-observation-v1.schema.json"
       ],
@@ -2663,8 +2663,8 @@
       "definition": "Attach several files to a task.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Store.kt"
+        ".build-excluded/example/MainActivity.kt",
+        ".build-excluded/example/data/Store.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -2691,8 +2691,8 @@
       "definition": "Save drafts and recover after process death.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Store.kt",
+        ".build-excluded/example/MainActivity.kt",
+        ".build-excluded/example/data/Store.kt",
         "app/src/main/resources/db/migration_1_2.sql"
       ],
       "evidencePaths": [
@@ -2724,8 +2724,8 @@
       "definition": "Hash raw file bytes using SHA-256.",
       "status": "VERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Records.kt",
         "tools/verify.py"
       ],
       "evidencePaths": [
@@ -2772,8 +2772,8 @@
       "definition": "Stream large files without loading them fully into memory.",
       "status": "VERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Records.kt",
         "tools/verify.py"
       ],
       "evidencePaths": [
@@ -2820,8 +2820,8 @@
       "definition": "Create versioned deterministic manifests.",
       "status": "VERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Records.kt",
         "tools/verify.py"
       ],
       "evidencePaths": [
@@ -2868,8 +2868,8 @@
       "definition": "Detect digest mismatches.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Records.kt",
         "tools/verify.py"
       ],
       "evidencePaths": [],
@@ -2912,8 +2912,8 @@
       "definition": "Detect duplicate evidence references.",
       "status": "VERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Records.kt",
         "tools/verify.py"
       ],
       "evidencePaths": [
@@ -2959,8 +2959,8 @@
       "definition": "Link evidence digests to the reviewed action.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Records.kt",
         "tools/verify.py"
       ],
       "evidencePaths": [],
@@ -3002,10 +3002,10 @@
       "definition": "Sign versioned evidence envelopes with Android Keystore; support legacy digest mode only with explicit metadata.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/EvidenceSigner.kt",
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
+        ".build-excluded/example/MainActivity.kt",
+        ".build-excluded/example/data/EvidenceSigner.kt",
+        ".build-excluded/example/data/Store.kt",
+        ".build-excluded/example/domain/Records.kt",
         "app/src/main/resources/db/migration_1_2.sql",
         "tools/verify.py"
       ],
@@ -3057,8 +3057,8 @@
       "definition": "Refuse software or unqualified keys for hardware-required signing.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/EvidenceSigner.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
+        ".build-excluded/example/data/EvidenceSigner.kt",
+        ".build-excluded/example/domain/Records.kt",
         "tools/verify.py"
       ],
       "evidencePaths": [],
@@ -3107,8 +3107,8 @@
       "definition": "Report observed key security level accurately.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/EvidenceSigner.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
+        ".build-excluded/example/data/EvidenceSigner.kt",
+        ".build-excluded/example/domain/Records.kt",
         "tools/verify.py"
       ],
       "evidencePaths": [],
@@ -3151,8 +3151,8 @@
       "definition": "Verify signatures independently and reject tampering.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/EvidenceSigner.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
+        ".build-excluded/example/data/EvidenceSigner.kt",
+        ".build-excluded/example/domain/Records.kt",
         "tools/verify.py"
       ],
       "evidencePaths": [],
@@ -3197,9 +3197,9 @@
       "definition": "Create local field-verification tasks.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/data/Store.kt",
+        ".build-excluded/example/MainActivity.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -3239,9 +3239,9 @@
       "definition": "Search and filter tasks.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/data/Store.kt",
+        ".build-excluded/example/MainActivity.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -3279,9 +3279,9 @@
       "definition": "Track task requirements and checklist progress.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/data/Store.kt",
+        ".build-excluded/example/MainActivity.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -3319,9 +3319,9 @@
       "definition": "Associate evidence with tasks.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/data/Store.kt",
+        ".build-excluded/example/MainActivity.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -3361,9 +3361,9 @@
       "definition": "Generate refusal receipts with no chain signature.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/data/Store.kt",
+        ".build-excluded/example/MainActivity.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -3405,9 +3405,9 @@
       "definition": "Generate historical observation receipts.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/data/Store.kt",
+        ".build-excluded/example/MainActivity.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -3449,9 +3449,9 @@
       "definition": "Generate local evidence-signature receipts.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/data/Store.kt",
+        ".build-excluded/example/MainActivity.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -3494,9 +3494,9 @@
       "definition": "Generate submission receipts only after actual submission.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/data/Store.kt",
+        ".build-excluded/example/MainActivity.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -3538,9 +3538,9 @@
       "definition": "Track pending, confirmed, finalized, failed, and unavailable observations.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/domain/Records.kt",
+        ".build-excluded/example/MainActivity.kt",
+        ".build-excluded/example/data/Store.kt",
+        ".build-excluded/example/domain/Records.kt",
         "app/src/main/resources/db/migration_1_2.sql"
       ],
       "evidencePaths": [
@@ -3593,9 +3593,9 @@
       "definition": "Persist, search, inspect, and export receipts.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/Store.kt",
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/Records.kt"
+        ".build-excluded/example/data/Store.kt",
+        ".build-excluded/example/MainActivity.kt",
+        ".build-excluded/example/domain/Records.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -4010,8 +4010,8 @@
       "definition": "Detect combined sensitive actions.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -4049,8 +4049,8 @@
       "definition": "Flag token account close and burn instructions.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -4088,8 +4088,8 @@
       "definition": "Explain account creation and rent effects.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Explanations.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/domain/Explanations.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/core-tests.log"
@@ -4132,8 +4132,8 @@
       "definition": "Warn about broad delegation.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -4171,8 +4171,8 @@
       "definition": "Display first-seen program indicators.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/LocalEvidence.kt"
+        ".build-excluded/example/MainActivity.kt",
+        ".build-excluded/example/domain/LocalEvidence.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/core-tests.log",
@@ -4216,8 +4216,8 @@
       "definition": "Use a versioned program policy registry.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Core.kt",
-        "app/src/main/java/com/example/domain/Solana.kt"
+        ".build-excluded/example/domain/Core.kt",
+        ".build-excluded/example/domain/Solana.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -4255,8 +4255,8 @@
       "definition": "Rebuild expired transactions with a fresh review.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/domain/Solana.kt"
+        ".build-excluded/example/MainActivity.kt",
+        ".build-excluded/example/domain/Solana.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/core-tests.log",
@@ -4302,8 +4302,8 @@
       "definition": "Calculate fee/rent impact from live context.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/data/Rpc.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -4343,8 +4343,8 @@
       "definition": "Preserve unavailable states during network failure.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/data/Rpc.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -4384,8 +4384,8 @@
       "definition": "Provide bounded retry, cancellation, and stale-data indicators.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/data/Rpc.kt",
-        "app/src/main/java/com/example/MainActivity.kt"
+        ".build-excluded/example/data/Rpc.kt",
+        ".build-excluded/example/MainActivity.kt"
       ],
       "evidencePaths": [],
       "dependencies": [],
@@ -4498,10 +4498,10 @@
       "definition": "Bandwidth usage and contribution ledger.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        ".build-excluded/example/NodeWorkspace.kt",
+        ".build-excluded/example/data/NodeClient.kt",
+        ".build-excluded/example/data/NodeRepository.kt",
+        ".build-excluded/example/domain/NodeProtocol.kt",
         "node-agent/internal/agent/agent.go",
         "node-agent/internal/agent/proof.go",
         "prover-worker/cmd/prove/main.go",
@@ -4544,9 +4544,9 @@
       "definition": "Mapping task planner.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/WorkflowWorkspace.kt",
-        "app/src/main/java/com/example/domain/Workflows.kt",
-        "app/src/main/java/com/example/data/Store.kt"
+        ".build-excluded/example/WorkflowWorkspace.kt",
+        ".build-excluded/example/domain/Workflows.kt",
+        ".build-excluded/example/data/Store.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/core-tests.log",
@@ -4631,10 +4631,10 @@
       "definition": "Compute-node health monitoring.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/NodeWorkspace.kt",
-        "app/src/main/java/com/example/data/NodeClient.kt",
-        "app/src/main/java/com/example/data/NodeRepository.kt",
-        "app/src/main/java/com/example/domain/NodeProtocol.kt",
+        ".build-excluded/example/NodeWorkspace.kt",
+        ".build-excluded/example/data/NodeClient.kt",
+        ".build-excluded/example/data/NodeRepository.kt",
+        ".build-excluded/example/domain/NodeProtocol.kt",
         "node-agent/internal/agent/agent.go",
         "node-agent/internal/agent/proof.go",
         "prover-worker/cmd/prove/main.go",
@@ -4673,7 +4673,7 @@
       "definition": "Presence-evidence records with explicit assurance limits.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/domain/Records.kt",
+        ".build-excluded/example/domain/Records.kt",
         "docs/threat-model.md"
       ],
       "evidencePaths": [],
@@ -4873,9 +4873,9 @@
       "definition": "Local reminders and notification preferences.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/WorkflowWorkspace.kt",
-        "app/src/main/java/com/example/data/ReminderRepository.kt",
-        "app/src/main/java/com/example/domain/Workflows.kt",
+        ".build-excluded/example/WorkflowWorkspace.kt",
+        ".build-excluded/example/data/ReminderRepository.kt",
+        ".build-excluded/example/domain/Workflows.kt",
         "app/src/main/AndroidManifest.xml"
       ],
       "evidencePaths": [
@@ -4922,8 +4922,8 @@
       "definition": "Dark/light themes, screen-reader support, and large-text layouts.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/MainActivity.kt",
-        "app/src/main/java/com/example/Theme.kt",
+        ".build-excluded/example/MainActivity.kt",
+        ".build-excluded/example/Theme.kt",
         "scripts/build-web.py",
         "web/inspect.js",
         "web/style.css"
@@ -4976,8 +4976,8 @@
       "definition": "Localization with complete translation coverage.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/LanguageControls.kt",
-        "app/src/main/java/com/example/MainActivity.kt",
+        ".build-excluded/example/LanguageControls.kt",
+        ".build-excluded/example/MainActivity.kt",
         "app/src/main/res/values/strings.xml",
         "app/src/main/res/values-es/strings.xml"
       ],
@@ -5023,10 +5023,10 @@
       "definition": "Optional encrypted backup and restore.",
       "status": "IMPLEMENTED_UNVERIFIED",
       "implementationPaths": [
-        "app/src/main/java/com/example/BackupWorkspace.kt",
-        "app/src/main/java/com/example/data/BackupRepository.kt",
-        "app/src/main/java/com/example/domain/Backup.kt",
-        "app/src/main/java/com/example/data/Store.kt"
+        ".build-excluded/example/BackupWorkspace.kt",
+        ".build-excluded/example/data/BackupRepository.kt",
+        ".build-excluded/example/domain/Backup.kt",
+        ".build-excluded/example/data/Store.kt"
       ],
       "evidencePaths": [
         "evidence/qualification/android-build.log",
