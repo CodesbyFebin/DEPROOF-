@@ -52,13 +52,13 @@ class SolanaRpcClientImpl(
      */
     suspend fun getAccountInfo(account: String): Result<AccountInfo> =
         withContext(Dispatchers.IO) {
-            callJsonRpc<ObjectNode>("getAccountInfo", listOf(
+            callJsonRpc("getAccountInfo", listOf(
                 account,
                 ObjectNode(JsonNodeFactory.instance).apply {
                     put("encoding", "base64")
                 }
             )).mapCatching { response ->
-                parseAccountInfo(response)
+                parseAccountInfo(response as? ObjectNode ?: throw ParseError("Expected ObjectNode"))
             }
         }
 
@@ -90,14 +90,14 @@ class SolanaRpcClientImpl(
                 }
             }
 
-            callJsonRpc<ObjectNode>("getTokenAccountsByOwner", listOf(
+            callJsonRpc("getTokenAccountsByOwner", listOf(
                 owner,
                 filter,
                 ObjectNode(JsonNodeFactory.instance).apply {
                     put("encoding", "jsonParsed")
                 }
             )).mapCatching { response ->
-                parseTokenAccounts(response)
+                parseTokenAccounts(response as? ObjectNode ?: throw ParseError("Expected ObjectNode"))
             }
         }
 
@@ -109,8 +109,9 @@ class SolanaRpcClientImpl(
             val sigArray = ArrayNode(JsonNodeFactory.instance)
             signatures.forEach { sigArray.add(it) }
 
-            callJsonRpc<ArrayNode>("getSignatureStatuses", listOf(sigArray)).mapCatching { response ->
-                response.mapNotNull { status ->
+            callJsonRpc("getSignatureStatuses", listOf(sigArray)).mapCatching { response ->
+                val arrayResponse = response as? ArrayNode ?: throw ParseError("Expected ArrayNode")
+                arrayResponse.mapNotNull { status ->
                     if (status.isNull) null
                     else parseSignatureStatus(status as ObjectNode)
                 }
@@ -123,10 +124,10 @@ class SolanaRpcClientImpl(
      *
      * Returns Result.success with parsed response or Result.failure with RpcError/NetworkError.
      */
-    private suspend inline fun <reified T : JsonNode> callJsonRpc(
+    private suspend fun callJsonRpc(
         method: String,
         params: List<Any>
-    ): Result<T> {
+    ): Result<JsonNode> {
         val requestId = requestIdCounter.incrementAndGet()
         val paramsArray = ArrayNode(JsonNodeFactory.instance)
         params.forEach { param ->
@@ -167,9 +168,9 @@ class SolanaRpcClientImpl(
     /**
      * Executes an HTTP request with error handling.
      */
-    private suspend inline fun <reified T : JsonNode> executeRequest(
+    private suspend fun executeRequest(
         body: String
-    ): Result<T> = withContext(Dispatchers.IO) {
+    ): Result<JsonNode> = withContext(Dispatchers.IO) {
         try {
             val request = Request.Builder()
                 .url(endpoint.url)
@@ -200,8 +201,7 @@ class SolanaRpcClientImpl(
                 return@withContext Result.failure(ParseError("No result in JSON-RPC response"))
             }
 
-            @Suppress("UNCHECKED_CAST")
-            Result.success(jsonResponse["result"] as T)
+            Result.success(jsonResponse["result"])
         } catch (e: java.net.SocketTimeoutException) {
             Result.failure(NetworkError("Request timeout: ${e.message}"))
         } catch (e: java.net.ConnectException) {
