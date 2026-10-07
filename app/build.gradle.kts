@@ -5,6 +5,7 @@ plugins {
     id("com.android.application")
     id("com.google.devtools.ksp")
     kotlin("plugin.serialization")
+    kotlin("plugin.compose")
 }
 
 android {
