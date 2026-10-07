@@ -122,8 +122,8 @@ fun NowScreen(
                 Column(modifier = Modifier.padding(16.dp)) {
                     Text("Address: ${shortKey(address)}", style = MaterialTheme.typography.bodySmall, fontFamily = FontFamily.Monospace)
                     Spacer(modifier = Modifier.height(12.dp))
-                    Text("RPC integration coming soon", style = MaterialTheme.typography.bodyMedium, color = Color.Gray)
-                    Text("Balances and signatures will appear here once RPC is configured", style = MaterialTheme.typography.bodySmall, color = Color.Gray)
+                    Text("RPC integration in progress", style = MaterialTheme.typography.bodyMedium, color = Color.Gray)
+                    Text("Balances and signatures will appear here", style = MaterialTheme.typography.bodySmall, color = Color.Gray)
                 }
             }
         }

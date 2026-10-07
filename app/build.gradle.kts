@@ -75,10 +75,10 @@ dependencies {
     // ksp("androidx.room:room-compiler:2.6.0")
 
     // Retrofit & OkHttp
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation(libs.retrofit)
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation("com.squareup.okhttp3:okhttp:4.11.0")
-    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
+    implementation(libs.okhttp)
+    implementation(libs.logging.interceptor)
 
     // JSON
     implementation("com.google.code.gson:gson:2.10.1")
