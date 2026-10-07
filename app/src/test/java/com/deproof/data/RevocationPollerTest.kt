@@ -212,13 +212,13 @@ invalid line
     }
 
     private fun RevocationPoller.readRevocationLog(): List<SessionRevocation> {
-        val revocationFile = File("app/src/test/java/com/deproof/data/../../../../../main/kotlin/com/deproof/data/../../../../../test/fixtures/revocations.log")
         val revocations = mutableListOf<SessionRevocation>()
 
-        val file = File(revocationFile.parent, "revocations.log")
-        if (!file.exists()) {
+        if (!revocationFile.exists()) {
             return revocations
         }
+
+        val file = revocationFile
 
         try {
             file.bufferedReader().use { reader ->
