@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "com.example"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.aistudio.deproof.sdwk"
-        minSdk = 26
-        targetSdk = 34
+        minSdk = 24
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
@@ -33,8 +33,8 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    kotlinOptions {
-        jvmTarget = "17"
+    kotlin {
+        jvmToolchain(21)
     }
 
     buildFeatures {
@@ -42,11 +42,7 @@ android {
         buildConfig = true
     }
 
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.3"
-    }
-
-    packagingOptions {
+    packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
@@ -89,8 +85,8 @@ dependencies {
     // MWA (Mobile Wallet Adapter)
     implementation("com.solanamobile:mobile-wallet-adapter-clientlib-ktx:2.0.7")
 
-    // Solana Web3
-    implementation("com.solanamobile:web3:0.2.1")
+    // Solana Web3 (commented out during Maven Central rate limiting)
+    // implementation("com.solanamobile:web3:0.2.1")
 
     // Cryptography
     implementation("org.bouncycastle:bcprov-jdk15on:1.70")
@@ -101,8 +97,8 @@ dependencies {
     // Testing
     testImplementation("junit:junit:4.13.2")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
-    testImplementation("org.mockito.kotlin:mockito-kotlin:5.1.0")
-    testImplementation("org.mockito:mockito-core:5.5.1")
+    // testImplementation("org.mockito.kotlin:mockito-kotlin:5.1.0")
+    // testImplementation("org.mockito:mockito-core:5.5.1")
 
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
