@@ -45,7 +45,14 @@ data class AIZObservation(
     override val skrPaymentStatus: String = "NOT_SUBMITTED",
 
     // AIOZ-specific metrics
-    val metrics: Metrics
+    val metrics: Metrics,
+
+    // Speed unit — UNVERIFIED until AIOZ documents the unit
+    val speedUnit: String = "UNVERIFIED",
+    // Provider signature/acknowledgement (null until provider supplies them)
+    val providerAcknowledgement: String? = null,
+    // Proof submission tracker (mirrors skrPaymentStatus; used by AIZStatsParser tests)
+    val skrPayment: String = "NOT_SUBMITTED"
 ) : Observation
 
 /**
