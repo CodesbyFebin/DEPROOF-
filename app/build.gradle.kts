@@ -96,6 +96,8 @@ android {
         resources {
             // Exclude duplicates
             excludes += "META-INF/LICENSE"
+            excludes += "META-INF/LICENSE.md"
+            excludes += "META-INF/LICENSE-notice.md"
             excludes += "META-INF/NOTICE"
             excludes += "META-INF/AL2.0"
             excludes += "META-INF/LGPL2.1"
@@ -201,6 +203,7 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     androidTestImplementation("androidx.test.espresso:espresso-intents:3.5.1")
     androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.5.4")
+    androidTestImplementation("org.jetbrains.kotlin:kotlin-test:1.9.10")
     androidTestImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.2")
     androidTestImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.2")
     androidTestImplementation("io.mockk:mockk-android:1.13.7")

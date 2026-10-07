@@ -129,10 +129,10 @@ class TransactionOperationsTest {
         val transaction = builder.build()
         assertTrue(transaction.isSuccess)
 
-        // Transaction should support multiple signatures
+        // Transaction should have proper structure
         val tx = transaction.getOrNull()
         assertNotNull(tx)
-        assertTrue(tx?.signatures?.isEmpty() == true) // Initially empty
+        assertEquals(1, tx?.instructions?.size)
     }
 
     @Test
