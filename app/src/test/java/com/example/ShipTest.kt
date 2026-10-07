@@ -14,6 +14,7 @@ import com.example.util.readU64LE
 import com.example.util.sha256Text
 import org.junit.Assert.*
 import org.junit.Test
+import java.util.Base64
 
 class ShipTest {
 
@@ -85,7 +86,7 @@ class ShipTest {
     @Test
     fun testDecode_TransferChecked_PayableScenario() {
         val data = byteArrayOf(12, 0, 0, 0, 0, 0, 0, 0, 0, 6)
-        val encoded = android.util.Base64.encodeToString(data, android.util.Base64.DEFAULT)
+        val encoded = Base64.getEncoder().encodeToString(data)
 
         val instruction = Instruction(
             programIdIndex = 0,
@@ -111,7 +112,7 @@ class ShipTest {
     @Test
     fun testDecode_TransferChecked_WrongDecimals() {
         val data = byteArrayOf(12, 0, 0, 0, 0, 0, 0, 0, 0, 9)
-        val encoded = android.util.Base64.encodeToString(data, android.util.Base64.DEFAULT)
+        val encoded = Base64.getEncoder().encodeToString(data)
 
         val instruction = Instruction(
             programIdIndex = 0,
@@ -138,7 +139,7 @@ class ShipTest {
     @Test
     fun testDecode_TransferChecked_WrongMint() {
         val data = byteArrayOf(12, 0, 0, 0, 0, 0, 0, 0, 0, 6)
-        val encoded = android.util.Base64.encodeToString(data, android.util.Base64.DEFAULT)
+        val encoded = Base64.getEncoder().encodeToString(data)
 
         val instruction = Instruction(
             programIdIndex = 0,
@@ -164,7 +165,7 @@ class ShipTest {
     @Test
     fun testDecode_SetAuthority_Refused() {
         val data = byteArrayOf(6)
-        val encoded = android.util.Base64.encodeToString(data, android.util.Base64.DEFAULT)
+        val encoded = Base64.getEncoder().encodeToString(data)
 
         val instruction = Instruction(
             programIdIndex = 0,
@@ -186,7 +187,7 @@ class ShipTest {
     @Test
     fun testDecode_Approve_Refused() {
         val data = byteArrayOf(4)
-        val encoded = android.util.Base64.encodeToString(data, android.util.Base64.DEFAULT)
+        val encoded = Base64.getEncoder().encodeToString(data)
 
         val instruction = Instruction(
             programIdIndex = 0,
@@ -208,7 +209,7 @@ class ShipTest {
     @Test
     fun testDecode_Transfer_Refused() {
         val data = byteArrayOf(3)
-        val encoded = android.util.Base64.encodeToString(data, android.util.Base64.DEFAULT)
+        val encoded = Base64.getEncoder().encodeToString(data)
 
         val instruction = Instruction(
             programIdIndex = 0,
@@ -230,7 +231,7 @@ class ShipTest {
     @Test
     fun testDecode_SolStakeDeactivate() {
         val data = byteArrayOf(5, 0, 0, 0) // discriminator 5 = deactivate
-        val encoded = android.util.Base64.encodeToString(data, android.util.Base64.DEFAULT)
+        val encoded = Base64.getEncoder().encodeToString(data)
 
         val instruction = Instruction(
             programIdIndex = 0,
@@ -399,7 +400,8 @@ class ShipTest {
     fun testBase58_Decode() {
         val encoded = "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3"
         val decoded = Base58.decode(encoded)
-        assertEquals(32, decoded.size)
+        // This should decode to exactly 32 bytes
+        assertEquals("Decoded size should be 32", 32, decoded.size)
     }
 
     @Test

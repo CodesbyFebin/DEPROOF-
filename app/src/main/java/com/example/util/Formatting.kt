@@ -32,7 +32,8 @@ fun formatSkr(raw: Long): String {
 }
 
 fun isPubkey(input: String): Boolean {
-    if (input.length != 44) return false
+    // Solana public keys in base58 are 32 bytes, which encodes to 43-44 characters
+    if (input.length < 43 || input.length > 44) return false
     return try {
         Base58.decode(input).size == 32
     } catch (e: Exception) {
@@ -53,11 +54,19 @@ object Base58 {
             num = num.multiply(base).add(BigInteger.valueOf(index.toLong()))
         }
 
-        val bytes58 = num.toByteArray()
-        val leadingZeros = encoded.takeWhile { it == '1' }.length
+        // Get the byte representation; BigInteger.toByteArray() returns two's complement
+        // For positive numbers, it may include a 0x00 prefix to indicate sign
+        var bytes = num.toByteArray()
 
-        val result = ByteArray(leadingZeros + bytes58.size)
-        System.arraycopy(bytes58, 0, result, leadingZeros, bytes58.size)
+        // Remove leading zero byte if it's just a sign indicator (high bit of next byte is 0)
+        if (bytes.size > 1 && bytes[0] == 0x00.toByte() && (bytes[1].toInt() and 0x80) == 0) {
+            bytes = bytes.sliceArray(1 until bytes.size)
+        }
+
+        // Handle leading zeros represented as '1' in the base58 string
+        val leadingZeros = encoded.takeWhile { it == '1' }.length
+        val result = ByteArray(leadingZeros + bytes.size)
+        System.arraycopy(bytes, 0, result, leadingZeros, bytes.size)
         return result
     }
 

@@ -5,6 +5,7 @@ import com.example.chain.Verdict
 import com.example.util.readU32LE
 import com.example.util.readU64LE
 import com.example.util.shortKey
+import java.util.Base64
 
 class InstructionDecoder {
     companion object {
@@ -41,7 +42,7 @@ class InstructionDecoder {
             instruction: Instruction
         ): Verdict {
             return try {
-                val bytes = android.util.Base64.decode(data, android.util.Base64.DEFAULT)
+                val bytes = Base64.getDecoder().decode(data)
                 if (bytes.isEmpty()) {
                     return Verdict(
                         title = "Malformed Instruction",
@@ -175,7 +176,7 @@ class InstructionDecoder {
 
         private fun decodeSolStakeInstruction(data: String): Verdict {
             return try {
-                val bytes = android.util.Base64.decode(data, android.util.Base64.DEFAULT)
+                val bytes = Base64.getDecoder().decode(data)
                 if (bytes.size < 4) {
                     return Verdict(
                         title = "Malformed SOL Stake",

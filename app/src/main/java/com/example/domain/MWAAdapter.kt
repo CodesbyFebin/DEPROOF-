@@ -85,7 +85,7 @@ object MWAAdapter {
     }
 
     fun validatePublicKey(key: String): Boolean {
-        // Validate Solana base58 public key (44 chars)
-        return key.length == 44 && key.all { it in "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz" }
+        // Validate Solana base58 public key (43-44 chars)
+        return (key.length in 43..44) && key.all { it in "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz" }
     }
 }
