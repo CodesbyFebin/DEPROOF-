@@ -1,0 +1,845 @@
+{
+  "count": 120,
+  "features": [
+    {
+      "id": "F001",
+      "definition": "Paste a mainnet account address.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F002",
+      "definition": "Validate base58 decoding and 32-byte length.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F003",
+      "definition": "Read SOL balance from RPC.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F004",
+      "definition": "Format lamports without floating-point loss.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F005",
+      "definition": "Read only the verified official SKR mint.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F006",
+      "definition": "Sum balances across all matching token accounts.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F007",
+      "definition": "Validate token decimals and account metadata.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F008",
+      "definition": "Display context slot and observation time.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F009",
+      "definition": "Label pasted accounts as observed, not connected.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F010",
+      "definition": "Preserve independent SOL and SKR loading/error states.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F011",
+      "definition": "Discover compatible MWA wallets.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F012",
+      "definition": "Request real wallet authorization.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F013",
+      "definition": "Select an authorized account.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F014",
+      "definition": "Display the actual returned account and wallet identity.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F015",
+      "definition": "Disconnect and invalidate the session.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F016",
+      "definition": "Reauthorize when required.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F017",
+      "definition": "Surface missing-wallet errors.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F018",
+      "definition": "Separate devnet and mainnet actions.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F019",
+      "definition": "Sign and submit a minimal devnet memo.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F020",
+      "definition": "Preserve and verify the real returned transaction signature.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F021",
+      "definition": "Load the latest ten signatures with pagination.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F022",
+      "definition": "Fetch transaction details.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F023",
+      "definition": "Handle unavailable transaction records explicitly.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F024",
+      "definition": "Display processed, confirmed, and finalized states.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F025",
+      "definition": "Display transaction failures and error details.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F026",
+      "definition": "Show slot and chain block time.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F027",
+      "definition": "Link to the appropriate explorer and cluster.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F028",
+      "definition": "Decode history into a reviewable record.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F029",
+      "definition": "Clearly distinguish historical observation from new authorization.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F030",
+      "definition": "Refresh status without creating duplicate records.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F031",
+      "definition": "Verify the token program.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F032",
+      "definition": "Decode TransferChecked discriminator 12.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F033",
+      "definition": "Read unsigned u64 amounts in little-endian order.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F034",
+      "definition": "Validate the decimals byte.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F035",
+      "definition": "Validate account order and required roles.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F036",
+      "definition": "Verify the official SKR mint.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F037",
+      "definition": "Flag SetAuthority.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F038",
+      "definition": "Flag Approve and delegation.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F039",
+      "definition": "Refuse unchecked or unsupported transfers in the strict SKR flow.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F040",
+      "definition": "Inspect every instruction in the transaction.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F041",
+      "definition": "Present a plain-language transaction summary.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F042",
+      "definition": "Display full addresses on demand.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F043",
+      "definition": "Show requester identity and origin.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F044",
+      "definition": "Show fees and simulation outcomes where available.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F045",
+      "definition": "Hash the complete serialized transaction message.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F046",
+      "definition": "Bind review to account, cluster, and timestamp.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F047",
+      "definition": "Recompute immediately before wallet handoff.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F048",
+      "definition": "Block message or review-context changes.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F049",
+      "definition": "Require fresh review after blockhash rebuild.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F050",
+      "definition": "Reject locally without broadcasting.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F051",
+      "definition": "Capture photos with explicit permission.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F052",
+      "definition": "Import existing photos.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F053",
+      "definition": "Capture or import supported video files.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F054",
+      "definition": "Import documents through Android content APIs.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F055",
+      "definition": "Preview supported evidence types.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F056",
+      "definition": "Add notes.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F057",
+      "definition": "Record capture and import metadata.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F058",
+      "definition": "Collect location only with explicit consent.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F059",
+      "definition": "Attach several files to a task.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F060",
+      "definition": "Save drafts and recover after process death.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F061",
+      "definition": "Hash raw file bytes using SHA-256.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F062",
+      "definition": "Stream large files without loading them fully into memory.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F063",
+      "definition": "Create versioned deterministic manifests.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F064",
+      "definition": "Detect digest mismatches.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F065",
+      "definition": "Detect duplicate evidence references.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F066",
+      "definition": "Link evidence digests to the reviewed action.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F067",
+      "definition": "Sign versioned evidence envelopes with Android Keystore; support legacy digest mode only with explicit metadata.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F068",
+      "definition": "Refuse software or unqualified keys for hardware-required signing.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F069",
+      "definition": "Report observed key security level accurately.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F070",
+      "definition": "Verify signatures independently and reject tampering.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F071",
+      "definition": "Create local field-verification tasks.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F072",
+      "definition": "Search and filter tasks.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F073",
+      "definition": "Track task requirements and checklist progress.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F074",
+      "definition": "Associate evidence with tasks.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F075",
+      "definition": "Generate refusal receipts with no chain signature.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F076",
+      "definition": "Generate historical observation receipts.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F077",
+      "definition": "Generate local evidence-signature receipts.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F078",
+      "definition": "Generate submission receipts only after actual submission.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F079",
+      "definition": "Track pending, confirmed, finalized, failed, and unavailable observations.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F080",
+      "definition": "Persist, search, inspect, and export receipts.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F081",
+      "definition": "Verify official staking program specifications.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F082",
+      "definition": "Decode supported staking instructions from validated layouts.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F083",
+      "definition": "Identify verified guardian metadata.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F084",
+      "definition": "Distinguish liquid, staked, and cooling balances.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F085",
+      "definition": "Gate staking against observed eligibility and unlocked balances.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F086",
+      "definition": "Preview partial unstake consequences.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F087",
+      "definition": "Show protocol cooldown only from verified state; keep user-supplied illustrative timers visually distinct.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F088",
+      "definition": "Enable withdrawal only when protocol eligibility is established.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F089",
+      "definition": "Track claims from verified season rules.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F090",
+      "definition": "Keep stake-on-claim opt-in and disclose source/date of yield information.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F091",
+      "definition": "Detect combined sensitive actions.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F092",
+      "definition": "Flag token account close and burn instructions.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F093",
+      "definition": "Explain account creation and rent effects.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F094",
+      "definition": "Warn about broad delegation.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F095",
+      "definition": "Display first-seen program indicators.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F096",
+      "definition": "Use a versioned program policy registry.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F097",
+      "definition": "Rebuild expired transactions with a fresh review.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F098",
+      "definition": "Calculate fee/rent impact from live context.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F099",
+      "definition": "Preserve unavailable states during network failure.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F100",
+      "definition": "Provide bounded retry, cancellation, and stale-data indicators.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F101",
+      "definition": "Hotspot coverage and earnings observation.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F102",
+      "definition": "Earnings-degradation alerts.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F103",
+      "definition": "Connectivity-plan comparison from attributable data.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F104",
+      "definition": "Bandwidth usage and contribution ledger.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F105",
+      "definition": "Mapping task planner.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F106",
+      "definition": "Energy-device observation.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F107",
+      "definition": "Sensor records with provenance.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F108",
+      "definition": "Compute-node health monitoring.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F109",
+      "definition": "Presence-evidence records with explicit assurance limits.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F110",
+      "definition": "Hardware transaction coordination through a verified external provider.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F111",
+      "definition": "Task-based split-payment proposal and review.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F112",
+      "definition": "Rent/deposit record tracking without claiming unverified escrow.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F113",
+      "definition": "Remittance provider discovery with transparent quotes and explicit provider handoff.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F114",
+      "definition": "Evidence/account recovery guidance and verified backup/provider handoff without wallet secrets, recovery-service upsells or promises to recover stolen funds.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F115",
+      "definition": "Local reminders and notification preferences.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F116",
+      "definition": "Dark/light themes, screen-reader support, and large-text layouts.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F117",
+      "definition": "Localization with complete translation coverage.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F118",
+      "definition": "Optional encrypted backup and restore.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F119",
+      "definition": "Accurate multipage marketing/documentation website.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    },
+    {
+      "id": "F120",
+      "definition": "Signed release packaging, checksums, qualification report, and submission bundle.",
+      "status": "NOT_STARTED",
+      "implementationPaths": [],
+      "evidencePaths": []
+    }
+  ]
+}

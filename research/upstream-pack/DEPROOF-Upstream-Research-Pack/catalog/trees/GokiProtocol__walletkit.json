@@ -1,0 +1,844 @@
+{
+  "repository": "GokiProtocol/walletkit",
+  "tree_sha": "be0b834b2a12c06b8696a1e3b2c97dd992a7c6bd",
+  "truncated": false,
+  "entries": [
+    {
+      "path": ".eslintrc.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "600254be13bbd6ec9b209f1a625b2f8599495926",
+      "size": 277,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/600254be13bbd6ec9b209f1a625b2f8599495926"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a1e266394efcc90d9ea382a4227d10a2b253547e",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/a1e266394efcc90d9ea382a4227d10a2b253547e"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1d10febc94d761211476a94925e0449fce67d38",
+      "size": 204,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/c1d10febc94d761211476a94925e0449fce67d38"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c5e96a5618ddb4a0b52ff3a2aa5f10c5667cda44",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/c5e96a5618ddb4a0b52ff3a2aa5f10c5667cda44"
+    },
+    {
+      "path": ".github/workflows/main.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ac20debf4146262a84ea1e1bc1af8e2f0f4b376",
+      "size": 788,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/6ac20debf4146262a84ea1e1bc1af8e2f0f4b376"
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e44e11b6b44a14c5538f4396478f21dc4df53cd",
+      "size": 1923,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/7e44e11b6b44a14c5538f4396478f21dc4df53cd"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ba0d1f18a32cfbf88dc33cfb5105ce01c2673f1",
+      "size": 1872,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/4ba0d1f18a32cfbf88dc33cfb5105ce01c2673f1"
+    },
+    {
+      "path": ".husky",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9d938abeadaaf83ee0a3dbd8dbfe2d931820991f",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/9d938abeadaaf83ee0a3dbd8dbfe2d931820991f"
+    },
+    {
+      "path": ".husky/pre-commit",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "d2ae35e84b09c1e66a6fc7a1f5d00c80f0a4ec28",
+      "size": 59,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/d2ae35e84b09c1e66a6fc7a1f5d00c80f0a4ec28"
+    },
+    {
+      "path": ".prettierignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60239afcfdf44644bfa34ff707bf72f632a846e0",
+      "size": 7,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/60239afcfdf44644bfa34ff707bf72f632a846e0"
+    },
+    {
+      "path": ".vscode",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b3199462d364d82d2f16bbb77581a880d1ca7616",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/b3199462d364d82d2f16bbb77581a880d1ca7616"
+    },
+    {
+      "path": ".vscode/extensions.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "daaa5ee2ec3f21f43965ff0d83625bcbe5fd47e8",
+      "size": 118,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/daaa5ee2ec3f21f43965ff0d83625bcbe5fd47e8"
+    },
+    {
+      "path": ".vscode/settings.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62999ce5177917aafc42ad440f0cb25f05b87fb2",
+      "size": 269,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/62999ce5177917aafc42ad440f0cb25f05b87fb2"
+    },
+    {
+      "path": ".yarn",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b9cd68782697068fd75a37fb7f0c14954c4c5f12",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/b9cd68782697068fd75a37fb7f0c14954c4c5f12"
+    },
+    {
+      "path": ".yarn/plugins",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "830b77097b99369f2c207ed57b2c590dff5ea0bd",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/830b77097b99369f2c207ed57b2c590dff5ea0bd"
+    },
+    {
+      "path": ".yarn/plugins/@yarnpkg",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e19b21a0bf9371151d38a65c9f2ac6cbde4d8ddd",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/e19b21a0bf9371151d38a65c9f2ac6cbde4d8ddd"
+    },
+    {
+      "path": ".yarn/plugins/@yarnpkg/plugin-interactive-tools.cjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d3e2a39b7a51d4fac574aca6acf2c8a1099b049",
+      "size": 1093181,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/8d3e2a39b7a51d4fac574aca6acf2c8a1099b049"
+    },
+    {
+      "path": ".yarn/plugins/@yarnpkg/plugin-typescript.cjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c1859e0b90d1ed907fc2d28f55684c2a6a60f56",
+      "size": 34706,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/5c1859e0b90d1ed907fc2d28f55684c2a6a60f56"
+    },
+    {
+      "path": ".yarn/releases",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7693f90edb57b0e049496857d7d956c21da977cc",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/7693f90edb57b0e049496857d7d956c21da977cc"
+    },
+    {
+      "path": ".yarn/releases/yarn-4.0.0-rc.6.cjs",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "eeb6dfd1aac7a79fcbba1db36a71a4466f903b42",
+      "size": 2800822,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/eeb6dfd1aac7a79fcbba1db36a71a4466f903b42"
+    },
+    {
+      "path": ".yarn/sdks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f7d8296029b673cea0d4a833989e9402a9d757a8",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/f7d8296029b673cea0d4a833989e9402a9d757a8"
+    },
+    {
+      "path": ".yarn/sdks/eslint",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "46c561e29038f23a0ffd8184fd0e6c5c020f1a2b",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/46c561e29038f23a0ffd8184fd0e6c5c020f1a2b"
+    },
+    {
+      "path": ".yarn/sdks/eslint/bin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d128f16cbe25eabc26b91ba210e99a91108d92c2",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/d128f16cbe25eabc26b91ba210e99a91108d92c2"
+    },
+    {
+      "path": ".yarn/sdks/eslint/bin/eslint.js",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "4d327a49a06da90feff78cf26791faaf9cd41fc9",
+      "size": 636,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/4d327a49a06da90feff78cf26791faaf9cd41fc9"
+    },
+    {
+      "path": ".yarn/sdks/eslint/lib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "019120c2b66e00a33c4c45720f98e7046d85cb6e",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/019120c2b66e00a33c4c45720f98e7046d85cb6e"
+    },
+    {
+      "path": ".yarn/sdks/eslint/lib/api.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc728d952bb8ba32516c5e596360c8d0de69f4f3",
+      "size": 594,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/fc728d952bb8ba32516c5e596360c8d0de69f4f3"
+    },
+    {
+      "path": ".yarn/sdks/eslint/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b9e755968ddbb2903293f79630efa20d79b59dd",
+      "size": 98,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/3b9e755968ddbb2903293f79630efa20d79b59dd"
+    },
+    {
+      "path": ".yarn/sdks/integrations.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa9d0d0ad81a4dfefda7bee1ba2c691b51d7973f",
+      "size": 115,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/aa9d0d0ad81a4dfefda7bee1ba2c691b51d7973f"
+    },
+    {
+      "path": ".yarn/sdks/prettier",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4ba75e77ecc07a64cdb93703e7e30762440840b8",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/4ba75e77ecc07a64cdb93703e7e30762440840b8"
+    },
+    {
+      "path": ".yarn/sdks/prettier/index.js",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "f6882d809725bbbc26aad9baac619bcc6a4fb54b",
+      "size": 624,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/f6882d809725bbbc26aad9baac619bcc6a4fb54b"
+    },
+    {
+      "path": ".yarn/sdks/prettier/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bce279fdd991b98a66a14a42fc3c056fd846d8aa",
+      "size": 97,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/bce279fdd991b98a66a14a42fc3c056fd846d8aa"
+    },
+    {
+      "path": ".yarn/sdks/typescript",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d2a7fc0296271e2cf761d47ed9f30566cfc7a218",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/d2a7fc0296271e2cf761d47ed9f30566cfc7a218"
+    },
+    {
+      "path": ".yarn/sdks/typescript/bin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "208257656eda48698f106e320821db36029cd722",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/208257656eda48698f106e320821db36029cd722"
+    },
+    {
+      "path": ".yarn/sdks/typescript/bin/tsc",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "5608e5743072220f40d9cd8c126144862edbf324",
+      "size": 630,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/5608e5743072220f40d9cd8c126144862edbf324"
+    },
+    {
+      "path": ".yarn/sdks/typescript/bin/tsserver",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "cd7d557d523d5b0890c9a3e80bf378288bd45ded",
+      "size": 645,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/cd7d557d523d5b0890c9a3e80bf378288bd45ded"
+    },
+    {
+      "path": ".yarn/sdks/typescript/lib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "37b2f2268a8986bdfd368efca8d564c59f3da747",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/37b2f2268a8986bdfd368efca8d564c59f3da747"
+    },
+    {
+      "path": ".yarn/sdks/typescript/lib/tsc.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16042d01d4fee00aface6ce9a652cf77335e00c6",
+      "size": 639,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/16042d01d4fee00aface6ce9a652cf77335e00c6"
+    },
+    {
+      "path": ".yarn/sdks/typescript/lib/tsserver.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "830ad9f2c3999d58081bd7cf7c5683f7434f32e8",
+      "size": 8043,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/830ad9f2c3999d58081bd7cf7c5683f7434f32e8"
+    },
+    {
+      "path": ".yarn/sdks/typescript/lib/tsserverlibrary.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f7084cdf4065858dce142ec619a49f15c933725",
+      "size": 8064,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/0f7084cdf4065858dce142ec619a49f15c933725"
+    },
+    {
+      "path": ".yarn/sdks/typescript/lib/typescript.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbdbf1500fbe6497216ac01e9f56e3d8fea007f0",
+      "size": 660,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/cbdbf1500fbe6497216ac01e9f56e3d8fea007f0"
+    },
+    {
+      "path": ".yarn/sdks/typescript/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5b9b00768d15f225a27c951983854fded60fdb8",
+      "size": 108,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/b5b9b00768d15f225a27c951983854fded60fdb8"
+    },
+    {
+      "path": ".yarnrc.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c35ded4b0a0e46609c96bbf837ab71126d445d03",
+      "size": 87,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/c35ded4b0a0e46609c96bbf837ab71126d445d03"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e72bfddabc15be5718a7cc061ac10e47741d8219",
+      "size": 35148,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/e72bfddabc15be5718a7cc061ac10e47741d8219",
+      "error": "SyntaxError: Unexpected token 'G', ...\"          GNU GENERA\"... is not valid JSON"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25140b1a6a6dc9eb1b1578b62df4f77dd376b0b5",
+      "size": 1141,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/25140b1a6a6dc9eb1b1578b62df4f77dd376b0b5",
+      "error": "SyntaxError: Unexpected token '#', \"# walletki\"... is not valid JSON"
+    },
+    {
+      "path": "images",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "63cc3a976023f910efaa5cb9780fe3921f7e2db0",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/63cc3a976023f910efaa5cb9780fe3921f7e2db0"
+    },
+    {
+      "path": "images/banner.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3bd3e35ab88abc521439aa2f8f9082a61abaec0",
+      "size": 1590786,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/b3bd3e35ab88abc521439aa2f8f9082a61abaec0"
+    },
+    {
+      "path": "images/wallet-intro.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6518427406680e0ed728936ace586cc89d4b800",
+      "size": 110873,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/f6518427406680e0ed728936ace586cc89d4b800"
+    },
+    {
+      "path": "images/wallet-select.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9009165a6e1e5850549739737f54e8f40e7909c8",
+      "size": 76576,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/9009165a6e1e5850549739737f54e8f40e7909c8"
+    },
+    {
+      "path": "lerna.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7cad5f2e09dd221078a2f312bade7ecba2027dce",
+      "size": 103,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/7cad5f2e09dd221078a2f312bade7ecba2027dce"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb2f88128d94dafd34c2091f09b84eb770ce00f8",
+      "size": 1417,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/bb2f88128d94dafd34c2091f09b84eb770ce00f8"
+    },
+    {
+      "path": "packages",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "99cee84280c77cf891373986075da8356469044c",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/99cee84280c77cf891373986075da8356469044c"
+    },
+    {
+      "path": "packages/example",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5f36378bc358ed28d001a30b13333b9651215327",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/5f36378bc358ed28d001a30b13333b9651215327"
+    },
+    {
+      "path": "packages/example/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d29575de80483b005c29bfcac5061cd2f45313e",
+      "size": 310,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/4d29575de80483b005c29bfcac5061cd2f45313e"
+    },
+    {
+      "path": "packages/example/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91d4cd4c9c5e110a54fab4dba7d87297e7ce5ed7",
+      "size": 227,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/91d4cd4c9c5e110a54fab4dba7d87297e7ce5ed7"
+    },
+    {
+      "path": "packages/example/craco.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "517231e78a1e9604ea6f59e82c5607ad11a6ed5a",
+      "size": 1081,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/517231e78a1e9604ea6f59e82c5607ad11a6ed5a"
+    },
+    {
+      "path": "packages/example/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "772969ecdc982f96b0a9c7fd794ec75f0b5b18dd",
+      "size": 1668,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/772969ecdc982f96b0a9c7fd794ec75f0b5b18dd"
+    },
+    {
+      "path": "packages/example/public",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d348b804596073b3369e775d7e45ec09d7ca8020",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/d348b804596073b3369e775d7e45ec09d7ca8020"
+    },
+    {
+      "path": "packages/example/public/favicon.ico",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a11777cc471a4344702741ab1c8a588998b1311a",
+      "size": 3870,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/a11777cc471a4344702741ab1c8a588998b1311a"
+    },
+    {
+      "path": "packages/example/public/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45b57689a244a188f6b4ed081163a7656d3ee762",
+      "size": 2007,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/45b57689a244a188f6b4ed081163a7656d3ee762"
+    },
+    {
+      "path": "packages/example/public/logo192.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc44b0a3796c0e0a64c3d858ca038bd4570465d9",
+      "size": 5347,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/fc44b0a3796c0e0a64c3d858ca038bd4570465d9"
+    },
+    {
+      "path": "packages/example/public/logo512.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4e47a6545bc15971f8f63fba70e4013df88a664",
+      "size": 9664,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/a4e47a6545bc15971f8f63fba70e4013df88a664"
+    },
+    {
+      "path": "packages/example/public/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "080d6c77ac21bb2ef88a6992b2b73ad93daaca92",
+      "size": 492,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/080d6c77ac21bb2ef88a6992b2b73ad93daaca92"
+    },
+    {
+      "path": "packages/example/public/robots.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9e57dc4d41b9b46e05112e9f45b7ea6ac0ba15e",
+      "size": 67,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/e9e57dc4d41b9b46e05112e9f45b7ea6ac0ba15e"
+    },
+    {
+      "path": "packages/example/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "434155ab6181e56a11e02121da50edb996aece1c",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/434155ab6181e56a11e02121da50edb996aece1c"
+    },
+    {
+      "path": "packages/example/src/App.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4b3111e3d0b2157dc3d8d3e61898d526fd76e47",
+      "size": 808,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/e4b3111e3d0b2157dc3d8d3e61898d526fd76e47"
+    },
+    {
+      "path": "packages/example/src/Body.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea0111dfcfe46f1d6ec24aa1c6593f3b1b05036b",
+      "size": 4701,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/ea0111dfcfe46f1d6ec24aa1c6593f3b1b05036b"
+    },
+    {
+      "path": "packages/example/src/index.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec2585e8c0bb8188184ed1e0703c4c8f2a8419b0",
+      "size": 366,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/ec2585e8c0bb8188184ed1e0703c4c8f2a8419b0"
+    },
+    {
+      "path": "packages/example/src/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c94589bc4277318589fb10a90284c99e06030d3",
+      "size": 221,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/3c94589bc4277318589fb10a90284c99e06030d3"
+    },
+    {
+      "path": "packages/example/src/react-app-env.d.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6431bc5fc6b2c932dfe5d0418fc667b86c18b9fc",
+      "size": 40,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/6431bc5fc6b2c932dfe5d0418fc667b86c18b9fc"
+    },
+    {
+      "path": "packages/example/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e6a14162d2a0c8cf96a6a65d263125a40184bf8",
+      "size": 284,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/6e6a14162d2a0c8cf96a6a65d263125a40184bf8"
+    },
+    {
+      "path": "packages/walletkit",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bfae7e281580a5bed623d19a4ec71f853192ea78",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/bfae7e281580a5bed623d19a4ec71f853192ea78"
+    },
+    {
+      "path": "packages/walletkit/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9562e68f9ebdbfce4a05a8fcdeb20d6d75a097d5",
+      "size": 318,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/9562e68f9ebdbfce4a05a8fcdeb20d6d75a097d5",
+      "error": "SyntaxError: Unexpected token '#', \"# `@gokipr\"... is not valid JSON"
+    },
+    {
+      "path": "packages/walletkit/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37857debf7d86fac0d340c2c241bc7ad6333ef17",
+      "size": 1467,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/37857debf7d86fac0d340c2c241bc7ad6333ef17"
+    },
+    {
+      "path": "packages/walletkit/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a3303d8d717991d22c774e792bf16162a86cfb18",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/a3303d8d717991d22c774e792bf16162a86cfb18"
+    },
+    {
+      "path": "packages/walletkit/src/WalletKitProvider.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f02071c6680948cb989f4d1052f05fa45c2d9126",
+      "size": 1617,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/f02071c6680948cb989f4d1052f05fa45c2d9126"
+    },
+    {
+      "path": "packages/walletkit/src/components",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7ef36049409e338bcb7fdd9f5d6d9777148ee85e",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/7ef36049409e338bcb7fdd9f5d6d9777148ee85e"
+    },
+    {
+      "path": "packages/walletkit/src/components/ConnectWalletButton",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e6fe083af78e7c66ad18c68b5287ac7e4b7dc956",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/e6fe083af78e7c66ad18c68b5287ac7e4b7dc956"
+    },
+    {
+      "path": "packages/walletkit/src/components/ConnectWalletButton/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21ec57706543bdc35e391a54886c0cde658cd2e4",
+      "size": 2928,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/21ec57706543bdc35e391a54886c0cde658cd2e4",
+      "error": "SyntaxError: Unexpected token 'i', \"import { c\"... is not valid JSON"
+    },
+    {
+      "path": "packages/walletkit/src/components/LabeledInput.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc9ef8962dbf4036f9ecda5bd734a0406e6a51b0",
+      "size": 1513,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/cc9ef8962dbf4036f9ecda5bd734a0406e6a51b0",
+      "error": "SyntaxError: Unexpected token 'i', \"import sty\"... is not valid JSON"
+    },
+    {
+      "path": "packages/walletkit/src/components/Modal",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bf42e411da59da2677ebabe9389e4ccacdaf8444",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/bf42e411da59da2677ebabe9389e4ccacdaf8444"
+    },
+    {
+      "path": "packages/walletkit/src/components/Modal/icons.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d03fb5c867911be25e0d742f5ebdcb64e266890",
+      "size": 6951,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/6d03fb5c867911be25e0d742f5ebdcb64e266890",
+      "error": "SyntaxError: Unexpected token 'i', \"import Rea\"... is not valid JSON"
+    },
+    {
+      "path": "packages/walletkit/src/components/Modal/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b0ffa6ab8bef190a484c9c0514751fcb7decfa1",
+      "size": 5500,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/6b0ffa6ab8bef190a484c9c0514751fcb7decfa1"
+    },
+    {
+      "path": "packages/walletkit/src/components/WalletSelectorModal",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9aed9c7cb8c0eab085cee7eb6d3883f0c7c2e265",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/9aed9c7cb8c0eab085cee7eb6d3883f0c7c2e265"
+    },
+    {
+      "path": "packages/walletkit/src/components/WalletSelectorModal/ButtonWithFooter.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb4baf638d5c78a8b5ca14aa9fc286b134f769ae",
+      "size": 1334,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/cb4baf638d5c78a8b5ca14aa9fc286b134f769ae"
+    },
+    {
+      "path": "packages/walletkit/src/components/WalletSelectorModal/WalletStepConnecting",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0913347cc57874d675436d8a0707648968dd3786",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/0913347cc57874d675436d8a0707648968dd3786"
+    },
+    {
+      "path": "packages/walletkit/src/components/WalletSelectorModal/WalletStepConnecting/ConnectingAnimation.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a276c9b502c6a5aeb21773762520d0a03760133c",
+      "size": 1613,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/a276c9b502c6a5aeb21773762520d0a03760133c"
+    },
+    {
+      "path": "packages/walletkit/src/components/WalletSelectorModal/WalletStepConnecting/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e93fb86e640d92e8d155dbb2875424f8fdc58839",
+      "size": 5575,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/e93fb86e640d92e8d155dbb2875424f8fdc58839"
+    },
+    {
+      "path": "packages/walletkit/src/components/WalletSelectorModal/WalletStepIntro",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a0bde7b892e6947f4ffd8fb39dd7030575bd3a02",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/a0bde7b892e6947f4ffd8fb39dd7030575bd3a02"
+    },
+    {
+      "path": "packages/walletkit/src/components/WalletSelectorModal/WalletStepIntro/DefaultAppIcon.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e957a10157451cd55dd2f1f6dc8af1a918071d46",
+      "size": 379,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/e957a10157451cd55dd2f1f6dc8af1a918071d46"
+    },
+    {
+      "path": "packages/walletkit/src/components/WalletSelectorModal/WalletStepIntro/Detail.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de829041b9d0973b400d061dc78010cc9598dcb3",
+      "size": 858,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/de829041b9d0973b400d061dc78010cc9598dcb3"
+    },
+    {
+      "path": "packages/walletkit/src/components/WalletSelectorModal/WalletStepIntro/icons.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7e61b69d628c4e3913eea65836f5348dc172a71",
+      "size": 6118,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/b7e61b69d628c4e3913eea65836f5348dc172a71"
+    },
+    {
+      "path": "packages/walletkit/src/components/WalletSelectorModal/WalletStepIntro/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e512ce17c9dcebacda3783029071715ebbbcab9",
+      "size": 2550,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/3e512ce17c9dcebacda3783029071715ebbbcab9"
+    },
+    {
+      "path": "packages/walletkit/src/components/WalletSelectorModal/WalletStepLedgerAdvanced",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "61ea86b8525afc78db6cbdf771b148ad294c60f8",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/61ea86b8525afc78db6cbdf771b148ad294c60f8"
+    },
+    {
+      "path": "packages/walletkit/src/components/WalletSelectorModal/WalletStepLedgerAdvanced/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27f71da46fb310b1ff5d82f722620532b97acd42",
+      "size": 3004,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/27f71da46fb310b1ff5d82f722620532b97acd42"
+    },
+    {
+      "path": "packages/walletkit/src/components/WalletSelectorModal/WalletStepRedirect",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6138841a9e441f8a3a9f9736203f0cd8fc656f2a",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/6138841a9e441f8a3a9f9736203f0cd8fc656f2a"
+    },
+    {
+      "path": "packages/walletkit/src/components/WalletSelectorModal/WalletStepRedirect/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3609d98e42ca859154e5af1baaf116d49272a491",
+      "size": 2240,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/3609d98e42ca859154e5af1baaf116d49272a491"
+    },
+    {
+      "path": "packages/walletkit/src/components/WalletSelectorModal/WalletStepSecretKey",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a6383f2d512eae7bbad6acada756487e60d50b8f",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/a6383f2d512eae7bbad6acada756487e60d50b8f"
+    },
+    {
+      "path": "packages/walletkit/src/components/WalletSelectorModal/WalletStepSecretKey/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7539df7137d357d95dd8c8593f6c410df2c65a1f",
+      "size": 3665,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/7539df7137d357d95dd8c8593f6c410df2c65a1f"
+    },
+    {
+      "path": "packages/walletkit/src/components/WalletSelectorModal/WalletStepSelect",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a2e56b291c0815b3f68db0e0159c2be8c15bc39e",
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/trees/a2e56b291c0815b3f68db0e0159c2be8c15bc39e"
+    },
+    {
+      "path": "packages/walletkit/src/components/WalletSelectorModal/WalletStepSelect/WalletProviderOption.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8730adebbd1bf386c57014cb0d962e8a11893fe7",
+      "size": 2735,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/8730adebbd1bf386c57014cb0d962e8a11893fe7"
+    },
+    {
+      "path": "packages/walletkit/src/components/WalletSelectorModal/WalletStepSelect/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b60b27496787583a713ce2e2cede33a1106f3749",
+      "size": 4252,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/b60b27496787583a713ce2e2cede33a1106f3749"
+    },
+    {
+      "path": "packages/walletkit/src/components/WalletSelectorModal/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46238b358bbf35f1981c776f4922f97496385c63",
+      "size": 4885,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/46238b358bbf35f1981c776f4922f97496385c63"
+    },
+    {
+      "path": "packages/walletkit/src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb3168595e7613a7eae77055d27cc6fde2cf966b",
+      "size": 123,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/fb3168595e7613a7eae77055d27cc6fde2cf966b"
+    },
+    {
+      "path": "packages/walletkit/src/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "342ce3c2cdb03c7cb297dfc8a695441e045061cb",
+      "size": 741,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/342ce3c2cdb03c7cb297dfc8a695441e045061cb"
+    },
+    {
+      "path": "packages/walletkit/tsconfig.cjs.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fd0d1ecf4c0e0962ff615a08e5e85630007c9d6",
+      "size": 115,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/9fd0d1ecf4c0e0962ff615a08e5e85630007c9d6"
+    },
+    {
+      "path": "packages/walletkit/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f544945c68de584836226fa3b0d7f14b61c7248c",
+      "size": 155,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/f544945c68de584836226fa3b0d7f14b61c7248c"
+    },
+    {
+      "path": "tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b54c991de9882db9d908208689df676409db868c",
+      "size": 158,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/b54c991de9882db9d908208689df676409db868c"
+    },
+    {
+      "path": "yarn.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d8e33ed1481d93f2cde28e235a9c6d33a41be42",
+      "size": 800061,
+      "url": "https://api.github.com/repos/GokiProtocol/walletkit/git/blobs/8d8e33ed1481d93f2cde28e235a9c6d33a41be42"
+    }
+  ]
+}

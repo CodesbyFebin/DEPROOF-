@@ -1,0 +1,430 @@
+{
+  "schema": "deproof-criterion-test-links-v1",
+  "purpose": "Authoritative, criterion-specific test links. update-coverage.py applies these after it resets registry entries, so regeneration keeps them. Each link must name a real test function; the script asserts this.",
+  "scope": "Only tests that directly assert the registry acceptance criterion. Statuses are not set here.",
+  "links": {
+    "F040": [
+      "app/src/test/java/com/example/domain/InspectionTest.kt::verdictsArePerInstructionInOrderAndIndependent"
+    ],
+    "F041": [
+      "app/src/test/java/com/example/domain/InspectionTest.kt::allowedTransferSummaryStatesAmountTokenAccountAndRecipient",
+      "app/src/test/java/com/example/domain/InspectionTest.kt::allowedMemoSummaryShowsTheExactMemoText"
+    ],
+    "F045": [
+      "app/src/test/java/com/example/domain/ReviewBindingTest.kt::storedHashesAreUnaffectedByCallerBufferChanges"
+    ],
+    "F046": [
+      "app/src/test/java/com/example/domain/ReviewBindingTest.kt::reviewTimestampChangeIsRejected",
+      "app/src/test/java/com/example/domain/ReviewBindingTest.kt::signingGateRefusesWalletAccountThatIsNotTheFeePayer",
+      "app/src/test/java/com/example/domain/CoreTest.kt::memoParserAndImmutableMessageContextMutations"
+    ],
+    "F047": [
+      "app/src/test/java/com/example/domain/ReviewBindingTest.kt::signingGateRefusesMessageChangedAfterReview"
+    ],
+    "F048": [
+      "app/src/test/java/com/example/domain/ReviewBindingTest.kt::feeAndBlockHeightChangesAreRejected",
+      "app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval"
+    ],
+    "F049": [
+      "app/src/test/java/com/example/domain/PolicyTest.kt::rebuiltDraftDoesNotInheritThePriorApproval",
+      "app/src/test/java/com/example/domain/PolicyTest.kt::firstRebuildIsAllowedAndASecondIsNot"
+    ],
+    "C047": [
+      "app/src/test/java/com/example/domain/ReviewBindingTest.kt::storedHashesAreUnaffectedByCallerBufferChanges"
+    ],
+    "C048": [
+      "app/src/test/java/com/example/domain/ReviewBindingTest.kt::signingGateRefusesMessageChangedAfterReview",
+      "app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval"
+    ],
+    "C095": [
+      "app/src/test/java/com/example/domain/PolicyTest.kt::firstRebuildIsAllowedAndASecondIsNot",
+      "app/src/test/java/com/example/domain/PolicyTest.kt::rebuiltDraftDoesNotInheritThePriorApproval"
+    ],
+    "FN042": [
+      "app/src/test/java/com/example/domain/LookupTableTest.kt::legacyMessageResolvesToItsStaticKeysOnly",
+      "app/src/test/java/com/example/domain/LookupTableTest.kt::versionedMessageWithLookupTableIsRefused",
+      "app/src/test/java/com/example/domain/LookupTableTest.kt::instructionReferencingAnAccountBeyondStaticKeysIsRefused"
+    ],
+    "FN048": [
+      "app/src/test/java/com/example/domain/PolicyTest.kt::rebuildProducesANewDevnetMessageForTheSameAccount",
+      "app/src/test/java/com/example/domain/PolicyTest.kt::rebuildRefusesUnchangedBlockhashHistoricalAndNonDevnetReviews"
+    ],
+    "FN062": [
+      "app/src/test/java/com/example/domain/PolicyTest.kt::onlyHardwareBackedKeyLevelsQualify"
+    ],
+    "F067": [
+      "app/src/test/java/com/example/domain/NodeProtocolTest.kt::legacySignatureUsesRawDigestBytesNotHexOrBase64",
+      "app/src/test/java/com/example/domain/NodeProtocolTest.kt::legacyDigestAndFirstSeenIndicatorsNeverGrantTrust"
+    ],
+    "FN051": [
+      "app/src/test/java/com/example/data/RoomStoreTest.kt::createTaskRefusesBlankTitleAndTooManyRequirements",
+      "app/src/test/java/com/example/data/RoomStoreTest.kt::createdTaskIsPersistedWithItsRequirements"
+    ],
+    "FN052": [
+      "app/src/test/java/com/example/data/BackupRepositoryTest.kt::actualFileMetadataFactoryRefusesChangedBytesAndMissingTaskWithoutRows",
+      "app/src/test/java/com/example/data/BackupRepositoryTest.kt::exportRestorePersistsMetadataAssociationsAndExactFileBytes",
+      "app/src/test/java/com/example/data/RoomStoreTest.kt::attachmentKeepsDigestAndIsAssociatedWithItsTask",
+      "app/src/test/java/com/example/data/RoomStoreTest.kt::attachmentToMissingTaskIsRejectedByForeignKey"
+    ],
+    "F118": [
+      "app/src/test/java/com/example/data/BackupRepositoryTest.kt::authenticatedMalformedRecordOrDigestIsRefusedBeforeAnyWrite",
+      "app/src/test/java/com/example/data/BackupRepositoryTest.kt::existingIdsAndFilesAreNeverOverwritten",
+      "app/src/test/java/com/example/data/BackupRepositoryTest.kt::exportRestorePersistsMetadataAssociationsAndExactFileBytes",
+      "app/src/test/java/com/example/data/BackupRepositoryTest.kt::exportedScopeExcludesPairingSeedsOperationsAndPermissions",
+      "app/src/test/java/com/example/data/BackupRepositoryTest.kt::laterDatabaseConstraintFailureRollsBackRowsAndRemovesOnlyNewFiles",
+      "app/src/test/java/com/example/data/BackupRepositoryTest.kt::restoredPlansRetainTaskLinkButRemindersStayCancelled",
+      "app/src/test/java/com/example/data/BackupRepositoryTest.kt::unknownVersionsAndExtraFieldsAreRejected",
+      "app/src/test/java/com/example/data/BackupRepositoryTest.kt::wrongKeyAndTamperingLeaveExistingRoomRowsAndFilesIntact",
+      "app/src/test/java/com/example/domain/BackupTest.kt::roundTripRestoresExactBytes",
+      "app/src/test/java/com/example/domain/BackupTest.kt::tamperedCiphertextIsRefused",
+      "app/src/test/java/com/example/domain/BackupTest.kt::tamperedSaltIsRefusedBecauseTheHeaderIsAuthenticated",
+      "app/src/test/java/com/example/domain/BackupTest.kt::wrongPassphraseIsRefused"
+    ],
+    "EF019": [
+      "app/src/test/java/com/example/domain/ProofDispatchTest.kt::changedPinnedCircuitOrAbsentJobProfileRefuses",
+      "app/src/test/java/com/example/domain/ProofDispatchTest.kt::freshObservedLocalProfileMatchesAndResourceMismatchRefuses",
+      "app/src/test/java/com/example/domain/ProofDispatchTest.kt::missingStaleOrMalformedCapabilitiesNeverAuthorize",
+      "app/src/test/java/com/example/domain/ProofDispatchTest.kt::unqualifiedProviderAndExpiredJobHaveExplicitStates",
+      "app/src/test/java/com/example/domain/ProofJobTest.kt::compatibleJobMatchesWithNoMismatch",
+      "app/src/test/java/com/example/domain/ProofJobTest.kt::eachMismatchIsReportedExplicitly",
+      "app/src/test/java/com/example/domain/ProofJobTest.kt::incompatibleJobIsNeverReportedAsCompatible"
+    ],
+    "F030": [
+      "app/src/test/java/com/example/data/HistoricalObservationTest.kt::repeatedHistoryRefreshPreservesOriginalEventAndTracksChangedStatus",
+      "app/src/test/java/com/example/data/HistoricalObservationTest.kt::concurrentOpensCreateOneReceiptWithIndependentObservations",
+      "app/src/test/java/com/example/data/HistoricalObservationTest.kt::conflictingMessageIsRefusedWithoutChangingReceiptOrObservations",
+      "app/src/test/java/com/example/data/HistoricalObservationTest.kt::unavailableRefreshRetainsOriginalKnownStatusWithoutInventingSuccess",
+      "app/src/test/java/com/example/data/HistoricalObservationTest.kt::olderObservationArrivingLateIsKeptAsHistoryAndNeverChangesTheReceipt"
+    ],
+    "F079": [
+      "app/src/test/java/com/example/data/ObservationStatusTest.kt::everySchemaStatusIsTrackedAsItsOwnObservation",
+      "app/src/test/java/com/example/data/ObservationStatusTest.kt::statusesOutsideTheSchemaEnumAreRefused",
+      "app/src/test/java/com/example/data/ObservationStatusTest.kt::unavailabilityIsRecordedSeparatelyFromTheLastKnownStatus"
+    ],
+    "C005": [
+      "app/src/test/java/com/example/data/RpcBehaviorTest.kt::skrBalanceAggregatesMultipleAccountsWithIntegerAddition",
+      "app/src/test/java/com/example/data/RpcBehaviorTest.kt::skrBalanceZeroWhenNoMatchingAccounts",
+      "app/src/test/java/com/example/data/RpcBehaviorTest.kt::skrBalanceRejectsWrongOwnerOrMintInResponse"
+    ],
+    "C006": [
+      "app/src/test/java/com/example/data/RpcBehaviorTest.kt::skrBalanceAggregatesMultipleAccountsWithIntegerAddition"
+    ],
+    "C007": [
+      "app/src/test/java/com/example/data/RpcBehaviorTest.kt::skrBalanceAggregatesMultipleAccountsWithIntegerAddition"
+    ],
+    "C008": [
+      "app/src/test/java/com/example/data/RpcBehaviorTest.kt::skrBalanceAggregatesMultipleAccountsWithIntegerAddition"
+    ],
+    "C010": [
+      "app/src/test/java/com/example/data/RpcBehaviorTest.kt::solFailureDoesNotClearSkrBalanceAndViceVersa"
+    ],
+    "C013": [
+      "app/src/test/java/com/example/data/RpcBehaviorTest.kt::historyRequestsLimitTenWithConfirmedCommitment",
+      "app/src/test/java/com/example/data/RpcBehaviorTest.kt::historyReturnsAllSignaturesFromRpc"
+    ],
+    "C021": [
+      "app/src/test/java/com/example/data/RpcBehaviorTest.kt::transactionUnavailableRefusesNullResult"
+    ],
+    "C023": [
+      "app/src/test/java/com/example/data/RpcBehaviorTest.kt::emptyHistoryReturnsEmptyArrayNotFakeRow"
+    ],
+    "C039": [
+      "app/src/test/java/com/example/data/RpcBehaviorTest.kt::shortKeyProducesEllipsisAbbreviationForLongAddresses"
+    ],
+    "C062": [
+      "app/src/test/java/com/example/data/RpcBehaviorTest.kt::canSignRefusesWhenReviewClusterDiffersFromSigningGate"
+    ],
+    "C093": [
+      "app/src/test/java/com/example/data/RpcBehaviorTest.kt::skrBalanceRequiresMainnetCluster",
+      "app/src/test/java/com/example/data/RpcBehaviorTest.kt::skrMintDeploymentMustBeVerifiedBeforeBalance"
+    ],
+    "C094": [
+      "app/src/test/java/com/example/data/RpcBehaviorTest.kt::submitSignedTransactionIsBlockedOnMainnet"
+    ],
+    "C002": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::exactUnsignedVectorsAndDecimalFormatting"
+    ],
+    "C004": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::exactUnsignedVectorsAndDecimalFormatting"
+    ],
+    "C009": [
+      "app/src/test/java/com/example/data/RpcBehaviorTest.kt::skrBalanceAggregatesMultipleAccountsWithIntegerAddition"
+    ],
+    "C025": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::strictPolicyChecksAllRolesMintsOwnersAndSiblings"
+    ],
+    "C026": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::strictPolicyChecksAllRolesMintsOwnersAndSiblings"
+    ],
+    "C027": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::exactUnsignedVectorsAndDecimalFormatting"
+    ],
+    "C028": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::strictPolicyChecksAllRolesMintsOwnersAndSiblings"
+    ],
+    "C029": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::strictPolicyChecksAllRolesMintsOwnersAndSiblings"
+    ],
+    "C030": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::strictPolicyChecksAllRolesMintsOwnersAndSiblings"
+    ],
+    "C034": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::strictPolicyChecksAllRolesMintsOwnersAndSiblings"
+    ],
+    "C035": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::strictPolicyChecksAllRolesMintsOwnersAndSiblings"
+    ],
+    "C036": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::strictPolicyChecksAllRolesMintsOwnersAndSiblings"
+    ],
+    "C037": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::strictPolicyChecksAllRolesMintsOwnersAndSiblings"
+    ],
+    "C038": [
+      "app/src/test/java/com/example/domain/InspectionTest.kt::allowedTransferSummaryStatesAmountTokenAccountAndRecipient",
+      "app/src/test/java/com/example/domain/InspectionTest.kt::allowedMemoSummaryShowsTheExactMemoText"
+    ],
+    "C040": [
+      "app/src/test/java/com/example/domain/InspectionTest.kt::verdictsArePerInstructionInOrderAndIndependent",
+      "app/src/test/java/com/example/domain/InspectionTest.kt::allowedTransferSummaryStatesAmountTokenAccountAndRecipient"
+    ],
+    "C041": [
+      "app/src/test/java/com/example/domain/InspectionTest.kt::devnetMemoPolicyRefusesEveryInstructionOfAMultiInstructionMessage"
+    ],
+    "C042": [
+      "app/src/test/java/com/example/domain/InspectionTest.kt::verdictsArePerInstructionInOrderAndIndependent"
+    ],
+    "C043": [
+      "app/src/test/java/com/example/domain/InspectionTest.kt::emptyMessageIsRejectedBeforeAnyVerdictIsShown"
+    ],
+    "C044": [
+      "app/src/test/java/com/example/domain/InspectionTest.kt::allowedTransferSummaryStatesAmountTokenAccountAndRecipient"
+    ],
+    "C045": [
+      "app/src/test/java/com/example/domain/InspectionTest.kt::allowedMemoSummaryShowsTheExactMemoText"
+    ],
+    "C046": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::memoParserAndImmutableMessageContextMutations"
+    ],
+    "C049": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::approvalPredicateCannotBeOverriddenByDisplayOrAi"
+    ],
+    "C050": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::evidenceEnvelopeSignatureAndReceiptProvenance"
+    ],
+    "C051": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval",
+      "app/src/test/java/com/example/domain/ReviewBindingTest.kt::messageHashIsIndependentOfReviewContextButContextHashIsNot"
+    ],
+    "C052": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval"
+    ],
+    "C053": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval"
+    ],
+    "C054": [
+      "app/src/test/java/com/example/domain/ReviewBindingTest.kt::storedHashesAreUnaffectedByCallerBufferChanges"
+    ],
+    "C065": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::evidenceEnvelopeSignatureAndReceiptProvenance"
+    ],
+    "C070": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::crossLanguageGoldenVectors"
+    ],
+    "C073": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::rawStreamingLimitCancellationAndCanonicalUnicode"
+    ],
+    "C075": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::rawStreamingLimitCancellationAndCanonicalUnicode"
+    ],
+    "C077": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::evidenceEnvelopeSignatureAndReceiptProvenance"
+    ],
+    "C078": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::evidenceEnvelopeSignatureAndReceiptProvenance"
+    ],
+    "C079": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::evidenceEnvelopeSignatureAndReceiptProvenance"
+    ],
+    "C080": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::evidenceEnvelopeSignatureAndReceiptProvenance"
+    ],
+    "C084": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::returnedSignatureAndMessageTamperAreRejected"
+    ],
+    "C087": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::addressesRejectAlphabetLengthAndOversize"
+    ],
+    "C099": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::timerExpiryNeverAuthorizesWithdrawalAndRankingNeverAuthorizesSibling"
+    ],
+    "C100": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::timerExpiryNeverAuthorizesWithdrawalAndRankingNeverAuthorizesSibling"
+    ],
+    "C015": [
+      "app/src/test/java/com/example/domain/InspectionTest.kt::verdictsArePerInstructionInOrderAndIndependent",
+      "app/src/test/java/com/example/domain/InspectionTest.kt::allowedTransferSummaryStatesAmountTokenAccountAndRecipient"
+    ],
+    "C014": [
+      "app/src/test/java/com/example/data/TransactionDetailTest.kt::transactionFetchReturnsRawBytesAndJsonNode",
+      "app/src/test/java/com/example/data/TransactionDetailTest.kt::transactionRequestPassesVersionSupportParam"
+    ],
+    "C016": [
+      "app/src/test/java/com/example/data/TransactionDetailTest.kt::confirmationStatusFieldIsPresentInTransactionNode"
+    ],
+    "C017": [
+      "app/src/test/java/com/example/data/TransactionDetailTest.kt::transactionWithMetaErrIsReturnedNotDiscarded",
+      "app/src/test/java/com/example/data/TransactionDetailTest.kt::transactionWithNullMetaErrIndicatesSuccess"
+    ],
+    "C018": [
+      "app/src/test/java/com/example/data/TransactionDetailTest.kt::slotAndBlockTimeArePresentInTransactionNode",
+      "app/src/test/java/com/example/data/TransactionDetailTest.kt::nullBlockTimeRemainsNullNotCoercedToZero"
+    ],
+    "F075": [
+      "app/src/test/java/com/example/domain/ReceiptOutcomeTest.kt::rejectedReceiptHasNullSignatureAndIsNotSubmitted",
+      "app/src/test/java/com/example/domain/ReceiptOutcomeTest.kt::rejectedReceiptWithFakeSignatureFailsValidation",
+      "app/src/test/java/com/example/domain/ReceiptOutcomeTest.kt::rejectedReceiptCanBeExportedAndRoundTripped"
+    ],
+    "F076": [
+      "app/src/test/java/com/example/domain/ReceiptOutcomeTest.kt::observedReceiptCarriesSignatureButIsNotSubmittedByDeproof",
+      "app/src/test/java/com/example/domain/ReceiptOutcomeTest.kt::observedReceiptWithSubmittedByDeproofFailsValidation"
+    ],
+    "F077": [
+      "app/src/test/java/com/example/domain/ReceiptOutcomeTest.kt::localEvidenceSignedReceiptRequiresLocalSignatureAndEvidenceDigest",
+      "app/src/test/java/com/example/domain/ReceiptOutcomeTest.kt::localEvidenceSignedWithRemovedLocalSignatureFailsValidation"
+    ],
+    "F078": [
+      "app/src/test/java/com/example/domain/ReceiptOutcomeTest.kt::submittedReceiptRequiresBroadcastAndRpcAcceptance",
+      "app/src/test/java/com/example/domain/ReceiptOutcomeTest.kt::submittedReceiptWithoutRpcAcceptanceFailsValidation"
+    ],
+    "F097": [
+      "app/src/test/java/com/example/domain/CoreTest.kt::completeMessageMutationsNeverRetainApproval"
+    ],
+    "F058": [
+      "app/src/test/java/com/example/domain/WorkflowTest.kt::locationConsentDenialAndProvenance",
+      "app/src/test/java/com/example/domain/WorkflowTest.kt::crossLanguageOptionalLocationVectorAndMutation"
+    ],
+    "F105": [
+      "app/src/test/java/com/example/domain/WorkflowTest.kt::offlineMappingPlanRoundTripAndBounds",
+      "tools/test_migrations.py::test_new_private_workflow_drafts_survive_reopen_and_replace_atomically"
+    ],
+    "F115": [
+      "app/src/test/java/com/example/domain/WorkflowTest.kt::reminderConsentPermissionClockAndReplacement",
+      "tools/test_migrations.py::test_new_private_workflow_drafts_survive_reopen_and_replace_atomically"
+    ],
+    "F060": [
+      "tools/test_migrations.py::test_new_private_workflow_drafts_survive_reopen_and_replace_atomically"
+    ],
+    "F093": [
+      "app/src/test/java/com/example/domain/NodeProtocolTest.kt::accountEffectsDecodeOnlyExactReadOnlyCreateAccount"
+    ],
+    "F095": [
+      "app/src/test/java/com/example/domain/NodeProtocolTest.kt::legacyDigestAndFirstSeenIndicatorsNeverGrantTrust"
+    ],
+    "F055": [
+      "app/src/test/java/com/example/domain/NodeProtocolTest.kt::privatePreviewChecksBytesPathsEncodingAndTypes"
+    ],
+    "FN033": [
+      "app/src/test/java/com/example/domain/NodeProtocolTest.kt::legacyDigestAndFirstSeenIndicatorsNeverGrantTrust",
+      "app/src/test/java/com/example/domain/NodeProtocolTest.kt::legacySignatureUsesRawDigestBytesNotHexOrBase64"
+    ],
+    "FN059": [
+      "app/src/test/java/com/example/domain/ConnectorTest.kt::everyAdapterInTheRealSupportFileIsBlockedWithoutObservation",
+      "app/src/test/java/com/example/domain/ConnectorTest.kt::reasonCarriesTheRecordedBlockerForBlockedAndUnverifiedAdapters",
+      "app/src/test/java/com/example/domain/ConnectorTest.kt::qualifiedStatusStillDoesNotProduceASuccessfulResult",
+      "app/src/test/java/com/example/domain/ConnectorTest.kt::unknownAdapterAndBadRequestsAreRefused",
+      "app/src/test/java/com/example/domain/ConnectorTest.kt::wrongSchemaIsRejected",
+      "node-agent/internal/agent/adapter_test.go::TestCatalogLoad",
+      "node-agent/internal/agent/adapter_test.go::TestListAdaptersUnconfigured",
+      "node-agent/internal/agent/adapter_test.go::TestListAdaptersCompatibility",
+      "node-agent/internal/agent/adapter_test.go::TestDispatchAdapterUnsupported",
+      "node-agent/internal/agent/adapter_test.go::TestDispatchUnknownAction"
+    ],
+    "FN061": [
+      "app/src/test/java/com/example/domain/NodeProtocolTest.kt::stagedExplanationNeverTransmitsOrChangesAuthorization"
+    ],
+    "EF011": [
+      "app/src/test/java/com/example/domain/NodeProtocolTest.kt::pairingRejectsWrongHostExpiredChallengeAndUnknownScope"
+    ],
+    "EF012": [
+      "app/src/test/java/com/example/domain/NodeProtocolTest.kt::exactCommandSignatureAndContextAreBound",
+      "app/src/test/java/com/example/domain/NodeProtocolTest.kt::crashDoesNotRetryPossibleSideEffects"
+    ],
+    "EF013": [
+      "app/src/test/java/com/example/domain/NodeProtocolTest.kt::exactCommandSignatureAndContextAreBound"
+    ],
+    "EF016": [
+      "app/src/test/java/com/example/domain/NodeProtocolTest.kt::exactCommandSignatureAndContextAreBound"
+    ],
+    "EF018": [
+      "app/src/test/java/com/example/domain/ProofJobTest.kt::compatibleJobMatchesWithNoMismatch",
+      "app/src/test/java/com/example/domain/ProofJobTest.kt::eachMismatchIsReportedExplicitly",
+      "app/src/test/java/com/example/domain/ProofJobTest.kt::negativeRequirementsAreRefused"
+    ],
+    "EF020": [
+      "app/src/test/java/com/example/domain/ProofDispatchTest.kt::unqualifiedProviderAndExpiredJobHaveExplicitStates",
+      "app/src/test/java/com/example/domain/ProofDispatchTest.kt::missingStaleOrMalformedCapabilitiesNeverAuthorize"
+    ],
+    "C003": [
+      "app/src/test/java/com/example/domain/NodeProtocolTest.kt::rpcChecksFullGenesisAndRejectsTruncatedOrWrongCluster"
+    ],
+    "E002": [
+      "app/src/test/java/com/example/domain/NodeProtocolTest.kt::rpcChecksFullGenesisAndRejectsTruncatedOrWrongCluster"
+    ],
+    "E011": [
+      "app/src/test/java/com/example/domain/NodeProtocolTest.kt::pairingRejectsWrongHostExpiredChallengeAndUnknownScope"
+    ],
+    "E016": [
+      "app/src/test/java/com/example/domain/NodeProtocolTest.kt::stagedExplanationNeverTransmitsOrChangesAuthorization"
+    ],
+    "E017": [
+      "app/src/test/java/com/example/domain/NodeProtocolTest.kt::exactCommandSignatureAndContextAreBound"
+    ],
+    "E018": [
+      "app/src/test/java/com/example/domain/NodeProtocolTest.kt::exactCommandSignatureAndContextAreBound"
+    ],
+    "E019": [
+      "app/src/test/java/com/example/domain/NodeProtocolTest.kt::exactCommandSignatureAndContextAreBound"
+    ],
+    "E021": [
+      "app/src/test/java/com/example/domain/NodeProtocolTest.kt::pairingRejectsWrongHostExpiredChallengeAndUnknownScope"
+    ],
+    "E023": [
+      "app/src/test/java/com/example/domain/ProofDispatchTest.kt::freshObservedLocalProfileMatchesAndResourceMismatchRefuses",
+      "app/src/test/java/com/example/domain/ProofDispatchTest.kt::changedPinnedCircuitOrAbsentJobProfileRefuses"
+    ],
+    "E024": [
+      "app/src/test/java/com/example/domain/ProofJobTest.kt::incompatibleJobIsNeverReportedAsCompatible"
+    ],
+    "E025": [
+      "app/src/test/java/com/example/domain/ProofJobTest.kt::eachMismatchIsReportedExplicitly",
+      "app/src/test/java/com/example/domain/ProofJobTest.kt::compatibleJobMatchesWithNoMismatch"
+    ],
+    "E030": [
+      "app/src/test/java/com/example/domain/NodeProtocolTest.kt::privatePreviewChecksBytesPathsEncodingAndTypes",
+      "app/src/test/java/com/example/domain/NodeProtocolTest.kt::stagedExplanationNeverTransmitsOrChangesAuthorization"
+    ],
+    "EF001": [
+      "node-agent/internal/agent/agent_test.go::TestIdentityPersistsAndPermissions"
+    ],
+    "EF002": [
+      "node-agent/internal/agent/agent_test.go::TestPairScopeReplayRevocationAndRestart",
+      "node-agent/internal/agent/agent_test.go::TestForgedAndMalformedDenied"
+    ],
+    "EF003": [
+      "node-agent/internal/agent/agent_test.go::TestPairScopeReplayRevocationAndRestart",
+      "node-agent/internal/agent/agent_test.go::TestSelfRevocationDoesNotDisableAnotherPeersConsent"
+    ],
+    "EF004": [
+      "node-agent/internal/agent/capabilities_test.go::TestUnconfiguredProofCapabilitiesAreUnavailable"
+    ],
+    "EF008": [
+      "node-agent/internal/agent/capabilities_test.go::TestResourceObservationDoesNotInventMemoryOnUnsupportedHosts"
+    ],
+    "EF010": [
+      "node-agent/internal/agent/agent_test.go::TestDefaultBandwidthOffAndQuotaPersists",
+      "node-agent/internal/agent/agent_test.go::TestSelfRevocationDoesNotDisableAnotherPeersConsent",
+      "node-agent/internal/agent/adapter_test.go::TestDispatchAdapterConsentRequired"
+    ]
+  }
+}

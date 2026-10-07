@@ -1,0 +1,368 @@
+{
+  "repository": "ronanyeah/pow-dapp",
+  "tree_sha": "3b7084e249aa71bac628a8f7ff6e7aca1dbc12ae",
+  "truncated": false,
+  "entries": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1a00e9800664b5a610326e2f1df1b142f555326",
+      "size": 23,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/a1a00e9800664b5a610326e2f1df1b142f555326"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0550ac1b6a8eb700daeeae782cfa9f5619c434b7",
+      "size": 447,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/0550ac1b6a8eb700daeeae782cfa9f5619c434b7",
+      "error": "SyntaxError: Unexpected token '#', \"# POW \ud83d\udca5\n\n\"... is not valid JSON"
+    },
+    {
+      "path": "elm.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4bcb30e79fc5a4a30401916c278179b89cb8207c",
+      "size": 1286,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/4bcb30e79fc5a4a30401916c278179b89cb8207c"
+    },
+    {
+      "path": "idl",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9e41568a4f90b477a893c2f6194c176f95f9ce64",
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/trees/9e41568a4f90b477a893c2f6194c176f95f9ce64"
+    },
+    {
+      "path": "idl/pow.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d75845f7ce11708b4159191ed6cbd3354a67d2a9",
+      "size": 2493,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/d75845f7ce11708b4159191ed6cbd3354a67d2a9"
+    },
+    {
+      "path": "netlify.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ee72f27a5002a24c22baf15e366737a4352aa0d",
+      "size": 73,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/7ee72f27a5002a24c22baf15e366737a4352aa0d"
+    },
+    {
+      "path": "package-lock.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cdb6f9839e7b1a8b12b9279f45691cbc9c30546b",
+      "size": 298465,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/cdb6f9839e7b1a8b12b9279f45691cbc9c30546b"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9de65cefc5e1ee6d2cc12b8710e616e9ecfc2f9a",
+      "size": 1543,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/9de65cefc5e1ee6d2cc12b8710e616e9ecfc2f9a"
+    },
+    {
+      "path": "public",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3cf626de468966ebc64cb48ffc76717321e43738",
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/trees/3cf626de468966ebc64cb48ffc76717321e43738"
+    },
+    {
+      "path": "public/apple-touch-icon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23b8e01aa0372889a593aecfc859820ab07291b5",
+      "size": 9926,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/23b8e01aa0372889a593aecfc859820ab07291b5"
+    },
+    {
+      "path": "public/favicon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d99bf2e1c1f39b06f6fcb23ccffb5e3990dd39d",
+      "size": 2511,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/5d99bf2e1c1f39b06f6fcb23ccffb5e3990dd39d"
+    },
+    {
+      "path": "public/github.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b25551a97921681334176ee143b41510a117d86",
+      "size": 1714,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/8b25551a97921681334176ee143b41510a117d86"
+    },
+    {
+      "path": "public/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8dc5e8d3a81fade990527c25f5285dd9ab607f7",
+      "size": 2184,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/b8dc5e8d3a81fade990527c25f5285dd9ab607f7"
+    },
+    {
+      "path": "public/large.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ea640ca9fabd75d55a63194308fd27eafff0fcc",
+      "size": 56758,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/0ea640ca9fabd75d55a63194308fd27eafff0fcc"
+    },
+    {
+      "path": "public/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7ca817d960157455953a0ebf186ac1631205c0a",
+      "size": 423,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/a7ca817d960157455953a0ebf186ac1631205c0a"
+    },
+    {
+      "path": "public/pow.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6aabcb3b6c8f2fe3a0d7c8125ee442e90fef7046",
+      "size": 80983,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/6aabcb3b6c8f2fe3a0d7c8125ee442e90fef7046"
+    },
+    {
+      "path": "public/twitter_card.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0bf52d3f40c9ea78ee6d8e5f531088a531b60cf1",
+      "size": 53615,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/0bf52d3f40c9ea78ee6d8e5f531088a531b60cf1"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "be292562ea29655643b929f55e3e2b81aa50b3bf",
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/trees/be292562ea29655643b929f55e3e2b81aa50b3bf"
+    },
+    {
+      "path": "src/Colors.elm",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b01b68f91b8c97bd26788319e9ca9cf394099973",
+      "size": 546,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/b01b68f91b8c97bd26788319e9ca9cf394099973"
+    },
+    {
+      "path": "src/Img.elm",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01af92527eb8c92034fd7184a022fdba1b4f5a60",
+      "size": 3464,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/01af92527eb8c92034fd7184a022fdba1b4f5a60"
+    },
+    {
+      "path": "src/Main.elm",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fb10aecef70d89afb73f38994b810d58b72cd74",
+      "size": 2825,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/5fb10aecef70d89afb73f38994b810d58b72cd74"
+    },
+    {
+      "path": "src/Misc.elm",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3204073aa32e08e45c7d89ce99396a23eace50b9",
+      "size": 2010,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/3204073aa32e08e45c7d89ce99396a23eace50b9"
+    },
+    {
+      "path": "src/Ports.elm",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd0049c12db849a658779b681577dde13a0ed3a4",
+      "size": 1426,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/fd0049c12db849a658779b681577dde13a0ed3a4"
+    },
+    {
+      "path": "src/Types.elm",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "914d932541d9ff51b0483122b1563f8e0da51933",
+      "size": 3843,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/914d932541d9ff51b0483122b1563f8e0da51933"
+    },
+    {
+      "path": "src/Update.elm",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "499b409d367c459f7934c28fb606bb82f1ade6fe",
+      "size": 26515,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/499b409d367c459f7934c28fb606bb82f1ade6fe"
+    },
+    {
+      "path": "src/View.elm",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dcb9baacad568a5afb91c030e766d6afd469d990",
+      "size": 69135,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/dcb9baacad568a5afb91c030e766d6afd469d990"
+    },
+    {
+      "path": "src/codegen",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4e6621a654971d714a2af94c424723a8d7186c0a",
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/trees/4e6621a654971d714a2af94c424723a8d7186c0a"
+    },
+    {
+      "path": "src/codegen/accounts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2fe46e897de723d22c56fce81381d12d48bbc9bc",
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/trees/2fe46e897de723d22c56fce81381d12d48bbc9bc"
+    },
+    {
+      "path": "src/codegen/accounts/Register.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bdb6833416858c1d6205af0aa9ecd88b4e455081",
+      "size": 2343,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/bdb6833416858c1d6205af0aa9ecd88b4e455081"
+    },
+    {
+      "path": "src/codegen/accounts/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22694a4983258e55f43f5543a04e4b81c52b5439",
+      "size": 101,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/22694a4983258e55f43f5543a04e4b81c52b5439"
+    },
+    {
+      "path": "src/codegen/errors",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2cb00c5b46cbd705e024bdcc707753a6d5ccaa7f",
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/trees/2cb00c5b46cbd705e024bdcc707753a6d5ccaa7f"
+    },
+    {
+      "path": "src/codegen/errors/anchor.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f40da6985b3f72cb2d44d3d75f5bf467246a0224",
+      "size": 22110,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/f40da6985b3f72cb2d44d3d75f5bf467246a0224"
+    },
+    {
+      "path": "src/codegen/errors/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a4dcfc9f33127bfc59cd157959ccdb4c921837b",
+      "size": 1259,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/1a4dcfc9f33127bfc59cd157959ccdb4c921837b"
+    },
+    {
+      "path": "src/codegen/instructions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "820f771892dae510926078707ed93d3fc0cda674",
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/trees/820f771892dae510926078707ed93d3fc0cda674"
+    },
+    {
+      "path": "src/codegen/instructions/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78d436340fdafbd2eea02807f3d993e095fd018c",
+      "size": 73,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/78d436340fdafbd2eea02807f3d993e095fd018c"
+    },
+    {
+      "path": "src/codegen/instructions/mint.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb60b81abf630302603f3f083502387812b3d4d3",
+      "size": 2616,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/eb60b81abf630302603f3f083502387812b3d4d3"
+    },
+    {
+      "path": "src/codegen/programId.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d69207a8486cff9f611ac6ac24e68d2b9a3e1588",
+      "size": 176,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/d69207a8486cff9f611ac6ac24e68d2b9a3e1588"
+    },
+    {
+      "path": "src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "211d9df027596c62a71e36acf88c5a31c0a6b79b",
+      "size": 7410,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/211d9df027596c62a71e36acf88c5a31c0a6b79b"
+    },
+    {
+      "path": "src/ports.d.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d201aa5b6b646c4b520d3d76b15537827111cbd",
+      "size": 1242,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/1d201aa5b6b646c4b520d3d76b15537827111cbd"
+    },
+    {
+      "path": "src/web3.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d2f49bffe27d4af280da9f67f8f60c843589a86",
+      "size": 8874,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/0d2f49bffe27d4af280da9f67f8f60c843589a86"
+    },
+    {
+      "path": "src/worker.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2302e8223b54a35205f7a2ea65a766aa418a3d77",
+      "size": 2460,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/2302e8223b54a35205f7a2ea65a766aa418a3d77"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "790b3fe461158148e1e21bde72f7f108795ae32c",
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/trees/790b3fe461158148e1e21bde72f7f108795ae32c"
+    },
+    {
+      "path": "tests/benchmark.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe813309b0e8f7bbba09d1074cbc13864deb4176",
+      "size": 2250,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/fe813309b0e8f7bbba09d1074cbc13864deb4176"
+    },
+    {
+      "path": "tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "793315deb10706f75f22831417f64b48457f4d77",
+      "size": 109,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/793315deb10706f75f22831417f64b48457f4d77"
+    },
+    {
+      "path": "webpack.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44fff0a088e0e170b2ddfbfe81af11708d63c031",
+      "size": 1715,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/44fff0a088e0e170b2ddfbfe81af11708d63c031"
+    },
+    {
+      "path": "webpack.worker.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4441efcdc89a38b54b1e245721f545017dde04a6",
+      "size": 736,
+      "url": "https://api.github.com/repos/ronanyeah/pow-dapp/git/blobs/4441efcdc89a38b54b1e245721f545017dde04a6"
+    }
+  ]
+}

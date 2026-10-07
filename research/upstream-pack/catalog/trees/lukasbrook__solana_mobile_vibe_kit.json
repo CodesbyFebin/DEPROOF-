@@ -1,0 +1,564 @@
+{
+  "repository": "lukasbrook/solana_mobile_vibe_kit",
+  "tree_sha": "6b51c995a60278ef84e885e007c6f1e394943516",
+  "truncated": false,
+  "entries": [
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d82b4c8817f7e45d3d9df964c5c9e9f6fdf3a60",
+      "size": 13586,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/6d82b4c8817f7e45d3d9df964c5c9e9f6fdf3a60",
+      "error": "SyntaxError: Unexpected token '#', \"# Solana M\"... is not valid JSON"
+    },
+    {
+      "path": "capacitor.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fb92504eb8127d3447f7f3ebfd715ec18157b67",
+      "size": 192,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/6fb92504eb8127d3447f7f3ebfd715ec18157b67"
+    },
+    {
+      "path": "ionic.config.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "805bbcdae24da5bc11673ed4f991136baccb8844",
+      "size": 95,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/805bbcdae24da5bc11673ed4f991136baccb8844"
+    },
+    {
+      "path": "ionic.starter.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e5c39b6a4ce324e8045c6ba5a8e678f6b445cf4",
+      "size": 211,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/1e5c39b6a4ce324e8045c6ba5a8e678f6b445cf4"
+    },
+    {
+      "path": "ios-build.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a85405caa2fda27c0d8db256669b905cea8119e4",
+      "size": 632,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/a85405caa2fda27c0d8db256669b905cea8119e4"
+    },
+    {
+      "path": "package-lock.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5aa4e0ba5083b66bffbd7bad45b6c077a1703552",
+      "size": 1381326,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/5aa4e0ba5083b66bffbd7bad45b6c077a1703552"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63b77653ec9692256f4578ddd79cff58b6b04a25",
+      "size": 2792,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/63b77653ec9692256f4578ddd79cff58b6b04a25"
+    },
+    {
+      "path": "public",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7b6b7f121689c4eaa5c582f20401233106333b17",
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/trees/7b6b7f121689c4eaa5c582f20401233106333b17"
+    },
+    {
+      "path": "public/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "139114cae0e3725d8869ab9c775dcaaca460cbf6",
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/trees/139114cae0e3725d8869ab9c775dcaaca460cbf6"
+    },
+    {
+      "path": "public/assets/icon",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fa78e388351ef1614a786ff54521710a080f1a81",
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/trees/fa78e388351ef1614a786ff54521710a080f1a81"
+    },
+    {
+      "path": "public/assets/icon/favicon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51888a7bbdb59f04c29c548523eb2638c1c954f5",
+      "size": 930,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/51888a7bbdb59f04c29c548523eb2638c1c954f5"
+    },
+    {
+      "path": "public/assets/icon/icon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7f63748a08dfbe5d34178b3e25d4b98e1600131",
+      "size": 23794,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/a7f63748a08dfbe5d34178b3e25d4b98e1600131"
+    },
+    {
+      "path": "public/assets/shapes.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d370b4dcc82d239903c3a3669cd98e2ed8374070",
+      "size": 1176,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/d370b4dcc82d239903c3a3669cd98e2ed8374070"
+    },
+    {
+      "path": "public/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e356925be9ed345de1807bc2a1eb67e7cdf15799",
+      "size": 929,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/e356925be9ed345de1807bc2a1eb67e7cdf15799"
+    },
+    {
+      "path": "public/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5808705475c95e766b3a5d7e3b42297b98c6b106",
+      "size": 438,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/5808705475c95e766b3a5d7e3b42297b98c6b106"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8dc87913186c5c1f45031e5dc110516c4d8ebc0b",
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/trees/8dc87913186c5c1f45031e5dc110516c4d8ebc0b"
+    },
+    {
+      "path": "src/App.test.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c927a8d7ac7740317b1947d4023151a4accf09e",
+      "size": 227,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/8c927a8d7ac7740317b1947d4023151a4accf09e"
+    },
+    {
+      "path": "src/App.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6313605ca6020a7ba5a5ea300281554a3b4c5fd9",
+      "size": 2828,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/6313605ca6020a7ba5a5ea300281554a3b4c5fd9"
+    },
+    {
+      "path": "src/components",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1c5fb4436a8d1f027af9dd7262e239f7a7754d35",
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/trees/1c5fb4436a8d1f027af9dd7262e239f7a7754d35"
+    },
+    {
+      "path": "src/components/ExploreContainer.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e99f514fb519d7a506cbf41020e956d10ef5548a",
+      "size": 319,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/e99f514fb519d7a506cbf41020e956d10ef5548a"
+    },
+    {
+      "path": "src/components/ExploreContainer.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4e3f32057e831b612ef8d5032565798ee7b2dbf",
+      "size": 434,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/d4e3f32057e831b612ef8d5032565798ee7b2dbf"
+    },
+    {
+      "path": "src/context",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "12a8af724d703227a2a8ac9838e5e8c6c066a94d",
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/trees/12a8af724d703227a2a8ac9838e5e8c6c066a94d"
+    },
+    {
+      "path": "src/context/PrivyContext.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7916a8864bbf7f651f134c456e686eebd75cbeab",
+      "size": 1592,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/7916a8864bbf7f651f134c456e686eebd75cbeab"
+    },
+    {
+      "path": "src/context/SolanaContext.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da6ea92219fab91ccb50da700e6dfd3093e1b3bb",
+      "size": 2559,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/da6ea92219fab91ccb50da700e6dfd3093e1b3bb"
+    },
+    {
+      "path": "src/hooks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "47d55d45d10fad57aa024f11685728daf3731394",
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/trees/47d55d45d10fad57aa024f11685728daf3731394"
+    },
+    {
+      "path": "src/hooks/usePrivySolana.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dadf78198d5cd11066437656fe549f13e804ebe4",
+      "size": 2058,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/dadf78198d5cd11066437656fe549f13e804ebe4"
+    },
+    {
+      "path": "src/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42d8033f786c566f71ef9e5a81215e98033bb76b",
+      "size": 927,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/42d8033f786c566f71ef9e5a81215e98033bb76b"
+    },
+    {
+      "path": "src/pages",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1474149ec734c4a3a0a0d9faaa2a07e92d31f7a1",
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/trees/1474149ec734c4a3a0a0d9faaa2a07e92d31f7a1"
+    },
+    {
+      "path": "src/pages/Tab1.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab00ca7b5342dadd4fd4e2b06b3f2086c1c8dab1",
+      "size": 6795,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/ab00ca7b5342dadd4fd4e2b06b3f2086c1c8dab1"
+    },
+    {
+      "path": "src/pages/Tab1.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95e50bc91dcf80667815b48ab4b04cac3fbfe3fd",
+      "size": 14349,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/95e50bc91dcf80667815b48ab4b04cac3fbfe3fd"
+    },
+    {
+      "path": "src/pages/Tab2.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e089f057bfc5049bbec8e69651b7819f4b7f1a7",
+      "size": 8308,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/5e089f057bfc5049bbec8e69651b7819f4b7f1a7"
+    },
+    {
+      "path": "src/pages/Tab2.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fb110f0f93f2eb73f4897ce4b115f3d4c35014d",
+      "size": 22054,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/0fb110f0f93f2eb73f4897ce4b115f3d4c35014d"
+    },
+    {
+      "path": "src/pages/Tab3.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23e60ca4ef1b99c6b9aa3286e688253356709046",
+      "size": 8340,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/23e60ca4ef1b99c6b9aa3286e688253356709046"
+    },
+    {
+      "path": "src/pages/Tab3.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e3e912edfeb43c2f5854d07f0f673b10fe48fc6",
+      "size": 16781,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/9e3e912edfeb43c2f5854d07f0f673b10fe48fc6"
+    },
+    {
+      "path": "src/pages/Tab4.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bed5e6303103228d2e05197006eda1bccd69ecc2",
+      "size": 7003,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/bed5e6303103228d2e05197006eda1bccd69ecc2"
+    },
+    {
+      "path": "src/pages/Tab4.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33e4605cdf37f0ef3e8d26600d34a5e6e135e505",
+      "size": 23975,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/33e4605cdf37f0ef3e8d26600d34a5e6e135e505"
+    },
+    {
+      "path": "src/react-app-env.d.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6431bc5fc6b2c932dfe5d0418fc667b86c18b9fc",
+      "size": 40,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/6431bc5fc6b2c932dfe5d0418fc667b86c18b9fc"
+    },
+    {
+      "path": "src/reportWebVitals.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49a2a16e0fbc7636ee16bf907257a5282b856493",
+      "size": 425,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/49a2a16e0fbc7636ee16bf907257a5282b856493"
+    },
+    {
+      "path": "src/sdk",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6a4d0c08631718ee57b55c5a24159fb811bc5ea3",
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/trees/6a4d0c08631718ee57b55c5a24159fb811bc5ea3"
+    },
+    {
+      "path": "src/sdk/SolanaSDK.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b27a4070704dffcfb32634afa4dfefb21ea85e17",
+      "size": 2113,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/b27a4070704dffcfb32634afa4dfefb21ea85e17",
+      "error": "SyntaxError: Unexpected token 'i', \"import { S\"... is not valid JSON"
+    },
+    {
+      "path": "src/sdk/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "624b05e09e6b43f0b78297b6613a07f359c6d3e4",
+      "size": 223,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/624b05e09e6b43f0b78297b6613a07f359c6d3e4",
+      "error": "SyntaxError: Unexpected token '/', \"// Solana \"... is not valid JSON"
+    },
+    {
+      "path": "src/sdk/jupiter.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac58d822aa18a72cfc1ec96f03f2bc2179ad7f7a",
+      "size": 5419,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/ac58d822aa18a72cfc1ec96f03f2bc2179ad7f7a",
+      "error": "SyntaxError: Unexpected token 'i', \"import { C\"... is not valid JSON"
+    },
+    {
+      "path": "src/sdk/token.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7005d8ebb7c6a5d7d430e35e3550559ceaf11f9",
+      "size": 7544,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/f7005d8ebb7c6a5d7d430e35e3550559ceaf11f9",
+      "error": "SyntaxError: Unexpected token 'i', \"import { \n\"... is not valid JSON"
+    },
+    {
+      "path": "src/sdk/transaction.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "567a3fff984b9f4aaaee749aee517a2358f321c7",
+      "size": 6365,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/567a3fff984b9f4aaaee749aee517a2358f321c7",
+      "error": "SyntaxError: Unexpected token 'i', \"import { \n\"... is not valid JSON"
+    },
+    {
+      "path": "src/sdk/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1fbfdbdd2d6a727bf27941b19dcc00bb55dd408",
+      "size": 1743,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/f1fbfdbdd2d6a727bf27941b19dcc00bb55dd408"
+    },
+    {
+      "path": "src/sdk/utils.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3953ae2d843e805b6b3eb09168cf5177399c109",
+      "size": 2911,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/e3953ae2d843e805b6b3eb09168cf5177399c109"
+    },
+    {
+      "path": "src/sdk/wallet.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "498977b605868a863bbec357e60cf585af54253a",
+      "size": 5936,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/498977b605868a863bbec357e60cf585af54253a"
+    },
+    {
+      "path": "src/service-worker.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "652a8a4afc5d31acc8be3fe79f1ce4b0cbe638bd",
+      "size": 2968,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/652a8a4afc5d31acc8be3fe79f1ce4b0cbe638bd"
+    },
+    {
+      "path": "src/serviceWorkerRegistration.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e980f2d9150936b647ec4e832e22e65c0f5b27c",
+      "size": 5289,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/6e980f2d9150936b647ec4e832e22e65c0f5b27c"
+    },
+    {
+      "path": "src/setupTests.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "138a108fafe5a40ab5f1d037e9d0d24e92ed3972",
+      "size": 499,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/138a108fafe5a40ab5f1d037e9d0d24e92ed3972"
+    },
+    {
+      "path": "src/theme",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "93b13a8e5b3d8abc3b0f76af4b84ede7c8b47b10",
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/trees/93b13a8e5b3d8abc3b0f76af4b84ede7c8b47b10"
+    },
+    {
+      "path": "src/theme/variables.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a44fcdd01d79d196087b6ea9615b05572dba8bde",
+      "size": 7048,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/a44fcdd01d79d196087b6ea9615b05572dba8bde"
+    },
+    {
+      "path": "tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a273b0cfc0e965c35524e3cd0d3574cbe1ad2d0d",
+      "size": 535,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/a273b0cfc0e965c35524e3cd0d3574cbe1ad2d0d"
+    },
+    {
+      "path": "vibe_modules",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f33b27c27dba00682e7563085de1c8bb142e51e1",
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/trees/f33b27c27dba00682e7563085de1c8bb142e51e1"
+    },
+    {
+      "path": "vibe_modules/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "13aedc461ed5fee2e8830ced3ff6362a8b607e35",
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/trees/13aedc461ed5fee2e8830ced3ff6362a8b607e35"
+    },
+    {
+      "path": "vibe_modules/data/coingecko.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9c4100ef270dd1280f09d5f02a54fb280f7512f",
+      "size": 58710,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/d9c4100ef270dd1280f09d5f02a54fb280f7512f"
+    },
+    {
+      "path": "vibe_modules/data/dexscreener.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aaee6240ef16a852dff4d253cb45f6f511849506",
+      "size": 33600,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/aaee6240ef16a852dff4d253cb45f6f511849506"
+    },
+    {
+      "path": "vibe_modules/jito",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d0f85738dfac4eacc2b270242d3899673ba7b29f",
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/trees/d0f85738dfac4eacc2b270242d3899673ba7b29f"
+    },
+    {
+      "path": "vibe_modules/jito/jito.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19cd0a58c13693e529b9c0e05d1a69bcac67a8ff",
+      "size": 47446,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/19cd0a58c13693e529b9c0e05d1a69bcac67a8ff"
+    },
+    {
+      "path": "vibe_modules/jup",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d5b029ce9d96878fb2e0aba06b04460c53987287",
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/trees/d5b029ce9d96878fb2e0aba06b04460c53987287"
+    },
+    {
+      "path": "vibe_modules/jup/jup.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f393ff605097ec40ead9c15945ff298d47068e7",
+      "size": 52514,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/8f393ff605097ec40ead9c15945ff298d47068e7"
+    },
+    {
+      "path": "vibe_modules/meteora",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "87ff8d77aa2d7915c08a27f361c6e30c26366f6b",
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/trees/87ff8d77aa2d7915c08a27f361c6e30c26366f6b"
+    },
+    {
+      "path": "vibe_modules/meteora/dynamic-amm.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2223a829dc1e2fcf88449008ce03686c5795282f",
+      "size": 27290,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/2223a829dc1e2fcf88449008ce03686c5795282f"
+    },
+    {
+      "path": "vibe_modules/meteora/dynamic-bonding-curve.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "233d7d02fddb099863280db4cd396ada274f1eaa",
+      "size": 52888,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/233d7d02fddb099863280db4cd396ada274f1eaa"
+    },
+    {
+      "path": "vibe_modules/meteora/dynamic-clmm.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c45ada9b0659d95440a842339b255dcc6427a78a",
+      "size": 26536,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/c45ada9b0659d95440a842339b255dcc6427a78a"
+    },
+    {
+      "path": "vibe_modules/meteora/scaffold.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa5de33ac1c12e001131dd4639ed39f1589ca1ec",
+      "size": 3144,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/fa5de33ac1c12e001131dd4639ed39f1589ca1ec"
+    },
+    {
+      "path": "vibe_modules/pumpfun",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d40b8bccb898a30eb93f422fcc245dd718ae7b16",
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/trees/d40b8bccb898a30eb93f422fcc245dd718ae7b16"
+    },
+    {
+      "path": "vibe_modules/pumpfun/pumpfun.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0986061bc177935102c2f415da2e593c17fc1fc3",
+      "size": 18430,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/0986061bc177935102c2f415da2e593c17fc1fc3"
+    },
+    {
+      "path": "vibe_modules/raydium",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "002696787a75c1abda65cfe87e1ded072a9acab2",
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/trees/002696787a75c1abda65cfe87e1ded072a9acab2"
+    },
+    {
+      "path": "vibe_modules/raydium/raydium-sdk.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4b3a968db6bb060d274017e42321eb4bd56ef90",
+      "size": 6939,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/a4b3a968db6bb060d274017e42321eb4bd56ef90"
+    },
+    {
+      "path": "yarn.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd5e324aecac580741e5cdfc6315d64ed8bf5612",
+      "size": 680372,
+      "url": "https://api.github.com/repos/lukasbrook/solana_mobile_vibe_kit/git/blobs/dd5e324aecac580741e5cdfc6315d64ed8bf5612"
+    }
+  ]
+}

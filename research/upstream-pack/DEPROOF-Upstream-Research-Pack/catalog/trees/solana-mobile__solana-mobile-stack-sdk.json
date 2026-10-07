@@ -1,0 +1,25 @@
+{
+  "repository": "solana-mobile/solana-mobile-stack-sdk",
+  "tree_sha": "dcd59ad28e54472a41963566cbe6b3e2a93c334d",
+  "truncated": false,
+  "entries": [
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1f4e700f01ff7984d28f6af5f6adab5c221b0e4",
+      "size": 559,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-stack-sdk/git/blobs/f1f4e700f01ff7984d28f6af5f6adab5c221b0e4",
+      "error": "SyntaxError: Unexpected token 'C', \"Copyright \"... is not valid JSON"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d642cd60857f20bae55c6bcea1ab9ade0d12c761",
+      "size": 5837,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-stack-sdk/git/blobs/d642cd60857f20bae55c6bcea1ab9ade0d12c761",
+      "error": "SyntaxError: Unexpected token '#', \"# Solana M\"... is not valid JSON"
+    }
+  ]
+}

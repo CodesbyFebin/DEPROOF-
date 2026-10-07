@@ -1,0 +1,389 @@
+{
+  "repository": "hariFED/O-Chat",
+  "tree_sha": "db8fe0ab4585bb8c74b30f1fb974be3a0287dad4",
+  "truncated": false,
+  "entries": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f610ec0d642fd8605ae05118da29796b1c7ba42b",
+      "size": 411,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/f610ec0d642fd8605ae05118da29796b1c7ba42b"
+    },
+    {
+      "path": ".vscode",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6bccccb7c8624eb06cfc248bdd08487ceaa7778c",
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/trees/6bccccb7c8624eb06cfc248bdd08487ceaa7778c"
+    },
+    {
+      "path": ".vscode/settings.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2798e4264cbbbf1806ebf8f1ab263c009458ff9",
+      "size": 152,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/e2798e4264cbbbf1806ebf8f1ab263c009458ff9"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48dd63ff3ef9d87e1378e6babeac488e7ecc37b3",
+      "size": 1741,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/48dd63ff3ef9d87e1378e6babeac488e7ecc37b3",
+      "error": "SyntaxError: Unexpected token '#', \"# Welcome \"... is not valid JSON"
+    },
+    {
+      "path": "app.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1cabc315862fb521fb4a0f0c5754487cafe725aa",
+      "size": 928,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/1cabc315862fb521fb4a0f0c5754487cafe725aa"
+    },
+    {
+      "path": "app",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4679bd5da2e50e013fda17dcd799753eca8881a2",
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/trees/4679bd5da2e50e013fda17dcd799753eca8881a2"
+    },
+    {
+      "path": "app/(tabs)",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cb8e10fac1e6c1894281a295ba64ef8095f40905",
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/trees/cb8e10fac1e6c1894281a295ba64ef8095f40905"
+    },
+    {
+      "path": "app/(tabs)/_layout.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfbc1e236a04d45150de97576829696d8343d3e7",
+      "size": 1328,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/cfbc1e236a04d45150de97576829696d8343d3e7"
+    },
+    {
+      "path": "app/(tabs)/explore.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4fbcaaa973606d18ec430ca6dcb8af47c343f83",
+      "size": 4576,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/d4fbcaaa973606d18ec430ca6dcb8af47c343f83"
+    },
+    {
+      "path": "app/(tabs)/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "462e8cd192ed8e719b0a51a066dd1e3734ec18d9",
+      "size": 2470,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/462e8cd192ed8e719b0a51a066dd1e3734ec18d9"
+    },
+    {
+      "path": "app/+not-found.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "215b0ed18ccc78d10ace82725940595a69e794d5",
+      "size": 793,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/215b0ed18ccc78d10ace82725940595a69e794d5"
+    },
+    {
+      "path": "app/_layout.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d506f7e1d83252d109b2f342ecbd52e23483667",
+      "size": 864,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/8d506f7e1d83252d109b2f342ecbd52e23483667"
+    },
+    {
+      "path": "assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "49b431c802374f74f9e1b6810076d795c513431a",
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/trees/49b431c802374f74f9e1b6810076d795c513431a"
+    },
+    {
+      "path": "assets/fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "08266695fbd1e59ede956ef810751d92519430ba",
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/trees/08266695fbd1e59ede956ef810751d92519430ba"
+    },
+    {
+      "path": "assets/fonts/SpaceMono-Regular.ttf",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "28d7ff717769d29e5d1f036bfa91eea660ce8a24",
+      "size": 93252,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/28d7ff717769d29e5d1f036bfa91eea660ce8a24"
+    },
+    {
+      "path": "assets/images",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "830533d49ab03b4dedac8e1c6e2b5dcf1a18c2a0",
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/trees/830533d49ab03b4dedac8e1c6e2b5dcf1a18c2a0"
+    },
+    {
+      "path": "assets/images/adaptive-icon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03d6f6b6c6727954aec1d8206222769afd178d8d",
+      "size": 17547,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/03d6f6b6c6727954aec1d8206222769afd178d8d"
+    },
+    {
+      "path": "assets/images/favicon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e75f697b1801871ad8cd9309b05e8ffe8c6b6d01",
+      "size": 1466,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/e75f697b1801871ad8cd9309b05e8ffe8c6b6d01"
+    },
+    {
+      "path": "assets/images/icon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0b1526fc7b78680fd8d733dbc6113e1af695487",
+      "size": 22380,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/a0b1526fc7b78680fd8d733dbc6113e1af695487"
+    },
+    {
+      "path": "assets/images/partial-react-logo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66fd9570e4fac42bca15352def191c563100b2ed",
+      "size": 5075,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/66fd9570e4fac42bca15352def191c563100b2ed"
+    },
+    {
+      "path": "assets/images/react-logo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d72a9ffcbb39d89709073e1a7edd8ba414932c1",
+      "size": 6341,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/9d72a9ffcbb39d89709073e1a7edd8ba414932c1"
+    },
+    {
+      "path": "assets/images/react-logo@2x.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2229b130ad5b73fdef7d59ff544abd4cb2377bef",
+      "size": 14225,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/2229b130ad5b73fdef7d59ff544abd4cb2377bef"
+    },
+    {
+      "path": "assets/images/react-logo@3x.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a99b2032221d57c88b6c44e7e22d93ddda78e008",
+      "size": 21252,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/a99b2032221d57c88b6c44e7e22d93ddda78e008"
+    },
+    {
+      "path": "assets/images/splash-icon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03d6f6b6c6727954aec1d8206222769afd178d8d",
+      "size": 17547,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/03d6f6b6c6727954aec1d8206222769afd178d8d"
+    },
+    {
+      "path": "components",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cfb3a81743467f9672af38760e4ff4ac49d9c8b9",
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/trees/cfb3a81743467f9672af38760e4ff4ac49d9c8b9"
+    },
+    {
+      "path": "components/Collapsible.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55bff2f91452c40194283c6cf3de41b14b949557",
+      "size": 1358,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/55bff2f91452c40194283c6cf3de41b14b949557"
+    },
+    {
+      "path": "components/ExternalLink.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfbd23ea265fc5e93b469276c86ee01e838ba4d5",
+      "size": 713,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/dfbd23ea265fc5e93b469276c86ee01e838ba4d5"
+    },
+    {
+      "path": "components/HapticTab.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f3981cb940657b88f3495bb0411d00c76f83d5e",
+      "size": 564,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/7f3981cb940657b88f3495bb0411d00c76f83d5e"
+    },
+    {
+      "path": "components/HelloWave.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb6ea61a0f76a3b9409d35a3c3c3b5e432bf03bc",
+      "size": 939,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/eb6ea61a0f76a3b9409d35a3c3c3b5e432bf03bc"
+    },
+    {
+      "path": "components/ParallaxScrollView.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5df1d75fd876cedb90383acb87aeeb3966073df7",
+      "size": 2143,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/5df1d75fd876cedb90383acb87aeeb3966073df7"
+    },
+    {
+      "path": "components/ThemedText.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d214a2b83bd67159c49453ffb8b313b7c0ed009",
+      "size": 1283,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/9d214a2b83bd67159c49453ffb8b313b7c0ed009"
+    },
+    {
+      "path": "components/ThemedView.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d2cb09d4fbb6b04ce8111b23f116e9b96b18162",
+      "size": 468,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/4d2cb09d4fbb6b04ce8111b23f116e9b96b18162"
+    },
+    {
+      "path": "components/ui",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "812bff644a7a5df7b3a21992850ea7354197ce9b",
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/trees/812bff644a7a5df7b3a21992850ea7354197ce9b"
+    },
+    {
+      "path": "components/ui/IconSymbol.ios.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9177f4daf238a4eb6688308695e68a8c19dc5eb3",
+      "size": 598,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/9177f4daf238a4eb6688308695e68a8c19dc5eb3"
+    },
+    {
+      "path": "components/ui/IconSymbol.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7ece6b3502856d5d4e1a5f05834e653b20130d2",
+      "size": 1422,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/b7ece6b3502856d5d4e1a5f05834e653b20130d2"
+    },
+    {
+      "path": "components/ui/TabBarBackground.ios.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "495b2d4e5ac5d799effb352df46f5d937f72fa8b",
+      "size": 547,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/495b2d4e5ac5d799effb352df46f5d937f72fa8b"
+    },
+    {
+      "path": "components/ui/TabBarBackground.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70d1c3c0b89cbe49338523c3d0ca5d30f1f35dc7",
+      "size": 159,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/70d1c3c0b89cbe49338523c3d0ca5d30f1f35dc7"
+    },
+    {
+      "path": "constants",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4140068f7aa01db8eddbd42b1a6dfb9e4238492c",
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/trees/4140068f7aa01db8eddbd42b1a6dfb9e4238492c"
+    },
+    {
+      "path": "constants/Colors.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14e67844d65053810120d5a1af11bf8dd3302769",
+      "size": 750,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/14e67844d65053810120d5a1af11bf8dd3302769"
+    },
+    {
+      "path": "eslint.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5025da683d6b6ecdced898af11f2e5dc5a73a4c1",
+      "size": 237,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/5025da683d6b6ecdced898af11f2e5dc5a73a4c1"
+    },
+    {
+      "path": "hooks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4da320637095ae6f069d85452e3d6444085e61b2",
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/trees/4da320637095ae6f069d85452e3d6444085e61b2"
+    },
+    {
+      "path": "hooks/useColorScheme.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17e3c63e1acfe711d436c1c205d90c4e2fe46131",
+      "size": 47,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/17e3c63e1acfe711d436c1c205d90c4e2fe46131"
+    },
+    {
+      "path": "hooks/useColorScheme.web.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7eb1c1b7071ceedf76252509fabb05c603774ad8",
+      "size": 480,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/7eb1c1b7071ceedf76252509fabb05c603774ad8"
+    },
+    {
+      "path": "hooks/useThemeColor.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0608e7315a580beb4b1eed46ecc34aaf2a537e15",
+      "size": 536,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/0608e7315a580beb4b1eed46ecc34aaf2a537e15"
+    },
+    {
+      "path": "package-lock.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e80a7013c5f7ba59883b7e38c019a0c9c6707b1",
+      "size": 511080,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/6e80a7013c5f7ba59883b7e38c019a0c9c6707b1"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1479249871a39ec71258f475834daa7fb41a2cf1",
+      "size": 1644,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/1479249871a39ec71258f475834daa7fb41a2cf1"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "525a31b6d80360cd379da561786ff1dc49179086",
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/trees/525a31b6d80360cd379da561786ff1dc49179086"
+    },
+    {
+      "path": "scripts/reset-project.js",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "51dff15acba333398064fe4cd8008ed4ed5105b9",
+      "size": 3608,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/51dff15acba333398064fe4cd8008ed4ed5105b9"
+    },
+    {
+      "path": "tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "909e9010867004d96567d0a03ef3dceea154eff6",
+      "size": 242,
+      "url": "https://api.github.com/repos/hariFED/O-Chat/git/blobs/909e9010867004d96567d0a03ef3dceea154eff6"
+    }
+  ]
+}

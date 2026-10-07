@@ -1,0 +1,2250 @@
+{
+  "repository": "AleisterMoltley/dotLab",
+  "tree_sha": "3aa4006db9e5d2c2d260706377f461635497e597",
+  "truncated": false,
+  "entries": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9cb6a8c7dc27b3994947d7c54843c55ba1bdb53a",
+      "size": 708,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/9cb6a8c7dc27b3994947d7c54843c55ba1bdb53a"
+    },
+    {
+      "path": "AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25f5c70430e4cc658fd9f90e7273ca8054abece9",
+      "size": 6580,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/25f5c70430e4cc658fd9f90e7273ca8054abece9"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64f6d1da6a7032492b1317b2a31c46a53d8e8b50",
+      "size": 720,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/64f6d1da6a7032492b1317b2a31c46a53d8e8b50"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a9303a11ce3622409cd6980010d8ae770c674be",
+      "size": 1072,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/4a9303a11ce3622409cd6980010d8ae770c674be",
+      "error": "SyntaxError: Unexpected token 'M', \"MIT Licens\"... is not valid JSON"
+    },
+    {
+      "path": "Modelfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "358078de90273131ded1371a39a1550ec6034880",
+      "size": 2561,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/358078de90273131ded1371a39a1550ec6034880"
+    },
+    {
+      "path": "Modelfile.flash",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "feea0f98e434bea730369c7f7d2c8de37e83c510",
+      "size": 365,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/feea0f98e434bea730369c7f7d2c8de37e83c510"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0516eed40d44634d6a2e3d2de0f8a719167ffc2",
+      "size": 25763,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/c0516eed40d44634d6a2e3d2de0f8a719167ffc2",
+      "error": "SyntaxError: Unexpected token '#', \"# dotLab\n\n\"... is not valid JSON"
+    },
+    {
+      "path": "START.command",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "8cc6b96ac3a91b3818a3dc9986bb16dd7cd36d7a",
+      "size": 329,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/8cc6b96ac3a91b3818a3dc9986bb16dd7cd36d7a"
+    },
+    {
+      "path": "bin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4e7154197c6572dae194f33d5b1ef4bb138d1053",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/4e7154197c6572dae194f33d5b1ef4bb138d1053"
+    },
+    {
+      "path": "bin/agent.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "c03a30ea21e3b82995f12011f73dda2e23c19dff",
+      "size": 38749,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/c03a30ea21e3b82995f12011f73dda2e23c19dff"
+    },
+    {
+      "path": "bin/antislope.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06cf2f0483d17408b25e78bfab740bdfe5af0e30",
+      "size": 22794,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/06cf2f0483d17408b25e78bfab740bdfe5af0e30"
+    },
+    {
+      "path": "bin/bullshit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b170a595bd37f130aec03eb3ca520244c0874cbb",
+      "size": 5379,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/b170a595bd37f130aec03eb3ca520244c0874cbb"
+    },
+    {
+      "path": "bin/cloud.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "745fbb176114fbf272683e92eb737e6d1a7b661d",
+      "size": 22279,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/745fbb176114fbf272683e92eb737e6d1a7b661d"
+    },
+    {
+      "path": "bin/dotlab",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "e8e4b69ee7466d2cf81992aea0bfa6b47a48ecd0",
+      "size": 15640,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/e8e4b69ee7466d2cf81992aea0bfa6b47a48ecd0"
+    },
+    {
+      "path": "bin/engine_ops.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb437a734bee4193c204c5b0027e4b67e5435ff5",
+      "size": 14714,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/eb437a734bee4193c204c5b0027e4b67e5435ff5"
+    },
+    {
+      "path": "bin/eval_briefs.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47e30c469dac498ebfbc318bedd32da5d8342aa6",
+      "size": 8681,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/47e30c469dac498ebfbc318bedd32da5d8342aa6"
+    },
+    {
+      "path": "bin/game_ops.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8fd4e4f802090804a03df06cd872c663b7df6b22",
+      "size": 25877,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/8fd4e4f802090804a03df06cd872c663b7df6b22"
+    },
+    {
+      "path": "bin/gamemaster",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "3d78c8e67495979ead3e00e2be686b4f111746fd",
+      "size": 16262,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/3d78c8e67495979ead3e00e2be686b4f111746fd"
+    },
+    {
+      "path": "bin/github.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "f70827dad1790f645d6233be6d069c8c26fe75e9",
+      "size": 23347,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/f70827dad1790f645d6233be6d069c8c26fe75e9"
+    },
+    {
+      "path": "bin/gmcommon.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31db2417a6bebeb6dfa68d56984e50d36ab3cec0",
+      "size": 15276,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/31db2417a6bebeb6dfa68d56984e50d36ab3cec0"
+    },
+    {
+      "path": "bin/golden.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ef770ea66bef2161db224b9fab1305a801f541a",
+      "size": 9471,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/4ef770ea66bef2161db224b9fab1305a801f541a"
+    },
+    {
+      "path": "bin/grok.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec852e690cbb979eca4d819902e8219cae5031b8",
+      "size": 27684,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/ec852e690cbb979eca4d819902e8219cae5031b8"
+    },
+    {
+      "path": "bin/hands.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5dde0a90eb39640945ff1c0495c456a012ca7581",
+      "size": 20290,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/5dde0a90eb39640945ff1c0495c456a012ca7581"
+    },
+    {
+      "path": "bin/host_floor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0bddb1e0a9d8465656f0456eae43129d9930b78a",
+      "size": 18619,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/0bddb1e0a9d8465656f0456eae43129d9930b78a"
+    },
+    {
+      "path": "bin/identity.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "061b7f4e5c015acad3ad8a914104d9380b3978e4",
+      "size": 9352,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/061b7f4e5c015acad3ad8a914104d9380b3978e4"
+    },
+    {
+      "path": "bin/intervene.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "ecf189edc1fad891922a91c4340bb3e2bd4d24e5",
+      "size": 11186,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/ecf189edc1fad891922a91c4340bb3e2bd4d24e5"
+    },
+    {
+      "path": "bin/kit.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "2ffeb212e0a33803942128c93378fd155858c5b6",
+      "size": 14913,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/2ffeb212e0a33803942128c93378fd155858c5b6"
+    },
+    {
+      "path": "bin/live.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "b406ba5991ff73e51d0ebe75bad7136c0ebc6537",
+      "size": 28588,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/b406ba5991ff73e51d0ebe75bad7136c0ebc6537"
+    },
+    {
+      "path": "bin/live_docs.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "638c3cf5dfcfca843856bce176b57fce318ac90d",
+      "size": 5742,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/638c3cf5dfcfca843856bce176b57fce318ac90d"
+    },
+    {
+      "path": "bin/lora_ops.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fd43933ad0dcf54c547b81c613f9de9e51da300",
+      "size": 5674,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/6fd43933ad0dcf54c547b81c613f9de9e51da300"
+    },
+    {
+      "path": "bin/models_catalog.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3140609ff16f246fa30c3c018eab49b8d0ce8d53",
+      "size": 12661,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/3140609ff16f246fa30c3c018eab49b8d0ce8d53"
+    },
+    {
+      "path": "bin/patch.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "89037e9b3ce52879a945afe64fc7d78432440267",
+      "size": 13757,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/89037e9b3ce52879a945afe64fc7d78432440267"
+    },
+    {
+      "path": "bin/play_gate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0c696ad13b35932aad0b350aef83e4411f448ef",
+      "size": 15422,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/f0c696ad13b35932aad0b350aef83e4411f448ef"
+    },
+    {
+      "path": "bin/playtest.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "4f07488c1d921e6c218af6ec32add1698352d64c",
+      "size": 9504,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/4f07488c1d921e6c218af6ec32add1698352d64c"
+    },
+    {
+      "path": "bin/prefs.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "e829e55d8bd21806cb00e4380e0e21f4210a628f",
+      "size": 14364,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/e829e55d8bd21806cb00e4380e0e21f4210a628f"
+    },
+    {
+      "path": "bin/quality.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6eefd30874d604d918ca80a3cd11c5c5220620d",
+      "size": 50121,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/e6eefd30874d604d918ca80a3cd11c5c5220620d"
+    },
+    {
+      "path": "bin/rag.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "599a6d26e38898be4630d562025d3bdb1b8ece83",
+      "size": 12623,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/599a6d26e38898be4630d562025d3bdb1b8ece83"
+    },
+    {
+      "path": "bin/reasoning_bank.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "221245654d91364f0a23c22b2a5227af7891d9da",
+      "size": 6611,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/221245654d91364f0a23c22b2a5227af7891d9da"
+    },
+    {
+      "path": "bin/redteam.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a81b6e8f648ebdc8f8c65a128e692bdd4030cdc",
+      "size": 5927,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/4a81b6e8f648ebdc8f8c65a128e692bdd4030cdc"
+    },
+    {
+      "path": "bin/rlm.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c241f6ef65266e4182c483804d18f556d9ad6eef",
+      "size": 27822,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/c241f6ef65266e4182c483804d18f556d9ad6eef"
+    },
+    {
+      "path": "bin/scaffold.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "c88eeb43f8fb3157c26401feed356831789e5026",
+      "size": 17665,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/c88eeb43f8fb3157c26401feed356831789e5026"
+    },
+    {
+      "path": "bin/security.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22dfd038ff2e1a0da24681031c8a1c04949ff2af",
+      "size": 16607,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/22dfd038ff2e1a0da24681031c8a1c04949ff2af"
+    },
+    {
+      "path": "bin/self-update.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "f7d1bfd016db3257f04823b44671752acd73e255",
+      "size": 11357,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/f7d1bfd016db3257f04823b44671752acd73e255"
+    },
+    {
+      "path": "bin/server.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "965ee30aafb7280d7ace14cac3b36015c594e61e",
+      "size": 54634,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/965ee30aafb7280d7ace14cac3b36015c594e61e"
+    },
+    {
+      "path": "bin/skills.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e4f3de3d7ab272ab376e9add6b6eb54160d25f9",
+      "size": 25004,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/6e4f3de3d7ab272ab376e9add6b6eb54160d25f9"
+    },
+    {
+      "path": "bin/slice.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2aec49e5bd215a44db3c0a03560dededb2f3d6f2",
+      "size": 46135,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/2aec49e5bd215a44db3c0a03560dededb2f3d6f2"
+    },
+    {
+      "path": "bin/slots.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93f8555c4d272d1520861193202dc49ecd8ec04e",
+      "size": 11999,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/93f8555c4d272d1520861193202dc49ecd8ec04e"
+    },
+    {
+      "path": "bin/studio.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "dea53fa3efc13b53c444f258e15aee5e12149c10",
+      "size": 44147,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/dea53fa3efc13b53c444f258e15aee5e12149c10"
+    },
+    {
+      "path": "bin/studio_ops.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d02c1174d0f3988f863464d3d68ec252d1e072e",
+      "size": 21785,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/3d02c1174d0f3988f863464d3d68ec252d1e072e"
+    },
+    {
+      "path": "bin/turbo.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "a56a5a89e0946471aaf4fd58e96f9f808a664bc3",
+      "size": 25317,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/a56a5a89e0946471aaf4fd58e96f9f808a664bc3"
+    },
+    {
+      "path": "bin/verify.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "fd72b536a1fa30640ffd47b47adce8ecd9fd3ba1",
+      "size": 26262,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/fd72b536a1fa30640ffd47b47adce8ecd9fd3ba1"
+    },
+    {
+      "path": "bin/wiki.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "1bbb2a5db0494cd6c0ca6dea2929d47f1014a166",
+      "size": 8046,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/1bbb2a5db0494cd6c0ca6dea2929d47f1014a166"
+    },
+    {
+      "path": "bin/worlds.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "7a8dd3faeee74f8c8d7b5c2469b1c294ade56f30",
+      "size": 40133,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/7a8dd3faeee74f8c8d7b5c2469b1c294ade56f30"
+    },
+    {
+      "path": "bin/zoo.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "5e004d746ad79eb35658869bd75ba5eb8635c6c5",
+      "size": 66232,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/5e004d746ad79eb35658869bd75ba5eb8635c6c5"
+    },
+    {
+      "path": "chat",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cfd2a48c91c722d9ce8751cc79102c4a3ed5ebf8",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/cfd2a48c91c722d9ce8751cc79102c4a3ed5ebf8"
+    },
+    {
+      "path": "chat/app.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0403870a933f30749550f4f5f6dd6781649b228",
+      "size": 63079,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/d0403870a933f30749550f4f5f6dd6781649b228"
+    },
+    {
+      "path": "chat/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6defe5ad72c972725c88889d81d51414736a9f9c",
+      "size": 44313,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/6defe5ad72c972725c88889d81d51414736a9f9c"
+    },
+    {
+      "path": "config",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b199576661a4dfb3713eea55d3a8cc5bd524d3a5",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/b199576661a4dfb3713eea55d3a8cc5bd524d3a5"
+    },
+    {
+      "path": "config/README-editor.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61c9aeb1498cf755513201ec36322fbbb29a3f0a",
+      "size": 577,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/61c9aeb1498cf755513201ec36322fbbb29a3f0a",
+      "error": "SyntaxError: Unexpected token '#', \"# Editor i\"... is not valid JSON"
+    },
+    {
+      "path": "config/cloud.example.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3464a47285db4c1d040ae0c8584d052a1581d426",
+      "size": 407,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/3464a47285db4c1d040ae0c8584d052a1581d426"
+    },
+    {
+      "path": "config/continue-config.snippet.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7091ae8e314656a42b04af88d12d1590336a507e",
+      "size": 628,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/7091ae8e314656a42b04af88d12d1590336a507e"
+    },
+    {
+      "path": "config/continue-ready.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ab339727f3e4072f0677a6d6bb440b303449647",
+      "size": 626,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/1ab339727f3e4072f0677a6d6bb440b303449647"
+    },
+    {
+      "path": "config/ollama-env.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13347bd2053fbdd60e01d4e3deff8cfead1be2fb",
+      "size": 516,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/13347bd2053fbdd60e01d4e3deff8cfead1be2fb"
+    },
+    {
+      "path": "config/version.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a623bea2aa2d37b18b8c44beddee347b0d27a227",
+      "size": 83,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/a623bea2aa2d37b18b8c44beddee347b0d27a227"
+    },
+    {
+      "path": "config/worlds.example.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3b06dfb02c5a36dd43ab6eef9bf896c741bd2c8",
+      "size": 61,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/f3b06dfb02c5a36dd43ab6eef9bf896c741bd2c8"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3ade0f4226e954afacf976309ffd9800278b37c3",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/3ade0f4226e954afacf976309ffd9800278b37c3"
+    },
+    {
+      "path": "docs/readme",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "45298da5812dee1cc945bf71d78eec6400430ec0",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/45298da5812dee1cc945bf71d78eec6400430ec0"
+    },
+    {
+      "path": "docs/readme/capture.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5ee6b48ce86d3d5a22a8252e704515dda82e063",
+      "size": 790,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/e5ee6b48ce86d3d5a22a8252e704515dda82e063"
+    },
+    {
+      "path": "docs/readme/hero.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ed2709fc2997ac0eb7c427e3b635146244fea44",
+      "size": 183238,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/7ed2709fc2997ac0eb7c427e3b635146244fea44"
+    },
+    {
+      "path": "docs/readme/play.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1ab66b6df2620c10c1f1eae1c81b83e6c9170e4",
+      "size": 7093,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/c1ab66b6df2620c10c1f1eae1c81b83e6c9170e4"
+    },
+    {
+      "path": "docs/readme/play.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31ce0832ea1f5117730a3116149062af9e69f5a8",
+      "size": 423046,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/31ce0832ea1f5117730a3116149062af9e69f5a8"
+    },
+    {
+      "path": "docs/readme/slice-arena.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78704acdad1a6bc0780ccc26484ff5ff364e3278",
+      "size": 231489,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/78704acdad1a6bc0780ccc26484ff5ff364e3278"
+    },
+    {
+      "path": "docs/readme/studio.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c8316b34e1efcea1efa2c4fa0eb7e6f7cd8bcb7",
+      "size": 5358,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/2c8316b34e1efcea1efa2c4fa0eb7e6f7cd8bcb7"
+    },
+    {
+      "path": "docs/readme/studio.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfb333cb0d4df99262c90795c5ab41e03640b5dc",
+      "size": 121504,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/cfb333cb0d4df99262c90795c5ab41e03640b5dc"
+    },
+    {
+      "path": "docs/readme/zoo.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea51e0c6fc3231a406698569dd2b19ae344d3f86",
+      "size": 5747,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/ea51e0c6fc3231a406698569dd2b19ae344d3f86"
+    },
+    {
+      "path": "docs/readme/zoo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a973df781f1a9d6b1fe6f75e1e56e9ab54f0e1d8",
+      "size": 122502,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/a973df781f1a9d6b1fe6f75e1e56e9ab54f0e1d8"
+    },
+    {
+      "path": "evals",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7f703f65a0b584400905976f851171cadb72f67c",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/7f703f65a0b584400905976f851171cadb72f67c"
+    },
+    {
+      "path": "evals/briefs.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4815b9126a8ab3b83556f37a9a2e5207dda2924a",
+      "size": 2323,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/4815b9126a8ab3b83556f37a9a2e5207dda2924a"
+    },
+    {
+      "path": "evals/promptfoo.tests.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27fefcc1fab4bbbe149a12869a295c60f3414e2d",
+      "size": 4348,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/27fefcc1fab4bbbe149a12869a295c60f3414e2d"
+    },
+    {
+      "path": "evals/promptfoo.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a9b1e0b0bb6e58861f543f26db8f493a2ec4106",
+      "size": 2571,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/9a9b1e0b0bb6e58861f543f26db8f493a2ec4106"
+    },
+    {
+      "path": "install.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "cd4f93f2d0657cdc912c48aa42c4498637e771ee",
+      "size": 7659,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/cd4f93f2d0657cdc912c48aa42c4498637e771ee"
+    },
+    {
+      "path": "knowledge",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8465e60c2a0fca2ab0a4527642f937ef5391634c",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/8465e60c2a0fca2ab0a4527642f937ef5391634c"
+    },
+    {
+      "path": "knowledge/INDEX.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc567e27a0252b67e4f0978337d046efd5a82f96",
+      "size": 3607,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/fc567e27a0252b67e4f0978337d046efd5a82f96"
+    },
+    {
+      "path": "knowledge/agent-protocol.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "640fc2c09a886a2ec7f0ca7226a128f6fcb80c2b",
+      "size": 1081,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/640fc2c09a886a2ec7f0ca7226a128f6fcb80c2b"
+    },
+    {
+      "path": "knowledge/anti-slop",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6a827bddb4d50c4d636668535d50c27fae80d5cb",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/6a827bddb4d50c4d636668535d50c27fae80d5cb"
+    },
+    {
+      "path": "knowledge/anti-slop/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "591ae4d692f4e7507b625d39cd420ce5a9853f7a",
+      "size": 207,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/591ae4d692f4e7507b625d39cd420ce5a9853f7a"
+    },
+    {
+      "path": "knowledge/anti-slop/fail-alert-dialogue.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2ce801dcd14b3c3901694e1ba6180872e56d705",
+      "size": 189,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/f2ce801dcd14b3c3901694e1ba6180872e56d705"
+    },
+    {
+      "path": "knowledge/anti-slop/fail-config-ones.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f6fdf7bdc081cb751d75616148aec3bbeb2c672",
+      "size": 276,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/1f6fdf7bdc081cb751d75616148aec3bbeb2c672"
+    },
+    {
+      "path": "knowledge/anti-slop/fail-green-capsule.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53ed7c4e530a4df664164e9c56617c4d339c7559",
+      "size": 471,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/53ed7c4e530a4df664164e9c56617c4d339c7559"
+    },
+    {
+      "path": "knowledge/anti-slop/fail-purple-fog.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7a9ad1baa35392ee797824090ad4476c34a3499",
+      "size": 340,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/f7a9ad1baa35392ee797824090ad4476c34a3499"
+    },
+    {
+      "path": "knowledge/anti-slop/fail-silence-hit.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6266da3f2edadfced626578d91003ce7bb555cae",
+      "size": 256,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/6266da3f2edadfced626578d91003ce7bb555cae"
+    },
+    {
+      "path": "knowledge/asset-core.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4870732f5dea32f987176010dbbc0d60b705597d",
+      "size": 974,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/4870732f5dea32f987176010dbbc0d60b705597d"
+    },
+    {
+      "path": "knowledge/brain.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "890d01b68ed02f3a7a70e25f3db6095cfd09558b",
+      "size": 4120,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/890d01b68ed02f3a7a70e25f3db6095cfd09558b"
+    },
+    {
+      "path": "knowledge/combat-juice.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "463d9bb863b51bbe63b3d3f6871b12eca2e30c71",
+      "size": 4002,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/463d9bb863b51bbe63b3d3f6871b12eca2e30c71"
+    },
+    {
+      "path": "knowledge/craft-taste.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62b6aff5c100ef042d8c0af62f3f40936be7c83f",
+      "size": 4993,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/62b6aff5c100ef042d8c0af62f3f40936be7c83f"
+    },
+    {
+      "path": "knowledge/dialogue-narrative.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5cadf3afae4e2814ee42f7690d13206cf93bfc6",
+      "size": 3251,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/b5cadf3afae4e2814ee42f7690d13206cf93bfc6"
+    },
+    {
+      "path": "knowledge/engine-kits.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be47044ae71e3a5a6565c650f8c301f395e3d852",
+      "size": 623,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/be47044ae71e3a5a6565c650f8c301f395e3d852"
+    },
+    {
+      "path": "knowledge/feel-tables.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "732bc23d656fd9638b5363f24b0a72ddf7e40e80",
+      "size": 3602,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/732bc23d656fd9638b5363f24b0a72ddf7e40e80"
+    },
+    {
+      "path": "knowledge/fun-first-design.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b8ec578fb221106b191dcade8dd613bcf9f3362",
+      "size": 1379,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/6b8ec578fb221106b191dcade8dd613bcf9f3362",
+      "error": "SyntaxError: Unexpected token '#', \"# Fun-Firs\"... is not valid JSON"
+    },
+    {
+      "path": "knowledge/game-genres.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29061e97b4e1798d21f4a252586d87ab1f3bf5ef",
+      "size": 3608,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/29061e97b4e1798d21f4a252586d87ab1f3bf5ef"
+    },
+    {
+      "path": "knowledge/game-ops.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12617178d4437d8ce516702852eb835c767e4fa1",
+      "size": 1260,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/12617178d4437d8ce516702852eb835c767e4fa1"
+    },
+    {
+      "path": "knowledge/game-patterns.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "284e80edf53cc7c5893e5f5f58a2212bcbd5a5d1",
+      "size": 2328,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/284e80edf53cc7c5893e5f5f58a2212bcbd5a5d1"
+    },
+    {
+      "path": "knowledge/game-systems.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6abff73d6c0e5715f96ed6fa5496cab2f69d71de",
+      "size": 3192,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/6abff73d6c0e5715f96ed6fa5496cab2f69d71de"
+    },
+    {
+      "path": "knowledge/gap-analysis.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c6f6ae319c3930fc141ed682e2df497629b878f",
+      "size": 2150,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/1c6f6ae319c3930fc141ed682e2df497629b878f"
+    },
+    {
+      "path": "knowledge/grok-craft.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "287f06613e73a547d61d26055b5cc6e9c926fca4",
+      "size": 3259,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/287f06613e73a547d61d26055b5cc6e9c926fca4"
+    },
+    {
+      "path": "knowledge/grok-kernel.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42b825c4c0d4b63f75401a6a24fdcc970d8e905a",
+      "size": 1157,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/42b825c4c0d4b63f75401a6a24fdcc970d8e905a"
+    },
+    {
+      "path": "knowledge/grok-toolkit.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c163a82a82cde855e845f669f57218d97ffd1e6c",
+      "size": 4354,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/c163a82a82cde855e845f669f57218d97ffd1e6c"
+    },
+    {
+      "path": "knowledge/identity.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6be47108afb000a82587d01fd1d1f8971c6c861a",
+      "size": 3102,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/6be47108afb000a82587d01fd1d1f8971c6c861a"
+    },
+    {
+      "path": "knowledge/live",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8fe7f615cbc19f47738a3506327189fd9b8d3ece",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/8fe7f615cbc19f47738a3506327189fd9b8d3ece"
+    },
+    {
+      "path": "knowledge/live/LATEST.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8263d18cd416ef06850e17adcbd6a3306c503c4",
+      "size": 145,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/b8263d18cd416ef06850e17adcbd6a3306c503c4"
+    },
+    {
+      "path": "knowledge/local-llm-stack.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ca7e71a42f5559d8fb8e36924b189e9e5a4dc82",
+      "size": 2144,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/4ca7e71a42f5559d8fb8e36924b189e9e5a4dc82"
+    },
+    {
+      "path": "knowledge/market-leader-playbook.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a2cec69f45d835157eb59a3d2ce5be62f4f032c",
+      "size": 914,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/9a2cec69f45d835157eb59a3d2ce5be62f4f032c"
+    },
+    {
+      "path": "knowledge/multipass.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b32b3fb5ef1e0810721fb16a91a7d28cabe97d8",
+      "size": 4046,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/2b32b3fb5ef1e0810721fb16a91a7d28cabe97d8"
+    },
+    {
+      "path": "knowledge/openzoo.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e8ed8c9f3f415c7b984ebba4933ed1b97c917c9",
+      "size": 2904,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/2e8ed8c9f3f415c7b984ebba4933ed1b97c917c9"
+    },
+    {
+      "path": "knowledge/pair-partner.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a5f770572e9d08c14f7de6438791d00d6182404",
+      "size": 2061,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/6a5f770572e9d08c14f7de6438791d00d6182404",
+      "error": "SyntaxError: Unexpected token '#', \"# Pair-par\"... is not valid JSON"
+    },
+    {
+      "path": "knowledge/physics-ragdoll.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09ee971cb22362c1fab5151fd6058b10f9c02c08",
+      "size": 4217,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/09ee971cb22362c1fab5151fd6058b10f9c02c08"
+    },
+    {
+      "path": "knowledge/pixel-kit.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0ee6cfc4bf3c81766ed518f447ca8057075d9cd",
+      "size": 1603,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/e0ee6cfc4bf3c81766ed518f447ca8057075d9cd"
+    },
+    {
+      "path": "knowledge/playtest-harness.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d772e4412a8f0a6071e634c37685dbfc94ce489",
+      "size": 955,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/2d772e4412a8f0a6071e634c37685dbfc94ce489"
+    },
+    {
+      "path": "knowledge/prefs-and-playtest.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d33e6b7b1b4296c1a7b65983e0930be4d7398c1e",
+      "size": 1095,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/d33e6b7b1b4296c1a7b65983e0930be4d7398c1e"
+    },
+    {
+      "path": "knowledge/quality-pipeline.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a3605ddabd2298fdf59cf30313f16c0b4abb350",
+      "size": 4928,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/8a3605ddabd2298fdf59cf30313f16c0b4abb350"
+    },
+    {
+      "path": "knowledge/readable-spaces.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3254fcc592360cd6baced1e21b6a4538e3ae0bc",
+      "size": 2725,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/c3254fcc592360cd6baced1e21b6a4538e3ae0bc"
+    },
+    {
+      "path": "knowledge/rlm.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1710c294f1a86ff5444ceb137069d11624dd897f",
+      "size": 863,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/1710c294f1a86ff5444ceb137069d11624dd897f"
+    },
+    {
+      "path": "knowledge/self-update.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6860b32a139c06d2f8b886ee41236a26b231ef2e",
+      "size": 778,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/6860b32a139c06d2f8b886ee41236a26b231ef2e"
+    },
+    {
+      "path": "knowledge/session-loop.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8a1ca8797c184deec7581d9f59b17408c0bf7aa",
+      "size": 2093,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/d8a1ca8797c184deec7581d9f59b17408c0bf7aa"
+    },
+    {
+      "path": "knowledge/shaders-glsl-tsl.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "026e0d2305843a23bdd6f796573077ce6153ab33",
+      "size": 4141,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/026e0d2305843a23bdd6f796573077ce6153ab33"
+    },
+    {
+      "path": "knowledge/ship-bar.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1288e4ceb3851f51f041778e64c5ccb5441c1d7c",
+      "size": 2896,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/1288e4ceb3851f51f041778e64c5ccb5441c1d7c"
+    },
+    {
+      "path": "knowledge/skill-fps.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36bde9a877efcdd3c15b11b40ebb1dc5f4e476e3",
+      "size": 1998,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/36bde9a877efcdd3c15b11b40ebb1dc5f4e476e3"
+    },
+    {
+      "path": "knowledge/skills.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cea8318eb6a25848c9b48728c36dd7bf42974b27",
+      "size": 828,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/cea8318eb6a25848c9b48728c36dd7bf42974b27"
+    },
+    {
+      "path": "knowledge/solana-seeker.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3b0bd09500eea83dbaa03656a2788f734bbca83",
+      "size": 3872,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/f3b0bd09500eea83dbaa03656a2788f734bbca83",
+      "error": "SyntaxError: Unexpected token '#', \"# Solana S\"... is not valid JSON"
+    },
+    {
+      "path": "knowledge/speed-without-quality-loss.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e4758d38eaf1f6c4f5fb8b9713e51e9b843e4b6",
+      "size": 2100,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/2e4758d38eaf1f6c4f5fb8b9713e51e9b843e4b6"
+    },
+    {
+      "path": "knowledge/studio-playbook.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ea8c6ea924f32539c7496cb0beae7b1c7f53636",
+      "size": 1647,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/6ea8c6ea924f32539c7496cb0beae7b1c7f53636"
+    },
+    {
+      "path": "knowledge/threejs-advanced.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b7c503a9e03236b36cbe6e345c1ea528385234f",
+      "size": 2950,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/3b7c503a9e03236b36cbe6e345c1ea528385234f"
+    },
+    {
+      "path": "knowledge/threejs-animation.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "022c768f6768ad41176c342e44d6a8e79a42cb5b",
+      "size": 2516,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/022c768f6768ad41176c342e44d6a8e79a42cb5b"
+    },
+    {
+      "path": "knowledge/threejs-cheatsheet.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "675ce565ddf972e4cf9d46c25bf2cd56171f249a",
+      "size": 5706,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/675ce565ddf972e4cf9d46c25bf2cd56171f249a"
+    },
+    {
+      "path": "knowledge/threejs-ecosystem.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3af9e987c3587b26018e98f7b0af2a6d25ccd9be",
+      "size": 2673,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/3af9e987c3587b26018e98f7b0af2a6d25ccd9be"
+    },
+    {
+      "path": "knowledge/threejs-recipes.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32b09b5cef79970aff14ec6f26faa5ee2e51ccf6",
+      "size": 1278,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/32b09b5cef79970aff14ec6f26faa5ee2e51ccf6"
+    },
+    {
+      "path": "knowledge/tiles-ui.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "411b190acaac28580dceda23314d78771a6b0011",
+      "size": 1040,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/411b190acaac28580dceda23314d78771a6b0011"
+    },
+    {
+      "path": "knowledge/vintage.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b1fced63920f55d83dcfe612cfba31b3cbefc04",
+      "size": 1698,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/5b1fced63920f55d83dcfe612cfba31b3cbefc04"
+    },
+    {
+      "path": "knowledge/world-building.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b457cd7d5a755d5d901d2248cf210e1b63a68c0c",
+      "size": 3788,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/b457cd7d5a755d5d901d2248cf210e1b63a68c0c"
+    },
+    {
+      "path": "lib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4e67315fb2cf507d98636db39e85a5849b58a535",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/4e67315fb2cf507d98636db39e85a5849b58a535"
+    },
+    {
+      "path": "lib/body",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "620443c62c453a816dfe583760240d9a91e794c3",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/620443c62c453a816dfe583760240d9a91e794c3"
+    },
+    {
+      "path": "lib/body/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fbaf7dab5b04fb5b3892a65364658bb40807afb",
+      "size": 202,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/0fbaf7dab5b04fb5b3892a65364658bb40807afb"
+    },
+    {
+      "path": "lib/body/cards.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a65ddb8ba5e86f493a03ef09c3b6474fa525220d",
+      "size": 925,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/a65ddb8ba5e86f493a03ef09c3b6474fa525220d"
+    },
+    {
+      "path": "lib/body/cover.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a4ec1e2f0b095c2a48777b877675d5d64f3cad2",
+      "size": 920,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/4a4ec1e2f0b095c2a48777b877675d5d64f3cad2"
+    },
+    {
+      "path": "lib/body/enemy.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ffb3ac363f7e506242a67050eb3ddd96353333f",
+      "size": 2659,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/1ffb3ac363f7e506242a67050eb3ddd96353333f"
+    },
+    {
+      "path": "lib/body/index.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3421e1ff3cab2e532549039dca607073e32ec4a",
+      "size": 249,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/f3421e1ff3cab2e532549039dca607073e32ec4a"
+    },
+    {
+      "path": "lib/body/player.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c8cd4dd8bb959daeb65b4c3de312eb51bd2d57f",
+      "size": 1587,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/7c8cd4dd8bb959daeb65b4c3de312eb51bd2d57f"
+    },
+    {
+      "path": "lib/body/pose.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8dbfef016010699dbde33e13b0d8322b1d4dc8c4",
+      "size": 1188,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/8dbfef016010699dbde33e13b0d8322b1d4dc8c4"
+    },
+    {
+      "path": "lib/body/weapon.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b25dcf899719fd7d9bc94128c9727e6da2ac8676",
+      "size": 1510,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/b25dcf899719fd7d9bc94128c9727e6da2ac8676"
+    },
+    {
+      "path": "lib/craft",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c267a032871951dd975a35fd4b6633fc025f49ff",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/c267a032871951dd975a35fd4b6633fc025f49ff"
+    },
+    {
+      "path": "lib/craft/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "401b3051e91b0db781bb4c17a9183dc70ebf093f",
+      "size": 937,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/401b3051e91b0db781bb4c17a9183dc70ebf093f"
+    },
+    {
+      "path": "lib/craft/audio.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24431bfe4b1e1ce85e0471c94abec7cf92ac195e",
+      "size": 1819,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/24431bfe4b1e1ce85e0471c94abec7cf92ac195e"
+    },
+    {
+      "path": "lib/craft/blob.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41d68fe89cfa0407442d6d3c462bc8241055f22f",
+      "size": 688,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/41d68fe89cfa0407442d6d3c462bc8241055f22f"
+    },
+    {
+      "path": "lib/craft/brain.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "856d9c11aba89898c6b8dc1b1589f6c786b639c9",
+      "size": 2685,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/856d9c11aba89898c6b8dc1b1589f6c786b639c9"
+    },
+    {
+      "path": "lib/craft/camera.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b797ef03129fc3fe6b52a7f6bf3cdb0b52f7118a",
+      "size": 1339,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/b797ef03129fc3fe6b52a7f6bf3cdb0b52f7118a"
+    },
+    {
+      "path": "lib/craft/director.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f8d3afcbdd545af4a293d4f01f0c53150594b7b",
+      "size": 780,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/3f8d3afcbdd545af4a293d4f01f0c53150594b7b"
+    },
+    {
+      "path": "lib/craft/engine.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "186d2bebdaa2051b8f8faed4786eb3dd9a03e82a",
+      "size": 503,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/186d2bebdaa2051b8f8faed4786eb3dd9a03e82a"
+    },
+    {
+      "path": "lib/craft/impact.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cf35cb4e3e103cac5dd7d1a3154719510a9e899",
+      "size": 1487,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/0cf35cb4e3e103cac5dd7d1a3154719510a9e899"
+    },
+    {
+      "path": "lib/craft/index.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e020df5b731eeb3df272cb00af0a7d2cb3db0bb",
+      "size": 927,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/2e020df5b731eeb3df272cb00af0a7d2cb3db0bb"
+    },
+    {
+      "path": "lib/craft/juice.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5329c0cd88b8124cf326c572009a1d9364415dde",
+      "size": 1235,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/5329c0cd88b8124cf326c572009a1d9364415dde"
+    },
+    {
+      "path": "lib/craft/mark.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0441074a612bfd3e1b57388b3d207172ffd738a7",
+      "size": 1594,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/0441074a612bfd3e1b57388b3d207172ffd738a7"
+    },
+    {
+      "path": "lib/craft/motion.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f24a7efa77b37afd2cebc09220b1ec9713e44c1",
+      "size": 1037,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/1f24a7efa77b37afd2cebc09220b1ec9713e44c1"
+    },
+    {
+      "path": "lib/craft/palette.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49ec5a5905ff6310b1772fc58de3899cdbeb87eb",
+      "size": 683,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/49ec5a5905ff6310b1772fc58de3899cdbeb87eb"
+    },
+    {
+      "path": "lib/craft/pool.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e05328b287ef3524fb923ebc3aa1221c1b487051",
+      "size": 1289,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/e05328b287ef3524fb923ebc3aa1221c1b487051"
+    },
+    {
+      "path": "lib/craft/punch.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5dbce367bc0403d0cb6efcbac762c592d597a79",
+      "size": 1550,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/c5dbce367bc0403d0cb6efcbac762c592d597a79"
+    },
+    {
+      "path": "lib/craft/recoil.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "291f8f5bfe89fc165b8197ffb83b959744361e83",
+      "size": 654,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/291f8f5bfe89fc165b8197ffb83b959744361e83"
+    },
+    {
+      "path": "lib/craft/scale.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c3043f1c771dd74827028c46a92f8b6ea77a6de",
+      "size": 267,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/3c3043f1c771dd74827028c46a92f8b6ea77a6de"
+    },
+    {
+      "path": "lib/craft/toys.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11fb463ce673c9c8d519b8b6b68d71c446a5506e",
+      "size": 531,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/11fb463ce673c9c8d519b8b6b68d71c446a5506e"
+    },
+    {
+      "path": "lib/craft/vignette.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "104a6257254fb63134ea68206b1bf4eb66d7504b",
+      "size": 862,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/104a6257254fb63134ea68206b1bf4eb66d7504b"
+    },
+    {
+      "path": "lib/look",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1de1def7d65dd462b116e021d1c87d20f7648e16",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/1de1def7d65dd462b116e021d1c87d20f7648e16"
+    },
+    {
+      "path": "lib/look/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c9cad1b23f0a710ce4e07533e533b17e261ed00",
+      "size": 282,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/7c9cad1b23f0a710ce4e07533e533b17e261ed00"
+    },
+    {
+      "path": "lib/look/cards.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b381ccef274361a88386761705dedf03e75c0d3",
+      "size": 3980,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/9b381ccef274361a88386761705dedf03e75c0d3"
+    },
+    {
+      "path": "lib/look/index.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "546b9514a1dbe393057bda9567a5ce3ac183b0c4",
+      "size": 275,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/546b9514a1dbe393057bda9567a5ce3ac183b0c4"
+    },
+    {
+      "path": "lib/look/materials.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3bf8c056691d8fa78ddf2ee5c36d14f12c5e5ec1",
+      "size": 901,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/3bf8c056691d8fa78ddf2ee5c36d14f12c5e5ec1"
+    },
+    {
+      "path": "lib/look/rig.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd030a06af4cae506e890facfadd38529a51240e",
+      "size": 4090,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/fd030a06af4cae506e890facfadd38529a51240e"
+    },
+    {
+      "path": "lib/look/scatter.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5414d50b1849792be43e13ac508c585ddefdeee0",
+      "size": 4683,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/5414d50b1849792be43e13ac508c585ddefdeee0"
+    },
+    {
+      "path": "lib/look/shaders.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "146cbbf6838e2d3b0b0c2e7e2752dd105c8a3176",
+      "size": 6117,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/146cbbf6838e2d3b0b0c2e7e2752dd105c8a3176"
+    },
+    {
+      "path": "lib/look/volume.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26c967149d0fa84b2f16f3968191237d6ac0a538",
+      "size": 4445,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/26c967149d0fa84b2f16f3968191237d6ac0a538"
+    },
+    {
+      "path": "lib/pixel",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8b32904f251775c1b44715ee7de2a2a56bee3a27",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/8b32904f251775c1b44715ee7de2a2a56bee3a27"
+    },
+    {
+      "path": "lib/pixel/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d815b63a976ebd4159f7883b7a053608ec4eadc1",
+      "size": 583,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/d815b63a976ebd4159f7883b7a053608ec4eadc1"
+    },
+    {
+      "path": "lib/pixel/bake.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7c681e04a3fed287bf39c362630098140d9324c",
+      "size": 37183,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/b7c681e04a3fed287bf39c362630098140d9324c"
+    },
+    {
+      "path": "lib/pixel/draw.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "278b381299fbbaef1765db25f66e53539df4b3aa",
+      "size": 581734,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/278b381299fbbaef1765db25f66e53539df4b3aa"
+    },
+    {
+      "path": "lib/pixel/fx.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67409c3920d38df5b45ed524f23766ab3a367607",
+      "size": 109800,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/67409c3920d38df5b45ed524f23766ab3a367607"
+    },
+    {
+      "path": "lib/pixel/index.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38827b93227c62660d5e87898fa9d3a38ec6553e",
+      "size": 219,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/38827b93227c62660d5e87898fa9d3a38ec6553e"
+    },
+    {
+      "path": "lib/pixel/three-bridge.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8bddfe5a112714cb6a6ff6bd3ab3b1ad62f618a2",
+      "size": 1023,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/8bddfe5a112714cb6a6ff6bd3ab3b1ad62f618a2"
+    },
+    {
+      "path": "lib/pixelart",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ee698ccd0d9cbce4b241c0b4050583ac87e89ac6",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/ee698ccd0d9cbce4b241c0b4050583ac87e89ac6"
+    },
+    {
+      "path": "lib/pixelart/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56ae17712bde81dd3f186131b548632d1ab1413d",
+      "size": 464,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/56ae17712bde81dd3f186131b548632d1ab1413d"
+    },
+    {
+      "path": "lib/pixelart/index.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e74f5a21665be83aa3ba660b03c67884b8602125",
+      "size": 165,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/e74f5a21665be83aa3ba660b03c67884b8602125"
+    },
+    {
+      "path": "lib/pixelart/pixelart-fx.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75420229ba607bebad36d45ff62294fd1ca157fa",
+      "size": 109829,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/75420229ba607bebad36d45ff62294fd1ca157fa"
+    },
+    {
+      "path": "lib/pixelart/pixelart.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01f32278c9272239ab03294e120e7bbffb7f09f0",
+      "size": 581733,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/01f32278c9272239ab03294e120e7bbffb7f09f0"
+    },
+    {
+      "path": "lib/vintage",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "14550a691812e4c1295184f61257eaafa26dbf6e",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/14550a691812e4c1295184f61257eaafa26dbf6e"
+    },
+    {
+      "path": "lib/vintage/palettes.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56659f5430cf5bb1dcc78065a3087d8694f3cd1b",
+      "size": 4223,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/56659f5430cf5bb1dcc78065a3087d8694f3cd1b"
+    },
+    {
+      "path": "lib/vintage/sounds.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "891aad9b248b20789776480ce1269d715b898c7d",
+      "size": 1009,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/891aad9b248b20789776480ce1269d715b898c7d"
+    },
+    {
+      "path": "live",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1e01629dd8b159af21c045198da47ca033606fc4",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/1e01629dd8b159af21c045198da47ca033606fc4"
+    },
+    {
+      "path": "live/dashboard.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd15a6fb3f3a11562240a0c32b43bb7cb3476778",
+      "size": 25688,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/dd15a6fb3f3a11562240a0c32b43bb7cb3476778"
+    },
+    {
+      "path": "playtest",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b86f0bca2b2f93651ca5396fa456533ed8e5fa95",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/b86f0bca2b2f93651ca5396fa456533ed8e5fa95"
+    },
+    {
+      "path": "playtest/package-lock.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e0e159d1052c49dc0a8d5e217eb1dd60f99977c",
+      "size": 1688,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/5e0e159d1052c49dc0a8d5e217eb1dd60f99977c"
+    },
+    {
+      "path": "playtest/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0002dd2267a7bcf43190f452bb108f3c7ad3aca",
+      "size": 220,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/e0002dd2267a7bcf43190f452bb108f3c7ad3aca"
+    },
+    {
+      "path": "playtest/runner.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d524c4188e16381cc076362a8475abc0552b697",
+      "size": 11359,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/0d524c4188e16381cc076362a8475abc0552b697"
+    },
+    {
+      "path": "start",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "08078823d00736b380bb9844cf583c555ba4db8d",
+      "size": 6341,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/08078823d00736b380bb9844cf583c555ba4db8d"
+    },
+    {
+      "path": "templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "10e7bce5941347ea942d27e4d1813650eba5b772",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/10e7bce5941347ea942d27e4d1813650eba5b772"
+    },
+    {
+      "path": "templates/pixel-game",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2cf1de1103e92ca7e49242ae111446d62935c93d",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/2cf1de1103e92ca7e49242ae111446d62935c93d"
+    },
+    {
+      "path": "templates/pixel-game/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09b42c2f514c7a92f5e4f8c8481ab2f438690986",
+      "size": 497,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/09b42c2f514c7a92f5e4f8c8481ab2f438690986"
+    },
+    {
+      "path": "templates/pixel-game/WIKI.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "930b17c686a71c9f424939d01e6dc6fbc00573f4",
+      "size": 176,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/930b17c686a71c9f424939d01e6dc6fbc00573f4"
+    },
+    {
+      "path": "templates/pixel-game/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a5e3cd41c33114e6b3ab5f1cc8c99c206b97947",
+      "size": 644,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/3a5e3cd41c33114e6b3ab5f1cc8c99c206b97947"
+    },
+    {
+      "path": "templates/pixel-game/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0197aabfbd19f751ee38ed423f070fa75facbe2",
+      "size": 270,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/d0197aabfbd19f751ee38ed423f070fa75facbe2"
+    },
+    {
+      "path": "templates/pixel-game/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ae6a9b5e0d19ee0161f64497f244472fa25cd86a",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/ae6a9b5e0d19ee0161f64497f244472fa25cd86a"
+    },
+    {
+      "path": "templates/pixel-game/src/main.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efe0e3bc4d739db751b9d065cd446525cec89031",
+      "size": 3372,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/efe0e3bc4d739db751b9d065cd446525cec89031"
+    },
+    {
+      "path": "templates/pixel-slice",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a340d6179f7539ccf052f7186e7d79605b535320",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/a340d6179f7539ccf052f7186e7d79605b535320"
+    },
+    {
+      "path": "templates/pixel-slice/game.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d17bc20bd4226668e27328316ffd7dd0a8675a6",
+      "size": 12122,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/5d17bc20bd4226668e27328316ffd7dd0a8675a6"
+    },
+    {
+      "path": "templates/shader-lab",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "805c95348c6a17684165e6039a9d40b4b506a872",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/805c95348c6a17684165e6039a9d40b4b506a872"
+    },
+    {
+      "path": "templates/shader-lab/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c53d2b38b8bed9a0c0da83778784727ac525512",
+      "size": 805,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/9c53d2b38b8bed9a0c0da83778784727ac525512"
+    },
+    {
+      "path": "templates/shader-lab/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eaa561e35d8efb61f0caf5de1323cec3581746b8",
+      "size": 2363,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/eaa561e35d8efb61f0caf5de1323cec3581746b8"
+    },
+    {
+      "path": "templates/shader-lab/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46eae8a571063cb504f2c5834e86393b07011d9b",
+      "size": 347,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/46eae8a571063cb504f2c5834e86393b07011d9b"
+    },
+    {
+      "path": "templates/shader-lab/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8e0785af3819aa1c3b4d16849bed497a2bb57220",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/8e0785af3819aa1c3b4d16849bed497a2bb57220"
+    },
+    {
+      "path": "templates/shader-lab/src/audioKeyboard.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5b4335276fb6352c43335e9d88927c433e031b8",
+      "size": 3354,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/a5b4335276fb6352c43335e9d88927c433e031b8"
+    },
+    {
+      "path": "templates/shader-lab/src/defaults.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23d98594cbba28b8b743993a8b0a636d489c0d3a",
+      "size": 1827,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/23d98594cbba28b8b743993a8b0a636d489c0d3a"
+    },
+    {
+      "path": "templates/shader-lab/src/engine.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c80455108dd2f014934012fdea1c867028b5c11f",
+      "size": 9264,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/c80455108dd2f014934012fdea1c867028b5c11f"
+    },
+    {
+      "path": "templates/shader-lab/src/main.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ea16c0f0a07f5a2c7292321bea0cccf166dad9c",
+      "size": 9726,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/5ea16c0f0a07f5a2c7292321bea0cccf166dad9c"
+    },
+    {
+      "path": "templates/shader-lab/src/shadertoy.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd62c31f2492ee3794fed9655127d0300494a9b8",
+      "size": 2478,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/cd62c31f2492ee3794fed9655127d0300494a9b8"
+    },
+    {
+      "path": "templates/shader-lab/src/styles.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06a0c81a27d3d214ac973bf12ee26b8ca105e0c4",
+      "size": 3833,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/06a0c81a27d3d214ac973bf12ee26b8ca105e0c4"
+    },
+    {
+      "path": "templates/vintage-slice",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "abea5768d4c8084f32a958120719f8e4e0259c59",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/abea5768d4c8084f32a958120719f8e4e0259c59"
+    },
+    {
+      "path": "templates/vintage-slice/game.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd4a17f5fee1ce8bbc15bf24df2db3d622bf2f21",
+      "size": 13998,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/cd4a17f5fee1ce8bbc15bf24df2db3d622bf2f21"
+    },
+    {
+      "path": "templates/web-slice",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "568df1283aefc047acba6e6c0fd6c7dacc9acf45",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/568df1283aefc047acba6e6c0fd6c7dacc9acf45"
+    },
+    {
+      "path": "templates/web-slice/game.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82f98cdef208f293d32fad88374a59572f7e1a5c",
+      "size": 37009,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/82f98cdef208f293d32fad88374a59572f7e1a5c"
+    },
+    {
+      "path": "templates/world-game",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b08f9ba574b8aecf473b32c5e7009f1e78d0e062",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/b08f9ba574b8aecf473b32c5e7009f1e78d0e062"
+    },
+    {
+      "path": "templates/world-game/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29f3fa8fe0ab21e85839f9feb521ca5c65b75991",
+      "size": 99,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/29f3fa8fe0ab21e85839f9feb521ca5c65b75991"
+    },
+    {
+      "path": "templates/world-game/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c95c0400decbe91494fa552f025b7c5eff8f94d8",
+      "size": 404,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/c95c0400decbe91494fa552f025b7c5eff8f94d8"
+    },
+    {
+      "path": "templates/world-game/WIKI.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e22c531af4b02a3bdcae0717095ebaba7891f933",
+      "size": 327,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/e22c531af4b02a3bdcae0717095ebaba7891f933"
+    },
+    {
+      "path": "templates/world-game/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67a699176958d9f4dce4c5acc530c77ab9c11e7c",
+      "size": 703,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/67a699176958d9f4dce4c5acc530c77ab9c11e7c"
+    },
+    {
+      "path": "templates/world-game/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "799707125e60e1dd45b68650551b61d3c3757c68",
+      "size": 282,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/799707125e60e1dd45b68650551b61d3c3757c68"
+    },
+    {
+      "path": "templates/world-game/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "96ae21b9be8a34f8c2aa545e975482c6d7bf3ff4",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/96ae21b9be8a34f8c2aa545e975482c6d7bf3ff4"
+    },
+    {
+      "path": "templates/world-game/src/game.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca7fda695bba73c7e06ea7a12e410fe7b59fd770",
+      "size": 5169,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/ca7fda695bba73c7e06ea7a12e410fe7b59fd770"
+    },
+    {
+      "path": "templates/world-game/src/main.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c4e1ef76d9628e6b41d6e73b44e94de93a9ce20",
+      "size": 92,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/7c4e1ef76d9628e6b41d6e73b44e94de93a9ce20"
+    },
+    {
+      "path": "templates/world-game/src/world",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6085313c8e21b808bbd50459c50720c23119c603",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/6085313c8e21b808bbd50459c50720c23119c603"
+    },
+    {
+      "path": "templates/world-game/src/world/instances.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57bf9e083f0b455c1fc9d12c0938c9951f57b157",
+      "size": 3921,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/57bf9e083f0b455c1fc9d12c0938c9951f57b157"
+    },
+    {
+      "path": "templates/world-game/src/world/loader.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bef9b39617c4561be7c52583415c89f76296505",
+      "size": 358,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/7bef9b39617c4561be7c52583415c89f76296505"
+    },
+    {
+      "path": "templates/world-game/src/world/terrain.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7989ede5a6fd5a8d975e29bd0eede3000938b7ec",
+      "size": 2708,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/7989ede5a6fd5a8d975e29bd0eede3000938b7ec"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2f8d0978e13dac9de97fa1ec05eb35af76cf52df",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/2f8d0978e13dac9de97fa1ec05eb35af76cf52df"
+    },
+    {
+      "path": "tests/fixtures",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4385001bdfcd3cd0637f7d0a64abb265b9032afc",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/4385001bdfcd3cd0637f7d0a64abb265b9032afc"
+    },
+    {
+      "path": "tests/fixtures/slice-fail",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e15172d9a54259221dcea48d1c4c3ecbd2a9a63d",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/e15172d9a54259221dcea48d1c4c3ecbd2a9a63d"
+    },
+    {
+      "path": "tests/fixtures/slice-fail/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "73b5dd54f25ca74f1a23921bbd85073db61c01da",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/73b5dd54f25ca74f1a23921bbd85073db61c01da"
+    },
+    {
+      "path": "tests/fixtures/slice-fail/src/oops.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd39e1f64f9b7beba767dddb4ed616b63a4f85de",
+      "size": 178,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/dd39e1f64f9b7beba767dddb4ed616b63a4f85de"
+    },
+    {
+      "path": "tests/fixtures/slice-pass",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3fc2547861f611716edaa7227eb0e42a8f35343b",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/3fc2547861f611716edaa7227eb0e42a8f35343b"
+    },
+    {
+      "path": "tests/fixtures/slice-pass/WIKI.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13efe5d00211fafe9e1ff86869721d52f70610fa",
+      "size": 47,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/13efe5d00211fafe9e1ff86869721d52f70610fa"
+    },
+    {
+      "path": "tests/fixtures/slice-pass/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11c6de5df168b785ff580ce37588920a4e7f847f",
+      "size": 149,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/11c6de5df168b785ff580ce37588920a4e7f847f"
+    },
+    {
+      "path": "tests/fixtures/slice-pass/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2b489da6403bc8390cf2a35e7b42de5e821b5e5",
+      "size": 109,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/d2b489da6403bc8390cf2a35e7b42de5e821b5e5"
+    },
+    {
+      "path": "tests/fixtures/slice-pass/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "de889ba88ee577b0c39f8f559d98352bf11529aa",
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/trees/de889ba88ee577b0c39f8f559d98352bf11529aa"
+    },
+    {
+      "path": "tests/fixtures/slice-pass/src/main.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35d42d08587df56c93180712e1ee73f3d2f110bb",
+      "size": 751,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/35d42d08587df56c93180712e1ee73f3d2f110bb"
+    },
+    {
+      "path": "tests/run.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "377e2943189276ad4657c5dfe994658532847357",
+      "size": 614,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/377e2943189276ad4657c5dfe994658532847357"
+    },
+    {
+      "path": "tests/test_agent_parse.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f0cceb8310f7d30bfc9be8b2f278e2535190f28",
+      "size": 1683,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/4f0cceb8310f7d30bfc9be8b2f278e2535190f28"
+    },
+    {
+      "path": "tests/test_antislope.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c87c9d151818baf8cc88eb0f88daa123f12407c",
+      "size": 2152,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/4c87c9d151818baf8cc88eb0f88daa123f12407c"
+    },
+    {
+      "path": "tests/test_body.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be03fc90ccb8b168b1a2aef15cf6122ff98bd8dc",
+      "size": 2683,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/be03fc90ccb8b168b1a2aef15cf6122ff98bd8dc"
+    },
+    {
+      "path": "tests/test_cloud.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5879f162ea85c0c983ef849fc74162dbdcd3461b",
+      "size": 3259,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/5879f162ea85c0c983ef849fc74162dbdcd3461b"
+    },
+    {
+      "path": "tests/test_craft.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a79d332d0616b77b002cec36e3de2d480568f71",
+      "size": 4103,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/3a79d332d0616b77b002cec36e3de2d480568f71"
+    },
+    {
+      "path": "tests/test_engine_ops.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c0db74b6677c17de52fc2ea85e508c1462a3d48",
+      "size": 2030,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/8c0db74b6677c17de52fc2ea85e508c1462a3d48"
+    },
+    {
+      "path": "tests/test_game_ops.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19ed91112f7d0fb228d1af3920b3da6b261d8dc3",
+      "size": 2942,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/19ed91112f7d0fb228d1af3920b3da6b261d8dc3"
+    },
+    {
+      "path": "tests/test_github.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8027297d1d21e36570703e9c9e37c0e494819fae",
+      "size": 2478,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/8027297d1d21e36570703e9c9e37c0e494819fae"
+    },
+    {
+      "path": "tests/test_gmcommon.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a09babbcdb442a0b71f26e542d3f5475f14ffd8",
+      "size": 3853,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/9a09babbcdb442a0b71f26e542d3f5475f14ffd8"
+    },
+    {
+      "path": "tests/test_golden.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0aca0b5c936546264228b47428531a6566ca943",
+      "size": 429,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/e0aca0b5c936546264228b47428531a6566ca943"
+    },
+    {
+      "path": "tests/test_grok.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5c0d90dfd811167684801aa8a749bfff6a8b877",
+      "size": 7367,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/c5c0d90dfd811167684801aa8a749bfff6a8b877"
+    },
+    {
+      "path": "tests/test_hands.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f85e492cfbbc0b94c200bcbedf1b40d94e5ac4c",
+      "size": 6087,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/1f85e492cfbbc0b94c200bcbedf1b40d94e5ac4c"
+    },
+    {
+      "path": "tests/test_host_floor.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f1ddbd79c5e272e221cbbaa0a3d5296136aba47",
+      "size": 8166,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/0f1ddbd79c5e272e221cbbaa0a3d5296136aba47"
+    },
+    {
+      "path": "tests/test_identity.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "339258e38f3b3d4382a63a21727cfcc80ca32817",
+      "size": 1760,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/339258e38f3b3d4382a63a21727cfcc80ca32817"
+    },
+    {
+      "path": "tests/test_intervene.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c811eeaae7b28c3f852421401c39bab92f2b002f",
+      "size": 1826,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/c811eeaae7b28c3f852421401c39bab92f2b002f"
+    },
+    {
+      "path": "tests/test_kit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18a9656f8f871a1c71b77098db4164e34070b8da",
+      "size": 3796,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/18a9656f8f871a1c71b77098db4164e34070b8da"
+    },
+    {
+      "path": "tests/test_local_llm_stack.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29994ce327983c32113a76ffdc6352112a013a69",
+      "size": 4887,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/29994ce327983c32113a76ffdc6352112a013a69"
+    },
+    {
+      "path": "tests/test_look.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4858f7b933af7ae11dc076fa1bd1a1f40c61d181",
+      "size": 4179,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/4858f7b933af7ae11dc076fa1bd1a1f40c61d181"
+    },
+    {
+      "path": "tests/test_patch.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "457688b0504e54a3354ef0e0bb5f617192cda2a3",
+      "size": 2592,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/457688b0504e54a3354ef0e0bb5f617192cda2a3"
+    },
+    {
+      "path": "tests/test_play_gate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18a0d7b835ae107cf0054106c8f15f2910040e03",
+      "size": 8537,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/18a0d7b835ae107cf0054106c8f15f2910040e03"
+    },
+    {
+      "path": "tests/test_playtest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89e4c27e31beb2faefb7a48f266be740da3fb0d8",
+      "size": 687,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/89e4c27e31beb2faefb7a48f266be740da3fb0d8"
+    },
+    {
+      "path": "tests/test_quality.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8287ca20a441a774c726ecce4cd73fce23f3e7ad",
+      "size": 6089,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/8287ca20a441a774c726ecce4cd73fce23f3e7ad"
+    },
+    {
+      "path": "tests/test_rlm.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40761f66fec728c7cd8b892f07f132e7bcc18fd2",
+      "size": 5723,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/40761f66fec728c7cd8b892f07f132e7bcc18fd2"
+    },
+    {
+      "path": "tests/test_scaffold.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fb1dd930aae19cf60a9c2ceb4a2708ec78c749f",
+      "size": 3657,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/6fb1dd930aae19cf60a9c2ceb4a2708ec78c749f"
+    },
+    {
+      "path": "tests/test_security.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5b13ab230c35fb4da491256f9c9633c711a9c8b",
+      "size": 3933,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/e5b13ab230c35fb4da491256f9c9633c711a9c8b"
+    },
+    {
+      "path": "tests/test_server.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e493550317aa1262400c680b87aff7e28bc0e50",
+      "size": 3926,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/8e493550317aa1262400c680b87aff7e28bc0e50"
+    },
+    {
+      "path": "tests/test_skills.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a046303f7cd8aa77b6bc34729b257bbb48654763",
+      "size": 5988,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/a046303f7cd8aa77b6bc34729b257bbb48654763"
+    },
+    {
+      "path": "tests/test_slice.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56efbba174256e778e167b601c710e9b745b618c",
+      "size": 5991,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/56efbba174256e778e167b601c710e9b745b618c"
+    },
+    {
+      "path": "tests/test_studio_ops.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c4a61c5166574db776fd5b57813796633d08020",
+      "size": 3530,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/5c4a61c5166574db776fd5b57813796633d08020"
+    },
+    {
+      "path": "tests/test_turbo.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e200e7830aec6226b57be0e0fb729fce29057918",
+      "size": 3373,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/e200e7830aec6226b57be0e0fb729fce29057918"
+    },
+    {
+      "path": "tests/test_verify.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0652af8599a67a960421748e1434af2bc7ea67db",
+      "size": 1016,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/0652af8599a67a960421748e1434af2bc7ea67db"
+    },
+    {
+      "path": "tests/test_wiki.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6142f61e963243874b684ce880559ac74471112d",
+      "size": 2508,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/6142f61e963243874b684ce880559ac74471112d"
+    },
+    {
+      "path": "tests/test_worlds.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd142aa584f84337e6370055da9ee0efa205ca86",
+      "size": 6752,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/dd142aa584f84337e6370055da9ee0efa205ca86"
+    },
+    {
+      "path": "tests/test_zoo.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "771b661326ea578039641f391b1b2049759ce677",
+      "size": 11941,
+      "url": "https://api.github.com/repos/AleisterMoltley/dotLab/git/blobs/771b661326ea578039641f391b1b2049759ce677"
+    }
+  ]
+}

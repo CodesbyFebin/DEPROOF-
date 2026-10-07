@@ -1,0 +1,946 @@
+{
+  "repository": "Hamiltok387lz/solana-mobile-dapp-scaffold",
+  "tree_sha": "d0a4f2edc0fa2605fc19bee70b53cd8f325b9137",
+  "truncated": false,
+  "entries": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aacce47fc78f3367c4e25b6d29ff69522ac295e7",
+      "size": 978,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/aacce47fc78f3367c4e25b6d29ff69522ac295e7"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfdca40d92b7de8d159f004476fcbe0067e70709",
+      "size": 3922,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/bfdca40d92b7de8d159f004476fcbe0067e70709",
+      "error": "SyntaxError: Unexpected token '#', \"# Solana M\"... is not valid JSON"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3117ee9710f4def20e9c134314dc2c0fc8e409a4",
+      "size": 1040,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/3117ee9710f4def20e9c134314dc2c0fc8e409a4"
+    },
+    {
+      "path": "template.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fcb88d853e2053f11547d2211704a8130cdc87e",
+      "size": 100,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/0fcb88d853e2053f11547d2211704a8130cdc87e"
+    },
+    {
+      "path": "template",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "98df3c46f4590b2d79489ddcf671dc78b3b56554",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/98df3c46f4590b2d79489ddcf671dc78b3b56554"
+    },
+    {
+      "path": "template/.bundle",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c3249afc565ace28458d2bf31d87adf72de8cd79",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/c3249afc565ace28458d2bf31d87adf72de8cd79"
+    },
+    {
+      "path": "template/.bundle/config",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "848943bb5274b1ec80390e731e8de3b9f5812d16",
+      "size": 59,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/848943bb5274b1ec80390e731e8de3b9f5812d16"
+    },
+    {
+      "path": "template/.eslintrc.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40c6dcd05f3100109c83d8e5946ae1e99b25162b",
+      "size": 74,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/40c6dcd05f3100109c83d8e5946ae1e99b25162b"
+    },
+    {
+      "path": "template/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aacce47fc78f3367c4e25b6d29ff69522ac295e7",
+      "size": 978,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/aacce47fc78f3367c4e25b6d29ff69522ac295e7"
+    },
+    {
+      "path": "template/.node-version",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c032078a4a21c5c51d3c93d91717c1dabbb8cd0",
+      "size": 3,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/3c032078a4a21c5c51d3c93d91717c1dabbb8cd0"
+    },
+    {
+      "path": "template/.prettierrc.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b540746a7575ead7fe308f2c78e38ca316b2382",
+      "size": 141,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/2b540746a7575ead7fe308f2c78e38ca316b2382"
+    },
+    {
+      "path": "template/.watchmanconfig",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e26dfeeb6e641a33dae4961196235bdb965b21b",
+      "size": 2,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/9e26dfeeb6e641a33dae4961196235bdb965b21b"
+    },
+    {
+      "path": "template/App.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d75108ddaeb69576e3df486fe63feb41acc9893",
+      "size": 843,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/3d75108ddaeb69576e3df486fe63feb41acc9893"
+    },
+    {
+      "path": "template/Gemfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1142b1b209ae3aa6451c2bd1cc20961eb7b230e7",
+      "size": 161,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/1142b1b209ae3aa6451c2bd1cc20961eb7b230e7"
+    },
+    {
+      "path": "template/Gemfile.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88be5c3066e90f915ec427deb31fc28642a3a35f",
+      "size": 2360,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/88be5c3066e90f915ec427deb31fc28642a3a35f"
+    },
+    {
+      "path": "template/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ceae7b490c1d649ff453a6987cc1d84a9d6076c",
+      "size": 3716,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/1ceae7b490c1d649ff453a6987cc1d84a9d6076c",
+      "error": "SyntaxError: Unexpected token '#', \"# Solana M\"... is not valid JSON"
+    },
+    {
+      "path": "template/__tests__",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e7d8effd9b1b9503414680f490e01d1eb5063dd7",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/e7d8effd9b1b9503414680f490e01d1eb5063dd7"
+    },
+    {
+      "path": "template/__tests__/App-test.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "178476699b605584dc503e85537c47dac8b7b611",
+      "size": 266,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/178476699b605584dc503e85537c47dac8b7b611"
+    },
+    {
+      "path": "template/android",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0e8535fcce6470c8310e28fac2535b32212401e7",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/0e8535fcce6470c8310e28fac2535b32212401e7"
+    },
+    {
+      "path": "template/android/app",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c4b5076bc6084c26d052b414a54b3b23bd5f475c",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/c4b5076bc6084c26d052b414a54b3b23bd5f475c"
+    },
+    {
+      "path": "template/android/app/build.gradle",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30236a78eaa64147f8b2a95606c31d9278f20085",
+      "size": 6860,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/30236a78eaa64147f8b2a95606c31d9278f20085"
+    },
+    {
+      "path": "template/android/app/debug.keystore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "364e105ed39fbfd62001429a68140672b06ec0de",
+      "size": 2257,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/364e105ed39fbfd62001429a68140672b06ec0de"
+    },
+    {
+      "path": "template/android/app/proguard-rules.pro",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11b025724a3f7a4a3685bbcd27da16440749f5e8",
+      "size": 435,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/11b025724a3f7a4a3685bbcd27da16440749f5e8"
+    },
+    {
+      "path": "template/android/app/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3f4a4494d79cf426a1280bcf1ac811a870aed1c7",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/3f4a4494d79cf426a1280bcf1ac811a870aed1c7"
+    },
+    {
+      "path": "template/android/app/src/debug",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "097fce623feeb91e2a877986ae87c4004a85a3de",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/097fce623feeb91e2a877986ae87c4004a85a3de"
+    },
+    {
+      "path": "template/android/app/src/debug/AndroidManifest.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b185bc1597eb762051660198c02074bf82ab974",
+      "size": 520,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/4b185bc1597eb762051660198c02074bf82ab974"
+    },
+    {
+      "path": "template/android/app/src/debug/java",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bd253a71172c1bb08b54d1a2cb759b89b97ecdc1",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/bd253a71172c1bb08b54d1a2cb759b89b97ecdc1"
+    },
+    {
+      "path": "template/android/app/src/debug/java/com",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "758706bce1a4d2f06eed290e82f4ceace248004b",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/758706bce1a4d2f06eed290e82f4ceace248004b"
+    },
+    {
+      "path": "template/android/app/src/debug/java/com/solanamobiledappscaffold",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "27a7d328b25471ace73f1d1286150bd1e6fe16ea",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/27a7d328b25471ace73f1d1286150bd1e6fe16ea"
+    },
+    {
+      "path": "template/android/app/src/debug/java/com/solanamobiledappscaffold/ReactNativeFlipper.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67fbf9a980ff31d98ff15cdf4272f62ecd393716",
+      "size": 3390,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/67fbf9a980ff31d98ff15cdf4272f62ecd393716"
+    },
+    {
+      "path": "template/android/app/src/main",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e9d506244bcccb4bf57be33e107f7db11e33b430",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/e9d506244bcccb4bf57be33e107f7db11e33b430"
+    },
+    {
+      "path": "template/android/app/src/main/AndroidManifest.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4122f36a590a440a5068314b0b003df4f319574a",
+      "size": 971,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/4122f36a590a440a5068314b0b003df4f319574a"
+    },
+    {
+      "path": "template/android/app/src/main/java",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "389cdbf4013b561d5b498cda4ecfe82bd262d5b0",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/389cdbf4013b561d5b498cda4ecfe82bd262d5b0"
+    },
+    {
+      "path": "template/android/app/src/main/java/com",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c7272c3e060b6609709a7e70123f92eba11a142a",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/c7272c3e060b6609709a7e70123f92eba11a142a"
+    },
+    {
+      "path": "template/android/app/src/main/java/com/solanamobiledappscaffold",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5334245295a6ef04a12c50310a435b77e5b53be6",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/5334245295a6ef04a12c50310a435b77e5b53be6"
+    },
+    {
+      "path": "template/android/app/src/main/java/com/solanamobiledappscaffold/MainActivity.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "627d5942778d0dda11143e3dca2d8a862a4ca91a",
+      "size": 1345,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/627d5942778d0dda11143e3dca2d8a862a4ca91a"
+    },
+    {
+      "path": "template/android/app/src/main/java/com/solanamobiledappscaffold/MainApplication.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ac2ba2e8e5dd91b9c0217c2aad7b680f72fd61c",
+      "size": 1988,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/5ac2ba2e8e5dd91b9c0217c2aad7b680f72fd61c"
+    },
+    {
+      "path": "template/android/app/src/main/res",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "50a299cac5e5bd071e647a25bcf078ca899ef235",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/50a299cac5e5bd071e647a25bcf078ca899ef235"
+    },
+    {
+      "path": "template/android/app/src/main/res/drawable",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4930d5845d43bf32aadd72b443f0a6efc96a1c9e",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/4930d5845d43bf32aadd72b443f0a6efc96a1c9e"
+    },
+    {
+      "path": "template/android/app/src/main/res/drawable/rn_edit_text_material.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f35d9962026a854a166779fd2a3850d05ce315c6",
+      "size": 1910,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/f35d9962026a854a166779fd2a3850d05ce315c6"
+    },
+    {
+      "path": "template/android/app/src/main/res/mipmap-hdpi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "109f494bd6f654f5301cd9ebafd4a3257fc1351f",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/109f494bd6f654f5301cd9ebafd4a3257fc1351f"
+    },
+    {
+      "path": "template/android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2f5908281d070150700378b64a84c7db1f97aa1",
+      "size": 3056,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/a2f5908281d070150700378b64a84c7db1f97aa1"
+    },
+    {
+      "path": "template/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b523998081149a985cef0cdf89045b9ed29964a",
+      "size": 5024,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/1b523998081149a985cef0cdf89045b9ed29964a"
+    },
+    {
+      "path": "template/android/app/src/main/res/mipmap-mdpi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d549f68cab7cc72620052c9985634b960eb828aa",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/d549f68cab7cc72620052c9985634b960eb828aa"
+    },
+    {
+      "path": "template/android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff10afd6e182edb2b1a63c8f984e9070d9f950ba",
+      "size": 2096,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/ff10afd6e182edb2b1a63c8f984e9070d9f950ba"
+    },
+    {
+      "path": "template/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "115a4c768a20c9e13185c17043f4c4d12dd4632a",
+      "size": 2858,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/115a4c768a20c9e13185c17043f4c4d12dd4632a"
+    },
+    {
+      "path": "template/android/app/src/main/res/mipmap-xhdpi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "becbccf1fb1165d5cc369e1af05081fdd11e18a0",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/becbccf1fb1165d5cc369e1af05081fdd11e18a0"
+    },
+    {
+      "path": "template/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dcd3cd8083358269d6ed7894726283bb9bcbbfea",
+      "size": 4569,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/dcd3cd8083358269d6ed7894726283bb9bcbbfea"
+    },
+    {
+      "path": "template/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "459ca609d3ae0d3943ab44cdc27feef9256dc6d7",
+      "size": 7098,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/459ca609d3ae0d3943ab44cdc27feef9256dc6d7"
+    },
+    {
+      "path": "template/android/app/src/main/res/mipmap-xxhdpi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d0f0f45a3126c7d2f8ec0ff7b578d8f25e46f3f0",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/d0f0f45a3126c7d2f8ec0ff7b578d8f25e46f3f0"
+    },
+    {
+      "path": "template/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ca12fe024be86e868d14e91120a6902f8e88ac6",
+      "size": 6464,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/8ca12fe024be86e868d14e91120a6902f8e88ac6"
+    },
+    {
+      "path": "template/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e19b410a1b15ff180f3dacac19395fe3046cdec",
+      "size": 10676,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/8e19b410a1b15ff180f3dacac19395fe3046cdec"
+    },
+    {
+      "path": "template/android/app/src/main/res/mipmap-xxxhdpi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fd656b03414503a066ddd8a3992c76f16469d566",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/fd656b03414503a066ddd8a3992c76f16469d566"
+    },
+    {
+      "path": "template/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b824ebdd48db917eea2e67a82260a100371f8a24",
+      "size": 9250,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/b824ebdd48db917eea2e67a82260a100371f8a24"
+    },
+    {
+      "path": "template/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c19a13c239cb67b8a2134ddd5f325db1d2d5bee",
+      "size": 15523,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/4c19a13c239cb67b8a2134ddd5f325db1d2d5bee"
+    },
+    {
+      "path": "template/android/app/src/main/res/values",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4f93aefc46a294fe5540bc11267f7183f3b35ef5",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/4f93aefc46a294fe5540bc11267f7183f3b35ef5"
+    },
+    {
+      "path": "template/android/app/src/main/res/values/strings.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ccbdd8b442754ee46b9cc64c5152c96c328d5ab",
+      "size": 87,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/4ccbdd8b442754ee46b9cc64c5152c96c328d5ab"
+    },
+    {
+      "path": "template/android/app/src/main/res/values/styles.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ba83a2ad5a2c9be2d9eb2a4211590336f28209b",
+      "size": 282,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/7ba83a2ad5a2c9be2d9eb2a4211590336f28209b"
+    },
+    {
+      "path": "template/android/app/src/release",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6561efe7bdda2511e810555522a45c981746f39d",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/6561efe7bdda2511e810555522a45c981746f39d"
+    },
+    {
+      "path": "template/android/app/src/release/java",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b1ba10ad39257b16896f01f8798d694f5a92d724",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/b1ba10ad39257b16896f01f8798d694f5a92d724"
+    },
+    {
+      "path": "template/android/app/src/release/java/com",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5da650cb898b9dc72533f9e7786a44511ff71525",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/5da650cb898b9dc72533f9e7786a44511ff71525"
+    },
+    {
+      "path": "template/android/app/src/release/java/com/solanamobiledappscaffold",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b6a39c37338b44b1f4651f607f4d67f8f004dae7",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/b6a39c37338b44b1f4651f607f4d67f8f004dae7"
+    },
+    {
+      "path": "template/android/app/src/release/java/com/solanamobiledappscaffold/ReactNativeFlipper.java",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c667bde185c7360b7a81890e5ddbfc41165d0f52",
+      "size": 694,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/c667bde185c7360b7a81890e5ddbfc41165d0f52"
+    },
+    {
+      "path": "template/android/build.gradle",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67d887b03078b68519c2238825016be80e284d22",
+      "size": 607,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/67d887b03078b68519c2238825016be80e284d22"
+    },
+    {
+      "path": "template/android/gradle.properties",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4af465e8a185764dc5a061cc603ab6587273dcf",
+      "size": 1902,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/e4af465e8a185764dc5a061cc603ab6587273dcf"
+    },
+    {
+      "path": "template/android/gradle",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "771907d24c2cb1d340f2aed3fbcbd13a44e13b2c",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/771907d24c2cb1d340f2aed3fbcbd13a44e13b2c"
+    },
+    {
+      "path": "template/android/gradle/wrapper",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "07ce3fab627e284b8d9531c8159bd692bbe4079c",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/07ce3fab627e284b8d9531c8159bd692bbe4079c"
+    },
+    {
+      "path": "template/android/gradle/wrapper/gradle-wrapper.jar",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41d9927a4d4fb3f96a785543079b8df6723c946b",
+      "size": 59821,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/41d9927a4d4fb3f96a785543079b8df6723c946b"
+    },
+    {
+      "path": "template/android/gradle/wrapper/gradle-wrapper.properties",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8fad3f5a98bf4a104de5df8345c1f59f984cba8a",
+      "size": 202,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/8fad3f5a98bf4a104de5df8345c1f59f984cba8a"
+    },
+    {
+      "path": "template/android/gradlew",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "1b6c787337ffb79f0e3cf8b1e9f00f680a959de1",
+      "size": 8070,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/1b6c787337ffb79f0e3cf8b1e9f00f680a959de1"
+    },
+    {
+      "path": "template/android/gradlew.bat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac1b06f93825db68fb0c0b5150917f340eaa5d02",
+      "size": 2763,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/ac1b06f93825db68fb0c0b5150917f340eaa5d02"
+    },
+    {
+      "path": "template/android/settings.gradle",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efe9abb2fdb1d67538d685ef22af847db4ea6592",
+      "size": 267,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/efe9abb2fdb1d67538d685ef22af847db4ea6592"
+    },
+    {
+      "path": "template/app.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6227440f87e7a3db95801f93e9711e2e7e2759d9",
+      "size": 85,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/6227440f87e7a3db95801f93e9711e2e7e2759d9"
+    },
+    {
+      "path": "template/babel.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc3be41c4288f64a235ebb2021bb8bf1a2538e8f",
+      "size": 153,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/bc3be41c4288f64a235ebb2021bb8bf1a2538e8f"
+    },
+    {
+      "path": "template/components",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "124ac7b0b437f41071748820e9e4b97aa7cc24e2",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/124ac7b0b437f41071748820e9e4b97aa7cc24e2"
+    },
+    {
+      "path": "template/components/AccountInfo.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da9f119c760fc72b6040cbfbbdb8dca17f9bfaf5",
+      "size": 2146,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/da9f119c760fc72b6040cbfbbdb8dca17f9bfaf5"
+    },
+    {
+      "path": "template/components/Colors.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0cb325f4622473cec69f14567279e292c98b8a7",
+      "size": 159,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/a0cb325f4622473cec69f14567279e292c98b8a7"
+    },
+    {
+      "path": "template/components/ConnectButton.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cee271ed034f15f179e1e4cf7a96e500f4790261",
+      "size": 1176,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/cee271ed034f15f179e1e4cf7a96e500f4790261"
+    },
+    {
+      "path": "template/components/DisconnectButton.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a062b07904c5b8941afe7b906dc4ddee8c62cfa6",
+      "size": 593,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/a062b07904c5b8941afe7b906dc4ddee8c62cfa6"
+    },
+    {
+      "path": "template/components/Header.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5defb8ad61c9b6e78c33ffdaa8f74bbaf3153df2",
+      "size": 1127,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/5defb8ad61c9b6e78c33ffdaa8f74bbaf3153df2"
+    },
+    {
+      "path": "template/components/RequestAirdropButton.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac38bab34bf14a9b0a819e07e47c7bd03be593a7",
+      "size": 1980,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/ac38bab34bf14a9b0a819e07e47c7bd03be593a7"
+    },
+    {
+      "path": "template/components/Section.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "397603c302c96574af4b993b3813e26bc4b037d8",
+      "size": 1138,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/397603c302c96574af4b993b3813e26bc4b037d8"
+    },
+    {
+      "path": "template/components/SignMessageButton.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ecb76d4ac0260406b6d13b916aa11d9312474ed",
+      "size": 1892,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/8ecb76d4ac0260406b6d13b916aa11d9312474ed",
+      "error": "SyntaxError: Unexpected token 'i', \"import Rea\"... is not valid JSON"
+    },
+    {
+      "path": "template/components/SignTransactionButton.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52d8de9291630ab9e55f1545d537484d491474ba",
+      "size": 2616,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/52d8de9291630ab9e55f1545d537484d491474ba",
+      "error": "SyntaxError: Unexpected token 'i', \"import Rea\"... is not valid JSON"
+    },
+    {
+      "path": "template/components/providers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "62f7df4665d8581bef32672ab20163e9399e7c17",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/62f7df4665d8581bef32672ab20163e9399e7c17"
+    },
+    {
+      "path": "template/components/providers/AuthorizationProvider.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "392f07b5604510b697280072251e8a9958a7e005",
+      "size": 5379,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/392f07b5604510b697280072251e8a9958a7e005",
+      "error": "SyntaxError: Unexpected token 'i', \"import {Pu\"... is not valid JSON"
+    },
+    {
+      "path": "template/components/providers/ConnectionProvider.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9bb6d63cf116bfd60b8f6a1b638e20d4be9179af",
+      "size": 972,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/9bb6d63cf116bfd60b8f6a1b638e20d4be9179af"
+    },
+    {
+      "path": "template/img",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f0dcecea3ee48a5e471532b07ee8276924ae86d8",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/f0dcecea3ee48a5e471532b07ee8276924ae86d8"
+    },
+    {
+      "path": "template/img/background.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b32b3d703c58323ee5d179681379262d763b71cb",
+      "size": 8316895,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/b32b3d703c58323ee5d179681379262d763b71cb"
+    },
+    {
+      "path": "template/index.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f471984c7940f03c39cf10383363dcd040f378ea",
+      "size": 419,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/f471984c7940f03c39cf10383363dcd040f378ea"
+    },
+    {
+      "path": "template/ios",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "604c115cdb80a6045fbdde0205539ce672e79550",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/604c115cdb80a6045fbdde0205539ce672e79550"
+    },
+    {
+      "path": "template/ios/.xcode.env",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d5782c71568d32eec2fe71b034efcde053305f9",
+      "size": 482,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/3d5782c71568d32eec2fe71b034efcde053305f9"
+    },
+    {
+      "path": "template/ios/Podfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6448ff7c502408ef278083844cdfdb21f314597",
+      "size": 2193,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/a6448ff7c502408ef278083844cdfdb21f314597"
+    },
+    {
+      "path": "template/ios/Podfile.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15713f965cf03edb432c9ba54b2c7dba6c07d1e1",
+      "size": 22606,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/15713f965cf03edb432c9ba54b2c7dba6c07d1e1"
+    },
+    {
+      "path": "template/ios/SolanaMobileDAppScaffold.xcodeproj",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "78ae5fe7e68988226c467dacba6571053330c519",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/78ae5fe7e68988226c467dacba6571053330c519"
+    },
+    {
+      "path": "template/ios/SolanaMobileDAppScaffold.xcodeproj/project.pbxproj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47a934804ffbff5121a4ca864fef3cf5ce0375be",
+      "size": 31192,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/47a934804ffbff5121a4ca864fef3cf5ce0375be"
+    },
+    {
+      "path": "template/ios/SolanaMobileDAppScaffold.xcodeproj/xcshareddata",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9fc69c5da1883c857272120656ef9ab041b1bf39",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/9fc69c5da1883c857272120656ef9ab041b1bf39"
+    },
+    {
+      "path": "template/ios/SolanaMobileDAppScaffold.xcodeproj/xcshareddata/xcschemes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "395a0b1e247cea8901c51533ee7287511b60746e",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/395a0b1e247cea8901c51533ee7287511b60746e"
+    },
+    {
+      "path": "template/ios/SolanaMobileDAppScaffold.xcodeproj/xcshareddata/xcschemes/SolanaMobileDAppScaffold.xcscheme",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "439b9787b41943b56b60a70e72f001864993be0a",
+      "size": 3474,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/439b9787b41943b56b60a70e72f001864993be0a"
+    },
+    {
+      "path": "template/ios/SolanaMobileDAppScaffold.xcworkspace",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7750c77327ae76ca383b388d070b4bff9d9406ac",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/7750c77327ae76ca383b388d070b4bff9d9406ac"
+    },
+    {
+      "path": "template/ios/SolanaMobileDAppScaffold.xcworkspace/contents.xcworkspacedata",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65ea4780fa80cb736ed6fdc656a584ce2addd49e",
+      "size": 242,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/65ea4780fa80cb736ed6fdc656a584ce2addd49e"
+    },
+    {
+      "path": "template/ios/SolanaMobileDAppScaffold",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0c689418a5e5e7ef8af8bf9733d9b5c7c5ce4120",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/0c689418a5e5e7ef8af8bf9733d9b5c7c5ce4120"
+    },
+    {
+      "path": "template/ios/SolanaMobileDAppScaffold/AppDelegate.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d2808256ca079f1592e258ae13d12d15381f2c5",
+      "size": 98,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/5d2808256ca079f1592e258ae13d12d15381f2c5"
+    },
+    {
+      "path": "template/ios/SolanaMobileDAppScaffold/AppDelegate.mm",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9f43cc5eb947c784ea3b10e3c000cb8fbb0db3c",
+      "size": 1149,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/e9f43cc5eb947c784ea3b10e3c000cb8fbb0db3c"
+    },
+    {
+      "path": "template/ios/SolanaMobileDAppScaffold/Images.xcassets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6e878281f34f3548d727f8ce185f8b4ea0350b7f",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/6e878281f34f3548d727f8ce185f8b4ea0350b7f"
+    },
+    {
+      "path": "template/ios/SolanaMobileDAppScaffold/Images.xcassets/AppIcon.appiconset",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "29f93d37d40b886edffd9fe6bce448d5ff2920e2",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/29f93d37d40b886edffd9fe6bce448d5ff2920e2"
+    },
+    {
+      "path": "template/ios/SolanaMobileDAppScaffold/Images.xcassets/AppIcon.appiconset/Contents.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81213230deb40de5b032ae0e05f5c74196cc1b07",
+      "size": 849,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/81213230deb40de5b032ae0e05f5c74196cc1b07"
+    },
+    {
+      "path": "template/ios/SolanaMobileDAppScaffold/Images.xcassets/Contents.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d92bd53fdb2223e4d23bf1fb6c134fe72931116",
+      "size": 63,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/2d92bd53fdb2223e4d23bf1fb6c134fe72931116"
+    },
+    {
+      "path": "template/ios/SolanaMobileDAppScaffold/Info.plist",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03d141c47c000fdfb2a2959b150bb08aa401dc22",
+      "size": 1606,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/03d141c47c000fdfb2a2959b150bb08aa401dc22"
+    },
+    {
+      "path": "template/ios/SolanaMobileDAppScaffold/LaunchScreen.storyboard",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c87eb4599c05afac3e8aecdd760209f323b4d2d",
+      "size": 4248,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/0c87eb4599c05afac3e8aecdd760209f323b4d2d"
+    },
+    {
+      "path": "template/ios/SolanaMobileDAppScaffold/main.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d645c7246c42e45510cfcdcd7a7ff584a700d4c1",
+      "size": 199,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/d645c7246c42e45510cfcdcd7a7ff584a700d4c1"
+    },
+    {
+      "path": "template/ios/SolanaMobileDAppScaffoldTests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "361d107a713848ca0b891cd61e8210bf509064f0",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/361d107a713848ca0b891cd61e8210bf509064f0"
+    },
+    {
+      "path": "template/ios/SolanaMobileDAppScaffoldTests/Info.plist",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba72822e8728ef2951005e49b6c27a2f1da6572d",
+      "size": 733,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/ba72822e8728ef2951005e49b6c27a2f1da6572d"
+    },
+    {
+      "path": "template/ios/SolanaMobileDAppScaffoldTests/SolanaMobileDAppScaffoldTests.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfb936a9657b8c4ac91626c577b45c278ab1dcb3",
+      "size": 2024,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/dfb936a9657b8c4ac91626c577b45c278ab1dcb3"
+    },
+    {
+      "path": "template/metro.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e91aba937cd579fee46a77427c64b83b34f26925",
+      "size": 299,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/e91aba937cd579fee46a77427c64b83b34f26925"
+    },
+    {
+      "path": "template/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4cdd164473e92a18fc66d21b77bd9cc409b5f66",
+      "size": 1364,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/b4cdd164473e92a18fc66d21b77bd9cc409b5f66"
+    },
+    {
+      "path": "template/screens",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2706a4e3f44eab1565fa52663afaf5f4adac3010",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/2706a4e3f44eab1565fa52663afaf5f4adac3010"
+    },
+    {
+      "path": "template/screens/MainScreen.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e1df77f41e373841cd8fb2de9af3dc36a2bbafc",
+      "size": 2488,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/4e1df77f41e373841cd8fb2de9af3dc36a2bbafc"
+    },
+    {
+      "path": "template/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cc9cdd69a15c9639b66f9b08d4a107b34e7c799",
+      "size": 349,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/0cc9cdd69a15c9639b66f9b08d4a107b34e7c799"
+    },
+    {
+      "path": "template/util",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8084d56ab2d1cd345df194dc1ce4e8348afa4a16",
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/trees/8084d56ab2d1cd345df194dc1ce4e8348afa4a16"
+    },
+    {
+      "path": "template/util/alertAndLog.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66915028ec9b260994ec70c143ca9a35b8775fe5",
+      "size": 226,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/66915028ec9b260994ec70c143ca9a35b8775fe5"
+    },
+    {
+      "path": "template/yarn.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec711b108ce0257a0f43fc2d69648cf77a93c094",
+      "size": 348495,
+      "url": "https://api.github.com/repos/Hamiltok387lz/solana-mobile-dapp-scaffold/git/blobs/ec711b108ce0257a0f43fc2d69648cf77a93c094"
+    }
+  ]
+}

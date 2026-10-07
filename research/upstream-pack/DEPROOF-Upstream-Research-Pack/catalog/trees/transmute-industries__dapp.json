@@ -1,0 +1,1453 @@
+{
+  "repository": "transmute-industries/dapp",
+  "tree_sha": "8d0c44d079264c6472d40dde3a5f3249915210e1",
+  "truncated": false,
+  "entries": [
+    {
+      "path": ". dockerignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25c8fdbaba62c31aacfa2307975b06fbfd017485",
+      "size": 30,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/25c8fdbaba62c31aacfa2307975b06fbfd017485"
+    },
+    {
+      "path": ".editorconfig",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7cd54ea77f38b203afd3c225c3fb02ba691e1869",
+      "size": 291,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/7cd54ea77f38b203afd3c225c3fb02ba691e1869"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8b0a53d0b416d1446ad938d1274ead8734afaaa",
+      "size": 61,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/c8b0a53d0b416d1446ad938d1274ead8734afaaa"
+    },
+    {
+      "path": ".travis.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93fb6e4feda90e14e4cc753dc8497e8a46104422",
+      "size": 568,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/93fb6e4feda90e14e4cc753dc8497e8a46104422"
+    },
+    {
+      "path": "Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ab6be6f6c43cf801d040fc09c0fab1b17ede476",
+      "size": 253,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/6ab6be6f6c43cf801d040fc09c0fab1b17ede476"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef3f805683495a9228dc47c897aa6377ffe02a0d",
+      "size": 1717,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/ef3f805683495a9228dc47c897aa6377ffe02a0d",
+      "error": "SyntaxError: Unexpected token '#', \"# Transmut\"... is not valid JSON"
+    },
+    {
+      "path": "config",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b40a03be4907afe9e77f6d0bc7f99afd5a6abf42",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/b40a03be4907afe9e77f6d0bc7f99afd5a6abf42"
+    },
+    {
+      "path": "config/env.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c6133b121ad2e15edabf18d2611da85d0de269a",
+      "size": 3396,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/7c6133b121ad2e15edabf18d2611da85d0de269a"
+    },
+    {
+      "path": "config/jest",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "abb87e06caa8726f8a7bd0a681ae4cf6eb7846c6",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/abb87e06caa8726f8a7bd0a681ae4cf6eb7846c6"
+    },
+    {
+      "path": "config/jest/cssTransform.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1534f6fb59fa4276684f55b575d79b174877ea0",
+      "size": 320,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/f1534f6fb59fa4276684f55b575d79b174877ea0"
+    },
+    {
+      "path": "config/jest/fileTransform.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffce0da29a933a799f245af16836c8b5fbac524c",
+      "size": 311,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/ffce0da29a933a799f245af16836c8b5fbac524c"
+    },
+    {
+      "path": "config/jest/typescriptTransform.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18aa9351e78053c599ec36cbb0f7eaa62c7e5723",
+      "size": 1877,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/18aa9351e78053c599ec36cbb0f7eaa62c7e5723"
+    },
+    {
+      "path": "config/paths.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "468f60681e71234d01eeda2fa1522b5ec65a7bd6",
+      "size": 1976,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/468f60681e71234d01eeda2fa1522b5ec65a7bd6"
+    },
+    {
+      "path": "config/polyfills.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c1d86662fdfe5f1939f056dcd52dbbcdfcd96ce",
+      "size": 628,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/5c1d86662fdfe5f1939f056dcd52dbbcdfcd96ce"
+    },
+    {
+      "path": "config/webpack.config.dev.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8719259b51b64f7be61cd048005acc86c98a3a31",
+      "size": 11743,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/8719259b51b64f7be61cd048005acc86c98a3a31"
+    },
+    {
+      "path": "config/webpack.config.prod.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8f82faee5a3a15687810ce5fe18859f50d5eb7c",
+      "size": 13754,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/d8f82faee5a3a15687810ce5fe18859f50d5eb7c"
+    },
+    {
+      "path": "config/webpackDevServer.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6563fb8b93fa0224c537e19f06715384eef27448",
+      "size": 5137,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/6563fb8b93fa0224c537e19f06715384eef27448"
+    },
+    {
+      "path": "contracts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3fc86503230d3bc20ad94c2c647df01a57bdeeae",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/3fc86503230d3bc20ad94c2c647df01a57bdeeae"
+    },
+    {
+      "path": "contracts/ConvertLib.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b97c88d7b6325a4da135f0b8f8d5aa4fe0c45edb",
+      "size": 169,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/b97c88d7b6325a4da135f0b8f8d5aa4fe0c45edb"
+    },
+    {
+      "path": "contracts/MetaCoin.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa570e9643206a54c241969dc9aa2b24070ca161",
+      "size": 953,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/fa570e9643206a54c241969dc9aa2b24070ca161"
+    },
+    {
+      "path": "contracts/Migrations.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e7fe8d472a157aac057a3240942c79992caad07",
+      "size": 493,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/7e7fe8d472a157aac057a3240942c79992caad07"
+    },
+    {
+      "path": "contracts/TransmuteFramework",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9267c02f0555ee7de57e3c9a1c2647888ac6492e",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/9267c02f0555ee7de57e3c9a1c2647888ac6492e"
+    },
+    {
+      "path": "contracts/TransmuteFramework/EventStore",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c8c248d904e34e34a296e01ffa41332ba432683d",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/c8c248d904e34e34a296e01ffa41332ba432683d"
+    },
+    {
+      "path": "contracts/TransmuteFramework/EventStore/Bases",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1d4a77f0405480f6b87f94f5a0ba1f86f8128eb3",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/1d4a77f0405480f6b87f94f5a0ba1f86f8128eb3"
+    },
+    {
+      "path": "contracts/TransmuteFramework/EventStore/Bases/RBACEventStore",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "59cf58fb3e27b6d66fac22fb54ed0c704bed82f4",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/59cf58fb3e27b6d66fac22fb54ed0c704bed82f4"
+    },
+    {
+      "path": "contracts/TransmuteFramework/EventStore/Bases/RBACEventStore/RBACEventStore.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e76c0d6d05e3fad7d813007dcf29722578e2c6b",
+      "size": 1391,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/6e76c0d6d05e3fad7d813007dcf29722578e2c6b"
+    },
+    {
+      "path": "contracts/TransmuteFramework/EventStore/Bases/RBACEventStore/RBACEventStoreFactory.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "781f77931295fa491aa1b0fa95468a4cf07f39e6",
+      "size": 2311,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/781f77931295fa491aa1b0fa95468a4cf07f39e6"
+    },
+    {
+      "path": "contracts/TransmuteFramework/EventStore/Bases/UnsafeEventStore",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a74b76f60bb7759b65df1ebd2a680794e62f0ce0",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/a74b76f60bb7759b65df1ebd2a680794e62f0ce0"
+    },
+    {
+      "path": "contracts/TransmuteFramework/EventStore/Bases/UnsafeEventStore/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fdcdedcf8770f18ade4a5d2e6f3075cf9104aca0",
+      "size": 343,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/fdcdedcf8770f18ade4a5d2e6f3075cf9104aca0",
+      "error": "SyntaxError: Unexpected token '#', \"# Unsafe E\"... is not valid JSON"
+    },
+    {
+      "path": "contracts/TransmuteFramework/EventStore/Bases/UnsafeEventStore/UnsafeEventStore.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e7837ace325958f571b54428298bac5e2117531",
+      "size": 1306,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/1e7837ace325958f571b54428298bac5e2117531"
+    },
+    {
+      "path": "contracts/TransmuteFramework/EventStore/Bases/UnsafeEventStore/UnsafeEventStoreFactory.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cdc8f9135f961634842c3e75034c0e058c09ccb",
+      "size": 1917,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/3cdc8f9135f961634842c3e75034c0e058c09ccb"
+    },
+    {
+      "path": "contracts/TransmuteFramework/EventStore/EventStoreLib.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ad9c29412c1ae1b2d513d93f452d9ed986bedc0",
+      "size": 2111,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/3ad9c29412c1ae1b2d513d93f452d9ed986bedc0"
+    },
+    {
+      "path": "contracts/TransmuteFramework/Security",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b735e0cb722eafcafcffe496d826dee245857a64",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/b735e0cb722eafcafcffe496d826dee245857a64"
+    },
+    {
+      "path": "contracts/TransmuteFramework/Security/RBAC.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a3d26d2a74419ce10f1302a4739bb2399bfcc3a",
+      "size": 4293,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/1a3d26d2a74419ce10f1302a4739bb2399bfcc3a"
+    },
+    {
+      "path": "contracts/TransmuteFramework/SetLib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6e5f8c40814a95116335ed754c6a52b698008307",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/6e5f8c40814a95116335ed754c6a52b698008307"
+    },
+    {
+      "path": "contracts/TransmuteFramework/SetLib/AddressSet",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b1c59f2f76af2f58831910b850adf6ea7f39f16e",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/b1c59f2f76af2f58831910b850adf6ea7f39f16e"
+    },
+    {
+      "path": "contracts/TransmuteFramework/SetLib/AddressSet/AddressSetLib.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39620df267f5944c82e3f6ffb5fb93f84707a552",
+      "size": 2954,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/39620df267f5944c82e3f6ffb5fb93f84707a552"
+    },
+    {
+      "path": "contracts/TransmuteFramework/SetLib/AddressSet/AddressSetSpec.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af8f45cc8d0b3fbc6a97d55981044ed3a75f4ace",
+      "size": 1566,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/af8f45cc8d0b3fbc6a97d55981044ed3a75f4ace"
+    },
+    {
+      "path": "contracts/TransmuteFramework/SetLib/Bytes32Set",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f462c7b34b006bef0a14440db294f95f3173d3cb",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/f462c7b34b006bef0a14440db294f95f3173d3cb"
+    },
+    {
+      "path": "contracts/TransmuteFramework/SetLib/Bytes32Set/Bytes32SetLib.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8cded2d24c221f4e49b8c46a40b6a1d510f2b238",
+      "size": 2952,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/8cded2d24c221f4e49b8c46a40b6a1d510f2b238"
+    },
+    {
+      "path": "contracts/TransmuteFramework/SetLib/Bytes32Set/Bytes32SetSpec.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4fcac6efb0d0933792aae7e6fc3ab44006823a3f",
+      "size": 1566,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/4fcac6efb0d0933792aae7e6fc3ab44006823a3f"
+    },
+    {
+      "path": "contracts/TransmuteFramework/SetLib/UIntSet",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "30c9793ebf8f74a6dd45f126d391ed005b3ab0e7",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/30c9793ebf8f74a6dd45f126d391ed005b3ab0e7"
+    },
+    {
+      "path": "contracts/TransmuteFramework/SetLib/UIntSet/UIntSetLib.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7fb51fff4d59629cffb17948ff25cf94e1d6df4",
+      "size": 2859,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/e7fb51fff4d59629cffb17948ff25cf94e1d6df4"
+    },
+    {
+      "path": "contracts/TransmuteFramework/SetLib/UIntSet/UIntSetSpec.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5343f32725816ae6c3e848abf99e082e6303a859",
+      "size": 1509,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/5343f32725816ae6c3e848abf99e082e6303a859"
+    },
+    {
+      "path": "contracts/TransmuteFramework/Utils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "873f548a99982daa7db6db45ea11ff4fea2e9dea",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/873f548a99982daa7db6db45ea11ff4fea2e9dea"
+    },
+    {
+      "path": "contracts/TransmuteFramework/Utils/StringUtils.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79618a84c31f2b78d4751793859e85ba6c6a6568",
+      "size": 1071,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/79618a84c31f2b78d4751793859e85ba6c6a6568"
+    },
+    {
+      "path": "contracts/TransmuteFramework/zeppelin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "437967656538ff745b4c04847310077b26c258a1",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/437967656538ff745b4c04847310077b26c258a1"
+    },
+    {
+      "path": "contracts/TransmuteFramework/zeppelin/lifecycle",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ee1f28a38c6f3db647bdd51ef08ae05a1244be6d",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/ee1f28a38c6f3db647bdd51ef08ae05a1244be6d"
+    },
+    {
+      "path": "contracts/TransmuteFramework/zeppelin/lifecycle/Killable.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf0599c3ce3454d316a04ccaaa1e38bc4851ac71",
+      "size": 258,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/cf0599c3ce3454d316a04ccaaa1e38bc4851ac71"
+    },
+    {
+      "path": "contracts/TransmuteFramework/zeppelin/ownership",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3f7d39121c7dec5ebbf9063d6c2c9715f6515fdf",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/3f7d39121c7dec5ebbf9063d6c2c9715f6515fdf"
+    },
+    {
+      "path": "contracts/TransmuteFramework/zeppelin/ownership/Ownable.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e07c5313f76e732276a630326c23847991bea63a",
+      "size": 477,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/e07c5313f76e732276a630326c23847991bea63a"
+    },
+    {
+      "path": "docker-compose.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f80bccffde4cfdb7b0b0d1da90470db2d52818c7",
+      "size": 585,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/f80bccffde4cfdb7b0b0d1da90470db2d52818c7",
+      "error": "SyntaxError: Unexpected token 'v', \"version: '\"... is not valid JSON"
+    },
+    {
+      "path": "ipfs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "23fa3c979f50105365bc5b0ca009231622e843e0",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/23fa3c979f50105365bc5b0ca009231622e843e0"
+    },
+    {
+      "path": "ipfs/Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9f9726d2643993eb2176491858b7875ae332d05",
+      "size": 167,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/f9f9726d2643993eb2176491858b7875ae332d05"
+    },
+    {
+      "path": "ipfs/start_ipfs.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "805fbb65613f5f43833fd785209c14bf930e3b25",
+      "size": 795,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/805fbb65613f5f43833fd785209c14bf930e3b25"
+    },
+    {
+      "path": "migrations",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0ca15d51e6cf64deb78d54eedda78980fc14c333",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/0ca15d51e6cf64deb78d54eedda78980fc14c333"
+    },
+    {
+      "path": "migrations/1_initial_migration.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d5f3f9b02eb38313683d980c6b8a759f2b55d45",
+      "size": 129,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/4d5f3f9b02eb38313683d980c6b8a759f2b55d45"
+    },
+    {
+      "path": "migrations/2_deploy_contracts.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7472f96d5f1749c180a9bbb7bc1fb74f0206efdb",
+      "size": 3481,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/7472f96d5f1749c180a9bbb7bc1fb74f0206efdb"
+    },
+    {
+      "path": "migrations/2_deploy_contracts.js.transmute.bak",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3dc3e90652b4f476e711c3c911a1bb5a532b7f3",
+      "size": 249,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/b3dc3e90652b4f476e711c3c911a1bb5a532b7f3"
+    },
+    {
+      "path": "package-lock.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ec39a10595e246807d856f10e1b2ac378775734",
+      "size": 830481,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/8ec39a10595e246807d856f10e1b2ac378775734"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af75b9152fa39d5447bbc586dca17b89afa2c166",
+      "size": 4666,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/af75b9152fa39d5447bbc586dca17b89afa2c166"
+    },
+    {
+      "path": "public",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "436389c408c5383f1788684bb9b69dc66c6c5a65",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/436389c408c5383f1788684bb9b69dc66c6c5a65"
+    },
+    {
+      "path": "public/favicon.ico",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c125de5d897c1ff5692a656485b3216123dcd89",
+      "size": 24838,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/5c125de5d897c1ff5692a656485b3216123dcd89"
+    },
+    {
+      "path": "public/icons",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6d9a8a4f9c81d35051a2f245827a4c2662e3d252",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/6d9a8a4f9c81d35051a2f245827a4c2662e3d252"
+    },
+    {
+      "path": "public/icons/android-icon-144x144.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32741bd71499ab5875f0103a0a0094197bf4c402",
+      "size": 4796,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/32741bd71499ab5875f0103a0a0094197bf4c402"
+    },
+    {
+      "path": "public/icons/android-icon-192x192.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5edf9583961db8b4093477b4521c5f328272f966",
+      "size": 5406,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/5edf9583961db8b4093477b4521c5f328272f966"
+    },
+    {
+      "path": "public/icons/android-icon-36x36.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5261bc0f3e47246aa0efba7f6b45d1f853d6505",
+      "size": 1846,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/a5261bc0f3e47246aa0efba7f6b45d1f853d6505"
+    },
+    {
+      "path": "public/icons/android-icon-48x48.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f97029316a84f5c079bdd0b97bb61065ba8b9705",
+      "size": 1923,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/f97029316a84f5c079bdd0b97bb61065ba8b9705"
+    },
+    {
+      "path": "public/icons/android-icon-72x72.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aec8606b94f687f39850e7dd18266077711f484d",
+      "size": 2559,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/aec8606b94f687f39850e7dd18266077711f484d"
+    },
+    {
+      "path": "public/icons/android-icon-96x96.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a4d2509ed93f3b90ec86948627716b89be3ce93",
+      "size": 3296,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/7a4d2509ed93f3b90ec86948627716b89be3ce93"
+    },
+    {
+      "path": "public/icons/apple-icon-114x114.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62f7b4e721f83fbc8859a8db50babee7f8f87f73",
+      "size": 3756,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/62f7b4e721f83fbc8859a8db50babee7f8f87f73"
+    },
+    {
+      "path": "public/icons/apple-icon-120x120.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "005e89ef991a9b3642b85f9832ed417db68ef908",
+      "size": 3926,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/005e89ef991a9b3642b85f9832ed417db68ef908"
+    },
+    {
+      "path": "public/icons/apple-icon-144x144.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32741bd71499ab5875f0103a0a0094197bf4c402",
+      "size": 4796,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/32741bd71499ab5875f0103a0a0094197bf4c402"
+    },
+    {
+      "path": "public/icons/apple-icon-152x152.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3e6547ce4504b2965a9d0a08f35d235e10ebcd1",
+      "size": 4998,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/e3e6547ce4504b2965a9d0a08f35d235e10ebcd1"
+    },
+    {
+      "path": "public/icons/apple-icon-180x180.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e3250c8c953e084b1672942a3ead58bc59c8ac3",
+      "size": 6153,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/9e3250c8c953e084b1672942a3ead58bc59c8ac3"
+    },
+    {
+      "path": "public/icons/apple-icon-57x57.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7dc141722ec0f0ad82fccfda95d22ec17858b6d",
+      "size": 2150,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/a7dc141722ec0f0ad82fccfda95d22ec17858b6d"
+    },
+    {
+      "path": "public/icons/apple-icon-60x60.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4bb3c197bf375b103a41d40fb7bb635c50d2e63a",
+      "size": 2256,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/4bb3c197bf375b103a41d40fb7bb635c50d2e63a"
+    },
+    {
+      "path": "public/icons/apple-icon-72x72.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aec8606b94f687f39850e7dd18266077711f484d",
+      "size": 2559,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/aec8606b94f687f39850e7dd18266077711f484d"
+    },
+    {
+      "path": "public/icons/apple-icon-76x76.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "039a81ec01609e1d7ec3f561b13198d2e4672747",
+      "size": 2665,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/039a81ec01609e1d7ec3f561b13198d2e4672747"
+    },
+    {
+      "path": "public/icons/apple-icon-precomposed.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ded86cd90f2f8c4533b1cfd20edf3f50516b9e5e",
+      "size": 5980,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/ded86cd90f2f8c4533b1cfd20edf3f50516b9e5e"
+    },
+    {
+      "path": "public/icons/apple-icon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ded86cd90f2f8c4533b1cfd20edf3f50516b9e5e",
+      "size": 5980,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/ded86cd90f2f8c4533b1cfd20edf3f50516b9e5e"
+    },
+    {
+      "path": "public/icons/favicon-16x16.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cee3a89ba21dc99e962f9cdbbef21350401fef9",
+      "size": 1165,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/3cee3a89ba21dc99e962f9cdbbef21350401fef9"
+    },
+    {
+      "path": "public/icons/favicon-32x32.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca73c4e1d8a5c5a557837fe7530eb2dae331bbeb",
+      "size": 1710,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/ca73c4e1d8a5c5a557837fe7530eb2dae331bbeb"
+    },
+    {
+      "path": "public/icons/favicon-96x96.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a4d2509ed93f3b90ec86948627716b89be3ce93",
+      "size": 3296,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/7a4d2509ed93f3b90ec86948627716b89be3ce93"
+    },
+    {
+      "path": "public/icons/favicon.ico",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d9e6a2954eb98c8b7d0d98a249b97dadc42523d",
+      "size": 1150,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/6d9e6a2954eb98c8b7d0d98a249b97dadc42523d"
+    },
+    {
+      "path": "public/icons/ms-icon-144x144.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32741bd71499ab5875f0103a0a0094197bf4c402",
+      "size": 4796,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/32741bd71499ab5875f0103a0a0094197bf4c402"
+    },
+    {
+      "path": "public/icons/ms-icon-150x150.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2acfe7a4e1eb933f372161f8e00505fcbc1c747",
+      "size": 4987,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/b2acfe7a4e1eb933f372161f8e00505fcbc1c747"
+    },
+    {
+      "path": "public/icons/ms-icon-310x310.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d649b6f2208e1fdfa80f69be2fb4253b3cf0f6d9",
+      "size": 13227,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/d649b6f2208e1fdfa80f69be2fb4253b3cf0f6d9"
+    },
+    {
+      "path": "public/icons/ms-icon-70x70.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5447b73436e3ae08853660bc3a6a2821f7ba19c",
+      "size": 2535,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/d5447b73436e3ae08853660bc3a6a2821f7ba19c"
+    },
+    {
+      "path": "public/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5cc5d369d24446ba251668414858bafe3482a3db",
+      "size": 3114,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/5cc5d369d24446ba251668414858bafe3482a3db"
+    },
+    {
+      "path": "public/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ab1a0ed9845c8e48f43c78dc5f9fed9cc131a18",
+      "size": 1021,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/1ab1a0ed9845c8e48f43c78dc5f9fed9cc131a18"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cf5b02e89b7deca9ec71abc80cd91cc3bf5d52ef",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/cf5b02e89b7deca9ec71abc80cd91cc3bf5d52ef"
+    },
+    {
+      "path": "scripts/build.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f372909b16fa901a72064fba8115e957a44e539",
+      "size": 4188,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/1f372909b16fa901a72064fba8115e957a44e539"
+    },
+    {
+      "path": "scripts/start.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17e4b2f25be9b3990ecca226ea9a0fc6189c99f8",
+      "size": 3005,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/17e4b2f25be9b3990ecca226ea9a0fc6189c99f8"
+    },
+    {
+      "path": "scripts/test.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a28fbba46b4c22e1d7fb91a28c5c48c7caa81f5e",
+      "size": 623,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/a28fbba46b4c22e1d7fb91a28c5c48c7caa81f5e"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "771b990b15b000528d067a94047f431b6dd255ac",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/771b990b15b000528d067a94047f431b6dd255ac"
+    },
+    {
+      "path": "src/actions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "67cee57509dd18c7644c31f3adadda562f5acbf4",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/67cee57509dd18c7644c31f3adadda562f5acbf4"
+    },
+    {
+      "path": "src/actions/ratings.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a355caf24c44c130b80d755490b309b859762de",
+      "size": 382,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/5a355caf24c44c130b80d755490b309b859762de"
+    },
+    {
+      "path": "src/actions/transmute.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9151f1c55596320dad242337cb14a1824c21313",
+      "size": 4895,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/a9151f1c55596320dad242337cb14a1824c21313"
+    },
+    {
+      "path": "src/components",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "be7d7d3135b1386c7c797fdfc26d61a0fff22570",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/be7d7d3135b1386c7c797fdfc26d61a0fff22570"
+    },
+    {
+      "path": "src/components/Common",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bf58b79c78f302837e4683dec913fd39109db762",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/bf58b79c78f302837e4683dec913fd39109db762"
+    },
+    {
+      "path": "src/components/Common/Particle",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5f95d29cee4135a04793c6119ad109d4a12ce3a3",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/5f95d29cee4135a04793c6119ad109d4a12ce3a3"
+    },
+    {
+      "path": "src/components/Common/Particle/Particle.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd558bf3eb9ee18d87210ca9f54bfe1a02257b57",
+      "size": 205,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/dd558bf3eb9ee18d87210ca9f54bfe1a02257b57"
+    },
+    {
+      "path": "src/components/Common/Particle/Particle.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f35994f5a46683c0e197ad89bd5d10e69275ef34",
+      "size": 483,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/f35994f5a46683c0e197ad89bd5d10e69275ef34"
+    },
+    {
+      "path": "src/components/Common/Particle/particles.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "683c65c36a5088a673c9de4c776223466a0610ac",
+      "size": 2502,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/683c65c36a5088a673c9de4c776223466a0610ac"
+    },
+    {
+      "path": "src/components/Home",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3297ad4829aa4a98d31270395bf572a25e052718",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/3297ad4829aa4a98d31270395bf572a25e052718"
+    },
+    {
+      "path": "src/components/Home/HomePage.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0654fc5872bbf02e7cf974db4f50838e73384696",
+      "size": 572,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/0654fc5872bbf02e7cf974db4f50838e73384696"
+    },
+    {
+      "path": "src/components/Home/HomePage.test.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71b0824cf83720930420fb674280e21e702388fb",
+      "size": 258,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/71b0824cf83720930420fb674280e21e702388fb",
+      "error": "SyntaxError: Unexpected token 'i', \"import * a\"... is not valid JSON"
+    },
+    {
+      "path": "src/components/Home/HomePage.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f66d5536a683871b514dbf51bd50f952ad2ad344",
+      "size": 1399,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/f66d5536a683871b514dbf51bd50f952ad2ad344"
+    },
+    {
+      "path": "src/components/Transmute",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ddd052140c100c2fb7117ae9fc9bbc24e9e28ba7",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/ddd052140c100c2fb7117ae9fc9bbc24e9e28ba7"
+    },
+    {
+      "path": "src/components/Transmute/Healthcare",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "85b807a320d0aff12db313d2bb6e833a66d59824",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/85b807a320d0aff12db313d2bb6e833a66d59824"
+    },
+    {
+      "path": "src/components/Transmute/Healthcare/Healthcare.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9f496df664b690df149f4b61b43d1cf8c131ece",
+      "size": 131,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/c9f496df664b690df149f4b61b43d1cf8c131ece"
+    },
+    {
+      "path": "src/components/Transmute/Healthcare/Healthcare.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fd967529b616358e33747a8f1976615028d375c",
+      "size": 1067,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/5fd967529b616358e33747a8f1976615028d375c"
+    },
+    {
+      "path": "src/components/Transmute/Healthcare/HealthcareAppBar",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "395db8f9f47823c4d64e88146fe38e52b2a58b7d",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/395db8f9f47823c4d64e88146fe38e52b2a58b7d"
+    },
+    {
+      "path": "src/components/Transmute/Healthcare/HealthcareAppBar/HealthcareAppBar.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "471acd67e565c671166ecb733543761312523244",
+      "size": 2774,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/471acd67e565c671166ecb733543761312523244"
+    },
+    {
+      "path": "src/components/Transmute/Healthcare/PatientEventsTable",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d012dd4620a83f9dd39d6a5c023da63e7fbdd4a2",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/d012dd4620a83f9dd39d6a5c023da63e7fbdd4a2"
+    },
+    {
+      "path": "src/components/Transmute/Healthcare/PatientEventsTable/PatientEventsTable.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cdfaa91fa4919949e3a39ebdbdc628af8b872a5a",
+      "size": 5958,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/cdfaa91fa4919949e3a39ebdbdc628af8b872a5a"
+    },
+    {
+      "path": "src/components/Transmute/Healthcare/PatientSummaryCard",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "24c399242b1d004566c83bf690f12bbfdc13303c",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/24c399242b1d004566c83bf690f12bbfdc13303c"
+    },
+    {
+      "path": "src/components/Transmute/Healthcare/PatientSummaryCard/PatientSumaryLogic.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "405b8d6c2a89754239fdfc2e96e4e23d796696a3",
+      "size": 276,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/405b8d6c2a89754239fdfc2e96e4e23d796696a3"
+    },
+    {
+      "path": "src/components/Transmute/Healthcare/PatientSummaryCard/PatientSummaryCard.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec0be8afa1d9b6f66e7afa36ff3d0a89b8564df9",
+      "size": 732,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/ec0be8afa1d9b6f66e7afa36ff3d0a89b8564df9"
+    },
+    {
+      "path": "src/components/Transmute/Healthcare/PatientSummaryCard/PatientSummaryReducer.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad44f2c1956ed4da81eeedd90e297e627384928d",
+      "size": 1469,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/ad44f2c1956ed4da81eeedd90e297e627384928d"
+    },
+    {
+      "path": "src/components/Transmute/Healthcare/RecordEventDialog",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5f1b8eafb6696280a49b33e9a078b7651f0ae46d",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/5f1b8eafb6696280a49b33e9a078b7651f0ae46d"
+    },
+    {
+      "path": "src/components/Transmute/Healthcare/RecordEventDialog/RecordEventDialog.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f3e45e6a885d5aab65b3d29c4aca10a29a3f0ea",
+      "size": 4579,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/9f3e45e6a885d5aab65b3d29c4aca10a29a3f0ea"
+    },
+    {
+      "path": "src/components/Transmute/Healthcare/ReportTemperature",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5ec2fb53c6d31b85dedb61e77efb44f7931e8410",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/5ec2fb53c6d31b85dedb61e77efb44f7931e8410"
+    },
+    {
+      "path": "src/components/Transmute/Healthcare/ReportTemperature/ReportTemperature.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "faef90226dc35f9d28c6015bd0751dee4f480133",
+      "size": 626,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/faef90226dc35f9d28c6015bd0751dee4f480133"
+    },
+    {
+      "path": "src/components/Transmute/Healthcare/SelectEventStoreCard",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6b88ab1971819af0f3e0a6b8736b429676709a06",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/6b88ab1971819af0f3e0a6b8736b429676709a06"
+    },
+    {
+      "path": "src/components/Transmute/Healthcare/SelectEventStoreCard/SelectEventStoreCard.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f4df61a2aa4445272256f346da3751119fb22ca",
+      "size": 2671,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/1f4df61a2aa4445272256f346da3751119fb22ca"
+    },
+    {
+      "path": "src/components/Transmute/Healthcare/SelectSymptoms",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5e669cafe7a16de3db1a6b95e0583703a282d4f7",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/5e669cafe7a16de3db1a6b95e0583703a282d4f7"
+    },
+    {
+      "path": "src/components/Transmute/Healthcare/SelectSymptoms/SelectSymptoms.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "054174e2bb7abd53c99a078377e972fcdddf34a4",
+      "size": 1104,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/054174e2bb7abd53c99a078377e972fcdddf34a4"
+    },
+    {
+      "path": "src/components/Transmute/UPortRegister",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0c5c2be41c8c51a73438c472c7c21dafee61b3c9",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/0c5c2be41c8c51a73438c472c7c21dafee61b3c9"
+    },
+    {
+      "path": "src/components/Transmute/UPortRegister/UPortRegister.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a11966841ba1d0f000803c8787ba6bbdcaf70eed",
+      "size": 193,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/a11966841ba1d0f000803c8787ba6bbdcaf70eed"
+    },
+    {
+      "path": "src/components/Transmute/UPortRegister/UPortRegister.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2264be36b37899b125645cf04aa911709f9aca5b",
+      "size": 1001,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/2264be36b37899b125645cf04aa911709f9aca5b"
+    },
+    {
+      "path": "src/components/Transmute/Web3",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4875cf86fa8733ca787eb525109d8efa33c31579",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/4875cf86fa8733ca787eb525109d8efa33c31579"
+    },
+    {
+      "path": "src/components/Transmute/Web3/SettingsForm",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e3270e3d51b498c63f539ff04c191a487072b795",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/e3270e3d51b498c63f539ff04c191a487072b795"
+    },
+    {
+      "path": "src/components/Transmute/Web3/SettingsForm/SettingsForm.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "src/components/Transmute/Web3/SettingsForm/SettingsForm.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67f57a3bc4c4528a2d0811a5e23fda7983c59da4",
+      "size": 2572,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/67f57a3bc4c4528a2d0811a5e23fda7983c59da4"
+    },
+    {
+      "path": "src/components/Transmute/Web3/Web3Settings.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68080c0eaee6606972d1a9ee7afae0e044f9c56a",
+      "size": 155,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/68080c0eaee6606972d1a9ee7afae0e044f9c56a"
+    },
+    {
+      "path": "src/components/Transmute/Web3/Web3Settings.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5032a3585632d70ce4dd3fb228e9e61f35cf400",
+      "size": 640,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/e5032a3585632d70ce4dd3fb228e9e61f35cf400"
+    },
+    {
+      "path": "src/constants",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2523d1ba00398bb0ccbbbaa15afef8a4d86193fc",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/2523d1ba00398bb0ccbbbaa15afef8a4d86193fc"
+    },
+    {
+      "path": "src/constants/ratings.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0951a615e56a5e14dec5d9b4fb0f601df16a8c1",
+      "size": 43,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/e0951a615e56a5e14dec5d9b4fb0f601df16a8c1"
+    },
+    {
+      "path": "src/images",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "edfc57ba091aa8fed9ba177230b62a8d08bfabe6",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/edfc57ba091aa8fed9ba177230b62a8d08bfabe6"
+    },
+    {
+      "path": "src/images/logo-color.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3aaf0c7cc0fbcfdc9df95809007d583969c128d7",
+      "size": 10520,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/3aaf0c7cc0fbcfdc9df95809007d583969c128d7"
+    },
+    {
+      "path": "src/images/logo-space.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c40601645a47c8c721a75ecdd8e6867bf4d9088",
+      "size": 6837,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/9c40601645a47c8c721a75ecdd8e6867bf4d9088"
+    },
+    {
+      "path": "src/images/logo-white.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ebdf9fadf09d037b101a995d85c3892854266fa",
+      "size": 7328,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/5ebdf9fadf09d037b101a995d85c3892854266fa"
+    },
+    {
+      "path": "src/index.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e210bb5a5d783c5744d0170c2a0f9e24847223a",
+      "size": 472,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/6e210bb5a5d783c5744d0170c2a0f9e24847223a"
+    },
+    {
+      "path": "src/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "848d6f86679efdbe3cefc7501fdfdf8fc05d7e44",
+      "size": 1702,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/848d6f86679efdbe3cefc7501fdfdf8fc05d7e44"
+    },
+    {
+      "path": "src/lib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cf67ea1d603ba81307c4e3931190b2358af0edb5",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/cf67ea1d603ba81307c4e3931190b2358af0edb5"
+    },
+    {
+      "path": "src/lib/index.d.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d9e1fbf89c6166284ff2289c9d62b344e9ee453",
+      "size": 191,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/3d9e1fbf89c6166284ff2289c9d62b344e9ee453"
+    },
+    {
+      "path": "src/reducers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4de360763977fbf6ed8625d463455d193fa8bce5",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/4de360763977fbf6ed8625d463455d193fa8bce5"
+    },
+    {
+      "path": "src/reducers/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c22b08196aa859eea0dbad4a5cfcbbfeb8ca184",
+      "size": 587,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/0c22b08196aa859eea0dbad4a5cfcbbfeb8ca184"
+    },
+    {
+      "path": "src/reducers/ratings.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75e9084f9b31d01f0a58043f93b92b94f9e1aa42",
+      "size": 1082,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/75e9084f9b31d01f0a58043f93b92b94f9e1aa42"
+    },
+    {
+      "path": "src/reducers/transmute.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "392a7b47febf56d0dba0622d8ab48253d324446e",
+      "size": 2029,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/392a7b47febf56d0dba0622d8ab48253d324446e"
+    },
+    {
+      "path": "src/store",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "92ba6da3a77ea638541f78cc0adb303819b2abf8",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/92ba6da3a77ea638541f78cc0adb303819b2abf8"
+    },
+    {
+      "path": "src/store/store.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "040c55f0c7718d66716ae8af12c1708b391f66f8",
+      "size": 718,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/040c55f0c7718d66716ae8af12c1708b391f66f8"
+    },
+    {
+      "path": "src/transmute.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b2c239f497f96c04d8f8e64f11de0e96660de98",
+      "size": 451,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/8b2c239f497f96c04d8f8e64f11de0e96660de98"
+    },
+    {
+      "path": "src/types",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "70d2d990c81670a51771ab5fa88e1acd0c63c608",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/70d2d990c81670a51771ab5fa88e1acd0c63c608"
+    },
+    {
+      "path": "src/types/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e419e93b708a3a1d0ac23d873f0834bc0c3d7dd4",
+      "size": 644,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/e419e93b708a3a1d0ac23d873f0834bc0c3d7dd4"
+    },
+    {
+      "path": "test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2c21ddbf7c417d4acf023acc917b84a6649001a9",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/2c21ddbf7c417d4acf023acc917b84a6649001a9"
+    },
+    {
+      "path": "test/TestMetacoin.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96ccc1e229b6cae1fb28596428c98bd4b4b7899f",
+      "size": 630,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/96ccc1e229b6cae1fb28596428c98bd4b4b7899f"
+    },
+    {
+      "path": "test/TransmuteFramework",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "92a4a7f15e2a71102ab6892393fdc6347c405caa",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/92a4a7f15e2a71102ab6892393fdc6347c405caa"
+    },
+    {
+      "path": "test/TransmuteFramework/Common.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58c8dbb0e05ff03d8048dee5066f858b772179e6",
+      "size": 4373,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/58c8dbb0e05ff03d8048dee5066f858b772179e6"
+    },
+    {
+      "path": "test/TransmuteFramework/EventStore",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ed1deaf2554792bad295a81228b255d51d210dfc",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/ed1deaf2554792bad295a81228b255d51d210dfc"
+    },
+    {
+      "path": "test/TransmuteFramework/EventStore/Bases",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e454fd95cf5fdaae0b293430937ab7d608015b20",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/e454fd95cf5fdaae0b293430937ab7d608015b20"
+    },
+    {
+      "path": "test/TransmuteFramework/EventStore/Bases/RBACEventStore",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "68d4589c9e43778d713b4a059c62f7c45a353205",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/68d4589c9e43778d713b4a059c62f7c45a353205"
+    },
+    {
+      "path": "test/TransmuteFramework/EventStore/Bases/RBACEventStore/RBACEventStore.spec.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a23474794796e6dfb89af49572045640c46f11eb",
+      "size": 7586,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/a23474794796e6dfb89af49572045640c46f11eb"
+    },
+    {
+      "path": "test/TransmuteFramework/EventStore/Bases/RBACEventStore/RBACEventStoreFactory.spec.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1698c4f549edd876f3b775e276d79d3d90e2d132",
+      "size": 7498,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/1698c4f549edd876f3b775e276d79d3d90e2d132"
+    },
+    {
+      "path": "test/TransmuteFramework/EventStore/Bases/UnsafeEventStore",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "687de6fd96d32e0c89ca13d0697ba8b65d335088",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/687de6fd96d32e0c89ca13d0697ba8b65d335088"
+    },
+    {
+      "path": "test/TransmuteFramework/EventStore/Bases/UnsafeEventStore/UnsafeEventStore.spec.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17d86b14cad05b4462bd16c8b6012dfd8bc1c2ba",
+      "size": 3164,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/17d86b14cad05b4462bd16c8b6012dfd8bc1c2ba"
+    },
+    {
+      "path": "test/TransmuteFramework/EventStore/Bases/UnsafeEventStore/UnsafeEventStoreFactory.spec.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa5667c5d06743be7f13f89a42c96a1c8f10c4fb",
+      "size": 4753,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/aa5667c5d06743be7f13f89a42c96a1c8f10c4fb"
+    },
+    {
+      "path": "test/TransmuteFramework/EventStore/Bases/mock.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7033be7bc68dd10bf953d7f8c3975e70e13f1cb0",
+      "size": 1455,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/7033be7bc68dd10bf953d7f8c3975e70e13f1cb0"
+    },
+    {
+      "path": "test/TransmuteFramework/Security",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1f93d4d9d7aca6d6d726dfd83a6e942c40db2453",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/1f93d4d9d7aca6d6d726dfd83a6e942c40db2453"
+    },
+    {
+      "path": "test/TransmuteFramework/Security/RBAC.spec.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5da8ea9226e36d003163139fbe9896e58d25efaf",
+      "size": 12367,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/5da8ea9226e36d003163139fbe9896e58d25efaf"
+    },
+    {
+      "path": "test/TransmuteFramework/Security/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df28f3407c9bb00a3caf5c10eed09d57162c4dc9",
+      "size": 661,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/df28f3407c9bb00a3caf5c10eed09d57162c4dc9",
+      "error": "SyntaxError: Unexpected token '#', \"# Nothing \"... is not valid JSON"
+    },
+    {
+      "path": "test/TransmuteFramework/Security/grants.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a68a269eef5e99176c3e831fcb7335eabc1cea5f",
+      "size": 684,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/a68a269eef5e99176c3e831fcb7335eabc1cea5f"
+    },
+    {
+      "path": "test/TransmuteFramework/Security/scratch.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3df6e2cf4fed5a04952f5fd8f6c0315fab6c4c2",
+      "size": 6201,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/b3df6e2cf4fed5a04952f5fd8f6c0315fab6c4c2"
+    },
+    {
+      "path": "test/TransmuteFramework/SetLib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0672613a794831ed1f4d162d2f34ef0a41a0cc48",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/0672613a794831ed1f4d162d2f34ef0a41a0cc48"
+    },
+    {
+      "path": "test/TransmuteFramework/SetLib/AddressSetLib.spec.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "221d546d7be3651c0923dd8312657a29475e065d",
+      "size": 3495,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/221d546d7be3651c0923dd8312657a29475e065d"
+    },
+    {
+      "path": "test/TransmuteFramework/SetLib/Bytes32SetLib.spec.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7e0b1f61bb977de3104029f1f7409e021c0751b",
+      "size": 3353,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/c7e0b1f61bb977de3104029f1f7409e021c0751b"
+    },
+    {
+      "path": "test/TransmuteFramework/SetLib/UIntSetLib.spec.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c9a456028603895d60130c64db3fc44bceec628",
+      "size": 3036,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/4c9a456028603895d60130c64db3fc44bceec628"
+    },
+    {
+      "path": "test/TransmuteFramework/mocha.opts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d6f06c344f45d82b2275b54911c88e53ad08b5f",
+      "size": 119,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/5d6f06c344f45d82b2275b54911c88e53ad08b5f"
+    },
+    {
+      "path": "test/metacoin.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c61c0937d526d8756ff18cf94f365001e6905b62",
+      "size": 2459,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/c61c0937d526d8756ff18cf94f365001e6905b62"
+    },
+    {
+      "path": "testrpc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a57f3ef5815c4da4d1287423930f9ccad0ed5a5d",
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/trees/a57f3ef5815c4da4d1287423930f9ccad0ed5a5d"
+    },
+    {
+      "path": "testrpc/Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1973b703f4eeb3909827ac26ac7339fa55494a80",
+      "size": 84,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/1973b703f4eeb3909827ac26ac7339fa55494a80"
+    },
+    {
+      "path": "truffle.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6dd25821ffd479483d9176dfcdd83dee77ea7fa8",
+      "size": 888,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/6dd25821ffd479483d9176dfcdd83dee77ea7fa8"
+    },
+    {
+      "path": "tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4627d98a18aab47ae47ec53ae82f66c1bf069e1",
+      "size": 663,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/d4627d98a18aab47ae47ec53ae82f66c1bf069e1"
+    },
+    {
+      "path": "tsconfig.test.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ace62faf3aa10cc08dba058c81d116031efd538f",
+      "size": 29,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/ace62faf3aa10cc08dba058c81d116031efd538f"
+    },
+    {
+      "path": "tslint.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68e3a895b151895406e258e468b71989623f1332",
+      "size": 2719,
+      "url": "https://api.github.com/repos/transmute-industries/dapp/git/blobs/68e3a895b151895406e258e468b71989623f1332"
+    }
+  ]
+}

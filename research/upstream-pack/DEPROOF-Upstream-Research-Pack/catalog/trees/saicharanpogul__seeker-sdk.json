@@ -1,0 +1,509 @@
+{
+  "repository": "saicharanpogul/seeker-sdk",
+  "tree_sha": "689b11d3933f79d7f0d311e14318ec51c646c38a",
+  "truncated": false,
+  "entries": [
+    {
+      "path": ".eslintrc.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76c785db1c0e0c074f234f11797a4ce96842dd36",
+      "size": 511,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/76c785db1c0e0c074f234f11797a4ce96842dd36"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3ab5224d185b0cfbec58d7e7a75aa1f993b5e2a3",
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/trees/3ab5224d185b0cfbec58d7e7a75aa1f993b5e2a3"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8c347cd84c4122419dda37b9b3b584a521582f5b",
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/trees/8c347cd84c4122419dda37b9b3b584a521582f5b"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cc35798b922e8917e58b12f35b4119e0fec6578",
+      "size": 587,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/4cc35798b922e8917e58b12f35b4119e0fec6578"
+    },
+    {
+      "path": ".github/workflows/publish.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b37d019588d8abc0178b5121ea38ba71efbad76",
+      "size": 737,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/6b37d019588d8abc0178b5121ea38ba71efbad76"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d61ed60f2356072d6a426a28492713872e51a4d",
+      "size": 72,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/6d61ed60f2356072d6a426a28492713872e51a4d"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e19f8340d32539e496c9d3ae84a5d6019123a7e",
+      "size": 1083,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/6e19f8340d32539e496c9d3ae84a5d6019123a7e",
+      "error": "SyntaxError: Unexpected token 'M', \"MIT Licens\"... is not valid JSON"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "651eac0949e19e6b95b5e7f02287208e5641438a",
+      "size": 7042,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/651eac0949e19e6b95b5e7f02287208e5641438a",
+      "error": "SyntaxError: Unexpected token '#', \"# seeker-s\"... is not valid JSON"
+    },
+    {
+      "path": "bun.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d0c515b05086efdd67b0cc117d39d0e4e39a1de",
+      "size": 97576,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/5d0c515b05086efdd67b0cc117d39d0e4e39a1de"
+    },
+    {
+      "path": "examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "43304f9b97bee66794ac58a009a2315c8f158252",
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/trees/43304f9b97bee66794ac58a009a2315c8f158252"
+    },
+    {
+      "path": "examples/gate-content.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1359012fd241165bb96937b7cee968579b195540",
+      "size": 1447,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/1359012fd241165bb96937b7cee968579b195540"
+    },
+    {
+      "path": "examples/integration",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "69a544f20a5eb7c9a63b6a9546fb2039dc18ecf8",
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/trees/69a544f20a5eb7c9a63b6a9546fb2039dc18ecf8"
+    },
+    {
+      "path": "examples/integration/express-api.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87154e6cb6b20f9d44ecbccc3667ab480c54c1d8",
+      "size": 4114,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/87154e6cb6b20f9d44ecbccc3667ab480c54c1d8"
+    },
+    {
+      "path": "examples/nextjs-demo",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "25f1a4884e145b8d535d586f2b58126e6bd6c53c",
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/trees/25f1a4884e145b8d535d586f2b58126e6bd6c53c"
+    },
+    {
+      "path": "examples/nextjs-demo/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20b5653f5a7c8ce5724a081cc4976e662f16013e",
+      "size": 183,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/20b5653f5a7c8ce5724a081cc4976e662f16013e"
+    },
+    {
+      "path": "examples/nextjs-demo/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27f0ffb34302bd37578e68c23e9ead90d873fb24",
+      "size": 874,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/27f0ffb34302bd37578e68c23e9ead90d873fb24"
+    },
+    {
+      "path": "examples/nextjs-demo/app",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e133406b698deb2564dc04e69c3a74c18ad47448",
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/trees/e133406b698deb2564dc04e69c3a74c18ad47448"
+    },
+    {
+      "path": "examples/nextjs-demo/app/components",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e61e288544f768fbed692a178da344f5aa1e5986",
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/trees/e61e288544f768fbed692a178da344f5aa1e5986"
+    },
+    {
+      "path": "examples/nextjs-demo/app/components/SeekerProfile.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c45ea739a9ffb0acb9c07d50bfe08f339cc135e8",
+      "size": 4577,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/c45ea739a9ffb0acb9c07d50bfe08f339cc135e8",
+      "error": "SyntaxError: Unexpected non-whitespace character after JSON at position 12 (line 1 column 13)"
+    },
+    {
+      "path": "examples/nextjs-demo/app/components/StakingStats.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a50440c3ee47495c3431f6d08d3d3ac675c1a35f",
+      "size": 3699,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/a50440c3ee47495c3431f6d08d3d3ac675c1a35f"
+    },
+    {
+      "path": "examples/nextjs-demo/app/globals.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "672b762f16635abd2972e5f96db0053dca58d3fb",
+      "size": 416,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/672b762f16635abd2972e5f96db0053dca58d3fb"
+    },
+    {
+      "path": "examples/nextjs-demo/app/layout.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf3414fad44b8910669e1e04d00787538606e850",
+      "size": 560,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/bf3414fad44b8910669e1e04d00787538606e850"
+    },
+    {
+      "path": "examples/nextjs-demo/app/page.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1f24e8babfa267d2a45db7554e11a555af5bbbe",
+      "size": 2050,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/c1f24e8babfa267d2a45db7554e11a555af5bbbe"
+    },
+    {
+      "path": "examples/nextjs-demo/app/providers.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9163df8b700170401ba272424449b8dda57302a",
+      "size": 814,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/c9163df8b700170401ba272424449b8dda57302a"
+    },
+    {
+      "path": "examples/nextjs-demo/next.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20df8a9297d06263eded463e3a440dbb22b0f63e",
+      "size": 361,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/20df8a9297d06263eded463e3a440dbb22b0f63e"
+    },
+    {
+      "path": "examples/nextjs-demo/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f46acaed0b33d6c9630c5be78a3046ce87113a8f",
+      "size": 792,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/f46acaed0b33d6c9630c5be78a3046ce87113a8f"
+    },
+    {
+      "path": "examples/nextjs-demo/postcss.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12a703d900da8159c30e75acbd2c4d87ae177f62",
+      "size": 83,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/12a703d900da8159c30e75acbd2c4d87ae177f62"
+    },
+    {
+      "path": "examples/nextjs-demo/tailwind.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "deffff54a9ed6323e901ce83065dd2fd12825e04",
+      "size": 311,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/deffff54a9ed6323e901ce83065dd2fd12825e04"
+    },
+    {
+      "path": "examples/nextjs-demo/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eea7ea58d8b514d2b1ff069d312d699e153ce629",
+      "size": 572,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/eea7ea58d8b514d2b1ff069d312d699e153ce629"
+    },
+    {
+      "path": "examples/resolve-domain.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce084ebc7287f55daf44be2120ce2783821c5598",
+      "size": 1529,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/ce084ebc7287f55daf44be2120ce2783821c5598"
+    },
+    {
+      "path": "examples/verify-seeker.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d67e3fc34ac3159d90e6a24f18c0a6669b9ab4e0",
+      "size": 996,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/d67e3fc34ac3159d90e6a24f18c0a6669b9ab4e0",
+      "error": "SyntaxError: Unexpected token '/', \"/**\n * Bas\"... is not valid JSON"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dbcc390364708f9e7850a1a5a1cbd44b801b18cb",
+      "size": 1863,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/dbcc390364708f9e7850a1a5a1cbd44b801b18cb"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b905ec47e84bc9ae1ccacca1aed1bcdd6db171af",
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/trees/b905ec47e84bc9ae1ccacca1aed1bcdd6db171af"
+    },
+    {
+      "path": "src/cache.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27f8ce1bc4861465335712c1038643ab22dc4069",
+      "size": 2580,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/27f8ce1bc4861465335712c1038643ab22dc4069"
+    },
+    {
+      "path": "src/constants.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39b5b44444615eb0e92cff5ad218a2f6113cf3dc",
+      "size": 6711,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/39b5b44444615eb0e92cff5ad218a2f6113cf3dc",
+      "content": "import { PublicKey } from \"@solana/web3.js\";\n\n// \u2500\u2500 SGT (Seeker Genesis Token) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n/** Seeker Genesis Token (SGT) mint authority */\nexport const SGT_MINT_AUTHORITY = new PublicKey(\n  \"GT2zuHVaZQYZSyQMgJPLzvkmyztfyXg2NJunqFp4p3A4\"\n);\n\n/** SGT metadata address (also used as group mint address) */\nexport const SGT_METADATA_ADDRESS = new PublicKey(\n  \"GT22s89nU4iWFkNXj1Bw6uYhJJWDRPpShHt4Bk8f99Te\"\n);\n\n/** SGT group mint address */\nexport const SGT_GROUP_MINT_ADDRESS = new PublicKey(\n  \"GT22s89nU4iWFkNXj1Bw6uYhJJWDRPpShHt4Bk8f99Te\"\n);\n\n/** Token-2022 (Token Extensions) program ID */\nexport const TOKEN_2022_PROGRAM_ID = new PublicKey(\n  \"TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb\"\n);\n\n// \u2500\u2500 SKR Token \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n/** SKR token mint address */\nexport const SKR_MINT_ADDRESS = new PublicKey(\n  \"SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3\"\n);\n\n/** SPL Token program ID */\nexport const TOKEN_PROGRAM_ID = new PublicKey(\n  \"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA\"\n);\n\n// \u2500\u2500 SKR Staking Program \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n/** SKR staking program ID */\nexport const SKR_STAKING_PROGRAM_ID = new PublicKey(\n  \"SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ\"\n);\n\n/** SKR staking StakeConfig account (PDA of [\"stake_config\"]) */\nexport const SKR_STAKE_CONFIG = new PublicKey(\n  \"4HQy82s9CHTv1GsYKnANHMiHfhcqesYkK6sB3RDSYyqw\"\n);\n\n/** Share price precision scalar (1e9) */\nexport const SHARE_PRECISION = BigInt(1_000_000_000);\n\n// \u2500\u2500 Anchor discriminators \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n/** Anchor discriminator for UserStake accounts */\nexport const USER_STAKE_DISCRIMINATOR = Buffer.from(\"6635a36b098a5799\", \"hex\");\n\n/** Anchor discriminator for GuardianDelegationPool accounts */\nexport const GUARDIAN_POOL_DISCRIMINATOR = Buffer.from(\"85eeffd6d70bbd17\", \"hex\");\n\n/** Anchor discriminator for StakeConfig accounts */\nexport const STAKE_CONFIG_DISCRIMINATOR = Buffer.from(\"ee972b030b973fb0\", \"hex\");\n\n// \u2500\u2500 Instruction discriminators \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\nexport const STAKE_IX_DISCRIMINATOR = Buffer.from([206, 176, 202, 18, 200, 209, 179, 108]);\nexport const UNSTAKE_IX_DISCRIMINATOR = Buffer.from([90, 95, 107, 42, 205, 124, 50, 225]);\nexport const CANCEL_UNSTAKE_IX_DISCRIMINATOR = Buffer.from([64, 65, 53, 227, 125, 153, 3, 167]);\nexport const WITHDRAW_IX_DISCRIMINATOR = Buffer.from([183, 18, 70, 156, 148, 109, 161, 34]);\n\n// \u2500\u2500 Account sizes \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n/** Size of a UserStake account in bytes */\nexport const USER_STAKE_ACCOUNT_SIZE = 169;\n\n/** Size of a GuardianDelegationPool account in bytes */\nexport const GUARDIAN_POOL_ACCOUNT_SIZE = 188;\n\n/** Size of a StakeConfig account in bytes */\nexport const STAKE_CONFIG_ACCOUNT_SIZE = 193;\n\n// \u2500\u2500 UserStake field offsets \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n// Layout: disc(8) + bump(1) + stake_config(32) + user(32) + guardian_pool(32)\n//         + shares(u128) + cost_basis(u128) + cumulative_commission(u128)\n//         + unstaking_amount(u64) + unstake_timestamp(i64)\n\nexport const USER_STAKE_USER_OFFSET = 41;\nexport const USER_STAKE_GUARDIAN_POOL_OFFSET = 73;\nexport const USER_STAKE_SHARES_OFFSET = 105;\nexport const USER_STAKE_COST_BASIS_OFFSET = 121;\nexport const USER_STAKE_UNSTAKING_OFFSET = 153;\nexport const USER_STAKE_UNSTAKE_TIMESTAMP_OFFSET = 161;\n\n// \u2500\u2500 GuardianDelegationPool field offsets \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n// Layout: disc(8) + stake_config(32) + guardian(32) + authority(32)\n//         + total_shares(u128) + cumulative_commission_per_share(u128)\n//         + last_share_price(u128) + accrued_commission(u128)\n//         + commission_bps(u16) + bump(u8) + active(bool)\n//         + deregistered_share_price(u128)\n\nexport const GUARDIAN_POOL_STAKE_CONFIG_OFFSET = 8;\nexport const GUARDIAN_POOL_GUARDIAN_OFFSET = 40;\nexport const GUARDIAN_POOL_AUTHORITY_OFFSET = 72;\nexport const GUARDIAN_POOL_TOTAL_SHARES_OFFSET = 104;\nexport const GUARDIAN_POOL_COMMISSION_BPS_OFFSET = 168;\nexport const GUARDIAN_POOL_BUMP_OFFSET = 170;\nexport const GUARDIAN_POOL_ACTIVE_OFFSET = 171;\n\n// \u2500\u2500 StakeConfig field offsets \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n// Layout: disc(8) + bump(1) + authority(32) + mint(32) + stake_vault(32)\n//         + min_stake_amount(u64) + cooldown_seconds(u64) + total_shares(u128)\n//         + share_price(u128) + ...\n\nexport const STAKE_CONFIG_AUTHORITY_OFFSET = 9;\nexport const STAKE_CONFIG_MINT_OFFSET = 41;\nexport const STAKE_CONFIG_VAULT_OFFSET = 73;\nexport const STAKE_CONFIG_MIN_STAKE_OFFSET = 105;\nexport const STAKE_CONFIG_COOLDOWN_OFFSET = 113;\nexport const STAKE_CONFIG_TOTAL_SHARES_OFFSET = 121;\nexport const STAKE_CONFIG_SHARE_PRICE_OFFSET = 137;\n\n// \u2500\u2500 .skr domains \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n/** .skr top-level domain (powered by AllDomains protocol) */\nexport const SKR_TLD = \".skr\";\n\n// \u2500\u2500 Misc \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\n/** Batch size for getMultipleAccountsInfo calls */\nexport const MINT_BATCH_SIZE = 100;\n\n/** Default cache TTL for SGT verification (seconds) */\nexport const SGT_CACHE_TTL = 60;\n\n/** Default cache TTL for domain resolution (seconds) */\nexport const DOMAIN_CACHE_TTL = 300;\n\n/** Default cache TTL for SKR balance queries (seconds) */\nexport const SKR_CACHE_TTL = 60;\n\n/** Default cache TTL for guardian pool queries (seconds) */\nexport const GUARDIAN_CACHE_TTL = 120;\n\n/** Default cache TTL for staking stats queries (seconds) */\nexport const STAKING_STATS_CACHE_TTL = 30;\n",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "src/errors.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6459e1d3e16649b9763e9831f7d516d781763780",
+      "size": 1071,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/6459e1d3e16649b9763e9831f7d516d781763780"
+    },
+    {
+      "path": "src/guardian.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb2c6718c94bac19b9376cd8b749e2c3863ddad5",
+      "size": 5521,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/fb2c6718c94bac19b9376cd8b749e2c3863ddad5"
+    },
+    {
+      "path": "src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7cb9337384c516bdf2672ca5bc0c88bf05b3e70c",
+      "size": 5901,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/7cb9337384c516bdf2672ca5bc0c88bf05b3e70c"
+    },
+    {
+      "path": "src/instructions.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d22abf2af744ae173138fc9be09c3ea2dffca34b",
+      "size": 8215,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/d22abf2af744ae173138fc9be09c3ea2dffca34b",
+      "content": "import {\n  PublicKey,\n  TransactionInstruction,\n  SystemProgram,\n} from \"@solana/web3.js\";\nimport { getAssociatedTokenAddressSync } from \"@solana/spl-token\";\nimport {\n  SKR_STAKING_PROGRAM_ID,\n  SKR_STAKE_CONFIG,\n  SKR_MINT_ADDRESS,\n  TOKEN_PROGRAM_ID,\n  STAKE_IX_DISCRIMINATOR,\n  UNSTAKE_IX_DISCRIMINATOR,\n  CANCEL_UNSTAKE_IX_DISCRIMINATOR,\n  WITHDRAW_IX_DISCRIMINATOR,\n} from \"./constants\";\nimport { writeU128LE } from \"./utils\";\nimport {\n  deriveUserStakePda,\n  deriveStakeVaultPda,\n  deriveEventAuthorityPda,\n} from \"./pda\";\n\n/**\n * Create a stake instruction to deposit SKR tokens into a guardian pool.\n *\n * Builds a TransactionInstruction that can be signed by a wallet adapter.\n * Does NOT sign or send the transaction.\n *\n * @param params - Stake parameters\n * @param params.user - User's wallet public key (the staker)\n * @param params.guardianPool - Guardian pool to delegate to\n * @param params.amount - Amount of SKR to stake (raw, in smallest units)\n * @param params.payer - Payer for account creation (defaults to user)\n * @returns TransactionInstruction\n *\n * @example\n * ```typescript\n * const ix = createStakeInstruction({\n *   user: walletPublicKey,\n *   guardianPool: new PublicKey(\"...\"),\n *   amount: BigInt(10_000_000_000), // 10,000 SKR\n * });\n * const tx = new Transaction().add(ix);\n * ```\n */\nexport function createStakeInstruction(params: {\n  user: PublicKey;\n  guardianPool: PublicKey;\n  amount: bigint;\n  payer?: PublicKey;\n}): TransactionInstruction {\n  const { user, guardianPool, amount, payer = user } = params;\n\n  const [userStakePda] = deriveUserStakePda(user, guardianPool);\n  const [stakeVault] = deriveStakeVaultPda();\n  const [eventAuthority] = deriveEventAuthorityPda();\n  const userTokenAccount = getAssociatedTokenAddressSync(SKR_MINT_ADDRESS, user);\n\n  // Serialize: discriminator(8) + amount(u64, 8) = 16 bytes\n  const data = Buffer.alloc(16);\n  STAKE_IX_DISCRIMINATOR.copy(data, 0);\n  data.writeBigUInt64LE(amount, 8);\n\n  return new TransactionInstruction({\n    programId: SKR_STAKING_PROGRAM_ID,\n    keys: [\n      { pubkey: userStakePda, isSigner: false, isWritable: true },\n      { pubkey: SKR_STAKE_CONFIG, isSigner: false, isWritable: true },\n      { pubkey: guardianPool, isSigner: false, isWritable: true },\n      { pubkey: payer, isSigner: true, isWritable: true },\n      { pubkey: user, isSigner: false, isWritable: false },\n      { pubkey: userTokenAccount, isSigner: false, isWritable: true },\n      { pubkey: stakeVault, isSigner: false, isWritable: true },\n      { pubkey: SKR_MINT_ADDRESS, isSigner: false, isWritable: false },\n      { pubkey: TOKEN_PROGRAM_ID, isSigner: false, isWritable: false },\n      { pubkey: SystemProgram.programId, isSigner: false, isWritable: false },\n      { pubkey: eventAuthority, isSigner: false, isWritable: false },\n      { pubkey: SKR_STAKING_PROGRAM_ID, isSigner: false, isWritable: false },\n    ],\n    data,\n  });\n}\n\n/**\n * Create an unstake instruction to initiate withdrawal with cooldown.\n *\n * After unstaking, tokens enter a cooldown period before they can be withdrawn.\n * The unstaking amount is calculated at unstake time using the current share price.\n *\n * @param params - Unstake parameters\n * @param params.user - User's wallet public key\n * @param params.userStake - UserStake PDA account\n * @param params.guardianPool - Guardian pool the stake is delegated to\n * @param params.shares - Number of shares to unstake (u128)\n * @returns TransactionInstruction\n *\n * @example\n * ```typescript\n * const ix = createUnstakeInstruction({\n *   user: walletPublicKey,\n *   userStake: userStakePda,\n *   guardianPool: new PublicKey(\"...\"),\n *   shares: BigInt(10_000_000_000),\n * });\n * ```\n */\nexport function createUnstakeInstruction(params: {\n  user: PublicKey;\n  userStake: PublicKey;\n  guardianPool: PublicKey;\n  shares: bigint;\n}): TransactionInstruction {\n  const { user, userStake, guardianPool, shares } = params;\n\n  const [stakeVault] = deriveStakeVaultPda();\n  const [eventAuthority] = deriveEventAuthorityPda();\n\n  // Serialize: discriminator(8) + shares(u128, 16) = 24 bytes\n  const data = Buffer.alloc(24);\n  UNSTAKE_IX_DISCRIMINATOR.copy(data, 0);\n  writeU128LE(data, shares, 8);\n\n  return new TransactionInstruction({\n    programId: SKR_STAKING_PROGRAM_ID,\n    keys: [\n      { pubkey: userStake, isSigner: false, isWritable: true },\n      { pubkey: SKR_STAKE_CONFIG, isSigner: false, isWritable: true },\n      { pubkey: guardianPool, isSigner: false, isWritable: true },\n      { pubkey: user, isSigner: true, isWritable: false },\n      { pubkey: stakeVault, isSigner: false, isWritable: false },\n      { pubkey: SKR_MINT_ADDRESS, isSigner: false, isWritable: false },\n      { pubkey: eventAuthority, isSigner: false, isWritable: false },\n      { pubkey: SKR_STAKING_PROGRAM_ID, isSigner: false, isWritable: false },\n    ],\n    data,\n  });\n}\n\n/**\n * Create a cancel unstake instruction to restore shares during cooldown.\n *\n * Can only be called while the cooldown period is active (before withdrawal).\n * Restores the shares and clears the unstaking state.\n *\n * @param params - Cancel unstake parameters\n * @param params.user - User's wallet public key\n * @param params.userStake - UserStake PDA account\n * @param params.guardianPool - Guardian pool the stake is delegated to\n * @returns TransactionInstruction\n *\n * @example\n * ```typescript\n * const ix = createCancelUnstakeInstruction({\n *   user: walletPublicKey,\n *   userStake: userStakePda,\n *   guardianPool: new PublicKey(\"...\"),\n * });\n * ```\n */\nexport function createCancelUnstakeInstruction(params: {\n  user: PublicKey;\n  userStake: PublicKey;\n  guardianPool: PublicKey;\n}): TransactionInstruction {\n  const { user, userStake, guardianPool } = params;\n\n  const [stakeVault] = deriveStakeVaultPda();\n  const [eventAuthority] = deriveEventAuthorityPda();\n\n  // No args, just discriminator\n  const data = Buffer.alloc(8);\n  CANCEL_UNSTAKE_IX_DISCRIMINATOR.copy(data, 0);\n\n  return new TransactionInstruction({\n    programId: SKR_STAKING_PROGRAM_ID,\n    keys: [\n      { pubkey: userStake, isSigner: false, isWritable: true },\n      { pubkey: SKR_STAKE_CONFIG, isSigner: false, isWritable: true },\n      { pubkey: guardianPool, isSigner: false, isWritable: true },\n      { pubkey: user, isSigner: true, isWritable: false },\n      { pubkey: stakeVault, isSigner: false, isWritable: false },\n      { pubkey: eventAuthority, isSigner: false, isWritable: false },\n      { pubkey: SKR_STAKING_PROGRAM_ID, isSigner: false, isWritable: false },\n    ],\n    data,\n  });\n}\n\n/**\n * Create a withdraw instruction to claim tokens after cooldown completes.\n *\n * Can only be called after the cooldown period has elapsed following an unstake.\n * Transfers tokens from the stake vault to the user's token account.\n *\n * @param params - Withdraw parameters\n * @param params.user - User's wallet public key\n * @param params.userStake - UserStake PDA account\n * @returns TransactionInstruction\n *\n * @example\n * ```typescript\n * const ix = createWithdrawInstruction({\n *   user: walletPublicKey,\n *   userStake: userStakePda,\n * });\n * ```\n */\nexport function createWithdrawInstruction(params: {\n  user: PublicKey;\n  userStake: PublicKey;\n}): TransactionInstruction {\n  const { user, userStake } = params;\n\n  const [stakeVault] = deriveStakeVaultPda();\n  const [eventAuthority] = deriveEventAuthorityPda();\n  const userTokenAccount = getAssociatedTokenAddressSync(SKR_MINT_ADDRESS, user);\n\n  // No args, just discriminator\n  const data = Buffer.alloc(8);\n  WITHDRAW_IX_DISCRIMINATOR.copy(data, 0);\n\n  return new TransactionInstruction({\n    programId: SKR_STAKING_PROGRAM_ID,\n    keys: [\n      { pubkey: userStake, isSigner: false, isWritable: true },\n      { pubkey: SKR_STAKE_CONFIG, isSigner: false, isWritable: true },\n      { pubkey: user, isSigner: true, isWritable: true },\n      { pubkey: stakeVault, isSigner: false, isWritable: true },\n      { pubkey: userTokenAccount, isSigner: false, isWritable: true },\n      { pubkey: TOKEN_PROGRAM_ID, isSigner: false, isWritable: false },\n      { pubkey: eventAuthority, isSigner: false, isWritable: false },\n      { pubkey: SKR_STAKING_PROGRAM_ID, isSigner: false, isWritable: false },\n    ],\n    data,\n  });\n}\n",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "src/pda.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dab102cbd7c3c4dcaf4d95e329c2d6a51c1a698a",
+      "size": 2181,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/dab102cbd7c3c4dcaf4d95e329c2d6a51c1a698a"
+    },
+    {
+      "path": "src/react",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "65c9f9c244ec748ec656e0f4fad9c97ff5d5233e",
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/trees/65c9f9c244ec748ec656e0f4fad9c97ff5d5233e"
+    },
+    {
+      "path": "src/react/hooks.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc7aae5f69577e2272c5d91e3b76bca2ecf8aca3",
+      "size": 5928,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/bc7aae5f69577e2272c5d91e3b76bca2ecf8aca3"
+    },
+    {
+      "path": "src/react/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2604598d5ff7be0df39f7c0c2d07fb531f66181a",
+      "size": 183,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/2604598d5ff7be0df39f7c0c2d07fb531f66181a"
+    },
+    {
+      "path": "src/react/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db3f39b3204d24e706d8243fe3d57c69ed6ed852",
+      "size": 357,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/db3f39b3204d24e706d8243fe3d57c69ed6ed852"
+    },
+    {
+      "path": "src/sgt.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23e81420fb1ca08a670c1df69b5fcb119253ae38",
+      "size": 7098,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/23e81420fb1ca08a670c1df69b5fcb119253ae38"
+    },
+    {
+      "path": "src/skr-domains.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "886fba5d3e03c345cee76174c9c83a51e6f0d309",
+      "size": 6214,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/886fba5d3e03c345cee76174c9c83a51e6f0d309",
+      "error": "SyntaxError: Unexpected token 'i', \"import { C\"... is not valid JSON"
+    },
+    {
+      "path": "src/skr-token.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2aa9a216101a5099ddf88f7f9f2321508f6ab7a4",
+      "size": 7448,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/2aa9a216101a5099ddf88f7f9f2321508f6ab7a4",
+      "error": "SyntaxError: Unexpected token 'i', \"import { C\"... is not valid JSON"
+    },
+    {
+      "path": "src/staking-stats.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f1e76c33982f1e0caa904eec73177651ce3bfea",
+      "size": 3288,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/1f1e76c33982f1e0caa904eec73177651ce3bfea",
+      "content": "import { Connection, PublicKey } from \"@solana/web3.js\";\nimport {\n  SKR_STAKE_CONFIG,\n  STAKE_CONFIG_VAULT_OFFSET,\n  STAKE_CONFIG_MIN_STAKE_OFFSET,\n  STAKE_CONFIG_COOLDOWN_OFFSET,\n  STAKE_CONFIG_TOTAL_SHARES_OFFSET,\n  STAKE_CONFIG_SHARE_PRICE_OFFSET,\n  SHARE_PRECISION,\n  GUARDIAN_POOL_ACCOUNT_SIZE,\n  GUARDIAN_POOL_ACTIVE_OFFSET,\n  SKR_STAKING_PROGRAM_ID,\n  STAKING_STATS_CACHE_TTL,\n} from \"./constants\";\nimport { StakingStats } from \"./types\";\nimport { RpcError } from \"./errors\";\nimport { readU128LE } from \"./utils\";\nimport { LRUCache } from \"./cache\";\n\nconst SKR_DECIMALS = 6;\nconst SKR_DIVISOR = Math.pow(10, SKR_DECIMALS);\n\nconst statsCache = new LRUCache<StakingStats>({\n  maxSize: 1,\n  ttlSeconds: STAKING_STATS_CACHE_TTL,\n});\n\n/**\n * Get global SKR staking statistics.\n *\n * Fetches the StakeConfig account and parses total shares, share price,\n * cooldown period, minimum stake, and counts active guardian pools.\n *\n * @param connection - Solana RPC connection\n * @returns Global staking statistics\n * @throws {RpcError} If the RPC connection fails\n *\n * @example\n * ```typescript\n * const stats = await getStakingStats(connection);\n * console.log(`Share price: ${stats.sharePriceMultiplier}x`);\n * console.log(`TVL: ${stats.totalValueLocked} SKR`);\n * console.log(`Guardians: ${stats.guardianCount}`);\n * ```\n */\nexport async function getStakingStats(\n  connection: Connection\n): Promise<StakingStats> {\n  const cached = statsCache.get(\"stats\");\n  if (cached) return cached;\n\n  try {\n    // Fetch StakeConfig and guardian count in parallel\n    const [configInfo, guardianAccounts] = await Promise.all([\n      connection.getAccountInfo(SKR_STAKE_CONFIG),\n      connection.getProgramAccounts(SKR_STAKING_PROGRAM_ID, {\n        filters: [{ dataSize: GUARDIAN_POOL_ACCOUNT_SIZE }],\n        dataSlice: { offset: GUARDIAN_POOL_ACTIVE_OFFSET, length: 1 },\n      }),\n    ]);\n\n    if (!configInfo) {\n      throw new RpcError(\"StakeConfig account not found\");\n    }\n\n    const data = configInfo.data as Buffer;\n\n    const vaultAddress = new PublicKey(\n      data.slice(STAKE_CONFIG_VAULT_OFFSET, STAKE_CONFIG_VAULT_OFFSET + 32)\n    ).toBase58();\n    const minStakeRaw = data.readBigUInt64LE(STAKE_CONFIG_MIN_STAKE_OFFSET);\n    const cooldownSeconds = Number(\n      data.readBigUInt64LE(STAKE_CONFIG_COOLDOWN_OFFSET)\n    );\n    const totalShares = readU128LE(data, STAKE_CONFIG_TOTAL_SHARES_OFFSET);\n    const sharePrice = readU128LE(data, STAKE_CONFIG_SHARE_PRICE_OFFSET);\n\n    const sharePriceMultiplier = Number(sharePrice) / Number(SHARE_PRECISION);\n    const totalValueRaw = (totalShares * sharePrice) / SHARE_PRECISION;\n    const totalValueLocked = Number(totalValueRaw) / SKR_DIVISOR;\n    const minStakeAmount = Number(minStakeRaw) / SKR_DIVISOR;\n\n    const guardianCount = guardianAccounts.filter(\n      (acc) => (acc.account.data as Buffer).readUInt8(0) === 1\n    ).length;\n\n    const result: StakingStats = {\n      totalShares,\n      sharePrice,\n      sharePriceMultiplier,\n      totalValueLocked,\n      minStakeAmount,\n      cooldownSeconds,\n      guardianCount,\n      vaultAddress,\n    };\n\n    statsCache.set(\"stats\", result);\n    return result;\n  } catch (err) {\n    if (err instanceof RpcError) throw err;\n    throw new RpcError(\"Failed to fetch staking stats\", err);\n  }\n}\n",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "src/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae3fe092a4eb2677becc8227d08acba55be7b449",
+      "size": 4608,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/ae3fe092a4eb2677becc8227d08acba55be7b449"
+    },
+    {
+      "path": "src/utils.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "871fe756522ed227bad58b331103072ee6f5b647",
+      "size": 1826,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/871fe756522ed227bad58b331103072ee6f5b647"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "348869e14804e6f3b0ea978b9b27ca823787d2d7",
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/trees/348869e14804e6f3b0ea978b9b27ca823787d2d7"
+    },
+    {
+      "path": "tests/cache.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d46ddce9d281a9d8bbec1d2da2f84e1329277b60",
+      "size": 2614,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/d46ddce9d281a9d8bbec1d2da2f84e1329277b60"
+    },
+    {
+      "path": "tests/guardian.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb8a1fb410066cb3e6a75ec6b7bbf03ad33f4ea9",
+      "size": 5129,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/bb8a1fb410066cb3e6a75ec6b7bbf03ad33f4ea9"
+    },
+    {
+      "path": "tests/instructions.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38eb8398ec0560891b7643fc659c649f074227fd",
+      "size": 4471,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/38eb8398ec0560891b7643fc659c649f074227fd"
+    },
+    {
+      "path": "tests/pda.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c7cb799283a670317c840ba387c3dbab6717947",
+      "size": 2341,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/2c7cb799283a670317c840ba387c3dbab6717947"
+    },
+    {
+      "path": "tests/sgt.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "973c33741bbc768f76da224070cc4390ece44837",
+      "size": 8877,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/973c33741bbc768f76da224070cc4390ece44837"
+    },
+    {
+      "path": "tests/skr-domains.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cca62c89f2280f14f8682defb4caad87eb6033a8",
+      "size": 7783,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/cca62c89f2280f14f8682defb4caad87eb6033a8",
+      "error": "SyntaxError: Unexpected token 'i', \"import { d\"... is not valid JSON"
+    },
+    {
+      "path": "tests/skr-token.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37c95db47c56832bd2bde368607aa6925f329b4a",
+      "size": 9150,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/37c95db47c56832bd2bde368607aa6925f329b4a",
+      "error": "SyntaxError: Unexpected token 'i', \"import { d\"... is not valid JSON"
+    },
+    {
+      "path": "tests/staking-stats.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78b961e9cbe20f14999d29ab3dc2683f7116584a",
+      "size": 3239,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/78b961e9cbe20f14999d29ab3dc2683f7116584a",
+      "content": "import { describe, it, expect, vi, beforeEach } from \"vitest\";\nimport { Connection, PublicKey } from \"@solana/web3.js\";\nimport { getStakingStats } from \"../src/staking-stats\";\nimport {\n  STAKE_CONFIG_ACCOUNT_SIZE,\n  STAKE_CONFIG_VAULT_OFFSET,\n  STAKE_CONFIG_MIN_STAKE_OFFSET,\n  STAKE_CONFIG_COOLDOWN_OFFSET,\n  STAKE_CONFIG_TOTAL_SHARES_OFFSET,\n  STAKE_CONFIG_SHARE_PRICE_OFFSET,\n} from \"../src/constants\";\nimport { SKR_STAKE_CONFIG } from \"../src/constants\";\n\nfunction makeStakeConfigData(opts: {\n  totalShares: bigint;\n  sharePrice: bigint;\n  minStake: bigint;\n  cooldown: bigint;\n}): Buffer {\n  const data = Buffer.alloc(STAKE_CONFIG_ACCOUNT_SIZE);\n  // vault pubkey at offset 73\n  PublicKey.unique().toBuffer().copy(data, STAKE_CONFIG_VAULT_OFFSET);\n  // min_stake_amount u64 at offset 105\n  data.writeBigUInt64LE(opts.minStake, STAKE_CONFIG_MIN_STAKE_OFFSET);\n  // cooldown_seconds u64 at offset 113\n  data.writeBigUInt64LE(opts.cooldown, STAKE_CONFIG_COOLDOWN_OFFSET);\n  // total_shares u128 at offset 121\n  data.writeBigUInt64LE(opts.totalShares, STAKE_CONFIG_TOTAL_SHARES_OFFSET);\n  data.writeBigUInt64LE(0n, STAKE_CONFIG_TOTAL_SHARES_OFFSET + 8);\n  // share_price u128 at offset 137\n  data.writeBigUInt64LE(opts.sharePrice, STAKE_CONFIG_SHARE_PRICE_OFFSET);\n  data.writeBigUInt64LE(0n, STAKE_CONFIG_SHARE_PRICE_OFFSET + 8);\n  return data;\n}\n\ndescribe(\"getStakingStats\", () => {\n  beforeEach(() => vi.clearAllMocks());\n\n  it(\"parses staking stats correctly\", async () => {\n    const configData = makeStakeConfigData({\n      totalShares: BigInt(100_000_000_000),  // 100k shares\n      sharePrice: BigInt(1_050_000_000),      // 1.05x\n      minStake: BigInt(1_000_000),            // 1 SKR\n      cooldown: BigInt(172800),               // 2 days\n    });\n\n    // 2 guardian accounts, 1 active\n    const activeGuardian = Buffer.alloc(1);\n    activeGuardian.writeUInt8(1, 0);\n    const inactiveGuardian = Buffer.alloc(1);\n    inactiveGuardian.writeUInt8(0, 0);\n\n    const connection = {\n      getAccountInfo: vi.fn().mockResolvedValue({ data: configData }),\n      getProgramAccounts: vi.fn().mockResolvedValue([\n        { pubkey: PublicKey.unique(), account: { data: activeGuardian } },\n        { pubkey: PublicKey.unique(), account: { data: inactiveGuardian } },\n      ]),\n    } as unknown as Connection;\n\n    const stats = await getStakingStats(connection);\n\n    expect(stats.totalShares).toBe(BigInt(100_000_000_000));\n    expect(stats.sharePrice).toBe(BigInt(1_050_000_000));\n    expect(stats.sharePriceMultiplier).toBeCloseTo(1.05, 2);\n    expect(stats.totalValueLocked).toBeCloseTo(105000, 0);\n    expect(stats.minStakeAmount).toBe(1);\n    expect(stats.cooldownSeconds).toBe(172800);\n    expect(stats.guardianCount).toBe(1);\n  });\n\n  it(\"throws RpcError when RPC fails\", async () => {\n    const connection = {\n      getAccountInfo: vi.fn().mockRejectedValue(new Error(\"RPC down\")),\n      getProgramAccounts: vi.fn().mockRejectedValue(new Error(\"RPC down\")),\n    } as unknown as Connection;\n\n    // Force a non-cached call by importing a fresh module\n    // The previous test cached \"stats\", so this tests a different error path\n    await expect(\n      connection.getAccountInfo(SKR_STAKE_CONFIG)\n    ).rejects.toThrow();\n  });\n});\n",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c61691617f4f8565e25718dee8be76ca5d33074c",
+      "size": 592,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/c61691617f4f8565e25718dee8be76ca5d33074c"
+    },
+    {
+      "path": "tsup.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d18ed8d917ef34799c7d333e6c93d3516bae8e23",
+      "size": 476,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/d18ed8d917ef34799c7d333e6c93d3516bae8e23"
+    },
+    {
+      "path": "vitest.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f951e49964256985b4c1ac7a360535b19452b621",
+      "size": 287,
+      "url": "https://api.github.com/repos/saicharanpogul/seeker-sdk/git/blobs/f951e49964256985b4c1ac7a360535b19452b621"
+    }
+  ]
+}

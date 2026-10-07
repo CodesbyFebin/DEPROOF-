@@ -1,0 +1,690 @@
+{
+  "repository": "solana-mobile/solana-kotlin-compose-scaffold",
+  "tree_sha": "f47072be1787baf511adc668b6d36f7c3dab1080",
+  "truncated": false,
+  "entries": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10cfdbfaf8ed53e905f414c7ae3c4c4050d83105",
+      "size": 109,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/10cfdbfaf8ed53e905f414c7ae3c4c4050d83105"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1f49ef087dda1da81dbb541514e0b3e21611e0d",
+      "size": 2151,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/f1f49ef087dda1da81dbb541514e0b3e21611e0d",
+      "error": "SyntaxError: Unexpected token '#', \"# SolanaKo\"... is not valid JSON"
+    },
+    {
+      "path": "app",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "79041ee436458c5d3b86e7258963c0e832370ec6",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/79041ee436458c5d3b86e7258963c0e832370ec6"
+    },
+    {
+      "path": "app/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42afabfd2abebf31384ca7797186a27a4b7dbee8",
+      "size": 6,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/42afabfd2abebf31384ca7797186a27a4b7dbee8"
+    },
+    {
+      "path": "app/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "app/build.gradle.kts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d56c53550fc6b8cce1b8741cc028021bc3a7e3cb",
+      "size": 3107,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/d56c53550fc6b8cce1b8741cc028021bc3a7e3cb"
+    },
+    {
+      "path": "app/proguard-rules.pro",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "481bb434814107eb79d7a30b676d344b0df2f8ce",
+      "size": 750,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/481bb434814107eb79d7a30b676d344b0df2f8ce"
+    },
+    {
+      "path": "app/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "60ffe44ee2d8831e85e3954caf999e3cfe4ed649",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/60ffe44ee2d8831e85e3954caf999e3cfe4ed649"
+    },
+    {
+      "path": "app/src/androidTest",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "91e28bcc4b780f0e9b960ddbe0cbd7fce21adbda",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/91e28bcc4b780f0e9b960ddbe0cbd7fce21adbda"
+    },
+    {
+      "path": "app/src/androidTest/java",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e1db6e85a753b20d139a2db952f7e2498feb4d1f",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/e1db6e85a753b20d139a2db952f7e2498feb4d1f"
+    },
+    {
+      "path": "app/src/androidTest/java/com",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "771a05e4b2688a15bdeeef38925def9c80ac3829",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/771a05e4b2688a15bdeeef38925def9c80ac3829"
+    },
+    {
+      "path": "app/src/androidTest/java/com/example",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "05e6d6ba4b8f4da6ac7362b6beffa4e23554adb4",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/05e6d6ba4b8f4da6ac7362b6beffa4e23554adb4"
+    },
+    {
+      "path": "app/src/androidTest/java/com/example/solanakotlincomposescaffold",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f1638e05b2bd9f11027560e703061e344626d9bf",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/f1638e05b2bd9f11027560e703061e344626d9bf"
+    },
+    {
+      "path": "app/src/androidTest/java/com/example/solanakotlincomposescaffold/ExampleInstrumentedTest.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ec5d387a3ad27883f6ed954eb5261b634a17bbd",
+      "size": 705,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/0ec5d387a3ad27883f6ed954eb5261b634a17bbd",
+      "error": "SyntaxError: Unexpected token 'p', \"package co\"... is not valid JSON"
+    },
+    {
+      "path": "app/src/main",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ee88c5c82cd2193c7a8f9c82cce5a097e26f860d",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/ee88c5c82cd2193c7a8f9c82cce5a097e26f860d"
+    },
+    {
+      "path": "app/src/main/AndroidManifest.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6210721deea8460d0be8d1a45eb80b08d783a403",
+      "size": 1120,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/6210721deea8460d0be8d1a45eb80b08d783a403"
+    },
+    {
+      "path": "app/src/main/java",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "14f090e8023ac5a8d8d75881e9162a6f1862bdf0",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/14f090e8023ac5a8d8d75881e9162a6f1862bdf0"
+    },
+    {
+      "path": "app/src/main/java/com",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "add12eb2201e69351420c9e534d0a8cac55a891e",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/add12eb2201e69351420c9e534d0a8cac55a891e"
+    },
+    {
+      "path": "app/src/main/java/com/example",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ee9f4d91ca2360cf71a8dea24532c9029a6285a8",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/ee9f4d91ca2360cf71a8dea24532c9029a6285a8"
+    },
+    {
+      "path": "app/src/main/java/com/example/solanakotlincomposescaffold",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "37a731304ba59fdc6163393df9f95257e54d4683",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/37a731304ba59fdc6163393df9f95257e54d4683"
+    },
+    {
+      "path": "app/src/main/java/com/example/solanakotlincomposescaffold/MainActivity.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a568315f592e9642e628fc1815f4d9dff6b29ee3",
+      "size": 9925,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/a568315f592e9642e628fc1815f4d9dff6b29ee3",
+      "error": "SyntaxError: Unexpected token 'p', \"package co\"... is not valid JSON"
+    },
+    {
+      "path": "app/src/main/java/com/example/solanakotlincomposescaffold/SolanaKotlinComposeScaffoldApp.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b40d5bef4323aa83e5b97695e9c269ef908d7401",
+      "size": 191,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/b40d5bef4323aa83e5b97695e9c269ef908d7401",
+      "error": "SyntaxError: Unexpected token 'p', \"package co\"... is not valid JSON"
+    },
+    {
+      "path": "app/src/main/java/com/example/solanakotlincomposescaffold/di",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "27c69d1b87188b0c4429ffe5e99f74f9ae61abba",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/27c69d1b87188b0c4429ffe5e99f74f9ae61abba"
+    },
+    {
+      "path": "app/src/main/java/com/example/solanakotlincomposescaffold/di/SolanaKotlinComposeScaffoldModule.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42f719e411be9209743baed0b877cb73fdc31ede",
+      "size": 1142,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/42f719e411be9209743baed0b877cb73fdc31ede",
+      "error": "SyntaxError: Unexpected token 'p', \"package co\"... is not valid JSON"
+    },
+    {
+      "path": "app/src/main/java/com/example/solanakotlincomposescaffold/networking",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "86c0fc301fdc4ad47b443389dbfab4107b59ca58",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/86c0fc301fdc4ad47b443389dbfab4107b59ca58"
+    },
+    {
+      "path": "app/src/main/java/com/example/solanakotlincomposescaffold/networking/HttpDriver.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4690b583742684af9396a8af40e3530d7fb25092",
+      "size": 856,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/4690b583742684af9396a8af40e3530d7fb25092",
+      "error": "SyntaxError: Unexpected token 'p', \"package co\"... is not valid JSON"
+    },
+    {
+      "path": "app/src/main/java/com/example/solanakotlincomposescaffold/ui",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "86610117c91be9f486c6d4a3ec25312fb7e0dfec",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/86610117c91be9f486c6d4a3ec25312fb7e0dfec"
+    },
+    {
+      "path": "app/src/main/java/com/example/solanakotlincomposescaffold/ui/theme",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "43c07444475c752a9578478a47f216a089f115d8",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/43c07444475c752a9578478a47f216a089f115d8"
+    },
+    {
+      "path": "app/src/main/java/com/example/solanakotlincomposescaffold/ui/theme/Color.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d18da552f1e3fbc6a609219c35519002e31522ff",
+      "size": 303,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/d18da552f1e3fbc6a609219c35519002e31522ff"
+    },
+    {
+      "path": "app/src/main/java/com/example/solanakotlincomposescaffold/ui/theme/Theme.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd7c1427c4dcedd66e8508014eec696c1b16ffd5",
+      "size": 2228,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/cd7c1427c4dcedd66e8508014eec696c1b16ffd5"
+    },
+    {
+      "path": "app/src/main/java/com/example/solanakotlincomposescaffold/ui/theme/Type.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1466e8b39b4ab53823485e271d1d33804124cb91",
+      "size": 1008,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/1466e8b39b4ab53823485e271d1d33804124cb91"
+    },
+    {
+      "path": "app/src/main/java/com/example/solanakotlincomposescaffold/usecase",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "af86e7c2b02d1cd92c6bc202910a1738d49f372f",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/af86e7c2b02d1cd92c6bc202910a1738d49f372f"
+    },
+    {
+      "path": "app/src/main/java/com/example/solanakotlincomposescaffold/usecase/AccountBalanceUseCase.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "385a6ef0770fed599c2143a864b5db5e4b2ce389",
+      "size": 1839,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/385a6ef0770fed599c2143a864b5db5e4b2ce389"
+    },
+    {
+      "path": "app/src/main/java/com/example/solanakotlincomposescaffold/usecase/ConfirmTransactionUseCase.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a5bf772a0fd747127ed0c12ef2031294b82c84e",
+      "size": 3445,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/5a5bf772a0fd747127ed0c12ef2031294b82c84e"
+    },
+    {
+      "path": "app/src/main/java/com/example/solanakotlincomposescaffold/usecase/LatestBlockhashUseCase.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb38f7d38a878e2776dc86f4aa44b37f2ce2dbd3",
+      "size": 2181,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/eb38f7d38a878e2776dc86f4aa44b37f2ce2dbd3"
+    },
+    {
+      "path": "app/src/main/java/com/example/solanakotlincomposescaffold/usecase/MemoTransactionUseCase.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad80371947b7f7bc4b3f574726ab3be696936e3d",
+      "size": 1327,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/ad80371947b7f7bc4b3f574726ab3be696936e3d"
+    },
+    {
+      "path": "app/src/main/java/com/example/solanakotlincomposescaffold/usecase/PersistenceUseCase.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58edbe63479547f5c8c5b1f3eb94e50865d1c80b",
+      "size": 2038,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/58edbe63479547f5c8c5b1f3eb94e50865d1c80b"
+    },
+    {
+      "path": "app/src/main/java/com/example/solanakotlincomposescaffold/usecase/RequestAirdropUseCase.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a9756797250d0cc3d7d9171b753554186ac0a27",
+      "size": 1858,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/3a9756797250d0cc3d7d9171b753554186ac0a27"
+    },
+    {
+      "path": "app/src/main/java/com/example/solanakotlincomposescaffold/usecase/SendTransactionsUseCase.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f18f96b9def11b5118c8e5a24d005c5cdbd5aeb",
+      "size": 1954,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/9f18f96b9def11b5118c8e5a24d005c5cdbd5aeb"
+    },
+    {
+      "path": "app/src/main/java/com/example/solanakotlincomposescaffold/viewmodel",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7b3a789cd05b93163d2b5fab7514ebb256f3ba62",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/7b3a789cd05b93163d2b5fab7514ebb256f3ba62"
+    },
+    {
+      "path": "app/src/main/java/com/example/solanakotlincomposescaffold/viewmodel/MainViewModel.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "694a2f7deacc4649054a020fdca662e1bf8a1eda",
+      "size": 11110,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/694a2f7deacc4649054a020fdca662e1bf8a1eda"
+    },
+    {
+      "path": "app/src/main/res",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3b2d981199c30d82850e934132693e6f9e07d2ee",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/3b2d981199c30d82850e934132693e6f9e07d2ee"
+    },
+    {
+      "path": "app/src/main/res/drawable",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7c262462995e07d753e232ff3b19a20c3f5657f4",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/7c262462995e07d753e232ff3b19a20c3f5657f4"
+    },
+    {
+      "path": "app/src/main/res/drawable/ic_launcher_background.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07d5da9cbf141911847041df5d7b87f0dd5ef9d4",
+      "size": 5606,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/07d5da9cbf141911847041df5d7b87f0dd5ef9d4"
+    },
+    {
+      "path": "app/src/main/res/drawable/ic_launcher_foreground.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b068d11462a4b96669193de13a711a3a36220a0",
+      "size": 1702,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/2b068d11462a4b96669193de13a711a3a36220a0"
+    },
+    {
+      "path": "app/src/main/res/mipmap-anydpi-v26",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "46123c8a05f7c8ae0d069692786b4f3b1a0648d7",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/46123c8a05f7c8ae0d069692786b4f3b1a0648d7"
+    },
+    {
+      "path": "app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f3b755bf50c6b03d8714a9c6184705e6a08389f",
+      "size": 343,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/6f3b755bf50c6b03d8714a9c6184705e6a08389f"
+    },
+    {
+      "path": "app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f3b755bf50c6b03d8714a9c6184705e6a08389f",
+      "size": 343,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/6f3b755bf50c6b03d8714a9c6184705e6a08389f"
+    },
+    {
+      "path": "app/src/main/res/mipmap-hdpi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "42022c214b8c47a5d5f9774197529f763d5716a0",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/42022c214b8c47a5d5f9774197529f763d5716a0"
+    },
+    {
+      "path": "app/src/main/res/mipmap-hdpi/ic_launcher.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c209e78ecd372343283f4157dcfd918ec5165bb3",
+      "size": 1404,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/c209e78ecd372343283f4157dcfd918ec5165bb3"
+    },
+    {
+      "path": "app/src/main/res/mipmap-hdpi/ic_launcher_round.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2dfe3d1ba5cf3ee31b3ecc1ced89044a1f3b7a9",
+      "size": 2898,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/b2dfe3d1ba5cf3ee31b3ecc1ced89044a1f3b7a9"
+    },
+    {
+      "path": "app/src/main/res/mipmap-mdpi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c033b6b2e70a2d6993c415f583601bc6745f63fb",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/c033b6b2e70a2d6993c415f583601bc6745f63fb"
+    },
+    {
+      "path": "app/src/main/res/mipmap-mdpi/ic_launcher.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f0f1d64e58ba64d180ce43ee13bf9a17835fbca",
+      "size": 982,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/4f0f1d64e58ba64d180ce43ee13bf9a17835fbca"
+    },
+    {
+      "path": "app/src/main/res/mipmap-mdpi/ic_launcher_round.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62b611da081676d42f6c3f78a2c91e7bcedddedb",
+      "size": 1772,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/62b611da081676d42f6c3f78a2c91e7bcedddedb"
+    },
+    {
+      "path": "app/src/main/res/mipmap-xhdpi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "07615786dd22a6c2df1ebd0b3a53fcd204d49d6c",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/07615786dd22a6c2df1ebd0b3a53fcd204d49d6c"
+    },
+    {
+      "path": "app/src/main/res/mipmap-xhdpi/ic_launcher.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "948a3070fe34c611c42c0d3ad3013a0dce358be0",
+      "size": 1900,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/948a3070fe34c611c42c0d3ad3013a0dce358be0"
+    },
+    {
+      "path": "app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b9a6956b3acdc11f40ce2bb3f6efbd845cc243f",
+      "size": 3918,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/1b9a6956b3acdc11f40ce2bb3f6efbd845cc243f"
+    },
+    {
+      "path": "app/src/main/res/mipmap-xxhdpi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1217e928894cecf247fd980964e5e9f7fad16e4e",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/1217e928894cecf247fd980964e5e9f7fad16e4e"
+    },
+    {
+      "path": "app/src/main/res/mipmap-xxhdpi/ic_launcher.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28d4b77f9f036a47549d47db79c16788749dca10",
+      "size": 2884,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/28d4b77f9f036a47549d47db79c16788749dca10"
+    },
+    {
+      "path": "app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9287f5083623b375139afb391af71cc533a7dd37",
+      "size": 5914,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/9287f5083623b375139afb391af71cc533a7dd37"
+    },
+    {
+      "path": "app/src/main/res/mipmap-xxxhdpi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a3de34961096076e3ad578310142d8e33859d1bb",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/a3de34961096076e3ad578310142d8e33859d1bb"
+    },
+    {
+      "path": "app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa7d6427e6fa1074b79ccd52ef67ac15c5637e85",
+      "size": 3844,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/aa7d6427e6fa1074b79ccd52ef67ac15c5637e85"
+    },
+    {
+      "path": "app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9126ae37cbc3587421d6889eadd1d91fbf1994d4",
+      "size": 7778,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/9126ae37cbc3587421d6889eadd1d91fbf1994d4"
+    },
+    {
+      "path": "app/src/main/res/values",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4510e9478200bcb66538f8a5c5e94c2de68279e5",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/4510e9478200bcb66538f8a5c5e94c2de68279e5"
+    },
+    {
+      "path": "app/src/main/res/values/colors.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8c6127d327620c93d2b2d00342a68e97b98a48d",
+      "size": 378,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/f8c6127d327620c93d2b2d00342a68e97b98a48d"
+    },
+    {
+      "path": "app/src/main/res/values/strings.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2eb8c4159d673a1c8c0ec3de6c17d3b5f6ef26b6",
+      "size": 92,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/2eb8c4159d673a1c8c0ec3de6c17d3b5f6ef26b6"
+    },
+    {
+      "path": "app/src/main/res/values/themes.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d35d5e9ea5cb2e5a166367b0abb337e1941cc4a",
+      "size": 169,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/5d35d5e9ea5cb2e5a166367b0abb337e1941cc4a"
+    },
+    {
+      "path": "app/src/main/res/xml",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e226f42e909c055902cbf069839b176ada049558",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/e226f42e909c055902cbf069839b176ada049558"
+    },
+    {
+      "path": "app/src/main/res/xml/backup_rules.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa0f996d2c2a6bdd11f5371de4268c8389d6c720",
+      "size": 478,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/fa0f996d2c2a6bdd11f5371de4268c8389d6c720"
+    },
+    {
+      "path": "app/src/main/res/xml/data_extraction_rules.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ee9997b0b4726e57c27b2f7b21462b604ff8a88",
+      "size": 551,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/9ee9997b0b4726e57c27b2f7b21462b604ff8a88"
+    },
+    {
+      "path": "app/src/test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "524f25343a109a3c8baf7e76254651e2cec2bce9",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/524f25343a109a3c8baf7e76254651e2cec2bce9"
+    },
+    {
+      "path": "app/src/test/java",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "777ede72b12fa9dabfa934a27abd8313ea949afd",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/777ede72b12fa9dabfa934a27abd8313ea949afd"
+    },
+    {
+      "path": "app/src/test/java/com",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f9a64a25f1c58812fbb80472580aa017b2710b3f",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/f9a64a25f1c58812fbb80472580aa017b2710b3f"
+    },
+    {
+      "path": "app/src/test/java/com/example",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6e95831456e5a07c1d0d546b0e88ac3a9f10ab56",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/6e95831456e5a07c1d0d546b0e88ac3a9f10ab56"
+    },
+    {
+      "path": "app/src/test/java/com/example/solanakotlincomposescaffold",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "44523934479b94dceedd470537c6cb1454e8576f",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/44523934479b94dceedd470537c6cb1454e8576f"
+    },
+    {
+      "path": "app/src/test/java/com/example/solanakotlincomposescaffold/ExampleUnitTest.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2d87240c746267eb0f4d931a8df390a9a1e6546",
+      "size": 363,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/b2d87240c746267eb0f4d931a8df390a9a1e6546",
+      "error": "SyntaxError: Unexpected token 'p', \"package co\"... is not valid JSON"
+    },
+    {
+      "path": "build.gradle.kts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "663ba1819723922a19659e7b4d8331b6f7d75a5f",
+      "size": 422,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/663ba1819723922a19659e7b4d8331b6f7d75a5f"
+    },
+    {
+      "path": "gradle.properties",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c5031eb7d63f785752b1914cc8692a453d1cc63",
+      "size": 1358,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/3c5031eb7d63f785752b1914cc8692a453d1cc63"
+    },
+    {
+      "path": "gradle",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e770d0eaad5c42e03afca97d3398f86672772ea9",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/e770d0eaad5c42e03afca97d3398f86672772ea9"
+    },
+    {
+      "path": "gradle/wrapper",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6529f291995ee88a6e08caee6aba1be39603845a",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/6529f291995ee88a6e08caee6aba1be39603845a"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.jar",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e708b1c023ec8b20f512888fe07c5bd3ff77bb8f",
+      "size": 59203,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/e708b1c023ec8b20f512888fe07c5bd3ff77bb8f"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.properties",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd04375e0302a7b3dbeb9bd3601e8862d470a667",
+      "size": 230,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/bd04375e0302a7b3dbeb9bd3601e8862d470a667"
+    },
+    {
+      "path": "gradlew",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "4f906e0c811fc9e230eb44819f509cd0627f2600",
+      "size": 5766,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/4f906e0c811fc9e230eb44819f509cd0627f2600"
+    },
+    {
+      "path": "gradlew.bat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac1b06f93825db68fb0c0b5150917f340eaa5d02",
+      "size": 2763,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/ac1b06f93825db68fb0c0b5150917f340eaa5d02"
+    },
+    {
+      "path": "screenshots",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "03a09d1b214a215bba79f673f937090575aab5ce",
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/trees/03a09d1b214a215bba79f673f937090575aab5ce"
+    },
+    {
+      "path": "screenshots/screenshot1.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27b79abb8deb82e4e3f7ef0d5b2047e86fdf0408",
+      "size": 241263,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/27b79abb8deb82e4e3f7ef0d5b2047e86fdf0408"
+    },
+    {
+      "path": "screenshots/screenshot2.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c1605bce29fa3006a715064b2ee7aa7ea5c0baa",
+      "size": 266840,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/4c1605bce29fa3006a715064b2ee7aa7ea5c0baa"
+    },
+    {
+      "path": "screenshots/screenshot3.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0b9c0f8a427500f0740f897b7b9766866a86800",
+      "size": 296472,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/f0b9c0f8a427500f0740f897b7b9766866a86800"
+    },
+    {
+      "path": "settings.gradle.kts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a615aa5d96d424f53b5f6054884af239ff0652ac",
+      "size": 350,
+      "url": "https://api.github.com/repos/solana-mobile/solana-kotlin-compose-scaffold/git/blobs/a615aa5d96d424f53b5f6054884af239ff0652ac"
+    }
+  ]
+}

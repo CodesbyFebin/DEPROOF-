@@ -1,0 +1,1722 @@
+{
+  "schema": "deproof:adapter-catalog-v1",
+  "version": "2.0.0",
+  "generatedAt": "2026-10-07T00:00:00Z",
+  "_note": "Research sources are official project documentation and GitHub repositories as of catalog generatedAt. No entries imply partnerships. Reward, earnings and yield fields are intentionally absent. SKR integration is BLOCKED for all entries pending an officially verified interface and qualified counterparty.",
+  "adapters": [
+    {
+      "id": "deproof-adapter-helium-iot-v1",
+      "name": "Helium IoT (HNT)",
+      "description": "Helium Network LoRaWAN coverage. Requires a Helium-certified LoRa radio hotspot connected to the host machine or acting as the host machine. Rewards IoT token (IOT) via Proof of Coverage. Migrated to Solana in 2023.",
+      "status": "UNSUPPORTED",
+      "blockedReason": "Requires a Helium-certified LoRa radio hotspot (specialized hardware). Cannot be enforced on a generic Ubuntu node without physical radio hardware. Adapter is UNSUPPORTED until hardware can be verified.",
+      "chain": "solana-mainnet",
+      "officialDocsUrl": "https://docs.helium.com/iot/",
+      "licenseType": "Apache-2.0",
+      "installMethod": "docker-image",
+      "pinnedArtifactDigest": "",
+      "supportedOS": [
+        "ubuntu-22.04",
+        "ubuntu-24.04"
+      ],
+      "supportedArch": [
+        "amd64",
+        "arm64"
+      ],
+      "requiredHardware": {
+        "minRamMiB": 512,
+        "minDiskMiB": 4096,
+        "minCpuCores": 1,
+        "requiresGpu": false,
+        "requiresSpecialHardware": "Helium-certified LoRa radio hotspot",
+        "openPorts": [
+          1680,
+          44158
+        ]
+      },
+      "requiredAccounts": [
+        "helium-wallet",
+        "solana-rpc"
+      ],
+      "requiredCredentials": [
+        "helium-hotspot-key"
+      ],
+      "requiredScopes": [
+        "MANAGE_ADAPTER"
+      ],
+      "operations": [
+        {
+          "id": "helium-iot-observe",
+          "description": "Observe hotspot connectivity status and PoC witness count from local hotspot API.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "coverage"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "Proof of Coverage (PoC) challenge/witness system via Helium network oracles.",
+        "verificationMethod": "Helium oracle chain variable on Solana; PoC receipts signed by oracle keypairs.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "PoC participation requires physical radio hardware and oracle interaction. Contribution cannot be self-certified."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "UNSUPPORTED due to radio hardware requirement. Qualification not attempted."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "No officially verified SKR interface for Helium IOT rewards. BLOCKED pending verified protocol and qualified counterparty."
+      }
+    },
+    {
+      "id": "deproof-adapter-hivemapper-v1",
+      "name": "Hivemapper (HONEY)",
+      "description": "Hivemapper decentralized map. Requires a Hivemapper dashcam connected via USB to collect GPS-tagged video frames. Rewards HONEY token on Solana.",
+      "status": "UNSUPPORTED",
+      "blockedReason": "Requires Hivemapper dashcam hardware (specialized USB device). Cannot be enforced on a generic Ubuntu server node without the physical dashcam.",
+      "chain": "solana-mainnet",
+      "officialDocsUrl": "https://docs.hivemapper.com/",
+      "licenseType": "Proprietary (Hivemapper Inc.)",
+      "installMethod": "binary",
+      "pinnedArtifactDigest": "",
+      "supportedOS": [
+        "ubuntu-22.04"
+      ],
+      "supportedArch": [
+        "amd64"
+      ],
+      "requiredHardware": {
+        "minRamMiB": 2048,
+        "minDiskMiB": 51200,
+        "minCpuCores": 2,
+        "requiresGpu": false,
+        "requiresSpecialHardware": "Hivemapper dashcam (USB-A connected)",
+        "openPorts": []
+      },
+      "requiredAccounts": [
+        "hivemapper-account",
+        "solana-rpc"
+      ],
+      "requiredCredentials": [
+        "hivemapper-api-key"
+      ],
+      "requiredScopes": [
+        "MANAGE_ADAPTER"
+      ],
+      "operations": [
+        {
+          "id": "hivemapper-observe",
+          "description": "Observe dashcam connectivity and local frame-collection state.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "location"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "GPS-tagged video frame submission to Hivemapper network.",
+        "verificationMethod": "Hivemapper network validates frame quality and uniqueness before issuing HONEY.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "Physical dashcam required. Frames validated by Hivemapper before rewards issued."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "UNSUPPORTED due to dashcam hardware requirement."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "No officially verified SKR interface for Hivemapper HONEY rewards. BLOCKED."
+      }
+    },
+    {
+      "id": "deproof-adapter-nosana-v1",
+      "name": "Nosana CI (NOS)",
+      "description": "Nosana decentralized CI/CD compute market on Solana. Nodes provide CPU compute for CI pipeline jobs. Rewards NOS token.",
+      "status": "PLANNED",
+      "chain": "solana-mainnet",
+      "officialDocsUrl": "https://docs.nosana.io/nodes/",
+      "licenseType": "Apache-2.0",
+      "installMethod": "docker-image",
+      "pinnedArtifactDigest": "",
+      "supportedOS": [
+        "ubuntu-22.04",
+        "ubuntu-24.04"
+      ],
+      "supportedArch": [
+        "amd64"
+      ],
+      "requiredHardware": {
+        "minRamMiB": 4096,
+        "minDiskMiB": 20480,
+        "minCpuCores": 2,
+        "requiresGpu": false,
+        "openPorts": []
+      },
+      "requiredAccounts": [
+        "solana-wallet",
+        "nosana-staking-account"
+      ],
+      "requiredCredentials": [
+        "nosana-node-keypair"
+      ],
+      "requiredScopes": [
+        "MANAGE_ADAPTER",
+        "RUN_PROOF_JOB"
+      ],
+      "operations": [
+        {
+          "id": "nosana-observe",
+          "description": "Observe Nosana node registration and job queue state from local node process.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "compute"
+        },
+        {
+          "id": "nosana-run-job",
+          "description": "Execute a CI pipeline job spec dispatched from the Nosana market.",
+          "requiredScope": "RUN_PROOF_JOB",
+          "contributionKind": "compute"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "Job completion proof submitted to Nosana market program on Solana.",
+        "verificationMethod": "Nosana program validates job result on-chain. Verifiable at any Solana RPC.",
+        "trustLevel": "INDEPENDENTLY_VERIFIED_RESULT",
+        "notes": "On-chain job result is independently verifiable. Local byte counter alone does not constitute independent verification."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "PLANNED. No qualification run attempted. Requires Nosana node setup on the paired Ubuntu node."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "No officially verified SKR interface for Nosana NOS rewards. BLOCKED."
+      }
+    },
+    {
+      "id": "deproof-adapter-render-v1",
+      "name": "Render Network (RNDR)",
+      "description": "Render Network GPU rendering. Nodes provide GPU compute for 3D rendering jobs. Rewards RNDR token.",
+      "status": "UNSUPPORTED",
+      "blockedReason": "Requires NVIDIA GPU hardware with CUDA support. Cannot be enforced on a generic CPU-only Ubuntu node. Adapter will remain UNSUPPORTED until GPU presence is verified.",
+      "chain": "solana-mainnet",
+      "officialDocsUrl": "https://know.rendertoken.com/getting-started/nodes",
+      "licenseType": "Proprietary (Render Network Foundation)",
+      "installMethod": "binary",
+      "pinnedArtifactDigest": "",
+      "supportedOS": [
+        "ubuntu-22.04"
+      ],
+      "supportedArch": [
+        "amd64"
+      ],
+      "requiredHardware": {
+        "minRamMiB": 8192,
+        "minDiskMiB": 51200,
+        "minCpuCores": 4,
+        "requiresGpu": true,
+        "requiresSpecialHardware": "NVIDIA GPU with CUDA 11.x or later",
+        "openPorts": []
+      },
+      "requiredAccounts": [
+        "render-wallet",
+        "solana-rpc"
+      ],
+      "requiredCredentials": [
+        "render-node-key"
+      ],
+      "requiredScopes": [
+        "MANAGE_ADAPTER",
+        "RUN_PROOF_JOB"
+      ],
+      "operations": [],
+      "contributionMeasurement": {
+        "method": "GPU rendering task completion verified by Render Network.",
+        "verificationMethod": "Render Network validates output image fidelity.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "GPU presence and capability cannot be fabricated. GPU attestation required."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "UNSUPPORTED due to GPU hardware requirement."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "No officially verified SKR interface for Render RNDR rewards. BLOCKED."
+      }
+    },
+    {
+      "id": "deproof-adapter-geodnet-v1",
+      "name": "GEODNET (GEOD)",
+      "description": "GEODNET decentralized GPS correction network. Requires a GNSS reference station (u-blox or compatible receiver) connected to the host. Rewards GEOD token on Solana.",
+      "status": "UNSUPPORTED",
+      "blockedReason": "Requires physical GNSS reference station hardware (u-blox ZED-F9P or equivalent). Cannot be enforced on a generic Ubuntu node.",
+      "chain": "solana-mainnet",
+      "officialDocsUrl": "https://geodnet.com/get-started",
+      "licenseType": "Proprietary (GEODNET Foundation)",
+      "installMethod": "binary",
+      "pinnedArtifactDigest": "",
+      "supportedOS": [
+        "ubuntu-22.04"
+      ],
+      "supportedArch": [
+        "amd64"
+      ],
+      "requiredHardware": {
+        "minRamMiB": 1024,
+        "minDiskMiB": 2048,
+        "minCpuCores": 1,
+        "requiresGpu": false,
+        "requiresSpecialHardware": "u-blox ZED-F9P or compatible GNSS multi-band receiver",
+        "openPorts": [
+          2101
+        ]
+      },
+      "requiredAccounts": [
+        "geodnet-account",
+        "solana-rpc"
+      ],
+      "requiredCredentials": [
+        "geodnet-station-key"
+      ],
+      "requiredScopes": [
+        "MANAGE_ADAPTER"
+      ],
+      "operations": [
+        {
+          "id": "geodnet-observe",
+          "description": "Observe GNSS station connectivity and correction stream status.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "location"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "GNSS correction stream availability verified by GEODNET network.",
+        "verificationMethod": "NTRIP protocol data validated by GEODNET infrastructure.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "Physical GNSS receiver required. Contribution cannot be simulated."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "UNSUPPORTED due to GNSS hardware requirement."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "No officially verified SKR interface for GEODNET rewards. BLOCKED."
+      }
+    },
+    {
+      "id": "deproof-adapter-latency-fixture-v1",
+      "name": "Latency Measurement (Local Qualification Fixture)",
+      "description": "LOCAL QUALIFICATION FIXTURE ONLY. Measures TCP connection latency to a declared target endpoint and produces a signed contribution receipt. This is not integration with any external DePIN provider. It exists solely to exercise and qualify the full adapter pipeline: catalog \u2192 compatibility \u2192 consent \u2192 execution \u2192 observation \u2192 verification \u2192 receipt \u2192 mobile inspection \u2192 export. Do not present receipts from this adapter as provider-acknowledged contribution.",
+      "status": "QUALIFIED",
+      "chain": "none",
+      "officialDocsUrl": "",
+      "licenseType": "Apache-2.0",
+      "installMethod": "none",
+      "pinnedArtifactDigest": "sha256:builtin",
+      "supportedOS": [
+        "ubuntu-22.04",
+        "ubuntu-24.04",
+        "ubuntu-20.04"
+      ],
+      "supportedArch": [
+        "amd64",
+        "arm64"
+      ],
+      "requiredHardware": {
+        "minRamMiB": 64,
+        "minDiskMiB": 16,
+        "minCpuCores": 1,
+        "requiresGpu": false,
+        "openPorts": []
+      },
+      "requiredAccounts": [],
+      "requiredCredentials": [],
+      "requiredScopes": [
+        "MANAGE_ADAPTER"
+      ],
+      "operations": [
+        {
+          "id": "latency-measure",
+          "description": "Measure TCP connection latency to a declared reachable endpoint. Records measured round-trip time, observation timestamp, and source. Does not infer any reward or real DePIN contribution.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "latency-measurement"
+        },
+        {
+          "id": "latency-export",
+          "description": "Export the signed contribution receipt for the most recent latency-measure operation.",
+          "requiredScope": "EXPORT_PUBLIC_RECORDS",
+          "contributionKind": "none"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "TCP dial to declared endpoint; measured wall-clock duration in microseconds.",
+        "verificationMethod": "Node re-executes dial to same endpoint and compares result to declared receipt; deviation within 5x accepted.",
+        "trustLevel": "NODE_SIGNED_RECORD",
+        "notes": "LOCAL_OBSERVATION elevated to NODE_SIGNED_RECORD by node-agent Ed25519 signature over the receipt. Not independently verified by a third party. Not a real DePIN contribution."
+      },
+      "qualificationStatus": {
+        "state": "VERIFIED_LOCAL",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [
+          "adapter-catalog-v1"
+        ],
+        "notes": "Qualified through the full adapter pipeline using local fixture only. No external provider interaction."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "This is a local qualification fixture with no provider integration. SKR integration does not apply."
+      }
+    },
+    {
+      "id": "deproof-adapter-grass-v1",
+      "name": "Grass (Wynd Network)",
+      "description": "Bandwidth-sharing DePIN on Solana. Contributes unused internet bandwidth by routing web-scraping traffic. Software-only node; no special hardware required beyond a stable internet connection.",
+      "status": "AVAILABLE",
+      "chain": "solana-mainnet",
+      "officialDocsUrl": "https://www.getgrass.io/",
+      "licenseType": "Proprietary",
+      "installMethod": "docker-image",
+      "pinnedArtifactDigest": "",
+      "supportedOS": [
+        "ubuntu-22.04",
+        "ubuntu-24.04",
+        "ubuntu-20.04"
+      ],
+      "supportedArch": [
+        "amd64"
+      ],
+      "requiredHardware": {
+        "minRamMiB": 256,
+        "minDiskMiB": 512,
+        "minCpuCores": 1,
+        "requiresGpu": false,
+        "openPorts": [
+          8080
+        ]
+      },
+      "requiredAccounts": [
+        "grass-account",
+        "solana-wallet"
+      ],
+      "requiredCredentials": [
+        "grass-api-key"
+      ],
+      "requiredScopes": [
+        "MANAGE_ADAPTER"
+      ],
+      "operations": [
+        {
+          "id": "grass-bandwidth-observe",
+          "description": "Observe local Grass node uptime and bandwidth allocation from node API.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "bandwidth"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "Grass network oracle observes routed traffic volume; reported via Grass node API.",
+        "verificationMethod": "Provider oracle \u2014 Grass network oracle signs contribution epochs.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "Contribution acknowledged by Grass oracle. Local node cannot self-certify bandwidth rewards."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "AVAILABLE but not yet qualified. Qualification requires running Grass node and oracle response."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "No verified SKR interface for Grass bandwidth rewards. BLOCKED pending verified protocol."
+      }
+    },
+    {
+      "id": "deproof-adapter-io-net-v1",
+      "name": "io.net (GPU Compute)",
+      "description": "Decentralised GPU compute network on Solana. Contributors supply GPU compute for AI/ML workloads. Requires a CUDA-capable GPU and Docker.",
+      "status": "UNSUPPORTED",
+      "blockedReason": "Requires a CUDA-capable GPU (NVIDIA RTX/A-series recommended). Cannot qualify on a CPU-only node.",
+      "chain": "solana-mainnet",
+      "officialDocsUrl": "https://io.net/",
+      "licenseType": "Proprietary",
+      "installMethod": "docker-image",
+      "pinnedArtifactDigest": "",
+      "supportedOS": [
+        "ubuntu-22.04",
+        "ubuntu-24.04"
+      ],
+      "supportedArch": [
+        "amd64"
+      ],
+      "requiredHardware": {
+        "minRamMiB": 8192,
+        "minDiskMiB": 51200,
+        "minCpuCores": 4,
+        "requiresGpu": true,
+        "requiresSpecialHardware": "CUDA-capable NVIDIA GPU (RTX 3080 or better recommended)",
+        "openPorts": [
+          8080,
+          40000
+        ]
+      },
+      "requiredAccounts": [
+        "ionet-account",
+        "solana-wallet"
+      ],
+      "requiredCredentials": [
+        "ionet-api-key"
+      ],
+      "requiredScopes": [
+        "MANAGE_ADAPTER"
+      ],
+      "operations": [
+        {
+          "id": "ionet-gpu-observe",
+          "description": "Observe GPU worker status and completed job count from io.net node API.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "gpu-compute"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "io.net cluster oracle tracks job completion and GPU utilisation.",
+        "verificationMethod": "io.net oracle signs job completion receipts on Solana.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "Requires GPU attestation and oracle interaction. Not self-certifiable."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "UNSUPPORTED \u2014 GPU hardware required."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "No verified SKR interface for io.net compute rewards. BLOCKED pending verified protocol."
+      }
+    },
+    {
+      "id": "deproof-adapter-aethir-v1",
+      "name": "Aethir (Enterprise GPU Cloud)",
+      "description": "Enterprise-grade GPU cloud DePIN. Contributors run Checker or Container nodes supplying GPU compute and rendering capacity. Requires high-end NVIDIA GPU.",
+      "status": "UNSUPPORTED",
+      "blockedReason": "Requires high-end NVIDIA GPU (A100/H100 class or consumer RTX 3090+). Cannot qualify on a CPU-only node.",
+      "chain": "ethereum-mainnet",
+      "officialDocsUrl": "https://aethir.com/",
+      "licenseType": "Proprietary",
+      "installMethod": "docker-image",
+      "pinnedArtifactDigest": "",
+      "supportedOS": [
+        "ubuntu-22.04",
+        "ubuntu-24.04"
+      ],
+      "supportedArch": [
+        "amd64"
+      ],
+      "requiredHardware": {
+        "minRamMiB": 16384,
+        "minDiskMiB": 102400,
+        "minCpuCores": 8,
+        "requiresGpu": true,
+        "requiresSpecialHardware": "NVIDIA A100/H100 or RTX 3090+ with NVLink preferred",
+        "openPorts": [
+          8080,
+          9090
+        ]
+      },
+      "requiredAccounts": [
+        "aethir-account",
+        "ethereum-wallet"
+      ],
+      "requiredCredentials": [
+        "aethir-api-key"
+      ],
+      "requiredScopes": [
+        "MANAGE_ADAPTER"
+      ],
+      "operations": [
+        {
+          "id": "aethir-checker-observe",
+          "description": "Observe Checker node status and attested GPU availability from Aethir node API.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "gpu-compute"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "Aethir Checker oracle audits Container node GPU availability and job completion.",
+        "verificationMethod": "Aethir oracle network; multi-Checker attestation on Ethereum.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "Contribution requires Checker oracle attestation. Not compatible with Solana SKR without bridge."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "UNSUPPORTED \u2014 GPU hardware required; non-Solana chain."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "Aethir operates on Ethereum; cross-chain SKR bridge not specified or verified."
+      }
+    },
+    {
+      "id": "deproof-adapter-titan-network-v1",
+      "name": "Titan Network (Storage / CDN Bandwidth)",
+      "description": "Decentralised storage and CDN bandwidth sharing. Software-only edge node; contributors supply storage and bandwidth. Linux-compatible without special hardware.",
+      "status": "AVAILABLE",
+      "chain": "ethereum-mainnet",
+      "officialDocsUrl": "https://titannet.io/",
+      "licenseType": "Apache-2.0",
+      "installMethod": "binary",
+      "pinnedArtifactDigest": "",
+      "supportedOS": [
+        "ubuntu-22.04",
+        "ubuntu-24.04",
+        "ubuntu-20.04"
+      ],
+      "supportedArch": [
+        "amd64",
+        "arm64"
+      ],
+      "requiredHardware": {
+        "minRamMiB": 512,
+        "minDiskMiB": 10240,
+        "minCpuCores": 1,
+        "requiresGpu": false,
+        "openPorts": [
+          1234,
+          2345
+        ]
+      },
+      "requiredAccounts": [
+        "titan-account"
+      ],
+      "requiredCredentials": [
+        "titan-node-key"
+      ],
+      "requiredScopes": [
+        "MANAGE_ADAPTER"
+      ],
+      "operations": [
+        {
+          "id": "titan-storage-observe",
+          "description": "Observe Titan edge node storage contribution and bandwidth metrics from local node API.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "storage"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "Titan network oracle samples edge node availability and data served.",
+        "verificationMethod": "Titan oracle signed epoch receipts on Ethereum.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "Operates on Ethereum; cross-chain SKR bridge not verified."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "AVAILABLE (software-only) but qualification not yet run."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "Titan Network operates on Ethereum; cross-chain SKR interface not verified."
+      }
+    },
+    {
+      "id": "deproof-adapter-akash-v1",
+      "name": "Akash Network (Cloud Compute)",
+      "description": "Decentralised cloud compute marketplace on Cosmos. Providers rent CPU/GPU and memory to tenants. Software-only CPU compute provider possible on Linux.",
+      "status": "PLANNED",
+      "chain": "cosmos",
+      "officialDocsUrl": "https://akash.network/",
+      "licenseType": "Apache-2.0",
+      "installMethod": "docker-image",
+      "pinnedArtifactDigest": "",
+      "supportedOS": [
+        "ubuntu-22.04",
+        "ubuntu-24.04"
+      ],
+      "supportedArch": [
+        "amd64"
+      ],
+      "requiredHardware": {
+        "minRamMiB": 4096,
+        "minDiskMiB": 51200,
+        "minCpuCores": 4,
+        "requiresGpu": false,
+        "openPorts": [
+          8443,
+          8444
+        ]
+      },
+      "requiredAccounts": [
+        "akash-wallet",
+        "akash-provider-account"
+      ],
+      "requiredCredentials": [
+        "akash-provider-cert"
+      ],
+      "requiredScopes": [
+        "MANAGE_ADAPTER"
+      ],
+      "operations": [
+        {
+          "id": "akash-provider-observe",
+          "description": "Observe provider node active leases and bid status from local Akash provider API.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "cloud-compute"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "Akash on-chain lease records; bid and deployment activity from Cosmos chain.",
+        "verificationMethod": "On-chain lease state on Cosmos Akash mainnet.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "Operates on Cosmos/AKT; cross-chain SKR bridge not verified."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "PLANNED \u2014 adapter runtime not yet implemented."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "Akash operates on Cosmos; cross-chain SKR interface not specified."
+      }
+    },
+    {
+      "id": "deproof-adapter-filecoin-v1",
+      "name": "Filecoin (Storage Provider)",
+      "description": "Decentralised storage network. Storage providers seal and store data sectors using Proof of Replication (PoRep) and Proof of Spacetime (PoSt). Requires extreme hardware.",
+      "status": "UNSUPPORTED",
+      "blockedReason": "Requires 32+ GiB RAM and 2+ TiB NVMe for 32 GiB sector sealing. Not feasible on a standard DePIN node.",
+      "chain": "filecoin-mainnet",
+      "officialDocsUrl": "https://docs.filecoin.io/",
+      "licenseType": "MIT",
+      "installMethod": "binary",
+      "pinnedArtifactDigest": "",
+      "supportedOS": [
+        "ubuntu-22.04",
+        "ubuntu-20.04"
+      ],
+      "supportedArch": [
+        "amd64"
+      ],
+      "requiredHardware": {
+        "minRamMiB": 32768,
+        "minDiskMiB": 2097152,
+        "minCpuCores": 8,
+        "requiresGpu": true,
+        "requiresSpecialHardware": "32+ GiB RAM; 2+ TiB NVMe SSD array; GPU for sector sealing acceleration",
+        "openPorts": [
+          1234,
+          2345
+        ]
+      },
+      "requiredAccounts": [
+        "filecoin-wallet"
+      ],
+      "requiredCredentials": [
+        "filecoin-node-key"
+      ],
+      "requiredScopes": [
+        "MANAGE_ADAPTER"
+      ],
+      "operations": [
+        {
+          "id": "filecoin-sp-observe",
+          "description": "Observe storage provider sector state and raw power from local Lotus node API.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "storage"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "Filecoin PoRep/PoSt zk-SNARK proofs submitted on-chain.",
+        "verificationMethod": "On-chain zk-SNARK verification on Filecoin mainnet.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "Non-Solana chain; extreme hardware requirements."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "UNSUPPORTED \u2014 extreme hardware; non-Solana chain."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "Filecoin operates on its own chain; cross-chain SKR interface not verified."
+      }
+    },
+    {
+      "id": "deproof-adapter-weatherxm-v1",
+      "name": "WeatherXM (Hyperlocal Weather Data)",
+      "description": "Hyperlocal weather data network. Contributors operate personal weather stations reporting temperature, humidity, wind and precipitation. Requires WXM-compatible hardware.",
+      "status": "UNSUPPORTED",
+      "blockedReason": "Requires a WeatherXM-compatible weather station (WS1001 or WB3000). Cannot qualify without physical sensor hardware.",
+      "chain": "ethereum-mainnet",
+      "officialDocsUrl": "https://weatherxm.com/",
+      "licenseType": "Proprietary",
+      "installMethod": "hardware-device",
+      "pinnedArtifactDigest": "",
+      "supportedOS": [
+        "ubuntu-22.04"
+      ],
+      "supportedArch": [
+        "arm64"
+      ],
+      "requiredHardware": {
+        "minRamMiB": 256,
+        "minDiskMiB": 1024,
+        "minCpuCores": 1,
+        "requiresGpu": false,
+        "requiresSpecialHardware": "WeatherXM WS1001 or WB3000 weather station",
+        "openPorts": []
+      },
+      "requiredAccounts": [
+        "weatherxm-account",
+        "ethereum-wallet"
+      ],
+      "requiredCredentials": [
+        "weatherxm-station-key"
+      ],
+      "requiredScopes": [
+        "MANAGE_ADAPTER"
+      ],
+      "operations": [
+        {
+          "id": "wxm-station-observe",
+          "description": "Observe weather station sensor readings and quality score from WeatherXM API.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "environmental-sensor"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "WeatherXM oracle validates station sensor data quality and uptime.",
+        "verificationMethod": "WeatherXM data quality oracle on Ethereum.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "Requires physical weather sensor. Operates on Ethereum."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "UNSUPPORTED \u2014 weather station hardware required."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "WeatherXM operates on Ethereum; cross-chain SKR interface not verified."
+      }
+    },
+    {
+      "id": "deproof-adapter-dimo-v1",
+      "name": "DIMO (Vehicle Telematics)",
+      "description": "Vehicle data DePIN on Polygon. Contributors connect OBD-II hardware to their vehicle or use the DIMO mobile app to contribute telematics and location data.",
+      "status": "UNSUPPORTED",
+      "blockedReason": "Requires DIMO-compatible OBD-II hardware dongle paired to a vehicle. Cannot qualify on a server node.",
+      "chain": "polygon-mainnet",
+      "officialDocsUrl": "https://dimo.zone/",
+      "licenseType": "Apache-2.0",
+      "installMethod": "hardware-device",
+      "pinnedArtifactDigest": "",
+      "supportedOS": [],
+      "supportedArch": [],
+      "requiredHardware": {
+        "minRamMiB": 0,
+        "minDiskMiB": 0,
+        "minCpuCores": 0,
+        "requiresGpu": false,
+        "requiresSpecialHardware": "DIMO AutoPi OBD-II hardware dongle + vehicle with OBD-II port",
+        "openPorts": []
+      },
+      "requiredAccounts": [
+        "dimo-account",
+        "polygon-wallet"
+      ],
+      "requiredCredentials": [
+        "dimo-vehicle-token"
+      ],
+      "requiredScopes": [
+        "MANAGE_ADAPTER"
+      ],
+      "operations": [
+        {
+          "id": "dimo-vehicle-observe",
+          "description": "Observe vehicle telematics contribution status from DIMO device API.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "mobility-data"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "DIMO oracle validates vehicle data streams and trip records.",
+        "verificationMethod": "DIMO oracle on Polygon; DID-linked vehicle credential.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "Vehicle/OBD hardware required. Operates on Polygon."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "UNSUPPORTED \u2014 vehicle OBD hardware required."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "DIMO operates on Polygon; cross-chain SKR interface not verified."
+      }
+    },
+    {
+      "id": "deproof-adapter-natix-v1",
+      "name": "Natix Network (Visual / Dashcam Data)",
+      "description": "Privacy-preserving visual data DePIN. Contributors use dashcams or the Natix mobile app to capture anonymised street imagery and traffic data.",
+      "status": "UNSUPPORTED",
+      "blockedReason": "Requires Natix-compatible dashcam or mobile device with camera. Cannot qualify on a server node.",
+      "chain": "polygon-mainnet",
+      "officialDocsUrl": "https://natix.network/",
+      "licenseType": "Proprietary",
+      "installMethod": "hardware-device",
+      "pinnedArtifactDigest": "",
+      "supportedOS": [],
+      "supportedArch": [],
+      "requiredHardware": {
+        "minRamMiB": 0,
+        "minDiskMiB": 0,
+        "minCpuCores": 0,
+        "requiresGpu": false,
+        "requiresSpecialHardware": "Natix-compatible dashcam or mobile device with camera",
+        "openPorts": []
+      },
+      "requiredAccounts": [
+        "natix-account"
+      ],
+      "requiredCredentials": [
+        "natix-device-key"
+      ],
+      "requiredScopes": [
+        "MANAGE_ADAPTER"
+      ],
+      "operations": [
+        {
+          "id": "natix-visual-observe",
+          "description": "Observe visual data contribution status from Natix device API.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "visual-data"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "Natix oracle validates anonymised frame quality and GPS metadata.",
+        "verificationMethod": "Natix oracle network; on-chain contribution record.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "Camera hardware required. Operates on Polygon."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "UNSUPPORTED \u2014 dashcam/camera hardware required."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "Natix operates on Polygon; cross-chain SKR interface not verified."
+      }
+    },
+    {
+      "id": "deproof-adapter-xnet-v1",
+      "name": "XNET (WiFi / CBRS LTE Coverage)",
+      "description": "Telecom DePIN on Solana. Contributors deploy XNET WiFi APs or CBRS LTE small cells to provide wireless coverage. Rewards in XNET token on Solana.",
+      "status": "UNSUPPORTED",
+      "blockedReason": "Requires XNET-certified WiFi AP or CBRS LTE small cell. FCC SAS registration required for CBRS deployment.",
+      "chain": "solana-mainnet",
+      "officialDocsUrl": "https://xnet.company/",
+      "licenseType": "Proprietary",
+      "installMethod": "hardware-device",
+      "pinnedArtifactDigest": "",
+      "supportedOS": [
+        "ubuntu-22.04"
+      ],
+      "supportedArch": [
+        "amd64",
+        "arm64"
+      ],
+      "requiredHardware": {
+        "minRamMiB": 512,
+        "minDiskMiB": 2048,
+        "minCpuCores": 1,
+        "requiresGpu": false,
+        "requiresSpecialHardware": "XNET-certified WiFi AP or CBRS LTE small cell; FCC SAS registration required",
+        "openPorts": [
+          8080,
+          443
+        ]
+      },
+      "requiredAccounts": [
+        "xnet-account",
+        "solana-wallet"
+      ],
+      "requiredCredentials": [
+        "xnet-radio-key"
+      ],
+      "requiredScopes": [
+        "MANAGE_ADAPTER"
+      ],
+      "operations": [
+        {
+          "id": "xnet-coverage-observe",
+          "description": "Observe radio coverage contribution and client association stats from XNET node API.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "wireless-coverage"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "XNET oracle observes radio uptime and coverage challenge results on Solana.",
+        "verificationMethod": "XNET oracle PoC on Solana; FCC SAS coordination data.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "Solana-native. Radio hardware and FCC registration required."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "UNSUPPORTED \u2014 CBRS/WiFi radio hardware required."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "No verified SKR interface for XNET rewards. BLOCKED pending verified protocol."
+      }
+    },
+    {
+      "id": "deproof-adapter-helium-mobile-v1",
+      "name": "Helium Mobile (CBRS 5G Coverage)",
+      "description": "Helium 5G / CBRS small cell coverage on Solana. Contributors deploy certified CBRS small cells providing mobile data coverage. Rewards MOBILE token on Solana.",
+      "status": "UNSUPPORTED",
+      "blockedReason": "Requires Helium-certified CBRS small cell radio hardware. Cannot qualify without physical radio.",
+      "chain": "solana-mainnet",
+      "officialDocsUrl": "https://docs.helium.com/mobile/",
+      "licenseType": "Apache-2.0",
+      "installMethod": "hardware-device",
+      "pinnedArtifactDigest": "",
+      "supportedOS": [
+        "ubuntu-22.04"
+      ],
+      "supportedArch": [
+        "amd64",
+        "arm64"
+      ],
+      "requiredHardware": {
+        "minRamMiB": 1024,
+        "minDiskMiB": 8192,
+        "minCpuCores": 2,
+        "requiresGpu": false,
+        "requiresSpecialHardware": "Helium-certified CBRS small cell (FreedomFi or similar)",
+        "openPorts": [
+          1680,
+          44158,
+          8080
+        ]
+      },
+      "requiredAccounts": [
+        "helium-wallet",
+        "solana-rpc"
+      ],
+      "requiredCredentials": [
+        "helium-mobile-hotspot-key"
+      ],
+      "requiredScopes": [
+        "MANAGE_ADAPTER"
+      ],
+      "operations": [
+        {
+          "id": "helium-mobile-observe",
+          "description": "Observe CBRS small cell uptime and Proof of Coverage challenge results.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "wireless-coverage"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "Helium Mobile PoC oracle; coverage mapping and subscriber data.",
+        "verificationMethod": "Helium Mobile oracle on Solana; PoC signed by oracle keypairs.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "CBRS radio hardware required. Solana-native."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "UNSUPPORTED \u2014 CBRS radio hardware required."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "No verified SKR interface for Helium MOBILE rewards. BLOCKED pending verified protocol."
+      }
+    },
+    {
+      "id": "deproof-adapter-spheron-v1",
+      "name": "Spheron Network (Compute / Storage)",
+      "description": "Decentralised compute and storage DePIN on Ethereum/Arbitrum. Providers supply CPU compute, GPU compute and storage. Software-only CPU compute provider is feasible.",
+      "status": "PLANNED",
+      "chain": "ethereum-mainnet",
+      "officialDocsUrl": "https://spheron.network/",
+      "licenseType": "Apache-2.0",
+      "installMethod": "docker-image",
+      "pinnedArtifactDigest": "",
+      "supportedOS": [
+        "ubuntu-22.04",
+        "ubuntu-24.04"
+      ],
+      "supportedArch": [
+        "amd64"
+      ],
+      "requiredHardware": {
+        "minRamMiB": 2048,
+        "minDiskMiB": 20480,
+        "minCpuCores": 2,
+        "requiresGpu": false,
+        "openPorts": [
+          3000,
+          8080
+        ]
+      },
+      "requiredAccounts": [
+        "spheron-account",
+        "ethereum-wallet"
+      ],
+      "requiredCredentials": [
+        "spheron-provider-key"
+      ],
+      "requiredScopes": [
+        "MANAGE_ADAPTER"
+      ],
+      "operations": [
+        {
+          "id": "spheron-provider-observe",
+          "description": "Observe Spheron provider node active leases and resource allocation.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "cloud-compute"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "Spheron network oracle tracks provider uptime and job completion.",
+        "verificationMethod": "On-chain lease records on Ethereum/Arbitrum.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "Operates on Ethereum/Arbitrum; cross-chain SKR bridge not verified."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "PLANNED \u2014 adapter runtime not yet implemented."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "Spheron operates on Ethereum/Arbitrum; cross-chain SKR interface not verified."
+      }
+    },
+    {
+      "id": "deproof-adapter-syntropy-v1",
+      "name": "Syntropy (Network Path Optimisation)",
+      "description": "Network path optimisation DePIN. Contributors run Syntropy DARP nodes observing and optimising internet routing. Software-only Linux node.",
+      "status": "AVAILABLE",
+      "chain": "ethereum-mainnet",
+      "officialDocsUrl": "https://www.syntropy.network/",
+      "licenseType": "Proprietary",
+      "installMethod": "docker-image",
+      "pinnedArtifactDigest": "",
+      "supportedOS": [
+        "ubuntu-22.04",
+        "ubuntu-24.04",
+        "ubuntu-20.04"
+      ],
+      "supportedArch": [
+        "amd64"
+      ],
+      "requiredHardware": {
+        "minRamMiB": 512,
+        "minDiskMiB": 2048,
+        "minCpuCores": 1,
+        "requiresGpu": false,
+        "openPorts": [
+          10553
+        ]
+      },
+      "requiredAccounts": [
+        "syntropy-account"
+      ],
+      "requiredCredentials": [
+        "syntropy-agent-key"
+      ],
+      "requiredScopes": [
+        "MANAGE_ADAPTER"
+      ],
+      "operations": [
+        {
+          "id": "syntropy-node-observe",
+          "description": "Observe DARP node connectivity and path optimisation events from Syntropy agent API.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "network-optimisation"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "Syntropy oracle tracks path optimisation contribution and uptime.",
+        "verificationMethod": "Syntropy oracle network; on-chain contribution record on Ethereum.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "Software-only node. Operates on Ethereum."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "AVAILABLE (software-only) \u2014 qualification not yet run."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "Syntropy operates on Ethereum; cross-chain SKR interface not verified."
+      }
+    },
+    {
+      "id": "deproof-adapter-pollen-mobile-v1",
+      "name": "Pollen Mobile (5G Coverage Mapping)",
+      "description": "5G coverage DePIN. Contributors deploy Pollen Flowers (base stations) or Bumblebees (mobile coverage mappers) to contribute cellular coverage data. Rewards in PCN token.",
+      "status": "UNSUPPORTED",
+      "blockedReason": "Requires Pollen Flower or Bumblebee radio device. Cannot qualify on a generic server.",
+      "chain": "polygon-mainnet",
+      "officialDocsUrl": "https://www.pollenmobile.io/",
+      "licenseType": "Proprietary",
+      "installMethod": "hardware-device",
+      "pinnedArtifactDigest": "",
+      "supportedOS": [],
+      "supportedArch": [],
+      "requiredHardware": {
+        "minRamMiB": 512,
+        "minDiskMiB": 4096,
+        "minCpuCores": 1,
+        "requiresGpu": false,
+        "requiresSpecialHardware": "Pollen Flower (base station) or Bumblebee (mobile mapper) radio device",
+        "openPorts": []
+      },
+      "requiredAccounts": [
+        "pollen-account",
+        "polygon-wallet"
+      ],
+      "requiredCredentials": [
+        "pollen-device-key"
+      ],
+      "requiredScopes": [
+        "MANAGE_ADAPTER"
+      ],
+      "operations": [
+        {
+          "id": "pollen-coverage-observe",
+          "description": "Observe radio coverage contribution and PoC challenge results from Pollen device API.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "wireless-coverage"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "Pollen oracle verifies radio coverage challenges and device uptime.",
+        "verificationMethod": "Pollen oracle on Polygon; PoC challenge signed by oracle.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "Radio hardware required. Operates on Polygon."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "UNSUPPORTED \u2014 radio hardware required."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "Pollen Mobile operates on Polygon; cross-chain SKR interface not verified."
+      }
+    },
+    {
+      "id": "deproof-adapter-streamr-v1",
+      "name": "Streamr (Real-time Data Transport)",
+      "description": "Decentralised real-time data transport network. Contributors run Streamr Brubeck nodes relaying data streams. Software-only Linux node.",
+      "status": "AVAILABLE",
+      "chain": "ethereum-mainnet",
+      "officialDocsUrl": "https://streamr.network/",
+      "licenseType": "Apache-2.0",
+      "installMethod": "docker-image",
+      "pinnedArtifactDigest": "",
+      "supportedOS": [
+        "ubuntu-22.04",
+        "ubuntu-24.04",
+        "ubuntu-20.04"
+      ],
+      "supportedArch": [
+        "amd64",
+        "arm64"
+      ],
+      "requiredHardware": {
+        "minRamMiB": 512,
+        "minDiskMiB": 2048,
+        "minCpuCores": 1,
+        "requiresGpu": false,
+        "openPorts": [
+          32200
+        ]
+      },
+      "requiredAccounts": [
+        "streamr-account",
+        "ethereum-wallet"
+      ],
+      "requiredCredentials": [
+        "streamr-node-key"
+      ],
+      "requiredScopes": [
+        "MANAGE_ADAPTER"
+      ],
+      "operations": [
+        {
+          "id": "streamr-relay-observe",
+          "description": "Observe Brubeck node relay activity and DATA token rewards from local node API.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "data-relay"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "Streamr network inspector tracks relay message count and node uptime.",
+        "verificationMethod": "Streamr oracle on Ethereum; inspector signed epoch receipts.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "Software-only. Operates on Ethereum."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "AVAILABLE (software-only) \u2014 qualification not yet run."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "Streamr operates on Ethereum; cross-chain SKR interface not verified."
+      }
+    },
+    {
+      "id": "deproof-adapter-pyth-publisher-v1",
+      "name": "Pyth Network (Price Oracle Publisher)",
+      "description": "Solana-native price oracle. Permissioned publishers push price data for financial assets on Solana. Publisher access requires Pyth governance approval; not open to arbitrary nodes.",
+      "status": "PLANNED",
+      "chain": "solana-mainnet",
+      "officialDocsUrl": "https://docs.pyth.network/",
+      "licenseType": "Apache-2.0",
+      "installMethod": "binary",
+      "pinnedArtifactDigest": "",
+      "supportedOS": [
+        "ubuntu-22.04",
+        "ubuntu-24.04"
+      ],
+      "supportedArch": [
+        "amd64"
+      ],
+      "requiredHardware": {
+        "minRamMiB": 2048,
+        "minDiskMiB": 10240,
+        "minCpuCores": 2,
+        "requiresGpu": false,
+        "openPorts": [
+          8899,
+          8900
+        ]
+      },
+      "requiredAccounts": [
+        "pyth-publisher-account",
+        "solana-wallet"
+      ],
+      "requiredCredentials": [
+        "pyth-publisher-key",
+        "price-data-feed"
+      ],
+      "requiredScopes": [
+        "MANAGE_ADAPTER"
+      ],
+      "operations": [
+        {
+          "id": "pyth-publish-observe",
+          "description": "Observe Pyth publisher price submission status and confidence intervals.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "price-data"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "Pyth on-chain aggregate accounts on Solana; publisher contribution tracked per price feed.",
+        "verificationMethod": "On-chain Pyth aggregate; Wormhole cross-chain validation.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "Solana-native. Permissioned publisher access required from Pyth governance."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "PLANNED \u2014 permissioned publisher access and adapter runtime not yet implemented."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "No verified SKR interface for Pyth publisher rewards. BLOCKED pending verified protocol."
+      }
+    },
+    {
+      "id": "deproof-adapter-silencio-v1",
+      "name": "Silencio (Noise Pollution Mapping)",
+      "description": "Environmental noise pollution DePIN. Contributors measure ambient noise via the Silencio smartphone app. Mobile-only; not applicable to server nodes.",
+      "status": "UNSUPPORTED",
+      "blockedReason": "Requires a smartphone with microphone running the Silencio mobile app. Not applicable to server nodes.",
+      "chain": "ethereum-mainnet",
+      "officialDocsUrl": "https://silencio.network/",
+      "licenseType": "Proprietary",
+      "installMethod": "mobile-app",
+      "pinnedArtifactDigest": "",
+      "supportedOS": [],
+      "supportedArch": [],
+      "requiredHardware": {
+        "minRamMiB": 0,
+        "minDiskMiB": 0,
+        "minCpuCores": 0,
+        "requiresGpu": false,
+        "requiresSpecialHardware": "Smartphone with microphone and GPS running Silencio app",
+        "openPorts": []
+      },
+      "requiredAccounts": [
+        "silencio-account"
+      ],
+      "requiredCredentials": [
+        "silencio-app-session"
+      ],
+      "requiredScopes": [
+        "MANAGE_ADAPTER"
+      ],
+      "operations": [
+        {
+          "id": "silencio-noise-observe",
+          "description": "Observe noise sample contribution status from Silencio app API.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "environmental-sensor"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "Silencio oracle validates noise sample quality and GPS location.",
+        "verificationMethod": "Silencio oracle network on Ethereum.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "Mobile-only. Operates on Ethereum."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "UNSUPPORTED \u2014 smartphone/microphone hardware required."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "Silencio operates on Ethereum; cross-chain SKR interface not verified."
+      }
+    },
+    {
+      "id": "deproof-adapter-inferix-v1",
+      "name": "Inferix (GPU Rendering Network)",
+      "description": "Decentralised GPU rendering DePIN. Contributors run Inferix worker nodes processing 3D rendering jobs. Requires high-performance NVIDIA GPU.",
+      "status": "UNSUPPORTED",
+      "blockedReason": "Requires NVIDIA RTX 2080 or better. Cannot qualify on a CPU-only node.",
+      "chain": "ethereum-mainnet",
+      "officialDocsUrl": "https://inferix.io/",
+      "licenseType": "Proprietary",
+      "installMethod": "docker-image",
+      "pinnedArtifactDigest": "",
+      "supportedOS": [
+        "ubuntu-22.04"
+      ],
+      "supportedArch": [
+        "amd64"
+      ],
+      "requiredHardware": {
+        "minRamMiB": 8192,
+        "minDiskMiB": 20480,
+        "minCpuCores": 4,
+        "requiresGpu": true,
+        "requiresSpecialHardware": "NVIDIA RTX 2080 or better",
+        "openPorts": [
+          8080
+        ]
+      },
+      "requiredAccounts": [
+        "inferix-account"
+      ],
+      "requiredCredentials": [
+        "inferix-worker-key"
+      ],
+      "requiredScopes": [
+        "MANAGE_ADAPTER"
+      ],
+      "operations": [
+        {
+          "id": "inferix-render-observe",
+          "description": "Observe rendering job completion and worker performance from Inferix worker API.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "gpu-rendering"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "Inferix network oracle verifies render output quality and job completion.",
+        "verificationMethod": "Inferix oracle on Ethereum; render verification by oracle nodes.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "GPU hardware required. Operates on Ethereum."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "UNSUPPORTED \u2014 GPU hardware required."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "Inferix operates on Ethereum; cross-chain SKR interface not verified."
+      }
+    },
+    {
+      "id": "deproof-adapter-0g-storage-v1",
+      "name": "0G Labs (AI Data Storage & Availability)",
+      "description": "AI-focused decentralised data storage and availability network. Contributors run storage nodes supplying data availability for AI training datasets.",
+      "status": "PLANNED",
+      "chain": "0g-chain",
+      "officialDocsUrl": "https://0g.ai/",
+      "licenseType": "Apache-2.0",
+      "installMethod": "binary",
+      "pinnedArtifactDigest": "",
+      "supportedOS": [
+        "ubuntu-22.04",
+        "ubuntu-24.04"
+      ],
+      "supportedArch": [
+        "amd64"
+      ],
+      "requiredHardware": {
+        "minRamMiB": 4096,
+        "minDiskMiB": 102400,
+        "minCpuCores": 4,
+        "requiresGpu": false,
+        "openPorts": [
+          8080,
+          26656,
+          26657
+        ]
+      },
+      "requiredAccounts": [
+        "0g-wallet"
+      ],
+      "requiredCredentials": [
+        "0g-node-key"
+      ],
+      "requiredScopes": [
+        "MANAGE_ADAPTER"
+      ],
+      "operations": [
+        {
+          "id": "0g-storage-observe",
+          "description": "Observe 0G storage node data availability commitment and epoch status.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "storage"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "0G data availability oracle tracks storage node commitments and availability proofs.",
+        "verificationMethod": "On-chain data availability proof on 0G chain.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "Operates on 0G proprietary chain; cross-chain SKR bridge not verified."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "PLANNED \u2014 adapter runtime not yet implemented."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "0G Labs operates on its own chain; cross-chain SKR interface not specified."
+      }
+    },
+    {
+      "id": "deproof-adapter-privasea-v1",
+      "name": "Privasea (FHE AI Compute)",
+      "description": "Fully Homomorphic Encryption (FHE) AI compute DePIN. Contributors run ImHuman FHE worker nodes for private AI inference. Compute-intensive; no GPU required but demands high CPU/RAM.",
+      "status": "PLANNED",
+      "chain": "ethereum-mainnet",
+      "officialDocsUrl": "https://privasea.ai/",
+      "licenseType": "Proprietary",
+      "installMethod": "docker-image",
+      "pinnedArtifactDigest": "",
+      "supportedOS": [
+        "ubuntu-22.04"
+      ],
+      "supportedArch": [
+        "amd64"
+      ],
+      "requiredHardware": {
+        "minRamMiB": 8192,
+        "minDiskMiB": 20480,
+        "minCpuCores": 8,
+        "requiresGpu": false,
+        "openPorts": [
+          8080
+        ]
+      },
+      "requiredAccounts": [
+        "privasea-account",
+        "ethereum-wallet"
+      ],
+      "requiredCredentials": [
+        "privasea-worker-key"
+      ],
+      "requiredScopes": [
+        "MANAGE_ADAPTER"
+      ],
+      "operations": [
+        {
+          "id": "privasea-fhe-observe",
+          "description": "Observe FHE worker node job completion and compute contribution metrics.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "fhe-compute"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "Privasea oracle verifies FHE job completion and compute contribution.",
+        "verificationMethod": "Privasea oracle on Ethereum; FHE proof verification.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "FHE compute-intensive. Operates on Ethereum."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "PLANNED \u2014 adapter runtime not yet implemented."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "Privasea operates on Ethereum; cross-chain SKR interface not verified."
+      }
+    },
+    {
+      "id": "deproof-adapter-dephy-v1",
+      "name": "DePHY (Open IoT Hardware Protocol)",
+      "description": "Open-source DePIN hardware protocol enabling IoT devices to join DePIN networks. Contributors register physical IoT devices on DePHY Device Hub on Solana.",
+      "status": "UNSUPPORTED",
+      "blockedReason": "Requires DePHY-compatible physical IoT hardware device. Cannot qualify on a software-only node.",
+      "chain": "solana-mainnet",
+      "officialDocsUrl": "https://dephy.io/",
+      "licenseType": "Apache-2.0",
+      "installMethod": "hardware-device",
+      "pinnedArtifactDigest": "",
+      "supportedOS": [
+        "ubuntu-22.04"
+      ],
+      "supportedArch": [
+        "arm64"
+      ],
+      "requiredHardware": {
+        "minRamMiB": 128,
+        "minDiskMiB": 512,
+        "minCpuCores": 1,
+        "requiresGpu": false,
+        "requiresSpecialHardware": "DePHY-compatible IoT hardware device with DePHY firmware",
+        "openPorts": []
+      },
+      "requiredAccounts": [
+        "dephy-device-did",
+        "solana-wallet"
+      ],
+      "requiredCredentials": [
+        "dephy-device-key"
+      ],
+      "requiredScopes": [
+        "MANAGE_ADAPTER"
+      ],
+      "operations": [
+        {
+          "id": "dephy-iot-observe",
+          "description": "Observe DePHY device telemetry and on-chain device DID status from DePHY Device Hub.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "iot-telemetry"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "DePHY Device Hub validates device telemetry and on-chain DID claims on Solana.",
+        "verificationMethod": "DePHY oracle on Solana; device DID attestation.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "IoT hardware required. Solana-native."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "UNSUPPORTED \u2014 IoT hardware required."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "No verified SKR interface for DePHY device rewards. BLOCKED pending verified protocol."
+      }
+    },
+    {
+      "id": "deproof-adapter-nosana-gpu-v1",
+      "name": "Nosana (CI/GPU Jobs)",
+      "description": "Solana-native GPU compute and CI pipeline DePIN. Contributors run Nosana nodes supplying GPU compute for CI/CD and AI inference jobs. Rewards in NOS token on Solana.",
+      "status": "PLANNED",
+      "chain": "solana-mainnet",
+      "officialDocsUrl": "https://nosana.io/",
+      "licenseType": "Apache-2.0",
+      "installMethod": "docker-image",
+      "pinnedArtifactDigest": "",
+      "supportedOS": [
+        "ubuntu-22.04",
+        "ubuntu-24.04"
+      ],
+      "supportedArch": [
+        "amd64"
+      ],
+      "requiredHardware": {
+        "minRamMiB": 4096,
+        "minDiskMiB": 20480,
+        "minCpuCores": 4,
+        "requiresGpu": true,
+        "requiresSpecialHardware": "CUDA-capable NVIDIA GPU recommended for GPU job market participation",
+        "openPorts": [
+          8080
+        ]
+      },
+      "requiredAccounts": [
+        "nosana-account",
+        "solana-wallet"
+      ],
+      "requiredCredentials": [
+        "nosana-node-key"
+      ],
+      "requiredScopes": [
+        "MANAGE_ADAPTER"
+      ],
+      "operations": [
+        {
+          "id": "nosana-job-observe",
+          "description": "Observe Nosana node job queue status and completed CI/GPU job receipts.",
+          "requiredScope": "MANAGE_ADAPTER",
+          "contributionKind": "gpu-compute"
+        }
+      ],
+      "contributionMeasurement": {
+        "method": "Nosana on-chain job market tracks job completion and NOS staking/rewards.",
+        "verificationMethod": "On-chain job completion records on Solana mainnet.",
+        "trustLevel": "PROVIDER_ACKNOWLEDGED_CONTRIBUTION",
+        "notes": "Solana-native. GPU recommended for GPU job market."
+      },
+      "qualificationStatus": {
+        "state": "NOT_RUN",
+        "lastChecked": "2026-10-07T00:00:00Z",
+        "gateIds": [],
+        "notes": "PLANNED \u2014 adapter runtime not yet implemented. GPU required for GPU job tier."
+      },
+      "skrIntegration": {
+        "status": "BLOCKED",
+        "reason": "No verified SKR interface for Nosana NOS rewards. BLOCKED pending verified protocol."
+      }
+    }
+  ]
+}

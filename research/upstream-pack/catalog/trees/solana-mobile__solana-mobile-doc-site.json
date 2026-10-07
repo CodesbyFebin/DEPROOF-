@@ -1,0 +1,2905 @@
+{
+  "repository": "solana-mobile/solana-mobile-doc-site",
+  "tree_sha": "c175cfcd02a8e0a980220b0b23ee968b631e5253",
+  "truncated": false,
+  "entries": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26f397a77082990cdbc33f99a72031324bcc2ea6",
+      "size": 249,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/26f397a77082990cdbc33f99a72031324bcc2ea6"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbef4bed6fb490373e5f7b40caf0beb1f08d7eaa",
+      "size": 854,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/bbef4bed6fb490373e5f7b40caf0beb1f08d7eaa",
+      "error": "SyntaxError: Unexpected token '#', \"# solana-m\"... is not valid JSON"
+    },
+    {
+      "path": "babel.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e00595dae7d69190e2a9d07202616c2ea932e487",
+      "size": 89,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/e00595dae7d69190e2a9d07202616c2ea932e487"
+    },
+    {
+      "path": "blog",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "20a746442d9b55c1a35fbe34d64df250a9efc060",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/20a746442d9b55c1a35fbe34d64df250a9efc060"
+    },
+    {
+      "path": "blog/_drafts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "611a02a92fde6b03893186b759aec4229cf2a21a",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/611a02a92fde6b03893186b759aec4229cf2a21a"
+    },
+    {
+      "path": "blog/_drafts/rewarding-saga-users.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40408e3d9beec777286e7ae81303feecc69935d6",
+      "size": 6785,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/40408e3d9beec777286e7ae81303feecc69935d6"
+    },
+    {
+      "path": "blog/ios-wallet-signing.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5c2a1905f48baff5d51eef861e38ae764c662d4",
+      "size": 17645,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/d5c2a1905f48baff5d51eef861e38ae764c662d4"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e6a5a06d3c3e0b029d6c8cf7466d3fd58b338a36",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/e6a5a06d3c3e0b029d6c8cf7466d3fd58b338a36"
+    },
+    {
+      "path": "docs/additional-sdks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "32a0628889cd7458c611c60c727f578d232b9ad5",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/32a0628889cd7458c611c60c727f578d232b9ad5"
+    },
+    {
+      "path": "docs/additional-sdks/dapp_store_intro.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d6a873df2bcb12c3bb9d1adf425ba3ad9c35ff4",
+      "size": 760,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/3d6a873df2bcb12c3bb9d1adf425ba3ad9c35ff4"
+    },
+    {
+      "path": "docs/additional-sdks/seedvault_intro.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45adec4aa7e071e24b2cac449ea0bde39e19de6c",
+      "size": 1050,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/45adec4aa7e071e24b2cac449ea0bde39e19de6c"
+    },
+    {
+      "path": "docs/android-native",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "db26271431c31a920fc75900e91353a71455f8b7",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/db26271431c31a920fc75900e91353a71455f8b7"
+    },
+    {
+      "path": "docs/android-native/building-json-rpc-requests.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ce8bfbe30ffcf4cc18e63d4e8dc442dc52a12de",
+      "size": 5559,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/7ce8bfbe30ffcf4cc18e63d4e8dc442dc52a12de"
+    },
+    {
+      "path": "docs/android-native/building_transactions.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91a8d9ccca3911237b82e41d47f398aecde6029f",
+      "size": 3267,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/91a8d9ccca3911237b82e41d47f398aecde6029f"
+    },
+    {
+      "path": "docs/android-native/overview.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02267b80a279e1cd9fcf2814c3bcea9c531127af",
+      "size": 3448,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/02267b80a279e1cd9fcf2814c3bcea9c531127af"
+    },
+    {
+      "path": "docs/android-native/quickstart.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bcce627febe32bf221c45f6ca525ddaf2f0727fb",
+      "size": 3831,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/bcce627febe32bf221c45f6ca525ddaf2f0727fb"
+    },
+    {
+      "path": "docs/android-native/rpc-requests.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2aa14bceaf14961030a4949ec5e83eddca08cfef",
+      "size": 4072,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/2aa14bceaf14961030a4949ec5e83eddca08cfef"
+    },
+    {
+      "path": "docs/android-native/sending-sol.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "204706caca578417fd34241cf7d566043b499661",
+      "size": 5650,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/204706caca578417fd34241cf7d566043b499661"
+    },
+    {
+      "path": "docs/android-native/setup.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a5d558f26bc50aa48e64ae177a5f292b7605aa8",
+      "size": 3240,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/5a5d558f26bc50aa48e64ae177a5f292b7605aa8"
+    },
+    {
+      "path": "docs/android-native/using-anchor-programs.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a4f2a82f0f396a7988d3345f69d0314634b91cd",
+      "size": 7592,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/2a4f2a82f0f396a7988d3345f69d0314634b91cd"
+    },
+    {
+      "path": "docs/android-native/using_mobile_wallet_adapter.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9519e38d217ac6c9e4e1a60ce81bd23caeca6159",
+      "size": 14649,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/9519e38d217ac6c9e4e1a60ce81bd23caeca6159"
+    },
+    {
+      "path": "docs/dapp-publishing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "10fbcd80e5d80152902b7bd3a1732026b61df909",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/10fbcd80e5d80152902b7bd3a1732026b61df909"
+    },
+    {
+      "path": "docs/dapp-publishing/_snippets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "eeaf289c8d875a3cbb376f71b79e1b50d77b89a2",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/eeaf289c8d875a3cbb376f71b79e1b50d77b89a2"
+    },
+    {
+      "path": "docs/dapp-publishing/_snippets/buildSignedApkExpo.mdx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae8b2622397c45ef0f2810f2ee2c73aa17f738b9",
+      "size": 1475,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/ae8b2622397c45ef0f2810f2ee2c73aa17f738b9"
+    },
+    {
+      "path": "docs/dapp-publishing/_snippets/buildSignedApkNativeAndroid.mdx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1894a6ce9ec0e01b41780c5d6b33b901d43ce28",
+      "size": 1608,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/f1894a6ce9ec0e01b41780c5d6b33b901d43ce28"
+    },
+    {
+      "path": "docs/dapp-publishing/agreement.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3198e54e7f9a57fea38c02e16be5df8c90556aba",
+      "size": 74618,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/3198e54e7f9a57fea38c02e16be5df8c90556aba"
+    },
+    {
+      "path": "docs/dapp-publishing/app-nft.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a915e548150fbf9fde5e8a8442f103a749f792ab",
+      "size": 2521,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/a915e548150fbf9fde5e8a8442f103a749f792ab"
+    },
+    {
+      "path": "docs/dapp-publishing/building-expo-apk.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dbceceb5f78d70369ce6bbad05753668da161715",
+      "size": 3305,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/dbceceb5f78d70369ce6bbad05753668da161715"
+    },
+    {
+      "path": "docs/dapp-publishing/checklist.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65c68836db25cad6922ec1ce15fec7ae268b4a1a",
+      "size": 2481,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/65c68836db25cad6922ec1ce15fec7ae268b4a1a"
+    },
+    {
+      "path": "docs/dapp-publishing/faq.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d570fbdeb4fdea1f863d18ee769f281c51bca92",
+      "size": 2777,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/4d570fbdeb4fdea1f863d18ee769f281c51bca92"
+    },
+    {
+      "path": "docs/dapp-publishing/intro.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a032bbfc274c66509226583bd978bb756888ace3",
+      "size": 4971,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/a032bbfc274c66509226583bd978bb756888ace3"
+    },
+    {
+      "path": "docs/dapp-publishing/link-to-dapp-listing-page.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60e53d13b88166f4248444dcd9717d25fe756a5a",
+      "size": 2294,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/60e53d13b88166f4248444dcd9717d25fe756a5a"
+    },
+    {
+      "path": "docs/dapp-publishing/listing-page-guidelines.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53ddb7281b4542efe73083312bc91a6bc0b78b11",
+      "size": 2473,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/53ddb7281b4542efe73083312bc91a6bc0b78b11"
+    },
+    {
+      "path": "docs/dapp-publishing/overview.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46a9cacc865f17f8830028847ba7c434346d46a2",
+      "size": 2002,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/46a9cacc865f17f8830028847ba7c434346d46a2"
+    },
+    {
+      "path": "docs/dapp-publishing/prepare.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f7647fb5ed650b0b6cfe149b40f2d4192051916",
+      "size": 6224,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/2f7647fb5ed650b0b6cfe149b40f2d4192051916"
+    },
+    {
+      "path": "docs/dapp-publishing/privacy-policy.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fd06b7a517014ca4930414dde5b05518bd5b989",
+      "size": 48834,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/9fd06b7a517014ca4930414dde5b05518bd5b989"
+    },
+    {
+      "path": "docs/dapp-publishing/publisher-policy.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "399dfda2170c841d19adb0e896b055127b1c991d",
+      "size": 10197,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/399dfda2170c841d19adb0e896b055127b1c991d"
+    },
+    {
+      "path": "docs/dapp-publishing/publishing-a-pwa.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a33e24e63df3a5e92c09f70c5b19a2b141158780",
+      "size": 8608,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/a33e24e63df3a5e92c09f70c5b19a2b141158780"
+    },
+    {
+      "path": "docs/dapp-publishing/publishing-from-google-play.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "246f8619f2239ac4ded4b822ba3c5c802d7e3115",
+      "size": 2312,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/246f8619f2239ac4ded4b822ba3c5c802d7e3115"
+    },
+    {
+      "path": "docs/dapp-publishing/publishing-updates.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30f1da75b21f57c628f03fb3d3cf0e0b9ff6b74b",
+      "size": 2234,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/30f1da75b21f57c628f03fb3d3cf0e0b9ff6b74b"
+    },
+    {
+      "path": "docs/dapp-publishing/publishing_releases.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7be41be6e6908c5ce0112835f74829330ba70d3e",
+      "size": 1658,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/7be41be6e6908c5ce0112835f74829330ba70d3e"
+    },
+    {
+      "path": "docs/dapp-publishing/qanda.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba7d4e22b0e756af2b8580f5fd74aa8a75b1e137",
+      "size": 1868,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/ba7d4e22b0e756af2b8580f5fd74aa8a75b1e137"
+    },
+    {
+      "path": "docs/dapp-publishing/setup.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3423a1bcc8db6df3361fc7fb66eba51d231d7b63",
+      "size": 3636,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/3423a1bcc8db6df3361fc7fb66eba51d231d7b63"
+    },
+    {
+      "path": "docs/dapp-publishing/submit-an-update.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81830650297536b3d37041d8c7b8238a4532bbf3",
+      "size": 2153,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/81830650297536b3d37041d8c7b8238a4532bbf3"
+    },
+    {
+      "path": "docs/dapp-publishing/submit-new-app.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dcf9fc8fcef72da991ed6150d0d7ab66c8004b7c",
+      "size": 3565,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/dcf9fc8fcef72da991ed6150d0d7ab66c8004b7c"
+    },
+    {
+      "path": "docs/dapp-publishing/submit.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c99ed7cf4ac84f359def912ca0241e5d07ce1b71",
+      "size": 2767,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/c99ed7cf4ac84f359def912ca0241e5d07ce1b71"
+    },
+    {
+      "path": "docs/dapp-publishing/support.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10e13635a928b836912d8f0a0f92993c0c3c463a",
+      "size": 126,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/10e13635a928b836912d8f0a0f92993c0c3c463a"
+    },
+    {
+      "path": "docs/dapp-publishing/tou.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9786e18d78dbfaef3ba4821660bc22020f044a5",
+      "size": 72502,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/d9786e18d78dbfaef3ba4821660bc22020f044a5"
+    },
+    {
+      "path": "docs/developers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d1dc7f3c2a8f48b7f335083f76a296e3d385e2d3",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/d1dc7f3c2a8f48b7f335083f76a296e3d385e2d3"
+    },
+    {
+      "path": "docs/developers/ai-toolkit.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b805ecb893c37b7cc2c4f6da0dd615dcb79acb6",
+      "size": 1847,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/3b805ecb893c37b7cc2c4f6da0dd615dcb79acb6"
+    },
+    {
+      "path": "docs/developers/community.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71cb4a242c5811119203c7ab5fbcd25aefeb827e",
+      "size": 421,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/71cb4a242c5811119203c7ab5fbcd25aefeb827e"
+    },
+    {
+      "path": "docs/developers/development-setup.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0b54f9822532c9d1c34a3421923179289acaedf",
+      "size": 3735,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/b0b54f9822532c9d1c34a3421923179289acaedf"
+    },
+    {
+      "path": "docs/developers/mobile-development-frameworks.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d32a22b7568e979e49219de053085ed48d9e2a8",
+      "size": 2611,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/9d32a22b7568e979e49219de053085ed48d9e2a8"
+    },
+    {
+      "path": "docs/developers/mobile-scaffold-apps.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "docs/developers/mobile-wallet-adapter-deep-dive.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60f830e869efe6ccfbcafc7e30f3fc25ddba2c67",
+      "size": 3809,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/60f830e869efe6ccfbcafc7e30f3fc25ddba2c67",
+      "error": "SyntaxError: Unexpected token '#', \"# Mobile d\"... is not valid JSON"
+    },
+    {
+      "path": "docs/developers/mobile-wallet-adapter-web.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc3fa5a384b5d2f49a1371c4008cfc327e9edcda",
+      "size": 4128,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/bc3fa5a384b5d2f49a1371c4008cfc327e9edcda",
+      "error": "SyntaxError: Unexpected token '#', \"# Mobile W\"... is not valid JSON"
+    },
+    {
+      "path": "docs/developers/mobile-wallet-adapter.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a98b8d4373e6f6a27fbfca0664cd93d2a4f0a57e",
+      "size": 2559,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/a98b8d4373e6f6a27fbfca0664cd93d2a4f0a57e",
+      "error": "SyntaxError: Unexpected token '#', \"# Mobile W\"... is not valid JSON"
+    },
+    {
+      "path": "docs/developers/overview.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92875d63a865c924c409ca10658340875c958d9d",
+      "size": 4525,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/92875d63a865c924c409ca10658340875c958d9d"
+    },
+    {
+      "path": "docs/developers/seed-vault.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "453efbc4d1e9c3528a29c85044175b8f4d87cc4c",
+      "size": 1192,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/453efbc4d1e9c3528a29c85044175b8f4d87cc4c"
+    },
+    {
+      "path": "docs/flutter",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0339d48adc7dd14c5b87c84586fb8783ca4f79d4",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/0339d48adc7dd14c5b87c84586fb8783ca4f79d4"
+    },
+    {
+      "path": "docs/flutter/overview.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "656ec00c67f4d047941fa723368946b63c9a8a22",
+      "size": 2279,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/656ec00c67f4d047941fa723368946b63c9a8a22"
+    },
+    {
+      "path": "docs/getting-started",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bea6dd4ff5c8b4951aefaab49d3a32c8f8f45fce",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/bea6dd4ff5c8b4951aefaab49d3a32c8f8f45fce"
+    },
+    {
+      "path": "docs/getting-started/chapter2-preorder-tokens.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91213efc2d105c70b751d9f150fa4986928eac22",
+      "size": 4897,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/91213efc2d105c70b751d9f150fa4986928eac22"
+    },
+    {
+      "path": "docs/getting-started/development-setup.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e693f890b6fd877251225638533162aca2565338",
+      "size": 5564,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/e693f890b6fd877251225638533162aca2565338"
+    },
+    {
+      "path": "docs/getting-started/intro.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d22406153d0db82e3633ec42fd948ff92e1d543d",
+      "size": 3752,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/d22406153d0db82e3633ec42fd948ff92e1d543d"
+    },
+    {
+      "path": "docs/getting-started/introduction-to-solana.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b12a7a7b45dd5ad5c6349ef096882bc46d2bff3a",
+      "size": 1295,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/b12a7a7b45dd5ad5c6349ef096882bc46d2bff3a"
+    },
+    {
+      "path": "docs/getting-started/mobile-dapp-architecture.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60f830e869efe6ccfbcafc7e30f3fc25ddba2c67",
+      "size": 3809,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/60f830e869efe6ccfbcafc7e30f3fc25ddba2c67"
+    },
+    {
+      "path": "docs/getting-started/overview.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20fa87be08315ea2c44516d9780057696054fef6",
+      "size": 6579,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/20fa87be08315ea2c44516d9780057696054fef6"
+    },
+    {
+      "path": "docs/getting-started/saga-genesis-token.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dcdd6e29098a978cce90aaf8452ea210d3772f99",
+      "size": 5932,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/dcdd6e29098a978cce90aaf8452ea210d3772f99"
+    },
+    {
+      "path": "docs/getting-started/web3-and-mobile.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e51e06153a92aee21d7cebbd5d8152fdedea876",
+      "size": 2203,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/0e51e06153a92aee21d7cebbd5d8152fdedea876"
+    },
+    {
+      "path": "docs/marketing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e97a50d8bdda8d5ccf61f56fb66eb086f049368b",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/e97a50d8bdda8d5ccf61f56fb66eb086f049368b"
+    },
+    {
+      "path": "docs/marketing/_legacy-engaging-seeker-users copy.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36bfc823238141e8abaa1b4305e72dc4e716c150",
+      "size": 4672,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/36bfc823238141e8abaa1b4305e72dc4e716c150"
+    },
+    {
+      "path": "docs/marketing/comarketing-guidelines.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9edd3c2515219a0c7927550cab4e4d471cd353b0",
+      "size": 2072,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/9edd3c2515219a0c7927550cab4e4d471cd353b0"
+    },
+    {
+      "path": "docs/marketing/engaging-saga-users.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "198280ae112d30c3fc9e6d99b457b18768929dbb",
+      "size": 6393,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/198280ae112d30c3fc9e6d99b457b18768929dbb"
+    },
+    {
+      "path": "docs/marketing/engaging-seeker-users.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d14d2e5fa0b497c0d86eecfd9371b71ade643324",
+      "size": 8179,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/d14d2e5fa0b497c0d86eecfd9371b71ade643324"
+    },
+    {
+      "path": "docs/marketing/faq.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85d3523bafe689a22df6960ac0cc12e3ac26dbe9",
+      "size": 2608,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/85d3523bafe689a22df6960ac0cc12e3ac26dbe9"
+    },
+    {
+      "path": "docs/marketing/overview.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55127b1b1557ea267ba6068abe81743e9c6c0fe3",
+      "size": 2130,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/55127b1b1557ea267ba6068abe81743e9c6c0fe3"
+    },
+    {
+      "path": "docs/marketing/support.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45e15f873dc1ed4760ad93efe5d9ecae95a859f3",
+      "size": 412,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/45e15f873dc1ed4760ad93efe5d9ecae95a859f3"
+    },
+    {
+      "path": "docs/mobile-wallet-adapter",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c12c6efdfc1e8ecebc18a2c06236c67d1b411b99",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/c12c6efdfc1e8ecebc18a2c06236c67d1b411b99"
+    },
+    {
+      "path": "docs/mobile-wallet-adapter/diagrams.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24555a6688313ab41a4a691b19eb841fb70a9313",
+      "size": 3789,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/24555a6688313ab41a4a691b19eb841fb70a9313",
+      "error": "SyntaxError: Unexpected token '#', \"# Diagrams\"... is not valid JSON"
+    },
+    {
+      "path": "docs/mobile-wallet-adapter/migrating-to-wallet-standard.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05cfc44a95f83eae9035a526fcd47758a1d51b1b",
+      "size": 3231,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/05cfc44a95f83eae9035a526fcd47758a1d51b1b",
+      "error": "SyntaxError: Unexpected token '#', \"# Migrate \"... is not valid JSON"
+    },
+    {
+      "path": "docs/mobile-wallet-adapter/mobile-apps.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5158e97270dcce59a8c736fe846ff483ffadf66",
+      "size": 3736,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/e5158e97270dcce59a8c736fe846ff483ffadf66",
+      "error": "SyntaxError: No number after minus sign in JSON at position 1 (line 1 column 2)"
+    },
+    {
+      "path": "docs/mobile-wallet-adapter/overview.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1cd8b48eb02b657c5ef2cdc2aca3d29c2f25aff2",
+      "size": 2894,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/1cd8b48eb02b657c5ef2cdc2aca3d29c2f25aff2"
+    },
+    {
+      "path": "docs/mobile-wallet-adapter/ux-guidelines.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b41842f845280ac7e8e84480b2b2509e807d97a9",
+      "size": 4388,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/b41842f845280ac7e8e84480b2b2509e807d97a9"
+    },
+    {
+      "path": "docs/mobile-wallet-adapter/web-apps.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27b6e5b8de4ddd3458a0d2fdfba3b32f170ef129",
+      "size": 3086,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/27b6e5b8de4ddd3458a0d2fdfba3b32f170ef129"
+    },
+    {
+      "path": "docs/mobile-wallet-adapter/web-installation.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c98f4603ca3c1d995db0c0443ab6da9ef3bd5492",
+      "size": 2792,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/c98f4603ca3c1d995db0c0443ab6da9ef3bd5492"
+    },
+    {
+      "path": "docs/mwa",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7555519ad963f1567bd0b4b208a75957f4624f7d",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/7555519ad963f1567bd0b4b208a75957f4624f7d"
+    },
+    {
+      "path": "docs/mwa/migration",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6e737e601e8ff1e9e5450ed0a32b13a49f547f3f",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/6e737e601e8ff1e9e5450ed0a32b13a49f547f3f"
+    },
+    {
+      "path": "docs/mwa/migration/dapps",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "72c913ff2b42e50c16e349c43a7ea3eede3dfdba",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/72c913ff2b42e50c16e349c43a7ea3eede3dfdba"
+    },
+    {
+      "path": "docs/mwa/migration/dapps/clientlib-ktx.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49d24194e31e4d20fcc23db5d9cd203dd8483f43",
+      "size": 52,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/49d24194e31e4d20fcc23db5d9cd203dd8483f43"
+    },
+    {
+      "path": "docs/mwa/migration/dapps/clientlib.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c73fafb43301a0d204fbf0a8d34c3b5310f2473",
+      "size": 2227,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/3c73fafb43301a0d204fbf0a8d34c3b5310f2473"
+    },
+    {
+      "path": "docs/mwa/migration/overview.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c87031b0fb2c0ad1e51895f9f489a9000c6aaa4b",
+      "size": 994,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/c87031b0fb2c0ad1e51895f9f489a9000c6aaa4b"
+    },
+    {
+      "path": "docs/mwa/migration/wallets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0268d6f106b4200f1b2cc6e42642b1a7cac0268c",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/0268d6f106b4200f1b2cc6e42642b1a7cac0268c"
+    },
+    {
+      "path": "docs/mwa/migration/wallets/walletlib.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4c4a80523c6a2d8bbc6e43faaa6616448274e39",
+      "size": 8799,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/c4c4a80523c6a2d8bbc6e43faaa6616448274e39"
+    },
+    {
+      "path": "docs/react-native",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7a7704750ac75031c353f9d9bbbff9fe7da8422a",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/7a7704750ac75031c353f9d9bbbff9fe7da8422a"
+    },
+    {
+      "path": "docs/react-native/_snippets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bffeaa73027fc24701ad31b5336ddef475e059f6",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/bffeaa73027fc24701ad31b5336ddef475e059f6"
+    },
+    {
+      "path": "docs/react-native/_snippets/expo-dapp-template-snippet.mdx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d585f0840c06878f8f58a5bdcbddfa5fb29e3079",
+      "size": 1888,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/d585f0840c06878f8f58a5bdcbddfa5fb29e3079"
+    },
+    {
+      "path": "docs/react-native/_snippets/react-native-scaffold-snippet.mdx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b58589063015743df8e4ed49519b9eb6a06de72d",
+      "size": 1237,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/b58589063015743df8e4ed49519b9eb6a06de72d"
+    },
+    {
+      "path": "docs/react-native/anchor_integration.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7cd35c70ac5f3af7918b96e529af5a0fa8159a24",
+      "size": 7681,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/7cd35c70ac5f3af7918b96e529af5a0fa8159a24"
+    },
+    {
+      "path": "docs/react-native/building_transactions.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3bf255a718d3bf99c5b5961edea83a9af062fa25",
+      "size": 5965,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/3bf255a718d3bf99c5b5961edea83a9af062fa25"
+    },
+    {
+      "path": "docs/react-native/detecting-seeker-users.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4088861f2192865396cbe24cc3ad16481ce9b40d",
+      "size": 6565,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/4088861f2192865396cbe24cc3ad16481ce9b40d"
+    },
+    {
+      "path": "docs/react-native/expo-dapp-template.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1824f2b1ca6015777295b4bbc7a13f4b296057bd",
+      "size": 1967,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/1824f2b1ca6015777295b4bbc7a13f4b296057bd"
+    },
+    {
+      "path": "docs/react-native/expo.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "775d3f837e82c3a670a55922a6114875bb59f7f2",
+      "size": 9283,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/775d3f837e82c3a670a55922a6114875bb59f7f2"
+    },
+    {
+      "path": "docs/react-native/first_app_tutorial.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e954dbceac460ccccab9de30f9acc821770768c",
+      "size": 15766,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/8e954dbceac460ccccab9de30f9acc821770768c"
+    },
+    {
+      "path": "docs/react-native/hello_world_tutorial.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fe23d87b70bc79d2706cd4595511fb998bc1fe2",
+      "size": 21836,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/2fe23d87b70bc79d2706cd4595511fb998bc1fe2"
+    },
+    {
+      "path": "docs/react-native/making_rpc_requests.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ec64caeb4a7d94c4a104d7589a604202adb45ea",
+      "size": 2569,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/0ec64caeb4a7d94c4a104d7589a604202adb45ea"
+    },
+    {
+      "path": "docs/react-native/metaplex_integration.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "164932316e64017e57a44e2fa4eec18c31aad14f",
+      "size": 8083,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/164932316e64017e57a44e2fa4eec18c31aad14f"
+    },
+    {
+      "path": "docs/react-native/mobile_nft_minter_tutorial.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "931ff17e4883de5f2aa730a9df8cfdd32ba42d83",
+      "size": 14345,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/931ff17e4883de5f2aa730a9df8cfdd32ba42d83"
+    },
+    {
+      "path": "docs/react-native/overview.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d5744252bad029459b2a7bd5c5c42e359e505bb",
+      "size": 3823,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/7d5744252bad029459b2a7bd5c5c42e359e505bb"
+    },
+    {
+      "path": "docs/react-native/polyfill-guides",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d1f2ad4d03f508b527059d834db991633827aae8",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/d1f2ad4d03f508b527059d834db991633827aae8"
+    },
+    {
+      "path": "docs/react-native/polyfill-guides/anchor.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2bc446f6f69fc3f7723b79abf115bc7b409adacb",
+      "size": 2426,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/2bc446f6f69fc3f7723b79abf115bc7b409adacb"
+    },
+    {
+      "path": "docs/react-native/polyfill-guides/polyfills.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ed382fbd6b59b6423ddef76aaeef1d1493d7e27",
+      "size": 1120,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/3ed382fbd6b59b6423ddef76aaeef1d1493d7e27"
+    },
+    {
+      "path": "docs/react-native/polyfill-guides/spl-token.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1899fb4c4e6d62e218130b92be60a01f07af819d",
+      "size": 1459,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/1899fb4c4e6d62e218130b92be60a01f07af819d"
+    },
+    {
+      "path": "docs/react-native/polyfill-guides/web3-js.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5cdc0bef4f41dd741c5d0301518b2d205c81f7d3",
+      "size": 1465,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/5cdc0bef4f41dd741c5d0301518b2d205c81f7d3"
+    },
+    {
+      "path": "docs/react-native/quickstart.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b3cbb6166b68432b7a24e531562eede7afb69b9",
+      "size": 1200,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/9b3cbb6166b68432b7a24e531562eede7afb69b9"
+    },
+    {
+      "path": "docs/react-native/quickstart_legacy.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea07dc71202938e6bd8cc3b96293e82eaf1b2feb",
+      "size": 18372,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/ea07dc71202938e6bd8cc3b96293e82eaf1b2feb"
+    },
+    {
+      "path": "docs/react-native/react-native-scaffold.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8297f03def8503db185b6000f0b70f9515bae9a9",
+      "size": 1242,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/8297f03def8503db185b6000f0b70f9515bae9a9"
+    },
+    {
+      "path": "docs/react-native/setup.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cf41d0f9fa1f5414ad9d63a480bd8ce490d2c3b",
+      "size": 935,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/3cf41d0f9fa1f5414ad9d63a480bd8ce490d2c3b"
+    },
+    {
+      "path": "docs/react-native/storing_mwa_auth.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c899ecc9e6c0d393d6ac651818ee7eb9bd514f09",
+      "size": 5390,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/c899ecc9e6c0d393d6ac651818ee7eb9bd514f09"
+    },
+    {
+      "path": "docs/react-native/test-with-any-android-device.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52b94e32435f1883581bef9cd7bca8f108185830",
+      "size": 1471,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/52b94e32435f1883581bef9cd7bca8f108185830"
+    },
+    {
+      "path": "docs/react-native/using_mobile_wallet_adapter.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4bc0767d57563dcfdcc094d0fa269ff6afcc3d9",
+      "size": 16061,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/a4bc0767d57563dcfdcc094d0fa269ff6afcc3d9"
+    },
+    {
+      "path": "docs/react-native/wallet_ui_mobile_wallet_adapter.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d301805730871589b1b42d95a2d30db19857174",
+      "size": 9542,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/5d301805730871589b1b42d95a2d30db19857174"
+    },
+    {
+      "path": "docs/reference",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "62543ee2001e847328c78b787c199dc81ec99905",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/62543ee2001e847328c78b787c199dc81ec99905"
+    },
+    {
+      "path": "docs/reference/kotlin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "62689fb01b088e59b3165f5a16e3906c576b0b3c",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/62689fb01b088e59b3165f5a16e3906c576b0b3c"
+    },
+    {
+      "path": "docs/reference/kotlin/mobile-wallet-adapter.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3e17f14fc069889dc9a947931b3d089f19cfaed",
+      "size": 1093,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/b3e17f14fc069889dc9a947931b3d089f19cfaed"
+    },
+    {
+      "path": "docs/reference/overview.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26d9f189be71d01cc59903ce4add1bf16040855f",
+      "size": 1544,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/26d9f189be71d01cc59903ce4add1bf16040855f"
+    },
+    {
+      "path": "docs/reference/typescript",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a9e03b9b4221855cd2de34af8fa65c6a074a5554",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/a9e03b9b4221855cd2de34af8fa65c6a074a5554"
+    },
+    {
+      "path": "docs/reference/typescript/mobile-wallet-adapter-legacy.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "737ca2c66bb21efe61b0bdda8fe03735eebbc93d",
+      "size": 2864,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/737ca2c66bb21efe61b0bdda8fe03735eebbc93d"
+    },
+    {
+      "path": "docs/reference/typescript/mobile-wallet-adapter.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adb010bb3af204159b3e0f1d9d9c6cc0881298b0",
+      "size": 2774,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/adb010bb3af204159b3e0f1d9d9c6cc0881298b0"
+    },
+    {
+      "path": "docs/reference/typescript/mobile-wallet-methods-legacy",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "67ec290c2170b5b7eb411f2b44adbb6b917f4eef",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/67ec290c2170b5b7eb411f2b44adbb6b917f4eef"
+    },
+    {
+      "path": "docs/reference/typescript/mobile-wallet-methods-legacy/_transact.mdx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fdc8b1f8858fae6f95512f61f24c27b189977ec1",
+      "size": 1594,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/fdc8b1f8858fae6f95512f61f24c27b189977ec1"
+    },
+    {
+      "path": "docs/reference/typescript/mobile-wallet-methods-legacy/_walletAuthorize.mdx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8298f6911477defa78e348c32eb2aa04d66deb92",
+      "size": 2515,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/8298f6911477defa78e348c32eb2aa04d66deb92"
+    },
+    {
+      "path": "docs/reference/typescript/mobile-wallet-methods-legacy/_walletDeauthorize.mdx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "657d9d89fd357908e86b9f7380ef452e9630d243",
+      "size": 1119,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/657d9d89fd357908e86b9f7380ef452e9630d243"
+    },
+    {
+      "path": "docs/reference/typescript/mobile-wallet-methods-legacy/_walletGetCapabilities.mdx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e36d54d41f4ad3ef1aecca1e07d0005d387be2f",
+      "size": 2029,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/8e36d54d41f4ad3ef1aecca1e07d0005d387be2f"
+    },
+    {
+      "path": "docs/reference/typescript/mobile-wallet-methods-legacy/_walletReauthorize.mdx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5c4c36a77ba5f96daef2fbf66fbdce90747395a",
+      "size": 2697,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/f5c4c36a77ba5f96daef2fbf66fbdce90747395a"
+    },
+    {
+      "path": "docs/reference/typescript/mobile-wallet-methods-legacy/_walletSignAndSendTransactions.mdx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d5a212d5754d557519a2dd9fd00830c6c3ac410",
+      "size": 2150,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/9d5a212d5754d557519a2dd9fd00830c6c3ac410"
+    },
+    {
+      "path": "docs/reference/typescript/mobile-wallet-methods-legacy/_walletSignMessages.mdx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ce1753341d1e433ac51f48c2a3f4b2d7ede0072",
+      "size": 1679,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/3ce1753341d1e433ac51f48c2a3f4b2d7ede0072"
+    },
+    {
+      "path": "docs/reference/typescript/mobile-wallet-methods-legacy/_walletSignTransactions.mdx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a4994024b905958171f153a32c68d4b9cb76065",
+      "size": 1833,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/9a4994024b905958171f153a32c68d4b9cb76065"
+    },
+    {
+      "path": "docs/reference/typescript/mobile-wallet-methods",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "884da47d0a30404a29f65fbd72430c535480cb55",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/884da47d0a30404a29f65fbd72430c535480cb55"
+    },
+    {
+      "path": "docs/reference/typescript/mobile-wallet-methods/_transact.mdx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fdc8b1f8858fae6f95512f61f24c27b189977ec1",
+      "size": 1594,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/fdc8b1f8858fae6f95512f61f24c27b189977ec1"
+    },
+    {
+      "path": "docs/reference/typescript/mobile-wallet-methods/_walletAuthorize.mdx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "028c9861613ed4b068ba43224fd01acfa602a3ff",
+      "size": 6079,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/028c9861613ed4b068ba43224fd01acfa602a3ff"
+    },
+    {
+      "path": "docs/reference/typescript/mobile-wallet-methods/_walletDeauthorize.mdx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71e3ee666ce0e949dc3bd717ca467e4227891cba",
+      "size": 1124,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/71e3ee666ce0e949dc3bd717ca467e4227891cba"
+    },
+    {
+      "path": "docs/reference/typescript/mobile-wallet-methods/_walletGetCapabilities.mdx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23cd8492c6c36c63c1318258c7ef091740b91dd9",
+      "size": 1969,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/23cd8492c6c36c63c1318258c7ef091740b91dd9"
+    },
+    {
+      "path": "docs/reference/typescript/mobile-wallet-methods/_walletReauthorize.mdx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5c4c36a77ba5f96daef2fbf66fbdce90747395a",
+      "size": 2697,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/f5c4c36a77ba5f96daef2fbf66fbdce90747395a"
+    },
+    {
+      "path": "docs/reference/typescript/mobile-wallet-methods/_walletSignAndSendTransactions.mdx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46345b454bcc588699162fd40516b89332cd54b0",
+      "size": 2103,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/46345b454bcc588699162fd40516b89332cd54b0"
+    },
+    {
+      "path": "docs/reference/typescript/mobile-wallet-methods/_walletSignMessages.mdx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50bf78316b50d5044402625cb06eda61596dea14",
+      "size": 1632,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/50bf78316b50d5044402625cb06eda61596dea14"
+    },
+    {
+      "path": "docs/reference/typescript/mobile-wallet-methods/_walletSignTransactions.mdx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fa94add1a72ff99ea726e7cb51518af662667c0",
+      "size": 1814,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/0fa94add1a72ff99ea726e7cb51518af662667c0"
+    },
+    {
+      "path": "docs/reference/typescript/web3js.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47dda38a51ec2c10cc2f83a9d38d89c234b13ce2",
+      "size": 1121,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/47dda38a51ec2c10cc2f83a9d38d89c234b13ce2"
+    },
+    {
+      "path": "docs/saga",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ef6ca440b23b2807a48e944c8127a594b9ceb9a4",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/ef6ca440b23b2807a48e944c8127a594b9ceb9a4"
+    },
+    {
+      "path": "docs/saga/release-notes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "443d8a68633401aefa1ba5bc525304bc3529a7d1",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/443d8a68633401aefa1ba5bc525304bc3529a7d1"
+    },
+    {
+      "path": "docs/saga/release-notes/2023-12-update.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00ed72c16edc82fda49c5b0abc6577971139ab55",
+      "size": 2042,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/00ed72c16edc82fda49c5b0abc6577971139ab55"
+    },
+    {
+      "path": "docs/saga/release-notes/index.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21dce1651304be968353ae041f667079f495d637",
+      "size": 109,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/21dce1651304be968353ae041f667079f495d637"
+    },
+    {
+      "path": "docs/saga/release-notes/mr1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84063404f1b452a07f35d77c8b0bd34be5863943",
+      "size": 5153,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/84063404f1b452a07f35d77c8b0bd34be5863943"
+    },
+    {
+      "path": "docs/saga/release-notes/mr2.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1027e812364bdf870fdb0683384371859cd28ca7",
+      "size": 1840,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/1027e812364bdf870fdb0683384371859cd28ca7"
+    },
+    {
+      "path": "docs/saga/release-notes/mr3.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13ff45d4b3a071beb872aa1c3fbf467006e23a6b",
+      "size": 4822,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/13ff45d4b3a071beb872aa1c3fbf467006e23a6b"
+    },
+    {
+      "path": "docs/saga/release-notes/mr4.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1310bd57c690391cfd96e0c07e6dc732b68ed133",
+      "size": 1716,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/1310bd57c690391cfd96e0c07e6dc732b68ed133"
+    },
+    {
+      "path": "docs/saga/release-notes/mr5.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9cacf2bc04da3202f0d7e78c873b3e6d7c8fd7ab",
+      "size": 1586,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/9cacf2bc04da3202f0d7e78c873b3e6d7c8fd7ab"
+    },
+    {
+      "path": "docs/sample-apps",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b68571826b635bfc66667bb1276a7135e06e0e52",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/b68571826b635bfc66667bb1276a7135e06e0e52"
+    },
+    {
+      "path": "docs/sample-apps/sample_app_overview.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc5559ac7142f9ea225f145c89390e538042d5c3",
+      "size": 6069,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/dc5559ac7142f9ea225f145c89390e538042d5c3"
+    },
+    {
+      "path": "docs/seeker",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1825d0aaae287d229f2a3f28a9c04318e83d6924",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/1825d0aaae287d229f2a3f28a9c04318e83d6924"
+    },
+    {
+      "path": "docs/seeker/release-notes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d40b6692c89929fb944366aa8263fe0970542605",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/d40b6692c89929fb944366aa8263fe0970542605"
+    },
+    {
+      "path": "docs/seeker/release-notes/index.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b0d55af626666fcd418d400a0cfa96dcd72795f",
+      "size": 114,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/7b0d55af626666fcd418d400a0cfa96dcd72795f"
+    },
+    {
+      "path": "docs/seeker/release-notes/mr4.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3e1be725fa33fe49bb25f963c9578ee134045f8",
+      "size": 706,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/f3e1be725fa33fe49bb25f963c9578ee134045f8"
+    },
+    {
+      "path": "docs/seeker/release-notes/mr5.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a82f1dcfa92bdb989533c9a07852d6b8360ae475",
+      "size": 770,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/a82f1dcfa92bdb989533c9a07852d6b8360ae475"
+    },
+    {
+      "path": "docs/seeker/release-notes/mr6.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "668534a0d0ecf700c584978a633e219f6bd0f25e",
+      "size": 1072,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/668534a0d0ecf700c584978a633e219f6bd0f25e"
+    },
+    {
+      "path": "docs/solana-kmp",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9543bad2bf4ee1a14ed6333e09527e5ad7835037",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/9543bad2bf4ee1a14ed6333e09527e5ad7835037"
+    },
+    {
+      "path": "docs/solana-kmp/solana-kmp.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "220bea20336bb35101dc04fa6fa729d1a0d074b3",
+      "size": 179,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/220bea20336bb35101dc04fa6fa729d1a0d074b3"
+    },
+    {
+      "path": "docs/unity",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cba0212d9d5d8465844b779574200d57e39c76b9",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/cba0212d9d5d8465844b779574200d57e39c76b9"
+    },
+    {
+      "path": "docs/unity/unity_sdk.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "815f7c76968f946d59ea124b2dc68907609565dc",
+      "size": 1245,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/815f7c76968f946d59ea124b2dc68907609565dc"
+    },
+    {
+      "path": "docs/unreal",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ca679529fbbc54f7289040215b078bdfbca0025b",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/ca679529fbbc54f7289040215b078bdfbca0025b"
+    },
+    {
+      "path": "docs/unreal/unreal_sdk.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef18a90ea0d6cae98b02b625cda3acf31b8a4334",
+      "size": 971,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/ef18a90ea0d6cae98b02b625cda3acf31b8a4334"
+    },
+    {
+      "path": "docs/web",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5264a6257a58beffec9d1754f13ccf12d814c48e",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/5264a6257a58beffec9d1754f13ccf12d814c48e"
+    },
+    {
+      "path": "docs/web/developing-for-web.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5ea11d544479dcb80be35583c4dc235054de6a5",
+      "size": 4158,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/a5ea11d544479dcb80be35583c4dc235054de6a5"
+    },
+    {
+      "path": "docs/web/overview.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "docusaurus.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6accc6d06b54c752187d036605e75e1e1ebb12b7",
+      "size": 7048,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/6accc6d06b54c752187d036605e75e1e1ebb12b7"
+    },
+    {
+      "path": "ignoreBuildScript.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "116237c767ee0ed47447153611dc34f422616593",
+      "size": 987,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/116237c767ee0ed47447153611dc34f422616593"
+    },
+    {
+      "path": "package-lock.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f16127866629dd951d843ca046fa9e87c90be5b4",
+      "size": 620602,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/f16127866629dd951d843ca046fa9e87c90be5b4"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3371c54bbafd9809d54f04cb1636ec3423fa390d",
+      "size": 1350,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/3371c54bbafd9809d54f04cb1636ec3423fa390d"
+    },
+    {
+      "path": "sidebars.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf2f20bb6a5f42698b1c0e08d0a3c4d7af5f2be7",
+      "size": 3512,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/bf2f20bb6a5f42698b1c0e08d0a3c4d7af5f2be7"
+    },
+    {
+      "path": "sidebars",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d0d1d73453bf9313bce9ac2d9767da4d7ce79d0e",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/d0d1d73453bf9313bce9ac2d9767da4d7ce79d0e"
+    },
+    {
+      "path": "sidebars/dappStoreSidebar.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ea546be0abdba9f5b5bc5a94d5a29cea310afbe",
+      "size": 4787,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/2ea546be0abdba9f5b5bc5a94d5a29cea310afbe"
+    },
+    {
+      "path": "sidebars/developersSidebar.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2c5e99d11db85eaff19b3065e4e691856f07436",
+      "size": 3085,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/d2c5e99d11db85eaff19b3065e4e691856f07436"
+    },
+    {
+      "path": "sidebars/kotlinSidebar.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4d8a70aba6f0650d6701a61f4d5e70057747af0",
+      "size": 2981,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/c4d8a70aba6f0650d6701a61f4d5e70057747af0"
+    },
+    {
+      "path": "sidebars/marketingSidebar.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc8d40aad7293319ef64907718b9234faebb3aa9",
+      "size": 1924,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/bc8d40aad7293319ef64907718b9234faebb3aa9"
+    },
+    {
+      "path": "sidebars/mobileWalletAdapterSidebar.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb7e173daf7e7faa71b371ea5d7572741e7213bb",
+      "size": 2271,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/fb7e173daf7e7faa71b371ea5d7572741e7213bb"
+    },
+    {
+      "path": "sidebars/reactNativeSidebar.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15a5043a949729eaf807f5eee5795be5115d16b7",
+      "size": 5897,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/15a5043a949729eaf807f5eee5795be5115d16b7"
+    },
+    {
+      "path": "sidebars/referenceSidebar.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a86e2d5d81aae348c33415ee0813ad7a9112ab0",
+      "size": 1041,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/7a86e2d5d81aae348c33415ee0813ad7a9112ab0"
+    },
+    {
+      "path": "sidebars/sagaSidebar.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "944c42198e89b124d621bb8abf111ab833795042",
+      "size": 1328,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/944c42198e89b124d621bb8abf111ab833795042"
+    },
+    {
+      "path": "sidebars/seekerSidebar.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af81d4bc4b3ff24e690a7f3d81c18f985c114112",
+      "size": 852,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/af81d4bc4b3ff24e690a7f3d81c18f985c114112"
+    },
+    {
+      "path": "sms-version-constants.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5cb1355f1bc69c06b69f1e2e494e4bdddd15d331",
+      "size": 573,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/5cb1355f1bc69c06b69f1e2e494e4bdddd15d331"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "55eaef060c7922dcefa10899ee0b997cffd5332b",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/55eaef060c7922dcefa10899ee0b997cffd5332b"
+    },
+    {
+      "path": "src/components",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "faad10f051b250c65e0f42897167871458450bb7",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/faad10f051b250c65e0f42897167871458450bb7"
+    },
+    {
+      "path": "src/components/BlogImageRow",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "26f79f6511882564f508aca3501feba540a76e86",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/26f79f6511882564f508aca3501feba540a76e86"
+    },
+    {
+      "path": "src/components/BlogImageRow/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1befc1b1e4680c70b0ac65f6652eefcfc00d5c4",
+      "size": 325,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/f1befc1b1e4680c70b0ac65f6652eefcfc00d5c4"
+    },
+    {
+      "path": "src/components/BlogImageRow/styles.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca8f0fde3ba989a7b59b96fca62a4718e41f5a23",
+      "size": 122,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/ca8f0fde3ba989a7b59b96fca62a4718e41f5a23"
+    },
+    {
+      "path": "src/components/CTAButton",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e5da980c30a01b6d74a64fc2a4066022d6a0e43a",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/e5da980c30a01b6d74a64fc2a4066022d6a0e43a"
+    },
+    {
+      "path": "src/components/CTAButton/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24f7403465e4bbea56571d858c5bb8a39520fea0",
+      "size": 479,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/24f7403465e4bbea56571d858c5bb8a39520fea0"
+    },
+    {
+      "path": "src/components/CTAButton/styles.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d97582c82d115434653dc45034c761b573c8c149",
+      "size": 569,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/d97582c82d115434653dc45034c761b573c8c149"
+    },
+    {
+      "path": "src/components/Card",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "559183bd0616201fc32ad4474ad812c18da11632",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/559183bd0616201fc32ad4474ad812c18da11632"
+    },
+    {
+      "path": "src/components/Card/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8356ed9f0d68864c597239f58b4d560b26bc078c",
+      "size": 1567,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/8356ed9f0d68864c597239f58b4d560b26bc078c"
+    },
+    {
+      "path": "src/components/Card/styles.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b45d067f3790b964d1f271191fd1c67244fcaf10",
+      "size": 2131,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/b45d067f3790b964d1f271191fd1c67244fcaf10"
+    },
+    {
+      "path": "src/components/Card2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "82081ef5073371801f9b5312cc06f38b1ff6ea87",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/82081ef5073371801f9b5312cc06f38b1ff6ea87"
+    },
+    {
+      "path": "src/components/Card2/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efddf6c825ee925c6b2c1d3a4757ed9d0deadc25",
+      "size": 1745,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/efddf6c825ee925c6b2c1d3a4757ed9d0deadc25"
+    },
+    {
+      "path": "src/components/Card2/styles.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7265ce28874163d6594ad9cbf0a7c436ed63c24",
+      "size": 2316,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/c7265ce28874163d6594ad9cbf0a7c436ed63c24"
+    },
+    {
+      "path": "src/components/CodeDocBlock",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "34cbd9a71c627e0c449dd34136361bd744c6fe59",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/34cbd9a71c627e0c449dd34136361bd744c6fe59"
+    },
+    {
+      "path": "src/components/CodeDocBlock/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "300c34df1bf9e670e1cad938399597a5633ac8fe",
+      "size": 3392,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/300c34df1bf9e670e1cad938399597a5633ac8fe"
+    },
+    {
+      "path": "src/components/CodeDocBlock/styles.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7cffc5625bd7a0ac4dca932eae81105aa1b1d2a2",
+      "size": 1223,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/7cffc5625bd7a0ac4dca932eae81105aa1b1d2a2"
+    },
+    {
+      "path": "src/components/Diagram",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5892a386007a87cd91edca8a24f923a1fd879030",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/5892a386007a87cd91edca8a24f923a1fd879030"
+    },
+    {
+      "path": "src/components/Diagram/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e62fbfcdeca2dbe668e728f5fdab48dbf484a8b",
+      "size": 528,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/8e62fbfcdeca2dbe668e728f5fdab48dbf484a8b"
+    },
+    {
+      "path": "src/components/Diagram/styles.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eacf6114b1f3a3f3d1a0715b81e7c35e9102d9c3",
+      "size": 91,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/eacf6114b1f3a3f3d1a0715b81e7c35e9102d9c3"
+    },
+    {
+      "path": "src/components/FAQ",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "55e02a600e0333f22c060e8aca23d13ade1ce949",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/55e02a600e0333f22c060e8aca23d13ade1ce949"
+    },
+    {
+      "path": "src/components/FAQ/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6473fff44dd0e713a6757f21deb0a86e243c7a4",
+      "size": 1466,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/d6473fff44dd0e713a6757f21deb0a86e243c7a4"
+    },
+    {
+      "path": "src/components/FAQ/styles.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "861a9aedef61a0c2ce403714513693d954cc7921",
+      "size": 934,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/861a9aedef61a0c2ce403714513693d954cc7921"
+    },
+    {
+      "path": "src/components/FeatureCard",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e34cd632128e037a67870ceb2dfb094a1a320f74",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/e34cd632128e037a67870ceb2dfb094a1a320f74"
+    },
+    {
+      "path": "src/components/FeatureCard/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89e89070bc2e01c916fe0e316cdd1687f4ece483",
+      "size": 821,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/89e89070bc2e01c916fe0e316cdd1687f4ece483"
+    },
+    {
+      "path": "src/components/FeatureCard/styles.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f85cbe940a673b90ee48d1261e01514fb542619",
+      "size": 988,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/5f85cbe940a673b90ee48d1261e01514fb542619"
+    },
+    {
+      "path": "src/components/FrameworkSwitcher",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "97f253db961d5c577b40f7aef25270f75c2b5e11",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/97f253db961d5c577b40f7aef25270f75c2b5e11"
+    },
+    {
+      "path": "src/components/FrameworkSwitcher/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1345a1c9c3d1d07de0da31ea5d46c7834bfb105d",
+      "size": 1394,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/1345a1c9c3d1d07de0da31ea5d46c7834bfb105d"
+    },
+    {
+      "path": "src/components/FrameworkSwitcher/styles.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e7976af303fec7c04edfe33f883df1969332d60",
+      "size": 1373,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/7e7976af303fec7c04edfe33f883df1969332d60"
+    },
+    {
+      "path": "src/components/HeroCTACard",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f39bb3a50d0c1dbcd7f6833aa8f82fd54f8b483f",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/f39bb3a50d0c1dbcd7f6833aa8f82fd54f8b483f"
+    },
+    {
+      "path": "src/components/HeroCTACard/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0bb651f1d6bddfa11e41af52236ed2334bc99ee4",
+      "size": 548,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/0bb651f1d6bddfa11e41af52236ed2334bc99ee4"
+    },
+    {
+      "path": "src/components/HeroCTACard/styles.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9c5dc190e7677d223fb869c7ee99fdc5ac817b0",
+      "size": 1548,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/c9c5dc190e7677d223fb869c7ee99fdc5ac817b0"
+    },
+    {
+      "path": "src/components/HiddenURLContainer",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "37c3feddd930916ee16ac03db950e37d56e459e7",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/37c3feddd930916ee16ac03db950e37d56e459e7"
+    },
+    {
+      "path": "src/components/HiddenURLContainer/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e739cee96c94e8a0f589e94ffbf0c6096e559047",
+      "size": 4270,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/e739cee96c94e8a0f589e94ffbf0c6096e559047"
+    },
+    {
+      "path": "src/components/HiddenURLContainer/styles.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f02a4ef3f7e2d08e77a0e9988ffdcd0363ef0e4",
+      "size": 5780,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/6f02a4ef3f7e2d08e77a0e9988ffdcd0363ef0e4"
+    },
+    {
+      "path": "src/components/ImageRow",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6281eb676dcb1ae24b27ff909e70bdf3e653c4fa",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/6281eb676dcb1ae24b27ff909e70bdf3e653c4fa"
+    },
+    {
+      "path": "src/components/ImageRow/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eaf6abcbde5f0d77342a33d04fb1367996680b83",
+      "size": 430,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/eaf6abcbde5f0d77342a33d04fb1367996680b83"
+    },
+    {
+      "path": "src/components/ImageRow/styles.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e62e50c50bd699b693f0424f2ec6d579efd5c88",
+      "size": 130,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/0e62e50c50bd699b693f0424f2ec6d579efd5c88"
+    },
+    {
+      "path": "src/components/ListingPageSection",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f8163c489fef96e14e4734eddcd12f55f610715d",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/f8163c489fef96e14e4734eddcd12f55f610715d"
+    },
+    {
+      "path": "src/components/ListingPageSection/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebaa54a4ee305f9e20448d28cf4f25969300d1fa",
+      "size": 924,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/ebaa54a4ee305f9e20448d28cf4f25969300d1fa"
+    },
+    {
+      "path": "src/components/ListingPageSection/styles.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6d85ec6013dd7cfc07171f1a51d81f5a821fc79",
+      "size": 1697,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/b6d85ec6013dd7cfc07171f1a51d81f5a821fc79"
+    },
+    {
+      "path": "src/components/MediaCarousel",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8226f5e398bdd4875e12bf199e870b3f0fd11e62",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/8226f5e398bdd4875e12bf199e870b3f0fd11e62"
+    },
+    {
+      "path": "src/components/MediaCarousel/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "206e631a9c282f9cb5b991216c2d375b3a98bdf4",
+      "size": 3726,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/206e631a9c282f9cb5b991216c2d375b3a98bdf4"
+    },
+    {
+      "path": "src/components/MediaCarousel/styles.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6aca23b1367254b7ed7e4fe06fe7ae3d757d6968",
+      "size": 4124,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/6aca23b1367254b7ed7e4fe06fe7ae3d757d6968"
+    },
+    {
+      "path": "src/components/SDKSelectionContainer",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1b600b03b150fa5c23bb9f93c4e44dcd0d227daa",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/1b600b03b150fa5c23bb9f93c4e44dcd0d227daa"
+    },
+    {
+      "path": "src/components/SDKSelectionContainer/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db0073cbf0da0b43e456cfb220e1e23a726ee686",
+      "size": 1134,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/db0073cbf0da0b43e456cfb220e1e23a726ee686"
+    },
+    {
+      "path": "src/components/SDKSelectionContainer/styles.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4115a7c0f9826d221b6976d2b8acecc7159074a9",
+      "size": 1772,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/4115a7c0f9826d221b6976d2b8acecc7159074a9"
+    },
+    {
+      "path": "src/components/SampleAppCard",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "90e665e2aa538ebfa3df425f54ae4dfc8d7e0204",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/90e665e2aa538ebfa3df425f54ae4dfc8d7e0204"
+    },
+    {
+      "path": "src/components/SampleAppCard/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0273ef29970962e7f73640f85d49735cf27f3bf",
+      "size": 1174,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/f0273ef29970962e7f73640f85d49735cf27f3bf"
+    },
+    {
+      "path": "src/components/SampleAppCard/styles.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e62dfd6dffdaf7935dfcfb36446362e35ce7fd4",
+      "size": 1670,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/4e62dfd6dffdaf7935dfcfb36446362e35ce7fd4"
+    },
+    {
+      "path": "src/components/SampleAppFilter",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "71ce80cf89d06ac03550c6ab92d30e1d29e7c73b",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/71ce80cf89d06ac03550c6ab92d30e1d29e7c73b"
+    },
+    {
+      "path": "src/components/SampleAppFilter/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aceb2baa6728f398aa30ddeeefc2f07344e4019a",
+      "size": 1382,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/aceb2baa6728f398aa30ddeeefc2f07344e4019a"
+    },
+    {
+      "path": "src/components/SampleAppFilter/styles.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f2d7edda0abcf1b19d47c35d8f115b7f4a48ad1",
+      "size": 1144,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/7f2d7edda0abcf1b19d47c35d8f115b7f4a48ad1"
+    },
+    {
+      "path": "src/components/SmallCard",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1d179d4e601ddedbb655cff678e734d2838c2f04",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/1d179d4e601ddedbb655cff678e734d2838c2f04"
+    },
+    {
+      "path": "src/components/SmallCard/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1cdb1a70ec80bef83bf23c3b49987c4590241b7",
+      "size": 847,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/c1cdb1a70ec80bef83bf23c3b49987c4590241b7"
+    },
+    {
+      "path": "src/components/SmallCard/styles.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac10159e195185739ed41f4ebe76e1f8362f3201",
+      "size": 1243,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/ac10159e195185739ed41f4ebe76e1f8362f3201"
+    },
+    {
+      "path": "src/components/SolanaMobileHero",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bc4b82f708b07270872b283d4c631ba663d7dfbc",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/bc4b82f708b07270872b283d4c631ba663d7dfbc"
+    },
+    {
+      "path": "src/components/SolanaMobileHero/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "891776ddc0dc8a6ab35b4c0bf5f97ffcb9ed1e08",
+      "size": 339,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/891776ddc0dc8a6ab35b4c0bf5f97ffcb9ed1e08"
+    },
+    {
+      "path": "src/components/SolanaMobileHero/styles.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df3d8c007411adcfd0d72fb6de06c79f09daf69e",
+      "size": 689,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/df3d8c007411adcfd0d72fb6de06c79f09daf69e"
+    },
+    {
+      "path": "src/components/VideoCarousel",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bafe889bfd77cf79ddcd1bf77f4ca18e7909a20c",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/bafe889bfd77cf79ddcd1bf77f4ca18e7909a20c"
+    },
+    {
+      "path": "src/components/VideoCarousel/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2e69469ece59f93cfebfdcbf13628d2f2fadfd6",
+      "size": 2002,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/f2e69469ece59f93cfebfdcbf13628d2f2fadfd6"
+    },
+    {
+      "path": "src/components/VideoCarousel/styles.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9b2138ab0f27569453a6be62434008a993a0e90",
+      "size": 2836,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/f9b2138ab0f27569453a6be62434008a993a0e90"
+    },
+    {
+      "path": "src/css",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "92adda9177331a0e0e1b2bb9eae90bcd0c0d0017",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/92adda9177331a0e0e1b2bb9eae90bcd0c0d0017"
+    },
+    {
+      "path": "src/css/custom.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28cbc318c603990d0c5600ebfd38b70433ba80bb",
+      "size": 3859,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/28cbc318c603990d0c5600ebfd38b70433ba80bb"
+    },
+    {
+      "path": "src/layouts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f5c56e5bd2ce831efa9797c6c587e50c1f9e8fb6",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/f5c56e5bd2ce831efa9797c6c587e50c1f9e8fb6"
+    },
+    {
+      "path": "src/layouts/CardLayout",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "266f97f9cea2c6897cd0ed6eaa52170cdf203dcd",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/266f97f9cea2c6897cd0ed6eaa52170cdf203dcd"
+    },
+    {
+      "path": "src/layouts/CardLayout/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ee357386f090d8082fd1b728f79b2b159ce1b53",
+      "size": 475,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/4ee357386f090d8082fd1b728f79b2b159ce1b53"
+    },
+    {
+      "path": "src/layouts/CardLayout/styles.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "639f2887500469588b1ad790372efb448724486b",
+      "size": 501,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/639f2887500469588b1ad790372efb448724486b"
+    },
+    {
+      "path": "src/layouts/SampleAppCardLayout",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0fff4dfd5c998dd842a74d246d6361648243acf3",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/0fff4dfd5c998dd842a74d246d6361648243acf3"
+    },
+    {
+      "path": "src/layouts/SampleAppCardLayout/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96a6de215398f4a10adefbb33e3d13450aa9caf0",
+      "size": 377,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/96a6de215398f4a10adefbb33e3d13450aa9caf0"
+    },
+    {
+      "path": "src/layouts/SampleAppCardLayout/styles.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2704e9ca0085f82d60b9727d4500a7de2625dbff",
+      "size": 143,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/2704e9ca0085f82d60b9727d4500a7de2625dbff"
+    },
+    {
+      "path": "src/layouts/SideBySideLayout",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d85c892ba3e4ad06a9af2334f8bc25b61e92401e",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/d85c892ba3e4ad06a9af2334f8bc25b61e92401e"
+    },
+    {
+      "path": "src/layouts/SideBySideLayout/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2148709f00419947d43395942d65e4e8d1cc8f0f",
+      "size": 924,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/2148709f00419947d43395942d65e4e8d1cc8f0f"
+    },
+    {
+      "path": "src/layouts/SideBySideLayout/styles.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04351d42b6aa5ad2ef8f238a0bcbaa99da8c2225",
+      "size": 671,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/04351d42b6aa5ad2ef8f238a0bcbaa99da8c2225"
+    },
+    {
+      "path": "src/pages",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "61544fa5cb8f166d308bcce58212483d17a0eac4",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/61544fa5cb8f166d308bcce58212483d17a0eac4"
+    },
+    {
+      "path": "src/pages/grants",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5fbfbde7dda56ff9342257abdc375fb7abf04780",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/5fbfbde7dda56ff9342257abdc375fb7abf04780"
+    },
+    {
+      "path": "src/pages/grants/index.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8cd8410c6f0b63c33e4cc5be5e94661e4774f417",
+      "size": 2182,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/8cd8410c6f0b63c33e4cc5be5e94661e4774f417"
+    },
+    {
+      "path": "src/pages/grants/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5e9a86e651176cd4e6fb3229f4758b4b67dc415",
+      "size": 3390,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/d5e9a86e651176cd4e6fb3229f4758b4b67dc415"
+    },
+    {
+      "path": "src/pages/hackathon",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d36aad12019ce84e214d8153527ade3a81b1ca30",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/d36aad12019ce84e214d8153527ade3a81b1ca30"
+    },
+    {
+      "path": "src/pages/hackathon/index.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a0f740a6f71cf1256288868d7e42c4992d90d5c",
+      "size": 2007,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/0a0f740a6f71cf1256288868d7e42c4992d90d5c"
+    },
+    {
+      "path": "src/pages/hackathon/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28d64bffe38123cdb1f36a2aaa27d1d4aea4573d",
+      "size": 4789,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/28d64bffe38123cdb1f36a2aaa27d1d4aea4573d"
+    },
+    {
+      "path": "src/pages/index.module.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1dec4b73fbf7cf6bbf4cd15f38821780768d4bab",
+      "size": 1024,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/1dec4b73fbf7cf6bbf4cd15f38821780768d4bab"
+    },
+    {
+      "path": "src/pages/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6366677103adeb16f2218be36599150a891c584c",
+      "size": 2080,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/6366677103adeb16f2218be36599150a891c584c"
+    },
+    {
+      "path": "static",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8c9b3f73a7eaaeb805822cdb13ad86714df2e82b",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/8c9b3f73a7eaaeb805822cdb13ad86714df2e82b"
+    },
+    {
+      "path": "static/.nojekyll",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "static/blog_imgs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9ad43afa54d94f21869b3059ed1a24686d4ac923",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/9ad43afa54d94f21869b3059ed1a24686d4ac923"
+    },
+    {
+      "path": "static/blog_imgs/chapter2-preorder-token.jpeg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "625f93ef6fb9cab8789563328fe370523b9d2079",
+      "size": 127270,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/625f93ef6fb9cab8789563328fe370523b9d2079"
+    },
+    {
+      "path": "static/blog_profile_pics",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ccf4fefb25d858d8245d4711459945b8e81d79f9",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/ccf4fefb25d858d8245d4711459945b8e81d79f9"
+    },
+    {
+      "path": "static/blog_profile_pics/mikesulistio.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a6b57e0b418c50b90d51b903610b184dcae867e",
+      "size": 326243,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/2a6b57e0b418c50b90d51b903610b184dcae867e"
+    },
+    {
+      "path": "static/diagrams",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ee0fc63922793aa397e7f687a8d857b79b16c950",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/ee0fc63922793aa397e7f687a8d857b79b16c950"
+    },
+    {
+      "path": "static/diagrams/authorize_and_sign.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5470ab293b6c447a846d30699cd587ffdad447dd",
+      "size": 167549,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/5470ab293b6c447a846d30699cd587ffdad447dd"
+    },
+    {
+      "path": "static/diagrams/dapp_architecture_full.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9f5328f9e5586a3e2a88b37ea5465bca3f1b76c",
+      "size": 47607,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/b9f5328f9e5586a3e2a88b37ea5465bca3f1b76c"
+    },
+    {
+      "path": "static/diagrams/mwa_hero_diagram.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a97848a17366de917dafa3537af81cb23bf5732a",
+      "size": 18808,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/a97848a17366de917dafa3537af81cb23bf5732a"
+    },
+    {
+      "path": "static/diagrams/publishingflow.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eef244b20c13276350abf9a4ae20088c37840076",
+      "size": 96969,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/eef244b20c13276350abf9a4ae20088c37840076"
+    },
+    {
+      "path": "static/diagrams/session_establishment.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9d505fdddaf316b4bce2f58064cfe6d29f06bd3",
+      "size": 47449,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/f9d505fdddaf316b4bce2f58064cfe6d29f06bd3"
+    },
+    {
+      "path": "static/diagrams/sign_and_send.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29bb0310abc952eb1faf6dc8b243dcd95c7b0f02",
+      "size": 68744,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/29bb0310abc952eb1faf6dc8b243dcd95c7b0f02"
+    },
+    {
+      "path": "static/diagrams/submit_rpc.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41deb1545259ac8985df6b6249f459c80420d802",
+      "size": 39916,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/41deb1545259ac8985df6b6249f459c80420d802"
+    },
+    {
+      "path": "static/img",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d3a218b143754ae509a1ffaceaffe06980738e07",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/d3a218b143754ae509a1ffaceaffe06980738e07"
+    },
+    {
+      "path": "static/img/RemoteModal.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bb8fbe13fc8b746eb5afffcc1a30c4a4240f114",
+      "size": 52731,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/1bb8fbe13fc8b746eb5afffcc1a30c4a4240f114"
+    },
+    {
+      "path": "static/img/Solana_Mobile_With_Logo_Black.png",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "32529fdda609b18ef480854727bba3fc354304ed",
+      "size": 87799,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/32529fdda609b18ef480854727bba3fc354304ed"
+    },
+    {
+      "path": "static/img/Solana_Mobile_With_Logo_White.png",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "e591d157c5d8cfa618c84b8695952fb55a4916b8",
+      "size": 83284,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/e591d157c5d8cfa618c84b8695952fb55a4916b8"
+    },
+    {
+      "path": "static/img/android_icon.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75929eff25a18fb4c708eaa4b1d6b6753c39bab1",
+      "size": 2245,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/75929eff25a18fb4c708eaa4b1d6b6753c39bab1"
+    },
+    {
+      "path": "static/img/bookshelf-circle-icon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7e65471139300fac4870a3af84f2bf7d3eaa76f",
+      "size": 32600,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/e7e65471139300fac4870a3af84f2bf7d3eaa76f"
+    },
+    {
+      "path": "static/img/chapter2-logo.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24eb88cbd1baa1b0ade229470eea26e7edda4611",
+      "size": 1221,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/24eb88cbd1baa1b0ade229470eea26e7edda4611"
+    },
+    {
+      "path": "static/img/create-solana-dapp.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97c5204146c19c9e6a8f9b8059af16ddb8062479",
+      "size": 201553,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/97c5204146c19c9e6a8f9b8059af16ddb8062479"
+    },
+    {
+      "path": "static/img/dappstore-logo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f73e38a89c4cd80b034e52131adeb3e5ca168392",
+      "size": 88605,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/f73e38a89c4cd80b034e52131adeb3e5ca168392"
+    },
+    {
+      "path": "static/img/expo-sdk-icon.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80de37cb9d6ee3bf2cfe89a63199a0d07a257cc1",
+      "size": 4118,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/80de37cb9d6ee3bf2cfe89a63199a0d07a257cc1"
+    },
+    {
+      "path": "static/img/expo-snack-icon.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd8cf9c3882e3a79f5aa8abdb5fe4d615533ba40",
+      "size": 2850,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/cd8cf9c3882e3a79f5aa8abdb5fe4d615533ba40"
+    },
+    {
+      "path": "static/img/fakewallet-install.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfba4d1216d91c09967403d6e7335a102ea73966",
+      "size": 48070,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/bfba4d1216d91c09967403d6e7335a102ea73966"
+    },
+    {
+      "path": "static/img/favicon.ico",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8ad0a06f996406e069fceb4f5013f33bc1cbaff",
+      "size": 9662,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/d8ad0a06f996406e069fceb4f5013f33bc1cbaff"
+    },
+    {
+      "path": "static/img/flutter-icon-32.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c285b212f161e91f895608ecbf4fe1ffe9f8685",
+      "size": 1593,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/6c285b212f161e91f895608ecbf4fe1ffe9f8685"
+    },
+    {
+      "path": "static/img/flutter-icon.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30c02757838f65e29b5fa156b45bcc596d913b60",
+      "size": 1361,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/30c02757838f65e29b5fa156b45bcc596d913b60"
+    },
+    {
+      "path": "static/img/jetpack-compose-icon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41f520aede48fbbd76c841c48b29f5002a7e7ac9",
+      "size": 87656,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/41f520aede48fbbd76c841c48b29f5002a7e7ac9"
+    },
+    {
+      "path": "static/img/kotlin-icon-32.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e151a04a3ee79a7d1185a2c4c41d33f26686778",
+      "size": 2597,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/4e151a04a3ee79a7d1185a2c4c41d33f26686778"
+    },
+    {
+      "path": "static/img/kotlin-icon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b948b4e367e994cac792789f74911b6b63e3285",
+      "size": 199057,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/3b948b4e367e994cac792789f74911b6b63e3285"
+    },
+    {
+      "path": "static/img/mock-mwa-wallet-install.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc4e4fec6ed4c50f2a23629b133dfa8226d7cdbf",
+      "size": 17145,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/dc4e4fec6ed4c50f2a23629b133dfa8226d7cdbf"
+    },
+    {
+      "path": "static/img/ndk-download.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e694e9be26836fd5059460919836bb9243b42db3",
+      "size": 68977,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/e694e9be26836fd5059460919836bb9243b42db3"
+    },
+    {
+      "path": "static/img/pwa-icon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5cd20588b3890a33424977989203559125951e74",
+      "size": 17710,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/5cd20588b3890a33424977989203559125951e74"
+    },
+    {
+      "path": "static/img/react-native-32-light.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "974e2ba84cb3878b9a2a81c8c1ab54ee67e7797f",
+      "size": 3077,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/974e2ba84cb3878b9a2a81c8c1ab54ee67e7797f"
+    },
+    {
+      "path": "static/img/react-native-32.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ffd0754c765e846a3aebd371bca8ad504717180",
+      "size": 3005,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/8ffd0754c765e846a3aebd371bca8ad504717180"
+    },
+    {
+      "path": "static/img/react-native-96.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e825f45cd7d962397159cbcd1f6189b24962b7b2",
+      "size": 1129,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/e825f45cd7d962397159cbcd1f6189b24962b7b2"
+    },
+    {
+      "path": "static/img/rocket-icon2.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30727b55285f75789cfc686ecd6c9f444c4531ec",
+      "size": 29700,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/30727b55285f75789cfc686ecd6c9f444c4531ec"
+    },
+    {
+      "path": "static/img/seeker-genesis-token.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fdbdd910f1aab6421fca0a1b2e2c2ee6a2c18578",
+      "size": 745382,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/fdbdd910f1aab6421fca0a1b2e2c2ee6a2c18578"
+    },
+    {
+      "path": "static/img/solana-mobile-developer-hub-social-card.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e91df56e67af444562891422f19243754d0f82dd",
+      "size": 3030070,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/e91df56e67af444562891422f19243754d0f82dd"
+    },
+    {
+      "path": "static/img/solana-mobile-stack-logo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25cabe1e03eea2cc3741b5ceab6d10406baa71d7",
+      "size": 110542,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/25cabe1e03eea2cc3741b5ceab6d10406baa71d7"
+    },
+    {
+      "path": "static/img/typescript-icon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d02d066cb3b09eb99da49ca2dbebfaeeef84bb13",
+      "size": 11536,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/d02d066cb3b09eb99da49ca2dbebfaeeef84bb13"
+    },
+    {
+      "path": "static/img/unity-logo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19e6d8fc018135524a49ffa94071b68fefba87a2",
+      "size": 23616,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/19e6d8fc018135524a49ffa94071b68fefba87a2"
+    },
+    {
+      "path": "static/img/unreal-logo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a43d298e6f1adc768ab512808ce46f4789408b28",
+      "size": 15035,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/a43d298e6f1adc768ab512808ce46f4789408b28"
+    },
+    {
+      "path": "static/kotlin_images",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6bf078940526f2b78cc020fc71d44457e39bf220",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/6bf078940526f2b78cc020fc71d44457e39bf220"
+    },
+    {
+      "path": "static/kotlin_images/compose-build-run.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6009a26cebd519c982d5f125fd9087b987ae3a0",
+      "size": 13770,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/c6009a26cebd519c982d5f125fd9087b987ae3a0"
+    },
+    {
+      "path": "static/kotlin_images/scaffoldScreenshot1.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27b79abb8deb82e4e3f7ef0d5b2047e86fdf0408",
+      "size": 241263,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/27b79abb8deb82e4e3f7ef0d5b2047e86fdf0408"
+    },
+    {
+      "path": "static/kotlin_images/scaffoldScreenshot2.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c1605bce29fa3006a715064b2ee7aa7ea5c0baa",
+      "size": 266840,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/4c1605bce29fa3006a715064b2ee7aa7ea5c0baa"
+    },
+    {
+      "path": "static/kotlin_images/scaffoldScreenshot3.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0b9c0f8a427500f0740f897b7b9766866a86800",
+      "size": 296472,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/f0b9c0f8a427500f0740f897b7b9766866a86800"
+    },
+    {
+      "path": "static/listing_page_imgs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "87cb1dbd24ac23fc811b7c5ab5ee5ade2f1f7cf5",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/87cb1dbd24ac23fc811b7c5ab5ee5ade2f1f7cf5"
+    },
+    {
+      "path": "static/listing_page_imgs/appicon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01df220e523927092348e91da9b2121057596699",
+      "size": 10391384,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/01df220e523927092348e91da9b2121057596699"
+    },
+    {
+      "path": "static/listing_page_imgs/appname.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef44acd8efc864f612401951c7605a60f81bb4a7",
+      "size": 10391385,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/ef44acd8efc864f612401951c7605a60f81bb4a7"
+    },
+    {
+      "path": "static/listing_page_imgs/apppreview.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c18b29c0edf309c3a742415849ecbd2bb749a15",
+      "size": 2210861,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/5c18b29c0edf309c3a742415849ecbd2bb749a15"
+    },
+    {
+      "path": "static/listing_page_imgs/subtitle.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d155e8de25686292879c6fbb662d79f16d7cc6ea",
+      "size": 10391385,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/d155e8de25686292879c6fbb662d79f16d7cc6ea"
+    },
+    {
+      "path": "static/llms-full.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "879c049bb123eeec8fcf97d1eb1b18ee79a076ba",
+      "size": 157968,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/879c049bb123eeec8fcf97d1eb1b18ee79a076ba"
+    },
+    {
+      "path": "static/llms.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea89dd76ae021e59d695a7f00266a6c8b47cee19",
+      "size": 6390,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/ea89dd76ae021e59d695a7f00266a6c8b47cee19"
+    },
+    {
+      "path": "static/pdf",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4189a172f31578cb49b2c3e64042490e5e5dee86",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/4189a172f31578cb49b2c3e64042490e5e5dee86"
+    },
+    {
+      "path": "static/pdf/dapp-store-tou.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12d2ec92ccb4e9023bdf4783a5deba57d61427b3",
+      "size": 232088,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/12d2ec92ccb4e9023bdf4783a5deba57d61427b3"
+    },
+    {
+      "path": "static/pdf/dev-agreement.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7572239f21dc595a22a4ed765aae242097b9f24f",
+      "size": 170885,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/7572239f21dc595a22a4ed765aae242097b9f24f"
+    },
+    {
+      "path": "static/publishing_portal",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2945f54ccb860f25ad3eee41cd156e45765e2ca3",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/2945f54ccb860f25ad3eee41cd156e45765e2ca3"
+    },
+    {
+      "path": "static/publishing_portal/dapp-apk-upload.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58534b3d16d73d6d80e8e7f5bd0e39010c7ad17d",
+      "size": 275786,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/58534b3d16d73d6d80e8e7f5bd0e39010c7ad17d"
+    },
+    {
+      "path": "static/publishing_portal/dapp-update-upload.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c69c6d510f4f61964b18bda856ce862f19100bbc",
+      "size": 319390,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/c69c6d510f4f61964b18bda856ce862f19100bbc"
+    },
+    {
+      "path": "static/publishing_portal/home-new-version.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4bc5a950bfee21ed35006c765b24aeca8fde368e",
+      "size": 400292,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/4bc5a950bfee21ed35006c765b24aeca8fde368e"
+    },
+    {
+      "path": "static/publishing_portal/home-post-submit.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3b1f01cb71d8459da50ddf8c54b6dd6904c0207",
+      "size": 765912,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/e3b1f01cb71d8459da50ddf8c54b6dd6904c0207"
+    },
+    {
+      "path": "static/publishing_portal/new-dapp-details.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4073258462369dc69d423e59d9156d4814d291ac",
+      "size": 919627,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/4073258462369dc69d423e59d9156d4814d291ac"
+    },
+    {
+      "path": "static/publishing_portal/storage-provider.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3bbb2d040e460d3259ff3eea35912db7739efab",
+      "size": 575574,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/e3bbb2d040e460d3259ff3eea35912db7739efab"
+    },
+    {
+      "path": "static/publishing_portal/update-dapp-details.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3995fab5f463b8be9a3fe5b8443a7165ee97c7da",
+      "size": 1150645,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/3995fab5f463b8be9a3fe5b8443a7165ee97c7da"
+    },
+    {
+      "path": "static/saga_release_imgs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "da808c9396d245450cc5360d8038d5e8476c291a",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/da808c9396d245450cc5360d8038d5e8476c291a"
+    },
+    {
+      "path": "static/saga_release_imgs/image1.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3204fd0c8c75be7e9a87aedfd48f7023debcd9d",
+      "size": 247227,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/b3204fd0c8c75be7e9a87aedfd48f7023debcd9d"
+    },
+    {
+      "path": "static/saga_release_imgs/image2.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a3cb81b2b7f48680ad63ec1a72fb9a90e6e2f7d",
+      "size": 246239,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/8a3cb81b2b7f48680ad63ec1a72fb9a90e6e2f7d"
+    },
+    {
+      "path": "static/saga_release_imgs/image3.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b9f4b322bc849b818dd0fa0254d500b904fcd79",
+      "size": 138702,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/0b9f4b322bc849b818dd0fa0254d500b904fcd79"
+    },
+    {
+      "path": "static/saga_release_imgs/image4.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c7eef510f0f0c552a31d07f2e60398101260ebc",
+      "size": 591298,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/3c7eef510f0f0c552a31d07f2e60398101260ebc"
+    },
+    {
+      "path": "static/saga_release_imgs/image5.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6be13ffe6a7bcb8fa12ffb6f3eb1ff1b0d95640c",
+      "size": 438998,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/6be13ffe6a7bcb8fa12ffb6f3eb1ff1b0d95640c"
+    },
+    {
+      "path": "static/sample_app_imgs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d50503b05ebc06e5f41c089b13f935fb7d14a40c",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/d50503b05ebc06e5f41c089b13f935fb7d14a40c"
+    },
+    {
+      "path": "static/sample_app_imgs/advanced_hello_world_react_native.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90a2e0f4fb16e457b38f1cb820fce09b6090f87f",
+      "size": 9553,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/90a2e0f4fb16e457b38f1cb820fce09b6090f87f"
+    },
+    {
+      "path": "static/sample_app_imgs/anchor_counter_program.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23db5973bdde03608b599ad8fb36b20d02a8be87",
+      "size": 20910,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/23db5973bdde03608b599ad8fb36b20d02a8be87"
+    },
+    {
+      "path": "static/sample_app_imgs/cause-pots.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53e9ef682e00d26e1b561987cd657cb5507f5c2f",
+      "size": 7989,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/53e9ef682e00d26e1b561987cd657cb5507f5c2f"
+    },
+    {
+      "path": "static/sample_app_imgs/hello_world_android.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "174e8932f8d3cf7926183008b9f0bf66ca2bd072",
+      "size": 6312,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/174e8932f8d3cf7926183008b9f0bf66ca2bd072"
+    },
+    {
+      "path": "static/sample_app_imgs/hello_world_react_native.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33b28e050cfe143c045f7325c6e8610326486058",
+      "size": 68319,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/33b28e050cfe143c045f7325c6e8610326486058"
+    },
+    {
+      "path": "static/sample_app_imgs/hello_world_rxjava.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85389b400e587264d34b6f92c5dd8e96c38f872d",
+      "size": 22273,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/85389b400e587264d34b6f92c5dd8e96c38f872d"
+    },
+    {
+      "path": "static/sample_app_imgs/idle_farming_game.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "335b262760b8133b8fb642a60fdefb746f37b01d",
+      "size": 92306,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/335b262760b8133b8fb642a60fdefb746f37b01d"
+    },
+    {
+      "path": "static/sample_app_imgs/mintyfresh.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "139d8c97d0c4103d03e7460c3f3357a510d1f4f3",
+      "size": 64745,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/139d8c97d0c4103d03e7460c3f3357a510d1f4f3"
+    },
+    {
+      "path": "static/sample_app_imgs/mobile_nft_minter.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63fa4597ae0e2a7f3d1cbb8b59c0e857903116eb",
+      "size": 134258,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/63fa4597ae0e2a7f3d1cbb8b59c0e857903116eb"
+    },
+    {
+      "path": "static/sample_app_imgs/settle.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4087b616d90e22ae2354c0bbdde236195892d823",
+      "size": 3746,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/4087b616d90e22ae2354c0bbdde236195892d823"
+    },
+    {
+      "path": "static/sample_app_imgs/simple_storage_dapp.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af09e123c2286aff6c5c68c385fac1cba36fcc3d",
+      "size": 36930,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/af09e123c2286aff6c5c68c385fac1cba36fcc3d"
+    },
+    {
+      "path": "static/sample_app_imgs/skr-address-resolution.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ab0754458a92308ced6dd370d5ddbcb9420cbad",
+      "size": 5496,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/5ab0754458a92308ced6dd370d5ddbcb9420cbad"
+    },
+    {
+      "path": "static/tutorial_imgs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "893726f6bb37288c2aff03e9768568773b2f5268",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/893726f6bb37288c2aff03e9768568773b2f5268"
+    },
+    {
+      "path": "static/tutorial_imgs/nftminter1.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9081a8926c65309357d9b6670049e54c0c0a8e88",
+      "size": 174428,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/9081a8926c65309357d9b6670049e54c0c0a8e88"
+    },
+    {
+      "path": "static/tutorial_imgs/nftminter2.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "244157b7791b023d478b9022d1e7cafbe5ed0793",
+      "size": 1655865,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/244157b7791b023d478b9022d1e7cafbe5ed0793"
+    },
+    {
+      "path": "static/tutorial_imgs/nftminter3.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d66d4d4f02eb75b094d42a58b3c82d111e2603b5",
+      "size": 217161,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/d66d4d4f02eb75b094d42a58b3c82d111e2603b5"
+    },
+    {
+      "path": "static/videos",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4850b617001c8515cb1004a3b88e95ddbaf1c5e7",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/trees/4850b617001c8515cb1004a3b88e95ddbaf1c5e7"
+    },
+    {
+      "path": "static/videos/mock_mwa_wallet.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d1a6771e9f1ef49d81d876c1d94d14d127e7467",
+      "size": 302397,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/5d1a6771e9f1ef49d81d876c1d94d14d127e7467"
+    },
+    {
+      "path": "static/videos/phantom_mwa.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a61babae6a31dcbb097cba56127d1a35f90b51da",
+      "size": 2085227,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/a61babae6a31dcbb097cba56127d1a35f90b51da"
+    },
+    {
+      "path": "static/videos/solflare_mwa.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0e2d93648a047fb9f14fd3b58415f560f4a5684",
+      "size": 3310894,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/f0e2d93648a047fb9f14fd3b58415f560f4a5684"
+    },
+    {
+      "path": "static/videos/svw_mwa.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "535ac5ce1f6b77f148ee05d93df94637f158b1ae",
+      "size": 1685684,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/535ac5ce1f6b77f148ee05d93df94637f158b1ae"
+    },
+    {
+      "path": "tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "753a2f487f7b772950389abd864f5953411a177e",
+      "size": 177,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/753a2f487f7b772950389abd864f5953411a177e"
+    },
+    {
+      "path": "vercel.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bce5a64bd9bc3737b2f940ef687e862fb01520ed",
+      "size": 287,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-doc-site/git/blobs/bce5a64bd9bc3737b2f940ef687e862fb01520ed"
+    }
+  ]
+}

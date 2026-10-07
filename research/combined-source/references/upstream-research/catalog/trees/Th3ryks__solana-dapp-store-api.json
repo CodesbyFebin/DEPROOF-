@@ -1,0 +1,16 @@
+{
+  "repository": "Th3ryks/solana-dapp-store-api",
+  "tree_sha": "344166e3559348106a453282786e7bfa9eaefb02",
+  "truncated": false,
+  "entries": [
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5195cb266b146b5241b15e054e17385a1355b05",
+      "size": 5617,
+      "url": "https://api.github.com/repos/Th3ryks/solana-dapp-store-api/git/blobs/a5195cb266b146b5241b15e054e17385a1355b05",
+      "error": "SyntaxError: Unexpected token '<', \"<div align\"... is not valid JSON"
+    }
+  ]
+}

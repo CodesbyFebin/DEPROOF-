@@ -1,0 +1,289 @@
+package com.seekerclaw.app.bridge
+
+import android.util.Log
+import com.seekerclaw.app.util.ServiceState
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
+import org.json.JSONObject
+import java.net.HttpURLConnection
+import java.net.URL
+
+/**
+ * Main-process HTTP client for the Node-side internal control server
+ * (`internal-control-server.js`, port 8766) introduced in BAT-514.
+ *
+ * The reverse direction of [com.seekerclaw.app.bridge.AndroidBridge]:
+ * AndroidBridge runs in `:node` and accepts requests from JS callers;
+ * this client lives in main and POSTs to `:node` after Settings writes
+ * land. Both ends use the same per-boot `BRIDGE_TOKEN` (read from the
+ * `bridge_token` file via [ServiceState]) for auth.
+ *
+ * ## Bridge-down behaviour
+ *
+ * If the service isn't running (port not bound, connect-refused,
+ * timeout), [reconcile] / [healthz] return `false` — they NEVER throw.
+ * The caller (typically [com.seekerclaw.app.state.McpServersStore])
+ * already persisted the file write, so a missed reconcile signal is
+ * NOT a failure mode the user should see: the next service start reads
+ * `mcp_servers.json` fresh and reconciles.
+ *
+ * ## Auth token resolution
+ *
+ * [ServiceState.bridgeToken] is hydrated by the BAT-518 file-observer
+ * pattern. If it's null at call time (service has never started this
+ * boot), this client returns `false` immediately without making a
+ * request — there's no auth token to send and the server isn't
+ * listening anyway.
+ */
+object NodeControlClient {
+    private const val TAG = "NodeControlClient"
+    private const val BASE_URL = "http://127.0.0.1:8766"
+    private const val AUTH_HEADER = "X-Bridge-Token"
+    // BAT-525 R4 Copilot: HttpURLConnection is NOT cooperatively
+    // cancellable — a `withTimeoutOrNull` on the calling coroutine
+    // can't interrupt an in-flight blocking connect/read. The
+    // underlying timeouts MUST therefore sum to a wall-time that
+    // fits within every caller's outer budget. The strictest caller
+    // today is [flushShutdown] (BAT-525, called from
+    // SeekerClawService.onDestroy under withTimeoutOrNull(2000)).
+    //
+    // Loopback connect is essentially instant (<5ms in practice on
+    // the device); 250ms is generous defense-in-depth. BAT-1155 D6:
+    // the read budget is 2000ms to cover the shutdown-flush path now
+    // that Node drains the xAI token persist FIRST (300ms) THEN the
+    // session summary (1200ms), plus buffer for JSON encode + socket
+    // write.
+    //
+    // Total worst-case wall time: 250 + 2000 = 2250ms — fits the
+    // 2500ms outer service-teardown budget with 250ms margin.
+    private const val CONNECT_TIMEOUT_MS = 250
+    private const val READ_TIMEOUT_MS = 2000
+
+    /**
+     * Tell the `:node` MCP manager to reconcile the active server set.
+     * Pass [id] = `null` for a full-list reconcile (after bulk add /
+     * remove / enable-toggle), or a specific server id when the change
+     * is scoped to one entry (e.g. token edit).
+     *
+     * Returns `true` on a 2xx response. Returns `false` on any
+     * transport / auth / status failure — caller treats that as
+     * best-effort, not fatal.
+     */
+    suspend fun reconcile(id: String? = null): Boolean = withContext(Dispatchers.IO) {
+        val body = JSONObject().apply {
+            if (id != null) put("id", id)
+        }.toString()
+        post("/mcp/reconcile", body)
+    }
+
+    /** Best-effort liveness probe (`POST /healthz`). Mirrors [reconcile]'s failure shape. */
+    suspend fun healthz(): Boolean = withContext(Dispatchers.IO) {
+        post("/healthz", "{}")
+    }
+
+    /**
+     * BAT-1155 Codex re-review: leave the quiesced state. `/shutdown/flush` arms a quiesce LEASE
+     * (no new turns/heartbeats/rotations) so nothing can strand a fresh token between the
+     * durability ack and the kill. When a controlled Stop is ABANDONED (durability could not be
+     * established and the service is kept alive), the caller unquiesces so the agent resumes.
+     *
+     * This is the FAST-PATH resume. It is NOT the only guarantee (Codex major-2): the Node lease
+     * auto-expires ([quiesce.js] `LEASE_MS`) if it stops being refreshed, so even if every
+     * unquiesce POST here fails, the kept-alive agent self-resumes when the lease lapses —
+     * there is no dependence on a "next boot" that may never come. Idempotent; returns `true` on a
+     * confirmed 2xx.
+     */
+    suspend fun unquiesce(): Boolean = withContext(Dispatchers.IO) {
+        post("/unquiesce", "{}")
+    }
+
+    /**
+     * BAT-1155 Codex re-review blocker: (re)ARM the Node quiesce lease. The lease auto-expires
+     * (major-2) so an abandoned Stop self-resumes — but on a SUCCESSFUL Stop the lease must NOT
+     * expire during the (main-looper) handoff from the durability proof to the kill. A renewer
+     * POSTs this from an independent thread on a cadence well under the lease, keeping quiescence
+     * airtight until teardown begins. Returns `true` on a confirmed 2xx.
+     */
+    suspend fun quiesce(): Boolean = withContext(Dispatchers.IO) {
+        post("/quiesce", "{}")
+    }
+
+    /**
+     * Drive Node's graceful-shutdown flush before
+     * [com.seekerclaw.app.service.SeekerClawService] kills the
+     * `:node` process (BAT-525). Persists pending session summaries
+     * + dirty SQL.js mutations so the last ~60s of `api_request_log`
+     * activity isn't lost on user-initiated Stop.
+     *
+     * Returns `true` on a 2xx response (Node confirmed flush
+     * complete). Returns `false` on connect-refused (service
+     * already down), 401 (bridge token rotated), 500
+     * (`flushForShutdown` rejected), or transport timeout — in
+     * every case the caller proceeds with the unconditional
+     * `killProcess()` fallback. Bridge-token auth is provided by
+     * the shared [post] helper so the endpoint's POST-auth gate
+     * doesn't 401 every Stop event.
+     *
+     * ## Cancellation semantics (R4 Copilot — not the soft "outer
+     * timeout cancels everything" simplification it might first
+     * appear to be)
+     *
+     * `HttpURLConnection` is NOT cooperatively cancellable —
+     * `withTimeoutOrNull` on the calling coroutine fires a
+     * CancellationException at the next suspend point, but it
+     * cannot interrupt an in-flight blocking
+     * `connect()` / `responseCode` / `inputStream.readBytes()`.
+     * The hard upper bound therefore comes from the underlying
+     * connect+read timeouts, NOT the outer coroutine timeout.
+     *
+     * - [CONNECT_TIMEOUT_MS] = 250ms (loopback is near-instant; 250
+     *   is defensive padding).
+     * - [READ_TIMEOUT_MS] = 2000ms (BAT-1155 D6: covers the Node-side
+     *   token-drain 300ms + `summaryTimeoutMs: 1200` + buffer so a
+     *   real flush response always lands).
+     * - Worst-case wall time: 2250ms.
+     *
+     * SeekerClawService still wraps the suspend call in
+     * `withTimeoutOrNull(2500)` — that timeout primarily exists so
+     * the Kotlin-side suspension releases promptly when the underlying
+     * I/O eventually returns/throws within its bounded budget. It
+     * does NOT directly interrupt the I/O; the 1750ms worst case is
+     * the actual ceiling.
+     */
+    /**
+     * BAT-1155 verify major-2: tri-state so the caller's fail-closed durability
+     * gate fires ONLY on a genuinely stranded rotation, not on a benign summary
+     * hiccup. Returns:
+     *  - `true`  = Node reached; a rotated xAI token pair is STILL unpersisted
+     *              (`pendingPersist:true`) → the caller must fail-closed;
+     *  - `false` = Node reached; nothing stranded (even if the summary flush
+     *              itself failed) → do NOT force a re-pair;
+     *  - `null`  = flush did not reach/parse Node (connect-refused, 401, timeout,
+     *              malformed body) → the caller fail-closes on the unknown.
+     */
+    /**
+     * Structured `/shutdown/flush` result (Codex re-review major-1). `diskUnsafe` is the
+     * brick-critical signal (a consumed/rotated token still on disk); `notifyPending` is the
+     * separate "one-autonomous-notice-per-dead-epoch" mark that hasn't durably landed. A `null`
+     * [flushShutdown] return means the flush did not reach/parse Node (fail-closed on the unknown).
+     */
+    data class FlushResult(val diskUnsafe: Boolean, val notifyPending: Boolean)
+
+    suspend fun flushShutdown(maxTotalMs: Int? = null, durabilityOnly: Boolean = false): FlushResult? = withContext(Dispatchers.IO) {
+        // Codex re-review major-1: HttpURLConnection's blocking connect/read is NOT
+        // cooperatively cancellable — a coroutine withTimeoutOrNull cannot interrupt it, so the
+        // ONLY real bound is the underlying connect/read timeouts. When the caller passes a
+        // remaining end-to-end budget, cap those timeouts to it so a round started near the
+        // deadline can't block the full 250+2000ms past it. Split the budget connect-first.
+        // An exhausted budget (<2ms) can't fit even a 1ms connect + 1ms read → don't issue a
+        // doomed request (CodeRabbit); the caller fail-closes on the null. Otherwise reserve
+        // ≥1ms for the read so connect + read never EXCEEDS maxTotalMs.
+        //
+        // BAT-1155 hotfix: [durabilityOnly] asks Node to answer the brick-critical `diskUnsafe`
+        // question FAST (xAI token drain only, ~300ms) and SKIP the best-effort session summary.
+        // The pre-stop durability gate and the onDestroy guard use this so a slow/timing-out
+        // summary can never null out their durability answer (which a fail-closed caller would
+        // misread as "Node unreachable" and force-re-pair a VALID fresh sign-in — the soak brick).
+        if (maxTotalMs != null && maxTotalMs < 2) return@withContext null
+        val reqBody = if (durabilityOnly) "{\"durabilityOnly\":true}" else "{}"
+        val body = if (maxTotalMs != null) {
+            val connectMs = (maxTotalMs - 1).coerceIn(1, CONNECT_TIMEOUT_MS)
+            val readMs = (maxTotalMs - connectMs).coerceIn(1, READ_TIMEOUT_MS)
+            postForBody("/shutdown/flush", reqBody, connectMs, readMs)
+        } else {
+            postForBody("/shutdown/flush", reqBody)
+        } ?: return@withContext null
+        try {
+            val json = JSONObject(body)
+            // Codex re-review blocker-2: prefer the AUTHORITATIVE `diskUnsafe` signal — it
+            // covers convergence-exhausted (T1 discarded, consumed T0 on disk) and a failed
+            // dead-family mark, not just a still-pending pair. Fall back to `pendingPersist`
+            // for a pre-blocker-2 Node, and null (→ fail-closed) if neither field is present.
+            val diskUnsafe = when {
+                json.has("diskUnsafe") -> json.getBoolean("diskUnsafe")
+                json.has("pendingPersist") -> json.getBoolean("pendingPersist")
+                else -> return@withContext null
+            }
+            FlushResult(diskUnsafe, json.optBoolean("notifyPending", false))
+        } catch (e: Exception) {
+            // CodeRabbit: don't swallow silently — a malformed /shutdown/flush body must be
+            // distinguishable from a transport failure when debugging (both map to null).
+            Log.d(TAG, "flushShutdown: malformed response body: ${e.message}")
+            null
+        }
+    }
+
+    /**
+     * Like [post] but returns the response body (from the input OR error stream,
+     * so a 500 that still carries `{pendingPersist}` is parseable) on any completed
+     * HTTP exchange, or `null` on a transport failure / missing bridge token.
+     */
+    private fun postForBody(
+        path: String,
+        body: String,
+        connectMs: Int = CONNECT_TIMEOUT_MS,
+        readMs: Int = READ_TIMEOUT_MS,
+    ): String? {
+        val token = ServiceState.bridgeToken
+        if (token.isNullOrBlank()) return null
+        var conn: HttpURLConnection? = null
+        return try {
+            val url = URL(BASE_URL + path)
+            conn = (url.openConnection() as HttpURLConnection).apply {
+                requestMethod = "POST"
+                connectTimeout = connectMs
+                readTimeout = readMs
+                doOutput = true
+                setRequestProperty("Content-Type", "application/json")
+                setRequestProperty(AUTH_HEADER, token)
+            }
+            conn.outputStream.use { it.write(body.toByteArray(Charsets.UTF_8)) }
+            val code = conn.responseCode
+            val stream = if (code in 200..299) conn.inputStream else conn.errorStream
+            stream?.use { String(it.readBytes(), Charsets.UTF_8) } ?: ""
+        } catch (e: Exception) {
+            Log.d(TAG, "POST $path failed: ${e.javaClass.simpleName}: ${e.message}")
+            null
+        } finally {
+            conn?.disconnect()
+        }
+    }
+
+    private fun post(path: String, body: String): Boolean {
+        val token = ServiceState.bridgeToken
+        if (token.isNullOrBlank()) {
+            // No bridge token = service has never started this boot,
+            // so the control server isn't listening either. Skip the
+            // round-trip and the noisy connect-refused log.
+            return false
+        }
+        var conn: HttpURLConnection? = null
+        return try {
+            val url = URL(BASE_URL + path)
+            conn = (url.openConnection() as HttpURLConnection).apply {
+                requestMethod = "POST"
+                connectTimeout = CONNECT_TIMEOUT_MS
+                readTimeout = READ_TIMEOUT_MS
+                doOutput = true
+                setRequestProperty("Content-Type", "application/json")
+                setRequestProperty(AUTH_HEADER, token)
+            }
+            conn.outputStream.use { it.write(body.toByteArray(Charsets.UTF_8)) }
+            val code = conn.responseCode
+            // Drain the response stream so the underlying socket can
+            // be returned to the keep-alive pool cleanly.
+            (if (code in 200..299) conn.inputStream else conn.errorStream)
+                ?.use { it.readBytes() }
+            code in 200..299
+        } catch (e: Exception) {
+            // Bridge-down, connect-refused, timeout — all the same as
+            // far as caller is concerned. Log at DEBUG via Android
+            // Log.d so it doesn't pollute LogCollector when the user
+            // edits a server while the service is stopped.
+            Log.d(TAG, "POST $path failed: ${e.javaClass.simpleName}: ${e.message}")
+            false
+        } finally {
+            conn?.disconnect()
+        }
+    }
+}

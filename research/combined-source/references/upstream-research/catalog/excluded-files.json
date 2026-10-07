@@ -1,0 +1,577 @@
+[
+  {
+    "repository": "0xCaptain888/SkillDock",
+    "path": "LICENSE",
+    "reason": "Archived agent marketplace; autonomous purchasing and tokenized skills are not DEPROOF core. No implementation selected."
+  },
+  {
+    "repository": "0xCaptain888/SkillDock",
+    "path": "README.md",
+    "reason": "Archived agent marketplace; autonomous purchasing and tokenized skills are not DEPROOF core. No implementation selected."
+  },
+  {
+    "repository": "0xCaptain888/SkillDock",
+    "path": "package.json",
+    "reason": "Archived agent marketplace; autonomous purchasing and tokenized skills are not DEPROOF core. No implementation selected."
+  },
+  {
+    "repository": "0xJonaseb11/mobile-dapp.3.0",
+    "path": "README.md",
+    "reason": "Kotlin wallet connection example but no detected license. Do not redistribute source."
+  },
+  {
+    "repository": "0xJonaseb11/mobile-dapp.3.0",
+    "path": "app/src/main/java/com/example/waffle/composables/WalletConnectButton.kt",
+    "reason": "Kotlin wallet connection example but no detected license. Do not redistribute source."
+  },
+  {
+    "repository": "0xJonaseb11/mobile-dapp.3.0",
+    "path": "app/src/main/java/com/example/waffle/usecase/WalletConnectionUseCase.kt",
+    "reason": "Kotlin wallet connection example but no detected license. Do not redistribute source."
+  },
+  {
+    "repository": "0xJonaseb11/mobile-dapp.3.0",
+    "path": "app/src/androidTest/java/com/example/waffle/ExampleInstrumentedTest.kt",
+    "reason": "Kotlin wallet connection example but no detected license. Do not redistribute source."
+  },
+  {
+    "repository": "0xJonaseb11/mobile-dapp.3.0",
+    "path": "app/src/test/java/com/example/waffle/ExampleUnitTest.kt",
+    "reason": "Kotlin wallet connection example but no detected license. Do not redistribute source."
+  },
+  {
+    "repository": "4R7I5T/BioLLM_Solana_dApp",
+    "path": "README.md",
+    "reason": "No detected license; wallet creation/import and stored key service are outside noncustodial DEPROOF core."
+  },
+  {
+    "repository": "4R7I5T/BioLLM_Solana_dApp",
+    "path": "app/(tabs)/wallet.tsx",
+    "reason": "No detected license; wallet creation/import and stored key service are outside noncustodial DEPROOF core."
+  },
+  {
+    "repository": "4R7I5T/BioLLM_Solana_dApp",
+    "path": "app/wallet/confirm.tsx",
+    "reason": "No detected license; wallet creation/import and stored key service are outside noncustodial DEPROOF core."
+  },
+  {
+    "repository": "4R7I5T/BioLLM_Solana_dApp",
+    "path": "app/wallet/create.tsx",
+    "reason": "No detected license; wallet creation/import and stored key service are outside noncustodial DEPROOF core."
+  },
+  {
+    "repository": "4R7I5T/BioLLM_Solana_dApp",
+    "path": "app/wallet/import.tsx",
+    "reason": "No detected license; wallet creation/import and stored key service are outside noncustodial DEPROOF core."
+  },
+  {
+    "repository": "4R7I5T/BioLLM_Solana_dApp",
+    "path": "src/hooks/useSolanaWallet.ts",
+    "reason": "No detected license; wallet creation/import and stored key service are outside noncustodial DEPROOF core."
+  },
+  {
+    "repository": "4R7I5T/BioLLM_Solana_dApp",
+    "path": "src/services/walletKeyService.ts",
+    "reason": "No detected license; wallet creation/import and stored key service are outside noncustodial DEPROOF core."
+  },
+  {
+    "repository": "AleisterMoltley/dotLab",
+    "path": "LICENSE",
+    "reason": "Local AI game studio. Its host-enforced quality philosophy is interesting, but no DEPIN adapter or Android trust component selected."
+  },
+  {
+    "repository": "AleisterMoltley/dotLab",
+    "path": "README.md",
+    "reason": "Local AI game studio. Its host-enforced quality philosophy is interesting, but no DEPIN adapter or Android trust component selected."
+  },
+  {
+    "repository": "AleisterMoltley/dotLab",
+    "path": "knowledge/fun-first-design.md",
+    "reason": "Local AI game studio. Its host-enforced quality philosophy is interesting, but no DEPIN adapter or Android trust component selected."
+  },
+  {
+    "repository": "AleisterMoltley/dotLab",
+    "path": "knowledge/pair-partner.md",
+    "reason": "Local AI game studio. Its host-enforced quality philosophy is interesting, but no DEPIN adapter or Android trust component selected."
+  },
+  {
+    "repository": "AleisterMoltley/dotLab",
+    "path": "knowledge/solana-seeker.md",
+    "reason": "Local AI game studio. Its host-enforced quality philosophy is interesting, but no DEPIN adapter or Android trust component selected."
+  },
+  {
+    "repository": "AleisterMoltley/dotLab",
+    "path": "playtest/package.json",
+    "reason": "Local AI game studio. Its host-enforced quality philosophy is interesting, but no DEPIN adapter or Android trust component selected."
+  },
+  {
+    "repository": "AleisterMoltley/dotLab",
+    "path": "tests/fixtures/slice-pass/package.json",
+    "reason": "Local AI game studio. Its host-enforced quality philosophy is interesting, but no DEPIN adapter or Android trust component selected."
+  },
+  {
+    "repository": "AleisterMoltley/dotLab",
+    "path": "config/README-editor.md",
+    "reason": "Local AI game studio. Its host-enforced quality philosophy is interesting, but no DEPIN adapter or Android trust component selected."
+  },
+  {
+    "repository": "Hamiltok387lz/solana-mobile-dapp-scaffold",
+    "path": "README.md",
+    "reason": "Third-party React Native scaffold without detected license. Use licensed official templates instead."
+  },
+  {
+    "repository": "Hamiltok387lz/solana-mobile-dapp-scaffold",
+    "path": "template/components/providers/AuthorizationProvider.tsx",
+    "reason": "Third-party React Native scaffold without detected license. Use licensed official templates instead."
+  },
+  {
+    "repository": "Hamiltok387lz/solana-mobile-dapp-scaffold",
+    "path": "template/components/SignMessageButton.tsx",
+    "reason": "Third-party React Native scaffold without detected license. Use licensed official templates instead."
+  },
+  {
+    "repository": "Hamiltok387lz/solana-mobile-dapp-scaffold",
+    "path": "template/components/SignTransactionButton.tsx",
+    "reason": "Third-party React Native scaffold without detected license. Use licensed official templates instead."
+  },
+  {
+    "repository": "Hamiltok387lz/solana-mobile-dapp-scaffold",
+    "path": "package.json",
+    "reason": "Third-party React Native scaffold without detected license. Use licensed official templates instead."
+  },
+  {
+    "repository": "Hamiltok387lz/solana-mobile-dapp-scaffold",
+    "path": "template/package.json",
+    "reason": "Third-party React Native scaffold without detected license. Use licensed official templates instead."
+  },
+  {
+    "repository": "Hamiltok387lz/solana-mobile-dapp-scaffold",
+    "path": "template/README.md",
+    "reason": "Third-party React Native scaffold without detected license. Use licensed official templates instead."
+  },
+  {
+    "repository": "MetaMask/dapps",
+    "path": "LICENSE",
+    "reason": "Archived Ethereum dApp collection; not the DEPROOF runtime."
+  },
+  {
+    "repository": "MetaMask/dapps",
+    "path": "README.md",
+    "reason": "Archived Ethereum dApp collection; not the DEPROOF runtime."
+  },
+  {
+    "repository": "MetaMask/dapps",
+    "path": "public/manifest.json",
+    "reason": "Archived Ethereum dApp collection; not the DEPROOF runtime."
+  },
+  {
+    "repository": "MetaMask/dapps",
+    "path": "package.json",
+    "reason": "Archived Ethereum dApp collection; not the DEPROOF runtime."
+  },
+  {
+    "repository": "MetaMask/test-dapp",
+    "path": "LICENSE",
+    "reason": "Ethereum QA app, useful conceptually for explicit test cases but not the Solana wallet path."
+  },
+  {
+    "repository": "MetaMask/test-dapp",
+    "path": "README.md",
+    "reason": "Ethereum QA app, useful conceptually for explicit test cases but not the Solana wallet path."
+  },
+  {
+    "repository": "MetaMask/test-dapp",
+    "path": "package.json",
+    "reason": "Ethereum QA app, useful conceptually for explicit test cases but not the Solana wallet path."
+  },
+  {
+    "repository": "MetaMask/test-dapp",
+    "path": ".github/workflows/build-lint-test.yml",
+    "reason": "Ethereum QA app, useful conceptually for explicit test cases but not the Solana wallet path."
+  },
+  {
+    "repository": "OpenFuturePlatform/open-api",
+    "path": "LICENSE.txt",
+    "reason": "Kotlin backend/payment API patterns; not Android MWA or a supported DEPIN protocol."
+  },
+  {
+    "repository": "OpenFuturePlatform/open-api",
+    "path": "README.md",
+    "reason": "Kotlin backend/payment API patterns; not Android MWA or a supported DEPIN protocol."
+  },
+  {
+    "repository": "OpenFuturePlatform/open-api",
+    "path": "src/main/kotlin/io/openfuture/api/domain/state/CreateStateWalletRequest.kt",
+    "reason": "Kotlin backend/payment API patterns; not Android MWA or a supported DEPIN protocol."
+  },
+  {
+    "repository": "OpenFuturePlatform/open-api",
+    "path": "src/main/kotlin/io/openfuture/api/domain/state/CreateStateWalletRequestMetadata.kt",
+    "reason": "Kotlin backend/payment API patterns; not Android MWA or a supported DEPIN protocol."
+  },
+  {
+    "repository": "OpenFuturePlatform/open-api",
+    "path": "src/main/kotlin/io/openfuture/api/domain/state/CreateStateWalletResponse.kt",
+    "reason": "Kotlin backend/payment API patterns; not Android MWA or a supported DEPIN protocol."
+  },
+  {
+    "repository": "OpenFuturePlatform/open-api",
+    "path": "src/main/kotlin/io/openfuture/api/domain/state/UpdateStateWalletMetadata.kt",
+    "reason": "Kotlin backend/payment API patterns; not Android MWA or a supported DEPIN protocol."
+  },
+  {
+    "repository": "OpenFuturePlatform/open-api",
+    "path": "src/test/kotlin/io/openfuture/api/controller/widget/TransactionWidgetControllerTest.kt",
+    "reason": "Kotlin backend/payment API patterns; not Android MWA or a supported DEPIN protocol."
+  },
+  {
+    "repository": "OpenFuturePlatform/open-api",
+    "path": "src/test/kotlin/io/openfuture/api/service/DefaultEthereumTransactionServiceTests.kt",
+    "reason": "Kotlin backend/payment API patterns; not Android MWA or a supported DEPIN protocol."
+  },
+  {
+    "repository": "Quantum-Software-Development/solana-atlas-quantum-hub",
+    "path": "LICENSE",
+    "reason": "Primarily documentation/research; no qualified DEPIN runtime selected."
+  },
+  {
+    "repository": "Quantum-Software-Development/solana-atlas-quantum-hub",
+    "path": "README.md",
+    "reason": "Primarily documentation/research; no qualified DEPIN runtime selected."
+  },
+  {
+    "repository": "Quantum-Software-Development/solana-atlas-quantum-hub",
+    "path": "README.pt_BR.md",
+    "reason": "Primarily documentation/research; no qualified DEPIN runtime selected."
+  },
+  {
+    "repository": "Th3ryks/solana-dapp-store-api",
+    "path": "README.md",
+    "reason": "One-file commercial access README; not an official submission SDK or downloadable implementation."
+  },
+  {
+    "repository": "beeman/solana-mobile-monorepo",
+    "path": ".ruler/skills/ai-sdk/references/ai-gateway.md",
+    "reason": "Unrelated vendored material or excluded credential/artifact path"
+  },
+  {
+    "repository": "beeman/solana-mobile-monorepo",
+    "path": ".ruler/skills/ai-sdk/references/common-errors.md",
+    "reason": "Unrelated vendored material or excluded credential/artifact path"
+  },
+  {
+    "repository": "beeman/solana-mobile-monorepo",
+    "path": ".ruler/skills/ai-sdk/references/type-safe-agents.md",
+    "reason": "Unrelated vendored material or excluded credential/artifact path"
+  },
+  {
+    "repository": "beeman/solana-mobile-monorepo",
+    "path": ".ruler/skills/ai-sdk/SKILL.md",
+    "reason": "Unrelated vendored material or excluded credential/artifact path"
+  },
+  {
+    "repository": "beeman/solana-mobile-monorepo",
+    "path": ".ruler/skills/vercel-react-native-skills/rules/design-system-compound-components.md",
+    "reason": "Unrelated vendored material or excluded credential/artifact path"
+  },
+  {
+    "repository": "bloqly/bloqly",
+    "path": "README.md",
+    "reason": "Single-file repository; no runtime source tree found."
+  },
+  {
+    "repository": "dappuniversity/starter_kit",
+    "path": "public/manifest.json",
+    "reason": "Generic starter, no detected license. Not selected for Android DEPROOF."
+  },
+  {
+    "repository": "dappuniversity/starter_kit",
+    "path": "package.json",
+    "reason": "Generic starter, no detected license. Not selected for Android DEPROOF."
+  },
+  {
+    "repository": "ethereum/dapp-bin",
+    "path": "LICENSE",
+    "reason": "Archived Ethereum examples; not a Solana mobile foundation."
+  },
+  {
+    "repository": "ethereum/dapp-bin",
+    "path": "README.md",
+    "reason": "Archived Ethereum examples; not a Solana mobile foundation."
+  },
+  {
+    "repository": "ethereum/dapp-bin",
+    "path": "future_solidity/README.md",
+    "reason": "Archived Ethereum examples; not a Solana mobile foundation."
+  },
+  {
+    "repository": "hariFED/O-Chat",
+    "path": "README.md",
+    "reason": "No detected license; chat application not selected for DEPIN evidence workflow."
+  },
+  {
+    "repository": "hariFED/O-Chat",
+    "path": "package.json",
+    "reason": "No detected license; chat application not selected for DEPIN evidence workflow."
+  },
+  {
+    "repository": "hironate/token-airdrop-contract",
+    "path": "readme.md",
+    "reason": "Token-airdrop contract outside no-token-issuance DEPROOF scope; no source selected."
+  },
+  {
+    "repository": "hironate/token-airdrop-contract",
+    "path": "package.json",
+    "reason": "Token-airdrop contract outside no-token-issuance DEPROOF scope; no source selected."
+  },
+  {
+    "repository": "lukasbrook/solana_mobile_vibe_kit",
+    "path": "README.md",
+    "reason": "Ionic/Capacitor SDK; README badge claims MIT but no license detected in tree. Badge is insufficient for extraction."
+  },
+  {
+    "repository": "lukasbrook/solana_mobile_vibe_kit",
+    "path": "public/manifest.json",
+    "reason": "Ionic/Capacitor SDK; README badge claims MIT but no license detected in tree. Badge is insufficient for extraction."
+  },
+  {
+    "repository": "lukasbrook/solana_mobile_vibe_kit",
+    "path": "src/sdk/index.ts",
+    "reason": "Ionic/Capacitor SDK; README badge claims MIT but no license detected in tree. Badge is insufficient for extraction."
+  },
+  {
+    "repository": "lukasbrook/solana_mobile_vibe_kit",
+    "path": "src/sdk/jupiter.ts",
+    "reason": "Ionic/Capacitor SDK; README badge claims MIT but no license detected in tree. Badge is insufficient for extraction."
+  },
+  {
+    "repository": "lukasbrook/solana_mobile_vibe_kit",
+    "path": "src/sdk/SolanaSDK.ts",
+    "reason": "Ionic/Capacitor SDK; README badge claims MIT but no license detected in tree. Badge is insufficient for extraction."
+  },
+  {
+    "repository": "lukasbrook/solana_mobile_vibe_kit",
+    "path": "src/sdk/token.ts",
+    "reason": "Ionic/Capacitor SDK; README badge claims MIT but no license detected in tree. Badge is insufficient for extraction."
+  },
+  {
+    "repository": "lukasbrook/solana_mobile_vibe_kit",
+    "path": "src/sdk/transaction.ts",
+    "reason": "Ionic/Capacitor SDK; README badge claims MIT but no license detected in tree. Badge is insufficient for extraction."
+  },
+  {
+    "repository": "merigo-labs/solana-web3",
+    "path": "LICENSE",
+    "reason": "Dart Solana RPC implementation; different language/runtime from Kotlin DEPROOF."
+  },
+  {
+    "repository": "merigo-labs/solana-web3",
+    "path": "README.md",
+    "reason": "Dart Solana RPC implementation; different language/runtime from Kotlin DEPROOF."
+  },
+  {
+    "repository": "merigo-labs/solana-web3",
+    "path": "README_DEV.md",
+    "reason": "Dart Solana RPC implementation; different language/runtime from Kotlin DEPROOF."
+  },
+  {
+    "repository": "ronanyeah/pow-dapp",
+    "path": "README.md",
+    "reason": "Proof-of-work web example; no detected license and not a qualified useful-compute proof backend."
+  },
+  {
+    "repository": "ronanyeah/pow-dapp",
+    "path": "public/manifest.json",
+    "reason": "Proof-of-work web example; no detected license and not a qualified useful-compute proof backend."
+  },
+  {
+    "repository": "ronanyeah/pow-dapp",
+    "path": "package.json",
+    "reason": "Proof-of-work web example; no detected license and not a qualified useful-compute proof backend."
+  },
+  {
+    "repository": "solana-foundation/framework-kit",
+    "path": "README.md",
+    "reason": "README explicitly says no longer maintained and recommends Kit plugins or Solana Kit. No detected repository license; source excluded."
+  },
+  {
+    "repository": "solana-foundation/framework-kit",
+    "path": "packages/client/src/features/transactions.test.ts",
+    "reason": "README explicitly says no longer maintained and recommends Kit plugins or Solana Kit. No detected repository license; source excluded."
+  },
+  {
+    "repository": "solana-foundation/framework-kit",
+    "path": "packages/client/src/rpc/createSolanaRpcClient.test.ts",
+    "reason": "README explicitly says no longer maintained and recommends Kit plugins or Solana Kit. No detected repository license; source excluded."
+  },
+  {
+    "repository": "solana-foundation/framework-kit",
+    "path": "packages/client/src/server/signers.test.ts",
+    "reason": "README explicitly says no longer maintained and recommends Kit plugins or Solana Kit. No detected repository license; source excluded."
+  },
+  {
+    "repository": "solana-foundation/framework-kit",
+    "path": "packages/client/src/signatures/status.test.ts",
+    "reason": "README explicitly says no longer maintained and recommends Kit plugins or Solana Kit. No detected repository license; source excluded."
+  },
+  {
+    "repository": "solana-foundation/framework-kit",
+    "path": "packages/client/src/signers/walletTransactionSigner.test.ts",
+    "reason": "README explicitly says no longer maintained and recommends Kit plugins or Solana Kit. No detected repository license; source excluded."
+  },
+  {
+    "repository": "solana-foundation/framework-kit",
+    "path": "packages/client/src/transactions/prepareTransaction.test.ts",
+    "reason": "README explicitly says no longer maintained and recommends Kit plugins or Solana Kit. No detected repository license; source excluded."
+  },
+  {
+    "repository": "solana-mobile/solana-kotlin-compose-scaffold",
+    "path": "README.md",
+    "reason": "Official but archived Kotlin scaffold; no detected license. Reference-only until permissions clarified; prefer current templates."
+  },
+  {
+    "repository": "solana-mobile/solana-kotlin-compose-scaffold",
+    "path": "app/src/androidTest/java/com/example/solanakotlincomposescaffold/ExampleInstrumentedTest.kt",
+    "reason": "Official but archived Kotlin scaffold; no detected license. Reference-only until permissions clarified; prefer current templates."
+  },
+  {
+    "repository": "solana-mobile/solana-kotlin-compose-scaffold",
+    "path": "app/src/test/java/com/example/solanakotlincomposescaffold/ExampleUnitTest.kt",
+    "reason": "Official but archived Kotlin scaffold; no detected license. Reference-only until permissions clarified; prefer current templates."
+  },
+  {
+    "repository": "solana-mobile/solana-kotlin-compose-scaffold",
+    "path": "app/src/main/java/com/example/solanakotlincomposescaffold/di/SolanaKotlinComposeScaffoldModule.kt",
+    "reason": "Official but archived Kotlin scaffold; no detected license. Reference-only until permissions clarified; prefer current templates."
+  },
+  {
+    "repository": "solana-mobile/solana-kotlin-compose-scaffold",
+    "path": "app/src/main/java/com/example/solanakotlincomposescaffold/MainActivity.kt",
+    "reason": "Official but archived Kotlin scaffold; no detected license. Reference-only until permissions clarified; prefer current templates."
+  },
+  {
+    "repository": "solana-mobile/solana-kotlin-compose-scaffold",
+    "path": "app/src/main/java/com/example/solanakotlincomposescaffold/networking/HttpDriver.kt",
+    "reason": "Official but archived Kotlin scaffold; no detected license. Reference-only until permissions clarified; prefer current templates."
+  },
+  {
+    "repository": "solana-mobile/solana-kotlin-compose-scaffold",
+    "path": "app/src/main/java/com/example/solanakotlincomposescaffold/SolanaKotlinComposeScaffoldApp.kt",
+    "reason": "Official but archived Kotlin scaffold; no detected license. Reference-only until permissions clarified; prefer current templates."
+  },
+  {
+    "repository": "solana-mobile/solana-mobile-doc-site",
+    "path": "README.md",
+    "reason": "Archived documentation website with no detected license; prefer current solana-mobile-docs."
+  },
+  {
+    "repository": "solana-mobile/solana-mobile-doc-site",
+    "path": "docs/developers/mobile-wallet-adapter-deep-dive.md",
+    "reason": "Archived documentation website with no detected license; prefer current solana-mobile-docs."
+  },
+  {
+    "repository": "solana-mobile/solana-mobile-doc-site",
+    "path": "docs/developers/mobile-wallet-adapter-web.md",
+    "reason": "Archived documentation website with no detected license; prefer current solana-mobile-docs."
+  },
+  {
+    "repository": "solana-mobile/solana-mobile-doc-site",
+    "path": "docs/developers/mobile-wallet-adapter.md",
+    "reason": "Archived documentation website with no detected license; prefer current solana-mobile-docs."
+  },
+  {
+    "repository": "solana-mobile/solana-mobile-doc-site",
+    "path": "docs/mobile-wallet-adapter/diagrams.md",
+    "reason": "Archived documentation website with no detected license; prefer current solana-mobile-docs."
+  },
+  {
+    "repository": "solana-mobile/solana-mobile-doc-site",
+    "path": "docs/mobile-wallet-adapter/migrating-to-wallet-standard.md",
+    "reason": "Archived documentation website with no detected license; prefer current solana-mobile-docs."
+  },
+  {
+    "repository": "solana-mobile/solana-mobile-doc-site",
+    "path": "docs/mobile-wallet-adapter/mobile-apps.md",
+    "reason": "Archived documentation website with no detected license; prefer current solana-mobile-docs."
+  },
+  {
+    "repository": "solana-mobile/solana-mobile-stack-sdk",
+    "path": "LICENSE",
+    "reason": "Archived small umbrella repository, not a complete mobile SDK extraction. Metadata license NOASSERTION; source excluded."
+  },
+  {
+    "repository": "solana-mobile/solana-mobile-stack-sdk",
+    "path": "README.md",
+    "reason": "Archived small umbrella repository, not a complete mobile SDK extraction. Metadata license NOASSERTION; source excluded."
+  },
+  {
+    "repository": "transmute-industries/dapp",
+    "path": "README.md",
+    "reason": "README declares deprecated Ethereum project; no detected repository license. Source excluded."
+  },
+  {
+    "repository": "transmute-industries/dapp",
+    "path": "docker-compose.yml",
+    "reason": "README declares deprecated Ethereum project; no detected repository license. Source excluded."
+  },
+  {
+    "repository": "transmute-industries/dapp",
+    "path": "public/manifest.json",
+    "reason": "README declares deprecated Ethereum project; no detected repository license. Source excluded."
+  },
+  {
+    "repository": "transmute-industries/dapp",
+    "path": "test/TransmuteFramework/Security/README.md",
+    "reason": "README declares deprecated Ethereum project; no detected repository license. Source excluded."
+  },
+  {
+    "repository": "transmute-industries/dapp",
+    "path": "contracts/TransmuteFramework/EventStore/Bases/UnsafeEventStore/README.md",
+    "reason": "README declares deprecated Ethereum project; no detected repository license. Source excluded."
+  },
+  {
+    "repository": "transmute-industries/dapp",
+    "path": "package.json",
+    "reason": "README declares deprecated Ethereum project; no detected repository license. Source excluded."
+  },
+  {
+    "repository": "transmute-industries/dapp",
+    "path": "src/components/Home/HomePage.test.tsx",
+    "reason": "README declares deprecated Ethereum project; no detected repository license. Source excluded."
+  },
+  {
+    "repository": "x402agent/SolanaOS",
+    "path": "LICENSE",
+    "reason": "Agent wallets/payment and trading-related tree. Avoid introducing custody or automatic spend paths. No implementation selected."
+  },
+  {
+    "repository": "x402agent/SolanaOS",
+    "path": "docs/pump-official/docs/PUMP_SWAP_SDK_README.md",
+    "reason": "Agent wallets/payment and trading-related tree. Avoid introducing custody or automatic spend paths. No implementation selected."
+  },
+  {
+    "repository": "x402agent/SolanaOS",
+    "path": "docs/pump-official/PUMP_SWAP_SDK_README.md",
+    "reason": "Agent wallets/payment and trading-related tree. Avoid introducing custody or automatic spend paths. No implementation selected."
+  },
+  {
+    "repository": "x402agent/SolanaOS",
+    "path": "docs/pump-official/pump-public-docs/PUMP_SWAP_SDK_README.md",
+    "reason": "Agent wallets/payment and trading-related tree. Avoid introducing custody or automatic spend paths. No implementation selected."
+  },
+  {
+    "repository": "x402agent/SolanaOS",
+    "path": "services/agent-wallet/mcp/package.json",
+    "reason": "Agent wallets/payment and trading-related tree. Avoid introducing custody or automatic spend paths. No implementation selected."
+  },
+  {
+    "repository": "x402agent/SolanaOS",
+    "path": "services/agent-wallet/README.md",
+    "reason": "Agent wallets/payment and trading-related tree. Avoid introducing custody or automatic spend paths. No implementation selected."
+  },
+  {
+    "repository": "x402agent/SolanaOS",
+    "path": "workers/agent-wallet/package.json",
+    "reason": "Agent wallets/payment and trading-related tree. Avoid introducing custody or automatic spend paths. No implementation selected."
+  }
+]

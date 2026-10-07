@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "domain": {
+      "const": "deproof-evidence-sig-v2"
+    },
+    "manifestDigest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "manifestSchema": {
+      "const": "deproof-evidence-v2"
+    },
+    "algorithm": {
+      "const": "SHA256withECDSA"
+    }
+  },
+  "required": [
+    "domain",
+    "manifestDigest",
+    "manifestSchema",
+    "algorithm"
+  ]
+}

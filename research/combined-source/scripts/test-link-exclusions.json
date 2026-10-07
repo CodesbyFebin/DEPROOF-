@@ -1,0 +1,91 @@
+{
+  "schema": "deproof-test-link-exclusions-v1",
+  "purpose": "Reviewed removals of registry test links whose file does not assert the entry's criterion. Applied by update-coverage.py and reconcile-coverage.py after gate and criterion links are added, so regeneration keeps them removed.",
+  "exclusions": [
+    {
+      "id": "F003",
+      "test": "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+      "reason": "Test file has no SOL balance-read assertion; rpc-read-only probe (LiveRpcProbe.kt) is kept because it is the executed read-only check."
+    },
+    {
+      "id": "F008",
+      "test": "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+      "reason": "No display of context slot or observation time in this file."
+    },
+    {
+      "id": "C003",
+      "test": "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+      "reason": "No getBalance assertion in this file; the executed rpc probe is kept."
+    },
+    {
+      "id": "C008",
+      "test": "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+      "reason": "No context.slot assertion in this file; the executed rpc probe is kept."
+    },
+    {
+      "id": "FN004",
+      "test": "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+      "reason": "loadAccount is not exercised by this file; the executed rpc probe is kept."
+    },
+    {
+      "id": "F079",
+      "test": "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+      "reason": "No pending/confirmed/finalized observation assertions in this file."
+    },
+    {
+      "id": "F079",
+      "test": "tools/test_migrations.py",
+      "reason": "Migration tests cover draft persistence, not observation status."
+    },
+    {
+      "id": "F104",
+      "test": "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+      "reason": "No bandwidth-ledger assertion in this file."
+    },
+    {
+      "id": "F108",
+      "test": "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+      "reason": "No compute-node health-monitoring assertion in this file."
+    },
+    {
+      "id": "F118",
+      "test": "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+      "reason": "No encrypted backup or restore assertion in this file."
+    },
+    {
+      "id": "F118",
+      "test": "tools/test_migrations.py",
+      "reason": "Migration tests do not cover Android encrypted backup; desktop bundle tests are a different path."
+    },
+    {
+      "id": "FN051",
+      "test": "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+      "reason": "createTask is not called in this file."
+    },
+    {
+      "id": "FN052",
+      "test": "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+      "reason": "attachEvidence is not called in this file."
+    },
+    {
+      "id": "FN052",
+      "test": "tools/test_migrations.py",
+      "reason": "Draft persistence tests do not assert evidence attachment, digest or association."
+    },
+    {
+      "id": "FN055",
+      "test": "app/src/test/java/com/example/domain/NodeProtocolTest.kt",
+      "reason": "refreshReceiptStatus is not called in this file."
+    },
+    {
+      "id": "FN055",
+      "test": "tools/test_migrations.py",
+      "reason": "Draft persistence tests do not assert receipt status observation."
+    },
+    {
+      "id": "F067",
+      "test": "tools/test_migrations.py",
+      "reason": "Migration tests do not assert evidence signing or legacy digest mode."
+    }
+  ]
+}

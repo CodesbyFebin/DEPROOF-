@@ -1,0 +1,119 @@
+{
+  "name": "create-solana-dapp",
+  "version": "4.8.5",
+  "description": "The fastest way to create Solana apps",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "repository": {
+    "name": "solana-foundation/create-solana-dapp",
+    "type": "git",
+    "url": "https://github.com/solana-foundation/create-solana-dapp"
+  },
+  "homepage": "https://github.com/solana-foundation/create-solana-dapp#readme",
+  "bugs": {
+    "url": "https://github.com/solana-foundation/create-solana-dapp/issues"
+  },
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "create-solana-dapp": "./dist/bin/index.mjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "build:watch": "unbuild --watch",
+    "dev": "vitest dev",
+    "docker:build": "docker build -t create-solana-dapp:latest .",
+    "docker:run": "docker run --rm --name create-solana-dapp -v \"${PWD}/dist:/workspace/dist\" -it create-solana-dapp:latest",
+    "lint": "eslint .",
+    "lint:fix": "automd && eslint . --fix",
+    "prepublishOnly": "pnpm pkg delete devDependencies",
+    "publish-impl": "npm view $npm_package_name@$npm_package_version > /dev/null 2>&1 || pnpm publish --tag ${PUBLISH_TAG:-latest} --access public --no-git-checks",
+    "publish-packages": "pnpm prepublishOnly && pnpm publish-impl",
+    "test": "pnpm lint && pnpm test:types && vitest run --coverage",
+    "test:types": "tsc --noEmit --skipLibCheck"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/cli": "^2.31.1",
+    "@types/mock-fs": "^4.13.4",
+    "@types/node": "^24.3.1",
+    "@types/semver": "^7.7.1",
+    "@types/update-notifier": "^6.0.8",
+    "@vitest/coverage-v8": "^4.1.10",
+    "automd": "^0.4.3",
+    "eslint": "^9.39.5",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-config-unjs": "^0.5.0",
+    "eslint-plugin-prettier": "^5.5.6",
+    "eslint-plugin-sort": "^4.0.0",
+    "lefthook": "^1.12.4",
+    "memfs": "^4.64.0",
+    "mock-fs": "^5.5.0",
+    "pkg-pr-new": "^0.0.79",
+    "prettier": "^3.9.6",
+    "publint": "0.3.21",
+    "typescript": "^5.9.2",
+    "unbuild": "^3.6.1",
+    "vitest": "^4.1.10"
+  },
+  "packageManager": "pnpm@10.34.5",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "lefthook"
+    ]
+  },
+  "dependencies": {
+    "@clack/prompts": "1.7.0",
+    "commander": "14.0.0",
+    "giget": "2.0.0",
+    "is-in-ci": "2.0.0",
+    "picocolors": "1.1.1",
+    "semver": "7.8.5",
+    "update-notifier": "7.3.1",
+    "zod": "4.4.3"
+  },
+  "contributors": [
+    {
+      "name": "Joe Caulfield",
+      "url": "https://github.com/jpcaulfi"
+    },
+    {
+      "name": "Jacob Creech",
+      "url": "https://github.com/jacobcreech"
+    },
+    {
+      "name": "Nick Frostbutter",
+      "url": "https://github.com/nickfrosty"
+    },
+    {
+      "name": "Bram Borggreve",
+      "url": "https://github.com/beeman"
+    }
+  ],
+  "keywords": [
+    "solana",
+    "next",
+    "react",
+    "web3",
+    "blockchain",
+    "nft"
+  ]
+}

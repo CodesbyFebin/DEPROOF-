@@ -1,0 +1,817 @@
+{
+  "repository": "MetaMask/test-dapp",
+  "tree_sha": "2252b59ca8a0d23a6186cc54731fcc9af29c5501",
+  "truncated": false,
+  "entries": [
+    {
+      "path": ".editorconfig",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6c8b3621938a4691225a870a59bf382af1883dd",
+      "size": 147,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/c6c8b3621938a4691225a870a59bf382af1883dd"
+    },
+    {
+      "path": ".eslintrc.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a078a7f1aff5091334114e0c0972a44422e601ca",
+      "size": 549,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/a078a7f1aff5091334114e0c0972a44422e601ca"
+    },
+    {
+      "path": ".gitattributes",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59e3f7adc108f555242ef4e7d115b7cd265fbb9f",
+      "size": 217,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/59e3f7adc108f555242ef4e7d115b7cd265fbb9f"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c6cfce4e177c031f2df5318a1790fedbb575922b",
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/trees/c6cfce4e177c031f2df5318a1790fedbb575922b"
+    },
+    {
+      "path": ".github/CODEOWNERS",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50bea7901277945841ba86f8d7abe08fee44a1e5",
+      "size": 155,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/50bea7901277945841ba86f8d7abe08fee44a1e5"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7b89712a3b880f4c3a3b0827299b56c41daf4c1f",
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/trees/7b89712a3b880f4c3a3b0827299b56c41daf4c1f"
+    },
+    {
+      "path": ".github/workflows/build-lint-test.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c38b104c22514e005189d3dde2cebbc70b0fe79",
+      "size": 706,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/6c38b104c22514e005189d3dde2cebbc70b0fe79",
+      "error": "SyntaxError: Unexpected token 'a', \"name: Build\"... is not valid JSON"
+    },
+    {
+      "path": ".github/workflows/security-code-scanner.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bb460d2722adb5fa472566a7e90eaa70d786fab",
+      "size": 1154,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/6bb460d2722adb5fa472566a7e90eaa70d786fab"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28ad1a70f703e2debc0e15677882ec135fed1da9",
+      "size": 78,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/28ad1a70f703e2debc0e15677882ec135fed1da9"
+    },
+    {
+      "path": ".nvmrc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f62f0b29fbab69d61571c766d3a43f4e90ea12c4",
+      "size": 9,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/f62f0b29fbab69d61571c766d3a43f4e90ea12c4"
+    },
+    {
+      "path": ".prettierrc.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2d98d2ee2893d86cf5b7a2c134e833a20b38c1c",
+      "size": 198,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/b2d98d2ee2893d86cf5b7a2c134e833a20b38c1c"
+    },
+    {
+      "path": ".yarnrc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5455c6c5d38ccfc4c23d7f2694b675ffc03b0152",
+      "size": 20,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/5455c6c5d38ccfc4c23d7f2694b675ffc03b0152"
+    },
+    {
+      "path": ".yarnrc.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e5671cea14e3372e4bd35c0af34831869065a6b",
+      "size": 21,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/1e5671cea14e3372e4bd35c0af34831869065a6b"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5c1d62f3024550b5b72ce92e7a50baf4fee6008",
+      "size": 16539,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/c5c1d62f3024550b5b72ce92e7a50baf4fee6008"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08c7d36f7f20e8db6859e5622ac237f3500768b4",
+      "size": 1055,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/08c7d36f7f20e8db6859e5622ac237f3500768b4",
+      "error": "SyntaxError: Unexpected token 'M', \"MIT Licens\"... is not valid JSON"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a44155e00b147f980b274922fd0023e89f76fe70",
+      "size": 2484,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/a44155e00b147f980b274922fd0023e89f76fe70",
+      "error": "SyntaxError: Unexpected token '#', \"# MetaMask\"... is not valid JSON"
+    },
+    {
+      "path": "contracts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f1762b97e40b6d50747d922eafbce6d9c8e65b7f",
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/trees/f1762b97e40b6d50747d922eafbce6d9c8e65b7f"
+    },
+    {
+      "path": "contracts/ERC1155Example.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d70933aecb4fc4a71f68f0d67db012fed8ae839",
+      "size": 874,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/0d70933aecb4fc4a71f68f0d67db012fed8ae839"
+    },
+    {
+      "path": "contracts/ERC20.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d3d964ebdb7e7f69803b088b24aff0f49ace330",
+      "size": 664,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/9d3d964ebdb7e7f69803b088b24aff0f49ace330"
+    },
+    {
+      "path": "contracts/MultisigWallet.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "faf2b4140e96d9ec47dfe9f770b6e28819fd70e9",
+      "size": 4813,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/faf2b4140e96d9ec47dfe9f770b6e28819fd70e9"
+    },
+    {
+      "path": "contracts/Piggybank.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7981450b9dabd4150cd3ad235aa07bb9c97863b0",
+      "size": 538,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/7981450b9dabd4150cd3ad235aa07bb9c97863b0"
+    },
+    {
+      "path": "contracts/TestDappCollectibles.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1402415dec2dc723238ff3322fb19b5c2615e6a",
+      "size": 1801,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/a1402415dec2dc723238ff3322fb19b5c2615e6a"
+    },
+    {
+      "path": "deploy.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "69627c9e824a3a753d25782186a6fac16d703784",
+      "size": 2587,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/69627c9e824a3a753d25782186a6fac16d703784"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a22f50aa13f349b73c2f8679009b3fec210781f",
+      "size": 3339,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/4a22f50aa13f349b73c2f8679009b3fec210781f"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e7cfeced29d2ba87fc2fb6395b93095404f42fea",
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/trees/e7cfeced29d2ba87fc2fb6395b93095404f42fea"
+    },
+    {
+      "path": "src/alert-red.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29aa77e8c4df3e09cd88618bcfe36be046ce0245",
+      "size": 331,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/29aa77e8c4df3e09cd88618bcfe36be046ce0245"
+    },
+    {
+      "path": "src/components",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "912875e3dde88d0dbd2695e6b664bb7e8cdd7197",
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/trees/912875e3dde88d0dbd2695e6b664bb7e8cdd7197"
+    },
+    {
+      "path": "src/components/connections",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f1a28ecb6d9264bcb29b47ca698ea68d010cfd70",
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/trees/f1a28ecb6d9264bcb29b47ca698ea68d010cfd70"
+    },
+    {
+      "path": "src/components/connections/connections.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "657aeda758e9c9f5af950f1c83a1dab83dbb3376",
+      "size": 2278,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/657aeda758e9c9f5af950f1c83a1dab83dbb3376"
+    },
+    {
+      "path": "src/components/connections/index.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fc5d00794ba091c2e91ccba57966ef851abe695",
+      "size": 90,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/6fc5d00794ba091c2e91ccba57966ef851abe695"
+    },
+    {
+      "path": "src/components/connections/networks-helpers.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75748dec83d0adcb17d6adbd25b770502664f14c",
+      "size": 6064,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/75748dec83d0adcb17d6adbd25b770502664f14c"
+    },
+    {
+      "path": "src/components/connections/networks.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c69ccb673e95015b8a3fb4da8e0255a2fccab63",
+      "size": 2004,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/8c69ccb673e95015b8a3fb4da8e0255a2fccab63"
+    },
+    {
+      "path": "src/components/connections/permissions.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a24461a082bc6e58cec2356ca3d2d037582354c8",
+      "size": 2695,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/a24461a082bc6e58cec2356ca3d2d037582354c8"
+    },
+    {
+      "path": "src/components/encryption",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a79e0a826bc36759e5ea3ae683794457765407fc",
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/trees/a79e0a826bc36759e5ea3ae683794457765407fc"
+    },
+    {
+      "path": "src/components/encryption/encrypt-decrypt.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e66f606d246cee978ac9d1de889b57e524aaa309",
+      "size": 4681,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/e66f606d246cee978ac9d1de889b57e524aaa309"
+    },
+    {
+      "path": "src/components/forms",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "28adb2d36991eb2fcdf704cf76000cf82af5e2dc",
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/trees/28adb2d36991eb2fcdf704cf76000cf82af5e2dc"
+    },
+    {
+      "path": "src/components/forms/send-form.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6aedb57e1bc10e1bdb88a0f21b7a7ab68d5c2e7",
+      "size": 4635,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/d6aedb57e1bc10e1bdb88a0f21b7a7ab68d5c2e7"
+    },
+    {
+      "path": "src/components/interactions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b0381b3f8392b7b6864a357ca948230315b8b4cf",
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/trees/b0381b3f8392b7b6864a357ca948230315b8b4cf"
+    },
+    {
+      "path": "src/components/interactions/chain-interactions.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29aab1cfe8e3d5d15ea658d631c0efc8c35e394c",
+      "size": 1778,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/29aab1cfe8e3d5d15ea658d631c0efc8c35e394c"
+    },
+    {
+      "path": "src/components/interactions/empty.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09b93622774d55f3038b26a24fa99d1c785812a3",
+      "size": 362,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/09b93622774d55f3038b26a24fa99d1c785812a3"
+    },
+    {
+      "path": "src/components/interactions/index.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3060faa7e8b1add8071cf399ab6d21011139be5e",
+      "size": 98,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/3060faa7e8b1add8071cf399ab6d21011139be5e"
+    },
+    {
+      "path": "src/components/interactions/json-rpc-result.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be965b4e42384a2b27efa1c95af41a3b00e23add",
+      "size": 478,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/be965b4e42384a2b27efa1c95af41a3b00e23add"
+    },
+    {
+      "path": "src/components/ppom",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a2bde9bf09bea669ac7b3a5d9cdafe95edc565ae",
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/trees/a2bde9bf09bea669ac7b3a5d9cdafe95edc565ae"
+    },
+    {
+      "path": "src/components/ppom/batching.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f66b13661731aa829da7295ef6a87a17417c2de",
+      "size": 7636,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/6f66b13661731aa829da7295ef6a87a17417c2de"
+    },
+    {
+      "path": "src/components/ppom/bypasses.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22f47fef3bb6d1290a44dfea337528c40f4581a5",
+      "size": 7617,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/22f47fef3bb6d1290a44dfea337528c40f4581a5"
+    },
+    {
+      "path": "src/components/ppom/eip5792.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d913c67a8c2a496845cb8d714ef2f708582eeb9c",
+      "size": 8073,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/d913c67a8c2a496845cb8d714ef2f708582eeb9c"
+    },
+    {
+      "path": "src/components/ppom/index.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "335180e076606863c9f036ed75dba57ca5d8cbc2",
+      "size": 115,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/335180e076606863c9f036ed75dba57ca5d8cbc2"
+    },
+    {
+      "path": "src/components/ppom/sharedConstants.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7969163f9dbea63ecbde122f2ee15e6736d8c8b6",
+      "size": 1812,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/7969163f9dbea63ecbde122f2ee15e6736d8c8b6"
+    },
+    {
+      "path": "src/components/ppom/transactions.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "927c79d1d697289c4b2cabf6adcb86474399f06b",
+      "size": 14021,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/927c79d1d697289c4b2cabf6adcb86474399f06b"
+    },
+    {
+      "path": "src/components/resolutions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "57ff3d5a8fd0e1a0deeb4759f71e2802a1181baa",
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/trees/57ff3d5a8fd0e1a0deeb4759f71e2802a1181baa"
+    },
+    {
+      "path": "src/components/resolutions/ens-resolution.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88f94a06840f8fdf3c8c59d5340a409b06e41d36",
+      "size": 1871,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/88f94a06840f8fdf3c8c59d5340a409b06e41d36"
+    },
+    {
+      "path": "src/components/signatures",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "39c3b2b1e2fe69700f98a2b8044a9b5aca6fad6f",
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/trees/39c3b2b1e2fe69700f98a2b8044a9b5aca6fad6f"
+    },
+    {
+      "path": "src/components/signatures/eth-sign.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ddc66396b9522b5b76cc0a9e8385175e462f527",
+      "size": 1744,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/5ddc66396b9522b5b76cc0a9e8385175e462f527"
+    },
+    {
+      "path": "src/components/signatures/index.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f04254ced58da1ee7a6fdd107e203d5c4706fce2",
+      "size": 353,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/f04254ced58da1ee7a6fdd107e203d5c4706fce2"
+    },
+    {
+      "path": "src/components/signatures/malformed-signatures.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61a3034538bae05a57e93f8006a815b70ef82821",
+      "size": 10539,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/61a3034538bae05a57e93f8006a815b70ef82821"
+    },
+    {
+      "path": "src/components/signatures/malformed-transactions.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "064ec18a9d74f7b89887796949eb264b86a34c87",
+      "size": 6761,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/064ec18a9d74f7b89887796949eb264b86a34c87"
+    },
+    {
+      "path": "src/components/signatures/permit-sign.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5840e5c6d6b04a40ff5ea320b85116a7b74896a8",
+      "size": 4338,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/5840e5c6d6b04a40ff5ea320b85116a7b74896a8"
+    },
+    {
+      "path": "src/components/signatures/personal-sign.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31635ea98b5b8639a96276acda0f12ecc537becd",
+      "size": 4261,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/31635ea98b5b8639a96276acda0f12ecc537becd"
+    },
+    {
+      "path": "src/components/signatures/signTypedData-variants.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1468844bc17776532baa23ebe93e2256c3c05f75",
+      "size": 4794,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/1468844bc17776532baa23ebe93e2256c3c05f75"
+    },
+    {
+      "path": "src/components/signatures/signTypedData.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "593feebf5be59f31f9be71a892aa0b9525275620",
+      "size": 3567,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/593feebf5be59f31f9be71a892aa0b9525275620"
+    },
+    {
+      "path": "src/components/signatures/signTypedDataV3-sign.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d10399eeeab461531b493aaa860a052d5a64ce4c",
+      "size": 5025,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/d10399eeeab461531b493aaa860a052d5a64ce4c"
+    },
+    {
+      "path": "src/components/signatures/signTypedDataV4-sign.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2eaaa26cccfcc2b08dcc0349a8e50593e79c1ba",
+      "size": 5955,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/c2eaaa26cccfcc2b08dcc0349a8e50593e79c1ba"
+    },
+    {
+      "path": "src/components/signatures/siwe.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abecc6a053463731888a7c82abb8a0fda22bd25a",
+      "size": 5886,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/abecc6a053463731888a7c82abb8a0fda22bd25a"
+    },
+    {
+      "path": "src/components/tempo-transactions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fe6af8c92137f665cba7b4d113b8a74101903aa6",
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/trees/fe6af8c92137f665cba7b4d113b8a74101903aa6"
+    },
+    {
+      "path": "src/components/tempo-transactions/tempo-transactions.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "014cb1b7da0a11242dc24592855500e75d966da0",
+      "size": 3999,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/014cb1b7da0a11242dc24592855500e75d966da0"
+    },
+    {
+      "path": "src/components/transactions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c2ae8d47af39b830518bcc300cec585f8470312c",
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/trees/c2ae8d47af39b830518bcc300cec585f8470312c"
+    },
+    {
+      "path": "src/components/transactions/batchUsdcSwap.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44c6802cfa1b65ab59cebeb4c81327210cbf1507",
+      "size": 13946,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/44c6802cfa1b65ab59cebeb4c81327210cbf1507"
+    },
+    {
+      "path": "src/components/transactions/eip5792",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3e705775ff4b04b5b8abca4a0dbcc48dee68ebcb",
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/trees/3e705775ff4b04b5b8abca4a0dbcc48dee68ebcb"
+    },
+    {
+      "path": "src/components/transactions/eip5792/getCallsStatus.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1eddf906a5374988962edc71fb1c8f12f8ffa005",
+      "size": 1572,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/1eddf906a5374988962edc71fb1c8f12f8ffa005"
+    },
+    {
+      "path": "src/components/transactions/eip5792/getCapabilities.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d31c9e035a8ff9524e878de270681845e40d45ca",
+      "size": 2125,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/d31c9e035a8ff9524e878de270681845e40d45ca"
+    },
+    {
+      "path": "src/components/transactions/eip5792/index.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47a56cb67afd522f966b07718a32aa11445eef8c",
+      "size": 1026,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/47a56cb67afd522f966b07718a32aa11445eef8c"
+    },
+    {
+      "path": "src/components/transactions/eip5792/sendCalls.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42053d7dda4e885b6f8f07f67f3d2946b8c2179d",
+      "size": 11969,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/42053d7dda4e885b6f8f07f67f3d2946b8c2179d"
+    },
+    {
+      "path": "src/components/transactions/eip747.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb4dabff6b039c1c0482f3b46c50c57e0a431386",
+      "size": 3170,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/eb4dabff6b039c1c0482f3b46c50c57e0a431386"
+    },
+    {
+      "path": "src/components/transactions/erc1155.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33db05edf841683e3c79147acabb3d864b84cf4a",
+      "size": 9805,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/33db05edf841683e3c79147acabb3d864b84cf4a"
+    },
+    {
+      "path": "src/components/transactions/erc20.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7de708bfeb28688fafda630e693812da9ff46327",
+      "size": 13314,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/7de708bfeb28688fafda630e693812da9ff46327"
+    },
+    {
+      "path": "src/components/transactions/erc721.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f5261a0d2ece9a94458138679fcbb7ba7184125",
+      "size": 15479,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/7f5261a0d2ece9a94458138679fcbb7ba7184125"
+    },
+    {
+      "path": "src/components/transactions/index.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee8456c9edc5eb7529dcf6c00359981a70ad82d3",
+      "size": 195,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/ee8456c9edc5eb7529dcf6c00359981a70ad82d3"
+    },
+    {
+      "path": "src/components/transactions/send.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9742744c880690acd6462beb3db3b0b6212d0c54",
+      "size": 13923,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/9742744c880690acd6462beb3db3b0b6212d0c54"
+    },
+    {
+      "path": "src/components/transactions/swapComparison.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30dc201c9119780c0df619cda31438acabba9231",
+      "size": 12549,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/30dc201c9119780c0df619cda31438acabba9231"
+    },
+    {
+      "path": "src/components/transactions/swapUtils.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e165ab0f99a1ea41e821a88c707cce3ad53d1b78",
+      "size": 7799,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/e165ab0f99a1ea41e821a88c707cce3ad53d1b78"
+    },
+    {
+      "path": "src/connect-evm.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7cedc4cb08654f8ce26ce17c7884a340a37b676",
+      "size": 3144,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/c7cedc4cb08654f8ce26ce17c7884a340a37b676"
+    },
+    {
+      "path": "src/connections.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2998280d7a4e78acea12940e526c4a11dffa8a1b",
+      "size": 3409,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/2998280d7a4e78acea12940e526c4a11dffa8a1b"
+    },
+    {
+      "path": "src/constants.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "049c1721a74551d737fdc4b6b183d88c05b8d952",
+      "size": 326009,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/049c1721a74551d737fdc4b6b183d88c05b8d952"
+    },
+    {
+      "path": "src/dapp-metadata.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b50f971630415c06503f14ac20e698a2f68cc2c",
+      "size": 173,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/0b50f971630415c06503f14ac20e698a2f68cc2c"
+    },
+    {
+      "path": "src/index.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a76cae47250f89f9a0913df50ff7f91cfc9cd48",
+      "size": 4946,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/5a76cae47250f89f9a0913df50ff7f91cfc9cd48"
+    },
+    {
+      "path": "src/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e7e0d92bcef0d11ef2ce69802733f0bd61506a8",
+      "size": 4001,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/7e7e0d92bcef0d11ef2ce69802733f0bd61506a8"
+    },
+    {
+      "path": "src/index.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5d915fee772a178c92ee2add2a6678c6d329051",
+      "size": 25016,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/d5d915fee772a178c92ee2add2a6678c6d329051"
+    },
+    {
+      "path": "src/metamask-fox.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b754943811bb26fe42661c448b953906c0a0b2c0",
+      "size": 2668,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/b754943811bb26fe42661c448b953906c0a0b2c0"
+    },
+    {
+      "path": "src/onchain-sample-contracts.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da0b1428e0b55c278a081f9efd9141e75cc2eccf",
+      "size": 1533,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/da0b1428e0b55c278a081f9efd9141e75cc2eccf"
+    },
+    {
+      "path": "src/request.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b265627be029c1b4d1c1c3dbbdebb3599d269609",
+      "size": 295,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/b265627be029c1b4d1c1c3dbbdebb3599d269609"
+    },
+    {
+      "path": "src/request.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b18c29da2da9d8b29c73ff4fb7406f7b49133bc8",
+      "size": 2292,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/b18c29da2da9d8b29c73ff4fb7406f7b49133bc8"
+    },
+    {
+      "path": "src/sample-addresses.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2096af29c480e145a827357882905376d839c5e1",
+      "size": 78,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/2096af29c480e145a827357882905376d839c5e1"
+    },
+    {
+      "path": "src/sample-networks.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c524ca6f022a2965e12116fed4d5c95960ffd9c0",
+      "size": 184,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/c524ca6f022a2965e12116fed4d5c95960ffd9c0"
+    },
+    {
+      "path": "src/sdk-connect.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22cb4d994f8d56be46327ad950e7bf4784f0056c",
+      "size": 3644,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/22cb4d994f8d56be46327ad950e7bf4784f0056c"
+    },
+    {
+      "path": "src/shared",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cdd58061c4355a89bba0e2ef64a7538585ac395d",
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/trees/cdd58061c4355a89bba0e2ef64a7538585ac395d"
+    },
+    {
+      "path": "src/shared/constants.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e70b83558a98e2f5491d6d967637df88a61d3ab",
+      "size": 63,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/2e70b83558a98e2f5491d6d967637df88a61d3ab"
+    },
+    {
+      "path": "src/signatures",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7c1c62231afc20ad05e8a6c4c3e85470e7eeac20",
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/trees/7c1c62231afc20ad05e8a6c4c3e85470e7eeac20"
+    },
+    {
+      "path": "src/signatures/utils.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c32fdf675cf9cbc6ca88c42273cbf77a55e782da",
+      "size": 16094,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/c32fdf675cf9cbc6ca88c42273cbf77a55e782da"
+    },
+    {
+      "path": "src/utils.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "329c6cbeb0c4c7a5e8d8ce01e52d13aaeeb765eb",
+      "size": 895,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/329c6cbeb0c4c7a5e8d8ce01e52d13aaeeb765eb"
+    },
+    {
+      "path": "src/wallet-connect.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f90c1b5e3e9e88848401f774683955a2fc31c920",
+      "size": 1537,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/f90c1b5e3e9e88848401f774683955a2fc31c920"
+    },
+    {
+      "path": "src/warning.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed03c08b573b61a2faceec4d976132098e172134",
+      "size": 678,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/ed03c08b573b61a2faceec4d976132098e172134"
+    },
+    {
+      "path": "webpack.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "093e8da9aada9feb2a1e7af9adce728209973f00",
+      "size": 1428,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/093e8da9aada9feb2a1e7af9adce728209973f00"
+    },
+    {
+      "path": "yarn.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c649fc76b0ec296ae2e69155723ebdac665af2e",
+      "size": 367025,
+      "url": "https://api.github.com/repos/MetaMask/test-dapp/git/blobs/3c649fc76b0ec296ae2e69155723ebdac665af2e"
+    }
+  ]
+}

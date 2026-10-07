@@ -1,0 +1,554 @@
+{
+  "repository": "solana-labs/dapp-scaffold",
+  "tree_sha": "48144509c643748c50fcabfaced48487ccb96b8d",
+  "truncated": false,
+  "entries": [
+    {
+      "path": ".babelrc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "865c6b31d2b6a417dfa5337a2c0ec26a22bfe914",
+      "size": 30,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/865c6b31d2b6a417dfa5337a2c0ec26a22bfe914"
+    },
+    {
+      "path": ".eslintignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "281a06ce70465baadb92cbe7080b02999ab5b41e",
+      "size": 26,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/281a06ce70465baadb92cbe7080b02999ab5b41e"
+    },
+    {
+      "path": ".eslintrc.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ecb8294efc8b1fd7fc94d6acbc3ec8984d17ace",
+      "size": 34,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/3ecb8294efc8b1fd7fc94d6acbc3ec8984d17ace"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "270ca1bd61c0f07fbe76979ff441d8cad95942fa",
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/trees/270ca1bd61c0f07fbe76979ff441d8cad95942fa"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6eac46ef9e65ea77df1da10228aefe298f6bd143",
+      "size": 300,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/6eac46ef9e65ea77df1da10228aefe298f6bd143"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "00c591414d7cee78e079153b513946736534fbbd",
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/trees/00c591414d7cee78e079153b513946736534fbbd"
+    },
+    {
+      "path": ".github/workflows/frontend.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a3668a7113e3fc26193fd01c7c817f81baeaebb",
+      "size": 475,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/3a3668a7113e3fc26193fd01c7c817f81baeaebb"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c57fcf9df793f33977d51ab89502ee65a31e194",
+      "size": 427,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/0c57fcf9df793f33977d51ab89502ee65a31e194"
+    },
+    {
+      "path": "Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c21e282e6c6b0a85d56043a368f0280c96bdc3b7",
+      "size": 179,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/c21e282e6c6b0a85d56043a368f0280c96bdc3b7"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "size": 11357,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "error": "SyntaxError: Unexpected token 'A', ...\"          Apache Lic\"... is not valid JSON"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af5ccbd24a2f10bf350abc8f04f0efb073f09e52",
+      "size": 5569,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/af5ccbd24a2f10bf350abc8f04f0efb073f09e52",
+      "error": "SyntaxError: Unexpected token '#', \"\n# Solana d\"... is not valid JSON"
+    },
+    {
+      "path": "next-env.d.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f11a03dc6cc37f2b5105c08f2e7b24c603ab2f4",
+      "size": 201,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/4f11a03dc6cc37f2b5105c08f2e7b24c603ab2f4"
+    },
+    {
+      "path": "next.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a843cbee09afaadbf9c8dd1477dcccf7eb56af50",
+      "size": 118,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/a843cbee09afaadbf9c8dd1477dcccf7eb56af50"
+    },
+    {
+      "path": "package-lock.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef5fba099a346a2d67065e632f7e0b7af00da926",
+      "size": 1147728,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/ef5fba099a346a2d67065e632f7e0b7af00da926"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d00a83a11cfcc947ac0d0c3ffd94d066ef08c1b",
+      "size": 1200,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/8d00a83a11cfcc947ac0d0c3ffd94d066ef08c1b"
+    },
+    {
+      "path": "postcss.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33ad091d26d8a9dc95ebdf616e217d985ec215b8",
+      "size": 82,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/33ad091d26d8a9dc95ebdf616e217d985ec215b8"
+    },
+    {
+      "path": "public",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "338e3ae0b8df3b2f8fe077e5f6729d61eefbc07d",
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/trees/338e3ae0b8df3b2f8fe077e5f6729d61eefbc07d"
+    },
+    {
+      "path": "public/favicon.ico",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24b6c938aa86e7ea614141800c4426c0ee9f28bc",
+      "size": 15406,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/24b6c938aa86e7ea614141800c4426c0ee9f28bc"
+    },
+    {
+      "path": "public/solanaLogo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1d51b40239bcc529c5be69be4ac532765257967",
+      "size": 47946,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/c1d51b40239bcc529c5be69be4ac532765257967"
+    },
+    {
+      "path": "public/vercel.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbf0e25a651c28931b2fe8afa2947e124eebc74f",
+      "size": 1101,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/fbf0e25a651c28931b2fe8afa2947e124eebc74f"
+    },
+    {
+      "path": "scaffold-desktop.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "860877f59e32259ba902b15fa06cf9d988c85ded",
+      "size": 475364,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/860877f59e32259ba902b15fa06cf9d988c85ded"
+    },
+    {
+      "path": "scaffold-mobile.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aaf272a0f733923a6e173dc6f5960d5c46684462",
+      "size": 81769,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/aaf272a0f733923a6e173dc6f5960d5c46684462"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "37016222cc45acd0fa387566014a278689629f63",
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/trees/37016222cc45acd0fa387566014a278689629f63"
+    },
+    {
+      "path": "src/components",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4dbd0b17320dffe1c00ee4fcd381610782e6e094",
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/trees/4dbd0b17320dffe1c00ee4fcd381610782e6e094"
+    },
+    {
+      "path": "src/components/AppBar.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a14cfdf5ee1072f227eb51ab5cd31eb4097ef24",
+      "size": 11036,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/6a14cfdf5ee1072f227eb51ab5cd31eb4097ef24"
+    },
+    {
+      "path": "src/components/ContentContainer.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0905cf4f6c498c53c827d956ba5679cf2be55c1d",
+      "size": 1252,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/0905cf4f6c498c53c827d956ba5679cf2be55c1d"
+    },
+    {
+      "path": "src/components/Footer.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77859892e3afa2126568448d9e3ff4f652a5c386",
+      "size": 10808,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/77859892e3afa2126568448d9e3ff4f652a5c386"
+    },
+    {
+      "path": "src/components/NetworkSwitcher.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd2a829500bb93d94936e16eb2edd57530a82bfa",
+      "size": 822,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/bd2a829500bb93d94936e16eb2edd57530a82bfa"
+    },
+    {
+      "path": "src/components/Notification.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3aa8434b1652de2ac2ff1ad68cabe1505ffb7f1f",
+      "size": 4399,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/3aa8434b1652de2ac2ff1ad68cabe1505ffb7f1f"
+    },
+    {
+      "path": "src/components/RequestAirdrop.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "686b979b7d0756bce83c96cfd982b69bb3002770",
+      "size": 2424,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/686b979b7d0756bce83c96cfd982b69bb3002770"
+    },
+    {
+      "path": "src/components/SendTransaction.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e6aa10d6dccc2bc6566a464f421bb6e03aa8ead",
+      "size": 3468,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/5e6aa10d6dccc2bc6566a464f421bb6e03aa8ead",
+      "error": "SyntaxError: Unexpected token 'i', \"import { u\"... is not valid JSON"
+    },
+    {
+      "path": "src/components/SendVersionedTransaction.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b87d999dd414fbf1fffa30c89e0cd3f0b67a87b",
+      "size": 3425,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/6b87d999dd414fbf1fffa30c89e0cd3f0b67a87b",
+      "error": "SyntaxError: Unexpected token 'i', \"import { u\"... is not valid JSON"
+    },
+    {
+      "path": "src/components/SignMessage.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48d439f452c0aa3d17cb583dee23122e55c482c5",
+      "size": 2470,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/48d439f452c0aa3d17cb583dee23122e55c482c5",
+      "error": "SyntaxError: Unexpected token '/', \"// TODO: S\"... is not valid JSON"
+    },
+    {
+      "path": "src/components/Text",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "af2063141cbcd74e0161ecc198ea4fa0103d9b22",
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/trees/af2063141cbcd74e0161ecc198ea4fa0103d9b22"
+    },
+    {
+      "path": "src/components/Text/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5afb9e6b671045237f20748af3bc087a97c2859",
+      "size": 1558,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/b5afb9e6b671045237f20748af3bc087a97c2859"
+    },
+    {
+      "path": "src/components/nav-element",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c679ef9ad3f4ee27b68653f53e378d5bb2edbb89",
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/trees/c679ef9ad3f4ee27b68653f53e378d5bb2edbb89"
+    },
+    {
+      "path": "src/components/nav-element/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eccd4672c29ccedb415df69645e6ec5d2dd11258",
+      "size": 1705,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/eccd4672c29ccedb415df69645e6ec5d2dd11258"
+    },
+    {
+      "path": "src/contexts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7e9e41db552e8e4d039b9f1f328fe3cc3049c322",
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/trees/7e9e41db552e8e4d039b9f1f328fe3cc3049c322"
+    },
+    {
+      "path": "src/contexts/AutoConnectProvider.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62e88f24d144634daacf7681c6f96a06ce0d8465",
+      "size": 962,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/62e88f24d144634daacf7681c6f96a06ce0d8465"
+    },
+    {
+      "path": "src/contexts/ContextProvider.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c05a3236e25310786712198fc95ad1872884950",
+      "size": 2327,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/8c05a3236e25310786712198fc95ad1872884950"
+    },
+    {
+      "path": "src/contexts/NetworkConfigurationProvider.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3b3ae6b8cefdf15097391f5c718b05681cea7fc",
+      "size": 892,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/d3b3ae6b8cefdf15097391f5c718b05681cea7fc"
+    },
+    {
+      "path": "src/hooks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9177219994af7749161981d7ea874fd5c6b6f5d7",
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/trees/9177219994af7749161981d7ea874fd5c6b6f5d7"
+    },
+    {
+      "path": "src/hooks/useQueryContext.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9eb1422d038a2f0b532c01370ab358882c3a8020",
+      "size": 566,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/9eb1422d038a2f0b532c01370ab358882c3a8020"
+    },
+    {
+      "path": "src/models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c899776d706ac61427f8e53bcdf0d00114aadb25",
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/trees/c899776d706ac61427f8e53bcdf0d00114aadb25"
+    },
+    {
+      "path": "src/models/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0dda4b77d19465228ed0411845276c8b39b715f",
+      "size": 62,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/a0dda4b77d19465228ed0411845276c8b39b715f"
+    },
+    {
+      "path": "src/pages",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3283101bddd7d06d270e1903a4f580eb179efe38",
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/trees/3283101bddd7d06d270e1903a4f580eb179efe38"
+    },
+    {
+      "path": "src/pages/_app.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9286afff3d66ae3a94423b28ce0fda1e1bf2811",
+      "size": 996,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/a9286afff3d66ae3a94423b28ce0fda1e1bf2811"
+    },
+    {
+      "path": "src/pages/_document.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0969e5a709398c86a8540bd2b7702a6ea552f21e",
+      "size": 527,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/0969e5a709398c86a8540bd2b7702a6ea552f21e"
+    },
+    {
+      "path": "src/pages/api",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8f7ef26779ec7091ee05c1e2cc0f3bb0bb419ada",
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/trees/8f7ef26779ec7091ee05c1e2cc0f3bb0bb419ada"
+    },
+    {
+      "path": "src/pages/api/hello.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8bcc7e5caed177cb9ecfa7c02bc9a854b8ad1ff",
+      "size": 307,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/f8bcc7e5caed177cb9ecfa7c02bc9a854b8ad1ff"
+    },
+    {
+      "path": "src/pages/basics.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4337a46db5712e2b6da5024834aef17295d04008",
+      "size": 391,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/4337a46db5712e2b6da5024834aef17295d04008"
+    },
+    {
+      "path": "src/pages/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "091690399bd02df0bcc9717e64a735246c5e1897",
+      "size": 379,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/091690399bd02df0bcc9717e64a735246c5e1897"
+    },
+    {
+      "path": "src/stores",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7f76c8f11c80f9312041a8a1cd8dcec3511d7f3b",
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/trees/7f76c8f11c80f9312041a8a1cd8dcec3511d7f3b"
+    },
+    {
+      "path": "src/stores/useNotificationStore.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fec56e008bd614fef23cfbcfce55ab54ce368b41",
+      "size": 420,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/fec56e008bd614fef23cfbcfce55ab54ce368b41"
+    },
+    {
+      "path": "src/stores/useUserSOLBalanceStore.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4fe7b1cae9b3e3e615d4c546c3e12ffc1361df9",
+      "size": 796,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/a4fe7b1cae9b3e3e615d4c546c3e12ffc1361df9"
+    },
+    {
+      "path": "src/styles",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4d40f7df126d68b7882475815da623b40b2a1d01",
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/trees/4d40f7df126d68b7882475815da623b40b2a1d01"
+    },
+    {
+      "path": "src/styles/globals.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65f4beffeef09113e8db7483cc1af40edb259c9c",
+      "size": 639,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/65f4beffeef09113e8db7483cc1af40edb259c9c"
+    },
+    {
+      "path": "src/utils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6b879b09445ee9fa7a69f72dce22ad21f7f12be8",
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/trees/6b879b09445ee9fa7a69f72dce22ad21f7f12be8"
+    },
+    {
+      "path": "src/utils/explorer.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3abe0edb753ec4c234a75e64329e6d01a4c62862",
+      "size": 741,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/3abe0edb753ec4c234a75e64329e6d01a4c62862"
+    },
+    {
+      "path": "src/utils/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "144b3cdd92b2822e2ff493f672820c175481e974",
+      "size": 909,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/144b3cdd92b2822e2ff493f672820c175481e974"
+    },
+    {
+      "path": "src/utils/notifications.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f51348d35810bec54e0c17b96727fbc50890103",
+      "size": 461,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/0f51348d35810bec54e0c17b96727fbc50890103"
+    },
+    {
+      "path": "src/views",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6bb5344ef7a32a3bfa32da021923e5cc579f7045",
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/trees/6bb5344ef7a32a3bfa32da021923e5cc579f7045"
+    },
+    {
+      "path": "src/views/basics",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1de2e316a653d2214766f37f41222908516d8739",
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/trees/1de2e316a653d2214766f37f41222908516d8739"
+    },
+    {
+      "path": "src/views/basics/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b1aa4aa07b9c583f5e180674ec5fcd18dcb1a0d",
+      "size": 784,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/5b1aa4aa07b9c583f5e180674ec5fcd18dcb1a0d"
+    },
+    {
+      "path": "src/views/home",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "eaeddbc3b5be157310a0c3ab53ddf0f2491251de",
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/trees/eaeddbc3b5be157310a0c3ab53ddf0f2491251de"
+    },
+    {
+      "path": "src/views/home/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab6d514e380ecb612f5f7c49377c3753eecc7972",
+      "size": 2526,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/ab6d514e380ecb612f5f7c49377c3753eecc7972"
+    },
+    {
+      "path": "src/views/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "267cbae7220c7457f481af570a8e65e53ed5fa83",
+      "size": 74,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/267cbae7220c7457f481af570a8e65e53ed5fa83"
+    },
+    {
+      "path": "tailwind.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee16ede59e4ac586eaa2c5cf08f82ae6f7b50002",
+      "size": 2092,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/ee16ede59e4ac586eaa2c5cf08f82ae6f7b50002"
+    },
+    {
+      "path": "tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad70a923a4e47020cf8d81209bae97973a403e28",
+      "size": 697,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/ad70a923a4e47020cf8d81209bae97973a403e28"
+    },
+    {
+      "path": "yarn.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "716ab8a65df0ddcfdd22275b1dcf54dd25ad3481",
+      "size": 396241,
+      "url": "https://api.github.com/repos/solana-labs/dapp-scaffold/git/blobs/716ab8a65df0ddcfdd22275b1dcf54dd25ad3481"
+    }
+  ]
+}

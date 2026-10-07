@@ -1,0 +1,1603 @@
+{
+  "repository": "ethereum/dapp-bin",
+  "tree_sha": "578bb1dd60c0381ae5d4153aeab27f10025fde97",
+  "truncated": false,
+  "entries": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44cb975b2ad093ed208f005476ee387a249dfc76",
+      "size": 11,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/44cb975b2ad093ed208f005476ee387a249dfc76"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "326fe253d92321786a5b6b53c17785d0ec26f9d0",
+      "size": 1067,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/326fe253d92321786a5b6b53c17785d0ec26f9d0",
+      "error": "SyntaxError: Unexpected token 'T', \"The MIT Li\"... is not valid JSON"
+    },
+    {
+      "path": "NatSpecReg",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "420ee0c281c6ad39e8abc2fe8ce407647d8e65ea",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/420ee0c281c6ad39e8abc2fe8ce407647d8e65ea"
+    },
+    {
+      "path": "NatSpecReg/.mix",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "935c83bd9e8f138ac3336dadc71b2c593eb08933",
+      "size": 1803,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/935c83bd9e8f138ac3336dadc71b2c593eb08933"
+    },
+    {
+      "path": "NatSpecReg/contract.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8302fde4273553cf69ed1ea1cbe11a975529154d",
+      "size": 255,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/8302fde4273553cf69ed1ea1cbe11a975529154d"
+    },
+    {
+      "path": "NatSpecReg/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "368619f271873f97e096d5dbd6da4b9145b34665",
+      "size": 82,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/368619f271873f97e096d5dbd6da4b9145b34665"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7166deb731749ec2ecb9f677bdc90c44781f0993",
+      "size": 55,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/7166deb731749ec2ecb9f677bdc90c44781f0993",
+      "error": "SyntaxError: Unexpected token 'd', \"dapp-bin\n=\"... is not valid JSON"
+    },
+    {
+      "path": "TODO",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc8a124d37490c3516cfb70d8be90fbdb241a740",
+      "size": 555,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/cc8a124d37490c3516cfb70d8be90fbdb241a740"
+    },
+    {
+      "path": "arbitration",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "aef11c5d66c1a41cd52b31a1cff6613c37cee47f",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/aef11c5d66c1a41cd52b31a1cff6613c37cee47f"
+    },
+    {
+      "path": "arbitration/arbiter_reg.se",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40fdf6af0e2f8efbf2f9601c857529fd053124f7",
+      "size": 3002,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/40fdf6af0e2f8efbf2f9601c857529fd053124f7"
+    },
+    {
+      "path": "arbitration/arbitration.se",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b927429ddc33fd3c315b48732f1a5e7030e36cd",
+      "size": 5795,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/2b927429ddc33fd3c315b48732f1a5e7030e36cd"
+    },
+    {
+      "path": "arbitration/config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad1469910bcac3af1fc1ac8bba3b992af0c9f405",
+      "size": 12881,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/ad1469910bcac3af1fc1ac8bba3b992af0c9f405"
+    },
+    {
+      "path": "arbitration/images",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ccab756c0f6cbdda5992cbbfac9921ce2be4cf7a",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/ccab756c0f6cbdda5992cbbfac9921ce2be4cf7a"
+    },
+    {
+      "path": "arbitration/images/inprogress.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e864f2e37d51e2b45731822225161780027ea2e",
+      "size": 10848,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/5e864f2e37d51e2b45731822225161780027ea2e"
+    },
+    {
+      "path": "arbitration/main.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d4d0d25551341d3e95c5a67d57ca0005cf9ef49",
+      "size": 4876,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/4d4d0d25551341d3e95c5a67d57ca0005cf9ef49"
+    },
+    {
+      "path": "arbitration/main.jade",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58ecb384db86521cfbcac3db8fb802aa72a876cb",
+      "size": 7173,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/58ecb384db86521cfbcac3db8fb802aa72a876cb"
+    },
+    {
+      "path": "arbitration/prepare.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2a9b476d7504743daf5e28b9b9ce10ffc97c0f5",
+      "size": 2914,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/e2a9b476d7504743daf5e28b9b9ce10ffc97c0f5"
+    },
+    {
+      "path": "arbitration/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "85b875bacacaa3139e1efc85f70848acb3a123a7",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/85b875bacacaa3139e1efc85f70848acb3a123a7"
+    },
+    {
+      "path": "arbitration/scripts/angular.min.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b220688dfaa211beb682189ddf7d24336d4de45",
+      "size": 80836,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/2b220688dfaa211beb682189ddf7d24336d4de45"
+    },
+    {
+      "path": "arbitration/scripts/dialogMessage.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d53b168646538e0a84ddf129120bbfb475e4d7b",
+      "size": 1473,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/1d53b168646538e0a84ddf129120bbfb475e4d7b"
+    },
+    {
+      "path": "arbitration/scripts/filtered_list.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5ebb6f0637935efcfc8fb946cd8e9022e7f9dac",
+      "size": 2183,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/d5ebb6f0637935efcfc8fb946cd8e9022e7f9dac"
+    },
+    {
+      "path": "arbitration/scripts/inprogress.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e864f2e37d51e2b45731822225161780027ea2e",
+      "size": 10848,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/5e864f2e37d51e2b45731822225161780027ea2e"
+    },
+    {
+      "path": "arbitration/scripts/main.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5d42ca2b4f2a4e9c638c5f261cd7929c6651a4b",
+      "size": 14872,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/b5d42ca2b4f2a4e9c638c5f261cd7929c6651a4b"
+    },
+    {
+      "path": "arbitration/scripts/sha3.min.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01bfba6dd0c154d870fe879c6e56ae04b12a7b86",
+      "size": 6026,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/01bfba6dd0c154d870fe879c6e56ae04b12a7b86"
+    },
+    {
+      "path": "arbitration/scripts/tx_in_progress.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "657451e11feaad45a58c22a599d21ade5ca3a0ba",
+      "size": 4443,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/657451e11feaad45a58c22a599d21ade5ca3a0ba"
+    },
+    {
+      "path": "arbitration/scripts/underscore-min.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d22f881bcc701a391be989bf351831d7ecf7aba1",
+      "size": 14358,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/d22f881bcc701a391be989bf351831d7ecf7aba1"
+    },
+    {
+      "path": "arbitration/scripts/web3.min.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81c73d78618744cd1a7b51f0c08d025157c37e4c",
+      "size": 83340,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/81c73d78618744cd1a7b51f0c08d025157c37e4c"
+    },
+    {
+      "path": "arbitration/styles",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "82bad3234ac92a6883578c2decfa44560fedb03d",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/82bad3234ac92a6883578c2decfa44560fedb03d"
+    },
+    {
+      "path": "arbitration/styles/bootstrap.min.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df96c86485dd20f436bd7a79808cae66579501f8",
+      "size": 106006,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/df96c86485dd20f436bd7a79808cae66579501f8"
+    },
+    {
+      "path": "arbitration/styles/main.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "930ce28d2cbe65e036baa9ec05e43d5ca7053193",
+      "size": 2162,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/930ce28d2cbe65e036baa9ec05e43d5ca7053193"
+    },
+    {
+      "path": "arbitration/test.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de429e66598697306cc8d1a2220ece9d5414213d",
+      "size": 4148,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/de429e66598697306cc8d1a2220ece9d5414213d"
+    },
+    {
+      "path": "canary",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6987b739d0a4384375e932756a876a40e70c30c0",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/6987b739d0a4384375e932756a876a40e70c30c0"
+    },
+    {
+      "path": "canary/canary.lll",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc5a9f4141da784ace53580d7eeed444bfeb00e6",
+      "size": 94,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/fc5a9f4141da784ace53580d7eeed444bfeb00e6"
+    },
+    {
+      "path": "channels",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2e31bfdee11de35dd3098b9238f7877ee16a7635",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/2e31bfdee11de35dd3098b9238f7877ee16a7635"
+    },
+    {
+      "path": "channels/channel.se",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e5d62c7d73ec3a299da5096735d9572debe6ab5",
+      "size": 2153,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/8e5d62c7d73ec3a299da5096735d9572debe6ab5"
+    },
+    {
+      "path": "channels/channel_test.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b512bb5e1062a5eccf31a7280d54754d10502549",
+      "size": 944,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/b512bb5e1062a5eccf31a7280d54754d10502549"
+    },
+    {
+      "path": "chat",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "691c78778e9cb2813901961bdcb8199bfd54eace",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/691c78778e9cb2813901961bdcb8199bfd54eace"
+    },
+    {
+      "path": "chat/chat.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70a3ea381e2a368b08e3e715e4369889f397b89b",
+      "size": 6120,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/70a3ea381e2a368b08e3e715e4369889f397b89b"
+    },
+    {
+      "path": "clientreceipt",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9b7563bd578144a8327f1c24339b1cf7e93d74fa",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/9b7563bd578144a8327f1c24339b1cf7e93d74fa"
+    },
+    {
+      "path": "clientreceipt/clientreceipt.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a24f2c26c0844e3326cc1066199f1d3fd999efac",
+      "size": 1569,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/a24f2c26c0844e3326cc1066199f1d3fd999efac"
+    },
+    {
+      "path": "coin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5b252ed44dff9b23e57ddb74f2ec93554a2d035e",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/5b252ed44dff9b23e57ddb74f2ec93554a2d035e"
+    },
+    {
+      "path": "coin/backcoin.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c344f5979f655729fa9418be631ac9d9d32c36d1",
+      "size": 79447,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/c344f5979f655729fa9418be631ac9d9d32c36d1"
+    },
+    {
+      "path": "coin/coin.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa14f64b7c521120ffb35ce2750520a8215aa8d7",
+      "size": 11820,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/aa14f64b7c521120ffb35ce2750520a8215aa8d7"
+    },
+    {
+      "path": "coin/coin.lll",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3212199dd5623d50aca912db378079224161be7e",
+      "size": 1264,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/3212199dd5623d50aca912db378079224161be7e"
+    },
+    {
+      "path": "coin/coin.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b833e8fdb536cf9906f65e481fd60fa847c30a3",
+      "size": 3588,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/8b833e8fdb536cf9906f65e481fd60fa847c30a3"
+    },
+    {
+      "path": "coin/gavcoin.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20e686f209e88e4fbd138393b8bcee7f6a6359ad",
+      "size": 94229,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/20e686f209e88e4fbd138393b8bcee7f6a6359ad"
+    },
+    {
+      "path": "coins",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "025d068ae794042941abd43a4fdc19ad3eb67c3c",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/025d068ae794042941abd43a4fdc19ad3eb67c3c"
+    },
+    {
+      "path": "coins/coin.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04bd457631674319778ba0f73b6cbcf5b54393a3",
+      "size": 219,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/04bd457631674319778ba0f73b6cbcf5b54393a3"
+    },
+    {
+      "path": "coins/coins.lll",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2d70ea74d50c8a08f34ad73e5152540dd46c80f",
+      "size": 356,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/c2d70ea74d50c8a08f34ad73e5152540dd46c80f"
+    },
+    {
+      "path": "coins/coins.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d7001e5df0b65cc15881bd1efe5d5e064f060a8",
+      "size": 1064,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/8d7001e5df0b65cc15881bd1efe5d5e064f060a8"
+    },
+    {
+      "path": "config",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f49de2ab160cc26eab1308383972c80a47f9c4a0",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/f49de2ab160cc26eab1308383972c80a47f9c4a0"
+    },
+    {
+      "path": "config/config.lll",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d78ce8561e798121a751d894f728427e80d2901",
+      "size": 162,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/1d78ce8561e798121a751d894f728427e80d2901"
+    },
+    {
+      "path": "config/config.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f5700a5f7a9b725a18e55818b9ad15b69d03c09",
+      "size": 1798,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/2f5700a5f7a9b725a18e55818b9ad15b69d03c09"
+    },
+    {
+      "path": "crowdfund",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b94f9d2a77702f708d3d9b9653860058c493bca9",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/b94f9d2a77702f708d3d9b9653860058c493bca9"
+    },
+    {
+      "path": "crowdfund/campaign.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6555669cde57d3e18cf55853c391fdedc05b702",
+      "size": 1125,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/b6555669cde57d3e18cf55853c391fdedc05b702"
+    },
+    {
+      "path": "crowdfund/campaign.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "413657e0102279d10e855ec94af4772eb9a0c8e6",
+      "size": 1572,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/413657e0102279d10e855ec94af4772eb9a0c8e6"
+    },
+    {
+      "path": "crowdfund/campaign_setup.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c525c68b14fd408af4613e0a3f7e6b2f428c273",
+      "size": 821,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/6c525c68b14fd408af4613e0a3f7e6b2f428c273"
+    },
+    {
+      "path": "crowdfund/campaign_setup.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad00a0450c1b965704b2a2c9919952febab93742",
+      "size": 1242,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/ad00a0450c1b965704b2a2c9919952febab93742"
+    },
+    {
+      "path": "crowdfund/common.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ea343bd92442e935c492e8bbe62b9af710f6288",
+      "size": 1480,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/2ea343bd92442e935c492e8bbe62b9af710f6288"
+    },
+    {
+      "path": "crowdfund/crowdfund.se",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa2670a4c599d9d3635e34678f1ec7694c67a8a9",
+      "size": 1877,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/aa2670a4c599d9d3635e34678f1ec7694c67a8a9"
+    },
+    {
+      "path": "ether_ad",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "787c249d8a5f2bb5c40a83e951e2cee072dee352",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/787c249d8a5f2bb5c40a83e951e2cee072dee352"
+    },
+    {
+      "path": "ether_ad/adStorer.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de8ffb0011652c753ce1fe025bd2c09c7996908e",
+      "size": 2769,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/de8ffb0011652c753ce1fe025bd2c09c7996908e"
+    },
+    {
+      "path": "ether_ad/compile.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a3801459a867b3e87c420a48e0f139c9e4dfeba",
+      "size": 477,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/7a3801459a867b3e87c420a48e0f139c9e4dfeba"
+    },
+    {
+      "path": "ether_ad/config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a0ca7e63b110479f1317a019c56b98d14377045",
+      "size": 20153,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/1a0ca7e63b110479f1317a019c56b98d14377045"
+    },
+    {
+      "path": "ether_ad/initialize.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a3e8ee574a50c7eabe890e9b54a83e16bae036c",
+      "size": 1015,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/1a3e8ee574a50c7eabe890e9b54a83e16bae036c"
+    },
+    {
+      "path": "ether_ad/main.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8e12b29a4c02c416ca6e395f6fce04cadd265f1",
+      "size": 812,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/b8e12b29a4c02c416ca6e395f6fce04cadd265f1"
+    },
+    {
+      "path": "ether_ad/main.jade",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2865aad7d7f96928c9385f3fcb179e611f195abb",
+      "size": 738,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/2865aad7d7f96928c9385f3fcb179e611f195abb"
+    },
+    {
+      "path": "ether_ad/mk_abi.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a2d4b545ed5f48afd4e7ddc7d6cdd71ffa90fc1",
+      "size": 710,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/5a2d4b545ed5f48afd4e7ddc7d6cdd71ffa90fc1"
+    },
+    {
+      "path": "ether_ad/one_phase_auction.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0ed065b2b893b59d7a8f079c197a9b90aa5095c",
+      "size": 6073,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/b0ed065b2b893b59d7a8f079c197a9b90aa5095c"
+    },
+    {
+      "path": "ether_ad/prepare.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67cc36734121d480659f30bb98504244d814f170",
+      "size": 3079,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/67cc36734121d480659f30bb98504244d814f170"
+    },
+    {
+      "path": "ether_ad/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c2ec6951943eac3d68871aa938efa966c7d5a766",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/c2ec6951943eac3d68871aa938efa966c7d5a766"
+    },
+    {
+      "path": "ether_ad/scripts/JSXTransformer.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9f50a395a9bbc2dbe494e494133309f5c19c195",
+      "size": 493024,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/a9f50a395a9bbc2dbe494e494133309f5c19c195"
+    },
+    {
+      "path": "ether_ad/scripts/common.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d39a5695467492ca85d33589f292d648fdab54d8",
+      "size": 824,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/d39a5695467492ca85d33589f292d648fdab54d8"
+    },
+    {
+      "path": "ether_ad/scripts/console-polyfill.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7eacd7809693863912ccae7f8a90bc9ea955c9a3",
+      "size": 689,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/7eacd7809693863912ccae7f8a90bc9ea955c9a3"
+    },
+    {
+      "path": "ether_ad/scripts/es5-sham.min.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "033c27a3fd8e163d9f30317745b874f682ad3231",
+      "size": 6752,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/033c27a3fd8e163d9f30317745b874f682ad3231"
+    },
+    {
+      "path": "ether_ad/scripts/es5-shim.min.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50502e0548bde4c2f7bf03d3d4506feabba1119b",
+      "size": 17105,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/50502e0548bde4c2f7bf03d3d4506feabba1119b"
+    },
+    {
+      "path": "ether_ad/scripts/filtered_list.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00302d54cf1cfb71989449a46515c28af3a5d0a3",
+      "size": 4275,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/00302d54cf1cfb71989449a46515c28af3a5d0a3"
+    },
+    {
+      "path": "ether_ad/scripts/main.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbabc034ecd8ce94411a36dd4e678cf431e6ba4f",
+      "size": 7398,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/cbabc034ecd8ce94411a36dd4e678cf431e6ba4f"
+    },
+    {
+      "path": "ether_ad/scripts/onePhaseAdBox.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ad307fabd94ade6a48f4567e7917cc5569470d4",
+      "size": 11374,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/6ad307fabd94ade6a48f4567e7917cc5569470d4"
+    },
+    {
+      "path": "ether_ad/scripts/react.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee718d0832125dfa4234cf575bdc2b310e778ae0",
+      "size": 600572,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/ee718d0832125dfa4234cf575bdc2b310e778ae0"
+    },
+    {
+      "path": "ether_ad/scripts/sha3.min.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01bfba6dd0c154d870fe879c6e56ae04b12a7b86",
+      "size": 6026,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/01bfba6dd0c154d870fe879c6e56ae04b12a7b86"
+    },
+    {
+      "path": "ether_ad/scripts/twoPhaseAdBox.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d669e4fa3f5fd423b795467935598af24105c181",
+      "size": 12683,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/d669e4fa3f5fd423b795467935598af24105c181"
+    },
+    {
+      "path": "ether_ad/scripts/web3.min.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81c73d78618744cd1a7b51f0c08d025157c37e4c",
+      "size": 83340,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/81c73d78618744cd1a7b51f0c08d025157c37e4c"
+    },
+    {
+      "path": "ether_ad/test.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f6e69ab03b00295d303be119fa02b638efb7bce",
+      "size": 6471,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/3f6e69ab03b00295d303be119fa02b638efb7bce"
+    },
+    {
+      "path": "ether_ad/two_phase_auction.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04926104e8a151190fb416ebcaf722b3053bb132",
+      "size": 7282,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/04926104e8a151190fb416ebcaf722b3053bb132"
+    },
+    {
+      "path": "exchange",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "90a38f8047f988b51fd24c78417e6d1d618933a7",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/90a38f8047f988b51fd24c78417e6d1d618933a7"
+    },
+    {
+      "path": "exchange/exchange.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc563f9d64dac875e16e0daca973d370c0220419",
+      "size": 14220,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/cc563f9d64dac875e16e0daca973d370c0220419"
+    },
+    {
+      "path": "exchange/exchange.lll",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e670e7e3432e32a425b75d94c99f152de32bd728",
+      "size": 2794,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/e670e7e3432e32a425b75d94c99f152de32bd728"
+    },
+    {
+      "path": "future_solidity",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8d397ac8f816d99767cc0ecb1eef1c26235cb761",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/8d397ac8f816d99767cc0ecb1eef1c26235cb761"
+    },
+    {
+      "path": "future_solidity/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ccb864cd8fefaa2cc5304eb5b05029f04076c70",
+      "size": 94,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/7ccb864cd8fefaa2cc5304eb5b05029f04076c70",
+      "error": "SyntaxError: Unexpected token 'T', \"This direc\"... is not valid JSON"
+    },
+    {
+      "path": "future_solidity/commitmentScheme.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0bc403c0141075301f10d795b85c17c3e551a088",
+      "size": 323,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/0bc403c0141075301f10d795b85c17c3e551a088"
+    },
+    {
+      "path": "future_solidity/heap.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d079ade51ad0d91e7f1867d52e95fb617deb0a25",
+      "size": 1513,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/d079ade51ad0d91e7f1867d52e95fb617deb0a25"
+    },
+    {
+      "path": "future_solidity/queue.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "499fe145776d460c8ad2caefdb7513be8adb55ac",
+      "size": 1183,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/499fe145776d460c8ad2caefdb7513be8adb55ac"
+    },
+    {
+      "path": "gavmble",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8bfa1fedf0b8b0b841b3f87fd619ba48b22bb880",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/8bfa1fedf0b8b0b841b3f87fd619ba48b22bb880"
+    },
+    {
+      "path": "gavmble/gavmble.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "640a71f3fb828e657e7aa0adad6c30c17db726a3",
+      "size": 6311,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/640a71f3fb828e657e7aa0adad6c30c17db726a3"
+    },
+    {
+      "path": "gavmble/gavmble.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccd1d75887b1a1306dce8b5992c89dafcef53e69",
+      "size": 5100,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/ccd1d75887b1a1306dce8b5992c89dafcef53e69"
+    },
+    {
+      "path": "getting started",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "85d7180a53b2011c19406275b36a5f31c73b81d3",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/85d7180a53b2011c19406275b36a5f31c73b81d3"
+    },
+    {
+      "path": "getting started/crowdsale.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "235a65da3f3d363a7b43e1d2f80d5b3e1bcae91e",
+      "size": 2573,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/235a65da3f3d363a7b43e1d2f80d5b3e1bcae91e"
+    },
+    {
+      "path": "getting started/democratic dao.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e877a0422e43b83903afbb9564ea26be3ac035f",
+      "size": 2920,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/1e877a0422e43b83903afbb9564ea26be3ac035f"
+    },
+    {
+      "path": "getting started/greeter.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df6230e542a877377df50b5f36f2edd8f48c9782",
+      "size": 852,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/df6230e542a877377df50b5f36f2edd8f48c9782"
+    },
+    {
+      "path": "getting started/snippets.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15f8c77462117597cfc4829b17628abb39e60d5b",
+      "size": 1102,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/15f8c77462117597cfc4829b17628abb39e60d5b"
+    },
+    {
+      "path": "getting started/token.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19e44a34f8bdad8b7ef27f572887f3c8870b3e96",
+      "size": 795,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/19e44a34f8bdad8b7ef27f572887f3c8870b3e96"
+    },
+    {
+      "path": "graph",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5ec580800f945f6583e6af53775edbbb7f79a8a1",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/5ec580800f945f6583e6af53775edbbb7f79a8a1"
+    },
+    {
+      "path": "graph/graph.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b717118b65090fe0081d0c11d2b29a3021cc836",
+      "size": 906,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/8b717118b65090fe0081d0c11d2b29a3021cc836"
+    },
+    {
+      "path": "graph/graph.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5fab75e39c8b3ea4c469d33a6ae2c59f19f671e",
+      "size": 1214,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/a5fab75e39c8b3ea4c469d33a6ae2c59f19f671e"
+    },
+    {
+      "path": "graph/graph.se",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "deff8375ea3ae1dc75a5f310ab7fb740d5af548d",
+      "size": 348,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/deff8375ea3ae1dc75a5f310ab7fb740d5af548d"
+    },
+    {
+      "path": "library",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3cffc6a44580ad62aae9d18f3b2dfa5a771b6dd2",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/3cffc6a44580ad62aae9d18f3b2dfa5a771b6dd2"
+    },
+    {
+      "path": "library/features.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06e56ca41f4258de5f5935a4de5b1b4230c8c5b9",
+      "size": 285,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/06e56ca41f4258de5f5935a4de5b1b4230c8c5b9"
+    },
+    {
+      "path": "library/iterable_mapping.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "351dfde975cec7f7cf63ccae21b55fbe2957d789",
+      "size": 2460,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/351dfde975cec7f7cf63ccae21b55fbe2957d789"
+    },
+    {
+      "path": "library/linkedList.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c4cc7115dfab2ff9a479b7c3bc1efb0e175252d",
+      "size": 2838,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/7c4cc7115dfab2ff9a479b7c3bc1efb0e175252d"
+    },
+    {
+      "path": "library/math.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba33f5afafd269e97634d809e0e68559c0decdda",
+      "size": 312,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/ba33f5afafd269e97634d809e0e68559c0decdda"
+    },
+    {
+      "path": "library/stringUtils.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6994c3fcb955e274b5cbc97ea02a9cef01003e3",
+      "size": 2052,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/e6994c3fcb955e274b5cbc97ea02a9cef01003e3"
+    },
+    {
+      "path": "list_logs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e36c5d5a83ce1102885ffaecda0b666b463169b4",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/e36c5d5a83ce1102885ffaecda0b666b463169b4"
+    },
+    {
+      "path": "list_logs/config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edf396590f836ba5f944afbf04270d6c4a6a1075",
+      "size": 1350,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/edf396590f836ba5f944afbf04270d6c4a6a1075"
+    },
+    {
+      "path": "list_logs/main.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa61b0e07e88dea873d4b1303bc8f4d4ffa3fdbf",
+      "size": 1495,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/aa61b0e07e88dea873d4b1303bc8f4d4ffa3fdbf"
+    },
+    {
+      "path": "list_logs/main.jade",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d5465cb70ad0f7f9e932976f69952d30ded970c",
+      "size": 1496,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/9d5465cb70ad0f7f9e932976f69952d30ded970c"
+    },
+    {
+      "path": "list_logs/main.se",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94dcd35adeb9e5c13492fc53d30f2d2635830527",
+      "size": 218,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/94dcd35adeb9e5c13492fc53d30f2d2635830527"
+    },
+    {
+      "path": "list_logs/prepare.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2a9b476d7504743daf5e28b9b9ce10ffc97c0f5",
+      "size": 2914,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/e2a9b476d7504743daf5e28b9b9ce10ffc97c0f5"
+    },
+    {
+      "path": "list_logs/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c99399415147fe77517c1668870db7a54029506f",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/c99399415147fe77517c1668870db7a54029506f"
+    },
+    {
+      "path": "list_logs/scripts/angular.min.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b220688dfaa211beb682189ddf7d24336d4de45",
+      "size": 80836,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/2b220688dfaa211beb682189ddf7d24336d4de45"
+    },
+    {
+      "path": "list_logs/scripts/dialogMessage.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d53b168646538e0a84ddf129120bbfb475e4d7b",
+      "size": 1473,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/1d53b168646538e0a84ddf129120bbfb475e4d7b"
+    },
+    {
+      "path": "list_logs/scripts/filtered_list.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6129842d927cbcb24c1d644fc3d094c415e481c",
+      "size": 4556,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/b6129842d927cbcb24c1d644fc3d094c415e481c"
+    },
+    {
+      "path": "list_logs/scripts/inprogress.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e864f2e37d51e2b45731822225161780027ea2e",
+      "size": 10848,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/5e864f2e37d51e2b45731822225161780027ea2e"
+    },
+    {
+      "path": "list_logs/scripts/main.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6de3e8d4e4612965e638e4c9306bf17b1a12fc15",
+      "size": 2357,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/6de3e8d4e4612965e638e4c9306bf17b1a12fc15"
+    },
+    {
+      "path": "list_logs/scripts/sha3.min.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01bfba6dd0c154d870fe879c6e56ae04b12a7b86",
+      "size": 6026,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/01bfba6dd0c154d870fe879c6e56ae04b12a7b86"
+    },
+    {
+      "path": "list_logs/scripts/tx_in_progress.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "657451e11feaad45a58c22a599d21ade5ca3a0ba",
+      "size": 4443,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/657451e11feaad45a58c22a599d21ade5ca3a0ba"
+    },
+    {
+      "path": "list_logs/scripts/underscore-min.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d22f881bcc701a391be989bf351831d7ecf7aba1",
+      "size": 14358,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/d22f881bcc701a391be989bf351831d7ecf7aba1"
+    },
+    {
+      "path": "list_logs/scripts/web3.min.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81c73d78618744cd1a7b51f0c08d025157c37e4c",
+      "size": 83340,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/81c73d78618744cd1a7b51f0c08d025157c37e4c"
+    },
+    {
+      "path": "list_logs/styles",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "82bad3234ac92a6883578c2decfa44560fedb03d",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/82bad3234ac92a6883578c2decfa44560fedb03d"
+    },
+    {
+      "path": "list_logs/styles/bootstrap.min.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df96c86485dd20f436bd7a79808cae66579501f8",
+      "size": 106006,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/df96c86485dd20f436bd7a79808cae66579501f8"
+    },
+    {
+      "path": "list_logs/styles/main.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "930ce28d2cbe65e036baa9ec05e43d5ca7053193",
+      "size": 2162,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/930ce28d2cbe65e036baa9ec05e43d5ca7053193"
+    },
+    {
+      "path": "namereg",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "49d423d6bbe905af71a8f202e935ed723e9c8900",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/49d423d6bbe905af71a8f202e935ed723e9c8900"
+    },
+    {
+      "path": "namereg/namereg.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09c6012a6847a452f4c043b50138e1942b4ace20",
+      "size": 3937,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/09c6012a6847a452f4c043b50138e1942b4ace20"
+    },
+    {
+      "path": "namereg/namereg.lll",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ecedb7ccd1e9474c8f4c4c80e36850731867258",
+      "size": 550,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/3ecedb7ccd1e9474c8f4c4c80e36850731867258"
+    },
+    {
+      "path": "namereg/namereg.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6eb7dad6b82c021849bd7822f3f66a33cc6ff3f0",
+      "size": 2948,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/6eb7dad6b82c021849bd7822f3f66a33cc6ff3f0"
+    },
+    {
+      "path": "p2plending",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "80af3a12c634e30040cc340349fa2d0ee3e2c379",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/80af3a12c634e30040cc340349fa2d0ee3e2c379"
+    },
+    {
+      "path": "p2plending/WeiLend.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "561f2b8bdd858e4866f76e6da2b13f7fe3245f3d",
+      "size": 7933,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/561f2b8bdd858e4866f76e6da2b13f7fe3245f3d"
+    },
+    {
+      "path": "pricefeed",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9c42e20656cf32f1fc0c76cb22363106c27f7db3",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/9c42e20656cf32f1fc0c76cb22363106c27f7db3"
+    },
+    {
+      "path": "pricefeed/pricefeed.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbc4e7ec3eb6830135a7ae0d3e4d53c4564fd8c7",
+      "size": 2823,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/fbc4e7ec3eb6830135a7ae0d3e4d53c4564fd8c7"
+    },
+    {
+      "path": "private_market",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cb92283bbeff14356c116bf1f09fe2657ae84258",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/cb92283bbeff14356c116bf1f09fe2657ae84258"
+    },
+    {
+      "path": "private_market/company.se",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80b998079914fbfc41326e27dbb87545eda7c684",
+      "size": 5270,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/80b998079914fbfc41326e27dbb87545eda7c684"
+    },
+    {
+      "path": "private_market/currency.se",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88120e087d712d33c1e64a73cca1395e527b6d61",
+      "size": 1703,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/88120e087d712d33c1e64a73cca1395e527b6d61"
+    },
+    {
+      "path": "private_market/orders.se",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bcce02ea25f1e91cbb2e838207bd94fa776a1644",
+      "size": 6070,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/bcce02ea25f1e91cbb2e838207bd94fa776a1644"
+    },
+    {
+      "path": "private_market/test.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3e15e7f00bea2796ee5bd52b11a09a192eae24f",
+      "size": 4485,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/e3e15e7f00bea2796ee5bd52b11a09a192eae24f"
+    },
+    {
+      "path": "randao",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5cf4a2cdbe4290a85c55c98bf3b398967c522b60",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/5cf4a2cdbe4290a85c55c98bf3b398967c522b60"
+    },
+    {
+      "path": "randao/randao.se",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cdbbe12e7f8292934f1a9c7c53acc071ce444548",
+      "size": 3947,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/cdbbe12e7f8292934f1a9c7c53acc071ce444548"
+    },
+    {
+      "path": "randao/randao_test.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "349accffe8f9848250c45c8d86f24f65566be49e",
+      "size": 822,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/349accffe8f9848250c45c8d86f24f65566be49e"
+    },
+    {
+      "path": "registrar",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "275c7b189658e39850b2909e71c13876b7cb52b2",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/275c7b189658e39850b2909e71c13876b7cb52b2"
+    },
+    {
+      "path": "registrar/ExpRegistrar.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95b759c28b1a89e5ce8a21431d925f7298f7a448",
+      "size": 3797,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/95b759c28b1a89e5ce8a21431d925f7298f7a448"
+    },
+    {
+      "path": "registrar/FixedFeeRegistrar.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92a1a6ab101165c8322188b9a54c64bf3caedf34",
+      "size": 9910,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/92a1a6ab101165c8322188b9a54c64bf3caedf34"
+    },
+    {
+      "path": "registrar/FixedFeeRegistrar.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1173e899c427b5e2c8990e835c5fd9dbf043e717",
+      "size": 3044,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/1173e899c427b5e2c8990e835c5fd9dbf043e717"
+    },
+    {
+      "path": "registrar/GlobalRegistrar.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68b873f10a89f773ea8581648f2f3a64c2b86422",
+      "size": 4991,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/68b873f10a89f773ea8581648f2f3a64c2b86422"
+    },
+    {
+      "path": "registrar/ICAPRegistrar.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37ec40f40b37cd2af7b9c0f0a09595a51f6f7efc",
+      "size": 1154,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/37ec40f40b37cd2af7b9c0f0a09595a51f6f7efc"
+    },
+    {
+      "path": "registrar/OwnedRegistrar.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5c0b80b63cad341928ea6b5a0605e27e8bc817e",
+      "size": 1391,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/f5c0b80b63cad341928ea6b5a0605e27e8bc817e"
+    },
+    {
+      "path": "registrar/Registrar.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12ee04854403ca9c517b86fa2275c81df825db0c",
+      "size": 432,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/12ee04854403ca9c517b86fa2275c81df825db0c"
+    },
+    {
+      "path": "registrar/urlhint.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "589ff55347792ffefe7f4ab9d905eefb41ab1ac1",
+      "size": 7453,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/589ff55347792ffefe7f4ab9d905eefb41ab1ac1"
+    },
+    {
+      "path": "registrar/urlhint.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "123d47fc36f550f02b1028095f0a61e6da7701d4",
+      "size": 1787,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/123d47fc36f550f02b1028095f0a61e6da7701d4"
+    },
+    {
+      "path": "scrypt",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8f181cd4f5766ae8652840f5978e1cc0eaf1859f",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/8f181cd4f5766ae8652840f5978e1cc0eaf1859f"
+    },
+    {
+      "path": "scrypt/scrypt.se.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "973308b5b85a8b7ff4aca8555ffeac032beb2326",
+      "size": 6861,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/973308b5b85a8b7ff4aca8555ffeac032beb2326"
+    },
+    {
+      "path": "scrypt/scrypt.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d7aab1f8ed3c9aa833f8f3ad3d196b46985e3ee",
+      "size": 14682,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/6d7aab1f8ed3c9aa833f8f3ad3d196b46985e3ee"
+    },
+    {
+      "path": "scrypt/test_scrypt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5424d7103344b69d915f4193d945fc76c4abf90",
+      "size": 648,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/c5424d7103344b69d915f4193d945fc76c4abf90"
+    },
+    {
+      "path": "serpent_gamble",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2f6f4eab171ec9493529b4e060ee8fc58768cbab",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/2f6f4eab171ec9493529b4e060ee8fc58768cbab"
+    },
+    {
+      "path": "serpent_gamble/README.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f03e22788bf00dbee6c8b0f5a11337e078a3fed3",
+      "size": 3244,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/f03e22788bf00dbee6c8b0f5a11337e078a3fed3"
+    },
+    {
+      "path": "serpent_gamble/config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f90b6ef8973cf212da76785144288f732d673be",
+      "size": 8349,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/5f90b6ef8973cf212da76785144288f732d673be"
+    },
+    {
+      "path": "serpent_gamble/gamble.se",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1bcda49245600a9fff206b329baf9f47f1e7234",
+      "size": 5846,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/b1bcda49245600a9fff206b329baf9f47f1e7234"
+    },
+    {
+      "path": "serpent_gamble/images",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ccab756c0f6cbdda5992cbbfac9921ce2be4cf7a",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/ccab756c0f6cbdda5992cbbfac9921ce2be4cf7a"
+    },
+    {
+      "path": "serpent_gamble/images/inprogress.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e864f2e37d51e2b45731822225161780027ea2e",
+      "size": 10848,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/5e864f2e37d51e2b45731822225161780027ea2e"
+    },
+    {
+      "path": "serpent_gamble/main.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86cfec32639d44fff5cdda2f79f9e2157731f6cb",
+      "size": 6180,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/86cfec32639d44fff5cdda2f79f9e2157731f6cb"
+    },
+    {
+      "path": "serpent_gamble/main.jade",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4fc0d2814f8fc0f1bedf5e1b79b0c0fe8d4088a",
+      "size": 8599,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/e4fc0d2814f8fc0f1bedf5e1b79b0c0fe8d4088a"
+    },
+    {
+      "path": "serpent_gamble/prepare.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2a9b476d7504743daf5e28b9b9ce10ffc97c0f5",
+      "size": 2914,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/e2a9b476d7504743daf5e28b9b9ce10ffc97c0f5"
+    },
+    {
+      "path": "serpent_gamble/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "14f4c79a426168ef337dbafc66172c73b729cfdc",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/14f4c79a426168ef337dbafc66172c73b729cfdc"
+    },
+    {
+      "path": "serpent_gamble/scripts/angular.min.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b220688dfaa211beb682189ddf7d24336d4de45",
+      "size": 80836,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/2b220688dfaa211beb682189ddf7d24336d4de45"
+    },
+    {
+      "path": "serpent_gamble/scripts/dialogMessage.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d53b168646538e0a84ddf129120bbfb475e4d7b",
+      "size": 1473,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/1d53b168646538e0a84ddf129120bbfb475e4d7b"
+    },
+    {
+      "path": "serpent_gamble/scripts/filtered_list.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c30179506a49a09465b761123f578b7bdfdbd14",
+      "size": 1935,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/1c30179506a49a09465b761123f578b7bdfdbd14"
+    },
+    {
+      "path": "serpent_gamble/scripts/inprogress.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e864f2e37d51e2b45731822225161780027ea2e",
+      "size": 10848,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/5e864f2e37d51e2b45731822225161780027ea2e"
+    },
+    {
+      "path": "serpent_gamble/scripts/main.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bb29cc1aa4c715b788733da2ef1dc9ed949a938",
+      "size": 14420,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/6bb29cc1aa4c715b788733da2ef1dc9ed949a938"
+    },
+    {
+      "path": "serpent_gamble/scripts/sha3.min.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01bfba6dd0c154d870fe879c6e56ae04b12a7b86",
+      "size": 6026,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/01bfba6dd0c154d870fe879c6e56ae04b12a7b86"
+    },
+    {
+      "path": "serpent_gamble/scripts/tx_in_progress.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37b1e221c929b1553f3e023a9cfef4d18fb544b1",
+      "size": 4336,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/37b1e221c929b1553f3e023a9cfef4d18fb544b1"
+    },
+    {
+      "path": "serpent_gamble/scripts/underscore-min.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d22f881bcc701a391be989bf351831d7ecf7aba1",
+      "size": 14358,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/d22f881bcc701a391be989bf351831d7ecf7aba1"
+    },
+    {
+      "path": "serpent_gamble/scripts/web3.min.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81c73d78618744cd1a7b51f0c08d025157c37e4c",
+      "size": 83340,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/81c73d78618744cd1a7b51f0c08d025157c37e4c"
+    },
+    {
+      "path": "serpent_gamble/styles",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "50cc9de849aa75e0dfaf8a9f5aacc804d3ec8035",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/50cc9de849aa75e0dfaf8a9f5aacc804d3ec8035"
+    },
+    {
+      "path": "serpent_gamble/styles/bootstrap.min.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df96c86485dd20f436bd7a79808cae66579501f8",
+      "size": 106006,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/df96c86485dd20f436bd7a79808cae66579501f8"
+    },
+    {
+      "path": "serpent_gamble/styles/main.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ab489d2bad20dcf591d86a83c917a0cea8a3b42",
+      "size": 2111,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/1ab489d2bad20dcf591d86a83c917a0cea8a3b42"
+    },
+    {
+      "path": "serpent_gamble/test.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b795d8a7eacfbabf4c7894a4fc5c12e9f0060846",
+      "size": 1982,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/b795d8a7eacfbabf4c7894a4fc5c12e9f0060846"
+    },
+    {
+      "path": "standardized_contract_apis",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "82a0c4b77c8833fbca8aa4c1d9627c4967fae8be",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/82a0c4b77c8833fbca8aa4c1d9627c4967fae8be"
+    },
+    {
+      "path": "standardized_contract_apis/currency.se",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1aeea4709399c957c37109f3fbd44f3e2af42c74",
+      "size": 1707,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/1aeea4709399c957c37109f3fbd44f3e2af42c74"
+    },
+    {
+      "path": "standardized_contract_apis/currency.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c035ffd949d9d22156cdd9eda4e146352e6374d",
+      "size": 2165,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/8c035ffd949d9d22156cdd9eda4e146352e6374d"
+    },
+    {
+      "path": "standardized_contract_apis/datafeed.se",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e402329c057f83306a5a508ac17aff3e4fd3fd8",
+      "size": 193,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/2e402329c057f83306a5a508ac17aff3e4fd3fd8"
+    },
+    {
+      "path": "standardized_contract_apis/datafeed.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ad456091d4f3847f8968047a72adc3c9de50cc6",
+      "size": 325,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/0ad456091d4f3847f8968047a72adc3c9de50cc6"
+    },
+    {
+      "path": "standardized_contract_apis/exchange.se",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51f9e243f1e61f6fb60fb77c68429077565ad16c",
+      "size": 2094,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/51f9e243f1e61f6fb60fb77c68429077565ad16c"
+    },
+    {
+      "path": "standardized_contract_apis/exchange.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efe2b93292cd9ddf04765b657be988f9dac666d8",
+      "size": 2466,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/efe2b93292cd9ddf04765b657be988f9dac666d8"
+    },
+    {
+      "path": "standardized_contract_apis/fee_charging_datafeed.se",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2453de95414c905d24aad74e5176161b531adda1",
+      "size": 386,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/2453de95414c905d24aad74e5176161b531adda1"
+    },
+    {
+      "path": "standardized_contract_apis/fee_charging_datafeed.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f1efe7f651172539b982bd544381e4df7eab46a",
+      "size": 570,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/6f1efe7f651172539b982bd544381e4df7eab46a"
+    },
+    {
+      "path": "standardized_contract_apis/namereg.se",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9bbd0be4b53717d8037c25626fc62b8d5304d5b7",
+      "size": 1576,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/9bbd0be4b53717d8037c25626fc62b8d5304d5b7"
+    },
+    {
+      "path": "standardized_contract_apis/namereg.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba037c726b9557b363782729fa652f227a85d068",
+      "size": 1955,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/ba037c726b9557b363782729fa652f227a85d068"
+    },
+    {
+      "path": "standardized_contract_apis/test.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67b528944c4b6886861d0b16b3402f679774e114",
+      "size": 7895,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/67b528944c4b6886861d0b16b3402f679774e114"
+    },
+    {
+      "path": "thebomb",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ee42c678612a80aa015970b591b68b50da569b81",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/ee42c678612a80aa015970b591b68b50da569b81"
+    },
+    {
+      "path": "thebomb/thebomb.lll",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e4594c43df3dfdc05547b2259d2d02b42d4b6e0",
+      "size": 1602,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/2e4594c43df3dfdc05547b2259d2d02b42d4b6e0"
+    },
+    {
+      "path": "wallet",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fe4e37922065cb62615245076cf4375a306cb0a7",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/fe4e37922065cb62615245076cf4375a306cb0a7"
+    },
+    {
+      "path": "wallet/wallet.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f3d7a2f728531ba8e4239029cc590f6e986b3b7",
+      "size": 14457,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/0f3d7a2f728531ba8e4239029cc590f6e986b3b7"
+    },
+    {
+      "path": "witness",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a903af4f0489ede9a0140cb17ebad77bd8b0e023",
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/trees/a903af4f0489ede9a0140cb17ebad77bd8b0e023"
+    },
+    {
+      "path": "witness/.mix",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b59d033786fd4570e2360988269bde661dabb5b",
+      "size": 1800,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/4b59d033786fd4570e2360988269bde661dabb5b"
+    },
+    {
+      "path": "witness/contract.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93c9297c14e80ba701bf3567d1157c325191e74b",
+      "size": 412,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/93c9297c14e80ba701bf3567d1157c325191e74b"
+    },
+    {
+      "path": "witness/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "368619f271873f97e096d5dbd6da4b9145b34665",
+      "size": 82,
+      "url": "https://api.github.com/repos/ethereum/dapp-bin/git/blobs/368619f271873f97e096d5dbd6da4b9145b34665"
+    }
+  ]
+}

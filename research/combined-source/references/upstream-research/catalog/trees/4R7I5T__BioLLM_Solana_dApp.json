@@ -1,0 +1,645 @@
+{
+  "repository": "4R7I5T/BioLLM_Solana_dApp",
+  "tree_sha": "e1c2400d68206d432ac6d8fa5eaee5acea657c36",
+  "truncated": false,
+  "entries": [
+    {
+      "path": ".env.example",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ecc9dbc15e77dbe1bb5156c7a9b3838250414c7",
+      "size": 81,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/2ecc9dbc15e77dbe1bb5156c7a9b3838250414c7"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fab293fc07bf374d0ec37f9e1541210afd48a02",
+      "size": 454,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/5fab293fc07bf374d0ec37f9e1541210afd48a02"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec9a7c7f60118178e202213a462e603e295e9033",
+      "size": 10831,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/ec9a7c7f60118178e202213a462e603e295e9033",
+      "error": "SyntaxError: Unexpected token '#', \"# BioLLM \u2014\"... is not valid JSON"
+    },
+    {
+      "path": "app.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac5743343c7be2df4c7cf0ff0346ae0aba5c7f4f",
+      "size": 221,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/ac5743343c7be2df4c7cf0ff0346ae0aba5c7f4f"
+    },
+    {
+      "path": "app.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "478aaed1bee72c95c630564d64b80298ddd4c398",
+      "size": 1803,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/478aaed1bee72c95c630564d64b80298ddd4c398"
+    },
+    {
+      "path": "app",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "be733aabbbbc66ff80753f87d101043d7d022356",
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/trees/be733aabbbbc66ff80753f87d101043d7d022356"
+    },
+    {
+      "path": "app/(tabs)",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ef04d68f4b9f6d6ba9e8f00d4584563ee259099f",
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/trees/ef04d68f4b9f6d6ba9e8f00d4584563ee259099f"
+    },
+    {
+      "path": "app/(tabs)/_layout.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "219357415ebea7e6301589909cf6698023f07c75",
+      "size": 1608,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/219357415ebea7e6301589909cf6698023f07c75"
+    },
+    {
+      "path": "app/(tabs)/chat.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9dd01e668f36816837feff7605744e2eaab4d9fd",
+      "size": 9762,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/9dd01e668f36816837feff7605744e2eaab4d9fd"
+    },
+    {
+      "path": "app/(tabs)/settings.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2922cc887620feab43141db606c8ac0523601ae4",
+      "size": 8735,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/2922cc887620feab43141db606c8ac0523601ae4"
+    },
+    {
+      "path": "app/(tabs)/wallet.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01edc9039a7299185a527ff75def10a2d27abf7f",
+      "size": 21953,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/01edc9039a7299185a527ff75def10a2d27abf7f",
+      "error": "SyntaxError: Unexpected token 'i', \"import Rea\"... is not valid JSON"
+    },
+    {
+      "path": "app/+not-found.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d086badefdf5221e2191327f496fe2c846ccac1",
+      "size": 123,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/2d086badefdf5221e2191327f496fe2c846ccac1"
+    },
+    {
+      "path": "app/_layout.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1744c8766ceb437e3e8dc345b8166df775126616",
+      "size": 4614,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/1744c8766ceb437e3e8dc345b8166df775126616"
+    },
+    {
+      "path": "app/chat",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "07d2d1b8bc5cf6725393bf8f6a5c577fdf372e20",
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/trees/07d2d1b8bc5cf6725393bf8f6a5c577fdf372e20"
+    },
+    {
+      "path": "app/chat/[id].tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "465ec04f2c245e67622980aa68b65dcfc6e95e84",
+      "size": 16593,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/465ec04f2c245e67622980aa68b65dcfc6e95e84"
+    },
+    {
+      "path": "app/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d81a027cffaa89a9f715190100bf9e2eea84a9aa",
+      "size": 568,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/d81a027cffaa89a9f715190100bf9e2eea84a9aa"
+    },
+    {
+      "path": "app/onboarding",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "31c3bf1d3383ad5884966c41e4a692ef824bd466",
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/trees/31c3bf1d3383ad5884966c41e4a692ef824bd466"
+    },
+    {
+      "path": "app/onboarding/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "202b4ed627fbb99aca2d43694c92a60e0cd8793b",
+      "size": 6136,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/202b4ed627fbb99aca2d43694c92a60e0cd8793b"
+    },
+    {
+      "path": "app/payment",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c89d63a4f3deb3336035390bc63dff197c10e349",
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/trees/c89d63a4f3deb3336035390bc63dff197c10e349"
+    },
+    {
+      "path": "app/payment/credits.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b92e144e1e47400c4fc85190d0a6dc45c9620831",
+      "size": 4617,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/b92e144e1e47400c4fc85190d0a6dc45c9620831"
+    },
+    {
+      "path": "app/wallet",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "52105fc4330cdc7678267fd2466348fa3b5961fc",
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/trees/52105fc4330cdc7678267fd2466348fa3b5961fc"
+    },
+    {
+      "path": "app/wallet/confirm.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5deeafb6604520b1a3e220e9aafa6f927b6b6561",
+      "size": 5885,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/5deeafb6604520b1a3e220e9aafa6f927b6b6561",
+      "error": "SyntaxError: Unexpected token 'i', \"import Rea\"... is not valid JSON"
+    },
+    {
+      "path": "app/wallet/create.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4eb04734750170eaf4f39f6b234c32774bfacd40",
+      "size": 5002,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/4eb04734750170eaf4f39f6b234c32774bfacd40",
+      "error": "SyntaxError: Unexpected token 'i', \"import Rea\"... is not valid JSON"
+    },
+    {
+      "path": "app/wallet/import.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d09658d0da617bc04e0d79abeb2db337038b075",
+      "size": 6905,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/0d09658d0da617bc04e0d79abeb2db337038b075",
+      "error": "SyntaxError: Unexpected token 'i', \"import Rea\"... is not valid JSON"
+    },
+    {
+      "path": "assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3f175e654181cccde18c283719d0e493a3e07f53",
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/trees/3f175e654181cccde18c283719d0e493a3e07f53"
+    },
+    {
+      "path": "assets/android-icon-background.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ffefc5bb57a3d7b39ec6ff4e96979226522cc49",
+      "size": 17549,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/5ffefc5bb57a3d7b39ec6ff4e96979226522cc49"
+    },
+    {
+      "path": "assets/android-icon-foreground.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e0d1980f79252a842cc6f031a18c5b4f5d18e74",
+      "size": 112996,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/4e0d1980f79252a842cc6f031a18c5b4f5d18e74"
+    },
+    {
+      "path": "assets/android-icon-monochrome.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e0d1980f79252a842cc6f031a18c5b4f5d18e74",
+      "size": 112996,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/4e0d1980f79252a842cc6f031a18c5b4f5d18e74"
+    },
+    {
+      "path": "assets/favicon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "408bd746615785760b09e6f23fa8378d3e614331",
+      "size": 1129,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/408bd746615785760b09e6f23fa8378d3e614331"
+    },
+    {
+      "path": "assets/fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f032b85efa5b9179405663f204063267cff05efe",
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/trees/f032b85efa5b9179405663f204063267cff05efe"
+    },
+    {
+      "path": "assets/fonts/SpaceGrotesk-Bold.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a8611a5836243678f08e7b5081afee916be03b9",
+      "size": 86516,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/8a8611a5836243678f08e7b5081afee916be03b9"
+    },
+    {
+      "path": "assets/fonts/SpaceGrotesk-Medium.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e530cf836a1ff4cc7ccc7d293bdb609482881509",
+      "size": 86612,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/e530cf836a1ff4cc7ccc7d293bdb609482881509"
+    },
+    {
+      "path": "assets/icon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e0d1980f79252a842cc6f031a18c5b4f5d18e74",
+      "size": 112996,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/4e0d1980f79252a842cc6f031a18c5b4f5d18e74"
+    },
+    {
+      "path": "assets/notification-icon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7165a53c7475d846df195bc570482459d61bad67",
+      "size": 393493,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/7165a53c7475d846df195bc570482459d61bad67"
+    },
+    {
+      "path": "assets/splash-icon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03d6f6b6c6727954aec1d8206222769afd178d8d",
+      "size": 17547,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/03d6f6b6c6727954aec1d8206222769afd178d8d"
+    },
+    {
+      "path": "babel.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d872de3f5570683c2b54060d34b3a4e4a8f5e913",
+      "size": 157,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/d872de3f5570683c2b54060d34b3a4e4a8f5e913"
+    },
+    {
+      "path": "eas.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7594e0481b611b07c4a1aee0d5713b473049fb85",
+      "size": 833,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/7594e0481b611b07c4a1aee0d5713b473049fb85"
+    },
+    {
+      "path": "index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d547e214d085f0916f7317ffb59e3f207fd5418d",
+      "size": 214,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/d547e214d085f0916f7317ffb59e3f207fd5418d"
+    },
+    {
+      "path": "package-lock.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76c2122121883db161e25721fa3432c269f4db60",
+      "size": 353799,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/76c2122121883db161e25721fa3432c269f4db60"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a26ffa6ebfce5c0a6b15a2983328d71ede9dcfaa",
+      "size": 1507,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/a26ffa6ebfce5c0a6b15a2983328d71ede9dcfaa"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "95b3e3904656442d19e590627819de0a44a242dd",
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/trees/95b3e3904656442d19e590627819de0a44a242dd"
+    },
+    {
+      "path": "src/components",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ada598ca0d7e19ea7e0c1a9a7744b4f735422fc7",
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/trees/ada598ca0d7e19ea7e0c1a9a7744b4f735422fc7"
+    },
+    {
+      "path": "src/components/chat",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0d04406915f2c18e610f03fe9ca09e67dd6ecf93",
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/trees/0d04406915f2c18e610f03fe9ca09e67dd6ecf93"
+    },
+    {
+      "path": "src/components/chat/ChatBubble.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37576c352ffb411beff1bf6221c914b272b8cf69",
+      "size": 12662,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/37576c352ffb411beff1bf6221c914b272b8cf69"
+    },
+    {
+      "path": "src/components/chat/MessageInput.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "beaaaa0ae7747c701eb4f2b04b1a6681a84bef53",
+      "size": 2612,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/beaaaa0ae7747c701eb4f2b04b1a6681a84bef53"
+    },
+    {
+      "path": "src/components/chat/NeuralCard.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f534c51806e38409be51fbbbe52f3ac8b5ef7177",
+      "size": 3251,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/f534c51806e38409be51fbbbe52f3ac8b5ef7177"
+    },
+    {
+      "path": "src/components/chat/QueueOverlay.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d46087a766d6181ea33cd0d0dfbefa535e5281f1",
+      "size": 1627,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/d46087a766d6181ea33cd0d0dfbefa535e5281f1"
+    },
+    {
+      "path": "src/components/chat/StreamingText.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41a618531f527c895eebaec3c9bb412b299b3719",
+      "size": 1295,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/41a618531f527c895eebaec3c9bb412b299b3719"
+    },
+    {
+      "path": "src/components/neural",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "86509029554d6240ff199e31d1b4e0ec3edb20ee",
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/trees/86509029554d6240ff199e31d1b4e0ec3edb20ee"
+    },
+    {
+      "path": "src/components/neural/CScoreGauge.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87babb82fddf4a9f449033ce55a3fe0b189899bd",
+      "size": 2282,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/87babb82fddf4a9f449033ce55a3fe0b189899bd"
+    },
+    {
+      "path": "src/components/neural/MEAGrid.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e04842059cf3e57da4a40fe8e7f5f09617ccd02b",
+      "size": 3167,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/e04842059cf3e57da4a40fe8e7f5f09617ccd02b"
+    },
+    {
+      "path": "src/components/neural/SpikeAnimation.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83665f00f05dde1da927c7b3d68149c1410a1e9c",
+      "size": 1628,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/83665f00f05dde1da927c7b3d68149c1410a1e9c"
+    },
+    {
+      "path": "src/components/payment",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c80ec65de58ec05d395ec80e601396b95e8f8d07",
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/trees/c80ec65de58ec05d395ec80e601396b95e8f8d07"
+    },
+    {
+      "path": "src/components/payment/CurrencySelector.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a566ed412d5b795ba46d1ee1d85655ddd938d479",
+      "size": 2057,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/a566ed412d5b795ba46d1ee1d85655ddd938d479"
+    },
+    {
+      "path": "src/components/payment/IAPProductCard.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a96add00c56218cc759c36c7193978bd37926a29",
+      "size": 2404,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/a96add00c56218cc759c36c7193978bd37926a29"
+    },
+    {
+      "path": "src/components/payment/PaymentSheet.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c5f54a543d8c43fa2a45d49bb74decbc470f590",
+      "size": 4267,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/7c5f54a543d8c43fa2a45d49bb74decbc470f590"
+    },
+    {
+      "path": "src/constants",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0f6cf19a03e64fce0fae987311b84a1df3d642d7",
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/trees/0f6cf19a03e64fce0fae987311b84a1df3d642d7"
+    },
+    {
+      "path": "src/constants/api.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ce2e3b44b9f6f35a501b4ac9b098dafdbb6744a",
+      "size": 1592,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/0ce2e3b44b9f6f35a501b4ac9b098dafdbb6744a"
+    },
+    {
+      "path": "src/constants/solana.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3a25b3ee0878556812c6280d248892fe4133946",
+      "size": 898,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/e3a25b3ee0878556812c6280d248892fe4133946"
+    },
+    {
+      "path": "src/constants/theme.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f1925f34f0961a1156dae443456711e22b7819a",
+      "size": 2091,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/5f1925f34f0961a1156dae443456711e22b7819a"
+    },
+    {
+      "path": "src/constants/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e21d0d5fff4e4584f31549197322992271d2e3e",
+      "size": 2412,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/3e21d0d5fff4e4584f31549197322992271d2e3e"
+    },
+    {
+      "path": "src/hooks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e75f9557272ea886150ee06ad9559519c91120c3",
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/trees/e75f9557272ea886150ee06ad9559519c91120c3"
+    },
+    {
+      "path": "src/hooks/useBiometric.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "542a45eaa7afde1c2704d1d8f44a1b44a12626c4",
+      "size": 2600,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/542a45eaa7afde1c2704d1d8f44a1b44a12626c4"
+    },
+    {
+      "path": "src/hooks/useChat.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a186dbe47ed2a50910b0c7f0eee913b99f28872f",
+      "size": 6914,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/a186dbe47ed2a50910b0c7f0eee913b99f28872f"
+    },
+    {
+      "path": "src/hooks/useIAP.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc026bbe1a02acf0dab69b247992b7e367fdad21",
+      "size": 2270,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/cc026bbe1a02acf0dab69b247992b7e367fdad21"
+    },
+    {
+      "path": "src/hooks/useNeuralState.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b4d98bce1a55866c33ebf735e2041d288347302",
+      "size": 2255,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/3b4d98bce1a55866c33ebf735e2041d288347302"
+    },
+    {
+      "path": "src/hooks/useSolanaWallet.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a468d7deb3574cb35d2094fe18d7e42818eb7dcf",
+      "size": 5296,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/a468d7deb3574cb35d2094fe18d7e42818eb7dcf",
+      "error": "SyntaxError: Unexpected token 'i', \"import { u\"... is not valid JSON"
+    },
+    {
+      "path": "src/services",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "388920b9afe2e442ae4cb5515c32bbbbdd3691f2",
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/trees/388920b9afe2e442ae4cb5515c32bbbbdd3691f2"
+    },
+    {
+      "path": "src/services/api.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5254a7f8c541c2e5613026e515f828211ea81af",
+      "size": 5287,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/e5254a7f8c541c2e5613026e515f828211ea81af"
+    },
+    {
+      "path": "src/services/iap.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5961e7588fef18f6fe812b73bc3ffe6c8a055c1",
+      "size": 3833,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/e5961e7588fef18f6fe812b73bc3ffe6c8a055c1"
+    },
+    {
+      "path": "src/services/secureStorage.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a9c3a291cb0ee0e5a25b02eff1da671f965a235",
+      "size": 3774,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/2a9c3a291cb0ee0e5a25b02eff1da671f965a235"
+    },
+    {
+      "path": "src/services/solana.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "615f2d7ac5bbbb13572580b8281d726019cf2eba",
+      "size": 5494,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/615f2d7ac5bbbb13572580b8281d726019cf2eba"
+    },
+    {
+      "path": "src/services/sse.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e044116cf4be444285d0425aeab7b9363e9ac3e",
+      "size": 3389,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/2e044116cf4be444285d0425aeab7b9363e9ac3e"
+    },
+    {
+      "path": "src/services/walletKeyService.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "141bd5093f708e87e1e68964750c7414e8ca3ee3",
+      "size": 3288,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/141bd5093f708e87e1e68964750c7414e8ca3ee3",
+      "error": "SyntaxError: Unexpected token 'i', \"import { g\"... is not valid JSON"
+    },
+    {
+      "path": "src/store",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "44af3fc23da16d82074f021a85e98e140b50e6de",
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/trees/44af3fc23da16d82074f021a85e98e140b50e6de"
+    },
+    {
+      "path": "src/store/chatStore.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63fd000e00eb94f700f5278bd19680ff38d65dee",
+      "size": 1873,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/63fd000e00eb94f700f5278bd19680ff38d65dee"
+    },
+    {
+      "path": "src/store/neuralStore.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1874f31c8c39e91b883e0022ecf94b91a137233",
+      "size": 1417,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/c1874f31c8c39e91b883e0022ecf94b91a137233"
+    },
+    {
+      "path": "src/store/settingsStore.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95e05d4a8761ea4080c8805969d5e689df376022",
+      "size": 1013,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/95e05d4a8761ea4080c8805969d5e689df376022"
+    },
+    {
+      "path": "src/store/txStore.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "335f9cea2604be1d2cd00ae00b4569cc94a382ac",
+      "size": 739,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/335f9cea2604be1d2cd00ae00b4569cc94a382ac"
+    },
+    {
+      "path": "src/store/walletStore.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d3c9a41e1320297278da57011e53979bab9f222",
+      "size": 2268,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/4d3c9a41e1320297278da57011e53979bab9f222"
+    },
+    {
+      "path": "tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a712ce4901cbf6dc14384b2ec2d5e75979803a84",
+      "size": 500,
+      "url": "https://api.github.com/repos/4R7I5T/BioLLM_Solana_dApp/git/blobs/a712ce4901cbf6dc14384b2ec2d5e75979803a84"
+    }
+  ]
+}

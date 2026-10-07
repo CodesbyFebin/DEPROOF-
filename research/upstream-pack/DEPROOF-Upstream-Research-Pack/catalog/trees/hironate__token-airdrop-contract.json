@@ -1,0 +1,226 @@
+{
+  "repository": "hironate/token-airdrop-contract",
+  "tree_sha": "c0f6968528234f083d678fd870482b34f31f59c2",
+  "truncated": false,
+  "entries": [
+    {
+      "path": ".env",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc5d039538ec3f7bc42ff05f2cd572edadc51bf1",
+      "size": 193,
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/blobs/fc5d039538ec3f7bc42ff05f2cd572edadc51bf1"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b512c09d476623ff4bf8d0d63c29b784925dbdf8",
+      "size": 12,
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/blobs/b512c09d476623ff4bf8d0d63c29b784925dbdf8"
+    },
+    {
+      "path": "build",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "11230728bc2d0e983a28533b33701b110610cb49",
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/trees/11230728bc2d0e983a28533b33701b110610cb49"
+    },
+    {
+      "path": "build/contracts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b7075121e2b7bab34513217631515dee1a1d354a",
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/trees/b7075121e2b7bab34513217631515dee1a1d354a"
+    },
+    {
+      "path": "build/contracts/Airdrop.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "716f3c7aae2add6dfce559084cb8928225c8c3aa",
+      "size": 310995,
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/blobs/716f3c7aae2add6dfce559084cb8928225c8c3aa"
+    },
+    {
+      "path": "build/contracts/Context.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e7a8aebbc71984227511635e4480218224ed57d",
+      "size": 19614,
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/blobs/6e7a8aebbc71984227511635e4480218224ed57d"
+    },
+    {
+      "path": "build/contracts/ERC20.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "595ee781735402df6af735d5903b3895fa230b9a",
+      "size": 601733,
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/blobs/595ee781735402df6af735d5903b3895fa230b9a"
+    },
+    {
+      "path": "build/contracts/IERC20.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc72f6dd30ed62e122ad1481744a043619d164db",
+      "size": 80104,
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/blobs/cc72f6dd30ed62e122ad1481744a043619d164db"
+    },
+    {
+      "path": "build/contracts/Migrations.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f75ba211a1279d487cd2d9efc65aa27015d711d",
+      "size": 35442,
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/blobs/2f75ba211a1279d487cd2d9efc65aa27015d711d"
+    },
+    {
+      "path": "build/contracts/Ownable.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f464b41aa580aa811099dcfbf88566e3fea3f792",
+      "size": 118982,
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/blobs/f464b41aa580aa811099dcfbf88566e3fea3f792"
+    },
+    {
+      "path": "build/contracts/SafeMath.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac154c1325d9d450c332c56c2cb6d644960ded15",
+      "size": 365971,
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/blobs/ac154c1325d9d450c332c56c2cb6d644960ded15"
+    },
+    {
+      "path": "build/contracts/Token.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bae46071dbc60f4db8c732586815d83e76a68ab8",
+      "size": 21118,
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/blobs/bae46071dbc60f4db8c732586815d83e76a68ab8"
+    },
+    {
+      "path": "contracts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5e41fd79607ae6500bbcce8ab5123f6e5d91b496",
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/trees/5e41fd79607ae6500bbcce8ab5123f6e5d91b496"
+    },
+    {
+      "path": "contracts/Airdrop.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2a3be00d5bc80783f918138d19e04285adf36a9",
+      "size": 1768,
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/blobs/e2a3be00d5bc80783f918138d19e04285adf36a9"
+    },
+    {
+      "path": "contracts/Migrations.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9aac9750f3b268f834a849ace9a94b293d8d4142",
+      "size": 419,
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/blobs/9aac9750f3b268f834a849ace9a94b293d8d4142"
+    },
+    {
+      "path": "contracts/Token.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee3ab2be16db8aac1d2f6c0a1dabff81166787de",
+      "size": 118,
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/blobs/ee3ab2be16db8aac1d2f6c0a1dabff81166787de"
+    },
+    {
+      "path": "migrations",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5dad5ac92654b60be6e916aaa56f24355c1e6732",
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/trees/5dad5ac92654b60be6e916aaa56f24355c1e6732"
+    },
+    {
+      "path": "migrations/1_initial_migration.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fcf2e346f02b80e8f36f74855b23e384297e119b",
+      "size": 161,
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/blobs/fcf2e346f02b80e8f36f74855b23e384297e119b"
+    },
+    {
+      "path": "package-lock.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d59d55f931bccfadab474b15793f76bae59695a9",
+      "size": 183727,
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/blobs/d59d55f931bccfadab474b15793f76bae59695a9"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec4382e97835ebab4a9b9b23f793b277ca7355db",
+      "size": 1066,
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/blobs/ec4382e97835ebab4a9b9b23f793b277ca7355db"
+    },
+    {
+      "path": "readme.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "603c9ee31f1ff868c9382a4e1670c84ef1d63959",
+      "size": 2652,
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/blobs/603c9ee31f1ff868c9382a4e1670c84ef1d63959",
+      "error": "SyntaxError: Unexpected token '#', \"# Auto Air\"... is not valid JSON"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2509d64f35809c7045d2835f847cf9826faa6fa7",
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/trees/2509d64f35809c7045d2835f847cf9826faa6fa7"
+    },
+    {
+      "path": "src/airdrop.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df33aa8ca853d98e9fa2e3f49b8ed9495fd90451",
+      "size": 9015,
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/blobs/df33aa8ca853d98e9fa2e3f49b8ed9495fd90451"
+    },
+    {
+      "path": "src/airdrop.js",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "b1191ef7b23d098c852ca5ff59f45b917323bb1f",
+      "size": 3139,
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/blobs/b1191ef7b23d098c852ca5ff59f45b917323bb1f"
+    },
+    {
+      "path": "src/long.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01ceb2ac0ac57200cb0cac8e27d0f8b4a73947db",
+      "size": 411381,
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/blobs/01ceb2ac0ac57200cb0cac8e27d0f8b4a73947db"
+    },
+    {
+      "path": "test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d564d0bc3dd917926892c55e3706cc116d5b165e",
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/trees/d564d0bc3dd917926892c55e3706cc116d5b165e"
+    },
+    {
+      "path": "test/.gitkeep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "truffle-config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d82bef8a7d2ad0725ee43ef3b3ba1f36df75046a",
+      "size": 1316,
+      "url": "https://api.github.com/repos/hironate/token-airdrop-contract/git/blobs/d82bef8a7d2ad0725ee43ef3b3ba1f36df75046a"
+    }
+  ]
+}

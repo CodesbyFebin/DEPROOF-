@@ -1,0 +1,2682 @@
+{
+  "repository": "merigo-labs/solana-web3",
+  "tree_sha": "927314b09bec1c7a26d282d6a171d069b93b16c8",
+  "truncated": false,
+  "entries": [
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b23fbcb0ff7cd226fe95c88d6f423e80f0420bca",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/b23fbcb0ff7cd226fe95c88d6f423e80f0420bca"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "85465e35da57cd32b827199ef711cff83dc741fd",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/85465e35da57cd32b827199ef711cff83dc741fd"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c337b6adb2332667c522c24fa923329c8639aacb",
+      "size": 645,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/c337b6adb2332667c522c24fa923329c8639aacb"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbcbbe7d61558adde3cbfd0c7a63a67c27ed6d30",
+      "size": 595,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/bbcbbe7d61558adde3cbfd0c7a63a67c27ed6d30"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7e6cdff9fae7ebc08c364c023c68802883bf8de",
+      "size": 589,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/f7e6cdff9fae7ebc08c364c023c68802883bf8de"
+    },
+    {
+      "path": ".metadata",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c24d00d295b04764f0462f3265adc3321f1fbcba",
+      "size": 309,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/c24d00d295b04764f0462f3265adc3321f1fbcba"
+    },
+    {
+      "path": ".vscode",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "776d6875b265ed98d06d70ab2bfa531c85010117",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/776d6875b265ed98d06d70ab2bfa531c85010117"
+    },
+    {
+      "path": ".vscode/launch.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65aed74f86b0ff48036e1e06fe46faad83bbf103",
+      "size": 711,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/65aed74f86b0ff48036e1e06fe46faad83bbf103"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8044f6c67a77ed06541371b35b67ce0fe95c207b",
+      "size": 1386,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/8044f6c67a77ed06541371b35b67ce0fe95c207b"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7fc7b1f0a26ed5782504e30c59816d2a350665b",
+      "size": 1066,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/e7fc7b1f0a26ed5782504e30c59816d2a350665b",
+      "error": "SyntaxError: Unexpected token 'M', \"MIT Licens\"... is not valid JSON"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32751bf5ca0c58d625763da6396271b71e2ef31d",
+      "size": 4444,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/32751bf5ca0c58d625763da6396271b71e2ef31d",
+      "error": "SyntaxError: Unexpected token '<', \"<!-- \nThis\"... is not valid JSON"
+    },
+    {
+      "path": "README_DEV.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a62d8f185e3ab777158abff70c6f7ce033572d5a",
+      "size": 417,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/a62d8f185e3ab777158abff70c6f7ce033572d5a",
+      "error": "SyntaxError: Unexpected token '#', \"## Publish\"... is not valid JSON"
+    },
+    {
+      "path": "analysis_options.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5744c1cfbe77ae2daba29c74156c617b5f09b77",
+      "size": 154,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/a5744c1cfbe77ae2daba29c74156c617b5f09b77"
+    },
+    {
+      "path": "example",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "47884a6aeb4191bb868e252ae3a85607d880997b",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/47884a6aeb4191bb868e252ae3a85607d880997b"
+    },
+    {
+      "path": "example/account_subscribe.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39fdd4ece97347ee66cffd5bab8f1bb106a929cf",
+      "size": 1542,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/39fdd4ece97347ee66cffd5bab8f1bb106a929cf"
+    },
+    {
+      "path": "example/main.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c361034f0d23ad6239ad66fb461a5cab2b75f09f",
+      "size": 2395,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/c361034f0d23ad6239ad66fb461a5cab2b75f09f"
+    },
+    {
+      "path": "lib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "688ee752f97320dc63ff4d4ec52817321634d63b",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/688ee752f97320dc63ff4d4ec52817321634d63b"
+    },
+    {
+      "path": "lib/borsh.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df76b8899741ed778effb197e5a261c3cf86cf8d",
+      "size": 332,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/df76b8899741ed778effb197e5a261c3cf86cf8d"
+    },
+    {
+      "path": "lib/buffer.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81c0f889ad417e67746d0793dce5218c5aff727e",
+      "size": 118,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/81c0f889ad417e67746d0793dce5218c5aff727e"
+    },
+    {
+      "path": "lib/constants.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1467c65a0ce903a0e9b0fb7e512761f26c76ef0",
+      "size": 86,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/c1467c65a0ce903a0e9b0fb7e512761f26c76ef0"
+    },
+    {
+      "path": "lib/exceptions.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "162947c4fcb348003e20258d4d6cf69a171d2cdc",
+      "size": 316,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/162947c4fcb348003e20258d4d6cf69a171d2cdc"
+    },
+    {
+      "path": "lib/programs.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b097dfe60dea5cd263cf398b9a56a7e2db03acae",
+      "size": 1300,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/b097dfe60dea5cd263cf398b9a56a7e2db03acae"
+    },
+    {
+      "path": "lib/solana_web3.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be13f833e7a822be9a5ae098b87e24e252c3427b",
+      "size": 1512,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/be13f833e7a822be9a5ae098b87e24e252c3427b"
+    },
+    {
+      "path": "lib/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "72e5102ba0a8a072143979d6531ddf0b180df1a6",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/72e5102ba0a8a072143979d6531ddf0b180df1a6"
+    },
+    {
+      "path": "lib/src/constants",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "71f605c434205b3750be75e14b101f8cf1aa81ea",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/71f605c434205b3750be75e14b101f8cf1aa81ea"
+    },
+    {
+      "path": "lib/src/constants/sysvar.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bd823cf9574758bdcd6044deb4f699ad358f3cc",
+      "size": 2689,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/1bd823cf9574758bdcd6044deb4f699ad358f3cc"
+    },
+    {
+      "path": "lib/src/constants/timing.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bdd0668c3994210ca3ee00242d78ee7476cd6a8b",
+      "size": 965,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/bdd0668c3994210ca3ee00242d78ee7476cd6a8b"
+    },
+    {
+      "path": "lib/src/crypto",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8f56868e569c601fccfd395d1a8e133c741fd665",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/8f56868e569c601fccfd395d1a8e133c741fd665"
+    },
+    {
+      "path": "lib/src/crypto/keypair.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c660125ea831c877531aad5d476116c791d067ae",
+      "size": 3581,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/c660125ea831c877531aad5d476116c791d067ae"
+    },
+    {
+      "path": "lib/src/crypto/nacl.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90b52c55f2eec938b4531b390a3dbca00bd21ecf",
+      "size": 4873,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/90b52c55f2eec938b4531b390a3dbca00bd21ecf"
+    },
+    {
+      "path": "lib/src/crypto/nacl_low_level.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44589c16217751834a0a1751f7ee673b340d4354",
+      "size": 4334,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/44589c16217751834a0a1751f7ee673b340d4354"
+    },
+    {
+      "path": "lib/src/crypto/pubkey.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b0df1e3d3e9e7931c8aeb20f4ff90329539f29e",
+      "size": 7253,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/5b0df1e3d3e9e7931c8aeb20f4ff90329539f29e"
+    },
+    {
+      "path": "lib/src/encodings",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "83ac05cc5c76848930c45d42f803a3803fdff33a",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/83ac05cc5c76848930c45d42f803a3803fdff33a"
+    },
+    {
+      "path": "lib/src/encodings/account_encoding.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ecdf92cab1c954d31a52afa6abef281f44531ca",
+      "size": 1735,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/7ecdf92cab1c954d31a52afa6abef281f44531ca"
+    },
+    {
+      "path": "lib/src/encodings/lamports.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c4ca33990177a88bf397c2587e1fdf06ba4722a",
+      "size": 1297,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/1c4ca33990177a88bf397c2587e1fdf06ba4722a"
+    },
+    {
+      "path": "lib/src/encodings/shortvec.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64a6c91cd139114789052091b9bef189f77f53a1",
+      "size": 1024,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/64a6c91cd139114789052091b9bef189f77f53a1"
+    },
+    {
+      "path": "lib/src/encodings/transaction_encoding.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "693a6c8da49e5002e6b34a62b3d201842fe21f66",
+      "size": 978,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/693a6c8da49e5002e6b34a62b3d201842fe21f66"
+    },
+    {
+      "path": "lib/src/encodings/unit8_list_json_converter.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b647b80a7c54469ce84d9e3cd2a65c000b279905",
+      "size": 659,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/b647b80a7c54469ce84d9e3cd2a65c000b279905"
+    },
+    {
+      "path": "lib/src/exceptions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "29535446f8bd3ab5e248da5083432ba1743b45e8",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/29535446f8bd3ab5e248da5083432ba1743b45e8"
+    },
+    {
+      "path": "lib/src/exceptions/data_serializable_exception.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af2a67e6a789e0f84e32d8b6e3204b6d003886d3",
+      "size": 904,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/af2a67e6a789e0f84e32d8b6e3204b6d003886d3"
+    },
+    {
+      "path": "lib/src/exceptions/data_serializable_exception.g.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aacfd80f315d94a5968d9113df9d888f00d5e014",
+      "size": 480,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/aacfd80f315d94a5968d9113df9d888f00d5e014"
+    },
+    {
+      "path": "lib/src/exceptions/ed25519_exception.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "841e305d6e7fb863d92d9bc2ef21a3f57fe89162",
+      "size": 796,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/841e305d6e7fb863d92d9bc2ef21a3f57fe89162"
+    },
+    {
+      "path": "lib/src/exceptions/ed25519_exception.g.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87adae534c116b0f0acf050c2bf5a99b155139f6",
+      "size": 434,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/87adae534c116b0f0acf050c2bf5a99b155139f6"
+    },
+    {
+      "path": "lib/src/exceptions/keypair_exception.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00210c1065459cb348b64b45447ad7717d3fbdb1",
+      "size": 773,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/00210c1065459cb348b64b45447ad7717d3fbdb1"
+    },
+    {
+      "path": "lib/src/exceptions/keypair_exception.g.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae2e89c68ddefd172966241d4f70d018d490d1e4",
+      "size": 434,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/ae2e89c68ddefd172966241d4f70d018d490d1e4"
+    },
+    {
+      "path": "lib/src/exceptions/program_exception.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2cdca5f873543dc8227d1fae646b4bd4d23268b1",
+      "size": 769,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/2cdca5f873543dc8227d1fae646b4bd4d23268b1"
+    },
+    {
+      "path": "lib/src/exceptions/program_exception.g.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "342c3eaee32a461e8c33f2e19f34214091ecad03",
+      "size": 434,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/342c3eaee32a461e8c33f2e19f34214091ecad03"
+    },
+    {
+      "path": "lib/src/exceptions/pubkey_exception.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54f3b257fb9e369d720f106f1cdebdc5d8cc29ac",
+      "size": 1366,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/54f3b257fb9e369d720f106f1cdebdc5d8cc29ac"
+    },
+    {
+      "path": "lib/src/exceptions/pubkey_exception.g.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8ce71db9a139fbfd2731614b590d69a49622109",
+      "size": 430,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/b8ce71db9a139fbfd2731614b590d69a49622109"
+    },
+    {
+      "path": "lib/src/exceptions/transaction_block_height_exceeded_exception.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d1608546f34af816d1a3e438da6e147b192b335",
+      "size": 921,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/9d1608546f34af816d1a3e438da6e147b192b335"
+    },
+    {
+      "path": "lib/src/exceptions/transaction_block_height_exceeded_exception.g.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edab69afe6bc24a9a85ab913b3eca2dcf5ae539e",
+      "size": 562,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/edab69afe6bc24a9a85ab913b3eca2dcf5ae539e"
+    },
+    {
+      "path": "lib/src/exceptions/transaction_error.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ac81acdb0780bb807e760df016d4d029ae34f68",
+      "size": 4554,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/9ac81acdb0780bb807e760df016d4d029ae34f68"
+    },
+    {
+      "path": "lib/src/exceptions/transaction_exception.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "781cc0896b7d0a64ab08535fd696ba86a3ac187d",
+      "size": 800,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/781cc0896b7d0a64ab08535fd696ba86a3ac187d"
+    },
+    {
+      "path": "lib/src/exceptions/transaction_exception.g.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca855a366fd39bed2ed87e459fea3901cd52cd36",
+      "size": 459,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/ca855a366fd39bed2ed87e459fea3901cd52cd36"
+    },
+    {
+      "path": "lib/src/exceptions/transaction_nonce_invalid_exception.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb56eb5112933a19083de62060643dbd0e2041d4",
+      "size": 896,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/fb56eb5112933a19083de62060643dbd0e2041d4"
+    },
+    {
+      "path": "lib/src/exceptions/transaction_nonce_invalid_exception.g.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f667ab6d98ed778534594b729a885320d1f7bdb5",
+      "size": 509,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/f667ab6d98ed778534594b729a885320d1f7bdb5"
+    },
+    {
+      "path": "lib/src/exceptions/transaction_signature_exception.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f95c9d2c896936a624db7f977849558eca909448",
+      "size": 857,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/f95c9d2c896936a624db7f977849558eca909448"
+    },
+    {
+      "path": "lib/src/exceptions/transaction_signature_exception.g.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4abf1d9234288eff342a473d534d1d8c4f94a07a",
+      "size": 496,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/4abf1d9234288eff342a473d534d1d8c4f94a07a"
+    },
+    {
+      "path": "lib/src/messages",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "41295ab2772bf2cbae33d4e3730c835fa85ee444",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/41295ab2772bf2cbae33d4e3730c835fa85ee444"
+    },
+    {
+      "path": "lib/src/messages/_message_copy.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b93e5b5875d1d8f5a024f9f826e1ede6fcb847b",
+      "size": 13592,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/9b93e5b5875d1d8f5a024f9f826e1ede6fcb847b"
+    },
+    {
+      "path": "lib/src/messages/message.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7f11d116c585e76f00e5e6e091a87f8d50a5b2e",
+      "size": 19166,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/b7f11d116c585e76f00e5e6e091a87f8d50a5b2e"
+    },
+    {
+      "path": "lib/src/messages/message.g.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01a3815920cf77e836639f5fb988d8c92a168b96",
+      "size": 1434,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/01a3815920cf77e836639f5fb988d8c92a168b96"
+    },
+    {
+      "path": "lib/src/messages/message_address_table_lookup.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32d58c2bd24d9e8c53fe2a95da78879feba7479a",
+      "size": 1410,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/32d58c2bd24d9e8c53fe2a95da78879feba7479a"
+    },
+    {
+      "path": "lib/src/messages/message_address_table_lookup.g.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "104c7caba6289faf9f9cf9a27f8c955e5c16b1c6",
+      "size": 1003,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/104c7caba6289faf9f9cf9a27f8c955e5c16b1c6"
+    },
+    {
+      "path": "lib/src/messages/message_header.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3246165f1cc28e0659ec50137f6ea8645eabbfc4",
+      "size": 1862,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/3246165f1cc28e0659ec50137f6ea8645eabbfc4"
+    },
+    {
+      "path": "lib/src/messages/message_header.g.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8fa2dbf5e06cf8f21f23396cd75907fc80ac693f",
+      "size": 886,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/8fa2dbf5e06cf8f21f23396cd75907fc80ac693f"
+    },
+    {
+      "path": "lib/src/messages/message_instruction.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65672274bc0d84a29cd35ffb9098e8dde484bbc9",
+      "size": 1296,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/65672274bc0d84a29cd35ffb9098e8dde484bbc9"
+    },
+    {
+      "path": "lib/src/messages/message_instruction.g.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5eb2de34e113aa12690c77b27ba3d21d657c983",
+      "size": 773,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/e5eb2de34e113aa12690c77b27ba3d21d657c983"
+    },
+    {
+      "path": "lib/src/programs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "74e3411a4bd974ed4def7592fb11be06aa2baf5d",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/74e3411a4bd974ed4def7592fb11be06aa2baf5d"
+    },
+    {
+      "path": "lib/src/programs/address_lookup_table",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "50d795c0a41f966bae88a8184f7b7e432faccf98",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/50d795c0a41f966bae88a8184f7b7e432faccf98"
+    },
+    {
+      "path": "lib/src/programs/address_lookup_table/instruction.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b6c3cb04559c871a79313a5479cb5cbf92a2b01",
+      "size": 285,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/0b6c3cb04559c871a79313a5479cb5cbf92a2b01"
+    },
+    {
+      "path": "lib/src/programs/address_lookup_table/program.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab5d7da972424f658e5cb14a9c91bc6ce9731342",
+      "size": 4478,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/ab5d7da972424f658e5cb14a9c91bc6ce9731342"
+    },
+    {
+      "path": "lib/src/programs/address_lookup_table/state.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "044a434f910dc8718cbe4dd425cebb03db883aac",
+      "size": 4058,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/044a434f910dc8718cbe4dd425cebb03db883aac"
+    },
+    {
+      "path": "lib/src/programs/associated_token",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "68fcc85ab09f9e7df414d5b9a3e9c06d3a5d87a8",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/68fcc85ab09f9e7df414d5b9a3e9c06d3a5d87a8"
+    },
+    {
+      "path": "lib/src/programs/associated_token/instruction.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f654df1c017a885ab461cae8d21b61b272d42453",
+      "size": 217,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/f654df1c017a885ab461cae8d21b61b272d42453"
+    },
+    {
+      "path": "lib/src/programs/associated_token/program.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "501d67bad466cecdf1973101eeaa335df9685f6c",
+      "size": 6978,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/501d67bad466cecdf1973101eeaa335df9685f6c"
+    },
+    {
+      "path": "lib/src/programs/bpf_loader.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6474c6f586db4a6a0af4db51c014d8c843e797f5",
+      "size": 1715,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/6474c6f586db4a6a0af4db51c014d8c843e797f5"
+    },
+    {
+      "path": "lib/src/programs/compute_budget",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d53f22ce0db408ce32cb96cdabc365ef848747f9",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/d53f22ce0db408ce32cb96cdabc365ef848747f9"
+    },
+    {
+      "path": "lib/src/programs/compute_budget/instruction.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb180e5e3810ff96bcaf343191b8fbb2fdec961a",
+      "size": 286,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/cb180e5e3810ff96bcaf343191b8fbb2fdec961a"
+    },
+    {
+      "path": "lib/src/programs/compute_budget/program.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4077593f494bb9c20843e9cb9cec0e045fb6e0b5",
+      "size": 3719,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/4077593f494bb9c20843e9cb9cec0e045fb6e0b5"
+    },
+    {
+      "path": "lib/src/programs/compute_budget/state.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40972d63277174e640a7d0af53b22037ba0ff60d",
+      "size": 1927,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/40972d63277174e640a7d0af53b22037ba0ff60d"
+    },
+    {
+      "path": "lib/src/programs/ed25519",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b2e67efb3ce413aeb9da642c98f84b4d4633b7c6",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/b2e67efb3ce413aeb9da642c98f84b4d4633b7c6"
+    },
+    {
+      "path": "lib/src/programs/ed25519/program.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb170953f5f53471dd6031cfc7ef73d82ae9e37d",
+      "size": 3696,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/fb170953f5f53471dd6031cfc7ef73d82ae9e37d"
+    },
+    {
+      "path": "lib/src/programs/loader.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d77f81a08b84a4411a904bc7ad768253a3cb9a22",
+      "size": 7185,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/d77f81a08b84a4411a904bc7ad768253a3cb9a22"
+    },
+    {
+      "path": "lib/src/programs/memo",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e1dfb02a43765a14af0ab66b9c4d06253b5b3610",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/e1dfb02a43765a14af0ab66b9c4d06253b5b3610"
+    },
+    {
+      "path": "lib/src/programs/memo/instruction.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ddf9b4c5fdb57cc3708c908b22c511e900e4c13",
+      "size": 157,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/6ddf9b4c5fdb57cc3708c908b22c511e900e4c13"
+    },
+    {
+      "path": "lib/src/programs/memo/program.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d5dc43c4d25b402bc58259966ebf597be7c42ef",
+      "size": 2604,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/8d5dc43c4d25b402bc58259966ebf597be7c42ef"
+    },
+    {
+      "path": "lib/src/programs/metaplex_token_metadata",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6dea0d58b19ea504e0c36ec4ac167a4df6d0db28",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/6dea0d58b19ea504e0c36ec4ac167a4df6d0db28"
+    },
+    {
+      "path": "lib/src/programs/metaplex_token_metadata/accounts.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2fc33967c7c79b9f39dea317c6faf68753fe570",
+      "size": 10679,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/d2fc33967c7c79b9f39dea317c6faf68753fe570"
+    },
+    {
+      "path": "lib/src/programs/metaplex_token_metadata/accounts.g.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f99671322b9ed4d0025c7f73ac788e99687448a7",
+      "size": 2869,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/f99671322b9ed4d0025c7f73ac788e99687448a7"
+    },
+    {
+      "path": "lib/src/programs/metaplex_token_metadata/instruction.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "338b52589df7e30550896549427ab19f4e7461ab",
+      "size": 338,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/338b52589df7e30550896549427ab19f4e7461ab"
+    },
+    {
+      "path": "lib/src/programs/metaplex_token_metadata/program.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "832b08bf69b234d1c6641ac016e93d4ffb0dafec",
+      "size": 10740,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/832b08bf69b234d1c6641ac016e93d4ffb0dafec"
+    },
+    {
+      "path": "lib/src/programs/metaplex_token_metadata/state.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d387ba26fc4427636abbfaf5d97064ad8814d024",
+      "size": 8808,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/d387ba26fc4427636abbfaf5d97064ad8814d024"
+    },
+    {
+      "path": "lib/src/programs/metaplex_token_metadata/state.g.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a5f9e88bb7a4087d2345ef062d6e10bb2523d90",
+      "size": 2052,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/3a5f9e88bb7a4087d2345ef062d6e10bb2523d90"
+    },
+    {
+      "path": "lib/src/programs/program.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "169c31cc64e83f275c48ae22172a3d7782046fa7",
+      "size": 2584,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/169c31cc64e83f275c48ae22172a3d7782046fa7"
+    },
+    {
+      "path": "lib/src/programs/stake",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "414c11443206aae8c9fa374c9060bf19941175a5",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/414c11443206aae8c9fa374c9060bf19941175a5"
+    },
+    {
+      "path": "lib/src/programs/stake/instruction.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f5928aed37c3d2c475cf17776aa9004e9ecd0ce",
+      "size": 422,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/2f5928aed37c3d2c475cf17776aa9004e9ecd0ce"
+    },
+    {
+      "path": "lib/src/programs/stake/program.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d314c604ebefd90d48c69ce5cea5483ea240764",
+      "size": 24330,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/1d314c604ebefd90d48c69ce5cea5483ea240764"
+    },
+    {
+      "path": "lib/src/programs/stake/state.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2aa1552a650f4551569969556c1da8c23550f707",
+      "size": 12595,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/2aa1552a650f4551569969556c1da8c23550f707"
+    },
+    {
+      "path": "lib/src/programs/stake_pool",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0420b03d82004e8141f78d2ea1bb3001aa0315bc",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/0420b03d82004e8141f78d2ea1bb3001aa0315bc"
+    },
+    {
+      "path": "lib/src/programs/stake_pool/instruction.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09e866f4acd723c37167f070acd09d2047d118be",
+      "size": 642,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/09e866f4acd723c37167f070acd09d2047d118be"
+    },
+    {
+      "path": "lib/src/programs/stake_pool/program.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6912b69d13f045b31b6db8b9613a3dfa1dbec14b",
+      "size": 56794,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/6912b69d13f045b31b6db8b9613a3dfa1dbec14b"
+    },
+    {
+      "path": "lib/src/programs/stake_pool/state.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e958047870fd620539da8660dd921bed55c3b22",
+      "size": 21512,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/1e958047870fd620539da8660dd921bed55c3b22"
+    },
+    {
+      "path": "lib/src/programs/system",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bceefff7e5b55a89c0fa0f7d76462efeb9c74876",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/bceefff7e5b55a89c0fa0f7d76462efeb9c74876"
+    },
+    {
+      "path": "lib/src/programs/system/instruction.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "109f5cb18344d137a014596eca0ad09e6a6ed9a9",
+      "size": 561,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/109f5cb18344d137a014596eca0ad09e6a6ed9a9"
+    },
+    {
+      "path": "lib/src/programs/system/program.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7e75cd0a0bbf1000cfea9e32d475985c22203e6",
+      "size": 16317,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/b7e75cd0a0bbf1000cfea9e32d475985c22203e6"
+    },
+    {
+      "path": "lib/src/programs/system/state.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d72029778f58548f41a555628f28bb6a38f849e",
+      "size": 12052,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/7d72029778f58548f41a555628f28bb6a38f849e"
+    },
+    {
+      "path": "lib/src/programs/token",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1639a6a82bf4a049cefe4664dad2e35e32278458",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/1639a6a82bf4a049cefe4664dad2e35e32278458"
+    },
+    {
+      "path": "lib/src/programs/token/instruction.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9709a592164796e433cf8c757e93b9954e9f671",
+      "size": 584,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/f9709a592164796e433cf8c757e93b9954e9f671"
+    },
+    {
+      "path": "lib/src/programs/token/program.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1f44a74ff39a4ffb5e89c3a056d3aee28d29c4a",
+      "size": 37091,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/f1f44a74ff39a4ffb5e89c3a056d3aee28d29c4a"
+    },
+    {
+      "path": "lib/src/programs/token/state.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2b07f8fb8510f4c4bdd81f89b26d1ce989fdec3",
+      "size": 398,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/a2b07f8fb8510f4c4bdd81f89b26d1ce989fdec3"
+    },
+    {
+      "path": "lib/src/programs/token_2022",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ff5e23d112967fcb9c71ee6d1fd28648da017b23",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/ff5e23d112967fcb9c71ee6d1fd28648da017b23"
+    },
+    {
+      "path": "lib/src/programs/token_2022/index.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6aa0604bcfbdd4d34b50f93214230f156afe50b9",
+      "size": 49,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/6aa0604bcfbdd4d34b50f93214230f156afe50b9"
+    },
+    {
+      "path": "lib/src/programs/token_2022/instruction.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4b3e1ef83b8baccbe02967c7b0eb3338cb8eb38",
+      "size": 162,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/d4b3e1ef83b8baccbe02967c7b0eb3338cb8eb38"
+    },
+    {
+      "path": "lib/src/programs/token_2022/program.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30ed80698ab3d9aa28c17645f766e3e80e240ca0",
+      "size": 25529,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/30ed80698ab3d9aa28c17645f766e3e80e240ca0"
+    },
+    {
+      "path": "lib/src/rpc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7284809b455d0eb3b679602daa7cb5b009254e10",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/7284809b455d0eb3b679602daa7cb5b009254e10"
+    },
+    {
+      "path": "lib/src/rpc/configs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f187cda417214c14d6f188c67b53d5dfe1f4165a",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/f187cda417214c14d6f188c67b53d5dfe1f4165a"
+    },
+    {
+      "path": "lib/src/rpc/configs/account_subscribe_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eafe6c7b104298dc5d1e2edefcfb59191b5b81cb",
+      "size": 704,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/eafe6c7b104298dc5d1e2edefcfb59191b5b81cb"
+    },
+    {
+      "path": "lib/src/rpc/configs/confirm_transaction_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e503cd41a02730ce58a6ddbc34778f90e77c34b",
+      "size": 369,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/4e503cd41a02730ce58a6ddbc34778f90e77c34b"
+    },
+    {
+      "path": "lib/src/rpc/configs/empty_request_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb348e67db7069f40989cbfd3cd1cd1e0ada2174",
+      "size": 519,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/fb348e67db7069f40989cbfd3cd1cd1e0ada2174"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_account_info_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c30423e0f2318c7cecf2b0bc8872052a835280b6",
+      "size": 1402,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/c30423e0f2318c7cecf2b0bc8872052a835280b6"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_address_lookup_table_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca4558fc96742125e03f3fef16887ae24f7f9e29",
+      "size": 411,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/ca4558fc96742125e03f3fef16887ae24f7f9e29"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_balance_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d1e9145e76ce99ec99af30afef816c2272711e2",
+      "size": 387,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/6d1e9145e76ce99ec99af30afef816c2272711e2"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_block_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e844cca594c2dd829f03de53cbbcc7f39dc3796e",
+      "size": 1744,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/e844cca594c2dd829f03de53cbbcc7f39dc3796e"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_block_height_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb90d718ebb4506e4d80fa73f66e8b3863359eee",
+      "size": 396,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/eb90d718ebb4506e4d80fa73f66e8b3863359eee"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_block_production_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f952390e25fe6ba43405b351e6274c3dbd3b2608",
+      "size": 986,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/f952390e25fe6ba43405b351e6274c3dbd3b2608"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_blocks_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54cb911b4f3a5321b37ec830d653c901892fcaac",
+      "size": 572,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/54cb911b4f3a5321b37ec830d653c901892fcaac"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_blocks_with_limit_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f99afad8d07c1298fe1bbc3b1710e3b8819793ed",
+      "size": 335,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/f99afad8d07c1298fe1bbc3b1710e3b8819793ed"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_epoch_info_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55538227a02f3cb63323952de0ecdc27774df7a0",
+      "size": 392,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/55538227a02f3cb63323952de0ecdc27774df7a0"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_fee_for_message_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a77eb357ce50fb54e0c874e64d9bf521cb84f8c",
+      "size": 367,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/7a77eb357ce50fb54e0c874e64d9bf521cb84f8c"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_inflation_governor_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "acb7caf0e0ba2775a21703038007412807aa0552",
+      "size": 374,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/acb7caf0e0ba2775a21703038007412807aa0552"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_inflation_reward_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de6db6c3d0c7ba8dc4796b23ad461b7a5b11eb9d",
+      "size": 1006,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/de6db6c3d0c7ba8dc4796b23ad461b7a5b11eb9d"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_largest_accounts_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f449e6b3149e2c72b38640a0c546b978a8f0f581",
+      "size": 749,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/f449e6b3149e2c72b38640a0c546b978a8f0f581"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_latest_blockhash_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a029c9efe127da55602eb1bf516d3727630c62ad",
+      "size": 404,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/a029c9efe127da55602eb1bf516d3727630c62ad"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_leader_schedule_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9dfa4f879eb22465cdef9fc8864091f45436c48b",
+      "size": 774,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/9dfa4f879eb22465cdef9fc8864091f45436c48b"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_minimum_balance_for_rent_exemption_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "272ee84d1a4ad9b45276a41d493b5d7a5714ab2f",
+      "size": 403,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/272ee84d1a4ad9b45276a41d493b5d7a5714ab2f"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_multiple_accounts_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "061ddd7477885642a9083f32c8be1b0c05299ba5",
+      "size": 347,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/061ddd7477885642a9083f32c8be1b0c05299ba5"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_nonce_account_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9dddd1b89e9454659ce36462ca5af939ff304bab",
+      "size": 485,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/9dddd1b89e9454659ce36462ca5af939ff304bab"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_parsed_account_info_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8cb686d2eebff0338db4a59af46b6ae6748b6386",
+      "size": 602,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/8cb686d2eebff0338db4a59af46b6ae6748b6386"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_program_accounts_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3921be4975593ed0816de815382bbcb1db1fe801",
+      "size": 1832,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/3921be4975593ed0816de815382bbcb1db1fe801"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_signature_statuses_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6bb13c8f07627427b5279d199ee6f2ae3c915b1",
+      "size": 778,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/c6bb13c8f07627427b5279d199ee6f2ae3c915b1"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_signatures_for_address_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db183762acd298f81a91faf002b9afa5347a71fa",
+      "size": 1779,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/db183762acd298f81a91faf002b9afa5347a71fa"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_slot_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a813ca8beb82d0cb50a104d8312e14493218c02f",
+      "size": 381,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/a813ca8beb82d0cb50a104d8312e14493218c02f"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_slot_leader_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78319631b85dca5dd5f0a91c0a00b794dd49ad36",
+      "size": 394,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/78319631b85dca5dd5f0a91c0a00b794dd49ad36"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_stake_activation_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5dbfc97cbcb0283c48b68fca96afd4fd354626fe",
+      "size": 958,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/5dbfc97cbcb0283c48b68fca96afd4fd354626fe"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_stake_minimum_delegation_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "680ff1bcb207a5e3c30eb9d6aacf88991baa47b9",
+      "size": 385,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/680ff1bcb207a5e3c30eb9d6aacf88991baa47b9"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_supply_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56b7330bf728c17a29684a7673d8131472c9ce73",
+      "size": 817,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/56b7330bf728c17a29684a7673d8131472c9ce73"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_token_account_balance_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dcd021e33050fd090aafdf4cd288cc690ebe59b8",
+      "size": 379,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/dcd021e33050fd090aafdf4cd288cc690ebe59b8"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_token_accounts_by_delegate_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1e45f9320bf9d439525c776b821e75608a7a387",
+      "size": 363,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/d1e45f9320bf9d439525c776b821e75608a7a387"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_token_accounts_by_owner_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7cee7a69935881aaef8745491d9872fd6f2fcc70",
+      "size": 357,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/7cee7a69935881aaef8745491d9872fd6f2fcc70"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_token_largest_accounts_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c772d755e1ecab83adc740d4d3cb0ad01296a3b9",
+      "size": 381,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/c772d755e1ecab83adc740d4d3cb0ad01296a3b9"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_token_supply_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0dfca18ccbc42069d4d589137a8a3862104f1b66",
+      "size": 362,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/0dfca18ccbc42069d4d589137a8a3862104f1b66"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_transaction_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a37b187ece45e0373025d5e86622aad06f92e516",
+      "size": 1453,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/a37b187ece45e0373025d5e86622aad06f92e516"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_transaction_count_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1801176043a98e94a5c3b8ea40ec51940b66d442",
+      "size": 406,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/1801176043a98e94a5c3b8ea40ec51940b66d442"
+    },
+    {
+      "path": "lib/src/rpc/configs/get_vote_accounts_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "182de4edbbc3ab628f6c033bb3851323ecf27777",
+      "size": 978,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/182de4edbbc3ab628f6c033bb3851323ecf27777"
+    },
+    {
+      "path": "lib/src/rpc/configs/index.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de16ff09ab349436d9dc4b756850790a6378412d",
+      "size": 1892,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/de16ff09ab349436d9dc4b756850790a6378412d"
+    },
+    {
+      "path": "lib/src/rpc/configs/is_blockhash_valid_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e1395aa712cf9b7d5710e91266c17aaa5aef4b0",
+      "size": 400,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/5e1395aa712cf9b7d5710e91266c17aaa5aef4b0"
+    },
+    {
+      "path": "lib/src/rpc/configs/logs_subscribe_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6d8acef6ab4e108a890d861b2efc805c50e9828",
+      "size": 359,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/a6d8acef6ab4e108a890d861b2efc805c50e9828"
+    },
+    {
+      "path": "lib/src/rpc/configs/program_subscribe_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68c2c147175ce2f65a4e3e75f423f5c04b6baa30",
+      "size": 1120,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/68c2c147175ce2f65a4e3e75f423f5c04b6baa30"
+    },
+    {
+      "path": "lib/src/rpc/configs/request_airdrop_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c591abc1626889c5d6dfc854aeac67febb73d06b",
+      "size": 361,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/c591abc1626889c5d6dfc854aeac67febb73d06b"
+    },
+    {
+      "path": "lib/src/rpc/configs/send_and_confirm_transaction_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9cdbe19d7e94292c52ac67d85eba235afb1eb7b0",
+      "size": 2317,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/9cdbe19d7e94292c52ac67d85eba235afb1eb7b0"
+    },
+    {
+      "path": "lib/src/rpc/configs/send_transaction_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de2e29ce0ee3507fde1c351c811f24dab6b10728",
+      "size": 1705,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/de2e29ce0ee3507fde1c351c811f24dab6b10728"
+    },
+    {
+      "path": "lib/src/rpc/configs/signature_subscribe_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4192ef1063226605a3866450c91e6b89e643eb62",
+      "size": 369,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/4192ef1063226605a3866450c91e6b89e643eb62"
+    },
+    {
+      "path": "lib/src/rpc/configs/simulate_transaction_config.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c4d0fb9f7e28e1e27c6d93cc564823cfccdc339",
+      "size": 1835,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/4c4d0fb9f7e28e1e27c6d93cc564823cfccdc339"
+    },
+    {
+      "path": "lib/src/rpc/connection.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0743df581d4712cb294feaa7cb3ce03a53cdf9fa",
+      "size": 15898,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/0743df581d4712cb294feaa7cb3ce03a53cdf9fa"
+    },
+    {
+      "path": "lib/src/rpc/http_connection.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ab7ac461d4bca92b593a5f57fcfeadb5f8c9258",
+      "size": 41934,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/1ab7ac461d4bca92b593a5f57fcfeadb5f8c9258"
+    },
+    {
+      "path": "lib/src/rpc/interfaces",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d7909aecdb9759a044b9582c8728964a130cffb6",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/d7909aecdb9759a044b9582c8728964a130cffb6"
+    },
+    {
+      "path": "lib/src/rpc/interfaces/json_rpc_context_method.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90e00ea6adc5bc6df11863acd28ded11a96b3458",
+      "size": 826,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/90e00ea6adc5bc6df11863acd28ded11a96b3458"
+    },
+    {
+      "path": "lib/src/rpc/interfaces/json_rpc_list_context_method.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a17cd756c084e400bcfbeed308f6c2fba418b2fb",
+      "size": 828,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/a17cd756c084e400bcfbeed308f6c2fba418b2fb"
+    },
+    {
+      "path": "lib/src/rpc/interfaces/json_rpc_list_method.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c10328b58ba3eefa12550a4d8ac8e6747af1ad52",
+      "size": 771,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/c10328b58ba3eefa12550a4d8ac8e6747af1ad52"
+    },
+    {
+      "path": "lib/src/rpc/interfaces/json_rpc_list_type_context_method.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a6ccb2c1985ce1c76cb468d6e576cb92fdc25ec",
+      "size": 805,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/4a6ccb2c1985ce1c76cb468d6e576cb92fdc25ec"
+    },
+    {
+      "path": "lib/src/rpc/interfaces/json_rpc_list_type_method.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81565e7206770d5bec065d52923f480447ff48d3",
+      "size": 742,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/81565e7206770d5bec065d52923f480447ff48d3"
+    },
+    {
+      "path": "lib/src/rpc/interfaces/json_rpc_method.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afad6f755bab7e9766c6fbf29de0684251d81315",
+      "size": 740,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/afad6f755bab7e9766c6fbf29de0684251d81315"
+    },
+    {
+      "path": "lib/src/rpc/interfaces/json_rpc_method_with_params.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c74d9764f3e94fb9d354126671bf757a70db5e2f",
+      "size": 826,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/c74d9764f3e94fb9d354126671bf757a70db5e2f"
+    },
+    {
+      "path": "lib/src/rpc/interfaces/json_rpc_params_mixin.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc476aa469793ef4444a14f8080e9459b6cf5da7",
+      "size": 1168,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/cc476aa469793ef4444a14f8080e9459b6cf5da7"
+    },
+    {
+      "path": "lib/src/rpc/interfaces/json_rpc_type_context_method.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f684b64c976911a56a4d2bdbf142517c92cac10",
+      "size": 735,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/3f684b64c976911a56a4d2bdbf142517c92cac10"
+    },
+    {
+      "path": "lib/src/rpc/interfaces/json_rpc_type_method.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5cbd8538227626627db8bebb90d0789e813b1431",
+      "size": 670,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/5cbd8538227626627db8bebb90d0789e813b1431"
+    },
+    {
+      "path": "lib/src/rpc/methods",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7da3d4ec2f409449b0ab89f06923b846496ea318",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/7da3d4ec2f409449b0ab89f06923b846496ea318"
+    },
+    {
+      "path": "lib/src/rpc/methods/account_subscribe.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de99897cc779fab59b285f9adcda88d5e8bf51d0",
+      "size": 831,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/de99897cc779fab59b285f9adcda88d5e8bf51d0"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_account_info.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c107b08a1b6fc162ce5f4c53de05e31096a3008",
+      "size": 953,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/7c107b08a1b6fc162ce5f4c53de05e31096a3008"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_balance.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "580fa58b54b14d1ac9a32f825e32f8daf3b5a36e",
+      "size": 769,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/580fa58b54b14d1ac9a32f825e32f8daf3b5a36e"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_block.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55a7c7097bdddaadec0ebc69b97479751bc25301",
+      "size": 844,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/55a7c7097bdddaadec0ebc69b97479751bc25301"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_block_commitment.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f000b8aace63aa9e7fcd8e7551189e7232a250ed",
+      "size": 811,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/f000b8aace63aa9e7fcd8e7551189e7232a250ed"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_block_height.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5dc624b4885b3a14822b948ae42784f65f54d3cd",
+      "size": 697,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/5dc624b4885b3a14822b948ae42784f65f54d3cd"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_block_production.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "681f78a541f99a73122fd2322a671ba1e30afaf5",
+      "size": 902,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/681f78a541f99a73122fd2322a671ba1e30afaf5"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_block_time.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5e925e372e09bf875667977976b027bdb15ef6b",
+      "size": 603,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/a5e925e372e09bf875667977976b027bdb15ef6b"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_blocks.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c138cf9585ef913236707640edcac35f3bd65b3",
+      "size": 852,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/6c138cf9585ef913236707640edcac35f3bd65b3"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_blocks_with_limit.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f66d75d8c5452b3eccef811f939c14152cc0ba7f",
+      "size": 840,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/f66d75d8c5452b3eccef811f939c14152cc0ba7f"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_cluster_nodes.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "213ff6f116d31d662fa9bebc2385acec1f685c2f",
+      "size": 686,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/213ff6f116d31d662fa9bebc2385acec1f685c2f"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_epoch_info.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "628e702ddd574c4aa3473c2cd943e903ac2d75b1",
+      "size": 795,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/628e702ddd574c4aa3473c2cd943e903ac2d75b1"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_epoch_schedule.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c96473e079d90784553f02c431ee65aa3d330a7",
+      "size": 689,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/9c96473e079d90784553f02c431ee65aa3d330a7"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_fee_for_message.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ea2fc5949a47c424e615e27861aab185826b3ab",
+      "size": 797,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/1ea2fc5949a47c424e615e27861aab185826b3ab"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_first_available_block.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee7aa95fb031fa454710cb3f1c7c022924a1d203",
+      "size": 608,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/ee7aa95fb031fa454710cb3f1c7c022924a1d203"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_genesis_hash.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee5a86a3fb44b45613c9f5ed0fe91ce6b7eb608c",
+      "size": 510,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/ee5a86a3fb44b45613c9f5ed0fe91ce6b7eb608c"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_health.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9d87b64166692a22271471afe5505a008c4c8de",
+      "size": 620,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/a9d87b64166692a22271471afe5505a008c4c8de"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_highest_snapshot_slot.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7adc2cad9654911eff98911b4a951f424c7b0005",
+      "size": 757,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/7adc2cad9654911eff98911b4a951f424c7b0005"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_identity.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96fdf418b9a2ee8b55a8ef654536fbcad27b36a6",
+      "size": 635,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/96fdf418b9a2ee8b55a8ef654536fbcad27b36a6"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_inflation_governor.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54665e8d2bb30afbabf9435376e09b76bc40c9fd",
+      "size": 908,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/54665e8d2bb30afbabf9435376e09b76bc40c9fd"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_inflation_rate.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6656b8ca95661a1319c59430fd9344ec1eecf61b",
+      "size": 698,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/6656b8ca95661a1319c59430fd9344ec1eecf61b"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_inflation_reward.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a67876192e69587fa46f6d2b07cefb191ae29288",
+      "size": 1258,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/a67876192e69587fa46f6d2b07cefb191ae29288"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_largest_accounts.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81237f12bff3aee1a0250e1f250b6e29dcc7668e",
+      "size": 894,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/81237f12bff3aee1a0250e1f250b6e29dcc7668e"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_latest_blockhash.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90d15cd2312fb5b9a32eb88a414fe0f49d4c4dc7",
+      "size": 952,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/90d15cd2312fb5b9a32eb88a414fe0f49d4c4dc7"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_leader_schedule.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1853b4b82bea9047e8dd4a2d5a5abca6135544f5",
+      "size": 988,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/1853b4b82bea9047e8dd4a2d5a5abca6135544f5"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_max_retransmit_slot.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d903a40a6cc82aeadf54bcf9c37b4d6eb25634f5",
+      "size": 596,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/d903a40a6cc82aeadf54bcf9c37b4d6eb25634f5"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_max_shred_insert_slot.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a23817b15195445401234d04a7f50e669466f595",
+      "size": 603,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/a23817b15195445401234d04a7f50e669466f595"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_minimum_balance_for_rent_exemption.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f15bf8f407fd4c878d75f1cb58b5673af5ec6482",
+      "size": 942,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/f15bf8f407fd4c878d75f1cb58b5673af5ec6482"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_multiple_accounts.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dbad3fedaf3c128949e8bb19c740772dcbeba4b2",
+      "size": 1255,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/dbad3fedaf3c128949e8bb19c740772dcbeba4b2"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_program_accounts.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "367377dceb81f4d9b99a1448d02c723309e4a74e",
+      "size": 995,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/367377dceb81f4d9b99a1448d02c723309e4a74e"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_recent_performance_samples.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3251da1b90807270a66191f19d6d31f0dc7b9bad",
+      "size": 929,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/3251da1b90807270a66191f19d6d31f0dc7b9bad"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_recent_prioritization_fees.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cceddd703e1939070bdaf01f8c6fa503e8eee266",
+      "size": 1154,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/cceddd703e1939070bdaf01f8c6fa503e8eee266"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_signature_statuses.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e65c0f52dcd6b5c3979f8bd44ddc1f829e79c06e",
+      "size": 1017,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/e65c0f52dcd6b5c3979f8bd44ddc1f829e79c06e"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_signatures_for_address.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5292d289610ecdcd8c536e61c20378d7ad8c9cfd",
+      "size": 1068,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/5292d289610ecdcd8c536e61c20378d7ad8c9cfd"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_slot.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7923002f4d2574054c2c6e6d3d0ca813f714c263",
+      "size": 646,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/7923002f4d2574054c2c6e6d3d0ca813f714c263"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_slot_leader.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c22fda4847f326b88be27e081ac58147f36c1ae",
+      "size": 653,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/2c22fda4847f326b88be27e081ac58147f36c1ae"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_slot_leaders.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47389fdde9f0708d39468f0271b33cb6fc111468",
+      "size": 758,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/47389fdde9f0708d39468f0271b33cb6fc111468"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_stake_activation.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "205677058a04a6f3a04450e0fd3bf9c16c687ed1",
+      "size": 976,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/205677058a04a6f3a04450e0fd3bf9c16c687ed1"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_stake_minimum_delegation.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24a906664a83ae4c98861fc6da5cb3db45d495b1",
+      "size": 827,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/24a906664a83ae4c98861fc6da5cb3db45d495b1"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_supply.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65503f5002016cf63154be155e2ef2db53bd3316",
+      "size": 782,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/65503f5002016cf63154be155e2ef2db53bd3316"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_token_account_balance.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41cf4074e7ca17d5e9cf59d200af984ba97d4a09",
+      "size": 1018,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/41cf4074e7ca17d5e9cf59d200af984ba97d4a09"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_token_accounts_by_delegate.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1334bdb7ab8f51c6011cb1b6ee6722b6effe0be8",
+      "size": 1174,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/1334bdb7ab8f51c6011cb1b6ee6722b6effe0be8"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_token_accounts_by_owner.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd8ce43579242cb4364f4a4745107f9d25a668cd",
+      "size": 1142,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/bd8ce43579242cb4364f4a4745107f9d25a668cd"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_token_largest_accounts.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50bed1512ff52ad2c733653c08a201576365d548",
+      "size": 1027,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/50bed1512ff52ad2c733653c08a201576365d548"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_token_supply.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64a8dbb0c7a76ec3ee7b103b5d742af0839b1d82",
+      "size": 940,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/64a8dbb0c7a76ec3ee7b103b5d742af0839b1d82"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_transaction.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe105e9946c2c93df841afb61da274445f98ab9f",
+      "size": 919,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/fe105e9946c2c93df841afb61da274445f98ab9f"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_transaction_count.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a354e116be69b9d96b78aa41dbd8d260bc9bc439",
+      "size": 756,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/a354e116be69b9d96b78aa41dbd8d260bc9bc439"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_version.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8574b7520d22ee167dc300df146b6313f0dfcb4",
+      "size": 637,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/a8574b7520d22ee167dc300df146b6313f0dfcb4"
+    },
+    {
+      "path": "lib/src/rpc/methods/get_vote_accounts.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e70451750bdce434d469cfc55f15b15146617a8",
+      "size": 862,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/5e70451750bdce434d469cfc55f15b15146617a8"
+    },
+    {
+      "path": "lib/src/rpc/methods/index.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca3088bec02acbf8af01759316e863b3b664baea",
+      "size": 2075,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/ca3088bec02acbf8af01759316e863b3b664baea"
+    },
+    {
+      "path": "lib/src/rpc/methods/is_blockhash_valid.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68e96de789b0898b0be42791260fcfd99d93763f",
+      "size": 747,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/68e96de789b0898b0be42791260fcfd99d93763f"
+    },
+    {
+      "path": "lib/src/rpc/methods/logs_subscribe.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b278afbe8142c61f3d7ee7c7f193db4de92a7e5",
+      "size": 833,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/8b278afbe8142c61f3d7ee7c7f193db4de92a7e5"
+    },
+    {
+      "path": "lib/src/rpc/methods/minimum_ledger_slot.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f6965197412bd333cf80329ba46f0504e60acbd",
+      "size": 577,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/5f6965197412bd333cf80329ba46f0504e60acbd"
+    },
+    {
+      "path": "lib/src/rpc/methods/program_subscribe.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53cde5d45f1cfed7258549f433bfadfd11d8af78",
+      "size": 855,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/53cde5d45f1cfed7258549f433bfadfd11d8af78"
+    },
+    {
+      "path": "lib/src/rpc/methods/request_airdrop.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96c98b84b8a6fcbe4a62e613ab72ee748835fea6",
+      "size": 841,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/96c98b84b8a6fcbe4a62e613ab72ee748835fea6"
+    },
+    {
+      "path": "lib/src/rpc/methods/send_transaction.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adffe34f006a984cef6f4900262d0c572c0fc3bb",
+      "size": 733,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/adffe34f006a984cef6f4900262d0c572c0fc3bb"
+    },
+    {
+      "path": "lib/src/rpc/methods/signature_subscribe.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64f040e6ab36fb9f0afb3c70cf89e5a5f3e71594",
+      "size": 876,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/64f040e6ab36fb9f0afb3c70cf89e5a5f3e71594"
+    },
+    {
+      "path": "lib/src/rpc/methods/simulate_transaction.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e04583909fc0587b17915e623f088cdc10b46d54",
+      "size": 981,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/e04583909fc0587b17915e623f088cdc10b46d54"
+    },
+    {
+      "path": "lib/src/rpc/methods/slot_subscribe.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a95ace6057e528957fa24658828c2b9d394801be",
+      "size": 567,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/a95ace6057e528957fa24658828c2b9d394801be"
+    },
+    {
+      "path": "lib/src/rpc/methods/unsubscribe.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a6cc65dba93d9e54ce130940fdcf41a34256be7",
+      "size": 618,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/3a6cc65dba93d9e54ce130940fdcf41a34256be7"
+    },
+    {
+      "path": "lib/src/rpc/mixins",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0d81499cdb5c703428553899d55d754fbdb095fd",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/0d81499cdb5c703428553899d55d754fbdb095fd"
+    },
+    {
+      "path": "lib/src/rpc/mixins/data_serializable_mixin.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adb93b2954efb3bdc099609243caba7f789723ea",
+      "size": 3117,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/adb93b2954efb3bdc099609243caba7f789723ea"
+    },
+    {
+      "path": "lib/src/rpc/models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4fb73a3dbe7ce0caac57fd69cc56bff45695fd87",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/4fb73a3dbe7ce0caac57fd69cc56bff45695fd87"
+    },
+    {
+      "path": "lib/src/rpc/models/account_filter.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "febf39d25c26885895f06f456f700254188632ef",
+      "size": 832,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/febf39d25c26885895f06f456f700254188632ef"
+    },
+    {
+      "path": "lib/src/rpc/models/account_info.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "446b150cab44e50aa7f9b689154aea67872c6f2d",
+      "size": 3280,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/446b150cab44e50aa7f9b689154aea67872c6f2d"
+    },
+    {
+      "path": "lib/src/rpc/models/account_state.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "346393f3a95a000c2d78b059970c5b83e1fbffd4",
+      "size": 590,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/346393f3a95a000c2d78b059970c5b83e1fbffd4"
+    },
+    {
+      "path": "lib/src/rpc/models/accounts_filter.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "493e7fded487f4b7ffaf92df755f54918a8d8731",
+      "size": 971,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/493e7fded487f4b7ffaf92df755f54918a8d8731"
+    },
+    {
+      "path": "lib/src/rpc/models/block.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2351bd19d6ebf9ed82da38b286a56a829e70ee0",
+      "size": 2934,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/b2351bd19d6ebf9ed82da38b286a56a829e70ee0"
+    },
+    {
+      "path": "lib/src/rpc/models/block_commitment.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff82cb0adede181e4e3b951f32be617374d4626c",
+      "size": 1331,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/ff82cb0adede181e4e3b951f32be617374d4626c"
+    },
+    {
+      "path": "lib/src/rpc/models/block_production.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff7d1d9109aff8f8e8b67875fb8b28d8a45b914f",
+      "size": 2033,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/ff7d1d9109aff8f8e8b67875fb8b28d8a45b914f"
+    },
+    {
+      "path": "lib/src/rpc/models/blockhash_cache.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eeb28e1ee7d4eee48cf10127179f67fc21b13c4d",
+      "size": 5310,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/eeb28e1ee7d4eee48cf10127179f67fc21b13c4d"
+    },
+    {
+      "path": "lib/src/rpc/models/blockhash_with_expiry_block_height.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c95e64c6cda1a840ed137374bd956cebd51ef520",
+      "size": 1447,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/c95e64c6cda1a840ed137374bd956cebd51ef520"
+    },
+    {
+      "path": "lib/src/rpc/models/cluster_node.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2d15ce39a37fc59f4e25dec880ff7716c196b11",
+      "size": 1997,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/c2d15ce39a37fc59f4e25dec880ff7716c196b11"
+    },
+    {
+      "path": "lib/src/rpc/models/confirmed_signature_info.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbac4eef6866aea235beefd1366727377875637e",
+      "size": 1979,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/cbac4eef6866aea235beefd1366727377875637e"
+    },
+    {
+      "path": "lib/src/rpc/models/data_slice.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e3e5519d58ee7c49126365732de32c073d8dc81",
+      "size": 1217,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/4e3e5519d58ee7c49126365732de32c073d8dc81"
+    },
+    {
+      "path": "lib/src/rpc/models/epoch_info.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a197038996ca1ff9bf176a8ea7b89757ef265a15",
+      "size": 3037,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/a197038996ca1ff9bf176a8ea7b89757ef265a15"
+    },
+    {
+      "path": "lib/src/rpc/models/epoch_schedule.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "405409420c2381d60a4b1be24699313a37e4aec9",
+      "size": 3862,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/405409420c2381d60a4b1be24699313a37e4aec9"
+    },
+    {
+      "path": "lib/src/rpc/models/highest_snapshot_slot.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a7d2ca8f3d1ede1d0e5bfd62466d19ef1e078cf",
+      "size": 1223,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/4a7d2ca8f3d1ede1d0e5bfd62466d19ef1e078cf"
+    },
+    {
+      "path": "lib/src/rpc/models/identity.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f52552fc8c7be5062e85bae82abcd38798ee3c4f",
+      "size": 962,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/f52552fc8c7be5062e85bae82abcd38798ee3c4f"
+    },
+    {
+      "path": "lib/src/rpc/models/index.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92c00e1b535b6c522a2e66163a085907c837921e",
+      "size": 1731,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/92c00e1b535b6c522a2e66163a085907c837921e"
+    },
+    {
+      "path": "lib/src/rpc/models/inflation_governor.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03c044859ca03dfab813c7af65e24aa2a31898cc",
+      "size": 1786,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/03c044859ca03dfab813c7af65e24aa2a31898cc"
+    },
+    {
+      "path": "lib/src/rpc/models/inflation_rate.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b93c6ed2db2295a336b7badfaa3c3edda98f3fcc",
+      "size": 1410,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/b93c6ed2db2295a336b7badfaa3c3edda98f3fcc"
+    },
+    {
+      "path": "lib/src/rpc/models/inflation_reward.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1be029a8f303692101df84cffd7313468f0c9c9",
+      "size": 1682,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/b1be029a8f303692101df84cffd7313468f0c9c9"
+    },
+    {
+      "path": "lib/src/rpc/models/inner_instruction.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25b643033ea0b2065dad5db92dbfd9a8e190bac7",
+      "size": 1428,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/25b643033ea0b2065dad5db92dbfd9a8e190bac7"
+    },
+    {
+      "path": "lib/src/rpc/models/large_account.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b5fbec2d94cb24b12a1d65a7a68e9252e7c9ca6",
+      "size": 1177,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/9b5fbec2d94cb24b12a1d65a7a68e9252e7c9ca6"
+    },
+    {
+      "path": "lib/src/rpc/models/leader_schedule.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e861ce4d65fb0c27ae9de3355379ea0d12f8ac29",
+      "size": 486,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/e861ce4d65fb0c27ae9de3355379ea0d12f8ac29"
+    },
+    {
+      "path": "lib/src/rpc/models/loaded_address.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0238a81866ef17b967d2d084845d98779788b4e",
+      "size": 1243,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/b0238a81866ef17b967d2d084845d98779788b4e"
+    },
+    {
+      "path": "lib/src/rpc/models/logs_filter.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d8577c483c6ffafede2a69db89dcee3907d7e24",
+      "size": 1104,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/7d8577c483c6ffafede2a69db89dcee3907d7e24"
+    },
+    {
+      "path": "lib/src/rpc/models/logs_notification.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "029f1d6de2b6bcab70b044f88fbe96c8a5838503",
+      "size": 1490,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/029f1d6de2b6bcab70b044f88fbe96c8a5838503"
+    },
+    {
+      "path": "lib/src/rpc/models/meta.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d05a88f9fbd0786ea7219973bf4271aaa73ec51",
+      "size": 3608,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/8d05a88f9fbd0786ea7219973bf4271aaa73ec51"
+    },
+    {
+      "path": "lib/src/rpc/models/mint_account_info.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a1a42be169f3611a5d23b2565e60a346c63cfd3",
+      "size": 3906,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/7a1a42be169f3611a5d23b2565e60a346c63cfd3"
+    },
+    {
+      "path": "lib/src/rpc/models/nonce_with_min_context_slot.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d88517dd9340a6f2cd19c6cac6c46e887e37bf2a",
+      "size": 1024,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/d88517dd9340a6f2cd19c6cac6c46e887e37bf2a"
+    },
+    {
+      "path": "lib/src/rpc/models/performance_sample.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "157e96d7a1e7aa588392475c6aa8f8614f55a64e",
+      "size": 1514,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/157e96d7a1e7aa588392475c6aa8f8614f55a64e"
+    },
+    {
+      "path": "lib/src/rpc/models/prioritization_fee.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7065ef5f7949e1265ddd6ac9cb59d2f83401206",
+      "size": 1318,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/f7065ef5f7949e1265ddd6ac9cb59d2f83401206"
+    },
+    {
+      "path": "lib/src/rpc/models/program_account.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2dacca693d92d894a9b6d0b170719a432bc16b32",
+      "size": 1157,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/2dacca693d92d894a9b6d0b170719a432bc16b32"
+    },
+    {
+      "path": "lib/src/rpc/models/program_address.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc86743c20ff78edc27856bc1d8480ec05367d78",
+      "size": 485,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/cc86743c20ff78edc27856bc1d8480ec05367d78"
+    },
+    {
+      "path": "lib/src/rpc/models/program_filters.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2aacd1e15ee3d886d1f974fe3dde7753e8aa43d",
+      "size": 1376,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/f2aacd1e15ee3d886d1f974fe3dde7753e8aa43d"
+    },
+    {
+      "path": "lib/src/rpc/models/reward.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b336bd5a20ae85f6d13467d9e87f894701ccd1f",
+      "size": 1612,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/9b336bd5a20ae85f6d13467d9e87f894701ccd1f"
+    },
+    {
+      "path": "lib/src/rpc/models/reward_type.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29c2f64dc82900b9e5e5fd7002175724b62ae660",
+      "size": 900,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/29c2f64dc82900b9e5e5fd7002175724b62ae660"
+    },
+    {
+      "path": "lib/src/rpc/models/signature_notification.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3973232a60cb0d034b373ef10a78b42c1fd65e9c",
+      "size": 1030,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/3973232a60cb0d034b373ef10a78b42c1fd65e9c"
+    },
+    {
+      "path": "lib/src/rpc/models/signature_status.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f56baf690723e25de14ebc968f209a2474b079e",
+      "size": 1928,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/1f56baf690723e25de14ebc968f209a2474b079e"
+    },
+    {
+      "path": "lib/src/rpc/models/slot_notification.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60d37f6ee0e67615ebd4ecb0f182b406192ea348",
+      "size": 1175,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/60d37f6ee0e67615ebd4ecb0f182b406192ea348"
+    },
+    {
+      "path": "lib/src/rpc/models/slot_range.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c37c3a5cd46d1cdeb28877fe7e55a4fa4b41827b",
+      "size": 1308,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/c37c3a5cd46d1cdeb28877fe7e55a4fa4b41827b"
+    },
+    {
+      "path": "lib/src/rpc/models/stake_account.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08cc970ca2c5d0bee1a463006f6df26a279bd4e7",
+      "size": 2934,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/08cc970ca2c5d0bee1a463006f6df26a279bd4e7"
+    },
+    {
+      "path": "lib/src/rpc/models/stake_account_info.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad82dadca950e856601aa08031ac64df32c9b31f",
+      "size": 3344,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/ad82dadca950e856601aa08031ac64df32c9b31f"
+    },
+    {
+      "path": "lib/src/rpc/models/stake_activation.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4328307f253d3d32067a45f1356133e7e7f7f57b",
+      "size": 1378,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/4328307f253d3d32067a45f1356133e7e7f7f57b"
+    },
+    {
+      "path": "lib/src/rpc/models/stake_activation_state.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3faa44516ef66afd0a09da70683628bbddabc61f",
+      "size": 905,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/3faa44516ef66afd0a09da70683628bbddabc61f"
+    },
+    {
+      "path": "lib/src/rpc/models/supply.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc34f40965050926a6e19fb7975f26f822902aa7",
+      "size": 1680,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/dc34f40965050926a6e19fb7975f26f822902aa7"
+    },
+    {
+      "path": "lib/src/rpc/models/token_account.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63be80b1d906ca932f672904258a8d3e1daf23b2",
+      "size": 856,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/63be80b1d906ca932f672904258a8d3e1daf23b2"
+    },
+    {
+      "path": "lib/src/rpc/models/token_account_info.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db7300dd973df554c5575555ec0c9038597c2c43",
+      "size": 4523,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/db7300dd973df554c5575555ec0c9038597c2c43"
+    },
+    {
+      "path": "lib/src/rpc/models/token_accounts_filter.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46012fd813b5b8bd527b6d9dd7247243284e24ca",
+      "size": 1162,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/46012fd813b5b8bd527b6d9dd7247243284e24ca"
+    },
+    {
+      "path": "lib/src/rpc/models/token_amount.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "257aedc16df5183c5bee654c2c50f66904f8f0cd",
+      "size": 1397,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/257aedc16df5183c5bee654c2c50f66904f8f0cd"
+    },
+    {
+      "path": "lib/src/rpc/models/token_balance.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4d899d505326ce6488bc3f69348858e5ba76ef0",
+      "size": 1513,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/b4d899d505326ce6488bc3f69348858e5ba76ef0"
+    },
+    {
+      "path": "lib/src/rpc/models/transaction_data.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e72f5bb182a60744d030839bfacf96cbd364080",
+      "size": 2198,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/7e72f5bb182a60744d030839bfacf96cbd364080"
+    },
+    {
+      "path": "lib/src/rpc/models/transaction_detail.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34d7e66758dd6ac40cffb42b35baaefda43048a0",
+      "size": 861,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/34d7e66758dd6ac40cffb42b35baaefda43048a0"
+    },
+    {
+      "path": "lib/src/rpc/models/transaction_info.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "731df9dfc1b9bb0734d5c13143e573ea321f680e",
+      "size": 2242,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/731df9dfc1b9bb0734d5c13143e573ea321f680e"
+    },
+    {
+      "path": "lib/src/rpc/models/transaction_status.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd38be2fd784d0c956ad7c5b05eb7722afe25fed",
+      "size": 1855,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/fd38be2fd784d0c956ad7c5b05eb7722afe25fed"
+    },
+    {
+      "path": "lib/src/rpc/models/ui_token_amount.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7f9dd641a800621edaa5ebba4d9377692d8cf87",
+      "size": 1109,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/c7f9dd641a800621edaa5ebba4d9377692d8cf87"
+    },
+    {
+      "path": "lib/src/rpc/models/version.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d588bdad8341bff43839b7b441cc0acc0544aaa5",
+      "size": 1109,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/d588bdad8341bff43839b7b441cc0acc0544aaa5"
+    },
+    {
+      "path": "lib/src/rpc/models/vote_account.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4f6d87ea2d19f2c8b85a02840be92cec9f156f3",
+      "size": 2503,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/e4f6d87ea2d19f2c8b85a02840be92cec9f156f3"
+    },
+    {
+      "path": "lib/src/rpc/models/vote_account_status.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3deb709cf3fbb6cb5e3e854a61d96aaa8b04967b",
+      "size": 1342,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/3deb709cf3fbb6cb5e3e854a61d96aaa8b04967b"
+    },
+    {
+      "path": "lib/src/rpc/models/websocket_method.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2706744388c2311a52f12db0633fcf2a73c812ee",
+      "size": 177,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/2706744388c2311a52f12db0633fcf2a73c812ee"
+    },
+    {
+      "path": "lib/src/rpc/subscriptions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3662c71c22d1e952892a239528115112bb8481c2",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/3662c71c22d1e952892a239528115112bb8481c2"
+    },
+    {
+      "path": "lib/src/rpc/subscriptions/types.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce21cdbb45d30e10cc16ef17ad4499d0107f2273",
+      "size": 523,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/ce21cdbb45d30e10cc16ef17ad4499d0107f2273"
+    },
+    {
+      "path": "lib/src/rpc/subscriptions/websocket_listener.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "494778d692491641f8f232a3a5e4774624020e1d",
+      "size": 854,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/494778d692491641f8f232a3a5e4774624020e1d"
+    },
+    {
+      "path": "lib/src/rpc/subscriptions/websocket_notifier.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83649026e129c744cfca8e9cee0e710847766c1c",
+      "size": 3419,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/83649026e129c744cfca8e9cee0e710847766c1c"
+    },
+    {
+      "path": "lib/src/rpc/subscriptions/websocket_subscription.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fe73b3a18eda311cc748602a3c314c5940b17a0",
+      "size": 587,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/2fe73b3a18eda311cc748602a3c314c5940b17a0"
+    },
+    {
+      "path": "lib/src/rpc/websocket_connection.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ead7dbe3ebf0eef3c78e5a9d77928c0bf9c045c",
+      "size": 22169,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/4ead7dbe3ebf0eef3c78e5a9d77928c0bf9c045c"
+    },
+    {
+      "path": "lib/src/transactions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0fd65d031d29230ba8212429f2cd178d9fe1e24f",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/0fd65d031d29230ba8212429f2cd178d9fe1e24f"
+    },
+    {
+      "path": "lib/src/transactions/_transaction_copy.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3462b7ca81576e0536ce15a472ff0ca27943faad",
+      "size": 26614,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/3462b7ca81576e0536ce15a472ff0ca27943faad"
+    },
+    {
+      "path": "lib/src/transactions/account_meta.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9438b267527d7037f749fefedddfbfe3308afd7",
+      "size": 2052,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/d9438b267527d7037f749fefedddfbfe3308afd7"
+    },
+    {
+      "path": "lib/src/transactions/account_meta.g.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7798802d86dce57f10c4a1c36bdc09d5c171112",
+      "size": 717,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/d7798802d86dce57f10c4a1c36bdc09d5c171112"
+    },
+    {
+      "path": "lib/src/transactions/constants.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf836f50a8a0f3a250df9482dc87142b99e660b3",
+      "size": 355,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/cf836f50a8a0f3a250df9482dc87142b99e660b3"
+    },
+    {
+      "path": "lib/src/transactions/fee_calculator.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cb1f45e024bcf3a1efee00a3efca76b41791e3f",
+      "size": 2063,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/0cb1f45e024bcf3a1efee00a3efca76b41791e3f"
+    },
+    {
+      "path": "lib/src/transactions/fee_calculator.g.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82b551928b6ce17716cc5bf66a137e6a247ab34f",
+      "size": 588,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/82b551928b6ce17716cc5bf66a137e6a247ab34f"
+    },
+    {
+      "path": "lib/src/transactions/nonce_account.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b1dd8df13fac8bb02f49be949e2cd0425cccdc0",
+      "size": 4464,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/0b1dd8df13fac8bb02f49be949e2cd0425cccdc0"
+    },
+    {
+      "path": "lib/src/transactions/nonce_account.g.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf9279f12ba3f4a356d04d0633c1dc4156c4e38e",
+      "size": 952,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/cf9279f12ba3f4a356d04d0633c1dc4156c4e38e"
+    },
+    {
+      "path": "lib/src/transactions/nonce_information.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c92c447aa017c34f6d06f29ea3e61bfe773be7c",
+      "size": 1116,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/1c92c447aa017c34f6d06f29ea3e61bfe773be7c"
+    },
+    {
+      "path": "lib/src/transactions/nonce_information.g.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "652294153e31b4c2aab3325a6632dc7604a78e78",
+      "size": 723,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/652294153e31b4c2aab3325a6632dc7604a78e78"
+    },
+    {
+      "path": "lib/src/transactions/signature_pubkey_pair.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c45fd15800415fb5cdf10a5204af6c86cfe79535",
+      "size": 1414,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/c45fd15800415fb5cdf10a5204af6c86cfe79535"
+    },
+    {
+      "path": "lib/src/transactions/signature_pubkey_pair.g.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e46cc9a0c6a3cb229ee80c485020d0df8f9b1b25",
+      "size": 1161,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/e46cc9a0c6a3cb229ee80c485020d0df8f9b1b25"
+    },
+    {
+      "path": "lib/src/transactions/transaction.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2617c901cc8434c8c80dd2e5ce0df0681bc6e78b",
+      "size": 6991,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/2617c901cc8434c8c80dd2e5ce0df0681bc6e78b"
+    },
+    {
+      "path": "lib/src/transactions/transaction.g.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b7e22837bd581037c03463276290fb0093a0fc6",
+      "size": 830,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/4b7e22837bd581037c03463276290fb0093a0fc6"
+    },
+    {
+      "path": "lib/src/transactions/transaction_instruction.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ccbb06ff4137c3984a1e54bd6d7ff65b8bbbb8a",
+      "size": 1811,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/6ccbb06ff4137c3984a1e54bd6d7ff65b8bbbb8a"
+    },
+    {
+      "path": "lib/src/transactions/transaction_instruction.g.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5300b44cb6eba5d96c10ea896a567ec58953cc18",
+      "size": 984,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/5300b44cb6eba5d96c10ea896a567ec58953cc18"
+    },
+    {
+      "path": "lib/src/types.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31ce6e5346b9d52b37896fd9493dc9ab2769155e",
+      "size": 292,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/31ce6e5346b9d52b37896fd9493dc9ab2769155e"
+    },
+    {
+      "path": "pubspec.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df1c9dfe98eb868bb17ebd5f04d2cb0d78da3855",
+      "size": 741,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/df1c9dfe98eb868bb17ebd5f04d2cb0d78da3855"
+    },
+    {
+      "path": "test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3e7e15694dc119047e671c3e0ef81f7d674d6152",
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/trees/3e7e15694dc119047e671c3e0ef81f7d674d6152"
+    },
+    {
+      "path": "test/buffer_layout_test.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "628419852a659d0ea4036dbf8b6c188823bc0cfa",
+      "size": 348,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/628419852a659d0ea4036dbf8b6c188823bc0cfa"
+    },
+    {
+      "path": "test/buffer_test.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca062bbe2bc076fd2aed24f05927b2c5dfdea715",
+      "size": 12151,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/ca062bbe2bc076fd2aed24f05927b2c5dfdea715"
+    },
+    {
+      "path": "test/examples_test.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6ed6024a7e0649291dd7b5c4c11a417d743cdcd",
+      "size": 3996,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/f6ed6024a7e0649291dd7b5c4c11a417d743cdcd"
+    },
+    {
+      "path": "test/http_connection_test.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72c678f29b48baf43e67df2026178841c6967327",
+      "size": 29942,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/72c678f29b48baf43e67df2026178841c6967327"
+    },
+    {
+      "path": "test/keypair_test.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b823ed5040a407babdb0ecac32811aa2726de9c",
+      "size": 5000,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/4b823ed5040a407babdb0ecac32811aa2726de9c"
+    },
+    {
+      "path": "test/nonce_account_test.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4039630f998f869c0e39639b4d87d2afe994c61",
+      "size": 2675,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/e4039630f998f869c0e39639b4d87d2afe994c61"
+    },
+    {
+      "path": "test/playground_test.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "430c3d8b3fc9d929635815017f614a92ce33c713",
+      "size": 630,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/430c3d8b3fc9d929635815017f614a92ce33c713"
+    },
+    {
+      "path": "test/solana_web3_test.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4086d4f84259c3ba52818445328339432e668656",
+      "size": 911,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/4086d4f84259c3ba52818445328339432e668656"
+    },
+    {
+      "path": "test/system_program_test.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1692407b517b689c5148c52d585fc1004457aed3",
+      "size": 3308,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/1692407b517b689c5148c52d585fc1004457aed3"
+    },
+    {
+      "path": "test/transaction_test.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a6227e0f6a22aecff8999e2d96f66d57c06354b",
+      "size": 5717,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/8a6227e0f6a22aecff8999e2d96f66d57c06354b"
+    },
+    {
+      "path": "test/utils.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ef282625b69a219c2619b6458df1dd4358b2ba6",
+      "size": 1297,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/8ef282625b69a219c2619b6458df1dd4358b2ba6"
+    },
+    {
+      "path": "test/websocket_connection_test.dart",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f411cc2c38015890a32d21e9f60a3e42ddd132e",
+      "size": 10403,
+      "url": "https://api.github.com/repos/merigo-labs/solana-web3/git/blobs/1f411cc2c38015890a32d21e9f60a3e42ddd132e"
+    }
+  ]
+}

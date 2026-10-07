@@ -1,0 +1,2721 @@
+{
+  "repository": "solana-foundation/framework-kit",
+  "tree_sha": "ec2a3e8815777328719b63addaba7ab43741ff6f",
+  "truncated": false,
+  "entries": [
+    {
+      "path": ".changeset",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d272345ec6e2c658cb42892852d319dacf665567",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/d272345ec6e2c658cb42892852d319dacf665567"
+    },
+    {
+      "path": ".changeset/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c14987bdaa86827bd0ce75a2f370f43916e624c9",
+      "size": 502,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/c14987bdaa86827bd0ce75a2f370f43916e624c9"
+    },
+    {
+      "path": ".changeset/config.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e01764b3b81990d4ef4273052cc31c542f2643f",
+      "size": 342,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/8e01764b3b81990d4ef4273052cc31c542f2643f"
+    },
+    {
+      "path": ".changeset/kit-v6-upgrade.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11843f7e62813a6a88a158366c4129b9c1e56107",
+      "size": 241,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/11843f7e62813a6a88a158366c4129b9c1e56107"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1cd7eb604667b388f73bee2f68c9da350859c43b",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/1cd7eb604667b388f73bee2f68c9da350859c43b"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b8e6093101959c48dd012f7014e8ca0a30ae9bcf",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/b8e6093101959c48dd012f7014e8ca0a30ae9bcf"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85d160e622fb661c54ae1e2f3f687fb3a1a9c1a0",
+      "size": 1861,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/85d160e622fb661c54ae1e2f3f687fb3a1a9c1a0"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8005e3226730ef74f37ae9614ba94a1bb879b4a0",
+      "size": 46,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/8005e3226730ef74f37ae9614ba94a1bb879b4a0"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d40fdc3a64151102900c156e702c7ddbdd36104",
+      "size": 995,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/0d40fdc3a64151102900c156e702c7ddbdd36104"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/maintenance.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3916a7b72a95adc172908c645d0b9e29c06738f",
+      "size": 817,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/e3916a7b72a95adc172908c645d0b9e29c06738f"
+    },
+    {
+      "path": ".github/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "97b0623b7ba0b279f352d46ff933a7409fbb0caa",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/97b0623b7ba0b279f352d46ff933a7409fbb0caa"
+    },
+    {
+      "path": ".github/assets/hero.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55174dd8bd207d03036553ac2b1057f0b353cd02",
+      "size": 157849,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/55174dd8bd207d03036553ac2b1057f0b353cd02"
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4885eb8b597aebbdd27a09a532e26bab9427f42",
+      "size": 105,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/a4885eb8b597aebbdd27a09a532e26bab9427f42"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5e48f99161665b6bd0784247d55bee066f37f2b3",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/5e48f99161665b6bd0784247d55bee066f37f2b3"
+    },
+    {
+      "path": ".github/workflows/actions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "754b40a30fcd54e266a61c1a9fb6fd706dc5e777",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/754b40a30fcd54e266a61c1a9fb6fd706dc5e777"
+    },
+    {
+      "path": ".github/workflows/actions/install-dependencies",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "04aeafdd53b185a414f2dee58b38ba35bd41acc0",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/04aeafdd53b185a414f2dee58b38ba35bd41acc0"
+    },
+    {
+      "path": ".github/workflows/actions/install-dependencies/action.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb14e5bb2035b72a99b523a68991dfba10595115",
+      "size": 560,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/cb14e5bb2035b72a99b523a68991dfba10595115"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7cc1d08351bdd03bdbc7a2722ecc58c81d934cf",
+      "size": 6375,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/d7cc1d08351bdd03bdbc7a2722ecc58c81d934cf"
+    },
+    {
+      "path": ".github/workflows/dependency-audit.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87e0b15b73917192c60d32eab58efcf9838dc913",
+      "size": 391,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/87e0b15b73917192c60d32eab58efcf9838dc913"
+    },
+    {
+      "path": ".github/workflows/docs.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d86af45b03d0f9cd0b8528a3f8318937e0fd8e84",
+      "size": 1078,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/d86af45b03d0f9cd0b8528a3f8318937e0fd8e84"
+    },
+    {
+      "path": ".github/workflows/publish-packages.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6928f326e842b671f91536063903f01e78e7b64",
+      "size": 2159,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/f6928f326e842b671f91536063903f01e78e7b64"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56623746a6b52d3d66ae8f5facfbe415da04d8e6",
+      "size": 410,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/56623746a6b52d3d66ae8f5facfbe415da04d8e6"
+    },
+    {
+      "path": ".husky",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "387ec9f9b4533e00bc9d65133aba6caebc89469b",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/387ec9f9b4533e00bc9d65133aba6caebc89469b"
+    },
+    {
+      "path": ".husky/pre-commit",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "1769a7a880a4a43bc79991784cca3f87cbdc9aeb",
+      "size": 56,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/1769a7a880a4a43bc79991784cca3f87cbdc9aeb"
+    },
+    {
+      "path": ".size-limit.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bca469906c896c68edd030baa17a117ff8ed8087",
+      "size": 257,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/bca469906c896c68edd030baa17a117ff8ed8087"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5355427a3b5168d3e5fcddbd343e2613ac038cff",
+      "size": 2846,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/5355427a3b5168d3e5fcddbd343e2613ac038cff"
+    },
+    {
+      "path": "MAINTAINERS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61dcb7334d55f1c821102c39d28bf75f8a1b23ea",
+      "size": 2473,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/61dcb7334d55f1c821102c39d28bf75f8a1b23ea"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f242d3f031259740112fb8effffa551c056d527",
+      "size": 4761,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/9f242d3f031259740112fb8effffa551c056d527",
+      "error": "SyntaxError: Unexpected token '#', \"# Framewor\"... is not valid JSON"
+    },
+    {
+      "path": "apps",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c44709ec590b5619af5b28c02e5c8ed0bafc0ac0",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/c44709ec590b5619af5b28c02e5c8ed0bafc0ac0"
+    },
+    {
+      "path": "apps/docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c9e0ebf4a5be46a9c83cfb4ad9295434f8a108bb",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/c9e0ebf4a5be46a9c83cfb4ad9295434f8a108bb"
+    },
+    {
+      "path": "apps/docs/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5991ed700454c8717949f886c6daf6022599640a",
+      "size": 489,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/5991ed700454c8717949f886c6daf6022599640a"
+    },
+    {
+      "path": "apps/docs/app",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "46381a04b2c9a1c148b36d409696141549d82680",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/46381a04b2c9a1c148b36d409696141549d82680"
+    },
+    {
+      "path": "apps/docs/app/api",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0f8be369bb3d2c3a1f9875276747710155b8dfca",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/0f8be369bb3d2c3a1f9875276747710155b8dfca"
+    },
+    {
+      "path": "apps/docs/app/api/og",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "76eaf45cd1b74f86e2e0b86a6f2a6a13879b6783",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/76eaf45cd1b74f86e2e0b86a6f2a6a13879b6783"
+    },
+    {
+      "path": "apps/docs/app/api/og/route.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "249f18707c29b462e1a0b8a0afdfc8b3fcdb000d",
+      "size": 3269,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/249f18707c29b462e1a0b8a0afdfc8b3fcdb000d"
+    },
+    {
+      "path": "apps/docs/app/api/search",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b6c5bba273b64e623f48847ff6d3424ed2425628",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/b6c5bba273b64e623f48847ff6d3424ed2425628"
+    },
+    {
+      "path": "apps/docs/app/api/search/route.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f738448ee180bbec0eab74fa1a277b34b08aa0a",
+      "size": 153,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/6f738448ee180bbec0eab74fa1a277b34b08aa0a"
+    },
+    {
+      "path": "apps/docs/app/docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "abcb19934a9d6aac9efeffa45d0ebb1b0127ed9b",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/abcb19934a9d6aac9efeffa45d0ebb1b0127ed9b"
+    },
+    {
+      "path": "apps/docs/app/docs/[[...slug]]",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8137602c8a91d348b37dc9219310cb041d1d2e38",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/8137602c8a91d348b37dc9219310cb041d1d2e38"
+    },
+    {
+      "path": "apps/docs/app/docs/[[...slug]]/page.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce0d6946825d7e92d1b2b4e0df713f4d671b2e82",
+      "size": 2032,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/ce0d6946825d7e92d1b2b4e0df713f4d671b2e82"
+    },
+    {
+      "path": "apps/docs/app/docs/layout.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69bd3ba1167fd2584bea373f597267f6dec45d70",
+      "size": 359,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/69bd3ba1167fd2584bea373f597267f6dec45d70"
+    },
+    {
+      "path": "apps/docs/app/favicon.ico",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb31d2d39ae3589ce3ec0fe03e6a44b2221e635b",
+      "size": 15406,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/cb31d2d39ae3589ce3ec0fe03e6a44b2221e635b"
+    },
+    {
+      "path": "apps/docs/app/globals.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c8a298420dbe0fce0ec92b5d9db975c3359fd31",
+      "size": 1975,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/0c8a298420dbe0fce0ec92b5d9db975c3359fd31"
+    },
+    {
+      "path": "apps/docs/app/layout.config.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "274fa3f7513b52268821e7b699fc6b20bdd3d34d",
+      "size": 391,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/274fa3f7513b52268821e7b699fc6b20bdd3d34d"
+    },
+    {
+      "path": "apps/docs/app/layout.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3b2c18fa251c906647a96dcbe42f6d30501f3b7",
+      "size": 1312,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/a3b2c18fa251c906647a96dcbe42f6d30501f3b7"
+    },
+    {
+      "path": "apps/docs/app/llms-full.txt",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "75a9352e08b94c200fc38b63e7d91067494f38bf",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/75a9352e08b94c200fc38b63e7d91067494f38bf"
+    },
+    {
+      "path": "apps/docs/app/llms-full.txt/route.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4345763e87759e15b94bce6ab11d0a218bb09732",
+      "size": 2063,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/4345763e87759e15b94bce6ab11d0a218bb09732"
+    },
+    {
+      "path": "apps/docs/app/llms.txt",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6f73ef4a77224054bc1bcd8339664646b29f7220",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/6f73ef4a77224054bc1bcd8339664646b29f7220"
+    },
+    {
+      "path": "apps/docs/app/llms.txt/route.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edf0ae4bd2c898ba2978e7867cd7937af23a33b7",
+      "size": 1593,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/edf0ae4bd2c898ba2978e7867cd7937af23a33b7"
+    },
+    {
+      "path": "apps/docs/app/page.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3afbd5b0b32831e810209ec5ec0862724c3aa6ec",
+      "size": 488,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/3afbd5b0b32831e810209ec5ec0862724c3aa6ec"
+    },
+    {
+      "path": "apps/docs/app/provider.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e22360f5e1fcaf5a919f86b5aa9d20bef34400d",
+      "size": 231,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/9e22360f5e1fcaf5a919f86b5aa9d20bef34400d"
+    },
+    {
+      "path": "apps/docs/components",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "10723e79977188228f04bacc6290bf122ec5b533",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/10723e79977188228f04bacc6290bf122ec5b533"
+    },
+    {
+      "path": "apps/docs/components/landing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4a1bb136ea1b2a19203d28b43858112806b69eef",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/4a1bb136ea1b2a19203d28b43858112806b69eef"
+    },
+    {
+      "path": "apps/docs/components/landing/background.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81bf7d48c82b3273f4e8be20026639daf195fd09",
+      "size": 2186,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/81bf7d48c82b3273f4e8be20026639daf195fd09"
+    },
+    {
+      "path": "apps/docs/components/landing/features.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4858ee2681b637b42d393bb099649932c5b8aa6",
+      "size": 2682,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/b4858ee2681b637b42d393bb099649932c5b8aa6"
+    },
+    {
+      "path": "apps/docs/components/landing/footer.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4123f24df62b0c773c4ba54ec872e69fb6f4db19",
+      "size": 3102,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/4123f24df62b0c773c4ba54ec872e69fb6f4db19"
+    },
+    {
+      "path": "apps/docs/components/landing/hero.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c97c98a5e354f3edabecb5b344e52dc65e0c073d",
+      "size": 10715,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/c97c98a5e354f3edabecb5b344e52dc65e0c073d"
+    },
+    {
+      "path": "apps/docs/content",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7249455f777e9572c506ad16cf29d6d0b328df55",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/7249455f777e9572c506ad16cf29d6d0b328df55"
+    },
+    {
+      "path": "apps/docs/content/docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d80edee6774edca132687dba7f70dc3277f3897b",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/d80edee6774edca132687dba7f70dc3277f3897b"
+    },
+    {
+      "path": "apps/docs/content/docs/api-reference.mdx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22120ed4cfa06f897378757a151b2e16875afd8c",
+      "size": 6151,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/22120ed4cfa06f897378757a151b2e16875afd8c"
+    },
+    {
+      "path": "apps/docs/content/docs/client.mdx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef24eb9540953a287c5dc1b1fd4b79b6a6041e2f",
+      "size": 10618,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/ef24eb9540953a287c5dc1b1fd4b79b6a6041e2f"
+    },
+    {
+      "path": "apps/docs/content/docs/getting-started.mdx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03cb7bebda39c1ac6081049ffdc26ef5b917d2e5",
+      "size": 7176,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/03cb7bebda39c1ac6081049ffdc26ef5b917d2e5"
+    },
+    {
+      "path": "apps/docs/content/docs/index.mdx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9b43b9cecd896bb8fe7f98b3647a066c893b8b4",
+      "size": 4121,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/e9b43b9cecd896bb8fe7f98b3647a066c893b8b4"
+    },
+    {
+      "path": "apps/docs/content/docs/meta.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56cbb5ba0ad3ccd644d355b6a3328520ae4a42f0",
+      "size": 127,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/56cbb5ba0ad3ccd644d355b6a3328520ae4a42f0"
+    },
+    {
+      "path": "apps/docs/content/docs/react-hooks.mdx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b871d51128b8673b9f93b412823366b7afd84dfe",
+      "size": 15236,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/b871d51128b8673b9f93b412823366b7afd84dfe"
+    },
+    {
+      "path": "apps/docs/content/docs/web3-compat.mdx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ef19f67b14b8e1da6ab0e1da91446ebcdbda86b",
+      "size": 6586,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/4ef19f67b14b8e1da6ab0e1da91446ebcdbda86b"
+    },
+    {
+      "path": "apps/docs/lib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "55c84080fc5034bb30bd5328aa66df8ba2cc2c54",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/55c84080fc5034bb30bd5328aa66df8ba2cc2c54"
+    },
+    {
+      "path": "apps/docs/lib/source.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44ce164e4b6a834f067e2396689b72beb1e4cd6c",
+      "size": 252,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/44ce164e4b6a834f067e2396689b72beb1e4cd6c"
+    },
+    {
+      "path": "apps/docs/lib/utils.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "256f86ff7c5a7e56e7e5e637351ac85c13d2271a",
+      "size": 168,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/256f86ff7c5a7e56e7e5e637351ac85c13d2271a"
+    },
+    {
+      "path": "apps/docs/next.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1f07060157ca44973dc5d9e86044d122b3e38aa",
+      "size": 163,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/a1f07060157ca44973dc5d9e86044d122b3e38aa"
+    },
+    {
+      "path": "apps/docs/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7455774e45471db007c590160e00543ca7a5ed04",
+      "size": 805,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/7455774e45471db007c590160e00543ca7a5ed04"
+    },
+    {
+      "path": "apps/docs/postcss.config.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c59869459ff20c51b26937c7a2cadaa40a2d843",
+      "size": 90,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/2c59869459ff20c51b26937c7a2cadaa40a2d843"
+    },
+    {
+      "path": "apps/docs/public",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c06222a8ad10fedfd2afd3746dd005040a860e89",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/c06222a8ad10fedfd2afd3746dd005040a860e89"
+    },
+    {
+      "path": "apps/docs/public/construction-site.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4038a09e35b83215628d3aac9bd178eebd3d87a",
+      "size": 2463955,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/b4038a09e35b83215628d3aac9bd178eebd3d87a"
+    },
+    {
+      "path": "apps/docs/public/og-background.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4052200ef16a509903e34bb183df34c5d9d87e27",
+      "size": 1425705,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/4052200ef16a509903e34bb183df34c5d9d87e27"
+    },
+    {
+      "path": "apps/docs/public/robots.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79148ad48fc317584777ee16af26a92bbcdd7369",
+      "size": 242,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/79148ad48fc317584777ee16af26a92bbcdd7369"
+    },
+    {
+      "path": "apps/docs/source.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1eb11da02476a70aabfb02962ed605d556e9516e",
+      "size": 166,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/1eb11da02476a70aabfb02962ed605d556e9516e"
+    },
+    {
+      "path": "apps/docs/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f83cc3484b6719c5293f0f95b97edb1df615ce6f",
+      "size": 646,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/f83cc3484b6719c5293f0f95b97edb1df615ce6f"
+    },
+    {
+      "path": "biome.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78e53d94ce5425edb6dd30e0d6070f7c45809b45",
+      "size": 502,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/78e53d94ce5425edb6dd30e0d6070f7c45809b45"
+    },
+    {
+      "path": "examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1ee633932d4fc2e13f8b6555d3289f3200c573c1",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/1ee633932d4fc2e13f8b6555d3289f3200c573c1"
+    },
+    {
+      "path": "examples/nextjs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "eacf718dacd9a4963e635219ac3b433e65c9fd1c",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/eacf718dacd9a4963e635219ac3b433e65c9fd1c"
+    },
+    {
+      "path": "examples/nextjs/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa510b3542e72ebcc5b307db52d1951ebd4f2346",
+      "size": 56,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/aa510b3542e72ebcc5b307db52d1951ebd4f2346"
+    },
+    {
+      "path": "examples/nextjs/CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be2badb19dcb221563ba650670c21962e9bd6471",
+      "size": 6221,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/be2badb19dcb221563ba650670c21962e9bd6471"
+    },
+    {
+      "path": "examples/nextjs/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c156692a1b0810483b6c915144e530a968a72cf",
+      "size": 1188,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/7c156692a1b0810483b6c915144e530a968a72cf"
+    },
+    {
+      "path": "examples/nextjs/app",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "54c526372f7f616f66a8332de257876ea6d77db2",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/54c526372f7f616f66a8332de257876ea6d77db2"
+    },
+    {
+      "path": "examples/nextjs/app/components",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3a2dd961ef7dd8f55fc4c4d618d278783b2f0ecb",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/3a2dd961ef7dd8f55fc4c4d618d278783b2f0ecb"
+    },
+    {
+      "path": "examples/nextjs/app/components/lookup-table-card.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8d2071440e53061e90efcf41e95f895fc20e319",
+      "size": 1539,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/c8d2071440e53061e90efcf41e95f895fc20e319"
+    },
+    {
+      "path": "examples/nextjs/app/components/memo-card.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f35a5fe7f465ecc60c50e49090a1b466eb3e2b75",
+      "size": 2858,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/f35a5fe7f465ecc60c50e49090a1b466eb3e2b75"
+    },
+    {
+      "path": "examples/nextjs/app/components/nonce-card.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b8d95a0f8f40cf1a7867e768b4bf0a2fec21cfb",
+      "size": 1520,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/7b8d95a0f8f40cf1a7867e768b4bf0a2fec21cfb"
+    },
+    {
+      "path": "examples/nextjs/app/components/wallet-connect-button.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fcab232b04667f50258414d1bc64a83e5993d60b",
+      "size": 3024,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/fcab232b04667f50258414d1bc64a83e5993d60b"
+    },
+    {
+      "path": "examples/nextjs/app/connectorkit",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "42b2a82a3bdda8a4f58133e9c6dbf8a0867352d3",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/42b2a82a3bdda8a4f58133e9c6dbf8a0867352d3"
+    },
+    {
+      "path": "examples/nextjs/app/connectorkit/connectorkit-wallet-connect-button.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20a1973e62b573be46d44d11c57abfb74360cfc2",
+      "size": 5809,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/20a1973e62b573be46d44d11c57abfb74360cfc2"
+    },
+    {
+      "path": "examples/nextjs/app/connectorkit/page.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a7b3396772c8c37f1b91145e99c52ac632e15ff",
+      "size": 1564,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/1a7b3396772c8c37f1b91145e99c52ac632e15ff"
+    },
+    {
+      "path": "examples/nextjs/app/connectorkit/ui.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93cb7685d70bb613057a4faf9adbacdb56422e0c",
+      "size": 8915,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/93cb7685d70bb613057a4faf9adbacdb56422e0c"
+    },
+    {
+      "path": "examples/nextjs/app/globals.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ca972f20c7827a8fdd5b24425b186f143fa6518",
+      "size": 1351,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/6ca972f20c7827a8fdd5b24425b186f143fa6518"
+    },
+    {
+      "path": "examples/nextjs/app/layout.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "708a5846411be12a3b93d4dfc31ee4fdd9b058ac",
+      "size": 494,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/708a5846411be12a3b93d4dfc31ee4fdd9b058ac"
+    },
+    {
+      "path": "examples/nextjs/app/page.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f632d590220bedff4324b320f4847a594120b77",
+      "size": 1148,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/3f632d590220bedff4324b320f4847a594120b77"
+    },
+    {
+      "path": "examples/nextjs/app/providers.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92ec9d30de850939fbbbbf26227a846702c9156d",
+      "size": 403,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/92ec9d30de850939fbbbbf26227a846702c9156d"
+    },
+    {
+      "path": "examples/nextjs/app/wallet-panel.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17c4f91461f528500a8f2a326498f612fc3f4592",
+      "size": 4178,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/17c4f91461f528500a8f2a326498f612fc3f4592"
+    },
+    {
+      "path": "examples/nextjs/next-env.d.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1511519d3892c3bb5606e9ef4ecec61c13f11a47",
+      "size": 247,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/1511519d3892c3bb5606e9ef4ecec61c13f11a47"
+    },
+    {
+      "path": "examples/nextjs/next.config.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7bfb6243f1cbaa8e5450174258b07c24f1d5638",
+      "size": 218,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/b7bfb6243f1cbaa8e5450174258b07c24f1d5638"
+    },
+    {
+      "path": "examples/nextjs/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f38b0a684d83eb3c7f6b8fc960f2727d48b1a81",
+      "size": 810,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/5f38b0a684d83eb3c7f6b8fc960f2727d48b1a81"
+    },
+    {
+      "path": "examples/nextjs/postcss.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1970487b544b91c921f392f61786a002e112117a",
+      "size": 66,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/1970487b544b91c921f392f61786a002e112117a"
+    },
+    {
+      "path": "examples/nextjs/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17b75abcfc2726c549d8e8732a19148d8ab10bea",
+      "size": 539,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/17b75abcfc2726c549d8e8732a19148d8ab10bea"
+    },
+    {
+      "path": "examples/nextjs/tsconfig.typecheck.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d91f144b859c59f1a0a3fc8951dd0fc4d6c59a0a",
+      "size": 348,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/d91f144b859c59f1a0a3fc8951dd0fc4d6c59a0a"
+    },
+    {
+      "path": "examples/vite-react",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f5e406dde71ba71264f95e69848387af76d1def1",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/f5e406dde71ba71264f95e69848387af76d1def1"
+    },
+    {
+      "path": "examples/vite-react/CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c432bf50bacfc02dc63abc38b03bba28266eb9ef",
+      "size": 8953,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/c432bf50bacfc02dc63abc38b03bba28266eb9ef"
+    },
+    {
+      "path": "examples/vite-react/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5bd19c5a11c00f05ae360a07714959f93868f702",
+      "size": 3177,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/5bd19c5a11c00f05ae360a07714959f93868f702"
+    },
+    {
+      "path": "examples/vite-react/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3641d5514d330775e058b053c5907a1abfe759ba",
+      "size": 414,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/3641d5514d330775e058b053c5907a1abfe759ba"
+    },
+    {
+      "path": "examples/vite-react/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "070264bc44db11efa2b27616bd74154338af6139",
+      "size": 1045,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/070264bc44db11efa2b27616bd74154338af6139"
+    },
+    {
+      "path": "examples/vite-react/postcss.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b75c83aff1c05e0e0e315638e07a22314603d4d",
+      "size": 75,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/7b75c83aff1c05e0e0e315638e07a22314603d4d"
+    },
+    {
+      "path": "examples/vite-react/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "089b4fdf9ade7107c19dda5541efaa631ecf2112",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/089b4fdf9ade7107c19dda5541efaa631ecf2112"
+    },
+    {
+      "path": "examples/vite-react/src/App.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92d41fcfcafdbf77045cc4126870fdfa777eeb72",
+      "size": 4375,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/92d41fcfcafdbf77045cc4126870fdfa777eeb72"
+    },
+    {
+      "path": "examples/vite-react/src/components",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a960a5afc92245c4a57c76f295ee947e28d9a07b",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/a960a5afc92245c4a57c76f295ee947e28d9a07b"
+    },
+    {
+      "path": "examples/vite-react/src/components/AccountInspectorCard.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0271be9fe7563871cb26a5910c12f568c920a779",
+      "size": 2936,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/0271be9fe7563871cb26a5910c12f568c920a779"
+    },
+    {
+      "path": "examples/vite-react/src/components/AirdropCard.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af161b3b857fc6216c55dd91c83b07087d5f35f8",
+      "size": 2771,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/af161b3b857fc6216c55dd91c83b07087d5f35f8"
+    },
+    {
+      "path": "examples/vite-react/src/components/BalanceCard.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44a4acc95d887c9599dcb9b0897f4a10e0876974",
+      "size": 2956,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/44a4acc95d887c9599dcb9b0897f4a10e0876974"
+    },
+    {
+      "path": "examples/vite-react/src/components/ClusterStatusCard.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "559f8c99e9e8c4502726b9015a6683b6fe21de11",
+      "size": 1906,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/559f8c99e9e8c4502726b9015a6683b6fe21de11"
+    },
+    {
+      "path": "examples/vite-react/src/components/LatestBlockhashCard.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "292fe6c44ffd8befadf2f111a7eacda81956361b",
+      "size": 2211,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/292fe6c44ffd8befadf2f111a7eacda81956361b"
+    },
+    {
+      "path": "examples/vite-react/src/components/ProgramAccountsCard.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cde7f82ba424e10b6aceb2f9928e76700dc35f26",
+      "size": 4222,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/cde7f82ba424e10b6aceb2f9928e76700dc35f26"
+    },
+    {
+      "path": "examples/vite-react/src/components/SendTransactionCard.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e62736b6f68c9275cb6917b18979991636a4f7f",
+      "size": 3113,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/1e62736b6f68c9275cb6917b18979991636a4f7f"
+    },
+    {
+      "path": "examples/vite-react/src/components/SignatureWatcherCard.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfd552349701e48d2795c8974c3ec661dd6d68a7",
+      "size": 3780,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/bfd552349701e48d2795c8974c3ec661dd6d68a7"
+    },
+    {
+      "path": "examples/vite-react/src/components/SimulateTransactionCard.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04ba0c0ccc3992d542016cf715d9bfeea191d8ac",
+      "size": 4822,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/04ba0c0ccc3992d542016cf715d9bfeea191d8ac"
+    },
+    {
+      "path": "examples/vite-react/src/components/SolTransferForm.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d0b9148fc18c7428077ee221b2eba457c981311",
+      "size": 3102,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/5d0b9148fc18c7428077ee221b2eba457c981311"
+    },
+    {
+      "path": "examples/vite-react/src/components/SplTokenPanel.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b940d3fca0d32dc5e63adf75ab0331e180f751a3",
+      "size": 4191,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/b940d3fca0d32dc5e63adf75ab0331e180f751a3"
+    },
+    {
+      "path": "examples/vite-react/src/components/StakePanel.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e999a39752e641c0b5509a04ac8e49660bf418ad",
+      "size": 11367,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/e999a39752e641c0b5509a04ac8e49660bf418ad"
+    },
+    {
+      "path": "examples/vite-react/src/components/StoreInspectorCard.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c581f3fcfe7d1dbbe1559528415381d230f38d2a",
+      "size": 1489,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/c581f3fcfe7d1dbbe1559528415381d230f38d2a"
+    },
+    {
+      "path": "examples/vite-react/src/components/TransactionPoolPanel.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb980cf93d9ab303a7ab23be37f5aead2bfc3df6",
+      "size": 5871,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/eb980cf93d9ab303a7ab23be37f5aead2bfc3df6"
+    },
+    {
+      "path": "examples/vite-react/src/components/UsdcFaucetButton.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "192e3bd9598c4c22bfd00588858b6468c2359e07",
+      "size": 805,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/192e3bd9598c4c22bfd00588858b6468c2359e07"
+    },
+    {
+      "path": "examples/vite-react/src/components/WalletControls.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0551eb07da5fb4b98d15bdd4403abbe6e1a392b1",
+      "size": 3156,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/0551eb07da5fb4b98d15bdd4403abbe6e1a392b1"
+    },
+    {
+      "path": "examples/vite-react/src/components/WrapSolPanel.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e0eebad10331df413854423ed770e5d569c2603",
+      "size": 6242,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/1e0eebad10331df413854423ed770e5d569c2603"
+    },
+    {
+      "path": "examples/vite-react/src/components/demoUi.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba6a91768f8489cdb2c59472fe577b1017b813ed",
+      "size": 2774,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/ba6a91768f8489cdb2c59472fe577b1017b813ed"
+    },
+    {
+      "path": "examples/vite-react/src/components/icons",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "394deb5e6900d41ea1fd83a677ebf7054c84b135",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/394deb5e6900d41ea1fd83a677ebf7054c84b135"
+    },
+    {
+      "path": "examples/vite-react/src/components/icons/DollarIcon.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cabfb6a928037cf0483dadd75421942881568222",
+      "size": 787,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/cabfb6a928037cf0483dadd75421942881568222"
+    },
+    {
+      "path": "examples/vite-react/src/components/ui",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2e640bf2955147e202cad0f0abadd8921ec6931d",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/2e640bf2955147e202cad0f0abadd8921ec6931d"
+    },
+    {
+      "path": "examples/vite-react/src/components/ui/button.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b67dc0b289a53e1ba74630329e38c7001d47efe7",
+      "size": 2123,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/b67dc0b289a53e1ba74630329e38c7001d47efe7"
+    },
+    {
+      "path": "examples/vite-react/src/components/ui/card.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8712f539698a6c4fb1b4482add848054e1f2f65c",
+      "size": 1750,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/8712f539698a6c4fb1b4482add848054e1f2f65c"
+    },
+    {
+      "path": "examples/vite-react/src/components/ui/input.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7c09c134fc2c178bff35e1342d57677c4b716ea",
+      "size": 707,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/e7c09c134fc2c178bff35e1342d57677c4b716ea"
+    },
+    {
+      "path": "examples/vite-react/src/components/ui/tabs.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5284eb3ea3dfd927936dce7b5912403f493d7afd",
+      "size": 2249,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/5284eb3ea3dfd927936dce7b5912403f493d7afd"
+    },
+    {
+      "path": "examples/vite-react/src/index.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a051d22ef27e4829128b8d18d171f66291e3038",
+      "size": 2794,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/5a051d22ef27e4829128b8d18d171f66291e3038"
+    },
+    {
+      "path": "examples/vite-react/src/lib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f98fa60abd74d802c041863122f4c8076803cbb1",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/f98fa60abd74d802c041863122f4c8076803cbb1"
+    },
+    {
+      "path": "examples/vite-react/src/lib/utils.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "083886ec07a40060338697a494888f706f80456e",
+      "size": 1235,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/083886ec07a40060338697a494888f706f80456e"
+    },
+    {
+      "path": "examples/vite-react/src/main.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "198b83658368570c888449e199e71c2bdeea694b",
+      "size": 338,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/198b83658368570c888449e199e71c2bdeea694b"
+    },
+    {
+      "path": "examples/vite-react/tailwind.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aee53253bb0b429bc24dfea539f17f1bbf4e7e62",
+      "size": 2002,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/aee53253bb0b429bc24dfea539f17f1bbf4e7e62"
+    },
+    {
+      "path": "examples/vite-react/tsconfig.app.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "115d39e3363c08d86d33635e8066f909c33a6e01",
+      "size": 947,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/115d39e3363c08d86d33635e8066f909c33a6e01"
+    },
+    {
+      "path": "examples/vite-react/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5b06bfb9a65fd2951a098a53da0a2b4db84e5af",
+      "size": 122,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/a5b06bfb9a65fd2951a098a53da0a2b4db84e5af"
+    },
+    {
+      "path": "examples/vite-react/tsconfig.node.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "825ca9c0cf94152c14e02059f7ac899ad7b6e998",
+      "size": 595,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/825ca9c0cf94152c14e02059f7ac899ad7b6e998"
+    },
+    {
+      "path": "examples/vite-react/vite.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6760ec06770542506eba85cf01d6397d83d5cda2",
+      "size": 891,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/6760ec06770542506eba85cf01d6397d83d5cda2"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df2433b054bbb548d53e10a7124bdd628d028c49",
+      "size": 2332,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/df2433b054bbb548d53e10a7124bdd628d028c49"
+    },
+    {
+      "path": "packages",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "094d4a2c5eae944da2dea55312368012f53562b9",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/094d4a2c5eae944da2dea55312368012f53562b9"
+    },
+    {
+      "path": "packages/build-scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "77808d31d66d28527bf494a58aa999af098fca19",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/77808d31d66d28527bf494a58aa999af098fca19"
+    },
+    {
+      "path": "packages/build-scripts/build-time-constants.d.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ef9396a2b96bcfb5757ca480d8c38b62573ffaa",
+      "size": 489,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/0ef9396a2b96bcfb5757ca480d8c38b62573ffaa"
+    },
+    {
+      "path": "packages/build-scripts/tsup.config.package.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aed9c9e8472fc13d0a33193d592e5cc3df495c6d",
+      "size": 1658,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/aed9c9e8472fc13d0a33193d592e5cc3df495c6d"
+    },
+    {
+      "path": "packages/client",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b30a8426c708f835a3762ee5008fd125b4f00e3c",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/b30a8426c708f835a3762ee5008fd125b4f00e3c"
+    },
+    {
+      "path": "packages/client/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9085fe3e51273d91470de477790a0748b73bce6",
+      "size": 9,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/f9085fe3e51273d91470de477790a0748b73bce6"
+    },
+    {
+      "path": "packages/client/.npmignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2420bc8b2a355803e2eab0f57d77465a43e0ac9",
+      "size": 32,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/b2420bc8b2a355803e2eab0f57d77465a43e0ac9"
+    },
+    {
+      "path": "packages/client/CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e236c484bb63d6587c1e6e6c37a8193c29b518b",
+      "size": 15066,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/7e236c484bb63d6587c1e6e6c37a8193c29b518b"
+    },
+    {
+      "path": "packages/client/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2686d2bf2c33c7b70ef35d4223ac1e9fae0a20f",
+      "size": 9824,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/f2686d2bf2c33c7b70ef35d4223ac1e9fae0a20f"
+    },
+    {
+      "path": "packages/client/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "990958cd13716a9319305f73093a7a6f73dde7da",
+      "size": 3379,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/990958cd13716a9319305f73093a7a6f73dde7da"
+    },
+    {
+      "path": "packages/client/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0348055a00ae3b2d43d27ca8b2205e83b72b61f5",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/0348055a00ae3b2d43d27ca8b2205e83b72b61f5"
+    },
+    {
+      "path": "packages/client/src/actions.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e152f15702340bf798e266f44f61f0d5a0024e57",
+      "size": 3607,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/e152f15702340bf798e266f44f61f0d5a0024e57"
+    },
+    {
+      "path": "packages/client/src/actions.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a02dcffd8307f5dd48448c3dc97afb6e8eaa9f79",
+      "size": 4164,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/a02dcffd8307f5dd48448c3dc97afb6e8eaa9f79"
+    },
+    {
+      "path": "packages/client/src/actions.typecheck.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c84ffa62fa68147c35bfd34d3c0658a924b17642",
+      "size": 3846,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/c84ffa62fa68147c35bfd34d3c0658a924b17642"
+    },
+    {
+      "path": "packages/client/src/client",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f24c4e2d03fedba4c48dbb131893ed3aeae1f95c",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/f24c4e2d03fedba4c48dbb131893ed3aeae1f95c"
+    },
+    {
+      "path": "packages/client/src/client/actions.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca00da0acdc194e8292bf089b2e46bad547acf39",
+      "size": 9543,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/ca00da0acdc194e8292bf089b2e46bad547acf39"
+    },
+    {
+      "path": "packages/client/src/client/actions.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9ad435fb7f68d7ac4ba1d5073403f7853915058",
+      "size": 17993,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/a9ad435fb7f68d7ac4ba1d5073403f7853915058"
+    },
+    {
+      "path": "packages/client/src/client/createClient.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15861e00947af2993a3b965389259fd6abc8a472",
+      "size": 5934,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/15861e00947af2993a3b965389259fd6abc8a472"
+    },
+    {
+      "path": "packages/client/src/client/createClient.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11db5393eda647f7ab95a1ee70fa931347f4e6bb",
+      "size": 3783,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/11db5393eda647f7ab95a1ee70fa931347f4e6bb"
+    },
+    {
+      "path": "packages/client/src/client/createClientHelpers.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eec9229a52fbdba823b71fccc0389b3bb1e780e1",
+      "size": 4654,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/eec9229a52fbdba823b71fccc0389b3bb1e780e1"
+    },
+    {
+      "path": "packages/client/src/client/createClientHelpers.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71a11043687df29e664b4dc2f5dc99f9af87d70e",
+      "size": 6737,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/71a11043687df29e664b4dc2f5dc99f9af87d70e"
+    },
+    {
+      "path": "packages/client/src/client/createClientStore.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eef8a5797bd9a3e852a3c8d685cded1363d78d22",
+      "size": 1438,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/eef8a5797bd9a3e852a3c8d685cded1363d78d22"
+    },
+    {
+      "path": "packages/client/src/client/createClientStore.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f400f1c0d903c4d0098e46f94a1c76fcf047145",
+      "size": 2070,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/2f400f1c0d903c4d0098e46f94a1c76fcf047145"
+    },
+    {
+      "path": "packages/client/src/client/defaultClient.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c03bd7ebff772c6aeb608898a8c4ad7d2f808750",
+      "size": 2417,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/c03bd7ebff772c6aeb608898a8c4ad7d2f808750"
+    },
+    {
+      "path": "packages/client/src/client/watchers.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a035b6825ddee6c0e397dfaa2a0ae8ca77546d27",
+      "size": 4128,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/a035b6825ddee6c0e397dfaa2a0ae8ca77546d27"
+    },
+    {
+      "path": "packages/client/src/client/watchers.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ece67e55bcf5094dcac252d92dac2909e5f079c",
+      "size": 8821,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/5ece67e55bcf5094dcac252d92dac2909e5f079c"
+    },
+    {
+      "path": "packages/client/src/connectorkit",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0decfde1e769438f3e24f52e32f5f056fefc1b6a",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/0decfde1e769438f3e24f52e32f5f056fefc1b6a"
+    },
+    {
+      "path": "packages/client/src/connectorkit/index.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1345391fca176767f401bcffb8637db1206fb290",
+      "size": 1510,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/1345391fca176767f401bcffb8637db1206fb290"
+    },
+    {
+      "path": "packages/client/src/connectorkit/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d51c36911d6d5757555a94219ccc8c413168aa41",
+      "size": 124,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/d51c36911d6d5757555a94219ccc8c413168aa41"
+    },
+    {
+      "path": "packages/client/src/controllers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7c9acbd47a1eea01657637249258046d95804d9e",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/7c9acbd47a1eea01657637249258046d95804d9e"
+    },
+    {
+      "path": "packages/client/src/controllers/solTransferController.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab7245453e74cf82389a0dcd7629d461fd9ada04",
+      "size": 1861,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/ab7245453e74cf82389a0dcd7629d461fd9ada04"
+    },
+    {
+      "path": "packages/client/src/controllers/solTransferController.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "334bdad975e2179673dc3ad8b5ad2ca6b6588f01",
+      "size": 2642,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/334bdad975e2179673dc3ad8b5ad2ca6b6588f01"
+    },
+    {
+      "path": "packages/client/src/controllers/splTransferController.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf1489b1ebfb3c0d2ef2467f61a594b1d9766acf",
+      "size": 2256,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/cf1489b1ebfb3c0d2ef2467f61a594b1d9766acf"
+    },
+    {
+      "path": "packages/client/src/controllers/splTransferController.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebfdcfa546a71f4ee490cd63eb0c4a9095c485e3",
+      "size": 3273,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/ebfdcfa546a71f4ee490cd63eb0c4a9095c485e3"
+    },
+    {
+      "path": "packages/client/src/controllers/stakeController.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11f0cf1ec5285fd3bf90bfb063485ca635cc0e42",
+      "size": 6577,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/11f0cf1ec5285fd3bf90bfb063485ca635cc0e42"
+    },
+    {
+      "path": "packages/client/src/controllers/wsolController.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81c3844b63c05a5f401d135790f7b85dd7896bd1",
+      "size": 4382,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/81c3844b63c05a5f401d135790f7b85dd7896bd1"
+    },
+    {
+      "path": "packages/client/src/features",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3774d5d9317dc416c6454f6181dc25ae6d838cf4",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/3774d5d9317dc416c6454f6181dc25ae6d838cf4"
+    },
+    {
+      "path": "packages/client/src/features/sol.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc9ac74c93249f2090921290bf42f7f39a4ae234",
+      "size": 7924,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/bc9ac74c93249f2090921290bf42f7f39a4ae234"
+    },
+    {
+      "path": "packages/client/src/features/sol.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1446187c7b45786b47ee7d4cbe6f989b2cecfbf",
+      "size": 10410,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/f1446187c7b45786b47ee7d4cbe6f989b2cecfbf"
+    },
+    {
+      "path": "packages/client/src/features/spl.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a06577f214648f72aa87e04c7ca316992b459af8",
+      "size": 18399,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/a06577f214648f72aa87e04c7ca316992b459af8"
+    },
+    {
+      "path": "packages/client/src/features/stake.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "862c856f2fdec6fd24ac00fc41de180135288ad3",
+      "size": 5976,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/862c856f2fdec6fd24ac00fc41de180135288ad3"
+    },
+    {
+      "path": "packages/client/src/features/stake.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78e9551b626d8d57a5e3cc14b3aec16ff0b0e645",
+      "size": 24602,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/78e9551b626d8d57a5e3cc14b3aec16ff0b0e645"
+    },
+    {
+      "path": "packages/client/src/features/tokenPrograms.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8e355834681bf5a98488835cb21dbe75289dd72",
+      "size": 2909,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/d8e355834681bf5a98488835cb21dbe75289dd72"
+    },
+    {
+      "path": "packages/client/src/features/transactions.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41dda2c4350a7880416c2c849302fb8c7c433c64",
+      "size": 9195,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/41dda2c4350a7880416c2c849302fb8c7c433c64",
+      "error": "SyntaxError: Unexpected token 'i', \"import typ\"... is not valid JSON"
+    },
+    {
+      "path": "packages/client/src/features/transactions.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "778fec81c65843de8265dbca07d1dc2f084e2592",
+      "size": 16372,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/778fec81c65843de8265dbca07d1dc2f084e2592"
+    },
+    {
+      "path": "packages/client/src/features/wsol.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8fd745a547c5dd199291973d041d79446cd643c4",
+      "size": 17828,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/8fd745a547c5dd199291973d041d79446cd643c4"
+    },
+    {
+      "path": "packages/client/src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae8d3607dfda9d31f95b8056a77ce3cd33f9bfec",
+      "size": 6384,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/ae8d3607dfda9d31f95b8056a77ce3cd33f9bfec"
+    },
+    {
+      "path": "packages/client/src/logging",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a724d8746c8aacbc50f24550c78868a14c705438",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/a724d8746c8aacbc50f24550c78868a14c705438"
+    },
+    {
+      "path": "packages/client/src/logging/logger.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d83d33c05dd6675b454059cc69e01dc5c9ce2c93",
+      "size": 1973,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/d83d33c05dd6675b454059cc69e01dc5c9ce2c93"
+    },
+    {
+      "path": "packages/client/src/logging/logger.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d4ec3098917673e4f6a88d342755d16fb9001b8",
+      "size": 1758,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/9d4ec3098917673e4f6a88d342755d16fb9001b8"
+    },
+    {
+      "path": "packages/client/src/numeric",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "53790e391b03ff284ad8dc0c1c19c6bd97ccc56d",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/53790e391b03ff284ad8dc0c1c19c6bd97ccc56d"
+    },
+    {
+      "path": "packages/client/src/numeric/amounts.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0115413ffee3d29934f89e08e920f9831adc4669",
+      "size": 2097,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/0115413ffee3d29934f89e08e920f9831adc4669"
+    },
+    {
+      "path": "packages/client/src/numeric/amounts.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad3d02b0af0735a6566e6d0904537bca5afade3a",
+      "size": 9574,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/ad3d02b0af0735a6566e6d0904537bca5afade3a"
+    },
+    {
+      "path": "packages/client/src/numeric/lamports.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "736afedb205a91820ee32cb7f4009a4d368560c4",
+      "size": 1080,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/736afedb205a91820ee32cb7f4009a4d368560c4"
+    },
+    {
+      "path": "packages/client/src/numeric/lamports.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da6bd54392ed4dc51d7b667d83fa7edfe5e27ef4",
+      "size": 4410,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/da6bd54392ed4dc51d7b667d83fa7edfe5e27ef4"
+    },
+    {
+      "path": "packages/client/src/numeric/math.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca6c234e4cdb13d043d40b8eda576ed176f424c9",
+      "size": 1887,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/ca6c234e4cdb13d043d40b8eda576ed176f424c9"
+    },
+    {
+      "path": "packages/client/src/numeric/math.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6df4c9a8845edc66d5403c04e25ece0dc32b3afe",
+      "size": 4231,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/6df4c9a8845edc66d5403c04e25ece0dc32b3afe"
+    },
+    {
+      "path": "packages/client/src/numeric/rational.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43fc5a7a55852d040798acf74f646702cc5cf75a",
+      "size": 1007,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/43fc5a7a55852d040798acf74f646702cc5cf75a"
+    },
+    {
+      "path": "packages/client/src/numeric/rational.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af6357fdbd3bba8d733e3e01c53d28e5d0b00538",
+      "size": 2359,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/af6357fdbd3bba8d733e3e01c53d28e5d0b00538"
+    },
+    {
+      "path": "packages/client/src/rpc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "363f7d8c54d21286c4c9bbc01201772363a98652",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/363f7d8c54d21286c4c9bbc01201772363a98652"
+    },
+    {
+      "path": "packages/client/src/rpc/createSolanaRpcClient.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81fcca6a80e56cd86e975444666857af2de4f9fe",
+      "size": 4814,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/81fcca6a80e56cd86e975444666857af2de4f9fe",
+      "error": "SyntaxError: Unexpected token 'i', \"import typ\"... is not valid JSON"
+    },
+    {
+      "path": "packages/client/src/rpc/createSolanaRpcClient.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52e9375b1b50e38041524b03f5f912a5d3a3e7a7",
+      "size": 5979,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/52e9375b1b50e38041524b03f5f912a5d3a3e7a7"
+    },
+    {
+      "path": "packages/client/src/rpc/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8d847881078bb74162016e91cbf295b76a82fe5",
+      "size": 308,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/f8d847881078bb74162016e91cbf295b76a82fe5"
+    },
+    {
+      "path": "packages/client/src/serialization",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c741134792f7f58f4fb20c33af66843b0363d7dc",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/c741134792f7f58f4fb20c33af66843b0363d7dc"
+    },
+    {
+      "path": "packages/client/src/serialization/json.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a669bd3f4ac057a56311a1ecbce4a137a56a4797",
+      "size": 632,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/a669bd3f4ac057a56311a1ecbce4a137a56a4797"
+    },
+    {
+      "path": "packages/client/src/serialization/json.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38e06de6f19f9d1be21558e779aa18c4ca74af4f",
+      "size": 1244,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/38e06de6f19f9d1be21558e779aa18c4ca74af4f"
+    },
+    {
+      "path": "packages/client/src/serialization/state.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d06912424432bd2e469c95566aba4b28adbf70ec",
+      "size": 4359,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/d06912424432bd2e469c95566aba4b28adbf70ec"
+    },
+    {
+      "path": "packages/client/src/serialization/state.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16ffcbb406ebee5fd412763dd5bcc237d080ea9e",
+      "size": 3654,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/16ffcbb406ebee5fd412763dd5bcc237d080ea9e"
+    },
+    {
+      "path": "packages/client/src/server",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8716a51ca8defe65958f8343d0ecac5f743c267b",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/8716a51ca8defe65958f8343d0ecac5f743c267b"
+    },
+    {
+      "path": "packages/client/src/server/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd502769e2c9141ce6e75ab2d9a974fd3d9b7226",
+      "size": 61,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/dd502769e2c9141ce6e75ab2d9a974fd3d9b7226"
+    },
+    {
+      "path": "packages/client/src/server/signers.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e0b0912685488244971cdcaf9f2dd0468d05e0a",
+      "size": 1307,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/0e0b0912685488244971cdcaf9f2dd0468d05e0a",
+      "error": "SyntaxError: Unexpected token 'i', \"import { m\"... is not valid JSON"
+    },
+    {
+      "path": "packages/client/src/server/signers.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35fde1368ea6396605a3751b781a5b8361ad4c1d",
+      "size": 4494,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/35fde1368ea6396605a3751b781a5b8361ad4c1d"
+    },
+    {
+      "path": "packages/client/src/signatures",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8ab08d8efadca9228db8351619595bf7a0f2de66",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/8ab08d8efadca9228db8351619595bf7a0f2de66"
+    },
+    {
+      "path": "packages/client/src/signatures/status.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "453b66cae89eaafaadf30165a238009b325bb03a",
+      "size": 1271,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/453b66cae89eaafaadf30165a238009b325bb03a",
+      "error": "SyntaxError: Unexpected token 'i', \"import { d\"... is not valid JSON"
+    },
+    {
+      "path": "packages/client/src/signatures/status.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33fa07089636970ebd84cd95cc2fc187ed239cd1",
+      "size": 1523,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/33fa07089636970ebd84cd95cc2fc187ed239cd1"
+    },
+    {
+      "path": "packages/client/src/signers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fe16f2a4ccf969c79dffdf7f05c1d78551422c45",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/fe16f2a4ccf969c79dffdf7f05c1d78551422c45"
+    },
+    {
+      "path": "packages/client/src/signers/walletTransactionSigner.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b098a9590b8c4391a0439d79229e8daadb7e0ba",
+      "size": 4295,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/6b098a9590b8c4391a0439d79229e8daadb7e0ba",
+      "error": "SyntaxError: Unexpected token 'i', \"import { g\"... is not valid JSON"
+    },
+    {
+      "path": "packages/client/src/signers/walletTransactionSigner.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9ab56a79fda280ecf6813eb307f2867e5e7ac74",
+      "size": 5674,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/d9ab56a79fda280ecf6813eb307f2867e5e7ac74"
+    },
+    {
+      "path": "packages/client/src/state",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f6f2705bd4f36b203bb3606d763425e536235fdb",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/f6f2705bd4f36b203bb3606d763425e536235fdb"
+    },
+    {
+      "path": "packages/client/src/state/asyncState.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71bbdbc35243dcaeb30de6168e2f3e5c4a79feef",
+      "size": 656,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/71bbdbc35243dcaeb30de6168e2f3e5c4a79feef"
+    },
+    {
+      "path": "packages/client/src/state/asyncState.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc0daab5c4012c67482189fd9bb82ddaa8d8e9f7",
+      "size": 463,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/bc0daab5c4012c67482189fd9bb82ddaa8d8e9f7"
+    },
+    {
+      "path": "packages/client/src/transactions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "721a80833d61630e8a75623873ee878f0c777a99",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/721a80833d61630e8a75623873ee878f0c777a99"
+    },
+    {
+      "path": "packages/client/src/transactions/base64.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c0c0d3cf693a50efaa6211ec4ab2ecc5d13b18d",
+      "size": 1138,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/3c0c0d3cf693a50efaa6211ec4ab2ecc5d13b18d"
+    },
+    {
+      "path": "packages/client/src/transactions/prepareTransaction.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c745102faa07da914a79f76a9a29d3a9d6ae8f1",
+      "size": 5812,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/7c745102faa07da914a79f76a9a29d3a9d6ae8f1",
+      "error": "SyntaxError: Unexpected token 'i', \"import typ\"... is not valid JSON"
+    },
+    {
+      "path": "packages/client/src/transactions/prepareTransaction.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17f8194a4f7dccb05af903ffb2bd16e5b7c3f75c",
+      "size": 5102,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/17f8194a4f7dccb05af903ffb2bd16e5b7c3f75c"
+    },
+    {
+      "path": "packages/client/src/transactions/referenceKeys.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e04898a176547dd309cc0418aac98b211bfb9cfb",
+      "size": 2020,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/e04898a176547dd309cc0418aac98b211bfb9cfb"
+    },
+    {
+      "path": "packages/client/src/transactions/referenceKeys.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22e4778ef1fe2e0ee15b81eb6059639f4949f668",
+      "size": 1692,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/22e4778ef1fe2e0ee15b81eb6059639f4949f668"
+    },
+    {
+      "path": "packages/client/src/transactions/transactionPoolController.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db1c57ed3e97861a03e68760a79e46404e6fff2d",
+      "size": 2646,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/db1c57ed3e97861a03e68760a79e46404e6fff2d"
+    },
+    {
+      "path": "packages/client/src/transactions/transactionPoolController.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "847da02e711621bf6d5fe126ee828f51b5d0365b",
+      "size": 10719,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/847da02e711621bf6d5fe126ee828f51b5d0365b"
+    },
+    {
+      "path": "packages/client/src/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be924e0fca1d8a30c451e7d909bf04d7402d4d4b",
+      "size": 9121,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/be924e0fca1d8a30c451e7d909bf04d7402d4d4b"
+    },
+    {
+      "path": "packages/client/src/utils.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc441c36191bee8854f429be6f85a3444e127e19",
+      "size": 986,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/bc441c36191bee8854f429be6f85a3444e127e19"
+    },
+    {
+      "path": "packages/client/src/utils.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8eadb6c5068680eb3b008f86b52c0d50e59b4312",
+      "size": 1177,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/8eadb6c5068680eb3b008f86b52c0d50e59b4312"
+    },
+    {
+      "path": "packages/client/src/utils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1f261d228cbd0d7d65ce115dd65e415e5e61f217",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/1f261d228cbd0d7d65ce115dd65e415e5e61f217"
+    },
+    {
+      "path": "packages/client/src/utils/addressLike.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b83ea479d8e2993eb83f7499c8823766db9ad93",
+      "size": 692,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/0b83ea479d8e2993eb83f7499c8823766db9ad93"
+    },
+    {
+      "path": "packages/client/src/utils/addressLike.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58dd079e2b8fa71d53f7ecd67199b225a70d574c",
+      "size": 377,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/58dd079e2b8fa71d53f7ecd67199b225a70d574c"
+    },
+    {
+      "path": "packages/client/src/utils/cluster.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "542cb9e358bc3a5e9c7484fcdfd436ca58b67572",
+      "size": 997,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/542cb9e358bc3a5e9c7484fcdfd436ca58b67572"
+    },
+    {
+      "path": "packages/client/src/utils/cluster.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38c3f0623ec9cb1169da65c54e50d782bcb42c68",
+      "size": 2487,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/38c3f0623ec9cb1169da65c54e50d782bcb42c68"
+    },
+    {
+      "path": "packages/client/src/utils/stableStringify.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20baa18598b87998056fd792574d2f999b8b2b04",
+      "size": 515,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/20baa18598b87998056fd792574d2f999b8b2b04"
+    },
+    {
+      "path": "packages/client/src/utils/stableStringify.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00f8e747489284eadc572c4ac733a014b1f9f413",
+      "size": 469,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/00f8e747489284eadc572c4ac733a014b1f9f413"
+    },
+    {
+      "path": "packages/client/src/wallet",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dced213fb3ce17f8dc7847e36c9c4d6c1039d1df",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/dced213fb3ce17f8dc7847e36c9c4d6c1039d1df"
+    },
+    {
+      "path": "packages/client/src/wallet/connectorkit.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc7deeb8d62d5b88c815f0650ac6e866c24a5ca6",
+      "size": 3905,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/fc7deeb8d62d5b88c815f0650ac6e866c24a5ca6"
+    },
+    {
+      "path": "packages/client/src/wallet/connectors.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7cf04c02deaf37d52d1210edd72b365400d5a495",
+      "size": 2784,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/7cf04c02deaf37d52d1210edd72b365400d5a495"
+    },
+    {
+      "path": "packages/client/src/wallet/connectors.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "558797c3ada1633d45fa47ef8028c229481b0464",
+      "size": 3838,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/558797c3ada1633d45fa47ef8028c229481b0464"
+    },
+    {
+      "path": "packages/client/src/wallet/registry.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c618afd58eed30726c4bba68b0ddb0d3a0a4079b",
+      "size": 1905,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/c618afd58eed30726c4bba68b0ddb0d3a0a4079b"
+    },
+    {
+      "path": "packages/client/src/wallet/registry.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c0ce7c6b798627c8f86b944de86c88c6391126b",
+      "size": 1356,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/2c0ce7c6b798627c8f86b944de86c88c6391126b"
+    },
+    {
+      "path": "packages/client/src/wallet/standard.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17858dbacf479798666c17801d7dbaf01998f2ef",
+      "size": 2812,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/17858dbacf479798666c17801d7dbaf01998f2ef"
+    },
+    {
+      "path": "packages/client/src/wallet/standard.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fdee54cae86780131521b1f2d1307e5bf733ea61",
+      "size": 13049,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/fdee54cae86780131521b1f2d1307e5bf733ea61"
+    },
+    {
+      "path": "packages/client/src/wallet/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b2f637e8b785929bae6f07e412aff5a1abdc813",
+      "size": 1830,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/5b2f637e8b785929bae6f07e412aff5a1abdc813"
+    },
+    {
+      "path": "packages/client/tsconfig.declarations.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "229a9e77dbcb3132261c8adf0086d88e82b41132",
+      "size": 339,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/229a9e77dbcb3132261c8adf0086d88e82b41132"
+    },
+    {
+      "path": "packages/client/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ad540d2335df5f1ba683f7c1313dea5c4252d00",
+      "size": 355,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/3ad540d2335df5f1ba683f7c1313dea5c4252d00"
+    },
+    {
+      "path": "packages/client/tsconfig.test.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "227211b688d07a1a688304b00e066aa8c98202ae",
+      "size": 152,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/227211b688d07a1a688304b00e066aa8c98202ae"
+    },
+    {
+      "path": "packages/client/typedoc.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da60fb300795819e40fb7deca787f17e5c2f6eb0",
+      "size": 581,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/da60fb300795819e40fb7deca787f17e5c2f6eb0"
+    },
+    {
+      "path": "packages/client/vitest.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5f02c048dc76efa52f450d8ae13b266c1888261",
+      "size": 337,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/f5f02c048dc76efa52f450d8ae13b266c1888261"
+    },
+    {
+      "path": "packages/client/vitest.setup.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f38502b597311301a91d7e3ce3256a8f31dd41b",
+      "size": 36,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/3f38502b597311301a91d7e3ce3256a8f31dd41b"
+    },
+    {
+      "path": "packages/react-hooks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d4fe08da84a4355609a5e7cc215333fc83ecb34b",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/d4fe08da84a4355609a5e7cc215333fc83ecb34b"
+    },
+    {
+      "path": "packages/react-hooks/.npmignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2420bc8b2a355803e2eab0f57d77465a43e0ac9",
+      "size": 32,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/b2420bc8b2a355803e2eab0f57d77465a43e0ac9"
+    },
+    {
+      "path": "packages/react-hooks/CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac6882dc94779f88880f3bff58c343d86df024a1",
+      "size": 20299,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/ac6882dc94779f88880f3bff58c343d86df024a1"
+    },
+    {
+      "path": "packages/react-hooks/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2acb77074878dda410693f4c7a876e09c9c6f771",
+      "size": 13993,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/2acb77074878dda410693f4c7a876e09c9c6f771"
+    },
+    {
+      "path": "packages/react-hooks/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48c9662c1cb2ee51f7102419fa8b231fbc3bdf52",
+      "size": 2075,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/48c9662c1cb2ee51f7102419fa8b231fbc3bdf52"
+    },
+    {
+      "path": "packages/react-hooks/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e232131886b24d649473911ff4f8839f15c5280e",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/e232131886b24d649473911ff4f8839f15c5280e"
+    },
+    {
+      "path": "packages/react-hooks/src/QueryProvider.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "209a6f74e49876bc3600d50506df334d14ba72c2",
+      "size": 1988,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/209a6f74e49876bc3600d50506df334d14ba72c2"
+    },
+    {
+      "path": "packages/react-hooks/src/SolanaProvider.test.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa923b812b14799c82b87c3ab61c6146f58592c6",
+      "size": 8066,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/fa923b812b14799c82b87c3ab61c6146f58592c6"
+    },
+    {
+      "path": "packages/react-hooks/src/SolanaProvider.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c90a64ef97375b867840bac4fd192c1f12d0db30",
+      "size": 7035,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/c90a64ef97375b867840bac4fd192c1f12d0db30"
+    },
+    {
+      "path": "packages/react-hooks/src/context.test.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d94d915ff90a777a180db0114fe3e675782517a0",
+      "size": 2720,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/d94d915ff90a777a180db0114fe3e675782517a0"
+    },
+    {
+      "path": "packages/react-hooks/src/context.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f777d0274992c4f6eef17e300988bc89a999701",
+      "size": 1936,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/3f777d0274992c4f6eef17e300988bc89a999701"
+    },
+    {
+      "path": "packages/react-hooks/src/globals.d.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62beeed0742665b7dbb09d03606c6daa0f55d46b",
+      "size": 71,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/62beeed0742665b7dbb09d03606c6daa0f55d46b"
+    },
+    {
+      "path": "packages/react-hooks/src/hooks.account.test.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68a4164ce57c62adc02034f946d9da1bd396608d",
+      "size": 5727,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/68a4164ce57c62adc02034f946d9da1bd396608d"
+    },
+    {
+      "path": "packages/react-hooks/src/hooks.cluster.test.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25a534c1b170514e5646becbc6ecb90a55c2da99",
+      "size": 3056,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/25a534c1b170514e5646becbc6ecb90a55c2da99"
+    },
+    {
+      "path": "packages/react-hooks/src/hooks.query.test.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8638fb4c14841ea692f89a3500e5264402d3bab8",
+      "size": 3633,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/8638fb4c14841ea692f89a3500e5264402d3bab8"
+    },
+    {
+      "path": "packages/react-hooks/src/hooks.signature.test.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69eafaaba5aa5b62f06995609a35670bb40b6fc7",
+      "size": 2523,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/69eafaaba5aa5b62f06995609a35670bb40b6fc7"
+    },
+    {
+      "path": "packages/react-hooks/src/hooks.stake.test.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2596c5fb8cd3acb5f8ca26b9a5d6dcd4d63770f",
+      "size": 4130,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/e2596c5fb8cd3acb5f8ca26b9a5d6dcd4d63770f"
+    },
+    {
+      "path": "packages/react-hooks/src/hooks.transaction.test.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a32748c8628a23c789bead1e68e9d0d3210e91e",
+      "size": 4405,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/6a32748c8628a23c789bead1e68e9d0d3210e91e"
+    },
+    {
+      "path": "packages/react-hooks/src/hooks.transfer.test.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fa3a0eec6f34b4630c8e48b93ae74d4189cb3e0",
+      "size": 5413,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/6fa3a0eec6f34b4630c8e48b93ae74d4189cb3e0"
+    },
+    {
+      "path": "packages/react-hooks/src/hooks.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b029ce80d210b8f33c9a3790c60714fa12a1399",
+      "size": 47514,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/1b029ce80d210b8f33c9a3790c60714fa12a1399"
+    },
+    {
+      "path": "packages/react-hooks/src/hooks.typecheck.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc6fb0c83a5c73d1d47507616783cca32ea3fc54",
+      "size": 1801,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/fc6fb0c83a5c73d1d47507616783cca32ea3fc54"
+    },
+    {
+      "path": "packages/react-hooks/src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3274f49d15adf93e68b22d4e0e1078d006dc8c3",
+      "size": 2870,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/b3274f49d15adf93e68b22d4e0e1078d006dc8c3"
+    },
+    {
+      "path": "packages/react-hooks/src/query.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9499942d213c495dde9ddea7207385dfaf2b092",
+      "size": 3495,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/f9499942d213c495dde9ddea7207385dfaf2b092"
+    },
+    {
+      "path": "packages/react-hooks/src/queryHooks.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3dd9b407564918966fbd3db479bf8d0a7f89c358",
+      "size": 7553,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/3dd9b407564918966fbd3db479bf8d0a7f89c358"
+    },
+    {
+      "path": "packages/react-hooks/src/queryKeys.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "123cf45a0e2c764c675efd20968e1599d739525d",
+      "size": 2206,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/123cf45a0e2c764c675efd20968e1599d739525d"
+    },
+    {
+      "path": "packages/react-hooks/src/querySuspense.test.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74386e31caa77d42f5d6824887715fe0ef3add95",
+      "size": 2908,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/74386e31caa77d42f5d6824887715fe0ef3add95"
+    },
+    {
+      "path": "packages/react-hooks/src/querySuspenseContext.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "468d5c445b65e436157901c3de75d307024e259b",
+      "size": 275,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/468d5c445b65e436157901c3de75d307024e259b"
+    },
+    {
+      "path": "packages/react-hooks/src/ui.test.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eceeb0dd09f15329f1e6ad7713a04a7e5c0b3815",
+      "size": 2752,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/eceeb0dd09f15329f1e6ad7713a04a7e5c0b3815"
+    },
+    {
+      "path": "packages/react-hooks/src/ui.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a73049b34fc734a272988af5cdcd02a6f9e895db",
+      "size": 6666,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/a73049b34fc734a272988af5cdcd02a6f9e895db"
+    },
+    {
+      "path": "packages/react-hooks/src/useClientStore.test.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5b3c67ec74222b37fda63854a3170d55057f55b",
+      "size": 1345,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/b5b3c67ec74222b37fda63854a3170d55057f55b"
+    },
+    {
+      "path": "packages/react-hooks/src/useClientStore.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57d770d43320b5e5a67f2e983603e62df73a590d",
+      "size": 1272,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/57d770d43320b5e5a67f2e983603e62df73a590d"
+    },
+    {
+      "path": "packages/react-hooks/test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1d678911600472876ce03cd9b79ab5dc37f06985",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/1d678911600472876ce03cd9b79ab5dc37f06985"
+    },
+    {
+      "path": "packages/react-hooks/test/fixtures.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4531e0e153e2256650a25ba5ed07bf28b7d23996",
+      "size": 2305,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/4531e0e153e2256650a25ba5ed07bf28b7d23996"
+    },
+    {
+      "path": "packages/react-hooks/test/mocks.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "201550a368a31708a8e383bf13bb123920cbc623",
+      "size": 11891,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/201550a368a31708a8e383bf13bb123920cbc623"
+    },
+    {
+      "path": "packages/react-hooks/test/utils.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7e3d704f8b20aff99b42efa35ba22365cfdc5e9",
+      "size": 2556,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/c7e3d704f8b20aff99b42efa35ba22365cfdc5e9"
+    },
+    {
+      "path": "packages/react-hooks/tsconfig.bundle.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9bdc02ff77ca2d34b1acb1142a5ec3dc8bcd7e79",
+      "size": 257,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/9bdc02ff77ca2d34b1acb1142a5ec3dc8bcd7e79"
+    },
+    {
+      "path": "packages/react-hooks/tsconfig.declarations.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0236cb347296919f623c2f359efe8f88fe66a330",
+      "size": 376,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/0236cb347296919f623c2f359efe8f88fe66a330"
+    },
+    {
+      "path": "packages/react-hooks/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e9d0ae040bd81d667ba8ae029e83797a6ae109b",
+      "size": 472,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/7e9d0ae040bd81d667ba8ae029e83797a6ae109b"
+    },
+    {
+      "path": "packages/tsconfig",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "00da4547d0f3e1fcf92afeba324a31e454f43229",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/00da4547d0f3e1fcf92afeba324a31e454f43229"
+    },
+    {
+      "path": "packages/tsconfig/base.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbdec5252153c8f50806a41fb4b6cd0fe4b8a1f8",
+      "size": 583,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/fbdec5252153c8f50806a41fb4b6cd0fe4b8a1f8"
+    },
+    {
+      "path": "packages/web3-compat",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7e763c76cf7019d258c9eb54b01cf55c3ce7f4fc",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/7e763c76cf7019d258c9eb54b01cf55c3ce7f4fc"
+    },
+    {
+      "path": "packages/web3-compat/CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a071141adbd8dc15aeb7ae28e6e2f9ef8acef62",
+      "size": 5331,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/9a071141adbd8dc15aeb7ae28e6e2f9ef8acef62"
+    },
+    {
+      "path": "packages/web3-compat/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0bfaca769c2ab7b74466a30c1f051d4b52c05807",
+      "size": 4517,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/0bfaca769c2ab7b74466a30c1f051d4b52c05807"
+    },
+    {
+      "path": "packages/web3-compat/examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5c11fb81c25e304648e7c52732b8742565326417",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/5c11fb81c25e304648e7c52732b8742565326417"
+    },
+    {
+      "path": "packages/web3-compat/examples/explorer",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7063b9636ad306d22393f852346a22176e90e297",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/7063b9636ad306d22393f852346a22176e90e297"
+    },
+    {
+      "path": "packages/web3-compat/examples/explorer/name-service.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96afe8245554159abb2b6223d8c9f6e3e869357a",
+      "size": 1221,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/96afe8245554159abb2b6223d8c9f6e3e869357a"
+    },
+    {
+      "path": "packages/web3-compat/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8669a5fbfa9b97a9d16c8b5397195e1385a6331c",
+      "size": 2087,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/8669a5fbfa9b97a9d16c8b5397195e1385a6331c"
+    },
+    {
+      "path": "packages/web3-compat/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "00798e234b1160f40b36fb03d513ff8dee6c787a",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/00798e234b1160f40b36fb03d513ff8dee6c787a"
+    },
+    {
+      "path": "packages/web3-compat/src/bridges.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0632763781aa9fbf6869c2809686e5c3e447c3a0",
+      "size": 2108,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/0632763781aa9fbf6869c2809686e5c3e447c3a0"
+    },
+    {
+      "path": "packages/web3-compat/src/connection.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8444c862c0aa33cb3128ad5a85bc60d6520fbc45",
+      "size": 16130,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/8444c862c0aa33cb3128ad5a85bc60d6520fbc45"
+    },
+    {
+      "path": "packages/web3-compat/src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d064d76ce06f8c4622d98784c397bf649a4f109b",
+      "size": 454,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/d064d76ce06f8c4622d98784c397bf649a4f109b"
+    },
+    {
+      "path": "packages/web3-compat/src/programs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a7d778ddbab5669af4a2868729024cbb204ac3f3",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/a7d778ddbab5669af4a2868729024cbb204ac3f3"
+    },
+    {
+      "path": "packages/web3-compat/src/programs/system-program.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "729b69dce404afada498c48f0f83f5dffe793f39",
+      "size": 794,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/729b69dce404afada498c48f0f83f5dffe793f39"
+    },
+    {
+      "path": "packages/web3-compat/src/utils.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96b293142066c700db793a5999291a45db607527",
+      "size": 1985,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/96b293142066c700db793a5999291a45db607527"
+    },
+    {
+      "path": "packages/web3-compat/test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5c4b332cf989fe582f2ce26b054ca8e1e2c37dfd",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/5c4b332cf989fe582f2ce26b054ca8e1e2c37dfd"
+    },
+    {
+      "path": "packages/web3-compat/test/bridges.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1731547e4952b56e8f4784a2f4818e08be91a87d",
+      "size": 2263,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/1731547e4952b56e8f4784a2f4818e08be91a87d"
+    },
+    {
+      "path": "packages/web3-compat/test/connection.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0877534a0580d27723df17567164e66b8a532521",
+      "size": 10194,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/0877534a0580d27723df17567164e66b8a532521"
+    },
+    {
+      "path": "packages/web3-compat/test/examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "21cd2aebed89302bb67e0bdade0e2029814673ed",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/21cd2aebed89302bb67e0bdade0e2029814673ed"
+    },
+    {
+      "path": "packages/web3-compat/test/examples/name-service.integration.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "895023c6f331628b979e850189ee9b9c97059e05",
+      "size": 2186,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/895023c6f331628b979e850189ee9b9c97059e05"
+    },
+    {
+      "path": "packages/web3-compat/test/system-program.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "497189d37234fce334aa7b69597d0ff35db47def",
+      "size": 1055,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/497189d37234fce334aa7b69597d0ff35db47def"
+    },
+    {
+      "path": "packages/web3-compat/test/utils.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1570d6ff68b1bd7bd12e25477321f5028d29a510",
+      "size": 3807,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/1570d6ff68b1bd7bd12e25477321f5028d29a510"
+    },
+    {
+      "path": "packages/web3-compat/tsconfig.declarations.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f35f91cd04c1953ab86dd7f9357f33e78c6dc807",
+      "size": 243,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/f35f91cd04c1953ab86dd7f9357f33e78c6dc807"
+    },
+    {
+      "path": "packages/web3-compat/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5bc1539263a9e76f3ceaba6a3e2e0ac170669d91",
+      "size": 438,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/5bc1539263a9e76f3ceaba6a3e2e0ac170669d91"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57dd74a6ad58c25aaefdb04c1347264dcd8e9422",
+      "size": 519119,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/57dd74a6ad58c25aaefdb04c1347264dcd8e9422"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "944f28e9e591840971edad2cb8297382b1dd3e42",
+      "size": 1526,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/944f28e9e591840971edad2cb8297382b1dd3e42"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0bee858745a3383eaad67bd40bd745cef036e17b",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/0bee858745a3383eaad67bd40bd745cef036e17b"
+    },
+    {
+      "path": "tests/types-smoke",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fcd3b7e115e6a0f78a9ec3e958bcf56f6e9a5392",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/fcd3b7e115e6a0f78a9ec3e958bcf56f6e9a5392"
+    },
+    {
+      "path": "tests/types-smoke/CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c2cd89cf28a331c78a286b47bda73907f785b70",
+      "size": 9017,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/4c2cd89cf28a331c78a286b47bda73907f785b70"
+    },
+    {
+      "path": "tests/types-smoke/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8f19f4eb6b5f2e767e67758439cf9edda06cb0a",
+      "size": 549,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/f8f19f4eb6b5f2e767e67758439cf9edda06cb0a"
+    },
+    {
+      "path": "tests/types-smoke/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2b5ce913ed708fdfc5d3fbb82fb8e2d4de110d4e",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/2b5ce913ed708fdfc5d3fbb82fb8e2d4de110d4e"
+    },
+    {
+      "path": "tests/types-smoke/src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "213d871a24e9ef72cf6e45a07a2de7f39f93a772",
+      "size": 742,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/213d871a24e9ef72cf6e45a07a2de7f39f93a772"
+    },
+    {
+      "path": "tests/types-smoke/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2db68af83c3e02aecce8048adb064079fe6eb4e",
+      "size": 465,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/d2db68af83c3e02aecce8048adb064079fe6eb4e"
+    },
+    {
+      "path": "tests/web3-compat-parity-tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5e982be151a8d5588cb36972d0578b3b563807ec",
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/trees/5e982be151a8d5588cb36972d0578b3b563807ec"
+    },
+    {
+      "path": "tests/web3-compat-parity-tests/account-info.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ea4da1fec9b29de41e3af547435a3acabfedfee",
+      "size": 1445,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/6ea4da1fec9b29de41e3af547435a3acabfedfee"
+    },
+    {
+      "path": "tests/web3-compat-parity-tests/blockhash-and-balance.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0db0d227bbfcb12fc8d9be28cbf3e9a15cc8d0e7",
+      "size": 1077,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/0db0d227bbfcb12fc8d9be28cbf3e9a15cc8d0e7"
+    },
+    {
+      "path": "tests/web3-compat-parity-tests/normalization.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "505dd9c36e9e2c785ca4b7b4260566877f8f1b30",
+      "size": 2515,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/505dd9c36e9e2c785ca4b7b4260566877f8f1b30"
+    },
+    {
+      "path": "tests/web3-compat-parity-tests/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a62c95de613b63442c8f0417e82044d113879c09",
+      "size": 436,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/a62c95de613b63442c8f0417e82044d113879c09"
+    },
+    {
+      "path": "tests/web3-compat-parity-tests/parity-helpers.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d7ad1cfa1676b814bcb3342d3e62766bb5c6ceb",
+      "size": 11741,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/4d7ad1cfa1676b814bcb3342d3e62766bb5c6ceb"
+    },
+    {
+      "path": "tests/web3-compat-parity-tests/signature-flow.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c97c020c5ee5164e477aeb15d3e789f177acfab",
+      "size": 1480,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/2c97c020c5ee5164e477aeb15d3e789f177acfab"
+    },
+    {
+      "path": "tests/web3-compat-parity-tests/simulate-transaction.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "295b8ab40187913c6effa1a8544639d2b08d5ccb",
+      "size": 1241,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/295b8ab40187913c6effa1a8544639d2b08d5ccb"
+    },
+    {
+      "path": "tests/web3-compat-parity-tests/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f659ae6d93315b050b7e540d51c935b3ad89bf48",
+      "size": 269,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/f659ae6d93315b050b7e540d51c935b3ad89bf48"
+    },
+    {
+      "path": "turbo.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "baeb4a660e10c1ba527f4412f83a702852d228ca",
+      "size": 706,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/baeb4a660e10c1ba527f4412f83a702852d228ca"
+    },
+    {
+      "path": "vitest.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a95025f78e1d2951c47f92ef855b96be4185001",
+      "size": 904,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/3a95025f78e1d2951c47f92ef855b96be4185001"
+    },
+    {
+      "path": "vitest.setup.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db90d77042bad971ab256d121af571143254d59a",
+      "size": 99,
+      "url": "https://api.github.com/repos/solana-foundation/framework-kit/git/blobs/db90d77042bad971ab256d121af571143254d59a"
+    }
+  ]
+}

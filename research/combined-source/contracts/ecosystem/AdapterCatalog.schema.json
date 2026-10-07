@@ -1,0 +1,186 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "deproof:adapter-catalog-v1",
+  "title": "AdapterCatalog",
+  "description": "Versioned catalog of DePIN project adapters. Each entry is independently versioned and carries explicit status, hardware requirements, and qualification state. No entry implies a partnership or guaranteed reward.",
+  "type": "object",
+  "required": ["schema", "version", "generatedAt", "adapters"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "type": "string", "const": "deproof:adapter-catalog-v1" },
+    "version": { "type": "string" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "adapters": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/AdapterEntry" }
+    }
+  },
+  "definitions": {
+    "AdapterEntry": {
+      "type": "object",
+      "required": [
+        "id", "name", "status", "chain", "licenseType",
+        "requiredHardware", "operations", "qualificationStatus",
+        "contributionMeasurement"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable adapter identifier. Format: deproof-adapter-<slug>-v<N>"
+        },
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "status": {
+          "type": "string",
+          "enum": ["PLANNED", "UNSUPPORTED", "AVAILABLE", "QUALIFIED", "BLOCKED"],
+          "description": "Lifecycle state. PLANNED: under design. UNSUPPORTED: hardware or protocol requirements cannot be met. AVAILABLE: code exists, not yet qualified. QUALIFIED: all qualification gates passed locally. BLOCKED: depends on an unresolved external prerequisite."
+        },
+        "blockedReason": {
+          "type": "string",
+          "description": "Required when status=BLOCKED. Must name the specific missing prerequisite."
+        },
+        "chain": {
+          "type": "string",
+          "description": "Primary blockchain. e.g. solana-mainnet, solana-devnet, ethereum-mainnet"
+        },
+        "officialDocsUrl": {
+          "type": "string",
+          "description": "URL to official project documentation as of catalog generatedAt. Not a partnership claim."
+        },
+        "licenseType": {
+          "type": "string",
+          "description": "License of the upstream project or required components."
+        },
+        "installMethod": {
+          "type": "string",
+          "enum": ["docker-image", "binary", "apt-package", "npm-package", "none", "unknown"],
+          "description": "How the workload is installed on the Ubuntu node."
+        },
+        "pinnedArtifactDigest": {
+          "type": "string",
+          "description": "SHA-256 or sha256: prefixed digest of the pinned artifact. Empty until AVAILABLE."
+        },
+        "supportedOS": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "e.g. [\"ubuntu-22.04\", \"ubuntu-24.04\"]"
+        },
+        "supportedArch": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "e.g. [\"amd64\", \"arm64\"]"
+        },
+        "requiredHardware": {
+          "type": "object",
+          "description": "Hardware capabilities the node must provide. All fields are minimums unless noted.",
+          "properties": {
+            "minRamMiB": { "type": "integer" },
+            "minDiskMiB": { "type": "integer" },
+            "minCpuCores": { "type": "integer" },
+            "requiresGpu": { "type": "boolean" },
+            "requiresSpecialHardware": {
+              "type": "string",
+              "description": "e.g. Helium hotspot radio, GPS receiver"
+            },
+            "openPorts": {
+              "type": "array",
+              "items": { "type": "integer" }
+            }
+          },
+          "additionalProperties": false
+        },
+        "requiredAccounts": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "External accounts required, e.g. [\"helium-wallet\", \"solana-rpc\"]."
+        },
+        "requiredCredentials": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Named credential slots — never stores values."
+        },
+        "requiredScopes": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "DeProof node-agent scopes required to operate this adapter."
+        },
+        "operations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "description", "requiredScope"],
+            "additionalProperties": false,
+            "properties": {
+              "id": { "type": "string" },
+              "description": { "type": "string" },
+              "requiredScope": { "type": "string" },
+              "contributionKind": {
+                "type": "string",
+                "enum": [
+                  "bandwidth", "storage", "compute", "coverage",
+                  "location", "latency-measurement", "none"
+                ]
+              }
+            }
+          }
+        },
+        "contributionMeasurement": {
+          "type": "object",
+          "required": ["method", "verificationMethod", "trustLevel"],
+          "additionalProperties": false,
+          "properties": {
+            "method": {
+              "type": "string",
+              "description": "How contribution is measured (e.g. byte-counter, proof-submission)."
+            },
+            "verificationMethod": {
+              "type": "string",
+              "description": "How the measurement can be independently verified."
+            },
+            "trustLevel": {
+              "type": "string",
+              "enum": [
+                "LOCAL_OBSERVATION",
+                "NODE_SIGNED_RECORD",
+                "INDEPENDENTLY_VERIFIED_RESULT",
+                "PROVIDER_ACKNOWLEDGED_CONTRIBUTION"
+              ]
+            },
+            "notes": { "type": "string" }
+          }
+        },
+        "qualificationStatus": {
+          "type": "object",
+          "required": ["state", "lastChecked"],
+          "additionalProperties": false,
+          "properties": {
+            "state": {
+              "type": "string",
+              "enum": ["NOT_RUN", "VERIFIED_LOCAL", "BLOCKED", "FAILED"]
+            },
+            "lastChecked": { "type": "string" },
+            "gateIds": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "notes": { "type": "string" }
+          }
+        },
+        "skrIntegration": {
+          "type": "object",
+          "description": "SKR-specific integration notes. Only populated when an officially verified SKR interface exists.",
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": ["BLOCKED", "AVAILABLE", "QUALIFIED"],
+              "description": "BLOCKED unless an officially verified SKR interface and qualified counterparty exist."
+            },
+            "reason": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

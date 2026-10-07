@@ -1,0 +1,397 @@
+{
+  "repository": "solana-mobile/solana-mobile-skills",
+  "tree_sha": "cb22465fc4954f9b1a3ca0ce5cd57fd8f2c51171",
+  "truncated": false,
+  "entries": [
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5de2e2ce76243402647aec9fd1966cb053cb96c8",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/trees/5de2e2ce76243402647aec9fd1966cb053cb96c8"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c776d2ea02e2b88eb72cdc7a729f3c3c4cbc4d8b",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/trees/c776d2ea02e2b88eb72cdc7a729f3c3c4cbc4d8b"
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "494b672b4d21f99202eebdcdf6d16c4c5cd1b1fc",
+      "size": 1866,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/494b672b4d21f99202eebdcdf6d16c4c5cd1b1fc"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "646ac519ef2111a8c1f9698fa8331115601809be",
+      "size": 24,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/646ac519ef2111a8c1f9698fa8331115601809be"
+    },
+    {
+      "path": "AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad4b6e413702bbd84859ba8faf0bc00bfe59ccd5",
+      "size": 4679,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/ad4b6e413702bbd84859ba8faf0bc00bfe59ccd5"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29c9becae46882ff99a27fc52fe81e3f2a91f25e",
+      "size": 11349,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/29c9becae46882ff99a27fc52fe81e3f2a91f25e",
+      "error": "SyntaxError: Unexpected token 'A', ...\"          Apache Lic\"... is not valid JSON"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c56a1e5dc30b8b2011a1191e2380bf517ad6d734",
+      "size": 7282,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/c56a1e5dc30b8b2011a1191e2380bf517ad6d734",
+      "error": "SyntaxError: Unexpected token '#', \"# Solana M\"... is not valid JSON"
+    },
+    {
+      "path": "plugin.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3890ac9192a94df4969432f24b2079efc92cbfb3",
+      "size": 491,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/3890ac9192a94df4969432f24b2079efc92cbfb3"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1e0ce302d4e104625a19c23aa9dac95bc1d02ecb",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/trees/1e0ce302d4e104625a19c23aa9dac95bc1d02ecb"
+    },
+    {
+      "path": "scripts/check-links.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "213f545c05115b49ec3510dd5969205ce30e65fa",
+      "size": 7994,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/213f545c05115b49ec3510dd5969205ce30e65fa"
+    },
+    {
+      "path": "scripts/validate-skill.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "a5f0bfd08b96f59ec20a35e4183e8065fbaf9d21",
+      "size": 4506,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/a5f0bfd08b96f59ec20a35e4183e8065fbaf9d21"
+    },
+    {
+      "path": "scripts/validate-skills.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "69fb675e8abfc46409dc956e7af20f0885161eeb",
+      "size": 2173,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/69fb675e8abfc46409dc956e7af20f0885161eeb"
+    },
+    {
+      "path": "skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5358afcc6ed242106f917dc3d53e83c720af567d",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/trees/5358afcc6ed242106f917dc3d53e83c720af567d"
+    },
+    {
+      "path": "skills/integration-privy",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cd7bed6baf64e03b94e9a84ae826cb2bcd914ebe",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/trees/cd7bed6baf64e03b94e9a84ae826cb2bcd914ebe"
+    },
+    {
+      "path": "skills/integration-privy/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33fe9ac67aafef86ac43143e1c83beb566f34140",
+      "size": 10463,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/33fe9ac67aafef86ac43143e1c83beb566f34140"
+    },
+    {
+      "path": "skills/integration-privy/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e575a607579a4c0e591272483f6ae88de1a0c49c",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/trees/e575a607579a4c0e591272483f6ae88de1a0c49c"
+    },
+    {
+      "path": "skills/integration-privy/references/setup.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "563ed2ed127ddf62b6ceb632c615cacf063ab90b",
+      "size": 5224,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/563ed2ed127ddf62b6ceb632c615cacf063ab90b"
+    },
+    {
+      "path": "skills/integration-privy/references/siws.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f12f3932de0bcf41daf53fb99b9c42abd02ce78",
+      "size": 10902,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/5f12f3932de0bcf41daf53fb99b9c42abd02ce78"
+    },
+    {
+      "path": "skills/integration-privy/references/troubleshooting.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3899a04ac483f969bc45a6cc73ebe5406fbdbaf",
+      "size": 4592,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/b3899a04ac483f969bc45a6cc73ebe5406fbdbaf"
+    },
+    {
+      "path": "skills/seeker-connect",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b869c7aea8f1ef580ddb08a8b6c7eb3fe783e597",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/trees/b869c7aea8f1ef580ddb08a8b6c7eb3fe783e597"
+    },
+    {
+      "path": "skills/seeker-connect/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2de60a3990cda75a5ca7c4f0a1ad7bbbbc8c52b",
+      "size": 13439,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/b2de60a3990cda75a5ca7c4f0a1ad7bbbbc8c52b"
+    },
+    {
+      "path": "skills/seeker-connect/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "83b8a78a5d10a7e5db17acca468d8d39f4a4dd8e",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/trees/83b8a78a5d10a7e5db17acca468d8d39f4a4dd8e"
+    },
+    {
+      "path": "skills/seeker-connect/references/imperative-api.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6653492099780446ee188253c4dd5c7062f9ca9",
+      "size": 5750,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/e6653492099780446ee188253c4dd5c7062f9ca9",
+      "error": "SyntaxError: Unexpected token '#', \"# Imperati\"... is not valid JSON"
+    },
+    {
+      "path": "skills/seeker-connect/references/troubleshooting.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd9b5d2075e2257ec5a4aa6aadc32f6ff0689ce2",
+      "size": 4901,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/bd9b5d2075e2257ec5a4aa6aadc32f6ff0689ce2",
+      "error": "SyntaxError: Unexpected token '#', \"# Troubles\"... is not valid JSON"
+    },
+    {
+      "path": "skills/seeker-domains",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1b761d4abbe92b55aac87752b3ebb69ed95a20e1",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/trees/1b761d4abbe92b55aac87752b3ebb69ed95a20e1"
+    },
+    {
+      "path": "skills/seeker-domains/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ce3784f5f3a549f5a6ce0895e7a7141aa692097",
+      "size": 11287,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/8ce3784f5f3a549f5a6ce0895e7a7141aa692097"
+    },
+    {
+      "path": "skills/seeker-domains/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6ce176ab1cb9fca3512fff7903b78bb3690d31ca",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/trees/6ce176ab1cb9fca3512fff7903b78bb3690d31ca"
+    },
+    {
+      "path": "skills/seeker-domains/references/client.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d8eb75082a71d77e54ede89b5d8e96cc9ace594",
+      "size": 15884,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/3d8eb75082a71d77e54ede89b5d8e96cc9ace594"
+    },
+    {
+      "path": "skills/seeker-domains/references/kit-resolver.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "560ebd73ff2aa2a4b487111679b6329a47c5bd01",
+      "size": 14722,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/560ebd73ff2aa2a4b487111679b6329a47c5bd01"
+    },
+    {
+      "path": "skills/seeker-domains/references/server.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db92ffa1adca2caac01d2350c32fb82f04a6bd34",
+      "size": 24279,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/db92ffa1adca2caac01d2350c32fb82f04a6bd34"
+    },
+    {
+      "path": "skills/seeker-genesis-token",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7e0ce925c41f16d1f7a4186592860b2086565888",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/trees/7e0ce925c41f16d1f7a4186592860b2086565888"
+    },
+    {
+      "path": "skills/seeker-genesis-token/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06c4cf708f5ef4855920cd70e913df59bc0b0e0b",
+      "size": 10637,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/06c4cf708f5ef4855920cd70e913df59bc0b0e0b"
+    },
+    {
+      "path": "skills/seeker-genesis-token/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "15434f419954f0fb72df3db54e5081a7889f25c2",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/trees/15434f419954f0fb72df3db54e5081a7889f25c2"
+    },
+    {
+      "path": "skills/seeker-genesis-token/references/sgt-verification.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0abb9e51c62b248a0e0dfdac0a9c8211e059f9b4",
+      "size": 8675,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/0abb9e51c62b248a0e0dfdac0a9c8211e059f9b4"
+    },
+    {
+      "path": "skills/solana-mobile-publishing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9b39d77857e591c9a6cfa8f088d32a956c206528",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/trees/9b39d77857e591c9a6cfa8f088d32a956c206528"
+    },
+    {
+      "path": "skills/solana-mobile-publishing/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e5ba489800e266ee3dafa41e27b5b582dddfd30",
+      "size": 16618,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/1e5ba489800e266ee3dafa41e27b5b582dddfd30"
+    },
+    {
+      "path": "skills/solana-mobile-publishing/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4e503665466ce9f19d9119ac9235985c5b78c2eb",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/trees/4e503665466ce9f19d9119ac9235985c5b78c2eb"
+    },
+    {
+      "path": "skills/solana-mobile-publishing/references/signing.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d0bd43e3f8a25fa8b63bb52c4ba2cb19ba5392a",
+      "size": 10898,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/8d0bd43e3f8a25fa8b63bb52c4ba2cb19ba5392a"
+    },
+    {
+      "path": "skills/solana-mobile-wallet",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "97cd1c214bdb9285d6a2f3a5f61694138d648758",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/trees/97cd1c214bdb9285d6a2f3a5f61694138d648758"
+    },
+    {
+      "path": "skills/solana-mobile-wallet/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "142c365a7ca4db5d22d68b708a93bd7ff042e6ef",
+      "size": 10198,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/142c365a7ca4db5d22d68b708a93bd7ff042e6ef",
+      "error": "SyntaxError: No number after minus sign in JSON at position 1 (line 1 column 2)"
+    },
+    {
+      "path": "skills/solana-mobile-wallet/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "98b8850e68f007d1cf6bf98c11295a86d4954d1e",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/trees/98b8850e68f007d1cf6bf98c11295a86d4954d1e"
+    },
+    {
+      "path": "skills/solana-mobile-wallet/references/kit.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37771eb987dbed44025fc162413bfc0bf3562651",
+      "size": 15205,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/37771eb987dbed44025fc162413bfc0bf3562651",
+      "error": "SyntaxError: Unexpected token '#', \"# Kit stac\"... is not valid JSON"
+    },
+    {
+      "path": "skills/solana-mobile-wallet/references/troubleshooting.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "748ef34314dabcb329ce926a8e91444dc5c9fc09",
+      "size": 5112,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/748ef34314dabcb329ce926a8e91444dc5c9fc09",
+      "error": "SyntaxError: Unexpected token '#', \"# Wallet t\"... is not valid JSON"
+    },
+    {
+      "path": "skills/solana-mobile-wallet/references/web3js.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "199a503fa10273aafb670193e22b41a88a6bc496",
+      "size": 9019,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/199a503fa10273aafb670193e22b41a88a6bc496",
+      "error": "SyntaxError: Unexpected token '#', \"# Legacy w\"... is not valid JSON"
+    },
+    {
+      "path": "skills/solana-mobile",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "26470e273df0c3566da0b5acbb4c63ddeeea33a7",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/trees/26470e273df0c3566da0b5acbb4c63ddeeea33a7"
+    },
+    {
+      "path": "skills/solana-mobile/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c66f9cb7e9f5a10ace7cbfeba217008234d9b38",
+      "size": 11324,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/3c66f9cb7e9f5a10ace7cbfeba217008234d9b38"
+    },
+    {
+      "path": "skills/solana-mobile/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a162078f9bc4c313fd9161543a71b66541268a5a",
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/trees/a162078f9bc4c313fd9161543a71b66541268a5a"
+    },
+    {
+      "path": "skills/solana-mobile/references/add-to-existing-app.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b59b2dab54c94d0cbb155ddb9009c7d4cdde2631",
+      "size": 4889,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/b59b2dab54c94d0cbb155ddb9009c7d4cdde2631"
+    },
+    {
+      "path": "skills/solana-mobile/references/cli.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a3a2ef270ff3aa6989ed6c3367d93b7721bb664",
+      "size": 15335,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/6a3a2ef270ff3aa6989ed6c3367d93b7721bb664"
+    },
+    {
+      "path": "skills/solana-mobile/references/troubleshooting.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "016041db87fd62987eb2b2651319f3d78d4b0549",
+      "size": 6854,
+      "url": "https://api.github.com/repos/solana-mobile/solana-mobile-skills/git/blobs/016041db87fd62987eb2b2651319f3d78d4b0549"
+    }
+  ]
+}

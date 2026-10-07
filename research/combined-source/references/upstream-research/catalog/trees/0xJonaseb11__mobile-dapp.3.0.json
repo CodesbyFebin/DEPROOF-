@@ -1,0 +1,767 @@
+{
+  "repository": "0xJonaseb11/mobile-dapp.3.0",
+  "tree_sha": "2790d275cacf4c12a4867e3b9e0160f5cc8263b6",
+  "truncated": false,
+  "entries": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56a543c9049baf22a25bd9de0505fe19d3595aed",
+      "size": 79,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/56a543c9049baf22a25bd9de0505fe19d3595aed"
+    },
+    {
+      "path": ".gradle",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cd36d484c6ee61b3556db37426fa50d86d7951e9",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/cd36d484c6ee61b3556db37426fa50d86d7951e9"
+    },
+    {
+      "path": ".gradle/8.0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3138f1fe28d105bf76853442d4c062a0fcfb3012",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/3138f1fe28d105bf76853442d4c062a0fcfb3012"
+    },
+    {
+      "path": ".gradle/8.0/checksums",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2ab0ce0b8e7dfe165f63e3b8fac28870ce9230b9",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/2ab0ce0b8e7dfe165f63e3b8fac28870ce9230b9"
+    },
+    {
+      "path": ".gradle/8.0/checksums/checksums.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5bfdd0844f3981857151d7781cdfd94838451988",
+      "size": 17,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/5bfdd0844f3981857151d7781cdfd94838451988"
+    },
+    {
+      "path": ".gradle/8.0/dependencies-accessors",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "aee7a44c8e949d49fb87f5ff5b7dc13dcd2819d8",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/aee7a44c8e949d49fb87f5ff5b7dc13dcd2819d8"
+    },
+    {
+      "path": ".gradle/8.0/dependencies-accessors/dependencies-accessors.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8265e2f3eca47437aa10487d1bdf437bd7c7625d",
+      "size": 17,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/8265e2f3eca47437aa10487d1bdf437bd7c7625d"
+    },
+    {
+      "path": ".gradle/8.0/dependencies-accessors/gc.properties",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": ".gradle/8.0/executionHistory",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d2aa03984b0640be89e76c68be611ab46df7d58b",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/d2aa03984b0640be89e76c68be611ab46df7d58b"
+    },
+    {
+      "path": ".gradle/8.0/executionHistory/executionHistory.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2653c42ec3b68124342191906f3e589caf25c9e6",
+      "size": 17,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/2653c42ec3b68124342191906f3e589caf25c9e6"
+    },
+    {
+      "path": ".gradle/8.0/fileChanges",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "567d90cc85a313b1125333af3b34d12ef4f1d28e",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/567d90cc85a313b1125333af3b34d12ef4f1d28e"
+    },
+    {
+      "path": ".gradle/8.0/fileChanges/last-build.bin",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f76dd238ade08917e6712764a16a22005a50573d",
+      "size": 1,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/f76dd238ade08917e6712764a16a22005a50573d"
+    },
+    {
+      "path": ".gradle/8.0/fileHashes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "05fd2c8a392c3b5c016fa6d0d26971b6c842c9a9",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/05fd2c8a392c3b5c016fa6d0d26971b6c842c9a9"
+    },
+    {
+      "path": ".gradle/8.0/fileHashes/fileHashes.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bad82cb3bee2bef5341f9bae0db6e668de789b1",
+      "size": 17,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/7bad82cb3bee2bef5341f9bae0db6e668de789b1"
+    },
+    {
+      "path": ".gradle/8.0/gc.properties",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": ".gradle/buildOutputCleanup",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "633587d5772057486770e5e86223efef68e7d5b6",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/633587d5772057486770e5e86223efef68e7d5b6"
+    },
+    {
+      "path": ".gradle/buildOutputCleanup/buildOutputCleanup.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5808631d0a707333646781b530d2e49162f21a05",
+      "size": 17,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/5808631d0a707333646781b530d2e49162f21a05"
+    },
+    {
+      "path": ".gradle/buildOutputCleanup/cache.properties",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3cc8994c39970f795978d0377562a8e2a1c47ab",
+      "size": 49,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/d3cc8994c39970f795978d0377562a8e2a1c47ab"
+    },
+    {
+      "path": ".gradle/buildOutputCleanup/outputFiles.bin",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "005cb50aac8812bca184abd49df85860be93dc27",
+      "size": 18749,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/005cb50aac8812bca184abd49df85860be93dc27"
+    },
+    {
+      "path": ".gradle/vcs-1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "89c87369bf48fc835534e6626440ba546e435f51",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/89c87369bf48fc835534e6626440ba546e435f51"
+    },
+    {
+      "path": ".gradle/vcs-1/gc.properties",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b875b28d11514c0f047323fd8b43d101b43fb605",
+      "size": 301,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/b875b28d11514c0f047323fd8b43d101b43fb605",
+      "error": "SyntaxError: Unexpected token '#', \"# mobile d\"... is not valid JSON"
+    },
+    {
+      "path": "app",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "88c73c5148530537a4aa2eec7b42bb396aec0c1d",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/88c73c5148530537a4aa2eec7b42bb396aec0c1d"
+    },
+    {
+      "path": "app/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42afabfd2abebf31384ca7797186a27a4b7dbee8",
+      "size": 6,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/42afabfd2abebf31384ca7797186a27a4b7dbee8"
+    },
+    {
+      "path": "app/build.gradle.kts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bda20f0aa5101158aa6dfa5fca73cb13652f36c8",
+      "size": 2866,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/bda20f0aa5101158aa6dfa5fca73cb13652f36c8"
+    },
+    {
+      "path": "app/proguard-rules.pro",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "481bb434814107eb79d7a30b676d344b0df2f8ce",
+      "size": 750,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/481bb434814107eb79d7a30b676d344b0df2f8ce"
+    },
+    {
+      "path": "app/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "15ce240002079000d528825a6519fffaafed9309",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/15ce240002079000d528825a6519fffaafed9309"
+    },
+    {
+      "path": "app/src/androidTest",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2dc7a40cdab7cfc4b385122a878c35ebf093d917",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/2dc7a40cdab7cfc4b385122a878c35ebf093d917"
+    },
+    {
+      "path": "app/src/androidTest/java",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3e5328bea1845e444920c0a81a7e2d7a8a3478f5",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/3e5328bea1845e444920c0a81a7e2d7a8a3478f5"
+    },
+    {
+      "path": "app/src/androidTest/java/com",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fdbf42dfb8d76dc39144bc942e40c6465a1a26a3",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/fdbf42dfb8d76dc39144bc942e40c6465a1a26a3"
+    },
+    {
+      "path": "app/src/androidTest/java/com/example",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d06cf0a9573d6c036c8fbecf996f1c85a5f35fbc",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/d06cf0a9573d6c036c8fbecf996f1c85a5f35fbc"
+    },
+    {
+      "path": "app/src/androidTest/java/com/example/waffle",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c39ccfacc7a61fe93f77360fa7c8b91f76679f15",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/c39ccfacc7a61fe93f77360fa7c8b91f76679f15"
+    },
+    {
+      "path": "app/src/androidTest/java/com/example/waffle/ExampleInstrumentedTest.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03b4b8d3b7993f3dac419f2578684f4dda39adf7",
+      "size": 663,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/03b4b8d3b7993f3dac419f2578684f4dda39adf7",
+      "error": "SyntaxError: Unexpected token 'p', \"package co\"... is not valid JSON"
+    },
+    {
+      "path": "app/src/main",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "423b7ec19badd5af8e5a180327e9ef653eaa465c",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/423b7ec19badd5af8e5a180327e9ef653eaa465c"
+    },
+    {
+      "path": "app/src/main/AndroidManifest.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2426e326aec711f85e8ced3fbac6c53290a0a1f1",
+      "size": 1054,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/2426e326aec711f85e8ced3fbac6c53290a0a1f1"
+    },
+    {
+      "path": "app/src/main/java",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "74ae810570ad5242b84152d778dcb814573636e4",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/74ae810570ad5242b84152d778dcb814573636e4"
+    },
+    {
+      "path": "app/src/main/java/com",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e755bab4dfbd278872f78d28cd4160729b262780",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/e755bab4dfbd278872f78d28cd4160729b262780"
+    },
+    {
+      "path": "app/src/main/java/com/example",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "069831d171a6acb72cfa4fcef83d0c7cfb44608c",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/069831d171a6acb72cfa4fcef83d0c7cfb44608c"
+    },
+    {
+      "path": "app/src/main/java/com/example/waffle",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "86c277cc0087f568418fed46e1878bb752329704",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/86c277cc0087f568418fed46e1878bb752329704"
+    },
+    {
+      "path": "app/src/main/java/com/example/waffle/MainActivity.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "252988339462039a8df7bd119a2c2fa18eea7793",
+      "size": 1820,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/252988339462039a8df7bd119a2c2fa18eea7793"
+    },
+    {
+      "path": "app/src/main/java/com/example/waffle/Waffle.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18720f1e7202d5978aee845add8f7d6e53a07ea8",
+      "size": 146,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/18720f1e7202d5978aee845add8f7d6e53a07ea8"
+    },
+    {
+      "path": "app/src/main/java/com/example/waffle/composables",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4de77536675c92318b1612adf3f1d8edb2dba182",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/4de77536675c92318b1612adf3f1d8edb2dba182"
+    },
+    {
+      "path": "app/src/main/java/com/example/waffle/composables/WalletConnectButton.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99c032a14012842d91c4e072f3654f766543a0a9",
+      "size": 1786,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/99c032a14012842d91c4e072f3654f766543a0a9",
+      "error": "SyntaxError: Unexpected token 'p', \"package co\"... is not valid JSON"
+    },
+    {
+      "path": "app/src/main/java/com/example/waffle/injection",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "efe11ad41d0759409d5b19e9554616fd63c84327",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/efe11ad41d0759409d5b19e9554616fd63c84327"
+    },
+    {
+      "path": "app/src/main/java/com/example/waffle/injection/WaffleModule.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54040f2f8ea3d006f6140cf4109994f661313bcc",
+      "size": 431,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/54040f2f8ea3d006f6140cf4109994f661313bcc"
+    },
+    {
+      "path": "app/src/main/java/com/example/waffle/repository",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "76ba7ca0273fa877c4a8c9c58850e80a97940286",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/76ba7ca0273fa877c4a8c9c58850e80a97940286"
+    },
+    {
+      "path": "app/src/main/java/com/example/waffle/repository/PrefsDataStoreRepository.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0386b610153563e3cb76d9403e0a56ccad595652",
+      "size": 1809,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/0386b610153563e3cb76d9403e0a56ccad595652"
+    },
+    {
+      "path": "app/src/main/java/com/example/waffle/ui",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "570124a9c30318a0cfce0d282f44bfe9c8b784f5",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/570124a9c30318a0cfce0d282f44bfe9c8b784f5"
+    },
+    {
+      "path": "app/src/main/java/com/example/waffle/ui/theme",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5f101aae0d49e89a7af5eeab5d0f43102ab9f875",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/5f101aae0d49e89a7af5eeab5d0f43102ab9f875"
+    },
+    {
+      "path": "app/src/main/java/com/example/waffle/ui/theme/Color.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e830923180f907fa82aec356fed31a0c261e0f74",
+      "size": 282,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/e830923180f907fa82aec356fed31a0c261e0f74"
+    },
+    {
+      "path": "app/src/main/java/com/example/waffle/ui/theme/Theme.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7157a0b41665196f8878f73af19b5bc327260490",
+      "size": 2186,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/7157a0b41665196f8878f73af19b5bc327260490"
+    },
+    {
+      "path": "app/src/main/java/com/example/waffle/ui/theme/Type.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7676dd5bcea355d179462628896e864ac7c846bc",
+      "size": 987,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/7676dd5bcea355d179462628896e864ac7c846bc"
+    },
+    {
+      "path": "app/src/main/java/com/example/waffle/usecase",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "46ce7e4ef9c10101890cc35870110c80a27faa91",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/46ce7e4ef9c10101890cc35870110c80a27faa91"
+    },
+    {
+      "path": "app/src/main/java/com/example/waffle/usecase/WalletConnectionUseCase.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24e99c00237d568842d24bb4c2e780e8ea0b176e",
+      "size": 1631,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/24e99c00237d568842d24bb4c2e780e8ea0b176e",
+      "error": "SyntaxError: Unexpected token 'p', \"package co\"... is not valid JSON"
+    },
+    {
+      "path": "app/src/main/java/com/example/waffle/viewmodel",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "be271b7bf72de7baf598f7015d5c69de75b073c2",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/be271b7bf72de7baf598f7015d5c69de75b073c2"
+    },
+    {
+      "path": "app/src/main/java/com/example/waffle/viewmodel/WaffleViewModel.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "911ff562aedfae24bf905c2a0846bfdbb3b137f4",
+      "size": 3524,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/911ff562aedfae24bf905c2a0846bfdbb3b137f4"
+    },
+    {
+      "path": "app/src/main/res",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8c98244982d99e2f339440027b7ad066c40418e4",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/8c98244982d99e2f339440027b7ad066c40418e4"
+    },
+    {
+      "path": "app/src/main/res/drawable",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7c262462995e07d753e232ff3b19a20c3f5657f4",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/7c262462995e07d753e232ff3b19a20c3f5657f4"
+    },
+    {
+      "path": "app/src/main/res/drawable/ic_launcher_background.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07d5da9cbf141911847041df5d7b87f0dd5ef9d4",
+      "size": 5606,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/07d5da9cbf141911847041df5d7b87f0dd5ef9d4"
+    },
+    {
+      "path": "app/src/main/res/drawable/ic_launcher_foreground.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b068d11462a4b96669193de13a711a3a36220a0",
+      "size": 1702,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/2b068d11462a4b96669193de13a711a3a36220a0"
+    },
+    {
+      "path": "app/src/main/res/mipmap-anydpi-v26",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "46123c8a05f7c8ae0d069692786b4f3b1a0648d7",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/46123c8a05f7c8ae0d069692786b4f3b1a0648d7"
+    },
+    {
+      "path": "app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f3b755bf50c6b03d8714a9c6184705e6a08389f",
+      "size": 343,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/6f3b755bf50c6b03d8714a9c6184705e6a08389f"
+    },
+    {
+      "path": "app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f3b755bf50c6b03d8714a9c6184705e6a08389f",
+      "size": 343,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/6f3b755bf50c6b03d8714a9c6184705e6a08389f"
+    },
+    {
+      "path": "app/src/main/res/mipmap-hdpi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "42022c214b8c47a5d5f9774197529f763d5716a0",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/42022c214b8c47a5d5f9774197529f763d5716a0"
+    },
+    {
+      "path": "app/src/main/res/mipmap-hdpi/ic_launcher.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c209e78ecd372343283f4157dcfd918ec5165bb3",
+      "size": 1404,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/c209e78ecd372343283f4157dcfd918ec5165bb3"
+    },
+    {
+      "path": "app/src/main/res/mipmap-hdpi/ic_launcher_round.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2dfe3d1ba5cf3ee31b3ecc1ced89044a1f3b7a9",
+      "size": 2898,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/b2dfe3d1ba5cf3ee31b3ecc1ced89044a1f3b7a9"
+    },
+    {
+      "path": "app/src/main/res/mipmap-mdpi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c033b6b2e70a2d6993c415f583601bc6745f63fb",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/c033b6b2e70a2d6993c415f583601bc6745f63fb"
+    },
+    {
+      "path": "app/src/main/res/mipmap-mdpi/ic_launcher.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f0f1d64e58ba64d180ce43ee13bf9a17835fbca",
+      "size": 982,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/4f0f1d64e58ba64d180ce43ee13bf9a17835fbca"
+    },
+    {
+      "path": "app/src/main/res/mipmap-mdpi/ic_launcher_round.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62b611da081676d42f6c3f78a2c91e7bcedddedb",
+      "size": 1772,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/62b611da081676d42f6c3f78a2c91e7bcedddedb"
+    },
+    {
+      "path": "app/src/main/res/mipmap-xhdpi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "07615786dd22a6c2df1ebd0b3a53fcd204d49d6c",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/07615786dd22a6c2df1ebd0b3a53fcd204d49d6c"
+    },
+    {
+      "path": "app/src/main/res/mipmap-xhdpi/ic_launcher.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "948a3070fe34c611c42c0d3ad3013a0dce358be0",
+      "size": 1900,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/948a3070fe34c611c42c0d3ad3013a0dce358be0"
+    },
+    {
+      "path": "app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b9a6956b3acdc11f40ce2bb3f6efbd845cc243f",
+      "size": 3918,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/1b9a6956b3acdc11f40ce2bb3f6efbd845cc243f"
+    },
+    {
+      "path": "app/src/main/res/mipmap-xxhdpi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1217e928894cecf247fd980964e5e9f7fad16e4e",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/1217e928894cecf247fd980964e5e9f7fad16e4e"
+    },
+    {
+      "path": "app/src/main/res/mipmap-xxhdpi/ic_launcher.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28d4b77f9f036a47549d47db79c16788749dca10",
+      "size": 2884,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/28d4b77f9f036a47549d47db79c16788749dca10"
+    },
+    {
+      "path": "app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9287f5083623b375139afb391af71cc533a7dd37",
+      "size": 5914,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/9287f5083623b375139afb391af71cc533a7dd37"
+    },
+    {
+      "path": "app/src/main/res/mipmap-xxxhdpi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a3de34961096076e3ad578310142d8e33859d1bb",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/a3de34961096076e3ad578310142d8e33859d1bb"
+    },
+    {
+      "path": "app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa7d6427e6fa1074b79ccd52ef67ac15c5637e85",
+      "size": 3844,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/aa7d6427e6fa1074b79ccd52ef67ac15c5637e85"
+    },
+    {
+      "path": "app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9126ae37cbc3587421d6889eadd1d91fbf1994d4",
+      "size": 7778,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/9126ae37cbc3587421d6889eadd1d91fbf1994d4"
+    },
+    {
+      "path": "app/src/main/res/values",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "43bcb427de99a8fb0d550a19c96aff20a2f1e67b",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/43bcb427de99a8fb0d550a19c96aff20a2f1e67b"
+    },
+    {
+      "path": "app/src/main/res/values/colors.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8c6127d327620c93d2b2d00342a68e97b98a48d",
+      "size": 378,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/f8c6127d327620c93d2b2d00342a68e97b98a48d"
+    },
+    {
+      "path": "app/src/main/res/values/strings.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81f836b4f74f2d939d0ebdfc06a729c4904a2801",
+      "size": 221,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/81f836b4f74f2d939d0ebdfc06a729c4904a2801"
+    },
+    {
+      "path": "app/src/main/res/values/themes.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45a624750d1d84d42c5b156cf57be8224612d5ab",
+      "size": 148,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/45a624750d1d84d42c5b156cf57be8224612d5ab"
+    },
+    {
+      "path": "app/src/main/res/xml",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e226f42e909c055902cbf069839b176ada049558",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/e226f42e909c055902cbf069839b176ada049558"
+    },
+    {
+      "path": "app/src/main/res/xml/backup_rules.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa0f996d2c2a6bdd11f5371de4268c8389d6c720",
+      "size": 478,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/fa0f996d2c2a6bdd11f5371de4268c8389d6c720"
+    },
+    {
+      "path": "app/src/main/res/xml/data_extraction_rules.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ee9997b0b4726e57c27b2f7b21462b604ff8a88",
+      "size": 551,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/9ee9997b0b4726e57c27b2f7b21462b604ff8a88"
+    },
+    {
+      "path": "app/src/test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2eabdf3ae1fda75bd0dd94fc8bbbd8f5cbf01a7b",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/2eabdf3ae1fda75bd0dd94fc8bbbd8f5cbf01a7b"
+    },
+    {
+      "path": "app/src/test/java",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e1a9a98786e3edbd796db3ccca086393739b0a97",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/e1a9a98786e3edbd796db3ccca086393739b0a97"
+    },
+    {
+      "path": "app/src/test/java/com",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6e995a66ad605f3e467b84147e220a8dcf73ad19",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/6e995a66ad605f3e467b84147e220a8dcf73ad19"
+    },
+    {
+      "path": "app/src/test/java/com/example",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9f0ae848a3a77831ecd91256c6e555d37e3e387b",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/9f0ae848a3a77831ecd91256c6e555d37e3e387b"
+    },
+    {
+      "path": "app/src/test/java/com/example/waffle",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "75d3a1d11deae035d2328e6285b49fdce28c86b4",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/75d3a1d11deae035d2328e6285b49fdce28c86b4"
+    },
+    {
+      "path": "app/src/test/java/com/example/waffle/ExampleUnitTest.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fa99aa0fc0fb8ffba5c7ec1f6af697c325534e8",
+      "size": 342,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/9fa99aa0fc0fb8ffba5c7ec1f6af697c325534e8",
+      "error": "SyntaxError: Unexpected token 'p', \"package co\"... is not valid JSON"
+    },
+    {
+      "path": "build.gradle.kts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc5c6c737c565be46461812b63262883ac754f7a",
+      "size": 534,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/bc5c6c737c565be46461812b63262883ac754f7a"
+    },
+    {
+      "path": "gradle.properties",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c5031eb7d63f785752b1914cc8692a453d1cc63",
+      "size": 1358,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/3c5031eb7d63f785752b1914cc8692a453d1cc63"
+    },
+    {
+      "path": "gradle",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "34e4a3e484335bf932da8fef0c7f0ae11b00e80e",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/34e4a3e484335bf932da8fef0c7f0ae11b00e80e"
+    },
+    {
+      "path": "gradle/wrapper",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c468596488554fd6fd5dfb7dd634a223a1b5980b",
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/trees/c468596488554fd6fd5dfb7dd634a223a1b5980b"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.jar",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e708b1c023ec8b20f512888fe07c5bd3ff77bb8f",
+      "size": 59203,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/e708b1c023ec8b20f512888fe07c5bd3ff77bb8f"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.properties",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c2342ff68fd160324ad1593bcb12b4ba87acba6",
+      "size": 230,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/1c2342ff68fd160324ad1593bcb12b4ba87acba6"
+    },
+    {
+      "path": "gradlew",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "4f906e0c811fc9e230eb44819f509cd0627f2600",
+      "size": 5766,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/4f906e0c811fc9e230eb44819f509cd0627f2600"
+    },
+    {
+      "path": "gradlew.bat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "107acd32c4e687021ef32db511e8a206129b88ec",
+      "size": 2674,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/107acd32c4e687021ef32db511e8a206129b88ec"
+    },
+    {
+      "path": "settings.gradle.kts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5bc74436c0b9ad253dd197d89359e46bdae335a6",
+      "size": 368,
+      "url": "https://api.github.com/repos/0xJonaseb11/mobile-dapp.3.0/git/blobs/5bc74436c0b9ad253dd197d89359e46bdae335a6"
+    }
+  ]
+}

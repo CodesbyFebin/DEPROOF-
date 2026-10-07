@@ -1,0 +1,23 @@
+{
+  "DEPROOF_DESIGN_SPEC.md": "6afb267ea8646a8e6d6e4362dc5a0c894202190f180b4424200ee8970b707fa1",
+  "DEPROOF_ECOSYSTEM_30_REQUIREMENTS.md": "2f4719aeba7fa5f3609b3208bac3991b646dd093af1a8ab6cb95cf31f07920a8",
+  "DEPROOF_FINAL_MASTER_PROMPT.md": "5e192ff6a0cf41c1812eab3085d5475ce6756fc42bf64e91e72428d8a1a58f8a",
+  "DESIGN_VERIFICATION.md": "225f593578f9884958338230ab0e8fb4e241133d255614c66ed16c58c143b6d0",
+  "README.md": "dbf5babb838c237a64e43c8e1a1f634d76671da2a2fab1f34d1736732b873200",
+  "RECONCILIATION_AND_PHASES.md": "879db72d80133077408621818dda67dc43a6b5a81001ec6a868c9f23f84d881a",
+  "assets/reference/depr-mark-obsidian.png": "f477d7a3f6125aad0e111b98a0c76a007be876a10be5ea06832a5c8a50b916be",
+  "assets/reference/deproof-30-solutions-showcase.png": "5364f478b2e948fe0b2a6cfbda49427ec1aecd81efe4a284224b9e4eb3fbccea",
+  "assets/reference/deproof-a4-marketing-concept.png": "207d1c5666029ba426863c075611d3f8d52bd30add09144ae33b6edb06a2b8f3",
+  "assets/reference/deproof-contribution-workspace.png": "d429561d3e837f628fa32c942430c027eec331eeab4f63d8118bab03ede26d32",
+  "assets/reference/deproof-logo-reference.png": "bb62008a22f693f7188a6771e940191964fdcda006f05b0b41f39fe17ee1856e",
+  "assets/reference/deproof-wide-ecosystem-banner.png": "7b9332d775dbbfb006b085a08e955e42e397c998a326a8d8ebd1a6a87edc7f71",
+  "assets/reference/ecosystem-concept.png": "e2a61f8ab4cd7658c7fefb12c405499c46a3488b4f6b62955c813ec5ee010068",
+  "assets/reference/source-authoritative-v3.md": "5819db6be897829a77b382881169cba89f93bcbe81c0ac60f64e03b9ce9d85a9",
+  "assets/reference/source-delivery-v3.txt": "8e4bf55ce346b93f06d0697ece774475ae304e6485cfce680ab8e756c75fc146",
+  "assets/reference/source-design-architecture.md": "89af4e5c6b003ca4df0bbde6d198d669a20117fc7e5c85a6ba37252b642bdfd7",
+  "core-checks.json": "32ba618b1b84c7d15306111507e491330bee2875910d7859534439514efa14cf",
+  "design-tokens.json": "c52de981435cda037e111ee97c1ea0994681d88e8312b9d0c4055268f73efb6a",
+  "ecosystem-requirements.json": "0a61fd0a6a660899c11b531522a83bcece0740faa5f26b93c9c977a67b53194f",
+  "features.json": "986cf581a76f2057f8d7302c0dafb548268422131c3cfc448af1a0d80b4af008",
+  "functions.json": "d216c0d6dec7e3576bf76dac4f717719c93c1e5572bcdc501a001cec3b43e11f"
+}

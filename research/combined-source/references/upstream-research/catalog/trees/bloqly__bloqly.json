@@ -1,0 +1,16 @@
+{
+  "repository": "bloqly/bloqly",
+  "tree_sha": "e1b09404af2aa4ac031f51f3742543e5c0608a52",
+  "truncated": false,
+  "entries": [
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5cad53e32cdd20af4a1cef457171f8a3163b7cb5",
+      "size": 1558,
+      "url": "https://api.github.com/repos/bloqly/bloqly/git/blobs/5cad53e32cdd20af4a1cef457171f8a3163b7cb5",
+      "error": "SyntaxError: Unexpected token '#', \"## JavaScr\"... is not valid JSON"
+    }
+  ]
+}

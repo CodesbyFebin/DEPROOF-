@@ -1,0 +1,66 @@
+name: Scripts
+on:
+  workflow_dispatch:
+  push:
+    branches-ignore: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  scripts:
+    name: test scripts
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Test Environment
+        run: |
+          sudo /bin/bash ./test/environment_setup.sh
+      - name: Install Prerequisites
+        run: |
+          sudo /bin/bash ./scripts/dappnode_install_pre.sh UPDATE
+      - name: Install DAppNode
+        run: |
+          sudo /bin/bash ./scripts/dappnode_install.sh --local-profile-path "$PWD/.dappnode_profile"
+      - name: Show installation logs
+        run: |
+          cat /usr/src/dappnode/logs/install.log 
+          cat /usr/src/dappnode/logs/dappnode_install.log
+      - name: Uninstall DAppNode
+        run: |
+          sudo /bin/bash ./scripts/dappnode_uninstall.sh y
+
+  iso:
+    name: test Debian and Ubuntu ISO
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      # Create Debian ISO
+      - name: create Debian ISO
+        run: |
+          export BASE_OS=debian
+          export UNATTENDED=true
+          docker compose up --build
+          ls images/
+
+      # Verify Debian ISO creation
+      - name: verify Debian ISO
+        run: |
+          ls -lrt images/Dappnode-debian-*.iso
+
+      # Create Ubuntu ISO
+      - name: create Ubuntu ISO
+        run: |
+          export BASE_OS=ubuntu
+          export UNATTENDED=true
+          docker compose up --build
+          ls images/
+
+      # Verify Ubuntu ISO creation
+      - name: verify Ubuntu ISO
+        run: |
+          ls -lrt images/Dappnode-ubuntu-*.iso

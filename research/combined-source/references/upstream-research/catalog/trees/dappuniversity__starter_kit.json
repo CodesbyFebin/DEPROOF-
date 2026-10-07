@@ -1,0 +1,162 @@
+{
+  "repository": "dappuniversity/starter_kit",
+  "tree_sha": "9c0e223c4f891e78620c3b6850816474df6939e3",
+  "truncated": false,
+  "entries": [
+    {
+      "path": ".babelrc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce6eb60be7b99a6f419fa10910ecd1c14ef704fb",
+      "size": 50,
+      "url": "https://api.github.com/repos/dappuniversity/starter_kit/git/blobs/ce6eb60be7b99a6f419fa10910ecd1c14ef704fb"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8692cf66d2ebc048ca0baeb86f799b1b5907daac",
+      "size": 315,
+      "url": "https://api.github.com/repos/dappuniversity/starter_kit/git/blobs/8692cf66d2ebc048ca0baeb86f799b1b5907daac"
+    },
+    {
+      "path": "migrations",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "768dc7ee7d17dfb2cd2739b768c306737285d7eb",
+      "url": "https://api.github.com/repos/dappuniversity/starter_kit/git/trees/768dc7ee7d17dfb2cd2739b768c306737285d7eb"
+    },
+    {
+      "path": "migrations/1_initial_migration.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee2135d2952eac46f0ed105282b87d68e8fae869",
+      "size": 125,
+      "url": "https://api.github.com/repos/dappuniversity/starter_kit/git/blobs/ee2135d2952eac46f0ed105282b87d68e8fae869"
+    },
+    {
+      "path": "package-lock.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22e690140ae5805309cd61e69e51b4e749865c62",
+      "size": 893195,
+      "url": "https://api.github.com/repos/dappuniversity/starter_kit/git/blobs/22e690140ae5805309cd61e69e51b4e749865c62"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c1ffc537f1dd02c3693477d8bf0bf539237d056",
+      "size": 966,
+      "url": "https://api.github.com/repos/dappuniversity/starter_kit/git/blobs/6c1ffc537f1dd02c3693477d8bf0bf539237d056"
+    },
+    {
+      "path": "public",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "90698d57fd43de73b2af58f1e71c546bc2ce90ce",
+      "url": "https://api.github.com/repos/dappuniversity/starter_kit/git/trees/90698d57fd43de73b2af58f1e71c546bc2ce90ce"
+    },
+    {
+      "path": "public/favicon.ico",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e19bbf1d406ba60416fbdf9517c4c796368d46b6",
+      "size": 325958,
+      "url": "https://api.github.com/repos/dappuniversity/starter_kit/git/blobs/e19bbf1d406ba60416fbdf9517c4c796368d46b6"
+    },
+    {
+      "path": "public/index.html",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "9e907091f3866e7850dce67e1f6959baae9e96d6",
+      "size": 1616,
+      "url": "https://api.github.com/repos/dappuniversity/starter_kit/git/blobs/9e907091f3866e7850dce67e1f6959baae9e96d6"
+    },
+    {
+      "path": "public/manifest.json",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "53bb8febb5a2edeb9d58c03ad6d5b630157942cd",
+      "size": 312,
+      "url": "https://api.github.com/repos/dappuniversity/starter_kit/git/blobs/53bb8febb5a2edeb9d58c03ad6d5b630157942cd"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e9572bac443f01495b6214ce9820ebc96b4f3221",
+      "url": "https://api.github.com/repos/dappuniversity/starter_kit/git/trees/e9572bac443f01495b6214ce9820ebc96b4f3221"
+    },
+    {
+      "path": "src/components",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2c275066610b58bed45fe72b51cb46065f5f861b",
+      "url": "https://api.github.com/repos/dappuniversity/starter_kit/git/trees/2c275066610b58bed45fe72b51cb46065f5f861b"
+    },
+    {
+      "path": "src/components/App.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87b608921401caafa93e47bc215269ab6db92cff",
+      "size": 21,
+      "url": "https://api.github.com/repos/dappuniversity/starter_kit/git/blobs/87b608921401caafa93e47bc215269ab6db92cff"
+    },
+    {
+      "path": "src/components/App.js",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "588f6251fac3b2b66f7748ec3ed1ff48fdd71d06",
+      "size": 1581,
+      "url": "https://api.github.com/repos/dappuniversity/starter_kit/git/blobs/588f6251fac3b2b66f7748ec3ed1ff48fdd71d06"
+    },
+    {
+      "path": "src/contracts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4a1115177d095043b40bbd38effde57ad68ce700",
+      "url": "https://api.github.com/repos/dappuniversity/starter_kit/git/trees/4a1115177d095043b40bbd38effde57ad68ce700"
+    },
+    {
+      "path": "src/contracts/Migrations.sol",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c378ffb0284191447e14808aff6c05377144d45c",
+      "size": 515,
+      "url": "https://api.github.com/repos/dappuniversity/starter_kit/git/blobs/c378ffb0284191447e14808aff6c05377144d45c"
+    },
+    {
+      "path": "src/index.js",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "d7d1759014ef14b4ef93f9aebe93df6c17af562d",
+      "size": 483,
+      "url": "https://api.github.com/repos/dappuniversity/starter_kit/git/blobs/d7d1759014ef14b4ef93f9aebe93df6c17af562d"
+    },
+    {
+      "path": "src/logo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9672caa9d5fdf60af7c02ed5e56bdb05a43b463",
+      "size": 20917,
+      "url": "https://api.github.com/repos/dappuniversity/starter_kit/git/blobs/b9672caa9d5fdf60af7c02ed5e56bdb05a43b463"
+    },
+    {
+      "path": "src/serviceWorker.js",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "f8c7e50c201765c456ddbf21e9ea5b3e6a936920",
+      "size": 4951,
+      "url": "https://api.github.com/repos/dappuniversity/starter_kit/git/blobs/f8c7e50c201765c456ddbf21e9ea5b3e6a936920"
+    },
+    {
+      "path": "truffle-config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92b5ae5069b238b5a6c65d5354794932eac0de28",
+      "size": 402,
+      "url": "https://api.github.com/repos/dappuniversity/starter_kit/git/blobs/92b5ae5069b238b5a6c65d5354794932eac0de28"
+    }
+  ]
+}

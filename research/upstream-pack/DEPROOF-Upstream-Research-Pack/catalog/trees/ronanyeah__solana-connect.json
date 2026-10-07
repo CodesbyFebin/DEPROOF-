@@ -1,0 +1,192 @@
+{
+  "repository": "ronanyeah/solana-connect",
+  "tree_sha": "bff36ee9785b773abb01720d2231ba0c1881c44f",
+  "truncated": false,
+  "entries": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee8d3e6a0bf19bcd366bc11d040a555d21bceb4c",
+      "size": 40,
+      "url": "https://api.github.com/repos/ronanyeah/solana-connect/git/blobs/ee8d3e6a0bf19bcd366bc11d040a555d21bceb4c"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff4549f34388b6c8e4f4b86b81e9b5d2414bd844",
+      "size": 1064,
+      "url": "https://api.github.com/repos/ronanyeah/solana-connect/git/blobs/ff4549f34388b6c8e4f4b86b81e9b5d2414bd844",
+      "error": "SyntaxError: Unexpected token 'M', \"MIT Licens\"... is not valid JSON"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "036d357897acc7ab1418b71f9a66c18a68381715",
+      "size": 2234,
+      "url": "https://api.github.com/repos/ronanyeah/solana-connect/git/blobs/036d357897acc7ab1418b71f9a66c18a68381715",
+      "error": "SyntaxError: Unexpected token '#', \"# Solana C\"... is not valid JSON"
+    },
+    {
+      "path": "assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d4d1e7c759ca20079206cd3d5267925d2207cf6b",
+      "url": "https://api.github.com/repos/ronanyeah/solana-connect/git/trees/d4d1e7c759ca20079206cd3d5267925d2207cf6b"
+    },
+    {
+      "path": "assets/menu.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1f9efab465ce15ee221fe9227ee933988afb281",
+      "size": 20377,
+      "url": "https://api.github.com/repos/ronanyeah/solana-connect/git/blobs/f1f9efab465ce15ee221fe9227ee933988afb281"
+    },
+    {
+      "path": "demo",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9a6e6d6574b0637479ccfc187d21c8c2f8226b61",
+      "url": "https://api.github.com/repos/ronanyeah/solana-connect/git/trees/9a6e6d6574b0637479ccfc187d21c8c2f8226b61"
+    },
+    {
+      "path": "demo/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4b95156c2903931a615535c3169a830549b033d",
+      "size": 1114,
+      "url": "https://api.github.com/repos/ronanyeah/solana-connect/git/blobs/a4b95156c2903931a615535c3169a830549b033d"
+    },
+    {
+      "path": "demo/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4579c985712ac73fb6728adcaeb81f6679cd824d",
+      "size": 1507,
+      "url": "https://api.github.com/repos/ronanyeah/solana-connect/git/blobs/4579c985712ac73fb6728adcaeb81f6679cd824d"
+    },
+    {
+      "path": "elm.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e45669612f6db2ac64ccc84ece7a92d255927284",
+      "size": 783,
+      "url": "https://api.github.com/repos/ronanyeah/solana-connect/git/blobs/e45669612f6db2ac64ccc84ece7a92d255927284"
+    },
+    {
+      "path": "package-lock.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d6ed8a6e752efb3330a4685c0d644d41104f1f0",
+      "size": 202332,
+      "url": "https://api.github.com/repos/ronanyeah/solana-connect/git/blobs/6d6ed8a6e752efb3330a4685c0d644d41104f1f0"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad796d258a2261c73c41514b7e6744ce40e25d40",
+      "size": 1198,
+      "url": "https://api.github.com/repos/ronanyeah/solana-connect/git/blobs/ad796d258a2261c73c41514b7e6744ce40e25d40"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a5f850c92504f29f44753508ebede3fd8db89154",
+      "url": "https://api.github.com/repos/ronanyeah/solana-connect/git/trees/a5f850c92504f29f44753508ebede3fd8db89154"
+    },
+    {
+      "path": "src/Img.elm",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56427d032e142dff676b9cd802bfc61d6cb480f7",
+      "size": 2777,
+      "url": "https://api.github.com/repos/ronanyeah/solana-connect/git/blobs/56427d032e142dff676b9cd802bfc61d6cb480f7"
+    },
+    {
+      "path": "src/Main.elm",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3236f125f57ad4623e61d203b3080c5b5df61e1d",
+      "size": 800,
+      "url": "https://api.github.com/repos/ronanyeah/solana-connect/git/blobs/3236f125f57ad4623e61d203b3080c5b5df61e1d"
+    },
+    {
+      "path": "src/Ports.elm",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb9afa519956ed393e56fb87f619627996c31eb3",
+      "size": 438,
+      "url": "https://api.github.com/repos/ronanyeah/solana-connect/git/blobs/bb9afa519956ed393e56fb87f619627996c31eb3"
+    },
+    {
+      "path": "src/Types.elm",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ba86dc1c36c3c5473b8e66cae896803cf1886f2",
+      "size": 630,
+      "url": "https://api.github.com/repos/ronanyeah/solana-connect/git/blobs/0ba86dc1c36c3c5473b8e66cae896803cf1886f2"
+    },
+    {
+      "path": "src/Update.elm",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57117a9c6b55cf2b378f259fd95d1c0f1f74d2b8",
+      "size": 2550,
+      "url": "https://api.github.com/repos/ronanyeah/solana-connect/git/blobs/57117a9c6b55cf2b378f259fd95d1c0f1f74d2b8"
+    },
+    {
+      "path": "src/View.elm",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "772d4dad44a0c6e190cb7f79893393c7733e576c",
+      "size": 9270,
+      "url": "https://api.github.com/repos/ronanyeah/solana-connect/git/blobs/772d4dad44a0c6e190cb7f79893393c7733e576c"
+    },
+    {
+      "path": "src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "473aa87a37889dbf86801424b04becfcd7e71842",
+      "size": 6729,
+      "url": "https://api.github.com/repos/ronanyeah/solana-connect/git/blobs/473aa87a37889dbf86801424b04becfcd7e71842",
+      "content": "const { Elm } = require(\"./Main.elm\");\nconst appCss = require(\"./misc.css\");\n\nimport { ElmApp } from \"./ports\";\nimport { getWallets, Wallet, Wallets } from \"@wallet-standard/core\";\nimport {\n  Adapter,\n  isWalletAdapterCompatibleStandardWallet,\n} from \"@solana/wallet-adapter-base\";\nimport { StandardWalletAdapter } from \"@solana/wallet-standard-wallet-adapter-base\";\n\nconst SHADOW_NODE = \"solana-connect-modal\";\nconst MODAL_ID = \"__sc__outer_modal\";\nconst ELM_APP_ID = \"__sc__elm_app\";\n\nconst CONNECTION_EVENT = \"__sc__ev_connect\";\nconst VISIBILITY_EVENT = \"__sc__ev_vis\";\n\ninterface EventMap {\n  [VISIBILITY_EVENT]: CustomEvent<boolean>;\n  [CONNECTION_EVENT]: CustomEvent<Adapter | null>;\n}\n\nclass WalletEventTarget extends EventTarget {\n  on<K extends keyof EventMap>(\n    type: K,\n    listener: (ev: EventMap[K]) => void\n    //options?: boolean | AddEventListenerOptions\n  ): this {\n    super.addEventListener(\n      type,\n      listener as EventListener\n      //, options\n    );\n    return this;\n  }\n\n  emit<K extends keyof EventMap>(\n    type: K,\n    detail: EventMap[K] extends CustomEvent<infer T> ? T : never\n  ): boolean {\n    const event = new CustomEvent(type, { detail });\n    return super.dispatchEvent(event);\n  }\n}\n\ninterface SolanaConnectConfig {\n  debug?: boolean;\n  additionalAdapters?: Adapter[];\n}\n\nclass SolanaConnect {\n  isOpen: boolean;\n  debug: boolean;\n  activeWallet: string | null;\n  private options: Map<string, Adapter>;\n  private elmApp: ElmApp;\n  private root: AppModal;\n  private wallets: Wallets;\n  private eventTarget: WalletEventTarget;\n\n  constructor(config?: SolanaConnectConfig) {\n    this.wallets = getWallets();\n    this.isOpen = false;\n    this.debug = config?.debug || false;\n    this.options = new Map();\n    this.activeWallet = null;\n    this.eventTarget = new WalletEventTarget();\n    const elem = createModal();\n    this.root = elem;\n    this.elmApp = Elm.Main.init({\n      node: elem.shadowRoot?.querySelector(\"#\" + ELM_APP_ID)!,\n      flags: {\n        screen: {\n          width: window.innerWidth,\n          height: window.innerHeight,\n        },\n      },\n    });\n\n    this.elmApp.ports.close.subscribe(() => {\n      this.showMenu(false);\n    });\n\n    this.elmApp.ports.log.subscribe((txt) => {\n      this.log(txt);\n    });\n\n    this.elmApp.ports.copy.subscribe(async (txt) => {\n      await navigator.clipboard.writeText(txt);\n    });\n\n    this.elmApp.ports.connect.subscribe((tag: string) =>\n      (async () => {\n        const wallet = this.options.get(tag);\n\n        if (!wallet) {\n          throw new Error(`Wallet not found: ${tag}`);\n        }\n\n        await wallet.connect();\n\n        if (!wallet.connected || !wallet.publicKey) {\n          throw new Error(`Wallet not connected: ${wallet.name}`);\n        }\n\n        wallet.on(\"disconnect\", () => {\n          wallet.removeListener(\"disconnect\");\n          this.log(\"disconnected\");\n          this.activeWallet = null;\n          this.eventTarget.emit(CONNECTION_EVENT, null);\n          this.elmApp.ports.disconnectIn.send(null);\n        });\n\n        this.activeWallet = tag;\n        this.elmApp.ports.connectCb.send(wallet.publicKey.toString());\n\n        this.eventTarget.emit(CONNECTION_EVENT, wallet);\n        this.showMenu(false);\n      })().catch((e) => {\n        this.elmApp.ports.connectCb.send(null);\n        this.log(e);\n      })\n    );\n\n    this.elmApp.ports.disconnect.subscribe((close: boolean) =>\n      (async () => {\n        if (close) {\n          this.showMenu(false);\n        }\n        const wallet = this.getWallet();\n        if (wallet) {\n          this.log(\"disconnecting\", wallet.name);\n          await wallet.disconnect();\n        }\n      })().catch((e) => {\n        this.log(e);\n      })\n    );\n\n    const processWallet = (wl: Adapter) => {\n      if (this.options.has(wl.name)) {\n        this.log(\"wallet duplicate:\", wl.name);\n        return;\n      }\n      this.options.set(wl.name, wl);\n      this.elmApp.ports.walletCb.send({\n        name: wl.name,\n        icon: wl.icon,\n      });\n    };\n\n    const validateWallet = (wallet: Wallet) => {\n      if (isWalletAdapterCompatibleStandardWallet(wallet)) {\n        processWallet(new StandardWalletAdapter({ wallet }));\n      } else {\n        this.log(\"wallet not compatible:\", wallet.name);\n      }\n    };\n\n    this.wallets.get().forEach((newWallet) => {\n      this.log(\"wallet read:\", newWallet.name);\n      validateWallet(newWallet);\n    });\n\n    this.wallets.on(\"register\", (newWallet) => {\n      this.log(\"wallet registered:\", newWallet.name);\n      validateWallet(newWallet);\n    });\n\n    if (config?.additionalAdapters) {\n      config.additionalAdapters.forEach(processWallet);\n    }\n\n    setTimeout(() => this.elmApp.ports.walletTimeout.send(null), 2500);\n  }\n  openMenu() {\n    this.showMenu(true);\n  }\n  getWallet(): Adapter | null {\n    if (!this.activeWallet) {\n      return null;\n    }\n    const w = this.options.get(this.activeWallet);\n    return w || null;\n  }\n  onWalletChange(callback: (_: Adapter | null) => void) {\n    this.eventTarget.on(CONNECTION_EVENT, (ev) => {\n      callback(ev.detail);\n    });\n  }\n  onVisibilityChange(callback: (_: boolean) => void) {\n    this.eventTarget.on(VISIBILITY_EVENT, (ev) => {\n      callback(ev.detail);\n    });\n  }\n  private showMenu(val: boolean) {\n    const modal: HTMLElement = this.root.shadowRoot?.querySelector(\n      \"#\" + MODAL_ID\n    )!;\n\n    if (modal) {\n      modal.style.display = val ? \"block\" : \"none\";\n    }\n\n    this.isOpen = val;\n\n    this.eventTarget.emit(VISIBILITY_EVENT, this.isOpen);\n  }\n  private log(...xs: any[]) {\n    if (this.debug) {\n      console.log(...xs);\n    }\n  }\n}\n\nfunction createModal(): AppModal {\n  if (customElements.get(SHADOW_NODE)) {\n    throw Error(\"Solana Connect already instantiated!\");\n  }\n  customElements.define(SHADOW_NODE, AppModal);\n\n  const modal = document.createElement(SHADOW_NODE);\n\n  document.body.appendChild(modal);\n\n  return modal;\n}\n\nclass AppModal extends HTMLElement {\n  constructor() {\n    super();\n    const shadowRoot = this.attachShadow({ mode: \"open\" });\n\n    const modal = document.createElement(\"div\");\n    modal.id = MODAL_ID;\n    modal.style.position = \"fixed\";\n    modal.style.top = \"0\";\n    modal.style.left = \"0\";\n    modal.style.width = \"100%\";\n    modal.style.height = \"100%\";\n    modal.style.zIndex = \"1000\";\n    modal.style.display = \"none\";\n\n    const inner = document.createElement(\"div\");\n    inner.id = ELM_APP_ID;\n    inner.style.width = \"100%\";\n    inner.style.height = \"100%\";\n    modal.appendChild(inner);\n\n    const style = document.createElement(\"style\");\n    style.textContent = appCss;\n    shadowRoot.appendChild(style);\n\n    shadowRoot.appendChild(modal);\n  }\n}\n\nexport { SolanaConnect, SolanaConnectConfig };\n",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "src/misc.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b75ee8ce8b1fab449c3fb1efb64653c6271de8ee",
+      "size": 476,
+      "url": "https://api.github.com/repos/ronanyeah/solana-connect/git/blobs/b75ee8ce8b1fab449c3fb1efb64653c6271de8ee"
+    },
+    {
+      "path": "src/ports.d.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f05ce53d4b244cee0d1e4e5ff95fa7514b5e7f7",
+      "size": 477,
+      "url": "https://api.github.com/repos/ronanyeah/solana-connect/git/blobs/6f05ce53d4b244cee0d1e4e5ff95fa7514b5e7f7"
+    },
+    {
+      "path": "tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a35a448763b3e234abed0af3e909266dbb9a0b10",
+      "size": 267,
+      "url": "https://api.github.com/repos/ronanyeah/solana-connect/git/blobs/a35a448763b3e234abed0af3e909266dbb9a0b10"
+    },
+    {
+      "path": "webpack.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b721eb1b9ea7c317d7492f25abf1b1ed6e4994fc",
+      "size": 2525,
+      "url": "https://api.github.com/repos/ronanyeah/solana-connect/git/blobs/b721eb1b9ea7c317d7492f25abf1b1ed6e4994fc"
+    }
+  ]
+}

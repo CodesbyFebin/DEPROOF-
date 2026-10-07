@@ -1,0 +1,1662 @@
+{
+  "repository": "Saganize/Solwave-kt",
+  "tree_sha": "ea27a2b554ec01d337a35d8581d6d0df3f1bfe25",
+  "truncated": false,
+  "entries": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "878c2cd5b15a153023be7be9b815828e835c301a",
+      "size": 108,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/878c2cd5b15a153023be7be9b815828e835c301a"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "size": 11357,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "error": "SyntaxError: Unexpected token 'A', ...\"          Apache Lic\"... is not valid JSON"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c9242d8db3fd7dcebe066bfb7aaee0e578a3436",
+      "size": 2433,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/8c9242d8db3fd7dcebe066bfb7aaee0e578a3436",
+      "error": "SyntaxError: Unexpected token '#', \"# Solwave-\"... is not valid JSON"
+    },
+    {
+      "path": "build.gradle.kts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76e72ef6d2696f799441ba765f6eb2d05e6a0e22",
+      "size": 437,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/76e72ef6d2696f799441ba765f6eb2d05e6a0e22"
+    },
+    {
+      "path": "gradle.properties",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c5031eb7d63f785752b1914cc8692a453d1cc63",
+      "size": 1358,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/3c5031eb7d63f785752b1914cc8692a453d1cc63"
+    },
+    {
+      "path": "gradle",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "aafe914a69966dd54cb2104c9b5dde6684a56810",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/aafe914a69966dd54cb2104c9b5dde6684a56810"
+    },
+    {
+      "path": "gradle/wrapper",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1f8ac9b49a5dfccf5955a77e51b5c4e700432733",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/1f8ac9b49a5dfccf5955a77e51b5c4e700432733"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.jar",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e708b1c023ec8b20f512888fe07c5bd3ff77bb8f",
+      "size": 59203,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/e708b1c023ec8b20f512888fe07c5bd3ff77bb8f"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.properties",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b84a158f0330b043c3345e276ed9fb5acc544ec",
+      "size": 230,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/0b84a158f0330b043c3345e276ed9fb5acc544ec"
+    },
+    {
+      "path": "gradlew",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "4f906e0c811fc9e230eb44819f509cd0627f2600",
+      "size": 5766,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/4f906e0c811fc9e230eb44819f509cd0627f2600"
+    },
+    {
+      "path": "gradlew.bat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "107acd32c4e687021ef32db511e8a206129b88ec",
+      "size": 2674,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/107acd32c4e687021ef32db511e8a206129b88ec"
+    },
+    {
+      "path": "settings.gradle.kts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3c05d27d4de72415c19f37b57343e470e45a9f3",
+      "size": 665,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/a3c05d27d4de72415c19f37b57343e470e45a9f3"
+    },
+    {
+      "path": "solwave",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "748d6b4d068dd58b58d3c302a7dd6074395f449a",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/748d6b4d068dd58b58d3c302a7dd6074395f449a"
+    },
+    {
+      "path": "solwave/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42afabfd2abebf31384ca7797186a27a4b7dbee8",
+      "size": 6,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/42afabfd2abebf31384ca7797186a27a4b7dbee8"
+    },
+    {
+      "path": "solwave/build.gradle.kts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8d7ef13774352c9eeb0d260cbb4acad47e49339",
+      "size": 4229,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/c8d7ef13774352c9eeb0d260cbb4acad47e49339"
+    },
+    {
+      "path": "solwave/consumer-rules.pro",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c16b3383f8267924203eb0d2179400c64ed5cc7",
+      "size": 5671,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/5c16b3383f8267924203eb0d2179400c64ed5cc7"
+    },
+    {
+      "path": "solwave/proguard-rules.pro",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "049a3bc9b94a4fa6c12e8129f8f363b0478def44",
+      "size": 6197,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/049a3bc9b94a4fa6c12e8129f8f363b0478def44"
+    },
+    {
+      "path": "solwave/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cf19f30de733d8b2da8c656375ee24ec57ad3585",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/cf19f30de733d8b2da8c656375ee24ec57ad3585"
+    },
+    {
+      "path": "solwave/src/androidTest",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1cb586868174bb9a33b8d93e3f89948ff88b4464",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/1cb586868174bb9a33b8d93e3f89948ff88b4464"
+    },
+    {
+      "path": "solwave/src/androidTest/java",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7d09dafbdc1e53630ed0f10580423daa9545ae7d",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/7d09dafbdc1e53630ed0f10580423daa9545ae7d"
+    },
+    {
+      "path": "solwave/src/androidTest/java/com",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "17b52dde8c1eada8669263b14ff2866ddeead03d",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/17b52dde8c1eada8669263b14ff2866ddeead03d"
+    },
+    {
+      "path": "solwave/src/androidTest/java/com/saganize",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e01d53881f72442468adb1b2d5dd5423235d3d61",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/e01d53881f72442468adb1b2d5dd5423235d3d61"
+    },
+    {
+      "path": "solwave/src/androidTest/java/com/saganize/solwave",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "79ce14adc26d933dfa2b89cfd9bc7dc7f06ef1fe",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/79ce14adc26d933dfa2b89cfd9bc7dc7f06ef1fe"
+    },
+    {
+      "path": "solwave/src/androidTest/java/com/saganize/solwave/ExampleInstrumentedTest.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26eeab4a3e5085cf364af2ed1edb4c5606a597ed",
+      "size": 671,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/26eeab4a3e5085cf364af2ed1edb4c5606a597ed"
+    },
+    {
+      "path": "solwave/src/main",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b90036bd973bda9c09733179a2acb64c10c9ab3b",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/b90036bd973bda9c09733179a2acb64c10c9ab3b"
+    },
+    {
+      "path": "solwave/src/main/AndroidManifest.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cad17c20f10133baf5287daf22ccb42a36f44802",
+      "size": 1207,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/cad17c20f10133baf5287daf22ccb42a36f44802"
+    },
+    {
+      "path": "solwave/src/main/java",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1a291ff7f48c48c1ab2e5fc8cc0e438bbbb2fae4",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/1a291ff7f48c48c1ab2e5fc8cc0e438bbbb2fae4"
+    },
+    {
+      "path": "solwave/src/main/java/com",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "32bae5c4514f28c97152c52859085b49b0f768a5",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/32bae5c4514f28c97152c52859085b49b0f768a5"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "62aa4dd758461e45708a7d033600b0946391a0a3",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/62aa4dd758461e45708a7d033600b0946391a0a3"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0c530a19cdc59d3d9aa85e31bddc988c4dc02af1",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/0c530a19cdc59d3d9aa85e31bddc988c4dc02af1"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/Solwave.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a339f3e2df6266aec415bc2dc6cd2979873b5be2",
+      "size": 3680,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/a339f3e2df6266aec415bc2dc6cd2979873b5be2"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/SolwaveActivity.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7c81d04f79d78641e70ce39dcb0a42159f19b14",
+      "size": 8841,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/b7c81d04f79d78641e70ce39dcb0a42159f19b14"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5a4438c8d7284e984f5d56fa1d5cc87e3657b920",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/5a4438c8d7284e984f5d56fa1d5cc87e3657b920"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/di",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8be4ac8bdc394117d7c1b642c550ded68f782774",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/8be4ac8bdc394117d7c1b642c550ded68f782774"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/di/SolwaveAppModule.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0982b8240c762319eca64a71dc63cef8c369e44c",
+      "size": 3574,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/0982b8240c762319eca64a71dc63cef8c369e44c"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/events",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "47b63bf957c5918f4998b451978d7f1ed9aec441",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/47b63bf957c5918f4998b451978d7f1ed9aec441"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/events/SolwaveAuthNavEvents.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd2089dbeea3776a55facbb3de8933222633222d",
+      "size": 937,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/fd2089dbeea3776a55facbb3de8933222633222d"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/events/SolwaveEvents.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2f21d2febdd1738fbe4ec91491411c9fa209a9b",
+      "size": 1537,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/f2f21d2febdd1738fbe4ec91491411c9fa209a9b"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/events/SolwaveNavEvents.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10a5f1bae32756db94bca59daf044d2da497da29",
+      "size": 841,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/10a5f1bae32756db94bca59daf044d2da497da29"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "10066ee3551431552d3f1e9d8e435d700d0fef2b",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/10066ee3551431552d3f1e9d8e435d700d0fef2b"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/models/CompleteEvents.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fd0f84cf4741151fffa419883509ea446bae602",
+      "size": 177,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/0fd0f84cf4741151fffa419883509ea446bae602"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/models/DeeplinkActionType.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ec217e274587600d53fd6ec323435919edabec0",
+      "size": 227,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/1ec217e274587600d53fd6ec323435919edabec0"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/models/DisplayFormat.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51f2d2c2a4d91bf447121e666951a6752ff1846a",
+      "size": 125,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/51f2d2c2a4d91bf447121e666951a6752ff1846a"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/models/EventKeys.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f23edf658b8e1ccfa91fdbe640b1cf276e00603",
+      "size": 183,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/5f23edf658b8e1ccfa91fdbe640b1cf276e00603"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/models/Response.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6aab9f2baa8857face85bd5d959d2f3f61b21a30",
+      "size": 1035,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/6aab9f2baa8857face85bd5d959d2f3f61b21a30"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/models/Screens.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2a5685f45d5c5d0b1bc101ab7319b5ffd593af5",
+      "size": 665,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/c2a5685f45d5c5d0b1bc101ab7319b5ffd593af5"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/models/ServerError.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67cc6bc1be7bcf933ae6e993cc50f2577dbf88c9",
+      "size": 1235,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/67cc6bc1be7bcf933ae6e993cc50f2577dbf88c9"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/models/SolwaveErrors.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19ccbec074c998d7053f7785abfb7064299a3381",
+      "size": 2938,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/19ccbec074c998d7053f7785abfb7064299a3381"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/models/StartEvents.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abaccdf2812070708ecbf790fc73b733d4373a4f",
+      "size": 159,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/abaccdf2812070708ecbf790fc73b733d4373a4f"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/models/WalletInfo.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82de2af35bce2a970cc7526402737b78f30abafc",
+      "size": 128,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/82de2af35bce2a970cc7526402737b78f30abafc",
+      "error": "SyntaxError: Unexpected token 'p', \"package co\"... is not valid JSON"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/models/WalletProvider.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "952dc353e0fe4ea2ed5d37a73a2299f4671dbcdf",
+      "size": 190,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/952dc353e0fe4ea2ed5d37a73a2299f4671dbcdf",
+      "error": "SyntaxError: Unexpected token 'p', \"package co\"... is not valid JSON"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/presentation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c46e3ffd76c72c545a7dc0654947ff1babc37ed6",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/c46e3ffd76c72c545a7dc0654947ff1babc37ed6"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/presentation/components",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "99945ddad590b42cd41892efd6ba97b9ec8261e8",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/99945ddad590b42cd41892efd6ba97b9ec8261e8"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/presentation/components/AppNameBar.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eaf61f42ebe5fa587b354d0efc619ef11f3b8744",
+      "size": 2411,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/eaf61f42ebe5fa587b354d0efc619ef11f3b8744"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/presentation/components/AppNameBarWithClose.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de7e707ece939c690bfd1b415b85976217f69d59",
+      "size": 3250,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/de7e707ece939c690bfd1b415b85976217f69d59"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/presentation/components/Buttons.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de08ac62650833a5e2e5647dc52504727e881209",
+      "size": 1558,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/de08ac62650833a5e2e5647dc52504727e881209"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/presentation/components/CustomKeyBoard.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41df9d1fbba4ee6d08589a22fd4707776dcb82f5",
+      "size": 5122,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/41df9d1fbba4ee6d08589a22fd4707776dcb82f5"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/presentation/components/TextField.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92f9ae61806a42f957ea61a97e4a97920eb0cf9f",
+      "size": 9901,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/92f9ae61806a42f957ea61a97e4a97920eb0cf9f"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/presentation/theme",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8d906178af5ead94399689b57bf2314c1b0f7989",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/8d906178af5ead94399689b57bf2314c1b0f7989"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/presentation/theme/Color.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e2d29adb8b6599fb8ac16deadf27ef7664e1d3e",
+      "size": 712,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/3e2d29adb8b6599fb8ac16deadf27ef7664e1d3e"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/presentation/theme/Dimensions.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab26685d2db6fe1f958a159682830256e4b489a3",
+      "size": 306,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/ab26685d2db6fe1f958a159682830256e4b489a3"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/presentation/theme/Shape.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d23652e2fd7e9069bc0c6d778f438835a6178aef",
+      "size": 338,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/d23652e2fd7e9069bc0c6d778f438835a6178aef"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/presentation/theme/SolwaveColors.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ec321042b3754834d0461d4f348b76d241f8210",
+      "size": 930,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/2ec321042b3754834d0461d4f348b76d241f8210"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/presentation/theme/SolwaveDimensions.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dee0f3deaa284bc7a1e84fb3f2b8fea50f7bc7b9",
+      "size": 625,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/dee0f3deaa284bc7a1e84fb3f2b8fea50f7bc7b9"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/presentation/theme/SolwaveShapes.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f27a28b1c382dc80b492a3cb820ae548123c531a",
+      "size": 678,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/f27a28b1c382dc80b492a3cb820ae548123c531a"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/presentation/theme/SolwaveTheme.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48bafe51ff0ae254432198ebbef95e732cb6e3a8",
+      "size": 551,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/48bafe51ff0ae254432198ebbef95e732cb6e3a8"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/presentation/theme/Theme.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a154ade04c949d0a9109a27aa07748d72e0a7345",
+      "size": 646,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/a154ade04c949d0a9109a27aa07748d72e0a7345"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/presentation/theme/Type.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "674294df7c3ad106cab9948d08fb019752b9ce50",
+      "size": 2915,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/674294df7c3ad106cab9948d08fb019752b9ce50"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/util",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f81de468b650cdec1f07d10ed18793d450ee9fcf",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/f81de468b650cdec1f07d10ed18793d450ee9fcf"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/util/BackendEndpoints.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69f3478c477607fa15d7ade8358e93c1a78815f9",
+      "size": 539,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/69f3478c477607fa15d7ade8358e93c1a78815f9"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/util/ConnectionState.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6210be0985ef1adbb8423790050e829ac2b8395e",
+      "size": 2779,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/6210be0985ef1adbb8423790050e829ac2b8395e"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/util/Constants.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b47d6de490e04a8f3845e1b2feb5eded67fc2858",
+      "size": 216,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/b47d6de490e04a8f3845e1b2feb5eded67fc2858"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/util/PaymentResult.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "037b45db10d71f6afbde9ac4cfbf471eda2aaa7c",
+      "size": 168,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/037b45db10d71f6afbde9ac4cfbf471eda2aaa7c"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/util/ShowToast.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2afb580024c513faf2acf07b25394dc2025d96b4",
+      "size": 448,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/2afb580024c513faf2acf07b25394dc2025d96b4"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/util/ToName.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e83aa7b282a49355e0ad7e462ef71114422fe976",
+      "size": 275,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/e83aa7b282a49355e0ad7e462ef71114422fe976"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/util/ViewModelFoctoryHelper.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17b52daaf5ea2cf0a40d4876601ac38566859a09",
+      "size": 386,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/17b52daaf5ea2cf0a40d4876601ac38566859a09"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/util/extensions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "95137bf7036b478d0a5a91753b9b7be28a605afc",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/95137bf7036b478d0a5a91753b9b7be28a605afc"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/util/extensions/ContextExt.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af7bf79e5e7cf0119c51ba727f671f48a7261ef5",
+      "size": 1327,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/af7bf79e5e7cf0119c51ba727f671f48a7261ef5"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/util/extensions/DoubleExt.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "317f4b4e2b17afbc55b004ac9a12eeefcaf3ef01",
+      "size": 644,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/317f4b4e2b17afbc55b004ac9a12eeefcaf3ef01"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/util/extensions/IntentExt.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab2151efa98b48807b3826a746ca87b1f906f6d9",
+      "size": 436,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/ab2151efa98b48807b3826a746ca87b1f906f6d9"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/util/extensions/MutableStateExt.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "129db7d031611b2299e99795162fb068eaf6706f",
+      "size": 178,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/129db7d031611b2299e99795162fb068eaf6706f"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/util/extensions/RetrofitExt.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fcaf7a6174912975cb5e58f18d3aae282d58422",
+      "size": 483,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/9fcaf7a6174912975cb5e58f18d3aae282d58422"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/util/extensions/SplitWalletKey.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d878f4184b74fa6261d6a7a4e8d4ae994cb19f8e",
+      "size": 551,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/d878f4184b74fa6261d6a7a4e8d4ae994cb19f8e",
+      "error": "SyntaxError: Unexpected token 'p', \"package co\"... is not valid JSON"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/util/extensions/StringExt.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "901359a5b12aced59853c43296904c2377eaafc2",
+      "size": 500,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/901359a5b12aced59853c43296904c2377eaafc2"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/core/util/extensions/TransactionExt.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93d3c060df8ac0b8ab138450afd5af9e7c8a1268",
+      "size": 746,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/93d3c060df8ac0b8ab138450afd5af9e7c8a1268",
+      "error": "SyntaxError: Unexpected token 'p', \"package co\"... is not valid JSON"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ad8195bc497efd1e34276bc5962e416ec660915f",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/ad8195bc497efd1e34276bc5962e416ec660915f"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/data/local",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1f28cd48df54d25c1b924a381d101f9f4540cb63",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/1f28cd48df54d25c1b924a381d101f9f4540cb63"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/data/local/DataStoreRepositoryImpl.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3eaf39d5ce8f3a24d871a717c946bffd507e731b",
+      "size": 1893,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/3eaf39d5ce8f3a24d871a717c946bffd507e731b"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/data/local/DatabaseRepositoryImpl.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "948a93effb5a587c817fae46a6952cf8382256b2",
+      "size": 615,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/948a93effb5a587c817fae46a6952cf8382256b2"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/data/local/SolwaveDao.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36093ac190adb1f9197a7bc3decf2911c3ef975a",
+      "size": 445,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/36093ac190adb1f9197a7bc3decf2911c3ef975a"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/data/local/SolwaveDatabase.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "418bd943a848024154f55baa66f82924bb762319",
+      "size": 395,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/418bd943a848024154f55baa66f82924bb762319"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/data/remote",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "73135fe45d45933306396c77efc6920b4cdc489e",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/73135fe45d45933306396c77efc6920b4cdc489e"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/data/remote/ApiRepositoryImpl.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7544b44561becc77ffc15a020c95a2e845d5050a",
+      "size": 2307,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/7544b44561becc77ffc15a020c95a2e845d5050a"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/data/remote/GetBalanceRequest.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f780694d9b91ca5e5c8a10e4044ac85db9f3b79a",
+      "size": 2069,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/f780694d9b91ca5e5c8a10e4044ac85db9f3b79a"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/data/remote/SolwaveAPI.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15b8dc36e22e4a473ba5058bcf9dc7fdc23ece12",
+      "size": 2202,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/15b8dc36e22e4a473ba5058bcf9dc7fdc23ece12"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/data/remote/model",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dc23edce373e006b99cba8982862e5999ab7a73c",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/dc23edce373e006b99cba8982862e5999ab7a73c"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/data/remote/model/NetworkError.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11af5608c17253cf21d29060cc0046e4c4dabcc2",
+      "size": 288,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/11af5608c17253cf21d29060cc0046e4c4dabcc2"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/data/remote/model/NetworkResponse.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61f19a6e12dc29be6c833ae4d5281158a9c8464e",
+      "size": 404,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/61f19a6e12dc29be6c833ae4d5281158a9c8464e"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/data/remote/model/SimulationType.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "523f1c0ec81888c2ff198aa5f7dd4587b75e0450",
+      "size": 238,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/523f1c0ec81888c2ff198aa5f7dd4587b75e0450"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/data/remote/model/TransactionStatus.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebed7ad16d61dac79fe1630024ad4fbdd4db7ab1",
+      "size": 259,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/ebed7ad16d61dac79fe1630024ad4fbdd4db7ab1"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/data/remote/model/requests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "18b7711931eb625882046d4bd3b5124fcdec0b88",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/18b7711931eb625882046d4bd3b5124fcdec0b88"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/data/remote/model/requests/InitiateAuthRequest.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c46ecf4de15ad1e241000eb73de10c56cf169ca",
+      "size": 296,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/1c46ecf4de15ad1e241000eb73de10c56cf169ca"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/data/remote/model/requests/InitiateSignMessageRequest.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5567b673812f2b49ed76282b4372f7861de9bdbd",
+      "size": 251,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/5567b673812f2b49ed76282b4372f7861de9bdbd",
+      "error": "SyntaxError: Unexpected token 'p', \"package co\"... is not valid JSON"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/data/remote/model/requests/InitiateTransactionRequest.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f78f38a9d603d629278f53b7c2c24fda3d1fd26",
+      "size": 251,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/7f78f38a9d603d629278f53b7c2c24fda3d1fd26",
+      "error": "SyntaxError: Unexpected token 'p', \"package co\"... is not valid JSON"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/data/remote/model/requests/SimulateTransactionRequest.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "889dfb82c02226b8d1458eb736b7a639b173fd40",
+      "size": 311,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/889dfb82c02226b8d1458eb736b7a639b173fd40"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/data/remote/model/response",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "461f0dda14e10b8ab093ff9949d669ab303face0",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/461f0dda14e10b8ab093ff9949d669ab303face0"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/data/remote/model/response/GetWalletResponse.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7123888abf64acf7b9abad3818320d2b754c265",
+      "size": 114,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/a7123888abf64acf7b9abad3818320d2b754c265"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/data/remote/model/response/InitiateAuthResponse.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da4c48e672a58277ff9b2252c054ca5d396c23db",
+      "size": 501,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/da4c48e672a58277ff9b2252c054ca5d396c23db"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/data/remote/model/response/InitiateSignMessageResponse.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "058d141ac9930b92a9b15fcff8428f8035137b86",
+      "size": 422,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/058d141ac9930b92a9b15fcff8428f8035137b86"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/data/remote/model/response/InitiateTransactionResponse.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65d26d35af62b6d9aa4cff22c4e8c037b588a608",
+      "size": 422,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/65d26d35af62b6d9aa4cff22c4e8c037b588a608"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/data/remote/model/response/SimulateTransactionResponse.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd3e348cc0f3fb42bc9207dc4f7699c7b539a1df",
+      "size": 496,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/bd3e348cc0f3fb42bc9207dc4f7699c7b539a1df"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f9379e1f6a4ad41785f115f642d5711192f2e9c2",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/f9379e1f6a4ad41785f115f642d5711192f2e9c2"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain/model",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fb863854198234d58e89067203b3ff7e449fb87f",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/fb863854198234d58e89067203b3ff7e449fb87f"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain/model/SolWalletKey.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "904bffedcfc93478772e3dc10241f8aed7bcd3f0",
+      "size": 123,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/904bffedcfc93478772e3dc10241f8aed7bcd3f0"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain/model/TransactionParams.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8634cfabb8b177ca10baefa524da5b67cf73c363",
+      "size": 1007,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/8634cfabb8b177ca10baefa524da5b67cf73c363"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain/model/TransactionResponse.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27e7af496805d4bd6597439d243c141acab1b23f",
+      "size": 131,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/27e7af496805d4bd6597439d243c141acab1b23f"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain/model/TransactionSerializer.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a299dde92a119add6a2d691792e7704e09dab2a",
+      "size": 3151,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/6a299dde92a119add6a2d691792e7704e09dab2a"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain/model/WalletEntity.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6af51894e214ba27156a874d4d520defd5babc5",
+      "size": 586,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/d6af51894e214ba27156a874d4d520defd5babc5"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain/repository",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d32991704db5db1a156c57a6d54451c7f4b947fa",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/d32991704db5db1a156c57a6d54451c7f4b947fa"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain/repository/ApiRepository.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7028c30a3e6a727d22ac6fc793d8ec64d59e4fc",
+      "size": 1572,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/f7028c30a3e6a727d22ac6fc793d8ec64d59e4fc"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain/repository/DataStoreRepository.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7af75ce0fd65168d6f6fd3269d598a97905ab6c1",
+      "size": 271,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/7af75ce0fd65168d6f6fd3269d598a97905ab6c1"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain/repository/DatabaseRepository.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5932a129a42ed8dfaa970ff6b8f5fab9a2aaf7f2",
+      "size": 241,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/5932a129a42ed8dfaa970ff6b8f5fab9a2aaf7f2"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain/usecases",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ea9a7b1a510fc1b235133d7e2429985df1bc67ab",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/ea9a7b1a510fc1b235133d7e2429985df1bc67ab"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain/usecases/GenerateSignMessage.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "507ba81ebec154244bc505427a87d8a1afb508b3",
+      "size": 2242,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/507ba81ebec154244bc505427a87d8a1afb508b3"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain/usecases/GetBalance.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8409db9ee35d8039a02025fedc0b28443e4487af",
+      "size": 1168,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/8409db9ee35d8039a02025fedc0b28443e4487af"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain/usecases/GetEncryptionKeyPair.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec16da67123a07cb9a4a526273882510d81cb40e",
+      "size": 497,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/ec16da67123a07cb9a4a526273882510d81cb40e"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain/usecases/GetLatestBlockHash.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2926a5643a7cafc089fccb120a7e7b6c2d4a4507",
+      "size": 893,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/2926a5643a7cafc089fccb120a7e7b6c2d4a4507"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain/usecases/GetWallets.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92fe9cb653866c6ad3bfcc68cbe5a26e29f57f8d",
+      "size": 533,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/92fe9cb653866c6ad3bfcc68cbe5a26e29f57f8d"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain/usecases/GetWalletsPreference.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e6504cb8aca8a6e3eb0f10e7fec84f7ef404d83",
+      "size": 468,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/5e6504cb8aca8a6e3eb0f10e7fec84f7ef404d83"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain/usecases/InitiateCreateUser.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78c3380f9ef26ea2be96f24a32c93b7ab517199e",
+      "size": 1059,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/78c3380f9ef26ea2be96f24a32c93b7ab517199e"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain/usecases/InitiateLogin.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff0e5896d7a83824df60cab8502598634135927f",
+      "size": 1044,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/ff0e5896d7a83824df60cab8502598634135927f"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain/usecases/InitiateSignMessage.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e459440414730c5d531e89db1c903d32ecc9819",
+      "size": 932,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/4e459440414730c5d531e89db1c903d32ecc9819"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain/usecases/InitiateTransaction.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "956e0abc9d07d1efc1ba9032dfdd00aeb1fbe858",
+      "size": 932,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/956e0abc9d07d1efc1ba9032dfdd00aeb1fbe858"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain/usecases/SaveEncryptionKeyPair.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48d56dc36efce9cbf2981596d68521b35479a4a6",
+      "size": 496,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/48d56dc36efce9cbf2981596d68521b35479a4a6"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain/usecases/SaveWallet.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e5589e28cb7963b37add8b4c5f4b6d3636fd49d",
+      "size": 549,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/5e5589e28cb7963b37add8b4c5f4b6d3636fd49d"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain/usecases/SaveWalletPreference.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ca26a7bd8d02c6937becc0980852f07b7ef0316",
+      "size": 466,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/2ca26a7bd8d02c6937becc0980852f07b7ef0316"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain/usecases/SimulateTransaction.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae3622c3986f81775218f4146e8ad16ec1acdd94",
+      "size": 1109,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/ae3622c3986f81775218f4146e8ad16ec1acdd94"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain/usecases/UseCase.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3886807a58aa35928063ec657faa71a09b44784b",
+      "size": 118,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/3886807a58aa35928063ec657faa71a09b44784b"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/domain/usecases/UseCases.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38a2c67c6a3c7f5325922a504e2f1faf65a9ad5a",
+      "size": 709,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/38a2c67c6a3c7f5325922a504e2f1faf65a9ad5a"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/solwave",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "04d6356d3cca721a5bf6e87e0c5e420b99302eb9",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/04d6356d3cca721a5bf6e87e0c5e420b99302eb9"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/solwave/model",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "940737b5d9692a4e76f8751dde368a390253c850",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/940737b5d9692a4e76f8751dde368a390253c850"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/solwave/model/SolwaveState.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6115635231ebcf8c09a7bb88376c9dfced5c41ff",
+      "size": 921,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/6115635231ebcf8c09a7bb88376c9dfced5c41ff"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/solwave/presentation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2f0fbe2e54e8f5989ef05f4b125f7866df34a91d",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/2f0fbe2e54e8f5989ef05f4b125f7866df34a91d"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/solwave/presentation/SolwaveScreen.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f080a2aed1693675c0edee55f6865c7d26fd9dd",
+      "size": 6023,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/5f080a2aed1693675c0edee55f6865c7d26fd9dd"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/solwave/presentation/SolwaveViewModel.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96283ea3ac49debaf60425eefb00312023524eb0",
+      "size": 38775,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/96283ea3ac49debaf60425eefb00312023524eb0"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/solwave/presentation/components",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "81ab19e7d4b49c4e91d1629b822d37598a4c0b03",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/81ab19e7d4b49c4e91d1629b822d37598a4c0b03"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/solwave/presentation/components/FirebaseSignIn.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5181a1b1e1dd54e90194265ccd09f9b5b5b09eca",
+      "size": 1705,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/5181a1b1e1dd54e90194265ccd09f9b5b5b09eca"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/solwave/presentation/components/GeneratePaymentDeepLink.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0712ffef6258e6a11a9974afe387ee3e0e9bc79c",
+      "size": 2919,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/0712ffef6258e6a11a9974afe387ee3e0e9bc79c"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/solwave/presentation/components/LatestBlockhashRequest.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7beefb4d0eb64572a2577ff6330df3df56d194fb",
+      "size": 2026,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/7beefb4d0eb64572a2577ff6330df3df56d194fb"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/solwave/presentation/components/LoadingItem.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13cb5b66eeef861138c769ec24a6861b4dcc4be5",
+      "size": 2740,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/13cb5b66eeef861138c769ec24a6861b4dcc4be5"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/solwave/presentation/components/WalletItem.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b25ac3dc2371a514df5a46a6929f73243bc715a4",
+      "size": 3771,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/b25ac3dc2371a514df5a46a6929f73243bc715a4"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/solwave/presentation/components/WalletLauncher.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "040edc460f39a16cb5350f59e483680e8e78ec8f",
+      "size": 1341,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/040edc460f39a16cb5350f59e483680e8e78ec8f"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/solwave/presentation/components/WebViewInterface.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7585be3f298a7e8607d8a73abae82fc7de46b4a",
+      "size": 5387,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/f7585be3f298a7e8607d8a73abae82fc7de46b4a"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/solwave/presentation/screens",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "56c90ee32d4f49f25a477214cfed53bd08f0482a",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/56c90ee32d4f49f25a477214cfed53bd08f0482a"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/solwave/presentation/screens/AddFundsScreen.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54e73e68320e58ae828cd287a3e426b4e47c99ce",
+      "size": 10458,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/54e73e68320e58ae828cd287a3e426b4e47c99ce"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/solwave/presentation/screens/ChooseWalletScreen.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "919df7b68424657e590a2a5bb8c0984034f06fdc",
+      "size": 8993,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/919df7b68424657e590a2a5bb8c0984034f06fdc"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/solwave/presentation/screens/ErrorScreen.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38b6cacfe90a862a9b28373ba8df1fa7894865a4",
+      "size": 4296,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/38b6cacfe90a862a9b28373ba8df1fa7894865a4"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/solwave/presentation/screens/LoadingScreen.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4c6319a37ada716ab206ce11506389eb32f5925",
+      "size": 5256,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/d4c6319a37ada716ab206ce11506389eb32f5925"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/solwave/presentation/screens/LoginScreen.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df64cd4511016c233aca76584076c8c90f065e92",
+      "size": 6068,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/df64cd4511016c233aca76584076c8c90f065e92"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/solwave/presentation/screens/NoAccountScreen.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "540f7e2d7f74d77992ba43f0d4685e195dd8bb0a",
+      "size": 5276,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/540f7e2d7f74d77992ba43f0d4685e195dd8bb0a"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/solwave/presentation/screens/PayScreen.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a033e07e4cada2c9f23e9ee22d7a7c0bc2d8506",
+      "size": 12941,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/9a033e07e4cada2c9f23e9ee22d7a7c0bc2d8506"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/solwave/presentation/screens/SignMessageScreen.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0911b7ed2971c5c323b0d00d1eae3d1f7203506f",
+      "size": 7669,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/0911b7ed2971c5c323b0d00d1eae3d1f7203506f"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/solwave/presentation/screens/SignupScreen.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a803c032218822016ef9c729e90e21a57e7773c8",
+      "size": 6159,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/a803c032218822016ef9c729e90e21a57e7773c8"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/solwave/presentation/screens/TransactionDoneScreen.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f74224e92b2f2a1a3864be5a7282ff34bbeaaf4",
+      "size": 6987,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/8f74224e92b2f2a1a3864be5a7282ff34bbeaaf4"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/solwave/presentation/screens/TransactionFailedScreen.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e33fca74fcf486afe8ad8da26c47a0a5c378e6d3",
+      "size": 4295,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/e33fca74fcf486afe8ad8da26c47a0a5c378e6d3"
+    },
+    {
+      "path": "solwave/src/main/java/com/saganize/solwave/solwave/presentation/screens/WebViewScreen.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6168e43ad4c9f10e1c4eb26b4eeab8cad55255ab",
+      "size": 14187,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/6168e43ad4c9f10e1c4eb26b4eeab8cad55255ab"
+    },
+    {
+      "path": "solwave/src/main/res",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "16bf5bdbaa681c9c1af52215f4f35bd905ba43f7",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/16bf5bdbaa681c9c1af52215f4f35bd905ba43f7"
+    },
+    {
+      "path": "solwave/src/main/res/drawable",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0320314ccc3e8eae9e403c69cfa2a0b8f1b90715",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/0320314ccc3e8eae9e403c69cfa2a0b8f1b90715"
+    },
+    {
+      "path": "solwave/src/main/res/drawable/add_funds.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8c3f4d272d3fa7a1adcab11e970ec261532a80d",
+      "size": 3768,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/b8c3f4d272d3fa7a1adcab11e970ec261532a80d"
+    },
+    {
+      "path": "solwave/src/main/res/drawable/colored_background.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08531d779903cd6038832791e43c5a129f0a4fe1",
+      "size": 112767,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/08531d779903cd6038832791e43c5a129f0a4fe1"
+    },
+    {
+      "path": "solwave/src/main/res/drawable/copy.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8bb254b3cadcc45c135aea37dd647bf9329337a",
+      "size": 1314,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/f8bb254b3cadcc45c135aea37dd647bf9329337a"
+    },
+    {
+      "path": "solwave/src/main/res/drawable/google_ic.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2768833706ecb84f669819899fda25f164528a48",
+      "size": 1263,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/2768833706ecb84f669819899fda25f164528a48"
+    },
+    {
+      "path": "solwave/src/main/res/drawable/ic_asterisk.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cab7557c9761442a8c4c3e66408c7d28c3424de",
+      "size": 491,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/0cab7557c9761442a8c4c3e66408c7d28c3424de"
+    },
+    {
+      "path": "solwave/src/main/res/drawable/ic_backspace.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f42cf39151531e2f18e9fa3cfc47662d564c21f6",
+      "size": 1258,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/f42cf39151531e2f18e9fa3cfc47662d564c21f6"
+    },
+    {
+      "path": "solwave/src/main/res/drawable/ic_close_wevbiew.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8497b51433f7615eb67e5f6385a207fbbabd1d10",
+      "size": 635,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/8497b51433f7615eb67e5f6385a207fbbabd1d10"
+    },
+    {
+      "path": "solwave/src/main/res/drawable/ic_phantom.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f9a19259f4fa70a2c505762f82a91cd0d4ef341",
+      "size": 1765,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/3f9a19259f4fa70a2c505762f82a91cd0d4ef341"
+    },
+    {
+      "path": "solwave/src/main/res/drawable/ic_saga.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bba56568653923a735220557cf68759c4599e02b",
+      "size": 1291,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/bba56568653923a735220557cf68759c4599e02b"
+    },
+    {
+      "path": "solwave/src/main/res/drawable/ic_share.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31cf6f8a8e306548456fd5810aa3fd2bdf8d2ff9",
+      "size": 853,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/31cf6f8a8e306548456fd5810aa3fd2bdf8d2ff9"
+    },
+    {
+      "path": "solwave/src/main/res/drawable/ic_show.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4fa6bc5e8ad8d3342d77fa352d8ea77d869b499e",
+      "size": 985,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/4fa6bc5e8ad8d3342d77fa352d8ea77d869b499e"
+    },
+    {
+      "path": "solwave/src/main/res/drawable/ic_solflare.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed4a3cf3eb41011170d4b6ebfeca1a69eaf7d19f",
+      "size": 3044,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/ed4a3cf3eb41011170d4b6ebfeca1a69eaf7d19f"
+    },
+    {
+      "path": "solwave/src/main/res/drawable/ic_transaction_done.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c08c39d5b6b412bded201fb7c27f1daabb68059",
+      "size": 1467,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/1c08c39d5b6b412bded201fb7c27f1daabb68059"
+    },
+    {
+      "path": "solwave/src/main/res/drawable/ic_transaction_error.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "806bd2b66eae18d9cac82683d35614de4e8db2d2",
+      "size": 1836,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/806bd2b66eae18d9cac82683d35614de4e8db2d2"
+    },
+    {
+      "path": "solwave/src/main/res/drawable/ic_transaction_failed.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a7bfe098060b6ce7f2f0b3e6198c5eb89f3aba8",
+      "size": 1558,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/5a7bfe098060b6ce7f2f0b3e6198c5eb89f3aba8"
+    },
+    {
+      "path": "solwave/src/main/res/drawable/ic_wv_back.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8497b51433f7615eb67e5f6385a207fbbabd1d10",
+      "size": 635,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/8497b51433f7615eb67e5f6385a207fbbabd1d10"
+    },
+    {
+      "path": "solwave/src/main/res/drawable/no_account.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0ae22d6c73641ec558f731e54d7366a3ee0a3f7",
+      "size": 1593,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/e0ae22d6c73641ec558f731e54d7366a3ee0a3f7"
+    },
+    {
+      "path": "solwave/src/main/res/drawable/no_funds.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dcb0bc3d8f3d16444dd029dbb0e91db2ebec903d",
+      "size": 4970,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/dcb0bc3d8f3d16444dd029dbb0e91db2ebec903d"
+    },
+    {
+      "path": "solwave/src/main/res/drawable/noaccountfound.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7432634c438c9f3c4cd1587501463dd05e75d18",
+      "size": 1593,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/d7432634c438c9f3c4cd1587501463dd05e75d18"
+    },
+    {
+      "path": "solwave/src/main/res/font",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6744d6ebc080d38ad5a2a60ac27e6f667e46bb92",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/6744d6ebc080d38ad5a2a60ac27e6f667e46bb92"
+    },
+    {
+      "path": "solwave/src/main/res/font/inter_light.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e265d8905dd0ab93e4830a461453e1dbdadaa56",
+      "size": 310420,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/9e265d8905dd0ab93e4830a461453e1dbdadaa56"
+    },
+    {
+      "path": "solwave/src/main/res/font/inter_medium.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b53fb1c4acbe100c7a91f07564b7f1fa2d5bab12",
+      "size": 314712,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/b53fb1c4acbe100c7a91f07564b7f1fa2d5bab12"
+    },
+    {
+      "path": "solwave/src/main/res/font/inter_regular.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d4eebf20665d5ae746c622a2bd42274b54d2bf1",
+      "size": 309828,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/8d4eebf20665d5ae746c622a2bd42274b54d2bf1"
+    },
+    {
+      "path": "solwave/src/main/res/font/poppins_light.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc36bcc2427a84e29e61ea7b634024072c04b206",
+      "size": 159892,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/bc36bcc2427a84e29e61ea7b634024072c04b206"
+    },
+    {
+      "path": "solwave/src/main/res/font/poppins_medium.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bcdcc27f22e001e46defdfd9e23f224ff65dd67",
+      "size": 156520,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/6bcdcc27f22e001e46defdfd9e23f224ff65dd67"
+    },
+    {
+      "path": "solwave/src/main/res/font/poppins_regular.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f0c71b70a49664ced448c63edc9c4ff2bf8cf4a",
+      "size": 158240,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/9f0c71b70a49664ced448c63edc9c4ff2bf8cf4a"
+    },
+    {
+      "path": "solwave/src/main/res/font/rubik_light.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c3443dd2100b0738ba46ef7b5fea6e0b41d68c5",
+      "size": 123956,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/3c3443dd2100b0738ba46ef7b5fea6e0b41d68c5"
+    },
+    {
+      "path": "solwave/src/main/res/font/rubik_medium.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be42fad17ed2f58a6941bd776ab5dacaa127208b",
+      "size": 125172,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/be42fad17ed2f58a6941bd776ab5dacaa127208b"
+    },
+    {
+      "path": "solwave/src/main/res/font/rubik_regular.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a0168881df83a2dbcea5d163d8a4b44f2c0d909",
+      "size": 124572,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/2a0168881df83a2dbcea5d163d8a4b44f2c0d909"
+    },
+    {
+      "path": "solwave/src/main/res/layout",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7303ae6157ffef9b1f8a1ecbffda838905f9d394",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/7303ae6157ffef9b1f8a1ecbffda838905f9d394"
+    },
+    {
+      "path": "solwave/src/main/res/layout/webview.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed355bd29be4498867b318df996839389f3b8097",
+      "size": 443,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/ed355bd29be4498867b318df996839389f3b8097"
+    },
+    {
+      "path": "solwave/src/main/res/raw",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "835129bcc144364e326484a3230226c082b9261d",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/835129bcc144364e326484a3230226c082b9261d"
+    },
+    {
+      "path": "solwave/src/main/res/raw/loading.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c765d4ab58b8dc868d497e6a9f6bfb4509a70de",
+      "size": 2602,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/8c765d4ab58b8dc868d497e6a9f6bfb4509a70de"
+    },
+    {
+      "path": "solwave/src/main/res/raw/loading_animation.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02db2c557147e8de743c391c6c29c7033b88e0a6",
+      "size": 2771,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/02db2c557147e8de743c391c6c29c7033b88e0a6"
+    },
+    {
+      "path": "solwave/src/main/res/values",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e2908d4c47e118c9d2572079dfce4ab4b3a35f03",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/e2908d4c47e118c9d2572079dfce4ab4b3a35f03"
+    },
+    {
+      "path": "solwave/src/main/res/values/colors.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8524cd961d27b6695e755c6ef2d4d58cf38431e",
+      "size": 147,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/c8524cd961d27b6695e755c6ef2d4d58cf38431e"
+    },
+    {
+      "path": "solwave/src/main/res/values/strings.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3803a89c80527151d7773d782bedef51cc1bff06",
+      "size": 1579,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/3803a89c80527151d7773d782bedef51cc1bff06"
+    },
+    {
+      "path": "solwave/src/main/res/values/themes.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3e0283936c6e239a7f76ac5f9e09fd2384a0330",
+      "size": 352,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/c3e0283936c6e239a7f76ac5f9e09fd2384a0330"
+    },
+    {
+      "path": "solwave/src/test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "194f45245d7d9c5dadbc5ae3b73756f986b591cd",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/194f45245d7d9c5dadbc5ae3b73756f986b591cd"
+    },
+    {
+      "path": "solwave/src/test/java",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2ca96c578ffe28bd335482e2e1d0c0b4274719d9",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/2ca96c578ffe28bd335482e2e1d0c0b4274719d9"
+    },
+    {
+      "path": "solwave/src/test/java/com",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d0409a20585e81c1140b12580dc4612b60924fa1",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/d0409a20585e81c1140b12580dc4612b60924fa1"
+    },
+    {
+      "path": "solwave/src/test/java/com/saganize",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8e9d24452e6f330c04f195d43a930c9956ac76fd",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/8e9d24452e6f330c04f195d43a930c9956ac76fd"
+    },
+    {
+      "path": "solwave/src/test/java/com/saganize/solwave",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f13e14c184b64712e2dbb186b68540181fefecfa",
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/trees/f13e14c184b64712e2dbb186b68540181fefecfa"
+    },
+    {
+      "path": "solwave/src/test/java/com/saganize/solwave/ExampleUnitTest.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9756efe65787e984e82b10140c2228c134631973",
+      "size": 355,
+      "url": "https://api.github.com/repos/Saganize/Solwave-kt/git/blobs/9756efe65787e984e82b10140c2228c134631973"
+    }
+  ]
+}

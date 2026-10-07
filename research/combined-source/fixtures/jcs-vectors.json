@@ -1,0 +1,34 @@
+[
+  {
+    "label": "SYNTHETIC_CANONICALIZATION_VECTOR",
+    "input": {
+      "z": "é\n",
+      "a": null
+    },
+    "canonical": "{\"a\":null,\"z\":\"é\\n\"}",
+    "sha256": "8221720614d47f48bafd631a339e60c00dc226d4eb4d144003c44e9c942e4708"
+  },
+  {
+    "label": "SYNTHETIC_CANONICALIZATION_VECTOR",
+    "input": {
+      "😀": "astral",
+      "": "bmp",
+      "note": "नमस्ते\nline 2"
+    },
+    "canonical": "{\"note\":\"नमस्ते\\nline 2\",\"😀\":\"astral\",\"\":\"bmp\"}",
+    "sha256": "f30e6f7aed7be6ace8f48b96c04f7367f8a5dee271510990eb3cbf5508dbbbb8"
+  },
+  {
+    "label": "SYNTHETIC_CANONICALIZATION_VECTOR",
+    "input": {
+      "schema": "deproof-evidence-v2",
+      "taskId": null,
+      "messageSha256": null,
+      "files": [],
+      "note": " exact\n note 😀 ",
+      "createdAt": "2026-10-06T00:00:00Z"
+    },
+    "canonical": "{\"createdAt\":\"2026-10-06T00:00:00Z\",\"files\":[],\"messageSha256\":null,\"note\":\" exact\\n note 😀 \",\"schema\":\"deproof-evidence-v2\",\"taskId\":null}",
+    "sha256": "55ad3e1e07325406894f347c3e859d415e18a50d853660213a0f8037908a0340"
+  }
+]

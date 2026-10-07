@@ -1,0 +1,104 @@
+{
+  "repository": "Quantum-Software-Development/solana-atlas-quantum-hub",
+  "tree_sha": "3db7bd36b57eb77717a304722c4100299fec02f7",
+  "truncated": false,
+  "entries": [
+    {
+      "path": "CMTAT Solana Specification v1.0.0.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64b12fce93d56c2b8479c7a4a75693e531718a70",
+      "size": 4547443,
+      "url": "https://api.github.com/repos/Quantum-Software-Development/solana-atlas-quantum-hub/git/blobs/64b12fce93d56c2b8479c7a4a75693e531718a70"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be8522f25c2f40b61dda499c102bb20c4b28b646",
+      "size": 1090,
+      "url": "https://api.github.com/repos/Quantum-Software-Development/solana-atlas-quantum-hub/git/blobs/be8522f25c2f40b61dda499c102bb20c4b28b646",
+      "error": "SyntaxError: Unexpected token 'M', \"MIT Licens\"... is not valid JSON"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56a787540be31ae94848e5d221661a0718cf5ee1",
+      "size": 12247,
+      "url": "https://api.github.com/repos/Quantum-Software-Development/solana-atlas-quantum-hub/git/blobs/56a787540be31ae94848e5d221661a0718cf5ee1",
+      "error": "SyntaxError: Unexpected token 'q', \"qd<br>\n\n##\"... is not valid JSON"
+    },
+    {
+      "path": "README.pt_BR.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e2c704a647bf5cb10327d0bae8d9899c2493c77",
+      "size": 614,
+      "url": "https://api.github.com/repos/Quantum-Software-Development/solana-atlas-quantum-hub/git/blobs/6e2c704a647bf5cb10327d0bae8d9899c2493c77",
+      "error": "SyntaxError: Unexpected token '\\', \"\\[**[\ud83c\udde7\ud83c\uddf7 \"... is not valid JSON"
+    },
+    {
+      "path": "solana-market-insights",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "273a886e493fa3ac91e043aea009112822034814",
+      "url": "https://api.github.com/repos/Quantum-Software-Development/solana-atlas-quantum-hub/git/trees/273a886e493fa3ac91e043aea009112822034814"
+    },
+    {
+      "path": "solana-market-insights/weekly-roundup-2025-12-22.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d72db7a73d3adad5f0619947b95a76a32ee274cb",
+      "size": 1514,
+      "url": "https://api.github.com/repos/Quantum-Software-Development/solana-atlas-quantum-hub/git/blobs/d72db7a73d3adad5f0619947b95a76a32ee274cb"
+    },
+    {
+      "path": "star-atlas-economics-paper.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f44265effcf150ad01e9cca497cfd8d61c06d020",
+      "size": 618485,
+      "url": "https://api.github.com/repos/Quantum-Software-Development/solana-atlas-quantum-hub/git/blobs/f44265effcf150ad01e9cca497cfd8d61c06d020"
+    },
+    {
+      "path": "\ud83c\udde7\ud83c\uddf7-CMTAT-Solana-Compliance.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e35209ce543d79f921a125114167a01d2730499",
+      "size": 3192,
+      "url": "https://api.github.com/repos/Quantum-Software-Development/solana-atlas-quantum-hub/git/blobs/0e35209ce543d79f921a125114167a01d2730499"
+    },
+    {
+      "path": "\ud83c\uddec\ud83c\udde7-CMTAT-Solana-Compliance.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c4eeb4d428eee27e2e088a5b7c9072ece0a6bed",
+      "size": 2880,
+      "url": "https://api.github.com/repos/Quantum-Software-Development/solana-atlas-quantum-hub/git/blobs/3c4eeb4d428eee27e2e088a5b7c9072ece0a6bed"
+    },
+    {
+      "path": "\ud83c\udfb6  -SolanaRemix_DO-IT-LIKE-THAT_MP4_MP3",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "596a9ee5844a711cf235d1946cb73e3f22d147aa",
+      "url": "https://api.github.com/repos/Quantum-Software-Development/solana-atlas-quantum-hub/git/trees/596a9ee5844a711cf235d1946cb73e3f22d147aa"
+    },
+    {
+      "path": "\ud83c\udfb6  -SolanaRemix_DO-IT-LIKE-THAT_MP4_MP3/\ud83c\udfb6  SolanaRemix)_DO-IT-LIKE-THAT_MP3.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4286712a3270a390727453a3844dde92da4f4caa",
+      "size": 473,
+      "url": "https://api.github.com/repos/Quantum-Software-Development/solana-atlas-quantum-hub/git/blobs/4286712a3270a390727453a3844dde92da4f4caa"
+    },
+    {
+      "path": "\ud83c\udfb6  -SolanaRemix_DO-IT-LIKE-THAT_MP4_MP3/\ud83c\udfb6  SolanaRemix)_DO-IT-LIKE-THAT_MP4.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "277b5ab2e38e9823472454e8999c37d0a2eb4850",
+      "size": 166,
+      "url": "https://api.github.com/repos/Quantum-Software-Development/solana-atlas-quantum-hub/git/blobs/277b5ab2e38e9823472454e8999c37d0a2eb4850"
+    }
+  ]
+}

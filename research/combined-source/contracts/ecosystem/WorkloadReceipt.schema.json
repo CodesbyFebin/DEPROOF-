@@ -1,0 +1,131 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "deproof:workload-receipt-v1",
+  "title": "WorkloadReceipt",
+  "description": "Evidence record for a single workload execution through a DePIN adapter. Distinguishes between locally observed, node-signed, independently verified, and provider-acknowledged evidence. Does not establish token rewards.",
+  "type": "object",
+  "required": [
+    "schema", "receiptId", "adapterId", "adapterVersion",
+    "nodeFingerprint", "operationId", "executedAt",
+    "workloadDigest", "evidenceLevel", "verificationResult",
+    "trustAssumptions"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "type": "string", "const": "deproof:workload-receipt-v1" },
+    "receiptId": {
+      "type": "string",
+      "description": "Hex-encoded 24-byte random ID unique to this receipt."
+    },
+    "adapterId": {
+      "type": "string",
+      "description": "Adapter ID from the catalog."
+    },
+    "adapterVersion": { "type": "string" },
+    "nodeFingerprint": {
+      "type": "string",
+      "description": "SHA-256 fingerprint of the node's public key."
+    },
+    "operationId": {
+      "type": "string",
+      "description": "Scoped operation ID from the node-agent command that authorized this workload."
+    },
+    "executedAt": { "type": "string", "format": "date-time" },
+    "observationIntervalSeconds": {
+      "type": "integer",
+      "description": "Wall-clock duration of the measured interval."
+    },
+    "workloadDigest": {
+      "type": "string",
+      "description": "SHA-256 digest of the workload artifact (binary, image, or script) used."
+    },
+    "jobCommitment": {
+      "type": "string",
+      "description": "Optional: commitment to the job spec. Present for proof workloads."
+    },
+    "inputDigest": {
+      "type": "string",
+      "description": "Optional: SHA-256 of the input payload."
+    },
+    "outputDigest": {
+      "type": "string",
+      "description": "Optional: SHA-256 of the output payload."
+    },
+    "measurementSource": {
+      "type": "string",
+      "description": "What produced the measurement (e.g. kernel-netdev-counters, process-stdout, prover-binary)."
+    },
+    "measuredValue": {
+      "type": "object",
+      "description": "Raw measured values with units. Schema depends on adapter operation kind.",
+      "additionalProperties": {
+        "oneOf": [
+          { "type": "string" },
+          { "type": "number" },
+          { "type": "boolean" }
+        ]
+      }
+    },
+    "evidenceLevel": {
+      "type": "string",
+      "enum": [
+        "LOCAL_OBSERVATION",
+        "NODE_SIGNED_RECORD",
+        "INDEPENDENTLY_VERIFIED_RESULT",
+        "PROVIDER_ACKNOWLEDGED_CONTRIBUTION"
+      ],
+      "description": "Highest evidence level achieved. A signed local counter is not independent proof. A computation proof does not establish bandwidth delivery or physical truth."
+    },
+    "verificationResult": {
+      "type": "object",
+      "required": ["passed", "method"],
+      "additionalProperties": false,
+      "properties": {
+        "passed": { "type": "boolean" },
+        "method": {
+          "type": "string",
+          "description": "Verification method used."
+        },
+        "verifierVersion": { "type": "string" },
+        "details": { "type": "string" }
+      }
+    },
+    "providerAcknowledgement": {
+      "type": "object",
+      "description": "Present only when the external provider confirmed the contribution. Not inferred from local measurements.",
+      "additionalProperties": false,
+      "properties": {
+        "available": { "type": "boolean" },
+        "reason": { "type": "string" },
+        "providerRef": { "type": "string" }
+      }
+    },
+    "onChainReference": {
+      "type": "object",
+      "description": "Optional on-chain anchor. Never inferred from local data.",
+      "additionalProperties": false,
+      "properties": {
+        "signature": { "type": "string" },
+        "slot": { "type": "integer" },
+        "cluster": { "type": "string" }
+      }
+    },
+    "nodeSignature": {
+      "type": "string",
+      "description": "Base64 Ed25519 signature by the node's identity key over the canonical receipt bytes (JCS of all fields except this one)."
+    },
+    "trustAssumptions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Explicit trust assumptions the verifier must accept. Never empty."
+    },
+    "isQualificationFixture": {
+      "type": "boolean",
+      "description": "True when this receipt was produced by a local qualification fixture rather than a live external provider. Must never be presented as real provider contribution."
+    },
+    "fixtureLabel": {
+      "type": "string",
+      "description": "Required when isQualificationFixture=true. Human-readable label explaining the fixture context."
+    }
+  }
+}

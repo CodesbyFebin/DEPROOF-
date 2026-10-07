@@ -1,0 +1,4207 @@
+{
+  "repository": "beeman/solana-mobile-monorepo",
+  "tree_sha": "8eeaa98690d14decdaec82058a5fa804613f1b05",
+  "truncated": false,
+  "entries": [
+    {
+      "path": ".bun-version",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17e63e7affd5aa20e3c588a9001537d156a59f47",
+      "size": 7,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/17e63e7affd5aa20e3c588a9001537d156a59f47"
+    },
+    {
+      "path": ".dockerignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "beae40e8b4289366871d83bb25d701c4be0f8984",
+      "size": 323,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/beae40e8b4289366871d83bb25d701c4be0f8984"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ecfeeec285337dd50d2c0acf3e0c61f977c26c78",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/ecfeeec285337dd50d2c0acf3e0c61f977c26c78"
+    },
+    {
+      "path": ".github/actions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "81c3e11d84e392eb86caa8ef570152b84aea182f",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/81c3e11d84e392eb86caa8ef570152b84aea182f"
+    },
+    {
+      "path": ".github/actions/setup",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "190eb3761ef1c7ea0c1b0d167907e958b06b1674",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/190eb3761ef1c7ea0c1b0d167907e958b06b1674"
+    },
+    {
+      "path": ".github/actions/setup/action.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "beead542435f2de890d01c0d7262cedfc1ac883e",
+      "size": 715,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/beead542435f2de890d01c0d7262cedfc1ac883e"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "db45848766f684aa4943e8c44e04edb2b572d413",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/db45848766f684aa4943e8c44e04edb2b572d413"
+    },
+    {
+      "path": ".github/workflows/ci.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1290e487cc44934ff58299791af1c00860d2d71d",
+      "size": 1343,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/1290e487cc44934ff58299791af1c00860d2d71d"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5dc83d4f20c4cb1e1973a64566904010a36a9853",
+      "size": 808,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/5dc83d4f20c4cb1e1973a64566904010a36a9853"
+    },
+    {
+      "path": ".ruler",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f54519bd44b2d480f1ed98099f8ca633483a488c",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/f54519bd44b2d480f1ed98099f8ca633483a488c"
+    },
+    {
+      "path": ".ruler/project.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69dff98c3fcebaf791efdc70ff2bd20d29b1d10b",
+      "size": 2941,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/69dff98c3fcebaf791efdc70ff2bd20d29b1d10b"
+    },
+    {
+      "path": ".ruler/ruler.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3e33495fcf3606ee17b8f9335536926a4ac4ece",
+      "size": 831,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/d3e33495fcf3606ee17b8f9335536926a4ac4ece"
+    },
+    {
+      "path": ".ruler/skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1f9ece38694c3a4d8236d4feab03830cadb8d383",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/1f9ece38694c3a4d8236d4feab03830cadb8d383"
+    },
+    {
+      "path": ".ruler/skills/ai-sdk",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8b492e653959108264a9cd8c0d19b3ffd40ae9e9",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/8b492e653959108264a9cd8c0d19b3ffd40ae9e9"
+    },
+    {
+      "path": ".ruler/skills/ai-sdk/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "315326eabd1f388874b1aeb20a9253c0ba2575e6",
+      "size": 4586,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/315326eabd1f388874b1aeb20a9253c0ba2575e6",
+      "error": "SyntaxError: No number after minus sign in JSON at position 1 (line 1 column 2)"
+    },
+    {
+      "path": ".ruler/skills/ai-sdk/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a213eb2bda738a9537376a9f4bced82d69f09841",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/a213eb2bda738a9537376a9f4bced82d69f09841"
+    },
+    {
+      "path": ".ruler/skills/ai-sdk/references/ai-gateway.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8bb2d66ff45d193e8dd4f8144d51c15db8c80dcf",
+      "size": 2191,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/8bb2d66ff45d193e8dd4f8144d51c15db8c80dcf",
+      "error": "SyntaxError: No number after minus sign in JSON at position 1 (line 1 column 2)"
+    },
+    {
+      "path": ".ruler/skills/ai-sdk/references/common-errors.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "529521ebec8f31164bbaf3e1c744c60c8ea3f4c0",
+      "size": 11034,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/529521ebec8f31164bbaf3e1c744c60c8ea3f4c0",
+      "error": "SyntaxError: No number after minus sign in JSON at position 1 (line 1 column 2)"
+    },
+    {
+      "path": ".ruler/skills/ai-sdk/references/type-safe-agents.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17d7a6fdc5edcda9cd39c87f4f80f686c9fea29e",
+      "size": 5323,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/17d7a6fdc5edcda9cd39c87f4f80f686c9fea29e",
+      "error": "SyntaxError: No number after minus sign in JSON at position 1 (line 1 column 2)"
+    },
+    {
+      "path": ".ruler/skills/better-auth-best-practices",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "83bdaa60f65da278dc513a64127f4e4db759cd20",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/83bdaa60f65da278dc513a64127f4e4db759cd20"
+    },
+    {
+      "path": ".ruler/skills/better-auth-best-practices/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3458e0732ee816722baa3a47f1000187f9291480",
+      "size": 6153,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/3458e0732ee816722baa3a47f1000187f9291480"
+    },
+    {
+      "path": ".ruler/skills/create-auth-skill",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b296a4603f09b8afed34e4bcd421ec5514d70015",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/b296a4603f09b8afed34e4bcd421ec5514d70015"
+    },
+    {
+      "path": ".ruler/skills/create-auth-skill/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b18c85f236f467b22b8594e873406707a6526a21",
+      "size": 6558,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/b18c85f236f467b22b8594e873406707a6526a21"
+    },
+    {
+      "path": ".ruler/skills/heroui-native",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "486179e2ea94cf7baa42022ec6355a62cc8e57a5",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/486179e2ea94cf7baa42022ec6355a62cc8e57a5"
+    },
+    {
+      "path": ".ruler/skills/heroui-native/LICENSE.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "763029c035bfd90050dad7cd1396f0554005beed",
+      "size": 1068,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/763029c035bfd90050dad7cd1396f0554005beed"
+    },
+    {
+      "path": ".ruler/skills/heroui-native/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4446e4bbc263720ac284421ab3fa55d7cac4bb0c",
+      "size": 7185,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/4446e4bbc263720ac284421ab3fa55d7cac4bb0c"
+    },
+    {
+      "path": ".ruler/skills/heroui-native/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "efd2b7fd1adbf128fc4466461e300660eec1de4d",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/efd2b7fd1adbf128fc4466461e300660eec1de4d"
+    },
+    {
+      "path": ".ruler/skills/heroui-native/scripts/get_component_docs.mjs",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "3a9fc9647a4a32046eb3bd258eaeb58efbfdeb34",
+      "size": 3978,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/3a9fc9647a4a32046eb3bd258eaeb58efbfdeb34"
+    },
+    {
+      "path": ".ruler/skills/heroui-native/scripts/get_docs.mjs",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "a4f2c2a949fc189ae86ef1549ba0340101981bb2",
+      "size": 4262,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/a4f2c2a949fc189ae86ef1549ba0340101981bb2"
+    },
+    {
+      "path": ".ruler/skills/heroui-native/scripts/get_theme.mjs",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "dfca7c3fad1021cbed42ab6f58cf61f9b197c8fc",
+      "size": 5179,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/dfca7c3fad1021cbed42ab6f58cf61f9b197c8fc"
+    },
+    {
+      "path": ".ruler/skills/heroui-native/scripts/list_components.mjs",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "4a2821e3bbfcf76c2e2e0879af618cb2aac4fae4",
+      "size": 3628,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/4a2821e3bbfcf76c2e2e0879af618cb2aac4fae4"
+    },
+    {
+      "path": ".ruler/skills/heroui-react",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9495596af624be13368d590bee87e36648acea12",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/9495596af624be13368d590bee87e36648acea12"
+    },
+    {
+      "path": ".ruler/skills/heroui-react/LICENSE.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "763029c035bfd90050dad7cd1396f0554005beed",
+      "size": 1068,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/763029c035bfd90050dad7cd1396f0554005beed"
+    },
+    {
+      "path": ".ruler/skills/heroui-react/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1739912dc50003ed064dc19e58a47e648df7f495",
+      "size": 7031,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/1739912dc50003ed064dc19e58a47e648df7f495"
+    },
+    {
+      "path": ".ruler/skills/heroui-react/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8d1fab5148293cf0aafbe121dcd533c62272413f",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/8d1fab5148293cf0aafbe121dcd533c62272413f"
+    },
+    {
+      "path": ".ruler/skills/heroui-react/scripts/get_component_docs.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ad898a3c228f83bb72197a63258f179b165595c",
+      "size": 3928,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/2ad898a3c228f83bb72197a63258f179b165595c"
+    },
+    {
+      "path": ".ruler/skills/heroui-react/scripts/get_docs.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3748cf9016457a0abbe52f685d3b4b6234be0f25",
+      "size": 3992,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/3748cf9016457a0abbe52f685d3b4b6234be0f25"
+    },
+    {
+      "path": ".ruler/skills/heroui-react/scripts/get_source.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9c729d70448154e04b354e461a101e9cfc92ceb",
+      "size": 4050,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/b9c729d70448154e04b354e461a101e9cfc92ceb"
+    },
+    {
+      "path": ".ruler/skills/heroui-react/scripts/get_styles.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c545704cdd5be3f32803b00e5bf80634915940a",
+      "size": 3999,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/0c545704cdd5be3f32803b00e5bf80634915940a"
+    },
+    {
+      "path": ".ruler/skills/heroui-react/scripts/get_theme.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63feda5e0cbed4c336ee4b9886fae55fafe1ef42",
+      "size": 5050,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/63feda5e0cbed4c336ee4b9886fae55fafe1ef42"
+    },
+    {
+      "path": ".ruler/skills/heroui-react/scripts/list_components.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61f6160329d70ae820b8f639157a42cf0c9dd812",
+      "size": 3572,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/61f6160329d70ae820b8f639157a42cf0c9dd812"
+    },
+    {
+      "path": ".ruler/skills/hono",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7df0a665faeaff8f2ae3aef1da70102cf1030f03",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/7df0a665faeaff8f2ae3aef1da70102cf1030f03"
+    },
+    {
+      "path": ".ruler/skills/hono/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b00a0e5303525d370c8629753e41729f16cc21d",
+      "size": 2000,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/8b00a0e5303525d370c8629753e41729f16cc21d"
+    },
+    {
+      "path": ".ruler/skills/turborepo",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8332d37727ede044f3d9406c94fbf072e520484f",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/8332d37727ede044f3d9406c94fbf072e520484f"
+    },
+    {
+      "path": ".ruler/skills/turborepo/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d66c1f39e93d9d54a0ed7b2eac1170cd833d8d78",
+      "size": 27156,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/d66c1f39e93d9d54a0ed7b2eac1170cd833d8d78"
+    },
+    {
+      "path": ".ruler/skills/turborepo/command",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "78f1d0bbdc3ce730c7b9ec52907c644f0c46d59d",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/78f1d0bbdc3ce730c7b9ec52907c644f0c46d59d"
+    },
+    {
+      "path": ".ruler/skills/turborepo/command/turborepo.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8323edcbfabc02dd907a60fa3cafa5508c370f0f",
+      "size": 2563,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/8323edcbfabc02dd907a60fa3cafa5508c370f0f"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "64206b7f1ccd3adc9a75a2e05d34aae762a34a2c",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/64206b7f1ccd3adc9a75a2e05d34aae762a34a2c"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/best-practices",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "498879b8baab3613fee2d79fa3727732655197ea",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/498879b8baab3613fee2d79fa3727732655197ea"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/best-practices/RULE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2f52808ef6ed7288162a99489c94cddec2bf3cf",
+      "size": 4907,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/d2f52808ef6ed7288162a99489c94cddec2bf3cf"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/best-practices/dependencies.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a6fd2b8a51ce591b18cddb075e914f6affd355f",
+      "size": 4261,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/7a6fd2b8a51ce591b18cddb075e914f6affd355f"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/best-practices/packages.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29800a13d830d3026f377ad56ccb5a163bdbbef1",
+      "size": 6308,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/29800a13d830d3026f377ad56ccb5a163bdbbef1"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/best-practices/structure.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f92886349f6dcdcfa8cf4f667c34e417ecac995",
+      "size": 5005,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/4f92886349f6dcdcfa8cf4f667c34e417ecac995"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/boundaries",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4cd237241b36d04881fec2d69c68ffe5345d0e8f",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/4cd237241b36d04881fec2d69c68ffe5345d0e8f"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/boundaries/RULE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3deb0a41591aed42d22de938d4ef7cd9bc1a26a4",
+      "size": 1948,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/3deb0a41591aed42d22de938d4ef7cd9bc1a26a4"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/caching",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "71888b4f80decb102a1a833adabda90d53a0f887",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/71888b4f80decb102a1a833adabda90d53a0f887"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/caching/RULE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe6388e284d7f22198ba4304ed478cd1615f5d58",
+      "size": 2294,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/fe6388e284d7f22198ba4304ed478cd1615f5d58"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/caching/gotchas.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17d44995f0cb04629c89e579d2a1af5bfe4e2308",
+      "size": 2828,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/17d44995f0cb04629c89e579d2a1af5bfe4e2308"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/caching/remote-cache.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da76458bd299b79ade5fe8856d7bf274cf73ffab",
+      "size": 2538,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/da76458bd299b79ade5fe8856d7bf274cf73ffab"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/ci",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "86e45ad96c168db72736b2b139c493b2aa132f91",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/86e45ad96c168db72736b2b139c493b2aa132f91"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/ci/RULE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e21933fd031ba17d6b1c6e1e6f9bdbb255b299d",
+      "size": 2191,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/0e21933fd031ba17d6b1c6e1e6f9bdbb255b299d"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/ci/github-actions.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e5d4ccc4c752c87fe9f0c864600af07e9dcbd13",
+      "size": 2813,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/7e5d4ccc4c752c87fe9f0c864600af07e9dcbd13"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/ci/patterns.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "447509a14745be90a69c73df539f174ea9d85c82",
+      "size": 2583,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/447509a14745be90a69c73df539f174ea9d85c82"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/ci/vercel.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f21d41ac0429fa5ff075df0d5930575703d16d74",
+      "size": 2143,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/f21d41ac0429fa5ff075df0d5930575703d16d74"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/cli",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5325d4e0ddd402ceb98445aeeec14d4d07a63695",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/5325d4e0ddd402ceb98445aeeec14d4d07a63695"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/cli/RULE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63f6f34d7d06e22c96b945d51a7f63a8e37a14ec",
+      "size": 2113,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/63f6f34d7d06e22c96b945d51a7f63a8e37a14ec"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/cli/commands.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1eb6b2f02229670e1b3869fc887c5eef5878225",
+      "size": 5569,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/c1eb6b2f02229670e1b3869fc887c5eef5878225"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/configuration",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2c009127f67c9d8dac92cbc451a0b205a90ec967",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/2c009127f67c9d8dac92cbc451a0b205a90ec967"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/configuration/RULE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9637922943f281fad4d37d54bbeede3e90541663",
+      "size": 4339,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/9637922943f281fad4d37d54bbeede3e90541663"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/configuration/global-options.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2d7a8d23f86ee9b8d16fdcdd8aa8b07d4f8647e",
+      "size": 4233,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/b2d7a8d23f86ee9b8d16fdcdd8aa8b07d4f8647e"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/configuration/gotchas.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16d1baa89a44a8ceb4bd4c28e0eb0508adf22355",
+      "size": 8125,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/16d1baa89a44a8ceb4bd4c28e0eb0508adf22355"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/configuration/tasks.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a54653009e55e7fe2e5cdfd737049ce96a5901e3",
+      "size": 5477,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/a54653009e55e7fe2e5cdfd737049ce96a5901e3"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/environment",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2f0f5ef7a3b5d4206f60f633f772532845c7aba8",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/2f0f5ef7a3b5d4206f60f633f772532845c7aba8"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/environment/RULE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "790b01b5924b78229d6e76248f57b1c3d8ec285f",
+      "size": 1739,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/790b01b5924b78229d6e76248f57b1c3d8ec285f"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/environment/gotchas.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eff77a447568ac609feec49726ca35570e1acb33",
+      "size": 2954,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/eff77a447568ac609feec49726ca35570e1acb33"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/environment/modes.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e655331010fb813e60983a34f618b4753d49dfe",
+      "size": 2419,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/2e655331010fb813e60983a34f618b4753d49dfe"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/filtering",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1676cceee4b61e95374df50f873c86319907e1d6",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/1676cceee4b61e95374df50f873c86319907e1d6"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/filtering/RULE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04e19cc86d64ad1a7a7134ff22940052d3237ef6",
+      "size": 4160,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/04e19cc86d64ad1a7a7134ff22940052d3237ef6"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/filtering/patterns.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17b9f1c56564571bf13f5a9b18b90f15107d4288",
+      "size": 2412,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/17b9f1c56564571bf13f5a9b18b90f15107d4288"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/watch",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bdd9907598411b138b19165ef49e9e45e491d768",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/bdd9907598411b138b19165ef49e9e45e491d768"
+    },
+    {
+      "path": ".ruler/skills/turborepo/references/watch/RULE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44bcf13ebe3d658e46b7610ecbaeed6b2749f3ef",
+      "size": 1989,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/44bcf13ebe3d658e46b7610ecbaeed6b2749f3ef"
+    },
+    {
+      "path": ".ruler/skills/vercel-composition-patterns",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "650d04b23a72adb44232ca9c1bf80e1cac06774f",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/650d04b23a72adb44232ca9c1bf80e1cac06774f"
+    },
+    {
+      "path": ".ruler/skills/vercel-composition-patterns/AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "558bf9aa1e36db2161f1633c9bfae14a819f0508",
+      "size": 22627,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/558bf9aa1e36db2161f1633c9bfae14a819f0508"
+    },
+    {
+      "path": ".ruler/skills/vercel-composition-patterns/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d07025bf943345bc1cf15eb923594f889ff881f0",
+      "size": 2886,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/d07025bf943345bc1cf15eb923594f889ff881f0"
+    },
+    {
+      "path": ".ruler/skills/vercel-composition-patterns/rules",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1458836f099b3acf7ab783d769fcc4143778f073",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/1458836f099b3acf7ab783d769fcc4143778f073"
+    },
+    {
+      "path": ".ruler/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccee19ce495b9d7fdf08867db3c6b6282006312e",
+      "size": 2267,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/ccee19ce495b9d7fdf08867db3c6b6282006312e"
+    },
+    {
+      "path": ".ruler/skills/vercel-composition-patterns/rules/architecture-compound-components.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5e3043cb5a81b83dce0389848b828455f00854f",
+      "size": 2600,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/e5e3043cb5a81b83dce0389848b828455f00854f"
+    },
+    {
+      "path": ".ruler/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4345ee30aea5f1b11815251edca7ebd0aefe2e2",
+      "size": 1886,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/d4345ee30aea5f1b11815251edca7ebd0aefe2e2"
+    },
+    {
+      "path": ".ruler/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56e32e8bee5e5768f747db4e9718a6c2b54bfce5",
+      "size": 2395,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/56e32e8bee5e5768f747db4e9718a6c2b54bfce5"
+    },
+    {
+      "path": ".ruler/skills/vercel-composition-patterns/rules/react19-no-forwardref.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0d8f8a76f14888f2fafc8cccd3d9395e4711d0d",
+      "size": 953,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/e0d8f8a76f14888f2fafc8cccd3d9395e4711d0d"
+    },
+    {
+      "path": ".ruler/skills/vercel-composition-patterns/rules/state-context-interface.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d961bede0c6c6e318f6ba3aca9b5dfcdb768d8f9",
+      "size": 4974,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/d961bede0c6c6e318f6ba3aca9b5dfcdb768d8f9"
+    },
+    {
+      "path": ".ruler/skills/vercel-composition-patterns/rules/state-decouple-implementation.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71a5afaa7d7078c262c92d32c3b97723de62f99f",
+      "size": 2699,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/71a5afaa7d7078c262c92d32c3b97723de62f99f"
+    },
+    {
+      "path": ".ruler/skills/vercel-composition-patterns/rules/state-lift-state.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7fe27b54933135f9050365b6c2001c101029d51",
+      "size": 3224,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/d7fe27b54933135f9050365b6c2001c101029d51"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b81d276102f6533ac1da82f58332499a8c9ab04e",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/b81d276102f6533ac1da82f58332499a8c9ab04e"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db951abe78a833270dc3292fdaaef15d03b6b1c1",
+      "size": 81716,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/db951abe78a833270dc3292fdaaef15d03b6b1c1"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ad7750e572f8e28ce21090dc1049fa7eecd8cae",
+      "size": 6165,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/1ad7750e572f8e28ce21090dc1049fa7eecd8cae"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c3837e81953dd2e3bcf02a5b2151e71104ba3a70",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/c3837e81953dd2e3bcf02a5b2151e71104ba3a70"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97e7ade243aa6dae50d6faa5111dea0d04778ead",
+      "size": 1483,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/97e7ade243aa6dae50d6faa5111dea0d04778ead"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/advanced-init-once.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73ee38e5e74c0afa28cb730afe3275479432092a",
+      "size": 958,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/73ee38e5e74c0afa28cb730afe3275479432092a"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/advanced-use-latest.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c7cb501693d4a9521697f13dbd5906dd99f0257",
+      "size": 1072,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/9c7cb501693d4a9521697f13dbd5906dd99f0257"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/async-api-routes.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6feda1ef0ac06b57b33c7b5bd6a19ca88d6c8a34",
+      "size": 1125,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/6feda1ef0ac06b57b33c7b5bd6a19ca88d6c8a34"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/async-defer-await.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea7082a3623e3d6439111d86c89b064f22b64447",
+      "size": 2028,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/ea7082a3623e3d6439111d86c89b064f22b64447"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/async-dependencies.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0484ebab993f3db78277e8731872473d02475e6d",
+      "size": 1293,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/0484ebab993f3db78277e8731872473d02475e6d"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/async-parallel.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64133f6c31fec81eaaabd712586337d20122e09f",
+      "size": 654,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/64133f6c31fec81eaaabd712586337d20122e09f"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fbc05b04ed2474637b12014a77688750e78f931",
+      "size": 2510,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/1fbc05b04ed2474637b12014a77688750e78f931"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee48f3273c8631f41dda416ce12cd65fb47e2c1d",
+      "size": 2370,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/ee48f3273c8631f41dda416ce12cd65fb47e2c1d"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/bundle-conditional.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99d6fc90e31d683d2b6b71353b92d620b484b644",
+      "size": 949,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/99d6fc90e31d683d2b6b71353b92d620b484b644"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db041d1510e51defeade05926ba4e6bbad1068b5",
+      "size": 920,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/db041d1510e51defeade05926ba4e6bbad1068b5"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60b62695e7a080e2020ff2242d8d841c5e3ecbc4",
+      "size": 791,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/60b62695e7a080e2020ff2242d8d841c5e3ecbc4"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/bundle-preload.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7000504065472628ae614786a3faadd23b0435a7",
+      "size": 1149,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/7000504065472628ae614786a3faadd23b0435a7"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/client-event-listeners.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aad4ae91605d715aad8e92b76bd7fb85c91d7cdf",
+      "size": 1969,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/aad4ae91605d715aad8e92b76bd7fb85c91d7cdf"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/client-localstorage-schema.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d30a1a7d4f85b0d50a0808eaa1b382c6deb595f4",
+      "size": 1950,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/d30a1a7d4f85b0d50a0808eaa1b382c6deb595f4"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce39a889efb4452ec4c044555ff818301dcf7ece",
+      "size": 1644,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/ce39a889efb4452ec4c044555ff818301dcf7ece"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/client-swr-dedup.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a430f27fd6abdc1b1b2f809b7a60114ff506790",
+      "size": 1159,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/2a430f27fd6abdc1b1b2f809b7a60114ff506790"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/js-batch-dom-css.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a62d84ed8149b6d4f173debc7043af03f8f8dd06",
+      "size": 3266,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/a62d84ed8149b6d4f173debc7043af03f8f8dd06"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/js-cache-function-results.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "180f8ac8fffd7e6ee320242d59d06565d40a12f8",
+      "size": 1949,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/180f8ac8fffd7e6ee320242d59d06565d40a12f8"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/js-cache-property-access.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39eec9061b4ca820150cc8183fb73f9e0c91ce85",
+      "size": 532,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/39eec9061b4ca820150cc8183fb73f9e0c91ce85"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/js-cache-storage.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa4a30c08176aabd27b41fa44d5c1981457b675f",
+      "size": 1651,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/aa4a30c08176aabd27b41fa44d5c1981457b675f"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/js-combine-iterations.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "044d017ec3b24b53e46d638acd1d936a22ac6323",
+      "size": 753,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/044d017ec3b24b53e46d638acd1d936a22ac6323"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/js-early-exit.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f46cb89c6cbe06e481aba0136848e3b17263ba96",
+      "size": 1133,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/f46cb89c6cbe06e481aba0136848e3b17263ba96"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/js-hoist-regexp.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dae3fefdc0a1db66badcd4875489715edcdb038b",
+      "size": 1028,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/dae3fefdc0a1db66badcd4875489715edcdb038b"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/js-index-maps.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d357a00b15ac67cdd638886f5197a13173a637d",
+      "size": 837,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/9d357a00b15ac67cdd638886f5197a13173a637d"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/js-length-check-first.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b89573630fdc3aa10564273f390ecc7e2b1cd3e",
+      "size": 1747,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/8b89573630fdc3aa10564273f390ecc7e2b1cd3e"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/js-min-max-loop.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b6656e96aecf3ae6ade52974090ae8b3e3f2bb5",
+      "size": 2290,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/4b6656e96aecf3ae6ade52974090ae8b3e3f2bb5"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/js-set-map-lookups.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "680a4892ee291c432bf8e769a44d0f1eb102b74b",
+      "size": 532,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/680a4892ee291c432bf8e769a44d0f1eb102b74b"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eae8b3f8aed2c7a893ceaae4cab55fa1c444b309",
+      "size": 1782,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/eae8b3f8aed2c7a893ceaae4cab55fa1c444b309"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/rendering-activity.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c957a490b7c2688542766150741e85e066539251",
+      "size": 564,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/c957a490b7c2688542766150741e85e066539251"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "646744cbe53b213c6fa5ead54ef107510e5be89d",
+      "size": 1185,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/646744cbe53b213c6fa5ead54ef107510e5be89d"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/rendering-conditional-render.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e866f5852dac80e0822e7f7c33476f5c9fc22f1",
+      "size": 980,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/7e866f5852dac80e0822e7f7c33476f5c9fc22f1"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/rendering-content-visibility.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa6656362b2c0dad9ffea788b5850843d6c0629e",
+      "size": 815,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/aa6656362b2c0dad9ffea788b5850843d6c0629e"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32d2f3fcea53dadcf847231ee20c60fa2c5c3049",
+      "size": 1039,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/32d2f3fcea53dadcf847231ee20c60fa2c5c3049"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5cf0e79b69afd7564b965c09435a2c7ee79eb2bd",
+      "size": 2308,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/5cf0e79b69afd7564b965c09435a2c7ee79eb2bd"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24ba2513a29f5259b3184695d2d4da25e03e42ac",
+      "size": 872,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/24ba2513a29f5259b3184695d2d4da25e03e42ac"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/rendering-svg-precision.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d7712860365294936a1b736d29d3eb970b91da7",
+      "size": 588,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/6d7712860365294936a1b736d29d3eb970b91da7"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c1b0b98e884d2c77bdec66df754693bd48c7777",
+      "size": 2074,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/0c1b0b98e884d2c77bdec66df754693bd48c7777"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/rerender-defer-reads.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e867c95f02fe6ed6ac2f91fdf1c0922304e0423a",
+      "size": 973,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/e867c95f02fe6ed6ac2f91fdf1c0922304e0423a"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/rerender-dependencies.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47a4d92685702e3a3b07073c62a61800fa0a6d7d",
+      "size": 824,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/47a4d92685702e3a3b07073c62a61800fa0a6d7d"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d9fe4050794ea6655add6bee50cfbc104e5dc31",
+      "size": 1201,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/3d9fe4050794ea6655add6bee50cfbc104e5dc31"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/rerender-derived-state.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5c899f6c073338bbd1b73c0275bc3e5e7d9ae7b",
+      "size": 728,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/e5c899f6c073338bbd1b73c0275bc3e5e7d9ae7b"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b004ef45e347503947fee397b6c3d163b0a317fb",
+      "size": 2968,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/b004ef45e347503947fee397b6c3d163b0a317fb"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ecb350fbadff3db805b72429276e672d42736dc",
+      "size": 2016,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/4ecb350fbadff3db805b72429276e672d42736dc"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63570491848cb42c2bc7073bceb754893a6a4cfa",
+      "size": 1173,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/63570491848cb42c2bc7073bceb754893a6a4cfa"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/rerender-memo.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8982ab612105a3b7faee1292b797338e7fb5271",
+      "size": 1148,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/f8982ab612105a3b7faee1292b797338e7fb5271"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd58a1af091b3cf5cb271d25904af4feb836d1aa",
+      "size": 1268,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/dd58a1af091b3cf5cb271d25904af4feb836d1aa"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59dfab0f3b048097627e0ca6e4c8da36629a5268",
+      "size": 1018,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/59dfab0f3b048097627e0ca6e4c8da36629a5268"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/rerender-transitions.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d99f43f764232e994a49a1df89ec9d624552f439",
+      "size": 1055,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/d99f43f764232e994a49a1df89ec9d624552f439"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf04b81f8a531eacd07a32e8917fb3ed3c1bbecb",
+      "size": 1742,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/cf04b81f8a531eacd07a32e8917fb3ed3c1bbecb"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/server-after-nonblocking.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8f5b260f5fc6d58141bc61e0a091569adb81e7e",
+      "size": 2012,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/e8f5b260f5fc6d58141bc61e0a091569adb81e7e"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/server-auth-actions.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee82c0442bc69ffae7bf20c07709d57893da1123",
+      "size": 2649,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/ee82c0442bc69ffae7bf20c07709d57893da1123"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/server-cache-lru.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef6938aa53c55dc3c0035bd6c66838810d870260",
+      "size": 1353,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/ef6938aa53c55dc3c0035bd6c66838810d870260"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/server-cache-react.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87c9ca33168a321a59fbaaa84843e2f48c99751a",
+      "size": 2228,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/87c9ca33168a321a59fbaaa84843e2f48c99751a"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/server-dedup-props.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb24a2562c73fadbb9a11a79897c2cf93ea3c69a",
+      "size": 2060,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/fb24a2562c73fadbb9a11a79897c2cf93ea3c69a"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/server-parallel-fetching.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1affc835a601a894fd02de08e6c9cdfd76d34b64",
+      "size": 1554,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/1affc835a601a894fd02de08e6c9cdfd76d34b64"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-best-practices/rules/server-serialization.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39c5c4164c31be7f171ea2f4b3b32fe47709a651",
+      "size": 996,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/39c5c4164c31be7f171ea2f4b3b32fe47709a651"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "42a53da01faeb3452f30d03e83f44b5745a5f0d1",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/42a53da01faeb3452f30d03e83f44b5745a5f0d1"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d263eb9c111002248ec8b1539dbcd7ba7b6fddde",
+      "size": 73771,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/d263eb9c111002248ec8b1539dbcd7ba7b6fddde"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73401865dd7440a43c5243b107a3763e0d2f4aae",
+      "size": 4439,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/73401865dd7440a43c5243b107a3763e0d2f4aae"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "49a244c034fcaabcb45eb2105bf541a3cf0c76e5",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/49a244c034fcaabcb45eb2105bf541a3cf0c76e5"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/animation-derived-value.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "310928a957b841fc5af335e984a4df6c1a6b3f3a",
+      "size": 1373,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/310928a957b841fc5af335e984a4df6c1a6b3f3a"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/animation-gesture-detector-press.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87c67827054bbb0a41d7e4ad78adf3612accb6bf",
+      "size": 2559,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/87c67827054bbb0a41d7e4ad78adf3612accb6bf"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/animation-gpu-properties.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fda09558e89b2d6021bbbe5a2731fd26d16b1f3",
+      "size": 2059,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/5fda09558e89b2d6021bbbe5a2731fd26d16b1f3"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/design-system-compound-components.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8239ee1fbb95d52b5b57a1d699199b1f4758e8c",
+      "size": 1625,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/d8239ee1fbb95d52b5b57a1d699199b1f4758e8c",
+      "error": "SyntaxError: No number after minus sign in JSON at position 1 (line 1 column 2)"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/fonts-config-plugin.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39aa01477af69b372e7e6251831430da1c3203f9",
+      "size": 1393,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/39aa01477af69b372e7e6251831430da1c3203f9"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/imports-design-system-folder.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8466dcb2544dad65639d29e5921a6be00ea1ac2c",
+      "size": 1418,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/8466dcb2544dad65639d29e5921a6be00ea1ac2c"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/js-hoist-intl.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9af1c354c3e5e8836883c1a79a533fa5e72d4958",
+      "size": 1645,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/9af1c354c3e5e8836883c1a79a533fa5e72d4958"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/list-performance-callbacks.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0b3913ff3b88e92bd0a91b555f8c96732b2b953",
+      "size": 1059,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/a0b3913ff3b88e92bd0a91b555f8c96732b2b953"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/list-performance-function-references.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9721929b28b8115e8fa24ff8a6f82a6b1ec94d6e",
+      "size": 4133,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/9721929b28b8115e8fa24ff8a6f82a6b1ec94d6e"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/list-performance-images.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75a3bafc83f65e0e14af3b7cc5786ea40b0d34b4",
+      "size": 1417,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/75a3bafc83f65e0e14af3b7cc5786ea40b0d34b4"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/list-performance-inline-objects.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5b6514a6658917468399803b16cb61b17459af7",
+      "size": 2308,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/d5b6514a6658917468399803b16cb61b17459af7"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/list-performance-item-expensive.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f617a76d4e525cde99b937a8e0e163dfe0ef52b0",
+      "size": 2466,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/f617a76d4e525cde99b937a8e0e163dfe0ef52b0"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/list-performance-item-memo.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "634935e8ed0e6bd10014450c91b8a97187cbeda1",
+      "size": 2250,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/634935e8ed0e6bd10014450c91b8a97187cbeda1"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/list-performance-item-types.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1027e4e6cd982476271d12507c329653ec793484",
+      "size": 2749,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/1027e4e6cd982476271d12507c329653ec793484"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/list-performance-virtualize.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a393ba1eef972f72a00a67c6b0a23c09c688639",
+      "size": 1742,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/8a393ba1eef972f72a00a67c6b0a23c09c688639"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/monorepo-native-deps-in-app.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff85d76735d89e4cdfa89afd75759020780c5d5f",
+      "size": 1091,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/ff85d76735d89e4cdfa89afd75759020780c5d5f"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/monorepo-single-dependency-versions.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1087dfa511e9837f14b71f49d1c3d2018d6cfdc1",
+      "size": 1351,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/1087dfa511e9837f14b71f49d1c3d2018d6cfdc1"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/navigation-native-navigators.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "035c5fd37ce16afc0613405bd1f0b8ad0cc8b1ce",
+      "size": 4941,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/035c5fd37ce16afc0613405bd1f0b8ad0cc8b1ce"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/react-compiler-destructure-functions.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f76c25ac6f8c48c8436f0ccee1359a649a33b48f",
+      "size": 1274,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/f76c25ac6f8c48c8436f0ccee1359a649a33b48f"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/react-compiler-reanimated-shared-values.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0dcbaf47a6abeb72da8673f99b45d2e8b609412b",
+      "size": 1268,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/0dcbaf47a6abeb72da8673f99b45d2e8b609412b"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/react-state-dispatcher.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93e8b6db6112936ad57e6506f56eeef0725336c1",
+      "size": 2255,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/93e8b6db6112936ad57e6506f56eeef0725336c1"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/react-state-fallback.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "204f34665f206a734cb2d0de17a7179f3793dc89",
+      "size": 1735,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/204f34665f206a734cb2d0de17a7179f3793dc89"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/react-state-minimize.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64605b6c382e407f244d2db8b72bb3105ebae87b",
+      "size": 1740,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/64605b6c382e407f244d2db8b72bb3105ebae87b"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/rendering-no-falsy-and.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30f05d3f8bea95379273799a21f0a1990a6e6511",
+      "size": 1812,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/30f05d3f8bea95379273799a21f0a1990a6e6511"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/rendering-text-in-text-component.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd1b9f407014c783f3e59a5f3e5bf72979d62547",
+      "size": 697,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/fd1b9f407014c783f3e59a5f3e5bf72979d62547"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/scroll-position-no-state.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5760cd2892a9985aeeed93abf719be5dc4efa88",
+      "size": 1936,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/a5760cd2892a9985aeeed93abf719be5dc4efa88"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/state-ground-truth.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3c4bd9e497bcec63c303ec1cf2d0ff34e5a39cb",
+      "size": 2172,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/c3c4bd9e497bcec63c303ec1cf2d0ff34e5a39cb"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/ui-expo-image.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72d768f1bf89d998e93611724e3608f48eb6b3a1",
+      "size": 1648,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/72d768f1bf89d998e93611724e3608f48eb6b3a1"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/ui-image-gallery.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef26d962f376c8c3fe052d578e143932fdd96a58",
+      "size": 2546,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/ef26d962f376c8c3fe052d578e143932fdd96a58"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/ui-measure-views.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b783fee314ec7a4152cf49e0febcbdd78411e2c",
+      "size": 2232,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/8b783fee314ec7a4152cf49e0febcbdd78411e2c"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/ui-menus.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5168bc2037ca1fd1e1312abd4a2b77fec8eb5264",
+      "size": 4598,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/5168bc2037ca1fd1e1312abd4a2b77fec8eb5264"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/ui-native-modals.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f560e11e12e703a46517ff87d371a43e56230a81",
+      "size": 1859,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/f560e11e12e703a46517ff87d371a43e56230a81"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/ui-pressable.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31c3d204274292e244466bae9f425064263ae80a",
+      "size": 1534,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/31c3d204274292e244466bae9f425064263ae80a"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/ui-safe-area-scroll.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79812bc9ce35eaad4c965103d0d87b7230084ca8",
+      "size": 1579,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/79812bc9ce35eaad4c965103d0d87b7230084ca8"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/ui-scrollview-content-inset.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbebc3b81c22ded13447efe5876c8c3408b4eb02",
+      "size": 1317,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/bbebc3b81c22ded13447efe5876c8c3408b4eb02"
+    },
+    {
+      "path": ".ruler/skills/vercel-react-native-skills/rules/ui-styling.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3908de3c4bbd03ce2f024917a2d82f9c03517100",
+      "size": 2212,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/3908de3c4bbd03ce2f024917a2d82f9c03517100"
+    },
+    {
+      "path": ".ruler/skills/web-design-guidelines",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3116f3e62dbd02b44a598b1aa690d2a8938e8f89",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/3116f3e62dbd02b44a598b1aa690d2a8938e8f89"
+    },
+    {
+      "path": ".ruler/skills/web-design-guidelines/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ceae92ab319216a68274168fba9b63b998b65997",
+      "size": 1231,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/ceae92ab319216a68274168fba9b63b998b65997"
+    },
+    {
+      "path": "Dockerfile.api",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5334d5a2fb9ce373cc4b5bb8c657cbf019d4083a",
+      "size": 1063,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/5334d5a2fb9ce373cc4b5bb8c657cbf019d4083a"
+    },
+    {
+      "path": "Dockerfile.web",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0cf61d9de0074a5c50d4252a94e743cb0251962",
+      "size": 1173,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/e0cf61d9de0074a5c50d4252a94e743cb0251962"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa7f24fa2733f2c08fa5e1c09014f0580517c0f9",
+      "size": 1089,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/aa7f24fa2733f2c08fa5e1c09014f0580517c0f9",
+      "error": "SyntaxError: Unexpected token 'M', \"MIT Licens\"... is not valid JSON"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c381e0bb2ed1603f2ed34f3339462cd1e8a61b02",
+      "size": 8791,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/c381e0bb2ed1603f2ed34f3339462cd1e8a61b02",
+      "error": "SyntaxError: Unexpected token '#', \"# Solana M\"... is not valid JSON"
+    },
+    {
+      "path": "apps",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8c330365400e5f8740827bbb98cb32b2686764ab",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/8c330365400e5f8740827bbb98cb32b2686764ab"
+    },
+    {
+      "path": "apps/api",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "47f22a12a18cf99cc308183534d51551607b09e2",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/47f22a12a18cf99cc308183534d51551607b09e2"
+    },
+    {
+      "path": "apps/api/.env.example",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3240689bd76c281fe9dd21e10a3808ce2fb8570c",
+      "size": 503,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/3240689bd76c281fe9dd21e10a3808ce2fb8570c"
+    },
+    {
+      "path": "apps/api/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fafd02da6a48aef80f1b6edbcdb690cdb94b8fe0",
+      "size": 557,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/fafd02da6a48aef80f1b6edbcdb690cdb94b8fe0"
+    },
+    {
+      "path": "apps/api/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3140ceae3177f51b9fb828604514615fe08ccb6f",
+      "size": 1098,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/3140ceae3177f51b9fb828604514615fe08ccb6f"
+    },
+    {
+      "path": "apps/api/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f69069b44831f2dcb0a02ff91e3749612bac6010",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/f69069b44831f2dcb0a02ff91e3749612bac6010"
+    },
+    {
+      "path": "apps/api/src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9d8de9d837220b20437d70f09355af5b438dfd5",
+      "size": 2696,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/a9d8de9d837220b20437d70f09355af5b438dfd5"
+    },
+    {
+      "path": "apps/api/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18dbc3e9d46b26838205a803b0c88e880f352056",
+      "size": 267,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/18dbc3e9d46b26838205a803b0c88e880f352056"
+    },
+    {
+      "path": "apps/api/tsdown.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7aa7e7bfcdd558f2ba2acd02aac52e79badf7773",
+      "size": 234,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/7aa7e7bfcdd558f2ba2acd02aac52e79badf7773"
+    },
+    {
+      "path": "apps/mobile",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "378f5c724d5438520d993e810cdcbe5c2c9ce4e8",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/378f5c724d5438520d993e810cdcbe5c2c9ce4e8"
+    },
+    {
+      "path": "apps/mobile/.env.example",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20f3f557c197a01cd75bc1d96024a5a6607e6e8a",
+      "size": 339,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/20f3f557c197a01cd75bc1d96024a5a6607e6e8a"
+    },
+    {
+      "path": "apps/mobile/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1cd0b8e615329fe529222726957cdcbd1e9c828f",
+      "size": 428,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/1cd0b8e615329fe529222726957cdcbd1e9c828f"
+    },
+    {
+      "path": "apps/mobile/app.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a670b7e826ea2b95e37363c96c914c8695b11fbd",
+      "size": 476,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/a670b7e826ea2b95e37363c96c914c8695b11fbd"
+    },
+    {
+      "path": "apps/mobile/app",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bbf019ca874838600e069c5ccdc86136b1b2fcfb",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/bbf019ca874838600e069c5ccdc86136b1b2fcfb"
+    },
+    {
+      "path": "apps/mobile/app/(tabs)",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f2e75e5450fec302426242ef0b809221d3e2d5f1",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/f2e75e5450fec302426242ef0b809221d3e2d5f1"
+    },
+    {
+      "path": "apps/mobile/app/(tabs)/_layout.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8501bb5268a26e32e23b59e2ae1d82c872dd9d2e",
+      "size": 2043,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/8501bb5268a26e32e23b59e2ae1d82c872dd9d2e"
+    },
+    {
+      "path": "apps/mobile/app/(tabs)/examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c271a2713f3d7f2db839055bfd170af169e5c356",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/c271a2713f3d7f2db839055bfd170af169e5c356"
+    },
+    {
+      "path": "apps/mobile/app/(tabs)/examples/_layout.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01c30c54ea8e0c9cb2bde5fe23c78477e6c26b15",
+      "size": 2609,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/01c30c54ea8e0c9cb2bde5fe23c78477e6c26b15"
+    },
+    {
+      "path": "apps/mobile/app/(tabs)/examples/ai.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ac4679cb9b5509bfa256d6a675d8021bb07f4c2",
+      "size": 140,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/2ac4679cb9b5509bfa256d6a675d8021bb07f4c2"
+    },
+    {
+      "path": "apps/mobile/app/(tabs)/examples/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc111322c8a2b610f927beb80b490cd52943ec31",
+      "size": 2328,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/cc111322c8a2b610f927beb80b490cd52943ec31"
+    },
+    {
+      "path": "apps/mobile/app/(tabs)/examples/solana.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d36e275035be931959cb324d592e0c6109c6fda9",
+      "size": 160,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/d36e275035be931959cb324d592e0c6109c6fda9"
+    },
+    {
+      "path": "apps/mobile/app/(tabs)/examples/todos.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca89388126845c83fb03ab57c0e300213f9ee8df",
+      "size": 151,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/ca89388126845c83fb03ab57c0e300213f9ee8df"
+    },
+    {
+      "path": "apps/mobile/app/(tabs)/home.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d80683ea1419d3d9f17fc144140c8562c964048",
+      "size": 144,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/6d80683ea1419d3d9f17fc144140c8562c964048"
+    },
+    {
+      "path": "apps/mobile/app/(tabs)/profile.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a472edf8d04cdbe0e15c1a348eb34da36499a13e",
+      "size": 159,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/a472edf8d04cdbe0e15c1a348eb34da36499a13e"
+    },
+    {
+      "path": "apps/mobile/app/+not-found.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01519943f422f7f8bcc5be784769b0ef7831de35",
+      "size": 1043,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/01519943f422f7f8bcc5be784769b0ef7831de35"
+    },
+    {
+      "path": "apps/mobile/app/_layout.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f81e30571ef073bf91b9f7e33ef2f1b85032ab02",
+      "size": 793,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/f81e30571ef073bf91b9f7e33ef2f1b85032ab02"
+    },
+    {
+      "path": "apps/mobile/app/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1a03400e4a4d2c77ba34c7a1277784bbc426220",
+      "size": 118,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/d1a03400e4a4d2c77ba34c7a1277784bbc426220"
+    },
+    {
+      "path": "apps/mobile/app/modal.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4da129e8b0d4091b2b9a66f43c8bad352db58540",
+      "size": 1406,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/4da129e8b0d4091b2b9a66f43c8bad352db58540"
+    },
+    {
+      "path": "apps/mobile/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5ca12b57f6d1765a70245bb2d7ccb59b5f5e4361",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/5ca12b57f6d1765a70245bb2d7ccb59b5f5e4361"
+    },
+    {
+      "path": "apps/mobile/assets/images",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a6c79b299b69ce688dc06bd264d7d21c939c5987",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/a6c79b299b69ce688dc06bd264d7d21c939c5987"
+    },
+    {
+      "path": "apps/mobile/assets/images/android-icon-background.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ffefc5bb57a3d7b39ec6ff4e96979226522cc49",
+      "size": 17549,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/5ffefc5bb57a3d7b39ec6ff4e96979226522cc49"
+    },
+    {
+      "path": "apps/mobile/assets/images/android-icon-foreground.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a9e5016dca4804f37ba410ba49e70055e1ccad2",
+      "size": 78796,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/3a9e5016dca4804f37ba410ba49e70055e1ccad2"
+    },
+    {
+      "path": "apps/mobile/assets/images/android-icon-monochrome.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77484ebdbca253297baea4a7d416233aa47a45c0",
+      "size": 4140,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/77484ebdbca253297baea4a7d416233aa47a45c0"
+    },
+    {
+      "path": "apps/mobile/assets/images/favicon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "408bd746615785760b09e6f23fa8378d3e614331",
+      "size": 1129,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/408bd746615785760b09e6f23fa8378d3e614331"
+    },
+    {
+      "path": "apps/mobile/assets/images/icon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7165a53c7475d846df195bc570482459d61bad67",
+      "size": 393493,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/7165a53c7475d846df195bc570482459d61bad67"
+    },
+    {
+      "path": "apps/mobile/assets/images/partial-react-logo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66fd9570e4fac42bca15352def191c563100b2ed",
+      "size": 5075,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/66fd9570e4fac42bca15352def191c563100b2ed"
+    },
+    {
+      "path": "apps/mobile/assets/images/react-logo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d72a9ffcbb39d89709073e1a7edd8ba414932c1",
+      "size": 6341,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/9d72a9ffcbb39d89709073e1a7edd8ba414932c1"
+    },
+    {
+      "path": "apps/mobile/assets/images/react-logo@2x.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2229b130ad5b73fdef7d59ff544abd4cb2377bef",
+      "size": 14225,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/2229b130ad5b73fdef7d59ff544abd4cb2377bef"
+    },
+    {
+      "path": "apps/mobile/assets/images/react-logo@3x.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a99b2032221d57c88b6c44e7e22d93ddda78e008",
+      "size": 21252,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/a99b2032221d57c88b6c44e7e22d93ddda78e008"
+    },
+    {
+      "path": "apps/mobile/assets/images/splash-icon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03d6f6b6c6727954aec1d8206222769afd178d8d",
+      "size": 17547,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/03d6f6b6c6727954aec1d8206222769afd178d8d"
+    },
+    {
+      "path": "apps/mobile/features",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5ddd96e4510cf3dc8d50c0ab0c556249359e4373",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/5ddd96e4510cf3dc8d50c0ab0c556249359e4373"
+    },
+    {
+      "path": "apps/mobile/features/ai",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3e49c04ba5a0f1676d5eac6f8e38df39bcd0caa1",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/3e49c04ba5a0f1676d5eac6f8e38df39bcd0caa1"
+    },
+    {
+      "path": "apps/mobile/features/ai/data-access",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8b67f90392b4ca8eb0a48b516696ede8f3e3608b",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/8b67f90392b4ca8eb0a48b516696ede8f3e3608b"
+    },
+    {
+      "path": "apps/mobile/features/ai/data-access/use-ai-chat.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0c99d98e0912883985236b416e50accd73a4f2e",
+      "size": 678,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/c0c99d98e0912883985236b416e50accd73a4f2e"
+    },
+    {
+      "path": "apps/mobile/features/ai/feature",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "100ad6721b95bcd440ee720d0d7bba596dbd88ef",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/100ad6721b95bcd440ee720d0d7bba596dbd88ef"
+    },
+    {
+      "path": "apps/mobile/features/ai/feature/ai-feature-entry.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8fad118715f7a6e323d8cae048b463d3c135765a",
+      "size": 909,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/8fad118715f7a6e323d8cae048b463d3c135765a"
+    },
+    {
+      "path": "apps/mobile/features/ai/ui",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1917bd5b8fd9e610538f414f6cc0b81b11b78429",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/1917bd5b8fd9e610538f414f6cc0b81b11b78429"
+    },
+    {
+      "path": "apps/mobile/features/ai/ui/ai-ui-chat-composer.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19efa4ea2afeb0d6ecfb9fc47ba56590bc0f9f7a",
+      "size": 1309,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/19efa4ea2afeb0d6ecfb9fc47ba56590bc0f9f7a"
+    },
+    {
+      "path": "apps/mobile/features/ai/ui/ai-ui-chat-error.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e84c5933bfa7130536f552edbc74e77f070efe9",
+      "size": 746,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/8e84c5933bfa7130536f552edbc74e77f070efe9"
+    },
+    {
+      "path": "apps/mobile/features/ai/ui/ai-ui-chat-message-item.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b826f795cc3d0ae797afd844e07d4f2e2e6ec639",
+      "size": 1411,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/b826f795cc3d0ae797afd844e07d4f2e2e6ec639"
+    },
+    {
+      "path": "apps/mobile/features/ai/ui/ai-ui-chat-message-list.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d63d65a6284b02f2312346678c9c327a2e4071b",
+      "size": 1325,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/6d63d65a6284b02f2312346678c9c327a2e4071b"
+    },
+    {
+      "path": "apps/mobile/features/ai/ui/ai-ui-chat-screen.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "037e085fd5d526f890c1b11a0f25aa06eab0af1d",
+      "size": 1444,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/037e085fd5d526f890c1b11a0f25aa06eab0af1d"
+    },
+    {
+      "path": "apps/mobile/features/auth",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2ade4792abec6e1a297e70ee1badd3087ba90a6d",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/2ade4792abec6e1a297e70ee1badd3087ba90a6d"
+    },
+    {
+      "path": "apps/mobile/features/auth/data-access",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b6d5b2c6247930e960cfe46339da5d0a990efb63",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/b6d5b2c6247930e960cfe46339da5d0a990efb63"
+    },
+    {
+      "path": "apps/mobile/features/auth/data-access/use-auth-email-sign-in.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "584e9544184e2404030ecb352180044bc2e38806",
+      "size": 1307,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/584e9544184e2404030ecb352180044bc2e38806"
+    },
+    {
+      "path": "apps/mobile/features/auth/data-access/use-auth-email-sign-up.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "916e7c8f8c76b25ebd5fa26ed931ca7aa41ef4d2",
+      "size": 1348,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/916e7c8f8c76b25ebd5fa26ed931ca7aa41ef4d2"
+    },
+    {
+      "path": "apps/mobile/features/auth/data-access/use-auth-session.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d86291b65f1215397f87c22d66d5e7df7ea6e30f",
+      "size": 520,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/d86291b65f1215397f87c22d66d5e7df7ea6e30f"
+    },
+    {
+      "path": "apps/mobile/features/auth/data-access/use-auth-wallet-sign-in.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c97f050da29b392fb2852197ec2aaf486b5161d",
+      "size": 2151,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/1c97f050da29b392fb2852197ec2aaf486b5161d",
+      "content": "import { getBase58Decoder, getBase64Encoder, getUtf8Decoder } from '@solana/kit'\nimport { useMobileWallet } from '@wallet-ui/react-native-kit'\nimport { createSIWSInput } from 'better-auth-solana/client'\nimport { useState } from 'react'\n\nimport { authClient } from '@/lib/auth-client'\nimport { queryClient } from '@/lib/orpc'\n\nfunction extractErrorMessage(error: unknown): string {\n  if (error instanceof Error) {\n    return error.message\n  }\n  return String(error || 'Solana sign in failed')\n}\n\nexport function useAuthWalletSignIn() {\n  const { account, connect, signIn } = useMobileWallet()\n  const [isLoading, setIsLoading] = useState(false)\n\n  async function signInWithWallet() {\n    setIsLoading(true)\n    try {\n      const activeAccount = account || (await connect())\n      const address = activeAccount.address\n      const nonceResult = await authClient.siws.nonce({\n        walletAddress: address,\n      })\n\n      if (!nonceResult.data) {\n        throw new Error(nonceResult.error?.message || 'Failed to get nonce')\n      }\n\n      const result = await signIn(\n        createSIWSInput({\n          address,\n          challenge: nonceResult.data,\n          statement: 'Sign in to Solana Mobile Monorepo',\n        }),\n      )\n      const signatureBase64 = getUtf8Decoder().decode(result.signature)\n      const signedMessageBase64 = getUtf8Decoder().decode(result.signedMessage)\n      const signatureBase58 = getBase58Decoder().decode(\n        getBase64Encoder().encode(signatureBase64),\n      )\n      const messageUtf8 = getUtf8Decoder().decode(\n        getBase64Encoder().encode(signedMessageBase64),\n      )\n      const verifyResult = await authClient.siws.verify({\n        message: messageUtf8,\n        signature: signatureBase58,\n        walletAddress: address,\n      })\n\n      if (!verifyResult.data) {\n        throw new Error(verifyResult.error?.message || 'Verification failed')\n      }\n\n      queryClient.invalidateQueries()\n      await authClient.getSession()\n    } catch (error) {\n      throw new Error(extractErrorMessage(error))\n    } finally {\n      setIsLoading(false)\n    }\n  }\n\n  return {\n    isLoading,\n    signInWithWallet,\n  }\n}\n",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "apps/mobile/features/auth/feature",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b8ceddf4dcfd208ff19fa0290331298f800b3b09",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/b8ceddf4dcfd208ff19fa0290331298f800b3b09"
+    },
+    {
+      "path": "apps/mobile/features/auth/feature/auth-feature-authenticate-email.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22c3941c084b8ca945a71915ee2b15838edcbe0b",
+      "size": 514,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/22c3941c084b8ca945a71915ee2b15838edcbe0b"
+    },
+    {
+      "path": "apps/mobile/features/auth/feature/auth-feature-authenticated-solana.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53a3204e85d9d5d64932449e8c460597f26bbfa2",
+      "size": 1010,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/53a3204e85d9d5d64932449e8c460597f26bbfa2"
+    },
+    {
+      "path": "apps/mobile/features/auth/feature/auth-feature-authenticated.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e52623cd85bf5402fde80885e99b09931bf862a1",
+      "size": 498,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/e52623cd85bf5402fde80885e99b09931bf862a1"
+    },
+    {
+      "path": "apps/mobile/features/auth/ui",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7f8234b3883c4cb65bee13cad69392d277a2b945",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/7f8234b3883c4cb65bee13cad69392d277a2b945"
+    },
+    {
+      "path": "apps/mobile/features/auth/ui/auth-ui-connection-status.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a5b2b9baf659c5eb7e57315c52fec5ea47c44a6",
+      "size": 1361,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/5a5b2b9baf659c5eb7e57315c52fec5ea47c44a6"
+    },
+    {
+      "path": "apps/mobile/features/auth/ui/auth-ui-session.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2554b264f8be66efdb2701abecf477f94769b1d",
+      "size": 750,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/d2554b264f8be66efdb2701abecf477f94769b1d"
+    },
+    {
+      "path": "apps/mobile/features/auth/ui/auth-ui-sign-in-form.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "972018101185a95b5d08a6bd517924afe1540340",
+      "size": 2016,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/972018101185a95b5d08a6bd517924afe1540340"
+    },
+    {
+      "path": "apps/mobile/features/auth/ui/auth-ui-sign-up-form.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbfcd929b6befcb2621b8e18872be6214aa8f89e",
+      "size": 2244,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/cbfcd929b6befcb2621b8e18872be6214aa8f89e"
+    },
+    {
+      "path": "apps/mobile/features/auth/ui/auth-ui-solana-connect.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aeb7d18f108f20c1fa0e7b4abebd9cdb4703bc56",
+      "size": 1083,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/aeb7d18f108f20c1fa0e7b4abebd9cdb4703bc56"
+    },
+    {
+      "path": "apps/mobile/features/auth/ui/auth-ui-solana-sign-in-button.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3290c3d45d786f5ceefc1c0b57d6493ddb38589f",
+      "size": 422,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/3290c3d45d786f5ceefc1c0b57d6493ddb38589f"
+    },
+    {
+      "path": "apps/mobile/features/home",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3446c16ee5b109587b9c0d5a46cd6c95c4370cbe",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/3446c16ee5b109587b9c0d5a46cd6c95c4370cbe"
+    },
+    {
+      "path": "apps/mobile/features/home/feature",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5df2b6558590e5b5d906e3514893517fdd985b4e",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/5df2b6558590e5b5d906e3514893517fdd985b4e"
+    },
+    {
+      "path": "apps/mobile/features/home/feature/home-feature-index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90719386cd1fcfd180b2158403c69931e549cf9f",
+      "size": 1144,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/90719386cd1fcfd180b2158403c69931e549cf9f"
+    },
+    {
+      "path": "apps/mobile/features/profile",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4994e67e394460f7c75b27ee1d359eff129c22f3",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/4994e67e394460f7c75b27ee1d359eff129c22f3"
+    },
+    {
+      "path": "apps/mobile/features/profile/feature",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2de1c6a7f158ce56d01018ca1bad9c54135e3ea7",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/2de1c6a7f158ce56d01018ca1bad9c54135e3ea7"
+    },
+    {
+      "path": "apps/mobile/features/profile/feature/profile-feature-index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb9ba05bd870c3823d21b98d0231ae72932a0d0f",
+      "size": 834,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/eb9ba05bd870c3823d21b98d0231ae72932a0d0f"
+    },
+    {
+      "path": "apps/mobile/features/shell",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "173bf16a891ec423a852857a2e874ede6d344102",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/173bf16a891ec423a852857a2e874ede6d344102"
+    },
+    {
+      "path": "apps/mobile/features/shell/data-access",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "df4909939b0ef7550265073cba24e23c6f544380",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/df4909939b0ef7550265073cba24e23c6f544380"
+    },
+    {
+      "path": "apps/mobile/features/shell/data-access/shell-theme-provider.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf57dd7c1282a4b47e4fa5a6fa53411b57ea2ae7",
+      "size": 1418,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/cf57dd7c1282a4b47e4fa5a6fa53411b57ea2ae7"
+    },
+    {
+      "path": "apps/mobile/features/shell/ui",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "18749b92c3617bbcfa5c2d5961f9952bfff3079c",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/18749b92c3617bbcfa5c2d5961f9952bfff3079c"
+    },
+    {
+      "path": "apps/mobile/features/shell/ui/shell-theme-toggle.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "973551ca3de852d4a37b97b1a9d72314b5d0973d",
+      "size": 1080,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/973551ca3de852d4a37b97b1a9d72314b5d0973d"
+    },
+    {
+      "path": "apps/mobile/features/shell/ui/shell-ui-container.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81976cf19ef8d9750f593bd0afce883520e5c2a8",
+      "size": 901,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/81976cf19ef8d9750f593bd0afce883520e5c2a8"
+    },
+    {
+      "path": "apps/mobile/features/shell/ui/shell-ui-page-header.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1f89195ad18601d802198d6106d2d476a00bdee",
+      "size": 856,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/e1f89195ad18601d802198d6106d2d476a00bdee"
+    },
+    {
+      "path": "apps/mobile/features/shell/ui/shell-ui-scroll-view.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "126392233666cb73bfa8db4a59c0aef352e9cbd3",
+      "size": 453,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/126392233666cb73bfa8db4a59c0aef352e9cbd3"
+    },
+    {
+      "path": "apps/mobile/features/shell/ui/shell-ui-themed-status-bar.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6900ae17cd1932891b0c943eb4bb125e6e69a2d2",
+      "size": 261,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/6900ae17cd1932891b0c943eb4bb125e6e69a2d2"
+    },
+    {
+      "path": "apps/mobile/features/solana",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3755139b67876d345122b124a02f64baa97cd64d",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/3755139b67876d345122b124a02f64baa97cd64d"
+    },
+    {
+      "path": "apps/mobile/features/solana/data-access",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "02cf25bacd8347d2cb96e7dcfe56f8cd80a3953a",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/02cf25bacd8347d2cb96e7dcfe56f8cd80a3953a"
+    },
+    {
+      "path": "apps/mobile/features/solana/data-access/use-solana-balance.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f99dcb9f18158d4a8c895ce5e6a7ac91ba04d12",
+      "size": 190,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/8f99dcb9f18158d4a8c895ce5e6a7ac91ba04d12"
+    },
+    {
+      "path": "apps/mobile/features/solana/feature",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "67cc6078c8bb9dbae55b9e515cdac59620ba53ce",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/67cc6078c8bb9dbae55b9e515cdac59620ba53ce"
+    },
+    {
+      "path": "apps/mobile/features/solana/feature/solana-feature-entry.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a43177b2d917db15f622be58f4edfef4a43b9677",
+      "size": 1931,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/a43177b2d917db15f622be58f4edfef4a43b9677"
+    },
+    {
+      "path": "apps/mobile/features/solana/ui",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c4b99684d30489e64fac0963eb8fbb5dcfb36065",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/c4b99684d30489e64fac0963eb8fbb5dcfb36065"
+    },
+    {
+      "path": "apps/mobile/features/solana/ui/solana-ui-address-form.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ca7f07ebe33c3125f164b3152d3586c688244bb",
+      "size": 1734,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/3ca7f07ebe33c3125f164b3152d3586c688244bb"
+    },
+    {
+      "path": "apps/mobile/features/solana/ui/solana-ui-balance-result.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b7fb7be446462ec65699d4b4419a47ab4b326fb",
+      "size": 2292,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/4b7fb7be446462ec65699d4b4419a47ab4b326fb"
+    },
+    {
+      "path": "apps/mobile/features/todo",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fb2add6e5512275677344ab4b27dfd4cf429a533",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/fb2add6e5512275677344ab4b27dfd4cf429a533"
+    },
+    {
+      "path": "apps/mobile/features/todo/data-access",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "34427e0efaadea9596e6bee2b6f0a487d9dde5bc",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/34427e0efaadea9596e6bee2b6f0a487d9dde5bc"
+    },
+    {
+      "path": "apps/mobile/features/todo/data-access/use-todo-create.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90b2ef20adc2a03964f87643f4235b2f1edb5cd8",
+      "size": 361,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/90b2ef20adc2a03964f87643f4235b2f1edb5cd8"
+    },
+    {
+      "path": "apps/mobile/features/todo/data-access/use-todo-delete.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab91e5f4c25bc8d322d0971cdf0d1925d52a53e1",
+      "size": 361,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/ab91e5f4c25bc8d322d0971cdf0d1925d52a53e1"
+    },
+    {
+      "path": "apps/mobile/features/todo/data-access/use-todo-list-invalidation.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31cb443db9bbc7acdce90202a41b5dc2530cb553",
+      "size": 306,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/31cb443db9bbc7acdce90202a41b5dc2530cb553"
+    },
+    {
+      "path": "apps/mobile/features/todo/data-access/use-todo-list-query.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a2eb34f24221023ab5bcb7815bbc0ec272ca382",
+      "size": 261,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/8a2eb34f24221023ab5bcb7815bbc0ec272ca382"
+    },
+    {
+      "path": "apps/mobile/features/todo/data-access/use-todo-toggle.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8b3e103f88a8a955dcff4488d18cbdac554d427",
+      "size": 361,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/a8b3e103f88a8a955dcff4488d18cbdac554d427"
+    },
+    {
+      "path": "apps/mobile/features/todo/feature",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a1a5bb1a0d00944574250f2b137486533c8fbe90",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/a1a5bb1a0d00944574250f2b137486533c8fbe90"
+    },
+    {
+      "path": "apps/mobile/features/todo/feature/todo-feature-authenticated.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6acf3ffe5806f6ffbfb2035f5c041623fc18826b",
+      "size": 2093,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/6acf3ffe5806f6ffbfb2035f5c041623fc18826b"
+    },
+    {
+      "path": "apps/mobile/features/todo/feature/todo-feature-entry.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "498f9d13f60ca1620a6f9eb43c7370de1fdd1506",
+      "size": 620,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/498f9d13f60ca1620a6f9eb43c7370de1fdd1506"
+    },
+    {
+      "path": "apps/mobile/features/todo/feature/todo-feature-unauthenticated.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f9e2edb375cad46717524bb3aa39aeddaeec594",
+      "size": 160,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/3f9e2edb375cad46717524bb3aa39aeddaeec594"
+    },
+    {
+      "path": "apps/mobile/features/todo/ui",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5ed7d90ebc195402aa9fc96e8bfb1d6c15700b9f",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/5ed7d90ebc195402aa9fc96e8bfb1d6c15700b9f"
+    },
+    {
+      "path": "apps/mobile/features/todo/ui/todo-ui-auth-required.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab280c730707e25cbfc60301509c2ae371bfe064",
+      "size": 1160,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/ab280c730707e25cbfc60301509c2ae371bfe064"
+    },
+    {
+      "path": "apps/mobile/features/todo/ui/todo-ui-create-form.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de9dac1f23eb537bc5ba0b079cc332f55b334f2c",
+      "size": 1842,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/de9dac1f23eb537bc5ba0b079cc332f55b334f2c"
+    },
+    {
+      "path": "apps/mobile/features/todo/ui/todo-ui-list-item.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be7beae56373e476236484b253bd94625ae2c7ae",
+      "size": 1511,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/be7beae56373e476236484b253bd94625ae2c7ae"
+    },
+    {
+      "path": "apps/mobile/features/todo/ui/todo-ui-list.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fda762e53be23a645a965fa61b2e1f9603295178",
+      "size": 1527,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/fda762e53be23a645a965fa61b2e1f9603295178"
+    },
+    {
+      "path": "apps/mobile/features/todo/ui/todo-ui-loading.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cfef60103bb630ce7dab7aea62ba529472876cc",
+      "size": 511,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/0cfef60103bb630ce7dab7aea62ba529472876cc"
+    },
+    {
+      "path": "apps/mobile/global.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4beb9236520792f51563340e55a98ddc140648c",
+      "size": 119,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/b4beb9236520792f51563340e55a98ddc140648c"
+    },
+    {
+      "path": "apps/mobile/index.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e26ee9c36f44246dba03389640b559ef2922849",
+      "size": 48,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/9e26ee9c36f44246dba03389640b559ef2922849"
+    },
+    {
+      "path": "apps/mobile/lib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c6ca7f09851455ae9661f0ebfadbf6c66de0df6a",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/c6ca7f09851455ae9661f0ebfadbf6c66de0df6a"
+    },
+    {
+      "path": "apps/mobile/lib/api-url.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c718f40bd90368a67ae2e1da5e73d6ac1b18ef93",
+      "size": 2335,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/c718f40bd90368a67ae2e1da5e73d6ac1b18ef93"
+    },
+    {
+      "path": "apps/mobile/lib/app-providers.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04c16e3e429ff4676d1fc3ff41c00a53138ede9a",
+      "size": 1331,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/04c16e3e429ff4676d1fc3ff41c00a53138ede9a"
+    },
+    {
+      "path": "apps/mobile/lib/auth-client.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20a01839293a4c36565bcf032825063508bb59b7",
+      "size": 699,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/20a01839293a4c36565bcf032825063508bb59b7"
+    },
+    {
+      "path": "apps/mobile/lib/ellipsify.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eec1661e450f65254f1d88f055a07984e60205bb",
+      "size": 185,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/eec1661e450f65254f1d88f055a07984e60205bb"
+    },
+    {
+      "path": "apps/mobile/lib/orpc.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41c02f8f87e2f8d06ea5876f0740107971443f11",
+      "size": 1191,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/41c02f8f87e2f8d06ea5876f0740107971443f11"
+    },
+    {
+      "path": "apps/mobile/metro.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43511dd3d6a4f56241252a5e5fdb84df109bd052",
+      "size": 365,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/43511dd3d6a4f56241252a5e5fdb84df109bd052"
+    },
+    {
+      "path": "apps/mobile/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b4b8721cdbf23132ef84fdb76e97b04a7c83d03",
+      "size": 2487,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/6b4b8721cdbf23132ef84fdb76e97b04a7c83d03"
+    },
+    {
+      "path": "apps/mobile/polyfills.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9960dfa12ca44f7eac1d3d1df5ef1ce3b5eeb8ad",
+      "size": 729,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/9960dfa12ca44f7eac1d3d1df5ef1ce3b5eeb8ad"
+    },
+    {
+      "path": "apps/mobile/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e12de30dca2b912794e386b4bd85493b5acd8a33",
+      "size": 263,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/e12de30dca2b912794e386b4bd85493b5acd8a33"
+    },
+    {
+      "path": "apps/mobile/types",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c724eae0764f1239b7b687f9675061fc4df6a889",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/c724eae0764f1239b7b687f9675061fc4df6a889"
+    },
+    {
+      "path": "apps/mobile/types/uniwind.d.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87aa2d2187af3046e0574ee45c763d9e02e86485",
+      "size": 114,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/87aa2d2187af3046e0574ee45c763d9e02e86485"
+    },
+    {
+      "path": "apps/web",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5c806c8fd7a8fe85b9924d2dddbaa0374bdb6e56",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/5c806c8fd7a8fe85b9924d2dddbaa0374bdb6e56"
+    },
+    {
+      "path": "apps/web/.env.example",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5317fceb24941663b35ed6830987ebea61524666",
+      "size": 35,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/5317fceb24941663b35ed6830987ebea61524666"
+    },
+    {
+      "path": "apps/web/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1cb16dd4c851721d4dd7d72424a0041e9dd1afc",
+      "size": 572,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/f1cb16dd4c851721d4dd7d72424a0041e9dd1afc"
+    },
+    {
+      "path": "apps/web/components.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d94dbff5f3f2ea9cf98f5e7fc9c34df6c8a0d6bc",
+      "size": 499,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/d94dbff5f3f2ea9cf98f5e7fc9c34df6c8a0d6bc"
+    },
+    {
+      "path": "apps/web/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e789795350e9a351a5d61e4f953a136c8c664911",
+      "size": 2222,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/e789795350e9a351a5d61e4f953a136c8c664911"
+    },
+    {
+      "path": "apps/web/public",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6d06a698b00b900618f915ef41ab534b4312aee8",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/6d06a698b00b900618f915ef41ab534b4312aee8"
+    },
+    {
+      "path": "apps/web/public/robots.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9e57dc4d41b9b46e05112e9f45b7ea6ac0ba15e",
+      "size": 67,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/e9e57dc4d41b9b46e05112e9f45b7ea6ac0ba15e"
+    },
+    {
+      "path": "apps/web/server.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0eee1d086ad07035b45ae2f4449aa70a69fbdd39",
+      "size": 4751,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/0eee1d086ad07035b45ae2f4449aa70a69fbdd39"
+    },
+    {
+      "path": "apps/web/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2e8b13ead410f2c9adb1d5f9ccc21658694be388",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/2e8b13ead410f2c9adb1d5f9ccc21658694be388"
+    },
+    {
+      "path": "apps/web/src/components",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1767baab7c3f9e997432d4c094db4b77bada2577",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/1767baab7c3f9e997432d4c094db4b77bada2577"
+    },
+    {
+      "path": "apps/web/src/components/loader.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29feefbd9a4be906a6b0e6119c803c01abc36d25",
+      "size": 213,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/29feefbd9a4be906a6b0e6119c803c01abc36d25"
+    },
+    {
+      "path": "apps/web/src/components/ui",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d80be0dda9729803b8dcb045d0eb5860b628e31d",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/d80be0dda9729803b8dcb045d0eb5860b628e31d"
+    },
+    {
+      "path": "apps/web/src/components/ui/alert.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23a2c50246cb50ef6722553f82440572e1fa558e",
+      "size": 2133,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/23a2c50246cb50ef6722553f82440572e1fa558e"
+    },
+    {
+      "path": "apps/web/src/components/ui/avatar.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "131700b3d8fca8c014d10c5f70aa864b5ec3c533",
+      "size": 3035,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/131700b3d8fca8c014d10c5f70aa864b5ec3c533"
+    },
+    {
+      "path": "apps/web/src/components/ui/button.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f20b7ef44980b97c905c5cc0093fc1f3448aae7",
+      "size": 2914,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/0f20b7ef44980b97c905c5cc0093fc1f3448aae7"
+    },
+    {
+      "path": "apps/web/src/components/ui/card.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24e3446159608ed85825df6468410f9950bd4330",
+      "size": 2629,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/24e3446159608ed85825df6468410f9950bd4330"
+    },
+    {
+      "path": "apps/web/src/components/ui/checkbox.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "028f954289823f0a3bf9e5cda5cab6e0543338b1",
+      "size": 1335,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/028f954289823f0a3bf9e5cda5cab6e0543338b1"
+    },
+    {
+      "path": "apps/web/src/components/ui/dropdown-menu.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0163cd7124f0109716bf5ec7bdbb1a20a84551db",
+      "size": 8741,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/0163cd7124f0109716bf5ec7bdbb1a20a84551db"
+    },
+    {
+      "path": "apps/web/src/components/ui/input.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98786406fe27f2eb4c1adf7d0c33d0ea0719f19c",
+      "size": 1046,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/98786406fe27f2eb4c1adf7d0c33d0ea0719f19c"
+    },
+    {
+      "path": "apps/web/src/components/ui/label.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f977cb50216d21e2b2c23c53740e20e07dbee7c6",
+      "size": 592,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/f977cb50216d21e2b2c23c53740e20e07dbee7c6"
+    },
+    {
+      "path": "apps/web/src/components/ui/skeleton.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b1d5ea770b3ca3658936ae5e93f1621988c1d07",
+      "size": 290,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/8b1d5ea770b3ca3658936ae5e93f1621988c1d07"
+    },
+    {
+      "path": "apps/web/src/components/ui/sonner.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6e364442776dc9b0727992faf398034f1704606",
+      "size": 1137,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/f6e364442776dc9b0727992faf398034f1704606"
+    },
+    {
+      "path": "apps/web/src/components/ui/spinner.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32592c9b71b5c3d904bcc280b7d1ef9817d1d013",
+      "size": 344,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/32592c9b71b5c3d904bcc280b7d1ef9817d1d013"
+    },
+    {
+      "path": "apps/web/src/features",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3d6a6b2ecaa55b3350a779d1d149c61e3f3c9e86",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/3d6a6b2ecaa55b3350a779d1d149c61e3f3c9e86"
+    },
+    {
+      "path": "apps/web/src/features/ai",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a46d64beb36295397ae18b31a1f0e7556d48852c",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/a46d64beb36295397ae18b31a1f0e7556d48852c"
+    },
+    {
+      "path": "apps/web/src/features/ai/data-access",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "12ff06b590d14cfbf1b6dbdfd3187f9fa1c60fa7",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/12ff06b590d14cfbf1b6dbdfd3187f9fa1c60fa7"
+    },
+    {
+      "path": "apps/web/src/features/ai/data-access/use-ai-chat.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c757177d1468c4eac87e2e1ee6baae28b1d2f0fe",
+      "size": 346,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/c757177d1468c4eac87e2e1ee6baae28b1d2f0fe"
+    },
+    {
+      "path": "apps/web/src/features/ai/feature",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8f43dfe5306a9fa7a02ec6f08b62df1afe285d84",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/8f43dfe5306a9fa7a02ec6f08b62df1afe285d84"
+    },
+    {
+      "path": "apps/web/src/features/ai/feature/ai-feature-entry.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26e3fab4623edeba819adc995e9eebda9888fda4",
+      "size": 799,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/26e3fab4623edeba819adc995e9eebda9888fda4"
+    },
+    {
+      "path": "apps/web/src/features/ai/ui",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ca4d0721a2cbd097ed70cbf0365ab879c95bf424",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/ca4d0721a2cbd097ed70cbf0365ab879c95bf424"
+    },
+    {
+      "path": "apps/web/src/features/ai/ui/ai-ui-chat-composer.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ebe599f24ee0e006a3da7e7453505ff59c6408d",
+      "size": 1000,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/2ebe599f24ee0e006a3da7e7453505ff59c6408d"
+    },
+    {
+      "path": "apps/web/src/features/ai/ui/ai-ui-chat-error.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08424464ac9b7108538f51fc03c9f00eca07ca98",
+      "size": 350,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/08424464ac9b7108538f51fc03c9f00eca07ca98"
+    },
+    {
+      "path": "apps/web/src/features/ai/ui/ai-ui-chat-message-item.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f14fb5c6721f1711587ab54a44f3b1f9385f255",
+      "size": 943,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/5f14fb5c6721f1711587ab54a44f3b1f9385f255"
+    },
+    {
+      "path": "apps/web/src/features/ai/ui/ai-ui-chat-message-list.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "925b3f8c828ca3efab9535c05ca79c51568a134c",
+      "size": 901,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/925b3f8c828ca3efab9535c05ca79c51568a134c"
+    },
+    {
+      "path": "apps/web/src/features/ai/ui/ai-ui-chat-screen.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9adca29f3d1623200cc79f4256a045c156f54208",
+      "size": 825,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/9adca29f3d1623200cc79f4256a045c156f54208"
+    },
+    {
+      "path": "apps/web/src/features/auth",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4fd65200799c0095716b972e58a16fc6e11160b4",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/4fd65200799c0095716b972e58a16fc6e11160b4"
+    },
+    {
+      "path": "apps/web/src/features/auth/data-access",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "67637d98766d6cb164846128ac50239f8689842d",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/67637d98766d6cb164846128ac50239f8689842d"
+    },
+    {
+      "path": "apps/web/src/features/auth/data-access/auth-middleware.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf9a13f5da46cb664e5e4770b69de391deb085bf",
+      "size": 541,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/bf9a13f5da46cb664e5e4770b69de391deb085bf"
+    },
+    {
+      "path": "apps/web/src/features/auth/data-access/get-user.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "380fa0d93b4e52f343bb6ff95fd16f3c266320e7",
+      "size": 265,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/380fa0d93b4e52f343bb6ff95fd16f3c266320e7"
+    },
+    {
+      "path": "apps/web/src/features/auth/data-access/require-auth.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "121d8bf1768ff2c770737be55a4a06355d19eb5e",
+      "size": 560,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/121d8bf1768ff2c770737be55a4a06355d19eb5e"
+    },
+    {
+      "path": "apps/web/src/features/auth/data-access/use-auth-email-sign-in.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f392d6c9ccd036eb01aff8335881d4daafd0328a",
+      "size": 1076,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/f392d6c9ccd036eb01aff8335881d4daafd0328a"
+    },
+    {
+      "path": "apps/web/src/features/auth/data-access/use-auth-email-sign-up.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5245efad1d842501925e9d74c21d9aa8b475f1a",
+      "size": 1121,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/f5245efad1d842501925e9d74c21d9aa8b475f1a"
+    },
+    {
+      "path": "apps/web/src/features/auth/data-access/use-auth-session.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2cf5f18101906e7601357f338c3d2a6b0525659",
+      "size": 118,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/a2cf5f18101906e7601357f338c3d2a6b0525659"
+    },
+    {
+      "path": "apps/web/src/features/auth/data-access/use-auth-sign-out.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9725a9838ce6ccd8983732215e3c77c907594a34",
+      "size": 793,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/9725a9838ce6ccd8983732215e3c77c907594a34"
+    },
+    {
+      "path": "apps/web/src/features/auth/data-access/use-auth-wallet-sign-in.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c7b40aa710387fa374e2c0f2e1af76ff334df69",
+      "size": 2458,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/5c7b40aa710387fa374e2c0f2e1af76ff334df69"
+    },
+    {
+      "path": "apps/web/src/features/auth/feature",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b05a5410556649babd532667751b91e343fefbed",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/b05a5410556649babd532667751b91e343fefbed"
+    },
+    {
+      "path": "apps/web/src/features/auth/feature/auth-feature-authenticate-email.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6086d3223d137371ca02c36f934b31b411c88218",
+      "size": 1856,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/6086d3223d137371ca02c36f934b31b411c88218"
+    },
+    {
+      "path": "apps/web/src/features/auth/feature/auth-feature-authenticated-solana.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3b2c54f1d65b8c7e63b46c55c48db271f3711f5",
+      "size": 3302,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/d3b2c54f1d65b8c7e63b46c55c48db271f3711f5"
+    },
+    {
+      "path": "apps/web/src/features/auth/feature/auth-feature-authenticated.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27fbefed496b25291c363314669a7ac53eb59c71",
+      "size": 832,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/27fbefed496b25291c363314669a7ac53eb59c71"
+    },
+    {
+      "path": "apps/web/src/features/auth/feature/auth-feature-login.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b6ed144ca60b830f5f5e5112cecd4e9abe1f72b",
+      "size": 756,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/8b6ed144ca60b830f5f5e5112cecd4e9abe1f72b"
+    },
+    {
+      "path": "apps/web/src/features/auth/feature/auth-feature-user-menu.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43c71448e6c3d4b69b0c665bf70fc842d1cf0a9f",
+      "size": 1730,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/43c71448e6c3d4b69b0c665bf70fc842d1cf0a9f"
+    },
+    {
+      "path": "apps/web/src/features/auth/ui",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9b120f338d88bd96d1573aca9a11c858c3a7c8a5",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/9b120f338d88bd96d1573aca9a11c858c3a7c8a5"
+    },
+    {
+      "path": "apps/web/src/features/auth/ui/auth-ui-connection-status.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b957cc55efd5e463de3ec2d10cabeaab7fb82419",
+      "size": 1529,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/b957cc55efd5e463de3ec2d10cabeaab7fb82419"
+    },
+    {
+      "path": "apps/web/src/features/auth/ui/auth-ui-session.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25c2ea72758bac242f6c7d6af47a38bde8307ecb",
+      "size": 812,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/25c2ea72758bac242f6c7d6af47a38bde8307ecb"
+    },
+    {
+      "path": "apps/web/src/features/auth/ui/auth-ui-sign-in-form.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8544e83f27134ae0b36198ccdaf6d200753a9da7",
+      "size": 3191,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/8544e83f27134ae0b36198ccdaf6d200753a9da7"
+    },
+    {
+      "path": "apps/web/src/features/auth/ui/auth-ui-sign-up-form.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50b833992e9f3f8b63fb32b2e111dbcb274b0895",
+      "size": 3994,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/50b833992e9f3f8b63fb32b2e111dbcb274b0895"
+    },
+    {
+      "path": "apps/web/src/features/dashboard",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5d41aa50c5558fd2b96c0792a275a397b067bb58",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/5d41aa50c5558fd2b96c0792a275a397b067bb58"
+    },
+    {
+      "path": "apps/web/src/features/dashboard/feature",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a9ea633ca7d5166b9bdf206a83a7df6eb6a4907a",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/a9ea633ca7d5166b9bdf206a83a7df6eb6a4907a"
+    },
+    {
+      "path": "apps/web/src/features/dashboard/feature/dashboard-feature-index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "312c25ca68a50ca5934abd4053db9de646ac719c",
+      "size": 971,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/312c25ca68a50ca5934abd4053db9de646ac719c"
+    },
+    {
+      "path": "apps/web/src/features/home",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9d9501d4da03729dc903c42a06960e18e16543a9",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/9d9501d4da03729dc903c42a06960e18e16543a9"
+    },
+    {
+      "path": "apps/web/src/features/home/feature",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b11b420516bb126e04c4e35bc7aa6edac1155f47",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/b11b420516bb126e04c4e35bc7aa6edac1155f47"
+    },
+    {
+      "path": "apps/web/src/features/home/feature/home-feature-index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec92de6621a2d0ddd3fd748eb1a551d05ebf2072",
+      "size": 730,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/ec92de6621a2d0ddd3fd748eb1a551d05ebf2072"
+    },
+    {
+      "path": "apps/web/src/features/shell",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ae032fdb571795594fdd86c67e03ce3236163f20",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/ae032fdb571795594fdd86c67e03ce3236163f20"
+    },
+    {
+      "path": "apps/web/src/features/shell/feature",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "82a9ef44204f862afb2c5621f5c6573197a6492c",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/82a9ef44204f862afb2c5621f5c6573197a6492c"
+    },
+    {
+      "path": "apps/web/src/features/shell/feature/shell-feature-root.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a003cb25df9b186514c3b0547c99910e5ff2a3c9",
+      "size": 993,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/a003cb25df9b186514c3b0547c99910e5ff2a3c9"
+    },
+    {
+      "path": "apps/web/src/features/shell/ui",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f1f53c6753498ac49fb05d04ee1ebeffd644401f",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/f1f53c6753498ac49fb05d04ee1ebeffd644401f"
+    },
+    {
+      "path": "apps/web/src/features/shell/ui/shell-ui-header.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d0a602a5c60bafd10634a0742db63a042da64f8",
+      "size": 623,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/5d0a602a5c60bafd10634a0742db63a042da64f8"
+    },
+    {
+      "path": "apps/web/src/features/solana",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4aa3eab3f953e5d9d53d3602cf75a111a4095c3f",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/4aa3eab3f953e5d9d53d3602cf75a111a4095c3f"
+    },
+    {
+      "path": "apps/web/src/features/solana/data-access",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9f997974a2ee603a0e649c71140b6e90cb6ff082",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/9f997974a2ee603a0e649c71140b6e90cb6ff082"
+    },
+    {
+      "path": "apps/web/src/features/solana/data-access/solana-mobile-wallet-adapter.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19d32f8edf6dc3f96874f1398e8509b1171eb6c7",
+      "size": 1093,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/19d32f8edf6dc3f96874f1398e8509b1171eb6c7",
+      "error": "SyntaxError: Unexpected token 'i', \"import {\n \"... is not valid JSON"
+    },
+    {
+      "path": "apps/web/src/features/solana/data-access/solana-provider.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ce1349096dbc2877aa16b813f778ec67079e1f7",
+      "size": 673,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/0ce1349096dbc2877aa16b813f778ec67079e1f7"
+    },
+    {
+      "path": "apps/web/src/features/solana/data-access/use-solana-balance.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "393908f6c0b107ed04b9e2aea5fe707fb63ce377",
+      "size": 204,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/393908f6c0b107ed04b9e2aea5fe707fb63ce377"
+    },
+    {
+      "path": "apps/web/src/features/solana/data-access/use-solana-explorer.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7502204a80b3fdcb4bf46f759aa1c57e8b04730c",
+      "size": 516,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/7502204a80b3fdcb4bf46f759aa1c57e8b04730c"
+    },
+    {
+      "path": "apps/web/src/features/solana/data-access/use-solana.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89f1ef4e8d8eed7d848a0aab0cee19fbdcff09e8",
+      "size": 1617,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/89f1ef4e8d8eed7d848a0aab0cee19fbdcff09e8"
+    },
+    {
+      "path": "apps/web/src/features/solana/feature",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a62c7ff404250b0faa1600fa54b39c334ed7b3d9",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/a62c7ff404250b0faa1600fa54b39c334ed7b3d9"
+    },
+    {
+      "path": "apps/web/src/features/solana/feature/solana-feature-cluster-select.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff1b23d449b2ccfab09251b975c77b1cd2d04969",
+      "size": 1103,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/ff1b23d449b2ccfab09251b975c77b1cd2d04969"
+    },
+    {
+      "path": "apps/web/src/features/solana/feature/solana-feature-entry.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e35a51c30cf0b0d92d0b5d6f11c5ab23cf8e06b0",
+      "size": 7622,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/e35a51c30cf0b0d92d0b5d6f11c5ab23cf8e06b0"
+    },
+    {
+      "path": "apps/web/src/features/solana/feature/solana-feature-wallet-connect.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fa3daab5bccd77f48bf225507907cfd63137e09",
+      "size": 687,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/0fa3daab5bccd77f48bf225507907cfd63137e09"
+    },
+    {
+      "path": "apps/web/src/features/solana/feature/solana-feature-wallet-disconnect.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e6a33a0047d6b7b738613084bcf151e4cfba9be",
+      "size": 573,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/5e6a33a0047d6b7b738613084bcf151e4cfba9be"
+    },
+    {
+      "path": "apps/web/src/features/solana/feature/solana-feature-wallet-select.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5acc65704cb57404e7f294dddd26c111d63d6787",
+      "size": 2639,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/5acc65704cb57404e7f294dddd26c111d63d6787"
+    },
+    {
+      "path": "apps/web/src/features/solana/feature/solana-feature-wallet-sign-and-send-transaction.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10b5c57484c1351d1c3c5cd47c8c892a75378cf8",
+      "size": 3787,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/10b5c57484c1351d1c3c5cd47c8c892a75378cf8"
+    },
+    {
+      "path": "apps/web/src/features/solana/feature/solana-feature-wallet-sign-in.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db0a3a8f86966f83ed21930c4524f2231f9bceca",
+      "size": 1950,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/db0a3a8f86966f83ed21930c4524f2231f9bceca"
+    },
+    {
+      "path": "apps/web/src/features/solana/feature/solana-feature-wallet-sign-message.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91f4640d443be6dfe7ec670f0b7fef9749e5384b",
+      "size": 2713,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/91f4640d443be6dfe7ec670f0b7fef9749e5384b"
+    },
+    {
+      "path": "apps/web/src/features/solana/feature/solana-feature-wallet-sign-transaction.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e511f1b6e1631f6c3741746656908b077cbfb5e",
+      "size": 3939,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/7e511f1b6e1631f6c3741746656908b077cbfb5e",
+      "content": "import {\n  appendTransactionMessageInstruction,\n  assertIsTransactionWithBlockhashLifetime,\n  createTransactionMessage,\n  getSignatureFromTransaction,\n  pipe,\n  sendAndConfirmTransactionFactory,\n  setTransactionMessageFeePayerSigner,\n  setTransactionMessageLifetimeUsingBlockhash,\n  signTransactionMessageWithSigners,\n} from '@solana/kit'\nimport { useWalletAccountTransactionSigner } from '@solana/react'\nimport type { SolanaClient } from '@solana-mobile-monorepo/solana-client'\nimport { getAddMemoInstruction } from '@solana-program/memo'\nimport type { SolanaClusterId, UiWalletAccount } from '@wallet-ui/react'\nimport { LucideKey } from 'lucide-react'\nimport { type SyntheticEvent, useCallback, useMemo, useState } from 'react'\n\nimport { Button } from '@/components/ui/button'\nimport {\n  Card,\n  CardAction,\n  CardContent,\n  CardDescription,\n  CardHeader,\n  CardTitle,\n} from '@/components/ui/card'\nimport { Input } from '@/components/ui/input'\nimport { Spinner } from '@/components/ui/spinner'\n\nimport { getErrorMessage } from '../ui/solana-ui-error'\n\nexport function SolanaFeatureWalletSignTransaction({\n  account,\n  client,\n  cluster,\n  onError,\n  onSuccess,\n}: {\n  account: UiWalletAccount\n  client: SolanaClient\n  cluster: SolanaClusterId\n  onError(error: unknown): void\n  onSuccess(signature: string | undefined): void\n}) {\n  const [isLoading, setIsLoading] = useState(false)\n  const [text, setText] = useState('Hello Solana!')\n  const transactionSigner = useWalletAccountTransactionSigner(account, cluster)\n  const sendAndConfirmTransaction = useMemo(\n    () => sendAndConfirmTransactionFactory(client),\n    [client],\n  )\n\n  const signTransaction = useCallback(async () => {\n    const { value: latestBlockhash } = await client.rpc\n      .getLatestBlockhash({ commitment: 'confirmed' })\n      .send()\n    const message = pipe(\n      createTransactionMessage({ version: 0 }),\n      (transaction) =>\n        setTransactionMessageFeePayerSigner(transactionSigner, transaction),\n      (transaction) =>\n        setTransactionMessageLifetimeUsingBlockhash(\n          latestBlockhash,\n          transaction,\n        ),\n      (transaction) =>\n        appendTransactionMessageInstruction(\n          getAddMemoInstruction({ memo: text }),\n          transaction,\n        ),\n    )\n\n    const transaction = await signTransactionMessageWithSigners(message)\n\n    assertIsTransactionWithBlockhashLifetime(transaction)\n\n    const signature = getSignatureFromTransaction(transaction)\n\n    await sendAndConfirmTransaction(transaction, { commitment: 'confirmed' })\n\n    if (!signature) {\n      throw new Error()\n    }\n\n    return signature\n  }, [client.rpc, sendAndConfirmTransaction, text, transactionSigner])\n\n  return (\n    <form\n      onSubmit={async (event) => {\n        event.preventDefault()\n        setIsLoading(true)\n\n        try {\n          const signature = await signTransaction()\n          onSuccess(signature)\n        } catch (error) {\n          onError(getErrorMessage(error, 'Unknown error occurred'))\n        } finally {\n          setIsLoading(false)\n        }\n      }}\n    >\n      <Card>\n        <CardHeader>\n          <CardTitle>Sign Transaction</CardTitle>\n          <CardDescription>Sign a transaction with a memo text</CardDescription>\n          <CardAction>\n            <Button\n              disabled={!text || isLoading}\n              size=\"lg\"\n              type=\"submit\"\n              variant=\"outline\"\n            >\n              {isLoading ? <Spinner /> : <LucideKey />}\n              Sign Transaction\n            </Button>\n          </CardAction>\n        </CardHeader>\n        <CardContent className=\"space-y-4\">\n          <Input\n            onChange={(event: SyntheticEvent<HTMLInputElement>) =>\n              setText(event.currentTarget.value)\n            }\n            placeholder=\"Write a memo text to sign as a transaction\"\n            value={text}\n          />\n        </CardContent>\n      </Card>\n    </form>\n  )\n}\n",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "apps/web/src/features/solana/ui",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9151de74a3a86581f70a026fef532e0eb1b68bce",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/9151de74a3a86581f70a026fef532e0eb1b68bce"
+    },
+    {
+      "path": "apps/web/src/features/solana/ui/solana-ui-address-form.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9b918438e4d0c598d22eec0eabd30fa69ef6ea5",
+      "size": 1603,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/c9b918438e4d0c598d22eec0eabd30fa69ef6ea5"
+    },
+    {
+      "path": "apps/web/src/features/solana/ui/solana-ui-balance-result.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7900f82e017e8c622df1f9816bc033c8ab923a09",
+      "size": 1268,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/7900f82e017e8c622df1f9816bc033c8ab923a09"
+    },
+    {
+      "path": "apps/web/src/features/solana/ui/solana-ui-error.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "768514b46cbd683628e4dd0aca712b6410553a28",
+      "size": 2186,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/768514b46cbd683628e4dd0aca712b6410553a28"
+    },
+    {
+      "path": "apps/web/src/features/solana/ui/solana-ui-explorer-link.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a527866e3c63b29fecd1750d973642f3d86111ef",
+      "size": 881,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/a527866e3c63b29fecd1750d973642f3d86111ef"
+    },
+    {
+      "path": "apps/web/src/features/solana/ui/solana-ui-wallet-address.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cd93165e137a00b58f15a5e3a18eaf39e635d56",
+      "size": 233,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/3cd93165e137a00b58f15a5e3a18eaf39e635d56"
+    },
+    {
+      "path": "apps/web/src/features/solana/ui/solana-ui-wallet-features.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f13429f11968b636373f3e0ef3ad2bd14191eecc",
+      "size": 904,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/f13429f11968b636373f3e0ef3ad2bd14191eecc"
+    },
+    {
+      "path": "apps/web/src/features/solana/ui/solana-ui-wallet-overview.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "162c7b1e2e52e1a7b6c83bc8398a99bde5825025",
+      "size": 1424,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/162c7b1e2e52e1a7b6c83bc8398a99bde5825025"
+    },
+    {
+      "path": "apps/web/src/features/todo",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "562ca6aa1e616649ea232648a13f47963d64a5d3",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/562ca6aa1e616649ea232648a13f47963d64a5d3"
+    },
+    {
+      "path": "apps/web/src/features/todo/data-access",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "07850fa3ea52cf2952303ed988d65b38df2e4403",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/07850fa3ea52cf2952303ed988d65b38df2e4403"
+    },
+    {
+      "path": "apps/web/src/features/todo/data-access/use-todo-create.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ab3df8c39bf362155b015d2a3c3af7e14b50e0d",
+      "size": 393,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/9ab3df8c39bf362155b015d2a3c3af7e14b50e0d"
+    },
+    {
+      "path": "apps/web/src/features/todo/data-access/use-todo-delete.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ecc0474dad6584519e891f0c0d0f7a91f248a7eb",
+      "size": 393,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/ecc0474dad6584519e891f0c0d0f7a91f248a7eb"
+    },
+    {
+      "path": "apps/web/src/features/todo/data-access/use-todo-list-invalidation.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b48365a35e9a3b1f368965ea7a3ba0aae446029a",
+      "size": 293,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/b48365a35e9a3b1f368965ea7a3ba0aae446029a"
+    },
+    {
+      "path": "apps/web/src/features/todo/data-access/use-todo-list-query.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46870c7dc1788616ae7d46c8050b7d818ff36fc8",
+      "size": 243,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/46870c7dc1788616ae7d46c8050b7d818ff36fc8"
+    },
+    {
+      "path": "apps/web/src/features/todo/data-access/use-todo-toggle.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7eeb36fc426e8b99239cb06ecf984365f67cafc",
+      "size": 393,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/a7eeb36fc426e8b99239cb06ecf984365f67cafc"
+    },
+    {
+      "path": "apps/web/src/features/todo/feature",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d7a5400e7de5f884e505634999fc2725b9a52d4b",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/d7a5400e7de5f884e505634999fc2725b9a52d4b"
+    },
+    {
+      "path": "apps/web/src/features/todo/feature/todo-feature-authenticated.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "669236394e9e85d6dbbc8220acbda9d9a67dc058",
+      "size": 1845,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/669236394e9e85d6dbbc8220acbda9d9a67dc058"
+    },
+    {
+      "path": "apps/web/src/features/todo/feature/todo-feature-entry.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f821b098da7a83f34628d74566287850eb9c20fe",
+      "size": 150,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/f821b098da7a83f34628d74566287850eb9c20fe"
+    },
+    {
+      "path": "apps/web/src/features/todo/ui",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8df7fdd7c7983114a894d27658b3587010c61ad8",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/8df7fdd7c7983114a894d27658b3587010c61ad8"
+    },
+    {
+      "path": "apps/web/src/features/todo/ui/todo-ui-create-form.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec556537477ef59a1b4d2048d861cc77a08eeee3",
+      "size": 932,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/ec556537477ef59a1b4d2048d861cc77a08eeee3"
+    },
+    {
+      "path": "apps/web/src/features/todo/ui/todo-ui-list-item.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1923214a17670ee49feaeff169f0e7c5912a86f",
+      "size": 1092,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/b1923214a17670ee49feaeff169f0e7c5912a86f"
+    },
+    {
+      "path": "apps/web/src/features/todo/ui/todo-ui-list.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "420b8351c16e25d95221990899e3f44adebe12cb",
+      "size": 866,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/420b8351c16e25d95221990899e3f44adebe12cb"
+    },
+    {
+      "path": "apps/web/src/features/todo/ui/todo-ui-loading.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9224a301cab732b14efc2c1d3cdd588db10461cc",
+      "size": 344,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/9224a301cab732b14efc2c1d3cdd588db10461cc"
+    },
+    {
+      "path": "apps/web/src/index.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "675bd809b444eda49b1685bc2abcc2eb883e3493",
+      "size": 4397,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/675bd809b444eda49b1685bc2abcc2eb883e3493"
+    },
+    {
+      "path": "apps/web/src/lib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "06ae6a33928f312544720665c5b4278c9a820ea8",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/06ae6a33928f312544720665c5b4278c9a820ea8"
+    },
+    {
+      "path": "apps/web/src/lib/auth-client.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a9cf63afea8b80b76ac0f780c0d9ddd8f1c4180",
+      "size": 404,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/0a9cf63afea8b80b76ac0f780c0d9ddd8f1c4180"
+    },
+    {
+      "path": "apps/web/src/lib/orpc.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba54ea24d657f483362445180fb7662c06f5802f",
+      "size": 1087,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/ba54ea24d657f483362445180fb7662c06f5802f"
+    },
+    {
+      "path": "apps/web/src/lib/utils.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d32b0fe652e3a7129dd9a4a2fb82bfbb6faad449",
+      "size": 166,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/d32b0fe652e3a7129dd9a4a2fb82bfbb6faad449"
+    },
+    {
+      "path": "apps/web/src/routeTree.gen.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f271c59e2aef88b60f5299249c22cc14bf6a98ac",
+      "size": 4514,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/f271c59e2aef88b60f5299249c22cc14bf6a98ac"
+    },
+    {
+      "path": "apps/web/src/router.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2312812faeb236a0f220ccc913315a515f0a7b53",
+      "size": 984,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/2312812faeb236a0f220ccc913315a515f0a7b53"
+    },
+    {
+      "path": "apps/web/src/routes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "eb69b307b8c90fdc5429447b99ab51970f79e864",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/eb69b307b8c90fdc5429447b99ab51970f79e864"
+    },
+    {
+      "path": "apps/web/src/routes/__root.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a787b516b1ab2b1de58d2e3b475f2f2f6ec72d8f",
+      "size": 1464,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/a787b516b1ab2b1de58d2e3b475f2f2f6ec72d8f"
+    },
+    {
+      "path": "apps/web/src/routes/ai.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8fdb8f17d05788520d1b1e94ba6bb096c77af18b",
+      "size": 208,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/8fdb8f17d05788520d1b1e94ba6bb096c77af18b"
+    },
+    {
+      "path": "apps/web/src/routes/dashboard.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05fa5e5ae74dd73b5f7b7111164eac41eb65eb8b",
+      "size": 674,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/05fa5e5ae74dd73b5f7b7111164eac41eb65eb8b"
+    },
+    {
+      "path": "apps/web/src/routes/index.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d21b082c9d842d2407b184029f41ced45a4bd52",
+      "size": 215,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/9d21b082c9d842d2407b184029f41ced45a4bd52"
+    },
+    {
+      "path": "apps/web/src/routes/login.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7505375e7316055ff8260eb4723050e7ef9f1425",
+      "size": 219,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/7505375e7316055ff8260eb4723050e7ef9f1425"
+    },
+    {
+      "path": "apps/web/src/routes/solana.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4d4dd3a91e4ad6f51da4fdeb30c66749f241ef4",
+      "size": 228,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/d4d4dd3a91e4ad6f51da4fdeb30c66749f241ef4"
+    },
+    {
+      "path": "apps/web/src/routes/todos.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6df3f71616e86148d99602a5fe5f5cfd1dfd861d",
+      "size": 645,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/6df3f71616e86148d99602a5fe5f5cfd1dfd861d"
+    },
+    {
+      "path": "apps/web/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ee1de4f1ffd49abbf40a3928b0186c39aa3e456",
+      "size": 650,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/9ee1de4f1ffd49abbf40a3928b0186c39aa3e456"
+    },
+    {
+      "path": "apps/web/vite.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14bd0cf90a039281d0831c54c4a689fe7ebaaf26",
+      "size": 381,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/14bd0cf90a039281d0831c54c4a689fe7ebaaf26"
+    },
+    {
+      "path": "biome.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "833caf25ea195bcac4a8be8ce842ff641443619a",
+      "size": 2028,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/833caf25ea195bcac4a8be8ce842ff641443619a"
+    },
+    {
+      "path": "bun.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa9c973f7b07d3477fdbe5c93283cbc58ba4635a",
+      "size": 567997,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/aa9c973f7b07d3477fdbe5c93283cbc58ba4635a"
+    },
+    {
+      "path": "docker-compose.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18dcdd92fca8195324f5f05ece7ecfa57c9bba0c",
+      "size": 1124,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/18dcdd92fca8195324f5f05ece7ecfa57c9bba0c",
+      "content": "services:\n  db:\n    image: ghcr.io/tursodatabase/libsql-server:latest\n    volumes:\n      - db-data:/var/lib/sqld\n    environment:\n      - SQLD_NODE=primary\n    networks:\n      - internal\n\n  api:\n    build:\n      context: .\n      dockerfile: Dockerfile.api\n    environment:\n      - BETTER_AUTH_SECRET=${BETTER_AUTH_SECRET:?BETTER_AUTH_SECRET is required}\n      - BETTER_AUTH_URL=${BETTER_AUTH_URL:-http://localhost:3000}\n      - CORS_ORIGINS=${CORS_ORIGINS:-http://localhost:3001,solana-mobile-monorepo://}\n      - DATABASE_URL=http://db:8080\n      - DATABASE_AUTH_TOKEN=local\n      - PORT=3000\n      - SOLANA_EMAIL_DOMAIN=${SOLANA_EMAIL_DOMAIN:-example.com}\n      - SOLANA_ENDPOINT=${SOLANA_ENDPOINT:-https://api.devnet.solana.com}\n    ports:\n      - \"${API_PORT:-3000}:3000\"\n    depends_on:\n      - db\n    networks:\n      - internal\n\n  web:\n    build:\n      context: .\n      dockerfile: Dockerfile.web\n      args:\n        - VITE_API_URL=${VITE_API_URL:-http://localhost:3000}\n    ports:\n      - \"${WEB_PORT:-3001}:3001\"\n    depends_on:\n      - api\n    networks:\n      - internal\n\nvolumes:\n  db-data:\n\nnetworks:\n  internal:\n",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "lefthook.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86488609bd921a0f968f401d717aa2b6838d6032",
+      "size": 388,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/86488609bd921a0f968f401d717aa2b6838d6032"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0d6517cb9cbf9c43047fb58e656c91114299d98",
+      "size": 3514,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/f0d6517cb9cbf9c43047fb58e656c91114299d98"
+    },
+    {
+      "path": "packages",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e5c35352840b09b2ea4da6e290ef23c799f28769",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/e5c35352840b09b2ea4da6e290ef23c799f28769"
+    },
+    {
+      "path": "packages/api",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "529215cb239c4ef7087bc651aa090839896a8bda",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/529215cb239c4ef7087bc651aa090839896a8bda"
+    },
+    {
+      "path": "packages/api/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a14702c409d3f34f9ab001e572dfeaf0da434bba",
+      "size": 388,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/a14702c409d3f34f9ab001e572dfeaf0da434bba"
+    },
+    {
+      "path": "packages/api/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97f6f6888be75c41dcd8b7d588169f889cddce23",
+      "size": 838,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/97f6f6888be75c41dcd8b7d588169f889cddce23"
+    },
+    {
+      "path": "packages/api/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "77ae8aa12106519549867bc69b5bf3ec04b6a19b",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/77ae8aa12106519549867bc69b5bf3ec04b6a19b"
+    },
+    {
+      "path": "packages/api/src/context.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1bd43bd3076b235ca172fe5b0910e9bf2013e4a",
+      "size": 640,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/f1bd43bd3076b235ca172fe5b0910e9bf2013e4a"
+    },
+    {
+      "path": "packages/api/src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53b789c7690df1e9183e2e0004f6e6e1cef65a08",
+      "size": 478,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/53b789c7690df1e9183e2e0004f6e6e1cef65a08"
+    },
+    {
+      "path": "packages/api/src/routers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "37a6735bde9dfb41c997a0aed9af7352d4725092",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/37a6735bde9dfb41c997a0aed9af7352d4725092"
+    },
+    {
+      "path": "packages/api/src/routers/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9203b4984fcc503e7e508609e08ae54385a1434",
+      "size": 970,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/c9203b4984fcc503e7e508609e08ae54385a1434"
+    },
+    {
+      "path": "packages/api/src/routers/solana-address-schema.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fece7a9912800b0f5c7bb2c9575322e51473eb76",
+      "size": 263,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/fece7a9912800b0f5c7bb2c9575322e51473eb76"
+    },
+    {
+      "path": "packages/api/src/routers/solana.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4344cd8bbcc910c7bbb23a4505dcfb67334b55be",
+      "size": 433,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/4344cd8bbcc910c7bbb23a4505dcfb67334b55be"
+    },
+    {
+      "path": "packages/api/src/routers/todo.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75bf4db1919cef83b6f955b9f2151fec76ff32c6",
+      "size": 1308,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/75bf4db1919cef83b6f955b9f2151fec76ff32c6"
+    },
+    {
+      "path": "packages/api/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78000d18cf93b7ea8d8d79fbff6a17f5572a0eab",
+      "size": 217,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/78000d18cf93b7ea8d8d79fbff6a17f5572a0eab"
+    },
+    {
+      "path": "packages/auth",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f123b81669c73e68f275c2777e63b790dd41526c",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/f123b81669c73e68f275c2777e63b790dd41526c"
+    },
+    {
+      "path": "packages/auth/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a14702c409d3f34f9ab001e572dfeaf0da434bba",
+      "size": 388,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/a14702c409d3f34f9ab001e572dfeaf0da434bba"
+    },
+    {
+      "path": "packages/auth/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f63c2aecb55b18bc45b391ac8584f782690df9f0",
+      "size": 622,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/f63c2aecb55b18bc45b391ac8584f782690df9f0"
+    },
+    {
+      "path": "packages/auth/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a7aa999ec77268dc001f37bd471ee245f854481c",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/a7aa999ec77268dc001f37bd471ee245f854481c"
+    },
+    {
+      "path": "packages/auth/src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41b92af5e7d58789aff8b3252e82448f12932462",
+      "size": 1092,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/41b92af5e7d58789aff8b3252e82448f12932462"
+    },
+    {
+      "path": "packages/auth/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78000d18cf93b7ea8d8d79fbff6a17f5572a0eab",
+      "size": 217,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/78000d18cf93b7ea8d8d79fbff6a17f5572a0eab"
+    },
+    {
+      "path": "packages/config",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "630df351c1c3c751064cafbd7be72a8f5e60c66c",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/630df351c1c3c751064cafbd7be72a8f5e60c66c"
+    },
+    {
+      "path": "packages/config/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45038d09871bfdf9e5ed49d9c6b958e07392616d",
+      "size": 159,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/45038d09871bfdf9e5ed49d9c6b958e07392616d"
+    },
+    {
+      "path": "packages/config/react-library.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a74254ef704c10c9ee48e17b7ca5d3ef3a1e2a6b",
+      "size": 235,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/a74254ef704c10c9ee48e17b7ca5d3ef3a1e2a6b"
+    },
+    {
+      "path": "packages/config/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f446eca6c84920c6dd5a92843f26e6027cd3c352",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/f446eca6c84920c6dd5a92843f26e6027cd3c352"
+    },
+    {
+      "path": "packages/config/src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "336ce12bb9106afdf843063ee67c0c1970f70d37",
+      "size": 10,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/336ce12bb9106afdf843063ee67c0c1970f70d37"
+    },
+    {
+      "path": "packages/config/tsconfig.base.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2043963eb9494e14cf9a818ecbe966697d3def1",
+      "size": 607,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/a2043963eb9494e14cf9a818ecbe966697d3def1"
+    },
+    {
+      "path": "packages/config/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "810300780134faaed0bef3c5804788b2e0b2c803",
+      "size": 70,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/810300780134faaed0bef3c5804788b2e0b2c803"
+    },
+    {
+      "path": "packages/db",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3a8645566b2c55b88b812eda1f9fcd24ae31190c",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/3a8645566b2c55b88b812eda1f9fcd24ae31190c"
+    },
+    {
+      "path": "packages/db/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b53ac75cb4639eb39ad313ee28aa1a4f82550f1",
+      "size": 406,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/2b53ac75cb4639eb39ad313ee28aa1a4f82550f1"
+    },
+    {
+      "path": "packages/db/drizzle.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff3f0586458d28e7c7808e44fa8f8e8059a8dc53",
+      "size": 342,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/ff3f0586458d28e7c7808e44fa8f8e8059a8dc53"
+    },
+    {
+      "path": "packages/db/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b66f349a1f3de6c80e81a3b2319cbc8b12a98932",
+      "size": 792,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/b66f349a1f3de6c80e81a3b2319cbc8b12a98932"
+    },
+    {
+      "path": "packages/db/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dc45f5710fdfa56c40020233e31b2bd77c699153",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/dc45f5710fdfa56c40020233e31b2bd77c699153"
+    },
+    {
+      "path": "packages/db/src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dbfdc55669a22a331e6f439689cb9c6bdac60d72",
+      "size": 325,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/dbfdc55669a22a331e6f439689cb9c6bdac60d72"
+    },
+    {
+      "path": "packages/db/src/migrations",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "19e8c5c74ff4f746176c8f423b82171f38c13e1a",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/19e8c5c74ff4f746176c8f423b82171f38c13e1a"
+    },
+    {
+      "path": "packages/db/src/migrations/0000_initial_schema.sql",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f03d77eefe04ec880aca0f528288f14f099a92d8",
+      "size": 3150,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/f03d77eefe04ec880aca0f528288f14f099a92d8"
+    },
+    {
+      "path": "packages/db/src/migrations/meta",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "58d34558f6303f506aa2fda34d691c59f64f19e3",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/58d34558f6303f506aa2fda34d691c59f64f19e3"
+    },
+    {
+      "path": "packages/db/src/migrations/meta/0000_snapshot.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "477179f4951c4f9457382b527bc95980e8779c3d",
+      "size": 13443,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/477179f4951c4f9457382b527bc95980e8779c3d"
+    },
+    {
+      "path": "packages/db/src/migrations/meta/_journal.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b0bcf7f5827e50ab6a61035f05bfa18acfccabc",
+      "size": 205,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/5b0bcf7f5827e50ab6a61035f05bfa18acfccabc"
+    },
+    {
+      "path": "packages/db/src/schema",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "84cee819c5126e2d7a0bab9a51924f2ad5f946d2",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/84cee819c5126e2d7a0bab9a51924f2ad5f946d2"
+    },
+    {
+      "path": "packages/db/src/schema/auth.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfce59e4f95a640a8ea52d07b4594a0ba95817aa",
+      "size": 4686,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/dfce59e4f95a640a8ea52d07b4594a0ba95817aa"
+    },
+    {
+      "path": "packages/db/src/schema/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c5529cf0a7e9bac6e919fc7585ffcc987a7f86d",
+      "size": 46,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/3c5529cf0a7e9bac6e919fc7585ffcc987a7f86d"
+    },
+    {
+      "path": "packages/db/src/schema/todo.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f98abe3ed160ff73dd20e8c597a7aaa2ee8eaf42",
+      "size": 514,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/f98abe3ed160ff73dd20e8c597a7aaa2ee8eaf42"
+    },
+    {
+      "path": "packages/db/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78000d18cf93b7ea8d8d79fbff6a17f5572a0eab",
+      "size": 217,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/78000d18cf93b7ea8d8d79fbff6a17f5572a0eab"
+    },
+    {
+      "path": "packages/env",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a8c4b32d57086427e9a0ee0d7ceee06ec5ab4a4f",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/a8c4b32d57086427e9a0ee0d7ceee06ec5ab4a4f"
+    },
+    {
+      "path": "packages/env/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2484349879cbd60fd4c2904edd01746a014c1d9a",
+      "size": 513,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/2484349879cbd60fd4c2904edd01746a014c1d9a"
+    },
+    {
+      "path": "packages/env/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1fecaeaca29f534ec4480677b340ee8f702fdf29",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/1fecaeaca29f534ec4480677b340ee8f702fdf29"
+    },
+    {
+      "path": "packages/env/src/api.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78ddc00fed62ad9217f46e98197c2633246b8829",
+      "size": 721,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/78ddc00fed62ad9217f46e98197c2633246b8829"
+    },
+    {
+      "path": "packages/env/src/mobile.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ecf8970026a2234a3462f0fc82a33c84f8f43b2",
+      "size": 257,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/0ecf8970026a2234a3462f0fc82a33c84f8f43b2"
+    },
+    {
+      "path": "packages/env/src/web.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06122dcf237dc8987def4bc2ebb993158b8f1012",
+      "size": 236,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/06122dcf237dc8987def4bc2ebb993158b8f1012"
+    },
+    {
+      "path": "packages/env/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce50bbd4b7da25ecf7de504e0100861d91f693d8",
+      "size": 116,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/ce50bbd4b7da25ecf7de504e0100861d91f693d8"
+    },
+    {
+      "path": "packages/solana-client",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4240bb40f9cbd4fb18575d780f66d226761bc051",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/4240bb40f9cbd4fb18575d780f66d226761bc051"
+    },
+    {
+      "path": "packages/solana-client/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bed90eb2e7a1b135db9550e168afe7b414d3a666",
+      "size": 478,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/bed90eb2e7a1b135db9550e168afe7b414d3a666"
+    },
+    {
+      "path": "packages/solana-client/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2ae8fded210fffff7c416c9e5a6d7acf65d93f67",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/2ae8fded210fffff7c416c9e5a6d7acf65d93f67"
+    },
+    {
+      "path": "packages/solana-client/src/create-solana-client.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5eed2fb73d35dfee38431f116e216329a88e3ba",
+      "size": 338,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/d5eed2fb73d35dfee38431f116e216329a88e3ba"
+    },
+    {
+      "path": "packages/solana-client/src/get-balance.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "292a1d442a0689e5f345907e7a1e74f60fdea6b6",
+      "size": 240,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/292a1d442a0689e5f345907e7a1e74f60fdea6b6"
+    },
+    {
+      "path": "packages/solana-client/src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca418311800e21b0c0972db93fe4701c200cb7dd",
+      "size": 101,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/ca418311800e21b0c0972db93fe4701c200cb7dd"
+    },
+    {
+      "path": "packages/solana-client/src/solana-client.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a1a690a2e5034f73ea4f4a46761733a2f18e28c",
+      "size": 131,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/3a1a690a2e5034f73ea4f4a46761733a2f18e28c"
+    },
+    {
+      "path": "packages/solana-client/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3dc1e97a7e471b040cd6f1bafb5cfdd32101bd80",
+      "size": 118,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/3dc1e97a7e471b040cd6f1bafb5cfdd32101bd80"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "510893c2dde0d597c6d02065891714b1a7907c5e",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/510893c2dde0d597c6d02065891714b1a7907c5e"
+    },
+    {
+      "path": "scripts/copy-env.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54a9e244569be77f812fdbcc062525f6dad3c029",
+      "size": 1086,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/54a9e244569be77f812fdbcc062525f6dad3c029"
+    },
+    {
+      "path": "scripts/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44f5807eabe643177bca3f7299f50f9ec084bb32",
+      "size": 257,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/44f5807eabe643177bca3f7299f50f9ec084bb32"
+    },
+    {
+      "path": "scripts/regenerate-initial-migration.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e895bdfb3d8d93bc8ddabd0758fd882c1369119",
+      "size": 5084,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/4e895bdfb3d8d93bc8ddabd0758fd882c1369119"
+    },
+    {
+      "path": "scripts/rename.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "434e35cdfd07d37c6e5e26049657c1f4fe3eb115",
+      "size": 5179,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/434e35cdfd07d37c6e5e26049657c1f4fe3eb115"
+    },
+    {
+      "path": "scripts/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c9f66d4d7fcd4ef5ac1105ed9fc1ebb62be2cc4",
+      "size": 92,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/2c9f66d4d7fcd4ef5ac1105ed9fc1ebb62be2cc4"
+    },
+    {
+      "path": "tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b61ae31615cfd3b4f000b1e787ba826b0c1a02de",
+      "size": 69,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/b61ae31615cfd3b4f000b1e787ba826b0c1a02de"
+    },
+    {
+      "path": "turbo.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8c8afda03cc9eca947d755699b3bc5cf171a23e",
+      "size": 810,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/e8c8afda03cc9eca947d755699b3bc5cf171a23e"
+    },
+    {
+      "path": "turbo",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "71713cfbe3d34bafd7bdcc10a0a3636f4a73b875",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/71713cfbe3d34bafd7bdcc10a0a3636f4a73b875"
+    },
+    {
+      "path": "turbo/generators",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "536f531c52f25376a7b6eab88ae635342ef781fd",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/536f531c52f25376a7b6eab88ae635342ef781fd"
+    },
+    {
+      "path": "turbo/generators/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e9123ed0404c96519aecc6b062fdf859e56c238",
+      "size": 1170,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/4e9123ed0404c96519aecc6b062fdf859e56c238"
+    },
+    {
+      "path": "turbo/generators/config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c1461dc41bedd8145605d9a1740675b485fbbb7",
+      "size": 717,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/0c1461dc41bedd8145605d9a1740675b485fbbb7"
+    },
+    {
+      "path": "turbo/generators/generator-pkg.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2ae66a332f2e539166ab4f8dfc620e6ee795242",
+      "size": 961,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/b2ae66a332f2e539166ab4f8dfc620e6ee795242"
+    },
+    {
+      "path": "turbo/generators/helpers.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e228d0fab4ffbee3c631b894d46118f6533ee35f",
+      "size": 382,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/e228d0fab4ffbee3c631b894d46118f6533ee35f"
+    },
+    {
+      "path": "turbo/generators/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39a92045ae18b506bdd9dadd26e69185f580b447",
+      "size": 276,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/39a92045ae18b506bdd9dadd26e69185f580b447"
+    },
+    {
+      "path": "turbo/generators/smoke-test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45f7c527a1c4799209dfc376d5789891645ee7ed",
+      "size": 1956,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/45f7c527a1c4799209dfc376d5789891645ee7ed"
+    },
+    {
+      "path": "turbo/generators/templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e783b2c767e5ebe7bed71d1be46af3ee77899adf",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/e783b2c767e5ebe7bed71d1be46af3ee77899adf"
+    },
+    {
+      "path": "turbo/generators/templates/pkg",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "54aaf3c62974f6b4c44eae71e3c0476816d3574a",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/54aaf3c62974f6b4c44eae71e3c0476816d3574a"
+    },
+    {
+      "path": "turbo/generators/templates/pkg/base",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "aae5494a6c1d775a5cf266e923e8284a0015abea",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/aae5494a6c1d775a5cf266e923e8284a0015abea"
+    },
+    {
+      "path": "turbo/generators/templates/pkg/base/package.json.hbs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "292227d9f0ceb2543d3bac4c6e49ec6188da8ecf",
+      "size": 387,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/292227d9f0ceb2543d3bac4c6e49ec6188da8ecf"
+    },
+    {
+      "path": "turbo/generators/templates/pkg/base/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "33e221b8f8b1e240928e17e730272f734489b923",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/33e221b8f8b1e240928e17e730272f734489b923"
+    },
+    {
+      "path": "turbo/generators/templates/pkg/base/src/index.ts.hbs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8bf04aacd3e6cc05abfae8005f8867b851167cd0",
+      "size": 31,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/8bf04aacd3e6cc05abfae8005f8867b851167cd0"
+    },
+    {
+      "path": "turbo/generators/templates/pkg/base/tsconfig.json.hbs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3dc1e97a7e471b040cd6f1bafb5cfdd32101bd80",
+      "size": 118,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/3dc1e97a7e471b040cd6f1bafb5cfdd32101bd80"
+    },
+    {
+      "path": "turbo/generators/templates/pkg/react-ui",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "be0552f635e8db2fef19057f9f50c180968a1be7",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/be0552f635e8db2fef19057f9f50c180968a1be7"
+    },
+    {
+      "path": "turbo/generators/templates/pkg/react-ui/package.json.hbs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91a8b00c92392a5d2d1a70174a0b04221278e670",
+      "size": 539,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/91a8b00c92392a5d2d1a70174a0b04221278e670"
+    },
+    {
+      "path": "turbo/generators/templates/pkg/react-ui/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b2b3371a02ebba7fa06cf84673e3eeab122802ee",
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/trees/b2b3371a02ebba7fa06cf84673e3eeab122802ee"
+    },
+    {
+      "path": "turbo/generators/templates/pkg/react-ui/src/hello.tsx.hbs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98fb7c75bbb7a3df36a4cf2e4621045561e70f10",
+      "size": 154,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/98fb7c75bbb7a3df36a4cf2e4621045561e70f10"
+    },
+    {
+      "path": "turbo/generators/templates/pkg/react-ui/src/index.tsx.hbs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24fa29787a1f6698b505dd6b79e455d6e8fe6f01",
+      "size": 24,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/24fa29787a1f6698b505dd6b79e455d6e8fe6f01"
+    },
+    {
+      "path": "turbo/generators/templates/pkg/react-ui/tsconfig.json.hbs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "929e072f1bcaf977a0bc025ef356e894cf220417",
+      "size": 118,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/929e072f1bcaf977a0bc025ef356e894cf220417"
+    },
+    {
+      "path": "turbo/generators/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3dc1e97a7e471b040cd6f1bafb5cfdd32101bd80",
+      "size": 118,
+      "url": "https://api.github.com/repos/beeman/solana-mobile-monorepo/git/blobs/3dc1e97a7e471b040cd6f1bafb5cfdd32101bd80"
+    }
+  ]
+}

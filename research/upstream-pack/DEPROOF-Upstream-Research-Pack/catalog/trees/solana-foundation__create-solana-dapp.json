@@ -1,0 +1,1234 @@
+{
+  "repository": "solana-foundation/create-solana-dapp",
+  "tree_sha": "e9c1bbafd9fee14b8feaa7329af1ab79454b3626",
+  "truncated": false,
+  "entries": [
+    {
+      "path": ".changeset",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "83eaca1d374a6cdf53393d9cef044fb32c8f51cb",
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/trees/83eaca1d374a6cdf53393d9cef044fb32c8f51cb"
+    },
+    {
+      "path": ".changeset/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d3e451a0b73a36ea08d09dfe978e6d0ed76c000",
+      "size": 510,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/7d3e451a0b73a36ea08d09dfe978e6d0ed76c000",
+      "error": "SyntaxError: Unexpected token '#', \"# Changese\"... is not valid JSON"
+    },
+    {
+      "path": ".changeset/config.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4eb81af594eaa90bd370d0c7fac8177a8e3ee74c",
+      "size": 319,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/4eb81af594eaa90bd370d0c7fac8177a8e3ee74c"
+    },
+    {
+      "path": ".changeset/display-name-init-rename.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aea9d732894c7f2aa160237042b461a231969d07",
+      "size": 106,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/aea9d732894c7f2aa160237042b461a231969d07"
+    },
+    {
+      "path": ".changeset/embeddable-api-surface.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d771d2fbe6ae68410ac29fb6961e04da9e4868b7",
+      "size": 162,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/d771d2fbe6ae68410ac29fb6961e04da9e4868b7"
+    },
+    {
+      "path": ".changeset/esm-bin-node-22-floor.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c147abe19a616336e383cde40cb060031f33c43c",
+      "size": 641,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/c147abe19a616336e383cde40cb060031f33c43c"
+    },
+    {
+      "path": ".changeset/export-template-schemas.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "900e4577014e1ba0a245a212a3a877864916778b",
+      "size": 205,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/900e4577014e1ba0a245a212a3a877864916778b"
+    },
+    {
+      "path": ".changeset/mobile-template-filter.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05736079b67be049677affe1af05300102a4c87c",
+      "size": 101,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/05736079b67be049677affe1af05300102a4c87c"
+    },
+    {
+      "path": ".changeset/package-manager-diagnostics.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b81222bd556f22b971f58eb08be5de1df6ccf55",
+      "size": 115,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/0b81222bd556f22b971f58eb08be5de1df6ccf55"
+    },
+    {
+      "path": ".changeset/project-name-schema.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3abe26ffb07d87f35046d1bc5ebdc5e53e91d77",
+      "size": 423,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/d3abe26ffb07d87f35046d1bc5ebdc5e53e91d77"
+    },
+    {
+      "path": ".changeset/recover-corrupt-template-archive.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c91e81912412b677fe4c17a1035b20b8f1d3b007",
+      "size": 220,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/c91e81912412b677fe4c17a1035b20b8f1d3b007"
+    },
+    {
+      "path": ".changeset/refresh-cli-dependencies.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d863304cd01771fe1fc739dd4710f62078fc2499",
+      "size": 106,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/d863304cd01771fe1fc739dd4710f62078fc2499"
+    },
+    {
+      "path": ".changeset/remove-incompatible-package-manager.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d9df000ae26609a0e9fe7872d25ea0eb05c4a0f",
+      "size": 205,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/4d9df000ae26609a0e9fe7872d25ea0eb05c4a0f"
+    },
+    {
+      "path": ".changeset/rename-in-deprecate-paths.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6aeb464e7f9d02c340edb87cb9d15ffa0b5df0af",
+      "size": 282,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/6aeb464e7f9d02c340edb87cb9d15ffa0b5df0af"
+    },
+    {
+      "path": ".changeset/single-pass-init-rename.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "397415e26219d7da8351274ccb1f471ed324f41c",
+      "size": 225,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/397415e26219d7da8351274ccb1f471ed324f41c"
+    },
+    {
+      "path": ".changeset/skills-init-config.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e35c32e2fe7cd5a97d946efba5e1581d9b55e2e4",
+      "size": 91,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/e35c32e2fe7cd5a97d946efba5e1581d9b55e2e4"
+    },
+    {
+      "path": ".changeset/template-first-prompt-order.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f62c7dfc48dd4ebe76231699c6ca3e1616ca4440",
+      "size": 137,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/f62c7dfc48dd4ebe76231699c6ca3e1616ca4440"
+    },
+    {
+      "path": ".changeset/template-option-flags.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d88a8e35dd2f05f930b13ce9ff536b18a1707872",
+      "size": 171,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/d88a8e35dd2f05f930b13ce9ff536b18a1707872"
+    },
+    {
+      "path": ".changeset/template-option-run-script.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4880672a7c90008fd6a0d1a1c8ead7124058b1d8",
+      "size": 984,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/4880672a7c90008fd6a0d1a1c8ead7124058b1d8"
+    },
+    {
+      "path": ".changeset/template-package-manager.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eac2eed4a6b76070bf4aadc1957e60b978ca6782",
+      "size": 94,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/eac2eed4a6b76070bf4aadc1957e60b978ca6782"
+    },
+    {
+      "path": ".changeset/windows-lockfile-cleanup.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b05a2b6c7e4194cffc385915c87ad3ae33270fc8",
+      "size": 125,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/b05a2b6c7e4194cffc385915c87ad3ae33270fc8"
+    },
+    {
+      "path": ".changeset/zod-v4-schemas.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53716f0391bba4fb652f2dfc82bfc13877f169b7",
+      "size": 177,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/53716f0391bba4fb652f2dfc82bfc13877f169b7"
+    },
+    {
+      "path": ".editorconfig",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e87a003da89defd554080af5af93600cc9f91fe",
+      "size": 245,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/6e87a003da89defd554080af5af93600cc9f91fe"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2fb72a6a8d17f4b7df31af7eabb8fc3b5e22e70a",
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/trees/2fb72a6a8d17f4b7df31af7eabb8fc3b5e22e70a"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9e27fc1dd0789e8b4f111bf4286b85bc5c3fe46e",
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/trees/9e27fc1dd0789e8b4f111bf4286b85bc5c3fe46e"
+    },
+    {
+      "path": ".github/workflows/actions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e11cc110487aa1c1c6092cef94ed3a4022a6450b",
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/trees/e11cc110487aa1c1c6092cef94ed3a4022a6450b"
+    },
+    {
+      "path": ".github/workflows/actions/install-dependencies",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d7447249beecb8629943eddbdf5841de65a51b80",
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/trees/d7447249beecb8629943eddbdf5841de65a51b80"
+    },
+    {
+      "path": ".github/workflows/actions/install-dependencies/action.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "423ac080af8c6ccdf948223577f85a162e7af6ce",
+      "size": 520,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/423ac080af8c6ccdf948223577f85a162e7af6ce"
+    },
+    {
+      "path": ".github/workflows/publish-packages.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6740903bf43102578ba9f7c5f49ab294ec41b742",
+      "size": 2803,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/6740903bf43102578ba9f7c5f49ab294ec41b742"
+    },
+    {
+      "path": ".github/workflows/publish-pkg-pr-new.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "722550e726106247e94a06d11f3d6c4182641e62",
+      "size": 499,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/722550e726106247e94a06d11f3d6c4182641e62"
+    },
+    {
+      "path": ".github/workflows/pull-requests.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e43ba5a0b35ce743d591f79a2f84dc195b9dff8b",
+      "size": 379,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/e43ba5a0b35ce743d591f79a2f84dc195b9dff8b"
+    },
+    {
+      "path": ".github/workflows/typescript-build.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22cf3622b89ffa84d9678eb2f20ec0f35e189153",
+      "size": 397,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/22cf3622b89ffa84d9678eb2f20ec0f35e189153"
+    },
+    {
+      "path": ".github/workflows/typescript-test.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dcb7617f7c74d4f7bee3351f2bd706821a9ce598",
+      "size": 606,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/dcb7617f7c74d4f7bee3351f2bd706821a9ce598",
+      "error": "SyntaxError: Unexpected token 'a', \"name: TypeS\"... is not valid JSON"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76431a8ed650832ce7a8973c428a2d0c490b1985",
+      "size": 543,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/76431a8ed650832ce7a8973c428a2d0c490b1985"
+    },
+    {
+      "path": ".prettierignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "688bc428fe23597f6ee158a06dab11b8953a2b2e",
+      "size": 220,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/688bc428fe23597f6ee158a06dab11b8953a2b2e"
+    },
+    {
+      "path": ".prettierrc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb3430cd446f8198a34e0ebe5840a2a2054409af",
+      "size": 165,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/cb3430cd446f8198a34e0ebe5840a2a2054409af"
+    },
+    {
+      "path": ".vscode",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "07d7fbc28925d9f49c53af9d75d0becf0890df19",
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/trees/07d7fbc28925d9f49c53af9d75d0becf0890df19"
+    },
+    {
+      "path": ".vscode/extensions.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a302fe536805b0a221891fc1fffcf32497482d6",
+      "size": 154,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/6a302fe536805b0a221891fc1fffcf32497482d6"
+    },
+    {
+      "path": ".vscode/settings.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1471fb96f06065c821e3e7de001098bf3576e007",
+      "size": 34,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/1471fb96f06065c821e3e7de001098bf3576e007"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f785ffe6664868f1469f64cb126b61644d0aa69e",
+      "size": 8699,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/f785ffe6664868f1469f64cb126b61644d0aa69e"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b1be935fbe749d7eb48d78eaaeaec3ce4e3bda5",
+      "size": 4351,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/1b1be935fbe749d7eb48d78eaaeaec3ce4e3bda5"
+    },
+    {
+      "path": "Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78f7ac74f82d6af6a53458bcaa19d93aa0333c7c",
+      "size": 401,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/78f7ac74f82d6af6a53458bcaa19d93aa0333c7c"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3998d9cbb8b74abf004ff97361267f75e30e893d",
+      "size": 1079,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/3998d9cbb8b74abf004ff97361267f75e30e893d",
+      "error": "SyntaxError: Unexpected token 'M', \"MIT Licens\"... is not valid JSON"
+    },
+    {
+      "path": "MAINTAINERS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bae4b15e6ef0d3d69594e329fa206d7bf0aebd80",
+      "size": 1157,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/bae4b15e6ef0d3d69594e329fa206d7bf0aebd80"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e65685d34ad4af4d89208d0890f52639387b14ce",
+      "size": 5896,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/e65685d34ad4af4d89208d0890f52639387b14ce",
+      "error": "SyntaxError: Unexpected token '#', \"# create-s\"... is not valid JSON"
+    },
+    {
+      "path": "__mocks__",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7f00b7e79fec35c0aacc409089392553fccdcc64",
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/trees/7f00b7e79fec35c0aacc409089392553fccdcc64"
+    },
+    {
+      "path": "__mocks__/fs.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9a27d9f8f140e84dacc2a296a5f510273226efa",
+      "size": 52,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/f9a27d9f8f140e84dacc2a296a5f510273226efa"
+    },
+    {
+      "path": "csd.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "23cb6d1e8a7dac964b3571e1bcb49613386dcd8b",
+      "size": 2905,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/23cb6d1e8a7dac964b3571e1bcb49613386dcd8b"
+    },
+    {
+      "path": "eslint.config.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "884e081a00e60c692d97a1047ee806cbf26116b0",
+      "size": 929,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/884e081a00e60c692d97a1047ee806cbf26116b0"
+    },
+    {
+      "path": "lefthook.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc0a9e9e81928d0ebe648e907c937d053bf02b3b",
+      "size": 323,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/bc0a9e9e81928d0ebe648e907c937d053bf02b3b"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab990c035aa292bc65a489b06bbc52d8f165182d",
+      "size": 3249,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/ab990c035aa292bc65a489b06bbc52d8f165182d"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "515e929cf2b9a84bf15b952eb8ca63aced3a2241",
+      "size": 183798,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/515e929cf2b9a84bf15b952eb8ca63aced3a2241"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55121f96f499dda80dd40ecf32d37ec2822ef6c2",
+      "size": 24,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/55121f96f499dda80dd40ecf32d37ec2822ef6c2"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "76a48469ffe4ea6fbad4c906bc2c304b9b7cf7b2",
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/trees/76a48469ffe4ea6fbad4c906bc2c304b9b7cf7b2"
+    },
+    {
+      "path": "src/bin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dbedab0a2002e1593803957cca61a16a2db36266",
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/trees/dbedab0a2002e1593803957cca61a16a2db36266"
+    },
+    {
+      "path": "src/bin/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a53d9ca0fb79e29643e3a070670653738e110446",
+      "size": 217,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/a53d9ca0fb79e29643e3a070670653738e110446"
+    },
+    {
+      "path": "src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e5dc49ef15a2d303aae03151e1af58d74c08d91",
+      "size": 3080,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/6e5dc49ef15a2d303aae03151e1af58d74c08d91"
+    },
+    {
+      "path": "src/utils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "010aebd1e671ce5face68fa6236ae9c7a9c58e3a",
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/trees/010aebd1e671ce5face68fa6236ae9c7a9c58e3a"
+    },
+    {
+      "path": "src/utils/corrupt-archive-error.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "912b90ba39fc16177bb685d81f8f5a5e2b80726d",
+      "size": 1911,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/912b90ba39fc16177bb685d81f8f5a5e2b80726d"
+    },
+    {
+      "path": "src/utils/create-app-task-clone-template.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3e3675c8ba7b0b7d465934458aaa3d6a89d8bb1",
+      "size": 3503,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/e3e3675c8ba7b0b7d465934458aaa3d6a89d8bb1"
+    },
+    {
+      "path": "src/utils/create-app-task-initialize-git.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b390d7fd22e990136edc70c25fffdc4b808335a",
+      "size": 848,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/1b390d7fd22e990136edc70c25fffdc4b808335a"
+    },
+    {
+      "path": "src/utils/create-app-task-install-dependencies.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fac1dc1f3cb70c4593ec12386e929f0600976dd3",
+      "size": 1621,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/fac1dc1f3cb70c4593ec12386e929f0600976dd3"
+    },
+    {
+      "path": "src/utils/create-app-task-install-skills.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22285f87b31c90a89f40b9dd0544b79ae3029c89",
+      "size": 2012,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/22285f87b31c90a89f40b9dd0544b79ae3029c89"
+    },
+    {
+      "path": "src/utils/create-app-task-run-init-script.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fef9020dce9ae9062e9eb848259b93daa650a7c8",
+      "size": 1880,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/fef9020dce9ae9062e9eb848259b93daa650a7c8"
+    },
+    {
+      "path": "src/utils/create-app-task-run-option-script.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14d63f696d8fd9b3cd91b125a7c0dd1dc2f194a4",
+      "size": 2267,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/14d63f696d8fd9b3cd91b125a7c0dd1dc2f194a4"
+    },
+    {
+      "path": "src/utils/create-app-task-run-setup.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d39aae18ff8662b64ee6231c72635b44f8cb6a06",
+      "size": 1011,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/d39aae18ff8662b64ee6231c72635b44f8cb6a06"
+    },
+    {
+      "path": "src/utils/create-app.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84ffb9b100530dd599539b80f662f48f5f08732f",
+      "size": 3986,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/84ffb9b100530dd599539b80f662f48f5f08732f"
+    },
+    {
+      "path": "src/utils/ensure-target-path.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd96f4d2a51d3fd4b2d3597632a9bc8b6717c5c3",
+      "size": 180,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/bd96f4d2a51d3fd4b2d3597632a9bc8b6717c5c3"
+    },
+    {
+      "path": "src/utils/extract-template-option-flags.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbba2a9f49c8decbef8c74b11d3200bcecaa1023",
+      "size": 2262,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/bbba2a9f49c8decbef8c74b11d3200bcecaa1023"
+    },
+    {
+      "path": "src/utils/fetch-template-data.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccba9b97b2a2a458b885f708b0bd04ffbab71160",
+      "size": 877,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/ccba9b97b2a2a458b885f708b0bd04ffbab71160"
+    },
+    {
+      "path": "src/utils/fetch-templates.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a302cf43d830693bd6fdf87f232d68ace1ef80ea",
+      "size": 547,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/a302cf43d830693bd6fdf87f232d68ace1ef80ea"
+    },
+    {
+      "path": "src/utils/final-note.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "042609888984efd97cb1dfb862ce7afbad9f2723",
+      "size": 1141,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/042609888984efd97cb1dfb862ce7afbad9f2723"
+    },
+    {
+      "path": "src/utils/find-template.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca46391054e94f4e8774a08f13088ad7128259b9",
+      "size": 1915,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/ca46391054e94f4e8774a08f13088ad7128259b9"
+    },
+    {
+      "path": "src/utils/get-app-info.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd983c47f8ca994aec61e0164886ead6fc576c1a",
+      "size": 252,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/fd983c47f8ca994aec61e0164886ead6fc576c1a"
+    },
+    {
+      "path": "src/utils/get-args-result.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e7ba28af34e5a84273a9d481529c5666191056f",
+      "size": 579,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/4e7ba28af34e5a84273a9d481529c5666191056f"
+    },
+    {
+      "path": "src/utils/get-args.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7df5a57b82bb619a979a56f72628b58590fbc3ba",
+      "size": 6130,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/7df5a57b82bb619a979a56f72628b58590fbc3ba"
+    },
+    {
+      "path": "src/utils/get-menu-config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b9a7a511e962d33d9ba55920f3aa393cb25c325",
+      "size": 878,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/2b9a7a511e962d33d9ba55920f3aa393cb25c325"
+    },
+    {
+      "path": "src/utils/get-menu-items-from-template-groups.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7b6da59f76e36a3d6ecbf0ca9820a3a34d5f61b",
+      "size": 579,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/d7b6da59f76e36a3d6ecbf0ca9820a3a34d5f61b"
+    },
+    {
+      "path": "src/utils/get-package-json-path.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2652aec23ecf0e5e21a99c87143df4feee7d7dc",
+      "size": 141,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/b2652aec23ecf0e5e21a99c87143df4feee7d7dc"
+    },
+    {
+      "path": "src/utils/get-package-json.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9347fff70c95107102c6801431dad038dd6115b3",
+      "size": 1071,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/9347fff70c95107102c6801431dad038dd6115b3"
+    },
+    {
+      "path": "src/utils/get-prompt-name.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "207fb8f38555e289ee5379c6c5e9705f02ce0981",
+      "size": 1426,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/207fb8f38555e289ee5379c6c5e9705f02ce0981"
+    },
+    {
+      "path": "src/utils/get-prompt-template.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a35ed0db3f912a9d64bf7693dc2dc65085c50fb9",
+      "size": 1402,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/a35ed0db3f912a9d64bf7693dc2dc65085c50fb9"
+    },
+    {
+      "path": "src/utils/get-prompts.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e45627d8ad06c41e489544e348f4e7deeb79650e",
+      "size": 796,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/e45627d8ad06c41e489544e348f4e7deeb79650e"
+    },
+    {
+      "path": "src/utils/get-start-script.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2722ac38af9bf516828cb7b55f7a66d74b7a0d5b",
+      "size": 219,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/2722ac38af9bf516828cb7b55f7a66d74b7a0d5b"
+    },
+    {
+      "path": "src/utils/get-template-groups-from-url.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3131035619c08ed493406937c99b640120a46d50",
+      "size": 576,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/3131035619c08ed493406937c99b640120a46d50"
+    },
+    {
+      "path": "src/utils/get-templates-from-items.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8666c5306698a7ed282762030b3e2d9464d85ec",
+      "size": 517,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/c8666c5306698a7ed282762030b3e2d9464d85ec"
+    },
+    {
+      "path": "src/utils/get-templates-url.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cacd20a1b2643aeb6aaf2a724ab0819836f8fdf0",
+      "size": 185,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/cacd20a1b2643aeb6aaf2a724ab0819836f8fdf0"
+    },
+    {
+      "path": "src/utils/get-version-command.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0d84e45d80a95c3419d13e692654e18312ce720",
+      "size": 900,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/c0d84e45d80a95c3419d13e692654e18312ce720"
+    },
+    {
+      "path": "src/utils/get-version-urls.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5071c57f723b3c23327737975513f9c3ca56a491",
+      "size": 884,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/5071c57f723b3c23327737975513f9c3ca56a491"
+    },
+    {
+      "path": "src/utils/get-version.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff5cab0032ca7c6368f12ec9035f90093e5c2777",
+      "size": 401,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/ff5cab0032ca7c6368f12ec9035f90093e5c2777"
+    },
+    {
+      "path": "src/utils/init-script-delete.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29a1b8cb0431602f9f5eeb0b688687277ac7b372",
+      "size": 585,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/29a1b8cb0431602f9f5eeb0b688687277ac7b372"
+    },
+    {
+      "path": "src/utils/init-script-instructions.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "272f8bb7bf702dfa123d1af03b32476a09268df1",
+      "size": 500,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/272f8bb7bf702dfa123d1af03b32476a09268df1"
+    },
+    {
+      "path": "src/utils/init-script-options.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7185548955d22f7dc283ad5bbfc542567fb64b99",
+      "size": 2727,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/7185548955d22f7dc283ad5bbfc542567fb64b99"
+    },
+    {
+      "path": "src/utils/init-script-package-manager.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6db9e9ef63257ee75ee22863c320f77b3fefb0de",
+      "size": 1104,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/6db9e9ef63257ee75ee22863c320f77b3fefb0de"
+    },
+    {
+      "path": "src/utils/init-script-rename.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7fa62c72c65e041356e9ddb1879aac57f70e358",
+      "size": 6020,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/d7fa62c72c65e041356e9ddb1879aac57f70e358"
+    },
+    {
+      "path": "src/utils/init-script-schema.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07b0fae7b9afab0e26b7deb52ca514cf6c52adae",
+      "size": 3309,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/07b0fae7b9afab0e26b7deb52ca514cf6c52adae"
+    },
+    {
+      "path": "src/utils/init-script-version-check.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "197a714482a77340f58b4c5c5c138e90a5c82711",
+      "size": 1407,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/197a714482a77340f58b4c5c5c138e90a5c82711"
+    },
+    {
+      "path": "src/utils/init-script-version.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "104a71d8c448d48a50cebf9c6c9589d085ce237c",
+      "size": 639,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/104a71d8c448d48a50cebf9c6c9589d085ce237c"
+    },
+    {
+      "path": "src/utils/list-template-ids.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18feaef1ed48ca3399a22f931d72efd768810fd5",
+      "size": 184,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/18feaef1ed48ca3399a22f931d72efd768810fd5"
+    },
+    {
+      "path": "src/utils/list-templates.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7478f0375ff383f43dec8ef9d8725162b45ff448",
+      "size": 307,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/7478f0375ff383f43dec8ef9d8725162b45ff448"
+    },
+    {
+      "path": "src/utils/list-versions.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3742f9ba3ff0a47829cb3c46af35c588fb77232f",
+      "size": 373,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/3742f9ba3ff0a47829cb3c46af35c588fb77232f"
+    },
+    {
+      "path": "src/utils/menu-utils.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a32e961d8ba0c969c72aa397b150117352bcaf97",
+      "size": 994,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/a32e961d8ba0c969c72aa397b150117352bcaf97"
+    },
+    {
+      "path": "src/utils/parse-version.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90276bbcec00a9266a7e48f11bfd7994dfbb816f",
+      "size": 436,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/90276bbcec00a9266a7e48f11bfd7994dfbb816f"
+    },
+    {
+      "path": "src/utils/remove-incompatible-package-manager.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0235d77148310fe22c13e6d6a9fdc793ffb6d09",
+      "size": 1415,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/f0235d77148310fe22c13e6d6a9fdc793ffb6d09"
+    },
+    {
+      "path": "src/utils/run-version-check.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "570b471730a673387292a77d3b34dd71f0629c58",
+      "size": 1376,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/570b471730a673387292a77d3b34dd71f0629c58"
+    },
+    {
+      "path": "src/utils/search-and-replace.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8cd9d22efc31e81da2b553deac58b4c19ad0e233",
+      "size": 7831,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/8cd9d22efc31e81da2b553deac58b4c19ad0e233"
+    },
+    {
+      "path": "src/utils/template-schema.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53737e7fd035a6b39fc36089549daafc2bad01a0",
+      "size": 1678,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/53737e7fd035a6b39fc36089549daafc2bad01a0"
+    },
+    {
+      "path": "src/utils/template.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f09a1fc82ad5fb3842d9832c6621337bf62a711e",
+      "size": 182,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/f09a1fc82ad5fb3842d9832c6621337bf62a711e"
+    },
+    {
+      "path": "src/utils/validate-project-name.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50a478b1fe8a78eca63e4c2ad3f08d40975e9a99",
+      "size": 1219,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/50a478b1fe8a78eca63e4c2ad3f08d40975e9a99"
+    },
+    {
+      "path": "src/utils/validate-version.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d4ffe199abcfd04b5d5b53173e648f4b413c244",
+      "size": 291,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/8d4ffe199abcfd04b5d5b53173e648f4b413c244"
+    },
+    {
+      "path": "src/utils/vendor",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "61a6e02444cabba8eba0a1cc92bcfc5c7b874791",
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/trees/61a6e02444cabba8eba0a1cc92bcfc5c7b874791"
+    },
+    {
+      "path": "src/utils/vendor/child-process-utils.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ecbfd73a87fc62d67b6c50c8422a5ac75f9cb6d",
+      "size": 1547,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/3ecbfd73a87fc62d67b6c50c8422a5ac75f9cb6d"
+    },
+    {
+      "path": "src/utils/vendor/clack-tasks.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc71750e7799879ad6aedff82144dd2936a73866",
+      "size": 1316,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/bc71750e7799879ad6aedff82144dd2936a73866"
+    },
+    {
+      "path": "src/utils/vendor/git.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41a5f3f1ea8852c405c898f56a44cc7112d5cd1c",
+      "size": 2929,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/41a5f3f1ea8852c405c898f56a44cc7112d5cd1c"
+    },
+    {
+      "path": "src/utils/vendor/names.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d69c5db4267ea4d06cd944ac7f0df79e5b0d226",
+      "size": 2287,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/4d69c5db4267ea4d06cd944ac7f0df79e5b0d226"
+    },
+    {
+      "path": "src/utils/vendor/package-manager.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2384b75dcbc1ef8d7d3856ccd7286d0644a65607",
+      "size": 4220,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/2384b75dcbc1ef8d7d3856ccd7286d0644a65607"
+    },
+    {
+      "path": "test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4722d0e454cb295f56e6313d93c101209bc2709d",
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/trees/4722d0e454cb295f56e6313d93c101209bc2709d"
+    },
+    {
+      "path": "test/corrupt-archive-error.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea860a9644acaba821ec80c5b647d85fe558f109",
+      "size": 2844,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/ea860a9644acaba821ec80c5b647d85fe558f109",
+      "error": "SyntaxError: Unexpected token 'i', \"import { h\"... is not valid JSON"
+    },
+    {
+      "path": "test/create-app-task-clone-template.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0fefc1b2a6c7a2e65cee3bda0bf37047dbdcfc0",
+      "size": 2628,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/b0fefc1b2a6c7a2e65cee3bda0bf37047dbdcfc0",
+      "error": "SyntaxError: Unexpected token 'i', \"import { d\"... is not valid JSON"
+    },
+    {
+      "path": "test/create-app-task-install-dependencies.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23911dbff09a1e674820a3e609ba283087562b7f",
+      "size": 3692,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/23911dbff09a1e674820a3e609ba283087562b7f"
+    },
+    {
+      "path": "test/create-app-task-install-skills.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a48bf0534d55c93122a6dbc54874f5d1fd159dcc",
+      "size": 4593,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/a48bf0534d55c93122a6dbc54874f5d1fd159dcc"
+    },
+    {
+      "path": "test/create-app-task-run-init-script.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce49460d5ac22f659744243ffd4103cbdc3cda20",
+      "size": 2994,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/ce49460d5ac22f659744243ffd4103cbdc3cda20"
+    },
+    {
+      "path": "test/create-app-task-run-option-script.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2d7b9f1e9670e94ef6149daf4079fee236a6aec",
+      "size": 3472,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/a2d7b9f1e9670e94ef6149daf4079fee236a6aec"
+    },
+    {
+      "path": "test/create-app.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a2b9d8ab8508952da4fa2f823bb36a8983fb3aa",
+      "size": 2966,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/4a2b9d8ab8508952da4fa2f823bb36a8983fb3aa"
+    },
+    {
+      "path": "test/extract-template-option-flags.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72afa6e1dfac3f6430936f2e00a27b23bfaf502f",
+      "size": 2238,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/72afa6e1dfac3f6430936f2e00a27b23bfaf502f"
+    },
+    {
+      "path": "test/final-note.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73329a4eba9f8e1d22a8eae906244c051e70abbc",
+      "size": 3038,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/73329a4eba9f8e1d22a8eae906244c051e70abbc"
+    },
+    {
+      "path": "test/get-args.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7292262c7ee6888d6af84cc854d9a97171c04ac6",
+      "size": 4358,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/7292262c7ee6888d6af84cc854d9a97171c04ac6"
+    },
+    {
+      "path": "test/get-package-json-path.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99b6555821071e6c8597b50c45fd05570e40b51a",
+      "size": 494,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/99b6555821071e6c8597b50c45fd05570e40b51a"
+    },
+    {
+      "path": "test/get-package-json.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b88a66c1518e53e30e06dfcdada45eb507df90d",
+      "size": 2400,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/7b88a66c1518e53e30e06dfcdada45eb507df90d"
+    },
+    {
+      "path": "test/get-prompts.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f42c0e98bca85c50965e131a8e909285c48cd53",
+      "size": 4497,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/8f42c0e98bca85c50965e131a8e909285c48cd53"
+    },
+    {
+      "path": "test/get-start-script.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d50720fc6c00cbf1d55b96d9282ce2117aedc7de",
+      "size": 800,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/d50720fc6c00cbf1d55b96d9282ce2117aedc7de"
+    },
+    {
+      "path": "test/get-version-commands.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16e43731f9ab6c477e8b88aa63ec678784d4c4f2",
+      "size": 686,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/16e43731f9ab6c477e8b88aa63ec678784d4c4f2"
+    },
+    {
+      "path": "test/get-version-urls.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c63a2af1dabc6f138a86e896d87b962ad9e6bc5f",
+      "size": 1506,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/c63a2af1dabc6f138a86e896d87b962ad9e6bc5f"
+    },
+    {
+      "path": "test/get-version.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0367b4aab73b1fbface350ad4ebae52d9aa9c081",
+      "size": 1000,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/0367b4aab73b1fbface350ad4ebae52d9aa9c081"
+    },
+    {
+      "path": "test/init-script-delete.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22d9b881c31e3cdd9ba2bca18b3d3d08c7960196",
+      "size": 2620,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/22d9b881c31e3cdd9ba2bca18b3d3d08c7960196"
+    },
+    {
+      "path": "test/init-script-instructions.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c3fc9bfaebdeb87190d1df9eaab9e4a2e03cf68",
+      "size": 3069,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/6c3fc9bfaebdeb87190d1df9eaab9e4a2e03cf68"
+    },
+    {
+      "path": "test/init-script-options.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "747964cf7b08fb553080fda8dec0af9ba703c30b",
+      "size": 2624,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/747964cf7b08fb553080fda8dec0af9ba703c30b"
+    },
+    {
+      "path": "test/init-script-package-manager.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fa9e89f2cec32769d3b968af9de078339106734",
+      "size": 4449,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/9fa9e89f2cec32769d3b968af9de078339106734"
+    },
+    {
+      "path": "test/init-script-rename-files.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bedb51b0744c111e9ee188a4ebafcda94a129c1a",
+      "size": 4735,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/bedb51b0744c111e9ee188a4ebafcda94a129c1a"
+    },
+    {
+      "path": "test/init-script-rename.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efc545ee3cda14878d2a1382697ab9433c2a0a9a",
+      "size": 10489,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/efc545ee3cda14878d2a1382697ab9433c2a0a9a"
+    },
+    {
+      "path": "test/init-script-schema.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b7cce590da59e2113ac5d9f8d8f7c4aec263bb4",
+      "size": 2274,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/8b7cce590da59e2113ac5d9f8d8f7c4aec263bb4"
+    },
+    {
+      "path": "test/init-script-version-check.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9bec80fa02550cfefb47936f9c42b3be9e65e3fc",
+      "size": 3968,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/9bec80fa02550cfefb47936f9c42b3be9e65e3fc"
+    },
+    {
+      "path": "test/init-script-version.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f52aef56d305b102b35f7b0e9e17dcf46ab232c",
+      "size": 2170,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/4f52aef56d305b102b35f7b0e9e17dcf46ab232c"
+    },
+    {
+      "path": "test/main.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13c8d154573aa23945c830da2f889207563c33cb",
+      "size": 2144,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/13c8d154573aa23945c830da2f889207563c33cb"
+    },
+    {
+      "path": "test/package-manifest.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35b47954659312eca7c8fd7b69c587b6659ad57c",
+      "size": 1069,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/35b47954659312eca7c8fd7b69c587b6659ad57c",
+      "error": "SyntaxError: Unexpected token 'i', \"import { d\"... is not valid JSON"
+    },
+    {
+      "path": "test/parse-version.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "882240efce9b9e7715aa007272e146e9d887a128",
+      "size": 943,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/882240efce9b9e7715aa007272e146e9d887a128"
+    },
+    {
+      "path": "test/remove-incompatible-package-manager.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82c85c88f7711a4037a623968fa24b852652c0ea",
+      "size": 4056,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/82c85c88f7711a4037a623968fa24b852652c0ea"
+    },
+    {
+      "path": "test/root-exports-schemas.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3a17252334f3da82751ebebcdb3a2f117561337",
+      "size": 7811,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/f3a17252334f3da82751ebebcdb3a2f117561337"
+    },
+    {
+      "path": "test/root-exports.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9cf8ba87edc2b1b0960f9f0e7e656e0e72c56e43",
+      "size": 2258,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/9cf8ba87edc2b1b0960f9f0e7e656e0e72c56e43"
+    },
+    {
+      "path": "test/search-and-replace.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fabf81e05ce0290d0d2762c538c7898e8c649b11",
+      "size": 11018,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/fabf81e05ce0290d0d2762c538c7898e8c649b11"
+    },
+    {
+      "path": "test/validate-project-name.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04fc0e14541c817646ee35c0ba22616d1d3a1496",
+      "size": 2152,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/04fc0e14541c817646ee35c0ba22616d1d3a1496"
+    },
+    {
+      "path": "test/validate-version.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af9a6e01460340cd744e94d3016e680ccfc84bb7",
+      "size": 1240,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/af9a6e01460340cd744e94d3016e680ccfc84bb7"
+    },
+    {
+      "path": "tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e557bd0750256ffc4c47d022b08f09040708e25",
+      "size": 284,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/1e557bd0750256ffc4c47d022b08f09040708e25"
+    },
+    {
+      "path": "vitest.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cb370b4ca9ae04956d0b0a6cd12d9ad0d1e512a",
+      "size": 234,
+      "url": "https://api.github.com/repos/solana-foundation/create-solana-dapp/git/blobs/0cb370b4ca9ae04956d0b0a6cd12d9ad0d1e512a"
+    }
+  ]
+}

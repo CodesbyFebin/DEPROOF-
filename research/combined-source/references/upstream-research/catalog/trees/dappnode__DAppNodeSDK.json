@@ -1,0 +1,2041 @@
+{
+  "repository": "dappnode/DAppNodeSDK",
+  "tree_sha": "abda22789ae9bcb470684c7dbfd5720568aa862e",
+  "truncated": false,
+  "entries": [
+    {
+      "path": ".eslintrc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c43d31bdfc8637e0a68221abf4c7aaf4c952f9c",
+      "size": 241,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/9c43d31bdfc8637e0a68221abf4c7aaf4c952f9c"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "baa753b5ee832ada7e2c59f3e9b830a340dfaa7b",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/baa753b5ee832ada7e2c59f3e9b830a340dfaa7b"
+    },
+    {
+      "path": ".github/CODEOWNERS",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff68dd75e272d69c5e640485379795192afcaa14",
+      "size": 458,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/ff68dd75e272d69c5e640485379795192afcaa14"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b9175238fd93285b4b3362ac87e23d4653539fa8",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/b9175238fd93285b4b3362ac87e23d4653539fa8"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62ad6798845481aa22845e45965285a387ce6e7c",
+      "size": 985,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/62ad6798845481aa22845e45965285a387ce6e7c"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/compose_request.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "967a645a1ba2d3e8b62d39985e8057f88a550bd3",
+      "size": 784,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/967a645a1ba2d3e8b62d39985e8057f88a550bd3"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11bbebfd81a5b7e7f37ef36850ee396882487673",
+      "size": 728,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/11bbebfd81a5b7e7f37ef36850ee396882487673"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/manifest_request.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bb959cda1bba75f2233b5b167fac2a8e9e0f7ca",
+      "size": 746,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/6bb959cda1bba75f2233b5b167fac2a8e9e0f7ca"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/setupWizard_request.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cbc9183a9069ce7a8aa9134f4e5db53218ffd7b",
+      "size": 750,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/4cbc9183a9069ce7a8aa9134f4e5db53218ffd7b"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "21e33100dbfad99d14a3f79cc53a2c5a9d846e86",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/21e33100dbfad99d14a3f79cc53a2c5a9d846e86"
+    },
+    {
+      "path": ".github/workflows/main.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1badd084280f0f1df7067596235e8b4827abf5b5",
+      "size": 488,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/1badd084280f0f1df7067596235e8b4827abf5b5"
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25b636ce33104b56b67cce7f5d56cb786babda6f",
+      "size": 1884,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/25b636ce33104b56b67cce7f5d56cb786babda6f"
+    },
+    {
+      "path": ".github/workflows/test-ga-build.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d29e144f459c40ef7cd795e6f4bc496dc558ee3",
+      "size": 752,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/8d29e144f459c40ef7cd795e6f4bc496dc558ee3"
+    },
+    {
+      "path": ".github/workflows/test-ga-bump-upstream-template.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a10a8bb5e060c419b234fff496c0e72d4e287dcf",
+      "size": 2401,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/a10a8bb5e060c419b234fff496c0e72d4e287dcf"
+    },
+    {
+      "path": ".github/workflows/test-ga-bump-upstream.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b9f4276f8cbce24503b8fb5552a889d91546d34",
+      "size": 2349,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/8b9f4276f8cbce24503b8fb5552a889d91546d34"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb925c994ef88858f2ff759d85da2447093d6c2f",
+      "size": 414,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/fb925c994ef88858f2ff759d85da2447093d6c2f"
+    },
+    {
+      "path": ".mocharc.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf1519546540289adcf1a1e9f1b00d0137287cb4",
+      "size": 167,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/cf1519546540289adcf1a1e9f1b00d0137287cb4"
+    },
+    {
+      "path": ".npmignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d022d31560c8369ec94f292d015a671552398dc",
+      "size": 84,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/7d022d31560c8369ec94f292d015a671552398dc"
+    },
+    {
+      "path": ".prettierrc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "307e1bf0b8b7c3713c061d9e8ce567ff41885653",
+      "size": 266,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/307e1bf0b8b7c3713c061d9e8ce567ff41885653"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94a9ed024d3859793618152ea559a168bbcbb5e2",
+      "size": 35147,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/94a9ed024d3859793618152ea559a168bbcbb5e2",
+      "error": "SyntaxError: Unexpected token 'G', ...\"          GNU GENERA\"... is not valid JSON"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23d58fec67518534bede5df7b52b6f122f8b02ee",
+      "size": 4181,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/23d58fec67518534bede5df7b52b6f122f8b02ee",
+      "error": "SyntaxError: Unexpected token '#', \"# DAppNode\"... is not valid JSON"
+    },
+    {
+      "path": "doc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1f237ea8ce1d71ccb591160d1799d86ca0197e3e",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/1f237ea8ce1d71ccb591160d1799d86ca0197e3e"
+    },
+    {
+      "path": "doc/DappnodeSdkFlow.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07d04e6e3bc344f635644df5124221435aa07b0a",
+      "size": 24372,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/07d04e6e3bc344f635644df5124221435aa07b0a"
+    },
+    {
+      "path": "funding.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f01a26426987bd31f4b0ad3b9ab3a57a9512ae80",
+      "size": 109,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/f01a26426987bd31f4b0ad3b9ab3a57a9512ae80"
+    },
+    {
+      "path": "img",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "21f980b3d5dae68989445a3c03726e6b49d2b3cd",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/21f980b3d5dae68989445a3c03726e6b49d2b3cd"
+    },
+    {
+      "path": "img/demo.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba8534a3088d4981e6d4d01970648ccffa1f3b03",
+      "size": 4589044,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/ba8534a3088d4981e6d4d01970648ccffa1f3b03"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c4bbbd1a8df6c7059cec2155739be29cc7d4e82",
+      "size": 2906,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/7c4bbbd1a8df6c7059cec2155739be29cc7d4e82"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8493970cb292a75dadb470263fb5e45d8903140a",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/8493970cb292a75dadb470263fb5e45d8903140a"
+    },
+    {
+      "path": "src/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4610ae7ae304841fe26104fa888f2f43b8fadd3b",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/4610ae7ae304841fe26104fa888f2f43b8fadd3b"
+    },
+    {
+      "path": "src/assets/defaultAvatar.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c88c28893fa3a21f0940394b8fefa6bad6d8b59d",
+      "size": 4552,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/c88c28893fa3a21f0940394b8fefa6bad6d8b59d"
+    },
+    {
+      "path": "src/commands",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2212d0ee313614d836d7a6712bbd1a580d1c7732",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/2212d0ee313614d836d7a6712bbd1a580d1c7732"
+    },
+    {
+      "path": "src/commands/build",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5ab508396bdff360ee2f4476bac4a27ff4295ea9",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/5ab508396bdff360ee2f4476bac4a27ff4295ea9"
+    },
+    {
+      "path": "src/commands/build/handler.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "137443cdc633b1c455dc2cee8b8ea9a8e61879e0",
+      "size": 3025,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/137443cdc633b1c455dc2cee8b8ea9a8e61879e0"
+    },
+    {
+      "path": "src/commands/build/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c17bc639e93c03369188eb97a3514ff1fc1ebe6f",
+      "size": 3596,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/c17bc639e93c03369188eb97a3514ff1fc1ebe6f"
+    },
+    {
+      "path": "src/commands/build/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "587da620d839073cc7785597e207cbba95975b64",
+      "size": 598,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/587da620d839073cc7785597e207cbba95975b64"
+    },
+    {
+      "path": "src/commands/build/variants.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f96799d3131cc39076400584cec8cca5c9e918e9",
+      "size": 2954,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/f96799d3131cc39076400584cec8cca5c9e918e9"
+    },
+    {
+      "path": "src/commands/from_github.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b29447f16ea6f2f9ad623337d587542bf161e85b",
+      "size": 6680,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/b29447f16ea6f2f9ad623337d587542bf161e85b"
+    },
+    {
+      "path": "src/commands/githubActions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8ee1df5287982a90727083646cb59a39db95c8ec",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/8ee1df5287982a90727083646cb59a39db95c8ec"
+    },
+    {
+      "path": "src/commands/githubActions/build",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "84229ed6bd5a8f5d96f9c2e0595688d6e2368291",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/84229ed6bd5a8f5d96f9c2e0595688d6e2368291"
+    },
+    {
+      "path": "src/commands/githubActions/build/botComment.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8adf2a8c3e63673c8ffdaa2642804ab9e3a3928",
+      "size": 6422,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/b8adf2a8c3e63673c8ffdaa2642804ab9e3a3928"
+    },
+    {
+      "path": "src/commands/githubActions/build/cleanPinsFromDeletedBranches.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95ff85928be22e3b4bfe79b5642357f787918fa3",
+      "size": 1645,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/95ff85928be22e3b4bfe79b5642357f787918fa3"
+    },
+    {
+      "path": "src/commands/githubActions/build/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b34fae41aa43c03b27ec82243ad660fabca8712",
+      "size": 4975,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/0b34fae41aa43c03b27ec82243ad660fabca8712"
+    },
+    {
+      "path": "src/commands/githubActions/build/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42b2dd615dafbab85ec0de3f64d44283591efa30",
+      "size": 171,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/42b2dd615dafbab85ec0de3f64d44283591efa30"
+    },
+    {
+      "path": "src/commands/githubActions/bumpUpstream",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fd3be87ed33fb49da880e20ea50b34f62751dc8f",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/fd3be87ed33fb49da880e20ea50b34f62751dc8f"
+    },
+    {
+      "path": "src/commands/githubActions/bumpUpstream/github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6cb214f2cdf625750faa65a88a38546fc05724f8",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/6cb214f2cdf625750faa65a88a38546fc05724f8"
+    },
+    {
+      "path": "src/commands/githubActions/bumpUpstream/github/closeOldPrs.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3b6c6613d2b02b6bf2c556280e8bce0ea954dd0",
+      "size": 2495,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/c3b6c6613d2b02b6bf2c556280e8bce0ea954dd0"
+    },
+    {
+      "path": "src/commands/githubActions/bumpUpstream/github/fetchGithubUpstreamVersion.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "122171967ae35846f2ae984faadb401313ec2551",
+      "size": 1024,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/122171967ae35846f2ae984faadb401313ec2551"
+    },
+    {
+      "path": "src/commands/githubActions/bumpUpstream/github/getBumpPrBody.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79f6faf3ecc8c0d271ca8ca747f2253b794e8bc0",
+      "size": 708,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/79f6faf3ecc8c0d271ca8ca747f2253b794e8bc0"
+    },
+    {
+      "path": "src/commands/githubActions/bumpUpstream/github/getGithubSettings.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07c043c90ef95b08e6fbe3d499ecccaba2dd9c7b",
+      "size": 848,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/07c043c90ef95b08e6fbe3d499ecccaba2dd9c7b"
+    },
+    {
+      "path": "src/commands/githubActions/bumpUpstream/github/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58c033642949556bfe574b056f3f09b7353be572",
+      "size": 181,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/58c033642949556bfe574b056f3f09b7353be572"
+    },
+    {
+      "path": "src/commands/githubActions/bumpUpstream/github/isBranchNew.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "734f2201f719ee6385b61b7bd2cf9040f7f90dc5",
+      "size": 457,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/734f2201f719ee6385b61b7bd2cf9040f7f90dc5"
+    },
+    {
+      "path": "src/commands/githubActions/bumpUpstream/github/isValidRelease.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3337c6334b83f5b97703bae2f6fcc840df7b3e86",
+      "size": 611,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/3337c6334b83f5b97703bae2f6fcc840df7b3e86"
+    },
+    {
+      "path": "src/commands/githubActions/bumpUpstream/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8de15d1d8f42aa2511ec73a4bb2c42279808a4e1",
+      "size": 10675,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/8de15d1d8f42aa2511ec73a4bb2c42279808a4e1"
+    },
+    {
+      "path": "src/commands/githubActions/bumpUpstream/settings",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ada10183ee04762933c37aa5fa8e8fbf3e7e435b",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/ada10183ee04762933c37aa5fa8e8fbf3e7e435b"
+    },
+    {
+      "path": "src/commands/githubActions/bumpUpstream/settings/getInitialSettings.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1dd548797e12081bcaa717d615e2a3dba1ee047",
+      "size": 4009,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/e1dd548797e12081bcaa717d615e2a3dba1ee047"
+    },
+    {
+      "path": "src/commands/githubActions/bumpUpstream/settings/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04fee02d329e754e36c50404c0a3dfc21eb68662",
+      "size": 77,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/04fee02d329e754e36c50404c0a3dfc21eb68662"
+    },
+    {
+      "path": "src/commands/githubActions/bumpUpstream/settings/printSettings.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88c16c2b00c32479d6c127341bdd9193f953eb7b",
+      "size": 395,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/88c16c2b00c32479d6c127341bdd9193f953eb7b"
+    },
+    {
+      "path": "src/commands/githubActions/bumpUpstream/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9b26ac614ccba056385e2f80cbbdc7859bc8c4c",
+      "size": 1063,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/f9b26ac614ccba056385e2f80cbbdc7859bc8c4c"
+    },
+    {
+      "path": "src/commands/githubActions/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a16dd8ec5f3d2f40779e3326d3d4fd842e2992dd",
+      "size": 645,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/a16dd8ec5f3d2f40779e3326d3d4fd842e2992dd"
+    },
+    {
+      "path": "src/commands/increase.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc019f5fe3608d906d6b15ccb82ce3693bf070c1",
+      "size": 1325,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/dc019f5fe3608d906d6b15ccb82ce3693bf070c1"
+    },
+    {
+      "path": "src/commands/init",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e12de8fcfa573f939f5729b8b81be9c789141167",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/e12de8fcfa573f939f5729b8b81be9c789141167"
+    },
+    {
+      "path": "src/commands/init/fileOperations.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31cf4d4e9041ed4bfee9b5661ef48c9a4195e361",
+      "size": 6092,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/31cf4d4e9041ed4bfee9b5661ef48c9a4195e361"
+    },
+    {
+      "path": "src/commands/init/handler.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f22631bb9fa2ef22f3bf00fcaecafb0eaef85a7",
+      "size": 2362,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/3f22631bb9fa2ef22f3bf00fcaecafb0eaef85a7"
+    },
+    {
+      "path": "src/commands/init/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9f272c9b54eaf72dec34ebf0c66f752602aeafd",
+      "size": 1802,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/f9f272c9b54eaf72dec34ebf0c66f752602aeafd"
+    },
+    {
+      "path": "src/commands/init/naming.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e92cb90eba39c832e382a16561ab5001659964e",
+      "size": 1721,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/4e92cb90eba39c832e382a16561ab5001659964e"
+    },
+    {
+      "path": "src/commands/init/params.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d462279fec65933c082a42a4bcf7c2646e14156",
+      "size": 967,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/1d462279fec65933c082a42a4bcf7c2646e14156"
+    },
+    {
+      "path": "src/commands/init/prompt.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c18358fa06e256036279b461940f1dc7e77efa6",
+      "size": 3488,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/0c18358fa06e256036279b461940f1dc7e77efa6"
+    },
+    {
+      "path": "src/commands/init/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "925279a3983332a3339c864cc52c7d3de69679ae",
+      "size": 526,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/925279a3983332a3339c864cc52c7d3de69679ae"
+    },
+    {
+      "path": "src/commands/init/validation.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a505ab4582c50a8b09e7cc8e64f667ac39ee792a",
+      "size": 1289,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/a505ab4582c50a8b09e7cc8e64f667ac39ee792a"
+    },
+    {
+      "path": "src/commands/next.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5b3c74d7eb4edbe44a4debd044db01706908129",
+      "size": 1650,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/e5b3c74d7eb4edbe44a4debd044db01706908129"
+    },
+    {
+      "path": "src/commands/publish",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5bc02a58b149f46df6a16e603b9976890766c5a9",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/5bc02a58b149f46df6a16e603b9976890766c5a9"
+    },
+    {
+      "path": "src/commands/publish/handler.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27bd37d4e0b2f23b1d25348f5a9afd34a03b70b6",
+      "size": 2710,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/27bd37d4e0b2f23b1d25348f5a9afd34a03b70b6"
+    },
+    {
+      "path": "src/commands/publish/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41fc33694e5b2da55f471d9bdae7225f212b977c",
+      "size": 5301,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/41fc33694e5b2da55f471d9bdae7225f212b977c"
+    },
+    {
+      "path": "src/commands/publish/parseReleaseType.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3587807bc012d614ddfb8c1e4e7eeb2e1aa7058e",
+      "size": 1229,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/3587807bc012d614ddfb8c1e4e7eeb2e1aa7058e"
+    },
+    {
+      "path": "src/commands/publish/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8faa4bb765d4199e500266b9874ab08e12c77d10",
+      "size": 612,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/8faa4bb765d4199e500266b9874ab08e12c77d10"
+    },
+    {
+      "path": "src/contracts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4b9b108b7c50078ebb38c33e8172684c4b3bc1dd",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/4b9b108b7c50078ebb38c33e8172684c4b3bc1dd"
+    },
+    {
+      "path": "src/contracts/ApmRegistryAbi.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "224dc4082fdb3759a8c0fed30f41652127a6f974",
+      "size": 8340,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/224dc4082fdb3759a8c0fed30f41652127a6f974"
+    },
+    {
+      "path": "src/contracts/RepoAbi.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec7e46ba086b1bbbfcd76ca1f628117a05927d77",
+      "size": 7549,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/ec7e46ba086b1bbbfcd76ca1f628117a05927d77"
+    },
+    {
+      "path": "src/dappnodesdk.ts",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "17c7645c01ec27764ce5712180f22a460fdddde6",
+      "size": 2601,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/17c7645c01ec27764ce5712180f22a460fdddde6"
+    },
+    {
+      "path": "src/files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4abe31d5ed7f612b4ed8dc1a86d1029b54483466",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/4abe31d5ed7f612b4ed8dc1a86d1029b54483466"
+    },
+    {
+      "path": "src/files/compose",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d5c59e3ed9c337b58d3fb290de01aee192513c79",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/d5c59e3ed9c337b58d3fb290de01aee192513c79"
+    },
+    {
+      "path": "src/files/compose/composeDeleteBuildProperties.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e46915eb8501f0855dc48ca66a9bf1710399c0d6",
+      "size": 640,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/e46915eb8501f0855dc48ca66a9bf1710399c0d6"
+    },
+    {
+      "path": "src/files/compose/getComposePackageImages.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4380f96999b67f0ba6d72a199f92240cf9c9f155",
+      "size": 642,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/4380f96999b67f0ba6d72a199f92240cf9c9f155"
+    },
+    {
+      "path": "src/files/compose/getComposePath.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "512459047d235ce6ac51be113e578a49ffbbf2d5",
+      "size": 443,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/512459047d235ce6ac51be113e578a49ffbbf2d5"
+    },
+    {
+      "path": "src/files/compose/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b25e2281b1cac79bd9bd55274a8b4a83c35d9702",
+      "size": 520,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/b25e2281b1cac79bd9bd55274a8b4a83c35d9702"
+    },
+    {
+      "path": "src/files/compose/parseComposeUpstreamVersion.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "725988a223c27f0e6de3fe98a13ed242d9dd60fb",
+      "size": 1335,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/725988a223c27f0e6de3fe98a13ed242d9dd60fb"
+    },
+    {
+      "path": "src/files/compose/readCompose.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "946114220c6e022749959ec1c39e94ec4d35ce2e",
+      "size": 1776,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/946114220c6e022749959ec1c39e94ec4d35ce2e"
+    },
+    {
+      "path": "src/files/compose/stripComposeVersion.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b1ae8f083b164818f1d336c83bc88a35a7eeb64",
+      "size": 387,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/6b1ae8f083b164818f1d336c83bc88a35a7eeb64"
+    },
+    {
+      "path": "src/files/compose/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db537c78bc065be470a51969d53ea1e161820918",
+      "size": 487,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/db537c78bc065be470a51969d53ea1e161820918"
+    },
+    {
+      "path": "src/files/compose/updateComposeImageTags.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "334ab6dda09e78ec3f0ac893cf0dbf149f2d968d",
+      "size": 973,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/334ab6dda09e78ec3f0ac893cf0dbf149f2d968d"
+    },
+    {
+      "path": "src/files/compose/writeCompose.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a2e6f51fd3ab15e7c158ba31dd8370b807e594a",
+      "size": 895,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/7a2e6f51fd3ab15e7c158ba31dd8370b807e594a"
+    },
+    {
+      "path": "src/files/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f4e71d75f758a9fff0c722719a5f575f905b97f",
+      "size": 154,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/6f4e71d75f758a9fff0c722719a5f575f905b97f"
+    },
+    {
+      "path": "src/files/manifest",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9d4f771f8f70d846fb24cfdcb2c990d49f11497e",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/9d4f771f8f70d846fb24cfdcb2c990d49f11497e"
+    },
+    {
+      "path": "src/files/manifest/compactManifestIfCore.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d799369369747c2187ff499841fe01359aabccfd",
+      "size": 1406,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/d799369369747c2187ff499841fe01359aabccfd"
+    },
+    {
+      "path": "src/files/manifest/getManifestPath.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a2e9616d7eae6e06e63e35f6690fe4b41a29687",
+      "size": 474,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/1a2e9616d7eae6e06e63e35f6690fe4b41a29687"
+    },
+    {
+      "path": "src/files/manifest/getRepoSlugFromManifest.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "363649cdd3da354ac2e2666d7f0f5957646a7eec",
+      "size": 733,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/363649cdd3da354ac2e2666d7f0f5957646a7eec"
+    },
+    {
+      "path": "src/files/manifest/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4afb6c066b9a708625ba6179a10fd9f0c28b2e44",
+      "size": 410,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/4afb6c066b9a708625ba6179a10fd9f0c28b2e44"
+    },
+    {
+      "path": "src/files/manifest/readManifest.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8cfcf91fb1e219fc313570c1e4b28c0738ae5fa7",
+      "size": 3488,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/8cfcf91fb1e219fc313570c1e4b28c0738ae5fa7"
+    },
+    {
+      "path": "src/files/manifest/stringifyJson.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d0d12b7abef1343689b60e3035c24cf13f9dd73",
+      "size": 1023,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/1d0d12b7abef1343689b60e3035c24cf13f9dd73"
+    },
+    {
+      "path": "src/files/manifest/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e38fdd52263f40f8cf897ffaabd2e6e3fa74a599",
+      "size": 297,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/e38fdd52263f40f8cf897ffaabd2e6e3fa74a599"
+    },
+    {
+      "path": "src/files/manifest/writeManifest.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71c4ace6fc26b7f64beaf4cb6b931b2b109016e3",
+      "size": 718,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/71c4ace6fc26b7f64beaf4cb6b931b2b109016e3"
+    },
+    {
+      "path": "src/files/notifications",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f66279e94a59ed1af99000eafb6938787441373e",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/f66279e94a59ed1af99000eafb6938787441373e"
+    },
+    {
+      "path": "src/files/notifications/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fcc72343b39e06e80e49a5fc838960ff1631e095",
+      "size": 146,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/fcc72343b39e06e80e49a5fc838960ff1631e095"
+    },
+    {
+      "path": "src/files/notifications/readNotificationsIfExists.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "838476fb9cff83e8875367ea24aeb74775d07cbb",
+      "size": 2293,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/838476fb9cff83e8875367ea24aeb74775d07cbb"
+    },
+    {
+      "path": "src/files/notifications/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d10493766034f12911e96b4eba8ac3b61350e82c",
+      "size": 327,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/d10493766034f12911e96b4eba8ac3b61350e82c"
+    },
+    {
+      "path": "src/files/setupWizard",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8338ee199151c09904984b055e6d98a648098c9d",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/8338ee199151c09904984b055e6d98a648098c9d"
+    },
+    {
+      "path": "src/files/setupWizard/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "396c69e436a58e9643a0bdd56b51ee0798b1682e",
+      "size": 138,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/396c69e436a58e9643a0bdd56b51ee0798b1682e"
+    },
+    {
+      "path": "src/files/setupWizard/readSetupWizardIfExists.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae1ea4d368d4aac6b792af91d22a47b45a5a7415",
+      "size": 2222,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/ae1ea4d368d4aac6b792af91d22a47b45a5a7415"
+    },
+    {
+      "path": "src/files/setupWizard/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6be1c19a1fc06bc0f34a629fefdd6ee048bbbe5",
+      "size": 318,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/e6be1c19a1fc06bc0f34a629fefdd6ee048bbbe5"
+    },
+    {
+      "path": "src/files/variants",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "db14a920106f82ea4a6d9c12422704a613b9db5d",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/db14a920106f82ea4a6d9c12422704a613b9db5d"
+    },
+    {
+      "path": "src/files/variants/getAllPackageVariants.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d07e23cdbda5e24043b3eebd14a3bbbce529e64d",
+      "size": 660,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/d07e23cdbda5e24043b3eebd14a3bbbce529e64d"
+    },
+    {
+      "path": "src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54fd47e5a07edb66e15c45b76dc35f278ffd25f2",
+      "size": 34,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/54fd47e5a07edb66e15c45b76dc35f278ffd25f2"
+    },
+    {
+      "path": "src/params.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1eae951f33cc5fb3af3a189cc3c8aae6f78989a2",
+      "size": 1931,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/1eae951f33cc5fb3af3a189cc3c8aae6f78989a2"
+    },
+    {
+      "path": "src/pinStrategy",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fc4f9c2e9bb8c48298f7e49cf5e962600fa89078",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/fc4f9c2e9bb8c48298f7e49cf5e962600fa89078"
+    },
+    {
+      "path": "src/pinStrategy/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8641fe3a7e36fc860ed74b2157033bc5811242a1",
+      "size": 2880,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/8641fe3a7e36fc860ed74b2157033bc5811242a1"
+    },
+    {
+      "path": "src/pinStrategy/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aebccdac274944b81cd2c15dca36693f32fd268e",
+      "size": 392,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/aebccdac274944b81cd2c15dca36693f32fd268e"
+    },
+    {
+      "path": "src/pinStrategy/utils.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aea3674875f4797a607f509f0934e241e77514c3",
+      "size": 752,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/aea3674875f4797a607f509f0934e241e77514c3"
+    },
+    {
+      "path": "src/providers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d80f1bf3a51de37bce87539562317489445c0860",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/d80f1bf3a51de37bce87539562317489445c0860"
+    },
+    {
+      "path": "src/providers/github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4f0d3243db697b0cf07e5d20992feb7f1660e511",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/4f0d3243db697b0cf07e5d20992feb7f1660e511"
+    },
+    {
+      "path": "src/providers/github/Github.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6cbd1eee17d3573cf714e898ae52e93f221eaf3",
+      "size": 12391,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/a6cbd1eee17d3573cf714e898ae52e93f221eaf3"
+    },
+    {
+      "path": "src/providers/github/githubActions.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "119ba01cab363b9ed71d85234bc26799209b016b",
+      "size": 4392,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/119ba01cab363b9ed71d85234bc26799209b016b"
+    },
+    {
+      "path": "src/providers/github/utils.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "631e623116232bef5caf636734654c86cdfb0569",
+      "size": 752,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/631e623116232bef5caf636734654c86cdfb0569"
+    },
+    {
+      "path": "src/providers/pinata",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "113af5255059a7c9d4ecc9736fdef6ec3ba95860",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/113af5255059a7c9d4ecc9736fdef6ec3ba95860"
+    },
+    {
+      "path": "src/providers/pinata/pinManager.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "093dfec84a8dd83aac0543e1453ab01c5035215b",
+      "size": 3547,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/093dfec84a8dd83aac0543e1453ab01c5035215b"
+    },
+    {
+      "path": "src/releaseUploader",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5eb7406f3a88afbfa2fbe3837c40b7c00048a94b",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/5eb7406f3a88afbfa2fbe3837c40b7c00048a94b"
+    },
+    {
+      "path": "src/releaseUploader/errors.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c23d2d6076c24f2f30de7051bb2c9649158835f8",
+      "size": 403,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/c23d2d6076c24f2f30de7051bb2c9649158835f8"
+    },
+    {
+      "path": "src/releaseUploader/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "989036dcef4d5996199ba3a3952655e6bbf28ecf",
+      "size": 2685,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/989036dcef4d5996199ba3a3952655e6bbf28ecf"
+    },
+    {
+      "path": "src/releaseUploader/interface.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40097035d2f3f3ea8051c0cb7b868179d6a031cb",
+      "size": 584,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/40097035d2f3f3ea8051c0cb7b868179d6a031cb"
+    },
+    {
+      "path": "src/releaseUploader/ipfsNode",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b1ab0faef922e41631ecda76387aaec7da2b15dd",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/b1ab0faef922e41631ecda76387aaec7da2b15dd"
+    },
+    {
+      "path": "src/releaseUploader/ipfsNode/addDirFromUrls.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66b5757d4a53bf084dab096cab40038b91220c45",
+      "size": 1817,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/66b5757d4a53bf084dab096cab40038b91220c45"
+    },
+    {
+      "path": "src/releaseUploader/ipfsNode/addFromFs.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a338db35f312a8b561e54bc0b4fb37b211e90bf",
+      "size": 1834,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/1a338db35f312a8b561e54bc0b4fb37b211e90bf"
+    },
+    {
+      "path": "src/releaseUploader/ipfsNode/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5dd655ecb76319ffe43a7a7402680166f95c9349",
+      "size": 707,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/5dd655ecb76319ffe43a7a7402680166f95c9349"
+    },
+    {
+      "path": "src/releaseUploader/ipfsNode/ipfsProvider.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33b383353fc6162f0867e8b0fda9265283da5e94",
+      "size": 1202,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/33b383353fc6162f0867e8b0fda9265283da5e94"
+    },
+    {
+      "path": "src/releaseUploader/ipfsNode/ipfsVersion.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8d60c3bdc35b3aa7d7b487ea1cd38f550903e88",
+      "size": 774,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/c8d60c3bdc35b3aa7d7b487ea1cd38f550903e88"
+    },
+    {
+      "path": "src/releaseUploader/ipfsNode/verifyConnection.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6786e2c0c5c5bf57cf82924ad3c58c5e5e5d14a5",
+      "size": 865,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/6786e2c0c5c5bf57cf82924ad3c58c5e5e5d14a5"
+    },
+    {
+      "path": "src/releaseUploader/pinata",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c2f3de8fb9d17ff35ca06a3f107ce2d02bd40de5",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/c2f3de8fb9d17ff35ca06a3f107ce2d02bd40de5"
+    },
+    {
+      "path": "src/releaseUploader/pinata/PinataSDK.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "203b577b1b54ca109f2f1fece4ed875f02cf8d5c",
+      "size": 2316,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/203b577b1b54ca109f2f1fece4ed875f02cf8d5c"
+    },
+    {
+      "path": "src/releaseUploader/pinata/addDirFromFs.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e9c0cabfa94d6ef94629a3a857f265727c996c0",
+      "size": 1912,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/5e9c0cabfa94d6ef94629a3a857f265727c996c0"
+    },
+    {
+      "path": "src/releaseUploader/pinata/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09755972a93fd36dbea2b602d2dfdb33b80b17fc",
+      "size": 1607,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/09755972a93fd36dbea2b602d2dfdb33b80b17fc"
+    },
+    {
+      "path": "src/releaseUploader/swarmNode",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0ea32ea83b9a7877f8dc26b923c4a79d84f68a18",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/0ea32ea83b9a7877f8dc26b923c4a79d84f68a18"
+    },
+    {
+      "path": "src/releaseUploader/swarmNode/addDirFromFs.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31be3761706399864d43954bbd3d6020a40eac7a",
+      "size": 706,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/31be3761706399864d43954bbd3d6020a40eac7a"
+    },
+    {
+      "path": "src/releaseUploader/swarmNode/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9975c2ca7a723c6df72413e037ef0d4c919370b8",
+      "size": 692,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/9975c2ca7a723c6df72413e037ef0d4c919370b8"
+    },
+    {
+      "path": "src/releaseUploader/swarmNode/provider.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bcdc381f87648f82bbc1f2bcc78b49c2f958f570",
+      "size": 254,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/bcdc381f87648f82bbc1f2bcc78b49c2f958f570"
+    },
+    {
+      "path": "src/releaseUploader/utils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "abd3b3ada1c539810f7a1470b2d8ff979bd6a4cb",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/abd3b3ada1c539810f7a1470b2d8ff979bd6a4cb"
+    },
+    {
+      "path": "src/releaseUploader/utils/formDataFileUpload.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8ef1b547da2303140bdff9c2b13e3334c0f3fe5",
+      "size": 903,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/b8ef1b547da2303140bdff9c2b13e3334c0f3fe5"
+    },
+    {
+      "path": "src/releaseUploader/utils/traverseDir.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "546c1c3e45650f7a19cfc7c498d79c6596f4b927",
+      "size": 515,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/546c1c3e45650f7a19cfc7c498d79c6596f4b927"
+    },
+    {
+      "path": "src/tasks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8141270ffbac627b30d7121f30a35456c66f82b4",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/8141270ffbac627b30d7121f30a35456c66f82b4"
+    },
+    {
+      "path": "src/tasks/buildAndUpload",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9307581219b09ad6177aee540ae09c941b4d5562",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/9307581219b09ad6177aee540ae09c941b4d5562"
+    },
+    {
+      "path": "src/tasks/buildAndUpload/buildWithBuildx.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6c4d807f12e5a80256a4374c16e6b01ef5b542c",
+      "size": 4326,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/f6c4d807f12e5a80256a4374c16e6b01ef5b542c"
+    },
+    {
+      "path": "src/tasks/buildAndUpload/buildWithCompose.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3a63054eb431eec1d008e1c8da6ffe142fcab96",
+      "size": 1724,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/d3a63054eb431eec1d008e1c8da6ffe142fcab96"
+    },
+    {
+      "path": "src/tasks/buildAndUpload/generatePackagesProps.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a44b1150b0948670ab6de2ab4292498327563f6",
+      "size": 3061,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/8a44b1150b0948670ab6de2ab4292498327563f6"
+    },
+    {
+      "path": "src/tasks/buildAndUpload/getBuildTasks.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0005e91746795dac613ef31310070f850c82829",
+      "size": 2416,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/e0005e91746795dac613ef31310070f850c82829"
+    },
+    {
+      "path": "src/tasks/buildAndUpload/getDeleteOldPinsTask.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d253cea61e07eef581e1c14bae79a683cbc6fec",
+      "size": 1547,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/4d253cea61e07eef581e1c14bae79a683cbc6fec"
+    },
+    {
+      "path": "src/tasks/buildAndUpload/getFileCopyTask.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "485a065e1867a6c343dd40e2ddae47ee135ab3aa",
+      "size": 4128,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/485a065e1867a6c343dd40e2ddae47ee135ab3aa"
+    },
+    {
+      "path": "src/tasks/buildAndUpload/getFileValidationTask.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e431c11bfacc9d7553e03f134582a659db565fe3",
+      "size": 2931,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/e431c11bfacc9d7553e03f134582a659db565fe3"
+    },
+    {
+      "path": "src/tasks/buildAndUpload/getReleaseDirCreationTask.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af5b8f73ebf048ff70155ab5fc56eee074eba0eb",
+      "size": 1395,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/af5b8f73ebf048ff70155ab5fc56eee074eba0eb"
+    },
+    {
+      "path": "src/tasks/buildAndUpload/getSaveUploadResultsTask.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "937066850cad8680e40e26909b276619f4ef0d80",
+      "size": 1157,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/937066850cad8680e40e26909b276619f4ef0d80"
+    },
+    {
+      "path": "src/tasks/buildAndUpload/getUploadTasks.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0523d4bdd23128006d7aee12afedc8885023ded4",
+      "size": 1854,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/0523d4bdd23128006d7aee12afedc8885023ded4"
+    },
+    {
+      "path": "src/tasks/buildAndUpload/getVerifyConnectionTask.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73e03707dd9f57ed67d41ee801ac6fc5bc9383fd",
+      "size": 978,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/73e03707dd9f57ed67d41ee801ac6fc5bc9383fd"
+    },
+    {
+      "path": "src/tasks/buildAndUpload/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "877f91b0951d961d2e77a6df1b6442105e407347",
+      "size": 2418,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/877f91b0951d961d2e77a6df1b6442105e407347"
+    },
+    {
+      "path": "src/tasks/buildAndUpload/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e02dfb01087976117efb3bb8bbfced662f50e9b",
+      "size": 516,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/6e02dfb01087976117efb3bb8bbfced662f50e9b"
+    },
+    {
+      "path": "src/tasks/buildAndUpload/utils.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4115b1cb5cb0b5920f0030c1d22182adf0962494",
+      "size": 1047,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/4115b1cb5cb0b5920f0030c1d22182adf0962494"
+    },
+    {
+      "path": "src/tasks/buildAndUpload/writeTmpCompose.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0eff7f139a3dd6270685bbebf87499706d17dc66",
+      "size": 644,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/0eff7f139a3dd6270685bbebf87499706d17dc66"
+    },
+    {
+      "path": "src/tasks/createGithubRelease",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "51633d56c0c788bf2277921df4cee48c09c46c08",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/51633d56c0c788bf2277921df4cee48c09c46c08"
+    },
+    {
+      "path": "src/tasks/createGithubRelease/buildReleaseDetailsMap.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d685bca5bc5492ce575d86f46afaeaa1f7d1008",
+      "size": 680,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/7d685bca5bc5492ce575d86f46afaeaa1f7d1008"
+    },
+    {
+      "path": "src/tasks/createGithubRelease/getNextGitTag.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "423cb95ca17aaebc9061e7055e40a3969b5a0d06",
+      "size": 1961,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/423cb95ca17aaebc9061e7055e40a3969b5a0d06"
+    },
+    {
+      "path": "src/tasks/createGithubRelease/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7730ac533c885b39afd0068db5a355aafb89f40b",
+      "size": 1152,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/7730ac533c885b39afd0068db5a355aafb89f40b"
+    },
+    {
+      "path": "src/tasks/createGithubRelease/subtasks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "21b5e2f26ec64bd7e9bb96bb29411fe42b51af49",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/21b5e2f26ec64bd7e9bb96bb29411fe42b51af49"
+    },
+    {
+      "path": "src/tasks/createGithubRelease/subtasks/getCreateReleaseTask.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03b326e71d6f7419950ef442a3aa670e9841faf0",
+      "size": 6013,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/03b326e71d6f7419950ef442a3aa670e9841faf0"
+    },
+    {
+      "path": "src/tasks/createGithubRelease/subtasks/getHandleTagsTask.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "683a2aefc493f17f15fa3599a70e760121b6a6ed",
+      "size": 1945,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/683a2aefc493f17f15fa3599a70e760121b6a6ed"
+    },
+    {
+      "path": "src/tasks/createGithubRelease/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f512f829e8f025a2aaf7191b06e38e5697e84d36",
+      "size": 236,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/f512f829e8f025a2aaf7191b06e38e5697e84d36"
+    },
+    {
+      "path": "src/tasks/generatePublishTxs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4779666931e4fe1fd540fa98811cc96918df72dc",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/4779666931e4fe1fd540fa98811cc96918df72dc"
+    },
+    {
+      "path": "src/tasks/generatePublishTxs/getRegistryAddressFromEns.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7cd16e552b6a69e0a92af75c025a0e13d66e299",
+      "size": 823,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/f7cd16e552b6a69e0a92af75c025a0e13d66e299"
+    },
+    {
+      "path": "src/tasks/generatePublishTxs/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99cb31a8ad146be71154981aedb911a158dcef94",
+      "size": 7884,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/99cb31a8ad146be71154981aedb911a158dcef94"
+    },
+    {
+      "path": "src/tasks/generatePublishTxs/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c7129fb2ca545169a396d4d9473b579726d5b2d",
+      "size": 126,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/7c7129fb2ca545169a396d4d9473b579726d5b2d"
+    },
+    {
+      "path": "src/tasks/publish",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bf522f5ea6cdb6a6868f4cb9f3f5daa78a214082",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/bf522f5ea6cdb6a6868f4cb9f3f5daa78a214082"
+    },
+    {
+      "path": "src/tasks/publish/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ae740def82f47c08378a447faae8eda4e87009d",
+      "size": 1980,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/9ae740def82f47c08378a447faae8eda4e87009d"
+    },
+    {
+      "path": "src/tasks/publish/subtasks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "16df82f4b000e3ea01655dce60a9b1ba52fe793b",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/16df82f4b000e3ea01655dce60a9b1ba52fe793b"
+    },
+    {
+      "path": "src/tasks/publish/subtasks/getBuildAndUploadTask.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "070d09dae97cb7f1374f6835120f33e1f9eae463",
+      "size": 864,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/070d09dae97cb7f1374f6835120f33e1f9eae463"
+    },
+    {
+      "path": "src/tasks/publish/subtasks/getCreateGithubReleaseTask.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3521ab6607a790035ab0f4509ac0bcd8d191902e",
+      "size": 777,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/3521ab6607a790035ab0f4509ac0bcd8d191902e"
+    },
+    {
+      "path": "src/tasks/publish/subtasks/getFetchApmVersionsTask.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2305811ca18e03d3ff537c3c4932e1590feddb9",
+      "size": 1629,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/f2305811ca18e03d3ff537c3c4932e1590feddb9"
+    },
+    {
+      "path": "src/tasks/publish/subtasks/getGenerateTxsTask.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "154a711eaca44fb932beff9c5ff3a0eb5cd8d09b",
+      "size": 898,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/154a711eaca44fb932beff9c5ff3a0eb5cd8d09b"
+    },
+    {
+      "path": "src/tasks/publish/subtasks/getUpdateFilesTask.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b72d19e447386b59085817447fdfb554c000add",
+      "size": 3128,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/7b72d19e447386b59085817447fdfb554c000add"
+    },
+    {
+      "path": "src/tasks/publish/subtasks/getVerifyEthConnectionTask.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04fd931220ebd8affc077a5c9e35926ce41c2fc9",
+      "size": 402,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/04fd931220ebd8affc077a5c9e35926ce41c2fc9"
+    },
+    {
+      "path": "src/tasks/publish/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "baadc520bed8d17ccc85049673e8aecfbc9137ed",
+      "size": 713,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/baadc520bed8d17ccc85049673e8aecfbc9137ed"
+    },
+    {
+      "path": "src/tasks/saveAndCompressImages.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79cdb5aecf7459fd9ea99c6f131a7c433b98cf19",
+      "size": 4901,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/79cdb5aecf7459fd9ea99c6f131a7c433b98cf19"
+    },
+    {
+      "path": "src/types.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1462ecaa0e12ed0536af08d1396cefc02d2889da",
+      "size": 2260,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/1462ecaa0e12ed0536af08d1396cefc02d2889da"
+    },
+    {
+      "path": "src/utils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "64859105c2790199fa7c9b7693ddce1ec05d1ad8",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/64859105c2790199fa7c9b7693ddce1ec05d1ad8"
+    },
+    {
+      "path": "src/utils/array.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c3e3b5ab9988017d00d1904a01d36f37a51b3e5",
+      "size": 192,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/1c3e3b5ab9988017d00d1904a01d36f37a51b3e5"
+    },
+    {
+      "path": "src/utils/cache.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a915c564da760dc2a5e21cf88626d8ffe005e61",
+      "size": 2973,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/8a915c564da760dc2a5e21cf88626d8ffe005e61"
+    },
+    {
+      "path": "src/utils/checkSemverType.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e72e58c580a289f58dafc2059fb9facde4db7e3b",
+      "size": 409,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/e72e58c580a289f58dafc2059fb9facde4db7e3b"
+    },
+    {
+      "path": "src/utils/copyReleaseFile.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42f83eee2feaab30b60b744191f439e1b78c7878",
+      "size": 2111,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/42f83eee2feaab30b60b744191f439e1b78c7878"
+    },
+    {
+      "path": "src/utils/csv.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "493ad935172fbec5bc1803aeb2e440a204b26398",
+      "size": 212,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/493ad935172fbec5bc1803aeb2e440a204b26398"
+    },
+    {
+      "path": "src/utils/file.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8dba6094f67c325bae019e182a45e87b15261142",
+      "size": 495,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/8dba6094f67c325bae019e182a45e87b15261142"
+    },
+    {
+      "path": "src/utils/format.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90ef0d62d16a54eb8e44150336f63c50db4fe1b2",
+      "size": 1162,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/90ef0d62d16a54eb8e44150336f63c50db4fe1b2"
+    },
+    {
+      "path": "src/utils/getArchitecture.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2bb0f09bee93d4276ebd3e834041333327714e3b",
+      "size": 591,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/2bb0f09bee93d4276ebd3e834041333327714e3b"
+    },
+    {
+      "path": "src/utils/getDockerVersion.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a774ed67f7e0117cfc5ad3badf257f6c5f10c685",
+      "size": 578,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/a774ed67f7e0117cfc5ad3badf257f6c5f10c685"
+    },
+    {
+      "path": "src/utils/getEthereumUrl.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1aaaeda8fcd3d628430ed29ba02dec02618b07f3",
+      "size": 480,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/1aaaeda8fcd3d628430ed29ba02dec02618b07f3"
+    },
+    {
+      "path": "src/utils/getFileHash.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40ce22880ba39fb0ee73f739de342127f2cd3dbd",
+      "size": 787,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/40ce22880ba39fb0ee73f739de342127f2cd3dbd"
+    },
+    {
+      "path": "src/utils/getImageFileName.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b52e7eef80d90be9f300e6d99ae9e8d79321c1b2",
+      "size": 725,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/b52e7eef80d90be9f300e6d99ae9e8d79321c1b2"
+    },
+    {
+      "path": "src/utils/getImageId.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "113f435b4969e5e37ad18e15d83fe82a34c0074b",
+      "size": 779,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/113f435b4969e5e37ad18e15d83fe82a34c0074b"
+    },
+    {
+      "path": "src/utils/getIsCore.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ebdd5eb0d7dee9ded75bbf1559aad4ee027c3bf",
+      "size": 141,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/8ebdd5eb0d7dee9ded75bbf1559aad4ee027c3bf"
+    },
+    {
+      "path": "src/utils/getLegacyImagePath.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4582290c94aaca1f05212bee16df4526f0393c22",
+      "size": 324,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/4582290c94aaca1f05212bee16df4526f0393c22"
+    },
+    {
+      "path": "src/utils/getLinks.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9420148dff6b4166c7aa4ecd9f99b55e2677b86",
+      "size": 1018,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/b9420148dff6b4166c7aa4ecd9f99b55e2677b86"
+    },
+    {
+      "path": "src/utils/git.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4449b34c9983b29181480aa9d465c6ac5a1be452",
+      "size": 1393,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/4449b34c9983b29181480aa9d465c6ac5a1be452"
+    },
+    {
+      "path": "src/utils/githubGetReleases.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3544e19ebaf94b94d23fc2d5bf2848c8b0266f6a",
+      "size": 1826,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/3544e19ebaf94b94d23fc2d5bf2848c8b0266f6a"
+    },
+    {
+      "path": "src/utils/isPackageNotRegisteredError.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4dc8667fe51c91cba1f5b812fafb1f4365a3b30",
+      "size": 1347,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/a4dc8667fe51c91cba1f5b812fafb1f4365a3b30"
+    },
+    {
+      "path": "src/utils/parseArchitectures.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00e64f242001ff9e02036a4c3a9c4e704cf95ee5",
+      "size": 584,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/00e64f242001ff9e02036a4c3a9c4e704cf95ee5"
+    },
+    {
+      "path": "src/utils/print.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "647319e9427da4a087c25ebc621db467d976fb4b",
+      "size": 325,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/647319e9427da4a087c25ebc621db467d976fb4b"
+    },
+    {
+      "path": "src/utils/releaseRecord.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfd9506e6899fbbb66c9ca513bf4a59c7c98b63b",
+      "size": 1896,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/dfd9506e6899fbbb66c9ca513bf4a59c7c98b63b"
+    },
+    {
+      "path": "src/utils/semverToArray.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64aefe11d57d48ee8526b1727c172328b66bf49c",
+      "size": 209,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/64aefe11d57d48ee8526b1727c172328b66bf49c"
+    },
+    {
+      "path": "src/utils/shell.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9772fb5f944ac5b9a26bc22aec0b9ea32b9b1b9f",
+      "size": 2575,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/9772fb5f944ac5b9a26bc22aec0b9ea32b9b1b9f"
+    },
+    {
+      "path": "src/utils/timeout.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7ee03457291fd85addc1d672695c9f0e1df056b",
+      "size": 845,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/a7ee03457291fd85addc1d672695c9f0e1df056b"
+    },
+    {
+      "path": "src/utils/tryEthProviders.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3904ac2e3e2e625068a8066038f1c277ccfa262",
+      "size": 937,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/b3904ac2e3e2e625068a8066038f1c277ccfa262"
+    },
+    {
+      "path": "src/utils/verifyAvatar.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62c41e052033b84b87f9d988c7a297d88f900831",
+      "size": 645,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/62c41e052033b84b87f9d988c7a297d88f900831"
+    },
+    {
+      "path": "src/utils/verifyEthConnection.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07c3205e3d73da32b4aa3deaa65a05b12aee6cba",
+      "size": 995,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/07c3205e3d73da32b4aa3deaa65a05b12aee6cba"
+    },
+    {
+      "path": "src/utils/versions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "22cf79dc78746492c8f2bd44dab9dd2141def4f4",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/22cf79dc78746492c8f2bd44dab9dd2141def4f4"
+    },
+    {
+      "path": "src/utils/versions/getNextVersionFromApm.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "111c80d6799c87716c93739fb2f86d729d10bd5d",
+      "size": 986,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/111c80d6799c87716c93739fb2f86d729d10bd5d"
+    },
+    {
+      "path": "src/utils/versions/increaseFromLocalVersion.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a98355ab89069777683ea7ddd826f07d9274d741",
+      "size": 1195,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/a98355ab89069777683ea7ddd826f07d9274d741"
+    },
+    {
+      "path": "test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b2ffcb3816e2de1c7122b5af6281355e4145fb1c",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/b2ffcb3816e2de1c7122b5af6281355e4145fb1c"
+    },
+    {
+      "path": "test/commands",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2fd9c0e64f77396fbc348a245e5ca8060866d07e",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/2fd9c0e64f77396fbc348a245e5ca8060866d07e"
+    },
+    {
+      "path": "test/commands/build.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3508b48ce520984733074018a1f119c312f659a0",
+      "size": 5553,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/3508b48ce520984733074018a1f119c312f659a0"
+    },
+    {
+      "path": "test/commands/gaBumpUpstream",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2251f070ad2368de004865f16670e2dde931471b",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/2251f070ad2368de004865f16670e2dde931471b"
+    },
+    {
+      "path": "test/commands/gaBumpUpstream/format.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7e0f3f408e834d1ef1875ca4e33b704fe1b62c0",
+      "size": 2949,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/c7e0f3f408e834d1ef1875ca4e33b704fe1b62c0"
+    },
+    {
+      "path": "test/commands/githubActions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "04e12f678c682349dd5a3412a64251f5ebf89ff2",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/04e12f678c682349dd5a3412a64251f5ebf89ff2"
+    },
+    {
+      "path": "test/commands/githubActions/botComment.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c93ed8c280c52cdbd86a9f40fd960c6c820f1463",
+      "size": 10584,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/c93ed8c280c52cdbd86a9f40fd960c6c820f1463"
+    },
+    {
+      "path": "test/commands/init.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df2854af7ed3a73b9b11aeca7e2ee53b58290e13",
+      "size": 3119,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/df2854af7ed3a73b9b11aeca7e2ee53b58290e13"
+    },
+    {
+      "path": "test/files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7877c3431b3319635951013d2b2f45c861b22fb7",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/7877c3431b3319635951013d2b2f45c861b22fb7"
+    },
+    {
+      "path": "test/files/compose",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8bb63cdf193846a5dc90b8b912ec6d1ca376fea8",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/8bb63cdf193846a5dc90b8b912ec6d1ca376fea8"
+    },
+    {
+      "path": "test/files/compose/composeDeleteBuildProperties.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f705836fd483426e4afc393ce85ac520f847d32",
+      "size": 1059,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/2f705836fd483426e4afc393ce85ac520f847d32",
+      "error": "SyntaxError: Unexpected token 'i', \"import { e\"... is not valid JSON"
+    },
+    {
+      "path": "test/files/compose/parseComposeUpstreamVersion.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8425e61cdeedd1a9a97ec155908566f04eef861d",
+      "size": 1398,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/8425e61cdeedd1a9a97ec155908566f04eef861d",
+      "error": "SyntaxError: Unexpected token 'i', \"import { e\"... is not valid JSON"
+    },
+    {
+      "path": "test/files/compose/readCompose.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b3eaf35fe64f3ef9da0c2e88375a40be552c743",
+      "size": 1804,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/2b3eaf35fe64f3ef9da0c2e88375a40be552c743",
+      "error": "SyntaxError: Unexpected token 'i', \"import { e\"... is not valid JSON"
+    },
+    {
+      "path": "test/files/compose/stripComposeVersion.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3ecc5b1862a72f1ca4b19642d8b32ef85925078",
+      "size": 550,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/c3ecc5b1862a72f1ca4b19642d8b32ef85925078",
+      "error": "SyntaxError: Unexpected token 'i', \"import { e\"... is not valid JSON"
+    },
+    {
+      "path": "test/files/compose/updateComposeImageTags.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aef326fa59bd03efdb8ef46f5adf529bc291f256",
+      "size": 4693,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/aef326fa59bd03efdb8ef46f5adf529bc291f256",
+      "error": "SyntaxError: Unexpected token 'i', \"import { P\"... is not valid JSON"
+    },
+    {
+      "path": "test/files/manifest",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4a57ed2fb850d9dab97cfe2eee4b5108cd6aa11e",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/4a57ed2fb850d9dab97cfe2eee4b5108cd6aa11e"
+    },
+    {
+      "path": "test/files/manifest/readManifest.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3f2dbd006ab90118ee0bba02e570002025b8845",
+      "size": 1751,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/a3f2dbd006ab90118ee0bba02e570002025b8845",
+      "error": "SyntaxError: Unexpected token 'i', \"import { e\"... is not valid JSON"
+    },
+    {
+      "path": "test/params.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a18b93ad01d77154f72531ce60400af9feb0d1b1",
+      "size": 1292,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/a18b93ad01d77154f72531ce60400af9feb0d1b1"
+    },
+    {
+      "path": "test/pinata.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebc0b33aa563f2fe16c628a112c4ae428b77005d",
+      "size": 1137,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/ebc0b33aa563f2fe16c628a112c4ae428b77005d"
+    },
+    {
+      "path": "test/providers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "aaca1430b146219cd77eae3bdfc11e547a552495",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/aaca1430b146219cd77eae3bdfc11e547a552495"
+    },
+    {
+      "path": "test/providers/github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "96880dd9829483db884e38d19d409a8d60254e88",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/96880dd9829483db884e38d19d409a8d60254e88"
+    },
+    {
+      "path": "test/providers/github/Github.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb0b5e18de620dd33db4fb8e7e3465791ea30a43",
+      "size": 2483,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/bb0b5e18de620dd33db4fb8e7e3465791ea30a43"
+    },
+    {
+      "path": "test/tasks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4bd9b27ae1098068e9527fb2e2383696f1e9e011",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/4bd9b27ae1098068e9527fb2e2383696f1e9e011"
+    },
+    {
+      "path": "test/tasks/buildAndUpload",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "70eaa6aea650587bcd607e2de6649257c5ec3118",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/70eaa6aea650587bcd607e2de6649257c5ec3118"
+    },
+    {
+      "path": "test/tasks/buildAndUpload/generatePackagesProps.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6555d0a85fe6e4c67459cca621c38e6f901970fa",
+      "size": 4381,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/6555d0a85fe6e4c67459cca621c38e6f901970fa"
+    },
+    {
+      "path": "test/tasks/generatePublishTx.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dbce6e735fc6894525710c103ee78578f6539d76",
+      "size": 4020,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/dbce6e735fc6894525710c103ee78578f6539d76"
+    },
+    {
+      "path": "test/tasks/gitTags.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ef89ba203720f0cefc1a565c6e38941942c860e",
+      "size": 2379,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/0ef89ba203720f0cefc1a565c6e38941942c860e"
+    },
+    {
+      "path": "test/test-avatar-source.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b80647215c0a4373a0567d89eb9b176d8bfcd7dd",
+      "size": 2594,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/b80647215c0a4373a0567d89eb9b176d8bfcd7dd"
+    },
+    {
+      "path": "test/testUtils.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f75209049d74751c944b59fb125437f9ca513b9",
+      "size": 914,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/6f75209049d74751c944b59fb125437f9ca513b9"
+    },
+    {
+      "path": "test/utils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "18cf4149fb331ba08fdaabdff8d029b5643d1d01",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/18cf4149fb331ba08fdaabdff8d029b5643d1d01"
+    },
+    {
+      "path": "test/utils/cache.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4db0973b381204599680185fb6f91aee3f59381d",
+      "size": 2258,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/4db0973b381204599680185fb6f91aee3f59381d"
+    },
+    {
+      "path": "test/utils/format.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc0602ac87349268d015dfcfce1259c8bb9accfe",
+      "size": 1327,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/bc0602ac87349268d015dfcfce1259c8bb9accfe"
+    },
+    {
+      "path": "test/utils/isPackageNotRegisteredError.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "856a3f80cb0cf37f2f7fc71a95f4ce5d13fb22b5",
+      "size": 1847,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/856a3f80cb0cf37f2f7fc71a95f4ce5d13fb22b5"
+    },
+    {
+      "path": "test/utils/semverToArray.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3e3fc1f8895706cd701dbd18f9256cda2ae8966",
+      "size": 343,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/f3e3fc1f8895706cd701dbd18f9256cda2ae8966"
+    },
+    {
+      "path": "test/utils/shell.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04f5831b6b495bf9cd8197018f1393090620ab0c",
+      "size": 1590,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/04f5831b6b495bf9cd8197018f1393090620ab0c"
+    },
+    {
+      "path": "test/utils/versions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "16598f95609eddd47d9c5d79047b4ad052ed1837",
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/trees/16598f95609eddd47d9c5d79047b4ad052ed1837"
+    },
+    {
+      "path": "test/utils/versions/getNextPackageVersion.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d1993d1f87e94edf976331bd83d58fbd2dcd28b",
+      "size": 1485,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/0d1993d1f87e94edf976331bd83d58fbd2dcd28b"
+    },
+    {
+      "path": "test/utils/versions/increaseFromLocalVersion.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21eba496cfd7ed0d3a973e8f0118d041d5436c74",
+      "size": 2396,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/21eba496cfd7ed0d3a973e8f0118d041d5436c74"
+    },
+    {
+      "path": "test/utils/versions/updateVariantFiles.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e4e9edf1ccbd86a9d85b1bd626c4eeb69b82491",
+      "size": 2156,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/9e4e9edf1ccbd86a9d85b1bd626c4eeb69b82491"
+    },
+    {
+      "path": "tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3af61bd9b05a4d648b8f6b29d46676084295c4ed",
+      "size": 639,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/3af61bd9b05a4d648b8f6b29d46676084295c4ed"
+    },
+    {
+      "path": "yarn.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8e6fe3012e4378e84de62c6b6fc03e99ad495dd",
+      "size": 158033,
+      "url": "https://api.github.com/repos/dappnode/DAppNodeSDK/git/blobs/f8e6fe3012e4378e84de62c6b6fc03e99ad495dd"
+    }
+  ]
+}
