@@ -325,8 +325,7 @@ class ProofGeneratorTest {
         val result = generator.generateProof("", emptyList())
 
         assertTrue(result.isError())
-        result as? Result.Error
-        assertNotNull(result.exception)
+        assertNotNull((result as? Result.Error)?.exception)
     }
 
     // ===== Message Binding Tests =====
