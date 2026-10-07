@@ -3,7 +3,6 @@
 
 plugins {
     id("com.android.application")
-    id("org.jetbrains.kotlin.plugin.compose")
     id("com.google.devtools.ksp")
     kotlin("plugin.serialization")
 }
@@ -164,7 +163,7 @@ dependencies {
     implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
     implementation("com.google.code.gson:gson:2.10.1")
 
-    // Serialization (alternative to Gson) - compatible with Kotlin 2.4.20
+    // Serialization (alternative to Gson) - compatible with Kotlin 1.8.22
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.0")
 
     // Security
