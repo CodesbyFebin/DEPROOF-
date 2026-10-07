@@ -4,9 +4,9 @@ import kotlinx.coroutines.runBlocking
 import org.junit.Assert.*
 import org.junit.Test
 import com.deproof.data.observations.AIZObservation
-import com.deproof.data.observations.AIZMetrics
 import com.deproof.data.observations.FluxObservation
-import com.deproof.data.observations.FluxMetrics
+import com.deproof.data.observations.Metrics
+import com.deproof.data.observations.NodeMetrics
 import com.deproof.data.observations.Observation
 
 class ProofGeneratorTest {
@@ -18,11 +18,12 @@ class ProofGeneratorTest {
     @Test
     fun testGenerateProofWithSingleAIZObservation() = runBlocking {
         val observation = AIZObservation(
+            source = "operator-supplied-cli-stats",
             sourceSha256 = "abc123def456abc123def456abc123def456abc123def456abc123def456abc1",
-            nodeMetrics = AIZMetrics(
+            metrics = Metrics(
                 storageObjectCount = 42,
                 storageSizeBytes = 1048576,
-                upstreamSpeedKbps = 1024.0
+                upstreamSpeedRaw = 1024
             )
         )
 
@@ -43,17 +44,21 @@ class ProofGeneratorTest {
     @Test
     fun testGenerateProofWithMultipleObservations() = runBlocking {
         val aizObs = AIZObservation(
+            source = "operator-supplied-cli-stats",
             sourceSha256 = "abc123def456abc123def456abc123def456abc123def456abc123def456abc1",
-            nodeMetrics = AIZMetrics(
+            metrics = Metrics(
                 storageObjectCount = 100,
                 storageSizeBytes = 5242880,
-                upstreamSpeedKbps = 2048.0
+                upstreamSpeedRaw = 2048
             )
         )
 
         val fluxObs = FluxObservation(
+            source = "operator-flux-node",
             sourceSha256 = "xyz789abc123xyz789abc123xyz789abc123xyz789abc123xyz789abc123xyz78",
-            nodeMetrics = FluxMetrics(
+            endpoint = "192.168.1.100:16127",
+            nodeMetrics = NodeMetrics(
+                nodeId = "flux-node-001",
                 tier = "T1",
                 benchmarkScore = 95,
                 uptime = 604800,
@@ -61,7 +66,7 @@ class ProofGeneratorTest {
                 memoryUsage = 50.0,
                 storageUsage = 70.0,
                 networkBandwidth = 1000,
-                collateralStatus = "ACTIVE"
+                collateralStatus = "LOCKED"
             )
         )
 
@@ -70,7 +75,7 @@ class ProofGeneratorTest {
         assertTrue(result.isSuccess())
         result.getOrNull()?.let { proof ->
             assertEquals(2, proof.observationCount)
-            assertEquals(listOf("AIOZ", "FLUX").sorted(), proof.providers.sorted())
+            assertEquals(listOf("AIOZ", "Flux").sorted(), proof.providers.sorted())
             assertEquals(2, proof.observationDigests.size)
             assertTrue(proof.observationDigests.contains(aizObs.sourceSha256))
             assertTrue(proof.observationDigests.contains(fluxObs.sourceSha256))
@@ -80,11 +85,12 @@ class ProofGeneratorTest {
     @Test
     fun testProofMessageHashIsConsistent() = runBlocking {
         val observation = AIZObservation(
+            source = "operator-supplied-cli-stats",
             sourceSha256 = "abc123def456abc123def456abc123def456abc123def456abc123def456abc1",
-            nodeMetrics = AIZMetrics(
+            metrics = Metrics(
                 storageObjectCount = 42,
                 storageSizeBytes = 1048576,
-                upstreamSpeedKbps = 1024.0
+                upstreamSpeedRaw = 1024
             )
         )
 
@@ -115,11 +121,12 @@ class ProofGeneratorTest {
     @Test
     fun testProofImmutabilityAfterCreation() = runBlocking {
         val observation = AIZObservation(
+            source = "operator-supplied-cli-stats",
             sourceSha256 = "abc123def456abc123def456abc123def456abc123def456abc123def456abc1",
-            nodeMetrics = AIZMetrics(
+            metrics = Metrics(
                 storageObjectCount = 1,
                 storageSizeBytes = 1024,
-                upstreamSpeedKbps = 100.0
+                upstreamSpeedRaw = 100
             )
         )
 
@@ -139,11 +146,12 @@ class ProofGeneratorTest {
     @Test
     fun testProofVersionCorrect() = runBlocking {
         val observation = AIZObservation(
+            source = "operator-supplied-cli-stats",
             sourceSha256 = "abc123def456abc123def456abc123def456abc123def456abc123def456abc1",
-            nodeMetrics = AIZMetrics(
+            metrics = Metrics(
                 storageObjectCount = 1,
                 storageSizeBytes = 1024,
-                upstreamSpeedKbps = 100.0
+                upstreamSpeedRaw = 100
             )
         )
 
@@ -157,11 +165,12 @@ class ProofGeneratorTest {
     @Test
     fun testProofHasUniqueId() = runBlocking {
         val observation = AIZObservation(
+            source = "operator-supplied-cli-stats",
             sourceSha256 = "abc123def456abc123def456abc123def456abc123def456abc123def456abc1",
-            nodeMetrics = AIZMetrics(
+            metrics = Metrics(
                 storageObjectCount = 1,
                 storageSizeBytes = 1024,
-                upstreamSpeedKbps = 100.0
+                upstreamSpeedRaw = 100
             )
         )
 
@@ -181,11 +190,12 @@ class ProofGeneratorTest {
     fun testProofTimestampWithinRange() = runBlocking {
         val before = System.currentTimeMillis()
         val observation = AIZObservation(
+            source = "operator-supplied-cli-stats",
             sourceSha256 = "abc123def456abc123def456abc123def456abc123def456abc123def456abc1",
-            nodeMetrics = AIZMetrics(
+            metrics = Metrics(
                 storageObjectCount = 1,
                 storageSizeBytes = 1024,
-                upstreamSpeedKbps = 100.0
+                upstreamSpeedRaw = 100
             )
         )
 
@@ -203,8 +213,11 @@ class ProofGeneratorTest {
     @Test
     fun testProvidersListSorted() = runBlocking {
         val fluxObs = FluxObservation(
+            source = "operator-flux-node",
             sourceSha256 = "xyz789abc123xyz789abc123xyz789abc123xyz789abc123xyz789abc123xyz78",
-            nodeMetrics = FluxMetrics(
+            endpoint = "192.168.1.100:16127",
+            nodeMetrics = NodeMetrics(
+                nodeId = "flux-node-001",
                 tier = "T1",
                 benchmarkScore = 95,
                 uptime = 604800,
@@ -212,23 +225,24 @@ class ProofGeneratorTest {
                 memoryUsage = 50.0,
                 storageUsage = 70.0,
                 networkBandwidth = 1000,
-                collateralStatus = "ACTIVE"
+                collateralStatus = "LOCKED"
             )
         )
 
         val aizObs = AIZObservation(
+            source = "operator-supplied-cli-stats",
             sourceSha256 = "abc123def456abc123def456abc123def456abc123def456abc123def456abc1",
-            nodeMetrics = AIZMetrics(
+            metrics = Metrics(
                 storageObjectCount = 100,
                 storageSizeBytes = 5242880,
-                upstreamSpeedKbps = 2048.0
+                upstreamSpeedRaw = 2048
             )
         )
 
         val result = generator.generateProof("device-001", listOf(fluxObs, aizObs))
 
         result.getOrNull()?.let { proof ->
-            val expected = listOf("AIOZ", "FLUX")
+            val expected = listOf("AIOZ", "Flux")
             assertEquals(expected, proof.providers)
         }
     }
@@ -236,20 +250,22 @@ class ProofGeneratorTest {
     @Test
     fun testProvidersListDeduped() = runBlocking {
         val aizObs1 = AIZObservation(
+            source = "operator-supplied-cli-stats",
             sourceSha256 = "abc123def456abc123def456abc123def456abc123def456abc123def456abc1",
-            nodeMetrics = AIZMetrics(
+            metrics = Metrics(
                 storageObjectCount = 100,
                 storageSizeBytes = 5242880,
-                upstreamSpeedKbps = 2048.0
+                upstreamSpeedRaw = 2048
             )
         )
 
         val aizObs2 = AIZObservation(
+            source = "operator-supplied-cli-stats",
             sourceSha256 = "def456abc123def456abc123def456abc123def456abc123def456abc123def45",
-            nodeMetrics = AIZMetrics(
+            metrics = Metrics(
                 storageObjectCount = 50,
                 storageSizeBytes = 2621440,
-                upstreamSpeedKbps = 1024.0
+                upstreamSpeedRaw = 1024
             )
         )
 
@@ -266,11 +282,12 @@ class ProofGeneratorTest {
     @Test
     fun testRejectBlankDeviceId() = runBlocking {
         val observation = AIZObservation(
+            source = "operator-supplied-cli-stats",
             sourceSha256 = "abc123def456abc123def456abc123def456abc123def456abc123def456abc1",
-            nodeMetrics = AIZMetrics(
+            metrics = Metrics(
                 storageObjectCount = 1,
                 storageSizeBytes = 1024,
-                upstreamSpeedKbps = 100.0
+                upstreamSpeedRaw = 100
             )
         )
 
@@ -282,11 +299,12 @@ class ProofGeneratorTest {
     @Test
     fun testRejectWhitespaceDeviceId() = runBlocking {
         val observation = AIZObservation(
+            source = "operator-supplied-cli-stats",
             sourceSha256 = "abc123def456abc123def456abc123def456abc123def456abc123def456abc1",
-            nodeMetrics = AIZMetrics(
+            metrics = Metrics(
                 storageObjectCount = 1,
                 storageSizeBytes = 1024,
-                upstreamSpeedKbps = 100.0
+                upstreamSpeedRaw = 100
             )
         )
 
@@ -316,11 +334,12 @@ class ProofGeneratorTest {
     @Test
     fun testCompleteMessageBindingIsNotEmpty() = runBlocking {
         val observation = AIZObservation(
+            source = "operator-supplied-cli-stats",
             sourceSha256 = "abc123def456abc123def456abc123def456abc123def456abc123def456abc1",
-            nodeMetrics = AIZMetrics(
+            metrics = Metrics(
                 storageObjectCount = 42,
                 storageSizeBytes = 1048576,
-                upstreamSpeedKbps = 1024.0
+                upstreamSpeedRaw = 1024
             )
         )
 
@@ -335,11 +354,12 @@ class ProofGeneratorTest {
     @Test
     fun testMessageHashDerivedFromBinding() = runBlocking {
         val observation = AIZObservation(
+            source = "operator-supplied-cli-stats",
             sourceSha256 = "abc123def456abc123def456abc123def456abc123def456abc123def456abc1",
-            nodeMetrics = AIZMetrics(
+            metrics = Metrics(
                 storageObjectCount = 1,
                 storageSizeBytes = 1024,
-                upstreamSpeedKbps = 100.0
+                upstreamSpeedRaw = 100
             )
         )
 
@@ -357,11 +377,12 @@ class ProofGeneratorTest {
     @Test
     fun testNewProofStatusIsGenerated() = runBlocking {
         val observation = AIZObservation(
+            source = "operator-supplied-cli-stats",
             sourceSha256 = "abc123def456abc123def456abc123def456abc123def456abc123def456abc1",
-            nodeMetrics = AIZMetrics(
+            metrics = Metrics(
                 storageObjectCount = 1,
                 storageSizeBytes = 1024,
-                upstreamSpeedKbps = 100.0
+                upstreamSpeedRaw = 100
             )
         )
 
@@ -375,11 +396,12 @@ class ProofGeneratorTest {
     @Test
     fun testCreatedAtTimestampSet() = runBlocking {
         val observation = AIZObservation(
+            source = "operator-supplied-cli-stats",
             sourceSha256 = "abc123def456abc123def456abc123def456abc123def456abc123def456abc1",
-            nodeMetrics = AIZMetrics(
+            metrics = Metrics(
                 storageObjectCount = 1,
                 storageSizeBytes = 1024,
-                upstreamSpeedKbps = 100.0
+                upstreamSpeedRaw = 100
             )
         )
 
@@ -401,17 +423,21 @@ class ProofGeneratorTest {
         val obs2Digest = "xyz789abc123xyz789abc123xyz789abc123xyz789abc123xyz789abc123xyz78"
 
         val aizObs = AIZObservation(
+            source = "operator-supplied-cli-stats",
             sourceSha256 = obs1Digest,
-            nodeMetrics = AIZMetrics(
+            metrics = Metrics(
                 storageObjectCount = 100,
                 storageSizeBytes = 5242880,
-                upstreamSpeedKbps = 2048.0
+                upstreamSpeedRaw = 2048
             )
         )
 
         val fluxObs = FluxObservation(
+            source = "operator-flux-node",
             sourceSha256 = obs2Digest,
-            nodeMetrics = FluxMetrics(
+            endpoint = "192.168.1.100:16127",
+            nodeMetrics = NodeMetrics(
+                nodeId = "flux-node-001",
                 tier = "T1",
                 benchmarkScore = 95,
                 uptime = 604800,
@@ -419,7 +445,7 @@ class ProofGeneratorTest {
                 memoryUsage = 50.0,
                 storageUsage = 70.0,
                 networkBandwidth = 1000,
-                collateralStatus = "ACTIVE"
+                collateralStatus = "LOCKED"
             )
         )
 
@@ -435,11 +461,12 @@ class ProofGeneratorTest {
     @Test
     fun testSignatureNullByDefault() = runBlocking {
         val observation = AIZObservation(
+            source = "operator-supplied-cli-stats",
             sourceSha256 = "abc123def456abc123def456abc123def456abc123def456abc123def456abc1",
-            nodeMetrics = AIZMetrics(
+            metrics = Metrics(
                 storageObjectCount = 1,
                 storageSizeBytes = 1024,
-                upstreamSpeedKbps = 100.0
+                upstreamSpeedRaw = 100
             )
         )
 

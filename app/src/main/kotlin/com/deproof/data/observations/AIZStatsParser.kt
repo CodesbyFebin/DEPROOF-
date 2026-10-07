@@ -50,8 +50,7 @@ object AIZStatsParser : IStatsParser {
                 rewardAsset = "AIOZ",
                 rewardStatus = "PENDING",
                 skrPaymentStatus = "NOT_SUBMITTED",
-                staleFlag = false,
-                nodeMetrics = parseMetrics(stats)
+                metrics = parseMetrics(stats)
             )
 
             Log.d(TAG, "Parsed AIOZ observation: ${observation.nodeMetrics}")
@@ -112,15 +111,15 @@ object AIZStatsParser : IStatsParser {
         }
     }
 
-    private fun parseMetrics(stats: Map<String, String>): AIZMetrics {
+    private fun parseMetrics(stats: Map<String, String>): Metrics {
         val storageObjectCount = stats["storage_object_count"]!!.toLong()
         val storageSizeBytes = stats["storage_size_bytes"]!!.toLong()
-        val upstreamSpeedKbps = stats["upstream_speed_kbps"]!!.toDouble()
+        val upstreamSpeedRaw = stats["upstream_speed_kbps"]!!.toLong()
 
-        return AIZMetrics(
+        return Metrics(
             storageObjectCount = storageObjectCount,
             storageSizeBytes = storageSizeBytes,
-            upstreamSpeedKbps = upstreamSpeedKbps
+            upstreamSpeedRaw = upstreamSpeedRaw
         )
     }
 
@@ -129,32 +128,3 @@ object AIZStatsParser : IStatsParser {
         return digest.joinToString("") { "%02x".format(it) }
     }
 }
-
-/**
- * AIOZ-specific metrics
- */
-data class AIZMetrics(
-    val storageObjectCount: Long,    // Number of storage objects
-    val storageSizeBytes: Long,      // Total storage size in bytes
-    val upstreamSpeedKbps: Double    // Upstream bandwidth in Kbps
-)
-
-/**
- * AIOZ observation implementing unified Observation interface
- */
-data class AIZObservation(
-    override val schema: String = "deproof-aioz-observation-v1",
-    override val provider: String = "AIOZ",
-    override val source: String = "operator-supplied-cli-stats",
-    override val timestamp: Long = System.currentTimeMillis(),
-    override val assurance: String = "LOCAL_OBSERVATION",
-    override val sourceSha256: String,
-    override val endpoint: String = "localhost:aiz-cli",
-    override val signature: String? = null,
-    override val independentVerification: String = "NOT_RUN",
-    override val rewardAsset: String = "AIOZ",
-    override val rewardStatus: String = "PENDING",
-    override val skrPaymentStatus: String = "NOT_SUBMITTED",
-    val nodeMetrics: AIZMetrics,
-    val staleFlag: Boolean = false
-) : Observation

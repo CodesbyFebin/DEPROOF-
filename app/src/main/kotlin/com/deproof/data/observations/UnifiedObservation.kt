@@ -23,7 +23,7 @@ interface Observation {
     // Rewards (keep separate per provider)
     val rewardAsset: String                // Provider-native reward asset
     val rewardStatus: String               // "PENDING", "CLAIMED", etc.
-    val skrPaymentStatus: String = "NOT_SUBMITTED"  // Always separate
+    val skrPaymentStatus: String           // Always separate from rewards
 }
 
 /**

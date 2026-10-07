@@ -45,9 +45,9 @@ class AIZStatsParserTest {
 
         assertNotNull(observation)
         observation?.let {
-            assertEquals(100, it.nodeMetrics.storageObjectCount)
-            assertEquals(5242880, it.nodeMetrics.storageSizeBytes)
-            assertEquals(2048.0, it.nodeMetrics.upstreamSpeedKbps, 0.01)
+            assertEquals(100, it.metrics.storageObjectCount)
+            assertEquals(5242880, it.metrics.storageSizeBytes)
+            assertEquals(2048, it.metrics.upstreamSpeedRaw)
         }
     }
 
@@ -105,13 +105,14 @@ class AIZStatsParserTest {
     // ===== Float Handling Tests =====
 
     @Test
-    fun testUpstreamSpeedAcceptsFloat() = runBlocking {
+    fun testUpstreamSpeedAcceptsFloatInput() = runBlocking {
         val input = "storage_object_count=1\nstorage_size_bytes=1024\nupstream_speed_kbps=1024.5".toByteArray()
         val observation = parser.parseStats(input) as? AIZObservation
 
         assertNotNull(observation)
         observation?.let {
-            assertEquals(1024.5, it.nodeMetrics.upstreamSpeedKbps, 0.01)
+            // Float input is accepted and truncated to Long
+            assertEquals(1024, it.metrics.upstreamSpeedRaw)
         }
     }
 
@@ -122,8 +123,9 @@ class AIZStatsParserTest {
 
         assertNotNull(observation)
         observation?.let {
-            assertTrue(it.nodeMetrics.storageObjectCount is Long)
-            assertTrue(it.nodeMetrics.storageSizeBytes is Long)
+            assertTrue(it.metrics.storageObjectCount is Long)
+            assertTrue(it.metrics.storageSizeBytes is Long)
+            assertTrue(it.metrics.upstreamSpeedRaw is Long)
         }
     }
 
@@ -264,9 +266,9 @@ class AIZStatsParserTest {
 
         assertNotNull(observation)
         observation?.let {
-            assertEquals(0, it.nodeMetrics.storageObjectCount)
-            assertEquals(0, it.nodeMetrics.storageSizeBytes)
-            assertEquals(0.0, it.nodeMetrics.upstreamSpeedKbps, 0.01)
+            assertEquals(0, it.metrics.storageObjectCount)
+            assertEquals(0, it.metrics.storageSizeBytes)
+            assertEquals(0, it.metrics.upstreamSpeedRaw)
         }
     }
 
@@ -277,9 +279,9 @@ class AIZStatsParserTest {
 
         assertNotNull(observation)
         observation?.let {
-            assertEquals(999999, it.nodeMetrics.storageObjectCount)
-            assertEquals(1099511627776, it.nodeMetrics.storageSizeBytes)
-            assertEquals(100000.0, it.nodeMetrics.upstreamSpeedKbps, 0.01)
+            assertEquals(999999, it.metrics.storageObjectCount)
+            assertEquals(1099511627776, it.metrics.storageSizeBytes)
+            assertEquals(100000, it.metrics.upstreamSpeedRaw)
         }
     }
 

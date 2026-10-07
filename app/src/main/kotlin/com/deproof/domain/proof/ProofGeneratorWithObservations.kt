@@ -86,15 +86,15 @@ object ProofGeneratorWithObservations : IProofGenerator {
 
     private fun serializeProofInput(input: ProofInput): ByteArray {
         // Create deterministic serialization for complete message binding
-        val parts = listOf(
+        val parts = mutableListOf(
             "deviceId=${input.deviceId}",
             "timestamp=${input.timestamp}",
-            "nonce=${input.randomNonce.joinToString("") { "%02x".format(it) }}",
-            "observationCount=${input.observations.size}",
-            input.observations.joinToString("|") { obs ->
-                "provider=${obs.provider};digest=${obs.sourceSha256.take(32)}"
-            }
+            "nonce=${input.randomNonce.joinToString("") { "%02x".format(it) }}"
         )
+
+        input.observations.forEach { obs ->
+            parts.add("provider=${obs.provider};digest=${obs.sourceSha256.take(32)}")
+        }
 
         val serialized = parts.joinToString("\n")
         return serialized.toByteArray(Charsets.UTF_8)

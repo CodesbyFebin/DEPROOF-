@@ -2,6 +2,7 @@ package com.deproof.ui.screen
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -129,7 +130,7 @@ private fun AIZMetricsSection(observation: AIZObservation) {
             color = Color(0xFF00D9FF)  // cyan
         )
 
-        val metrics = observation.nodeMetrics
+        val metrics = observation.metrics
         StatRow(
             "Storage Objects",
             metrics.storageObjectCount.toString()
@@ -140,18 +141,8 @@ private fun AIZMetricsSection(observation: AIZObservation) {
         )
         StatRow(
             "Upstream Speed",
-            String.format("%.2f Kbps", metrics.upstreamSpeedKbps)
+            "${metrics.upstreamSpeedRaw} Kbps"
         )
-
-        // Stale flag if applicable
-        if (observation.staleFlag) {
-            Spacer(modifier = Modifier.height(8.dp))
-            StatRow(
-                "Status",
-                "STALE (Cached)",
-                color = Color(0xFFFF6B6B)  // red
-            )
-        }
     }
 }
 
@@ -176,7 +167,7 @@ private fun FluxMetricsSection(observation: FluxObservation) {
         StatRow("Benchmark Score", metrics.benchmarkScore.toString())
         StatRow(
             "Uptime",
-            String.format("%,d seconds", metrics.uptime)
+            "${String.format("%,d", metrics.uptime)} seconds"
         )
 
         Spacer(modifier = Modifier.height(8.dp))
@@ -187,24 +178,14 @@ private fun FluxMetricsSection(observation: FluxObservation) {
             color = Color(0xFF00D9FF)
         )
 
-        StatRow("CPU Usage", String.format("%.1f%%", metrics.cpuUsage))
-        StatRow("Memory Usage", String.format("%.1f%%", metrics.memoryUsage))
-        StatRow("Storage Usage", String.format("%.1f%%", metrics.storageUsage))
+        StatRow("CPU Usage", "${String.format("%.1f", metrics.cpuUsage)}%")
+        StatRow("Memory Usage", "${String.format("%.1f", metrics.memoryUsage)}%")
+        StatRow("Storage Usage", "${String.format("%.1f", metrics.storageUsage)}%")
         StatRow(
             "Network Bandwidth",
-            String.format("%d Mbps", metrics.networkBandwidth)
+            "${metrics.networkBandwidth} Mbps"
         )
         StatRow("Collateral Status", metrics.collateralStatus)
-
-        // Stale flag if applicable
-        if (observation.staleFlag) {
-            Spacer(modifier = Modifier.height(8.dp))
-            StatRow(
-                "Status",
-                "STALE (Cached)",
-                color = Color(0xFFFF6B6B)  // red
-            )
-        }
     }
 }
 
@@ -280,7 +261,7 @@ private fun StatRow(
             text = label,
             fontSize = 12.sp,
             color = Color(0xFF7A8199),
-            weight = FontWeight.Medium
+            fontWeight = FontWeight.Medium
         )
         Text(
             text = value,
