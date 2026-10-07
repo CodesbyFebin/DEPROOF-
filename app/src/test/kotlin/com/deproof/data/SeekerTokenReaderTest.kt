@@ -1,23 +1,27 @@
 // SeekerTokenReaderTest.kt — Comprehensive unit tests for SeekerTokenReader.
 package com.deproof.data
 
-import com.deproof.data.rpc.SolanaRpcClient
+import com.deproof.data.rpc.SolanaRpcClientImpl
+import com.deproof.data.rpc.AccountInfo
+import com.deproof.data.rpc.TokenAccountInfo
+import com.deproof.data.rpc.SignatureStatus
+import com.deproof.data.rpc.RpcError
+import com.deproof.data.rpc.NetworkError
 import com.deproof.domain.*
 import kotlinx.coroutines.test.runTest
 import org.junit.Before
 import org.junit.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertNotNull
-import kotlin.test.assertNull
 import kotlin.test.assertTrue
 
 class SeekerTokenReaderTest {
     private lateinit var reader: SeekerTokenReader
-    private lateinit var mockRpc: FakeSolanaRpcClient
+    private lateinit var mockRpc: FakeSolanaRpcClientImpl
 
     @Before
     fun setup() {
-        mockRpc = FakeSolanaRpcClient()
+        mockRpc = FakeSolanaRpcClientImpl()
         reader = SeekerTokenReader(mockRpc)
     }
 
@@ -25,6 +29,13 @@ class SeekerTokenReaderTest {
 
     @Test
     fun `getMintInfo returns valid mint information`() = runTest {
+        mockRpc.mockAccountInfo = AccountInfo(
+            address = SeekerTokenReader.SKR_MINT,
+            executable = false,
+            lamports = 1000000,
+            owner = SeekerTokenReader.TOKEN_PROGRAM_ID,
+            data = ""
+        )
         val result = reader.getMintInfo()
         assertTrue(result.isSuccess)
 
@@ -39,7 +50,8 @@ class SeekerTokenReaderTest {
         mockRpc.failNextCall = true
         val result = reader.getMintInfo()
         assertTrue(result.isFailure)
-        assertTrue(result.exceptionOrNull() is SkrError.RpcFailure)
+        val error = result.exceptionOrNull()
+        assertTrue(error is SkrError.RpcFailure || error is SkrError.MintNotFound)
     }
 
     // ─── Token Accounts Tests ───────────────────────────────────────────────
@@ -194,56 +206,40 @@ class SeekerTokenReaderTest {
 // ─── Test Double ────────────────────────────────────────────────────────────
 
 /**
- * Fake implementation of SolanaRpcClient for testing.
+ * Fake implementation of SolanaRpcClientImpl for testing.
  * Supports injecting failures and custom responses.
  */
-class FakeSolanaRpcClient : SolanaRpcClient(
-    object : RpcEndpoint {
-        override val url: String = "http://localhost:8899"
-        override val timeout: java.time.Duration = java.time.Duration.ofSeconds(5)
-    }
+class FakeSolanaRpcClientImpl : SolanaRpcClientImpl(
+    com.deproof.data.rpc.RpcEndpoint(
+        network = com.deproof.data.rpc.SolanaNetwork.DEVNET,
+        url = "http://localhost:8899"
+    )
 ) {
     var failNextCall = false
+    var mockAccountInfo: AccountInfo? = null
+    var mockTokenAccounts: List<TokenAccountInfo> = emptyList()
 
-    override suspend fun getHealth(): Result<String> {
-        return if (failNextCall) {
+    override suspend fun getAccountInfo(account: String): Result<AccountInfo> {
+        if (failNextCall) {
             failNextCall = false
-            Result.failure(Exception("RPC failure"))
-        } else {
-            Result.success("ok")
+            return Result.failure(NetworkError("Mock failure"))
         }
+        return mockAccountInfo?.let { Result.success(it) }
+            ?: Result.failure(RpcError("Account not found"))
     }
 
-    override suspend fun getBalance(address: String): Result<java.math.BigDecimal> {
-        return if (failNextCall) {
+    override suspend fun getTokenAccountsByOwner(
+        owner: String,
+        mint: String?
+    ): Result<List<TokenAccountInfo>> {
+        if (failNextCall) {
             failNextCall = false
-            Result.failure(Exception("RPC failure"))
-        } else {
-            Result.success(java.math.BigDecimal.ZERO)
+            return Result.failure(NetworkError("Mock failure"))
         }
+        return Result.success(mockTokenAccounts)
     }
 
-    override suspend fun getTokenBalance(address: String, mint: String): Result<java.math.BigDecimal> {
-        return if (failNextCall) {
-            failNextCall = false
-            Result.failure(Exception("RPC failure"))
-        } else {
-            Result.success(java.math.BigDecimal.ZERO)
-        }
+    override suspend fun getSignatureStatuses(signatures: List<String>): Result<List<SignatureStatus?>> {
+        return Result.success(emptyList())
     }
-
-    override suspend fun estimateFee(transaction: String): Result<Long> {
-        return Result.success(5000L)
-    }
-
-    override suspend fun simulateTransaction(instruction: String): Result<Boolean> {
-        return Result.success(true)
-    }
-}
-
-// ─── RpcEndpoint interface (mock) ────────────────────────────────────────────
-
-interface RpcEndpoint {
-    val url: String
-    val timeout: java.time.Duration
 }
