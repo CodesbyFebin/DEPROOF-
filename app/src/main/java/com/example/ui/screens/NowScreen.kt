@@ -15,7 +15,6 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.chain.RpcClient
 import com.example.chain.SignatureInfo
 import com.example.data.AppDatabase
 import com.example.domain.WalletSession
@@ -42,8 +41,8 @@ fun NowScreen(
     var signatures by remember { mutableStateOf<List<SignatureInfo>>(emptyList()) }
     var isLoading by remember { mutableStateOf(false) }
     var error by remember { mutableStateOf<String?>(null) }
+    var showPlaceholder by remember { mutableStateOf(false) }
 
-    val rpcClient = remember { RpcClient() }
     val scope = rememberCoroutineScope()
 
     fun loadAccount() {
@@ -55,18 +54,9 @@ fun NowScreen(
         scope.launch {
             isLoading = true
             error = null
+            showPlaceholder = true
             try {
-                val summary = rpcClient.getAccountInfo(address).getOrNull()
-                if (summary != null) {
-                    solBalance = summary.solBalance
-                    skrBalance = summary.skrBalance
-                    slot = summary.slot
-
-                    val sigs = rpcClient.getSignatures(address, 10).getOrNull() ?: emptyList()
-                    signatures = sigs
-                } else {
-                    error = "Failed to load account"
-                }
+                isLoading = false
             } catch (e: Exception) {
                 error = "Error: ${e.message}"
             } finally {
@@ -123,37 +113,17 @@ fun NowScreen(
         }
 
         // Account Summary
-        if (solBalance > 0L || skrBalance > 0L) {
+        if (showPlaceholder) {
             Card(
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(bottom = 16.dp)
             ) {
                 Column(modifier = Modifier.padding(16.dp)) {
-                    Text("Balances", style = MaterialTheme.typography.titleMedium)
-                    Spacer(modifier = Modifier.height(8.dp))
-                    Text(
-                        formatSol(solBalance),
-                        fontFamily = FontFamily.Monospace,
-                        style = MaterialTheme.typography.bodyMedium
-                    )
-                    Text(
-                        formatSkr(skrBalance),
-                        fontFamily = FontFamily.Monospace,
-                        style = MaterialTheme.typography.bodyMedium
-                    )
+                    Text("Address: ${shortKey(address)}", style = MaterialTheme.typography.bodySmall, fontFamily = FontFamily.Monospace)
                     Spacer(modifier = Modifier.height(12.dp))
-                    Text(
-                        "Slot: $slot",
-                        style = MaterialTheme.typography.bodySmall,
-                        color = Color.Gray
-                    )
-                    Text(
-                        "Address: ${shortKey(address)}",
-                        style = MaterialTheme.typography.bodySmall,
-                        color = Color.Gray,
-                        fontFamily = FontFamily.Monospace
-                    )
+                    Text("RPC integration coming soon", style = MaterialTheme.typography.bodyMedium, color = Color.Gray)
+                    Text("Balances and signatures will appear here once RPC is configured", style = MaterialTheme.typography.bodySmall, color = Color.Gray)
                 }
             }
         }

@@ -19,6 +19,8 @@ import com.example.domain.WalletSession
 import com.example.ui.theme.DeproofTheme
 import com.example.ui.screens.ReviewScreen
 import com.example.ui.screens.ReceiptsScreen
+import com.example.ui.screens.NowScreen
+import com.example.chain.SignatureInfo
 
 class MainActivity : ComponentActivity() {
     private lateinit var database: AppDatabase
@@ -42,11 +44,16 @@ class MainActivity : ComponentActivity() {
                             Tab(
                                 selected = selectedTab.value == 0,
                                 onClick = { selectedTab.value = 0 },
-                                text = { Text("Review") }
+                                text = { Text("Now") }
                             )
                             Tab(
                                 selected = selectedTab.value == 1,
                                 onClick = { selectedTab.value = 1 },
+                                text = { Text("Review") }
+                            )
+                            Tab(
+                                selected = selectedTab.value == 2,
+                                onClick = { selectedTab.value = 2 },
                                 text = { Text("Receipts") }
                             )
                         }
@@ -54,17 +61,26 @@ class MainActivity : ComponentActivity() {
                 ) { padding ->
                     Box(modifier = Modifier.fillMaxSize().padding(padding)) {
                         when (selectedTab.value) {
-                            0 -> ReviewScreen(
+                            0 -> NowScreen(
+                                onSignatureTap = { sig ->
+                                    // TODO: Load transaction details from signature
+                                    selectedTab.value = 1
+                                },
+                                database = database,
+                                onWalletChanged = { session -> walletSession.value = session },
+                                walletSession = walletSession.value
+                            )
+                            1 -> ReviewScreen(
                                 verdict = reviewVerdict.value,
                                 programId = reviewProgramId.value,
                                 accounts = reviewAccounts.value,
                                 data = reviewData.value,
-                                onReject = { selectedTab.value = 1 },
-                                onApprove = { selectedTab.value = 1 },
+                                onReject = { selectedTab.value = 2 },
+                                onApprove = { selectedTab.value = 2 },
                                 database = database,
                                 walletSession = walletSession.value
                             )
-                            1 -> ReceiptsScreen(database = database)
+                            2 -> ReceiptsScreen(database = database)
                         }
                     }
                 }
