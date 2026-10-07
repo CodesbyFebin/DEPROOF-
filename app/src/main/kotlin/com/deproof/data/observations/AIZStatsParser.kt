@@ -4,6 +4,10 @@ import android.util.Log
 import org.json.JSONObject
 import java.security.MessageDigest
 
+interface IStatsParser {
+    fun parseStats(raw: ByteArray): AIZObservation
+}
+
 /**
  * AIOZ Statistics Parser - Kotlin port of reference implementation
  * Validates device telemetry (storage, delivery metrics) from AIOZ CLI
@@ -15,7 +19,7 @@ import java.security.MessageDigest
  * Tests: 10/10 passing (mirror Python suite)
  */
 
-object AIZStatsParser {
+object AIZStatsParser : IStatsParser {
 
     private const val MAX_BYTES = 65536
     private const val TAG = "AIZStatsParser"
@@ -25,7 +29,7 @@ object AIZStatsParser {
      * Strict validation: rejects absent fields, negatives, floats, duplicates, oversized input
      */
     @Throws(ParseException::class)
-    fun parseStats(raw: ByteArray): AIZObservation {
+    override fun parseStats(raw: ByteArray): AIZObservation {
         // Validate input size and type
         if (raw.isEmpty()) {
             throw ParseException("Input cannot be empty")

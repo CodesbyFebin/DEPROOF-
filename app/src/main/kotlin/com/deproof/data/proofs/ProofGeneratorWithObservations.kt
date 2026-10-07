@@ -3,6 +3,7 @@ package com.deproof.data.proofs
 import android.util.Log
 import com.deproof.data.observations.AIZObservation
 import com.deproof.data.observations.AIZStatsParser
+import com.deproof.data.observations.IStatsParser
 import com.deproof.data.observations.ParseException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -17,7 +18,7 @@ import kotlinx.coroutines.withContext
  * - Assurance level (LOCAL_OBSERVATION)
  */
 class ProofGenerator(
-    private val parser: AIZStatsParser,
+    private val parser: IStatsParser = AIZStatsParser,
     private val gnarkService: GnarkService,
     private val solanaClient: SolanaClient
 ) {
