@@ -196,11 +196,14 @@ dependencies {
 
     // Instrumented Tests (Android Device Tests)
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.ext:junit-ktx:1.1.5")
+    androidTestImplementation("androidx.test:runner:1.5.2")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     androidTestImplementation("androidx.test.espresso:espresso-intents:3.5.1")
     androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.5.4")
     androidTestImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.2")
     androidTestImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.2")
+    androidTestImplementation("io.mockk:mockk-android:1.13.7")
 
     // Debug
     debugImplementation("androidx.compose.ui:ui-tooling:1.5.4")

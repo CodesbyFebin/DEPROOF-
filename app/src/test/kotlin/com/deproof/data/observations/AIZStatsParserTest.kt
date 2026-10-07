@@ -1,4 +1,3 @@
-import kotlinx.coroutines.runBlocking
 package com.deproof.data.observations
 
 import kotlinx.coroutines.runBlocking
