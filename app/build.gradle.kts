@@ -142,7 +142,7 @@ dependencies {
     // implementation("com.solanomobile:walletadapterkit:2.0.7")
 
     // JSON processing (Jackson)
-    implementation("com.fasterxml.jackson.core:jackson-databind:2.16.1")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.15.3")
 
     // BouncyCastle (Ed25519 signing)
     implementation("org.bouncycastle:bcprov-jdk15on:1.70")
