@@ -12,7 +12,7 @@
   "sourceRepository": "https://github.com/CodesbyFebin/DEPROOF-.git",
   "builtBy": "CodesbyFebin",
   "contactEmail": "codesbyfebin@gmail.com",
-  "debugApkSha256": "99b062903a7aef396f619be85ead8eabfd19f056f847bf325c5ac5e87e9ff2aa",
+  "debugApkSha256": "2eeae1f28bfb89b73b5411a25eac9d5dc6cd02f9488d339028bb379ac541cc30",
   "releaseApkSha256": "b5dd0df690cf042eeed228a6f10b9916d7de665d3c3e1ce6fb345bd935dcef21",
   "releaseApkNote": "Unsigned in this build; keystore at /home/codesbyfebin/keys/deproof-release.jks (outside repository)",
   "signingKeyLocation": "/home/codesbyfebin/keys/deproof-release.jks",

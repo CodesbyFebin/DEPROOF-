@@ -11,7 +11,7 @@
 adb install -r app/build/outputs/apk/debug/app-debug.apk
 ```
 
-SHA-256: `99b062903a7aef396f619be85ead8eabfd19f056f847bf325c5ac5e87e9ff2aa`
+SHA-256: `2eeae1f28bfb89b73b5411a25eac9d5dc6cd02f9488d339028bb379ac541cc30`
 
 Minimum Android version: API 28 (Android 9.0)
 
@@ -92,7 +92,7 @@ cd DEPROOF-
 git checkout c95c4f1
 ./gradlew :app:assembleDebug
 sha256sum app/build/outputs/apk/debug/app-debug.apk
-# Expected: 99b062903a7aef396f619be85ead8eabfd19f056f847bf325c5ac5e87e9ff2aa
+# Expected: 2eeae1f28bfb89b73b5411a25eac9d5dc6cd02f9488d339028bb379ac541cc30
 ```
 
 Note: The SHA-256 will match only if built with the same Gradle/AGP version and in the same environment. Minor differences in build toolchain may produce a different checksum; the source is the authoritative artifact.

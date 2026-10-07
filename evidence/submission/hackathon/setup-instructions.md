@@ -16,7 +16,7 @@
 adb install -r app/build/outputs/apk/debug/app-debug.apk
 ```
 
-APK SHA-256: `99b062903a7aef396f619be85ead8eabfd19f056f847bf325c5ac5e87e9ff2aa`
+APK SHA-256: `2eeae1f28bfb89b73b5411a25eac9d5dc6cd02f9488d339028bb379ac541cc30`
 
 ## Build from Source
 

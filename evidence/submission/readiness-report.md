@@ -35,15 +35,20 @@ Three compilation errors were fixed before the build was confirmed:
 
 | Suite | Tests | Failures | Errors | Skipped |
 |-------|-------|----------|--------|---------|
-| Kotlin JVM (`testDebugUnitTest`) | **125** | 0 | 0 | 0 |
+| Kotlin JVM (`testDebugUnitTest`) | **155** | 0 | 0 | 0 |
 | Go unit tests (`internal/agent` + `cmd`) | **46** | 0 | 0 | 0 |
 | SKR qualification gate | **16/16 PASS** | — | — | 3 NOT_APPLICABLE |
+| Python migration tests (`tools/test_migrations.py`) | **3** | 0 | 0 | 0 |
 
 ### Key Test Suites
 
 - `SkrPaymentJobTest` (Kotlin): 34 tests covering payment job construction, authorization enforcement, and serialization
+- `RpcBehaviorTest` (Kotlin): 13 tests covering SKR balance aggregation, history limits, mainnet locks, cluster-mismatch gating, shortKey formatting (C005-C010, C013, C021, C023, C039, C062, C093, C094)
+- `TransactionDetailTest` (Kotlin): 7 tests covering getTransaction version support, confirmation status, meta.err propagation, slot/blockTime (C014, C016, C017, C018)
+- `ReceiptOutcomeTest` (Kotlin): 10 tests covering all four receipt outcomes — REJECTED (F075), OBSERVED (F076), LOCAL_EVIDENCE_SIGNED (F077), SUBMITTED (F078) — and their provenance invariants
 - Go SKR tests: 14 tests covering `TestBuildSkrPaymentJob`, `TestDuplicate`, `TestChanged`, `TestParse`, `TestDecimal`, `TestTransferCheckedInstructionEncoding`, `TestSkrPaymentJobJSONRoundTrip`, `TestSkrMintConstant`, `TestSummaryDoesNotImplyApproval`
-- Other Kotlin suites: BackupRepositoryTest (9), BackupTest (8), CoreTest (12), NodeProtocolTest (9), plus 12 more suites
+- `test_migrations.py` (Python): 3 tests covering Room schema migration, rollback safety, workflow draft persistence
+- Other Kotlin suites: BackupRepositoryTest (9), BackupTest (8), CoreTest (12), NodeProtocolTest (9), ConnectorTest (5), plus 11 more suites
 
 ---
 
@@ -119,7 +124,7 @@ Files at `evidence/submission/hackathon/`:
 
 **APK**:
 - Debug APK: `app/build/outputs/apk/debug/app-debug.apk`
-- SHA-256: `99b062903a7aef396f619be85ead8eabfd19f056f847bf325c5ac5e87e9ff2aa`
+- SHA-256: `2eeae1f28bfb89b73b5411a25eac9d5dc6cd02f9488d339028bb379ac541cc30`
 
 **Source URL**: https://github.com/CodesbyFebin/DEPROOF-.git
 **Tested commit**: `c95c4f1`
@@ -152,7 +157,7 @@ Files at `evidence/submission/store/`:
 
 | APK | Path | SHA-256 | Signed |
 |-----|------|---------|--------|
-| Debug | `app/build/outputs/apk/debug/app-debug.apk` | `99b062903a7aef396f619be85ead8eabfd19f056f847bf325c5ac5e87e9ff2aa` | Debug keystore (~/.android/debug.keystore) |
+| Debug | `app/build/outputs/apk/debug/app-debug.apk` | `2eeae1f28bfb89b73b5411a25eac9d5dc6cd02f9488d339028bb379ac541cc30` | Debug keystore (~/.android/debug.keystore) |
 | Release | `app/build/outputs/apk/release/app-release-unsigned.apk` | `b5dd0df690cf042eeed228a6f10b9916d7de665d3c3e1ce6fb345bd935dcef21` | UNSIGNED — env vars not set |
 
 ---
@@ -243,4 +248,5 @@ Both platforms advance to GO only when all gates in section 11 are checked.
 
 *Report generated 2026-10-07 by Claude Code (Sonnet 4.6)*
 *Updated 2026-10-07: separated CLOCK IN / dApp Store readiness; corrected screenshot requirement to 4–8 (dApp Store) and 4+ (CLOCK IN); added per-gate status table.*
+*Updated 2026-10-07 (Phase C complete): criterion-test-links.json covers 115/336 registry criteria (23 F, 60 C, 8 FN, 13 EF, 11 E) with 193 named test method references across Kotlin JVM + Go. EF001–EF004/EF008/EF010 linked to Go node-agent tests; FN059 (runConnector) linked to ConnectorTest + adapter_test.go; E-series ecosystem requirements linked to NodeProtocol/ProofDispatch/ProofJob tests. Remaining 221 criteria are device-only (MWA/wallet), UI/instrumented, or P3 extension functions not yet implemented.*
 *Built by CodesbyFebin*

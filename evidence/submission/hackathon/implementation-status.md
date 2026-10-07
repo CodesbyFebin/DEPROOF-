@@ -9,7 +9,7 @@
 
 | Artifact | Status | SHA-256 |
 |----------|--------|---------|
-| Debug APK (`app-debug.apk`) | PASS — assembleDebug | `99b062903a7aef396f619be85ead8eabfd19f056f847bf325c5ac5e87e9ff2aa` |
+| Debug APK (`app-debug.apk`) | PASS — assembleDebug | `2eeae1f28bfb89b73b5411a25eac9d5dc6cd02f9488d339028bb379ac541cc30` |
 | Release APK (`app-release-unsigned.apk`) | PASS — assembleRelease (unsigned; keystore at `/home/codesbyfebin/keys/deproof-release.jks`) | `b5dd0df690cf042eeed228a6f10b9916d7de665d3c3e1ce6fb345bd935dcef21` |
 | Go node-agent (`deproof-node`) | PASS — `go build ./...` | n/a |
 
@@ -19,7 +19,7 @@
 
 | Suite | Tests | Failures | Notes |
 |-------|-------|----------|-------|
-| Kotlin JVM (testDebugUnitTest) | 125 | 0 | Includes 34 SkrPaymentJobTest |
+| Kotlin JVM (testDebugUnitTest) | 155 | 0 | Includes 34 SkrPaymentJobTest; +13 RpcBehaviorTest; +7 TransactionDetailTest; +10 ReceiptOutcomeTest |
 | Go unit tests (internal/agent + cmd) | 46 | 0 | Includes 14 SKR-specific tests |
 | SKR qualification gate | 16/16 PASS | — | 3 manual gates BLOCKED (require live RPC/devnet) |
 
