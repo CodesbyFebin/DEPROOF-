@@ -4,7 +4,6 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.plugin.compose")
-    id("com.google.devtools.ksp")
     kotlin("plugin.serialization")
 }
 
@@ -145,7 +144,7 @@ dependencies {
     // Room Database
     implementation("androidx.room:room-runtime:2.8.4")
     implementation("androidx.room:room-ktx:2.8.4")
-    ksp("androidx.room:room-compiler:2.8.4")
+    // ksp("androidx.room:room-compiler:2.8.4") // Disabled: KSP version compatibility issues
 
     // DataStore (Preferences)
     implementation("androidx.datastore:datastore-preferences:1.0.0")
@@ -233,9 +232,9 @@ tasks.register("printBuildInfo") {
     }
 }
 
-ksp {
-    arg("room.schemaLocation", "$projectDir/schemas")
-}
+// ksp {
+//     arg("room.schemaLocation", "$projectDir/schemas")
+// } // Disabled: KSP version compatibility issues
 
 // Run before build
 tasks.whenTaskAdded {
