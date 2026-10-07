@@ -1,4 +1,10 @@
 package com.deproof.ui.screen
+import org.junit.Test
+import kotlin.test.assertEquals
+import kotlin.test.assertNotNull
+import kotlin.test.assertNull
+import kotlin.test.assertTrue
+import kotlin.test.assertFalse
 
 import androidx.compose.ui.test.*
 import androidx.compose.ui.test.junit4.createComposeRule
@@ -8,7 +14,6 @@ import com.deproof.data.solana.ProofSubmissionResult
 import com.deproof.data.solana.SubmissionStatus
 import com.deproof.data.solana.WalletInfo
 import org.junit.Rule
-import org.junit.Test
 
 class ProofSubmissionScreenComposableTest {
 
