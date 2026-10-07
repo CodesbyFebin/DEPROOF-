@@ -7,21 +7,22 @@ import kotlinx.coroutines.sync.withLock
 
 class PersistentMwaRecoveryManager(
     private val approvalRepository: PendingApprovalRepository
-) : MwaRecoveryManager(null as Any?) {
+) {
 
     companion object {
         const val TAG = "PersistentMwaRecoveryManager"
     }
 
     private val persistenceLock = Mutex()
+    private val memoryManager = MwaRecoveryManager(null as Any?)
 
-    override suspend fun recordPendingApproval(
+    suspend fun recordPendingApproval(
         transactionId: String,
         reviewedMessageHash: String
     ): Result<Unit> = persistenceLock.withLock {
         return try {
-            // Record in memory (parent class)
-            super.recordPendingApproval(transactionId, reviewedMessageHash)
+            // Record in memory
+            memoryManager.recordPendingApproval(transactionId, reviewedMessageHash)
 
             // Also persist to database
             val result = approvalRepository.recordPendingApproval(
@@ -42,10 +43,10 @@ class PersistentMwaRecoveryManager(
         }
     }
 
-    override suspend fun clearPendingApproval(transactionId: String): Result<Unit> = persistenceLock.withLock {
+    suspend fun clearPendingApproval(transactionId: String): Result<Unit> = persistenceLock.withLock {
         return try {
-            // Clear from memory (parent class)
-            super.clearPendingApproval(transactionId)
+            // Clear from memory
+            memoryManager.clearPendingApproval(transactionId)
 
             // Also delete from database
             val result = approvalRepository.clearPendingApproval(transactionId)
@@ -63,7 +64,7 @@ class PersistentMwaRecoveryManager(
         }
     }
 
-    override suspend fun reconcilePendingApprovals(): Result<List<ApprovalReconciliation>> = persistenceLock.withLock {
+    suspend fun reconcilePendingApprovals(): Result<List<ApprovalReconciliation>> = persistenceLock.withLock {
         return try {
             // Reconcile from database (more reliable than memory)
             val result = approvalRepository.reconcilePendingApprovals()
@@ -75,8 +76,8 @@ class PersistentMwaRecoveryManager(
 
             val reconciliations = result.getOrNull() ?: emptyList()
 
-            // Update parent class in-memory state
-            super.reconcilePendingApprovals()
+            // Update in-memory state via memoryManager
+            memoryManager.reconcilePendingApprovals()
 
             // Process reconciliation results
             for (reconciliation in reconciliations) {
@@ -115,7 +116,7 @@ class PersistentMwaRecoveryManager(
 
             // Reload in-memory state from database
             for (approval in approvals) {
-                super.recordPendingApproval(
+                memoryManager.recordPendingApproval(
                     transactionId = approval.transactionId,
                     reviewedMessageHash = approval.reviewedMessageHash
                 )
