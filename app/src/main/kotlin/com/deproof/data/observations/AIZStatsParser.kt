@@ -53,7 +53,7 @@ object AIZStatsParser : IStatsParser {
                 metrics = parseMetrics(stats)
             )
 
-            Log.d(TAG, "Parsed AIOZ observation: ${observation.nodeMetrics}")
+            Log.d(TAG, "Parsed AIOZ observation: ${observation.metrics}")
             return observation
 
         } catch (e: Exception) {

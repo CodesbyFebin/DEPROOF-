@@ -151,7 +151,7 @@ object FluxNodeMonitor : IFluxNodeMonitor {
     private fun computeDigest(response: NodeResponse): String {
         val jsonBytes = response.toString().toByteArray()
         val digest = MessageDigest.getInstance("SHA-256").digest(jsonBytes)
-        return digest.joinToString("") { "%02x".format(it) }
+        return digest.joinToString("") { String.format("%02x", it) }
     }
 }
 
@@ -172,24 +172,3 @@ data class NodeResponse(
     val lastSeen: Long
 )
 
-/**
- * Extended FluxObservation for Phase 2B monitoring
- * (Extends the UnifiedObservation.FluxObservation)
- */
-data class FluxObservation(
-    override val schema: String = "deproof-flux-observation-v1",
-    override val provider: String = "Flux",
-    override val source: String = "operator-flux-node",
-    override val timestamp: Long = System.currentTimeMillis(),
-    override val assurance: String = "LOCAL_OBSERVATION",
-    override val sourceSha256: String,
-    override val endpoint: String,
-    override val signature: String? = null,
-    override val independentVerification: String = "NOT_RUN",
-    override val rewardAsset: String = "FLUX",
-    override val rewardStatus: String = "PENDING",
-    override val skrPaymentStatus: String = "NOT_SUBMITTED",
-    val nodeMetrics: NodeMetrics,
-    val nodeSha256: String,                // Response digest
-    val staleFlag: Boolean = false         // Marks stale cached data
-) : Observation

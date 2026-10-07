@@ -93,8 +93,8 @@ private fun MetadataSection(observation: Observation) {
         verticalArrangement = Arrangement.spacedBy(12.dp)
     ) {
         // Timestamp
-        val iso = Instant.ofEpochMilli(observation.timestamp)
-            .format(DateTimeFormatter.ISO_INSTANT)
+        val iso = DateTimeFormatter.ISO_INSTANT.format(
+            Instant.ofEpochMilli(observation.timestamp))
         StatRow("Timestamp", iso)
         StatRow("Epoch", observation.timestamp.toString())
 

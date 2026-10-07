@@ -33,8 +33,8 @@ object FluxEvidenceExporter : IFluxEvidenceExporter {
             json.put("nodeId", observation.nodeMetrics.nodeId)
             json.put("endpoint", observation.endpoint)
             json.put("timestamp", observation.timestamp)
-            json.put("timestampISO", Instant.ofEpochMilli(observation.timestamp)
-                .format(DateTimeFormatter.ISO_INSTANT))
+            json.put("timestampISO", DateTimeFormatter.ISO_INSTANT.format(
+                Instant.ofEpochMilli(observation.timestamp)))
 
             // Audit trail
             json.put("audit", JSONObject().apply {
@@ -105,8 +105,8 @@ object FluxEvidenceExporter : IFluxEvidenceExporter {
 
             // Data rows
             observations.forEach { obs ->
-                val timestamp = Instant.ofEpochMilli(obs.timestamp)
-                    .format(DateTimeFormatter.ISO_INSTANT)
+                val timestamp = DateTimeFormatter.ISO_INSTANT.format(
+                    Instant.ofEpochMilli(obs.timestamp))
                 val metrics = obs.nodeMetrics
 
                 sb.append("$timestamp,")

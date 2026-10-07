@@ -76,7 +76,9 @@ data class FluxObservation(
     override val skrPaymentStatus: String = "NOT_SUBMITTED",
 
     // Flux-specific metrics
-    val nodeMetrics: NodeMetrics
+    val nodeMetrics: NodeMetrics,
+    val nodeSha256: String = "",                   // Response digest
+    val staleFlag: Boolean = false                  // Marks stale cached data
 ) : Observation
 
 /**
