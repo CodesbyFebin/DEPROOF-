@@ -4,7 +4,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.plugin.compose")
-    kotlin("plugin.serialization")
+    id("com.google.devtools.ksp")
+    kotlin("plugin.serialization") version "2.4.20"
 }
 
 android {
@@ -97,7 +98,10 @@ android {
         resources {
             // Exclude duplicates
             excludes += "META-INF/LICENSE"
+            excludes += "META-INF/LICENSE.md"
+            excludes += "META-INF/LICENSE-notice.md"
             excludes += "META-INF/NOTICE"
+            excludes += "META-INF/NOTICE.md"
             excludes += "META-INF/AL2.0"
             excludes += "META-INF/LGPL2.1"
         }

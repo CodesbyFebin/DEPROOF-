@@ -1,4 +1,10 @@
 package com.deproof.ui.screen
+import org.junit.Test
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertNotNull
+import org.junit.Assert.assertNull
+import org.junit.Assert.assertTrue
+import org.junit.Assert.assertFalse
 
 import androidx.compose.ui.test.*
 import androidx.compose.ui.test.junit4.createComposeRule
@@ -8,7 +14,6 @@ import com.deproof.data.solana.ProofSubmissionResult
 import com.deproof.data.solana.SubmissionStatus
 import com.deproof.data.solana.WalletInfo
 import org.junit.Rule
-import org.junit.Test
 
 class ProofSubmissionScreenComposableTest {
 
@@ -272,9 +277,9 @@ class ProofSubmissionScreenComposableTest {
     fun testMultipleWalletsDisplayed() {
         val multiWalletState = testState.copy(
             wallets = listOf(
-                WalletInfo("Phantom", "com.phantom", "solana-wallet://phantom"),
-                WalletInfo("Solflare", "com.solflare", "solana-wallet://solflare"),
-                WalletInfo("Magic Eden", "com.magiceden", "solana-wallet://magiceden")
+                WalletInfo("Phantom", "com.phantom", deeplink = "solana-wallet://phantom"),
+                WalletInfo("Solflare", "com.solflare", deeplink = "solana-wallet://solflare"),
+                WalletInfo("Magic Eden", "com.magiceden", deeplink = "solana-wallet://magiceden")
             )
         )
 
