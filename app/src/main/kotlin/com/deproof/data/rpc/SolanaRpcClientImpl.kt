@@ -154,7 +154,7 @@ class SolanaRpcClientImpl(
                 delay *= 2
             }
 
-            val result = executeRequest<T>(requestBody.toString())
+            val result = executeRequest(requestBody.toString())
             if (result.isSuccess) return result
             lastError = result.exceptionOrNull() as? Exception
 
