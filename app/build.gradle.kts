@@ -83,7 +83,9 @@ dependencies {
     implementation("com.google.code.gson:gson:2.10.1")
 
     // MWA (Mobile Wallet Adapter)
-    implementation("com.solanamobile:mobile-wallet-adapter-clientlib-ktx:2.0.7")
+    implementation("com.solanamobile:mobile-wallet-adapter-clientlib-ktx:2.0.7") {
+        exclude(group = "com.solanamobile", module = "mobile-wallet-adapter-clientlib")
+    }
 
     // Solana Web3 (commented out during Maven Central rate limiting)
     // implementation("com.solanamobile:web3:0.2.1")
