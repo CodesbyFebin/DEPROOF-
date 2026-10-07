@@ -6,6 +6,7 @@ import com.google.gson.JsonObject
 import kotlinx.coroutines.delay
 import okhttp3.HttpClient
 import okhttp3.Request
+import java.util.concurrent.TimeUnit
 import java.security.MessageDigest
 import java.time.Instant
 
@@ -28,8 +29,8 @@ object FluxNodeMonitor : IFluxNodeMonitor {
 
     // HTTP client for node queries
     private val httpClient = HttpClient.Builder()
-        .connectTimeout(java.time.Duration.ofMillis(TIMEOUT_MS))
-        .readTimeout(java.time.Duration.ofMillis(TIMEOUT_MS))
+        .connectTimeout(TIMEOUT_MS, TimeUnit.MILLISECONDS)
+        .readTimeout(TIMEOUT_MS, TimeUnit.MILLISECONDS)
         .build()
 
     private val gson = Gson()
